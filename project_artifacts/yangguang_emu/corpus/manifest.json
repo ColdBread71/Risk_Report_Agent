@@ -1,0 +1,49 @@
+{
+  "project_id": "yangguang_emu",
+  "parser_name": "pymupdf-page-section-parser",
+  "parser_version": "1.5.0",
+  "generated_at": "2026-09-04T09:01:13.944985Z",
+  "source_directory": "legacy_baseline/Project/阳光EMU项目",
+  "documents": [
+    {
+      "document_id": "DOC-5067B181346D",
+      "source_file_name": "EMU300A-UCN-Ver11-202603.pdf",
+      "source_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "document_artifact": "project_artifacts/yangguang_emu/corpus/DOC-5067B181346D/versions/985ab7688c08/1.5.0/document.json",
+      "page_count": 58,
+      "section_file_count": 63,
+      "review_required_pages": []
+    },
+    {
+      "document_id": "DOC-DF116E7199E2",
+      "source_file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+      "source_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "document_artifact": "project_artifacts/yangguang_emu/corpus/DOC-DF116E7199E2/versions/e8c23ac43317/1.5.0/document.json",
+      "page_count": 42,
+      "section_file_count": 48,
+      "review_required_pages": []
+    },
+    {
+      "document_id": "DOC-C034D56CBBB3",
+      "source_file_name": "Logger4000-UCN-Ver34-202604（P038）=GUID-CA820001-012C-4F1D-B205-BDAA17A6C730=1=PDF (产品信息设计部_基础版)=zh-CN (6).pdf",
+      "source_path": "legacy_baseline/Project/阳光EMU项目/Logger4000-UCN-Ver34-202604（P038）=GUID-CA820001-012C-4F1D-B205-BDAA17A6C730=1=PDF (产品信息设计部_基础版)=zh-CN (6).pdf",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "document_artifact": "project_artifacts/yangguang_emu/corpus/DOC-C034D56CBBB3/versions/5a9b4f97ff44/1.5.0/document.json",
+      "page_count": 122,
+      "section_file_count": 193,
+      "review_required_pages": []
+    },
+    {
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+      "source_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "document_artifact": "project_artifacts/yangguang_emu/corpus/DOC-D9C0DEB31D45/versions/bd8dee22b45f/1.5.0/document.json",
+      "page_count": 113,
+      "section_file_count": 183,
+      "review_required_pages": []
+    }
+  ]
+}

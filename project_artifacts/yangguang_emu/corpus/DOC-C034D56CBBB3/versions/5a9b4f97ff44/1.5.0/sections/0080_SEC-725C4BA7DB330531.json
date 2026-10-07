@@ -1,0 +1,577 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-725C4BA7DB330531",
+  "section_path": [
+    "7 Web界面",
+    "7.6 设备维护",
+    "7.6.4 故障录波"
+  ],
+  "section_title": "7.6.4 故障录波",
+  "start_pdf_page": 62,
+  "end_pdf_page": 62,
+  "blocks": [
+    {
+      "block_id": "BLK-6DAECAD334EE9BFA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 62,
+      "printed_page_label": "52",
+      "block_order": 0,
+      "section_id": "SEC-725C4BA7DB330531",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.4 故障录波"
+      ],
+      "section_title": "7.6.4 故障录波",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.44,
+        48.088,
+        449.794,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A6A52CDBCD6E0DC8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 62,
+      "printed_page_label": "52",
+      "block_order": 1,
+      "section_id": "SEC-725C4BA7DB330531",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.4 故障录波"
+      ],
+      "section_title": "7.6.4 故障录波",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        71.556,
+        112.187,
+        82.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8BBF60F2120A1857",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 62,
+      "printed_page_label": "52",
+      "block_order": 10,
+      "section_id": "SEC-725C4BA7DB330531",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.4 故障录波"
+      ],
+      "section_title": "7.6.4 故障录波",
+      "block_type": "heading",
+      "text": "7.6.4 故障录波",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        256.461,
+        123.687,
+        268.631
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9D2B26C832AF174D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 62,
+      "printed_page_label": "52",
+      "block_order": 11,
+      "section_id": "SEC-725C4BA7DB330531",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.4 故障录波"
+      ],
+      "section_title": "7.6.4 故障录波",
+      "block_type": "paragraph",
+      "text": "故障录波模块提供专业的电气事件记录与分析功能，涵盖故障录波、电网录波和有效值录波三类\n子功能，分别面向设备故障排查、电网合规管理及特定区域机型事件追踪。",
+      "table_cells": null,
+      "bbox": [
+        88.191,
+        275.685,
+        445.191,
+        298.78
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5CDC01962CBCF357",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 62,
+      "printed_page_label": "52",
+      "block_order": 12,
+      "section_id": "SEC-725C4BA7DB330531",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.4 故障录波"
+      ],
+      "section_title": "7.6.4 故障录波",
+      "block_type": "paragraph",
+      "text": "模块访问方式",
+      "table_cells": null,
+      "bbox": [
+        88.197,
+        307.927,
+        142.197,
+        318.88
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8262B26153CA5090",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 62,
+      "printed_page_label": "52",
+      "block_order": 13,
+      "section_id": "SEC-725C4BA7DB330531",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.4 故障录波"
+      ],
+      "section_title": "7.6.4 故障录波",
+      "block_type": "paragraph",
+      "text": "在软件主界面或左侧导航栏中：",
+      "table_cells": null,
+      "bbox": [
+        88.197,
+        326.077,
+        214.197,
+        337.03
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-86D090F0C0C51D2B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 62,
+      "printed_page_label": "52",
+      "block_order": 14,
+      "section_id": "SEC-725C4BA7DB330531",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.4 故障录波"
+      ],
+      "section_title": "7.6.4 故障录波",
+      "block_type": "list",
+      "text": "1. 找到并点击故障录波主菜单项",
+      "table_cells": null,
+      "bbox": [
+        88.197,
+        347.577,
+        219.363,
+        358.53
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C3B4EE8A350B5484",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 62,
+      "printed_page_label": "52",
+      "block_order": 15,
+      "section_id": "SEC-725C4BA7DB330531",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.4 故障录波"
+      ],
+      "section_title": "7.6.4 故障录波",
+      "block_type": "list",
+      "text": "2. 点击后，系统将展开一级子菜单，显示三个选项：",
+      "table_cells": null,
+      "bbox": [
+        88.197,
+        362.577,
+        300.363,
+        373.53
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-027D103154614FFF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 62,
+      "printed_page_label": "52",
+      "block_order": 16,
+      "section_id": "SEC-725C4BA7DB330531",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.4 故障录波"
+      ],
+      "section_title": "7.6.4 故障录波",
+      "block_type": "list",
+      "text": "•\n故障录波",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        376.155,
+        152.538,
+        388.638
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-243221F55A15478F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 62,
+      "printed_page_label": "52",
+      "block_order": 17,
+      "section_id": "SEC-725C4BA7DB330531",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.4 故障录波"
+      ],
+      "section_title": "7.6.4 故障录波",
+      "block_type": "list",
+      "text": "•\n电网录波",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        391.155,
+        152.538,
+        403.638
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C32955A3D7354497",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 62,
+      "printed_page_label": "52",
+      "block_order": 18,
+      "section_id": "SEC-725C4BA7DB330531",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.4 故障录波"
+      ],
+      "section_title": "7.6.4 故障录波",
+      "block_type": "list",
+      "text": "•\n有效值录波",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        406.155,
+        161.538,
+        418.638
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-744E620B71AC9679",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 62,
+      "printed_page_label": "52",
+      "block_order": 19,
+      "section_id": "SEC-725C4BA7DB330531",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.4 故障录波"
+      ],
+      "section_title": "7.6.4 故障录波",
+      "block_type": "paragraph",
+      "text": "根据您的具体需求，点击相应的子菜单项即可进入对应功能页面，以下将进行具体说明。",
+      "table_cells": null,
+      "bbox": [
+        88.197,
+        423.077,
+        439.197,
+        434.03
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CD4FE1475F986897",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 62,
+      "printed_page_label": "52",
+      "block_order": 20,
+      "section_id": "SEC-725C4BA7DB330531",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.4 故障录波"
+      ],
+      "section_title": "7.6.4 故障录波",
+      "block_type": "paragraph",
+      "text": "故障录波",
+      "table_cells": null,
+      "bbox": [
+        88.197,
+        443.227,
+        124.197,
+        454.18
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E03D0285CF0FBF70",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 62,
+      "printed_page_label": "52",
+      "block_order": 21,
+      "section_id": "SEC-725C4BA7DB330531",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.4 故障录波"
+      ],
+      "section_title": "7.6.4 故障录波",
+      "block_type": "paragraph",
+      "text": "此界面主要用于辅助现场人员排查逆变器设备故障。",
+      "table_cells": null,
+      "bbox": [
+        88.197,
+        461.377,
+        295.197,
+        472.33
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-487FD735FA57CD8F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 62,
+      "printed_page_label": "52",
+      "block_order": 22,
+      "section_id": "SEC-725C4BA7DB330531",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.4 故障录波"
+      ],
+      "section_title": "7.6.4 故障录波",
+      "block_type": "paragraph",
+      "text": "电网录波",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        542.218,
+        124.193,
+        553.171
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7D76EA792D65A5A6",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 62,
+      "printed_page_label": "52",
+      "block_order": 23,
+      "section_id": "SEC-725C4BA7DB330531",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.4 故障录波"
+      ],
+      "section_title": "7.6.4 故障录波",
+      "block_type": "paragraph",
+      "text": "此界面专注于满足电网标准的记录管理与数据交互。依据国网、南网及国际电网标准设计，\n满足并网设备的规范要求",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        560.368,
+        448.193,
+        584.821
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9EEF76D6D6271EAE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 62,
+      "printed_page_label": "52",
+      "block_order": 24,
+      "section_id": "SEC-725C4BA7DB330531",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.4 故障录波"
+      ],
+      "section_title": "7.6.4 故障录波",
+      "block_type": "list",
+      "text": "•\n二级菜单说明：",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        593.946,
+        165.368,
+        606.43
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A50EB0480D113A2B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 62,
+      "printed_page_label": "52",
+      "block_order": 25,
+      "section_id": "SEC-725C4BA7DB330531",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.4 故障录波"
+      ],
+      "section_title": "7.6.4 故障录波",
+      "block_type": "list",
+      "text": "-\n全量导出：完整导出录波文件，适用于全面数据分析",
+      "table_cells": null,
+      "bbox": [
+        102.368,
+        608.946,
+        323.543,
+        621.43
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-05FB62626687CEAA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 62,
+      "printed_page_label": "52",
+      "block_order": 26,
+      "section_id": "SEC-725C4BA7DB330531",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.4 故障录波"
+      ],
+      "section_title": "7.6.4 故障录波",
+      "block_type": "list",
+      "text": "-\n索引导出：按事件索引选择性导出，提升检索效率",
+      "table_cells": null,
+      "bbox": [
+        102.368,
+        623.946,
+        314.543,
+        636.43
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0F2F3212A19DA269",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 62,
+      "printed_page_label": "52",
+      "block_order": 27,
+      "section_id": "SEC-725C4BA7DB330531",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.4 故障录波"
+      ],
+      "section_title": "7.6.4 故障录波",
+      "block_type": "list",
+      "text": "-\nSER 信息导出：支持序列化事件记录（SER）格式，便于第三方系统解析",
+      "table_cells": null,
+      "bbox": [
+        102.368,
+        638.946,
+        407.801,
+        651.43
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

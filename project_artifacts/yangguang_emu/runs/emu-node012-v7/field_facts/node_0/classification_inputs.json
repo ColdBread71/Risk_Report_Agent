@@ -1,0 +1,382 @@
+{
+  "schema_version": "field_fact_checkpoint.v3",
+  "node_id": "node_0",
+  "field_id": "classification_inputs",
+  "index_id": "IDX-3B116ADDF3BB03CC",
+  "packet_sha256": "ae6a0f944502ef1485c174903c0da9f26f0989e2c3ec2c1edda2ff9d6399d9ea",
+  "retrieval_profile_version": "1.7",
+  "field_fact_prompt_version": "2.4",
+  "cache_inputs": {
+    "node_id": "node_0",
+    "field_id": "classification_inputs",
+    "source_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "retrieval_packet_sha256": "ae6a0f944502ef1485c174903c0da9f26f0989e2c3ec2c1edda2ff9d6399d9ea",
+    "rag_index_id": "IDX-3B116ADDF3BB03CC",
+    "text_model": "qwen-plus",
+    "retrieval_profile_sha256": "e6e3ac218bf25b3a681d0c1963664fc79758b3d2ae0ca844df787f4262727729",
+    "field_prompt_sha256": "201de3ecaea6d95c021b800066340eb6a1f487e0b5bdf8916d1ef48b6b3e2ab9",
+    "field_schema_sha256": "0dcb4f25406389cda17acfbed3239842ca693c6f53db84e2b8c3a678c83c0bb3"
+  },
+  "cache_fingerprint": "c9ea3db00e6600493e575458acfec8572fe7dae92bcf97a6b0b9dec614be10a4",
+  "result": {
+    "node_id": "node_0",
+    "field_id": "classification_inputs",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "能量管理单元（EMU300A）可以直接通过路由器与阳光云连接。",
+        "block_ids": [
+          "BLK-1317C7BFFF509A67"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "数据采集器将数据转发至阳光云平台的功能默认不可用。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "启用数据采集器向阳光云平台转发数据的功能前，客户需在充分知情的前提下进行手动授权。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "启用数据采集器向阳光云平台转发数据的功能需通过安全加密认证接入公共网络。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "远程访问仅在获得客户授权后方可生效。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "远程访问相关操作受系统访问控制策略管理。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "EMU300A 的安全功能构成其纵深防御体系，在产品定义的安全上下文中提供对欺骗、篡改、否认、信息泄露、拒绝服务等威胁的保护。",
+        "block_ids": [
+          "BLK-916567FFECD7233D"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "EMU300A 的工业网络安全目标包括可用性、保密性和完整性。",
+        "block_ids": [
+          "BLK-09BB4F761E6C697C",
+          "BLK-32D86711ED1302DA",
+          "BLK-D29A82FAFD09D484",
+          "BLK-14EB48F1B4784375"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "EMU300A 支持 HTTPS、北向 IEC104、MODBUS 等协议的 TLS 加密通信。",
+        "block_ids": [
+          "BLK-A31FF599B1E26CE2"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "EMU300A 支持 NTS 对时。",
+        "block_ids": [
+          "BLK-A31FF599B1E26CE2"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "EMU300A 具备恢复出厂设置功能，可删除设备数据。",
+        "block_ids": [
+          "BLK-A31FF599B1E26CE2"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "EMU300A 具备操作日志和 syslog 记录功能。",
+        "block_ids": [
+          "BLK-A31FF599B1E26CE2"
+        ],
+        "is_uncertain": false
+      }
+    ],
+    "unknowns": [
+      "未明确说明阳光云平台的运营方是否为阳光公司或第三方。",
+      "未明确说明远程连接能力是否为产品功能所必需（即：若不启用云连接，EMU300A 是否仍满足基本功能定义）。",
+      "未明确说明‘数据采集器’具体指代哪个组件（如：Logger5000 或其他内置/外置单元）；GAP-LOGGER4000-SCOPE 明确指出 Logger4000 适用性待确认，且 Logger5000 被标识为标准内部采集器，但本字段证据未直接命名该采集器。",
+      "未明确说明 TLS 加密通信是否为默认启用或需客户配置启用。",
+      "未明确说明 NTS 对时是否需客户配置启用或证书管理责任归属。",
+      "未明确说明操作日志和 syslog 的存储位置、保留周期及远程传输能力。",
+      "未明确说明软件和固件更新是否支持远程自动升级，或仅支持本地手动升级。"
+    ],
+    "contradictions": []
+  },
+  "retrieval_trace": {
+    "schema_version": "1.0",
+    "request": {
+      "project_id": "yangguang_emu",
+      "node_id": "node_0",
+      "field_id": "classification_inputs",
+      "query": null,
+      "filters": {
+        "document_ids": [],
+        "section_path_terms": [],
+        "block_types": [],
+        "exclude_review_required": false
+      },
+      "token_budget": 12000,
+      "max_blocks": 24,
+      "neighbor_window": 1
+    },
+    "effective_query": "联网能力 远程连接 关键功能 安全功能 产品类别 网络安全影响 分类依据",
+    "index_id": "IDX-3B116ADDF3BB03CC",
+    "scope_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "packet_id": "rag_yangguang_emu_node_0_classification_inputs_42ec52c5ead3",
+    "packet_sha256": "ae6a0f944502ef1485c174903c0da9f26f0989e2c3ec2c1edda2ff9d6399d9ea",
+    "candidate_count": 363,
+    "selected_count": 24,
+    "selected_token_count": 2545,
+    "truncated_by_budget": false,
+    "truncated_by_max_blocks": true,
+    "hits": [
+      {
+        "block_id": "BLK-A31FF599B1E26CE2",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 1,
+        "score": 0.4769271033150809,
+        "estimated_tokens": 545,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-26A4B8B218CB053B",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 2,
+        "score": 0.4769271033150809,
+        "estimated_tokens": 81,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-A31FF599B1E26CE2"
+      },
+      {
+        "block_id": "BLK-EBE329C3EFA80ACF",
+        "document_id": "DOC-5067B181346D",
+        "rank": 3,
+        "score": 0.4701385021209717,
+        "estimated_tokens": 145,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-1317C7BFFF509A67",
+        "document_id": "DOC-5067B181346D",
+        "rank": 4,
+        "score": 0.4701385021209717,
+        "estimated_tokens": 66,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-EBE329C3EFA80ACF"
+      },
+      {
+        "block_id": "BLK-C125441858A9A758",
+        "document_id": "DOC-5067B181346D",
+        "rank": 5,
+        "score": 0.4701385021209717,
+        "estimated_tokens": 47,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-EBE329C3EFA80ACF"
+      },
+      {
+        "block_id": "BLK-32D86711ED1302DA",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 6,
+        "score": 0.4660620212554932,
+        "estimated_tokens": 117,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-09BB4F761E6C697C",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 7,
+        "score": 0.4660620212554932,
+        "estimated_tokens": 111,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-32D86711ED1302DA"
+      },
+      {
+        "block_id": "BLK-D29A82FAFD09D484",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 8,
+        "score": 0.4660620212554932,
+        "estimated_tokens": 90,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-32D86711ED1302DA"
+      },
+      {
+        "block_id": "BLK-F15FEACD7EBFF705",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 9,
+        "score": 0.45821423530578614,
+        "estimated_tokens": 108,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-69FCE72C42994FF6",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 10,
+        "score": 0.45821423530578614,
+        "estimated_tokens": 62,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-F15FEACD7EBFF705"
+      },
+      {
+        "block_id": "BLK-A6E3C93078316D21",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 11,
+        "score": 0.45821423530578614,
+        "estimated_tokens": 116,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-F15FEACD7EBFF705"
+      },
+      {
+        "block_id": "BLK-9F5E44DC2AD36DE5",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 12,
+        "score": 0.4571261882781983,
+        "estimated_tokens": 75,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-A6E3C93078316D21"
+      },
+      {
+        "block_id": "BLK-F98DE46C72A1F829",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 13,
+        "score": 0.45369911193847656,
+        "estimated_tokens": 86,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-C65542BD825C9290",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 14,
+        "score": 0.45369911193847656,
+        "estimated_tokens": 83,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-F98DE46C72A1F829"
+      },
+      {
+        "block_id": "BLK-B5B2DA70170FDE95",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 15,
+        "score": 0.45369911193847656,
+        "estimated_tokens": 139,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-F98DE46C72A1F829"
+      },
+      {
+        "block_id": "BLK-A8903F0B3105707C",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 16,
+        "score": 0.452750301361084,
+        "estimated_tokens": 105,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-355A0793885F8B9D",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 17,
+        "score": 0.452750301361084,
+        "estimated_tokens": 42,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-A8903F0B3105707C"
+      },
+      {
+        "block_id": "BLK-D0201C26B3FCE322",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 18,
+        "score": 0.452750301361084,
+        "estimated_tokens": 57,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-A8903F0B3105707C"
+      },
+      {
+        "block_id": "BLK-14EB48F1B4784375",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 19,
+        "score": 0.4507627487182617,
+        "estimated_tokens": 106,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-D29A82FAFD09D484"
+      },
+      {
+        "block_id": "BLK-BDEC2C4D8C8E8B36",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 20,
+        "score": 0.4471291542053223,
+        "estimated_tokens": 105,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-C65542BD825C9290"
+      },
+      {
+        "block_id": "BLK-916567FFECD7233D",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 21,
+        "score": 0.4469385283333915,
+        "estimated_tokens": 162,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-E6EE530826340D18",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 22,
+        "score": 0.4469385283333915,
+        "estimated_tokens": 91,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-916567FFECD7233D"
+      },
+      {
+        "block_id": "BLK-F95C116D465FFA4C",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 23,
+        "score": 0.4459426879882813,
+        "estimated_tokens": 107,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-DA4BE6316799DA62",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 24,
+        "score": 0.4459426879882813,
+        "estimated_tokens": 81,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-F95C116D465FFA4C"
+      }
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-0A2A8C859B98B963",
+  "section_path": [
+    "9 用户管理",
+    "9.13 通信设置",
+    "9.13.2 三方云"
+  ],
+  "section_title": "9.13.2 三方云",
+  "start_pdf_page": 100,
+  "end_pdf_page": 100,
+  "blocks": [
+    {
+      "block_id": "BLK-A223DA90918AA1D3",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 0,
+      "section_id": "SEC-0A2A8C859B98B963",
+      "section_path": [
+        "9 用户管理",
+        "9.13 通信设置",
+        "9.13.2 三方云"
+      ],
+      "section_title": "9.13.2 三方云",
+      "block_type": "paragraph",
+      "text": "用户手册\n9 用户管理",
+      "table_cells": null,
+      "bbox": [
+        60.446,
+        48.088,
+        449.793,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1A16DF155B1154B9",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 8,
+      "section_id": "SEC-0A2A8C859B98B963",
+      "section_path": [
+        "9 用户管理",
+        "9.13 通信设置",
+        "9.13.2 三方云"
+      ],
+      "section_title": "9.13.2 三方云",
+      "block_type": "heading",
+      "text": "9.13.2 三方云",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        292.332,
+        119.243,
+        304.502
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-84E2F121165CC7A2",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 9,
+      "section_id": "SEC-0A2A8C859B98B963",
+      "section_path": [
+        "9 用户管理",
+        "9.13 通信设置",
+        "9.13.2 三方云"
+      ],
+      "section_title": "9.13.2 三方云",
+      "block_type": "list",
+      "text": "1. 请以administrator 身份进行登录，点击通讯设置 > 三方云，进入 三方云子页面。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        311.648,
+        423.893,
+        322.601
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8C65146392F8991F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 10,
+      "section_id": "SEC-0A2A8C859B98B963",
+      "section_path": [
+        "9 用户管理",
+        "9.13 通信设置",
+        "9.13.2 三方云"
+      ],
+      "section_title": "9.13.2 三方云",
+      "block_type": "list",
+      "text": "2. 开启三方云开关，并对提示进行确认授权。授权运维人员可配置三方云功能，开启该功能\n则允许设备数据上传到配置的服务器。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        326.648,
+        453.368,
+        351.101
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

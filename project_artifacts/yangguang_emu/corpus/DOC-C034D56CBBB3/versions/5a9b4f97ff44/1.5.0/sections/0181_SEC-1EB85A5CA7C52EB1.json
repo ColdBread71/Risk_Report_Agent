@@ -1,0 +1,185 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-1EB85A5CA7C52EB1",
+  "section_path": [
+    "10 用户管理",
+    "10.11 通信设置",
+    "10.11.2 三方云"
+  ],
+  "section_title": "10.11.2 三方云",
+  "start_pdf_page": 109,
+  "end_pdf_page": 109,
+  "blocks": [
+    {
+      "block_id": "BLK-5698AB4785FBE676",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 109,
+      "printed_page_label": "99",
+      "block_order": 0,
+      "section_id": "SEC-1EB85A5CA7C52EB1",
+      "section_path": [
+        "10 用户管理",
+        "10.11 通信设置",
+        "10.11.2 三方云"
+      ],
+      "section_title": "10.11.2 三方云",
+      "block_type": "paragraph",
+      "text": "用户手册\n10 用户管理",
+      "table_cells": null,
+      "bbox": [
+        74.615,
+        48.088,
+        463.969,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A50A38F62212A930",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 109,
+      "printed_page_label": "99",
+      "block_order": 1,
+      "section_id": "SEC-1EB85A5CA7C52EB1",
+      "section_path": [
+        "10 用户管理",
+        "10.11 通信设置",
+        "10.11.2 三方云"
+      ],
+      "section_title": "10.11.2 三方云",
+      "block_type": "paragraph",
+      "text": "如需更新授权有效期，可点击有效期更新重新设置权限时间。权限延长时间将以\n当前设置的时间点为基准进行计算。",
+      "table_cells": null,
+      "bbox": [
+        143.539,
+        78.056,
+        458.539,
+        99.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8FEC8E56249124ED",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 109,
+      "printed_page_label": "99",
+      "block_order": 2,
+      "section_id": "SEC-1EB85A5CA7C52EB1",
+      "section_path": [
+        "10 用户管理",
+        "10.11 通信设置",
+        "10.11.2 三方云"
+      ],
+      "section_title": "10.11.2 三方云",
+      "block_type": "list",
+      "text": "4. 配置授权运维人员的查看与控制功能权限范围，按需开启对应功能开关。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        117.006,
+        404.541,
+        127.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F2C58C711398604D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 109,
+      "printed_page_label": "99",
+      "block_order": 3,
+      "section_id": "SEC-1EB85A5CA7C52EB1",
+      "section_path": [
+        "10 用户管理",
+        "10.11 通信设置",
+        "10.11.2 三方云"
+      ],
+      "section_title": "10.11.2 三方云",
+      "block_type": "heading",
+      "text": "10.11.2 三方云",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        190.932,
+        138.236,
+        203.102
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-35830CFE90A9DB39",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 109,
+      "printed_page_label": "99",
+      "block_order": 4,
+      "section_id": "SEC-1EB85A5CA7C52EB1",
+      "section_path": [
+        "10 用户管理",
+        "10.11 通信设置",
+        "10.11.2 三方云"
+      ],
+      "section_title": "10.11.2 三方云",
+      "block_type": "list",
+      "text": "1. 请以administrator 身份进行登录，点击通讯设置 > 三方云，进入 三方云子页面。",
+      "table_cells": null,
+      "bbox": [
+        102.362,
+        210.248,
+        438.062,
+        221.201
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1B4C869A52E2BC1C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 109,
+      "printed_page_label": "99",
+      "block_order": 5,
+      "section_id": "SEC-1EB85A5CA7C52EB1",
+      "section_path": [
+        "10 用户管理",
+        "10.11 通信设置",
+        "10.11.2 三方云"
+      ],
+      "section_title": "10.11.2 三方云",
+      "block_type": "list",
+      "text": "2. 开启三方云开关，并对提示进行确认授权。授权运维人员可配置三方云功能，开启该功能\n则允许设备数据上传到配置的服务器。",
+      "table_cells": null,
+      "bbox": [
+        102.362,
+        225.248,
+        467.537,
+        249.701
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

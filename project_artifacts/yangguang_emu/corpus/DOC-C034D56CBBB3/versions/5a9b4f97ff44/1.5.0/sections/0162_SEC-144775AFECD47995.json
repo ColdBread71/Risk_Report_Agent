@@ -1,0 +1,157 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-144775AFECD47995",
+  "section_path": [
+    "9 电网调度",
+    "9.4 无功功率调节",
+    "9.4.6 禁止无功功率调度"
+  ],
+  "section_title": "9.4.6 禁止无功功率调度",
+  "start_pdf_page": 101,
+  "end_pdf_page": 101,
+  "blocks": [
+    {
+      "block_id": "BLK-694F1FDD69EE2D64",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 101,
+      "printed_page_label": "91",
+      "block_order": 14,
+      "section_id": "SEC-144775AFECD47995",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.6 禁止无功功率调度"
+      ],
+      "section_title": "9.4.6 禁止无功功率调度",
+      "block_type": "heading",
+      "text": "9.4.6 禁止无功功率调度",
+      "table_cells": null,
+      "bbox": [
+        70.871,
+        323.74,
+        177.861,
+        335.91
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F4EB2B30BF9C977D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 101,
+      "printed_page_label": "91",
+      "block_order": 15,
+      "section_id": "SEC-144775AFECD47995",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.6 禁止无功功率调度"
+      ],
+      "section_title": "9.4.6 禁止无功功率调度",
+      "block_type": "paragraph",
+      "text": "禁止数据采集器对逆变器进行无功功率调度。",
+      "table_cells": null,
+      "bbox": [
+        102.364,
+        342.964,
+        272.364,
+        353.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-01E669A7EAC12C9C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 101,
+      "printed_page_label": "91",
+      "block_order": 16,
+      "section_id": "SEC-144775AFECD47995",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.6 禁止无功功率调度"
+      ],
+      "section_title": "9.4.6 禁止无功功率调度",
+      "block_type": "paragraph",
+      "text": "步骤 1 在无功功率页，设置无功控制方式为禁止调度。",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        362.384,
+        290.733,
+        374.867
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-973D14C823D8D277",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 101,
+      "printed_page_label": "91",
+      "block_order": 17,
+      "section_id": "SEC-144775AFECD47995",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.6 禁止无功功率调度"
+      ],
+      "section_title": "9.4.6 禁止无功功率调度",
+      "block_type": "paragraph",
+      "text": "步骤 2 点击保存。",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        378.884,
+        146.733,
+        391.367
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ADA6497F930DD235",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 101,
+      "printed_page_label": "91",
+      "block_order": 18,
+      "section_id": "SEC-144775AFECD47995",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.6 禁止无功功率调度"
+      ],
+      "section_title": "9.4.6 禁止无功功率调度",
+      "block_type": "list",
+      "text": "--结束\n设置完成后，逆变器以当前的无功功率调节设置，继续运行。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        395.456,
+        345.363,
+        417.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

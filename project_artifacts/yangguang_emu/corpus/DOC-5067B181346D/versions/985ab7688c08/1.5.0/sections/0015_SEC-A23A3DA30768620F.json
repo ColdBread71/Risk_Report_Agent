@@ -1,0 +1,286 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-A23A3DA30768620F",
+  "section_path": [
+    "2 产品介绍",
+    "2.2 主要特点"
+  ],
+  "section_title": "2.2 主要特点",
+  "start_pdf_page": 16,
+  "end_pdf_page": 16,
+  "blocks": [
+    {
+      "block_id": "BLK-06A4D464DB275CE5",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 16,
+      "printed_page_label": "10",
+      "block_order": 0,
+      "section_id": "SEC-A23A3DA30768620F",
+      "section_path": [
+        "2 产品介绍",
+        "2.2 主要特点"
+      ],
+      "section_title": "2.2 主要特点",
+      "block_type": "paragraph",
+      "text": "用户手册\n2 产品介绍",
+      "table_cells": null,
+      "bbox": [
+        60.444,
+        48.088,
+        449.791,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-77ED7F96663266B9",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 16,
+      "printed_page_label": "10",
+      "block_order": 1,
+      "section_id": "SEC-A23A3DA30768620F",
+      "section_path": [
+        "2 产品介绍",
+        "2.2 主要特点"
+      ],
+      "section_title": "2.2 主要特点",
+      "block_type": "figure_caption",
+      "text": "图 2-2 星形组网方式",
+      "table_cells": null,
+      "bbox": [
+        230.366,
+        268.916,
+        311.375,
+        279.869
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-853407424F1C1351",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 16,
+      "printed_page_label": "10",
+      "block_order": 2,
+      "section_id": "SEC-A23A3DA30768620F",
+      "section_path": [
+        "2 产品介绍",
+        "2.2 主要特点"
+      ],
+      "section_title": "2.2 主要特点",
+      "block_type": "paragraph",
+      "text": "通过路由器连接至阳光云",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        289.716,
+        187.193,
+        300.669
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1317C7BFFF509A67",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 16,
+      "printed_page_label": "10",
+      "block_order": 3,
+      "section_id": "SEC-A23A3DA30768620F",
+      "section_path": [
+        "2 产品介绍",
+        "2.2 主要特点"
+      ],
+      "section_title": "2.2 主要特点",
+      "block_type": "paragraph",
+      "text": "能量管理单元可以直接通过路由器与阳光云连接，如下图所示。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        307.866,
+        340.193,
+        318.819
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EBE329C3EFA80ACF",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 16,
+      "printed_page_label": "10",
+      "block_order": 4,
+      "section_id": "SEC-A23A3DA30768620F",
+      "section_path": [
+        "2 产品介绍",
+        "2.2 主要特点"
+      ],
+      "section_title": "2.2 主要特点",
+      "block_type": "paragraph",
+      "text": "数据采集器将数据转发至阳光云平台的功能默认不可用。启用该功能前，客户需在充\n分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获\n得客户授权后方可生效，且相关操作受系统访问控制策略管理。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        508.015,
+        448.193,
+        540.568
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C125441858A9A758",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 16,
+      "printed_page_label": "10",
+      "block_order": 5,
+      "section_id": "SEC-A23A3DA30768620F",
+      "section_path": [
+        "2 产品介绍",
+        "2.2 主要特点"
+      ],
+      "section_title": "2.2 主要特点",
+      "block_type": "heading",
+      "text": "2.2 主要特点",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        573.017,
+        128.873,
+        587.621
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-52E0EF74E19FBC91",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 16,
+      "printed_page_label": "10",
+      "block_order": 6,
+      "section_id": "SEC-A23A3DA30768620F",
+      "section_path": [
+        "2 产品介绍",
+        "2.2 主要特点"
+      ],
+      "section_title": "2.2 主要特点",
+      "block_type": "paragraph",
+      "text": "灵活组网",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        599.315,
+        124.193,
+        610.268
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BC449CE85DB4F669",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 16,
+      "printed_page_label": "10",
+      "block_order": 7,
+      "section_id": "SEC-A23A3DA30768620F",
+      "section_path": [
+        "2 产品介绍",
+        "2.2 主要特点"
+      ],
+      "section_title": "2.2 主要特点",
+      "block_type": "list",
+      "text": "•\n支持RS485、以太网、MPLC 通信。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        617.465,
+        249.392,
+        628.418
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B081A00CB116A76B",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 16,
+      "printed_page_label": "10",
+      "block_order": 8,
+      "section_id": "SEC-A23A3DA30768620F",
+      "section_path": [
+        "2 产品介绍",
+        "2.2 主要特点"
+      ],
+      "section_title": "2.2 主要特点",
+      "block_type": "list",
+      "text": "•\n支持跟踪系统、箱变测控、电表、环境监测仪等多种设备接入。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        632.465,
+        354.368,
+        643.418
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D13DD174206D8434",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 16,
+      "printed_page_label": "10",
+      "block_order": 9,
+      "section_id": "SEC-A23A3DA30768620F",
+      "section_path": [
+        "2 产品介绍",
+        "2.2 主要特点"
+      ],
+      "section_title": "2.2 主要特点",
+      "block_type": "list",
+      "text": "•\n支持 CT 采样，以毫秒级精度采集逆变器子阵电流，实现快速功率调节。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        647.465,
+        389.36,
+        658.418
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

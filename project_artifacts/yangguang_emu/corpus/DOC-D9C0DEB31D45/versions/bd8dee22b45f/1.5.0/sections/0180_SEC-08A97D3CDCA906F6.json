@@ -1,0 +1,124 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-08A97D3CDCA906F6",
+  "section_path": [
+    "13 附录",
+    "13.3 相关图纸"
+  ],
+  "section_title": "13.3 相关图纸",
+  "start_pdf_page": 111,
+  "end_pdf_page": 111,
+  "blocks": [
+    {
+      "block_id": "BLK-72B6F1DE3BA6613E",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 111,
+      "printed_page_label": "101",
+      "block_order": 0,
+      "section_id": "SEC-08A97D3CDCA906F6",
+      "section_path": [
+        "13 附录",
+        "13.3 相关图纸"
+      ],
+      "section_title": "13.3 相关图纸",
+      "block_type": "paragraph",
+      "text": "用户手册\n13 附录",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4940F603416CE06F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 111,
+      "printed_page_label": "101",
+      "block_order": 1,
+      "section_id": "SEC-08A97D3CDCA906F6",
+      "section_path": [
+        "13 附录",
+        "13.3 相关图纸"
+      ],
+      "section_title": "13.3 相关图纸",
+      "block_type": "heading",
+      "text": "13.3 相关图纸",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        71.658,
+        149.718,
+        86.262
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BAC93229208A5919",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 111,
+      "printed_page_label": "101",
+      "block_order": 2,
+      "section_id": "SEC-08A97D3CDCA906F6",
+      "section_path": [
+        "13 附录",
+        "13.3 相关图纸"
+      ],
+      "section_title": "13.3 相关图纸",
+      "block_type": "paragraph",
+      "text": "机架式安装图纸",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        97.956,
+        165.369,
+        108.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F3FE63263AE43678",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 111,
+      "printed_page_label": "101",
+      "block_order": 3,
+      "section_id": "SEC-08A97D3CDCA906F6",
+      "section_path": [
+        "13 附录",
+        "13.3 相关图纸"
+      ],
+      "section_title": "13.3 相关图纸",
+      "block_type": "paragraph",
+      "text": "壁挂式安装图纸",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        372.314,
+        165.366,
+        383.267
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

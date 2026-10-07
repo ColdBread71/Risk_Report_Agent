@@ -1,0 +1,185 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-3DBD21EDC0237C4E",
+  "section_path": [
+    "10 用户管理",
+    "10.8 启用运维模式"
+  ],
+  "section_title": "10.8 启用运维模式",
+  "start_pdf_page": 107,
+  "end_pdf_page": 107,
+  "blocks": [
+    {
+      "block_id": "BLK-5AEB5F1CA04D3080",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 107,
+      "printed_page_label": "97",
+      "block_order": 1,
+      "section_id": "SEC-3DBD21EDC0237C4E",
+      "section_path": [
+        "10 用户管理",
+        "10.8 启用运维模式"
+      ],
+      "section_title": "10.8 启用运维模式",
+      "block_type": "heading",
+      "text": "10.8 启用运维模式",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        71.658,
+        173.718,
+        86.262
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A7F1A2B99E3516A8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 107,
+      "printed_page_label": "97",
+      "block_order": 2,
+      "section_id": "SEC-3DBD21EDC0237C4E",
+      "section_path": [
+        "10 用户管理",
+        "10.8 启用运维模式"
+      ],
+      "section_title": "10.8 启用运维模式",
+      "block_type": "table",
+      "text": "如允许研发用户登录Web\t端进行调试操作，管理员务必启用研发调试开关。\t\n\t\t\t\n\t\t户名和\n务的电\nDAP 管\t密码。\n站，可以对账\n理操作界面。\n\t\t启用\n据传输\n加密算\tTLS 加密。若\n将不再加密，\n法才能进行通\n\t\t\t\n\t参数名\t说明\t\n\tIP 地址\tLDAP\t服务器的IP 地\n\t端口号\tLDAP\t服务器的端口\n\t基本标识名\tLDAP\t基本标识名\n\t账号\tLDAP\t服务器账号",
+      "table_cells": [
+        [
+          null,
+          "如允许研发用户登录Web",
+          "端进行调试操作，管理员务必启用研发调试开关。",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "户名和\n务的电\nDAP 管",
+          "密码。\n站，可以对账\n理操作界面。"
+        ],
+        [
+          null,
+          null,
+          "启用\n据传输\n加密算",
+          "TLS 加密。若\n将不再加密，\n法才能进行通"
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "参数名",
+          "说明",
+          null
+        ],
+        [
+          null,
+          "IP 地址",
+          "LDAP",
+          "服务器的IP 地"
+        ],
+        [
+          null,
+          "端口号",
+          "LDAP",
+          "服务器的端口"
+        ],
+        [
+          null,
+          "基本标识名",
+          "LDAP",
+          "基本标识名"
+        ],
+        [
+          null,
+          "账号",
+          "LDAP",
+          "服务器账号"
+        ]
+      ],
+      "bbox": [
+        101.718,
+        99.214,
+        373.468,
+        595.724
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CE9E3DCA8DFC68D4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 107,
+      "printed_page_label": "97",
+      "block_order": 3,
+      "section_id": "SEC-3DBD21EDC0237C4E",
+      "section_path": [
+        "10 用户管理",
+        "10.8 启用运维模式"
+      ],
+      "section_title": "10.8 启用运维模式",
+      "block_type": "paragraph",
+      "text": "密码\nLDAP 服务器密码",
+      "table_cells": null,
+      "bbox": [
+        111.035,
+        601.63,
+        364.468,
+        612.583
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4C0FCEB19B313B40",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 107,
+      "printed_page_label": "97",
+      "block_order": 4,
+      "section_id": "SEC-3DBD21EDC0237C4E",
+      "section_path": [
+        "10 用户管理",
+        "10.8 启用运维模式"
+      ],
+      "section_title": "10.8 启用运维模式",
+      "block_type": "paragraph",
+      "text": "LDAP 登录开关开启后，需填写配置参数并点击保存。成功保存后，界面显示“操作\n成功”。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        634.53,
+        455.121,
+        656.283
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

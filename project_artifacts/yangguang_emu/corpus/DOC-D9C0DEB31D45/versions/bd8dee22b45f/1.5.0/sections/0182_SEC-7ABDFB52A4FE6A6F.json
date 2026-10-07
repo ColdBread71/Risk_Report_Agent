@@ -1,0 +1,70 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-7ABDFB52A4FE6A6F",
+  "section_path": [
+    "13 附录",
+    "13.4 软件安全更新说明"
+  ],
+  "section_title": "13.4 软件安全更新说明",
+  "start_pdf_page": 112,
+  "end_pdf_page": 112,
+  "blocks": [
+    {
+      "block_id": "BLK-BDFAA79CEA10F3FD",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 112,
+      "printed_page_label": "102",
+      "block_order": 1,
+      "section_id": "SEC-7ABDFB52A4FE6A6F",
+      "section_path": [
+        "13 附录",
+        "13.4 软件安全更新说明"
+      ],
+      "section_title": "13.4 软件安全更新说明",
+      "block_type": "heading",
+      "text": "13.4 软件安全更新说明",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        71.658,
+        183.545,
+        86.262
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B41C128EAD54DB78",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 112,
+      "printed_page_label": "102",
+      "block_order": 2,
+      "section_id": "SEC-7ABDFB52A4FE6A6F",
+      "section_path": [
+        "13 附录",
+        "13.4 软件安全更新说明"
+      ],
+      "section_title": "13.4 软件安全更新说明",
+      "block_type": "paragraph",
+      "text": "本产品的软件安全更新期限与产品质保期保持一致。在质保期内，如发现安全漏洞或兼容性\n问题，将提供相应的软件修复补丁或安全更新。",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        99.306,
+        448.19,
+        123.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

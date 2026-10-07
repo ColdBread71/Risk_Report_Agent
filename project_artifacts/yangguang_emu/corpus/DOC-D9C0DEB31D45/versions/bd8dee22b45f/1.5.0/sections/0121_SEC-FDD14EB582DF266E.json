@@ -1,0 +1,160 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-FDD14EB582DF266E",
+  "section_path": [
+    "7 Web界面",
+    "7.10 系统",
+    "7.10.5 系统时间"
+  ],
+  "section_title": "7.10.5 系统时间",
+  "start_pdf_page": 76,
+  "end_pdf_page": 76,
+  "blocks": [
+    {
+      "block_id": "BLK-E251A8A9BA42D0BD",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 0,
+      "section_id": "SEC-FDD14EB582DF266E",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.5 系统时间"
+      ],
+      "section_title": "7.10.5 系统时间",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7F0843944B536FD1",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 1,
+      "section_id": "SEC-FDD14EB582DF266E",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.5 系统时间"
+      ],
+      "section_title": "7.10.5 系统时间",
+      "block_type": "heading",
+      "text": "7.10.5 系统时间",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        71.59,
+        129.243,
+        83.76
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EE560ABA849CAB28",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 2,
+      "section_id": "SEC-FDD14EB582DF266E",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.5 系统时间"
+      ],
+      "section_title": "7.10.5 系统时间",
+      "block_type": "paragraph",
+      "text": "用于检查系统当前时间是否正确，并且可对系统当前时间，以及是否对逆变器进行定时对时设\n置。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        90.814,
+        436.696,
+        113.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6EE1268D308A5083",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 3,
+      "section_id": "SEC-FDD14EB582DF266E",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.5 系统时间"
+      ],
+      "section_title": "7.10.5 系统时间",
+      "block_type": "table",
+      "text": "TP，请确认设备网络环境安全。\n择采用IEC104 对时方式，其次选择采用阳光云对时方式，其他对时\n选择。\n只有一个时钟源生效。\n\t\t，进入界面。\n时，可将数据采集器时间同步到设备。\n的时钟源。\n\t时钟源\t说明\n\t手动对时\t可通过以下两种方式对系统当前时间和时区进行手动设置：\n• 勾选同步本机时间，将数据采集器时间与本机时间同步。\n• 选择当地所在时区、日期和时间，单击保存，手动设置数据采集\n器时间。\n推荐在调试时使用手动对时。\n\tNTP/NTS\t可同步网络中各设备的时间。选择当地所在时区。填入域名，设置时\n间间隔，单击保存。则数据采集器与服务器时间同步。\n\tIEC104\t前提是数据采集器与后台使用IEC104 通信规约，否则时钟源设置为\n“IEC104”的对时方式无效。",
+      "table_cells": [
+        [
+          null,
+          null,
+          "TP，请确认设备网络环境安全。\n择采用IEC104 对时方式，其次选择采用阳光云对时方式，其他对时\n选择。\n只有一个时钟源生效。"
+        ],
+        [
+          null,
+          null,
+          "，进入界面。\n时，可将数据采集器时间同步到设备。\n的时钟源。"
+        ],
+        [
+          null,
+          "时钟源",
+          "说明"
+        ],
+        [
+          null,
+          "手动对时",
+          "可通过以下两种方式对系统当前时间和时区进行手动设置：\n• 勾选同步本机时间，将数据采集器时间与本机时间同步。\n• 选择当地所在时区、日期和时间，单击保存，手动设置数据采集\n器时间。\n推荐在调试时使用手动对时。"
+        ],
+        [
+          null,
+          "NTP/NTS",
+          "可同步网络中各设备的时间。选择当地所在时区。填入域名，设置时\n间间隔，单击保存。则数据采集器与服务器时间同步。"
+        ],
+        [
+          null,
+          "IEC104",
+          "前提是数据采集器与后台使用IEC104 通信规约，否则时钟源设置为\n“IEC104”的对时方式无效。"
+        ]
+      ],
+      "bbox": [
+        87.563,
+        124.375,
+        441.227,
+        658.91
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

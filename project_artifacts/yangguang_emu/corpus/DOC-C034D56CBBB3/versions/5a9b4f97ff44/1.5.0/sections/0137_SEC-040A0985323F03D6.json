@@ -1,0 +1,407 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-040A0985323F03D6",
+  "section_path": [
+    "9 电网调度",
+    "9.3 有功功率调节",
+    "9.3.1 远程有功调节",
+    "9.3.1.1 开环控制"
+  ],
+  "section_title": "9.3.1.1 开环控制",
+  "start_pdf_page": 90,
+  "end_pdf_page": 90,
+  "blocks": [
+    {
+      "block_id": "BLK-EBAE800E57A3BCB8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 90,
+      "printed_page_label": "80",
+      "block_order": 0,
+      "section_id": "SEC-040A0985323F03D6",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.1 开环控制"
+      ],
+      "section_title": "9.3.1.1 开环控制",
+      "block_type": "paragraph",
+      "text": "用户手册\n9 电网调度",
+      "table_cells": null,
+      "bbox": [
+        60.443,
+        48.088,
+        449.79,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-832401E4B701B7E8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 90,
+      "printed_page_label": "80",
+      "block_order": 1,
+      "section_id": "SEC-040A0985323F03D6",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.1 开环控制"
+      ],
+      "section_title": "9.3.1.1 开环控制",
+      "block_type": "table",
+      "text": "方式\t说明\n\t本地调度\t直接通过Logger4000 控制逆变器光伏发电功率。适合于分布\n式电站和零馈网场景。在电站调试阶段，推荐使用本地调度。\n\tAI 控制\t将数据采集器AI 端口的数字量信号（如电流和电压）作为指令\n来源，从而调节功率输出。\n\t干节点\t将数据采集器DI 端口的数字量信号作为指令来源，通常用于需\n要响应干节点信号的场合。\n\t国家模式\t适用于电网调度需满足国家或地区电网的特定要求的场景。\n\t禁止调度\t当功率调节开始后，如需要逆变器保持当前状态不变，此时可\n以选择禁止调度。\n\t禁止降额\t适用于需要逆变器保持最大功率输出的场景。例如在能源需求\n高峰时段，可以选择该方式确保逆变器不因功率调节而减少有\n功输出。\n仅有功调节支持。\n\t禁止输出\t适用于需要停止逆变器无功输出的场景。\n仅无功调节支持。",
+      "table_cells": [
+        [
+          null,
+          "方式",
+          "说明"
+        ],
+        [
+          null,
+          "本地调度",
+          "直接通过Logger4000 控制逆变器光伏发电功率。适合于分布\n式电站和零馈网场景。在电站调试阶段，推荐使用本地调度。"
+        ],
+        [
+          null,
+          "AI 控制",
+          "将数据采集器AI 端口的数字量信号（如电流和电压）作为指令\n来源，从而调节功率输出。"
+        ],
+        [
+          null,
+          "干节点",
+          "将数据采集器DI 端口的数字量信号作为指令来源，通常用于需\n要响应干节点信号的场合。"
+        ],
+        [
+          null,
+          "国家模式",
+          "适用于电网调度需满足国家或地区电网的特定要求的场景。"
+        ],
+        [
+          null,
+          "禁止调度",
+          "当功率调节开始后，如需要逆变器保持当前状态不变，此时可\n以选择禁止调度。"
+        ],
+        [
+          null,
+          "禁止降额",
+          "适用于需要逆变器保持最大功率输出的场景。例如在能源需求\n高峰时段，可以选择该方式确保逆变器不因功率调节而减少有\n功输出。\n仅有功调节支持。"
+        ],
+        [
+          null,
+          "禁止输出",
+          "适用于需要停止逆变器无功输出的场景。\n仅无功调节支持。"
+        ]
+      ],
+      "bbox": [
+        87.563,
+        74.539,
+        447.564,
+        349.7
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AF662D29025424C9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 90,
+      "printed_page_label": "80",
+      "block_order": 2,
+      "section_id": "SEC-040A0985323F03D6",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.1 开环控制"
+      ],
+      "section_title": "9.3.1.1 开环控制",
+      "block_type": "paragraph",
+      "text": "步骤 1 导航栏中点击功率调节，在展开的子菜单中选择有功功率或无功功率。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        365.934,
+        366.563,
+        378.417
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-82E46B2181296726",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 90,
+      "printed_page_label": "80",
+      "block_order": 3,
+      "section_id": "SEC-040A0985323F03D6",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.1 开环控制"
+      ],
+      "section_title": "9.3.1.1 开环控制",
+      "block_type": "paragraph",
+      "text": "步骤 2 在有功功率或无功功率页，在有功控制方式或无功控制方式下拉列表中，选择符合需求的功",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        382.434,
+        447.563,
+        394.917
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BAD997DE2906C830",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 90,
+      "printed_page_label": "80",
+      "block_order": 4,
+      "section_id": "SEC-040A0985323F03D6",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.1 开环控制"
+      ],
+      "section_title": "9.3.1.1 开环控制",
+      "block_type": "paragraph",
+      "text": "率控制方式。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        397.356,
+        141.563,
+        408.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B7EFF9F5F43D9FB3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 90,
+      "printed_page_label": "80",
+      "block_order": 5,
+      "section_id": "SEC-040A0985323F03D6",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.1 开环控制"
+      ],
+      "section_title": "9.3.1.1 开环控制",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        412.506,
+        112.187,
+        423.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AE920A211299590D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 90,
+      "printed_page_label": "80",
+      "block_order": 9,
+      "section_id": "SEC-040A0985323F03D6",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.1 开环控制"
+      ],
+      "section_title": "9.3.1.1 开环控制",
+      "block_type": "heading",
+      "text": "9.3.1.1 开环控制",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        545.99,
+        132.024,
+        558.16
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-19F3F7D8B2794047",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 90,
+      "printed_page_label": "80",
+      "block_order": 10,
+      "section_id": "SEC-040A0985323F03D6",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.1 开环控制"
+      ],
+      "section_title": "9.3.1.1 开环控制",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        88.194,
+        565.306,
+        124.194,
+        576.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2DF33290FD970F8C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 90,
+      "printed_page_label": "80",
+      "block_order": 11,
+      "section_id": "SEC-040A0985323F03D6",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.1 开环控制"
+      ],
+      "section_title": "9.3.1.1 开环控制",
+      "block_type": "list",
+      "text": "•\n当前有功控制方式已选择远程调度。见9.2 选择功率控制方式。",
+      "table_cells": null,
+      "bbox": [
+        88.194,
+        585.306,
+        353.631,
+        596.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-067AF9066C846CD0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 90,
+      "printed_page_label": "80",
+      "block_order": 12,
+      "section_id": "SEC-040A0985323F03D6",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.1 开环控制"
+      ],
+      "section_title": "9.3.1.1 开环控制",
+      "block_type": "paragraph",
+      "text": "步骤 1 在控制策略下拉列表中，选择开环控制。",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        609.384,
+        249.564,
+        621.867
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-45059E0CDC3A6CF9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 90,
+      "printed_page_label": "80",
+      "block_order": 13,
+      "section_id": "SEC-040A0985323F03D6",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.1 开环控制"
+      ],
+      "section_title": "9.3.1.1 开环控制",
+      "block_type": "paragraph",
+      "text": "步骤 2 在查询恢复时间文本框内，输入暂停数据采集器与逆变器进行数据交互的时间。",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        625.884,
+        402.564,
+        638.367
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5CAF4FB2841B7EBA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 90,
+      "printed_page_label": "80",
+      "block_order": 14,
+      "section_id": "SEC-040A0985323F03D6",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.1 开环控制"
+      ],
+      "section_title": "9.3.1.1 开环控制",
+      "block_type": "paragraph",
+      "text": "功率调节开始后，数据采集器暂时停止常规的数据读取，优先调整逆变器的功率输出，以确\n保调节操作的快速和准确。",
+      "table_cells": null,
+      "bbox": [
+        87.564,
+        643.806,
+        447.564,
+        668.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

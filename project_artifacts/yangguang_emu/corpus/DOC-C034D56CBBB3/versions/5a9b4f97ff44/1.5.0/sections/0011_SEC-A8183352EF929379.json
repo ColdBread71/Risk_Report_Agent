@@ -1,0 +1,530 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-A8183352EF929379",
+  "section_path": [
+    "3 拆包与存储",
+    "3.4 存储"
+  ],
+  "section_title": "3.4 存储",
+  "start_pdf_page": 20,
+  "end_pdf_page": 21,
+  "blocks": [
+    {
+      "block_id": "BLK-CCDB3280A4700CCB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "10",
+      "block_order": 0,
+      "section_id": "SEC-A8183352EF929379",
+      "section_path": [
+        "3 拆包与存储",
+        "3.4 存储"
+      ],
+      "section_title": "3.4 存储",
+      "block_type": "paragraph",
+      "text": "用户手册\n3 拆包与存储",
+      "table_cells": null,
+      "bbox": [
+        60.442,
+        48.088,
+        449.796,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5D79309F2C55C23C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "10",
+      "block_order": 1,
+      "section_id": "SEC-A8183352EF929379",
+      "section_path": [
+        "3 拆包与存储",
+        "3.4 存储"
+      ],
+      "section_title": "3.4 存储",
+      "block_type": "table",
+      "text": "序号\t名称\t说明\n\tK\t插头\t1 个\n\tL\t插针\t6 个\n数\n集\t别数据采集\n据采集器的型\n器顶部，如下\t器\n号及重要的技术参数，均可\n图A 所示。\t通过铭牌来读取。数据采集器的铭牌位于数据采\n\t警告\t\t\n\t铭牌上包含有重\t要的参数，务必保证其能够\t清晰可见，且无污损。\n出\n因\n•\n•\n•\n在\t查运输完整\n厂前，产品已\n此，在收到产\n检查所有发货\n确认收到的实\n仔细检查产品\n检查过程中，\t性\n经过认真检查并牢固包装。\n品之后，务必仔细检查以下\n组件是否齐全。参见3.1 供\n际机型与所购机型型号一致\n，确保外观无损坏。\n若发现任何异常，务必及时\t但在运输过程中，可能会存在设备碰撞或损坏。\n各项：\n货范围。\n。\n与阳光电源或运输公司联系。\n\t警告\t\t\n•\n•\t只有完整且无损\n产品本身完\n随机发货附\t伤的产品，才可进行安装与\n好且无损坏。\n带的相关文件，如快速用户\t试运行。安装前，务必确保：\n手册等文档资料齐全。",
+      "table_cells": [
+        [
+          null,
+          "序号",
+          "名称",
+          "说明"
+        ],
+        [
+          null,
+          "K",
+          "插头",
+          "1 个"
+        ],
+        [
+          null,
+          "L",
+          "插针",
+          "6 个"
+        ],
+        [
+          "数\n集",
+          "别数据采集\n据采集器的型\n器顶部，如下",
+          "器\n号及重要的技术参数，均可\n图A 所示。",
+          "通过铭牌来读取。数据采集器的铭牌位于数据采"
+        ],
+        [
+          null,
+          "警告",
+          null,
+          null
+        ],
+        [
+          null,
+          "铭牌上包含有重",
+          "要的参数，务必保证其能够",
+          "清晰可见，且无污损。"
+        ],
+        [
+          "出\n因\n•\n•\n•\n在",
+          "查运输完整\n厂前，产品已\n此，在收到产\n检查所有发货\n确认收到的实\n仔细检查产品\n检查过程中，",
+          "性\n经过认真检查并牢固包装。\n品之后，务必仔细检查以下\n组件是否齐全。参见3.1 供\n际机型与所购机型型号一致\n，确保外观无损坏。\n若发现任何异常，务必及时",
+          "但在运输过程中，可能会存在设备碰撞或损坏。\n各项：\n货范围。\n。\n与阳光电源或运输公司联系。"
+        ],
+        [
+          null,
+          "警告",
+          null,
+          null
+        ],
+        [
+          "•\n•",
+          "只有完整且无损\n产品本身完\n随机发货附",
+          "伤的产品，才可进行安装与\n好且无损坏。\n带的相关文件，如快速用户",
+          "试运行。安装前，务必确保：\n手册等文档资料齐全。"
+        ]
+      ],
+      "bbox": [
+        88.193,
+        74.539,
+        448.193,
+        594.255
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-360E69216BE82B1A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "10",
+      "block_order": 2,
+      "section_id": "SEC-A8183352EF929379",
+      "section_path": [
+        "3 拆包与存储",
+        "3.4 存储"
+      ],
+      "section_title": "3.4 存储",
+      "block_type": "heading",
+      "text": "3.4 存储",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        622.288,
+        104.873,
+        636.892
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-401134A3B7640446",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "10",
+      "block_order": 3,
+      "section_id": "SEC-A8183352EF929379",
+      "section_path": [
+        "3 拆包与存储",
+        "3.4 存储"
+      ],
+      "section_title": "3.4 存储",
+      "block_type": "paragraph",
+      "text": "如果数据采集器在运输至现场后，不立即安装，则需要进行妥善存储。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        649.936,
+        367.196,
+        660.889
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CAC622E57D73EFB8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "11",
+      "block_order": 0,
+      "section_id": "SEC-A8183352EF929379",
+      "section_path": [
+        "3 拆包与存储",
+        "3.4 存储"
+      ],
+      "section_title": "3.4 存储",
+      "block_type": "paragraph",
+      "text": "用户手册\n3 拆包与存储",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-230C2DAC69C7C321",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "11",
+      "block_order": 1,
+      "section_id": "SEC-A8183352EF929379",
+      "section_path": [
+        "3 拆包与存储",
+        "3.4 存储"
+      ],
+      "section_title": "3.4 存储",
+      "block_type": "list",
+      "text": "•\n应将带外包装的数据采集器存储在通风、干燥、整洁的室内环境中。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        72.906,
+        386.541,
+        83.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FD96652231DF986E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "11",
+      "block_order": 2,
+      "section_id": "SEC-A8183352EF929379",
+      "section_path": [
+        "3 拆包与存储",
+        "3.4 存储"
+      ],
+      "section_title": "3.4 存储",
+      "block_type": "list",
+      "text": "•\n存储载体，可足够承载数据采集器带外包装的重量。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        87.906,
+        323.541,
+        98.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E052F08DC98BC045",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "11",
+      "block_order": 3,
+      "section_id": "SEC-A8183352EF929379",
+      "section_path": [
+        "3 拆包与存储",
+        "3.4 存储"
+      ],
+      "section_title": "3.4 存储",
+      "block_type": "list",
+      "text": "•\n设备存储时要注意通风防潮，严禁存储环境有积水。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        102.906,
+        323.541,
+        113.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3430BCC0A65E1949",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "11",
+      "block_order": 4,
+      "section_id": "SEC-A8183352EF929379",
+      "section_path": [
+        "3 拆包与存储",
+        "3.4 存储"
+      ],
+      "section_title": "3.4 存储",
+      "block_type": "list",
+      "text": "•\n存储环境温度：-40℃~+70℃；存储环境相对湿度：0～95%，无冷凝。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        117.906,
+        398.088,
+        128.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-361EA6C099542F01",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "11",
+      "block_order": 5,
+      "section_id": "SEC-A8183352EF929379",
+      "section_path": [
+        "3 拆包与存储",
+        "3.4 存储"
+      ],
+      "section_title": "3.4 存储",
+      "block_type": "list",
+      "text": "•\n注意应对周围的恶劣环境，如骤冷、骤热、碰撞等，以免对数据采集器造成损害。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        132.906,
+        440.541,
+        143.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1AA08DFDE1A31B4B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "11",
+      "block_order": 6,
+      "section_id": "SEC-A8183352EF929379",
+      "section_path": [
+        "3 拆包与存储",
+        "3.4 存储"
+      ],
+      "section_title": "3.4 存储",
+      "block_type": "list",
+      "text": "•\n定期巡检，一般一周不得少于一次。检查包装是否完好无损，避免虫鼠蛀咬，外包装如有\n破损应立即更换。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        147.906,
+        467.541,
+        172.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F49EF753AC97161C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "11",
+      "block_order": 7,
+      "section_id": "SEC-A8183352EF929379",
+      "section_path": [
+        "3 拆包与存储",
+        "3.4 存储"
+      ],
+      "section_title": "3.4 存储",
+      "block_type": "list",
+      "text": "•\n如果存储时间超过半年，应打开包装进行检查，并通电检查。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        176.406,
+        359.541,
+        187.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DD878030F23F6AE8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "11",
+      "block_order": 8,
+      "section_id": "SEC-A8183352EF929379",
+      "section_path": [
+        "3 拆包与存储",
+        "3.4 存储"
+      ],
+      "section_title": "3.4 存储",
+      "block_type": "paragraph",
+      "text": "警告",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        193.424,
+        146.863,
+        206.811
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A20D302B6B063C24",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "11",
+      "block_order": 9,
+      "section_id": "SEC-A8183352EF929379",
+      "section_path": [
+        "3 拆包与存储",
+        "3.4 存储"
+      ],
+      "section_title": "3.4 存储",
+      "block_type": "list",
+      "text": "•\n严禁不带包装存储！",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        211.956,
+        202.041,
+        222.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6528415E9A7466FB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "11",
+      "block_order": 10,
+      "section_id": "SEC-A8183352EF929379",
+      "section_path": [
+        "3 拆包与存储",
+        "3.4 存储"
+      ],
+      "section_title": "3.4 存储",
+      "block_type": "list",
+      "text": "•\n严禁室外存储或在太阳直射的环境下存储！",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        226.956,
+        292.041,
+        237.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CADA06CC2B58E19C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "11",
+      "block_order": 11,
+      "section_id": "SEC-A8183352EF929379",
+      "section_path": [
+        "3 拆包与存储",
+        "3.4 存储"
+      ],
+      "section_title": "3.4 存储",
+      "block_type": "list",
+      "text": "•\n严禁机箱倾斜或重叠放置！",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        241.956,
+        229.041,
+        252.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A063BEDC1A072724",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "11",
+      "block_order": 12,
+      "section_id": "SEC-A8183352EF929379",
+      "section_path": [
+        "3 拆包与存储",
+        "3.4 存储"
+      ],
+      "section_title": "3.4 存储",
+      "block_type": "paragraph",
+      "text": "在长期存储后，对数据采集器安装前，应先进行彻底检查，确定数据采集器是否完好\n无损。必要时须经专业人员进行测试后再进行安装。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        275.106,
+        462.366,
+        296.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

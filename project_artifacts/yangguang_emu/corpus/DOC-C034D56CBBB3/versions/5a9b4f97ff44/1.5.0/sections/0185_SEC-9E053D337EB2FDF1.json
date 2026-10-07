@@ -1,0 +1,542 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-9E053D337EB2FDF1",
+  "section_path": [
+    "12 故障排查",
+    "12.2 常见的故障现象及排查方法"
+  ],
+  "section_title": "12.2 常见的故障现象及排查方法",
+  "start_pdf_page": 113,
+  "end_pdf_page": 115,
+  "blocks": [
+    {
+      "block_id": "BLK-9BDD5BB68C64E104",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 113,
+      "printed_page_label": "103",
+      "block_order": 0,
+      "section_id": "SEC-9E053D337EB2FDF1",
+      "section_path": [
+        "12 故障排查",
+        "12.2 常见的故障现象及排查方法"
+      ],
+      "section_title": "12.2 常见的故障现象及排查方法",
+      "block_type": "paragraph",
+      "text": "用户手册\n12 故障排查",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DFCB425B906FD481",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 113,
+      "printed_page_label": "103",
+      "block_order": 1,
+      "section_id": "SEC-9E053D337EB2FDF1",
+      "section_path": [
+        "12 故障排查",
+        "12.2 常见的故障现象及排查方法"
+      ],
+      "section_title": "12.2 常见的故障现象及排查方法",
+      "block_type": "table",
+      "text": "故障现象\t可能原因\t解决方法\n\t\t路、断路或RS485–A 与\nRS485–B 反接等情况。\n\t串口的配置与设备端的\nRS485 参数不一致。\t登录数据采集器的Web 页\n面，在系统 > 端口参数 >\nRS485 页面，检查串口的配\n置与设备端的RS485 参数是\n否一致。\n\t当前设备为逆变器且该逆变器\n不支持自动搜索的方式录入\nWeb 系统。\t通过手动添加逆变器地址的方\n式录入该设备。\n\t数据采集器与设备通讯连接状\n态异常。\t登录数据采集器的Web 页\n面，观察设备监控页面，通讯\n状态图标是否显示为正常。\n若异常，检查同一端口下是否\n存在地址重复。\n若仍未解决，请联系阳光电源\n客服中心。\n数据采集器转发\nModbusRTU 后台\n无数据\t设备与数据采集器之间的\nRS485 通讯线缆异常。\t检查设备与数据采集器之间的\nRS485 通讯线缆是否存在短\n路、断路或RS485–A 与\nRS485–B 反接等情况。\n\tWeb 界面，COM 端口参数配\n置有误。\t登录数据采集器的Web 页\n面，在系统 > 端口参数 >\nMODBUS > RTU 页面，检查\n转发给后台的串口是否配置为\n禁止转发。\n检查串口参数是否正确。\n\t设备的“采集地址”与“后台地\n址”不对应。\t在设备维护 > 设备列表页\n面，检查与转发地址是否对\n应。\n\t后台协议配置与设备不一致。\t检查后台协议配置与设备是否\n一致。\n\t数据采集器与后台之间的网络\n连接有误。\t检查数据采集器与后台之间的\n网络连接是否正确。",
+      "table_cells": [
+        [
+          "故障现象",
+          "可能原因",
+          "解决方法"
+        ],
+        [
+          null,
+          null,
+          "路、断路或RS485–A 与\nRS485–B 反接等情况。"
+        ],
+        [
+          null,
+          "串口的配置与设备端的\nRS485 参数不一致。",
+          "登录数据采集器的Web 页\n面，在系统 > 端口参数 >\nRS485 页面，检查串口的配\n置与设备端的RS485 参数是\n否一致。"
+        ],
+        [
+          null,
+          "当前设备为逆变器且该逆变器\n不支持自动搜索的方式录入\nWeb 系统。",
+          "通过手动添加逆变器地址的方\n式录入该设备。"
+        ],
+        [
+          null,
+          "数据采集器与设备通讯连接状\n态异常。",
+          "登录数据采集器的Web 页\n面，观察设备监控页面，通讯\n状态图标是否显示为正常。\n若异常，检查同一端口下是否\n存在地址重复。\n若仍未解决，请联系阳光电源\n客服中心。"
+        ],
+        [
+          "数据采集器转发\nModbusRTU 后台\n无数据",
+          "设备与数据采集器之间的\nRS485 通讯线缆异常。",
+          "检查设备与数据采集器之间的\nRS485 通讯线缆是否存在短\n路、断路或RS485–A 与\nRS485–B 反接等情况。"
+        ],
+        [
+          null,
+          "Web 界面，COM 端口参数配\n置有误。",
+          "登录数据采集器的Web 页\n面，在系统 > 端口参数 >\nMODBUS > RTU 页面，检查\n转发给后台的串口是否配置为\n禁止转发。\n检查串口参数是否正确。"
+        ],
+        [
+          null,
+          "设备的“采集地址”与“后台地\n址”不对应。",
+          "在设备维护 > 设备列表页\n面，检查与转发地址是否对\n应。"
+        ],
+        [
+          null,
+          "后台协议配置与设备不一致。",
+          "检查后台协议配置与设备是否\n一致。"
+        ],
+        [
+          null,
+          "数据采集器与后台之间的网络\n连接有误。",
+          "检查数据采集器与后台之间的\n网络连接是否正确。"
+        ]
+      ],
+      "bbox": [
+        111.034,
+        76.189,
+        458.205,
+        626.5
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4905B61ED3614F13",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 113,
+      "printed_page_label": "103",
+      "block_order": 2,
+      "section_id": "SEC-9E053D337EB2FDF1",
+      "section_path": [
+        "12 故障排查",
+        "12.2 常见的故障现象及排查方法"
+      ],
+      "section_title": "12.2 常见的故障现象及排查方法",
+      "block_type": "paragraph",
+      "text": "数据采集器转发\nModbusTCP 后台\n无数据",
+      "table_cells": null,
+      "bbox": [
+        111.034,
+        608.031,
+        181.306,
+        645.984
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FD8156FBC3A957B2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 113,
+      "printed_page_label": "103",
+      "block_order": 3,
+      "section_id": "SEC-9E053D337EB2FDF1",
+      "section_path": [
+        "12 故障排查",
+        "12.2 常见的故障现象及排查方法"
+      ],
+      "section_title": "12.2 常见的故障现象及排查方法",
+      "block_type": "paragraph",
+      "text": "数据采集器的ETH 网口配置\n有误。",
+      "table_cells": null,
+      "bbox": [
+        206.025,
+        632.406,
+        318.525,
+        656.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B275D20064459B65",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 113,
+      "printed_page_label": "103",
+      "block_order": 4,
+      "section_id": "SEC-9E053D337EB2FDF1",
+      "section_path": [
+        "12 故障排查",
+        "12.2 常见的故障现象及排查方法"
+      ],
+      "section_title": "12.2 常见的故障现象及排查方法",
+      "block_type": "paragraph",
+      "text": "数据采集器的ETH 网口配置\n为后台需要连接的IP 地址。",
+      "table_cells": null,
+      "bbox": [
+        341.205,
+        632.406,
+        453.705,
+        656.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3EB388A6FC14AC2B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 114,
+      "printed_page_label": "104",
+      "block_order": 0,
+      "section_id": "SEC-9E053D337EB2FDF1",
+      "section_path": [
+        "12 故障排查",
+        "12.2 常见的故障现象及排查方法"
+      ],
+      "section_title": "12.2 常见的故障现象及排查方法",
+      "block_type": "paragraph",
+      "text": "用户手册\n12 故障排查",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-220C2E48691BB9A7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 114,
+      "printed_page_label": "104",
+      "block_order": 1,
+      "section_id": "SEC-9E053D337EB2FDF1",
+      "section_path": [
+        "12 故障排查",
+        "12.2 常见的故障现象及排查方法"
+      ],
+      "section_title": "12.2 常见的故障现象及排查方法",
+      "block_type": "table",
+      "text": "故障现象\t可能原因\t解决方法\n\t设备的采集地址与转发地址不\n对应。\t在设备维护 > 设备列表页\n面，检查与转发地址是否对\n应。\n\t后台的协议配置与设备不一\n致。\t确认后台的协议配置与设备是\n否一致。\n数据采集器转发\nIEC104 后台无数据\t数据采集器与后台之间的网络\n连接有误。\t检查数据采集器与后台之间的\n网络连接是否正确。\n\t转发设备的IP 地址有误或后\n台IP 地址有误。\t登录数据采集器的Web 页，\n单击系统 > 端口参数 >\nIEC104 页面，点击白名单设\n置，查看是否启用白名单。如\n果启用，则只允许白名单的\nIP 地址接入数据采集器。\n\t设备通讯异常。\t检查设备通讯是否异常。\n\t后台参数配置有误。\t确认后台参数配置正确。\n数据采集器转发阳\n光云平台无数据\t数据采集器系统时间有误。\t登录数据采集器的Web 页\n面，单击系统 > 系统时间，\n查看时间设置是否正确。\n\tETH 网口异常。\t通过数据采集器网口可以访问\nInternet 网络。\n\t数据采集器与逆变器、汇流箱\n等设备通讯异常。\t确认数据采集器与逆变器、汇\n流箱等设备是否可以正常通\n讯。\n\t当前版本的逆变器不支持远程\n升级功能，或升级文件与实际\n设备版本不一致。\t确认逆变器当前版本支持远程\n升级功能，且升级的sgu 文\n件版本与实际设备现有的版本\n一致。\n\t升级文件有误。\t升级文件不合法，包括升级文\n件被加密或者命名错误。\n\t待升级的逆变器型号与升级文\n件不一致。\t检查待升级的逆变器型号与升\n级文件的型号是否一致。",
+      "table_cells": [
+        [
+          "故障现象",
+          "可能原因",
+          "解决方法"
+        ],
+        [
+          null,
+          "设备的采集地址与转发地址不\n对应。",
+          "在设备维护 > 设备列表页\n面，检查与转发地址是否对\n应。"
+        ],
+        [
+          null,
+          "后台的协议配置与设备不一\n致。",
+          "确认后台的协议配置与设备是\n否一致。"
+        ],
+        [
+          "数据采集器转发\nIEC104 后台无数据",
+          "数据采集器与后台之间的网络\n连接有误。",
+          "检查数据采集器与后台之间的\n网络连接是否正确。"
+        ],
+        [
+          null,
+          "转发设备的IP 地址有误或后\n台IP 地址有误。",
+          "登录数据采集器的Web 页，\n单击系统 > 端口参数 >\nIEC104 页面，点击白名单设\n置，查看是否启用白名单。如\n果启用，则只允许白名单的\nIP 地址接入数据采集器。"
+        ],
+        [
+          null,
+          "设备通讯异常。",
+          "检查设备通讯是否异常。"
+        ],
+        [
+          null,
+          "后台参数配置有误。",
+          "确认后台参数配置正确。"
+        ],
+        [
+          "数据采集器转发阳\n光云平台无数据",
+          "数据采集器系统时间有误。",
+          "登录数据采集器的Web 页\n面，单击系统 > 系统时间，\n查看时间设置是否正确。"
+        ],
+        [
+          null,
+          "ETH 网口异常。",
+          "通过数据采集器网口可以访问\nInternet 网络。"
+        ],
+        [
+          null,
+          "数据采集器与逆变器、汇流箱\n等设备通讯异常。",
+          "确认数据采集器与逆变器、汇\n流箱等设备是否可以正常通\n讯。"
+        ],
+        [
+          null,
+          "当前版本的逆变器不支持远程\n升级功能，或升级文件与实际\n设备版本不一致。",
+          "确认逆变器当前版本支持远程\n升级功能，且升级的sgu 文\n件版本与实际设备现有的版本\n一致。"
+        ],
+        [
+          null,
+          "升级文件有误。",
+          "升级文件不合法，包括升级文\n件被加密或者命名错误。"
+        ],
+        [
+          null,
+          "待升级的逆变器型号与升级文\n件不一致。",
+          "检查待升级的逆变器型号与升\n级文件的型号是否一致。"
+        ]
+      ],
+      "bbox": [
+        96.861,
+        76.189,
+        444.031,
+        611.5
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1B649FB5BB266626",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 114,
+      "printed_page_label": "104",
+      "block_order": 2,
+      "section_id": "SEC-9E053D337EB2FDF1",
+      "section_path": [
+        "12 故障排查",
+        "12.2 常见的故障现象及排查方法"
+      ],
+      "section_title": "12.2 常见的故障现象及排查方法",
+      "block_type": "paragraph",
+      "text": "检查通讯线缆无误后，重试。\n若仍未解决，联系阳光电源客\n服中心。",
+      "table_cells": null,
+      "bbox": [
+        327.031,
+        617.406,
+        444.031,
+        655.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BE6683578E86DF49",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 114,
+      "printed_page_label": "104",
+      "block_order": 3,
+      "section_id": "SEC-9E053D337EB2FDF1",
+      "section_path": [
+        "12 故障排查",
+        "12.2 常见的故障现象及排查方法"
+      ],
+      "section_title": "12.2 常见的故障现象及排查方法",
+      "block_type": "paragraph",
+      "text": "通讯连接异常。",
+      "table_cells": null,
+      "bbox": [
+        191.852,
+        630.906,
+        254.852,
+        641.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8D951E031D2EC73A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 115,
+      "printed_page_label": "105",
+      "block_order": 0,
+      "section_id": "SEC-9E053D337EB2FDF1",
+      "section_path": [
+        "12 故障排查",
+        "12.2 常见的故障现象及排查方法"
+      ],
+      "section_title": "12.2 常见的故障现象及排查方法",
+      "block_type": "paragraph",
+      "text": "用户手册\n12 故障排查",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-04E046604802969E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 115,
+      "printed_page_label": "105",
+      "block_order": 1,
+      "section_id": "SEC-9E053D337EB2FDF1",
+      "section_path": [
+        "12 故障排查",
+        "12.2 常见的故障现象及排查方法"
+      ],
+      "section_title": "12.2 常见的故障现象及排查方法",
+      "block_type": "table",
+      "text": "故障现象\t可能原因\t\t解决方法\n通过WEB 界面，\n设置参数失败\t通讯连接异常。\t通过\n观察\n图标\t数据采集器Web 界面，\n设备监控所显示通讯状态\n是否正常。\n\t当前逆变器工作状态不允许进\n行此项参数设置。\t确认\n如，\n使能\n和下\t逆变器的工作状态。例\n当逆变器速度控制开关为\n，才可设置有功上升速度\n降速度。\n外置MPLC 接入设\n备时，Goose 后台\n下发的快速调度指\n令未下发至逆变器\t用于快速调度的端口参数快调\n开关未使能\t•\n•\t登录数据采集器Web 页\n面。\n单击系统 > 端口参数 >\nRS485，单击 ，将端\n口的快调开关设置为使能\n\tMPLC 口未添加逆变器设备\t•\n•\n•\t登录数据采集器Web 页\n面。\n单击设备维护 > 设备列表\n> 添加设备。\n添加设备时点击对应DO\n的功能列，选择通讯控\n制。",
+      "table_cells": [
+        [
+          "故障现象",
+          "可能原因",
+          null,
+          "解决方法"
+        ],
+        [
+          "通过WEB 界面，\n设置参数失败",
+          "通讯连接异常。",
+          "通过\n观察\n图标",
+          "数据采集器Web 界面，\n设备监控所显示通讯状态\n是否正常。"
+        ],
+        [
+          null,
+          "当前逆变器工作状态不允许进\n行此项参数设置。",
+          "确认\n如，\n使能\n和下",
+          "逆变器的工作状态。例\n当逆变器速度控制开关为\n，才可设置有功上升速度\n降速度。"
+        ],
+        [
+          "外置MPLC 接入设\n备时，Goose 后台\n下发的快速调度指\n令未下发至逆变器",
+          "用于快速调度的端口参数快调\n开关未使能",
+          "•\n•",
+          "登录数据采集器Web 页\n面。\n单击系统 > 端口参数 >\nRS485，单击 ，将端\n口的快调开关设置为使能"
+        ],
+        [
+          null,
+          "MPLC 口未添加逆变器设备",
+          "•\n•\n•",
+          "登录数据采集器Web 页\n面。\n单击设备维护 > 设备列表\n> 添加设备。\n添加设备时点击对应DO\n的功能列，选择通讯控\n制。"
+        ]
+      ],
+      "bbox": [
+        111.032,
+        76.189,
+        454.378,
+        386.889
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-340B96AA57CF3ECE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 115,
+      "printed_page_label": "105",
+      "block_order": 2,
+      "section_id": "SEC-9E053D337EB2FDF1",
+      "section_path": [
+        "12 故障排查",
+        "12.2 常见的故障现象及排查方法"
+      ],
+      "section_title": "12.2 常见的故障现象及排查方法",
+      "block_type": "list",
+      "text": "•\n登录数据采集器Web 页\n面。\n•\n单击系统 > 端口参数 >\nDO，点击对应DO 的功能\n列，选择通讯控制。",
+      "table_cells": null,
+      "bbox": [
+        341.203,
+        392.795,
+        458.878,
+        457.748
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7FC4C2F5E03221C9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 115,
+      "printed_page_label": "105",
+      "block_order": 3,
+      "section_id": "SEC-9E053D337EB2FDF1",
+      "section_path": [
+        "12 故障排查",
+        "12.2 常见的故障现象及排查方法"
+      ],
+      "section_title": "12.2 常见的故障现象及排查方法",
+      "block_type": "paragraph",
+      "text": "104 后台无法遥控\nDO",
+      "table_cells": null,
+      "bbox": [
+        111.032,
+        413.045,
+        182.303,
+        436.688
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CDF48752E5529CC1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 115,
+      "printed_page_label": "105",
+      "block_order": 4,
+      "section_id": "SEC-9E053D337EB2FDF1",
+      "section_path": [
+        "12 故障排查",
+        "12.2 常见的故障现象及排查方法"
+      ],
+      "section_title": "12.2 常见的故障现象及排查方法",
+      "block_type": "paragraph",
+      "text": "DO 控制类型未配置成“通讯控\n制”",
+      "table_cells": null,
+      "bbox": [
+        206.024,
+        413.045,
+        323.771,
+        437.498
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

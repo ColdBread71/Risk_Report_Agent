@@ -1,0 +1,45 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-93C570BEAB9D5DB5",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.2 系统维护"
+  ],
+  "section_title": "7.8.2 系统维护",
+  "start_pdf_page": 69,
+  "end_pdf_page": 69,
+  "blocks": [
+    {
+      "block_id": "BLK-135E60F100607E34",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 69,
+      "printed_page_label": "59",
+      "block_order": 8,
+      "section_id": "SEC-93C570BEAB9D5DB5",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护"
+      ],
+      "section_title": "7.8.2 系统维护",
+      "block_type": "heading",
+      "text": "7.8.2 系统维护",
+      "table_cells": null,
+      "bbox": [
+        70.862,
+        241.49,
+        137.862,
+        253.66
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

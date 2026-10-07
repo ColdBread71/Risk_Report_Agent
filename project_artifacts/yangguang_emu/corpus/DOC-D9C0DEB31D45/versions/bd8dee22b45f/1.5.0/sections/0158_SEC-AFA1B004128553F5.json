@@ -1,0 +1,297 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-AFA1B004128553F5",
+  "section_path": [
+    "9 用户管理",
+    "9.4 忘记密码",
+    "9.4.1 重置用户账号密码"
+  ],
+  "section_title": "9.4.1 重置用户账号密码",
+  "start_pdf_page": 95,
+  "end_pdf_page": 95,
+  "blocks": [
+    {
+      "block_id": "BLK-6129E287F2F1168F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 95,
+      "printed_page_label": "85",
+      "block_order": 15,
+      "section_id": "SEC-AFA1B004128553F5",
+      "section_path": [
+        "9 用户管理",
+        "9.4 忘记密码",
+        "9.4.1 重置用户账号密码"
+      ],
+      "section_title": "9.4.1 重置用户账号密码",
+      "block_type": "heading",
+      "text": "9.4.1 重置用户账号密码",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        397.99,
+        177.856,
+        410.16
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-61275F681ECF4D1E",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 95,
+      "printed_page_label": "85",
+      "block_order": 16,
+      "section_id": "SEC-AFA1B004128553F5",
+      "section_path": [
+        "9 用户管理",
+        "9.4 忘记密码",
+        "9.4.1 重置用户账号密码"
+      ],
+      "section_title": "9.4.1 重置用户账号密码",
+      "block_type": "paragraph",
+      "text": "重置普通用户、运维用户、审计用户账号。",
+      "table_cells": null,
+      "bbox": [
+        102.368,
+        417.214,
+        263.868,
+        427.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8FFFDB405DE7A234",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 95,
+      "printed_page_label": "85",
+      "block_order": 17,
+      "section_id": "SEC-AFA1B004128553F5",
+      "section_path": [
+        "9 用户管理",
+        "9.4 忘记密码",
+        "9.4.1 重置用户账号密码"
+      ],
+      "section_title": "9.4.1 重置用户账号密码",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        438.056,
+        138.363,
+        449.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4426BD4984D9B293",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 95,
+      "printed_page_label": "85",
+      "block_order": 18,
+      "section_id": "SEC-AFA1B004128553F5",
+      "section_path": [
+        "9 用户管理",
+        "9.4 忘记密码",
+        "9.4.1 重置用户账号密码"
+      ],
+      "section_title": "9.4.1 重置用户账号密码",
+      "block_type": "list",
+      "text": "•\n通过管理员账号登录Web 端。见9.1 初始用户名和密码。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        458.056,
+        345.642,
+        469.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-929758496B500C47",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 95,
+      "printed_page_label": "85",
+      "block_order": 19,
+      "section_id": "SEC-AFA1B004128553F5",
+      "section_path": [
+        "9 用户管理",
+        "9.4 忘记密码",
+        "9.4.1 重置用户账号密码"
+      ],
+      "section_title": "9.4.1 重置用户账号密码",
+      "block_type": "paragraph",
+      "text": "步骤 1 导航栏中点击用户管理，跳转至相应页面。",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        476.134,
+        272.733,
+        488.617
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E1BD1B41E544127F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 95,
+      "printed_page_label": "85",
+      "block_order": 20,
+      "section_id": "SEC-AFA1B004128553F5",
+      "section_path": [
+        "9 用户管理",
+        "9.4 忘记密码",
+        "9.4.1 重置用户账号密码"
+      ],
+      "section_title": "9.4.1 重置用户账号密码",
+      "block_type": "paragraph",
+      "text": "步骤 2 在用户账号对应的操作栏中，点击",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        498.023,
+        236.733,
+        510.506
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-790542F3B5C438EC",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 95,
+      "printed_page_label": "85",
+      "block_order": 21,
+      "section_id": "SEC-AFA1B004128553F5",
+      "section_path": [
+        "9 用户管理",
+        "9.4 忘记密码",
+        "9.4.1 重置用户账号密码"
+      ],
+      "section_title": "9.4.1 重置用户账号密码",
+      "block_type": "paragraph",
+      "text": "，打开修改用户对话框。",
+      "table_cells": null,
+      "bbox": [
+        250.911,
+        499.445,
+        349.911,
+        510.398
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-644D709F1B2AE07E",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 95,
+      "printed_page_label": "85",
+      "block_order": 22,
+      "section_id": "SEC-AFA1B004128553F5",
+      "section_path": [
+        "9 用户管理",
+        "9.4 忘记密码",
+        "9.4.1 重置用户账号密码"
+      ],
+      "section_title": "9.4.1 重置用户账号密码",
+      "block_type": "paragraph",
+      "text": "步骤 3 重置密码。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        514.523,
+        146.736,
+        527.006
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-924FCCBC40A5A0F4",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 95,
+      "printed_page_label": "85",
+      "block_order": 23,
+      "section_id": "SEC-AFA1B004128553F5",
+      "section_path": [
+        "9 用户管理",
+        "9.4 忘记密码",
+        "9.4.1 重置用户账号密码"
+      ],
+      "section_title": "9.4.1 重置用户账号密码",
+      "block_type": "paragraph",
+      "text": "步骤 4 点击确定。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        531.023,
+        146.736,
+        543.506
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3439E33CFD71C23E",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 95,
+      "printed_page_label": "85",
+      "block_order": 24,
+      "section_id": "SEC-AFA1B004128553F5",
+      "section_path": [
+        "9 用户管理",
+        "9.4 忘记密码",
+        "9.4.1 重置用户账号密码"
+      ],
+      "section_title": "9.4.1 重置用户账号密码",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        547.595,
+        126.36,
+        558.548
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

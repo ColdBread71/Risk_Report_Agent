@@ -1,0 +1,70 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-E1DAAC7A815DFC65",
+  "section_path": [
+    "4 机械安装",
+    "4.3 安装数据采集器"
+  ],
+  "section_title": "4.3 安装数据采集器",
+  "start_pdf_page": 23,
+  "end_pdf_page": 23,
+  "blocks": [
+    {
+      "block_id": "BLK-0826BE9D3BEEB061",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 23,
+      "printed_page_label": "13",
+      "block_order": 2,
+      "section_id": "SEC-E1DAAC7A815DFC65",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器"
+      ],
+      "section_title": "4.3 安装数据采集器",
+      "block_type": "heading",
+      "text": "4.3 安装数据采集器",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        485.576,
+        179.046,
+        500.18
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B88C25B9425854ED",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 23,
+      "printed_page_label": "13",
+      "block_order": 3,
+      "section_id": "SEC-E1DAAC7A815DFC65",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器"
+      ],
+      "section_title": "4.3 安装数据采集器",
+      "block_type": "paragraph",
+      "text": "满足安装环境的前提下，可以将数据采集器安装在室内的任意位置。数据采集器可采用机架\n安装或壁挂安装。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        513.224,
+        462.366,
+        537.677
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

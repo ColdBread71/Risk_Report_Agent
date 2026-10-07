@@ -1,0 +1,616 @@
+{
+  "schema_version": "context_section_checkpoint.v1",
+  "fingerprint": "1a80772614776fd89097bc5e94711d75d6bf0d0d3d51575e28956ee02d105b9b",
+  "cache_inputs": {
+    "section_name": "components",
+    "source_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "text_model": "qwen-plus",
+    "context_rule_version": "node1_context_rules.v7.2",
+    "material_sha256": "ba79686eac992ead0bddc2bfc3772080c590dcb66d136d0f7ba99d48440b491c",
+    "prompt_sha256": "1a6bcc86b938a82330cf995cf7fc9ec190839f365ac5a58f6665e0c54256a429",
+    "schema_sha256": "fdc68e158b1763020600824d06fd42c8f0b668ca33c812748d6c7024d68c7cd9"
+  },
+  "result": {
+    "entries": [
+      {
+        "component_id": "COMP-001",
+        "name": "Logger5000",
+        "component_type": "hardware",
+        "scope_status": "confirmed",
+        "conditions": [],
+        "version": null,
+        "supplier": "阳光电源",
+        "role": "数据采集与协议转换核心组件，支持RS485、MPLC南向接入逆变器/箱变/电表等设备，提供IEC104、Modbus、MQTT、GOOSE北向转发能力，并执行有功/无功功率控制、本地及远程调度指令。",
+        "is_third_party": null,
+        "support_period": null,
+        "interfaces": [
+          "RS485",
+          "MPLC",
+          "以太网（ETH1~ETH5）",
+          "快速调度口（2路）",
+          "IEC104",
+          "Modbus",
+          "MQTT",
+          "GOOSE"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVD-001",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-0FE6A5150E10C5BC",
+              "parser_version": "1.5.0",
+              "page_number": 12,
+              "printed_page_label": "8",
+              "section_path": [
+                "5 产品功能及部署情况介绍"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\n云平台，可接收北向远程调度指令或执行本地调度指令。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "明确声明为EMU300A内部配置，且承担全部核心功能角色。",
+            "created_at": "2024-06-15T08:22:33Z"
+          },
+          {
+            "evidence_id": "EVD-002",
+            "source": {
+              "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-5067B181346D",
+              "block_id": "BLK-D844E7AC55AEA6FE",
+              "parser_version": "1.5.0",
+              "page_number": 55,
+              "printed_page_label": "49",
+              "section_path": [
+                "7 附录A：技术参数"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+            },
+            "quote": "内含Logger5000（含电压电流采样接口）、开关电源、\n防雷模块、微型断路 器、MPLC（可选1 或2）、\nPID&ISO 控制盒（可选）、光纤交换机 （可选）、光纤\n终端盒（可选）、IO 模组（可选）\n适用区域：国内",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "确认Logger5000为标准内置硬件组件，列于EMU300A内部结构首位。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "component_id": "COMP-002",
+        "name": "开关电源",
+        "component_type": "hardware",
+        "scope_status": "confirmed",
+        "conditions": [],
+        "version": null,
+        "supplier": null,
+        "role": "为EMU300A整机及内置组件（含Logger5000）提供稳定直流供电。",
+        "is_third_party": null,
+        "support_period": null,
+        "interfaces": [],
+        "evidence": [
+          {
+            "evidence_id": "EVD-002",
+            "source": {
+              "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-5067B181346D",
+              "block_id": "BLK-D844E7AC55AEA6FE",
+              "parser_version": "1.5.0",
+              "page_number": 55,
+              "printed_page_label": "49",
+              "section_path": [
+                "7 附录A：技术参数"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+            },
+            "quote": "内含Logger5000（含电压电流采样接口）、开关电源、\n防雷模块、微型断路 器、MPLC（可选1 或2）、\nPID&ISO 控制盒（可选）、光纤交换机 （可选）、光纤\n终端盒（可选）、IO 模组（可选）\n适用区域：国内",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "明确列为EMU300A内含的标准组件，无条件限定。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "component_id": "COMP-003",
+        "name": "防雷模块",
+        "component_type": "hardware",
+        "scope_status": "confirmed",
+        "conditions": [],
+        "version": null,
+        "supplier": null,
+        "role": "为EMU300A提供浪涌保护，保障设备在雷击或电网瞬态干扰下的运行安全。",
+        "is_third_party": null,
+        "support_period": null,
+        "interfaces": [],
+        "evidence": [
+          {
+            "evidence_id": "EVD-002",
+            "source": {
+              "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-5067B181346D",
+              "block_id": "BLK-D844E7AC55AEA6FE",
+              "parser_version": "1.5.0",
+              "page_number": 55,
+              "printed_page_label": "49",
+              "section_path": [
+                "7 附录A：技术参数"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+            },
+            "quote": "内含Logger5000（含电压电流采样接口）、开关电源、\n防雷模块、微型断路 器、MPLC（可选1 或2）、\nPID&ISO 控制盒（可选）、光纤交换机 （可选）、光纤\n终端盒（可选）、IO 模组（可选）\n适用区域：国内",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "明确列为EMU300A内含的标准组件，无条件限定。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "component_id": "COMP-004",
+        "name": "微型断路器",
+        "component_type": "hardware",
+        "scope_status": "confirmed",
+        "conditions": [],
+        "version": null,
+        "supplier": null,
+        "role": "为EMU300A内部电路提供过载与短路保护。",
+        "is_third_party": null,
+        "support_period": null,
+        "interfaces": [],
+        "evidence": [
+          {
+            "evidence_id": "EVD-002",
+            "source": {
+              "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-5067B181346D",
+              "block_id": "BLK-D844E7AC55AEA6FE",
+              "parser_version": "1.5.0",
+              "page_number": 55,
+              "printed_page_label": "49",
+              "section_path": [
+                "7 附录A：技术参数"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+            },
+            "quote": "内含Logger5000（含电压电流采样接口）、开关电源、\n防雷模块、微型断路 器、MPLC（可选1 或2）、\nPID&ISO 控制盒（可选）、光纤交换机 （可选）、光纤\n终端盒（可选）、IO 模组（可选）\n适用区域：国内",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "明确列为EMU300A内含的标准组件，无条件限定。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "component_id": "COMP-005",
+        "name": "MPLC",
+        "component_type": "hardware",
+        "scope_status": "conditional",
+        "conditions": [
+          "BOM配置可选1或2个",
+          "交付状态依赖合同或订单约定"
+        ],
+        "version": null,
+        "supplier": null,
+        "role": "提供电力线载波通信物理层支持，用于接入阳光电源PLC功能逆变器。",
+        "is_third_party": null,
+        "support_period": null,
+        "interfaces": [
+          "PLC总线"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVD-002",
+            "source": {
+              "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-5067B181346D",
+              "block_id": "BLK-D844E7AC55AEA6FE",
+              "parser_version": "1.5.0",
+              "page_number": 55,
+              "printed_page_label": "49",
+              "section_path": [
+                "7 附录A：技术参数"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+            },
+            "quote": "内含Logger5000（含电压电流采样接口）、开关电源、\n防雷模块、微型断路 器、MPLC（可选1 或2）、\nPID&ISO 控制盒（可选）、光纤交换机 （可选）、光纤\n终端盒（可选）、IO 模组（可选）\n适用区域：国内",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "明确标注‘可选1或2’，属BOM条件项。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "component_id": "COMP-006",
+        "name": "PID&ISO控制盒",
+        "component_type": "hardware",
+        "scope_status": "conditional",
+        "conditions": [
+          "明确标注为可选组件",
+          "交付状态依赖合同或订单约定"
+        ],
+        "version": null,
+        "supplier": null,
+        "role": "提供PID防护与修复功能，适用于PV正偏置组件，并支持交流ISO检测。",
+        "is_third_party": null,
+        "support_period": null,
+        "interfaces": [],
+        "evidence": [
+          {
+            "evidence_id": "EVD-002",
+            "source": {
+              "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-5067B181346D",
+              "block_id": "BLK-D844E7AC55AEA6FE",
+              "parser_version": "1.5.0",
+              "page_number": 55,
+              "printed_page_label": "49",
+              "section_path": [
+                "7 附录A：技术参数"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+            },
+            "quote": "内含Logger5000（含电压电流采样接口）、开关电源、\n防雷模块、微型断路 器、MPLC（可选1 或2）、\nPID&ISO 控制盒（可选）、光纤交换机 （可选）、光纤\n终端盒（可选）、IO 模组（可选）\n适用区域：国内",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "明确标注‘可选’，属BOM条件项。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "component_id": "COMP-007",
+        "name": "光纤交换机",
+        "component_type": "network device",
+        "scope_status": "conditional",
+        "conditions": [
+          "明确标注为可选组件",
+          "交付状态依赖合同或订单约定"
+        ],
+        "version": null,
+        "supplier": null,
+        "role": "提供光纤环网通信能力，用于构建高可靠站内通信网络。",
+        "is_third_party": null,
+        "support_period": null,
+        "interfaces": [
+          "光纤"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVD-002",
+            "source": {
+              "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-5067B181346D",
+              "block_id": "BLK-D844E7AC55AEA6FE",
+              "parser_version": "1.5.0",
+              "page_number": 55,
+              "printed_page_label": "49",
+              "section_path": [
+                "7 附录A：技术参数"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+            },
+            "quote": "内含Logger5000（含电压电流采样接口）、开关电源、\n防雷模块、微型断路 器、MPLC（可选1 或2）、\nPID&ISO 控制盒（可选）、光纤交换机 （可选）、光纤\n终端盒（可选）、IO 模组（可选）\n适用区域：国内",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "明确标注‘可选’，属BOM条件项；类型按物理接口与功能归类为network device。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "component_id": "COMP-008",
+        "name": "光纤终端盒",
+        "component_type": "hardware",
+        "scope_status": "conditional",
+        "conditions": [
+          "明确标注为可选组件",
+          "必须与光纤环网交换机配套使用",
+          "交付状态依赖合同或订单约定"
+        ],
+        "version": null,
+        "supplier": null,
+        "role": "实现光纤链路的端接、配线与保护，支撑光纤环网部署。",
+        "is_third_party": null,
+        "support_period": null,
+        "interfaces": [
+          "光纤"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVD-002",
+            "source": {
+              "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-5067B181346D",
+              "block_id": "BLK-D844E7AC55AEA6FE",
+              "parser_version": "1.5.0",
+              "page_number": 55,
+              "printed_page_label": "49",
+              "section_path": [
+                "7 附录A：技术参数"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+            },
+            "quote": "内含Logger5000（含电压电流采样接口）、开关电源、\n防雷模块、微型断路 器、MPLC（可选1 或2）、\nPID&ISO 控制盒（可选）、光纤交换机 （可选）、光纤\n终端盒（可选）、IO 模组（可选）\n适用区域：国内",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "明确标注‘可选’且需配套使用，属BOM条件项。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "component_id": "COMP-009",
+        "name": "IO模组",
+        "component_type": "hardware",
+        "scope_status": "conditional",
+        "conditions": [
+          "明确标注为可选组件",
+          "交付状态依赖合同或订单约定"
+        ],
+        "version": null,
+        "supplier": null,
+        "role": "扩展数字量输入/输出接口，用于连接外部DI/DO设备。",
+        "is_third_party": null,
+        "support_period": null,
+        "interfaces": [
+          "DI/DO"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVD-002",
+            "source": {
+              "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-5067B181346D",
+              "block_id": "BLK-D844E7AC55AEA6FE",
+              "parser_version": "1.5.0",
+              "page_number": 55,
+              "printed_page_label": "49",
+              "section_path": [
+                "7 附录A：技术参数"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+            },
+            "quote": "内含Logger5000（含电压电流采样接口）、开关电源、\n防雷模块、微型断路 器、MPLC（可选1 或2）、\nPID&ISO 控制盒（可选）、光纤交换机 （可选）、光纤\n终端盒（可选）、IO 模组（可选）\n适用区域：国内",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "明确标注‘可选’，属BOM条件项。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "component_id": "COMP-010",
+        "name": "PID模块",
+        "component_type": "hardware",
+        "scope_status": "confirmed",
+        "conditions": [],
+        "version": null,
+        "supplier": null,
+        "role": "提供PID防护和PID修复功能，适用于PV-正偏置组件，并支持交流ISO检测。",
+        "is_third_party": null,
+        "support_period": null,
+        "interfaces": [],
+        "evidence": [
+          {
+            "evidence_id": "EVD-003",
+            "source": {
+              "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-5067B181346D",
+              "block_id": "BLK-AFC136CD8222B958",
+              "parser_version": "1.5.0",
+              "page_number": 28,
+              "printed_page_label": "22",
+              "section_path": [
+                "4 电气连接",
+                "4.3 内部结构"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+            },
+            "quote": "用户手册\n4 电气连接",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "明确列为内部结构组成部分，未标注可选，视为标准内置。\n系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "component_id": "COMP-011",
+        "name": "PLC模块",
+        "component_type": "hardware",
+        "scope_status": "confirmed",
+        "conditions": [],
+        "version": null,
+        "supplier": null,
+        "role": "提供PLC电力载波通信物理层支持，用于接入阳光电源PLC功能逆变器。",
+        "is_third_party": null,
+        "support_period": null,
+        "interfaces": [],
+        "evidence": [
+          {
+            "evidence_id": "EVD-003",
+            "source": {
+              "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-5067B181346D",
+              "block_id": "BLK-AFC136CD8222B958",
+              "parser_version": "1.5.0",
+              "page_number": 28,
+              "printed_page_label": "22",
+              "section_path": [
+                "4 电气连接",
+                "4.3 内部结构"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+            },
+            "quote": "用户手册\n4 电气连接",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "明确列为内部结构组成部分，未标注可选，视为标准内置。\n系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "component_id": "COMP-012",
+        "name": "220V市电插座",
+        "component_type": "hardware",
+        "scope_status": "confirmed",
+        "conditions": [],
+        "version": null,
+        "supplier": null,
+        "role": "为现场运维人员提供220V交流市电接口。",
+        "is_third_party": null,
+        "support_period": null,
+        "interfaces": [
+          "220V AC"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVD-003",
+            "source": {
+              "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-5067B181346D",
+              "block_id": "BLK-AFC136CD8222B958",
+              "parser_version": "1.5.0",
+              "page_number": 28,
+              "printed_page_label": "22",
+              "section_path": [
+                "4 电气连接",
+                "4.3 内部结构"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+            },
+            "quote": "用户手册\n4 电气连接",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "明确列为内部结构组成部分，未标注可选，视为标准内置。\n系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "component_id": "COMP-013",
+        "name": "风扇",
+        "component_type": "hardware",
+        "scope_status": "confirmed",
+        "conditions": [],
+        "version": null,
+        "supplier": null,
+        "role": "为EMU300A内部元器件提供强制风冷散热。",
+        "is_third_party": null,
+        "support_period": null,
+        "interfaces": [],
+        "evidence": [
+          {
+            "evidence_id": "EVD-003",
+            "source": {
+              "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-5067B181346D",
+              "block_id": "BLK-AFC136CD8222B958",
+              "parser_version": "1.5.0",
+              "page_number": 28,
+              "printed_page_label": "22",
+              "section_path": [
+                "4 电气连接",
+                "4.3 内部结构"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+            },
+            "quote": "用户手册\n4 电气连接",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "明确列为内部结构组成部分，未标注可选，视为标准内置。\n系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      }
+    ],
+    "completeness_notes": "Logger5000固件版本、开关电源/防雷模块/微型断路器具体型号、PID模块与PLC模块是否为独立硬件或集成于Logger5000、以及所有可选组件（MPLC/PID&ISO控制盒/光纤交换机/光纤终端盒/IO模组）的实际交付BOM均未在资料中提供，构成库存完整性缺口。"
+  }
+}

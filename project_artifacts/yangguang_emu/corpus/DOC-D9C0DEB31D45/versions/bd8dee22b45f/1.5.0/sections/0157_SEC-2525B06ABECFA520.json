@@ -1,0 +1,70 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-2525B06ABECFA520",
+  "section_path": [
+    "9 用户管理",
+    "9.4 忘记密码"
+  ],
+  "section_title": "9.4 忘记密码",
+  "start_pdf_page": 95,
+  "end_pdf_page": 95,
+  "blocks": [
+    {
+      "block_id": "BLK-4015EC4DD36EF2C6",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 95,
+      "printed_page_label": "85",
+      "block_order": 13,
+      "section_id": "SEC-2525B06ABECFA520",
+      "section_path": [
+        "9 用户管理",
+        "9.4 忘记密码"
+      ],
+      "section_title": "9.4 忘记密码",
+      "block_type": "heading",
+      "text": "9.4 忘记密码",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        348.158,
+        143.046,
+        362.762
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D6E2E59E13493326",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 95,
+      "printed_page_label": "85",
+      "block_order": 14,
+      "section_id": "SEC-2525B06ABECFA520",
+      "section_path": [
+        "9 用户管理",
+        "9.4 忘记密码"
+      ],
+      "section_title": "9.4 忘记密码",
+      "block_type": "paragraph",
+      "text": "账号密码无法找回。如用户忘记密码，只能通过重置方式重新设置。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        375.806,
+        372.366,
+        386.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

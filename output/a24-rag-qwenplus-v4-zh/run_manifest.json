@@ -1,0 +1,28 @@
+{
+  "run_id": "a24-rag-qwenplus-v4-zh",
+  "requested_node": "0-2",
+  "text_model": "qwen-plus",
+  "model_source": "Historical label/docs; no original run manifest",
+  "evidence_packet_ref": {
+    "packet_id": "yangguang_emu_node_0_3",
+    "packet_version": 1,
+    "project_id": "yangguang_emu",
+    "packet_sha256": "d031fa9e846d306e5da85b08d43f99ff58420a32fb2dda27e9d9b3443858dec4",
+    "manifest_sha256": "3dcf5b466628209d69b62ee49402b9d05a6918db76e8288042818407e06857a2",
+    "config_sha256": "91c6412cbc0e93b92a01255ec3784bb915442736768225f51a394211a6c71cb8",
+    "parser_name": "pymupdf-page-section-parser",
+    "parser_version": "1.5.0",
+    "document_ids": [
+      "DOC-5067B181346D",
+      "DOC-DF116E7199E2",
+      "DOC-D9C0DEB31D45"
+    ],
+    "block_count": 1041
+  },
+  "generated_at": "2026-09-11T02:08:39.525669+00:00",
+  "business_reviewed": false,
+  "original_code_fingerprint": null,
+  "output_json": "report.json",
+  "output_excel": "report.xlsx",
+  "presentation_note": "2026-09-14 relocated and formatted; generation unchanged; original archived"
+}

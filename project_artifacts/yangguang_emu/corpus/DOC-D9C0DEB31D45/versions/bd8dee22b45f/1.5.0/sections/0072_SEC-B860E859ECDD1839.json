@@ -1,0 +1,475 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-B860E859ECDD1839",
+  "section_path": [
+    "7 Web界面",
+    "7.7 功率调节"
+  ],
+  "section_title": "7.7 功率调节",
+  "start_pdf_page": 53,
+  "end_pdf_page": 53,
+  "blocks": [
+    {
+      "block_id": "BLK-C6D34F8BCA9207D0",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 0,
+      "section_id": "SEC-B860E859ECDD1839",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节"
+      ],
+      "section_title": "7.7 功率调节",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.616,
+        48.088,
+        463.963,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4E1F587CED8687F6",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 1,
+      "section_id": "SEC-B860E859ECDD1839",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节"
+      ],
+      "section_title": "7.7 功率调节",
+      "block_type": "paragraph",
+      "text": "故障录波",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        71.556,
+        138.366,
+        82.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F81CC9C83DFC3584",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 2,
+      "section_id": "SEC-B860E859ECDD1839",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节"
+      ],
+      "section_title": "7.7 功率调节",
+      "block_type": "paragraph",
+      "text": "此界面主要用于辅助现场人员排查逆变器设备故障。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        89.706,
+        309.366,
+        100.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0742D3DBD09A39EC",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 3,
+      "section_id": "SEC-B860E859ECDD1839",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节"
+      ],
+      "section_title": "7.7 功率调节",
+      "block_type": "paragraph",
+      "text": "电网录波",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        170.547,
+        138.366,
+        181.5
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E408944B3EC66F1F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 4,
+      "section_id": "SEC-B860E859ECDD1839",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节"
+      ],
+      "section_title": "7.7 功率调节",
+      "block_type": "paragraph",
+      "text": "此界面专注于满足电网标准的记录管理与数据交互。依据国网、南网及国际电网标准设计，\n满足并网设备的规范要求",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        188.697,
+        462.366,
+        213.15
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E3F7F874B1A60E4C",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 5,
+      "section_id": "SEC-B860E859ECDD1839",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节"
+      ],
+      "section_title": "7.7 功率调节",
+      "block_type": "list",
+      "text": "•\n二级菜单说明：",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        222.275,
+        179.541,
+        234.758
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1CAC451BA5EC57EF",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 6,
+      "section_id": "SEC-B860E859ECDD1839",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节"
+      ],
+      "section_title": "7.7 功率调节",
+      "block_type": "list",
+      "text": "-\n全量导出：完整导出录波文件，适用于全面数据分析",
+      "table_cells": null,
+      "bbox": [
+        116.541,
+        237.275,
+        337.716,
+        249.758
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EB19F97175871F5B",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 7,
+      "section_id": "SEC-B860E859ECDD1839",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节"
+      ],
+      "section_title": "7.7 功率调节",
+      "block_type": "list",
+      "text": "-\n索引导出：按事件索引选择性导出，提升检索效率",
+      "table_cells": null,
+      "bbox": [
+        116.541,
+        252.275,
+        328.716,
+        264.758
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E379CA0895C1CE87",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 8,
+      "section_id": "SEC-B860E859ECDD1839",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节"
+      ],
+      "section_title": "7.7 功率调节",
+      "block_type": "list",
+      "text": "-\nSER 信息导出：支持序列化事件记录（SER）格式，便于第三方系统解析",
+      "table_cells": null,
+      "bbox": [
+        116.541,
+        267.275,
+        421.974,
+        279.758
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2CFBF060378FD34F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 9,
+      "section_id": "SEC-B860E859ECDD1839",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节"
+      ],
+      "section_title": "7.7 功率调节",
+      "block_type": "paragraph",
+      "text": "有效值录波",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        384.626,
+        147.366,
+        395.579
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0343D80A8831B0EB",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 10,
+      "section_id": "SEC-B860E859ECDD1839",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节"
+      ],
+      "section_title": "7.7 功率调节",
+      "block_type": "paragraph",
+      "text": "此界面针对北美特定机型的有效值事件记录。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        402.776,
+        282.366,
+        413.729
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2FF59F6B40C16D7F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 11,
+      "section_id": "SEC-B860E859ECDD1839",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节"
+      ],
+      "section_title": "7.7 功率调节",
+      "block_type": "list",
+      "text": "•\n二级菜单说明：",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        422.854,
+        179.541,
+        435.337
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4149D0E7B2071967",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 12,
+      "section_id": "SEC-B860E859ECDD1839",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节"
+      ],
+      "section_title": "7.7 功率调节",
+      "block_type": "list",
+      "text": "-\n历史有效值：存储长期事件记录，用于趋势分析与历史回溯",
+      "table_cells": null,
+      "bbox": [
+        116.541,
+        437.854,
+        364.716,
+        450.337
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0EB9FB7D98154512",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 13,
+      "section_id": "SEC-B860E859ECDD1839",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节"
+      ],
+      "section_title": "7.7 功率调节",
+      "block_type": "list",
+      "text": "-\n当前有效值：实时记录最新事件数据，支持即时监控与诊断",
+      "table_cells": null,
+      "bbox": [
+        116.541,
+        452.854,
+        364.716,
+        465.337
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-08A465349C1327F8",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 14,
+      "section_id": "SEC-B860E859ECDD1839",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节"
+      ],
+      "section_title": "7.7 功率调节",
+      "block_type": "list",
+      "text": "•",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        522.731,
+        105.516,
+        532.775
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B683B6A2877498EA",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 15,
+      "section_id": "SEC-B860E859ECDD1839",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节"
+      ],
+      "section_title": "7.7 功率调节",
+      "block_type": "heading",
+      "text": "7.7 功率调节",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        552.884,
+        143.046,
+        567.488
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CD340FB3BFC56E7E",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 16,
+      "section_id": "SEC-B860E859ECDD1839",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节"
+      ],
+      "section_title": "7.7 功率调节",
+      "block_type": "paragraph",
+      "text": "数据采集器配备了功率调节模块，能够对连接的逆变器进行有功功率控制和无功功率调节。用户\n可依据电网实际需求，通过本地或第三方控制系统，向逆变器发送调节指令，调整其馈网功率，\n从而确保电网稳定和电力的高效实用。",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        580.44,
+        459.365,
+        616.284
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

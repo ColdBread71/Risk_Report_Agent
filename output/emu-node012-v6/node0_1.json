@@ -1,0 +1,40 @@
+{
+  "schema_version": "workflow_progress.v2",
+  "run_id": "emu-node012-v6",
+  "saved_at": "2026-09-15T09:15:13.766336+00:00",
+  "completed_node": "define_scope",
+  "state": {
+    "evidence_packet_ref": {
+      "packet_id": "yangguang_emu_node_0_3",
+      "packet_version": 2,
+      "project_id": "yangguang_emu",
+      "packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+      "manifest_sha256": "3dcf5b466628209d69b62ee49402b9d05a6918db76e8288042818407e06857a2",
+      "config_sha256": "7189e425f0fad61ddcac685105c87c07aba1825821c4bb3e755a07d39e71335a",
+      "parser_name": "pymupdf-page-section-parser",
+      "parser_version": "1.5.0",
+      "document_ids": [
+        "DOC-5067B181346D",
+        "DOC-DF116E7199E2",
+        "DOC-D9C0DEB31D45"
+      ],
+      "block_count": 1041
+    },
+    "scope": null,
+    "product_context": null,
+    "risk_methodology": null,
+    "risk_acceptance_criteria": null,
+    "assets": [],
+    "asset_assessment": null,
+    "asset_notes": null,
+    "asset_review_approved": false,
+    "asset_review_notes": null,
+    "threat_assessment": null,
+    "errors": [
+      "Node [0] scope extraction failed: Extraction failed after 2 attempts. Last error: An unresolved item belongs in conditional scope or open questions, not out_of_scope_components: ['Logger4000：适用性未确认，无证据表明属于EMU300A供货范围或BOM组成部分']"
+    ],
+    "current_step": "node_0_scope",
+    "status": "node_0_failed"
+  },
+  "evidence_trace": []
+}

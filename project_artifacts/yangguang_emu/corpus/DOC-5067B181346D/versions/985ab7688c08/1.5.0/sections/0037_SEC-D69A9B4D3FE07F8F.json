@@ -1,0 +1,353 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-D69A9B4D3FE07F8F",
+  "section_path": [
+    "4 电气连接",
+    "4.6 接线步骤",
+    "4.6.4 供电接线"
+  ],
+  "section_title": "4.6.4 供电接线",
+  "start_pdf_page": 35,
+  "end_pdf_page": 35,
+  "blocks": [
+    {
+      "block_id": "BLK-F448778C73DB70AD",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 35,
+      "printed_page_label": "29",
+      "block_order": 0,
+      "section_id": "SEC-D69A9B4D3FE07F8F",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.4 供电接线"
+      ],
+      "section_title": "4.6.4 供电接线",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 电气连接",
+      "table_cells": null,
+      "bbox": [
+        74.616,
+        48.088,
+        463.963,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-09F857FCC246C1E8",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 35,
+      "printed_page_label": "29",
+      "block_order": 1,
+      "section_id": "SEC-D69A9B4D3FE07F8F",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.4 供电接线"
+      ],
+      "section_title": "4.6.4 供电接线",
+      "block_type": "heading",
+      "text": "4.6.4 供电接线",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        71.59,
+        137.856,
+        83.76
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-957DEC58DECE3C5C",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 35,
+      "printed_page_label": "29",
+      "block_order": 2,
+      "section_id": "SEC-D69A9B4D3FE07F8F",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.4 供电接线"
+      ],
+      "section_title": "4.6.4 供电接线",
+      "block_type": "paragraph",
+      "text": "安装前准备",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        89.556,
+        147.369,
+        100.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FBD1156E3F914B91",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 35,
+      "printed_page_label": "29",
+      "block_order": 3,
+      "section_id": "SEC-D69A9B4D3FE07F8F",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.4 供电接线"
+      ],
+      "section_title": "4.6.4 供电接线",
+      "block_type": "list",
+      "text": "•\n执行交流供电电源接线前，务必再次确认微型断路器处于“OFF”状态。",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        107.706,
+        392.529,
+        118.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FE7E9800541FD08C",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 35,
+      "printed_page_label": "29",
+      "block_order": 4,
+      "section_id": "SEC-D69A9B4D3FE07F8F",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.4 供电接线"
+      ],
+      "section_title": "4.6.4 供电接线",
+      "block_type": "list",
+      "text": "•\n准备交流线缆。",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        122.706,
+        179.535,
+        133.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CC3027B6C455B260",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 35,
+      "printed_page_label": "29",
+      "block_order": 5,
+      "section_id": "SEC-D69A9B4D3FE07F8F",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.4 供电接线"
+      ],
+      "section_title": "4.6.4 供电接线",
+      "block_type": "paragraph",
+      "text": "安装步骤",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        146.856,
+        138.369,
+        157.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0EEE6FEAAAB2E57E",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 35,
+      "printed_page_label": "29",
+      "block_order": 6,
+      "section_id": "SEC-D69A9B4D3FE07F8F",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.4 供电接线"
+      ],
+      "section_title": "4.6.4 供电接线",
+      "block_type": "paragraph",
+      "text": "步骤 1 拧开“Input AC”防水端子，将外部供电电源线缆穿过该防水端子。",
+      "table_cells": null,
+      "bbox": [
+        70.869,
+        169.584,
+        358.752,
+        182.067
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-20206C3A5441CEE8",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 35,
+      "printed_page_label": "29",
+      "block_order": 7,
+      "section_id": "SEC-D69A9B4D3FE07F8F",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.4 供电接线"
+      ],
+      "section_title": "4.6.4 供电接线",
+      "block_type": "paragraph",
+      "text": "步骤 2 使用剥线钳剥开线缆。",
+      "table_cells": null,
+      "bbox": [
+        70.869,
+        186.084,
+        191.739,
+        198.567
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C550D3EA16DA1BAB",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 35,
+      "printed_page_label": "29",
+      "block_order": 8,
+      "section_id": "SEC-D69A9B4D3FE07F8F",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.4 供电接线"
+      ],
+      "section_title": "4.6.4 供电接线",
+      "block_type": "paragraph",
+      "text": "步骤 3 压接冷压端子，推荐冷压端子型号：LT015008。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        301.124,
+        294.606,
+        313.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D16846BC4A4F64D4",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 35,
+      "printed_page_label": "29",
+      "block_order": 9,
+      "section_id": "SEC-D69A9B4D3FE07F8F",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.4 供电接线"
+      ],
+      "section_title": "4.6.4 供电接线",
+      "block_type": "paragraph",
+      "text": "步骤 4 将冷压端子接至对应的接线孔，使用螺钉紧固，紧固扭矩为：2.0~2.5N·m。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        445.79,
+        401.004,
+        458.273
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7E92D2657F4D0633",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 35,
+      "printed_page_label": "29",
+      "block_order": 10,
+      "section_id": "SEC-D69A9B4D3FE07F8F",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.4 供电接线"
+      ],
+      "section_title": "4.6.4 供电接线",
+      "block_type": "paragraph",
+      "text": "步骤 5 拧紧“Input AC”防水端子。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        620.258,
+        205.749,
+        632.741
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-98007A57FC17CFAB",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 35,
+      "printed_page_label": "29",
+      "block_order": 11,
+      "section_id": "SEC-D69A9B4D3FE07F8F",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.4 供电接线"
+      ],
+      "section_title": "4.6.4 供电接线",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        636.83,
+        126.36,
+        647.783
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

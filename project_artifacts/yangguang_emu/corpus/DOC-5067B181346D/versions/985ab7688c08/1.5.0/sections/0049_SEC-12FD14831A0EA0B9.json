@@ -1,0 +1,569 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-12FD14831A0EA0B9",
+  "section_path": [
+    "5 试运行",
+    "5.3 试运行步骤",
+    "5.3.3 PID模块调试（可选）",
+    "5.3.3.2 登录步骤"
+  ],
+  "section_title": "5.3.3.2 登录步骤",
+  "start_pdf_page": 49,
+  "end_pdf_page": 49,
+  "blocks": [
+    {
+      "block_id": "BLK-312E4EF9C75A215F",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "43",
+      "block_order": 0,
+      "section_id": "SEC-12FD14831A0EA0B9",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.3 PID模块调试（可选）",
+        "5.3.3.2 登录步骤"
+      ],
+      "section_title": "5.3.3.2 登录步骤",
+      "block_type": "paragraph",
+      "text": "用户手册\n5 试运行",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7441C4746F781D9B",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "43",
+      "block_order": 1,
+      "section_id": "SEC-12FD14831A0EA0B9",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.3 PID模块调试（可选）",
+        "5.3.3.2 登录步骤"
+      ],
+      "section_title": "5.3.3.2 登录步骤",
+      "block_type": "paragraph",
+      "text": "当北向通信异常保护使能，通讯恢复输出无动作，通讯恢复后，logger 保持异常输出\n值（无动作），需要北向重新下发调度命令。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        78.056,
+        462.636,
+        99.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-565ADD6B3B2A4B16",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "43",
+      "block_order": 9,
+      "section_id": "SEC-12FD14831A0EA0B9",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.3 PID模块调试（可选）",
+        "5.3.3.2 登录步骤"
+      ],
+      "section_title": "5.3.3.2 登录步骤",
+      "block_type": "heading",
+      "text": "5.3.3.2 登录步骤",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        318.04,
+        146.196,
+        330.21
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-85E20F361A1A200D",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "43",
+      "block_order": 10,
+      "section_id": "SEC-12FD14831A0EA0B9",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.3 PID模块调试（可选）",
+        "5.3.3.2 登录步骤"
+      ],
+      "section_title": "5.3.3.2 登录步骤",
+      "block_type": "paragraph",
+      "text": "步骤 1 将数据采集器连接至PC 网卡。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        341.934,
+        226.737,
+        354.417
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A0457AC3E5921980",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "43",
+      "block_order": 11,
+      "section_id": "SEC-12FD14831A0EA0B9",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.3 PID模块调试（可选）",
+        "5.3.3.2 登录步骤"
+      ],
+      "section_title": "5.3.3.2 登录步骤",
+      "block_type": "paragraph",
+      "text": "步骤 2 将PC 的IP 与Logger5000 以太网端口的IP 配置为同一网段。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        358.434,
+        350.289,
+        370.917
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6949337C362A5745",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "43",
+      "block_order": 12,
+      "section_id": "SEC-12FD14831A0EA0B9",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.3 PID模块调试（可选）",
+        "5.3.3.2 登录步骤"
+      ],
+      "section_title": "5.3.3.2 登录步骤",
+      "block_type": "list",
+      "text": "•\nEMU300A 内部有交换机，以太网端口的IP 地址默认为12.12.12.12，则PC 的IP 可配\n置为12.12.12.X，子网掩码为255.255.255.0。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        376.356,
+        458.982,
+        400.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D216A50E60FEADF7",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "43",
+      "block_order": 13,
+      "section_id": "SEC-12FD14831A0EA0B9",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.3 PID模块调试（可选）",
+        "5.3.3.2 登录步骤"
+      ],
+      "section_title": "5.3.3.2 登录步骤",
+      "block_type": "list",
+      "text": "•\nEMU300A 内部无交换机，以ETH1 为例，可配置为12.12.12.X，X 在1~255，且不能为\n12，子网掩码为255.255.255.0。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        404.856,
+        466.245,
+        429.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3C151F1856F9B6BF",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "43",
+      "block_order": 14,
+      "section_id": "SEC-12FD14831A0EA0B9",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.3 PID模块调试（可选）",
+        "5.3.3.2 登录步骤"
+      ],
+      "section_title": "5.3.3.2 登录步骤",
+      "block_type": "paragraph",
+      "text": "步骤 3 在PC 地址栏，输入数据采集器以太网端口的IP 地址，进入默认页面。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        433.434,
+        383.742,
+        445.917
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-981889A7E3F66DAC",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "43",
+      "block_order": 15,
+      "section_id": "SEC-12FD14831A0EA0B9",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.3 PID模块调试（可选）",
+        "5.3.3.2 登录步骤"
+      ],
+      "section_title": "5.3.3.2 登录步骤",
+      "block_type": "paragraph",
+      "text": "以IP 地址12.12.12.12 为例：",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        456.506,
+        247.787,
+        467.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5872BE38851948EF",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "43",
+      "block_order": 16,
+      "section_id": "SEC-12FD14831A0EA0B9",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.3 PID模块调试（可选）",
+        "5.3.3.2 登录步骤"
+      ],
+      "section_title": "5.3.3.2 登录步骤",
+      "block_type": "list",
+      "text": "•\n登录Logger5000 的Web 端，请输入https://12.12.12.12 来登录成功。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        470.156,
+        423.35,
+        481.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7C91168574F45447",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "43",
+      "block_order": 17,
+      "section_id": "SEC-12FD14831A0EA0B9",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.3 PID模块调试（可选）",
+        "5.3.3.2 登录步骤"
+      ],
+      "section_title": "5.3.3.2 登录步骤",
+      "block_type": "paragraph",
+      "text": "步骤 4 在界面右上角，选择需要语种，点击“登录”，输入登录密码，即可进入Web 界面。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        499.734,
+        427.572,
+        512.217
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B521B38B74EDCDBC",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "43",
+      "block_order": 18,
+      "section_id": "SEC-12FD14831A0EA0B9",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.3 PID模块调试（可选）",
+        "5.3.3.2 登录步骤"
+      ],
+      "section_title": "5.3.3.2 登录步骤",
+      "block_type": "paragraph",
+      "text": "系统支持如下用户角色：",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        522.806,
+        227.735,
+        533.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1D1594B2A09F40E9",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "43",
+      "block_order": 19,
+      "section_id": "SEC-12FD14831A0EA0B9",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.3 PID模块调试（可选）",
+        "5.3.3.2 登录步骤"
+      ],
+      "section_title": "5.3.3.2 登录步骤",
+      "block_type": "list",
+      "text": "•\n普通用户",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        536.456,
+        178.91,
+        547.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-67DB917AB8358AD2",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "43",
+      "block_order": 20,
+      "section_id": "SEC-12FD14831A0EA0B9",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.3 PID模块调试（可选）",
+        "5.3.3.2 登录步骤"
+      ],
+      "section_title": "5.3.3.2 登录步骤",
+      "block_type": "list",
+      "text": "•\n运维用户",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        551.456,
+        178.91,
+        562.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AC8E1B9020259339",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "43",
+      "block_order": 21,
+      "section_id": "SEC-12FD14831A0EA0B9",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.3 PID模块调试（可选）",
+        "5.3.3.2 登录步骤"
+      ],
+      "section_title": "5.3.3.2 登录步骤",
+      "block_type": "list",
+      "text": "•\n审计用户",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        566.456,
+        178.91,
+        577.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CD85C1F6A26C8361",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "43",
+      "block_order": 22,
+      "section_id": "SEC-12FD14831A0EA0B9",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.3 PID模块调试（可选）",
+        "5.3.3.2 登录步骤"
+      ],
+      "section_title": "5.3.3.2 登录步骤",
+      "block_type": "list",
+      "text": "•\n管理员",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        581.456,
+        169.91,
+        592.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C45CAAB21EB03FA4",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "43",
+      "block_order": 23,
+      "section_id": "SEC-12FD14831A0EA0B9",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.3 PID模块调试（可选）",
+        "5.3.3.2 登录步骤"
+      ],
+      "section_title": "5.3.3.2 登录步骤",
+      "block_type": "list",
+      "text": "•\n开发者用户",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        596.456,
+        187.91,
+        607.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C01C61041CBE7D68",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "43",
+      "block_order": 24,
+      "section_id": "SEC-12FD14831A0EA0B9",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.3 PID模块调试（可选）",
+        "5.3.3.2 登录步骤"
+      ],
+      "section_title": "5.3.3.2 登录步骤",
+      "block_type": "paragraph",
+      "text": "开发者账户仅面向阳光电源技术支持人员。",
+      "table_cells": null,
+      "bbox": [
+        155.735,
+        616.606,
+        326.735,
+        627.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DB4D5371FC07CAC8",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "43",
+      "block_order": 25,
+      "section_id": "SEC-12FD14831A0EA0B9",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.3 PID模块调试（可选）",
+        "5.3.3.2 登录步骤"
+      ],
+      "section_title": "5.3.3.2 登录步骤",
+      "block_type": "paragraph",
+      "text": "本手册均以“运维用户”权限为例，简要介绍Web 的操作方法。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        641.906,
+        373.571,
+        652.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

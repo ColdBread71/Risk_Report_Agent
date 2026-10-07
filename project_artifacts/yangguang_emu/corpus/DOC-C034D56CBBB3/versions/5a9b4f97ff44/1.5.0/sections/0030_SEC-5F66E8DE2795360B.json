@@ -1,0 +1,205 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-5F66E8DE2795360B",
+  "section_path": [
+    "5 电气连接",
+    "5.9 AI信号接线"
+  ],
+  "section_title": "5.9 AI信号接线",
+  "start_pdf_page": 38,
+  "end_pdf_page": 38,
+  "blocks": [
+    {
+      "block_id": "BLK-043DD3FE91C28411",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "28",
+      "block_order": 0,
+      "section_id": "SEC-5F66E8DE2795360B",
+      "section_path": [
+        "5 电气连接",
+        "5.9 AI信号接线"
+      ],
+      "section_title": "5.9 AI信号接线",
+      "block_type": "paragraph",
+      "text": "用户手册\n5 电气连接",
+      "table_cells": null,
+      "bbox": [
+        60.446,
+        48.088,
+        449.793,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-06E1B4E09FC4889D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "28",
+      "block_order": 1,
+      "section_id": "SEC-5F66E8DE2795360B",
+      "section_path": [
+        "5 电气连接",
+        "5.9 AI信号接线"
+      ],
+      "section_title": "5.9 AI信号接线",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        257.259,
+        112.187,
+        268.212
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AC80917D8F0D6494",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "28",
+      "block_order": 2,
+      "section_id": "SEC-5F66E8DE2795360B",
+      "section_path": [
+        "5 电气连接",
+        "5.9 AI信号接线"
+      ],
+      "section_title": "5.9 AI信号接线",
+      "block_type": "heading",
+      "text": "5.9 AI 信号接线",
+      "table_cells": null,
+      "bbox": [
+        56.687,
+        292.161,
+        140.207,
+        306.765
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-715BE42D6D180228",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "28",
+      "block_order": 3,
+      "section_id": "SEC-5F66E8DE2795360B",
+      "section_path": [
+        "5 电气连接",
+        "5.9 AI信号接线"
+      ],
+      "section_title": "5.9 AI信号接线",
+      "block_type": "paragraph",
+      "text": "通过AI 端口可以接入环境监测传感器等设备的AI 信号，建议信号传输距离不超过10m。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        318.459,
+        439.961,
+        329.412
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C10B21B41183AC93",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "28",
+      "block_order": 4,
+      "section_id": "SEC-5F66E8DE2795360B",
+      "section_path": [
+        "5 电气连接",
+        "5.9 AI信号接线"
+      ],
+      "section_title": "5.9 AI信号接线",
+      "block_type": "paragraph",
+      "text": "步骤 1 使用剥线钳剥去模拟量输入信号线缆的防护层和绝缘层，如下图所示。",
+      "table_cells": null,
+      "bbox": [
+        56.696,
+        335.187,
+        366.566,
+        347.67
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9E738B98E99A97CB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "28",
+      "block_order": 5,
+      "section_id": "SEC-5F66E8DE2795360B",
+      "section_path": [
+        "5 电气连接",
+        "5.9 AI信号接线"
+      ],
+      "section_title": "5.9 AI信号接线",
+      "block_type": "paragraph",
+      "text": "步骤 2 安装合适的冷压端子，并使用压线钳压紧。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        445.576,
+        258.563,
+        458.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-575F3C4D727B7281",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "28",
+      "block_order": 6,
+      "section_id": "SEC-5F66E8DE2795360B",
+      "section_path": [
+        "5 电气连接",
+        "5.9 AI信号接线"
+      ],
+      "section_title": "5.9 AI信号接线",
+      "block_type": "paragraph",
+      "text": "步骤 3 将冷压端子接至数据采集器外部“AI1”~“AI4”插头，如下图所示（以接入“AI1”端口为例）。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        539.954,
+        439.328,
+        552.437
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

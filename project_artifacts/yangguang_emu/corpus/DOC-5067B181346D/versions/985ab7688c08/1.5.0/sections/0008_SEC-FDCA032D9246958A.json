@@ -1,0 +1,475 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-FDCA032D9246958A",
+  "section_path": [
+    "1 安全注意事项",
+    "1.3 包装、运输、存储安全"
+  ],
+  "section_title": "1.3 包装、运输、存储安全",
+  "start_pdf_page": 10,
+  "end_pdf_page": 10,
+  "blocks": [
+    {
+      "block_id": "BLK-7AF5325DCD44DA99",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 3,
+      "section_id": "SEC-FDCA032D9246958A",
+      "section_path": [
+        "1 安全注意事项",
+        "1.3 包装、运输、存储安全"
+      ],
+      "section_title": "1.3 包装、运输、存储安全",
+      "block_type": "heading",
+      "text": "1.3 包装、运输、存储安全",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        135.258,
+        200.873,
+        149.862
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-784D7A1EE0A756DD",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 4,
+      "section_id": "SEC-FDCA032D9246958A",
+      "section_path": [
+        "1 安全注意事项",
+        "1.3 包装、运输、存储安全"
+      ],
+      "section_title": "1.3 包装、运输、存储安全",
+      "block_type": "paragraph",
+      "text": "包装",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        169.556,
+        106.193,
+        180.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-40FA322C831439CC",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 5,
+      "section_id": "SEC-FDCA032D9246958A",
+      "section_path": [
+        "1 安全注意事项",
+        "1.3 包装、运输、存储安全"
+      ],
+      "section_title": "1.3 包装、运输、存储安全",
+      "block_type": "paragraph",
+      "text": "产品采用纸箱包装，且纸箱上标识装卸方向。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        187.706,
+        268.193,
+        198.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FD1C0B380FE49003",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 6,
+      "section_id": "SEC-FDCA032D9246958A",
+      "section_path": [
+        "1 安全注意事项",
+        "1.3 包装、运输、存储安全"
+      ],
+      "section_title": "1.3 包装、运输、存储安全",
+      "block_type": "paragraph",
+      "text": "运输",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        207.856,
+        106.193,
+        218.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E4B980F3A9AEEBBB",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 7,
+      "section_id": "SEC-FDCA032D9246958A",
+      "section_path": [
+        "1 安全注意事项",
+        "1.3 包装、运输、存储安全"
+      ],
+      "section_title": "1.3 包装、运输、存储安全",
+      "block_type": "list",
+      "text": "•\n所有与运输相关的操作，必须遵守当地国家或地区的相关法规和条例。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        226.006,
+        381.368,
+        236.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-34ACC3BB0EFF468B",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 8,
+      "section_id": "SEC-FDCA032D9246958A",
+      "section_path": [
+        "1 安全注意事项",
+        "1.3 包装、运输、存储安全"
+      ],
+      "section_title": "1.3 包装、运输、存储安全",
+      "block_type": "list",
+      "text": "•\n在运输过程中需要有相应的紧固措施，避免强烈的振动和颠簸损坏设备的外包装。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        241.006,
+        426.368,
+        251.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5B5E5DC7149B7286",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 9,
+      "section_id": "SEC-FDCA032D9246958A",
+      "section_path": [
+        "1 安全注意事项",
+        "1.3 包装、运输、存储安全"
+      ],
+      "section_title": "1.3 包装、运输、存储安全",
+      "block_type": "list",
+      "text": "•\n搬运设备时，应做好承重的准备，避免被设备压伤，此设备至少需要3 人搬运。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        256.006,
+        417.872,
+        266.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2177FD215F7E7B3B",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 10,
+      "section_id": "SEC-FDCA032D9246958A",
+      "section_path": [
+        "1 安全注意事项",
+        "1.3 包装、运输、存储安全"
+      ],
+      "section_title": "1.3 包装、运输、存储安全",
+      "block_type": "paragraph",
+      "text": "存储",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        274.156,
+        106.193,
+        285.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-88BE9724720E9A05",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 11,
+      "section_id": "SEC-FDCA032D9246958A",
+      "section_path": [
+        "1 安全注意事项",
+        "1.3 包装、运输、存储安全"
+      ],
+      "section_title": "1.3 包装、运输、存储安全",
+      "block_type": "list",
+      "text": "•\n储存场所应保持干燥、清洁、空气流通，并能防止各种有害气体的侵入。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        292.306,
+        390.368,
+        303.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-262D4D7A92B97DBA",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 12,
+      "section_id": "SEC-FDCA032D9246958A",
+      "section_path": [
+        "1 安全注意事项",
+        "1.3 包装、运输、存储安全"
+      ],
+      "section_title": "1.3 包装、运输、存储安全",
+      "block_type": "list",
+      "text": "•\n严禁与有腐蚀作用的物品存放在同一场所。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        307.306,
+        273.368,
+        318.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-76708E93B4C37AAE",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 13,
+      "section_id": "SEC-FDCA032D9246958A",
+      "section_path": [
+        "1 安全注意事项",
+        "1.3 包装、运输、存储安全"
+      ],
+      "section_title": "1.3 包装、运输、存储安全",
+      "block_type": "list",
+      "text": "•\n已包装的产品应储存在适应的环境中，对应的环境参数可参考“技术参数”章节内容。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        322.306,
+        432.362,
+        333.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A6D0842340EE95C5",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 14,
+      "section_id": "SEC-FDCA032D9246958A",
+      "section_path": [
+        "1 安全注意事项",
+        "1.3 包装、运输、存储安全"
+      ],
+      "section_title": "1.3 包装、运输、存储安全",
+      "block_type": "paragraph",
+      "text": "开箱检查",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        340.456,
+        124.193,
+        351.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0F1550EC45BC8AC8",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 15,
+      "section_id": "SEC-FDCA032D9246958A",
+      "section_path": [
+        "1 安全注意事项",
+        "1.3 包装、运输、存储安全"
+      ],
+      "section_title": "1.3 包装、运输、存储安全",
+      "block_type": "list",
+      "text": "•\n非专业人员严禁拆动设备组件。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        358.606,
+        228.368,
+        369.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-38FE229D44A84DD1",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 16,
+      "section_id": "SEC-FDCA032D9246958A",
+      "section_path": [
+        "1 安全注意事项",
+        "1.3 包装、运输、存储安全"
+      ],
+      "section_title": "1.3 包装、运输、存储安全",
+      "block_type": "list",
+      "text": "•\n检查收到的产品与实际订购产品是否一致。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        373.606,
+        273.368,
+        384.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B00BC65D2A81AB4B",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 17,
+      "section_id": "SEC-FDCA032D9246958A",
+      "section_path": [
+        "1 安全注意事项",
+        "1.3 包装、运输、存储安全"
+      ],
+      "section_title": "1.3 包装、运输、存储安全",
+      "block_type": "list",
+      "text": "•\n检查产品外观及结构件是否有损坏。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        388.606,
+        246.368,
+        399.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D47FDD082739C6CB",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 18,
+      "section_id": "SEC-FDCA032D9246958A",
+      "section_path": [
+        "1 安全注意事项",
+        "1.3 包装、运输、存储安全"
+      ],
+      "section_title": "1.3 包装、运输、存储安全",
+      "block_type": "list",
+      "text": "•\n检查产品上的所有安全标识、警告标签及铭牌是否清晰可见。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        403.606,
+        345.368,
+        414.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CD12B05A1A4A703A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 19,
+      "section_id": "SEC-FDCA032D9246958A",
+      "section_path": [
+        "1 安全注意事项",
+        "1.3 包装、运输、存储安全"
+      ],
+      "section_title": "1.3 包装、运输、存储安全",
+      "block_type": "paragraph",
+      "text": "若上述检查项存在问题，请及时联系阳光电源股份有限公司。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        417.256,
+        331.193,
+        428.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

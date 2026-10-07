@@ -1,0 +1,638 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+  "source_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "source_size_bytes": 7100664,
+  "parser_name": "pymupdf-page-section-parser",
+  "parser_version": "1.5.0",
+  "parsed_at": "2026-09-04T09:01:02.052736Z",
+  "metadata": {
+    "format": "PDF 1.5",
+    "title": "EMU300用户网络安全操作手册EMU300A-OCN-Ver11-202607",
+    "author": "",
+    "subject": "",
+    "keywords": "",
+    "creator": "Antenna House XSL Formatter V7.4 MR4 Windows : 7.4.5.64401 (2024-06-27T10:49+09)",
+    "producer": "Antenna House PDF Output Library 7.4.1903; modified using iText® 5.5.13 ©2000-2018 iText Group NV (AGPL-version)",
+    "creationDate": "D:20260720141449+08'00'",
+    "modDate": "D:20260720141456+08'00'",
+    "trapped": "",
+    "encryption": null
+  },
+  "page_label_rules": [
+    {
+      "start_page_index": 0,
+      "prefix": "",
+      "first_page_number": 1,
+      "style": "D"
+    },
+    {
+      "start_page_index": 1,
+      "prefix": "",
+      "first_page_number": 1,
+      "style": "R"
+    },
+    {
+      "start_page_index": 4,
+      "prefix": "",
+      "first_page_number": 1,
+      "style": "D"
+    }
+  ],
+  "table_of_contents": [
+    {
+      "section_id": "SEC-A286ACD82403761F",
+      "toc_index": 0,
+      "level": 1,
+      "title": "目 录",
+      "pdf_page": 3,
+      "section_path": [
+        "目 录"
+      ]
+    },
+    {
+      "section_id": "SEC-A16D176CBD360C12",
+      "toc_index": 1,
+      "level": 1,
+      "title": "版权所有",
+      "pdf_page": 2,
+      "section_path": [
+        "版权所有"
+      ]
+    },
+    {
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "toc_index": 2,
+      "level": 1,
+      "title": "1 关于本手册",
+      "pdf_page": 5,
+      "section_path": [
+        "1 关于本手册"
+      ]
+    },
+    {
+      "section_id": "SEC-865773389C52B11D",
+      "toc_index": 3,
+      "level": 1,
+      "title": "2 基本安全说明",
+      "pdf_page": 7,
+      "section_path": [
+        "2 基本安全说明"
+      ]
+    },
+    {
+      "section_id": "SEC-782F6785EAE89555",
+      "toc_index": 4,
+      "level": 1,
+      "title": "3 工业网络安全",
+      "pdf_page": 8,
+      "section_path": [
+        "3 工业网络安全"
+      ]
+    },
+    {
+      "section_id": "SEC-0CC5AC54DAF3522F",
+      "toc_index": 5,
+      "level": 2,
+      "title": "3.1 工业网络安全简介",
+      "pdf_page": 8,
+      "section_path": [
+        "3 工业网络安全",
+        "3.1 工业网络安全简介"
+      ]
+    },
+    {
+      "section_id": "SEC-1F7C1D2793268E50",
+      "toc_index": 6,
+      "level": 2,
+      "title": "3.2 工业网络安全保护目标",
+      "pdf_page": 8,
+      "section_path": [
+        "3 工业网络安全",
+        "3.2 工业网络安全保护目标"
+      ]
+    },
+    {
+      "section_id": "SEC-2BADA1B9EEC81F94",
+      "toc_index": 7,
+      "level": 2,
+      "title": "3.3 工业网络安全参考的标准",
+      "pdf_page": 8,
+      "section_path": [
+        "3 工业网络安全",
+        "3.3 工业网络安全参考的标准"
+      ]
+    },
+    {
+      "section_id": "SEC-2BDF4EB6871DFA57",
+      "toc_index": 8,
+      "level": 1,
+      "title": "4 纵深防御战略",
+      "pdf_page": 9,
+      "section_path": [
+        "4 纵深防御战略"
+      ]
+    },
+    {
+      "section_id": "SEC-D9CD4E510C335D43",
+      "toc_index": 9,
+      "level": 2,
+      "title": "4.1 威胁模型",
+      "pdf_page": 9,
+      "section_path": [
+        "4 纵深防御战略",
+        "4.1 威胁模型"
+      ]
+    },
+    {
+      "section_id": "SEC-14EE46AB7475C09D",
+      "toc_index": 10,
+      "level": 2,
+      "title": "4.2 安全相关功能及使用说明",
+      "pdf_page": 9,
+      "section_path": [
+        "4 纵深防御战略",
+        "4.2 安全相关功能及使用说明"
+      ]
+    },
+    {
+      "section_id": "SEC-80E3895C41A014FA",
+      "toc_index": 11,
+      "level": 2,
+      "title": "4.3 纵深防御战略的威胁",
+      "pdf_page": 10,
+      "section_path": [
+        "4 纵深防御战略",
+        "4.3 纵深防御战略的威胁"
+      ]
+    },
+    {
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "toc_index": 12,
+      "level": 2,
+      "title": "4.4 用户的缓解措施",
+      "pdf_page": 10,
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ]
+    },
+    {
+      "section_id": "SEC-3E308A345ED98EDE",
+      "toc_index": 13,
+      "level": 1,
+      "title": "5 产品功能及部署情况介绍",
+      "pdf_page": 12,
+      "section_path": [
+        "5 产品功能及部署情况介绍"
+      ]
+    },
+    {
+      "section_id": "SEC-737A09FE2B70DD16",
+      "toc_index": 14,
+      "level": 1,
+      "title": "6 端口矩阵",
+      "pdf_page": 14,
+      "section_path": [
+        "6 端口矩阵"
+      ]
+    },
+    {
+      "section_id": "SEC-9F1A5C191CBBD8F6",
+      "toc_index": 15,
+      "level": 1,
+      "title": "7 用户列表",
+      "pdf_page": 16,
+      "section_path": [
+        "7 用户列表"
+      ]
+    },
+    {
+      "section_id": "SEC-B42A14EE0C1FCA9D",
+      "toc_index": 16,
+      "level": 1,
+      "title": "8 用户管理",
+      "pdf_page": 17,
+      "section_path": [
+        "8 用户管理"
+      ]
+    },
+    {
+      "section_id": "SEC-9905F2C8DE78EC4D",
+      "toc_index": 17,
+      "level": 2,
+      "title": "8.1 密码管理",
+      "pdf_page": 17,
+      "section_path": [
+        "8 用户管理",
+        "8.1 密码管理"
+      ]
+    },
+    {
+      "section_id": "SEC-1EB247B2EA80ECA3",
+      "toc_index": 18,
+      "level": 2,
+      "title": "8.2 设置账户保护和会话安全参数",
+      "pdf_page": 17,
+      "section_path": [
+        "8 用户管理",
+        "8.2 设置账户保护和会话安全参数"
+      ]
+    },
+    {
+      "section_id": "SEC-CF4DA9FCADECD4FD",
+      "toc_index": 19,
+      "level": 2,
+      "title": "8.3 LDAP管理",
+      "pdf_page": 18,
+      "section_path": [
+        "8 用户管理",
+        "8.3 LDAP管理"
+      ]
+    },
+    {
+      "section_id": "SEC-B3974D592C48E6E2",
+      "toc_index": 20,
+      "level": 1,
+      "title": "9 安全退役",
+      "pdf_page": 20,
+      "section_path": [
+        "9 安全退役"
+      ]
+    },
+    {
+      "section_id": "SEC-2716575D0C24E6B1",
+      "toc_index": 21,
+      "level": 1,
+      "title": "10 安全配置指南",
+      "pdf_page": 21,
+      "section_path": [
+        "10 安全配置指南"
+      ]
+    },
+    {
+      "section_id": "SEC-FFD461FD8D8D686E",
+      "toc_index": 22,
+      "level": 2,
+      "title": "10.1 部署安全",
+      "pdf_page": 21,
+      "section_path": [
+        "10 安全配置指南",
+        "10.1 部署安全"
+      ]
+    },
+    {
+      "section_id": "SEC-A99FBB836935186A",
+      "toc_index": 23,
+      "level": 2,
+      "title": "10.2 安全启动",
+      "pdf_page": 21,
+      "section_path": [
+        "10 安全配置指南",
+        "10.2 安全启动"
+      ]
+    },
+    {
+      "section_id": "SEC-81DBD61537FF9B5E",
+      "toc_index": 24,
+      "level": 2,
+      "title": "10.3 协议配置",
+      "pdf_page": 21,
+      "section_path": [
+        "10 安全配置指南",
+        "10.3 协议配置"
+      ]
+    },
+    {
+      "section_id": "SEC-E2C20B855053B08B",
+      "toc_index": 25,
+      "level": 2,
+      "title": "10.4 证书管理和维护",
+      "pdf_page": 23,
+      "section_path": [
+        "10 安全配置指南",
+        "10.4 证书管理和维护"
+      ]
+    },
+    {
+      "section_id": "SEC-C56E459A62C8E5F9",
+      "toc_index": 26,
+      "level": 3,
+      "title": "10.4.1 预置证书风险声明",
+      "pdf_page": 23,
+      "section_path": [
+        "10 安全配置指南",
+        "10.4 证书管理和维护",
+        "10.4.1 预置证书风险声明"
+      ]
+    },
+    {
+      "section_id": "SEC-B6320DCD99E6A5B9",
+      "toc_index": 27,
+      "level": 3,
+      "title": "10.4.2 证书安全维护",
+      "pdf_page": 23,
+      "section_path": [
+        "10 安全配置指南",
+        "10.4 证书管理和维护",
+        "10.4.2 证书安全维护"
+      ]
+    },
+    {
+      "section_id": "SEC-C68F13840A218F92",
+      "toc_index": 28,
+      "level": 2,
+      "title": "10.5 安全存储",
+      "pdf_page": 26,
+      "section_path": [
+        "10 安全配置指南",
+        "10.5 安全存储"
+      ]
+    },
+    {
+      "section_id": "SEC-3ED7BE139912A8F1",
+      "toc_index": 29,
+      "level": 2,
+      "title": "10.6 恢复出厂设置",
+      "pdf_page": 26,
+      "section_path": [
+        "10 安全配置指南",
+        "10.6 恢复出厂设置"
+      ]
+    },
+    {
+      "section_id": "SEC-6F7433BB9576B338",
+      "toc_index": 30,
+      "level": 2,
+      "title": "10.7 系统还原",
+      "pdf_page": 26,
+      "section_path": [
+        "10 安全配置指南",
+        "10.7 系统还原"
+      ]
+    },
+    {
+      "section_id": "SEC-6350C7D75B8B21BD",
+      "toc_index": 31,
+      "level": 2,
+      "title": "10.8 安全对时",
+      "pdf_page": 27,
+      "section_path": [
+        "10 安全配置指南",
+        "10.8 安全对时"
+      ]
+    },
+    {
+      "section_id": "SEC-BA537F7660EBA0FD",
+      "toc_index": 32,
+      "level": 2,
+      "title": "10.9 安全回溯",
+      "pdf_page": 27,
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯"
+      ]
+    },
+    {
+      "section_id": "SEC-F16B7765D81DBEF5",
+      "toc_index": 33,
+      "level": 3,
+      "title": "10.9.1 操作日志",
+      "pdf_page": 28,
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯",
+        "10.9.1 操作日志"
+      ]
+    },
+    {
+      "section_id": "SEC-B6184E885890177C",
+      "toc_index": 34,
+      "level": 3,
+      "title": "10.9.2 Syslog日志",
+      "pdf_page": 28,
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯",
+        "10.9.2 Syslog日志"
+      ]
+    },
+    {
+      "section_id": "SEC-C292D01286912E00",
+      "toc_index": 35,
+      "level": 2,
+      "title": "10.10 安全更新",
+      "pdf_page": 29,
+      "section_path": [
+        "10 安全配置指南",
+        "10.10 安全更新"
+      ]
+    },
+    {
+      "section_id": "SEC-7863E93F89A70A14",
+      "toc_index": 36,
+      "level": 1,
+      "title": "11 报告产品（组件）安全事件说明",
+      "pdf_page": 30,
+      "section_path": [
+        "11 报告产品（组件）安全事件说明"
+      ]
+    },
+    {
+      "section_id": "SEC-3512916CC4E41C4F",
+      "toc_index": 37,
+      "level": 1,
+      "title": "12 附录：MOXA EDS-408A 安全加固操作指导",
+      "pdf_page": 31,
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导"
+      ]
+    },
+    {
+      "section_id": "SEC-6E5568E17C3A09BD",
+      "toc_index": 38,
+      "level": 2,
+      "title": "12.1 密码加固",
+      "pdf_page": 31,
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.1 密码加固"
+      ]
+    },
+    {
+      "section_id": "SEC-B041E5CEB91455BC",
+      "toc_index": 39,
+      "level": 2,
+      "title": "12.2 交换机密码更新周期管理说明",
+      "pdf_page": 31,
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.2 交换机密码更新周期管理说明"
+      ]
+    },
+    {
+      "section_id": "SEC-2F94D27FD3E7386F",
+      "toc_index": 40,
+      "level": 3,
+      "title": "12.2.1 CLI密码更新指南",
+      "pdf_page": 32,
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.2 交换机密码更新周期管理说明",
+        "12.2.1 CLI密码更新指南"
+      ]
+    },
+    {
+      "section_id": "SEC-553076F0CA6C9D48",
+      "toc_index": 41,
+      "level": 3,
+      "title": "12.2.2 Menu密码更新指南",
+      "pdf_page": 32,
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.2 交换机密码更新周期管理说明",
+        "12.2.2 Menu密码更新指南"
+      ]
+    },
+    {
+      "section_id": "SEC-D626C872D4B15C29",
+      "toc_index": 42,
+      "level": 2,
+      "title": "12.3 关闭对工业通讯协议访问的支持",
+      "pdf_page": 33,
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.3 关闭对工业通讯协议访问的支持"
+      ]
+    },
+    {
+      "section_id": "SEC-96B4F5934BCAE17E",
+      "toc_index": 43,
+      "level": 2,
+      "title": "12.4 关闭交换机 DIP 拨码功能",
+      "pdf_page": 34,
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.4 关闭交换机 DIP 拨码功能"
+      ]
+    },
+    {
+      "section_id": "SEC-CCBA4A841ECDDC58",
+      "toc_index": 44,
+      "level": 2,
+      "title": "12.5 关闭非必要管理接口",
+      "pdf_page": 35,
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.5 关闭非必要管理接口"
+      ]
+    },
+    {
+      "section_id": "SEC-0107B34CCC306F13",
+      "toc_index": 45,
+      "level": 2,
+      "title": "12.6 VLAN 配置",
+      "pdf_page": 35,
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.6 VLAN 配置"
+      ]
+    },
+    {
+      "section_id": "SEC-E0B286E8B1874E4C",
+      "toc_index": 46,
+      "level": 2,
+      "title": "12.7 固件升级流程",
+      "pdf_page": 38,
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.7 固件升级流程"
+      ]
+    },
+    {
+      "section_id": "SEC-D2BC010F09CBB4FF",
+      "toc_index": 47,
+      "level": 2,
+      "title": "12.8 配置导入流程",
+      "pdf_page": 39,
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.8 配置导入流程"
+      ]
+    },
+    {
+      "section_id": "SEC-AEF38A52A4E83785",
+      "toc_index": 48,
+      "level": 2,
+      "title": "12.9 安全功能验证",
+      "pdf_page": 41,
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.9 安全功能验证"
+      ]
+    }
+  ],
+  "section_files": [
+    "sections/0000_SEC-26F307FE8DD19DA5.json",
+    "sections/0001_SEC-A16D176CBD360C12.json",
+    "sections/0002_SEC-A286ACD82403761F.json",
+    "sections/0003_SEC-B3F6C7572273D1CE.json",
+    "sections/0004_SEC-865773389C52B11D.json",
+    "sections/0005_SEC-782F6785EAE89555.json",
+    "sections/0006_SEC-0CC5AC54DAF3522F.json",
+    "sections/0007_SEC-1F7C1D2793268E50.json",
+    "sections/0008_SEC-2BADA1B9EEC81F94.json",
+    "sections/0009_SEC-2BDF4EB6871DFA57.json",
+    "sections/0010_SEC-C7FB3ABEA252D593.json",
+    "sections/0011_SEC-80E3895C41A014FA.json",
+    "sections/0012_SEC-3E308A345ED98EDE.json",
+    "sections/0013_SEC-737A09FE2B70DD16.json",
+    "sections/0014_SEC-9F1A5C191CBBD8F6.json",
+    "sections/0015_SEC-B42A14EE0C1FCA9D.json",
+    "sections/0016_SEC-9905F2C8DE78EC4D.json",
+    "sections/0017_SEC-1EB247B2EA80ECA3.json",
+    "sections/0018_SEC-CF4DA9FCADECD4FD.json",
+    "sections/0019_SEC-B3974D592C48E6E2.json",
+    "sections/0020_SEC-2716575D0C24E6B1.json",
+    "sections/0021_SEC-81DBD61537FF9B5E.json",
+    "sections/0022_SEC-FFD461FD8D8D686E.json",
+    "sections/0023_SEC-A99FBB836935186A.json",
+    "sections/0024_SEC-B6320DCD99E6A5B9.json",
+    "sections/0025_SEC-E2C20B855053B08B.json",
+    "sections/0026_SEC-C56E459A62C8E5F9.json",
+    "sections/0027_SEC-6F7433BB9576B338.json",
+    "sections/0028_SEC-C68F13840A218F92.json",
+    "sections/0029_SEC-3ED7BE139912A8F1.json",
+    "sections/0030_SEC-BA537F7660EBA0FD.json",
+    "sections/0031_SEC-6350C7D75B8B21BD.json",
+    "sections/0032_SEC-B6184E885890177C.json",
+    "sections/0033_SEC-F16B7765D81DBEF5.json",
+    "sections/0034_SEC-C292D01286912E00.json",
+    "sections/0035_SEC-7863E93F89A70A14.json",
+    "sections/0036_SEC-3512916CC4E41C4F.json",
+    "sections/0037_SEC-6E5568E17C3A09BD.json",
+    "sections/0038_SEC-B041E5CEB91455BC.json",
+    "sections/0039_SEC-553076F0CA6C9D48.json",
+    "sections/0040_SEC-2F94D27FD3E7386F.json",
+    "sections/0041_SEC-D626C872D4B15C29.json",
+    "sections/0042_SEC-96B4F5934BCAE17E.json",
+    "sections/0043_SEC-0107B34CCC306F13.json",
+    "sections/0044_SEC-CCBA4A841ECDDC58.json",
+    "sections/0045_SEC-E0B286E8B1874E4C.json",
+    "sections/0046_SEC-D2BC010F09CBB4FF.json",
+    "sections/0047_SEC-AEF38A52A4E83785.json"
+  ],
+  "summary": {
+    "page_count": 42,
+    "toc_entry_count": 49,
+    "section_file_count": 48,
+    "block_count": 399,
+    "table_count": 8,
+    "low_text_pages": [],
+    "image_only_pages": [],
+    "unmapped_pages": [],
+    "review_required_pages": []
+  }
+}

@@ -1,0 +1,366 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-C37FEC2A66309388",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.2 系统维护",
+    "7.8.2.7 公钥导入"
+  ],
+  "section_title": "7.8.2.7 公钥导入",
+  "start_pdf_page": 71,
+  "end_pdf_page": 71,
+  "blocks": [
+    {
+      "block_id": "BLK-569AC5296F785599",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 71,
+      "printed_page_label": "61",
+      "block_order": 0,
+      "section_id": "SEC-C37FEC2A66309388",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.7 公钥导入"
+      ],
+      "section_title": "7.8.2.7 公钥导入",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.615,
+        48.088,
+        463.969,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B867BE0D7D130A4E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 71,
+      "printed_page_label": "61",
+      "block_order": 1,
+      "section_id": "SEC-C37FEC2A66309388",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.7 公钥导入"
+      ],
+      "section_title": "7.8.2.7 公钥导入",
+      "block_type": "paragraph",
+      "text": "步骤 3 在弹出的对话框中，单击",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        72.905,
+        200.736,
+        85.388
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4B1AAC6F0A497656",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 71,
+      "printed_page_label": "61",
+      "block_order": 2,
+      "section_id": "SEC-C37FEC2A66309388",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.7 公钥导入"
+      ],
+      "section_title": "7.8.2.7 公钥导入",
+      "block_type": "paragraph",
+      "text": "图标，选择后缀名为.crt 的证书文件和后缀名为.key 的私钥文\n件。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        74.327,
+        455.409,
+        98.78
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E335A17F019FAE31",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 71,
+      "printed_page_label": "61",
+      "block_order": 3,
+      "section_id": "SEC-C37FEC2A66309388",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.7 公钥导入"
+      ],
+      "section_title": "7.8.2.7 公钥导入",
+      "block_type": "paragraph",
+      "text": "步骤 4 单击确定，导入成功后将提示是否重启系统。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        102.905,
+        281.736,
+        115.388
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CC9F8DA6837A1046",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 71,
+      "printed_page_label": "61",
+      "block_order": 4,
+      "section_id": "SEC-C37FEC2A66309388",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.7 公钥导入"
+      ],
+      "section_title": "7.8.2.7 公钥导入",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        119.477,
+        126.36,
+        130.43
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C5D06BF5942959CA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 71,
+      "printed_page_label": "61",
+      "block_order": 5,
+      "section_id": "SEC-C37FEC2A66309388",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.7 公钥导入"
+      ],
+      "section_title": "7.8.2.7 公钥导入",
+      "block_type": "heading",
+      "text": "7.8.2.7 公钥导入",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        146.311,
+        146.2,
+        158.481
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-65262A004A593613",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 71,
+      "printed_page_label": "61",
+      "block_order": 6,
+      "section_id": "SEC-C37FEC2A66309388",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.7 公钥导入"
+      ],
+      "section_title": "7.8.2.7 公钥导入",
+      "block_type": "paragraph",
+      "text": "为确保系统升级的安全，保证升级包文件的真实性和完整性，使用数字签名技术对升级包文件进\n行校验。数据采集器升级时，可能需要导入升级包文件对应的公钥，以完成数字签名校验流程。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        165.535,
+        459.366,
+        188.629
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-58814AD6346384F5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 71,
+      "printed_page_label": "61",
+      "block_order": 7,
+      "section_id": "SEC-C37FEC2A66309388",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.7 公钥导入"
+      ],
+      "section_title": "7.8.2.7 公钥导入",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击系统 > 系统维护。",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        203.705,
+        192.993,
+        216.188
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6267B61E9023B461",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 71,
+      "printed_page_label": "61",
+      "block_order": 8,
+      "section_id": "SEC-C37FEC2A66309388",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.7 公钥导入"
+      ],
+      "section_title": "7.8.2.7 公钥导入",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击公钥导入。",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        220.205,
+        164.733,
+        232.688
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6142A56600FD68DB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 71,
+      "printed_page_label": "61",
+      "block_order": 9,
+      "section_id": "SEC-C37FEC2A66309388",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.7 公钥导入"
+      ],
+      "section_title": "7.8.2.7 公钥导入",
+      "block_type": "paragraph",
+      "text": "步骤 3 在弹出的对话框中，选择公钥文件（.pem 格式）。",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        236.705,
+        303.99,
+        249.188
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BB0A190AE44ADE94",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 71,
+      "printed_page_label": "61",
+      "block_order": 10,
+      "section_id": "SEC-C37FEC2A66309388",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.7 公钥导入"
+      ],
+      "section_title": "7.8.2.7 公钥导入",
+      "block_type": "paragraph",
+      "text": "步骤 4 单击打开，导入公钥。",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        253.205,
+        191.733,
+        265.688
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0CADC46244E04DFB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 71,
+      "printed_page_label": "61",
+      "block_order": 11,
+      "section_id": "SEC-C37FEC2A66309388",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.7 公钥导入"
+      ],
+      "section_title": "7.8.2.7 公钥导入",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        269.777,
+        126.357,
+        280.73
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

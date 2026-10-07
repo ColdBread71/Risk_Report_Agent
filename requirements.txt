@@ -1,0 +1,29 @@
+# Runtime: Python 3.11+
+# Install in the existing RiskAnalysis conda environment:
+#   conda activate RiskAnalysis
+#   python -m pip install -r requirements.txt
+
+# Current MVP: LangGraph + strict Pydantic schemas
+pydantic>=2.13,<3
+langgraph>=1.2,<2
+langchain-core>=1.5,<2
+langchain-openai>=0.1.0
+python-dotenv>=1.0.0
+tiktoken>=0.12,<1
+
+# Current project dependencies retained for the next LLM/parser batches
+openai>=3,<4
+json-repair>=0.63,<1
+PyMuPDF>=1.28,<2
+python-docx>=1.2,<2
+
+# Planned RAG / local index
+faiss-cpu>=1.13,<2
+dashscope>=1.22,<2
+
+# Planned output and UI
+openpyxl>=3.1,<4
+streamlit>=1.50,<2
+
+# Development and verification
+pytest>=8,<10

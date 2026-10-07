@@ -1,0 +1,241 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-B6184E885890177C",
+  "section_path": [
+    "10 安全配置指南",
+    "10.9 安全回溯",
+    "10.9.2 Syslog日志"
+  ],
+  "section_title": "10.9.2 Syslog日志",
+  "start_pdf_page": 28,
+  "end_pdf_page": 28,
+  "blocks": [
+    {
+      "block_id": "BLK-CCD0223911BC0B5D",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 28,
+      "printed_page_label": "24",
+      "block_order": 0,
+      "section_id": "SEC-B6184E885890177C",
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯",
+        "10.9.2 Syslog日志"
+      ],
+      "section_title": "10.9.2 Syslog日志",
+      "block_type": "paragraph",
+      "text": "用户网络安全操作手册\n10 安全配置指南",
+      "table_cells": null,
+      "bbox": [
+        60.441,
+        48.088,
+        449.795,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B5B3B7ADE22F0619",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 28,
+      "printed_page_label": "24",
+      "block_order": 9,
+      "section_id": "SEC-B6184E885890177C",
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯",
+        "10.9.2 Syslog日志"
+      ],
+      "section_title": "10.9.2 Syslog日志",
+      "block_type": "heading",
+      "text": "10.9.2 Syslog 日志",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        404.561,
+        139.263,
+        416.731
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4127968E401939E5",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 28,
+      "printed_page_label": "24",
+      "block_order": 10,
+      "section_id": "SEC-B6184E885890177C",
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯",
+        "10.9.2 Syslog日志"
+      ],
+      "section_title": "10.9.2 Syslog日志",
+      "block_type": "paragraph",
+      "text": "查询Syslog 日志",
+      "table_cells": null,
+      "bbox": [
+        88.197,
+        422.527,
+        155.706,
+        433.48
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4528A847EEA129E9",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 28,
+      "printed_page_label": "24",
+      "block_order": 11,
+      "section_id": "SEC-B6184E885890177C",
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯",
+        "10.9.2 Syslog日志"
+      ],
+      "section_title": "10.9.2 Syslog日志",
+      "block_type": "paragraph",
+      "text": "在历史数据界面，点击Syslog，点击日志记录，选择时间段及日志等级，可以查看该时间内\n用户syslog 记录。",
+      "table_cells": null,
+      "bbox": [
+        88.197,
+        439.327,
+        450.456,
+        461.08
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CB4EFB716BA9D3AD",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 28,
+      "printed_page_label": "24",
+      "block_order": 12,
+      "section_id": "SEC-B6184E885890177C",
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯",
+        "10.9.2 Syslog日志"
+      ],
+      "section_title": "10.9.2 Syslog日志",
+      "block_type": "list",
+      "text": "•\nSyslog 日志时间戳采用本地时间（含时区）格式，精度为毫秒级，标准格式为\nYYYY-MM-DD HH:MM:SS.sss（示例：2026-03-18 09:55:25.220）。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        549.581,
+        437.627,
+        574.034
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C386F79105E65913",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 28,
+      "printed_page_label": "24",
+      "block_order": 13,
+      "section_id": "SEC-B6184E885890177C",
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯",
+        "10.9.2 Syslog日志"
+      ],
+      "section_title": "10.9.2 Syslog日志",
+      "block_type": "paragraph",
+      "text": "导出Syslog 日志",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        595.731,
+        155.702,
+        606.684
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-255D995E1FA65671",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 28,
+      "printed_page_label": "24",
+      "block_order": 14,
+      "section_id": "SEC-B6184E885890177C",
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯",
+        "10.9.2 Syslog日志"
+      ],
+      "section_title": "10.9.2 Syslog日志",
+      "block_type": "paragraph",
+      "text": "登录审计用户账号，在历史数据界面，点击Syslog 中的",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        619.054,
+        308.702,
+        630.007
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E954A37357F00904",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 28,
+      "printed_page_label": "24",
+      "block_order": 15,
+      "section_id": "SEC-B6184E885890177C",
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯",
+        "10.9.2 Syslog日志"
+      ],
+      "section_title": "10.9.2 Syslog日志",
+      "block_type": "paragraph",
+      "text": "图标，设置压缩密码后，可以将\nSyslog 日志导出。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        619.054,
+        448.877,
+        640.807
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

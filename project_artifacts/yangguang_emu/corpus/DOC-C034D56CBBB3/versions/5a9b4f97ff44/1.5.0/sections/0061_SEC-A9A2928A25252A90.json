@@ -1,0 +1,101 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-A9A2928A25252A90",
+  "section_path": [
+    "7 Web界面",
+    "7.5 设备监控",
+    "7.5.12 设备信息"
+  ],
+  "section_title": "7.5.12 设备信息",
+  "start_pdf_page": 53,
+  "end_pdf_page": 53,
+  "blocks": [
+    {
+      "block_id": "BLK-C31F85A1533AE7AF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 29,
+      "section_id": "SEC-A9A2928A25252A90",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.12 设备信息"
+      ],
+      "section_title": "7.5.12 设备信息",
+      "block_type": "heading",
+      "text": "7.5.12 设备信息",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        555.111,
+        143.42,
+        567.281
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AADC4DB7F008851B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 30,
+      "section_id": "SEC-A9A2928A25252A90",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.12 设备信息"
+      ],
+      "section_title": "7.5.12 设备信息",
+      "block_type": "paragraph",
+      "text": "单击设备监控 > 设备信息，进入界面，查看设备信息。",
+      "table_cells": null,
+      "bbox": [
+        102.362,
+        574.427,
+        319.622,
+        585.38
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C146B2E3690DB712",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 31,
+      "section_id": "SEC-A9A2928A25252A90",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.12 设备信息"
+      ],
+      "section_title": "7.5.12 设备信息",
+      "block_type": "paragraph",
+      "text": "可查看设备的S/N 号、设备型号和额定有功功率等参数信息。",
+      "table_cells": null,
+      "bbox": [
+        102.362,
+        595.927,
+        346.865,
+        606.88
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

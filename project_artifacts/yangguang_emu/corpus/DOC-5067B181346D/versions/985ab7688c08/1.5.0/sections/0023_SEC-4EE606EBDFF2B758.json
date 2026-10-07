@@ -1,0 +1,185 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-4EE606EBDFF2B758",
+  "section_path": [
+    "3 机械安装",
+    "3.5 安装方法",
+    "3.5.1 壁挂式安装"
+  ],
+  "section_title": "3.5.1 壁挂式安装",
+  "start_pdf_page": 22,
+  "end_pdf_page": 22,
+  "blocks": [
+    {
+      "block_id": "BLK-08944A2966F9C463",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "16",
+      "block_order": 0,
+      "section_id": "SEC-4EE606EBDFF2B758",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.1 壁挂式安装"
+      ],
+      "section_title": "3.5.1 壁挂式安装",
+      "block_type": "paragraph",
+      "text": "用户手册\n3 机械安装",
+      "table_cells": null,
+      "bbox": [
+        60.442,
+        48.088,
+        449.796,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ECADD3AD84B7B8B7",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "16",
+      "block_order": 1,
+      "section_id": "SEC-4EE606EBDFF2B758",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.1 壁挂式安装"
+      ],
+      "section_title": "3.5.1 壁挂式安装",
+      "block_type": "paragraph",
+      "text": "设备可以安装到支架上，也可以安装到墙面上。根据实际需要，选择对应的安装方法。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        178.006,
+        430.193,
+        188.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A47318E8BADA7CAD",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "16",
+      "block_order": 2,
+      "section_id": "SEC-4EE606EBDFF2B758",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.1 壁挂式安装"
+      ],
+      "section_title": "3.5.1 壁挂式安装",
+      "block_type": "heading",
+      "text": "3.5.1 壁挂式安装",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        200.19,
+        133.683,
+        212.36
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3DA641E4343B6645",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "16",
+      "block_order": 3,
+      "section_id": "SEC-4EE606EBDFF2B758",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.1 壁挂式安装"
+      ],
+      "section_title": "3.5.1 壁挂式安装",
+      "block_type": "paragraph",
+      "text": "步骤 1 结合设备背面的安装孔距离，在需要安装的墙面上，标注钻孔位置。",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        218.084,
+        357.558,
+        230.567
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7282FD63F8D0255E",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "16",
+      "block_order": 4,
+      "section_id": "SEC-4EE606EBDFF2B758",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.1 壁挂式安装"
+      ],
+      "section_title": "3.5.1 壁挂式安装",
+      "block_type": "paragraph",
+      "text": "步骤 2 使用打孔器，进行打孔。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        371.21,
+        186.563,
+        383.693
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EB0AD03FFC052AF5",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "16",
+      "block_order": 5,
+      "section_id": "SEC-4EE606EBDFF2B758",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.1 壁挂式安装"
+      ],
+      "section_title": "3.5.1 壁挂式安装",
+      "block_type": "paragraph",
+      "text": "步骤 3 将M10x45 膨胀螺管置入打孔处。并使用橡胶锤敲击,使其完全嵌入墙体。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        524.337,
+        378.578,
+        536.82
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

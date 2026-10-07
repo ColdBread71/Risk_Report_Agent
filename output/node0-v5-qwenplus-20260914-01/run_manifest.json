@@ -1,0 +1,43 @@
+{
+  "schema_version": "node_run_manifest.v1",
+  "run_id": "node0-v5-qwenplus-20260914-01",
+  "project_id": "yangguang_emu",
+  "created_at": "2026-09-14T03:24:23.429485+00:00",
+  "updated_at": "2026-09-14T03:28:18.235102+00:00",
+  "requested_node": "0",
+  "evidence_packet_ref": {
+    "packet_id": "yangguang_emu_node_0_3",
+    "packet_version": 2,
+    "project_id": "yangguang_emu",
+    "packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "manifest_sha256": "3dcf5b466628209d69b62ee49402b9d05a6918db76e8288042818407e06857a2",
+    "config_sha256": "7189e425f0fad61ddcac685105c87c07aba1825821c4bb3e755a07d39e71335a",
+    "parser_name": "pymupdf-page-section-parser",
+    "parser_version": "1.5.0",
+    "document_ids": [
+      "DOC-5067B181346D",
+      "DOC-DF116E7199E2",
+      "DOC-D9C0DEB31D45"
+    ],
+    "block_count": 1041
+  },
+  "text_model": "qwen-plus",
+  "rule_versions": {
+    "scope": "node0_scope_rules.v5",
+    "retrieval_profile": "1.1",
+    "field_fact_prompt": "2.2"
+  },
+  "upstream": {},
+  "nodes": {
+    "node_0": {
+      "status": "node_0_completed",
+      "completed_node": "define_scope",
+      "generated_at": "2026-09-14T03:28:18.235102+00:00",
+      "output_json": "report.json",
+      "output_excel": "report.xlsx",
+      "checked_usable": false,
+      "checked_at": null
+    }
+  },
+  "presentation_note": "2026-09-14 relocated and formatted; generation unchanged; original archived"
+}

@@ -1,0 +1,49 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-AA4BB5044E84D869",
+  "section_path": [
+    "7 Web界面",
+    "7.8 智能分析",
+    "7.8.1 离散率分析",
+    "7.8.1.1 风道健康度检测",
+    "7.8.1.1.2 设置风道健康度检测参数"
+  ],
+  "section_title": "7.8.1.1.2 设置风道健康度检测参数",
+  "start_pdf_page": 68,
+  "end_pdf_page": 68,
+  "blocks": [
+    {
+      "block_id": "BLK-5DA8EAFF39DED2E7",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 0,
+      "section_id": "SEC-AA4BB5044E84D869",
+      "section_path": [
+        "7 Web界面",
+        "7.8 智能分析",
+        "7.8.1 离散率分析",
+        "7.8.1.1 风道健康度检测",
+        "7.8.1.1.2 设置风道健康度检测参数"
+      ],
+      "section_title": "7.8.1.1.2 设置风道健康度检测参数",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.44,
+        48.088,
+        449.794,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

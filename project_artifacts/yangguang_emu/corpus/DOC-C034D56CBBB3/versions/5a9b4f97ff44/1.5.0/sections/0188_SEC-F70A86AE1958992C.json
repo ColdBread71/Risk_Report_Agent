@@ -1,0 +1,93 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-F70A86AE1958992C",
+  "section_path": [
+    "15 附录B:相关图纸"
+  ],
+  "section_title": "15 附录B:相关图纸",
+  "start_pdf_page": 120,
+  "end_pdf_page": 120,
+  "blocks": [
+    {
+      "block_id": "BLK-AB68E1502A3E4459",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 120,
+      "printed_page_label": "110",
+      "block_order": 0,
+      "section_id": "SEC-F70A86AE1958992C",
+      "section_path": [
+        "15 附录B:相关图纸"
+      ],
+      "section_title": "15 附录B:相关图纸",
+      "block_type": "heading",
+      "text": "15\n附录B:相关图纸",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        98.112,
+        221.969,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D51DCA82CE3F3FDA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 120,
+      "printed_page_label": "110",
+      "block_order": 1,
+      "section_id": "SEC-F70A86AE1958992C",
+      "section_path": [
+        "15 附录B:相关图纸"
+      ],
+      "section_title": "15 附录B:相关图纸",
+      "block_type": "paragraph",
+      "text": "机架式安装图纸",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        144.156,
+        151.193,
+        155.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AE40CA708E14CBFE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 120,
+      "printed_page_label": "110",
+      "block_order": 2,
+      "section_id": "SEC-F70A86AE1958992C",
+      "section_path": [
+        "15 附录B:相关图纸"
+      ],
+      "section_title": "15 附录B:相关图纸",
+      "block_type": "paragraph",
+      "text": "壁挂式安装图纸",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        375.041,
+        151.193,
+        385.994
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

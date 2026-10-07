@@ -1,0 +1,165 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-7D94528A97965C6C",
+  "section_path": [
+    "10 例行维护"
+  ],
+  "section_title": "10 例行维护",
+  "start_pdf_page": 101,
+  "end_pdf_page": 101,
+  "blocks": [
+    {
+      "block_id": "BLK-F34ABF383F618EE6",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 101,
+      "printed_page_label": "91",
+      "block_order": 0,
+      "section_id": "SEC-7D94528A97965C6C",
+      "section_path": [
+        "10 例行维护"
+      ],
+      "section_title": "10 例行维护",
+      "block_type": "heading",
+      "text": "10\n例行维护",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        98.112,
+        178.632,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-471B6E11540AC878",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 101,
+      "printed_page_label": "91",
+      "block_order": 1,
+      "section_id": "SEC-7D94528A97965C6C",
+      "section_path": [
+        "10 例行维护"
+      ],
+      "section_title": "10 例行维护",
+      "block_type": "table",
+      "text": "由\n等\n维\n一\n安\t于环境温度、湿度\n，从而导致数据采\n护，以保证其正常\n切有助于数据采集\n全总则\t、灰尘以及振动等的影响，数据采集器内部的器件会发生老化及磨损\n集器内部潜在的故障发生。因此，有必要对数据采集器实施日常及定期\n运转与使用寿命。\n器处于良好工作状态的措施及方法，均属于维护工作的范畴。\n\t警告\t\n\t只有具备资质且经过\n在进行维护工作时，\n备！\t授权的人员才可对数据采集器进行维护等操作。\n不要将螺丝、垫圈等金属件遗留在数据采集器内，否则有可能损坏设\n\t\t\n\t警告\t\n\t在数据采集器退出运\t行后，请至少等待5 分钟，再对其进行操作。\n五\n在\n全\n•\n•\n•\n•\n•\n维\t大安全法则\n对数据采集器进行\n法则：\n断开数据采集器的\n确保数据采集器不\n使用万用表确保数\n施行必要的接地连\n对操作部分可能带\n护项目列表\t维护或检修等操作时，为确保操作人员安全，请务必遵守下述的五大安\n所有外部连接，以及与数据采集器内部供电电源的连接。\n会被意外重新上电。\n据采集器内部已完全不带电。\n接。\n电部件，使用绝缘材质的布料进行绝缘遮盖。\n\t检查内容\t检查方法\n\t工作环境\t• 检查数据采集器周围没有放置强电磁干扰设备。\n• 检查数据采集器周围没有放置热源。\n• 检查数据采集器周围没有腐蚀性物质",
+      "table_cells": [
+        [
+          "由\n等\n维\n一\n安",
+          "于环境温度、湿度\n，从而导致数据采\n护，以保证其正常\n切有助于数据采集\n全总则",
+          "、灰尘以及振动等的影响，数据采集器内部的器件会发生老化及磨损\n集器内部潜在的故障发生。因此，有必要对数据采集器实施日常及定期\n运转与使用寿命。\n器处于良好工作状态的措施及方法，均属于维护工作的范畴。"
+        ],
+        [
+          null,
+          "警告",
+          null
+        ],
+        [
+          null,
+          "只有具备资质且经过\n在进行维护工作时，\n备！",
+          "授权的人员才可对数据采集器进行维护等操作。\n不要将螺丝、垫圈等金属件遗留在数据采集器内，否则有可能损坏设"
+        ],
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "警告",
+          null
+        ],
+        [
+          null,
+          "在数据采集器退出运",
+          "行后，请至少等待5 分钟，再对其进行操作。"
+        ],
+        [
+          "五\n在\n全\n•\n•\n•\n•\n•\n维",
+          "大安全法则\n对数据采集器进行\n法则：\n断开数据采集器的\n确保数据采集器不\n使用万用表确保数\n施行必要的接地连\n对操作部分可能带\n护项目列表",
+          "维护或检修等操作时，为确保操作人员安全，请务必遵守下述的五大安\n所有外部连接，以及与数据采集器内部供电电源的连接。\n会被意外重新上电。\n据采集器内部已完全不带电。\n接。\n电部件，使用绝缘材质的布料进行绝缘遮盖。"
+        ],
+        [
+          null,
+          "检查内容",
+          "检查方法"
+        ],
+        [
+          null,
+          "工作环境",
+          "• 检查数据采集器周围没有放置强电磁干扰设备。\n• 检查数据采集器周围没有放置热源。\n• 检查数据采集器周围没有腐蚀性物质"
+        ]
+      ],
+      "bbox": [
+        101.718,
+        125.85,
+        462.366,
+        617.4
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0F902775606FA6B1",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 101,
+      "printed_page_label": "91",
+      "block_order": 2,
+      "section_id": "SEC-7D94528A97965C6C",
+      "section_path": [
+        "10 例行维护"
+      ],
+      "section_title": "10 例行维护",
+      "block_type": "list",
+      "text": "•\n检查供电电压正常。\n•\n检查线路接线牢靠。\n•\n检查接地线良好接地。",
+      "table_cells": null,
+      "bbox": [
+        185.931,
+        623.306,
+        290.106,
+        661.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BA31655E97823CAC",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 101,
+      "printed_page_label": "91",
+      "block_order": 3,
+      "section_id": "SEC-7D94528A97965C6C",
+      "section_path": [
+        "10 例行维护"
+      ],
+      "section_title": "10 例行维护",
+      "block_type": "paragraph",
+      "text": "硬件维护",
+      "table_cells": null,
+      "bbox": [
+        111.034,
+        636.806,
+        147.034,
+        647.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,772 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-97F4D6C63E666496",
+  "section_path": [
+    "1 安全注意事项",
+    "1.5 电气安全"
+  ],
+  "section_title": "1.5 电气安全",
+  "start_pdf_page": 11,
+  "end_pdf_page": 11,
+  "blocks": [
+    {
+      "block_id": "BLK-CB0E2E52E2FBCDFE",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 0,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "paragraph",
+      "text": "用户手册\n1 安全注意事项",
+      "table_cells": null,
+      "bbox": [
+        74.615,
+        48.088,
+        463.969,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C6968872337E868D",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 1,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "paragraph",
+      "text": "安装要求",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        71.556,
+        138.366,
+        82.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3C4B28E339AFFF7D",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 2,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "paragraph",
+      "text": "警告",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        91.724,
+        146.863,
+        105.111
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BFA85CF0DED836A6",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 3,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "paragraph",
+      "text": "安装环境不佳将影响设备系统性能！",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        108.906,
+        250.866,
+        119.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-93661C771139AA1D",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 4,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "list",
+      "text": "•\n请将产品安装在通风良好的环境下。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        122.556,
+        265.041,
+        133.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C06598F11F8C6D65",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 5,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "list",
+      "text": "•\n请务必保证产品散热系统或通风口无遮挡。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        137.556,
+        292.041,
+        148.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-15A4C38FBCEE976B",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 6,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "list",
+      "text": "•\n请勿将产品安装在易燃易爆或有烟雾的环境中。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        152.556,
+        310.041,
+        163.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BE05DCCCAFDA63D5",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 7,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "paragraph",
+      "text": "安装前",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        185.206,
+        129.366,
+        196.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2AEC311802E8CC14",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 8,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "paragraph",
+      "text": "注意",
+      "table_cells": null,
+      "bbox": [
+        112.114,
+        205.124,
+        134.114,
+        218.511
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8EF3949950201688",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 9,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "list",
+      "text": "•\n收到产品时，务必检查产品是否发生损坏。若发现问题，请立即与阳光电源股份有限公\n司或运输公司联系。",
+      "table_cells": null,
+      "bbox": [
+        106.868,
+        223.656,
+        463.043,
+        248.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2996C31CB66E79DD",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 10,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "list",
+      "text": "•\n对产品进行操作前，请务必熟悉手册中所有的安全使用说明。",
+      "table_cells": null,
+      "bbox": [
+        106.868,
+        252.156,
+        364.043,
+        263.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3B881A9B56BBBDBB",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 11,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "list",
+      "text": "•\n请参考手册中的描述，对设备进行搬运装卸、就位安装和操作维护，以确保后期设备能\n够安全使用。",
+      "table_cells": null,
+      "bbox": [
+        106.868,
+        267.156,
+        463.043,
+        291.609
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-08AD4F9A1148568B",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 12,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "list",
+      "text": "•\n设备在安装前，请确保机柜已稳固，无倾斜。",
+      "table_cells": null,
+      "bbox": [
+        106.868,
+        295.656,
+        301.043,
+        306.609
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6E4FC09C62F71AD1",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 13,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "paragraph",
+      "text": "安装中",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        328.306,
+        129.366,
+        339.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CCDD088FFFF9F643",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 14,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "paragraph",
+      "text": "注意",
+      "table_cells": null,
+      "bbox": [
+        112.114,
+        348.224,
+        134.114,
+        361.611
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D11C57FCC7371660",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 15,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "paragraph",
+      "text": "该产品只能按照手册中规定的用途使用，未经授权的改装或使用非本公司出售或推荐的零\n配件，可能导致火灾、触电和其他伤害。",
+      "table_cells": null,
+      "bbox": [
+        106.868,
+        365.406,
+        457.868,
+        387.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-53822EA593C6E90C",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 16,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "paragraph",
+      "text": "注意",
+      "table_cells": null,
+      "bbox": [
+        112.114,
+        404.624,
+        134.114,
+        418.011
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F84C1B13D9EAEFCA",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 17,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "paragraph",
+      "text": "安装时，请务必断开所有电气连接并且断开前级输入开关，确保设备不带电。",
+      "table_cells": null,
+      "bbox": [
+        106.868,
+        421.806,
+        412.868,
+        432.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DFBD426745736911",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 18,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "paragraph",
+      "text": "注意",
+      "table_cells": null,
+      "bbox": [
+        112.114,
+        450.224,
+        134.114,
+        463.611
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-57CBCDF52837F5AA",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 19,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "paragraph",
+      "text": "安装时，若需要钻孔：",
+      "table_cells": null,
+      "bbox": [
+        106.868,
+        467.406,
+        196.868,
+        478.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4F9A08AFBA3041F4",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 20,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "list",
+      "text": "•\n请佩戴护目镜和保护手套。",
+      "table_cells": null,
+      "bbox": [
+        106.868,
+        481.056,
+        229.043,
+        492.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8DFC97913DC89BF2",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 21,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "list",
+      "text": "•\n钻孔处请确保已避开墙内的水电走线。",
+      "table_cells": null,
+      "bbox": [
+        106.868,
+        496.056,
+        274.043,
+        507.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6939329D5A5FE28A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 22,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "list",
+      "text": "•\n请遮挡产品，防止碎屑或灰尘掉入产品内部。",
+      "table_cells": null,
+      "bbox": [
+        106.868,
+        511.056,
+        301.043,
+        522.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7CD3471B63A631E9",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 23,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "paragraph",
+      "text": "安装后",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        543.706,
+        129.366,
+        554.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2E33DF3282BC4403",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 24,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "paragraph",
+      "text": "注意",
+      "table_cells": null,
+      "bbox": [
+        112.114,
+        563.624,
+        134.114,
+        577.011
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-22ED678BE988D879",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 25,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "paragraph",
+      "text": "安装完设备，应清除设备区域的空包装材料，如纸箱、泡沫、塑料、扎线带等。",
+      "table_cells": null,
+      "bbox": [
+        106.868,
+        580.806,
+        421.868,
+        591.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2DBCC65E6EC45309",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 26,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "heading",
+      "text": "1.5 电气安全",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        624.208,
+        143.046,
+        638.812
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F0C55A0E4A7A7B0C",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "5",
+      "block_order": 27,
+      "section_id": "SEC-97F4D6C63E666496",
+      "section_path": [
+        "1 安全注意事项",
+        "1.5 电气安全"
+      ],
+      "section_title": "1.5 电气安全",
+      "block_type": "paragraph",
+      "text": "不当的接线操作可能导致人员受伤，因此，操作人员在接线前，请仔细阅读安全注意事项。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        651.856,
+        462.366,
+        662.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

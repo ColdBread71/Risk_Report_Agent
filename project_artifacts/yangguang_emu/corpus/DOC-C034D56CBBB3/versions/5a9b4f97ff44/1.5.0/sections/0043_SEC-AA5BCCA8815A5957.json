@@ -1,0 +1,129 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-AA5BCCA8815A5957",
+  "section_path": [
+    "7 Web界面",
+    "7.4 概览",
+    "7.4.1 基本信息"
+  ],
+  "section_title": "7.4.1 基本信息",
+  "start_pdf_page": 50,
+  "end_pdf_page": 50,
+  "blocks": [
+    {
+      "block_id": "BLK-C7F3BED16EC98F72",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "40",
+      "block_order": 0,
+      "section_id": "SEC-AA5BCCA8815A5957",
+      "section_path": [
+        "7 Web界面",
+        "7.4 概览",
+        "7.4.1 基本信息"
+      ],
+      "section_title": "7.4.1 基本信息",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.443,
+        48.088,
+        449.79,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D19F99DE2601C8FE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "40",
+      "block_order": 1,
+      "section_id": "SEC-AA5BCCA8815A5957",
+      "section_path": [
+        "7 Web界面",
+        "7.4 概览",
+        "7.4.1 基本信息"
+      ],
+      "section_title": "7.4.1 基本信息",
+      "block_type": "paragraph",
+      "text": "图标指示数据采集器接入云服务状态。",
+      "table_cells": null,
+      "bbox": [
+        102.368,
+        78.339,
+        255.368,
+        89.292
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5077E36DD41E789F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "40",
+      "block_order": 19,
+      "section_id": "SEC-AA5BCCA8815A5957",
+      "section_path": [
+        "7 Web界面",
+        "7.4 概览",
+        "7.4.1 基本信息"
+      ],
+      "section_title": "7.4.1 基本信息",
+      "block_type": "heading",
+      "text": "7.4.1 基本信息",
+      "table_cells": null,
+      "bbox": [
+        56.69,
+        609.773,
+        123.68,
+        621.943
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-058BEE7A009F530C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "40",
+      "block_order": 20,
+      "section_id": "SEC-AA5BCCA8815A5957",
+      "section_path": [
+        "7 Web界面",
+        "7.4 概览",
+        "7.4.1 基本信息"
+      ],
+      "section_title": "7.4.1 基本信息",
+      "block_type": "paragraph",
+      "text": "单击概览 > 基本信息，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        629.089,
+        224.453,
+        640.042
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

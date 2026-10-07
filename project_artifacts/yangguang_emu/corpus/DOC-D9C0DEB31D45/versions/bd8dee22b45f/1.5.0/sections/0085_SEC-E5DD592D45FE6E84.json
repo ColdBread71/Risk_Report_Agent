@@ -1,0 +1,221 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-E5DD592D45FE6E84",
+  "section_path": [
+    "7 Web界面",
+    "7.7 功率调节",
+    "7.7.3 有功功率",
+    "7.7.3.5 干节点"
+  ],
+  "section_title": "7.7.3.5 干节点",
+  "start_pdf_page": 60,
+  "end_pdf_page": 60,
+  "blocks": [
+    {
+      "block_id": "BLK-75EBDB3ADBAFAA5F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 0,
+      "section_id": "SEC-E5DD592D45FE6E84",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.5 干节点"
+      ],
+      "section_title": "7.7.3.5 干节点",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.44,
+        48.088,
+        449.794,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-04022B21EE59B1F8",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 20,
+      "section_id": "SEC-E5DD592D45FE6E84",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.5 干节点"
+      ],
+      "section_title": "7.7.3.5 干节点",
+      "block_type": "heading",
+      "text": "7.7.3.5 干节点",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        568.618,
+        122.027,
+        580.788
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6CC9F778233EC79B",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 21,
+      "section_id": "SEC-E5DD592D45FE6E84",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.5 干节点"
+      ],
+      "section_title": "7.7.3.5 干节点",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        587.934,
+        124.196,
+        598.887
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C442E39C4684F57B",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 22,
+      "section_id": "SEC-E5DD592D45FE6E84",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.5 干节点"
+      ],
+      "section_title": "7.7.3.5 干节点",
+      "block_type": "list",
+      "text": "•\n当前有功控制方式已选择干节点。见7.7.1 选择功率控制方式。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        607.934,
+        352.13,
+        618.887
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9A8D52505B99CE66",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 23,
+      "section_id": "SEC-E5DD592D45FE6E84",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.5 干节点"
+      ],
+      "section_title": "7.7.3.5 干节点",
+      "block_type": "list",
+      "text": "•\n如选择闭环控制，需接入用于功率调节的关口电表。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        622.934,
+        309.362,
+        633.887
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A8F7378C09DE195C",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 24,
+      "section_id": "SEC-E5DD592D45FE6E84",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.5 干节点"
+      ],
+      "section_title": "7.7.3.5 干节点",
+      "block_type": "paragraph",
+      "text": "步骤 1 在控制策略下拉列表中，选择开环控制或闭环控制。",
+      "table_cells": null,
+      "bbox": [
+        56.696,
+        641.012,
+        294.566,
+        653.495
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-84A73F08F3DFCE9E",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 25,
+      "section_id": "SEC-E5DD592D45FE6E84",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.5 干节点"
+      ],
+      "section_title": "7.7.3.5 干节点",
+      "block_type": "paragraph",
+      "text": "步骤 2 选择闭环控制时，需在选择电表下拉列表中，选择参与功率调节的电表。",
+      "table_cells": null,
+      "bbox": [
+        56.696,
+        657.512,
+        375.566,
+        669.995
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

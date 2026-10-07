@@ -1,0 +1,47 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-A35754F231BC5896",
+  "section_path": [
+    "7 Web界面",
+    "7.7 功率调节",
+    "7.7.3 有功功率",
+    "7.7.3.3 本地调节"
+  ],
+  "section_title": "7.7.3.3 本地调节",
+  "start_pdf_page": 57,
+  "end_pdf_page": 57,
+  "blocks": [
+    {
+      "block_id": "BLK-BD6870AB17F70B81",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 20,
+      "section_id": "SEC-A35754F231BC5896",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.3 本地调节"
+      ],
+      "section_title": "7.7.3.3 本地调节",
+      "block_type": "heading",
+      "text": "7.7.3.3 本地调节",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        485.69,
+        146.2,
+        497.86
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

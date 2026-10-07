@@ -1,0 +1,154 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-F78B39CCBD969A8E",
+  "section_path": [
+    "10 用户管理",
+    "10.1 初始用户名和密码"
+  ],
+  "section_title": "10.1 初始用户名和密码",
+  "start_pdf_page": 103,
+  "end_pdf_page": 103,
+  "blocks": [
+    {
+      "block_id": "BLK-627107C914985F0C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 103,
+      "printed_page_label": "93",
+      "block_order": 5,
+      "section_id": "SEC-F78B39CCBD969A8E",
+      "section_path": [
+        "10 用户管理",
+        "10.1 初始用户名和密码"
+      ],
+      "section_title": "10.1 初始用户名和密码",
+      "block_type": "heading",
+      "text": "10.1 初始用户名和密码",
+      "table_cells": null,
+      "bbox": [
+        70.871,
+        244.258,
+        197.723,
+        258.862
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BA81709ACCD3B4E1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 103,
+      "printed_page_label": "93",
+      "block_order": 6,
+      "section_id": "SEC-F78B39CCBD969A8E",
+      "section_path": [
+        "10 用户管理",
+        "10.1 初始用户名和密码"
+      ],
+      "section_title": "10.1 初始用户名和密码",
+      "block_type": "table",
+      "text": "用户\t类型\t用户名\t默认密码\t操作权限\n\t普通\t用户\tuser\t用户名加SN 组成\t只有系统的监控权\n限和简单的设置权\n限。如概览、设备\n监控和部分历史数\n据的查看。\n\t运维\t用户\tmaintain\t用户名加SN 组成\t本手册默认描述的\n所有操作。\n\t审计\t用户\tauditor\t用户名加SN 组成\t对所有用户的操作\n日志，Syslog 日\n志进行审计。\n\t管理\t员\tadministrator\t用户名加SN 组成\t增加用户、删除用\n户、修改用户、清\n空用户、会话管\n理、开发者调试开\n关、分配证书。\n\t开发\t者用户\tdevelop\t根据客户授权获取\nSN 生成动态密\n码。\t经管理员授权后可\n执行设备复杂故障\n的定位和排除。",
+      "table_cells": [
+        [
+          null,
+          "用户",
+          "类型",
+          "用户名",
+          "默认密码",
+          "操作权限"
+        ],
+        [
+          null,
+          "普通",
+          "用户",
+          "user",
+          "用户名加SN 组成",
+          "只有系统的监控权\n限和简单的设置权\n限。如概览、设备\n监控和部分历史数\n据的查看。"
+        ],
+        [
+          null,
+          "运维",
+          "用户",
+          "maintain",
+          "用户名加SN 组成",
+          "本手册默认描述的\n所有操作。"
+        ],
+        [
+          null,
+          "审计",
+          "用户",
+          "auditor",
+          "用户名加SN 组成",
+          "对所有用户的操作\n日志，Syslog 日\n志进行审计。"
+        ],
+        [
+          null,
+          "管理",
+          "员",
+          "administrator",
+          "用户名加SN 组成",
+          "增加用户、删除用\n户、修改用户、清\n空用户、会话管\n理、开发者调试开\n关、分配证书。"
+        ],
+        [
+          null,
+          "开发",
+          "者用户",
+          "develop",
+          "根据客户授权获取\nSN 生成动态密\n码。",
+          "经管理员授权后可\n执行设备复杂故障\n的定位和排除。"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "bbox": [
+        101.723,
+        272.25,
+        462.366,
+        585.825
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-702B8278A0647E80",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 103,
+      "printed_page_label": "93",
+      "block_order": 7,
+      "section_id": "SEC-F78B39CCBD969A8E",
+      "section_path": [
+        "10 用户管理",
+        "10.1 初始用户名和密码"
+      ],
+      "section_title": "10.1 初始用户名和密码",
+      "block_type": "paragraph",
+      "text": "对于固件版本LOGGER-SV400.001.00.P036B001 及更高版本，系统会强制要求更\n改默认密码。早期版本不做强制要求，客户可自行决定是否更改默认密码，但依旧建\n议客户进行密码修改以增强安全性。\n在用户管理界面中，提供清空用户功能，点击即可清空管理员用户下管理账号。该清\n空功能仅适用于运维用户、审计用户及普通用户账号；管理员用户与开发者用户账号\n不支持此项操作。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        591.006,
+        462.366,
+        655.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

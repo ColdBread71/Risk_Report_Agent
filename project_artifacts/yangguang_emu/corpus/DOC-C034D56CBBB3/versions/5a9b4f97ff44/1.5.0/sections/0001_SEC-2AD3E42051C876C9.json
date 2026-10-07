@@ -1,0 +1,353 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-2AD3E42051C876C9",
+  "section_path": [
+    "版权所有"
+  ],
+  "section_title": "版权所有",
+  "start_pdf_page": 2,
+  "end_pdf_page": 2,
+  "blocks": [
+    {
+      "block_id": "BLK-91173D609066C0E0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 2,
+      "printed_page_label": "I",
+      "block_order": 0,
+      "section_id": "SEC-2AD3E42051C876C9",
+      "section_path": [
+        "版权所有"
+      ],
+      "section_title": "版权所有",
+      "block_type": "heading",
+      "text": "版权所有",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        79.362,
+        142.866,
+        101.268
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BE19DCE434D4CA30",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 2,
+      "printed_page_label": "I",
+      "block_order": 1,
+      "section_id": "SEC-2AD3E42051C876C9",
+      "section_path": [
+        "版权所有"
+      ],
+      "section_title": "版权所有",
+      "block_type": "heading",
+      "text": "版权所有©阳光电源股份有限公司 2026。保留所有权利。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        125.406,
+        329.517,
+        136.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-242AE6EC28531369",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 2,
+      "printed_page_label": "I",
+      "block_order": 2,
+      "section_id": "SEC-2AD3E42051C876C9",
+      "section_path": [
+        "版权所有"
+      ],
+      "section_title": "版权所有",
+      "block_type": "paragraph",
+      "text": "本手册相关内容未经阳光电源股份有限公司（简称“阳光电源”）授权，不得私自扩散、复制\n或转发给第三方，不得上传至公共网络等第三方平台。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        143.556,
+        459.36,
+        168.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-82E5D8334FB92D1D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 2,
+      "printed_page_label": "I",
+      "block_order": 3,
+      "section_id": "SEC-2AD3E42051C876C9",
+      "section_path": [
+        "版权所有"
+      ],
+      "section_title": "版权所有",
+      "block_type": "paragraph",
+      "text": "商标",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        177.206,
+        120.366,
+        188.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EDBB467AE86AE952",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 2,
+      "printed_page_label": "I",
+      "block_order": 4,
+      "section_id": "SEC-2AD3E42051C876C9",
+      "section_path": [
+        "版权所有"
+      ],
+      "section_title": "版权所有",
+      "block_type": "paragraph",
+      "text": "以及本手册中使用的其他SUNGROW 商标归阳光电源股份有限公司所\n有。本手册中提及的所有其他商标或注册商标归其各自所有者所有。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        196.407,
+        453.231,
+        220.86
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-45E7ABBCDB6CEDEA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 2,
+      "printed_page_label": "I",
+      "block_order": 5,
+      "section_id": "SEC-2AD3E42051C876C9",
+      "section_path": [
+        "版权所有"
+      ],
+      "section_title": "版权所有",
+      "block_type": "paragraph",
+      "text": "软件授权",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        230.057,
+        138.366,
+        241.01
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E7ADC3A2768D9335",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 2,
+      "printed_page_label": "I",
+      "block_order": 6,
+      "section_id": "SEC-2AD3E42051C876C9",
+      "section_path": [
+        "版权所有"
+      ],
+      "section_title": "版权所有",
+      "block_type": "list",
+      "text": "•\n禁止以任何方式将本公司开发的固件或软件中的部分或全部数据用于商业目的。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        248.207,
+        431.541,
+        259.16
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AF9ACAE88EBB1FDB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 2,
+      "printed_page_label": "I",
+      "block_order": 7,
+      "section_id": "SEC-2AD3E42051C876C9",
+      "section_path": [
+        "版权所有"
+      ],
+      "section_title": "版权所有",
+      "block_type": "list",
+      "text": "•\n禁止对本公司开发的软件进行反编译、解密或其他破坏原始程序设计的操作。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        263.207,
+        422.541,
+        274.16
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D0D2CD45E442DF13",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 2,
+      "printed_page_label": "I",
+      "block_order": 8,
+      "section_id": "SEC-2AD3E42051C876C9",
+      "section_path": [
+        "版权所有"
+      ],
+      "section_title": "版权所有",
+      "block_type": "paragraph",
+      "text": "阳光电源股份有限公司",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        318.707,
+        192.366,
+        329.66
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5F618AB84ECC941B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 2,
+      "printed_page_label": "I",
+      "block_order": 9,
+      "section_id": "SEC-2AD3E42051C876C9",
+      "section_path": [
+        "版权所有"
+      ],
+      "section_title": "版权所有",
+      "block_type": "paragraph",
+      "text": "地址：安徽省合肥市高新区习友路1699 号",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        340.207,
+        270.891,
+        351.16
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9C12697E7E6F16C7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 2,
+      "printed_page_label": "I",
+      "block_order": 10,
+      "section_id": "SEC-2AD3E42051C876C9",
+      "section_path": [
+        "版权所有"
+      ],
+      "section_title": "版权所有",
+      "block_type": "paragraph",
+      "text": "邮编：230088",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        361.707,
+        159.39,
+        372.66
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3EC40B716B311D05",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 2,
+      "printed_page_label": "I",
+      "block_order": 11,
+      "section_id": "SEC-2AD3E42051C876C9",
+      "section_path": [
+        "版权所有"
+      ],
+      "section_title": "版权所有",
+      "block_type": "paragraph",
+      "text": "电话：0551- 6532 7878 / 0551-6532 7877",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        383.207,
+        270.468,
+        394.16
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7EACACB9EFB7499E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 2,
+      "printed_page_label": "I",
+      "block_order": 12,
+      "section_id": "SEC-2AD3E42051C876C9",
+      "section_path": [
+        "版权所有"
+      ],
+      "section_title": "版权所有",
+      "block_type": "paragraph",
+      "text": "官方网站：www.sungrowpower.com",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        404.707,
+        255.06,
+        415.66
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

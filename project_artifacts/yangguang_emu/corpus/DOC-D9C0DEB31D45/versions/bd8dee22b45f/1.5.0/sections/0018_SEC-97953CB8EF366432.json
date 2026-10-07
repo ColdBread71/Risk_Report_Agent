@@ -1,0 +1,188 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-97953CB8EF366432",
+  "section_path": [
+    "4 机械安装",
+    "4.3 安装数据采集器"
+  ],
+  "section_title": "4.3 安装数据采集器",
+  "start_pdf_page": 22,
+  "end_pdf_page": 22,
+  "blocks": [
+    {
+      "block_id": "BLK-ADB8D02323B90250",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "12",
+      "block_order": 0,
+      "section_id": "SEC-97953CB8EF366432",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器"
+      ],
+      "section_title": "4.3 安装数据采集器",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 机械安装",
+      "table_cells": null,
+      "bbox": [
+        60.443,
+        48.088,
+        449.79,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ECDA9114C2DBB062",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "12",
+      "block_order": 1,
+      "section_id": "SEC-97953CB8EF366432",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器"
+      ],
+      "section_title": "4.3 安装数据采集器",
+      "block_type": "table",
+      "text": "工具刀\t记号笔\t卷尺\t防护手套\n\t\t\t\n防尘口罩\t绝缘鞋\t吸尘器\t护目镜\n\t\t\t\n冲击钻\t电动螺丝刀\t剥线钳\t剪线钳",
+      "table_cells": [
+        [
+          "工具刀",
+          "记号笔",
+          "卷尺",
+          "防护手套"
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "防尘口罩",
+          "绝缘鞋",
+          "吸尘器",
+          "护目镜"
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "冲击钻",
+          "电动螺丝刀",
+          "剥线钳",
+          "剪线钳"
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "bbox": [
+        115.858,
+        180.621,
+        425.871,
+        538.883
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-39479528817D4ED9",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "12",
+      "block_order": 2,
+      "section_id": "SEC-97953CB8EF366432",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器"
+      ],
+      "section_title": "4.3 安装数据采集器",
+      "block_type": "paragraph",
+      "text": "压线钳\n一字螺丝刀\n十字螺丝刀\n橡胶锤",
+      "table_cells": null,
+      "bbox": [
+        120.358,
+        544.789,
+        421.371,
+        555.742
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F413FE2C45C53D8F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "12",
+      "block_order": 3,
+      "section_id": "SEC-97953CB8EF366432",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器"
+      ],
+      "section_title": "4.3 安装数据采集器",
+      "block_type": "heading",
+      "text": "4.3 安装数据采集器",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        589.291,
+        164.873,
+        603.895
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F2EE14DBC495C85C",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "12",
+      "block_order": 4,
+      "section_id": "SEC-97953CB8EF366432",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器"
+      ],
+      "section_title": "4.3 安装数据采集器",
+      "block_type": "paragraph",
+      "text": "满足安装环境的前提下，可以将数据采集器安装在室内的任意位置。数据采集器可采用机架\n安装或壁挂安装。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        616.939,
+        448.193,
+        641.392
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

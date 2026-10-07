@@ -1,0 +1,308 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-12D7F60353741F30",
+  "section_path": [
+    "7 Web界面",
+    "7.7 功率调节",
+    "7.7.4 无功功率",
+    "7.7.4.4 AI控制"
+  ],
+  "section_title": "7.7.4.4 AI控制",
+  "start_pdf_page": 64,
+  "end_pdf_page": 64,
+  "blocks": [
+    {
+      "block_id": "BLK-E4C46B2CAF1BAC5F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 0,
+      "section_id": "SEC-12D7F60353741F30",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.4 AI控制"
+      ],
+      "section_title": "7.7.4.4 AI控制",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.44,
+        48.088,
+        449.794,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6FA7DF955EF43A38",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 18,
+      "section_id": "SEC-12D7F60353741F30",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.4 AI控制"
+      ],
+      "section_title": "7.7.4.4 AI控制",
+      "block_type": "heading",
+      "text": "7.7.4.4 AI 控制",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        386.64,
+        121.477,
+        398.81
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A6BA15783FE3DA8B",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 19,
+      "section_id": "SEC-12D7F60353741F30",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.4 AI控制"
+      ],
+      "section_title": "7.7.4.4 AI控制",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        88.195,
+        405.956,
+        124.195,
+        416.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A3652DCDFD1D18F2",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 20,
+      "section_id": "SEC-12D7F60353741F30",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.4 AI控制"
+      ],
+      "section_title": "7.7.4.4 AI控制",
+      "block_type": "list",
+      "text": "•\n当前无功控制方式已选择AI 控制。见7.7.1 选择功率控制方式。",
+      "table_cells": null,
+      "bbox": [
+        88.195,
+        425.956,
+        356.134,
+        436.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8C41EDD506A3418E",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 21,
+      "section_id": "SEC-12D7F60353741F30",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.4 AI控制"
+      ],
+      "section_title": "7.7.4.4 AI控制",
+      "block_type": "list",
+      "text": "•\n如选择闭环控制，需接入用于功率调节的关口电表。",
+      "table_cells": null,
+      "bbox": [
+        88.195,
+        440.956,
+        309.37,
+        451.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BF44954551D5C7FA",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 22,
+      "section_id": "SEC-12D7F60353741F30",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.4 AI控制"
+      ],
+      "section_title": "7.7.4.4 AI控制",
+      "block_type": "paragraph",
+      "text": "步骤 1 在控制策略下拉列表中，选择开环控制或闭环控制。",
+      "table_cells": null,
+      "bbox": [
+        56.695,
+        459.034,
+        294.565,
+        471.517
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B86573C2236D2E59",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 23,
+      "section_id": "SEC-12D7F60353741F30",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.4 AI控制"
+      ],
+      "section_title": "7.7.4.4 AI控制",
+      "block_type": "paragraph",
+      "text": "步骤 2 参考有功功率的AI 控制章节，配置相应参数。见7.7.3.4 AI 控制。",
+      "table_cells": null,
+      "bbox": [
+        56.695,
+        475.534,
+        350.59,
+        488.017
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C8A43F836C45ED3A",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 24,
+      "section_id": "SEC-12D7F60353741F30",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.4 AI控制"
+      ],
+      "section_title": "7.7.4.4 AI控制",
+      "block_type": "paragraph",
+      "text": "步骤 3 根据指令类型，在下限和上限的文本框中，设置与模拟量输入对应的功率调节目标值范围。",
+      "table_cells": null,
+      "bbox": [
+        56.695,
+        492.034,
+        447.565,
+        504.517
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8B7662214EA98F3F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 25,
+      "section_id": "SEC-12D7F60353741F30",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.4 AI控制"
+      ],
+      "section_title": "7.7.4.4 AI控制",
+      "block_type": "list",
+      "text": "•\nPF（开环控制）：下限和上限的取值范围为0.8~1。",
+      "table_cells": null,
+      "bbox": [
+        87.565,
+        509.956,
+        309.262,
+        520.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-46C6D0D789FCA532",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 26,
+      "section_id": "SEC-12D7F60353741F30",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.4 AI控制"
+      ],
+      "section_title": "7.7.4.4 AI控制",
+      "block_type": "list",
+      "text": "•\n%：下限和上限的取值范围均为0%~100%。",
+      "table_cells": null,
+      "bbox": [
+        87.565,
+        524.956,
+        279.274,
+        535.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,685 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-A3D5D03320EA7BFA",
+  "section_path": [
+    "9 电网调度",
+    "9.3 有功功率调节",
+    "9.3.5 国家模式有功调节",
+    "9.3.5.2 日本模式"
+  ],
+  "section_title": "9.3.5.2 日本模式",
+  "start_pdf_page": 97,
+  "end_pdf_page": 97,
+  "blocks": [
+    {
+      "block_id": "BLK-35BDDCB27B44DE79",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 0,
+      "section_id": "SEC-A3D5D03320EA7BFA",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.2 日本模式"
+      ],
+      "section_title": "9.3.5.2 日本模式",
+      "block_type": "paragraph",
+      "text": "用户手册\n9 电网调度",
+      "table_cells": null,
+      "bbox": [
+        74.616,
+        48.088,
+        463.963,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A47EA9BB08E62F5C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 1,
+      "section_id": "SEC-A3D5D03320EA7BFA",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.2 日本模式"
+      ],
+      "section_title": "9.3.5.2 日本模式",
+      "block_type": "list",
+      "text": "•\n韩国",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        72.906,
+        134.541,
+        83.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1A55A59E53177250",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 2,
+      "section_id": "SEC-A3D5D03320EA7BFA",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.2 日本模式"
+      ],
+      "section_title": "9.3.5.2 日本模式",
+      "block_type": "list",
+      "text": "•\n日本",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        87.906,
+        134.541,
+        98.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FDED841C7AE1E8E1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 3,
+      "section_id": "SEC-A3D5D03320EA7BFA",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.2 日本模式"
+      ],
+      "section_title": "9.3.5.2 日本模式",
+      "block_type": "list",
+      "text": "•\n澳洲",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        102.906,
+        134.541,
+        113.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E46F2596ACE6F14A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 4,
+      "section_id": "SEC-A3D5D03320EA7BFA",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.2 日本模式"
+      ],
+      "section_title": "9.3.5.2 日本模式",
+      "block_type": "list",
+      "text": "•\n中国",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        117.906,
+        134.541,
+        128.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2F89F32A3B90E1F3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 19,
+      "section_id": "SEC-A3D5D03320EA7BFA",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.2 日本模式"
+      ],
+      "section_title": "9.3.5.2 日本模式",
+      "block_type": "heading",
+      "text": "9.3.5.2 日本模式",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        369.39,
+        146.196,
+        381.56
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-025B0EB0B58FF61B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 20,
+      "section_id": "SEC-A3D5D03320EA7BFA",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.2 日本模式"
+      ],
+      "section_title": "9.3.5.2 日本模式",
+      "block_type": "paragraph",
+      "text": "步骤 1 在国家下拉列表中，选择日本。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        395.284,
+        227.736,
+        407.767
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B8DF35030093EEA7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 21,
+      "section_id": "SEC-A3D5D03320EA7BFA",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.2 日本模式"
+      ],
+      "section_title": "9.3.5.2 日本模式",
+      "block_type": "paragraph",
+      "text": "步骤 2 在调度方式下拉列表中，选择电站接入的电力公司。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        411.784,
+        308.736,
+        424.267
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5D474C7D4F0D702F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 22,
+      "section_id": "SEC-A3D5D03320EA7BFA",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.2 日本模式"
+      ],
+      "section_title": "9.3.5.2 日本模式",
+      "block_type": "paragraph",
+      "text": "数据采集器将接入该电力公司的调度服务器。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        426.706,
+        281.736,
+        437.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CAF22E99C27208BC",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 23,
+      "section_id": "SEC-A3D5D03320EA7BFA",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.2 日本模式"
+      ],
+      "section_title": "9.3.5.2 日本模式",
+      "block_type": "paragraph",
+      "text": "步骤 3 在日程表获取方式下拉列表中，选择日程表获取方式。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        441.784,
+        317.736,
+        454.267
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0C974990C905200B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 24,
+      "section_id": "SEC-A3D5D03320EA7BFA",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.2 日本模式"
+      ],
+      "section_title": "9.3.5.2 日本模式",
+      "block_type": "list",
+      "text": "•\n远程下载：从已接入的电力公司服务器下载日程表。需要填写电站编号。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        459.706,
+        403.911,
+        470.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-556787B31B56B5B9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 25,
+      "section_id": "SEC-A3D5D03320EA7BFA",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.2 日本模式"
+      ],
+      "section_title": "9.3.5.2 日本模式",
+      "block_type": "list",
+      "text": "•\n本地导入：需上传日程表文件。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        474.706,
+        241.911,
+        485.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-56F5A044CB5F4921",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 26,
+      "section_id": "SEC-A3D5D03320EA7BFA",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.2 日本模式"
+      ],
+      "section_title": "9.3.5.2 日本模式",
+      "block_type": "paragraph",
+      "text": "步骤 4 在参数类型下拉列表中，选择需完善的参数信息。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        489.784,
+        299.736,
+        502.267
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B1360004BC0809E6",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 27,
+      "section_id": "SEC-A3D5D03320EA7BFA",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.2 日本模式"
+      ],
+      "section_title": "9.3.5.2 日本模式",
+      "block_type": "list",
+      "text": "•\n电站参数：需要设置电站容量和组件容量。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        507.706,
+        286.911,
+        518.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7699A535EA931854",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 28,
+      "section_id": "SEC-A3D5D03320EA7BFA",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.2 日本模式"
+      ],
+      "section_title": "9.3.5.2 日本模式",
+      "block_type": "list",
+      "text": "•\n设备参数：点击设置详细参数，可查看并设置设备的详细信息。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        522.706,
+        367.911,
+        533.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EFA5ADEBD21E14AC",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 29,
+      "section_id": "SEC-A3D5D03320EA7BFA",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.2 日本模式"
+      ],
+      "section_title": "9.3.5.2 日本模式",
+      "block_type": "paragraph",
+      "text": "步骤 5 在时间修正下拉列表中，根据实际需求，选择需要调整的时间的分钟数。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        537.784,
+        389.736,
+        550.267
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9E0EEF0DAA5B3B33",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 30,
+      "section_id": "SEC-A3D5D03320EA7BFA",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.2 日本模式"
+      ],
+      "section_title": "9.3.5.2 日本模式",
+      "block_type": "paragraph",
+      "text": "选择正值表示增加当前时间，选择负值表示减少当前时间。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        555.706,
+        335.736,
+        566.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-311870A4EDC79408",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 31,
+      "section_id": "SEC-A3D5D03320EA7BFA",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.2 日本模式"
+      ],
+      "section_title": "9.3.5.2 日本模式",
+      "block_type": "paragraph",
+      "text": "字段时间有效性会展示时间修正结果。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        572.206,
+        254.736,
+        583.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A6159F8D49FDEE97",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 32,
+      "section_id": "SEC-A3D5D03320EA7BFA",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.2 日本模式"
+      ],
+      "section_title": "9.3.5.2 日本模式",
+      "block_type": "paragraph",
+      "text": "如果显示无效，此时数据采集器对逆变器发送关机指令，直到时间修正正确或对时正确。\n导致时间修正无效的原因可能为：",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        585.706,
+        452.736,
+        610.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-11DCB5467DDD5652",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 33,
+      "section_id": "SEC-A3D5D03320EA7BFA",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.2 日本模式"
+      ],
+      "section_title": "9.3.5.2 日本模式",
+      "block_type": "list",
+      "text": "•\n数据采集器的系统时间＜修正后的时间",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        614.206,
+        268.911,
+        625.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E12784F81097BE3B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 34,
+      "section_id": "SEC-A3D5D03320EA7BFA",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.2 日本模式"
+      ],
+      "section_title": "9.3.5.2 日本模式",
+      "block_type": "list",
+      "text": "•\n数据采集器的系统时间＜NTP 对时的时间",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        629.206,
+        282.411,
+        640.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2852E373C95E8572",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 35,
+      "section_id": "SEC-A3D5D03320EA7BFA",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.2 日本模式"
+      ],
+      "section_title": "9.3.5.2 日本模式",
+      "block_type": "paragraph",
+      "text": "步骤 6 点击保存。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        644.284,
+        146.736,
+        656.767
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E412B40958F0DAA7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 36,
+      "section_id": "SEC-A3D5D03320EA7BFA",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.2 日本模式"
+      ],
+      "section_title": "9.3.5.2 日本模式",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        660.856,
+        126.36,
+        671.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

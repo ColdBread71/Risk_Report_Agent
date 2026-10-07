@@ -1,0 +1,521 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-214CD0268CAB1578",
+  "section_path": [
+    "9 电网调度",
+    "9.4 无功功率调节",
+    "9.4.3 AI无功调节"
+  ],
+  "section_title": "9.4.3 AI无功调节",
+  "start_pdf_page": 99,
+  "end_pdf_page": 99,
+  "blocks": [
+    {
+      "block_id": "BLK-A2FF5BD7B491650C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 0,
+      "section_id": "SEC-214CD0268CAB1578",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.3 AI无功调节"
+      ],
+      "section_title": "9.4.3 AI无功调节",
+      "block_type": "paragraph",
+      "text": "用户手册\n9 电网调度",
+      "table_cells": null,
+      "bbox": [
+        74.617,
+        48.088,
+        463.964,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3C82C32D769EEE46",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 1,
+      "section_id": "SEC-214CD0268CAB1578",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.3 AI无功调节"
+      ],
+      "section_title": "9.4.3 AI无功调节",
+      "block_type": "list",
+      "text": "•\n当前无功控制方式已选择远程调度。见9.2 选择功率控制方式。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        72.906,
+        367.803,
+        83.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-21DBBFC8A132DCFB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 2,
+      "section_id": "SEC-214CD0268CAB1578",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.3 AI无功调节"
+      ],
+      "section_title": "9.4.3 AI无功调节",
+      "block_type": "list",
+      "text": "•\n如选择闭环控制，需接入关口电表或包含测控装置的箱变。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        87.906,
+        350.541,
+        98.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-73DE247DFC832161",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 3,
+      "section_id": "SEC-214CD0268CAB1578",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.3 AI无功调节"
+      ],
+      "section_title": "9.4.3 AI无功调节",
+      "block_type": "paragraph",
+      "text": "步骤 1 在控制策略下拉列表中，选择开环控制或闭环控制。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        105.984,
+        308.736,
+        118.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FB44959C3E9D5441",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 4,
+      "section_id": "SEC-214CD0268CAB1578",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.3 AI无功调节"
+      ],
+      "section_title": "9.4.3 AI无功调节",
+      "block_type": "paragraph",
+      "text": "步骤 2 在控制周期文本框中，输入数据采集器向逆变器发送功率调节指令的时间间隔。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        122.484,
+        416.736,
+        134.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A14E95D6757CA76C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 5,
+      "section_id": "SEC-214CD0268CAB1578",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.3 AI无功调节"
+      ],
+      "section_title": "9.4.3 AI无功调节",
+      "block_type": "paragraph",
+      "text": "步骤 3 选择开环控制时，参考远程有功功率调节，配置相应参数。见9.3.1.1 开环控制。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        138.984,
+        422.01,
+        151.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DEEE5DDFF5BEBE5D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 6,
+      "section_id": "SEC-214CD0268CAB1578",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.3 AI无功调节"
+      ],
+      "section_title": "9.4.3 AI无功调节",
+      "block_type": "paragraph",
+      "text": "步骤 4 选择闭环控制时，参考远程有功功率调节，配置相应参数。见9.3.1.2 闭环控制。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        155.484,
+        422.01,
+        167.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-36452941E893FFD3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 7,
+      "section_id": "SEC-214CD0268CAB1578",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.3 AI无功调节"
+      ],
+      "section_title": "9.4.3 AI无功调节",
+      "block_type": "paragraph",
+      "text": "步骤 5 选择闭环控制时，在无功方向下拉列表中，需选择电表或箱变记录的无功输出方向是否与逆",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        171.984,
+        461.736,
+        184.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-92E6FAF243F8AA0C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 8,
+      "section_id": "SEC-214CD0268CAB1578",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.3 AI无功调节"
+      ],
+      "section_title": "9.4.3 AI无功调节",
+      "block_type": "paragraph",
+      "text": "变器一致。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        186.906,
+        146.736,
+        197.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-71D8BC9D9B82A154",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 9,
+      "section_id": "SEC-214CD0268CAB1578",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.3 AI无功调节"
+      ],
+      "section_title": "9.4.3 AI无功调节",
+      "block_type": "paragraph",
+      "text": "阳光电源逆变器默认在电网需要提高电压时输出感性无功（正），在需要降低电压时\n输出容性无功（负）。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        211.556,
+        461.735,
+        233.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6A016D93CF9F68F4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 10,
+      "section_id": "SEC-214CD0268CAB1578",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.3 AI无功调节"
+      ],
+      "section_title": "9.4.3 AI无功调节",
+      "block_type": "list",
+      "text": "•\n正向：并网点记录的无功方向与逆变器无功方向一致。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        250.506,
+        331.911,
+        261.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D75FD5B7D20CC0E2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 11,
+      "section_id": "SEC-214CD0268CAB1578",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.3 AI无功调节"
+      ],
+      "section_title": "9.4.3 AI无功调节",
+      "block_type": "list",
+      "text": "•\n反向：并网点记录的无功方向与逆变器无功方向相反。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        265.506,
+        331.911,
+        276.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A3D8237E476A4C9E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 12,
+      "section_id": "SEC-214CD0268CAB1578",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.3 AI无功调节"
+      ],
+      "section_title": "9.4.3 AI无功调节",
+      "block_type": "paragraph",
+      "text": "步骤 6 点击保存。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        280.584,
+        146.736,
+        293.067
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0D6BC33B36B3A29C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 13,
+      "section_id": "SEC-214CD0268CAB1578",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.3 AI无功调节"
+      ],
+      "section_title": "9.4.3 AI无功调节",
+      "block_type": "list",
+      "text": "--结束\n配置完成后，运维人员可通过后台发送功率调节目标值。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        297.156,
+        327.366,
+        318.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F52EF5AACD3A63A2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 28,
+      "section_id": "SEC-214CD0268CAB1578",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.3 AI无功调节"
+      ],
+      "section_title": "9.4.3 AI无功调节",
+      "block_type": "heading",
+      "text": "9.4.3 AI 无功调节",
+      "table_cells": null,
+      "bbox": [
+        70.868,
+        600.34,
+        147.308,
+        612.51
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6FAFE3A3038B325C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 29,
+      "section_id": "SEC-214CD0268CAB1578",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.3 AI无功调节"
+      ],
+      "section_title": "9.4.3 AI无功调节",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.362,
+        619.656,
+        138.362,
+        630.609
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6AF4E0256E975B5C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 30,
+      "section_id": "SEC-214CD0268CAB1578",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.3 AI无功调节"
+      ],
+      "section_title": "9.4.3 AI无功调节",
+      "block_type": "list",
+      "text": "•\n当前无功控制方式已选择AI 控制。见9.2 选择功率控制方式。",
+      "table_cells": null,
+      "bbox": [
+        102.362,
+        639.656,
+        362.804,
+        650.609
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A49559B83CF2CACE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 31,
+      "section_id": "SEC-214CD0268CAB1578",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.3 AI无功调节"
+      ],
+      "section_title": "9.4.3 AI无功调节",
+      "block_type": "list",
+      "text": "•\n如选择闭环控制，需接入用于功率调节的关口电表。",
+      "table_cells": null,
+      "bbox": [
+        102.362,
+        654.656,
+        323.537,
+        665.609
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

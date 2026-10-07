@@ -1,0 +1,394 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-B521B14B3DB2E458",
+  "section_path": [
+    "3 机械安装",
+    "3.1 安装注意事项"
+  ],
+  "section_title": "3.1 安装注意事项",
+  "start_pdf_page": 18,
+  "end_pdf_page": 18,
+  "blocks": [
+    {
+      "block_id": "BLK-5A1549D59353316A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "12",
+      "block_order": 1,
+      "section_id": "SEC-B521B14B3DB2E458",
+      "section_path": [
+        "3 机械安装",
+        "3.1 安装注意事项"
+      ],
+      "section_title": "3.1 安装注意事项",
+      "block_type": "heading",
+      "text": "3.1 安装注意事项",
+      "table_cells": null,
+      "bbox": [
+        56.687,
+        162.258,
+        152.879,
+        176.862
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0DACCC7E760CE562",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "12",
+      "block_order": 2,
+      "section_id": "SEC-B521B14B3DB2E458",
+      "section_path": [
+        "3 机械安装",
+        "3.1 安装注意事项"
+      ],
+      "section_title": "3.1 安装注意事项",
+      "block_type": "paragraph",
+      "text": "在安装设备前，请务必优先阅读并满足“通用安全说明”章节中注意事项，且同时满足“安装安\n全”章节中注意事项。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        189.906,
+        448.187,
+        214.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CC19FE9E0E98AC29",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "12",
+      "block_order": 3,
+      "section_id": "SEC-B521B14B3DB2E458",
+      "section_path": [
+        "3 机械安装",
+        "3.1 安装注意事项"
+      ],
+      "section_title": "3.1 安装注意事项",
+      "block_type": "paragraph",
+      "text": "危险",
+      "table_cells": null,
+      "bbox": [
+        110.69,
+        228.274,
+        132.69,
+        241.661
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1DA8F6B11C696864",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "12",
+      "block_order": 4,
+      "section_id": "SEC-B521B14B3DB2E458",
+      "section_path": [
+        "3 机械安装",
+        "3.1 安装注意事项"
+      ],
+      "section_title": "3.1 安装注意事项",
+      "block_type": "paragraph",
+      "text": "安装过程严禁带电操作。禁止带电安装、拆除线缆，线缆线芯在接触导体的瞬间，会产生\n电弧或电火花，会导致火灾或人身伤害。",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        246.806,
+        443.693,
+        268.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2C4A9A7D073507F1",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "12",
+      "block_order": 5,
+      "section_id": "SEC-B521B14B3DB2E458",
+      "section_path": [
+        "3 机械安装",
+        "3.1 安装注意事项"
+      ],
+      "section_title": "3.1 安装注意事项",
+      "block_type": "paragraph",
+      "text": "警告",
+      "table_cells": null,
+      "bbox": [
+        110.69,
+        287.624,
+        132.69,
+        301.011
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CB5536E019A4EF9A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "12",
+      "block_order": 6,
+      "section_id": "SEC-B521B14B3DB2E458",
+      "section_path": [
+        "3 机械安装",
+        "3.1 安装注意事项"
+      ],
+      "section_title": "3.1 安装注意事项",
+      "block_type": "list",
+      "text": "•\n请将产品安装在通风良好的环境下。",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        307.506,
+        250.868,
+        318.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C4AA4DE3797204D5",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "12",
+      "block_order": 7,
+      "section_id": "SEC-B521B14B3DB2E458",
+      "section_path": [
+        "3 机械安装",
+        "3.1 安装注意事项"
+      ],
+      "section_title": "3.1 安装注意事项",
+      "block_type": "list",
+      "text": "•\n请务必保证产品散热系统或通风口无遮挡。",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        322.506,
+        277.868,
+        333.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C561EBA79D745160",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "12",
+      "block_order": 8,
+      "section_id": "SEC-B521B14B3DB2E458",
+      "section_path": [
+        "3 机械安装",
+        "3.1 安装注意事项"
+      ],
+      "section_title": "3.1 安装注意事项",
+      "block_type": "paragraph",
+      "text": "注意",
+      "table_cells": null,
+      "bbox": [
+        97.941,
+        353.624,
+        119.941,
+        367.011
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A4375951F8068AEA",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "12",
+      "block_order": 9,
+      "section_id": "SEC-B521B14B3DB2E458",
+      "section_path": [
+        "3 机械安装",
+        "3.1 安装注意事项"
+      ],
+      "section_title": "3.1 安装注意事项",
+      "block_type": "paragraph",
+      "text": "安装时，请务必断开所有电气连接并且断开前级输入开关，确保设备不带电。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        372.156,
+        398.695,
+        383.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-10926BAA3A0D9757",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "12",
+      "block_order": 10,
+      "section_id": "SEC-B521B14B3DB2E458",
+      "section_path": [
+        "3 机械安装",
+        "3.1 安装注意事项"
+      ],
+      "section_title": "3.1 安装注意事项",
+      "block_type": "paragraph",
+      "text": "注意",
+      "table_cells": null,
+      "bbox": [
+        97.941,
+        401.924,
+        119.941,
+        415.311
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-97687341F8727A8F",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "12",
+      "block_order": 11,
+      "section_id": "SEC-B521B14B3DB2E458",
+      "section_path": [
+        "3 机械安装",
+        "3.1 安装注意事项"
+      ],
+      "section_title": "3.1 安装注意事项",
+      "block_type": "paragraph",
+      "text": "安装时，若需要钻孔：",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        420.456,
+        182.695,
+        431.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-77177E382EB08B28",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "12",
+      "block_order": 12,
+      "section_id": "SEC-B521B14B3DB2E458",
+      "section_path": [
+        "3 机械安装",
+        "3.1 安装注意事项"
+      ],
+      "section_title": "3.1 安装注意事项",
+      "block_type": "list",
+      "text": "•\n请佩戴护目镜和保护手套。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        434.106,
+        214.87,
+        445.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-38E465CAF049BBBC",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "12",
+      "block_order": 13,
+      "section_id": "SEC-B521B14B3DB2E458",
+      "section_path": [
+        "3 机械安装",
+        "3.1 安装注意事项"
+      ],
+      "section_title": "3.1 安装注意事项",
+      "block_type": "list",
+      "text": "•\n钻孔处请确保已避开墙内的水电走线。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        449.106,
+        259.87,
+        460.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FF0136E1A5E42381",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "12",
+      "block_order": 14,
+      "section_id": "SEC-B521B14B3DB2E458",
+      "section_path": [
+        "3 机械安装",
+        "3.1 安装注意事项"
+      ],
+      "section_title": "3.1 安装注意事项",
+      "block_type": "list",
+      "text": "•\n请遮挡产品，防止碎屑或灰尘掉入产品内部。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        464.106,
+        286.87,
+        475.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

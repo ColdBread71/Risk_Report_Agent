@@ -1,0 +1,93 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-26F307FE8DD19DA5",
+  "section_path": [
+    "Front Matter"
+  ],
+  "section_title": "Front Matter",
+  "start_pdf_page": 1,
+  "end_pdf_page": 1,
+  "blocks": [
+    {
+      "block_id": "BLK-4D41F33FED7DAF18",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 1,
+      "printed_page_label": "1",
+      "block_order": 0,
+      "section_id": "SEC-26F307FE8DD19DA5",
+      "section_path": [
+        "Front Matter"
+      ],
+      "section_title": "Front Matter",
+      "block_type": "paragraph",
+      "text": "用户网络安全操作手册",
+      "table_cells": null,
+      "bbox": [
+        48.189,
+        93.123,
+        248.189,
+        117.463
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EF9C5442371AECDD",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 1,
+      "printed_page_label": "1",
+      "block_order": 1,
+      "section_id": "SEC-26F307FE8DD19DA5",
+      "section_path": [
+        "Front Matter"
+      ],
+      "section_title": "Front Matter",
+      "block_type": "paragraph",
+      "text": "EMU300",
+      "table_cells": null,
+      "bbox": [
+        48.189,
+        126.613,
+        110.429,
+        144.469
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-37AC0FA86EB70A5C",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 1,
+      "printed_page_label": "1",
+      "block_order": 2,
+      "section_id": "SEC-26F307FE8DD19DA5",
+      "section_path": [
+        "Front Matter"
+      ],
+      "section_title": "Front Matter",
+      "block_type": "paragraph",
+      "text": "EMU300A-OCN-Ver11-202607",
+      "table_cells": null,
+      "bbox": [
+        394.289,
+        697.608,
+        476.207,
+        704.304
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-0855F2669221C287",
+  "section_path": [
+    "5 试运行",
+    "5.3 试运行步骤",
+    "5.3.4 PLC模块连接",
+    "5.3.4.2 登录步骤"
+  ],
+  "section_title": "5.3.4.2 登录步骤",
+  "start_pdf_page": 50,
+  "end_pdf_page": 50,
+  "blocks": [
+    {
+      "block_id": "BLK-853B875BD7AD8305",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "44",
+      "block_order": 7,
+      "section_id": "SEC-0855F2669221C287",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.4 PLC模块连接",
+        "5.3.4.2 登录步骤"
+      ],
+      "section_title": "5.3.4.2 登录步骤",
+      "block_type": "heading",
+      "text": "5.3.4.2 登录步骤",
+      "table_cells": null,
+      "bbox": [
+        56.689,
+        255.09,
+        132.019,
+        267.26
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BE9666EC62C83093",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "44",
+      "block_order": 8,
+      "section_id": "SEC-0855F2669221C287",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.4 PLC模块连接",
+        "5.3.4.2 登录步骤"
+      ],
+      "section_title": "5.3.4.2 登录步骤",
+      "block_type": "paragraph",
+      "text": "登录步骤参考5.3.3.2 登录步骤。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        274.314,
+        212.174,
+        284.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

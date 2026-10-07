@@ -1,0 +1,73 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-FE0CE86104D0BFED",
+  "section_path": [
+    "7 Web界面",
+    "7.7 功率调节",
+    "7.7.4 无功功率"
+  ],
+  "section_title": "7.7.4 无功功率",
+  "start_pdf_page": 63,
+  "end_pdf_page": 63,
+  "blocks": [
+    {
+      "block_id": "BLK-CCA487D73FEF6921",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 2,
+      "section_id": "SEC-FE0CE86104D0BFED",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率"
+      ],
+      "section_title": "7.7.4 无功功率",
+      "block_type": "heading",
+      "text": "7.7.4 无功功率",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        103.19,
+        137.856,
+        115.36
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C00A763C7B669E16",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 3,
+      "section_id": "SEC-FE0CE86104D0BFED",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率"
+      ],
+      "section_title": "7.7.4 无功功率",
+      "block_type": "paragraph",
+      "text": "无功功率调节指调整无功功率的生成或消耗，以帮助维护电网的电压水平和整体稳定性。在电网\n需要无功功率补偿或注入时，运维人员需在Web 端选择适合的无功功率控制方式并设置相关参\n数，确保逆变器能准确响应数据采集器或第三方的调节指令。",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        122.414,
+        459.369,
+        158.258
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

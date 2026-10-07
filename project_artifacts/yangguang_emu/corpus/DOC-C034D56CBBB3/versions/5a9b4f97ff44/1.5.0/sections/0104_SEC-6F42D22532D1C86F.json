@@ -1,0 +1,381 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-6F42D22532D1C86F",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.4 报文导出"
+  ],
+  "section_title": "7.8.4 报文导出",
+  "start_pdf_page": 72,
+  "end_pdf_page": 72,
+  "blocks": [
+    {
+      "block_id": "BLK-57E55208F114B8B3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 7,
+      "section_id": "SEC-6F42D22532D1C86F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.4 报文导出"
+      ],
+      "section_title": "7.8.4 报文导出",
+      "block_type": "heading",
+      "text": "7.8.4 报文导出",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        176.39,
+        123.687,
+        188.56
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C750DA79976B3D3B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 8,
+      "section_id": "SEC-6F42D22532D1C86F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.4 报文导出"
+      ],
+      "section_title": "7.8.4 报文导出",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击系统 > 报文导出，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        56.691,
+        200.284,
+        223.821,
+        212.767
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4242D3E4E10F5C82",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 9,
+      "section_id": "SEC-6F42D22532D1C86F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.4 报文导出"
+      ],
+      "section_title": "7.8.4 报文导出",
+      "block_type": "paragraph",
+      "text": "参数名称\n说明",
+      "table_cells": null,
+      "bbox": [
+        96.232,
+        223.489,
+        293.491,
+        233.833
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6FFDBFDA61190D7B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 10,
+      "section_id": "SEC-6F42D22532D1C86F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.4 报文导出"
+      ],
+      "section_title": "7.8.4 报文导出",
+      "block_type": "paragraph",
+      "text": "类型\n-",
+      "table_cells": null,
+      "bbox": [
+        96.231,
+        244.206,
+        279.487,
+        255.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7B840990D0D9B44C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 11,
+      "section_id": "SEC-6F42D22532D1C86F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.4 报文导出"
+      ],
+      "section_title": "7.8.4 报文导出",
+      "block_type": "list",
+      "text": "•\n主机模式\n•\n监听模式",
+      "table_cells": null,
+      "bbox": [
+        276.49,
+        266.206,
+        326.665,
+        290.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AD61F41E31763755",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 12,
+      "section_id": "SEC-6F42D22532D1C86F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.4 报文导出"
+      ],
+      "section_title": "7.8.4 报文导出",
+      "block_type": "paragraph",
+      "text": "例如：设备接在COM1 口，主机\n模式是选择COM1 口，直接从\nCOM1 口获取报文。监听模式是\n选择COM2 口，设备接线到\nCOM1 的RS485 口上，通过\nCOM2 口上获取COM1 总线上的\n报文。",
+      "table_cells": null,
+      "bbox": [
+        303.491,
+        298.356,
+        434.243,
+        374.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-309D1DA8B6D03FB7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 13,
+      "section_id": "SEC-6F42D22532D1C86F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.4 报文导出"
+      ],
+      "section_title": "7.8.4 报文导出",
+      "block_type": "paragraph",
+      "text": "工作模式",
+      "table_cells": null,
+      "bbox": [
+        96.231,
+        321.256,
+        132.231,
+        332.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3975EAE37D88378A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 14,
+      "section_id": "SEC-6F42D22532D1C86F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.4 报文导出"
+      ],
+      "section_title": "7.8.4 报文导出",
+      "block_type": "paragraph",
+      "text": "端口\n-",
+      "table_cells": null,
+      "bbox": [
+        96.229,
+        398.306,
+        279.485,
+        409.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-20D0CB806A27F80F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 15,
+      "section_id": "SEC-6F42D22532D1C86F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.4 报文导出"
+      ],
+      "section_title": "7.8.4 报文导出",
+      "block_type": "paragraph",
+      "text": "时长\n导出所设时长的报文记录",
+      "table_cells": null,
+      "bbox": [
+        96.229,
+        420.306,
+        375.488,
+        431.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4FBF6B0B6CA6FE0D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 16,
+      "section_id": "SEC-6F42D22532D1C86F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.4 报文导出"
+      ],
+      "section_title": "7.8.4 报文导出",
+      "block_type": "paragraph",
+      "text": "步骤 2 设置参数后，单击启动，开始记录报文，在设置时间结束后，自动停止，也可单击停止手动",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        449.634,
+        447.563,
+        462.117
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-69D386A39C2628C4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 17,
+      "section_id": "SEC-6F42D22532D1C86F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.4 报文导出"
+      ],
+      "section_title": "7.8.4 报文导出",
+      "block_type": "paragraph",
+      "text": "中断报文记录。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        464.556,
+        150.563,
+        475.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8F293A0A6B664F36",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 18,
+      "section_id": "SEC-6F42D22532D1C86F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.4 报文导出"
+      ],
+      "section_title": "7.8.4 报文导出",
+      "block_type": "paragraph",
+      "text": "步骤 3 单击导出，可导出报文。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        479.634,
+        186.563,
+        492.117
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B064F78819599CA7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 19,
+      "section_id": "SEC-6F42D22532D1C86F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.4 报文导出"
+      ],
+      "section_title": "7.8.4 报文导出",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        496.206,
+        112.187,
+        507.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

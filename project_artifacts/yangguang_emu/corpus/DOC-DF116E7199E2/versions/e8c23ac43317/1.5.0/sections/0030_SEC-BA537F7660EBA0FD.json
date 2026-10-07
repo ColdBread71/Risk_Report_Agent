@@ -1,0 +1,203 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-BA537F7660EBA0FD",
+  "section_path": [
+    "10 安全配置指南",
+    "10.9 安全回溯"
+  ],
+  "section_title": "10.9 安全回溯",
+  "start_pdf_page": 27,
+  "end_pdf_page": 27,
+  "blocks": [
+    {
+      "block_id": "BLK-F2D44F36310D199B",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 27,
+      "printed_page_label": "23",
+      "block_order": 0,
+      "section_id": "SEC-BA537F7660EBA0FD",
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯"
+      ],
+      "section_title": "10.9 安全回溯",
+      "block_type": "paragraph",
+      "text": "用户网络安全操作手册\n10 安全配置指南",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-95AB938E0CDAAE07",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 27,
+      "printed_page_label": "23",
+      "block_order": 5,
+      "section_id": "SEC-BA537F7660EBA0FD",
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯"
+      ],
+      "section_title": "10.9 安全回溯",
+      "block_type": "heading",
+      "text": "10.9 安全回溯",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        403.194,
+        149.718,
+        417.798
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F8498C906AB0E901",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 27,
+      "printed_page_label": "23",
+      "block_order": 6,
+      "section_id": "SEC-BA537F7660EBA0FD",
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯"
+      ],
+      "section_title": "10.9 安全回溯",
+      "block_type": "paragraph",
+      "text": "对于已经发生的安全事件，可通过历史数据 > 操作日志或历史数据 > rsyslog > 日志记录对操\n作进行复盘；也可联系阳光电源运维人员访问设备后台，分析安全事件影响，评估风险并制\n定处置措施。",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        430.842,
+        467.643,
+        468.795
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5F6A443DCA6ACD81",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 27,
+      "printed_page_label": "23",
+      "block_order": 7,
+      "section_id": "SEC-BA537F7660EBA0FD",
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯"
+      ],
+      "section_title": "10.9 安全回溯",
+      "block_type": "table",
+      "text": "表\t用户权限 10-1\t\t\n\t用户列表\t查询日志*\t导出日志*\n\t普通用户\t不支持\t不支持\n\t运维用户\t仅支持查看本用户日志\t不支持",
+      "table_cells": [
+        [
+          "表",
+          "用户权限 10-1",
+          null,
+          null
+        ],
+        [
+          null,
+          "用户列表",
+          "查询日志*",
+          "导出日志*"
+        ],
+        [
+          null,
+          "普通用户",
+          "不支持",
+          "不支持"
+        ],
+        [
+          null,
+          "运维用户",
+          "仅支持查看本用户日志",
+          "不支持"
+        ]
+      ],
+      "bbox": [
+        101.718,
+        485.342,
+        462.369,
+        564.936
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CD059D5E3A2F7B95",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 27,
+      "printed_page_label": "23",
+      "block_order": 8,
+      "section_id": "SEC-BA537F7660EBA0FD",
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯"
+      ],
+      "section_title": "10.9 安全回溯",
+      "block_type": "paragraph",
+      "text": "审计用户\n支持\n支持",
+      "table_cells": null,
+      "bbox": [
+        111.037,
+        570.842,
+        372.604,
+        581.795
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E3C62727A6DC27CA",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 27,
+      "printed_page_label": "23",
+      "block_order": 9,
+      "section_id": "SEC-BA537F7660EBA0FD",
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯"
+      ],
+      "section_title": "10.9 安全回溯",
+      "block_type": "paragraph",
+      "text": "日志类型包括操作日志和rsyslog 日志。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        611.742,
+        288.369,
+        622.695
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

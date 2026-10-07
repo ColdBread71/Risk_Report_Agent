@@ -1,0 +1,269 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-7823B2556823BED1",
+  "section_path": [
+    "7 Web界面",
+    "7.5 设备监控",
+    "7.5.10 通用参数"
+  ],
+  "section_title": "7.5.10 通用参数",
+  "start_pdf_page": 53,
+  "end_pdf_page": 53,
+  "blocks": [
+    {
+      "block_id": "BLK-582526BC5B1C5D8A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 8,
+      "section_id": "SEC-7823B2556823BED1",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.10 通用参数"
+      ],
+      "section_title": "7.5.10 通用参数",
+      "block_type": "heading",
+      "text": "7.5.10 通用参数",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        185.39,
+        143.42,
+        197.56
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AD5A0DA2ACFFA324",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 9,
+      "section_id": "SEC-7823B2556823BED1",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.10 通用参数"
+      ],
+      "section_title": "7.5.10 通用参数",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击设备监控 > 通用参数，进入界面，设置设备通用参数。",
+      "table_cells": null,
+      "bbox": [
+        70.862,
+        209.284,
+        336.992,
+        221.767
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-68FE7B357299CB58",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 10,
+      "section_id": "SEC-7823B2556823BED1",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.10 通用参数"
+      ],
+      "section_title": "7.5.10 通用参数",
+      "block_type": "paragraph",
+      "text": "步骤 2 选择回读，设置寄存器地址、寄存器数量和地址类型。单击回读读取设备的当前值。",
+      "table_cells": null,
+      "bbox": [
+        70.862,
+        225.784,
+        434.732,
+        238.267
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9BCF8CAEEFE29704",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 11,
+      "section_id": "SEC-7823B2556823BED1",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.10 通用参数"
+      ],
+      "section_title": "7.5.10 通用参数",
+      "block_type": "paragraph",
+      "text": "步骤 3 选择设置，设置寄存器地址、数据类型和设置值。单击保存，使变更对单台设备生效。",
+      "table_cells": null,
+      "bbox": [
+        70.862,
+        242.284,
+        443.732,
+        254.767
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1A0AE8C81F04344B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 12,
+      "section_id": "SEC-7823B2556823BED1",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.10 通用参数"
+      ],
+      "section_title": "7.5.10 通用参数",
+      "block_type": "paragraph",
+      "text": "需要设置的参数信息参见相应逆变器的通讯协议。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        265.356,
+        326.735,
+        276.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-617C4178B551EE23",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 13,
+      "section_id": "SEC-7823B2556823BED1",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.10 通用参数"
+      ],
+      "section_title": "7.5.10 通用参数",
+      "block_type": "paragraph",
+      "text": "步骤 4 批量设置通用参数。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        293.584,
+        182.736,
+        306.067
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C09B8042A6A340D8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 14,
+      "section_id": "SEC-7823B2556823BED1",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.10 通用参数"
+      ],
+      "section_title": "7.5.10 通用参数",
+      "block_type": "paragraph",
+      "text": "a. 单击配置同步。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        311.506,
+        178.911,
+        322.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A79769B94164E957",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 15,
+      "section_id": "SEC-7823B2556823BED1",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.10 通用参数"
+      ],
+      "section_title": "7.5.10 通用参数",
+      "block_type": "paragraph",
+      "text": "b. 在弹出的设备列表中勾选需要设置的设备，单击保存。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        326.506,
+        331.911,
+        337.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-433C004DFB092262",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 16,
+      "section_id": "SEC-7823B2556823BED1",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.10 通用参数"
+      ],
+      "section_title": "7.5.10 通用参数",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        341.656,
+        126.36,
+        352.609
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,380 @@
+{
+  "schema_version": "field_fact_checkpoint.v3",
+  "node_id": "node_1",
+  "field_id": "operational_environment",
+  "index_id": "IDX-3B116ADDF3BB03CC",
+  "packet_sha256": "b1a5684549f8046c50d78804683fe90dfd420a1efca5d15c26563ab1f69860fb",
+  "retrieval_profile_version": "1.2",
+  "field_fact_prompt_version": "2.3",
+  "cache_inputs": {
+    "node_id": "node_1",
+    "field_id": "operational_environment",
+    "source_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "retrieval_packet_sha256": "b1a5684549f8046c50d78804683fe90dfd420a1efca5d15c26563ab1f69860fb",
+    "rag_index_id": "IDX-3B116ADDF3BB03CC",
+    "text_model": "qwen-plus",
+    "retrieval_profile_sha256": "2931ce4944e0ae8a3c4b7bb45c27c76446ec6f6b2e0ef637a399a293f14c7ca2",
+    "field_prompt_sha256": "e3474376d7b20fe539ba7e028818a44bebf1c8091fa38216c8744e872899095f",
+    "field_schema_sha256": "0dcb4f25406389cda17acfbed3239842ca693c6f53db84e2b8c3a678c83c0bb3"
+  },
+  "cache_fingerprint": "e5797e1682a1c539b496c5eae0d9f3d767fbe4e0012480b2293729d20ecc97a7",
+  "result": {
+    "node_id": "node_1",
+    "field_id": "operational_environment",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "工业网络安全保护目标包括确保生产设备和流程的无故障运行和可用性。",
+        "block_ids": [
+          "BLK-F30391C2A61969FE"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "工业网络安全保护目标包括防范网络攻击危及人员安全与生产安全。",
+        "block_ids": [
+          "BLK-D91D8C5D38EFEB46"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "工业网络安全保护目标包括防止工业自动化系统及其组件被非法访问、操纵或者数据丢失。",
+        "block_ids": [
+          "BLK-DB3FDECA1B79E396"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "工业网络安全保护目标包括防止工业通信信息被窃取和操纵。",
+        "block_ids": [
+          "BLK-F365C432A5D0C66E"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "工业网络安全保护目标包括防止机密数据遭受未经授权的访问。",
+        "block_ids": [
+          "BLK-5D9BB1795ED1309B"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "在实施安全措施时，需确保这些措施不会反感或者危及自动化系统以及组件的可操作性。",
+        "block_ids": [
+          "BLK-2BC99C167CF3B5F3"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "产品北向属于安全重点关注区域，用户网络环境应在北向数据出口部署防火墙、防恶意代码设备、IDS等安全设备，构建安全的北向安全网络。",
+        "block_ids": [
+          "BLK-B6469A1F85E312C7"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "产品南向属于近端网络部署，网络环境相对安全，但并非绝对安全。",
+        "block_ids": [
+          "BLK-AFA75AA365265142"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "南向和北向网络建议使用独立的交换机进行部署，实现网络隔离。",
+        "block_ids": [
+          "BLK-AFED3332E2924093"
+        ],
+        "is_uncertain": true
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "南向设备对本产品来说属于三方设备，是否会对网络安全造成威胁由用户来保障。",
+        "block_ids": [
+          "BLK-EB131CDE5EBDAAA4"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "当前Web端界面支持8种语言系统，分别是简体中文、英语、德语、西班牙语、巴葡语、法语、日语和韩语。",
+        "block_ids": [
+          "BLK-7A58EE43A6730709"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "IEC 62443系列标准旨在为工业自动化系统（ICS系统）的安全运行提供支持，涵盖设计、实施及管理等方面。",
+        "block_ids": [
+          "BLK-5F6FAF6D64EBD1D8"
+        ],
+        "is_uncertain": false
+      }
+    ],
+    "unknowns": [
+      "EMU300A产品的实际物理部署环境（如温度、湿度、防护等级、安装方式等）未说明",
+      "EMU300A产品的网络拓扑结构（如接入层级、与PLC/DCS/SCADA的具体连接关系）未说明",
+      "南向网络中具体涉及的三方设备类型、协议或接口未说明",
+      "北向安全设备（防火墙、IDS等）的型号、厂商、配置责任方未说明",
+      "Web端运行环境要求中的操作系统、浏览器版本、硬件资源等未说明",
+      "IEC 62443在本产品中具体适用的子标准编号（如IEC 62443-3-3、IEC 62443-4-2等）未明确",
+      "‘语言显示’功能是否默认启用、是否可配置、是否依赖运行环境未说明",
+      "Logger5000是否作为EMU300A的内置组件或外接设备未确认（GAP-LOGGER4000-SCOPE指出Logger5000为标准内部 collector，但未说明其与EMU300A的集成方式）"
+    ],
+    "contradictions": []
+  },
+  "retrieval_trace": {
+    "schema_version": "1.0",
+    "request": {
+      "project_id": "yangguang_emu",
+      "node_id": "node_1",
+      "field_id": "operational_environment",
+      "query": null,
+      "filters": {
+        "document_ids": [],
+        "section_path_terms": [],
+        "block_types": [],
+        "exclude_review_required": false
+      },
+      "token_budget": 12000,
+      "max_blocks": 24,
+      "neighbor_window": 1
+    },
+    "effective_query": "运行环境 部署环境 工业网络 物理环境 网络边界 外部系统 约束 工作条件",
+    "index_id": "IDX-3B116ADDF3BB03CC",
+    "scope_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "packet_id": "rag_yangguang_emu_node_1_operational_environment_83c448faa174",
+    "packet_sha256": "b1a5684549f8046c50d78804683fe90dfd420a1efca5d15c26563ab1f69860fb",
+    "candidate_count": 1041,
+    "selected_count": 24,
+    "selected_token_count": 1990,
+    "truncated_by_budget": false,
+    "truncated_by_max_blocks": true,
+    "hits": [
+      {
+        "block_id": "BLK-09BB4F761E6C697C",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 1,
+        "score": 0.47662429809570317,
+        "estimated_tokens": 111,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-1AD1C75D0156F46C",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 2,
+        "score": 0.47662429809570317,
+        "estimated_tokens": 62,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-09BB4F761E6C697C"
+      },
+      {
+        "block_id": "BLK-32D86711ED1302DA",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 3,
+        "score": 0.47662429809570317,
+        "estimated_tokens": 117,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-09BB4F761E6C697C"
+      },
+      {
+        "block_id": "BLK-F30391C2A61969FE",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 4,
+        "score": 0.4727719306945801,
+        "estimated_tokens": 78,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-58B1CE8BE56D60C7",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 5,
+        "score": 0.4727719306945801,
+        "estimated_tokens": 68,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-F30391C2A61969FE"
+      },
+      {
+        "block_id": "BLK-D91D8C5D38EFEB46",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 6,
+        "score": 0.4727719306945801,
+        "estimated_tokens": 77,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-F30391C2A61969FE"
+      },
+      {
+        "block_id": "BLK-2BC99C167CF3B5F3",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 7,
+        "score": 0.4721683025360108,
+        "estimated_tokens": 96,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-5D9BB1795ED1309B",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 8,
+        "score": 0.4721683025360108,
+        "estimated_tokens": 75,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-2BC99C167CF3B5F3"
+      },
+      {
+        "block_id": "BLK-D29A82FAFD09D484",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 9,
+        "score": 0.46631097793579107,
+        "estimated_tokens": 90,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-32D86711ED1302DA"
+      },
+      {
+        "block_id": "BLK-32F06CE7CD351424",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 10,
+        "score": 0.45756578445434576,
+        "estimated_tokens": 72,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-C9A3682A221073F4",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 11,
+        "score": 0.45756578445434576,
+        "estimated_tokens": 70,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-32F06CE7CD351424"
+      },
+      {
+        "block_id": "BLK-0C14642CF12BCD6D",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 12,
+        "score": 0.45756578445434576,
+        "estimated_tokens": 60,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-32F06CE7CD351424"
+      },
+      {
+        "block_id": "BLK-5F6FAF6D64EBD1D8",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 13,
+        "score": 0.4541899681091309,
+        "estimated_tokens": 205,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-6EACCBFBE9126A9C",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 14,
+        "score": 0.4541899681091309,
+        "estimated_tokens": 126,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-5F6FAF6D64EBD1D8"
+      },
+      {
+        "block_id": "BLK-DB3FDECA1B79E396",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 15,
+        "score": 0.4487784862518311,
+        "estimated_tokens": 88,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-F365C432A5D0C66E",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 16,
+        "score": 0.4487784862518311,
+        "estimated_tokens": 75,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-DB3FDECA1B79E396"
+      },
+      {
+        "block_id": "BLK-AFA75AA365265142",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 17,
+        "score": 0.4397457599639893,
+        "estimated_tokens": 84,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-B6469A1F85E312C7",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 18,
+        "score": 0.4397457599639893,
+        "estimated_tokens": 117,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-AFA75AA365265142"
+      },
+      {
+        "block_id": "BLK-AFED3332E2924093",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 19,
+        "score": 0.4397457599639893,
+        "estimated_tokens": 78,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-AFA75AA365265142"
+      },
+      {
+        "block_id": "BLK-822CCE383703B7BD",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 20,
+        "score": 0.43126440048217773,
+        "estimated_tokens": 60,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-B6469A1F85E312C7"
+      },
+      {
+        "block_id": "BLK-EB131CDE5EBDAAA4",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 21,
+        "score": 0.42704620361328127,
+        "estimated_tokens": 90,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-AFED3332E2924093"
+      },
+      {
+        "block_id": "BLK-14EB48F1B4784375",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 22,
+        "score": 0.4130295753479004,
+        "estimated_tokens": 106,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-D29A82FAFD09D484"
+      },
+      {
+        "block_id": "BLK-07CE953E4C5BC179",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 23,
+        "score": 0.4023218393325806,
+        "estimated_tokens": 98,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-7A58EE43A6730709",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 24,
+        "score": 0.4023218393325806,
+        "estimated_tokens": 152,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-07CE953E4C5BC179"
+      }
+    ]
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-65D1E861FC813AFF",
+  "section_path": [
+    "7 Web界面",
+    "7.8 智能分析",
+    "7.8.1 离散率分析",
+    "7.8.1.1 风道健康度检测"
+  ],
+  "section_title": "7.8.1.1 风道健康度检测",
+  "start_pdf_page": 68,
+  "end_pdf_page": 68,
+  "blocks": [
+    {
+      "block_id": "BLK-C1761CF078A4C319",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 1,
+      "section_id": "SEC-65D1E861FC813AFF",
+      "section_path": [
+        "7 Web界面",
+        "7.8 智能分析",
+        "7.8.1 离散率分析",
+        "7.8.1.1 风道健康度检测"
+      ],
+      "section_title": "7.8.1.1 风道健康度检测",
+      "block_type": "heading",
+      "text": "7.8.1.1 风道健康度检测",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        71.59,
+        162.023,
+        83.76
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-90FA9C4A827C9333",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 2,
+      "section_id": "SEC-65D1E861FC813AFF",
+      "section_path": [
+        "7 Web界面",
+        "7.8 智能分析",
+        "7.8.1 离散率分析",
+        "7.8.1.1 风道健康度检测"
+      ],
+      "section_title": "7.8.1.1 风道健康度检测",
+      "block_type": "paragraph",
+      "text": "此功能适用于Logger5000 配套阳光自研逆变器，通过设备联动，共同实现风道健康监测。\nLogger5000 监控逆变器的工作状态，当逆变器工作在低功率段且功率波动较小时进行诊断。\n基于风扇转速控制、逆变器关键部件温度等，利用软件算法自动识别进风口堵塞、散热器堵\n塞等引起的散热故障及堵塞程度，并通过主动预警指导运维，提升逆变器的风道健康度。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        90.906,
+        453.488,
+        142.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BD38E2FE95FCE7D0",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 3,
+      "section_id": "SEC-65D1E861FC813AFF",
+      "section_path": [
+        "7 Web界面",
+        "7.8 智能分析",
+        "7.8.1 离散率分析",
+        "7.8.1.1 风道健康度检测"
+      ],
+      "section_title": "7.8.1.1 风道健康度检测",
+      "block_type": "paragraph",
+      "text": "注意",
+      "table_cells": null,
+      "bbox": [
+        97.941,
+        154.674,
+        119.941,
+        168.061
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4DFC025164F24B0A",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 4,
+      "section_id": "SEC-65D1E861FC813AFF",
+      "section_path": [
+        "7 Web界面",
+        "7.8 智能分析",
+        "7.8.1 离散率分析",
+        "7.8.1.1 风道健康度检测"
+      ],
+      "section_title": "7.8.1.1 风道健康度检测",
+      "block_type": "list",
+      "text": "•\n数据采集器安装海拔高度不高于5300m。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        173.206,
+        271.633,
+        184.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-95B3725865C6792E",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 5,
+      "section_id": "SEC-65D1E861FC813AFF",
+      "section_path": [
+        "7 Web界面",
+        "7.8 智能分析",
+        "7.8.1 离散率分析",
+        "7.8.1.1 风道健康度检测"
+      ],
+      "section_title": "7.8.1.1 风道健康度检测",
+      "block_type": "list",
+      "text": "•\n数据采集器在阴天、雨天或多云天气因功率波动大可能会影响触发诊断，请在天气良好",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        188.206,
+        448.87,
+        199.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E04EA8F7F6528C06",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 6,
+      "section_id": "SEC-65D1E861FC813AFF",
+      "section_path": [
+        "7 Web界面",
+        "7.8 智能分析",
+        "7.8.1 离散率分析",
+        "7.8.1.1 风道健康度检测"
+      ],
+      "section_title": "7.8.1.1 风道健康度检测",
+      "block_type": "paragraph",
+      "text": "环境下操作。",
+      "table_cells": null,
+      "bbox": [
+        106.87,
+        201.706,
+        160.87,
+        212.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,308 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-AC75DF2201CFBAF5",
+  "section_path": [
+    "7 Web界面",
+    "7.10 系统",
+    "7.10.2 系统维护",
+    "7.10.2.4 备份与恢复"
+  ],
+  "section_title": "7.10.2.4 备份与恢复",
+  "start_pdf_page": 73,
+  "end_pdf_page": 73,
+  "blocks": [
+    {
+      "block_id": "BLK-A11BEFF4997E09FA",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 73,
+      "printed_page_label": "63",
+      "block_order": 15,
+      "section_id": "SEC-AC75DF2201CFBAF5",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护",
+        "7.10.2.4 备份与恢复"
+      ],
+      "section_title": "7.10.2.4 备份与恢复",
+      "block_type": "heading",
+      "text": "7.10.2.4 备份与恢复",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        406.14,
+        161.76,
+        418.31
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ABB9BBB49EB81A63",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 73,
+      "printed_page_label": "63",
+      "block_order": 16,
+      "section_id": "SEC-AC75DF2201CFBAF5",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护",
+        "7.10.2.4 备份与恢复"
+      ],
+      "section_title": "7.10.2.4 备份与恢复",
+      "block_type": "paragraph",
+      "text": "点击系统 > 系统维护 > 备份与恢复。",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        425.456,
+        248.88,
+        436.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CE4D2898AF039871",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 73,
+      "printed_page_label": "63",
+      "block_order": 17,
+      "section_id": "SEC-AC75DF2201CFBAF5",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护",
+        "7.10.2.4 备份与恢复"
+      ],
+      "section_title": "7.10.2.4 备份与恢复",
+      "block_type": "paragraph",
+      "text": "备份",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        445.606,
+        120.369,
+        456.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-01424CF4705A73CD",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 73,
+      "printed_page_label": "63",
+      "block_order": 18,
+      "section_id": "SEC-AC75DF2201CFBAF5",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护",
+        "7.10.2.4 备份与恢复"
+      ],
+      "section_title": "7.10.2.4 备份与恢复",
+      "block_type": "list",
+      "text": "1. 点击备份与恢复 > 备份，按下确定按钮以执行备份操作。",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        463.756,
+        342.795,
+        474.709
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F76B36B7C5D3BF6F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 73,
+      "printed_page_label": "63",
+      "block_order": 19,
+      "section_id": "SEC-AC75DF2201CFBAF5",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护",
+        "7.10.2.4 备份与恢复"
+      ],
+      "section_title": "7.10.2.4 备份与恢复",
+      "block_type": "list",
+      "text": "2. 设置压缩密码并点击确定，系统将在本地生成加密压缩包。",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        478.756,
+        350.535,
+        489.709
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-334C2A157478B3DC",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 73,
+      "printed_page_label": "63",
+      "block_order": 20,
+      "section_id": "SEC-AC75DF2201CFBAF5",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护",
+        "7.10.2.4 备份与恢复"
+      ],
+      "section_title": "7.10.2.4 备份与恢复",
+      "block_type": "paragraph",
+      "text": "压缩密码长度为8~32 位，需由大写字母、小写字母、数字、特殊符号中的三种或以\n上组成。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        498.906,
+        460.134,
+        520.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A8DBB8E42DD9CC06",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 73,
+      "printed_page_label": "63",
+      "block_order": 21,
+      "section_id": "SEC-AC75DF2201CFBAF5",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护",
+        "7.10.2.4 备份与恢复"
+      ],
+      "section_title": "7.10.2.4 备份与恢复",
+      "block_type": "paragraph",
+      "text": "恢复",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        541.006,
+        120.366,
+        551.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E5001E1FDE439942",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 73,
+      "printed_page_label": "63",
+      "block_order": 22,
+      "section_id": "SEC-AC75DF2201CFBAF5",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护",
+        "7.10.2.4 备份与恢复"
+      ],
+      "section_title": "7.10.2.4 备份与恢复",
+      "block_type": "list",
+      "text": "1. 点击备份与恢复 > 恢复，按下确定按钮以执行恢复操作。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        559.156,
+        342.792,
+        570.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FE96788B5B5565EB",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 73,
+      "printed_page_label": "63",
+      "block_order": 23,
+      "section_id": "SEC-AC75DF2201CFBAF5",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护",
+        "7.10.2.4 备份与恢复"
+      ],
+      "section_title": "7.10.2.4 备份与恢复",
+      "block_type": "list",
+      "text": "2. 输入备份压缩包的密码，并点击确定。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        574.156,
+        269.541,
+        585.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1F41C5DDA4A62BC0",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 73,
+      "printed_page_label": "63",
+      "block_order": 24,
+      "section_id": "SEC-AC75DF2201CFBAF5",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护",
+        "7.10.2.4 备份与恢复"
+      ],
+      "section_title": "7.10.2.4 备份与恢复",
+      "block_type": "list",
+      "text": "3. 选择加密的备份压缩包，触发系统重启并完成恢复。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        589.156,
+        323.541,
+        600.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-5DE0C044CF80845C",
+  "section_path": [
+    "1 安全注意事项"
+  ],
+  "section_title": "1 安全注意事项",
+  "start_pdf_page": 7,
+  "end_pdf_page": 7,
+  "blocks": [
+    {
+      "block_id": "BLK-9D779DFCF6951CFF",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 7,
+      "printed_page_label": "1",
+      "block_order": 0,
+      "section_id": "SEC-5DE0C044CF80845C",
+      "section_path": [
+        "1 安全注意事项"
+      ],
+      "section_title": "1 安全注意事项",
+      "block_type": "heading",
+      "text": "1\n安全注意事项",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        98.112,
+        204.624,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9EA5A7D44C775EE0",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 7,
+      "printed_page_label": "1",
+      "block_order": 1,
+      "section_id": "SEC-5DE0C044CF80845C",
+      "section_path": [
+        "1 安全注意事项"
+      ],
+      "section_title": "1 安全注意事项",
+      "block_type": "paragraph",
+      "text": "在运输、存储、安装、操作、使用和维护设备前，请务必仔细阅读本手册，并严格遵循本手\n册中提及的安全注意事项，以确保人身安全。不合理的使用或误操作可能导致：",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        145.506,
+        462.366,
+        169.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F74AFDAC7AAC015C",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 7,
+      "printed_page_label": "1",
+      "block_order": 2,
+      "section_id": "SEC-5DE0C044CF80845C",
+      "section_path": [
+        "1 安全注意事项"
+      ],
+      "section_title": "1 安全注意事项",
+      "block_type": "list",
+      "text": "•\n伤害操作者或第三方的生命和人身安全。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        174.006,
+        278.541,
+        184.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D30802158FD2AE5A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 7,
+      "printed_page_label": "1",
+      "block_order": 3,
+      "section_id": "SEC-5DE0C044CF80845C",
+      "section_path": [
+        "1 安全注意事项"
+      ],
+      "section_title": "1 安全注意事项",
+      "block_type": "list",
+      "text": "•\n损坏设备或损坏属于操作者或第三方的其他财产。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        189.006,
+        314.541,
+        199.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EC8068DE3A7F17AE",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 7,
+      "printed_page_label": "1",
+      "block_order": 4,
+      "section_id": "SEC-5DE0C044CF80845C",
+      "section_path": [
+        "1 安全注意事项"
+      ],
+      "section_title": "1 安全注意事项",
+      "block_type": "list",
+      "text": "•\n本手册中的安全注意事项不包含所有应遵循的规范，仅作为所有安全注意事项的\n补充，应结合现场实际情况进行各项工作。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        217.006,
+        458.541,
+        241.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-057C15A28CF98C0A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 7,
+      "printed_page_label": "1",
+      "block_order": 5,
+      "section_id": "SEC-5DE0C044CF80845C",
+      "section_path": [
+        "1 安全注意事项"
+      ],
+      "section_title": "1 安全注意事项",
+      "block_type": "list",
+      "text": "•\n对于任何因违反安全操作要求、安全标准、手册中的安全注意事项而造成的损\n失，阳光电源股份有限公司不承担任何责任。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        245.506,
+        449.541,
+        269.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

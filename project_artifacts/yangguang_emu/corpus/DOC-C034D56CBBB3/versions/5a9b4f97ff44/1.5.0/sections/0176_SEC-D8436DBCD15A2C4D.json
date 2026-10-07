@@ -1,0 +1,241 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-D8436DBCD15A2C4D",
+  "section_path": [
+    "10 用户管理",
+    "10.11 通信设置",
+    "10.11.1 阳光云"
+  ],
+  "section_title": "10.11.1 阳光云",
+  "start_pdf_page": 108,
+  "end_pdf_page": 108,
+  "blocks": [
+    {
+      "block_id": "BLK-AE6E1AA3FDEE800B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 108,
+      "printed_page_label": "98",
+      "block_order": 0,
+      "section_id": "SEC-D8436DBCD15A2C4D",
+      "section_path": [
+        "10 用户管理",
+        "10.11 通信设置",
+        "10.11.1 阳光云"
+      ],
+      "section_title": "10.11.1 阳光云",
+      "block_type": "paragraph",
+      "text": "用户手册\n10 用户管理",
+      "table_cells": null,
+      "bbox": [
+        60.441,
+        48.088,
+        449.795,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E1B2DA8A425E68F6",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 108,
+      "printed_page_label": "98",
+      "block_order": 1,
+      "section_id": "SEC-D8436DBCD15A2C4D",
+      "section_path": [
+        "10 用户管理",
+        "10.11 通信设置",
+        "10.11.1 阳光云"
+      ],
+      "section_title": "10.11.1 阳光云",
+      "block_type": "paragraph",
+      "text": "启用LDAP 登录后，用户在LDAP 登录时将不再看到“请联系管理员开启<LDAP 登录>后重\n试 ”的提示，可输入用户名和密码登录。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        72.906,
+        444.485,
+        97.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E0DC204AC8789747",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 108,
+      "printed_page_label": "98",
+      "block_order": 2,
+      "section_id": "SEC-D8436DBCD15A2C4D",
+      "section_path": [
+        "10 用户管理",
+        "10.11 通信设置",
+        "10.11.1 阳光云"
+      ],
+      "section_title": "10.11.1 阳光云",
+      "block_type": "list",
+      "text": "•\nLDAP 登录不支持忘记密码。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        114.406,
+        245.126,
+        125.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B6D742F646C0FA91",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 108,
+      "printed_page_label": "98",
+      "block_order": 3,
+      "section_id": "SEC-D8436DBCD15A2C4D",
+      "section_path": [
+        "10 用户管理",
+        "10.11 通信设置",
+        "10.11.1 阳光云"
+      ],
+      "section_title": "10.11.1 阳光云",
+      "block_type": "list",
+      "text": "•\nLDAP 登录相关的用户认证信息均存储于客户自有的LDAP 服务器中。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        129.406,
+        408.134,
+        140.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-949F8B333073FF72",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 108,
+      "printed_page_label": "98",
+      "block_order": 21,
+      "section_id": "SEC-D8436DBCD15A2C4D",
+      "section_path": [
+        "10 用户管理",
+        "10.11 通信设置",
+        "10.11.1 阳光云"
+      ],
+      "section_title": "10.11.1 阳光云",
+      "block_type": "heading",
+      "text": "10.11.1 阳光云",
+      "table_cells": null,
+      "bbox": [
+        56.689,
+        561.69,
+        124.069,
+        573.86
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FC9E25A9775E31EE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 108,
+      "printed_page_label": "98",
+      "block_order": 22,
+      "section_id": "SEC-D8436DBCD15A2C4D",
+      "section_path": [
+        "10 用户管理",
+        "10.11 通信设置",
+        "10.11.1 阳光云"
+      ],
+      "section_title": "10.11.1 阳光云",
+      "block_type": "list",
+      "text": "1. 请以administrator 身份进行登录，点击通信设置模块，进入 阳光云子模块。",
+      "table_cells": null,
+      "bbox": [
+        88.195,
+        579.584,
+        404.635,
+        592.067
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9A1218DF5F781B77",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 108,
+      "printed_page_label": "98",
+      "block_order": 23,
+      "section_id": "SEC-D8436DBCD15A2C4D",
+      "section_path": [
+        "10 用户管理",
+        "10.11 通信设置",
+        "10.11.1 阳光云"
+      ],
+      "section_title": "10.11.1 阳光云",
+      "block_type": "list",
+      "text": "2. 选择通信总开关，接入阳光云功能，授权运维人员可配置远程维护、接入阳光云功能，开\n启该功能则启用阳光云通信通道。",
+      "table_cells": null,
+      "bbox": [
+        88.195,
+        596.006,
+        453.37,
+        620.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EFDA27B10A0C2BD9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 108,
+      "printed_page_label": "98",
+      "block_order": 24,
+      "section_id": "SEC-D8436DBCD15A2C4D",
+      "section_path": [
+        "10 用户管理",
+        "10.11 通信设置",
+        "10.11.1 阳光云"
+      ],
+      "section_title": "10.11.1 阳光云",
+      "block_type": "list",
+      "text": "3. 点击下行通信开关，可根据需求设置授权有效期，点击确定进行授权。",
+      "table_cells": null,
+      "bbox": [
+        88.195,
+        624.506,
+        381.37,
+        635.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

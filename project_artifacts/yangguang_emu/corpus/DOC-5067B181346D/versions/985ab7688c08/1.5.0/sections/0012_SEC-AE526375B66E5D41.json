@@ -1,0 +1,268 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-AE526375B66E5D41",
+  "section_path": [
+    "1 安全注意事项",
+    "1.8 报废安全"
+  ],
+  "section_title": "1.8 报废安全",
+  "start_pdf_page": 14,
+  "end_pdf_page": 14,
+  "blocks": [
+    {
+      "block_id": "BLK-8EE3A2F0981201E1",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "8",
+      "block_order": 0,
+      "section_id": "SEC-AE526375B66E5D41",
+      "section_path": [
+        "1 安全注意事项",
+        "1.8 报废安全"
+      ],
+      "section_title": "1.8 报废安全",
+      "block_type": "paragraph",
+      "text": "用户手册\n1 安全注意事项",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-50744A6889628E37",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "8",
+      "block_order": 1,
+      "section_id": "SEC-AE526375B66E5D41",
+      "section_path": [
+        "1 安全注意事项",
+        "1.8 报废安全"
+      ],
+      "section_title": "1.8 报废安全",
+      "block_type": "paragraph",
+      "text": "注意",
+      "table_cells": null,
+      "bbox": [
+        97.941,
+        76.024,
+        119.941,
+        89.411
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C036AFB414C2D70A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "8",
+      "block_order": 2,
+      "section_id": "SEC-AE526375B66E5D41",
+      "section_path": [
+        "1 安全注意事项",
+        "1.8 报废安全"
+      ],
+      "section_title": "1.8 报废安全",
+      "block_type": "list",
+      "text": "•\n对设备进行清洁时，请避免使用清洁剂，否则可能对设备造成损坏，由此造成的损失将\n不在质保范围内。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        95.906,
+        448.87,
+        120.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-63EBCA214AD8954D",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "8",
+      "block_order": 3,
+      "section_id": "SEC-AE526375B66E5D41",
+      "section_path": [
+        "1 安全注意事项",
+        "1.8 报废安全"
+      ],
+      "section_title": "1.8 报废安全",
+      "block_type": "list",
+      "text": "•\n设备外壳出现油漆掉落或锈迹，请及时进行修补，否则可能影响设备使用。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        124.406,
+        403.87,
+        135.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-553A95DA94B27F75",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "8",
+      "block_order": 4,
+      "section_id": "SEC-AE526375B66E5D41",
+      "section_path": [
+        "1 安全注意事项",
+        "1.8 报废安全"
+      ],
+      "section_title": "1.8 报废安全",
+      "block_type": "list",
+      "text": "•\n设备内部不包含需要维护的部件，未经授权请勿打开设备（不包含接线箱）及更换设备\n内部元件，否则由此引起的损失将不在质保范围内。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        139.406,
+        448.87,
+        163.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-54DE208BB8D7A24C",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "8",
+      "block_order": 5,
+      "section_id": "SEC-AE526375B66E5D41",
+      "section_path": [
+        "1 安全注意事项",
+        "1.8 报废安全"
+      ],
+      "section_title": "1.8 报废安全",
+      "block_type": "list",
+      "text": "•\n为了减少触电的危险，请勿执行超出本手册以外的其他维护操作。如有需要，请联系阳\n光电源股份有限公司进行维修，否则由此引起的损失将不在质保范围内。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        167.906,
+        448.87,
+        192.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A805C864AF3815E4",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "8",
+      "block_order": 6,
+      "section_id": "SEC-AE526375B66E5D41",
+      "section_path": [
+        "1 安全注意事项",
+        "1.8 报废安全"
+      ],
+      "section_title": "1.8 报废安全",
+      "block_type": "table",
+      "text": "废\n按\t安全\n照当地的相关规定及标准进行产品的报废，避免造成财产损失或人员伤亡。\n注\t意",
+      "table_cells": [
+        [
+          "废\n按",
+          "安全\n照当地的相关规定及标准进行产品的报废，避免造成财产损失或人员伤亡。"
+        ],
+        [
+          "注",
+          "意"
+        ]
+      ],
+      "bbox": [
+        92.695,
+        197.75,
+        448.87,
+        292.9
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5C0E3F009AFA94DC",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "8",
+      "block_order": 7,
+      "section_id": "SEC-AE526375B66E5D41",
+      "section_path": [
+        "1 安全注意事项",
+        "1.8 报废安全"
+      ],
+      "section_title": "1.8 报废安全",
+      "block_type": "list",
+      "text": "•\n所有与报废相关的操作，必须遵守当地国家或地区的相关法规和条例。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        298.306,
+        385.87,
+        309.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BC937FE5C60D1BCA",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "8",
+      "block_order": 8,
+      "section_id": "SEC-AE526375B66E5D41",
+      "section_path": [
+        "1 安全注意事项",
+        "1.8 报废安全"
+      ],
+      "section_title": "1.8 报废安全",
+      "block_type": "list",
+      "text": "•\n报废产品前，请确认其安全标识、警告标签及铭牌清晰可见。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        313.306,
+        349.87,
+        324.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

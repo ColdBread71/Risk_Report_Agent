@@ -1,0 +1,41 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-49C861E4F5BDEAA7",
+  "section_path": [
+    "16 附录C:通用信息"
+  ],
+  "section_title": "16 附录C:通用信息",
+  "start_pdf_page": 121,
+  "end_pdf_page": 121,
+  "blocks": [
+    {
+      "block_id": "BLK-AB2520D98DC340BF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 121,
+      "printed_page_label": "111",
+      "block_order": 0,
+      "section_id": "SEC-49C861E4F5BDEAA7",
+      "section_path": [
+        "16 附录C:通用信息"
+      ],
+      "section_title": "16 附录C:通用信息",
+      "block_type": "heading",
+      "text": "16\n附录C:通用信息",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        98.112,
+        237.132,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

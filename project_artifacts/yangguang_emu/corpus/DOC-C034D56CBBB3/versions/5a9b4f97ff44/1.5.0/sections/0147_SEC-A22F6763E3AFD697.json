@@ -1,0 +1,269 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-A22F6763E3AFD697",
+  "section_path": [
+    "9 电网调度",
+    "9.3 有功功率调节",
+    "9.3.5 国家模式有功调节"
+  ],
+  "section_title": "9.3.5 国家模式有功调节",
+  "start_pdf_page": 96,
+  "end_pdf_page": 96,
+  "blocks": [
+    {
+      "block_id": "BLK-AC1D83CFC1FFE16F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 96,
+      "printed_page_label": "86",
+      "block_order": 0,
+      "section_id": "SEC-A22F6763E3AFD697",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节"
+      ],
+      "section_title": "9.3.5 国家模式有功调节",
+      "block_type": "paragraph",
+      "text": "用户手册\n9 电网调度",
+      "table_cells": null,
+      "bbox": [
+        60.442,
+        48.088,
+        449.796,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-49B903198D35A881",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 96,
+      "printed_page_label": "86",
+      "block_order": 1,
+      "section_id": "SEC-A22F6763E3AFD697",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节"
+      ],
+      "section_title": "9.3.5 国家模式有功调节",
+      "block_type": "figure_caption",
+      "text": "图 9-1 模拟量输入值与目标值的对应关系示例",
+      "table_cells": null,
+      "bbox": [
+        180.551,
+        209.634,
+        360.56,
+        220.587
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F56BE6055CDDEB7A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 96,
+      "printed_page_label": "86",
+      "block_order": 2,
+      "section_id": "SEC-A22F6763E3AFD697",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节"
+      ],
+      "section_title": "9.3.5 国家模式有功调节",
+      "block_type": "paragraph",
+      "text": "步骤 7 根据指令类型，在步长文本框中，设置连续两次功率调度指令下发相差的值。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        224.712,
+        393.563,
+        237.195
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-67C4C8624EB6D8D0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 96,
+      "printed_page_label": "86",
+      "block_order": 3,
+      "section_id": "SEC-A22F6763E3AFD697",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节"
+      ],
+      "section_title": "9.3.5 国家模式有功调节",
+      "block_type": "paragraph",
+      "text": "步骤 8 点击保存。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        241.212,
+        132.563,
+        253.695
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8D814FD3197BAFD3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 96,
+      "printed_page_label": "86",
+      "block_order": 4,
+      "section_id": "SEC-A22F6763E3AFD697",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节"
+      ],
+      "section_title": "9.3.5 国家模式有功调节",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        257.784,
+        112.187,
+        268.737
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7EDE6901A43485C0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 96,
+      "printed_page_label": "86",
+      "block_order": 21,
+      "section_id": "SEC-A22F6763E3AFD697",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节"
+      ],
+      "section_title": "9.3.5 国家模式有功调节",
+      "block_type": "heading",
+      "text": "9.3.5 国家模式有功调节",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        595.718,
+        163.687,
+        607.888
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E692ED32DE7A4C08",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 96,
+      "printed_page_label": "86",
+      "block_order": 22,
+      "section_id": "SEC-A22F6763E3AFD697",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节"
+      ],
+      "section_title": "9.3.5 国家模式有功调节",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        88.195,
+        615.034,
+        124.195,
+        625.987
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F1F3ACD97D3128D4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 96,
+      "printed_page_label": "86",
+      "block_order": 23,
+      "section_id": "SEC-A22F6763E3AFD697",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节"
+      ],
+      "section_title": "9.3.5 国家模式有功调节",
+      "block_type": "list",
+      "text": "•\n当前有功控制方式已选择国家模式。见9.2 选择功率控制方式。",
+      "table_cells": null,
+      "bbox": [
+        88.195,
+        635.034,
+        353.632,
+        645.987
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B7FDCA29FCA203AF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 96,
+      "printed_page_label": "86",
+      "block_order": 24,
+      "section_id": "SEC-A22F6763E3AFD697",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节"
+      ],
+      "section_title": "9.3.5 国家模式有功调节",
+      "block_type": "paragraph",
+      "text": "当前支持国家",
+      "table_cells": null,
+      "bbox": [
+        88.195,
+        653.112,
+        142.195,
+        665.595
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

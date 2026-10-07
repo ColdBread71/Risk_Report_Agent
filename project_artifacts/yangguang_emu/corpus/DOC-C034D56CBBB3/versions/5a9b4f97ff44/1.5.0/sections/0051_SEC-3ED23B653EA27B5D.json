@@ -1,0 +1,129 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-3ED23B653EA27B5D",
+  "section_path": [
+    "7 Web界面",
+    "7.5 设备监控",
+    "7.5.9 故障录波参数"
+  ],
+  "section_title": "7.5.9 故障录波参数",
+  "start_pdf_page": 52,
+  "end_pdf_page": 52,
+  "blocks": [
+    {
+      "block_id": "BLK-0C8C6E2A409DDC61",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 0,
+      "section_id": "SEC-3ED23B653EA27B5D",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.9 故障录波参数"
+      ],
+      "section_title": "7.5.9 故障录波参数",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2427D2B9721975DA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 1,
+      "section_id": "SEC-3ED23B653EA27B5D",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.9 故障录波参数"
+      ],
+      "section_title": "7.5.9 故障录波参数",
+      "block_type": "list",
+      "text": "•\n单击设备监控 > 直流信息，进入界面，查看直流数据信息。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        72.906,
+        337.619,
+        83.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-26AAFFF80D96C839",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 29,
+      "section_id": "SEC-3ED23B653EA27B5D",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.9 故障录波参数"
+      ],
+      "section_title": "7.5.9 故障录波参数",
+      "block_type": "heading",
+      "text": "7.5.9 故障录波参数",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        606.211,
+        143.684,
+        618.381
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F9E90A7391635F84",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 30,
+      "section_id": "SEC-3ED23B653EA27B5D",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.9 故障录波参数"
+      ],
+      "section_title": "7.5.9 故障录波参数",
+      "block_type": "paragraph",
+      "text": "LOGGERSV400.001.00.P031 及之后版本，仅添加的逆变器支持故障录波功能，才\n支持故障录波参数设置。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        630.677,
+        443.522,
+        652.43
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

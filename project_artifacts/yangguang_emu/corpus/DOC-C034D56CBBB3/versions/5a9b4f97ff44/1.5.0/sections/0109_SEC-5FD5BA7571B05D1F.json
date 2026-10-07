@@ -1,0 +1,511 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-5FD5BA7571B05D1F",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.7 转发IEC104服务配置",
+    "7.8.7.5 设置IEC104调度模式"
+  ],
+  "section_title": "7.8.7.5 设置IEC104调度模式",
+  "start_pdf_page": 75,
+  "end_pdf_page": 75,
+  "blocks": [
+    {
+      "block_id": "BLK-39F366CBEA17C8F4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 0,
+      "section_id": "SEC-5FD5BA7571B05D1F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.5 设置IEC104调度模式"
+      ],
+      "section_title": "7.8.7.5 设置IEC104调度模式",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-221392D56628C102",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 13,
+      "section_id": "SEC-5FD5BA7571B05D1F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.5 设置IEC104调度模式"
+      ],
+      "section_title": "7.8.7.5 设置IEC104调度模式",
+      "block_type": "heading",
+      "text": "7.8.7.5 设置IEC104 调度模式",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        270.373,
+        204.55,
+        282.543
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-629E0AFC9A66558F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 14,
+      "section_id": "SEC-5FD5BA7571B05D1F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.5 设置IEC104调度模式"
+      ],
+      "section_title": "7.8.7.5 设置IEC104调度模式",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击设备监控 > 功率调节参数，跳转到相应页面。",
+      "table_cells": null,
+      "bbox": [
+        70.864,
+        294.267,
+        300.994,
+        306.75
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-151F74CFC32DBD68",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 15,
+      "section_id": "SEC-5FD5BA7571B05D1F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.5 设置IEC104调度模式"
+      ],
+      "section_title": "7.8.7.5 设置IEC104调度模式",
+      "block_type": "paragraph",
+      "text": "步骤 2 在左侧选择逆变器设备，单击功率调节参数页面，设置功率调节参数。",
+      "table_cells": null,
+      "bbox": [
+        70.864,
+        310.767,
+        380.734,
+        323.25
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D0D504F9B19E069F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 16,
+      "section_id": "SEC-5FD5BA7571B05D1F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.5 设置IEC104调度模式"
+      ],
+      "section_title": "7.8.7.5 设置IEC104调度模式",
+      "block_type": "paragraph",
+      "text": "步骤 3 在电网快速调度模式下拉列表中：",
+      "table_cells": null,
+      "bbox": [
+        70.864,
+        327.267,
+        236.734,
+        339.75
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A1360813586A53A3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 17,
+      "section_id": "SEC-5FD5BA7571B05D1F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.5 设置IEC104调度模式"
+      ],
+      "section_title": "7.8.7.5 设置IEC104调度模式",
+      "block_type": "list",
+      "text": "•\n选择使能，打开IEC104 快速调度模式。",
+      "table_cells": null,
+      "bbox": [
+        101.734,
+        345.189,
+        276.424,
+        356.142
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E87242E5690C1DF0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 18,
+      "section_id": "SEC-5FD5BA7571B05D1F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.5 设置IEC104调度模式"
+      ],
+      "section_title": "7.8.7.5 设置IEC104调度模式",
+      "block_type": "list",
+      "text": "•\n选择禁止，关闭IEC104 快速调度模式。",
+      "table_cells": null,
+      "bbox": [
+        101.734,
+        360.189,
+        276.424,
+        371.142
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E9282F3CEEC0E93B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 19,
+      "section_id": "SEC-5FD5BA7571B05D1F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.5 设置IEC104调度模式"
+      ],
+      "section_title": "7.8.7.5 设置IEC104调度模式",
+      "block_type": "paragraph",
+      "text": "步骤 4 在电网极速调度模式下拉列表中：",
+      "table_cells": null,
+      "bbox": [
+        70.864,
+        375.267,
+        236.734,
+        387.75
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AF03549F90E40806",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 20,
+      "section_id": "SEC-5FD5BA7571B05D1F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.5 设置IEC104调度模式"
+      ],
+      "section_title": "7.8.7.5 设置IEC104调度模式",
+      "block_type": "list",
+      "text": "•\n选择使能，打开IEC104 极速调度模式。",
+      "table_cells": null,
+      "bbox": [
+        101.734,
+        393.189,
+        276.424,
+        404.142
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4FCD3D8CE7A43DDD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 21,
+      "section_id": "SEC-5FD5BA7571B05D1F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.5 设置IEC104调度模式"
+      ],
+      "section_title": "7.8.7.5 设置IEC104调度模式",
+      "block_type": "list",
+      "text": "•\n选择禁止，关闭IEC104 极速调度模式。",
+      "table_cells": null,
+      "bbox": [
+        101.734,
+        408.189,
+        276.424,
+        419.142
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0AE2F7337684FDD4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 22,
+      "section_id": "SEC-5FD5BA7571B05D1F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.5 设置IEC104调度模式"
+      ],
+      "section_title": "7.8.7.5 设置IEC104调度模式",
+      "block_type": "paragraph",
+      "text": "如果电网快速调度模式和电网极速调度模式同时使能时，有功功率调节和无功功率调\n节优先选择电网极速调度模式。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        428.339,
+        461.735,
+        450.092
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FBAFC4E39FAD43C4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 23,
+      "section_id": "SEC-5FD5BA7571B05D1F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.5 设置IEC104调度模式"
+      ],
+      "section_title": "7.8.7.5 设置IEC104调度模式",
+      "block_type": "paragraph",
+      "text": "步骤 5 单击设置。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        467.367,
+        146.736,
+        479.85
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B602946952977A4B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 24,
+      "section_id": "SEC-5FD5BA7571B05D1F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.5 设置IEC104调度模式"
+      ],
+      "section_title": "7.8.7.5 设置IEC104调度模式",
+      "block_type": "paragraph",
+      "text": "步骤 6 单击通用参数页签，设置设备通用参数。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        483.867,
+        263.736,
+        496.35
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-761569555C68EA17",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 25,
+      "section_id": "SEC-5FD5BA7571B05D1F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.5 设置IEC104调度模式"
+      ],
+      "section_title": "7.8.7.5 设置IEC104调度模式",
+      "block_type": "paragraph",
+      "text": "步骤 7 选择设置，设置寄存器地址、数据类型和设置值。单击设置，完成对单台设备设置生效。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        500.367,
+        452.736,
+        512.85
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FB7F0DB889DBE536",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 26,
+      "section_id": "SEC-5FD5BA7571B05D1F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.5 设置IEC104调度模式"
+      ],
+      "section_title": "7.8.7.5 设置IEC104调度模式",
+      "block_type": "paragraph",
+      "text": "步骤 8 （可选）单击配置同步，在弹出的设备列表中勾选需要设置的设备，单击保存，完成批量设",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        516.867,
+        461.736,
+        529.35
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D69B577599FAD8D7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 27,
+      "section_id": "SEC-5FD5BA7571B05D1F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.5 设置IEC104调度模式"
+      ],
+      "section_title": "7.8.7.5 设置IEC104调度模式",
+      "block_type": "paragraph",
+      "text": "置设备通用参数。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        531.789,
+        173.736,
+        542.742
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FF726985CD29BFB6",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 28,
+      "section_id": "SEC-5FD5BA7571B05D1F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.5 设置IEC104调度模式"
+      ],
+      "section_title": "7.8.7.5 设置IEC104调度模式",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        546.939,
+        126.36,
+        557.892
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

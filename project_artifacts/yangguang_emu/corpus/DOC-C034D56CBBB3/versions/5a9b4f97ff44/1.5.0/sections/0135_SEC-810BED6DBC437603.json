@@ -1,0 +1,583 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-810BED6DBC437603",
+  "section_path": [
+    "8 固件升级",
+    "8.3 升级PLC主节点"
+  ],
+  "section_title": "8.3 升级PLC主节点",
+  "start_pdf_page": 88,
+  "end_pdf_page": 88,
+  "blocks": [
+    {
+      "block_id": "BLK-B13EE91F4203CC69",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 88,
+      "printed_page_label": "78",
+      "block_order": 0,
+      "section_id": "SEC-810BED6DBC437603",
+      "section_path": [
+        "8 固件升级",
+        "8.3 升级PLC主节点"
+      ],
+      "section_title": "8.3 升级PLC主节点",
+      "block_type": "paragraph",
+      "text": "用户手册\n8 固件升级",
+      "table_cells": null,
+      "bbox": [
+        60.443,
+        48.088,
+        449.79,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9B0E25AD74E80650",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 88,
+      "printed_page_label": "78",
+      "block_order": 1,
+      "section_id": "SEC-810BED6DBC437603",
+      "section_path": [
+        "8 固件升级",
+        "8.3 升级PLC主节点"
+      ],
+      "section_title": "8.3 升级PLC主节点",
+      "block_type": "paragraph",
+      "text": "根据升级方式准备对应资源文件或配置：",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        72.906,
+        250.193,
+        83.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AE189170CEF32CF9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 88,
+      "printed_page_label": "78",
+      "block_order": 2,
+      "section_id": "SEC-810BED6DBC437603",
+      "section_path": [
+        "8 固件升级",
+        "8.3 升级PLC主节点"
+      ],
+      "section_title": "8.3 升级PLC主节点",
+      "block_type": "list",
+      "text": "•\n通过配置工具iConfig 升级：已安装iConfig 工具并下载相关升级包。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        87.906,
+        374.393,
+        98.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-59B3AC2B679BFB6F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 88,
+      "printed_page_label": "78",
+      "block_order": 3,
+      "section_id": "SEC-810BED6DBC437603",
+      "section_path": [
+        "8 固件升级",
+        "8.3 升级PLC主节点"
+      ],
+      "section_title": "8.3 升级PLC主节点",
+      "block_type": "list",
+      "text": "•\n通过阳光云升级：已接入云服务且当前有可用升级包。见7.8.6 转发阳光云服务设置。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        102.906,
+        442.136,
+        113.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-05A163699DFB009E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 88,
+      "printed_page_label": "78",
+      "block_order": 4,
+      "section_id": "SEC-810BED6DBC437603",
+      "section_path": [
+        "8 固件升级",
+        "8.3 升级PLC主节点"
+      ],
+      "section_title": "8.3 升级PLC主节点",
+      "block_type": "paragraph",
+      "text": "步骤 1 导航栏中点击系统 > 系统维护，跳转至相应页面。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        128.984,
+        286.823,
+        141.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-017AB4EB5228FC36",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 88,
+      "printed_page_label": "78",
+      "block_order": 5,
+      "section_id": "SEC-810BED6DBC437603",
+      "section_path": [
+        "8 固件升级",
+        "8.3 升级PLC主节点"
+      ],
+      "section_title": "8.3 升级PLC主节点",
+      "block_type": "paragraph",
+      "text": "步骤 2 点击系统升级，在弹出的对话框中，根据实际情况，选择升级方式。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        145.484,
+        357.563,
+        157.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A7A08AEF769043C5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 88,
+      "printed_page_label": "78",
+      "block_order": 6,
+      "section_id": "SEC-810BED6DBC437603",
+      "section_path": [
+        "8 固件升级",
+        "8.3 升级PLC主节点"
+      ],
+      "section_title": "8.3 升级PLC主节点",
+      "block_type": "paragraph",
+      "text": "步骤 3 根据升级方式，按照界面提示，完成升级。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        161.984,
+        258.563,
+        174.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9C3A0A8BDDFE6B33",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 88,
+      "printed_page_label": "78",
+      "block_order": 7,
+      "section_id": "SEC-810BED6DBC437603",
+      "section_path": [
+        "8 固件升级",
+        "8.3 升级PLC主节点"
+      ],
+      "section_title": "8.3 升级PLC主节点",
+      "block_type": "paragraph",
+      "text": "如弹窗提示缺少公钥文件，需通过系统 > 系统维护 > 公钥导入导入升级包对应的公\n钥文件，再进行升级操作。",
+      "table_cells": null,
+      "bbox": [
+        114.562,
+        185.056,
+        441.073,
+        206.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3257DB51754910A6",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 88,
+      "printed_page_label": "78",
+      "block_order": 8,
+      "section_id": "SEC-810BED6DBC437603",
+      "section_path": [
+        "8 固件升级",
+        "8.3 升级PLC主节点"
+      ],
+      "section_title": "8.3 升级PLC主节点",
+      "block_type": "paragraph",
+      "text": "Web 端将弹窗提示是否确认升级，确认后数据采集器自动重启。新版本在重启后生效。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        225.506,
+        432.155,
+        236.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-46C8611B540E5D92",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 88,
+      "printed_page_label": "78",
+      "block_order": 9,
+      "section_id": "SEC-810BED6DBC437603",
+      "section_path": [
+        "8 固件升级",
+        "8.3 升级PLC主节点"
+      ],
+      "section_title": "8.3 升级PLC主节点",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        240.656,
+        112.187,
+        251.609
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D3C75A64C0532878",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 88,
+      "printed_page_label": "78",
+      "block_order": 10,
+      "section_id": "SEC-810BED6DBC437603",
+      "section_path": [
+        "8 固件升级",
+        "8.3 升级PLC主节点"
+      ],
+      "section_title": "8.3 升级PLC主节点",
+      "block_type": "heading",
+      "text": "8.3 升级PLC 主节点",
+      "table_cells": null,
+      "bbox": [
+        56.687,
+        269.558,
+        170.219,
+        284.162
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5564F6CD0E4CCD18",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 88,
+      "printed_page_label": "78",
+      "block_order": 11,
+      "section_id": "SEC-810BED6DBC437603",
+      "section_path": [
+        "8 固件升级",
+        "8.3 升级PLC主节点"
+      ],
+      "section_title": "8.3 升级PLC主节点",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        297.206,
+        124.193,
+        308.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F81BDF161A05D39A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 88,
+      "printed_page_label": "78",
+      "block_order": 12,
+      "section_id": "SEC-810BED6DBC437603",
+      "section_path": [
+        "8 固件升级",
+        "8.3 升级PLC主节点"
+      ],
+      "section_title": "8.3 升级PLC主节点",
+      "block_type": "list",
+      "text": "•\n数据采集器固件版本：P013 及以上。见7.8.16 查看固件版本。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        317.206,
+        353.405,
+        328.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1C5697690D4C94BB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 88,
+      "printed_page_label": "78",
+      "block_order": 13,
+      "section_id": "SEC-810BED6DBC437603",
+      "section_path": [
+        "8 固件升级",
+        "8.3 升级PLC主节点"
+      ],
+      "section_title": "8.3 升级PLC主节点",
+      "block_type": "paragraph",
+      "text": "根据升级方式准备对应资源文件或配置：",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        332.706,
+        250.193,
+        343.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7742888631DDBF9F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 88,
+      "printed_page_label": "78",
+      "block_order": 14,
+      "section_id": "SEC-810BED6DBC437603",
+      "section_path": [
+        "8 固件升级",
+        "8.3 升级PLC主节点"
+      ],
+      "section_title": "8.3 升级PLC主节点",
+      "block_type": "list",
+      "text": "•\n通过配置工具iConfig 升级：已安装iConfig 工具并下载相关升级包。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        347.706,
+        374.393,
+        358.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-86A019DCF08BA2F9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 88,
+      "printed_page_label": "78",
+      "block_order": 15,
+      "section_id": "SEC-810BED6DBC437603",
+      "section_path": [
+        "8 固件升级",
+        "8.3 升级PLC主节点"
+      ],
+      "section_title": "8.3 升级PLC主节点",
+      "block_type": "list",
+      "text": "•\n通过阳光云升级：已接入云服务且当前有可用升级包。见7.8.6 转发阳光云服务设置。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        362.706,
+        442.136,
+        373.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8413120FB3F57D87",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 88,
+      "printed_page_label": "78",
+      "block_order": 16,
+      "section_id": "SEC-810BED6DBC437603",
+      "section_path": [
+        "8 固件升级",
+        "8.3 升级PLC主节点"
+      ],
+      "section_title": "8.3 升级PLC主节点",
+      "block_type": "paragraph",
+      "text": "如当前数据采集器版本为P012 及以下，通过系统 > 系统维护 > 系统升级方式，升\n级PLC 主节点。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        389.356,
+        440.228,
+        411.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9132001EFD269BE6",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 88,
+      "printed_page_label": "78",
+      "block_order": 17,
+      "section_id": "SEC-810BED6DBC437603",
+      "section_path": [
+        "8 固件升级",
+        "8.3 升级PLC主节点"
+      ],
+      "section_title": "8.3 升级PLC主节点",
+      "block_type": "paragraph",
+      "text": "步骤 1 导航栏中点击系统 > MPLC > 操作，跳转至相应页面。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        431.384,
+        304.085,
+        443.867
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4267801AECB3E072",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 88,
+      "printed_page_label": "78",
+      "block_order": 18,
+      "section_id": "SEC-810BED6DBC437603",
+      "section_path": [
+        "8 固件升级",
+        "8.3 升级PLC主节点"
+      ],
+      "section_title": "8.3 升级PLC主节点",
+      "block_type": "paragraph",
+      "text": "步骤 2 点击PLC 模块升级，在弹出的对话框中，根据实际情况，选择升级方式。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        447.884,
+        379.568,
+        460.367
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C95905966B25FCFD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 88,
+      "printed_page_label": "78",
+      "block_order": 19,
+      "section_id": "SEC-810BED6DBC437603",
+      "section_path": [
+        "8 固件升级",
+        "8.3 升级PLC主节点"
+      ],
+      "section_title": "8.3 升级PLC主节点",
+      "block_type": "paragraph",
+      "text": "步骤 3 根据升级方式，按照界面提示，完成升级。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        464.384,
+        258.563,
+        476.867
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8E8737D8B8AD4725",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 88,
+      "printed_page_label": "78",
+      "block_order": 20,
+      "section_id": "SEC-810BED6DBC437603",
+      "section_path": [
+        "8 固件升级",
+        "8.3 升级PLC主节点"
+      ],
+      "section_title": "8.3 升级PLC主节点",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        480.956,
+        112.187,
+        491.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

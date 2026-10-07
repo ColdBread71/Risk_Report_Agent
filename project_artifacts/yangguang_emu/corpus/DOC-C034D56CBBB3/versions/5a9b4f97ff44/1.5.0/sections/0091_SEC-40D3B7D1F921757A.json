@@ -1,0 +1,437 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-40D3B7D1F921757A",
+  "section_path": [
+    "7 Web界面",
+    "7.7 历史数据",
+    "7.7.3 历史曲线"
+  ],
+  "section_title": "7.7.3 历史曲线",
+  "start_pdf_page": 68,
+  "end_pdf_page": 68,
+  "blocks": [
+    {
+      "block_id": "BLK-DABE830A1A8DE8A8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 7,
+      "section_id": "SEC-40D3B7D1F921757A",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.3 历史曲线"
+      ],
+      "section_title": "7.7.3 历史曲线",
+      "block_type": "heading",
+      "text": "7.7.3 历史曲线",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        196.671,
+        123.687,
+        208.841
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-68BF55DFE3671705",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 8,
+      "section_id": "SEC-40D3B7D1F921757A",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.3 历史曲线"
+      ],
+      "section_title": "7.7.3 历史曲线",
+      "block_type": "paragraph",
+      "text": "通过设置设备以及设备参数进行搜索，可查看电站中各个设备参数的历史数据。",
+      "table_cells": null,
+      "bbox": [
+        88.191,
+        214.637,
+        403.191,
+        225.59
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A4FD102335EE72BA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 9,
+      "section_id": "SEC-40D3B7D1F921757A",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.3 历史曲线"
+      ],
+      "section_title": "7.7.3 历史曲线",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击历史数据 > 历史曲线，进入页面。",
+      "table_cells": null,
+      "bbox": [
+        56.691,
+        231.365,
+        241.821,
+        243.848
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-66891520BE02006B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 10,
+      "section_id": "SEC-40D3B7D1F921757A",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.3 历史曲线"
+      ],
+      "section_title": "7.7.3 历史曲线",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击",
+      "table_cells": null,
+      "bbox": [
+        56.691,
+        252.815,
+        105.561,
+        265.298
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6F62B35FD033C381",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 11,
+      "section_id": "SEC-40D3B7D1F921757A",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.3 历史曲线"
+      ],
+      "section_title": "7.7.3 历史曲线",
+      "block_type": "paragraph",
+      "text": "图标，选择需要查看设备以及参数，并设置起止时间。",
+      "table_cells": null,
+      "bbox": [
+        123.563,
+        254.237,
+        339.563,
+        265.19
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1989420CD1AB5524",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 12,
+      "section_id": "SEC-40D3B7D1F921757A",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.3 历史曲线"
+      ],
+      "section_title": "7.7.3 历史曲线",
+      "block_type": "paragraph",
+      "text": "步骤 3 单击",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        274.067,
+        105.563,
+        286.55
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-11A127BEC3B03B45",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 13,
+      "section_id": "SEC-40D3B7D1F921757A",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.3 历史曲线"
+      ],
+      "section_title": "7.7.3 历史曲线",
+      "block_type": "paragraph",
+      "text": "图标，即可查看该时间段下的历史曲线信息。",
+      "table_cells": null,
+      "bbox": [
+        119.738,
+        275.489,
+        299.738,
+        286.442
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-36677A572BF33F5D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 14,
+      "section_id": "SEC-40D3B7D1F921757A",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.3 历史曲线"
+      ],
+      "section_title": "7.7.3 历史曲线",
+      "block_type": "paragraph",
+      "text": "设备参数历史信息可用表格或曲线形式展示，可在历史曲线页面中单击如下表格中的图标进\n行切换。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        291.989,
+        447.563,
+        316.442
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-529222A4F3BEDE37",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 15,
+      "section_id": "SEC-40D3B7D1F921757A",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.3 历史曲线"
+      ],
+      "section_title": "7.7.3 历史曲线",
+      "block_type": "paragraph",
+      "text": "表 7-7 图标信息",
+      "table_cells": null,
+      "bbox": [
+        87.562,
+        324.989,
+        150.571,
+        335.942
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FF3D1744C5DCA297",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 16,
+      "section_id": "SEC-40D3B7D1F921757A",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.3 历史曲线"
+      ],
+      "section_title": "7.7.3 历史曲线",
+      "block_type": "paragraph",
+      "text": "图标\n说明",
+      "table_cells": null,
+      "bbox": [
+        96.232,
+        345.772,
+        224.856,
+        356.116
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-34FA7804A32135AB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 17,
+      "section_id": "SEC-40D3B7D1F921757A",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.3 历史曲线"
+      ],
+      "section_title": "7.7.3 历史曲线",
+      "block_type": "paragraph",
+      "text": "表示切换为表格形式展示。",
+      "table_cells": null,
+      "bbox": [
+        207.853,
+        368.746,
+        315.853,
+        379.699
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-32EF5391D66AE478",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 18,
+      "section_id": "SEC-40D3B7D1F921757A",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.3 历史曲线"
+      ],
+      "section_title": "7.7.3 历史曲线",
+      "block_type": "paragraph",
+      "text": "表示切换为曲线形式展示。",
+      "table_cells": null,
+      "bbox": [
+        207.853,
+        395.624,
+        315.853,
+        406.577
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5A11C7FBE84044DC",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 19,
+      "section_id": "SEC-40D3B7D1F921757A",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.3 历史曲线"
+      ],
+      "section_title": "7.7.3 历史曲线",
+      "block_type": "paragraph",
+      "text": "步骤 4 单击",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        432.603,
+        105.563,
+        445.086
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B90C79E1C261DD63",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 20,
+      "section_id": "SEC-40D3B7D1F921757A",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.3 历史曲线"
+      ],
+      "section_title": "7.7.3 历史曲线",
+      "block_type": "paragraph",
+      "text": "图标，可将查询到的信息，导出到本地进行查看。",
+      "table_cells": null,
+      "bbox": [
+        119.738,
+        434.025,
+        317.738,
+        444.978
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F010D8606274FCEB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 21,
+      "section_id": "SEC-40D3B7D1F921757A",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.3 历史曲线"
+      ],
+      "section_title": "7.7.3 历史曲线",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        449.175,
+        112.187,
+        460.128
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

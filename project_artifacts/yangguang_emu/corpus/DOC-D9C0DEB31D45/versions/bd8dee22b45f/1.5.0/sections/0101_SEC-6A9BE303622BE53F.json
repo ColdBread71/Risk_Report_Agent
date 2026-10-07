@@ -1,0 +1,43 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-6A9BE303622BE53F",
+  "section_path": [
+    "7 Web界面",
+    "7.8 智能分析"
+  ],
+  "section_title": "7.8 智能分析",
+  "start_pdf_page": 67,
+  "end_pdf_page": 67,
+  "blocks": [
+    {
+      "block_id": "BLK-2FCD9FAE4334E36C",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 67,
+      "printed_page_label": "57",
+      "block_order": 15,
+      "section_id": "SEC-6A9BE303622BE53F",
+      "section_path": [
+        "7 Web界面",
+        "7.8 智能分析"
+      ],
+      "section_title": "7.8 智能分析",
+      "block_type": "heading",
+      "text": "7.8 智能分析",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        375.658,
+        143.046,
+        390.262
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

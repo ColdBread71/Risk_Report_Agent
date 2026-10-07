@@ -1,0 +1,148 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-2ECD7A5C97A91190",
+  "section_path": [
+    "9 电网调度"
+  ],
+  "section_title": "9 电网调度",
+  "start_pdf_page": 89,
+  "end_pdf_page": 89,
+  "blocks": [
+    {
+      "block_id": "BLK-114CA9F956B84D98",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 89,
+      "printed_page_label": "79",
+      "block_order": 0,
+      "section_id": "SEC-2ECD7A5C97A91190",
+      "section_path": [
+        "9 电网调度"
+      ],
+      "section_title": "9 电网调度",
+      "block_type": "heading",
+      "text": "9\n电网调度",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        98.112,
+        168.624,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B5BED0785E0B0113",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 89,
+      "printed_page_label": "79",
+      "block_order": 1,
+      "section_id": "SEC-2ECD7A5C97A91190",
+      "section_path": [
+        "9 电网调度"
+      ],
+      "section_title": "9 电网调度",
+      "block_type": "table",
+      "text": "数据采集器配备了功率控制模\n可依据电网实际需求，通过本\n从而确保电网稳定和电力的高\t块，能够对连接的逆变器进行有功功率控制和无功功率调节。用户\n地或第三方控制系统，向逆变器发送调节指令，调整其馈网功率，\n效实用。\n注意\t\n电网调度参数须由专业人士\n电量。\t设置。设置错误可能会导致电站未按照电网要求并网，影响发\n率控制策略\n在进行有功或无功功率调节时\n开环控制\n开环控制不依赖于逆变器实\n送初始功率调节指令，就不\n功率调节响应速度要求较高\n闭环控制\n闭环控制依赖于逆变器实际\n的输出功率，并将其与目标\n制命令，确保输出功率的准\n场景。\n为了确保准确获取必\n表或包含测控装置的\n择功率控制方式\n有功功率限制和无功功率调节\n择。\t，运维人员可以根据需求选择开环控制或闭环控制两种策略。\n际输出值的反馈。选择开环控制后，数据采集器一旦向逆变器发\n会根据逆变器的实际输出进行后续调整。这种控制策略适用于对\n的场景。\n输出值的反馈。选择闭环控制后，数据采集器会持续监测逆变器\n功率进行比较。一旦检测到任何偏差，数据采集器便自动调整控\n确性和稳定性。这种控制策略适用于对功率调节精度要求较高的\n\t要的数据反馈，采用闭环控制策略时需要在数据采集器端接入电\n箱变。\n\t均支持多种功率控制方式，用户可根据电站的规模和需求进行选\n方式\t说明",
+      "table_cells": [
+        [
+          "数据采集器配备了功率控制模\n可依据电网实际需求，通过本\n从而确保电网稳定和电力的高",
+          "块，能够对连接的逆变器进行有功功率控制和无功功率调节。用户\n地或第三方控制系统，向逆变器发送调节指令，调整其馈网功率，\n效实用。"
+        ],
+        [
+          "注意",
+          null
+        ],
+        [
+          "电网调度参数须由专业人士\n电量。",
+          "设置。设置错误可能会导致电站未按照电网要求并网，影响发"
+        ],
+        [
+          "率控制策略\n在进行有功或无功功率调节时\n开环控制\n开环控制不依赖于逆变器实\n送初始功率调节指令，就不\n功率调节响应速度要求较高\n闭环控制\n闭环控制依赖于逆变器实际\n的输出功率，并将其与目标\n制命令，确保输出功率的准\n场景。\n为了确保准确获取必\n表或包含测控装置的\n择功率控制方式\n有功功率限制和无功功率调节\n择。",
+          "，运维人员可以根据需求选择开环控制或闭环控制两种策略。\n际输出值的反馈。选择开环控制后，数据采集器一旦向逆变器发\n会根据逆变器的实际输出进行后续调整。这种控制策略适用于对\n的场景。\n输出值的反馈。选择闭环控制后，数据采集器会持续监测逆变器\n功率进行比较。一旦检测到任何偏差，数据采集器便自动调整控\n确性和稳定性。这种控制策略适用于对功率调节精度要求较高的"
+        ],
+        [
+          null,
+          "要的数据反馈，采用闭环控制策略时需要在数据采集器端接入电\n箱变。"
+        ],
+        [
+          null,
+          "均支持多种功率控制方式，用户可根据电站的规模和需求进行选"
+        ],
+        [
+          "方式",
+          "说明"
+        ]
+      ],
+      "bbox": [
+        102.366,
+        125.85,
+        462.368,
+        594.7
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-66D5D4A9BEB08886",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 89,
+      "printed_page_label": "79",
+      "block_order": 2,
+      "section_id": "SEC-2ECD7A5C97A91190",
+      "section_path": [
+        "9 电网调度"
+      ],
+      "section_title": "9 电网调度",
+      "block_type": "paragraph",
+      "text": "根据后台下发的指令调整逆变器光伏发电功率。适用于通过\nPPC（电站控制器，Power Plant Controller）或AGC（自动发\n电控制器，Automatic Generation Controller）进行功率调节的\n场景。",
+      "table_cells": null,
+      "bbox": [
+        211.406,
+        600.606,
+        458.708,
+        652.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4821152137DE6D53",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 89,
+      "printed_page_label": "79",
+      "block_order": 3,
+      "section_id": "SEC-2ECD7A5C97A91190",
+      "section_path": [
+        "9 电网调度"
+      ],
+      "section_title": "9 电网调度",
+      "block_type": "paragraph",
+      "text": "远程调度",
+      "table_cells": null,
+      "bbox": [
+        111.035,
+        620.856,
+        147.035,
+        631.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

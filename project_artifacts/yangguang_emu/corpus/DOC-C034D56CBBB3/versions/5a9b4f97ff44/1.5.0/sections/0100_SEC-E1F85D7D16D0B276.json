@@ -1,0 +1,308 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-E1F85D7D16D0B276",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.2 系统维护",
+    "7.8.2.5 属性管理"
+  ],
+  "section_title": "7.8.2.5 属性管理",
+  "start_pdf_page": 70,
+  "end_pdf_page": 70,
+  "blocks": [
+    {
+      "block_id": "BLK-6E517580537B9864",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 70,
+      "printed_page_label": "60",
+      "block_order": 14,
+      "section_id": "SEC-E1F85D7D16D0B276",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.5 属性管理"
+      ],
+      "section_title": "7.8.2.5 属性管理",
+      "block_type": "heading",
+      "text": "7.8.2.5 属性管理",
+      "table_cells": null,
+      "bbox": [
+        56.688,
+        387.44,
+        132.028,
+        399.61
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FFD2F447C2E3A807",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 70,
+      "printed_page_label": "60",
+      "block_order": 15,
+      "section_id": "SEC-E1F85D7D16D0B276",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.5 属性管理"
+      ],
+      "section_title": "7.8.2.5 属性管理",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击系统 > 系统维护，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        56.689,
+        411.334,
+        223.819,
+        423.817
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E0833978C26F5B62",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 70,
+      "printed_page_label": "60",
+      "block_order": 16,
+      "section_id": "SEC-E1F85D7D16D0B276",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.5 属性管理"
+      ],
+      "section_title": "7.8.2.5 属性管理",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击属性管理。",
+      "table_cells": null,
+      "bbox": [
+        56.689,
+        427.834,
+        150.559,
+        440.317
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1EB6606D5F01962C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 70,
+      "printed_page_label": "60",
+      "block_order": 17,
+      "section_id": "SEC-E1F85D7D16D0B276",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.5 属性管理"
+      ],
+      "section_title": "7.8.2.5 属性管理",
+      "block_type": "paragraph",
+      "text": "步骤 3 在弹出的对话框中，选择方阵模式。",
+      "table_cells": null,
+      "bbox": [
+        56.689,
+        444.334,
+        231.559,
+        456.817
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-97B1DFD73EA955EE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 70,
+      "printed_page_label": "60",
+      "block_order": 18,
+      "section_id": "SEC-E1F85D7D16D0B276",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.5 属性管理"
+      ],
+      "section_title": "7.8.2.5 属性管理",
+      "block_type": "paragraph",
+      "text": "表 7-9 参数表格",
+      "table_cells": null,
+      "bbox": [
+        87.558,
+        468.256,
+        150.567,
+        479.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F55D2EDB2BDD94CD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 70,
+      "printed_page_label": "60",
+      "block_order": 19,
+      "section_id": "SEC-E1F85D7D16D0B276",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.5 属性管理"
+      ],
+      "section_title": "7.8.2.5 属性管理",
+      "block_type": "paragraph",
+      "text": "方阵模式\n说明",
+      "table_cells": null,
+      "bbox": [
+        96.232,
+        489.039,
+        226.686,
+        499.383
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-49677E0FE7E2C883",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 70,
+      "printed_page_label": "60",
+      "block_order": 20,
+      "section_id": "SEC-E1F85D7D16D0B276",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.5 属性管理"
+      ],
+      "section_title": "7.8.2.5 属性管理",
+      "block_type": "paragraph",
+      "text": "常规模式\n表示此方阵正常参与调度。",
+      "table_cells": null,
+      "bbox": [
+        96.231,
+        509.756,
+        317.685,
+        520.709
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1FA76E4E5BF59035",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 70,
+      "printed_page_label": "60",
+      "block_order": 21,
+      "section_id": "SEC-E1F85D7D16D0B276",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.5 属性管理"
+      ],
+      "section_title": "7.8.2.5 属性管理",
+      "block_type": "paragraph",
+      "text": "样板机模式\n表示此方阵不参与调度。",
+      "table_cells": null,
+      "bbox": [
+        96.231,
+        531.756,
+        308.685,
+        542.709
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B0131944465DCD8C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 70,
+      "printed_page_label": "60",
+      "block_order": 22,
+      "section_id": "SEC-E1F85D7D16D0B276",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.5 属性管理"
+      ],
+      "section_title": "7.8.2.5 属性管理",
+      "block_type": "paragraph",
+      "text": "步骤 4 单击确定。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        561.084,
+        132.563,
+        573.567
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-479DB96739A2AB02",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 70,
+      "printed_page_label": "60",
+      "block_order": 23,
+      "section_id": "SEC-E1F85D7D16D0B276",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.5 属性管理"
+      ],
+      "section_title": "7.8.2.5 属性管理",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        577.656,
+        112.187,
+        588.609
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

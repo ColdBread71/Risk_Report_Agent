@@ -1,0 +1,151 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-B276F5147CB84176",
+  "section_path": [
+    "7 Web界面",
+    "7.5 设备监控"
+  ],
+  "section_title": "7.5 设备监控",
+  "start_pdf_page": 45,
+  "end_pdf_page": 45,
+  "blocks": [
+    {
+      "block_id": "BLK-CC96010F968BEFF9",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 45,
+      "printed_page_label": "35",
+      "block_order": 9,
+      "section_id": "SEC-B276F5147CB84176",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控"
+      ],
+      "section_title": "7.5 设备监控",
+      "block_type": "heading",
+      "text": "7.5 设备监控",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        256.258,
+        143.043,
+        270.862
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3558279FF07F152E",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 45,
+      "printed_page_label": "35",
+      "block_order": 10,
+      "section_id": "SEC-B276F5147CB84176",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控"
+      ],
+      "section_title": "7.5 设备监控",
+      "block_type": "paragraph",
+      "text": "单击设备监控，进入界面，查看设备信息。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        283.906,
+        273.363,
+        294.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-779561F5F75F4124",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 45,
+      "printed_page_label": "35",
+      "block_order": 11,
+      "section_id": "SEC-B276F5147CB84176",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控"
+      ],
+      "section_title": "7.5 设备监控",
+      "block_type": "paragraph",
+      "text": "可查看设备的实时信息、直流信息、初始参数、运行参数、系统参数、保护参数、保护参数\n（其他）、功率调节参数、故障录波参数、通用参数、设备指令和设备信息。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        305.406,
+        462.363,
+        329.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B6B7657F7CD879ED",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 45,
+      "printed_page_label": "35",
+      "block_order": 12,
+      "section_id": "SEC-B276F5147CB84176",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控"
+      ],
+      "section_title": "7.5 设备监控",
+      "block_type": "paragraph",
+      "text": "在左侧设备列表栏中单击",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        347.827,
+        228.366,
+        358.78
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3BFBC1D6143EA855",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 45,
+      "printed_page_label": "35",
+      "block_order": 13,
+      "section_id": "SEC-B276F5147CB84176",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控"
+      ],
+      "section_title": "7.5 设备监控",
+      "block_type": "paragraph",
+      "text": "，可下拉框中选择需要的设备类型。",
+      "table_cells": null,
+      "bbox": [
+        242.541,
+        347.827,
+        386.541,
+        358.78
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

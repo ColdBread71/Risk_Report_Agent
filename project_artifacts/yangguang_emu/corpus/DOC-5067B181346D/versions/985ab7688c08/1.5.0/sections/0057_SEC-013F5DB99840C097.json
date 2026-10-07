@@ -1,0 +1,232 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-013F5DB99840C097",
+  "section_path": [
+    "6 故障排查与维护"
+  ],
+  "section_title": "6 故障排查与维护",
+  "start_pdf_page": 51,
+  "end_pdf_page": 51,
+  "blocks": [
+    {
+      "block_id": "BLK-32D168C97AF97067",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "45",
+      "block_order": 0,
+      "section_id": "SEC-013F5DB99840C097",
+      "section_path": [
+        "6 故障排查与维护"
+      ],
+      "section_title": "6 故障排查与维护",
+      "block_type": "heading",
+      "text": "6\n故障排查与维护",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        98.112,
+        222.624,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-09D39BB3B218FF22",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "45",
+      "block_order": 1,
+      "section_id": "SEC-013F5DB99840C097",
+      "section_path": [
+        "6 故障排查与维护"
+      ],
+      "section_title": "6 故障排查与维护",
+      "block_type": "table",
+      "text": "在\n护\t护注\n进行\n安全\t意事项\n维护操作前，请务必优先\n”章节中注意事项。\t阅读并满足“通用安全说明\t”章节中注意事项，且同时满足“维\n\t\t危险\t\t\n•\n•\n•\t不当的\n进\n维\n设\n进\t维护操作可能导致人员伤\n行高压操作时，请务必使\n护操作前，请先断开前级\n备下电25 分钟后，使用检\n行操作维护。\t害或设备损坏！\n用专用绝缘工具。\n供电电源及PLC 电源，否\n测设备检测，确保无电压\t则会导致人员伤害！\n和电流，请佩戴防护装备对设备\n\t\t\t\t\n\t\t警告\t\t\n\t在进行\n等），\t维护工作之前，请先将相\n才能对设备进行操作。\t关系统内的所有设备下电\t（包括逆变器，EMU,MVS\n\t\t\t\t\n\t\t小心\t\t\n\t为防止\n安全警\t无关人员靠近产品误操作\n示带。\t或发生意外，请在产品周\t边放置醒目的警告标识牌或设立\n\t见故\t\t\t\n\t\t在进行逆变器交流侧或低\nISO 已断电，详见 6.3 更换\n式 web 手动开启 ISO 功能\n发生绝缘故障时，请电站\n嵌入式 web 手动开启 ISO\t压柜开门维护时，请对断\nPID 模块（可选）。维\n；\n运维人员先排除故障，故\n功能，才能恢复交流 ISO\t路器操作下电，确保交流 PID 及\n护完成后，请在Logger5000 嵌入\n障消除后，同样需在 Logger5000\n检测功能的正常运行。\n\t\t\t\t\n\t\t\t\t\n\t\t障及排查\t\t\n\t故障\t现象\t可能原因\t排查方法\n\t\t\t1. RS485 线缆异\n常。\t1. 使用万用表测量RS485–A 与\nRS485–B 之间的电压，观察是\n否在5V 左右。",
+      "table_cells": [
+        [
+          "在\n护",
+          "护注\n进行\n安全",
+          "意事项\n维护操作前，请务必优先\n”章节中注意事项。",
+          "阅读并满足“通用安全说明",
+          "”章节中注意事项，且同时满足“维"
+        ],
+        [
+          null,
+          null,
+          "危险",
+          null,
+          null
+        ],
+        [
+          "•\n•\n•",
+          "不当的\n进\n维\n设\n进",
+          "维护操作可能导致人员伤\n行高压操作时，请务必使\n护操作前，请先断开前级\n备下电25 分钟后，使用检\n行操作维护。",
+          "害或设备损坏！\n用专用绝缘工具。\n供电电源及PLC 电源，否\n测设备检测，确保无电压",
+          "则会导致人员伤害！\n和电流，请佩戴防护装备对设备"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "警告",
+          null,
+          null
+        ],
+        [
+          null,
+          "在进行\n等），",
+          "维护工作之前，请先将相\n才能对设备进行操作。",
+          "关系统内的所有设备下电",
+          "（包括逆变器，EMU,MVS"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "小心",
+          null,
+          null
+        ],
+        [
+          null,
+          "为防止\n安全警",
+          "无关人员靠近产品误操作\n示带。",
+          "或发生意外，请在产品周",
+          "边放置醒目的警告标识牌或设立"
+        ],
+        [
+          null,
+          "见故",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "在进行逆变器交流侧或低\nISO 已断电，详见 6.3 更换\n式 web 手动开启 ISO 功能\n发生绝缘故障时，请电站\n嵌入式 web 手动开启 ISO",
+          "压柜开门维护时，请对断\nPID 模块（可选）。维\n；\n运维人员先排除故障，故\n功能，才能恢复交流 ISO",
+          "路器操作下电，确保交流 PID 及\n护完成后，请在Logger5000 嵌入\n障消除后，同样需在 Logger5000\n检测功能的正常运行。"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "障及排查",
+          null,
+          null
+        ],
+        [
+          null,
+          "故障",
+          "现象",
+          "可能原因",
+          "排查方法"
+        ],
+        [
+          null,
+          null,
+          null,
+          "1. RS485 线缆异\n常。",
+          "1. 使用万用表测量RS485–A 与\nRS485–B 之间的电压，观察是\n否在5V 左右。"
+        ]
+      ],
+      "bbox": [
+        106.864,
+        125.85,
+        457.864,
+        635.85
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0EBCDA4FDB168AB4",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "45",
+      "block_order": 2,
+      "section_id": "SEC-013F5DB99840C097",
+      "section_path": [
+        "6 故障排查与维护"
+      ],
+      "section_title": "6 故障排查与维护",
+      "block_type": "list",
+      "text": "2. 方阵中设备地址\n重复。",
+      "table_cells": null,
+      "bbox": [
+        232.817,
+        641.756,
+        305.825,
+        666.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9EF7B65973402FF0",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "45",
+      "block_order": 3,
+      "section_id": "SEC-013F5DB99840C097",
+      "section_path": [
+        "6 故障排查与维护"
+      ],
+      "section_title": "6 故障排查与维护",
+      "block_type": "list",
+      "text": "2. 查看方阵中设备地址是否重\n复。",
+      "table_cells": null,
+      "bbox": [
+        330.244,
+        641.756,
+        448.252,
+        666.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,2546 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+  "source_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "source_size_bytes": 18347034,
+  "parser_name": "pymupdf-page-section-parser",
+  "parser_version": "1.5.0",
+  "parsed_at": "2026-09-04T09:01:13.930318Z",
+  "metadata": {
+    "format": "PDF 1.5",
+    "title": "Logger5000数据采集器用户手册Logger5000-UCN-Ver11-202604",
+    "author": "",
+    "subject": "",
+    "keywords": "",
+    "creator": "Antenna House XSL Formatter V7.4 MR4 Windows : 7.4.5.64401 (2024-06-27T10:49+09)",
+    "producer": "Antenna House PDF Output Library 7.4.1903; modified using iText® 5.5.13 ©2000-2018 iText Group NV (AGPL-version)",
+    "creationDate": "D:20260601161836+08'00'",
+    "modDate": "D:20260601161855+08'00'",
+    "trapped": "",
+    "encryption": null
+  },
+  "page_label_rules": [
+    {
+      "start_page_index": 0,
+      "prefix": "",
+      "first_page_number": 1,
+      "style": "D"
+    },
+    {
+      "start_page_index": 1,
+      "prefix": "",
+      "first_page_number": 1,
+      "style": "R"
+    },
+    {
+      "start_page_index": 10,
+      "prefix": "",
+      "first_page_number": 1,
+      "style": "D"
+    }
+  ],
+  "table_of_contents": [
+    {
+      "section_id": "SEC-D25B36EBBEACED81",
+      "toc_index": 0,
+      "level": 1,
+      "title": "目 录",
+      "pdf_page": 6,
+      "section_path": [
+        "目 录"
+      ]
+    },
+    {
+      "section_id": "SEC-5ABB93B668370B7F",
+      "toc_index": 1,
+      "level": 1,
+      "title": "版权所有",
+      "pdf_page": 2,
+      "section_path": [
+        "版权所有"
+      ]
+    },
+    {
+      "section_id": "SEC-CC44E102E4B11DA1",
+      "toc_index": 2,
+      "level": 1,
+      "title": "修订记录",
+      "pdf_page": 3,
+      "section_path": [
+        "修订记录"
+      ]
+    },
+    {
+      "section_id": "SEC-4045DD989CB05D59",
+      "toc_index": 3,
+      "level": 1,
+      "title": "关于本手册",
+      "pdf_page": 4,
+      "section_path": [
+        "关于本手册"
+      ]
+    },
+    {
+      "section_id": "SEC-81DFFC0F708174DB",
+      "toc_index": 4,
+      "level": 1,
+      "title": "1 安全说明",
+      "pdf_page": 11,
+      "section_path": [
+        "1 安全说明"
+      ]
+    },
+    {
+      "section_id": "SEC-12B75281A1B15C5C",
+      "toc_index": 5,
+      "level": 1,
+      "title": "2 产品描述",
+      "pdf_page": 13,
+      "section_path": [
+        "2 产品描述"
+      ]
+    },
+    {
+      "section_id": "SEC-EA65CBD77AD5C8DC",
+      "toc_index": 6,
+      "level": 2,
+      "title": "2.1 功能描述",
+      "pdf_page": 13,
+      "section_path": [
+        "2 产品描述",
+        "2.1 功能描述"
+      ]
+    },
+    {
+      "section_id": "SEC-1A9901213E09DD9D",
+      "toc_index": 7,
+      "level": 2,
+      "title": "2.2 组网应用",
+      "pdf_page": 14,
+      "section_path": [
+        "2 产品描述",
+        "2.2 组网应用"
+      ]
+    },
+    {
+      "section_id": "SEC-2D8E1B6D4BCB75A2",
+      "toc_index": 8,
+      "level": 2,
+      "title": "2.3 产品介绍",
+      "pdf_page": 16,
+      "section_path": [
+        "2 产品描述",
+        "2.3 产品介绍"
+      ]
+    },
+    {
+      "section_id": "SEC-18698C284F3A9E6B",
+      "toc_index": 9,
+      "level": 1,
+      "title": "3 拆包与存储",
+      "pdf_page": 18,
+      "section_path": [
+        "3 拆包与存储"
+      ]
+    },
+    {
+      "section_id": "SEC-91D3FC3184F02ADD",
+      "toc_index": 10,
+      "level": 2,
+      "title": "3.1 供货范围",
+      "pdf_page": 18,
+      "section_path": [
+        "3 拆包与存储",
+        "3.1 供货范围"
+      ]
+    },
+    {
+      "section_id": "SEC-AFC099D9B876B8F6",
+      "toc_index": 11,
+      "level": 2,
+      "title": "3.2 识别数据采集器",
+      "pdf_page": 19,
+      "section_path": [
+        "3 拆包与存储",
+        "3.2 识别数据采集器"
+      ]
+    },
+    {
+      "section_id": "SEC-A870E2A451F89E9E",
+      "toc_index": 12,
+      "level": 2,
+      "title": "3.3 检查运输完整性",
+      "pdf_page": 19,
+      "section_path": [
+        "3 拆包与存储",
+        "3.3 检查运输完整性"
+      ]
+    },
+    {
+      "section_id": "SEC-EE5B6D845E254E2F",
+      "toc_index": 13,
+      "level": 2,
+      "title": "3.4 存储",
+      "pdf_page": 19,
+      "section_path": [
+        "3 拆包与存储",
+        "3.4 存储"
+      ]
+    },
+    {
+      "section_id": "SEC-72EECE47070A5B30",
+      "toc_index": 14,
+      "level": 1,
+      "title": "4 机械安装",
+      "pdf_page": 21,
+      "section_path": [
+        "4 机械安装"
+      ]
+    },
+    {
+      "section_id": "SEC-29F49E5DCD88CADA",
+      "toc_index": 15,
+      "level": 2,
+      "title": "4.1 选择安装地点",
+      "pdf_page": 21,
+      "section_path": [
+        "4 机械安装",
+        "4.1 选择安装地点"
+      ]
+    },
+    {
+      "section_id": "SEC-640C95DE472396A6",
+      "toc_index": 16,
+      "level": 2,
+      "title": "4.2 安装工具",
+      "pdf_page": 21,
+      "section_path": [
+        "4 机械安装",
+        "4.2 安装工具"
+      ]
+    },
+    {
+      "section_id": "SEC-97953CB8EF366432",
+      "toc_index": 17,
+      "level": 2,
+      "title": "4.3 安装数据采集器",
+      "pdf_page": 22,
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器"
+      ]
+    },
+    {
+      "section_id": "SEC-8A8D14D7C5A28F2C",
+      "toc_index": 18,
+      "level": 3,
+      "title": "4.3.1 壁挂式安装",
+      "pdf_page": 23,
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.1 壁挂式安装"
+      ]
+    },
+    {
+      "section_id": "SEC-06C67BA7C4ED7BA4",
+      "toc_index": 19,
+      "level": 3,
+      "title": "4.3.2 机架式安装",
+      "pdf_page": 24,
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.2 机架式安装"
+      ]
+    },
+    {
+      "section_id": "SEC-CA09C0E0593931E7",
+      "toc_index": 20,
+      "level": 1,
+      "title": "5 电气连接",
+      "pdf_page": 26,
+      "section_path": [
+        "5 电气连接"
+      ]
+    },
+    {
+      "section_id": "SEC-08535A7E072DA429",
+      "toc_index": 21,
+      "level": 2,
+      "title": "5.1 安全规范总则",
+      "pdf_page": 26,
+      "section_path": [
+        "5 电气连接",
+        "5.1 安全规范总则"
+      ]
+    },
+    {
+      "section_id": "SEC-210FDFCB87F26864",
+      "toc_index": 22,
+      "level": 2,
+      "title": "5.2 外部接口说明",
+      "pdf_page": 26,
+      "section_path": [
+        "5 电气连接",
+        "5.2 外部接口说明"
+      ]
+    },
+    {
+      "section_id": "SEC-6B7C081B37310F75",
+      "toc_index": 23,
+      "level": 2,
+      "title": "5.3 接线概述",
+      "pdf_page": 28,
+      "section_path": [
+        "5 电气连接",
+        "5.3 接线概述"
+      ]
+    },
+    {
+      "section_id": "SEC-6CFA7DDA6EC4775B",
+      "toc_index": 24,
+      "level": 2,
+      "title": "5.4 与逆变器连接",
+      "pdf_page": 28,
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接"
+      ]
+    },
+    {
+      "section_id": "SEC-2A16955F6D4289C6",
+      "toc_index": 25,
+      "level": 3,
+      "title": "5.4.1 与RS485端口型逆变器连接",
+      "pdf_page": 28,
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ]
+    },
+    {
+      "section_id": "SEC-1A1B01556A9869DF",
+      "toc_index": 26,
+      "level": 2,
+      "title": "5.5 与环境监测仪连接",
+      "pdf_page": 30,
+      "section_path": [
+        "5 电气连接",
+        "5.5 与环境监测仪连接"
+      ]
+    },
+    {
+      "section_id": "SEC-F455768509890CA4",
+      "toc_index": 27,
+      "level": 2,
+      "title": "5.6 与电表连接",
+      "pdf_page": 31,
+      "section_path": [
+        "5 电气连接",
+        "5.6 与电表连接"
+      ]
+    },
+    {
+      "section_id": "SEC-A5DBE214FBB42A92",
+      "toc_index": 28,
+      "level": 3,
+      "title": "5.6.1 RS485通讯接线",
+      "pdf_page": 32,
+      "section_path": [
+        "5 电气连接",
+        "5.6 与电表连接",
+        "5.6.1 RS485通讯接线"
+      ]
+    },
+    {
+      "section_id": "SEC-D5605FDEB6192C6B",
+      "toc_index": 29,
+      "level": 3,
+      "title": "5.6.2 以太网通讯接线",
+      "pdf_page": 33,
+      "section_path": [
+        "5 电气连接",
+        "5.6 与电表连接",
+        "5.6.2 以太网通讯接线"
+      ]
+    },
+    {
+      "section_id": "SEC-430DC8ADF7683FB9",
+      "toc_index": 30,
+      "level": 2,
+      "title": "5.7 DI信号接线",
+      "pdf_page": 33,
+      "section_path": [
+        "5 电气连接",
+        "5.7 DI信号接线"
+      ]
+    },
+    {
+      "section_id": "SEC-FAB0BDB1329C8277",
+      "toc_index": 31,
+      "level": 2,
+      "title": "5.8 DO信号接线",
+      "pdf_page": 33,
+      "section_path": [
+        "5 电气连接",
+        "5.8 DO信号接线"
+      ]
+    },
+    {
+      "section_id": "SEC-A2F56021B29DCCC9",
+      "toc_index": 32,
+      "level": 2,
+      "title": "5.9 AI信号接线",
+      "pdf_page": 34,
+      "section_path": [
+        "5 电气连接",
+        "5.9 AI信号接线"
+      ]
+    },
+    {
+      "section_id": "SEC-DDEF8A7BAA53011F",
+      "toc_index": 33,
+      "level": 2,
+      "title": "5.10 与后台通讯设备接线",
+      "pdf_page": 35,
+      "section_path": [
+        "5 电气连接",
+        "5.10 与后台通讯设备接线"
+      ]
+    },
+    {
+      "section_id": "SEC-9744E4B0D78F9684",
+      "toc_index": 34,
+      "level": 2,
+      "title": "5.11 与外部直流供电电源接线",
+      "pdf_page": 36,
+      "section_path": [
+        "5 电气连接",
+        "5.11 与外部直流供电电源接线"
+      ]
+    },
+    {
+      "section_id": "SEC-9EC9BFE29944E9E6",
+      "toc_index": 35,
+      "level": 2,
+      "title": "5.12 与交流电路采样端口接线",
+      "pdf_page": 37,
+      "section_path": [
+        "5 电气连接",
+        "5.12 与交流电路采样端口接线"
+      ]
+    },
+    {
+      "section_id": "SEC-A76496C0E40F891C",
+      "toc_index": 36,
+      "level": 2,
+      "title": "5.13 与接地系统连接",
+      "pdf_page": 37,
+      "section_path": [
+        "5 电气连接",
+        "5.13 与接地系统连接"
+      ]
+    },
+    {
+      "section_id": "SEC-673FC7B29094C78D",
+      "toc_index": 37,
+      "level": 1,
+      "title": "6 试运行",
+      "pdf_page": 39,
+      "section_path": [
+        "6 试运行"
+      ]
+    },
+    {
+      "section_id": "SEC-82C30DAA4723F9B9",
+      "toc_index": 38,
+      "level": 2,
+      "title": "6.1 试运行前检查",
+      "pdf_page": 39,
+      "section_path": [
+        "6 试运行",
+        "6.1 试运行前检查"
+      ]
+    },
+    {
+      "section_id": "SEC-CD762C0187C289E9",
+      "toc_index": 39,
+      "level": 2,
+      "title": "6.2 试运行步骤",
+      "pdf_page": 39,
+      "section_path": [
+        "6 试运行",
+        "6.2 试运行步骤"
+      ]
+    },
+    {
+      "section_id": "SEC-10945ABB61948DD0",
+      "toc_index": 40,
+      "level": 1,
+      "title": "7 Web界面",
+      "pdf_page": 41,
+      "section_path": [
+        "7 Web界面"
+      ]
+    },
+    {
+      "section_id": "SEC-9068F18675D16CAC",
+      "toc_index": 41,
+      "level": 2,
+      "title": "7.1 登录Web端",
+      "pdf_page": 41,
+      "section_path": [
+        "7 Web界面",
+        "7.1 登录Web端"
+      ]
+    },
+    {
+      "section_id": "SEC-2934E1D7A34C8C2D",
+      "toc_index": 42,
+      "level": 2,
+      "title": "7.2 修改密码",
+      "pdf_page": 42,
+      "section_path": [
+        "7 Web界面",
+        "7.2 修改密码"
+      ]
+    },
+    {
+      "section_id": "SEC-B6007860BCAFED18",
+      "toc_index": 43,
+      "level": 2,
+      "title": "7.3 Web端简介",
+      "pdf_page": 42,
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介"
+      ]
+    },
+    {
+      "section_id": "SEC-006F8C21F38677DB",
+      "toc_index": 44,
+      "level": 3,
+      "title": "7.3.1 Web主界面",
+      "pdf_page": 42,
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.1 Web主界面"
+      ]
+    },
+    {
+      "section_id": "SEC-1D4692C76E8ED73E",
+      "toc_index": 45,
+      "level": 3,
+      "title": "7.3.2 运行环境要求",
+      "pdf_page": 43,
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.2 运行环境要求"
+      ]
+    },
+    {
+      "section_id": "SEC-80B524D385308B02",
+      "toc_index": 46,
+      "level": 3,
+      "title": "7.3.3 操作流程",
+      "pdf_page": 44,
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.3 操作流程"
+      ]
+    },
+    {
+      "section_id": "SEC-98DC8391192C0048",
+      "toc_index": 47,
+      "level": 2,
+      "title": "7.4 概览",
+      "pdf_page": 44,
+      "section_path": [
+        "7 Web界面",
+        "7.4 概览"
+      ]
+    },
+    {
+      "section_id": "SEC-4AAA215D47951BC7",
+      "toc_index": 48,
+      "level": 3,
+      "title": "7.4.1 基本信息",
+      "pdf_page": 44,
+      "section_path": [
+        "7 Web界面",
+        "7.4 概览",
+        "7.4.1 基本信息"
+      ]
+    },
+    {
+      "section_id": "SEC-DD600D7D6EE0E372",
+      "toc_index": 49,
+      "level": 3,
+      "title": "7.4.2 实时故障",
+      "pdf_page": 45,
+      "section_path": [
+        "7 Web界面",
+        "7.4 概览",
+        "7.4.2 实时故障"
+      ]
+    },
+    {
+      "section_id": "SEC-B276F5147CB84176",
+      "toc_index": 50,
+      "level": 2,
+      "title": "7.5 设备监控",
+      "pdf_page": 45,
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控"
+      ]
+    },
+    {
+      "section_id": "SEC-A1911D00E124B986",
+      "toc_index": 51,
+      "level": 3,
+      "title": "7.5.1 实时信息",
+      "pdf_page": 45,
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.1 实时信息"
+      ]
+    },
+    {
+      "section_id": "SEC-FB9DA059006C6154",
+      "toc_index": 52,
+      "level": 3,
+      "title": "7.5.2 直流信息",
+      "pdf_page": 45,
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.2 直流信息"
+      ]
+    },
+    {
+      "section_id": "SEC-EBB878A49C2D7B19",
+      "toc_index": 53,
+      "level": 3,
+      "title": "7.5.3 初始参数",
+      "pdf_page": 45,
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.3 初始参数"
+      ]
+    },
+    {
+      "section_id": "SEC-C1AA2C6E0E027091",
+      "toc_index": 54,
+      "level": 3,
+      "title": "7.5.4 运行参数",
+      "pdf_page": 46,
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.4 运行参数"
+      ]
+    },
+    {
+      "section_id": "SEC-A52FD0A53486EBF3",
+      "toc_index": 55,
+      "level": 3,
+      "title": "7.5.5 系统参数",
+      "pdf_page": 46,
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.5 系统参数"
+      ]
+    },
+    {
+      "section_id": "SEC-FC8B8FE19F8A6F10",
+      "toc_index": 56,
+      "level": 3,
+      "title": "7.5.6 保护参数",
+      "pdf_page": 46,
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.6 保护参数"
+      ]
+    },
+    {
+      "section_id": "SEC-0E01D37049ABA8A0",
+      "toc_index": 57,
+      "level": 3,
+      "title": "7.5.7 保护参数（其他）",
+      "pdf_page": 47,
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.7 保护参数（其他）"
+      ]
+    },
+    {
+      "section_id": "SEC-1F005072191032D2",
+      "toc_index": 58,
+      "level": 3,
+      "title": "7.5.8 功率调节参数",
+      "pdf_page": 47,
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.8 功率调节参数"
+      ]
+    },
+    {
+      "section_id": "SEC-4D3CC1FBC6C2D82C",
+      "toc_index": 59,
+      "level": 3,
+      "title": "7.5.9 故障录波参数",
+      "pdf_page": 48,
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.9 故障录波参数"
+      ]
+    },
+    {
+      "section_id": "SEC-A8003C954575BE63",
+      "toc_index": 60,
+      "level": 3,
+      "title": "7.5.10 通用参数",
+      "pdf_page": 48,
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.10 通用参数"
+      ]
+    },
+    {
+      "section_id": "SEC-28BB411AC6549137",
+      "toc_index": 61,
+      "level": 3,
+      "title": "7.5.11 设备指令",
+      "pdf_page": 49,
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.11 设备指令"
+      ]
+    },
+    {
+      "section_id": "SEC-AB22B420593F5F30",
+      "toc_index": 62,
+      "level": 3,
+      "title": "7.5.12 设备信息",
+      "pdf_page": 49,
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.12 设备信息"
+      ]
+    },
+    {
+      "section_id": "SEC-42E57E5784763FA0",
+      "toc_index": 63,
+      "level": 2,
+      "title": "7.6 设备维护",
+      "pdf_page": 49,
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护"
+      ]
+    },
+    {
+      "section_id": "SEC-568C44CA164BF01D",
+      "toc_index": 64,
+      "level": 3,
+      "title": "7.6.1 设备列表",
+      "pdf_page": 49,
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表"
+      ]
+    },
+    {
+      "section_id": "SEC-B97CF1E4A2E273AB",
+      "toc_index": 65,
+      "level": 4,
+      "title": "7.6.1.1 自动搜索",
+      "pdf_page": 49,
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.1 自动搜索"
+      ]
+    },
+    {
+      "section_id": "SEC-3993445947BC203E",
+      "toc_index": 66,
+      "level": 4,
+      "title": "7.6.1.2 导出",
+      "pdf_page": 50,
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.2 导出"
+      ]
+    },
+    {
+      "section_id": "SEC-883EB3D74CC043B9",
+      "toc_index": 67,
+      "level": 4,
+      "title": "7.6.1.3 导入",
+      "pdf_page": 50,
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.3 导入"
+      ]
+    },
+    {
+      "section_id": "SEC-C8DFD83C92224895",
+      "toc_index": 68,
+      "level": 4,
+      "title": "7.6.1.4 添加设备",
+      "pdf_page": 50,
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.4 添加设备"
+      ]
+    },
+    {
+      "section_id": "SEC-FE020C82043EC018",
+      "toc_index": 69,
+      "level": 4,
+      "title": "7.6.1.5 编辑设备",
+      "pdf_page": 51,
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ]
+    },
+    {
+      "section_id": "SEC-EA4EA10D81C723DE",
+      "toc_index": 70,
+      "level": 4,
+      "title": "7.6.1.6 删除设备",
+      "pdf_page": 52,
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.6 删除设备"
+      ]
+    },
+    {
+      "section_id": "SEC-A6D262189CBD8189",
+      "toc_index": 71,
+      "level": 3,
+      "title": "7.6.2 设备日志",
+      "pdf_page": 52,
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.2 设备日志"
+      ]
+    },
+    {
+      "section_id": "SEC-C1FE4FDD0B3FC988",
+      "toc_index": 72,
+      "level": 3,
+      "title": "7.6.3 AFCI检测",
+      "pdf_page": 52,
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.3 AFCI检测"
+      ]
+    },
+    {
+      "section_id": "SEC-5F488CCA7B16C666",
+      "toc_index": 73,
+      "level": 3,
+      "title": "7.6.4 故障录波",
+      "pdf_page": 52,
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.4 故障录波"
+      ]
+    },
+    {
+      "section_id": "SEC-B860E859ECDD1839",
+      "toc_index": 74,
+      "level": 2,
+      "title": "7.7 功率调节",
+      "pdf_page": 53,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节"
+      ]
+    },
+    {
+      "section_id": "SEC-FB7D32DEC6A1664B",
+      "toc_index": 75,
+      "level": 3,
+      "title": "7.7.1 选择功率控制方式",
+      "pdf_page": 54,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.1 选择功率控制方式"
+      ]
+    },
+    {
+      "section_id": "SEC-CB485153D7F712B1",
+      "toc_index": 76,
+      "level": 3,
+      "title": "7.7.2 功率控制策略",
+      "pdf_page": 54,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.2 功率控制策略"
+      ]
+    },
+    {
+      "section_id": "SEC-1A9D4120D2986E77",
+      "toc_index": 77,
+      "level": 3,
+      "title": "7.7.3 有功功率",
+      "pdf_page": 55,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率"
+      ]
+    },
+    {
+      "section_id": "SEC-604921C0BA79801E",
+      "toc_index": 78,
+      "level": 4,
+      "title": "7.7.3.1 禁止降额",
+      "pdf_page": 55,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.1 禁止降额"
+      ]
+    },
+    {
+      "section_id": "SEC-61D1EE151A34921A",
+      "toc_index": 79,
+      "level": 4,
+      "title": "7.7.3.2 远程调度",
+      "pdf_page": 55,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.2 远程调度"
+      ]
+    },
+    {
+      "section_id": "SEC-C05790B0172D7CF2",
+      "toc_index": 80,
+      "level": 5,
+      "title": "7.7.3.2.1 开环控制",
+      "pdf_page": 55,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.2 远程调度",
+        "7.7.3.2.1 开环控制"
+      ]
+    },
+    {
+      "section_id": "SEC-27961F01E06E5D28",
+      "toc_index": 81,
+      "level": 5,
+      "title": "7.7.3.2.2 闭环控制",
+      "pdf_page": 56,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.2 远程调度",
+        "7.7.3.2.2 闭环控制"
+      ]
+    },
+    {
+      "section_id": "SEC-19B9BA32810C8C8C",
+      "toc_index": 82,
+      "level": 5,
+      "title": "7.7.3.2.3 设置北向通讯异常保护",
+      "pdf_page": 56,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.2 远程调度",
+        "7.7.3.2.3 设置北向通讯异常保护"
+      ]
+    },
+    {
+      "section_id": "SEC-A35754F231BC5896",
+      "toc_index": 83,
+      "level": 4,
+      "title": "7.7.3.3 本地调节",
+      "pdf_page": 57,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.3 本地调节"
+      ]
+    },
+    {
+      "section_id": "SEC-5EC379B5FFE7F75A",
+      "toc_index": 84,
+      "level": 5,
+      "title": "7.7.3.3.1 开环控制",
+      "pdf_page": 57,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.3 本地调节",
+        "7.7.3.3.1 开环控制"
+      ]
+    },
+    {
+      "section_id": "SEC-13D259F19694C48E",
+      "toc_index": 85,
+      "level": 5,
+      "title": "7.7.3.3.2 闭环控制",
+      "pdf_page": 58,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.3 本地调节",
+        "7.7.3.3.2 闭环控制"
+      ]
+    },
+    {
+      "section_id": "SEC-2E1105BF9BF15AE7",
+      "toc_index": 86,
+      "level": 5,
+      "title": "7.7.3.3.3 设置调节时间及目标值",
+      "pdf_page": 59,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.3 本地调节",
+        "7.7.3.3.3 设置调节时间及目标值"
+      ]
+    },
+    {
+      "section_id": "SEC-EE2B346224A6986D",
+      "toc_index": 87,
+      "level": 4,
+      "title": "7.7.3.4 AI控制",
+      "pdf_page": 60,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.4 AI控制"
+      ]
+    },
+    {
+      "section_id": "SEC-E5DD592D45FE6E84",
+      "toc_index": 88,
+      "level": 4,
+      "title": "7.7.3.5 干节点",
+      "pdf_page": 60,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.5 干节点"
+      ]
+    },
+    {
+      "section_id": "SEC-CD79272ECAAF72F0",
+      "toc_index": 89,
+      "level": 4,
+      "title": "7.7.3.6 国家模式",
+      "pdf_page": 61,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.6 国家模式"
+      ]
+    },
+    {
+      "section_id": "SEC-606633CFDA92828F",
+      "toc_index": 90,
+      "level": 5,
+      "title": "7.7.3.6.1 日本模式",
+      "pdf_page": 61,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.6 国家模式",
+        "7.7.3.6.1 日本模式"
+      ]
+    },
+    {
+      "section_id": "SEC-13F5EAF4CBE8A329",
+      "toc_index": 91,
+      "level": 5,
+      "title": "7.7.3.6.2 韩国模式",
+      "pdf_page": 62,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.6 国家模式",
+        "7.7.3.6.2 韩国模式"
+      ]
+    },
+    {
+      "section_id": "SEC-1B99C6666FE0FC95",
+      "toc_index": 92,
+      "level": 5,
+      "title": "7.7.3.6.3 澳洲模式",
+      "pdf_page": 62,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.6 国家模式",
+        "7.7.3.6.3 澳洲模式"
+      ]
+    },
+    {
+      "section_id": "SEC-50E983BB9968A133",
+      "toc_index": 93,
+      "level": 5,
+      "title": "7.7.3.6.4 中国模式",
+      "pdf_page": 62,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.6 国家模式",
+        "7.7.3.6.4 中国模式"
+      ]
+    },
+    {
+      "section_id": "SEC-F619624BE7F48485",
+      "toc_index": 94,
+      "level": 4,
+      "title": "7.7.3.7 禁止调度",
+      "pdf_page": 62,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.7 禁止调度"
+      ]
+    },
+    {
+      "section_id": "SEC-FE0CE86104D0BFED",
+      "toc_index": 95,
+      "level": 3,
+      "title": "7.7.4 无功功率",
+      "pdf_page": 63,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率"
+      ]
+    },
+    {
+      "section_id": "SEC-C75867156491D97B",
+      "toc_index": 96,
+      "level": 4,
+      "title": "7.7.4.1 禁止输出",
+      "pdf_page": 63,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.1 禁止输出"
+      ]
+    },
+    {
+      "section_id": "SEC-D6D7C64AA0B7DB16",
+      "toc_index": 97,
+      "level": 4,
+      "title": "7.7.4.2 远程调度",
+      "pdf_page": 63,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.2 远程调度"
+      ]
+    },
+    {
+      "section_id": "SEC-8594807C1F579944",
+      "toc_index": 98,
+      "level": 4,
+      "title": "7.7.4.3 本地调度",
+      "pdf_page": 64,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.3 本地调度"
+      ]
+    },
+    {
+      "section_id": "SEC-12D7F60353741F30",
+      "toc_index": 99,
+      "level": 4,
+      "title": "7.7.4.4 AI控制",
+      "pdf_page": 64,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.4 AI控制"
+      ]
+    },
+    {
+      "section_id": "SEC-191F1DB772E50BE6",
+      "toc_index": 100,
+      "level": 4,
+      "title": "7.7.4.5 干节点",
+      "pdf_page": 65,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.5 干节点"
+      ]
+    },
+    {
+      "section_id": "SEC-C1F55252E3C7861C",
+      "toc_index": 101,
+      "level": 4,
+      "title": "7.7.4.6 国家模式",
+      "pdf_page": 66,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.6 国家模式"
+      ]
+    },
+    {
+      "section_id": "SEC-81DB2BFC94B93CBC",
+      "toc_index": 102,
+      "level": 4,
+      "title": "7.7.4.7 禁止调度",
+      "pdf_page": 66,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.7 禁止调度"
+      ]
+    },
+    {
+      "section_id": "SEC-8B992AA67EAAF07E",
+      "toc_index": 103,
+      "level": 3,
+      "title": "7.7.5 配置紧急停机",
+      "pdf_page": 67,
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.5 配置紧急停机"
+      ]
+    },
+    {
+      "section_id": "SEC-6A9BE303622BE53F",
+      "toc_index": 104,
+      "level": 2,
+      "title": "7.8 智能分析",
+      "pdf_page": 67,
+      "section_path": [
+        "7 Web界面",
+        "7.8 智能分析"
+      ]
+    },
+    {
+      "section_id": "SEC-8D4D254A7027CD31",
+      "toc_index": 105,
+      "level": 3,
+      "title": "7.8.1 离散率分析",
+      "pdf_page": 67,
+      "section_path": [
+        "7 Web界面",
+        "7.8 智能分析",
+        "7.8.1 离散率分析"
+      ]
+    },
+    {
+      "section_id": "SEC-65D1E861FC813AFF",
+      "toc_index": 106,
+      "level": 4,
+      "title": "7.8.1.1 风道健康度检测",
+      "pdf_page": 68,
+      "section_path": [
+        "7 Web界面",
+        "7.8 智能分析",
+        "7.8.1 离散率分析",
+        "7.8.1.1 风道健康度检测"
+      ]
+    },
+    {
+      "section_id": "SEC-3DFC0A773E022647",
+      "toc_index": 107,
+      "level": 5,
+      "title": "7.8.1.1.1 使能风道健康度检测开关",
+      "pdf_page": 68,
+      "section_path": [
+        "7 Web界面",
+        "7.8 智能分析",
+        "7.8.1 离散率分析",
+        "7.8.1.1 风道健康度检测",
+        "7.8.1.1.1 使能风道健康度检测开关"
+      ]
+    },
+    {
+      "section_id": "SEC-AA4BB5044E84D869",
+      "toc_index": 108,
+      "level": 5,
+      "title": "7.8.1.1.2 设置风道健康度检测参数",
+      "pdf_page": 68,
+      "section_path": [
+        "7 Web界面",
+        "7.8 智能分析",
+        "7.8.1 离散率分析",
+        "7.8.1.1 风道健康度检测",
+        "7.8.1.1.2 设置风道健康度检测参数"
+      ]
+    },
+    {
+      "section_id": "SEC-2E60CFC536D6549C",
+      "toc_index": 109,
+      "level": 2,
+      "title": "7.9 历史数据",
+      "pdf_page": 69,
+      "section_path": [
+        "7 Web界面",
+        "7.9 历史数据"
+      ]
+    },
+    {
+      "section_id": "SEC-E930D52DE0C11874",
+      "toc_index": 110,
+      "level": 3,
+      "title": "7.9.1 操作日志",
+      "pdf_page": 69,
+      "section_path": [
+        "7 Web界面",
+        "7.9 历史数据",
+        "7.9.1 操作日志"
+      ]
+    },
+    {
+      "section_id": "SEC-06E7E6FE0AB7A55A",
+      "toc_index": 111,
+      "level": 3,
+      "title": "7.9.2 故障记录",
+      "pdf_page": 70,
+      "section_path": [
+        "7 Web界面",
+        "7.9 历史数据",
+        "7.9.2 故障记录"
+      ]
+    },
+    {
+      "section_id": "SEC-6A84B022DDEBA8F9",
+      "toc_index": 112,
+      "level": 3,
+      "title": "7.9.3 历史曲线",
+      "pdf_page": 70,
+      "section_path": [
+        "7 Web界面",
+        "7.9 历史数据",
+        "7.9.3 历史曲线"
+      ]
+    },
+    {
+      "section_id": "SEC-CA490D38E4B63CA7",
+      "toc_index": 113,
+      "level": 3,
+      "title": "7.9.4 Syslog日志",
+      "pdf_page": 71,
+      "section_path": [
+        "7 Web界面",
+        "7.9 历史数据",
+        "7.9.4 Syslog日志"
+      ]
+    },
+    {
+      "section_id": "SEC-24197E540DB4AB50",
+      "toc_index": 114,
+      "level": 2,
+      "title": "7.10 系统",
+      "pdf_page": 72,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统"
+      ]
+    },
+    {
+      "section_id": "SEC-025FBA1D7A0D1B22",
+      "toc_index": 115,
+      "level": 3,
+      "title": "7.10.1 运行信息",
+      "pdf_page": 72,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.1 运行信息"
+      ]
+    },
+    {
+      "section_id": "SEC-AF863F6252A43429",
+      "toc_index": 116,
+      "level": 3,
+      "title": "7.10.2 系统维护",
+      "pdf_page": 72,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护"
+      ]
+    },
+    {
+      "section_id": "SEC-2C6EA31234F375DD",
+      "toc_index": 117,
+      "level": 4,
+      "title": "7.10.2.1 日志导出",
+      "pdf_page": 72,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护",
+        "7.10.2.1 日志导出"
+      ]
+    },
+    {
+      "section_id": "SEC-8845BEAFE8B81CD8",
+      "toc_index": 118,
+      "level": 4,
+      "title": "7.10.2.2 系统重启",
+      "pdf_page": 72,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护",
+        "7.10.2.2 系统重启"
+      ]
+    },
+    {
+      "section_id": "SEC-F44F1E845A5CCFEF",
+      "toc_index": 119,
+      "level": 4,
+      "title": "7.10.2.3 一键迁移",
+      "pdf_page": 73,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护",
+        "7.10.2.3 一键迁移"
+      ]
+    },
+    {
+      "section_id": "SEC-AC75DF2201CFBAF5",
+      "toc_index": 120,
+      "level": 4,
+      "title": "7.10.2.4 备份与恢复",
+      "pdf_page": 73,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护",
+        "7.10.2.4 备份与恢复"
+      ]
+    },
+    {
+      "section_id": "SEC-4544C85A0A46A171",
+      "toc_index": 121,
+      "level": 4,
+      "title": "7.10.2.5 属性管理",
+      "pdf_page": 73,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护",
+        "7.10.2.5 属性管理"
+      ]
+    },
+    {
+      "section_id": "SEC-48483CAB7BDD642B",
+      "toc_index": 122,
+      "level": 4,
+      "title": "7.10.2.6 公钥导入",
+      "pdf_page": 74,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护",
+        "7.10.2.6 公钥导入"
+      ]
+    },
+    {
+      "section_id": "SEC-40FD321EB2F76D55",
+      "toc_index": 123,
+      "level": 3,
+      "title": "7.10.3 远程维护",
+      "pdf_page": 74,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.3 远程维护"
+      ]
+    },
+    {
+      "section_id": "SEC-BE6C19442AC2850C",
+      "toc_index": 124,
+      "level": 3,
+      "title": "7.10.4 报文导出",
+      "pdf_page": 75,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.4 报文导出"
+      ]
+    },
+    {
+      "section_id": "SEC-FDD14EB582DF266E",
+      "toc_index": 125,
+      "level": 3,
+      "title": "7.10.5 系统时间",
+      "pdf_page": 76,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.5 系统时间"
+      ]
+    },
+    {
+      "section_id": "SEC-C0D6B1BD5A21BBDA",
+      "toc_index": 126,
+      "level": 3,
+      "title": "7.10.6 转发配置",
+      "pdf_page": 77,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置"
+      ]
+    },
+    {
+      "section_id": "SEC-D521013B929D7ABE",
+      "toc_index": 127,
+      "level": 4,
+      "title": "7.10.6.1 转发阳光云服务设置",
+      "pdf_page": 77,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.1 转发阳光云服务设置"
+      ]
+    },
+    {
+      "section_id": "SEC-E17816253F34BC96",
+      "toc_index": 128,
+      "level": 4,
+      "title": "7.10.6.2 转发IEC104服务配置",
+      "pdf_page": 77,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.2 转发IEC104服务配置"
+      ]
+    },
+    {
+      "section_id": "SEC-3271755D2EC0A66B",
+      "toc_index": 129,
+      "level": 5,
+      "title": "7.10.6.2.1 白名单设置",
+      "pdf_page": 78,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.2 转发IEC104服务配置",
+        "7.10.6.2.1 白名单设置"
+      ]
+    },
+    {
+      "section_id": "SEC-430CED4BC97A2185",
+      "toc_index": 130,
+      "level": 5,
+      "title": "7.10.6.2.2 直接生成点表",
+      "pdf_page": 78,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.2 转发IEC104服务配置",
+        "7.10.6.2.2 直接生成点表"
+      ]
+    },
+    {
+      "section_id": "SEC-E3ADA2CFB64A8FFE",
+      "toc_index": 131,
+      "level": 5,
+      "title": "7.10.6.2.3 导入IEC104转发点表",
+      "pdf_page": 78,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.2 转发IEC104服务配置",
+        "7.10.6.2.3 导入IEC104转发点表"
+      ]
+    },
+    {
+      "section_id": "SEC-87CB712EE0240F50",
+      "toc_index": 132,
+      "level": 5,
+      "title": "7.10.6.2.4 导出IEC104转发点表",
+      "pdf_page": 78,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.2 转发IEC104服务配置",
+        "7.10.6.2.4 导出IEC104转发点表"
+      ]
+    },
+    {
+      "section_id": "SEC-3A1FCEC07DA8FBB1",
+      "toc_index": 133,
+      "level": 5,
+      "title": "7.10.6.2.5 设置IEC104调度模式",
+      "pdf_page": 78,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.2 转发IEC104服务配置",
+        "7.10.6.2.5 设置IEC104调度模式"
+      ]
+    },
+    {
+      "section_id": "SEC-7603CED6C45A0C95",
+      "toc_index": 134,
+      "level": 4,
+      "title": "7.10.6.3 转发MODBUS服务配置",
+      "pdf_page": 79,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.3 转发MODBUS服务配置"
+      ]
+    },
+    {
+      "section_id": "SEC-8F11476F8862A417",
+      "toc_index": 135,
+      "level": 5,
+      "title": "7.10.6.3.1 Server模式",
+      "pdf_page": 79,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.3 转发MODBUS服务配置",
+        "7.10.6.3.1 Server模式"
+      ]
+    },
+    {
+      "section_id": "SEC-6183DBE078595189",
+      "toc_index": 136,
+      "level": 5,
+      "title": "7.10.6.3.2 RTU模式",
+      "pdf_page": 79,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.3 转发MODBUS服务配置",
+        "7.10.6.3.2 RTU模式"
+      ]
+    },
+    {
+      "section_id": "SEC-22A6F784FCDB36EE",
+      "toc_index": 137,
+      "level": 5,
+      "title": "7.10.6.3.3 Modbus TCP快调模式",
+      "pdf_page": 79,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.3 转发MODBUS服务配置",
+        "7.10.6.3.3 Modbus TCP快调模式"
+      ]
+    },
+    {
+      "section_id": "SEC-D57FD510CDA414BD",
+      "toc_index": 138,
+      "level": 5,
+      "title": "7.10.6.3.4 Modbus TCP普通调度模式",
+      "pdf_page": 80,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.3 转发MODBUS服务配置",
+        "7.10.6.3.4 Modbus TCP普通调度模式"
+      ]
+    },
+    {
+      "section_id": "SEC-3298C38802B58232",
+      "toc_index": 139,
+      "level": 4,
+      "title": "7.10.6.4 转发三方云服务配置",
+      "pdf_page": 81,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.4 转发三方云服务配置"
+      ]
+    },
+    {
+      "section_id": "SEC-A59BC8D182672E7D",
+      "toc_index": 140,
+      "level": 4,
+      "title": "7.10.6.5 转发GOOSE服务配置",
+      "pdf_page": 81,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.5 转发GOOSE服务配置"
+      ]
+    },
+    {
+      "section_id": "SEC-7875E150F6D4AB48",
+      "toc_index": 141,
+      "level": 4,
+      "title": "7.10.6.6 转发MMS服务配置",
+      "pdf_page": 82,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.6 转发MMS服务配置"
+      ]
+    },
+    {
+      "section_id": "SEC-A165A1022EA55EA0",
+      "toc_index": 142,
+      "level": 3,
+      "title": "7.10.7 端口参数",
+      "pdf_page": 82,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.7 端口参数"
+      ]
+    },
+    {
+      "section_id": "SEC-B715C652C21C179C",
+      "toc_index": 143,
+      "level": 4,
+      "title": "7.10.7.1 RS485",
+      "pdf_page": 82,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.7 端口参数",
+        "7.10.7.1 RS485"
+      ]
+    },
+    {
+      "section_id": "SEC-0EF0F9974821C7C9",
+      "toc_index": 144,
+      "level": 4,
+      "title": "7.10.7.2 以太网",
+      "pdf_page": 83,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.7 端口参数",
+        "7.10.7.2 以太网"
+      ]
+    },
+    {
+      "section_id": "SEC-B56F3683ECDC4AFC",
+      "toc_index": 145,
+      "level": 4,
+      "title": "7.10.7.3 AI",
+      "pdf_page": 83,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.7 端口参数",
+        "7.10.7.3 AI"
+      ]
+    },
+    {
+      "section_id": "SEC-20AC67A9059B3AA4",
+      "toc_index": 146,
+      "level": 4,
+      "title": "7.10.7.4 DI",
+      "pdf_page": 84,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.7 端口参数",
+        "7.10.7.4 DI"
+      ]
+    },
+    {
+      "section_id": "SEC-1E21B263E712AFFD",
+      "toc_index": 147,
+      "level": 4,
+      "title": "7.10.7.5 DO",
+      "pdf_page": 84,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.7 端口参数",
+        "7.10.7.5 DO"
+      ]
+    },
+    {
+      "section_id": "SEC-68C2CB724FFB5A2B",
+      "toc_index": 148,
+      "level": 4,
+      "title": "7.10.7.6 电压电流采样",
+      "pdf_page": 84,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.7 端口参数",
+        "7.10.7.6 电压电流采样"
+      ]
+    },
+    {
+      "section_id": "SEC-E593BD880D00385A",
+      "toc_index": 149,
+      "level": 3,
+      "title": "7.10.8 MPLC（宽带PLC）",
+      "pdf_page": 84,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.8 MPLC（宽带PLC）"
+      ]
+    },
+    {
+      "section_id": "SEC-62BE8AC8C252E829",
+      "toc_index": 150,
+      "level": 4,
+      "title": "7.10.8.1 MPLC日志导出",
+      "pdf_page": 85,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.8 MPLC（宽带PLC）",
+        "7.10.8.1 MPLC日志导出"
+      ]
+    },
+    {
+      "section_id": "SEC-EE2BB9E827019749",
+      "toc_index": 151,
+      "level": 4,
+      "title": "7.10.8.2 MPLC一键诊断",
+      "pdf_page": 85,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.8 MPLC（宽带PLC）",
+        "7.10.8.2 MPLC一键诊断"
+      ]
+    },
+    {
+      "section_id": "SEC-4B86851C635ED7B5",
+      "toc_index": 152,
+      "level": 3,
+      "title": "7.10.9 证书安全维护",
+      "pdf_page": 85,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.9 证书安全维护"
+      ]
+    },
+    {
+      "section_id": "SEC-B0E5CC557A215DA8",
+      "toc_index": 153,
+      "level": 3,
+      "title": "7.10.10 更多",
+      "pdf_page": 88,
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.10 更多"
+      ]
+    },
+    {
+      "section_id": "SEC-2BD1D794977DC686",
+      "toc_index": 154,
+      "level": 2,
+      "title": "7.11 关于",
+      "pdf_page": 89,
+      "section_path": [
+        "7 Web界面",
+        "7.11 关于"
+      ]
+    },
+    {
+      "section_id": "SEC-3F0A6D4A8D444C00",
+      "toc_index": 155,
+      "level": 3,
+      "title": "7.11.1 查看固件版本",
+      "pdf_page": 89,
+      "section_path": [
+        "7 Web界面",
+        "7.11 关于",
+        "7.11.1 查看固件版本"
+      ]
+    },
+    {
+      "section_id": "SEC-3755F633A64695DD",
+      "toc_index": 156,
+      "level": 1,
+      "title": "8 固件升级",
+      "pdf_page": 91,
+      "section_path": [
+        "8 固件升级"
+      ]
+    },
+    {
+      "section_id": "SEC-01FBCD0EF0B91885",
+      "toc_index": 157,
+      "level": 2,
+      "title": "8.1 升级阳光电源逆变器或PLC从节点",
+      "pdf_page": 91,
+      "section_path": [
+        "8 固件升级",
+        "8.1 升级阳光电源逆变器或PLC从节点"
+      ]
+    },
+    {
+      "section_id": "SEC-7A65D23436EDF84F",
+      "toc_index": 158,
+      "level": 2,
+      "title": "8.2 升级数据采集器",
+      "pdf_page": 92,
+      "section_path": [
+        "8 固件升级",
+        "8.2 升级数据采集器"
+      ]
+    },
+    {
+      "section_id": "SEC-F1EDE6C14E6996E9",
+      "toc_index": 159,
+      "level": 2,
+      "title": "8.3 升级PLC主节点",
+      "pdf_page": 92,
+      "section_path": [
+        "8 固件升级",
+        "8.3 升级PLC主节点"
+      ]
+    },
+    {
+      "section_id": "SEC-6DE8D038C0CAE299",
+      "toc_index": 160,
+      "level": 1,
+      "title": "9 用户管理",
+      "pdf_page": 93,
+      "section_path": [
+        "9 用户管理"
+      ]
+    },
+    {
+      "section_id": "SEC-54C5491200176568",
+      "toc_index": 161,
+      "level": 2,
+      "title": "9.1 初始用户名和密码",
+      "pdf_page": 93,
+      "section_path": [
+        "9 用户管理",
+        "9.1 初始用户名和密码"
+      ]
+    },
+    {
+      "section_id": "SEC-4E374C8FD29946A9",
+      "toc_index": 162,
+      "level": 2,
+      "title": "9.2 LDAP管理",
+      "pdf_page": 94,
+      "section_path": [
+        "9 用户管理",
+        "9.2 LDAP管理"
+      ]
+    },
+    {
+      "section_id": "SEC-8278A13D6CAD6FBB",
+      "toc_index": 163,
+      "level": 2,
+      "title": "9.3 密码管理",
+      "pdf_page": 95,
+      "section_path": [
+        "9 用户管理",
+        "9.3 密码管理"
+      ]
+    },
+    {
+      "section_id": "SEC-2525B06ABECFA520",
+      "toc_index": 164,
+      "level": 2,
+      "title": "9.4 忘记密码",
+      "pdf_page": 95,
+      "section_path": [
+        "9 用户管理",
+        "9.4 忘记密码"
+      ]
+    },
+    {
+      "section_id": "SEC-AFA1B004128553F5",
+      "toc_index": 165,
+      "level": 3,
+      "title": "9.4.1 重置用户账号密码",
+      "pdf_page": 95,
+      "section_path": [
+        "9 用户管理",
+        "9.4 忘记密码",
+        "9.4.1 重置用户账号密码"
+      ]
+    },
+    {
+      "section_id": "SEC-DF366BCFC7BA0130",
+      "toc_index": 166,
+      "level": 3,
+      "title": "9.4.2 重置管理员账号密码",
+      "pdf_page": 95,
+      "section_path": [
+        "9 用户管理",
+        "9.4 忘记密码",
+        "9.4.2 重置管理员账号密码"
+      ]
+    },
+    {
+      "section_id": "SEC-A046E6FA6F3AD3DB",
+      "toc_index": 167,
+      "level": 2,
+      "title": "9.5 配置系统提示",
+      "pdf_page": 96,
+      "section_path": [
+        "9 用户管理",
+        "9.5 配置系统提示"
+      ]
+    },
+    {
+      "section_id": "SEC-736D0B81E54D3153",
+      "toc_index": 168,
+      "level": 2,
+      "title": "9.6 创建用户账号",
+      "pdf_page": 96,
+      "section_path": [
+        "9 用户管理",
+        "9.6 创建用户账号"
+      ]
+    },
+    {
+      "section_id": "SEC-DF1E418CD1F96524",
+      "toc_index": 169,
+      "level": 2,
+      "title": "9.7 删除用户账号",
+      "pdf_page": 97,
+      "section_path": [
+        "9 用户管理",
+        "9.7 删除用户账号"
+      ]
+    },
+    {
+      "section_id": "SEC-C11AB4B07E794C9B",
+      "toc_index": 170,
+      "level": 2,
+      "title": "9.8 重置账号密码",
+      "pdf_page": 97,
+      "section_path": [
+        "9 用户管理",
+        "9.8 重置账号密码"
+      ]
+    },
+    {
+      "section_id": "SEC-F2F033D0089444E8",
+      "toc_index": 171,
+      "level": 2,
+      "title": "9.9 设置账户保护和会话安全参数",
+      "pdf_page": 97,
+      "section_path": [
+        "9 用户管理",
+        "9.9 设置账户保护和会话安全参数"
+      ]
+    },
+    {
+      "section_id": "SEC-217AB003C9403F84",
+      "toc_index": 172,
+      "level": 2,
+      "title": "9.10 启用运维模式",
+      "pdf_page": 98,
+      "section_path": [
+        "9 用户管理",
+        "9.10 启用运维模式"
+      ]
+    },
+    {
+      "section_id": "SEC-4BF708A1DBCFB9B3",
+      "toc_index": 173,
+      "level": 2,
+      "title": "9.11 LDAP管理",
+      "pdf_page": 98,
+      "section_path": [
+        "9 用户管理",
+        "9.11 LDAP管理"
+      ]
+    },
+    {
+      "section_id": "SEC-40686E985CC3DF9F",
+      "toc_index": 174,
+      "level": 2,
+      "title": "9.12 系统维护",
+      "pdf_page": 99,
+      "section_path": [
+        "9 用户管理",
+        "9.12 系统维护"
+      ]
+    },
+    {
+      "section_id": "SEC-A4B7EEF95D8F2D20",
+      "toc_index": 175,
+      "level": 3,
+      "title": "9.12.1 备份与恢复",
+      "pdf_page": 99,
+      "section_path": [
+        "9 用户管理",
+        "9.12 系统维护",
+        "9.12.1 备份与恢复"
+      ]
+    },
+    {
+      "section_id": "SEC-9A0B08822488E836",
+      "toc_index": 176,
+      "level": 3,
+      "title": "9.12.2 恢复出厂设置",
+      "pdf_page": 99,
+      "section_path": [
+        "9 用户管理",
+        "9.12 系统维护",
+        "9.12.2 恢复出厂设置"
+      ]
+    },
+    {
+      "section_id": "SEC-EDD169934DFBD1CA",
+      "toc_index": 177,
+      "level": 2,
+      "title": "9.13 通信设置",
+      "pdf_page": 100,
+      "section_path": [
+        "9 用户管理",
+        "9.13 通信设置"
+      ]
+    },
+    {
+      "section_id": "SEC-A1E79D6545AA5B79",
+      "toc_index": 178,
+      "level": 3,
+      "title": "9.13.1 阳光云",
+      "pdf_page": 100,
+      "section_path": [
+        "9 用户管理",
+        "9.13 通信设置",
+        "9.13.1 阳光云"
+      ]
+    },
+    {
+      "section_id": "SEC-0A2A8C859B98B963",
+      "toc_index": 179,
+      "level": 3,
+      "title": "9.13.2 三方云",
+      "pdf_page": 100,
+      "section_path": [
+        "9 用户管理",
+        "9.13 通信设置",
+        "9.13.2 三方云"
+      ]
+    },
+    {
+      "section_id": "SEC-7D94528A97965C6C",
+      "toc_index": 180,
+      "level": 1,
+      "title": "10 例行维护",
+      "pdf_page": 101,
+      "section_path": [
+        "10 例行维护"
+      ]
+    },
+    {
+      "section_id": "SEC-2EEAD4A0DCC7D3A5",
+      "toc_index": 181,
+      "level": 2,
+      "title": "10.1 安全总则",
+      "pdf_page": 101,
+      "section_path": [
+        "10 例行维护",
+        "10.1 安全总则"
+      ]
+    },
+    {
+      "section_id": "SEC-7DB609B264864FE1",
+      "toc_index": 182,
+      "level": 2,
+      "title": "10.2 维护项目列表",
+      "pdf_page": 101,
+      "section_path": [
+        "10 例行维护",
+        "10.2 维护项目列表"
+      ]
+    },
+    {
+      "section_id": "SEC-1562314A5DD66490",
+      "toc_index": 183,
+      "level": 1,
+      "title": "11 故障排查",
+      "pdf_page": 103,
+      "section_path": [
+        "11 故障排查"
+      ]
+    },
+    {
+      "section_id": "SEC-C5B1832F472C573C",
+      "toc_index": 184,
+      "level": 2,
+      "title": "11.1 安全注意事项",
+      "pdf_page": 103,
+      "section_path": [
+        "11 故障排查",
+        "11.1 安全注意事项"
+      ]
+    },
+    {
+      "section_id": "SEC-3BB18696518ABE06",
+      "toc_index": 185,
+      "level": 2,
+      "title": "11.2 常见的故障现象及排查方法",
+      "pdf_page": 103,
+      "section_path": [
+        "11 故障排查",
+        "11.2 常见的故障现象及排查方法"
+      ]
+    },
+    {
+      "section_id": "SEC-C0DED629DF3A7E65",
+      "toc_index": 186,
+      "level": 1,
+      "title": "12 常见问题汇总",
+      "pdf_page": 107,
+      "section_path": [
+        "12 常见问题汇总"
+      ]
+    },
+    {
+      "section_id": "SEC-3D8AD8E67414D02C",
+      "toc_index": 187,
+      "level": 1,
+      "title": "13 附录",
+      "pdf_page": 109,
+      "section_path": [
+        "13 附录"
+      ]
+    },
+    {
+      "section_id": "SEC-A3B69ACC8D76BC72",
+      "toc_index": 188,
+      "level": 2,
+      "title": "13.1 技术参数",
+      "pdf_page": 109,
+      "section_path": [
+        "13 附录",
+        "13.1 技术参数"
+      ]
+    },
+    {
+      "section_id": "SEC-4BE3E87EC7BF2841",
+      "toc_index": 189,
+      "level": 2,
+      "title": "13.2 质量保证",
+      "pdf_page": 110,
+      "section_path": [
+        "13 附录",
+        "13.2 质量保证"
+      ]
+    },
+    {
+      "section_id": "SEC-08A97D3CDCA906F6",
+      "toc_index": 190,
+      "level": 2,
+      "title": "13.3 相关图纸",
+      "pdf_page": 111,
+      "section_path": [
+        "13 附录",
+        "13.3 相关图纸"
+      ]
+    },
+    {
+      "section_id": "SEC-7ABDFB52A4FE6A6F",
+      "toc_index": 191,
+      "level": 2,
+      "title": "13.4 软件安全更新说明",
+      "pdf_page": 112,
+      "section_path": [
+        "13 附录",
+        "13.4 软件安全更新说明"
+      ]
+    },
+    {
+      "section_id": "SEC-C005B624BDA632B4",
+      "toc_index": 192,
+      "level": 2,
+      "title": "13.5 联系方式",
+      "pdf_page": 112,
+      "section_path": [
+        "13 附录",
+        "13.5 联系方式"
+      ]
+    }
+  ],
+  "section_files": [
+    "sections/0000_SEC-5EA6101FE6E14292.json",
+    "sections/0001_SEC-5ABB93B668370B7F.json",
+    "sections/0002_SEC-CC44E102E4B11DA1.json",
+    "sections/0003_SEC-4045DD989CB05D59.json",
+    "sections/0004_SEC-D25B36EBBEACED81.json",
+    "sections/0005_SEC-81DFFC0F708174DB.json",
+    "sections/0006_SEC-12B75281A1B15C5C.json",
+    "sections/0007_SEC-EA65CBD77AD5C8DC.json",
+    "sections/0008_SEC-1A9901213E09DD9D.json",
+    "sections/0009_SEC-2D8E1B6D4BCB75A2.json",
+    "sections/0010_SEC-18698C284F3A9E6B.json",
+    "sections/0011_SEC-91D3FC3184F02ADD.json",
+    "sections/0012_SEC-EE5B6D845E254E2F.json",
+    "sections/0013_SEC-AFC099D9B876B8F6.json",
+    "sections/0014_SEC-A870E2A451F89E9E.json",
+    "sections/0015_SEC-72EECE47070A5B30.json",
+    "sections/0016_SEC-29F49E5DCD88CADA.json",
+    "sections/0017_SEC-640C95DE472396A6.json",
+    "sections/0018_SEC-97953CB8EF366432.json",
+    "sections/0019_SEC-8A8D14D7C5A28F2C.json",
+    "sections/0020_SEC-06C67BA7C4ED7BA4.json",
+    "sections/0021_SEC-CA09C0E0593931E7.json",
+    "sections/0022_SEC-210FDFCB87F26864.json",
+    "sections/0023_SEC-2A16955F6D4289C6.json",
+    "sections/0024_SEC-6B7C081B37310F75.json",
+    "sections/0025_SEC-6CFA7DDA6EC4775B.json",
+    "sections/0026_SEC-1A1B01556A9869DF.json",
+    "sections/0027_SEC-F455768509890CA4.json",
+    "sections/0028_SEC-A5DBE214FBB42A92.json",
+    "sections/0029_SEC-D5605FDEB6192C6B.json",
+    "sections/0030_SEC-430DC8ADF7683FB9.json",
+    "sections/0031_SEC-FAB0BDB1329C8277.json",
+    "sections/0032_SEC-A2F56021B29DCCC9.json",
+    "sections/0033_SEC-DDEF8A7BAA53011F.json",
+    "sections/0034_SEC-9744E4B0D78F9684.json",
+    "sections/0035_SEC-A76496C0E40F891C.json",
+    "sections/0036_SEC-9EC9BFE29944E9E6.json",
+    "sections/0037_SEC-673FC7B29094C78D.json",
+    "sections/0038_SEC-CD762C0187C289E9.json",
+    "sections/0039_SEC-10945ABB61948DD0.json",
+    "sections/0040_SEC-006F8C21F38677DB.json",
+    "sections/0041_SEC-2934E1D7A34C8C2D.json",
+    "sections/0042_SEC-B6007860BCAFED18.json",
+    "sections/0043_SEC-1D4692C76E8ED73E.json",
+    "sections/0044_SEC-4AAA215D47951BC7.json",
+    "sections/0045_SEC-80B524D385308B02.json",
+    "sections/0046_SEC-98DC8391192C0048.json",
+    "sections/0047_SEC-EBB878A49C2D7B19.json",
+    "sections/0048_SEC-DD600D7D6EE0E372.json",
+    "sections/0049_SEC-B276F5147CB84176.json",
+    "sections/0050_SEC-A1911D00E124B986.json",
+    "sections/0051_SEC-FB9DA059006C6154.json",
+    "sections/0052_SEC-FC8B8FE19F8A6F10.json",
+    "sections/0053_SEC-C1AA2C6E0E027091.json",
+    "sections/0054_SEC-A52FD0A53486EBF3.json",
+    "sections/0055_SEC-1F005072191032D2.json",
+    "sections/0056_SEC-0E01D37049ABA8A0.json",
+    "sections/0057_SEC-A8003C954575BE63.json",
+    "sections/0058_SEC-4D3CC1FBC6C2D82C.json",
+    "sections/0059_SEC-B97CF1E4A2E273AB.json",
+    "sections/0060_SEC-28BB411AC6549137.json",
+    "sections/0061_SEC-AB22B420593F5F30.json",
+    "sections/0062_SEC-42E57E5784763FA0.json",
+    "sections/0063_SEC-568C44CA164BF01D.json",
+    "sections/0064_SEC-C8DFD83C92224895.json",
+    "sections/0065_SEC-3993445947BC203E.json",
+    "sections/0066_SEC-883EB3D74CC043B9.json",
+    "sections/0067_SEC-FE020C82043EC018.json",
+    "sections/0068_SEC-EA4EA10D81C723DE.json",
+    "sections/0069_SEC-A6D262189CBD8189.json",
+    "sections/0070_SEC-C1FE4FDD0B3FC988.json",
+    "sections/0071_SEC-5F488CCA7B16C666.json",
+    "sections/0072_SEC-B860E859ECDD1839.json",
+    "sections/0073_SEC-CB485153D7F712B1.json",
+    "sections/0074_SEC-FB7D32DEC6A1664B.json",
+    "sections/0075_SEC-C05790B0172D7CF2.json",
+    "sections/0076_SEC-1A9D4120D2986E77.json",
+    "sections/0077_SEC-604921C0BA79801E.json",
+    "sections/0078_SEC-61D1EE151A34921A.json",
+    "sections/0079_SEC-19B9BA32810C8C8C.json",
+    "sections/0080_SEC-27961F01E06E5D28.json",
+    "sections/0081_SEC-5EC379B5FFE7F75A.json",
+    "sections/0082_SEC-A35754F231BC5896.json",
+    "sections/0083_SEC-13D259F19694C48E.json",
+    "sections/0084_SEC-2E1105BF9BF15AE7.json",
+    "sections/0085_SEC-E5DD592D45FE6E84.json",
+    "sections/0086_SEC-EE2B346224A6986D.json",
+    "sections/0087_SEC-606633CFDA92828F.json",
+    "sections/0088_SEC-CD79272ECAAF72F0.json",
+    "sections/0089_SEC-50E983BB9968A133.json",
+    "sections/0090_SEC-F619624BE7F48485.json",
+    "sections/0091_SEC-D6D7C64AA0B7DB16.json",
+    "sections/0092_SEC-FE0CE86104D0BFED.json",
+    "sections/0093_SEC-C75867156491D97B.json",
+    "sections/0094_SEC-12D7F60353741F30.json",
+    "sections/0095_SEC-8594807C1F579944.json",
+    "sections/0096_SEC-191F1DB772E50BE6.json",
+    "sections/0097_SEC-81DB2BFC94B93CBC.json",
+    "sections/0098_SEC-C1F55252E3C7861C.json",
+    "sections/0099_SEC-8D4D254A7027CD31.json",
+    "sections/0100_SEC-8B992AA67EAAF07E.json",
+    "sections/0101_SEC-6A9BE303622BE53F.json",
+    "sections/0102_SEC-AA4BB5044E84D869.json",
+    "sections/0103_SEC-65D1E861FC813AFF.json",
+    "sections/0104_SEC-3DFC0A773E022647.json",
+    "sections/0105_SEC-E930D52DE0C11874.json",
+    "sections/0106_SEC-2E60CFC536D6549C.json",
+    "sections/0107_SEC-6A84B022DDEBA8F9.json",
+    "sections/0108_SEC-06E7E6FE0AB7A55A.json",
+    "sections/0109_SEC-CA490D38E4B63CA7.json",
+    "sections/0110_SEC-8845BEAFE8B81CD8.json",
+    "sections/0111_SEC-24197E540DB4AB50.json",
+    "sections/0112_SEC-025FBA1D7A0D1B22.json",
+    "sections/0113_SEC-AF863F6252A43429.json",
+    "sections/0114_SEC-2C6EA31234F375DD.json",
+    "sections/0115_SEC-4544C85A0A46A171.json",
+    "sections/0116_SEC-F44F1E845A5CCFEF.json",
+    "sections/0117_SEC-AC75DF2201CFBAF5.json",
+    "sections/0118_SEC-48483CAB7BDD642B.json",
+    "sections/0119_SEC-40FD321EB2F76D55.json",
+    "sections/0120_SEC-BE6C19442AC2850C.json",
+    "sections/0121_SEC-FDD14EB582DF266E.json",
+    "sections/0122_SEC-E17816253F34BC96.json",
+    "sections/0123_SEC-C0D6B1BD5A21BBDA.json",
+    "sections/0124_SEC-3A1FCEC07DA8FBB1.json",
+    "sections/0125_SEC-3271755D2EC0A66B.json",
+    "sections/0126_SEC-430CED4BC97A2185.json",
+    "sections/0127_SEC-87CB712EE0240F50.json",
+    "sections/0128_SEC-22A6F784FCDB36EE.json",
+    "sections/0129_SEC-7603CED6C45A0C95.json",
+    "sections/0130_SEC-8F11476F8862A417.json",
+    "sections/0131_SEC-6183DBE078595189.json",
+    "sections/0132_SEC-D57FD510CDA414BD.json",
+    "sections/0133_SEC-A59BC8D182672E7D.json",
+    "sections/0134_SEC-3298C38802B58232.json",
+    "sections/0135_SEC-B715C652C21C179C.json",
+    "sections/0136_SEC-B56F3683ECDC4AFC.json",
+    "sections/0137_SEC-0EF0F9974821C7C9.json",
+    "sections/0138_SEC-68C2CB724FFB5A2B.json",
+    "sections/0139_SEC-20AC67A9059B3AA4.json",
+    "sections/0140_SEC-1E21B263E712AFFD.json",
+    "sections/0141_SEC-E593BD880D00385A.json",
+    "sections/0142_SEC-EE2BB9E827019749.json",
+    "sections/0143_SEC-62BE8AC8C252E829.json",
+    "sections/0144_SEC-4B86851C635ED7B5.json",
+    "sections/0145_SEC-B0E5CC557A215DA8.json",
+    "sections/0146_SEC-3F0A6D4A8D444C00.json",
+    "sections/0147_SEC-2BD1D794977DC686.json",
+    "sections/0148_SEC-3755F633A64695DD.json",
+    "sections/0149_SEC-01FBCD0EF0B91885.json",
+    "sections/0150_SEC-F1EDE6C14E6996E9.json",
+    "sections/0151_SEC-7A65D23436EDF84F.json",
+    "sections/0152_SEC-6DE8D038C0CAE299.json",
+    "sections/0153_SEC-54C5491200176568.json",
+    "sections/0154_SEC-4E374C8FD29946A9.json",
+    "sections/0155_SEC-DF366BCFC7BA0130.json",
+    "sections/0156_SEC-8278A13D6CAD6FBB.json",
+    "sections/0157_SEC-2525B06ABECFA520.json",
+    "sections/0158_SEC-AFA1B004128553F5.json",
+    "sections/0159_SEC-736D0B81E54D3153.json",
+    "sections/0160_SEC-A046E6FA6F3AD3DB.json",
+    "sections/0161_SEC-F2F033D0089444E8.json",
+    "sections/0162_SEC-DF1E418CD1F96524.json",
+    "sections/0163_SEC-C11AB4B07E794C9B.json",
+    "sections/0164_SEC-4BF708A1DBCFB9B3.json",
+    "sections/0165_SEC-217AB003C9403F84.json",
+    "sections/0166_SEC-9A0B08822488E836.json",
+    "sections/0167_SEC-40686E985CC3DF9F.json",
+    "sections/0168_SEC-A4B7EEF95D8F2D20.json",
+    "sections/0169_SEC-0A2A8C859B98B963.json",
+    "sections/0170_SEC-EDD169934DFBD1CA.json",
+    "sections/0171_SEC-A1E79D6545AA5B79.json",
+    "sections/0172_SEC-7D94528A97965C6C.json",
+    "sections/0173_SEC-7DB609B264864FE1.json",
+    "sections/0174_SEC-1562314A5DD66490.json",
+    "sections/0175_SEC-3BB18696518ABE06.json",
+    "sections/0176_SEC-C0DED629DF3A7E65.json",
+    "sections/0177_SEC-3D8AD8E67414D02C.json",
+    "sections/0178_SEC-A3B69ACC8D76BC72.json",
+    "sections/0179_SEC-4BE3E87EC7BF2841.json",
+    "sections/0180_SEC-08A97D3CDCA906F6.json",
+    "sections/0181_SEC-C005B624BDA632B4.json",
+    "sections/0182_SEC-7ABDFB52A4FE6A6F.json"
+  ],
+  "summary": {
+    "page_count": 113,
+    "toc_entry_count": 193,
+    "section_file_count": 183,
+    "block_count": 1694,
+    "table_count": 33,
+    "low_text_pages": [],
+    "image_only_pages": [],
+    "unmapped_pages": [],
+    "review_required_pages": []
+  }
+}

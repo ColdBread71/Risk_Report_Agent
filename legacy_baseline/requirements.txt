@@ -1,0 +1,13 @@
+# 核心大模型调用 SDK (必须是最新版本以支持强类型输出)
+openai>=1.12.0
+json-repair>=0.52.0
+
+# 纯数据结构定义与校验
+pydantic>=2.5.0
+
+# LangGraph 核心框架与状态流转
+langgraph>=0.0.26
+langchain-core>=0.1.30
+
+# PDF 转多模态图片核心引擎 (0显卡依赖)
+PyMuPDF>=1.23.0

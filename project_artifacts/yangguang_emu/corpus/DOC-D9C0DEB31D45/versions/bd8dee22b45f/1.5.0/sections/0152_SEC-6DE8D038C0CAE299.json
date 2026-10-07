@@ -1,0 +1,119 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-6DE8D038C0CAE299",
+  "section_path": [
+    "9 用户管理"
+  ],
+  "section_title": "9 用户管理",
+  "start_pdf_page": 93,
+  "end_pdf_page": 93,
+  "blocks": [
+    {
+      "block_id": "BLK-BEF8CE06580329CF",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 0,
+      "section_id": "SEC-6DE8D038C0CAE299",
+      "section_path": [
+        "9 用户管理"
+      ],
+      "section_title": "9 用户管理",
+      "block_type": "heading",
+      "text": "9\n用户管理",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        98.112,
+        168.624,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-17E66B8FE1AEAB17",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 1,
+      "section_id": "SEC-6DE8D038C0CAE299",
+      "section_path": [
+        "9 用户管理"
+      ],
+      "section_title": "9 用户管理",
+      "block_type": "paragraph",
+      "text": "管理员账号可以创建用户账号、重置账号密码、设置账户保护和会话安全参数、启用研发调试开\n关。",
+      "table_cells": null,
+      "bbox": [
+        102.367,
+        145.414,
+        459.367,
+        168.508
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F7D2832BBD8F2998",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 2,
+      "section_id": "SEC-6DE8D038C0CAE299",
+      "section_path": [
+        "9 用户管理"
+      ],
+      "section_title": "9 用户管理",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        179.006,
+        138.366,
+        189.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EB7FCBF878624CA0",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 3,
+      "section_id": "SEC-6DE8D038C0CAE299",
+      "section_path": [
+        "9 用户管理"
+      ],
+      "section_title": "9 用户管理",
+      "block_type": "list",
+      "text": "•\n操作人员具有管理员权限。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        199.006,
+        224.541,
+        209.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

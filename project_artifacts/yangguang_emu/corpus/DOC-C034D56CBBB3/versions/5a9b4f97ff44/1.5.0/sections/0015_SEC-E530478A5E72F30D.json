@@ -1,0 +1,711 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-E530478A5E72F30D",
+  "section_path": [
+    "4 机械安装",
+    "4.3 安装数据采集器",
+    "4.3.1 壁挂式安装"
+  ],
+  "section_title": "4.3.1 壁挂式安装",
+  "start_pdf_page": 23,
+  "end_pdf_page": 24,
+  "blocks": [
+    {
+      "block_id": "BLK-3EA85C08CF38620E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 23,
+      "printed_page_label": "13",
+      "block_order": 0,
+      "section_id": "SEC-E530478A5E72F30D",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.1 壁挂式安装"
+      ],
+      "section_title": "4.3.1 壁挂式安装",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 机械安装",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D05ECB6F93918A4D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 23,
+      "printed_page_label": "13",
+      "block_order": 1,
+      "section_id": "SEC-E530478A5E72F30D",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.1 壁挂式安装"
+      ],
+      "section_title": "4.3.1 壁挂式安装",
+      "block_type": "table",
+      "text": "工具刀\t记号笔\t卷尺\t防护手套\n\t\t\t\t\n\t防尘口罩\t绝缘鞋\t吸尘器\t护目镜\n\t\t\t\t\n\t冲击钻\t电动螺丝刀\t剥线钳\t剪线钳\n\t\t\t\t\n\t压线钳\t一字螺丝刀\t十字螺丝刀\t橡胶锤",
+      "table_cells": [
+        [
+          null,
+          "工具刀",
+          "记号笔",
+          "卷尺",
+          "防护手套"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "防尘口罩",
+          "绝缘鞋",
+          "吸尘器",
+          "护目镜"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "冲击钻",
+          "电动螺丝刀",
+          "剥线钳",
+          "剪线钳"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "压线钳",
+          "一字螺丝刀",
+          "十字螺丝刀",
+          "橡胶锤"
+        ]
+      ],
+      "bbox": [
+        102.366,
+        76.906,
+        462.366,
+        457.168
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-96D88A43F922D21E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 23,
+      "printed_page_label": "13",
+      "block_order": 4,
+      "section_id": "SEC-E530478A5E72F30D",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.1 壁挂式安装"
+      ],
+      "section_title": "4.3.1 壁挂式安装",
+      "block_type": "heading",
+      "text": "4.3.1 壁挂式安装",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        548.908,
+        147.856,
+        561.078
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-211D9D4B0F6204DC",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 23,
+      "printed_page_label": "13",
+      "block_order": 5,
+      "section_id": "SEC-E530478A5E72F30D",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.1 壁挂式安装"
+      ],
+      "section_title": "4.3.1 壁挂式安装",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.37,
+        568.224,
+        138.37,
+        579.177
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-93E7B579B9302415",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 23,
+      "printed_page_label": "13",
+      "block_order": 6,
+      "section_id": "SEC-E530478A5E72F30D",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.1 壁挂式安装"
+      ],
+      "section_title": "4.3.1 壁挂式安装",
+      "block_type": "paragraph",
+      "text": "危险",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        588.742,
+        146.863,
+        602.129
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1FE19AC91FC3001B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 23,
+      "printed_page_label": "13",
+      "block_order": 7,
+      "section_id": "SEC-E530478A5E72F30D",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.1 壁挂式安装"
+      ],
+      "section_title": "4.3.1 壁挂式安装",
+      "block_type": "paragraph",
+      "text": "钻孔前要确保避开墙内的水电走线，以免发生危险！",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        605.924,
+        313.866,
+        616.877
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-920B123977DF7650",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 23,
+      "printed_page_label": "13",
+      "block_order": 8,
+      "section_id": "SEC-E530478A5E72F30D",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.1 壁挂式安装"
+      ],
+      "section_title": "4.3.1 壁挂式安装",
+      "block_type": "paragraph",
+      "text": "在安装平面上打孔时，建议开启吸尘设备，并佩戴护目镜和防尘口罩，防止灰尘进入\n眼睛或吸入身体。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        637.724,
+        462.366,
+        659.477
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3531CCCA0343B2DD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 24,
+      "printed_page_label": "14",
+      "block_order": 0,
+      "section_id": "SEC-E530478A5E72F30D",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.1 壁挂式安装"
+      ],
+      "section_title": "4.3.1 壁挂式安装",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 机械安装",
+      "table_cells": null,
+      "bbox": [
+        60.446,
+        48.088,
+        449.793,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-941AD3CBB218E7BE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 24,
+      "printed_page_label": "14",
+      "block_order": 1,
+      "section_id": "SEC-E530478A5E72F30D",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.1 壁挂式安装"
+      ],
+      "section_title": "4.3.1 壁挂式安装",
+      "block_type": "paragraph",
+      "text": "安装部件",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        71.556,
+        124.193,
+        82.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FCB95A604C233661",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 24,
+      "printed_page_label": "14",
+      "block_order": 2,
+      "section_id": "SEC-E530478A5E72F30D",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.1 壁挂式安装"
+      ],
+      "section_title": "4.3.1 壁挂式安装",
+      "block_type": "list",
+      "text": "•\n记号笔（未包含在供货范围）",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        85.206,
+        219.368,
+        96.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ACD61C89220047F5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 24,
+      "printed_page_label": "14",
+      "block_order": 3,
+      "section_id": "SEC-E530478A5E72F30D",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.1 壁挂式安装"
+      ],
+      "section_title": "4.3.1 壁挂式安装",
+      "block_type": "list",
+      "text": "•\n冲击钻（未包含在供货范围）",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        100.206,
+        219.368,
+        111.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BE097AD8B6365671",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 24,
+      "printed_page_label": "14",
+      "block_order": 4,
+      "section_id": "SEC-E530478A5E72F30D",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.1 壁挂式安装"
+      ],
+      "section_title": "4.3.1 壁挂式安装",
+      "block_type": "list",
+      "text": "•\n安装地脚（包含在供货范围）",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        115.206,
+        219.368,
+        126.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2DD140955F0B1890",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 24,
+      "printed_page_label": "14",
+      "block_order": 5,
+      "section_id": "SEC-E530478A5E72F30D",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.1 壁挂式安装"
+      ],
+      "section_title": "4.3.1 壁挂式安装",
+      "block_type": "list",
+      "text": "•\n安装挂耳（包含在供货范围）",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        130.206,
+        219.368,
+        141.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-89E4086C5A9E8DD3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 24,
+      "printed_page_label": "14",
+      "block_order": 6,
+      "section_id": "SEC-E530478A5E72F30D",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.1 壁挂式安装"
+      ],
+      "section_title": "4.3.1 壁挂式安装",
+      "block_type": "list",
+      "text": "•\n膨胀螺管（包含在供货范围）",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        145.206,
+        219.368,
+        156.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9109A53DD6BA0F41",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 24,
+      "printed_page_label": "14",
+      "block_order": 7,
+      "section_id": "SEC-E530478A5E72F30D",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.1 壁挂式安装"
+      ],
+      "section_title": "4.3.1 壁挂式安装",
+      "block_type": "list",
+      "text": "•\n自攻螺钉（包含在供货范围）",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        160.206,
+        219.368,
+        171.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DC6CA72A4059E2A1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 24,
+      "printed_page_label": "14",
+      "block_order": 8,
+      "section_id": "SEC-E530478A5E72F30D",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.1 壁挂式安装"
+      ],
+      "section_title": "4.3.1 壁挂式安装",
+      "block_type": "list",
+      "text": "•\n力矩螺丝刀（未包含在供货范围）",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        175.206,
+        237.368,
+        186.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1004F126C905965C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 24,
+      "printed_page_label": "14",
+      "block_order": 9,
+      "section_id": "SEC-E530478A5E72F30D",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.1 壁挂式安装"
+      ],
+      "section_title": "4.3.1 壁挂式安装",
+      "block_type": "paragraph",
+      "text": "将数据采集器与安装挂耳、安装地脚固定",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        193.356,
+        250.193,
+        204.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-11BD47D33C86DA02",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 24,
+      "printed_page_label": "14",
+      "block_order": 10,
+      "section_id": "SEC-E530478A5E72F30D",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.1 壁挂式安装"
+      ],
+      "section_title": "4.3.1 壁挂式安装",
+      "block_type": "paragraph",
+      "text": "使用交付件中的M4 x 8 的十字槽沉头螺钉组合件，将安装挂耳和安装地脚固定至数据采集\n器。紧固扭矩为：1.8–2.4N.m。固定方法，如下图所示。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        211.506,
+        443.954,
+        235.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8E0202AA35985D7B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 24,
+      "printed_page_label": "14",
+      "block_order": 11,
+      "section_id": "SEC-E530478A5E72F30D",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.1 壁挂式安装"
+      ],
+      "section_title": "4.3.1 壁挂式安装",
+      "block_type": "paragraph",
+      "text": "将数据采集器固定至墙面",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        375.723,
+        187.193,
+        386.676
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D5182029BB850865",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 24,
+      "printed_page_label": "14",
+      "block_order": 12,
+      "section_id": "SEC-E530478A5E72F30D",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.1 壁挂式安装"
+      ],
+      "section_title": "4.3.1 壁挂式安装",
+      "block_type": "paragraph",
+      "text": "步骤 1 在需要安装的墙面上，标注钻孔位置。使用φ6mm 的打孔器，进行打孔。（注意：保证数据",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        398.451,
+        450.902,
+        410.934
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E6AE9CEB2E2017D5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 24,
+      "printed_page_label": "14",
+      "block_order": 13,
+      "section_id": "SEC-E530478A5E72F30D",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.1 壁挂式安装"
+      ],
+      "section_title": "4.3.1 壁挂式安装",
+      "block_type": "paragraph",
+      "text": "采集器与周围物体间的距离。）",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        413.373,
+        213.563,
+        424.326
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-91DCC63D75228B49",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 24,
+      "printed_page_label": "14",
+      "block_order": 14,
+      "section_id": "SEC-E530478A5E72F30D",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.1 壁挂式安装"
+      ],
+      "section_title": "4.3.1 壁挂式安装",
+      "block_type": "paragraph",
+      "text": "步骤 2 将膨胀螺管，置入打孔处，并使用橡胶锤敲击，使其完全嵌入墙体。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        505.242,
+        357.563,
+        517.725
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F6BEA4BBA82885C5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 24,
+      "printed_page_label": "14",
+      "block_order": 15,
+      "section_id": "SEC-E530478A5E72F30D",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.1 壁挂式安装"
+      ],
+      "section_title": "4.3.1 壁挂式安装",
+      "block_type": "paragraph",
+      "text": "步骤 3 按照自攻螺钉、数据采集器挂耳的顺序穿入膨胀螺管，固定在墙面上。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        613.095,
+        366.563,
+        625.578
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

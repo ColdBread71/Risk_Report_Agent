@@ -1,0 +1,184 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-36263B0ED7ED47C6",
+  "section_path": [
+    "5 试运行",
+    "5.3 试运行步骤",
+    "5.3.4 PLC模块连接",
+    "5.3.4.3 PLC串口参数设置"
+  ],
+  "section_title": "5.3.4.3 PLC串口参数设置",
+  "start_pdf_page": 50,
+  "end_pdf_page": 50,
+  "blocks": [
+    {
+      "block_id": "BLK-E04FD484AA2682F1",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "44",
+      "block_order": 9,
+      "section_id": "SEC-36263B0ED7ED47C6",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.4 PLC模块连接",
+        "5.3.4.3 PLC串口参数设置"
+      ],
+      "section_title": "5.3.4.3 PLC串口参数设置",
+      "block_type": "heading",
+      "text": "5.3.4.3 PLC 串口参数设置",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        303.84,
+        171.474,
+        316.01
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-85509E0F808522E9",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "44",
+      "block_order": 10,
+      "section_id": "SEC-36263B0ED7ED47C6",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.4 PLC模块连接",
+        "5.3.4.3 PLC串口参数设置"
+      ],
+      "section_title": "5.3.4.3 PLC串口参数设置",
+      "block_type": "paragraph",
+      "text": "EMU 内集成了MPLC 主节点，可以与集成了MPLC 从节点的逆变器连接，利用现有电力线实现\nMPLC 通讯。",
+      "table_cells": null,
+      "bbox": [
+        88.191,
+        323.064,
+        445.438,
+        346.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-76EFE0A32D9C2CFB",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "44",
+      "block_order": 11,
+      "section_id": "SEC-36263B0ED7ED47C6",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.4 PLC模块连接",
+        "5.3.4.3 PLC串口参数设置"
+      ],
+      "section_title": "5.3.4.3 PLC串口参数设置",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击 系统>端口参数>RS485。",
+      "table_cells": null,
+      "bbox": [
+        56.692,
+        355.234,
+        209.089,
+        367.717
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FF7B81EB916B266B",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "44",
+      "block_order": 12,
+      "section_id": "SEC-36263B0ED7ED47C6",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.4 PLC模块连接",
+        "5.3.4.3 PLC串口参数设置"
+      ],
+      "section_title": "5.3.4.3 PLC串口参数设置",
+      "block_type": "paragraph",
+      "text": "步骤 2 参照下表设置相关参数。",
+      "table_cells": null,
+      "bbox": [
+        56.692,
+        371.734,
+        186.562,
+        384.217
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E38D5DA64F5FDBAC",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "44",
+      "block_order": 13,
+      "section_id": "SEC-36263B0ED7ED47C6",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.4 PLC模块连接",
+        "5.3.4.3 PLC串口参数设置"
+      ],
+      "section_title": "5.3.4.3 PLC串口参数设置",
+      "block_type": "table",
+      "text": "参数\t说明\n串口\tPLC1A1B1 接COM8、A2\nPLC2（若存在）A1B1 接\nA2B2 接 COM6。\nPLC 接入和快调开关\tPLCA1B1 所接的COM 口\n能、快调禁止；PLCA2B2\n口PLC 接入使能、快调使\n\t\n\t。",
+      "table_cells": [
+        [
+          "参数",
+          "说明"
+        ],
+        [
+          "串口",
+          "PLC1A1B1 接COM8、A2\nPLC2（若存在）A1B1 接\nA2B2 接 COM6。"
+        ],
+        [
+          "PLC 接入和快调开关",
+          "PLCA1B1 所接的COM 口\n能、快调禁止；PLCA2B2\n口PLC 接入使能、快调使"
+        ],
+        [
+          null,
+          null
+        ],
+        [
+          null,
+          "。"
+        ]
+      ],
+      "bbox": [
+        87.562,
+        395.656,
+        381.738,
+        594.15
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

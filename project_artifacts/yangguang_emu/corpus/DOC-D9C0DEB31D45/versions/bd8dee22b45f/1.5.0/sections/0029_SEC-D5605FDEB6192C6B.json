@@ -1,0 +1,101 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-D5605FDEB6192C6B",
+  "section_path": [
+    "5 电气连接",
+    "5.6 与电表连接",
+    "5.6.2 以太网通讯接线"
+  ],
+  "section_title": "5.6.2 以太网通讯接线",
+  "start_pdf_page": 33,
+  "end_pdf_page": 33,
+  "blocks": [
+    {
+      "block_id": "BLK-05E45DD083C2D837",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 33,
+      "printed_page_label": "23",
+      "block_order": 0,
+      "section_id": "SEC-D5605FDEB6192C6B",
+      "section_path": [
+        "5 电气连接",
+        "5.6 与电表连接",
+        "5.6.2 以太网通讯接线"
+      ],
+      "section_title": "5.6.2 以太网通讯接线",
+      "block_type": "paragraph",
+      "text": "用户手册\n5 电气连接",
+      "table_cells": null,
+      "bbox": [
+        74.619,
+        48.088,
+        463.966,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4C05C347B62771F1",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 33,
+      "printed_page_label": "23",
+      "block_order": 1,
+      "section_id": "SEC-D5605FDEB6192C6B",
+      "section_path": [
+        "5 电气连接",
+        "5.6 与电表连接",
+        "5.6.2 以太网通讯接线"
+      ],
+      "section_title": "5.6.2 以太网通讯接线",
+      "block_type": "heading",
+      "text": "5.6.2 以太网通讯接线",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        71.59,
+        167.856,
+        83.76
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D1BB4C63FE3EA13D",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 33,
+      "printed_page_label": "23",
+      "block_order": 2,
+      "section_id": "SEC-D5605FDEB6192C6B",
+      "section_path": [
+        "5 电气连接",
+        "5.6 与电表连接",
+        "5.6.2 以太网通讯接线"
+      ],
+      "section_title": "5.6.2 以太网通讯接线",
+      "block_type": "paragraph",
+      "text": "使用网线，将一端连接至电表的“Ethernet”网口，一端连接至数据采集器的ETH1、ETH2、\nETH5 中的某个网口。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        90.906,
+        460.644,
+        115.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-B06B041EC0F5A18C",
+  "section_path": [
+    "9 电网调度",
+    "9.3 有功功率调节",
+    "9.3.5 国家模式有功调节",
+    "9.3.5.3 澳洲模式"
+  ],
+  "section_title": "9.3.5.3 澳洲模式",
+  "start_pdf_page": 98,
+  "end_pdf_page": 98,
+  "blocks": [
+    {
+      "block_id": "BLK-DEE66324581493A3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 98,
+      "printed_page_label": "88",
+      "block_order": 1,
+      "section_id": "SEC-B06B041EC0F5A18C",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.3 澳洲模式"
+      ],
+      "section_title": "9.3.5.3 澳洲模式",
+      "block_type": "heading",
+      "text": "9.3.5.3 澳洲模式",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        71.59,
+        132.023,
+        83.76
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-842EBEC015CDA129",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 98,
+      "printed_page_label": "88",
+      "block_order": 2,
+      "section_id": "SEC-B06B041EC0F5A18C",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.3 澳洲模式"
+      ],
+      "section_title": "9.3.5.3 澳洲模式",
+      "block_type": "paragraph",
+      "text": "步骤 1 在国家下拉列表中，选择澳洲。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        97.484,
+        213.563,
+        109.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D55966FB16D40E81",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 98,
+      "printed_page_label": "88",
+      "block_order": 3,
+      "section_id": "SEC-B06B041EC0F5A18C",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.3 澳洲模式"
+      ],
+      "section_title": "9.3.5.3 澳洲模式",
+      "block_type": "paragraph",
+      "text": "步骤 2 在调度方式下拉列表中，选择调度方式。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        113.984,
+        249.563,
+        126.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8770337469C05ED7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 98,
+      "printed_page_label": "88",
+      "block_order": 4,
+      "section_id": "SEC-B06B041EC0F5A18C",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.3 澳洲模式"
+      ],
+      "section_title": "9.3.5.3 澳洲模式",
+      "block_type": "paragraph",
+      "text": "步骤 3 在DO 控制下拉列表中，选择是否通过数字量输出信号控制调度。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        130.484,
+        348.563,
+        142.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D0F7D8FA315DE8B9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 98,
+      "printed_page_label": "88",
+      "block_order": 5,
+      "section_id": "SEC-B06B041EC0F5A18C",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.3 澳洲模式"
+      ],
+      "section_title": "9.3.5.3 澳洲模式",
+      "block_type": "paragraph",
+      "text": "步骤 4 在限功率文本框中，输入限制逆变器功率的百分比。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        146.984,
+        294.563,
+        159.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-19D1CF9E7FBB8129",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 98,
+      "printed_page_label": "88",
+      "block_order": 6,
+      "section_id": "SEC-B06B041EC0F5A18C",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.3 澳洲模式"
+      ],
+      "section_title": "9.3.5.3 澳洲模式",
+      "block_type": "paragraph",
+      "text": "步骤 5 在负电价限功率输入框中，设置当电价为负值时限制逆变器输出功率的百分比。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        163.484,
+        402.563,
+        175.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0ABBF964EAC43B7D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 98,
+      "printed_page_label": "88",
+      "block_order": 7,
+      "section_id": "SEC-B06B041EC0F5A18C",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.3 澳洲模式"
+      ],
+      "section_title": "9.3.5.3 澳洲模式",
+      "block_type": "paragraph",
+      "text": "步骤 6 点击保存。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        179.984,
+        132.563,
+        192.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7F5AB20BFBFCFE92",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 98,
+      "printed_page_label": "88",
+      "block_order": 8,
+      "section_id": "SEC-B06B041EC0F5A18C",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.5 国家模式有功调节",
+        "9.3.5.3 澳洲模式"
+      ],
+      "section_title": "9.3.5.3 澳洲模式",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        196.556,
+        112.187,
+        207.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

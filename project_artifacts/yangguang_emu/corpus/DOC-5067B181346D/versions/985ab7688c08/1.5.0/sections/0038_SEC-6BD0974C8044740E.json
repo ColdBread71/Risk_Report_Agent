@@ -1,0 +1,192 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-6BD0974C8044740E",
+  "section_path": [
+    "4 电气连接",
+    "4.6 接线步骤",
+    "4.6.5 连接PLC通讯线缆",
+    "4.6.5.1 应用场景"
+  ],
+  "section_title": "4.6.5.1 应用场景",
+  "start_pdf_page": 36,
+  "end_pdf_page": 36,
+  "blocks": [
+    {
+      "block_id": "BLK-57DBAC24F5201A99",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 36,
+      "printed_page_label": "30",
+      "block_order": 0,
+      "section_id": "SEC-6BD0974C8044740E",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.1 应用场景"
+      ],
+      "section_title": "4.6.5.1 应用场景",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 电气连接",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F5926E8ECFBD0951",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 36,
+      "printed_page_label": "30",
+      "block_order": 2,
+      "section_id": "SEC-6BD0974C8044740E",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.1 应用场景"
+      ],
+      "section_title": "4.6.5.1 应用场景",
+      "block_type": "heading",
+      "text": "4.6.5.1 应用场景",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        93.59,
+        132.023,
+        105.76
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AA7EAFA2C412D604",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 36,
+      "printed_page_label": "30",
+      "block_order": 3,
+      "section_id": "SEC-6BD0974C8044740E",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.1 应用场景"
+      ],
+      "section_title": "4.6.5.1 应用场景",
+      "block_type": "paragraph",
+      "text": "设备可以接至双绕组变压器和双分裂变压器，对应的接线图如下所示。以实际使用器件为\n准。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        112.906,
+        439.193,
+        137.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B6F6942BCEED4328",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 36,
+      "printed_page_label": "30",
+      "block_order": 4,
+      "section_id": "SEC-6BD0974C8044740E",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.1 应用场景"
+      ],
+      "section_title": "4.6.5.1 应用场景",
+      "block_type": "figure_caption",
+      "text": "图 4-1 与双绕组变压器连接",
+      "table_cells": null,
+      "bbox": [
+        216.866,
+        326.393,
+        324.875,
+        337.346
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DE1604C19E17D698",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 36,
+      "printed_page_label": "30",
+      "block_order": 5,
+      "section_id": "SEC-6BD0974C8044740E",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.1 应用场景"
+      ],
+      "section_title": "4.6.5.1 应用场景",
+      "block_type": "figure_caption",
+      "text": "图 4-2 与双分裂变压器连接",
+      "table_cells": null,
+      "bbox": [
+        216.866,
+        593.254,
+        324.875,
+        604.207
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-477CB83444B0BFDD",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 36,
+      "printed_page_label": "30",
+      "block_order": 6,
+      "section_id": "SEC-6BD0974C8044740E",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.1 应用场景"
+      ],
+      "section_title": "4.6.5.1 应用场景",
+      "block_type": "paragraph",
+      "text": "北美场景下无ACB（Air Circuit Breaker，空气断路器），具体以现场实际情况为\n准。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        620.554,
+        433.964,
+        642.307
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

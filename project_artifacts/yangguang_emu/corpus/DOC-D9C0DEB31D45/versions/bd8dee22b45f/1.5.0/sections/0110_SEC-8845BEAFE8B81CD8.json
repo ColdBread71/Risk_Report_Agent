@@ -1,0 +1,221 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-8845BEAFE8B81CD8",
+  "section_path": [
+    "7 Web界面",
+    "7.10 系统",
+    "7.10.2 系统维护",
+    "7.10.2.2 系统重启"
+  ],
+  "section_title": "7.10.2.2 系统重启",
+  "start_pdf_page": 72,
+  "end_pdf_page": 72,
+  "blocks": [
+    {
+      "block_id": "BLK-09D387100B0BEEE5",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 0,
+      "section_id": "SEC-8845BEAFE8B81CD8",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护",
+        "7.10.2.2 系统重启"
+      ],
+      "section_title": "7.10.2.2 系统重启",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.44,
+        48.088,
+        449.794,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-650F006DEC225E18",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 1,
+      "section_id": "SEC-8845BEAFE8B81CD8",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护",
+        "7.10.2.2 系统重启"
+      ],
+      "section_title": "7.10.2.2 系统重启",
+      "block_type": "paragraph",
+      "text": "压缩密码长度为8~32 位，需由大写字母、小写字母、数字、特殊符号中的三种\n或以上组成。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        144.61,
+        441.503,
+        166.363
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-12369BF55E13C955",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 2,
+      "section_id": "SEC-8845BEAFE8B81CD8",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护",
+        "7.10.2.2 系统重启"
+      ],
+      "section_title": "7.10.2.2 系统重启",
+      "block_type": "list",
+      "text": "--结束\n此处输入当前任务完成后用户需要执行的任务。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        183.71,
+        277.193,
+        205.463
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-13F37D3AB64CB810",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 18,
+      "section_id": "SEC-8845BEAFE8B81CD8",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护",
+        "7.10.2.2 系统重启"
+      ],
+      "section_title": "7.10.2.2 系统重启",
+      "block_type": "heading",
+      "text": "7.10.2.2 系统重启",
+      "table_cells": null,
+      "bbox": [
+        56.689,
+        572.544,
+        137.589,
+        584.714
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-70B874BF29809C7D",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 19,
+      "section_id": "SEC-8845BEAFE8B81CD8",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护",
+        "7.10.2.2 系统重启"
+      ],
+      "section_title": "7.10.2.2 系统重启",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击系统 > 系统维护，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        596.438,
+        223.818,
+        608.921
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ABFB3E0E0E1DAE29",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 20,
+      "section_id": "SEC-8845BEAFE8B81CD8",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护",
+        "7.10.2.2 系统重启"
+      ],
+      "section_title": "7.10.2.2 系统重启",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击系统重启，弹出警告界面，输入当前用户密码，进行二次鉴权，可执行系统重启操作。",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        612.938,
+        447.558,
+        625.421
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-19E0F8D1314ACFA3",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 21,
+      "section_id": "SEC-8845BEAFE8B81CD8",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护",
+        "7.10.2.2 系统重启"
+      ],
+      "section_title": "7.10.2.2 系统重启",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.197,
+        629.51,
+        112.191,
+        640.463
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

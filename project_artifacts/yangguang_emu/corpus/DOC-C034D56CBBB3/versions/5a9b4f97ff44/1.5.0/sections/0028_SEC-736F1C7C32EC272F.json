@@ -1,0 +1,178 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-736F1C7C32EC272F",
+  "section_path": [
+    "5 电气连接",
+    "5.7 DI信号接线"
+  ],
+  "section_title": "5.7 DI信号接线",
+  "start_pdf_page": 36,
+  "end_pdf_page": 36,
+  "blocks": [
+    {
+      "block_id": "BLK-B90713DCF01270A8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 36,
+      "printed_page_label": "26",
+      "block_order": 4,
+      "section_id": "SEC-736F1C7C32EC272F",
+      "section_path": [
+        "5 电气连接",
+        "5.7 DI信号接线"
+      ],
+      "section_title": "5.7 DI信号接线",
+      "block_type": "heading",
+      "text": "5.7 DI 信号接线",
+      "table_cells": null,
+      "bbox": [
+        56.688,
+        229.668,
+        140.88,
+        244.272
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-514E8072AFB1279C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 36,
+      "printed_page_label": "26",
+      "block_order": 5,
+      "section_id": "SEC-736F1C7C32EC272F",
+      "section_path": [
+        "5 电气连接",
+        "5.7 DI信号接线"
+      ],
+      "section_title": "5.7 DI信号接线",
+      "block_type": "paragraph",
+      "text": "通过DI 端口可以接入电网调度命令、告警等DI 信号，仅支持无源干接点信号接入。建议信\n号传输距离不超过10m。",
+      "table_cells": null,
+      "bbox": [
+        88.194,
+        257.316,
+        448.194,
+        281.769
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-77ADB62C481CCCCB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 36,
+      "printed_page_label": "26",
+      "block_order": 6,
+      "section_id": "SEC-736F1C7C32EC272F",
+      "section_path": [
+        "5 电气连接",
+        "5.7 DI信号接线"
+      ],
+      "section_title": "5.7 DI信号接线",
+      "block_type": "paragraph",
+      "text": "步骤 1 使用剥线钳剥去干接点输入信号线缆的防护层和绝缘层，如下图所示。",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        290.894,
+        366.564,
+        303.377
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8184BC74F62C81F7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 36,
+      "printed_page_label": "26",
+      "block_order": 7,
+      "section_id": "SEC-736F1C7C32EC272F",
+      "section_path": [
+        "5 电气连接",
+        "5.7 DI信号接线"
+      ],
+      "section_title": "5.7 DI信号接线",
+      "block_type": "paragraph",
+      "text": "步骤 2 安装合适的冷压端子，并使用压线钳压紧。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        401.283,
+        258.563,
+        413.766
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E105475E4FBFC4DF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 36,
+      "printed_page_label": "26",
+      "block_order": 8,
+      "section_id": "SEC-736F1C7C32EC272F",
+      "section_path": [
+        "5 电气连接",
+        "5.7 DI信号接线"
+      ],
+      "section_title": "5.7 DI信号接线",
+      "block_type": "paragraph",
+      "text": "步骤 3 将冷压端子接至数据采集器外部“DI”插头，如下图所示（以接入“DI”中的“0V”和“1”端口为",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        495.662,
+        433.55,
+        508.145
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-26C604D319487F83",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 36,
+      "printed_page_label": "26",
+      "block_order": 9,
+      "section_id": "SEC-736F1C7C32EC272F",
+      "section_path": [
+        "5 电气连接",
+        "5.7 DI信号接线"
+      ],
+      "section_title": "5.7 DI信号接线",
+      "block_type": "paragraph",
+      "text": "例）。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        510.584,
+        114.563,
+        521.537
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

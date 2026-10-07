@@ -1,0 +1,43 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-A4CFEF9489F2DFF4",
+  "section_path": [
+    "4 电气连接",
+    "4.6 接线步骤"
+  ],
+  "section_title": "4.6 接线步骤",
+  "start_pdf_page": 31,
+  "end_pdf_page": 31,
+  "blocks": [
+    {
+      "block_id": "BLK-0D73959AA7F2018D",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 31,
+      "printed_page_label": "25",
+      "block_order": 1,
+      "section_id": "SEC-A4CFEF9489F2DFF4",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤"
+      ],
+      "section_title": "4.6 接线步骤",
+      "block_type": "heading",
+      "text": "4.6 接线步骤",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        71.658,
+        143.046,
+        86.262
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

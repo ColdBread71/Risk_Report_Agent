@@ -1,0 +1,157 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-58DA80E2F8735CD9",
+  "section_path": [
+    "10 用户管理",
+    "10.10 系统维护",
+    "10.10.2 恢复出厂设置"
+  ],
+  "section_title": "10.10.2 恢复出厂设置",
+  "start_pdf_page": 108,
+  "end_pdf_page": 108,
+  "blocks": [
+    {
+      "block_id": "BLK-E814C4447FB98A9E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 108,
+      "printed_page_label": "98",
+      "block_order": 15,
+      "section_id": "SEC-58DA80E2F8735CD9",
+      "section_path": [
+        "10 用户管理",
+        "10.10 系统维护",
+        "10.10.2 恢复出厂设置"
+      ],
+      "section_title": "10.10.2 恢复出厂设置",
+      "block_type": "heading",
+      "text": "10.10.2 恢复出厂设置",
+      "table_cells": null,
+      "bbox": [
+        56.688,
+        411.69,
+        154.808,
+        423.86
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FA3F89F8284B78B0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 108,
+      "printed_page_label": "98",
+      "block_order": 16,
+      "section_id": "SEC-58DA80E2F8735CD9",
+      "section_path": [
+        "10 用户管理",
+        "10.10 系统维护",
+        "10.10.2 恢复出厂设置"
+      ],
+      "section_title": "10.10.2 恢复出厂设置",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击系统维护 > 恢复出厂设置，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        56.69,
+        435.584,
+        259.82,
+        448.067
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9A03A70EFC72411A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 108,
+      "printed_page_label": "98",
+      "block_order": 17,
+      "section_id": "SEC-58DA80E2F8735CD9",
+      "section_path": [
+        "10 用户管理",
+        "10.10 系统维护",
+        "10.10.2 恢复出厂设置"
+      ],
+      "section_title": "10.10.2 恢复出厂设置",
+      "block_type": "paragraph",
+      "text": "步骤 2 弹出警示界面，单击确定。",
+      "table_cells": null,
+      "bbox": [
+        56.69,
+        452.084,
+        195.56,
+        464.567
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-93DFD3AB33616B27",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 108,
+      "printed_page_label": "98",
+      "block_order": 18,
+      "section_id": "SEC-58DA80E2F8735CD9",
+      "section_path": [
+        "10 用户管理",
+        "10.10 系统维护",
+        "10.10.2 恢复出厂设置"
+      ],
+      "section_title": "10.10.2 恢复出厂设置",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        468.656,
+        112.184,
+        479.609
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-89176301D447D18C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 108,
+      "printed_page_label": "98",
+      "block_order": 19,
+      "section_id": "SEC-58DA80E2F8735CD9",
+      "section_path": [
+        "10 用户管理",
+        "10.10 系统维护",
+        "10.10.2 恢复出厂设置"
+      ],
+      "section_title": "10.10.2 恢复出厂设置",
+      "block_type": "paragraph",
+      "text": "恢复出厂设置只是还原所有修改过的设置项到出厂状态，并不会清除数据。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        491.956,
+        412.193,
+        502.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-B6007860BCAFED18",
+  "section_path": [
+    "7 Web界面",
+    "7.3 Web端简介"
+  ],
+  "section_title": "7.3 Web端简介",
+  "start_pdf_page": 42,
+  "end_pdf_page": 42,
+  "blocks": [
+    {
+      "block_id": "BLK-7898DFDCDF519F31",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 42,
+      "printed_page_label": "32",
+      "block_order": 13,
+      "section_id": "SEC-B6007860BCAFED18",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介"
+      ],
+      "section_title": "7.3 Web端简介",
+      "block_type": "heading",
+      "text": "7.3 Web 端简介",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        408.971,
+        141.329,
+        423.575
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

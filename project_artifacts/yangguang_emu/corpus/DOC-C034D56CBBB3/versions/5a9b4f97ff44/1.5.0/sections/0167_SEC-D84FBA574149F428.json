@@ -1,0 +1,340 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-D84FBA574149F428",
+  "section_path": [
+    "10 用户管理",
+    "10.2 密码管理"
+  ],
+  "section_title": "10.2 密码管理",
+  "start_pdf_page": 104,
+  "end_pdf_page": 104,
+  "blocks": [
+    {
+      "block_id": "BLK-B83C7949393A7477",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 1,
+      "section_id": "SEC-D84FBA574149F428",
+      "section_path": [
+        "10 用户管理",
+        "10.2 密码管理"
+      ],
+      "section_title": "10.2 密码管理",
+      "block_type": "heading",
+      "text": "10.2 密码管理",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        71.658,
+        135.545,
+        86.262
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CFFE1ECABF0EE415",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 2,
+      "section_id": "SEC-D84FBA574149F428",
+      "section_path": [
+        "10 用户管理",
+        "10.2 密码管理"
+      ],
+      "section_title": "10.2 密码管理",
+      "block_type": "list",
+      "text": "1. 所有密码均已被加密存储。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        99.306,
+        210.362,
+        110.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6697450FA1293410",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 3,
+      "section_id": "SEC-D84FBA574149F428",
+      "section_path": [
+        "10 用户管理",
+        "10.2 密码管理"
+      ],
+      "section_title": "10.2 密码管理",
+      "block_type": "list",
+      "text": "2. 所有密码均要求强复杂度，默认密码在初次登陆后需要修改。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        114.306,
+        345.362,
+        125.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5B892453D01099DA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 4,
+      "section_id": "SEC-D84FBA574149F428",
+      "section_path": [
+        "10 用户管理",
+        "10.2 密码管理"
+      ],
+      "section_title": "10.2 密码管理",
+      "block_type": "list",
+      "text": "3. 如果怀疑密码泄露，请立即修改密码，新密码与旧密码不能相同。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        129.306,
+        363.362,
+        140.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-653FCD5F4C1B1F09",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 5,
+      "section_id": "SEC-D84FBA574149F428",
+      "section_path": [
+        "10 用户管理",
+        "10.2 密码管理"
+      ],
+      "section_title": "10.2 密码管理",
+      "block_type": "paragraph",
+      "text": "登录管理员用户，可在密码管理页面，动态设置以下参数：",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        147.956,
+        363.366,
+        158.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-96FD24712CC1F8E2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 6,
+      "section_id": "SEC-D84FBA574149F428",
+      "section_path": [
+        "10 用户管理",
+        "10.2 密码管理"
+      ],
+      "section_title": "10.2 密码管理",
+      "block_type": "list",
+      "text": "•\n密码最小长度",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        161.606,
+        197.541,
+        172.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-027D2F6EC50AB0A0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 7,
+      "section_id": "SEC-D84FBA574149F428",
+      "section_path": [
+        "10 用户管理",
+        "10.2 密码管理"
+      ],
+      "section_title": "10.2 密码管理",
+      "block_type": "list",
+      "text": "•\n密码复杂度",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        176.606,
+        188.541,
+        187.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CA004154B04C1491",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 8,
+      "section_id": "SEC-D84FBA574149F428",
+      "section_path": [
+        "10 用户管理",
+        "10.2 密码管理"
+      ],
+      "section_title": "10.2 密码管理",
+      "block_type": "list",
+      "text": "•\n新旧密码重复次数",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        191.606,
+        215.541,
+        202.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3B2B5979ABC357A9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 9,
+      "section_id": "SEC-D84FBA574149F428",
+      "section_path": [
+        "10 用户管理",
+        "10.2 密码管理"
+      ],
+      "section_title": "10.2 密码管理",
+      "block_type": "paragraph",
+      "text": "设置完成后，点击保存生效。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        205.256,
+        246.366,
+        216.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6A90D8D4585CC41B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 10,
+      "section_id": "SEC-D84FBA574149F428",
+      "section_path": [
+        "10 用户管理",
+        "10.2 密码管理"
+      ],
+      "section_title": "10.2 密码管理",
+      "block_type": "list",
+      "text": "4. 所有用户的密码都具备有效期，密码有效期可以通过管理员账户自行设置，可设置的密码\n有效期范围为1~90 天，密码到期请及时修改。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        233.406,
+        453.368,
+        257.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D81A415A0F6BAD49",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 11,
+      "section_id": "SEC-D84FBA574149F428",
+      "section_path": [
+        "10 用户管理",
+        "10.2 密码管理"
+      ],
+      "section_title": "10.2 密码管理",
+      "block_type": "list",
+      "text": "•\n管理员通过对不同的用户设置不同权限的账号，可以提高系统安全性、为不同的\n用户提升操作效率、降低管理成本。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        274.906,
+        444.368,
+        299.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9083FE606F8E1B20",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 12,
+      "section_id": "SEC-D84FBA574149F428",
+      "section_path": [
+        "10 用户管理",
+        "10.2 密码管理"
+      ],
+      "section_title": "10.2 密码管理",
+      "block_type": "list",
+      "text": "•\n当普通用户登录时出现其他用户登录提示语时，需要先退出其他用户登录。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        301.984,
+        426.368,
+        314.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-B3974D592C48E6E2",
+  "section_path": [
+    "9 安全退役"
+  ],
+  "section_title": "9 安全退役",
+  "start_pdf_page": 20,
+  "end_pdf_page": 20,
+  "blocks": [
+    {
+      "block_id": "BLK-7087C429F36BA4C3",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "16",
+      "block_order": 0,
+      "section_id": "SEC-B3974D592C48E6E2",
+      "section_path": [
+        "9 安全退役"
+      ],
+      "section_title": "9 安全退役",
+      "block_type": "heading",
+      "text": "9\n安全退役",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        98.112,
+        154.451,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-338E6AF2AA5A36A6",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "16",
+      "block_order": 1,
+      "section_id": "SEC-B3974D592C48E6E2",
+      "section_path": [
+        "9 安全退役"
+      ],
+      "section_title": "9 安全退役",
+      "block_type": "paragraph",
+      "text": "安全删除储存在环境中的引用、配置数据以及安全移除产品准则如下：",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        145.506,
+        367.193,
+        156.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6F042AC19A0269C8",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "16",
+      "block_order": 2,
+      "section_id": "SEC-B3974D592C48E6E2",
+      "section_path": [
+        "9 安全退役"
+      ],
+      "section_title": "9 安全退役",
+      "block_type": "list",
+      "text": "•\n在安全删除产品之前，请参考10 安全配置指南章节相关内容进行操作。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        160.506,
+        387.128,
+        171.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-525B9314A5FDB5CB",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "16",
+      "block_order": 3,
+      "section_id": "SEC-B3974D592C48E6E2",
+      "section_path": [
+        "9 安全退役"
+      ],
+      "section_title": "9 安全退役",
+      "block_type": "list",
+      "text": "•\n当设备需要退役报废时，请参考10.6 恢复出厂设置章节操作，并通过安全的渠道销毁，\n删除用户安全数据，确保设备不被二次部署到用户的运营系统或被非法利用。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        175.506,
+        448.634,
+        199.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7BB0886F0F8E6371",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "16",
+      "block_order": 4,
+      "section_id": "SEC-B3974D592C48E6E2",
+      "section_path": [
+        "9 安全退役"
+      ],
+      "section_title": "9 安全退役",
+      "block_type": "paragraph",
+      "text": "产品报废场景如下：",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        210.506,
+        169.193,
+        221.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4D366B3D429D69D6",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "16",
+      "block_order": 5,
+      "section_id": "SEC-B3974D592C48E6E2",
+      "section_path": [
+        "9 安全退役"
+      ],
+      "section_title": "9 安全退役",
+      "block_type": "list",
+      "text": "•\n产品达到规定的使用年限；",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        232.006,
+        210.368,
+        242.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9AE61B78288E5DE6",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "16",
+      "block_order": 6,
+      "section_id": "SEC-B3974D592C48E6E2",
+      "section_path": [
+        "9 安全退役"
+      ],
+      "section_title": "9 安全退役",
+      "block_type": "list",
+      "text": "•\n产品由于严重损坏，不具备使用条件；",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        247.006,
+        255.368,
+        257.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D558E0F03D0C4DAC",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "16",
+      "block_order": 7,
+      "section_id": "SEC-B3974D592C48E6E2",
+      "section_path": [
+        "9 安全退役"
+      ],
+      "section_title": "9 安全退役",
+      "block_type": "list",
+      "text": "•\n产品主要部件或结构损坏，达不到最低使用要求，又无修复价值。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        262.006,
+        363.368,
+        272.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-981345DA4C3F12C8",
+  "section_path": [
+    "11 例行维护",
+    "11.2 维护项目列表"
+  ],
+  "section_title": "11.2 维护项目列表",
+  "start_pdf_page": 111,
+  "end_pdf_page": 111,
+  "blocks": [
+    {
+      "block_id": "BLK-55C8F6E33EF4E848",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 111,
+      "printed_page_label": "101",
+      "block_order": 0,
+      "section_id": "SEC-981345DA4C3F12C8",
+      "section_path": [
+        "11 例行维护",
+        "11.2 维护项目列表"
+      ],
+      "section_title": "11.2 维护项目列表",
+      "block_type": "paragraph",
+      "text": "用户手册\n11 例行维护",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5B68C14C91B3BF51",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 111,
+      "printed_page_label": "101",
+      "block_order": 1,
+      "section_id": "SEC-981345DA4C3F12C8",
+      "section_path": [
+        "11 例行维护",
+        "11.2 维护项目列表"
+      ],
+      "section_title": "11.2 维护项目列表",
+      "block_type": "table",
+      "text": "检查内容\t检查方法\t\n系统清洁\t• 检查机壳、\n• 检查散热孔\t电路板以及元器件的清洁。\n灰尘以及遮挡。\n端子、排线连\n接\t• 检查控制端\n• 检查接线铜\n• 目测检查设\t子螺丝是否松动，用螺丝刀拧紧\n排或者螺钉是否存在颜色改变。\n备终端等连接以及排线分布。",
+      "table_cells": [
+        [
+          "检查内容",
+          "检查方法",
+          null
+        ],
+        [
+          "系统清洁",
+          "• 检查机壳、\n• 检查散热孔",
+          "电路板以及元器件的清洁。\n灰尘以及遮挡。"
+        ],
+        [
+          "端子、排线连\n接",
+          "• 检查控制端\n• 检查接线铜\n• 目测检查设",
+          "子螺丝是否松动，用螺丝刀拧紧\n排或者螺钉是否存在颜色改变。\n备终端等连接以及排线分布。"
+        ]
+      ],
+      "bbox": [
+        111.034,
+        76.189,
+        369.108,
+        175.5
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8AC6AA5549F806C4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 111,
+      "printed_page_label": "101",
+      "block_order": 2,
+      "section_id": "SEC-981345DA4C3F12C8",
+      "section_path": [
+        "11 例行维护",
+        "11.2 维护项目列表"
+      ],
+      "section_title": "11.2 维护项目列表",
+      "block_type": "list",
+      "text": "•\n登录WEB 检查设备通讯情况。\n•\n登录WEB 检查数据采集器各项参数设置。\n•\n登录WEB 检查数据采集器软件版本。",
+      "table_cells": null,
+      "bbox": [
+        185.931,
+        181.406,
+        369.108,
+        219.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FF23484E76F0D19A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 111,
+      "printed_page_label": "101",
+      "block_order": 3,
+      "section_id": "SEC-981345DA4C3F12C8",
+      "section_path": [
+        "11 例行维护",
+        "11.2 维护项目列表"
+      ],
+      "section_title": "11.2 维护项目列表",
+      "block_type": "paragraph",
+      "text": "软件维护",
+      "table_cells": null,
+      "bbox": [
+        111.034,
+        194.906,
+        147.034,
+        205.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

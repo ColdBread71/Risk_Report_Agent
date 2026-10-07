@@ -1,0 +1,103 @@
+﻿R1	A1=产品基本信息
+R2	A2=产品类型 | B2=通信设备
+R3	A3=产品型号 | B3=EMU200A, EMU200B, EMU300A, EMU300B, EMU300C
+R4	A4=产品硬件版本
+R5	A5=产品软件版本
+R6	A6=产品软硬件版本号规则介绍 | B6=可另附文档
+R7	A7=目标用户群体 | B7=由具备电气及自动化知识的专业人员，在光伏电站现场进行安装、接线和维护。
+R8	A8=产品照片、标签（单独提供） | B8=1. 请提供EMU300A/Logger5000的标签照片或pdf⏎2. 请提供EMU300A/Logger5000的外部6面图、内部结构图、待评估组件的PCB板图，以及其他认证型号（EMU200A，EMU200B，EMU300B，EMU300C,Logger4000）在外观、内部结构、PCB板和测试版本的外观差异照片
+R9	A9=EMU基本原理图/Logger框图（单独提供）
+R10	A10=产品预期用途以及合理可预见的使用⏎补充图片：1. 产品的功能介绍图。 2. 目标用户和可操作的接口对应介绍图 3. EMU的内部组件图需要增加IO（如果200和300都有，2个都要；如果只有300有就只在300A和300B的内部组件图上补充）
+R11	A11=预期用途：⏎1、物理防护与电气安全：为内置数据采集器（Logger4000/Logger5000）、MPLC、IPD-ISO、交换机等模块提供物理防护、稳定电源供给及电气安全隔离。⏎2、数据汇聚与协议转换：通过集成内部数据采集器，实现数据汇聚、协议转换与指令转发功能。⏎3、环境适应性保障：凭借IP66防护等级、端口电气隔离、防雷、防PID及绝缘阻抗检测功能，确保内部电子设备在户外环境下的长期稳定运行。⏎4、多协议数据采集：⏎（1）集成多路RS485端口，支持Modbus RTU协议采集南向设备数据（如逆变器、环境检测仪等）⏎（2）集成MPLC电力载波通信接口，支持通过交流电力线载波通信采集逆变器运行数据⏎5、网络接入与数据传输：内部数据采集器的以太网接口或交换机光纤接口（EMU装置内置交换机时），通过客户网络接入站控SCADA系统，或经4G路由器传输至阳光云平台。⏎6、调度指令处理：接收并转发调度指令，包括有功/无功调节、远程参数设置等。⏎7、Web管理界面：提供Web配置界面，支持参数配置、固件升级等功能。⏎8、多协议通信支持：支持MQTT、HTTPS、Modbus TCP、Modbus RTU、IEC104、GOOSE、SFTP等多种通信协议。⏎合理可预见的使用：⏎1、本地运维管理：运维工程师通过 Web 界面完成参数配置、固件升级、日志导出等本地操作。⏎2、数据采集监控：SCADA 系统通过 EMU 获取逆变器等南向设备的实时运行数据。⏎3、远程调度控制：电网调度中心通过 EMU 向逆变器下发有功/无功功率调节指令。⏎4、数据桥梁作用：EMU 作为现场设备与上层管理系统之间的通信网关，实现数据双向传输。
+R20	A20=产品通信环境或南北向环境说明
+R21	A21=该能量管理单元通信说明如下：⏎1. 南向接口：集成了多路RS485端口，支持通过ModbusRTU协议采集南向设备数据，如逆变器、环境检测仪等数据，集成了MPLC电力载波通信接口，支持通过交流电力线载波通信，采集逆变器的运行数据。⏎2. 北向接口：支持多路以太网接口，该接口支持接入联网的4G路由器，连接互联网，实现数据上云。⏎内部数采的以太网接口或者交换机的光纤接口（EMU装置内部配置交换机时，交换机连接内部数据采集器的网口），对外经客户网络接入站控或通过4G 路由器传输至阳光云。⏎3. 维护接口：开锁维护。⏎4. 电源接口：交流供电输入端（仅提供电力，不传输数据）。⏎⏎该能量管理单元的预期通信关系：⏎1、所有数据交互汇总处理由内置的数据采集器完成。⏎2、能量管理单元通过南向接口连接逆变器、环境检测仪、电表等，通过北向接口接入客户本地网络，再通过核心交换机传输至后台站控，例如Insight、SCADA。或者通过经客户授权的4G路由器上传至阳光云。整个通信路径需经由客户部署的交换机与路由器，设备不直接接入公共互联网。
+R31	A31=产品通讯矩阵
+R32	A32=源设备 | B32=源端口 | C32=目的设备 | D32=目的端口 | E32=协议 | F32=认证方式 | G32=加密方式 | H32=用途说明 | I32=通信等级
+R33	A33=PC | B33=任意 | C33=Logger5000 | D33=8443 | E33=https | F33=用户名/密码 | G33=TLS | H33=默认访问方式 | I33=Controlled
+R34	A34=PC | B34=任意 | C34=Logger5000 | D34=443 | E34=https | F34=用户名/密码 | G34=TLS | H34=默认访问方式
+R35	A35=PC | B35=任意 | C35=Logger5000 | D35=8080 | E35=http | F35=用户名/密码 | G35=无 | H35=默认关闭，支持开启
+R36	A36=PC | B36=任意 | C36=Logger5000 | D36=22 | E36=SSHv2 | F36=用户名/密码 | G36=TLS | H36=默认关闭
+R37	A37=PC | B37=任意 | C37=Logger5000 | D37=22 | E37=SFTP | F37=用户名/密码 | G37=TLS | H37=默认关闭
+R38	A38=PC | B38=任意 | C38=Logger5000 | D38=102 | E38=MMS | F38=用户名/密码 | G38=TLS | H38=默认关闭
+R39	A39=北向设备 | B39=任意 | C39=Logger5000 | D39=2404—2418 | E39=IEC104 | F39=无 | G39=TLS | H39=2418 默认开启，2404~2417 默认关闭
+R40	A40=北向设备 | B40=任意 | C40=Logger5000 | D40=502-516 | E40=MODBUSTCP | F40=无 | G40=TLS | H40=516 默认开启，502~515默认关闭
+R41	A41=北向设备 | B41=任意 | C41=Logger5000 | D41=802 | E41=MODBUSTCP | F41=无 | G41=TLS | H41=默认开启，支持关闭
+R42	A42=PC | B42=任意 | C42=Logger5000 | D42=9998-9999 | E42=UDP | F42=无 | G42=TLS | H42=默认关闭，内部调试使用，在linux shell中开启
+R43	A43=PC | B43=Debug口 | C43=Logger5000 | D43=/ | E43=RS232协议 | F43=用户名/密码 | G43=无 | H43=串口访问linux
+R44	A44=Logger5000 | B44=任意 | C44=阳光云 | D44=19999 | E44=MQTT | F44=公钥 | G44=无 | H44=默认关闭，开启给予安全提示，可通过网口
+R45	A45=Logger5000 | B45=任意 | C45=阳光云 | D45=16668 | E45=MQTT | F45=公钥 | G45=TLS/SSL通道加密 | H45=默认关闭，开启给予安全提示，可通过网口
+R46	A46=Logger5000 | B46=任意 | C46=NTP对时服务器 | D46=123 | E46=NTP | F46=无 | G46=无 | H46=默认关闭，开启给予安全提示
+R47	A47=Logger5000 | B47=任意 | C47=NTS对时服务器 | D47=4460 | E47=NTS | F47=无 | G47=无 | H47=默认关闭，开启给予安全提示
+R48	A48=Logger5000 | B48=任意 | C48=远端Syslog服务器 | D48=514 | E48=Syslogd | F48=无 | G48=无 | H48=默认关闭
+R49	A49=产品功能场景描述（涉及网络安全的功能清单）
+R50	A50=影响的产品功能 | B50=功能描述
+R51	A51=EMU/Logger的登录功能 | B51=EMU管理页面登录功能
+R52	A52=EMU/Logger的登录功能 | B52=EMU管理页面登录功能
+R53	A53=EMU/Logger的登录功能 | B53=EMU管理页面登录功能
+R54	A54=EMU/Logger的登录功能 | B54=EMU管理页面登录功能
+R55	A55=EMU/Logger的登录功能 | B55=EMU管理页面登录功能
+R56	A56=EMU/Logger用户管理功能⏎EMU/Logger的登录功能 | B56=EMU管理页面登录功能⏎EMU管理页面用户管理功能
+R57	A57=EMU/Logger用户管理功能⏎EMU/Logger的登录功能 | B57=EMU管理页面登录功能⏎EMU管理页面用户管理功能
+R58	A58=EMU/Logger用户管理功能⏎EMU/Logger的登录功能 | B58=EMU管理页面登录功能⏎EMU管理页面用户管理功能
+R59	A59=EMU/Logger的用户管理功能 | B59=设备支持普通用户、运维用户、审计用户、管理员等多角色权限管理
+R60	A60=EMU/Logger的更新功能 | B60=设备固件升级功能
+R61	A61=EMU/Logger的更新功能 | B61=设备固件更新功能
+R62	A62=EMU/Logger的更新功能 | B62=设备固件更新功能
+R63	A63=EMU/Logger的开发者调试功能 | B63=EMU/Logger开发账户使用SSH调试设备
+R64	A64=EMU/Logger的日志记录与审计功能 | B64=EMU/Logger的日志功能：设备生成、存储、保护操作日志、故障日志、审计日志的能力
+R65	A65=EMU/Logger的运行和维护功能 | B65=设备上的调试串口、USB口、Micro SD口、未使用的网络服务等
+R66	A66=EMU/Logger的运行和维护功能 | B66=设备退役、返厂维修或回收时，数据永久删除与存储介质安全清理
+R67	A67=EMU/Logger的运行和维护功能 | B67=EMU/Logger的日常运行与维护功能
+R68	A68=EMU/Logger的运行和维护功能 | B68=EMU/Logger的日常运行与维护功能
+R69	A69=EMU/Logger的运行和维护功能 | B69=设备通过本地Web界面或物理接口进行的手动配置、固件升级、备份恢复等操作
+R70	A70=EMU/Logger的运行和维护功能 | B70=设备在认证完成后，后续的调度指令或数据是否仍保持加密
+R71	A71=EMU/Logger的运行和维护功能 | B71=EMU/Logger进入用户管理页面的运维功能
+R72	A72=EMU/Logger的运行和维护功能 | B72=EMU/Logger的日常运行和维护功能
+R73	A73=EMU/Logger的运行维护功能 | B73=EMU/Logger的日常运行和维护功能
+R74	A74=EMU/Logger的运行维护功能 | B74=设备生成一次性远程访问链接，用于技术支持远程调试
+R75	A75=EMU/Logger的证书管理功能 | B75=设备支持HTTPS、IEC104、Modbus TCP、NTS等证书导入、更新、吊销
+R76	A76=EMU/Logger使用密码学算法 | B76=设备在数据存储和传输中使用的加密算法（如TLS版本、哈希算法）
+R77	A77=EMU/Logger的南向、北向网络转发功能 | B77=设备通过网络接口接收、处理、转发数据的能力
+R78	A78=EMU/Logger本地的HTTPS通信⏎EMU/Logger与北向网络的TLS通信 | B78=设备TLS/HTTPS实现中是否存在弱随机数、证书缺陷等
+R79	A79=EMU/Logger与南向逆变器的MPLC通信 | B79=EMU通过MPLC接口与逆变器进行MPLC通信
+R80	A80=EMU/Logger与南向设备（逆变器、电表）的通信 | B80=设备从逆变器、电表等南向设备采集数据
+R81	A81=EMU/Logger与同一网域设备的通信 | B81=EMU/Logger与同一网域设备（如环状网络时的其他EMU、上层交换机等）的通信
+R82	A82=EMU/Logger与同一网域设备的通信 | B82=EMU/Logger与同一网域设备（如环状网络时的其他EMU、上层交换机等）的通信
+R83	A83=EMU/Logger与SCADA/Insight网管的北向通信 | B83=设备与北向SCADA/Insight网管通信，解析MODBUS、IEC104、GOOSE等协议数据的能力
+R84	A84=EMU/Logger与SCADA/Insight网管的北向通信 | B84=设备与北向SCADA/Insight网管通信，解析MODBUS、IEC104、GOOSE等协议数据的能力
+R85	A85=EMU/Logger与SCADA/Insight网管的北向通信 | B85=设备与北向SCADA/Insight网管通信，解析MODBUS、IEC104、GOOSE等协议数据的能力
+R86	A86=EMU/Logger与SCADA/Insight网管的北向通信 | B86=设备与北向SCADA/Insight网管通信，解析MODBUS、IEC104、GOOSE等协议数据的能力
+R87	A87=EMU/Logger与阳光云的北向通信 | B87=设备与阳光云平台之间的MQTT通信，提供数据交互、固件下发等功能
+R88	A88=三方组件使用 | B88=EMU及子组件（Logger、交换机、PLC、PID、录波小板、IO板）对三方组件的使用
+R89	A89=Modbus-RTU更新固件 | B89=Logger通过Modbus-RTU通道，向PLC、PID-ISO、IO板传输固件
+R90	A90=Modbus-RTU更新固件 | B90=Logger通过Modbus-RTU通道，向PLC、PID-ISO、IO板传输固件
+R91	A91=Modbus-RTU数据传输 | B91=Logger通过Modbus-RTU通道，向PLC、PID-ISO、IO板传输数据
+R92	A92=Modbus-RTU数据传输 | B92=Logger通过Modbus-RTU通道，向PLC、PID-ISO、IO板传输固件和参数
+R93	A93=PLC、PID-ISO、IO板的参数设置和数据监控功能 | B93=PLC、PID-ISO、IO板的参数设置和数据监控功能
+R94	A94=PLC、PID-ISO的参数设置和数据监控功能 | B94=PLC、PID-ISO的参数设置和数据监控功能
+R95	A95=日志审计功能（PLC、PID-ISO、IO部分） | B95=PLC、PID-ISO、IO板的参数设置和数据监控功能
+R96	A96=调试口默认打开 | B96=PLC、PID-ISO、IO板的调试功能
+R97	A97=产品构成（数字组件）（需要在HBOM和差异声明文档中列出不同EMU、Logger的差异）
+R98	A98=Logger5000
+R99	A99=PID-ISO
+R100	A100=IO板
+R101	A101=PLC
+R102	A102=录波小板
+R103	A103=交换机
+R104	A104=产品组成（该部分会展示在CB报告上，请在上次认证的基础上修订，需要能包含所有EMU和Logger型号）
+R105	A105=EMU
+R106	A106=Component | B106=Version | C106=Description | D106=Remarks
+R107	A107=Switch | B107=MOXA EDS-408A-SS-SC-T v3.12 | C107=L2 switch hardening with a security guidelines.  | D107=--
+R108	A108=Logger4000 | B108=LOGGER-SV400.001.01.P013 | C108=Embedded web application and middleware. | D108=--
+R109	A109=Functional components | B109=-- | C109=Electrical functional components. | D109=--
+R110	A110=Cabinet  | B110=-- | C110=Steel alloy. | D110=--
+R111	A111=Tamper-evident seal mark | B111=-- | C111=A visible label or marking placed on the device to signal any unauthorized access attempts. | D111=--
+R112	A112=Keys | B112=-- | C112=Physical key. | D112=--
+R114	A114=Logger
+R115	A115=Component | B115=Version | C115=Description | D115=Remarks
+R116	A116=Logger4000 | B116=LOGGER-SV400.001.01.P013 | C116=Embedded web application and middleware. | D116=--
+R117	A117=OS | B117=4.1900000000000004 | C117=Linux-based operating system. | D117=--
+R118	A118=Bootloader | B118=2019.01 | C118=Image for bringing up the kernel. | D118=--
+R119	A119=Hardware | B119=P-A-0014731 | C119=PCB assembly. | D119=--
+R120	A120=Enclosure  | B120=-- | C120=Steel alloy. | D120=--
+R121	A121=Tamper-evident seal | B121=-- | C121=Tamper detection mechanism for physical access to the SCU. | D121=--

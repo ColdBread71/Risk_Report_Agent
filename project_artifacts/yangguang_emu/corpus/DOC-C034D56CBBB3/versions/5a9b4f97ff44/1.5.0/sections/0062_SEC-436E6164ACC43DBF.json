@@ -1,0 +1,499 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-436E6164ACC43DBF",
+  "section_path": [
+    "7 Web界面",
+    "7.5 设备监控",
+    "7.5.13 离散率分析",
+    "7.5.13.2 设置方阵参数"
+  ],
+  "section_title": "7.5.13.2 设置方阵参数",
+  "start_pdf_page": 54,
+  "end_pdf_page": 54,
+  "blocks": [
+    {
+      "block_id": "BLK-46B830DBF69B728B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "44",
+      "block_order": 0,
+      "section_id": "SEC-436E6164ACC43DBF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.2 设置方阵参数"
+      ],
+      "section_title": "7.5.13.2 设置方阵参数",
+      "block_type": "table",
+      "text": "界面\t用户手册\n明存\n看各\nLog\n时间\n光伏\t在明显的性能偏差，这时就需要进一步的诊断分析。通过离散率一键诊断，运维人员可以查\n组串的离散率，快速识别并处理异常组串，从而提高电站的运维效率和发电量。\nger4000 的离散率分析功能的算法采取了自学习机制，当新接入逆变器时，算法能够根\n和光照条件的变化，以及用户设置的方阵参数，自动调整分析参数和模型，并推断导致\n组件发电数据异常的原因供运维人员参考。\n\t注意\n通\n于\n模\t常，系统从逆变器端收集了至少两天的晴天数据后，能够提供初步的可靠诊断结果。由\n离散率算法的自学习在夜间进行，为了保证算法能够充分利用这一时段进行数据分析和\n型优化，必须确保Logger4000 在夜间不断电。",
+      "table_cells": [
+        [
+          "界面",
+          "用户手册"
+        ],
+        [
+          "明存\n看各\nLog\n时间\n光伏",
+          "在明显的性能偏差，这时就需要进一步的诊断分析。通过离散率一键诊断，运维人员可以查\n组串的离散率，快速识别并处理异常组串，从而提高电站的运维效率和发电量。\nger4000 的离散率分析功能的算法采取了自学习机制，当新接入逆变器时，算法能够根\n和光照条件的变化，以及用户设置的方阵参数，自动调整分析参数和模型，并推断导致\n组件发电数据异常的原因供运维人员参考。"
+        ],
+        [
+          null,
+          "注意"
+        ],
+        [
+          "通\n于\n模",
+          "常，系统从逆变器端收集了至少两天的晴天数据后，能够提供初步的可靠诊断结果。由\n离散率算法的自学习在夜间进行，为了保证算法能够充分利用这一时段进行数据分析和\n型优化，必须确保Logger4000 在夜间不断电。"
+        ]
+      ],
+      "bbox": [
+        87.56,
+        48.088,
+        448.189,
+        205.525
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-275B8672706BB7C4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "44",
+      "block_order": 1,
+      "section_id": "SEC-436E6164ACC43DBF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.2 设置方阵参数"
+      ],
+      "section_title": "7.5.13.2 设置方阵参数",
+      "block_type": "paragraph",
+      "text": "跟踪式光伏支架会根据太阳的位置变化调整其角度和朝向，这种变动会影响离散率分\n析的计算与结果的准确性。因此，建议只在使用固定支架的电站应用离散率分析。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        221.956,
+        448.193,
+        243.709
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-80FE60372269ADFE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "44",
+      "block_order": 2,
+      "section_id": "SEC-436E6164ACC43DBF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.2 设置方阵参数"
+      ],
+      "section_title": "7.5.13.2 设置方阵参数",
+      "block_type": "paragraph",
+      "text": "Logger4000 的固件版本为P028 或以上。见7.8.16 查看固件版本。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        264.556,
+        382.781,
+        275.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5E585960594B10FC",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "44",
+      "block_order": 9,
+      "section_id": "SEC-436E6164ACC43DBF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.2 设置方阵参数"
+      ],
+      "section_title": "7.5.13.2 设置方阵参数",
+      "block_type": "heading",
+      "text": "7.5.13.2 设置方阵参数",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        436.49,
+        157.587,
+        448.66
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9305B717B79C4A76",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "44",
+      "block_order": 10,
+      "section_id": "SEC-436E6164ACC43DBF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.2 设置方阵参数"
+      ],
+      "section_title": "7.5.13.2 设置方阵参数",
+      "block_type": "paragraph",
+      "text": "同一方阵内，组串安装朝向和倾角等差异会直接影响离散率计算结果。实际运维时，必须充分考\n虑光伏方阵的安装环境，排除可能干扰离散率数据的因素，提高离散率分析的准确性，从而减少\n现场排查的工作量。因此，在开启一键诊断之前，用户必须设置方阵参数。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        455.714,
+        445.193,
+        491.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-27D5A6B1B55EF94A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "44",
+      "block_order": 11,
+      "section_id": "SEC-436E6164ACC43DBF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.2 设置方阵参数"
+      ],
+      "section_title": "7.5.13.2 设置方阵参数",
+      "block_type": "paragraph",
+      "text": "步骤 1 导航栏中点击智能分析 > 离散率诊断，跳转到对应页面。",
+      "table_cells": null,
+      "bbox": [
+        56.69,
+        500.634,
+        313.82,
+        513.117
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3C14217AC081F8D7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "44",
+      "block_order": 12,
+      "section_id": "SEC-436E6164ACC43DBF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.2 设置方阵参数"
+      ],
+      "section_title": "7.5.13.2 设置方阵参数",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击参数设置，弹出参数设置对话框。",
+      "table_cells": null,
+      "bbox": [
+        56.69,
+        517.134,
+        240.56,
+        529.617
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2217F0DDAF6CD3A2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "44",
+      "block_order": 13,
+      "section_id": "SEC-436E6164ACC43DBF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.2 设置方阵参数"
+      ],
+      "section_title": "7.5.13.2 设置方阵参数",
+      "block_type": "paragraph",
+      "text": "步骤 3 根据光伏方阵安装情况，设置方阵参数。",
+      "table_cells": null,
+      "bbox": [
+        56.69,
+        533.634,
+        249.56,
+        546.117
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AE7810C984AB6BB8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "44",
+      "block_order": 14,
+      "section_id": "SEC-436E6164ACC43DBF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.2 设置方阵参数"
+      ],
+      "section_title": "7.5.13.2 设置方阵参数",
+      "block_type": "paragraph",
+      "text": "a. 在方阵名称输入框中，为当前方阵起一个易于辨识的名称。",
+      "table_cells": null,
+      "bbox": [
+        87.56,
+        551.556,
+        335.735,
+        562.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-22EFFE31905BFF4B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "44",
+      "block_order": 15,
+      "section_id": "SEC-436E6164ACC43DBF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.2 设置方阵参数"
+      ],
+      "section_title": "7.5.13.2 设置方阵参数",
+      "block_type": "paragraph",
+      "text": "b. 在地理环境类型下拉列表中，选择方阵安装的地理环境。",
+      "table_cells": null,
+      "bbox": [
+        87.56,
+        566.556,
+        326.735,
+        577.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F13EA85610CADD73",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "44",
+      "block_order": 16,
+      "section_id": "SEC-436E6164ACC43DBF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.2 设置方阵参数"
+      ],
+      "section_title": "7.5.13.2 设置方阵参数",
+      "block_type": "paragraph",
+      "text": "支持选择如下地理环境：",
+      "table_cells": null,
+      "bbox": [
+        101.735,
+        583.056,
+        200.735,
+        594.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9989E0E2A7F8CFFF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "44",
+      "block_order": 17,
+      "section_id": "SEC-436E6164ACC43DBF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.2 设置方阵参数"
+      ],
+      "section_title": "7.5.13.2 设置方阵参数",
+      "block_type": "list",
+      "text": "•\n平地（默认）",
+      "table_cells": null,
+      "bbox": [
+        101.735,
+        598.056,
+        169.91,
+        609.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ADC20DFA67C480FC",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "44",
+      "block_order": 18,
+      "section_id": "SEC-436E6164ACC43DBF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.2 设置方阵参数"
+      ],
+      "section_title": "7.5.13.2 设置方阵参数",
+      "block_type": "list",
+      "text": "•\n分布式屋顶",
+      "table_cells": null,
+      "bbox": [
+        101.735,
+        613.056,
+        160.91,
+        624.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-36BB239EEBC087CA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "44",
+      "block_order": 19,
+      "section_id": "SEC-436E6164ACC43DBF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.2 设置方阵参数"
+      ],
+      "section_title": "7.5.13.2 设置方阵参数",
+      "block_type": "list",
+      "text": "•\n山顶",
+      "table_cells": null,
+      "bbox": [
+        101.735,
+        628.056,
+        133.91,
+        639.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-847E94D0997261DC",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "44",
+      "block_order": 20,
+      "section_id": "SEC-436E6164ACC43DBF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.2 设置方阵参数"
+      ],
+      "section_title": "7.5.13.2 设置方阵参数",
+      "block_type": "list",
+      "text": "•\n水面打桩",
+      "table_cells": null,
+      "bbox": [
+        101.735,
+        643.056,
+        151.91,
+        654.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-53FD6FF8061741AF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "44",
+      "block_order": 21,
+      "section_id": "SEC-436E6164ACC43DBF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.2 设置方阵参数"
+      ],
+      "section_title": "7.5.13.2 设置方阵参数",
+      "block_type": "list",
+      "text": "•\n水面漂浮",
+      "table_cells": null,
+      "bbox": [
+        101.735,
+        658.056,
+        151.91,
+        669.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,337 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-95B0FF370E38571E",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.14 MPLC（宽带PLC）",
+    "7.8.14.1 MPLC自动跳频"
+  ],
+  "section_title": "7.8.14.1 MPLC自动跳频",
+  "start_pdf_page": 85,
+  "end_pdf_page": 85,
+  "blocks": [
+    {
+      "block_id": "BLK-D9CE586C27C9E4EC",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 1,
+      "section_id": "SEC-95B0FF370E38571E",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）",
+        "7.8.14.1 MPLC自动跳频"
+      ],
+      "section_title": "7.8.14.1 MPLC自动跳频",
+      "block_type": "heading",
+      "text": "7.8.14.1 MPLC 自动跳频",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        71.59,
+        179.546,
+        83.76
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-92A199CE496DC192",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 2,
+      "section_id": "SEC-95B0FF370E38571E",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）",
+        "7.8.14.1 MPLC自动跳频"
+      ],
+      "section_title": "7.8.14.1 MPLC自动跳频",
+      "block_type": "paragraph",
+      "text": "当数据采集器与逆变器之间的通信出现问题时，例如PLC 端口丢包率超过0.5%或部分逆变器频繁\n离线，建议启用自动跳频功能，以提高通信可靠性。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        90.814,
+        467.654,
+        113.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6ED80B20417974FE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 3,
+      "section_id": "SEC-95B0FF370E38571E",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）",
+        "7.8.14.1 MPLC自动跳频"
+      ],
+      "section_title": "7.8.14.1 MPLC自动跳频",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.368,
+        124.406,
+        138.368,
+        135.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3225626DD5B4C0A2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 4,
+      "section_id": "SEC-95B0FF370E38571E",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）",
+        "7.8.14.1 MPLC自动跳频"
+      ],
+      "section_title": "7.8.14.1 MPLC自动跳频",
+      "block_type": "list",
+      "text": "•\nLogger4000 的固件版本为P025 或以上。见7.8.16 查看固件版本。",
+      "table_cells": null,
+      "bbox": [
+        102.368,
+        144.406,
+        384.131,
+        155.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-26017093E8F3DAE4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 5,
+      "section_id": "SEC-95B0FF370E38571E",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）",
+        "7.8.14.1 MPLC自动跳频"
+      ],
+      "section_title": "7.8.14.1 MPLC自动跳频",
+      "block_type": "paragraph",
+      "text": "如需查看PLC 接入端口的丢包率，跳转至系统 > 运行信息页面。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        169.056,
+        386.631,
+        180.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B2C7848A54C22EDE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 6,
+      "section_id": "SEC-95B0FF370E38571E",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）",
+        "7.8.14.1 MPLC自动跳频"
+      ],
+      "section_title": "7.8.14.1 MPLC自动跳频",
+      "block_type": "paragraph",
+      "text": "步骤 1 导航栏中点击系统 > MPLC > 操作，跳转至相应页面。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        200.284,
+        318.258,
+        212.767
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-47F6DF324C792B94",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 7,
+      "section_id": "SEC-95B0FF370E38571E",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）",
+        "7.8.14.1 MPLC自动跳频"
+      ],
+      "section_title": "7.8.14.1 MPLC自动跳频",
+      "block_type": "paragraph",
+      "text": "步骤 2 点击MPLC 自动跳频。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        216.784,
+        194.238,
+        229.267
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8C1F4BB31A66B621",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 8,
+      "section_id": "SEC-95B0FF370E38571E",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）",
+        "7.8.14.1 MPLC自动跳频"
+      ],
+      "section_title": "7.8.14.1 MPLC自动跳频",
+      "block_type": "paragraph",
+      "text": "步骤 3 在弹出的对话框中，勾选需自动跳频的MPLC 链路。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        233.284,
+        311.238,
+        245.767
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7411478B4B3000D3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 9,
+      "section_id": "SEC-95B0FF370E38571E",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）",
+        "7.8.14.1 MPLC自动跳频"
+      ],
+      "section_title": "7.8.14.1 MPLC自动跳频",
+      "block_type": "paragraph",
+      "text": "步骤 4 点击确定。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        249.784,
+        146.736,
+        262.267
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-948674DD48A7A4A5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 10,
+      "section_id": "SEC-95B0FF370E38571E",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）",
+        "7.8.14.1 MPLC自动跳频"
+      ],
+      "section_title": "7.8.14.1 MPLC自动跳频",
+      "block_type": "paragraph",
+      "text": "对话框会显示自动跳频的进度。当进度条达到100%时，表示已完成跳频。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        264.706,
+        397.008,
+        275.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8ED769C518AF45C3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 11,
+      "section_id": "SEC-95B0FF370E38571E",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）",
+        "7.8.14.1 MPLC自动跳频"
+      ],
+      "section_title": "7.8.14.1 MPLC自动跳频",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        279.856,
+        126.36,
+        290.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

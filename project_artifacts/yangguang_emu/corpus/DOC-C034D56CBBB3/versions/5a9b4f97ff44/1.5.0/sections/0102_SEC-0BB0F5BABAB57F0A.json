@@ -1,0 +1,325 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-0BB0F5BABAB57F0A",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.3 远程维护"
+  ],
+  "section_title": "7.8.3 远程维护",
+  "start_pdf_page": 71,
+  "end_pdf_page": 71,
+  "blocks": [
+    {
+      "block_id": "BLK-70F7DBA0E891AA6C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 71,
+      "printed_page_label": "61",
+      "block_order": 12,
+      "section_id": "SEC-0BB0F5BABAB57F0A",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.3 远程维护"
+      ],
+      "section_title": "7.8.3 远程维护",
+      "block_type": "heading",
+      "text": "7.8.3 远程维护",
+      "table_cells": null,
+      "bbox": [
+        70.867,
+        290.611,
+        137.857,
+        302.781
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F5EC806E26B65686",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 71,
+      "printed_page_label": "61",
+      "block_order": 13,
+      "section_id": "SEC-0BB0F5BABAB57F0A",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.3 远程维护"
+      ],
+      "section_title": "7.8.3 远程维护",
+      "block_type": "paragraph",
+      "text": "远程维护功能默认关闭。启用该功能前，客户需在充分知情的前提下使用\nadministrator 账号进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在\n获得administrator 账号授权后方可生效，且相关操作受系统访问控制策略管理。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        315.077,
+        462.888,
+        347.63
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BF56E85418EC1150",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 71,
+      "printed_page_label": "61",
+      "block_order": 14,
+      "section_id": "SEC-0BB0F5BABAB57F0A",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.3 远程维护"
+      ],
+      "section_title": "7.8.3 远程维护",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击系统 > 远程维护，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        369.905,
+        237.996,
+        382.388
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6F76C1BC05304750",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 71,
+      "printed_page_label": "61",
+      "block_order": 15,
+      "section_id": "SEC-0BB0F5BABAB57F0A",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.3 远程维护"
+      ],
+      "section_title": "7.8.3 远程维护",
+      "block_type": "paragraph",
+      "text": "表 7-10 参数说明",
+      "table_cells": null,
+      "bbox": [
+        101.735,
+        519.282,
+        169.748,
+        530.235
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-75579E7E9D930C73",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 71,
+      "printed_page_label": "61",
+      "block_order": 16,
+      "section_id": "SEC-0BB0F5BABAB57F0A",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.3 远程维护"
+      ],
+      "section_title": "7.8.3 远程维护",
+      "block_type": "paragraph",
+      "text": "远程维护开关状态\n说明",
+      "table_cells": null,
+      "bbox": [
+        110.405,
+        540.065,
+        240.859,
+        550.41
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1523D21E45B065A2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 71,
+      "printed_page_label": "61",
+      "block_order": 17,
+      "section_id": "SEC-0BB0F5BABAB57F0A",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.3 远程维护"
+      ],
+      "section_title": "7.8.3 远程维护",
+      "block_type": "paragraph",
+      "text": "禁止\n不可对数据采集器进行远程维护",
+      "table_cells": null,
+      "bbox": [
+        110.404,
+        560.782,
+        349.858,
+        571.735
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-802F87599DC64346",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 71,
+      "printed_page_label": "61",
+      "block_order": 18,
+      "section_id": "SEC-0BB0F5BABAB57F0A",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.3 远程维护"
+      ],
+      "section_title": "7.8.3 远程维护",
+      "block_type": "paragraph",
+      "text": "使能\n可对数据采集器进行远程维护",
+      "table_cells": null,
+      "bbox": [
+        110.404,
+        582.782,
+        340.858,
+        593.735
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-09E0A79AE703ED3E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 71,
+      "printed_page_label": "61",
+      "block_order": 19,
+      "section_id": "SEC-0BB0F5BABAB57F0A",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.3 远程维护"
+      ],
+      "section_title": "7.8.3 远程维护",
+      "block_type": "paragraph",
+      "text": "步骤 2 如已开启阳光云转发服务，服务器站点与阳光云转发地址绑定。如需修改，请修改阳光云站",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        612.11,
+        461.736,
+        624.593
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-65D38156408276D6",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 71,
+      "printed_page_label": "61",
+      "block_order": 20,
+      "section_id": "SEC-0BB0F5BABAB57F0A",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.3 远程维护"
+      ],
+      "section_title": "7.8.3 远程维护",
+      "block_type": "paragraph",
+      "text": "点。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        627.032,
+        119.736,
+        637.985
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-578258AADBEC6C1B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 71,
+      "printed_page_label": "61",
+      "block_order": 21,
+      "section_id": "SEC-0BB0F5BABAB57F0A",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.3 远程维护"
+      ],
+      "section_title": "7.8.3 远程维护",
+      "block_type": "paragraph",
+      "text": "步骤 3 单击保存，进入远程访问界面。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        642.11,
+        227.736,
+        654.593
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-59AA7FA412F458CD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 71,
+      "printed_page_label": "61",
+      "block_order": 22,
+      "section_id": "SEC-0BB0F5BABAB57F0A",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.3 远程维护"
+      ],
+      "section_title": "7.8.3 远程维护",
+      "block_type": "paragraph",
+      "text": "步骤 4 输入登录密码，单击确定。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        658.61,
+        209.736,
+        671.093
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

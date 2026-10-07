@@ -1,0 +1,185 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-096921E46BC34304",
+  "section_path": [
+    "7 Web界面",
+    "7.5 设备监控",
+    "7.5.1 实时信息"
+  ],
+  "section_title": "7.5.1 实时信息",
+  "start_pdf_page": 51,
+  "end_pdf_page": 51,
+  "blocks": [
+    {
+      "block_id": "BLK-0346A63DF91163ED",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 18,
+      "section_id": "SEC-096921E46BC34304",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.1 实时信息"
+      ],
+      "section_title": "7.5.1 实时信息",
+      "block_type": "heading",
+      "text": "7.5.1 实时信息",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        535.424,
+        137.853,
+        547.594
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FB6D44FCD58F0986",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 19,
+      "section_id": "SEC-096921E46BC34304",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.1 实时信息"
+      ],
+      "section_title": "7.5.1 实时信息",
+      "block_type": "paragraph",
+      "text": "实时信息界面可查看设备的发电量、设备状态和有功功率等信息。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        554.648,
+        348.866,
+        564.993
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1BE4513A0B79A99F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 20,
+      "section_id": "SEC-096921E46BC34304",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.1 实时信息"
+      ],
+      "section_title": "7.5.1 实时信息",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击设备监控 > 实时信息，进入界面，查看设备实时信息。",
+      "table_cells": null,
+      "bbox": [
+        70.865,
+        574.068,
+        336.995,
+        586.551
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-35A7025DE72427A1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 21,
+      "section_id": "SEC-096921E46BC34304",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.1 实时信息"
+      ],
+      "section_title": "7.5.1 实时信息",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击",
+      "table_cells": null,
+      "bbox": [
+        70.865,
+        592.839,
+        119.735,
+        605.322
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D5F918CABD70AC65",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 22,
+      "section_id": "SEC-096921E46BC34304",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.1 实时信息"
+      ],
+      "section_title": "7.5.1 实时信息",
+      "block_type": "paragraph",
+      "text": "，可选择查看的设备类型。",
+      "table_cells": null,
+      "bbox": [
+        133.911,
+        594.261,
+        241.911,
+        605.214
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-68457FF0AF2FC452",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 23,
+      "section_id": "SEC-096921E46BC34304",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.1 实时信息"
+      ],
+      "section_title": "7.5.1 实时信息",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        609.411,
+        126.36,
+        620.364
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

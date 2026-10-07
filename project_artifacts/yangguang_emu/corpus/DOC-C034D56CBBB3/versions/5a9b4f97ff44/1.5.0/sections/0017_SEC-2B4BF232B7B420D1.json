@@ -1,0 +1,549 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-2B4BF232B7B420D1",
+  "section_path": [
+    "4 机械安装",
+    "4.3 安装数据采集器",
+    "4.3.2 机架式安装"
+  ],
+  "section_title": "4.3.2 机架式安装",
+  "start_pdf_page": 25,
+  "end_pdf_page": 26,
+  "blocks": [
+    {
+      "block_id": "BLK-53CE5B442A361949",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 25,
+      "printed_page_label": "15",
+      "block_order": 0,
+      "section_id": "SEC-2B4BF232B7B420D1",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.2 机架式安装"
+      ],
+      "section_title": "4.3.2 机架式安装",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 机械安装",
+      "table_cells": null,
+      "bbox": [
+        74.615,
+        48.088,
+        463.969,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8C826DBDE5D9CC42",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 25,
+      "printed_page_label": "15",
+      "block_order": 1,
+      "section_id": "SEC-2B4BF232B7B420D1",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.2 机架式安装"
+      ],
+      "section_title": "4.3.2 机架式安装",
+      "block_type": "paragraph",
+      "text": "步骤 4 使用力矩螺丝刀紧固自攻螺钉，紧固力矩为0.3N·m。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        179.338,
+        313.488,
+        191.821
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1892F0CEF2619E9A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 25,
+      "printed_page_label": "15",
+      "block_order": 2,
+      "section_id": "SEC-2B4BF232B7B420D1",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.2 机架式安装"
+      ],
+      "section_title": "4.3.2 机架式安装",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        195.91,
+        126.36,
+        206.863
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C875C2D62AEBC2DF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 25,
+      "printed_page_label": "15",
+      "block_order": 3,
+      "section_id": "SEC-2B4BF232B7B420D1",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.2 机架式安装"
+      ],
+      "section_title": "4.3.2 机架式安装",
+      "block_type": "heading",
+      "text": "4.3.2 机架式安装",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        222.144,
+        147.86,
+        234.314
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-605A1DE62B05FF43",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 25,
+      "printed_page_label": "15",
+      "block_order": 4,
+      "section_id": "SEC-2B4BF232B7B420D1",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.2 机架式安装"
+      ],
+      "section_title": "4.3.2 机架式安装",
+      "block_type": "paragraph",
+      "text": "采用机架式安装时，选择1U 标准机架进行安装。",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        240.11,
+        298.367,
+        251.063
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ACA3FAB8D0712DE9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 25,
+      "printed_page_label": "15",
+      "block_order": 5,
+      "section_id": "SEC-2B4BF232B7B420D1",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.2 机架式安装"
+      ],
+      "section_title": "4.3.2 机架式安装",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        258.26,
+        138.365,
+        269.213
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F4A3A4CDBD52D818",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 25,
+      "printed_page_label": "15",
+      "block_order": 6,
+      "section_id": "SEC-2B4BF232B7B420D1",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.2 机架式安装"
+      ],
+      "section_title": "4.3.2 机架式安装",
+      "block_type": "paragraph",
+      "text": "安装时，用到的部件、工具及设备：",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        275.41,
+        246.365,
+        286.363
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-154BDC6FAAAB93F5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 25,
+      "printed_page_label": "15",
+      "block_order": 7,
+      "section_id": "SEC-2B4BF232B7B420D1",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.2 机架式安装"
+      ],
+      "section_title": "4.3.2 机架式安装",
+      "block_type": "list",
+      "text": "•\n1U 标准机架（未包含在供货范围）",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        289.06,
+        256.292,
+        300.013
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4E141B6444B2B3C6",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 25,
+      "printed_page_label": "15",
+      "block_order": 8,
+      "section_id": "SEC-2B4BF232B7B420D1",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.2 机架式安装"
+      ],
+      "section_title": "4.3.2 机架式安装",
+      "block_type": "list",
+      "text": "•\n电动螺丝刀（未包含在供货范围）",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        304.06,
+        251.54,
+        315.013
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EAEA37E82EB456E3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 25,
+      "printed_page_label": "15",
+      "block_order": 9,
+      "section_id": "SEC-2B4BF232B7B420D1",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.2 机架式安装"
+      ],
+      "section_title": "4.3.2 机架式安装",
+      "block_type": "list",
+      "text": "•\n螺钉（未包含在供货范围）",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        319.06,
+        224.54,
+        330.013
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-09B6F0B31A75F1A7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 25,
+      "printed_page_label": "15",
+      "block_order": 10,
+      "section_id": "SEC-2B4BF232B7B420D1",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.2 机架式安装"
+      ],
+      "section_title": "4.3.2 机架式安装",
+      "block_type": "list",
+      "text": "•\n螺母（未包含在供货范围）",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        334.06,
+        224.54,
+        345.013
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1E3165624CC0EA4D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 25,
+      "printed_page_label": "15",
+      "block_order": 11,
+      "section_id": "SEC-2B4BF232B7B420D1",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.2 机架式安装"
+      ],
+      "section_title": "4.3.2 机架式安装",
+      "block_type": "paragraph",
+      "text": "安装数据采集器挂耳",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        358.21,
+        183.365,
+        369.163
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-41CD3BD1D54AA00F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 25,
+      "printed_page_label": "15",
+      "block_order": 12,
+      "section_id": "SEC-2B4BF232B7B420D1",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.2 机架式安装"
+      ],
+      "section_title": "4.3.2 机架式安装",
+      "block_type": "paragraph",
+      "text": "使用交付件中的M4 x 8 的十字槽沉头螺钉组合件，将安装挂耳安装至数据采集器。紧固扭矩\n为：1.8–2.4N.m。固定方法，如下图所示。",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        376.36,
+        467.126,
+        400.813
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-591CAC6789647743",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 25,
+      "printed_page_label": "15",
+      "block_order": 13,
+      "section_id": "SEC-2B4BF232B7B420D1",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.2 机架式安装"
+      ],
+      "section_title": "4.3.2 机架式安装",
+      "block_type": "paragraph",
+      "text": "步骤 1 结合数据采集器安装挂耳的距离及尺寸，在机架上做标记。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        482.894,
+        335.736,
+        495.377
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8C953810D3C57466",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 25,
+      "printed_page_label": "15",
+      "block_order": 14,
+      "section_id": "SEC-2B4BF232B7B420D1",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.2 机架式安装"
+      ],
+      "section_title": "4.3.2 机架式安装",
+      "block_type": "paragraph",
+      "text": "步骤 2 使用钻头为φ6mm 的电钻，在机架上打孔。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        537.166,
+        276.075,
+        549.649
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0B2CEE12638AE8AA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 26,
+      "printed_page_label": "16",
+      "block_order": 0,
+      "section_id": "SEC-2B4BF232B7B420D1",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.2 机架式安装"
+      ],
+      "section_title": "4.3.2 机架式安装",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 机械安装",
+      "table_cells": null,
+      "bbox": [
+        60.443,
+        48.088,
+        449.79,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BBAC0BFE75B4D863",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 26,
+      "printed_page_label": "16",
+      "block_order": 1,
+      "section_id": "SEC-2B4BF232B7B420D1",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.2 机架式安装"
+      ],
+      "section_title": "4.3.2 机架式安装",
+      "block_type": "paragraph",
+      "text": "步骤 3 将数据采集器挂耳安装孔与机架上打孔位置对齐。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        214.518,
+        285.563,
+        227.001
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C0D222292589E768",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 26,
+      "printed_page_label": "16",
+      "block_order": 2,
+      "section_id": "SEC-2B4BF232B7B420D1",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.2 机架式安装"
+      ],
+      "section_title": "4.3.2 机架式安装",
+      "block_type": "paragraph",
+      "text": "步骤 4 按照螺钉、挂耳、机架、螺母的顺序，固定数据采集器。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        308.59,
+        312.563,
+        321.073
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C9612F7A3C4D3401",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 26,
+      "printed_page_label": "16",
+      "block_order": 3,
+      "section_id": "SEC-2B4BF232B7B420D1",
+      "section_path": [
+        "4 机械安装",
+        "4.3 安装数据采集器",
+        "4.3.2 机架式安装"
+      ],
+      "section_title": "4.3.2 机架式安装",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        325.162,
+        112.187,
+        336.115
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

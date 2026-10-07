@@ -1,0 +1,151 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-FFD461FD8D8D686E",
+  "section_path": [
+    "10 安全配置指南",
+    "10.1 部署安全"
+  ],
+  "section_title": "10.1 部署安全",
+  "start_pdf_page": 21,
+  "end_pdf_page": 21,
+  "blocks": [
+    {
+      "block_id": "BLK-822CCE383703B7BD",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "17",
+      "block_order": 1,
+      "section_id": "SEC-FFD461FD8D8D686E",
+      "section_path": [
+        "10 安全配置指南",
+        "10.1 部署安全"
+      ],
+      "section_title": "10.1 部署安全",
+      "block_type": "heading",
+      "text": "10.1 部署安全",
+      "table_cells": null,
+      "bbox": [
+        70.86,
+        162.258,
+        149.724,
+        176.862
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B6469A1F85E312C7",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "17",
+      "block_order": 2,
+      "section_id": "SEC-FFD461FD8D8D686E",
+      "section_path": [
+        "10 安全配置指南",
+        "10.1 部署安全"
+      ],
+      "section_title": "10.1 部署安全",
+      "block_type": "paragraph",
+      "text": "产品北向属于安全重点关注区域，用户网络环境应在北向数据出口部署防火墙、防恶意代码\n设备、IDS 等安全设备，构建安全的北向安全网络。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        189.906,
+        462.366,
+        214.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AFA75AA365265142",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "17",
+      "block_order": 3,
+      "section_id": "SEC-FFD461FD8D8D686E",
+      "section_path": [
+        "10 安全配置指南",
+        "10.1 部署安全"
+      ],
+      "section_title": "10.1 部署安全",
+      "block_type": "paragraph",
+      "text": "产品南向属于近端网络部署，网络环境相对安全，但并非绝对安全，建议：",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        224.906,
+        399.366,
+        235.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AFED3332E2924093",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "17",
+      "block_order": 4,
+      "section_id": "SEC-FFD461FD8D8D686E",
+      "section_path": [
+        "10 安全配置指南",
+        "10.1 部署安全"
+      ],
+      "section_title": "10.1 部署安全",
+      "block_type": "list",
+      "text": "•\n南向和北向网络使用独立的交换机进行部署，网络隔离。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        239.906,
+        341.541,
+        250.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EB131CDE5EBDAAA4",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "17",
+      "block_order": 5,
+      "section_id": "SEC-FFD461FD8D8D686E",
+      "section_path": [
+        "10 安全配置指南",
+        "10.1 部署安全"
+      ],
+      "section_title": "10.1 部署安全",
+      "block_type": "list",
+      "text": "•\n南向设备对本产品来说，属于三方设备，是否会对网络安全造成威胁由用户来保障。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        254.906,
+        449.541,
+        265.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

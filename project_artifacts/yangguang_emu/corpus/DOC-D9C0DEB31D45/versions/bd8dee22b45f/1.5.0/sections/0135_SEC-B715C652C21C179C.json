@@ -1,0 +1,170 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-B715C652C21C179C",
+  "section_path": [
+    "7 Web界面",
+    "7.10 系统",
+    "7.10.7 端口参数",
+    "7.10.7.1 RS485"
+  ],
+  "section_title": "7.10.7.1 RS485",
+  "start_pdf_page": 82,
+  "end_pdf_page": 82,
+  "blocks": [
+    {
+      "block_id": "BLK-2167C50D9C68B56F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 0,
+      "section_id": "SEC-B715C652C21C179C",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.7 端口参数",
+        "7.10.7.1 RS485"
+      ],
+      "section_title": "7.10.7.1 RS485",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-788DFADD83BC0251",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 1,
+      "section_id": "SEC-B715C652C21C179C",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.7 端口参数",
+        "7.10.7.1 RS485"
+      ],
+      "section_title": "7.10.7.1 RS485",
+      "block_type": "table",
+      "text": "单\n将\n单\n解\n配\n保\n单\n置\n--\n6\n配\n单\n在\n单\n导\n（\n--\n端\n配\n1\n单\n单\n如\t开启GOOSE 转发服务功能后，必须确\n要求，否则逆变器可能无法完全响应目\n• 有功功率调节：调度间隔需为60 毫\n• 无功功率调节：调度间隔需为30 毫\n击系统 > 转发配置 > GOOSE，进入GOOS\n开关设置为使能。\n击配置文件导出，可将GOOSE 数据配置文\n压导出的压缩包，使用Excel 打开压缩包中\n置文件。\n存重新设置后的GOOSE 数据配置文件。\n击配置文件导入，选择保存后的GOOSE 数\n文件导入。\n结束\n可开启防重放功能，降低重放攻击风险\n转发MMS 服务配置\n置数据采集器转发MMS 服务。\n击 系统 > 转发配置 > MMS， 进入MMS 界\n开关 下拉框选择 使能 。默认情况下开关为\n击配置文件导入，导入.zip 格式的配置文件。\n入完成后需重启后生效，单击确定。 单击配\n可选）单击配置文件导出，可将已导入生效\n结束\n口参数\n置数据采集器端口参数。\nRS485\n击系统 > 端口参数 > RS485，进入RS485\n击 ，可修改波特率、校验位、停止位及P\n下所示。\t\n\t\t保后台下发的调度指令的间\n标值。\n秒或以上。\n秒或以上。\n\t\tE 界面。\n件导出至本地。\n的.cfg 文件，可查看并重新\n据配置文件，单击打开，完\n\t\t，可根据需要设置检测时间\n\t\t面。\n禁止状态。\n置文件\n后的配置文件导出到本地。\n界面。\nLC 接入信息，各个端口对\n\t参数名称\t默认参数值\n\t端口功能\t采集",
+      "table_cells": [
+        [
+          "单\n将\n单\n解\n配\n保\n单\n置\n--\n6\n配\n单\n在\n单\n导\n（\n--\n端\n配\n1\n单\n单\n如",
+          "开启GOOSE 转发服务功能后，必须确\n要求，否则逆变器可能无法完全响应目\n• 有功功率调节：调度间隔需为60 毫\n• 无功功率调节：调度间隔需为30 毫\n击系统 > 转发配置 > GOOSE，进入GOOS\n开关设置为使能。\n击配置文件导出，可将GOOSE 数据配置文\n压导出的压缩包，使用Excel 打开压缩包中\n置文件。\n存重新设置后的GOOSE 数据配置文件。\n击配置文件导入，选择保存后的GOOSE 数\n文件导入。\n结束\n可开启防重放功能，降低重放攻击风险\n转发MMS 服务配置\n置数据采集器转发MMS 服务。\n击 系统 > 转发配置 > MMS， 进入MMS 界\n开关 下拉框选择 使能 。默认情况下开关为\n击配置文件导入，导入.zip 格式的配置文件。\n入完成后需重启后生效，单击确定。 单击配\n可选）单击配置文件导出，可将已导入生效\n结束\n口参数\n置数据采集器端口参数。\nRS485\n击系统 > 端口参数 > RS485，进入RS485\n击 ，可修改波特率、校验位、停止位及P\n下所示。",
+          null
+        ],
+        [
+          null,
+          null,
+          "保后台下发的调度指令的间\n标值。\n秒或以上。\n秒或以上。"
+        ],
+        [
+          null,
+          null,
+          "E 界面。\n件导出至本地。\n的.cfg 文件，可查看并重新\n据配置文件，单击打开，完"
+        ],
+        [
+          null,
+          null,
+          "，可根据需要设置检测时间"
+        ],
+        [
+          null,
+          null,
+          "面。\n禁止状态。\n置文件\n后的配置文件导出到本地。\n界面。\nLC 接入信息，各个端口对"
+        ],
+        [
+          null,
+          "参数名称",
+          "默认参数值"
+        ],
+        [
+          null,
+          "端口功能",
+          "采集"
+        ]
+      ],
+      "bbox": [
+        87.563,
+        60.375,
+        375.566,
+        637.039
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-763DD0DF8E16A74B",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 2,
+      "section_id": "SEC-B715C652C21C179C",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.7 端口参数",
+        "7.10.7.1 RS485"
+      ],
+      "section_title": "7.10.7.1 RS485",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击",
+      "table_cells": null,
+      "bbox": [
+        56.695,
+        563.523,
+        105.565,
+        576.006
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BF64D98C12519E50",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 3,
+      "section_id": "SEC-B715C652C21C179C",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.7 端口参数",
+        "7.10.7.1 RS485"
+      ],
+      "section_title": "7.10.7.1 RS485",
+      "block_type": "paragraph",
+      "text": "波特率\n9600",
+      "table_cells": null,
+      "bbox": [
+        96.234,
+        642.945,
+        290.847,
+        653.898
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

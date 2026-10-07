@@ -1,0 +1,292 @@
+{
+  "schema_version": "workflow_progress.v2",
+  "run_id": "emu-node012-v9",
+  "saved_at": "2026-09-18T10:44:55.317834+00:00",
+  "completed_node": "build_product_context",
+  "state": {
+    "evidence_packet_ref": {
+      "packet_id": "yangguang_emu_node_0_3",
+      "packet_version": 2,
+      "project_id": "yangguang_emu",
+      "packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+      "manifest_sha256": "3dcf5b466628209d69b62ee49402b9d05a6918db76e8288042818407e06857a2",
+      "config_sha256": "7189e425f0fad61ddcac685105c87c07aba1825821c4bb3e755a07d39e71335a",
+      "parser_name": "pymupdf-page-section-parser",
+      "parser_version": "1.5.0",
+      "document_ids": [
+        "DOC-5067B181346D",
+        "DOC-DF116E7199E2",
+        "DOC-D9C0DEB31D45"
+      ],
+      "block_count": 1041
+    },
+    "scope": {
+      "product_name": "能量管理单元EMU300A",
+      "product_version": null,
+      "classification": {
+        "is_pde": null,
+        "classification": null,
+        "has_rdps": null,
+        "rdps_description": "材料证明EMU300A具备通过4G路由器或通用路由器直连阳光云平台、以及通过IEC104/MQTT等协议北向转发至站控系统（如Insight、SCADA）的能力；但阳光云平台运营方归属、该连接对远程调度/数据上报功能的必要性、客户授权后的责任划分（如数据处理者角色）、断网降级行为及密钥管理责任等RDPS核心判定要素均无证据支持。",
+        "applicable_annex": null,
+        "overlapping_regulations": null
+      },
+      "scope_description": "评估范围主体为能量管理单元EMU300A设备本体，含内置Logger5000数据采集器、开关电源、防雷模块、微型断路器及标准通信接口（RS485、以太网、MPLC）；南向接入光伏发电系统中逆变器、箱变、电表、环境监测仪等第三方设备；北向支持经核心交换机至站控系统（Insight/SCADA）或经4G路由器至阳光云平台的双路径数据转发与指令接收；外部依赖包括客户侧核心交换机、4G路由器、阳光云平台及第三方站控系统；选配组件（如光纤交换机、PID&ISO控制盒、光纤终端盒）及其配套线缆（RS485端子线缆、交流熔丝盒线缆、接地端子线缆）明确排除在标准供货范围外。",
+      "in_scope_components": [
+        "EMU300A设备本体",
+        "内置Logger5000数据采集器",
+        "以太网通信接口",
+        "MPLC通信接口",
+        "南向设备接入能力（逆变器、箱变、电表、环境监测仪）",
+        "北向数据转发能力（IEC104、Modbus、MQTT、GOOSE协议栈）",
+        "本地调度指令执行功能"
+      ],
+      "conditional_scope_components": [
+        "RS485通信接口（范围分类冲突，待确认）",
+        "PLC总线接入能力（仅适用于阳光电源生产的具备PLC功能的组串式逆变器，具体型号适配性待确认）",
+        "有功/无功功率控制功能（依赖南向设备兼容性及合同约定的技术协议）",
+        "4G路由器直连阳光云功能（需客户手动授权启用，且依赖4G路由器归属及部署状态）",
+        "光纤环网组网能力（依赖光纤交换机与光纤终端盒选配，二者须配套使用）",
+        "PID&ISO控制盒功能（可选配置，其存在与否影响具体控制能力边界）"
+      ],
+      "out_of_scope_components": [
+        "光纤终端盒（明确为选配，不包含在标准供货范围内）",
+        "光纤环网交换机（明确为选配，不包含在标准供货范围内）",
+        "交流熔丝盒线缆（明确未包含在供货范围内）",
+        "接地端子线缆（明确未包含在供货范围内）"
+      ],
+      "assumptions": [
+        "EMU300A交付BOM中是否包含4G路由器，或该设备由客户侧提供？",
+        "阳光云平台是否由阳光电源运营，且其是否为远程调度指令接收与执行的唯一必需通道？",
+        "若阳光云连接未启用，EMU300A是否仍能独立完成全部本地调度及南向设备控制功能？",
+        "请确认以下说法是否成立：‘核心交换机’是EMU300A内置组件还是客户现场已有基础设施？",
+        "本项目合同是否已明确启用阳光云服务及对应的数据处理责任分配？"
+      ],
+      "review_notes": [
+        "已忽略模型生成的审阅备注；本栏只记录系统确定性降级。",
+        "已将 1 个假设答案降级为待确认问题。",
+        "已移除 1 条不能独立支撑范围事实的低信息证据。",
+        "已将 1 个跨范围状态冲突的对象降级为条件范围，等待人工确认。"
+      ],
+      "legal_basis": [],
+      "evidence": [
+        {
+          "evidence_id": "EVD-001",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-0FE6A5150E10C5BC",
+            "parser_version": "1.5.0",
+            "page_number": 12,
+            "printed_page_label": "8",
+            "section_path": [
+              "5 产品功能及部署情况介绍"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\n云平台，可接收北向远程调度指令或执行本地调度指令。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "retrieved_by": "pdf_parser_v3.1",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+          "created_at": "2024-06-15T08:22:34Z"
+        },
+        {
+          "evidence_id": "EVD-002",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-F8028F7583C31F09",
+            "parser_version": "1.5.0",
+            "page_number": 21,
+            "printed_page_label": "17",
+            "section_path": [
+              "10 安全配置指南",
+              "10.3 协议配置"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "•\nMODBUS/IEC104/GOOSE 协议默认关闭状态。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "retrieved_by": "pdf_parser_v3.1",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+          "created_at": "2024-06-15T08:22:34Z"
+        },
+        {
+          "evidence_id": "EVD-004",
+          "source": {
+            "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-5067B181346D",
+            "block_id": "BLK-D844E7AC55AEA6FE",
+            "parser_version": "1.5.0",
+            "page_number": 55,
+            "printed_page_label": "49",
+            "section_path": [
+              "7 附录A：技术参数"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+          },
+          "quote": "内含Logger5000（含电压电流采样接口）、开关电源、\n防雷模块、微型断路 器、MPLC（可选1 或2）、\nPID&ISO 控制盒（可选）、光纤交换机 （可选）、光纤\n终端盒（可选）、IO 模组（可选）\n适用区域：国内",
+          "evidence_level": "direct",
+          "confidence": "medium",
+          "retrieved_by": "pdf_parser_v3.1",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+          "created_at": "2024-06-15T08:22:34Z"
+        },
+        {
+          "evidence_id": "EVD-005",
+          "source": {
+            "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-5067B181346D",
+            "block_id": "BLK-EBE329C3EFA80ACF",
+            "parser_version": "1.5.0",
+            "page_number": 16,
+            "printed_page_label": "10",
+            "section_path": [
+              "2 产品介绍",
+              "2.2 主要特点"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+          },
+          "quote": "数据采集器将数据转发至阳光云平台的功能默认不可用。启用该功能前，客户需在充\n分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获\n得客户授权后方可生效，且相关操作受系统访问控制策略管理。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "retrieved_by": "pdf_parser_v3.1",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+          "created_at": "2024-06-15T08:22:34Z"
+        }
+      ]
+    },
+    "product_context": null,
+    "risk_methodology": null,
+    "risk_acceptance_criteria": null,
+    "assets": [],
+    "asset_assessment": null,
+    "asset_notes": null,
+    "asset_review_approved": false,
+    "asset_review_notes": null,
+    "threat_assessment": null,
+    "errors": [
+      "Node [1] context/method extraction failed: Extraction failed after 3 attempts. Last error: 1 validation error for FieldExtractionResult\n  Value error, conditions must be a non-empty list with at most 10 items [type=value_error, input_value={'node_id': 'node_1', 'fi...], 'contradictions': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error"
+    ],
+    "current_step": "node_1_product_context",
+    "status": "node_1_failed"
+  },
+  "evidence_trace": [
+    {
+      "evidence_id": "EVD-001",
+      "used_by": [
+        "scope.evidence[0]"
+      ],
+      "document_id": "DOC-DF116E7199E2",
+      "block_id": "BLK-0FE6A5150E10C5BC",
+      "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+      "file_type": "pdf",
+      "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "page_number": 12,
+      "printed_page_label": "8",
+      "section_path": [
+        "5 产品功能及部署情况介绍"
+      ],
+      "quote": "能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\n云平台，可接收北向远程调度指令或执行本地调度指令。",
+      "evidence_level": "direct",
+      "confidence": "high",
+      "retrieved_by": "pdf_parser_v3.1",
+      "is_human_confirmed": false,
+      "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。"
+    },
+    {
+      "evidence_id": "EVD-002",
+      "used_by": [
+        "scope.evidence[1]"
+      ],
+      "document_id": "DOC-DF116E7199E2",
+      "block_id": "BLK-F8028F7583C31F09",
+      "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+      "file_type": "pdf",
+      "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "page_number": 21,
+      "printed_page_label": "17",
+      "section_path": [
+        "10 安全配置指南",
+        "10.3 协议配置"
+      ],
+      "quote": "•\nMODBUS/IEC104/GOOSE 协议默认关闭状态。",
+      "evidence_level": "direct",
+      "confidence": "high",
+      "retrieved_by": "pdf_parser_v3.1",
+      "is_human_confirmed": false,
+      "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。"
+    },
+    {
+      "evidence_id": "EVD-004",
+      "used_by": [
+        "scope.evidence[2]"
+      ],
+      "document_id": "DOC-5067B181346D",
+      "block_id": "BLK-D844E7AC55AEA6FE",
+      "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+      "file_type": "pdf",
+      "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "page_number": 55,
+      "printed_page_label": "49",
+      "section_path": [
+        "7 附录A：技术参数"
+      ],
+      "quote": "内含Logger5000（含电压电流采样接口）、开关电源、\n防雷模块、微型断路 器、MPLC（可选1 或2）、\nPID&ISO 控制盒（可选）、光纤交换机 （可选）、光纤\n终端盒（可选）、IO 模组（可选）\n适用区域：国内",
+      "evidence_level": "direct",
+      "confidence": "medium",
+      "retrieved_by": "pdf_parser_v3.1",
+      "is_human_confirmed": false,
+      "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。"
+    },
+    {
+      "evidence_id": "EVD-005",
+      "used_by": [
+        "scope.evidence[3]"
+      ],
+      "document_id": "DOC-5067B181346D",
+      "block_id": "BLK-EBE329C3EFA80ACF",
+      "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+      "file_type": "pdf",
+      "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "page_number": 16,
+      "printed_page_label": "10",
+      "section_path": [
+        "2 产品介绍",
+        "2.2 主要特点"
+      ],
+      "quote": "数据采集器将数据转发至阳光云平台的功能默认不可用。启用该功能前，客户需在充\n分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获\n得客户授权后方可生效，且相关操作受系统访问控制策略管理。",
+      "evidence_level": "direct",
+      "confidence": "high",
+      "retrieved_by": "pdf_parser_v3.1",
+      "is_human_confirmed": false,
+      "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。"
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-4170371B1C0B5F01",
+  "section_path": [
+    "7 Web界面",
+    "7.5 设备监控",
+    "7.5.13 离散率分析",
+    "7.5.13.4 查看诊断结果"
+  ],
+  "section_title": "7.5.13.4 查看诊断结果",
+  "start_pdf_page": 55,
+  "end_pdf_page": 55,
+  "blocks": [
+    {
+      "block_id": "BLK-082AACF4DF2DCFE2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "45",
+      "block_order": 0,
+      "section_id": "SEC-4170371B1C0B5F01",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果"
+      ],
+      "section_title": "7.5.13.4 查看诊断结果",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.619,
+        48.088,
+        463.966,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F7F0413EE65331F8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "45",
+      "block_order": 1,
+      "section_id": "SEC-4170371B1C0B5F01",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果"
+      ],
+      "section_title": "7.5.13.4 查看诊断结果",
+      "block_type": "paragraph",
+      "text": "c. 在安装角度下拉列表中，选择方阵内的光伏组件安装角度是否一致。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        72.906,
+        385.911,
+        83.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-85FD4E6415CE2E13",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "45",
+      "block_order": 2,
+      "section_id": "SEC-4170371B1C0B5F01",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果"
+      ],
+      "section_title": "7.5.13.4 查看诊断结果",
+      "block_type": "list",
+      "text": "•\n一致：光伏组件的倾斜角度和朝向均一致。如下图（a）。",
+      "table_cells": null,
+      "bbox": [
+        115.911,
+        89.406,
+        360.09,
+        100.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-632663F390902117",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "45",
+      "block_order": 3,
+      "section_id": "SEC-4170371B1C0B5F01",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果"
+      ],
+      "section_title": "7.5.13.4 查看诊断结果",
+      "block_type": "list",
+      "text": "•\n不一致：光伏组件的倾斜角度或朝向不一致。如下图（b）、（c）。",
+      "table_cells": null,
+      "bbox": [
+        115.911,
+        104.406,
+        400.59,
+        115.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-245530B549DD22B7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "45",
+      "block_order": 4,
+      "section_id": "SEC-4170371B1C0B5F01",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果"
+      ],
+      "section_title": "7.5.13.4 查看诊断结果",
+      "block_type": "paragraph",
+      "text": "步骤 4 单击确认。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        199.927,
+        146.736,
+        212.41
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1F80E56FC47AA880",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "45",
+      "block_order": 5,
+      "section_id": "SEC-4170371B1C0B5F01",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果"
+      ],
+      "section_title": "7.5.13.4 查看诊断结果",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        216.499,
+        126.36,
+        227.452
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FD811072E9F4E903",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "45",
+      "block_order": 20,
+      "section_id": "SEC-4170371B1C0B5F01",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果"
+      ],
+      "section_title": "7.5.13.4 查看诊断结果",
+      "block_type": "heading",
+      "text": "7.5.13.4 查看诊断结果",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        520.283,
+        171.76,
+        532.453
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B9B953CB669D3F86",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "45",
+      "block_order": 21,
+      "section_id": "SEC-4170371B1C0B5F01",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果"
+      ],
+      "section_title": "7.5.13.4 查看诊断结果",
+      "block_type": "paragraph",
+      "text": "诊断完成后，用户可以查看光伏方阵内逆变器的离散等级、离散率数据列表及告警信息。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        539.507,
+        433.866,
+        549.852
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

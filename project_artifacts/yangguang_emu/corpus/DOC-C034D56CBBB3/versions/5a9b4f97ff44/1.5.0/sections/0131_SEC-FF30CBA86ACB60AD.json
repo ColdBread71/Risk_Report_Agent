@@ -1,0 +1,269 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-FF30CBA86ACB60AD",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.16 查看固件版本"
+  ],
+  "section_title": "7.8.16 查看固件版本",
+  "start_pdf_page": 86,
+  "end_pdf_page": 86,
+  "blocks": [
+    {
+      "block_id": "BLK-7A6BED2595559D6F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 86,
+      "printed_page_label": "76",
+      "block_order": 0,
+      "section_id": "SEC-FF30CBA86ACB60AD",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.16 查看固件版本"
+      ],
+      "section_title": "7.8.16 查看固件版本",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-88EF4B583883E153",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 86,
+      "printed_page_label": "76",
+      "block_order": 1,
+      "section_id": "SEC-FF30CBA86ACB60AD",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.16 查看固件版本"
+      ],
+      "section_title": "7.8.16 查看固件版本",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        71.556,
+        112.187,
+        82.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E011F362E276CA28",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 86,
+      "printed_page_label": "76",
+      "block_order": 2,
+      "section_id": "SEC-FF30CBA86ACB60AD",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.16 查看固件版本"
+      ],
+      "section_title": "7.8.16 查看固件版本",
+      "block_type": "heading",
+      "text": "7.8.16 查看固件版本",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        97.79,
+        149.247,
+        109.96
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-33DDF431C12E066D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 86,
+      "printed_page_label": "76",
+      "block_order": 3,
+      "section_id": "SEC-FF30CBA86ACB60AD",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.16 查看固件版本"
+      ],
+      "section_title": "7.8.16 查看固件版本",
+      "block_type": "paragraph",
+      "text": "查看数据采集器的固件信息。",
+      "table_cells": null,
+      "bbox": [
+        88.191,
+        117.014,
+        198.691,
+        127.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C292C284C2B4EF99",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 86,
+      "printed_page_label": "76",
+      "block_order": 4,
+      "section_id": "SEC-FF30CBA86ACB60AD",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.16 查看固件版本"
+      ],
+      "section_title": "7.8.16 查看固件版本",
+      "block_type": "paragraph",
+      "text": "步骤 1 导航栏中点击关于，跳转至相应页面。",
+      "table_cells": null,
+      "bbox": [
+        56.689,
+        142.434,
+        240.559,
+        154.917
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CA8EFE9A6C7FCBDA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 86,
+      "printed_page_label": "76",
+      "block_order": 5,
+      "section_id": "SEC-FF30CBA86ACB60AD",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.16 查看固件版本"
+      ],
+      "section_title": "7.8.16 查看固件版本",
+      "block_type": "paragraph",
+      "text": "步骤 2 点击5 次版本对应的字段，查看数据采集器的版本信息。",
+      "table_cells": null,
+      "bbox": [
+        56.689,
+        158.934,
+        313.063,
+        171.417
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-669702E4443D45A0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 86,
+      "printed_page_label": "76",
+      "block_order": 6,
+      "section_id": "SEC-FF30CBA86ACB60AD",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.16 查看固件版本"
+      ],
+      "section_title": "7.8.16 查看固件版本",
+      "block_type": "paragraph",
+      "text": "数据采集器的固件版本即产品发布软件版本，版本号格式为：“LOGGER-\nSV400.001.00.P[XXX]”。用户可通过“P[XXX]”部分识别具体的固件版本。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        271.212,
+        376.13,
+        295.665
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-76290E9AD0C5119D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 86,
+      "printed_page_label": "76",
+      "block_order": 7,
+      "section_id": "SEC-FF30CBA86ACB60AD",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.16 查看固件版本"
+      ],
+      "section_title": "7.8.16 查看固件版本",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        485.652,
+        112.187,
+        496.605
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FE63CD27CA5BAF47",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 86,
+      "printed_page_label": "76",
+      "block_order": 8,
+      "section_id": "SEC-FF30CBA86ACB60AD",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.16 查看固件版本"
+      ],
+      "section_title": "7.8.16 查看固件版本",
+      "block_type": "paragraph",
+      "text": "如需在阳光云上添加本台数据采集器，可使用阳光云App 扫描关于页的二维码。阳\n光云将自动识别数据采集器的序列号信息。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        502.952,
+        441.704,
+        524.705
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

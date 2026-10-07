@@ -1,0 +1,43 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-C85DFB80046B3BAD",
+  "section_path": [
+    "5 电气连接",
+    "5.4 与逆变器连接"
+  ],
+  "section_title": "5.4 与逆变器连接",
+  "start_pdf_page": 29,
+  "end_pdf_page": 29,
+  "blocks": [
+    {
+      "block_id": "BLK-0F43511AA6CBDDE0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "19",
+      "block_order": 17,
+      "section_id": "SEC-C85DFB80046B3BAD",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接"
+      ],
+      "section_title": "5.4 与逆变器连接",
+      "block_type": "heading",
+      "text": "5.4 与逆变器连接",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        449.996,
+        167.043,
+        464.6
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

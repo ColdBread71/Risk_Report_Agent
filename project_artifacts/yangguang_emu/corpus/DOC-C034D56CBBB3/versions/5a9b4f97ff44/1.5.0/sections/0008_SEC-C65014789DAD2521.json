@@ -1,0 +1,423 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-C65014789DAD2521",
+  "section_path": [
+    "2 产品描述",
+    "2.3 产品介绍"
+  ],
+  "section_title": "2.3 产品介绍",
+  "start_pdf_page": 17,
+  "end_pdf_page": 18,
+  "blocks": [
+    {
+      "block_id": "BLK-6790F16D44F40218",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "7",
+      "block_order": 0,
+      "section_id": "SEC-C65014789DAD2521",
+      "section_path": [
+        "2 产品描述",
+        "2.3 产品介绍"
+      ],
+      "section_title": "2.3 产品介绍",
+      "block_type": "paragraph",
+      "text": "用户手册\n2 产品描述",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F568A147017899B5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "7",
+      "block_order": 1,
+      "section_id": "SEC-C65014789DAD2521",
+      "section_path": [
+        "2 产品描述",
+        "2.3 产品介绍"
+      ],
+      "section_title": "2.3 产品介绍",
+      "block_type": "paragraph",
+      "text": "路由器和防火墙不在供货范围内，由客户自行购买。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        78.056,
+        336.366,
+        89.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C5DB653D396F3168",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "7",
+      "block_order": 2,
+      "section_id": "SEC-C65014789DAD2521",
+      "section_path": [
+        "2 产品描述",
+        "2.3 产品介绍"
+      ],
+      "section_title": "2.3 产品介绍",
+      "block_type": "heading",
+      "text": "2.3 产品介绍",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        121.458,
+        143.046,
+        136.062
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4CC340324ED6216C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "7",
+      "block_order": 3,
+      "section_id": "SEC-C65014789DAD2521",
+      "section_path": [
+        "2 产品描述",
+        "2.3 产品介绍"
+      ],
+      "section_title": "2.3 产品介绍",
+      "block_type": "paragraph",
+      "text": "外观",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        147.756,
+        120.366,
+        158.709
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CABFEF3448E1337D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "7",
+      "block_order": 4,
+      "section_id": "SEC-C65014789DAD2521",
+      "section_path": [
+        "2 产品描述",
+        "2.3 产品介绍"
+      ],
+      "section_title": "2.3 产品介绍",
+      "block_type": "table",
+      "text": "编号\t说明\t\t\t\nA\t指示灯\t\t\t\nB\t安装挂耳\t\t\t\nC\t接线端子\t\t\t\n示灯\t\t\t\t\n指示灯\t\t名称\t状态\t状态说明\nPWR\t\t电源指示灯\t常亮\t供电正常\n\t\t\t灭\t供电异常\n\t\t\t闪烁\t运行正常",
+      "table_cells": [
+        [
+          "编号",
+          "说明",
+          null,
+          null,
+          null
+        ],
+        [
+          "A",
+          "指示灯",
+          null,
+          null,
+          null
+        ],
+        [
+          "B",
+          "安装挂耳",
+          null,
+          null,
+          null
+        ],
+        [
+          "C",
+          "接线端子",
+          null,
+          null,
+          null
+        ],
+        [
+          "示灯",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "指示灯",
+          null,
+          "名称",
+          "状态",
+          "状态说明"
+        ],
+        [
+          "PWR",
+          null,
+          "电源指示灯",
+          "常亮",
+          "供电正常"
+        ],
+        [
+          null,
+          null,
+          null,
+          "灭",
+          "供电异常"
+        ],
+        [
+          null,
+          null,
+          null,
+          "闪烁",
+          "运行正常"
+        ]
+      ],
+      "bbox": [
+        111.034,
+        434.544,
+        361.546,
+        630.955
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-86FBB86338997E36",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "7",
+      "block_order": 5,
+      "section_id": "SEC-C65014789DAD2521",
+      "section_path": [
+        "2 产品描述",
+        "2.3 产品介绍"
+      ],
+      "section_title": "2.3 产品介绍",
+      "block_type": "paragraph",
+      "text": "RUN\n运行指示灯",
+      "table_cells": null,
+      "bbox": [
+        111.034,
+        625.861,
+        240.108,
+        636.814
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F6847BA941E436F1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "7",
+      "block_order": 6,
+      "section_id": "SEC-C65014789DAD2521",
+      "section_path": [
+        "2 产品描述",
+        "2.3 产品介绍"
+      ],
+      "section_title": "2.3 产品介绍",
+      "block_type": "paragraph",
+      "text": "灭/常亮\n运行异常",
+      "table_cells": null,
+      "bbox": [
+        263.727,
+        636.861,
+        361.546,
+        647.814
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-913DDF57E49C17B1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "8",
+      "block_order": 0,
+      "section_id": "SEC-C65014789DAD2521",
+      "section_path": [
+        "2 产品描述",
+        "2.3 产品介绍"
+      ],
+      "section_title": "2.3 产品介绍",
+      "block_type": "paragraph",
+      "text": "用户手册\n2 产品描述",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-447343B35A3A69F1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "8",
+      "block_order": 1,
+      "section_id": "SEC-C65014789DAD2521",
+      "section_path": [
+        "2 产品描述",
+        "2.3 产品介绍"
+      ],
+      "section_title": "2.3 产品介绍",
+      "block_type": "table",
+      "text": "指示灯\t名称\t状态\t状态说明\nWLAN\tWLAN 指示\n灯\t灭\t暂无WLAN 功能支持\n\t\t常亮\t所接逆变器存在告警或故障",
+      "table_cells": [
+        [
+          "指示灯",
+          "名称",
+          "状态",
+          "状态说明"
+        ],
+        [
+          "WLAN",
+          "WLAN 指示\n灯",
+          "灭",
+          "暂无WLAN 功能支持"
+        ],
+        [
+          null,
+          null,
+          "常亮",
+          "所接逆变器存在告警或故障"
+        ]
+      ],
+      "bbox": [
+        96.861,
+        74.539,
+        419.373,
+        145.2
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A5E09127C059BC90",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "8",
+      "block_order": 2,
+      "section_id": "SEC-C65014789DAD2521",
+      "section_path": [
+        "2 产品描述",
+        "2.3 产品介绍"
+      ],
+      "section_title": "2.3 产品介绍",
+      "block_type": "paragraph",
+      "text": "FAULT\n故障指示灯",
+      "table_cells": null,
+      "bbox": [
+        96.861,
+        140.106,
+        225.935,
+        151.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-869B055738CBEDF9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "8",
+      "block_order": 3,
+      "section_id": "SEC-C65014789DAD2521",
+      "section_path": [
+        "2 产品描述",
+        "2.3 产品介绍"
+      ],
+      "section_title": "2.3 产品介绍",
+      "block_type": "paragraph",
+      "text": "灭\n所接逆变器无故障",
+      "table_cells": null,
+      "bbox": [
+        249.554,
+        151.106,
+        383.373,
+        162.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AD3F6D54C2F16930",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "8",
+      "block_order": 4,
+      "section_id": "SEC-C65014789DAD2521",
+      "section_path": [
+        "2 产品描述",
+        "2.3 产品介绍"
+      ],
+      "section_title": "2.3 产品介绍",
+      "block_type": "paragraph",
+      "text": "外观尺寸",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        183.506,
+        124.193,
+        194.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,359 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-33B947D6A7F46E39",
+  "section_path": [
+    "5 电气连接",
+    "5.6 与电表连接",
+    "5.6.1 RS485通讯接线"
+  ],
+  "section_title": "5.6.1 RS485通讯接线",
+  "start_pdf_page": 35,
+  "end_pdf_page": 35,
+  "blocks": [
+    {
+      "block_id": "BLK-E8FEE375DD0F989C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 35,
+      "printed_page_label": "25",
+      "block_order": 0,
+      "section_id": "SEC-33B947D6A7F46E39",
+      "section_path": [
+        "5 电气连接",
+        "5.6 与电表连接",
+        "5.6.1 RS485通讯接线"
+      ],
+      "section_title": "5.6.1 RS485通讯接线",
+      "block_type": "paragraph",
+      "text": "用户手册\n5 电气连接",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-67C8B8B640E6BF5E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 35,
+      "printed_page_label": "25",
+      "block_order": 1,
+      "section_id": "SEC-33B947D6A7F46E39",
+      "section_path": [
+        "5 电气连接",
+        "5.6 与电表连接",
+        "5.6.1 RS485通讯接线"
+      ],
+      "section_title": "5.6.1 RS485通讯接线",
+      "block_type": "table",
+      "text": "品牌\t电表通讯端口\t端口定义\t协议类型\t\t接线方式\n\t威胜\t24\tRS485-A\tModbus\tRTU\nRTU\nRTU\nRTU\nRTU\nRTU\nRTU\nRTU\nRTU\t5.6.1 RS4\n线\n\t\t25\tRS485-B\tModbus\t\t\n\t\t26\t公共地\tModbus\t\t\n\t\t27\tRS485-A\tModbus\t\t\n\t\t28\tRS485-B\tModbus\t\t\n\t安科瑞\t21\tRS485-A\tModbus\t\t\n\t\t22\tRS485-B\tModbus\t\t\n\t魏德米勒\nEM610\t17\tRS485-A\nRS485-B\tModbus\t\t\n\t\t16\t\t\t\t\n\tJanitza\nUMG604\t22\tRS485-B\nRS485-A\tModbus\t\t\n\t\t23\t\t\t\t\n\t\tEthernet\t以太网\tModbus\tTCP\t5.6.2 以太\n线",
+      "table_cells": [
+        [
+          null,
+          "品牌",
+          "电表通讯端口",
+          "端口定义",
+          "协议类型",
+          null,
+          "接线方式"
+        ],
+        [
+          null,
+          "威胜",
+          "24",
+          "RS485-A",
+          "Modbus",
+          "RTU\nRTU\nRTU\nRTU\nRTU\nRTU\nRTU\nRTU\nRTU",
+          "5.6.1 RS4\n线"
+        ],
+        [
+          null,
+          null,
+          "25",
+          "RS485-B",
+          "Modbus",
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "26",
+          "公共地",
+          "Modbus",
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "27",
+          "RS485-A",
+          "Modbus",
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "28",
+          "RS485-B",
+          "Modbus",
+          null,
+          null
+        ],
+        [
+          null,
+          "安科瑞",
+          "21",
+          "RS485-A",
+          "Modbus",
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "22",
+          "RS485-B",
+          "Modbus",
+          null,
+          null
+        ],
+        [
+          null,
+          "魏德米勒\nEM610",
+          "17",
+          "RS485-A\nRS485-B",
+          "Modbus",
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "16",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Janitza\nUMG604",
+          "22",
+          "RS485-B\nRS485-A",
+          "Modbus",
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "23",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "Ethernet",
+          "以太网",
+          "Modbus",
+          "TCP",
+          "5.6.2 以太\n线"
+        ]
+      ],
+      "bbox": [
+        101.736,
+        76.539,
+        416.736,
+        367.2
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-65F7F069F98B6B80",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 35,
+      "printed_page_label": "25",
+      "block_order": 2,
+      "section_id": "SEC-33B947D6A7F46E39",
+      "section_path": [
+        "5 电气连接",
+        "5.6 与电表连接",
+        "5.6.1 RS485通讯接线"
+      ],
+      "section_title": "5.6.1 RS485通讯接线",
+      "block_type": "heading",
+      "text": "5.6.1 RS485 通讯接\n线",
+      "table_cells": null,
+      "bbox": [
+        377.809,
+        198.856,
+        457.099,
+        223.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F248C629325118B4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 35,
+      "printed_page_label": "25",
+      "block_order": 3,
+      "section_id": "SEC-33B947D6A7F46E39",
+      "section_path": [
+        "5 电气连接",
+        "5.6 与电表连接",
+        "5.6.1 RS485通讯接线"
+      ],
+      "section_title": "5.6.1 RS485通讯接线",
+      "block_type": "heading",
+      "text": "5.6.1 RS485 通讯接线",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        393.54,
+        168.436,
+        405.71
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-253962886A367B41",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 35,
+      "printed_page_label": "25",
+      "block_order": 4,
+      "section_id": "SEC-33B947D6A7F46E39",
+      "section_path": [
+        "5 电气连接",
+        "5.6 与电表连接",
+        "5.6.1 RS485通讯接线"
+      ],
+      "section_title": "5.6.1 RS485通讯接线",
+      "block_type": "paragraph",
+      "text": "步骤 1 将从电表引出的RS485 线缆，引入数据采集器接线区域。",
+      "table_cells": null,
+      "bbox": [
+        70.867,
+        417.434,
+        331.75,
+        429.917
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-58941E23A7F9BA27",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 35,
+      "printed_page_label": "25",
+      "block_order": 5,
+      "section_id": "SEC-33B947D6A7F46E39",
+      "section_path": [
+        "5 电气连接",
+        "5.6 与电表连接",
+        "5.6.1 RS485通讯接线"
+      ],
+      "section_title": "5.6.1 RS485通讯接线",
+      "block_type": "paragraph",
+      "text": "步骤 2 使用剥线钳剥去通讯线缆的防护层和绝缘层，如下图所示。",
+      "table_cells": null,
+      "bbox": [
+        70.867,
+        433.934,
+        335.737,
+        446.417
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DA53D08D6BF1CDC8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 35,
+      "printed_page_label": "25",
+      "block_order": 6,
+      "section_id": "SEC-33B947D6A7F46E39",
+      "section_path": [
+        "5 电气连接",
+        "5.6 与电表连接",
+        "5.6.1 RS485通讯接线"
+      ],
+      "section_title": "5.6.1 RS485通讯接线",
+      "block_type": "paragraph",
+      "text": "步骤 3 对剥除防护层和绝缘层后的通讯线缆安装合适的冷压端子，并使用压线钳压紧。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        544.323,
+        416.736,
+        556.806
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-246560C00F599435",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 35,
+      "printed_page_label": "25",
+      "block_order": 7,
+      "section_id": "SEC-33B947D6A7F46E39",
+      "section_path": [
+        "5 电气连接",
+        "5.6 与电表连接",
+        "5.6.1 RS485通讯接线"
+      ],
+      "section_title": "5.6.1 RS485通讯接线",
+      "block_type": "paragraph",
+      "text": "步骤 4 按下图所示，将接线端子连接到数据采集器的RS485 端口。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        638.702,
+        340.758,
+        651.185
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

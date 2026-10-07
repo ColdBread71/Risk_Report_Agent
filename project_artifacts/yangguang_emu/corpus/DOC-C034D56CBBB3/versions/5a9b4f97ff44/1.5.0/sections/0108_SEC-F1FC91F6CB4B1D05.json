@@ -1,0 +1,105 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-F1FC91F6CB4B1D05",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.7 转发IEC104服务配置",
+    "7.8.7.1 白名单设置"
+  ],
+  "section_title": "7.8.7.1 白名单设置",
+  "start_pdf_page": 74,
+  "end_pdf_page": 74,
+  "blocks": [
+    {
+      "block_id": "BLK-3D38E3A36E7A25B4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 74,
+      "printed_page_label": "64",
+      "block_order": 17,
+      "section_id": "SEC-F1FC91F6CB4B1D05",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.1 白名单设置"
+      ],
+      "section_title": "7.8.7.1 白名单设置",
+      "block_type": "heading",
+      "text": "7.8.7.1 白名单设置",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        510.829,
+        142.023,
+        522.999
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D630E707F5A500C3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 74,
+      "printed_page_label": "64",
+      "block_order": 18,
+      "section_id": "SEC-F1FC91F6CB4B1D05",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.1 白名单设置"
+      ],
+      "section_title": "7.8.7.1 白名单设置",
+      "block_type": "paragraph",
+      "text": "不勾选启用白名单，默认IP 地址为“0.0.0.0”，则允许任意具有合法IP 地址的后台设备访问\n数据采集器。",
+      "table_cells": null,
+      "bbox": [
+        88.194,
+        530.145,
+        444.72,
+        554.598
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8A5F072CC72B80C0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 74,
+      "printed_page_label": "64",
+      "block_order": 19,
+      "section_id": "SEC-F1FC91F6CB4B1D05",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.1 白名单设置"
+      ],
+      "section_title": "7.8.7.1 白名单设置",
+      "block_type": "paragraph",
+      "text": "勾选启用白名单，输入IP 地址，则只有指定的IP 设备可以访问数据采集器。",
+      "table_cells": null,
+      "bbox": [
+        88.194,
+        565.145,
+        393.204,
+        576.098
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

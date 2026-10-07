@@ -1,0 +1,41 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-4FC1F37788B482BE",
+  "section_path": [
+    "2 产品介绍"
+  ],
+  "section_title": "2 产品介绍",
+  "start_pdf_page": 15,
+  "end_pdf_page": 15,
+  "blocks": [
+    {
+      "block_id": "BLK-C4C357C9080E0091",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 15,
+      "printed_page_label": "9",
+      "block_order": 0,
+      "section_id": "SEC-4FC1F37788B482BE",
+      "section_path": [
+        "2 产品介绍"
+      ],
+      "section_title": "2 产品介绍",
+      "block_type": "heading",
+      "text": "2\n产品介绍",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        98.112,
+        168.624,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

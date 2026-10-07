@@ -1,0 +1,888 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-E41950E8A81762D3",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.8 转发MODBUS服务配置",
+    "7.8.8.4 Modbus TCP普通调度模式"
+  ],
+  "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+  "start_pdf_page": 77,
+  "end_pdf_page": 77,
+  "blocks": [
+    {
+      "block_id": "BLK-F6513BCCFD5A5103",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 0,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.617,
+        48.088,
+        463.964,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AA0F962E794E2160",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 1,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "paragraph",
+      "text": "步骤 4 在端口下拉列表中，选择后台的端口号。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        71.484,
+        263.736,
+        83.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-63C69704295384E0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 2,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "paragraph",
+      "text": "步骤 5 根据电站实际情况，配置快调端口ETH3、ETH4 的网络参数。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        87.984,
+        350.244,
+        100.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EB3E582227741C19",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 3,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "paragraph",
+      "text": "步骤 6 如需开启北向通信异常保护，在保护开关字段下方，选择使能。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        104.484,
+        353.736,
+        116.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-02A8C054C4278B98",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 4,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "paragraph",
+      "text": "a. 在对端IP 文本框内，输入对端设备的IP 地址。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        122.406,
+        303.912,
+        133.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-93F0E137947A49DE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 5,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "paragraph",
+      "text": "b. 在通讯异常检测时间文本框内，指定数据采集器对逆变器执行保护操作之前需等待的时",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        137.406,
+        457.911,
+        148.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-31EF3E85C1BA6E63",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 6,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "paragraph",
+      "text": "间。\n例如，当设置通讯异常检测时间为“30”时，表示数据采集器在限制逆变器输出功率之前需\n等待30 秒。",
+      "table_cells": null,
+      "bbox": [
+        115.911,
+        150.906,
+        464.913,
+        188.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CC613C7EBFDA1697",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 7,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "paragraph",
+      "text": "c. 在通讯异常输出文本框内，输入当判定通信出现异常时，逆变器的输出功率（单位为百分",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        192.906,
+        466.911,
+        203.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AF65D206E66C887F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 8,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "paragraph",
+      "text": "比）。\n例如，当设置为通讯异常输出“80”时，表示通讯中断后，数据采集器限制逆变器的输出功\n率为其额定功率的80%。",
+      "table_cells": null,
+      "bbox": [
+        115.911,
+        206.406,
+        464.913,
+        244.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FE1BCB3A9499C8DD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 9,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "paragraph",
+      "text": "d. 在通讯异常自恢复时间文本框中，指定数据采集器在通讯恢复后需等待的时间。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        248.406,
+        430.911,
+        259.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-76C7FD45585D5606",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 10,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "paragraph",
+      "text": "超出该段时间后，数据采集器将根据通讯恢复输出的设置，调整逆变器的输出功率或对逆\n变器执行开机操作。",
+      "table_cells": null,
+      "bbox": [
+        115.911,
+        264.906,
+        466.911,
+        289.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E42D55EDD1B2BD47",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 11,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "paragraph",
+      "text": "e. 在通讯恢复输出下拉列表中，指定数据采集器在通讯恢复后的操作。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        293.406,
+        385.911,
+        304.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0815B95698A1B834",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 12,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "list",
+      "text": "•\n无动作：通讯恢复后，数据采集器将根据后台最近一次下发的目标值，调整逆变器的\n输出功率。",
+      "table_cells": null,
+      "bbox": [
+        115.911,
+        309.906,
+        463.086,
+        334.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C7E8E31272018DA3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 13,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "list",
+      "text": "•\n开机：数据采集器先对逆变器下发开机指令，再根据后台最近一次下发的目标值，调\n整逆变器的输出功率。适用于逆变器因通讯异常而关机的情况。",
+      "table_cells": null,
+      "bbox": [
+        115.911,
+        338.406,
+        463.086,
+        362.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E28AE4D09877624F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 14,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "paragraph",
+      "text": "例如，当设置通讯异常自恢复时间为“30”时，且通讯恢复输出为“无动作”，表示通讯恢复\n后，数据采集器将等待30 秒，再恢复输出功率。",
+      "table_cells": null,
+      "bbox": [
+        115.911,
+        368.406,
+        461.907,
+        392.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9AE33F935599E71B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 15,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "paragraph",
+      "text": "步骤 7 点击保存。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        396.984,
+        146.736,
+        409.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1B1A4F98C40AA559",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 16,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "paragraph",
+      "text": "Web 端弹窗提示设置在重启后生效。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        411.906,
+        248.328,
+        422.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6437479542D15E2E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 17,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        427.056,
+        126.36,
+        438.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B2C555DBD4D76066",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 18,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "heading",
+      "text": "7.8.8.4 Modbus TCP 普通调度模式",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        447.89,
+        224.55,
+        460.06
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D829D8908AC912F2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 19,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击设备监控 > 功率调节参数，跳转到相应页面。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        471.784,
+        300.996,
+        484.267
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-84E2DD201452B66A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 20,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "paragraph",
+      "text": "步骤 2 在左侧选择逆变器设备，单击功率调节参数页面，设置功率调节参数。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        488.284,
+        380.736,
+        500.767
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-948EFCB5B9EB6ECB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 21,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "paragraph",
+      "text": "步骤 3 在电网快速调度模式下拉列表中：",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        504.784,
+        236.736,
+        517.267
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-15B22DFF6F0BA0DB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 22,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "list",
+      "text": "•\n选择使能，打开Modbus TCP 快速调度模式。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        522.706,
+        298.926,
+        533.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CB148ED8A5CD1FB3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 23,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "list",
+      "text": "•\n选择禁止，关闭Modbus TCP 快速调度模式。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        537.706,
+        298.926,
+        548.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-46D7EF186AD1C740",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 24,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "paragraph",
+      "text": "步骤 4 在电网极速调度模式下拉列表中：",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        552.784,
+        236.736,
+        565.267
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-24BBC243D413B180",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 25,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "list",
+      "text": "•\n选择使能，打开Modbus TCP 极速调度模式。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        570.706,
+        298.926,
+        581.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-71EB63F8F8D8A88E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 26,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "list",
+      "text": "•\n选择禁止，关闭Modbus TCP 极速调度模式。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        585.706,
+        298.926,
+        596.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4BB50C039458D057",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 27,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "paragraph",
+      "text": "如果电网快速调度模式和电网极速调度模式同时使能时，有功功率调节和无功功率调\n节优先选择电网极速调度模式。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        605.856,
+        461.735,
+        627.609
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6B55E38A19BA55A9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 28,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "paragraph",
+      "text": "步骤 5 单击设置。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        644.884,
+        146.736,
+        657.367
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-05BE2A1910679349",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 29,
+      "section_id": "SEC-E41950E8A81762D3",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.4 Modbus TCP普通调度模式"
+      ],
+      "section_title": "7.8.8.4 Modbus TCP普通调度模式",
+      "block_type": "paragraph",
+      "text": "步骤 6 单击通用参数页签，设置设备通用参数。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        661.384,
+        263.736,
+        673.867
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

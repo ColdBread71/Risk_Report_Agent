@@ -1,0 +1,158 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-A5160593D32794BA",
+  "section_path": [
+    "5 试运行"
+  ],
+  "section_title": "5 试运行",
+  "start_pdf_page": 47,
+  "end_pdf_page": 47,
+  "blocks": [
+    {
+      "block_id": "BLK-5F34197E79D58E59",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 47,
+      "printed_page_label": "41",
+      "block_order": 0,
+      "section_id": "SEC-A5160593D32794BA",
+      "section_path": [
+        "5 试运行"
+      ],
+      "section_title": "5 试运行",
+      "block_type": "heading",
+      "text": "5\n试运行",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        98.112,
+        150.624,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5E44E694B58C97FB",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 47,
+      "printed_page_label": "41",
+      "block_order": 1,
+      "section_id": "SEC-A5160593D32794BA",
+      "section_path": [
+        "5 试运行"
+      ],
+      "section_title": "5 试运行",
+      "block_type": "table",
+      "text": "在\n全\t行\n设\n”章\t注意\n备运行\n节中注\t事项\n前，请务必优先阅读并满足“通用安全说明”章节中注意事项\n意事项。\n\t\t危险\t\n•\n•\n•\t设备\t运行\n严禁触\n严禁触\n严禁触\t时：\n摸设备的带电部件，否则可能会有触电危险。\n摸设备的任何接线端子，否则可能会有触电危险。\n摸设备的灼热部件(如散热器等)，否则可能会有灼伤危险。\n\t运\t行前\t检查\n\t编\t号\t说明\n\t1\t\t检查接线端子是否紧固到位。\n\t2\t\t接线线缆相序是否正确无误。\n\t3\t\t检查设备内、外部接地点是否接地良好。\n\t运\n统\t行步\n上电\t骤\n\t\t危险\t\n\t在进\n击伤\t行上\n害或\t电操作时，操作人员请务必佩戴个人防护用具和使用专用绝\n短路故障。\n操\t作\t步骤\t\n\t编\t号\t说明\n\t1\t\t闭合EMU300A 内部熔断器。\n\t2\t\t闭合交流供电电源的控制开关。",
+      "table_cells": [
+        [
+          "在\n全",
+          "行\n设\n”章",
+          "注意\n备运行\n节中注",
+          "事项\n前，请务必优先阅读并满足“通用安全说明”章节中注意事项\n意事项。"
+        ],
+        [
+          null,
+          null,
+          "危险",
+          null
+        ],
+        [
+          "•\n•\n•",
+          "设备",
+          "运行\n严禁触\n严禁触\n严禁触",
+          "时：\n摸设备的带电部件，否则可能会有触电危险。\n摸设备的任何接线端子，否则可能会有触电危险。\n摸设备的灼热部件(如散热器等)，否则可能会有灼伤危险。"
+        ],
+        [
+          null,
+          "运",
+          "行前",
+          "检查"
+        ],
+        [
+          null,
+          "编",
+          "号",
+          "说明"
+        ],
+        [
+          null,
+          "1",
+          null,
+          "检查接线端子是否紧固到位。"
+        ],
+        [
+          null,
+          "2",
+          null,
+          "接线线缆相序是否正确无误。"
+        ],
+        [
+          null,
+          "3",
+          null,
+          "检查设备内、外部接地点是否接地良好。"
+        ],
+        [
+          null,
+          "运\n统",
+          "行步\n上电",
+          "骤"
+        ],
+        [
+          null,
+          null,
+          "危险",
+          null
+        ],
+        [
+          null,
+          "在进\n击伤",
+          "行上\n害或",
+          "电操作时，操作人员请务必佩戴个人防护用具和使用专用绝\n短路故障。"
+        ],
+        [
+          "操",
+          "作",
+          "步骤",
+          null
+        ],
+        [
+          null,
+          "编",
+          "号",
+          "说明"
+        ],
+        [
+          null,
+          "1",
+          null,
+          "闭合EMU300A 内部熔断器。"
+        ],
+        [
+          null,
+          "2",
+          null,
+          "闭合交流供电电源的控制开关。"
+        ]
+      ],
+      "bbox": [
+        106.866,
+        125.85,
+        379.035,
+        653.95
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

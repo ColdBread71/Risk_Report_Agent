@@ -1,0 +1,556 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-45F701F7C83EFBCB",
+  "section_path": [
+    "8 附录B：通用信息",
+    "8.1 质量保证"
+  ],
+  "section_title": "8.1 质量保证",
+  "start_pdf_page": 56,
+  "end_pdf_page": 56,
+  "blocks": [
+    {
+      "block_id": "BLK-8D0FAE7BB9457C86",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "50",
+      "block_order": 1,
+      "section_id": "SEC-45F701F7C83EFBCB",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.1 质量保证"
+      ],
+      "section_title": "8.1 质量保证",
+      "block_type": "heading",
+      "text": "8.1 质量保证",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        162.258,
+        128.873,
+        176.862
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D38F2E47162BCFB2",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "50",
+      "block_order": 2,
+      "section_id": "SEC-45F701F7C83EFBCB",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.1 质量保证"
+      ],
+      "section_title": "8.1 质量保证",
+      "block_type": "paragraph",
+      "text": "质保期间出现故障的产品，阳光电源股份有限公司（以下简称本公司）将免费维修或者更换\n新产品。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        189.906,
+        448.193,
+        214.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9657A349D206E2AC",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "50",
+      "block_order": 3,
+      "section_id": "SEC-45F701F7C83EFBCB",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.1 质量保证"
+      ],
+      "section_title": "8.1 质量保证",
+      "block_type": "paragraph",
+      "text": "本产品的软件安全更新期限与产品质保期保持一致。在质保期内，如发现安全漏洞或兼容性\n问题，将提供相应的软件修复补丁或安全更新。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        224.906,
+        448.193,
+        249.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D89FDAE3A869B556",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "50",
+      "block_order": 4,
+      "section_id": "SEC-45F701F7C83EFBCB",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.1 质量保证"
+      ],
+      "section_title": "8.1 质量保证",
+      "block_type": "paragraph",
+      "text": "证据",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        258.484,
+        106.193,
+        270.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3A18D1AED00A3AF2",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "50",
+      "block_order": 5,
+      "section_id": "SEC-45F701F7C83EFBCB",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.1 质量保证"
+      ],
+      "section_title": "8.1 质量保证",
+      "block_type": "paragraph",
+      "text": "本公司在质保期内，要求客户出示购买产品的发票和日期。同时产品上的商标应清晰可见，\n否则有权不予以质量保证。本产品软件更新承诺期限为10 年。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        281.406,
+        448.193,
+        305.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-62D9D96393F1AD93",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "50",
+      "block_order": 6,
+      "section_id": "SEC-45F701F7C83EFBCB",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.1 质量保证"
+      ],
+      "section_title": "8.1 质量保证",
+      "block_type": "paragraph",
+      "text": "条件",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        314.984,
+        106.193,
+        327.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-260245ED5B1B0D2A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "50",
+      "block_order": 7,
+      "section_id": "SEC-45F701F7C83EFBCB",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.1 质量保证"
+      ],
+      "section_title": "8.1 质量保证",
+      "block_type": "list",
+      "text": "•\n更换后的不合格的产品应由本公司处理",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        337.906,
+        255.368,
+        348.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-743FB28ECAB84379",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "50",
+      "block_order": 8,
+      "section_id": "SEC-45F701F7C83EFBCB",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.1 质量保证"
+      ],
+      "section_title": "8.1 质量保证",
+      "block_type": "list",
+      "text": "•\n客户应给本公司预留合理的时间去修理出现故障的设备",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        352.906,
+        318.368,
+        363.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-59F97CB7A747812D",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "50",
+      "block_order": 9,
+      "section_id": "SEC-45F701F7C83EFBCB",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.1 质量保证"
+      ],
+      "section_title": "8.1 质量保证",
+      "block_type": "paragraph",
+      "text": "责任豁免",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        366.984,
+        124.193,
+        379.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6B482B885849B998",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "50",
+      "block_order": 10,
+      "section_id": "SEC-45F701F7C83EFBCB",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.1 质量保证"
+      ],
+      "section_title": "8.1 质量保证",
+      "block_type": "paragraph",
+      "text": "以下情况出现，本公司有权不进行质量保证：",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        389.906,
+        268.193,
+        400.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-15801DFE69FB25A2",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "50",
+      "block_order": 11,
+      "section_id": "SEC-45F701F7C83EFBCB",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.1 质量保证"
+      ],
+      "section_title": "8.1 质量保证",
+      "block_type": "list",
+      "text": "•\n整机、部件已经超出免费保修期",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        411.406,
+        228.368,
+        422.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D38BE721BB9ECC24",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "50",
+      "block_order": 12,
+      "section_id": "SEC-45F701F7C83EFBCB",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.1 质量保证"
+      ],
+      "section_title": "8.1 质量保证",
+      "block_type": "list",
+      "text": "•\n运输损坏",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        426.406,
+        138.368,
+        437.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F92CC653EAA96FE6",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "50",
+      "block_order": 13,
+      "section_id": "SEC-45F701F7C83EFBCB",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.1 质量保证"
+      ],
+      "section_title": "8.1 质量保证",
+      "block_type": "list",
+      "text": "•\n不正确的安装、改装或使用",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        441.406,
+        210.368,
+        452.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-79499DC1B1D1E9AC",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "50",
+      "block_order": 14,
+      "section_id": "SEC-45F701F7C83EFBCB",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.1 质量保证"
+      ],
+      "section_title": "8.1 质量保证",
+      "block_type": "list",
+      "text": "•\n在超出本手册中说明的非常恶劣的环境下运行",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        456.406,
+        282.368,
+        467.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6C995A151578380D",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "50",
+      "block_order": 15,
+      "section_id": "SEC-45F701F7C83EFBCB",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.1 质量保证"
+      ],
+      "section_title": "8.1 质量保证",
+      "block_type": "list",
+      "text": "•\n非本公司服务机构、人员安装、修理、更改或拆卸造成的机器故障或损坏",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        471.406,
+        390.368,
+        482.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A3263833400617A7",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "50",
+      "block_order": 16,
+      "section_id": "SEC-45F701F7C83EFBCB",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.1 质量保证"
+      ],
+      "section_title": "8.1 质量保证",
+      "block_type": "list",
+      "text": "•\n使用非标准或非本公司组件或软件造成的故障或损坏",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        486.406,
+        309.368,
+        497.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4D5930E0A6AB8FD6",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "50",
+      "block_order": 17,
+      "section_id": "SEC-45F701F7C83EFBCB",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.1 质量保证"
+      ],
+      "section_title": "8.1 质量保证",
+      "block_type": "list",
+      "text": "•\n超出相关国际标准中规定的安装和使用范围",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        501.406,
+        273.368,
+        512.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6061F7816EC41AE0",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "50",
+      "block_order": 18,
+      "section_id": "SEC-45F701F7C83EFBCB",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.1 质量保证"
+      ],
+      "section_title": "8.1 质量保证",
+      "block_type": "list",
+      "text": "•\n非正常的自然环境引起的损坏",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        516.406,
+        219.368,
+        527.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-69E182504CEBF181",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "50",
+      "block_order": 19,
+      "section_id": "SEC-45F701F7C83EFBCB",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.1 质量保证"
+      ],
+      "section_title": "8.1 质量保证",
+      "block_type": "paragraph",
+      "text": "由以上情况引起产品故障，若客户要求进行维修服务，经本公司服务机构判定后，可提供有\n偿维修服务。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        531.906,
+        448.193,
+        556.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-79D4D4F5B8CDBF6E",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "50",
+      "block_order": 20,
+      "section_id": "SEC-45F701F7C83EFBCB",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.1 质量保证"
+      ],
+      "section_title": "8.1 质量保证",
+      "block_type": "paragraph",
+      "text": "若产品尺寸及参数有变化，以本公司最新资料为准，恕不另行通知。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        572.056,
+        385.193,
+        583.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-77275F9C168AC029",
+  "section_path": [
+    "7 Web界面",
+    "7.2 修改密码"
+  ],
+  "section_title": "7.2 修改密码",
+  "start_pdf_page": 48,
+  "end_pdf_page": 48,
+  "blocks": [
+    {
+      "block_id": "BLK-BF44C62143BE47B7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 48,
+      "printed_page_label": "38",
+      "block_order": 0,
+      "section_id": "SEC-77275F9C168AC029",
+      "section_path": [
+        "7 Web界面",
+        "7.2 修改密码"
+      ],
+      "section_title": "7.2 修改密码",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9E3E4E9047A755EA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 48,
+      "printed_page_label": "38",
+      "block_order": 1,
+      "section_id": "SEC-77275F9C168AC029",
+      "section_path": [
+        "7 Web界面",
+        "7.2 修改密码"
+      ],
+      "section_title": "7.2 修改密码",
+      "block_type": "table",
+      "text": "端口\t地址 IP\t\t子网掩码\n\t虚拟IP\t地址：16.16.16.16\n地址：14.14.14.14\n地址：17.17.17.17\t\nETH5\t默认IP\n虚拟IP\t\t\n前提条件\n• 已通过以太网线连接\n以通过ETH1 端口连接为\n修改PC 网络配置，确保\t数据采集\n例：\n与数据\t器与PC。\n采集器的IP 地址为同一网段。\t\n设置项\t\t数据采集器默认设置\tPC 设置示例\nIP 地址\t\t12.12.12.12\t12.12.12.125\n子网掩码\t\t255.255.255.0\t255.255.255.0\n配置IP 地址时需\n在浏览器地址栏中输入I\n以运维用户角色登录We\na. 在Web 端右上角，点\nb. 根据对话框显示差异\n登录后Web 端将展示运\n查看Logger4000 固件版\n如需要升级，见8\n--结束\n改密码\t\t\t\n\t确保前三\t位数一致。第四位取值范围为：\t0~255（不包\n\tP 地址h\nb 端。\n击 ，\n，输入用\n维用户的\n本，确\tttps://12.12.12.12，按下[Enter]\n打开登录对话框。\n户名称和密码。\n操作界面。\n认是否需要升级。见7.8.16 查看\t，访问Web 端\n固件版本。\n\t.2 升级\t数据采集器。\t\n\t\t\t\n注意\t\t\t\n建议定期更新密码，修\n致密码泄露，长期使用\n问设备，均可能会造成\t改密码后\n初始密码\n电站损失\t请记牢密码，以保证账户安全。\n会增加被盗窃和破解的风险，密\n，由此引起的损失由用户自行承\t不更改初始密\n码丢失会导致\n担。",
+      "table_cells": [
+        [
+          "端口",
+          "地址 IP",
+          null,
+          "子网掩码"
+        ],
+        [
+          null,
+          "虚拟IP",
+          "地址：16.16.16.16\n地址：14.14.14.14\n地址：17.17.17.17",
+          null
+        ],
+        [
+          "ETH5",
+          "默认IP\n虚拟IP",
+          null,
+          null
+        ],
+        [
+          "前提条件\n• 已通过以太网线连接\n以通过ETH1 端口连接为\n修改PC 网络配置，确保",
+          "数据采集\n例：\n与数据",
+          "器与PC。\n采集器的IP 地址为同一网段。",
+          null
+        ],
+        [
+          "设置项",
+          null,
+          "数据采集器默认设置",
+          "PC 设置示例"
+        ],
+        [
+          "IP 地址",
+          null,
+          "12.12.12.12",
+          "12.12.12.125"
+        ],
+        [
+          "子网掩码",
+          null,
+          "255.255.255.0",
+          "255.255.255.0"
+        ],
+        [
+          "配置IP 地址时需\n在浏览器地址栏中输入I\n以运维用户角色登录We\na. 在Web 端右上角，点\nb. 根据对话框显示差异\n登录后Web 端将展示运\n查看Logger4000 固件版\n如需要升级，见8\n--结束\n改密码",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "确保前三",
+          "位数一致。第四位取值范围为：",
+          "0~255（不包"
+        ],
+        [
+          null,
+          "P 地址h\nb 端。\n击 ，\n，输入用\n维用户的\n本，确",
+          "ttps://12.12.12.12，按下[Enter]\n打开登录对话框。\n户名称和密码。\n操作界面。\n认是否需要升级。见7.8.16 查看",
+          "，访问Web 端\n固件版本。"
+        ],
+        [
+          null,
+          ".2 升级",
+          "数据采集器。",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "注意",
+          null,
+          null,
+          null
+        ],
+        [
+          "建议定期更新密码，修\n致密码泄露，长期使用\n问设备，均可能会造成",
+          "改密码后\n初始密码\n电站损失",
+          "请记牢密码，以保证账户安全。\n会增加被盗窃和破解的风险，密\n，由此引起的损失由用户自行承",
+          "不更改初始密\n码丢失会导致\n担。"
+        ]
+      ],
+      "bbox": [
+        87.563,
+        74.539,
+        397.763,
+        594.382
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-68B309C930F03AA2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 48,
+      "printed_page_label": "38",
+      "block_order": 2,
+      "section_id": "SEC-77275F9C168AC029",
+      "section_path": [
+        "7 Web界面",
+        "7.2 修改密码"
+      ],
+      "section_title": "7.2 修改密码",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        617.854,
+        105.563,
+        630.338
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5EF6E9287A9E6413",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 48,
+      "printed_page_label": "38",
+      "block_order": 3,
+      "section_id": "SEC-77275F9C168AC029",
+      "section_path": [
+        "7 Web界面",
+        "7.2 修改密码"
+      ],
+      "section_title": "7.2 修改密码",
+      "block_type": "paragraph",
+      "text": "> 修改密码，进入修改密码界面。",
+      "table_cells": null,
+      "bbox": [
+        119.738,
+        619.276,
+        255.989,
+        630.229
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BF4CE6689772F166",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 48,
+      "printed_page_label": "38",
+      "block_order": 4,
+      "section_id": "SEC-77275F9C168AC029",
+      "section_path": [
+        "7 Web界面",
+        "7.2 修改密码"
+      ],
+      "section_title": "7.2 修改密码",
+      "block_type": "paragraph",
+      "text": "步骤 2 在弹出的修改密码页面中输入原密码、新密码，并确认新密码。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        634.354,
+        339.563,
+        646.837
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

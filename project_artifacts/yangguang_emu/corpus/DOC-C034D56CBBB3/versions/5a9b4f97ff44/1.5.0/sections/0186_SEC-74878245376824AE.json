@@ -1,0 +1,373 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-74878245376824AE",
+  "section_path": [
+    "13 常见问题汇总"
+  ],
+  "section_title": "13 常见问题汇总",
+  "start_pdf_page": 116,
+  "end_pdf_page": 117,
+  "blocks": [
+    {
+      "block_id": "BLK-31BFA3506C32ECDC",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 116,
+      "printed_page_label": "106",
+      "block_order": 0,
+      "section_id": "SEC-74878245376824AE",
+      "section_path": [
+        "13 常见问题汇总"
+      ],
+      "section_title": "13 常见问题汇总",
+      "block_type": "heading",
+      "text": "13\n常见问题汇总",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        98.112,
+        200.459,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D3EDC63EE08FAE54",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 116,
+      "printed_page_label": "106",
+      "block_order": 1,
+      "section_id": "SEC-74878245376824AE",
+      "section_path": [
+        "13 常见问题汇总"
+      ],
+      "section_title": "13 常见问题汇总",
+      "block_type": "paragraph",
+      "text": "数据采集器对外通讯端口类型有哪几种，对应的端口名称是什么，对应的参数设置如何设\n置？",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        144.156,
+        439.193,
+        165.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-47BD8B4250CBD855",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 116,
+      "printed_page_label": "106",
+      "block_order": 2,
+      "section_id": "SEC-74878245376824AE",
+      "section_path": [
+        "13 常见问题汇总"
+      ],
+      "section_title": "13 常见问题汇总",
+      "block_type": "table",
+      "text": "通讯类型 端口名称\t\t默认参数设置\nETH1、\n以太网 ETH2、\nETH5\t\t默认参数见7.8.13.2 以太网\nA1B1~A7B\nRS485\n7\t\t波特率：9600，\n校验位：无，\n数据位：8，\n停止位：1。\nMPLC L1,L2,L3\t\t波特率：115200，\n校验位：无，\n数据位：8，\n停止位：1。\n据采集器对外转发协议类型有哪\t几\t种？\n协议类型\t说\t明\nModbusRTU/ModbusTCP\n协议\t数\n监\n发\t据采集器将采集到的设备（如逆变器、汇流箱、环境\n测仪等）数据传送至后台。后台将为这些设备分配转\n地址并按照此地址查询、获取设备数据。\nIEC104 协议\t1\n2\t. 通过Web 界面，添加、搜索设备（如逆变器、汇流\n箱、环境监测仪）。\n. 在系统 > 转发配置 > IEC104 页面，导出IEC104 点\n表。在此点表，即可查看设备的测点信息。\nFTP 协议\t数\n检\n台\t据采集器将采集到的设备（如逆变器、 汇流箱、 环\n测仪等） 数据通过FTP 协议，把数据文件传送至后\n。",
+      "table_cells": [
+        [
+          "通讯类型 端口名称",
+          null,
+          "默认参数设置"
+        ],
+        [
+          "ETH1、\n以太网 ETH2、\nETH5",
+          null,
+          "默认参数见7.8.13.2 以太网"
+        ],
+        [
+          "A1B1~A7B\nRS485\n7",
+          null,
+          "波特率：9600，\n校验位：无，\n数据位：8，\n停止位：1。"
+        ],
+        [
+          "MPLC L1,L2,L3",
+          null,
+          "波特率：115200，\n校验位：无，\n数据位：8，\n停止位：1。"
+        ],
+        [
+          "据采集器对外转发协议类型有哪",
+          "几",
+          "种？"
+        ],
+        [
+          "协议类型",
+          "说",
+          "明"
+        ],
+        [
+          "ModbusRTU/ModbusTCP\n协议",
+          "数\n监\n发",
+          "据采集器将采集到的设备（如逆变器、汇流箱、环境\n测仪等）数据传送至后台。后台将为这些设备分配转\n地址并按照此地址查询、获取设备数据。"
+        ],
+        [
+          "IEC104 协议",
+          "1\n2",
+          ". 通过Web 界面，添加、搜索设备（如逆变器、汇流\n箱、环境监测仪）。\n. 在系统 > 转发配置 > IEC104 页面，导出IEC104 点\n表。在此点表，即可查看设备的测点信息。"
+        ],
+        [
+          "FTP 协议",
+          "数\n检\n台",
+          "据采集器将采集到的设备（如逆变器、 汇流箱、 环\n测仪等） 数据通过FTP 协议，把数据文件传送至后\n。"
+        ]
+      ],
+      "bbox": [
+        96.859,
+        176.739,
+        438.908,
+        575.65
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-47D9B709A3CDEFB3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 116,
+      "printed_page_label": "106",
+      "block_order": 3,
+      "section_id": "SEC-74878245376824AE",
+      "section_path": [
+        "13 常见问题汇总"
+      ],
+      "section_title": "13 常见问题汇总",
+      "block_type": "paragraph",
+      "text": "数据采集器将采集到的设备（如逆变器、汇流箱、环境\n监测仪等）数据通过MQTT 协议，把设备数据传递至阳\n光云。",
+      "table_cells": null,
+      "bbox": [
+        222.908,
+        581.556,
+        441.905,
+        619.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C4DA9E917E1F0854",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 116,
+      "printed_page_label": "106",
+      "block_order": 4,
+      "section_id": "SEC-74878245376824AE",
+      "section_path": [
+        "13 常见问题汇总"
+      ],
+      "section_title": "13 常见问题汇总",
+      "block_type": "paragraph",
+      "text": "MQTT 协议",
+      "table_cells": null,
+      "bbox": [
+        96.862,
+        595.056,
+        142.609,
+        606.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BD946D1336B86DE5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 117,
+      "printed_page_label": "107",
+      "block_order": 0,
+      "section_id": "SEC-74878245376824AE",
+      "section_path": [
+        "13 常见问题汇总"
+      ],
+      "section_title": "13 常见问题汇总",
+      "block_type": "paragraph",
+      "text": "用户手册\n13 常见问题汇总",
+      "table_cells": null,
+      "bbox": [
+        74.619,
+        48.088,
+        463.966,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BC7BA284CB854C64",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 117,
+      "printed_page_label": "107",
+      "block_order": 1,
+      "section_id": "SEC-74878245376824AE",
+      "section_path": [
+        "13 常见问题汇总"
+      ],
+      "section_title": "13 常见问题汇总",
+      "block_type": "paragraph",
+      "text": "如何登录研发用户，研发用户的密码，如何获取？",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        71.556,
+        300.366,
+        82.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7978B956327F17BE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 117,
+      "printed_page_label": "107",
+      "block_order": 2,
+      "section_id": "SEC-74878245376824AE",
+      "section_path": [
+        "13 常见问题汇总"
+      ],
+      "section_title": "13 常见问题汇总",
+      "block_type": "paragraph",
+      "text": "正常情况，运维用户已经满足多数现场配置场景。若现场有特殊需求，需要登录研发用户，\n需联系阳光电源客服人员获取临时密码进行登录。临时密码仅当日有效。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        89.706,
+        462.366,
+        114.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EC9C6F01388EA423",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 117,
+      "printed_page_label": "107",
+      "block_order": 3,
+      "section_id": "SEC-74878245376824AE",
+      "section_path": [
+        "13 常见问题汇总"
+      ],
+      "section_title": "13 常见问题汇总",
+      "block_type": "paragraph",
+      "text": "如何将多台数据采集器通过网络连接到后台？",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        123.356,
+        282.366,
+        134.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E2228F6BCA47046B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 117,
+      "printed_page_label": "107",
+      "block_order": 4,
+      "section_id": "SEC-74878245376824AE",
+      "section_path": [
+        "13 常见问题汇总"
+      ],
+      "section_title": "13 常见问题汇总",
+      "block_type": "list",
+      "text": "1. 距离较近（＜100m）的数据采集器通过网线接入光纤交换机。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        141.506,
+        366.3,
+        152.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F93FC13EDC27DE37",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 117,
+      "printed_page_label": "107",
+      "block_order": 5,
+      "section_id": "SEC-74878245376824AE",
+      "section_path": [
+        "13 常见问题汇总"
+      ],
+      "section_title": "13 常见问题汇总",
+      "block_type": "list",
+      "text": "2. 距离较远（＞100m）的数据采集器铺设光纤，接入光纤交换机。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        156.506,
+        375.3,
+        167.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A019C801AEEB0C85",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 117,
+      "printed_page_label": "107",
+      "block_order": 6,
+      "section_id": "SEC-74878245376824AE",
+      "section_path": [
+        "13 常见问题汇总"
+      ],
+      "section_title": "13 常见问题汇总",
+      "block_type": "list",
+      "text": "3. 连接完成后，需将多台数据采集器IP 地址设置为同一网段，且IP 地址之间不允许重复。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        171.506,
+        466.542,
+        182.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

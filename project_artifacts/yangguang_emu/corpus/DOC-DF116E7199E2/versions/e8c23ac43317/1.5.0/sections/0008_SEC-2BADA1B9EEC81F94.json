@@ -1,0 +1,151 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-2BADA1B9EEC81F94",
+  "section_path": [
+    "3 工业网络安全",
+    "3.3 工业网络安全参考的标准"
+  ],
+  "section_title": "3.3 工业网络安全参考的标准",
+  "start_pdf_page": 8,
+  "end_pdf_page": 8,
+  "blocks": [
+    {
+      "block_id": "BLK-C9A3682A221073F4",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "4",
+      "block_order": 13,
+      "section_id": "SEC-2BADA1B9EEC81F94",
+      "section_path": [
+        "3 工业网络安全",
+        "3.3 工业网络安全参考的标准"
+      ],
+      "section_title": "3.3 工业网络安全参考的标准",
+      "block_type": "heading",
+      "text": "3.3 工业网络安全参考的标准",
+      "table_cells": null,
+      "bbox": [
+        56.696,
+        427.558,
+        212.876,
+        442.162
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-32F06CE7CD351424",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "4",
+      "block_order": 14,
+      "section_id": "SEC-2BADA1B9EEC81F94",
+      "section_path": [
+        "3 工业网络安全",
+        "3.3 工业网络安全参考的标准"
+      ],
+      "section_title": "3.3 工业网络安全参考的标准",
+      "block_type": "paragraph",
+      "text": "工业网络安全以IEC 62443 来介绍。",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        455.114,
+        226.111,
+        465.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0C14642CF12BCD6D",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "4",
+      "block_order": 15,
+      "section_id": "SEC-2BADA1B9EEC81F94",
+      "section_path": [
+        "3 工业网络安全",
+        "3.3 工业网络安全参考的标准"
+      ],
+      "section_title": "3.3 工业网络安全参考的标准",
+      "block_type": "paragraph",
+      "text": "IEC 62443",
+      "table_cells": null,
+      "bbox": [
+        88.195,
+        476.055,
+        130.72,
+        486.099
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5F6FAF6D64EBD1D8",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "4",
+      "block_order": 16,
+      "section_id": "SEC-2BADA1B9EEC81F94",
+      "section_path": [
+        "3 工业网络安全",
+        "3.3 工业网络安全参考的标准"
+      ],
+      "section_title": "3.3 工业网络安全参考的标准",
+      "block_type": "paragraph",
+      "text": "IEC 62443 系列标准旨在为工业自动化系统（ICS 系统）的安全运行提供支持，涵盖设计、\n实施及管理等方面。为此，该系列中的各种标准规定了适用于组件制造商、系统集成商和运\n营商的规则。组件制造商必须确保产品的安全，而设备和系统制造商则要实现产品安全交\n互。运营商则对操作全流程的安全负最终责任。",
+      "table_cells": null,
+      "bbox": [
+        88.195,
+        497.456,
+        448.195,
+        548.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6EACCBFBE9126A9C",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "4",
+      "block_order": 17,
+      "section_id": "SEC-2BADA1B9EEC81F94",
+      "section_path": [
+        "3 工业网络安全",
+        "3.3 工业网络安全参考的标准"
+      ],
+      "section_title": "3.3 工业网络安全参考的标准",
+      "block_type": "paragraph",
+      "text": "IEC 62443 基于ISO 27001 标准，ISO 27001 标准主要包含各种IT 安全规则。这两项标准\n可为企业提供全方位保护，避免网络威胁。",
+      "table_cells": null,
+      "bbox": [
+        88.195,
+        559.456,
+        445.288,
+        583.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

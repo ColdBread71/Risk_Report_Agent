@@ -1,0 +1,43 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-BDAB0B6608D82395",
+  "section_path": [
+    "10 用户管理",
+    "10.6 重置账号密码"
+  ],
+  "section_title": "10.6 重置账号密码",
+  "start_pdf_page": 105,
+  "end_pdf_page": 105,
+  "blocks": [
+    {
+      "block_id": "BLK-009964E664A8A69B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 27,
+      "section_id": "SEC-BDAB0B6608D82395",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码"
+      ],
+      "section_title": "10.6 重置账号密码",
+      "block_type": "heading",
+      "text": "10.6 重置账号密码",
+      "table_cells": null,
+      "bbox": [
+        70.86,
+        576.404,
+        173.724,
+        591.008
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

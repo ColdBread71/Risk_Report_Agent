@@ -1,0 +1,637 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-D2BC010F09CBB4FF",
+  "section_path": [
+    "12 附录：MOXA EDS-408A 安全加固操作指导",
+    "12.8 配置导入流程"
+  ],
+  "section_title": "12.8 配置导入流程",
+  "start_pdf_page": 39,
+  "end_pdf_page": 40,
+  "blocks": [
+    {
+      "block_id": "BLK-68332C567DAE0B99",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "35",
+      "block_order": 0,
+      "section_id": "SEC-D2BC010F09CBB4FF",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.8 配置导入流程"
+      ],
+      "section_title": "12.8 配置导入流程",
+      "block_type": "paragraph",
+      "text": "用户网络安全操作手册\n12 附录：MOXA EDS-408A 安全加固操作指导",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EBC2AAA9362F3A94",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "35",
+      "block_order": 1,
+      "section_id": "SEC-D2BC010F09CBB4FF",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.8 配置导入流程"
+      ],
+      "section_title": "12.8 配置导入流程",
+      "block_type": "paragraph",
+      "text": "配置完成之后，将笔记本网口连接到端口1，通过交换机IP 地址，访问交换机web https 配\n置界面，进行固件升级。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        71.556,
+        462.645,
+        93.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C065F821956D8A8F",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "35",
+      "block_order": 2,
+      "section_id": "SEC-D2BC010F09CBB4FF",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.8 配置导入流程"
+      ],
+      "section_title": "12.8 配置导入流程",
+      "block_type": "paragraph",
+      "text": "升级过程中不要断电，升级成功后，交换机会自动重启。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        288.956,
+        354.366,
+        299.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DCA16E70D082FCB6",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "35",
+      "block_order": 3,
+      "section_id": "SEC-D2BC010F09CBB4FF",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.8 配置导入流程"
+      ],
+      "section_title": "12.8 配置导入流程",
+      "block_type": "paragraph",
+      "text": "升级完成后可以在浏览器界面最上方看到固件版本。确认升级完成后，重新通过console 进\n入交换机cli 配置界面，关闭https 和修改管理vlan。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        317.606,
+        461.889,
+        342.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C32AC35F27DEDF1E",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "35",
+      "block_order": 4,
+      "section_id": "SEC-D2BC010F09CBB4FF",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.8 配置导入流程"
+      ],
+      "section_title": "12.8 配置导入流程",
+      "block_type": "paragraph",
+      "text": "如下所示，修改完成后，保存配置。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        352.606,
+        246.366,
+        363.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-503D0552FE29ADF3",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "35",
+      "block_order": 5,
+      "section_id": "SEC-D2BC010F09CBB4FF",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.8 配置导入流程"
+      ],
+      "section_title": "12.8 配置导入流程",
+      "block_type": "paragraph",
+      "text": "做完配置之后，执行安全功能验证，确认当前配置安全，然后恢复网线的连接。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        505.64,
+        417.366,
+        516.593
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A16B3D221FD1CF9A",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "35",
+      "block_order": 6,
+      "section_id": "SEC-D2BC010F09CBB4FF",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.8 配置导入流程"
+      ],
+      "section_title": "12.8 配置导入流程",
+      "block_type": "heading",
+      "text": "12.8 配置导入流程",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        534.542,
+        173.718,
+        549.146
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C8FCE4A305C22C80",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "35",
+      "block_order": 7,
+      "section_id": "SEC-D2BC010F09CBB4FF",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.8 配置导入流程"
+      ],
+      "section_title": "12.8 配置导入流程",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        562.19,
+        138.366,
+        573.143
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D9958F38B8A12F8F",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "35",
+      "block_order": 8,
+      "section_id": "SEC-D2BC010F09CBB4FF",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.8 配置导入流程"
+      ],
+      "section_title": "12.8 配置导入流程",
+      "block_type": "paragraph",
+      "text": "配置导入时，因为会临时打开网络接口，故需要先将连接在交换机上的网线移除，然后进行\n配置导入和备份。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        579.34,
+        462.366,
+        601.093
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-430FDAE0E0DCC7A9",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "35",
+      "block_order": 9,
+      "section_id": "SEC-D2BC010F09CBB4FF",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.8 配置导入流程"
+      ],
+      "section_title": "12.8 配置导入流程",
+      "block_type": "paragraph",
+      "text": "步骤 1 首先通过console 登入交换机cli 界面。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        606.868,
+        258.255,
+        619.351
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0D00EBFC3C485363",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "35",
+      "block_order": 10,
+      "section_id": "SEC-D2BC010F09CBB4FF",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.8 配置导入流程"
+      ],
+      "section_title": "12.8 配置导入流程",
+      "block_type": "paragraph",
+      "text": "步骤 2 进入配置模式：configure。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        623.368,
+        210.762,
+        635.851
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-159B980CB7159CBE",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "35",
+      "block_order": 11,
+      "section_id": "SEC-D2BC010F09CBB4FF",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.8 配置导入流程"
+      ],
+      "section_title": "12.8 配置导入流程",
+      "block_type": "paragraph",
+      "text": "步骤 3 修改管理接口：interface mgmt。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        639.868,
+        233.253,
+        652.351
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E929E727F633CA78",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "35",
+      "block_order": 12,
+      "section_id": "SEC-D2BC010F09CBB4FF",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.8 配置导入流程"
+      ],
+      "section_title": "12.8 配置导入流程",
+      "block_type": "paragraph",
+      "text": "步骤 4 绑定管理VLAN 10：bind vlan 10。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        656.368,
+        242.541,
+        668.851
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F6AE388869ECF315",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "36",
+      "block_order": 0,
+      "section_id": "SEC-D2BC010F09CBB4FF",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.8 配置导入流程"
+      ],
+      "section_title": "12.8 配置导入流程",
+      "block_type": "paragraph",
+      "text": "用户网络安全操作手册\n12 附录：MOXA EDS-408A 安全加固操作指导",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1D9DCD798D06562B",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "36",
+      "block_order": 1,
+      "section_id": "SEC-D2BC010F09CBB4FF",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.8 配置导入流程"
+      ],
+      "section_title": "12.8 配置导入流程",
+      "block_type": "paragraph",
+      "text": "步骤 5 退出配置管理接口：exit。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        71.484,
+        191.567,
+        83.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0782743CB76B8A9A",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "36",
+      "block_order": 2,
+      "section_id": "SEC-D2BC010F09CBB4FF",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.8 配置导入流程"
+      ],
+      "section_title": "12.8 配置导入流程",
+      "block_type": "paragraph",
+      "text": "步骤 6 使能https：ip http-server secure。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        87.984,
+        227.36,
+        100.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EA11E94E6C5F40F1",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "36",
+      "block_order": 3,
+      "section_id": "SEC-D2BC010F09CBB4FF",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.8 配置导入流程"
+      ],
+      "section_title": "12.8 配置导入流程",
+      "block_type": "paragraph",
+      "text": "步骤 7 退出配置模式：exit。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        104.484,
+        173.567,
+        116.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-63CBCE78F86EB9D5",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "36",
+      "block_order": 4,
+      "section_id": "SEC-D2BC010F09CBB4FF",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.8 配置导入流程"
+      ],
+      "section_title": "12.8 配置导入流程",
+      "block_type": "paragraph",
+      "text": "步骤 8 保存配置：save config。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        120.984,
+        187.094,
+        133.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C197FC251B6DDDDA",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "36",
+      "block_order": 5,
+      "section_id": "SEC-D2BC010F09CBB4FF",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.8 配置导入流程"
+      ],
+      "section_title": "12.8 配置导入流程",
+      "block_type": "list",
+      "text": "--结束\n配置完成之后，将笔记本网口连接到端口1，通过交换机IP 地址，访问交换机web https 配\n置界面，进行配置导入和备份。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        259.641,
+        448.472,
+        292.194
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DBBF223192FF25E4",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "36",
+      "block_order": 6,
+      "section_id": "SEC-D2BC010F09CBB4FF",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.8 配置导入流程"
+      ],
+      "section_title": "12.8 配置导入流程",
+      "block_type": "paragraph",
+      "text": "配置导入之后。确认升级完成后，重新通过console 进入交换机cli 配置界面，关闭https 和\n修改管理vlan。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        448.918,
+        448.724,
+        473.371
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E110AF44C67757BB",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "36",
+      "block_order": 7,
+      "section_id": "SEC-D2BC010F09CBB4FF",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.8 配置导入流程"
+      ],
+      "section_title": "12.8 配置导入流程",
+      "block_type": "paragraph",
+      "text": "如下所示，修改完成后，保存配置。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        483.918,
+        232.193,
+        494.871
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0EE4F15A6D257C09",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "36",
+      "block_order": 8,
+      "section_id": "SEC-D2BC010F09CBB4FF",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.8 配置导入流程"
+      ],
+      "section_title": "12.8 配置导入流程",
+      "block_type": "paragraph",
+      "text": "导入配置之后，执行安全功能验证，确认当前配置安全，然后恢复网线的连接。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        640.301,
+        403.193,
+        651.254
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-001A9911E6F98BE2",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "36",
+      "block_order": 9,
+      "section_id": "SEC-D2BC010F09CBB4FF",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.8 配置导入流程"
+      ],
+      "section_title": "12.8 配置导入流程",
+      "block_type": "paragraph",
+      "text": "恢复出厂配置：",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        660.379,
+        151.193,
+        672.862
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

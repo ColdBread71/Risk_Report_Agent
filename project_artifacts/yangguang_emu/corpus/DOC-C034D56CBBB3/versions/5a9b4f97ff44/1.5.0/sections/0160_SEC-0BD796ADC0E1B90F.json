@@ -1,0 +1,577 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-0BD796ADC0E1B90F",
+  "section_path": [
+    "9 电网调度",
+    "9.4 无功功率调节",
+    "9.4.7 禁止无功功率输出"
+  ],
+  "section_title": "9.4.7 禁止无功功率输出",
+  "start_pdf_page": 101,
+  "end_pdf_page": 102,
+  "blocks": [
+    {
+      "block_id": "BLK-DF7F2BF40A09CF8D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 101,
+      "printed_page_label": "91",
+      "block_order": 0,
+      "section_id": "SEC-0BD796ADC0E1B90F",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.7 禁止无功功率输出"
+      ],
+      "section_title": "9.4.7 禁止无功功率输出",
+      "block_type": "paragraph",
+      "text": "用户手册\n9 电网调度",
+      "table_cells": null,
+      "bbox": [
+        74.616,
+        48.088,
+        463.97,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5CF4E87C47BC1D74",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 101,
+      "printed_page_label": "91",
+      "block_order": 1,
+      "section_id": "SEC-0BD796ADC0E1B90F",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.7 禁止无功功率输出"
+      ],
+      "section_title": "9.4.7 禁止无功功率输出",
+      "block_type": "paragraph",
+      "text": "如需删除DI 信号组合配置，在表格中选择该行第一列的选择框，点击清除数据。",
+      "table_cells": null,
+      "bbox": [
+        142.909,
+        78.056,
+        462.409,
+        89.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-745401B4D2A555CE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 101,
+      "printed_page_label": "91",
+      "block_order": 2,
+      "section_id": "SEC-0BD796ADC0E1B90F",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.7 禁止无功功率输出"
+      ],
+      "section_title": "9.4.7 禁止无功功率输出",
+      "block_type": "paragraph",
+      "text": "步骤 5 点击保存。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        106.284,
+        146.736,
+        118.767
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-53865A2787B2234D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 101,
+      "printed_page_label": "91",
+      "block_order": 3,
+      "section_id": "SEC-0BD796ADC0E1B90F",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.7 禁止无功功率输出"
+      ],
+      "section_title": "9.4.7 禁止无功功率输出",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        122.856,
+        126.36,
+        133.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EA87150B857C19BD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 101,
+      "printed_page_label": "91",
+      "block_order": 19,
+      "section_id": "SEC-0BD796ADC0E1B90F",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.7 禁止无功功率输出"
+      ],
+      "section_title": "9.4.7 禁止无功功率输出",
+      "block_type": "heading",
+      "text": "9.4.7 禁止无功功率输出",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        427.09,
+        177.853,
+        439.26
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E9812606DE10431F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 101,
+      "printed_page_label": "91",
+      "block_order": 20,
+      "section_id": "SEC-0BD796ADC0E1B90F",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.7 禁止无功功率输出"
+      ],
+      "section_title": "9.4.7 禁止无功功率输出",
+      "block_type": "paragraph",
+      "text": "在某些特定情况下，例如当电网公司要求不需要电站调节并网点的电压水平，且电网不需要配合\n进行无功功率补偿时，可以设置逆变器停止无功功率输出。这样有助于维护电网的整体稳定性，\n避免因无功功率调节而导致的电压波动。",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        446.314,
+        459.365,
+        482.158
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F9784636F2B14274",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 101,
+      "printed_page_label": "91",
+      "block_order": 21,
+      "section_id": "SEC-0BD796ADC0E1B90F",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.7 禁止无功功率输出"
+      ],
+      "section_title": "9.4.7 禁止无功功率输出",
+      "block_type": "paragraph",
+      "text": "步骤 1 在无功功率页，设置无功控制方式为禁止输出。",
+      "table_cells": null,
+      "bbox": [
+        70.865,
+        491.234,
+        290.735,
+        503.717
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AED27DEA07DFF124",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 101,
+      "printed_page_label": "91",
+      "block_order": 22,
+      "section_id": "SEC-0BD796ADC0E1B90F",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.7 禁止无功功率输出"
+      ],
+      "section_title": "9.4.7 禁止无功功率输出",
+      "block_type": "paragraph",
+      "text": "步骤 2 点击保存。",
+      "table_cells": null,
+      "bbox": [
+        70.865,
+        507.734,
+        146.735,
+        520.217
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4D1FE80B9B75A1AC",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 101,
+      "printed_page_label": "91",
+      "block_order": 23,
+      "section_id": "SEC-0BD796ADC0E1B90F",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.7 禁止无功功率输出"
+      ],
+      "section_title": "9.4.7 禁止无功功率输出",
+      "block_type": "list",
+      "text": "--结束\n设置完成后，逆变器无功功率输出恢复到“0%”。",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        524.306,
+        292.364,
+        546.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9275EE50DEF97865",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 102,
+      "printed_page_label": "92",
+      "block_order": 0,
+      "section_id": "SEC-0BD796ADC0E1B90F",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.7 禁止无功功率输出"
+      ],
+      "section_title": "9.4.7 禁止无功功率输出",
+      "block_type": "paragraph",
+      "text": "用户手册\n9 电网调度",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2092AE025E7DB5A1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 102,
+      "printed_page_label": "92",
+      "block_order": 1,
+      "section_id": "SEC-0BD796ADC0E1B90F",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.7 禁止无功功率输出"
+      ],
+      "section_title": "9.4.7 禁止无功功率输出",
+      "block_type": "paragraph",
+      "text": "通过 Modbus TCP 快调开关或 GOOSE 快调开关，均可正常开启或关闭DI 急停消息发送通\n道，无需重启数据采集器。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        71.556,
+        449.219,
+        93.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A388124BDC01FFF7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 102,
+      "printed_page_label": "92",
+      "block_order": 2,
+      "section_id": "SEC-0BD796ADC0E1B90F",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.7 禁止无功功率输出"
+      ],
+      "section_title": "9.4.7 禁止无功功率输出",
+      "block_type": "paragraph",
+      "text": "步骤 1 导航栏中点击功率调节 > 急停开关，跳转至相应页面。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        99.084,
+        304.823,
+        111.567
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-47CBE40D338BB892",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 102,
+      "printed_page_label": "92",
+      "block_order": 3,
+      "section_id": "SEC-0BD796ADC0E1B90F",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.7 禁止无功功率输出"
+      ],
+      "section_title": "9.4.7 禁止无功功率输出",
+      "block_type": "paragraph",
+      "text": "步骤 2 将急停开关设置为使能。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        115.584,
+        186.563,
+        128.067
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-61B51C4512ED0F98",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 102,
+      "printed_page_label": "92",
+      "block_order": 4,
+      "section_id": "SEC-0BD796ADC0E1B90F",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.7 禁止无功功率输出"
+      ],
+      "section_title": "9.4.7 禁止无功功率输出",
+      "block_type": "paragraph",
+      "text": "步骤 3 在DI 通道下拉列表中，选择急停装置连接的DI 端口。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        132.084,
+        303.563,
+        144.567
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-32957B17145B814D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 102,
+      "printed_page_label": "92",
+      "block_order": 5,
+      "section_id": "SEC-0BD796ADC0E1B90F",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.7 禁止无功功率输出"
+      ],
+      "section_title": "9.4.7 禁止无功功率输出",
+      "block_type": "paragraph",
+      "text": "步骤 4 在急停恢复时逆变器状态下拉列表中，选择急停恢复时逆变器的状态。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        148.584,
+        366.563,
+        161.067
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D6F27C5AF270CD7B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 102,
+      "printed_page_label": "92",
+      "block_order": 6,
+      "section_id": "SEC-0BD796ADC0E1B90F",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.7 禁止无功功率输出"
+      ],
+      "section_title": "9.4.7 禁止无功功率输出",
+      "block_type": "list",
+      "text": "•\n开机：当急停恢复时，数据采集器对逆变器下发批量开机指令。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        166.506,
+        353.738,
+        177.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EB2A4652C177EC6D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 102,
+      "printed_page_label": "92",
+      "block_order": 7,
+      "section_id": "SEC-0BD796ADC0E1B90F",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.7 禁止无功功率输出"
+      ],
+      "section_title": "9.4.7 禁止无功功率输出",
+      "block_type": "list",
+      "text": "•\n关机：当急停恢复时，逆变器处于待机状态。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        181.506,
+        281.738,
+        192.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D8A25E203F63EC2A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 102,
+      "printed_page_label": "92",
+      "block_order": 8,
+      "section_id": "SEC-0BD796ADC0E1B90F",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.7 禁止无功功率输出"
+      ],
+      "section_title": "9.4.7 禁止无功功率输出",
+      "block_type": "paragraph",
+      "text": "步骤 5 点击保存，使变更生效。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        196.584,
+        186.563,
+        209.067
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D14848339A40CF22",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 102,
+      "printed_page_label": "92",
+      "block_order": 9,
+      "section_id": "SEC-0BD796ADC0E1B90F",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.7 禁止无功功率输出"
+      ],
+      "section_title": "9.4.7 禁止无功功率输出",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        213.156,
+        112.187,
+        224.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DF70E59B59ED9C10",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 102,
+      "printed_page_label": "92",
+      "block_order": 10,
+      "section_id": "SEC-0BD796ADC0E1B90F",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.7 禁止无功功率输出"
+      ],
+      "section_title": "9.4.7 禁止无功功率输出",
+      "block_type": "paragraph",
+      "text": "如果急停开关复位后，逆变器仍处于待机状态，需通过设备监控 > 设备指令手动启\n动逆变器。如有疑问，联系阳光电源。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        230.456,
+        440.453,
+        252.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

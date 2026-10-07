@@ -1,0 +1,556 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-4AFAC91941E74AFD",
+  "section_path": [
+    "2 产品描述",
+    "2.1 功能描述"
+  ],
+  "section_title": "2.1 功能描述",
+  "start_pdf_page": 13,
+  "end_pdf_page": 13,
+  "blocks": [
+    {
+      "block_id": "BLK-BEF4C1B4FAD70110",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "3",
+      "block_order": 1,
+      "section_id": "SEC-4AFAC91941E74AFD",
+      "section_path": [
+        "2 产品描述",
+        "2.1 功能描述"
+      ],
+      "section_title": "2.1 功能描述",
+      "block_type": "heading",
+      "text": "2.1 功能描述",
+      "table_cells": null,
+      "bbox": [
+        70.86,
+        162.258,
+        143.052,
+        176.862
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3E89B0C4F985DF24",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "3",
+      "block_order": 2,
+      "section_id": "SEC-4AFAC91941E74AFD",
+      "section_path": [
+        "2 产品描述",
+        "2.1 功能描述"
+      ],
+      "section_title": "2.1 功能描述",
+      "block_type": "paragraph",
+      "text": "数据采集器具有以下功能：",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        189.906,
+        210.363,
+        200.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DCDA4F95C4391FC8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "3",
+      "block_order": 3,
+      "section_id": "SEC-4AFAC91941E74AFD",
+      "section_path": [
+        "2 产品描述",
+        "2.1 功能描述"
+      ],
+      "section_title": "2.1 功能描述",
+      "block_type": "paragraph",
+      "text": "支持设备接入",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        210.056,
+        156.363,
+        221.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6E32C86DD4754772",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "3",
+      "block_order": 4,
+      "section_id": "SEC-4AFAC91941E74AFD",
+      "section_path": [
+        "2 产品描述",
+        "2.1 功能描述"
+      ],
+      "section_title": "2.1 功能描述",
+      "block_type": "paragraph",
+      "text": "数据采集器可以通过RS485 总线的方式，接入光伏发电系统的各种设备，还可以通过PLC\n接入阳光电源生产的具备PLC 通讯功能的组串式逆变器。对设备信息进行存储和处理，并通\n过规约转换来转换数据的通讯协议。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        228.206,
+        466.377,
+        266.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-944F6163E2D37BE7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "3",
+      "block_order": 5,
+      "section_id": "SEC-4AFAC91941E74AFD",
+      "section_path": [
+        "2 产品描述",
+        "2.1 功能描述"
+      ],
+      "section_title": "2.1 功能描述",
+      "block_type": "paragraph",
+      "text": "通讯设备管理",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        275.356,
+        156.363,
+        286.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-222629BCD1FCA749",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "3",
+      "block_order": 6,
+      "section_id": "SEC-4AFAC91941E74AFD",
+      "section_path": [
+        "2 产品描述",
+        "2.1 功能描述"
+      ],
+      "section_title": "2.1 功能描述",
+      "block_type": "paragraph",
+      "text": "数据采集器可以对接入的设备进行集中管理，包括参数配置、固件升级等，便于现场运维。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        293.506,
+        462.363,
+        304.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DBDE646DDB386689",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "3",
+      "block_order": 7,
+      "section_id": "SEC-4AFAC91941E74AFD",
+      "section_path": [
+        "2 产品描述",
+        "2.1 功能描述"
+      ],
+      "section_title": "2.1 功能描述",
+      "block_type": "paragraph",
+      "text": "Web 界面配置",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        313.656,
+        158.955,
+        324.609
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B322968D94E85788",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "3",
+      "block_order": 8,
+      "section_id": "SEC-4AFAC91941E74AFD",
+      "section_path": [
+        "2 产品描述",
+        "2.1 功能描述"
+      ],
+      "section_title": "2.1 功能描述",
+      "block_type": "paragraph",
+      "text": "数据采集器可以通过嵌入式Web 界面，对系统时间、网络、串口等进行设置，对协议点表进\n行维护。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        331.806,
+        467.205,
+        356.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6A35ACFE8B828635",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "3",
+      "block_order": 9,
+      "section_id": "SEC-4AFAC91941E74AFD",
+      "section_path": [
+        "2 产品描述",
+        "2.1 功能描述"
+      ],
+      "section_title": "2.1 功能描述",
+      "block_type": "paragraph",
+      "text": "网口配置",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        365.456,
+        138.363,
+        376.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4090DAF66AA59036",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "3",
+      "block_order": 10,
+      "section_id": "SEC-4AFAC91941E74AFD",
+      "section_path": [
+        "2 产品描述",
+        "2.1 功能描述"
+      ],
+      "section_title": "2.1 功能描述",
+      "block_type": "paragraph",
+      "text": "数据采集器集成五路具备数据交换功能的以太网口（即ETH1~ETH5），三路以太网口，两\n路快速调度口。北向可以接入综自系统或站控系统，南向可以接入三方设备。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        383.606,
+        461.886,
+        408.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D0309BF7BE21CC62",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "3",
+      "block_order": 11,
+      "section_id": "SEC-4AFAC91941E74AFD",
+      "section_path": [
+        "2 产品描述",
+        "2.1 功能描述"
+      ],
+      "section_title": "2.1 功能描述",
+      "block_type": "paragraph",
+      "text": "数据转发功能",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        417.256,
+        156.363,
+        428.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F4B33141EB1F7310",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "3",
+      "block_order": 12,
+      "section_id": "SEC-4AFAC91941E74AFD",
+      "section_path": [
+        "2 产品描述",
+        "2.1 功能描述"
+      ],
+      "section_title": "2.1 功能描述",
+      "block_type": "paragraph",
+      "text": "数据采集器具备将收集到的数据转发综自系统、站控系统或阳光云平台的功能。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        435.406,
+        417.363,
+        446.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0B989AF61C1F4C01",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "3",
+      "block_order": 13,
+      "section_id": "SEC-4AFAC91941E74AFD",
+      "section_path": [
+        "2 产品描述",
+        "2.1 功能描述"
+      ],
+      "section_title": "2.1 功能描述",
+      "block_type": "list",
+      "text": "•\n数据采集器的数据转发功能默认不可用。启用该功能前，客户需在充分知情的前\n提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获得客户\n授权后方可生效，且相关操作受系统访问控制策略管理。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        455.406,
+        458.541,
+        493.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-44984C828BD6FBA2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "3",
+      "block_order": 14,
+      "section_id": "SEC-4AFAC91941E74AFD",
+      "section_path": [
+        "2 产品描述",
+        "2.1 功能描述"
+      ],
+      "section_title": "2.1 功能描述",
+      "block_type": "list",
+      "text": "•\n阳光云平台在北美区域禁止使用。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        497.406,
+        278.541,
+        508.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E743E6E6FD668BBC",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "3",
+      "block_order": 15,
+      "section_id": "SEC-4AFAC91941E74AFD",
+      "section_path": [
+        "2 产品描述",
+        "2.1 功能描述"
+      ],
+      "section_title": "2.1 功能描述",
+      "block_type": "paragraph",
+      "text": "支持协议转换服务",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        532.056,
+        174.366,
+        543.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6D125F95FCDB79D1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "3",
+      "block_order": 16,
+      "section_id": "SEC-4AFAC91941E74AFD",
+      "section_path": [
+        "2 产品描述",
+        "2.1 功能描述"
+      ],
+      "section_title": "2.1 功能描述",
+      "block_type": "paragraph",
+      "text": "数据采集器具备协议转换服务，包括ModbusRTU 转IEC104、MQTT、ModbusTCP 等。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        550.206,
+        456.246,
+        561.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-816AB70EB5BFC632",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "3",
+      "block_order": 17,
+      "section_id": "SEC-4AFAC91941E74AFD",
+      "section_path": [
+        "2 产品描述",
+        "2.1 功能描述"
+      ],
+      "section_title": "2.1 功能描述",
+      "block_type": "paragraph",
+      "text": "电网调度",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        570.356,
+        138.366,
+        581.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-687B21F1F1B25473",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "3",
+      "block_order": 18,
+      "section_id": "SEC-4AFAC91941E74AFD",
+      "section_path": [
+        "2 产品描述",
+        "2.1 功能描述"
+      ],
+      "section_title": "2.1 功能描述",
+      "block_type": "paragraph",
+      "text": "数据采集器可以接受和执行来自电网的调度指令，包括远程调度控制指令、模拟量及数字量\n调度控制指令。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        588.506,
+        462.366,
+        612.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ACAF9782B205A8FE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "3",
+      "block_order": 19,
+      "section_id": "SEC-4AFAC91941E74AFD",
+      "section_path": [
+        "2 产品描述",
+        "2.1 功能描述"
+      ],
+      "section_title": "2.1 功能描述",
+      "block_type": "paragraph",
+      "text": "数据采集器可以对接入的逆变器进行有功功率调节和无功功率调节。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        623.506,
+        372.366,
+        634.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BBC2DDECACEC6B23",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "3",
+      "block_order": 20,
+      "section_id": "SEC-4AFAC91941E74AFD",
+      "section_path": [
+        "2 产品描述",
+        "2.1 功能描述"
+      ],
+      "section_title": "2.1 功能描述",
+      "block_type": "paragraph",
+      "text": "本手册中涉及的远程调度、有功功率调度和无功功率调度均代表上位机调度。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        650.156,
+        435.366,
+        661.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-B70BDF83C6E9F27F",
+  "section_path": [
+    "5 电气连接",
+    "5.2 端口简介"
+  ],
+  "section_title": "5.2 端口简介",
+  "start_pdf_page": 28,
+  "end_pdf_page": 28,
+  "blocks": [
+    {
+      "block_id": "BLK-8A279DA8992675C5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 28,
+      "printed_page_label": "18",
+      "block_order": 0,
+      "section_id": "SEC-B70BDF83C6E9F27F",
+      "section_path": [
+        "5 电气连接",
+        "5.2 端口简介"
+      ],
+      "section_title": "5.2 端口简介",
+      "block_type": "paragraph",
+      "text": "用户手册\n5 电气连接",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E551319D52F7F10D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 28,
+      "printed_page_label": "18",
+      "block_order": 1,
+      "section_id": "SEC-B70BDF83C6E9F27F",
+      "section_path": [
+        "5 电气连接",
+        "5.2 端口简介"
+      ],
+      "section_title": "5.2 端口简介",
+      "block_type": "table",
+      "text": "标识\t名称\t线缆推荐\t说明\nDI\t数字量输入\t0.75mm2 户外\n型防紫外线导\n线\t无源干接点输入接口\nUSB\tU 盘接口\t-\t功能预留\nMicro SD\tSD 卡接口\t-\t设备软件烧写（该端口仅阳光\n电源技术人员可用）\nDebug\t调试串口\t-\t用于调试数据采集器\nRST\t复位口\t-\t长按（＞30s），用于重启数\n据采集器并恢复出厂设置\n短按（＜3s），功能预留\nDO1~DO4\t数字量输出\t0.75mm2 户外\n型防紫外线导\n线\t继电器输出接口\n继电器规格250Vac/1A 或\n30Vdc/1A\nPT1、PT2\nAI1~AI4\t模拟量输入\t0.75mm2 户外\n型防紫外线导\n线\tPT100/PT1000 温度检测范\n围：-30℃~120℃\n接线方法：二线制或三线制\nAI1：0~10Vdc\nAI2-AI4：4~20mA\nA1B1~A7B7\tRS485 通信接\n口\t2 x\n(0.75~1.5)mm2\n户外型防紫外\n线带屏蔽层双\n绞线\t支持7 路RS485\n可以接入从站设备，也可以接\n入后台\nIRIG-B\tB 码对时接口\t-\t功能预留\nDC IN\n24V,1.25A\tDC24V 供电端\n口\t0.75~1.5mm2\n户外型防紫外\n线导线\t电流≤1.25A，该端口所使用\n的开关电源需要加强绝缘\nAC IN\n100–\n277V,0.48A\t交流供电端口\t0.75~1.5mm2\n户外型防紫外\n线导线\t连接100~277Vac\n（50/60Hz），电流≤0.48A",
+      "table_cells": [
+        [
+          "标识",
+          "名称",
+          "线缆推荐",
+          "说明"
+        ],
+        [
+          "DI",
+          "数字量输入",
+          "0.75mm2 户外\n型防紫外线导\n线",
+          "无源干接点输入接口"
+        ],
+        [
+          "USB",
+          "U 盘接口",
+          "-",
+          "功能预留"
+        ],
+        [
+          "Micro SD",
+          "SD 卡接口",
+          "-",
+          "设备软件烧写（该端口仅阳光\n电源技术人员可用）"
+        ],
+        [
+          "Debug",
+          "调试串口",
+          "-",
+          "用于调试数据采集器"
+        ],
+        [
+          "RST",
+          "复位口",
+          "-",
+          "长按（＞30s），用于重启数\n据采集器并恢复出厂设置\n短按（＜3s），功能预留"
+        ],
+        [
+          "DO1~DO4",
+          "数字量输出",
+          "0.75mm2 户外\n型防紫外线导\n线",
+          "继电器输出接口\n继电器规格250Vac/1A 或\n30Vdc/1A"
+        ],
+        [
+          "PT1、PT2\nAI1~AI4",
+          "模拟量输入",
+          "0.75mm2 户外\n型防紫外线导\n线",
+          "PT100/PT1000 温度检测范\n围：-30℃~120℃\n接线方法：二线制或三线制\nAI1：0~10Vdc\nAI2-AI4：4~20mA"
+        ],
+        [
+          "A1B1~A7B7",
+          "RS485 通信接\n口",
+          "2 x\n(0.75~1.5)mm2\n户外型防紫外\n线带屏蔽层双\n绞线",
+          "支持7 路RS485\n可以接入从站设备，也可以接\n入后台"
+        ],
+        [
+          "IRIG-B",
+          "B 码对时接口",
+          "-",
+          "功能预留"
+        ],
+        [
+          "DC IN\n24V,1.25A",
+          "DC24V 供电端\n口",
+          "0.75~1.5mm2\n户外型防紫外\n线导线",
+          "电流≤1.25A，该端口所使用\n的开关电源需要加强绝缘"
+        ],
+        [
+          "AC IN\n100–\n277V,0.48A",
+          "交流供电端口",
+          "0.75~1.5mm2\n户外型防紫外\n线导线",
+          "连接100~277Vac\n（50/60Hz），电流≤0.48A"
+        ]
+      ],
+      "bbox": [
+        96.86,
+        74.539,
+        444.004,
+        591.638
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-977820D8F5D211F8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 28,
+      "printed_page_label": "18",
+      "block_order": 2,
+      "section_id": "SEC-B70BDF83C6E9F27F",
+      "section_path": [
+        "5 电气连接",
+        "5.2 端口简介"
+      ],
+      "section_title": "5.2 端口简介",
+      "block_type": "paragraph",
+      "text": "1~1.5mm2 户\n外型防紫外线\n导线",
+      "table_cells": null,
+      "bbox": [
+        249.328,
+        595.631,
+        303.335,
+        636.584
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-91068B3645DECC7D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 28,
+      "printed_page_label": "18",
+      "block_order": 3,
+      "section_id": "SEC-B70BDF83C6E9F27F",
+      "section_path": [
+        "5 电气连接",
+        "5.2 端口简介"
+      ],
+      "section_title": "5.2 端口简介",
+      "block_type": "paragraph",
+      "text": "接地孔",
+      "table_cells": null,
+      "bbox": [
+        171.655,
+        611.587,
+        198.655,
+        622.54
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3BEF46B56CFFE9CB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 28,
+      "printed_page_label": "18",
+      "block_order": 4,
+      "section_id": "SEC-B70BDF83C6E9F27F",
+      "section_path": [
+        "5 电气连接",
+        "5.2 端口简介"
+      ],
+      "section_title": "5.2 端口简介",
+      "block_type": "paragraph",
+      "text": "连接保护地线。",
+      "table_cells": null,
+      "bbox": [
+        327.008,
+        611.587,
+        390.008,
+        622.54
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

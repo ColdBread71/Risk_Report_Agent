@@ -1,0 +1,241 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-4AAA215D47951BC7",
+  "section_path": [
+    "7 Web界面",
+    "7.4 概览",
+    "7.4.1 基本信息"
+  ],
+  "section_title": "7.4.1 基本信息",
+  "start_pdf_page": 44,
+  "end_pdf_page": 44,
+  "blocks": [
+    {
+      "block_id": "BLK-274F7E81597761D9",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 44,
+      "printed_page_label": "34",
+      "block_order": 0,
+      "section_id": "SEC-4AAA215D47951BC7",
+      "section_path": [
+        "7 Web界面",
+        "7.4 概览",
+        "7.4.1 基本信息"
+      ],
+      "section_title": "7.4.1 基本信息",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.441,
+        48.088,
+        449.795,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AE45356BA9EE776B",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 44,
+      "printed_page_label": "34",
+      "block_order": 16,
+      "section_id": "SEC-4AAA215D47951BC7",
+      "section_path": [
+        "7 Web界面",
+        "7.4 概览",
+        "7.4.1 基本信息"
+      ],
+      "section_title": "7.4.1 基本信息",
+      "block_type": "heading",
+      "text": "7.4.1 基本信息",
+      "table_cells": null,
+      "bbox": [
+        56.69,
+        400.29,
+        123.68,
+        412.46
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C507D470E965F603",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 44,
+      "printed_page_label": "34",
+      "block_order": 17,
+      "section_id": "SEC-4AAA215D47951BC7",
+      "section_path": [
+        "7 Web界面",
+        "7.4 概览",
+        "7.4.1 基本信息"
+      ],
+      "section_title": "7.4.1 基本信息",
+      "block_type": "paragraph",
+      "text": "单击概览 > 基本信息，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        419.606,
+        224.453,
+        430.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-024DA91EE6FF4954",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 44,
+      "printed_page_label": "34",
+      "block_order": 18,
+      "section_id": "SEC-4AAA215D47951BC7",
+      "section_path": [
+        "7 Web界面",
+        "7.4 概览",
+        "7.4.1 基本信息"
+      ],
+      "section_title": "7.4.1 基本信息",
+      "block_type": "paragraph",
+      "text": "常用功能",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        525.79,
+        124.193,
+        536.743
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ED4598E65B5A1E94",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 44,
+      "printed_page_label": "34",
+      "block_order": 19,
+      "section_id": "SEC-4AAA215D47951BC7",
+      "section_path": [
+        "7 Web界面",
+        "7.4 概览",
+        "7.4.1 基本信息"
+      ],
+      "section_title": "7.4.1 基本信息",
+      "block_type": "list",
+      "text": "•\n设备接入：可以自动搜索设备和添加设备。支持对设备进行增、删、改、查操作；能够自\n动搜索设备，按条件添加设备，自动分配地址。参考7.6.1 设备列表。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        543.94,
+        453.368,
+        568.393
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6EC45DB90B753F2E",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 44,
+      "printed_page_label": "34",
+      "block_order": 20,
+      "section_id": "SEC-4AAA215D47951BC7",
+      "section_path": [
+        "7 Web界面",
+        "7.4 概览",
+        "7.4.1 基本信息"
+      ],
+      "section_title": "7.4.1 基本信息",
+      "block_type": "list",
+      "text": "•\n网络管理：可以对以太网参数进行设置。参考7.10.7 端口参数。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        572.44,
+        357.14,
+        583.393
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0230920C727C65EE",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 44,
+      "printed_page_label": "34",
+      "block_order": 21,
+      "section_id": "SEC-4AAA215D47951BC7",
+      "section_path": [
+        "7 Web界面",
+        "7.4 概览",
+        "7.4.1 基本信息"
+      ],
+      "section_title": "7.4.1 基本信息",
+      "block_type": "list",
+      "text": "•\n转发配置：将系统采集的数据转发给后台。参考7.10.6.1 转发阳光云服务设置~7.10.6.5\n转发GOOSE 服务配置。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        587.44,
+        447.428,
+        611.893
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1FA6E5A8B01EC0A7",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 44,
+      "printed_page_label": "34",
+      "block_order": 22,
+      "section_id": "SEC-4AAA215D47951BC7",
+      "section_path": [
+        "7 Web界面",
+        "7.4 概览",
+        "7.4.1 基本信息"
+      ],
+      "section_title": "7.4.1 基本信息",
+      "block_type": "list",
+      "text": "•\n系统维护：可以进行系统升级、日志导出和系统重启等操作。参考7.10.2 系统维护。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        615.94,
+        438.14,
+        626.893
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

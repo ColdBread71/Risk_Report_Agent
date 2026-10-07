@@ -1,0 +1,185 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-4E5BBD0E6B33B413",
+  "section_path": [
+    "7 Web界面",
+    "7.6 设备维护",
+    "7.6.5 设置逆变器蓝牙配对码功能"
+  ],
+  "section_title": "7.6.5 设置逆变器蓝牙配对码功能",
+  "start_pdf_page": 63,
+  "end_pdf_page": 63,
+  "blocks": [
+    {
+      "block_id": "BLK-D049FCBE7B4A44E6",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 7,
+      "section_id": "SEC-4E5BBD0E6B33B413",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能"
+      ],
+      "section_title": "7.6.5 设置逆变器蓝牙配对码功能",
+      "block_type": "heading",
+      "text": "7.6.5 设置逆变器蓝牙配对码功能",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        334.025,
+        217.856,
+        346.195
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0E87F844804A65C9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 8,
+      "section_id": "SEC-4E5BBD0E6B33B413",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能"
+      ],
+      "section_title": "7.6.5 设置逆变器蓝牙配对码功能",
+      "block_type": "paragraph",
+      "text": "为方便运维调试，逆变器在出厂设置默认开启蓝牙功能。如果在大型地面电站场景下需要关闭蓝\n牙功能，可在逆变器并网前通过Logger4000 手动批量关闭子阵逆变器蓝牙功能，从而大大提升运\n维效率。",
+      "table_cells": null,
+      "bbox": [
+        102.367,
+        353.249,
+        466.49,
+        389.093
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C7C8DEA0B41E91DD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 9,
+      "section_id": "SEC-4E5BBD0E6B33B413",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能"
+      ],
+      "section_title": "7.6.5 设置逆变器蓝牙配对码功能",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        399.591,
+        138.365,
+        410.544
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-83F26818320CE974",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 10,
+      "section_id": "SEC-4E5BBD0E6B33B413",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能"
+      ],
+      "section_title": "7.6.5 设置逆变器蓝牙配对码功能",
+      "block_type": "list",
+      "text": "•\n已接入的逆变器支持蓝牙配对功能且为在线状态。以蓝牙配对页面显示结果为准。",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        419.591,
+        440.54,
+        430.544
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0629D8FEBDAAE07D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 11,
+      "section_id": "SEC-4E5BBD0E6B33B413",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能"
+      ],
+      "section_title": "7.6.5 设置逆变器蓝牙配对码功能",
+      "block_type": "list",
+      "text": "•\nLogger4000 的固件版本为P028 或以上。查看固件版本详见7.8.16 查看固件版本。",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        434.591,
+        447.128,
+        445.544
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-18CFF0D9F925479F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 12,
+      "section_id": "SEC-4E5BBD0E6B33B413",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能"
+      ],
+      "section_title": "7.6.5 设置逆变器蓝牙配对码功能",
+      "block_type": "list",
+      "text": "•\n2024 年6 月之后出厂的逆变器，已内置专用蓝牙配对功能。",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        449.591,
+        355.319,
+        460.544
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

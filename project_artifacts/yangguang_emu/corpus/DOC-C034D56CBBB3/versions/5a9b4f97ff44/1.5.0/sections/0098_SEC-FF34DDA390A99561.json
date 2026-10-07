@@ -1,0 +1,221 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-FF34DDA390A99561",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.2 系统维护",
+    "7.8.2.6 HTTPS证书导入"
+  ],
+  "section_title": "7.8.2.6 HTTPS证书导入",
+  "start_pdf_page": 70,
+  "end_pdf_page": 70,
+  "blocks": [
+    {
+      "block_id": "BLK-128DA261FFAB6C39",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 70,
+      "printed_page_label": "60",
+      "block_order": 0,
+      "section_id": "SEC-FF34DDA390A99561",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.6 HTTPS证书导入"
+      ],
+      "section_title": "7.8.2.6 HTTPS证书导入",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D57870EE9605C885",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 70,
+      "printed_page_label": "60",
+      "block_order": 1,
+      "section_id": "SEC-FF34DDA390A99561",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.6 HTTPS证书导入"
+      ],
+      "section_title": "7.8.2.6 HTTPS证书导入",
+      "block_type": "paragraph",
+      "text": "参数\n说明",
+      "table_cells": null,
+      "bbox": [
+        96.232,
+        76.189,
+        179.056,
+        86.534
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-79C97260422067A6",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 70,
+      "printed_page_label": "60",
+      "block_order": 2,
+      "section_id": "SEC-FF34DDA390A99561",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.6 HTTPS证书导入"
+      ],
+      "section_title": "7.8.2.6 HTTPS证书导入",
+      "block_type": "paragraph",
+      "text": "导入时，需输入解压密码，解压密码为当时导出时设置的压缩\n密码。",
+      "table_cells": null,
+      "bbox": [
+        189.055,
+        102.056,
+        432.055,
+        123.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FC8C8D56DEB72429",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 70,
+      "printed_page_label": "60",
+      "block_order": 3,
+      "section_id": "SEC-FF34DDA390A99561",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.6 HTTPS证书导入"
+      ],
+      "section_title": "7.8.2.6 HTTPS证书导入",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        155.406,
+        112.187,
+        166.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-662DF598CE2965F5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 70,
+      "printed_page_label": "60",
+      "block_order": 24,
+      "section_id": "SEC-FF34DDA390A99561",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.6 HTTPS证书导入"
+      ],
+      "section_title": "7.8.2.6 HTTPS证书导入",
+      "block_type": "heading",
+      "text": "7.8.2.6 HTTPS 证书导入",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        598.49,
+        164.807,
+        610.66
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3DAEF866C2B32F62",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 70,
+      "printed_page_label": "60",
+      "block_order": 25,
+      "section_id": "SEC-FF34DDA390A99561",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.6 HTTPS证书导入"
+      ],
+      "section_title": "7.8.2.6 HTTPS证书导入",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击系统 > 系统维护。",
+      "table_cells": null,
+      "bbox": [
+        56.69,
+        622.384,
+        178.82,
+        634.867
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2CF63C9B8BE80510",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 70,
+      "printed_page_label": "60",
+      "block_order": 26,
+      "section_id": "SEC-FF34DDA390A99561",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.6 HTTPS证书导入"
+      ],
+      "section_title": "7.8.2.6 HTTPS证书导入",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击HTTPS 证书导入。",
+      "table_cells": null,
+      "bbox": [
+        56.69,
+        638.884,
+        184.562,
+        651.367
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

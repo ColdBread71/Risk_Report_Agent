@@ -1,0 +1,337 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-B43F9C36C8793E20",
+  "section_path": [
+    "7 Web界面",
+    "7.6 设备维护",
+    "7.6.1 设备列表",
+    "7.6.1.6 删除设备"
+  ],
+  "section_title": "7.6.1.6 删除设备",
+  "start_pdf_page": 61,
+  "end_pdf_page": 61,
+  "blocks": [
+    {
+      "block_id": "BLK-3194C251C0B69CDE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 61,
+      "printed_page_label": "51",
+      "block_order": 0,
+      "section_id": "SEC-B43F9C36C8793E20",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.6 删除设备"
+      ],
+      "section_title": "7.6.1.6 删除设备",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.615,
+        48.088,
+        463.969,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1DDEAF7A58F3E98E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 61,
+      "printed_page_label": "51",
+      "block_order": 1,
+      "section_id": "SEC-B43F9C36C8793E20",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.6 删除设备"
+      ],
+      "section_title": "7.6.1.6 删除设备",
+      "block_type": "list",
+      "text": "•\n同一端口只能选择一种通讯方式，当端口PLC 功能使能时，则不能使用RS485\n通讯方式添加。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        79.406,
+        455.678,
+        103.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8667F6C8801D6CDE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 61,
+      "printed_page_label": "51",
+      "block_order": 2,
+      "section_id": "SEC-B43F9C36C8793E20",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.6 删除设备"
+      ],
+      "section_title": "7.6.1.6 删除设备",
+      "block_type": "list",
+      "text": "•\n通过白名单方式添加设备后，页面将新增更换设备按钮，可更新设备SN。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        107.906,
+        436.661,
+        118.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-898B93C9EA5BE417",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 61,
+      "printed_page_label": "51",
+      "block_order": 3,
+      "section_id": "SEC-B43F9C36C8793E20",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.6 删除设备"
+      ],
+      "section_title": "7.6.1.6 删除设备",
+      "block_type": "figure_caption",
+      "text": "图 7-1 更换设备",
+      "table_cells": null,
+      "bbox": [
+        271.556,
+        243.161,
+        334.565,
+        254.115
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A4C2CD26390AD9E3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 61,
+      "printed_page_label": "51",
+      "block_order": 4,
+      "section_id": "SEC-B43F9C36C8793E20",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.6 删除设备"
+      ],
+      "section_title": "7.6.1.6 删除设备",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        272.811,
+        126.36,
+        283.764
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2CA88F576A492533",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 61,
+      "printed_page_label": "51",
+      "block_order": 12,
+      "section_id": "SEC-B43F9C36C8793E20",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.6 删除设备"
+      ],
+      "section_title": "7.6.1.6 删除设备",
+      "block_type": "heading",
+      "text": "7.6.1.6 删除设备",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        463.235,
+        146.2,
+        475.405
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-01C549D3E00D9C1A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 61,
+      "printed_page_label": "51",
+      "block_order": 13,
+      "section_id": "SEC-B43F9C36C8793E20",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.6 删除设备"
+      ],
+      "section_title": "7.6.1.6 删除设备",
+      "block_type": "paragraph",
+      "text": "实际设备从现场删除后，可在设备列表界面对设备进行删除，以保持数据采集器配置的设备\n与实际现场的一致性。",
+      "table_cells": null,
+      "bbox": [
+        102.37,
+        481.201,
+        462.37,
+        502.954
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D77EFE52F83D1DC4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 61,
+      "printed_page_label": "51",
+      "block_order": 14,
+      "section_id": "SEC-B43F9C36C8793E20",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.6 删除设备"
+      ],
+      "section_title": "7.6.1.6 删除设备",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击设备维护 > 设备列表，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        508.729,
+        255.991,
+        521.212
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-635C5982CCCED2A1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 61,
+      "printed_page_label": "51",
+      "block_order": 15,
+      "section_id": "SEC-B43F9C36C8793E20",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.6 删除设备"
+      ],
+      "section_title": "7.6.1.6 删除设备",
+      "block_type": "paragraph",
+      "text": "步骤 2 勾选需要删除的设备，单击删除按钮。",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        525.229,
+        254.731,
+        537.712
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3E46EB8619BD7AF9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 61,
+      "printed_page_label": "51",
+      "block_order": 16,
+      "section_id": "SEC-B43F9C36C8793E20",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.6 删除设备"
+      ],
+      "section_title": "7.6.1.6 删除设备",
+      "block_type": "paragraph",
+      "text": "步骤 3 弹出确认删除界面，单击确定。",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        541.729,
+        227.731,
+        554.212
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-30A70DFE880E205C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 61,
+      "printed_page_label": "51",
+      "block_order": 17,
+      "section_id": "SEC-B43F9C36C8793E20",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.6 删除设备"
+      ],
+      "section_title": "7.6.1.6 删除设备",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.37,
+        558.301,
+        126.364,
+        569.254
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-844F8E12FCB58923",
+  "section_path": [
+    "3 拆包与存储"
+  ],
+  "section_title": "3 拆包与存储",
+  "start_pdf_page": 19,
+  "end_pdf_page": 19,
+  "blocks": [
+    {
+      "block_id": "BLK-8621ED27EA5289D2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "9",
+      "block_order": 0,
+      "section_id": "SEC-844F8E12FCB58923",
+      "section_path": [
+        "3 拆包与存储"
+      ],
+      "section_title": "3 拆包与存储",
+      "block_type": "heading",
+      "text": "3\n拆包与存储",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        98.112,
+        186.624,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

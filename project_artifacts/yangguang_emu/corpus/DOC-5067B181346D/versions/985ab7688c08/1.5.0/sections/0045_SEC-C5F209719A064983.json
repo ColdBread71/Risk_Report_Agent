@@ -1,0 +1,232 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-C5F209719A064983",
+  "section_path": [
+    "4 电气连接",
+    "4.7 接线后处理"
+  ],
+  "section_title": "4.7 接线后处理",
+  "start_pdf_page": 46,
+  "end_pdf_page": 46,
+  "blocks": [
+    {
+      "block_id": "BLK-61EF5C879AB3E6C6",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "40",
+      "block_order": 0,
+      "section_id": "SEC-C5F209719A064983",
+      "section_path": [
+        "4 电气连接",
+        "4.7 接线后处理"
+      ],
+      "section_title": "4.7 接线后处理",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 电气连接",
+      "table_cells": null,
+      "bbox": [
+        60.443,
+        48.088,
+        449.79,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C8D4CBBA40F91A5C",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "40",
+      "block_order": 1,
+      "section_id": "SEC-C5F209719A064983",
+      "section_path": [
+        "4 电气连接",
+        "4.7 接线后处理"
+      ],
+      "section_title": "4.7 接线后处理",
+      "block_type": "heading",
+      "text": "4.7 接线后处理",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        71.658,
+        140.873,
+        86.262
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-51C4A86367B98437",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "40",
+      "block_order": 2,
+      "section_id": "SEC-C5F209719A064983",
+      "section_path": [
+        "4 电气连接",
+        "4.7 接线后处理"
+      ],
+      "section_title": "4.7 接线后处理",
+      "block_type": "paragraph",
+      "text": "注意",
+      "table_cells": null,
+      "bbox": [
+        97.941,
+        102.424,
+        119.941,
+        115.811
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3D3DCC0312DB382C",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "40",
+      "block_order": 3,
+      "section_id": "SEC-C5F209719A064983",
+      "section_path": [
+        "4 电气连接",
+        "4.7 接线后处理"
+      ],
+      "section_title": "4.7 接线后处理",
+      "block_type": "paragraph",
+      "text": "确认所有的电气连接无误后，需对进线孔做密封处理，线缆的空隙部分应用防火泥封堵。\n正确的密封泥封施工标准如下图所示。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        120.956,
+        443.695,
+        142.709
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3F2C7351B00B1A6E",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "40",
+      "block_order": 4,
+      "section_id": "SEC-C5F209719A064983",
+      "section_path": [
+        "4 电气连接",
+        "4.7 接线后处理"
+      ],
+      "section_title": "4.7 接线后处理",
+      "block_type": "paragraph",
+      "text": "步骤 1 接线完成后，拉拽线缆，确保线缆紧固到位。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        282.289,
+        267.563,
+        294.772
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D6B409FA2890E018",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "40",
+      "block_order": 5,
+      "section_id": "SEC-C5F209719A064983",
+      "section_path": [
+        "4 电气连接",
+        "4.7 接线后处理"
+      ],
+      "section_title": "4.7 接线后处理",
+      "block_type": "paragraph",
+      "text": "步骤 2 将机箱内部防护盖板复原。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        298.789,
+        195.563,
+        311.272
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C7F9494D4BE80CD4",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "40",
+      "block_order": 6,
+      "section_id": "SEC-C5F209719A064983",
+      "section_path": [
+        "4 电气连接",
+        "4.7 接线后处理"
+      ],
+      "section_title": "4.7 接线后处理",
+      "block_type": "paragraph",
+      "text": "步骤 3 关闭机箱门。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        315.289,
+        141.563,
+        327.772
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4B0DC93CF34DD308",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "40",
+      "block_order": 7,
+      "section_id": "SEC-C5F209719A064983",
+      "section_path": [
+        "4 电气连接",
+        "4.7 接线后处理"
+      ],
+      "section_title": "4.7 接线后处理",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        331.861,
+        112.187,
+        342.814
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,743 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-B3F6C7572273D1CE",
+  "section_path": [
+    "1 关于本手册"
+  ],
+  "section_title": "1 关于本手册",
+  "start_pdf_page": 5,
+  "end_pdf_page": 6,
+  "blocks": [
+    {
+      "block_id": "BLK-416F3D9DFECABFA5",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 5,
+      "printed_page_label": "1",
+      "block_order": 0,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "heading",
+      "text": "1\n关于本手册",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        98.112,
+        186.624,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EACD30600949DA50",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 5,
+      "printed_page_label": "1",
+      "block_order": 1,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "paragraph",
+      "text": "本文档详细的描述了EMU300A 产品中各组件的安全特性介绍以及具体操作指导。以下内容\n涉及Logger5000 和交换机的网络安全。可登录www.sungrowpower.com 或设备制造商网\n站获取更多信息。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        145.506,
+        465.093,
+        183.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-08757CC89C9F0994",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 5,
+      "printed_page_label": "1",
+      "block_order": 2,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "paragraph",
+      "text": "适用范围",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        192.656,
+        138.366,
+        203.609
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C0D38E5E6048DD8D",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 5,
+      "printed_page_label": "1",
+      "block_order": 3,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "list",
+      "text": "•\nEMU300A",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        210.905,
+        157.554,
+        220.949
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-138A4F485D24EE25",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 5,
+      "printed_page_label": "1",
+      "block_order": 4,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "list",
+      "text": "•\nEMU300B",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        225.905,
+        157.554,
+        235.949
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0759E280FCF0F797",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 5,
+      "printed_page_label": "1",
+      "block_order": 5,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "list",
+      "text": "•\nEMU300C",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        240.905,
+        158.049,
+        250.949
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-56E8583005AEAD98",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 5,
+      "printed_page_label": "1",
+      "block_order": 6,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "paragraph",
+      "text": "适用人员",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        258.956,
+        138.366,
+        269.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-84360B42B5E19748",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 5,
+      "printed_page_label": "1",
+      "block_order": 7,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "paragraph",
+      "text": "本手册适用于以下人员：",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        275.756,
+        201.366,
+        286.709
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DD040DA8DA055DE4",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 5,
+      "printed_page_label": "1",
+      "block_order": 8,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "list",
+      "text": "•\n现场维护人员",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        289.406,
+        170.541,
+        300.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-57769475C98ED17C",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 5,
+      "printed_page_label": "1",
+      "block_order": 9,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "list",
+      "text": "•\n系统管理员",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        304.406,
+        161.541,
+        315.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3ED23B4B06B73545",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 5,
+      "printed_page_label": "1",
+      "block_order": 10,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "list",
+      "text": "•\n现场技术工程师",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        319.406,
+        179.541,
+        330.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C3E902508FC69D62",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 5,
+      "printed_page_label": "1",
+      "block_order": 11,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "paragraph",
+      "text": "手册说明",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        337.556,
+        138.366,
+        348.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4F06298C83E671CF",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 5,
+      "printed_page_label": "1",
+      "block_order": 12,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "paragraph",
+      "text": "本手册以标准配置的Logger5000 界面为例，对其安全功能做简要介绍。具体开放的功能，\n请以技术协议或合同规定内容为准。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        354.356,
+        460.908,
+        376.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EEACEC282D1161CF",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 5,
+      "printed_page_label": "1",
+      "block_order": 13,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "paragraph",
+      "text": "安全声明",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        381.956,
+        138.366,
+        392.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4142283250C19758",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 5,
+      "printed_page_label": "1",
+      "block_order": 14,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "paragraph",
+      "text": "有关产品网络安全漏洞响应流程及漏洞披露的详情，请访问如下网址了解：https://\nwww.sungrowpower.com/security.html。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        398.756,
+        426.384,
+        420.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3B83C70F6F068CAB",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 5,
+      "printed_page_label": "1",
+      "block_order": 15,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "paragraph",
+      "text": "符号使用",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        426.356,
+        138.366,
+        437.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-629579B8188BB54C",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 5,
+      "printed_page_label": "1",
+      "block_order": 16,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "paragraph",
+      "text": "为了确保用户在使用产品时的人身及财产安全，更加高效优化地使用产品，手册中提供了相\n关的信息，并使用以下的符号加以突出强调。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        444.506,
+        462.366,
+        468.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8E7F66A7A4B2288D",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 5,
+      "printed_page_label": "1",
+      "block_order": 17,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "paragraph",
+      "text": "以下列举了本手册中可能使用到的符号，请认真阅读从而更好地使用本手册。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        479.506,
+        408.366,
+        490.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CBB0DBDB5BE23AB9",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 5,
+      "printed_page_label": "1",
+      "block_order": 18,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "paragraph",
+      "text": "危险",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        503.024,
+        146.863,
+        516.411
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0D5782B06D8B1BF9",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 5,
+      "printed_page_label": "1",
+      "block_order": 19,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "paragraph",
+      "text": "表示有高度潜在危险，如果未能避免将会导致人员死亡或严重伤害的情况。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        520.206,
+        403.866,
+        531.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-174DBA1CA16FD97C",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 5,
+      "printed_page_label": "1",
+      "block_order": 20,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "paragraph",
+      "text": "警告",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        548.874,
+        146.863,
+        562.261
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0A1B1AA787D531F4",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 5,
+      "printed_page_label": "1",
+      "block_order": 21,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "paragraph",
+      "text": "表示有中度潜在危险，如果未能避免可能导致人员死亡或严重伤害的情况。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        566.056,
+        403.866,
+        577.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BF7FDEAF45D1C8F1",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 5,
+      "printed_page_label": "1",
+      "block_order": 22,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "paragraph",
+      "text": "小心",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        594.724,
+        146.863,
+        608.111
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D55D028F74D15863",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 5,
+      "printed_page_label": "1",
+      "block_order": 23,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "paragraph",
+      "text": "表示有低度潜在危险，如果未能避免将可能导致人员中度或轻度伤害的情况。",
+      "table_cells": null,
+      "bbox": [
+        106.864,
+        611.906,
+        412.864,
+        622.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-642205FC9511F453",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 6,
+      "printed_page_label": "2",
+      "block_order": 0,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "paragraph",
+      "text": "用户网络安全操作手册\n1 关于本手册",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-493E650CAF550B89",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 6,
+      "printed_page_label": "2",
+      "block_order": 1,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "paragraph",
+      "text": "注意",
+      "table_cells": null,
+      "bbox": [
+        97.941,
+        74.674,
+        119.941,
+        88.061
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E3C1223513258C5B",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 6,
+      "printed_page_label": "2",
+      "block_order": 2,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "paragraph",
+      "text": "表示有潜在风险，如果未能避免可能导致设备无法正常运行或造成财产损失的情况。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        91.856,
+        425.695,
+        102.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-45B75795F2547348",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 6,
+      "printed_page_label": "2",
+      "block_order": 3,
+      "section_id": "SEC-B3F6C7572273D1CE",
+      "section_path": [
+        "1 关于本手册"
+      ],
+      "section_title": "1 关于本手册",
+      "block_type": "paragraph",
+      "text": "“说明”是手册中的附加信息，对内容的强调和补充，也可能提供了产品优化使用的技\n巧或窍门，能帮助您解决某个问题或节省您的时间。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        123.656,
+        445.187,
+        145.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

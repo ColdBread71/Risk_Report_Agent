@@ -1,0 +1,10 @@
+{
+  "basic_info": {
+    "product_name": null,
+    "product_summary": null,
+    "product_type": null},
+    "use_cases": {
+      "intended_use": null,
+      "usage_scenarios": []
+    }
+  }

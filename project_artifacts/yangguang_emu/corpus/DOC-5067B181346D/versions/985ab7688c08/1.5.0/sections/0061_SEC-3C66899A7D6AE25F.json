@@ -1,0 +1,394 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-3C66899A7D6AE25F",
+  "section_path": [
+    "8 附录B：通用信息",
+    "8.2 联系方式"
+  ],
+  "section_title": "8.2 联系方式",
+  "start_pdf_page": 56,
+  "end_pdf_page": 58,
+  "blocks": [
+    {
+      "block_id": "BLK-4B03702710B0DC03",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "50",
+      "block_order": 21,
+      "section_id": "SEC-3C66899A7D6AE25F",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.2 联系方式"
+      ],
+      "section_title": "8.2 联系方式",
+      "block_type": "heading",
+      "text": "8.2 联系方式",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        615.458,
+        128.873,
+        630.062
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1CEBAD880C94A7D2",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "50",
+      "block_order": 22,
+      "section_id": "SEC-3C66899A7D6AE25F",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.2 联系方式"
+      ],
+      "section_title": "8.2 联系方式",
+      "block_type": "paragraph",
+      "text": "如果您有关于本产品的任何问题，请与我们取得联系。为了向您提供更快更好的服务，我们\n需要您协助提供以下信息：",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        643.106,
+        448.193,
+        667.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7C53C558577290AD",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "51",
+      "block_order": 0,
+      "section_id": "SEC-3C66899A7D6AE25F",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.2 联系方式"
+      ],
+      "section_title": "8.2 联系方式",
+      "block_type": "paragraph",
+      "text": "用户手册\n8 附录B：通用信息",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1B875724C3F71787",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "51",
+      "block_order": 1,
+      "section_id": "SEC-3C66899A7D6AE25F",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.2 联系方式"
+      ],
+      "section_title": "8.2 联系方式",
+      "block_type": "list",
+      "text": "•\n设备型号",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        72.906,
+        152.541,
+        83.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-259CB03A26BA48ED",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "51",
+      "block_order": 2,
+      "section_id": "SEC-3C66899A7D6AE25F",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.2 联系方式"
+      ],
+      "section_title": "8.2 联系方式",
+      "block_type": "list",
+      "text": "•\n设备序列号",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        87.906,
+        161.541,
+        98.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FE84D1DC5BFBDD40",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "51",
+      "block_order": 3,
+      "section_id": "SEC-3C66899A7D6AE25F",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.2 联系方式"
+      ],
+      "section_title": "8.2 联系方式",
+      "block_type": "list",
+      "text": "•\n故障代码/名称",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        102.906,
+        173.043,
+        113.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1B4B299016394F10",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "51",
+      "block_order": 4,
+      "section_id": "SEC-3C66899A7D6AE25F",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.2 联系方式"
+      ],
+      "section_title": "8.2 联系方式",
+      "block_type": "list",
+      "text": "•\n故障现象简单描述",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        117.906,
+        188.541,
+        128.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-55AAE90570B5A16F",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "51",
+      "block_order": 5,
+      "section_id": "SEC-3C66899A7D6AE25F",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.2 联系方式"
+      ],
+      "section_title": "8.2 联系方式",
+      "block_type": "paragraph",
+      "text": "售后服务电话：400 119 7799",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        141.406,
+        219.744,
+        152.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DF0D1D65A3FAB2C7",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "51",
+      "block_order": 6,
+      "section_id": "SEC-3C66899A7D6AE25F",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.2 联系方式"
+      ],
+      "section_title": "8.2 联系方式",
+      "block_type": "paragraph",
+      "text": "分公司联系方式参见链接：https://www.sungrowpower.com/headquarter.html",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        162.906,
+        406.44,
+        173.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4045C7C57A089558",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "52",
+      "block_order": 0,
+      "section_id": "SEC-3C66899A7D6AE25F",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.2 联系方式"
+      ],
+      "section_title": "8.2 联系方式",
+      "block_type": "paragraph",
+      "text": "阳光电源股份有限公司",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        642.676,
+        174.693,
+        654.846
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CDE4CA927C64B0CB",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "52",
+      "block_order": 1,
+      "section_id": "SEC-3C66899A7D6AE25F",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.2 联系方式"
+      ],
+      "section_title": "8.2 联系方式",
+      "block_type": "paragraph",
+      "text": "网\n址：www.sungrowpower.com",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        663.951,
+        168.715,
+        671.763
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-48BDA86D550D87E9",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "52",
+      "block_order": 2,
+      "section_id": "SEC-3C66899A7D6AE25F",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.2 联系方式"
+      ],
+      "section_title": "8.2 联系方式",
+      "block_type": "paragraph",
+      "text": "邮\n编：230088",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        678.634,
+        115.046,
+        686.446
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EC7EFB01A3DE1095",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "52",
+      "block_order": 3,
+      "section_id": "SEC-3C66899A7D6AE25F",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.2 联系方式"
+      ],
+      "section_title": "8.2 联系方式",
+      "block_type": "paragraph",
+      "text": "公司地址：安徽省合肥市高新区习友路1699 号",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        693.634,
+        200.194,
+        700.634
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-46A30AE3E71F562C",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "52",
+      "block_order": 4,
+      "section_id": "SEC-3C66899A7D6AE25F",
+      "section_path": [
+        "8 附录B：通用信息",
+        "8.2 联系方式"
+      ],
+      "section_title": "8.2 联系方式",
+      "block_type": "paragraph",
+      "text": "生产地址：安徽省合肥市高新区长宁大道608 号",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        708.184,
+        203.694,
+        715.184
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

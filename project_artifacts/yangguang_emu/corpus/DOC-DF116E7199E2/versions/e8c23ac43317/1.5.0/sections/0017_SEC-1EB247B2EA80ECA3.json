@@ -1,0 +1,151 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-1EB247B2EA80ECA3",
+  "section_path": [
+    "8 用户管理",
+    "8.2 设置账户保护和会话安全参数"
+  ],
+  "section_title": "8.2 设置账户保护和会话安全参数",
+  "start_pdf_page": 17,
+  "end_pdf_page": 17,
+  "blocks": [
+    {
+      "block_id": "BLK-26F563AE42DEF035",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "13",
+      "block_order": 19,
+      "section_id": "SEC-1EB247B2EA80ECA3",
+      "section_path": [
+        "8 用户管理",
+        "8.2 设置账户保护和会话安全参数"
+      ],
+      "section_title": "8.2 设置账户保护和会话安全参数",
+      "block_type": "heading",
+      "text": "8.2 设置账户保护和会话安全参数",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        572.758,
+        251.046,
+        587.362
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F9A377EA3CE8B1A2",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "13",
+      "block_order": 20,
+      "section_id": "SEC-1EB247B2EA80ECA3",
+      "section_path": [
+        "8 用户管理",
+        "8.2 设置账户保护和会话安全参数"
+      ],
+      "section_title": "8.2 设置账户保护和会话安全参数",
+      "block_type": "paragraph",
+      "text": "为了增强账号安全性，你可以配置相关参数以控制登录行为和会话有效性。",
+      "table_cells": null,
+      "bbox": [
+        102.364,
+        600.314,
+        382.864,
+        610.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2BBF43FCE3EF62CF",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "13",
+      "block_order": 21,
+      "section_id": "SEC-1EB247B2EA80ECA3",
+      "section_path": [
+        "8 用户管理",
+        "8.2 设置账户保护和会话安全参数"
+      ],
+      "section_title": "8.2 设置账户保护和会话安全参数",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.37,
+        621.156,
+        138.37,
+        632.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-114512FC39912CCE",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "13",
+      "block_order": 22,
+      "section_id": "SEC-1EB247B2EA80ECA3",
+      "section_path": [
+        "8 用户管理",
+        "8.2 设置账户保护和会话安全参数"
+      ],
+      "section_title": "8.2 设置账户保护和会话安全参数",
+      "block_type": "list",
+      "text": "•\n通过管理员账号登录Web 端。",
+      "table_cells": null,
+      "bbox": [
+        102.37,
+        641.156,
+        238.378,
+        652.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BBDB5BE792654CA6",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "13",
+      "block_order": 23,
+      "section_id": "SEC-1EB247B2EA80ECA3",
+      "section_path": [
+        "8 用户管理",
+        "8.2 设置账户保护和会话安全参数"
+      ],
+      "section_title": "8.2 设置账户保护和会话安全参数",
+      "block_type": "paragraph",
+      "text": "步骤 1 导航栏中点击会话管理，跳转至相应页面。",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        659.234,
+        272.731,
+        671.717
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

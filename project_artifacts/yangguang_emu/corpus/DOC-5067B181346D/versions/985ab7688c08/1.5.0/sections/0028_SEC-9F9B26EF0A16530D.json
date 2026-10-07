@@ -1,0 +1,360 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-9F9B26EF0A16530D",
+  "section_path": [
+    "4 电气连接",
+    "4.3 内部结构"
+  ],
+  "section_title": "4.3 内部结构",
+  "start_pdf_page": 27,
+  "end_pdf_page": 28,
+  "blocks": [
+    {
+      "block_id": "BLK-27C90C7572EDEC5D",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 27,
+      "printed_page_label": "21",
+      "block_order": 0,
+      "section_id": "SEC-9F9B26EF0A16530D",
+      "section_path": [
+        "4 电气连接",
+        "4.3 内部结构"
+      ],
+      "section_title": "4.3 内部结构",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 电气连接",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5262DF940D97CB63",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 27,
+      "printed_page_label": "21",
+      "block_order": 1,
+      "section_id": "SEC-9F9B26EF0A16530D",
+      "section_path": [
+        "4 电气连接",
+        "4.3 内部结构"
+      ],
+      "section_title": "4.3 内部结构",
+      "block_type": "table",
+      "text": "标签\t说明\nETH\t以太网输入通讯防水端子\nRS485\tRS485 通讯防水端子\nDO\t干接点输出防水端子\nAI\t模拟量输入防水端子\nDI\t干接点输入防水端子\nOptical Fiber Ports\t光纤防水端子\nMPLC\tPLC 通讯防水端子\nInput AC\t100Vac~277Vac 供电电源\nPID01 DO\tPID 干接点输出防水端子\nPID02 DO\tPID 干接点输出防水端子\nCT\tCT 接线端子",
+      "table_cells": [
+        [
+          "标签",
+          "说明"
+        ],
+        [
+          "ETH",
+          "以太网输入通讯防水端子"
+        ],
+        [
+          "RS485",
+          "RS485 通讯防水端子"
+        ],
+        [
+          "DO",
+          "干接点输出防水端子"
+        ],
+        [
+          "AI",
+          "模拟量输入防水端子"
+        ],
+        [
+          "DI",
+          "干接点输入防水端子"
+        ],
+        [
+          "Optical Fiber Ports",
+          "光纤防水端子"
+        ],
+        [
+          "MPLC",
+          "PLC 通讯防水端子"
+        ],
+        [
+          "Input AC",
+          "100Vac~277Vac 供电电源"
+        ],
+        [
+          "PID01 DO",
+          "PID 干接点输出防水端子"
+        ],
+        [
+          "PID02 DO",
+          "PID 干接点输出防水端子"
+        ],
+        [
+          "CT",
+          "CT 接线端子"
+        ]
+      ],
+      "bbox": [
+        111.035,
+        76.539,
+        384.891,
+        331.7
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3A8D01066433220D",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 27,
+      "printed_page_label": "21",
+      "block_order": 2,
+      "section_id": "SEC-9F9B26EF0A16530D",
+      "section_path": [
+        "4 电气连接",
+        "4.3 内部结构"
+      ],
+      "section_title": "4.3 内部结构",
+      "block_type": "paragraph",
+      "text": "接地点，位于机器的右侧",
+      "table_cells": null,
+      "bbox": [
+        285.889,
+        343.702,
+        384.889,
+        354.655
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C6101C7708372E9A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 27,
+      "printed_page_label": "21",
+      "block_order": 3,
+      "section_id": "SEC-9F9B26EF0A16530D",
+      "section_path": [
+        "4 电气连接",
+        "4.3 内部结构"
+      ],
+      "section_title": "4.3 内部结构",
+      "block_type": "heading",
+      "text": "4.3 内部结构",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        394.301,
+        143.046,
+        408.905
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-84476EE197E5F77C",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 27,
+      "printed_page_label": "21",
+      "block_order": 4,
+      "section_id": "SEC-9F9B26EF0A16530D",
+      "section_path": [
+        "4 电气连接",
+        "4.3 内部结构"
+      ],
+      "section_title": "4.3 内部结构",
+      "block_type": "paragraph",
+      "text": "EMU300A 内部布局如下图所示。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        421.949,
+        235.638,
+        432.902
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AFC136CD8222B958",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 28,
+      "printed_page_label": "22",
+      "block_order": 0,
+      "section_id": "SEC-9F9B26EF0A16530D",
+      "section_path": [
+        "4 电气连接",
+        "4.3 内部结构"
+      ],
+      "section_title": "4.3 内部结构",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 电气连接",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D8AA6F0C8103713A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 28,
+      "printed_page_label": "22",
+      "block_order": 1,
+      "section_id": "SEC-9F9B26EF0A16530D",
+      "section_path": [
+        "4 电气连接",
+        "4.3 内部结构"
+      ],
+      "section_title": "4.3 内部结构",
+      "block_type": "table",
+      "text": "编\n号\t名称\t推荐线缆规格\t说明\nA\t光纤终端盒\t—\t选配\n必须与光纤环网交换机配套\n使用\n如需获取更多信息请访问经\n销商官方网站\nB\tRS485 通讯端子\t2 x (0.75~1.5) mm2 户\n外型防紫外线带屏蔽层\n双绞线\t线缆未包含在供货范围\nC\tCT 接线端子\t\t单独成表说明\nD\t交流熔丝盒\t2.5mm²～10mm²户外型\n防紫外线导线，线缆耐\n压要求为：\n隔离电压＞1350V\t线缆未包含在供货范围\nE\t接地端子\t4mm²～10mm²或7～\n11AWG\t线缆未包含在供货范围\nE ：功能地排\n1\nE ：保护地排\n2\nF\t防雷器\t—\t—\nG\t开关电源\t—\t—\nH\tLogger5000\t—\t—\nI\t光纤环网交换机\t—\t选配\n必须与光纤终端盒配套使用\n如需获取更多信息请访问经\n销商官方网站\nJ\tPID 模块\t—\t支持PID 防护和PID 修复\n功能，适用于PV-正偏置组\n件。支持交流ISO 检测功\n能。\nK\tPLC 模块\t—\t—\nL\t220V 市电插座\t—\t可为现场运维人员提供市电",
+      "table_cells": [
+        [
+          "编\n号",
+          "名称",
+          "推荐线缆规格",
+          "说明"
+        ],
+        [
+          "A",
+          "光纤终端盒",
+          "—",
+          "选配\n必须与光纤环网交换机配套\n使用\n如需获取更多信息请访问经\n销商官方网站"
+        ],
+        [
+          "B",
+          "RS485 通讯端子",
+          "2 x (0.75~1.5) mm2 户\n外型防紫外线带屏蔽层\n双绞线",
+          "线缆未包含在供货范围"
+        ],
+        [
+          "C",
+          "CT 接线端子",
+          null,
+          "单独成表说明"
+        ],
+        [
+          "D",
+          "交流熔丝盒",
+          "2.5mm²～10mm²户外型\n防紫外线导线，线缆耐\n压要求为：\n隔离电压＞1350V",
+          "线缆未包含在供货范围"
+        ],
+        [
+          "E",
+          "接地端子",
+          "4mm²～10mm²或7～\n11AWG",
+          "线缆未包含在供货范围\nE ：功能地排\n1\nE ：保护地排\n2"
+        ],
+        [
+          "F",
+          "防雷器",
+          "—",
+          "—"
+        ],
+        [
+          "G",
+          "开关电源",
+          "—",
+          "—"
+        ],
+        [
+          "H",
+          "Logger5000",
+          "—",
+          "—"
+        ],
+        [
+          "I",
+          "光纤环网交换机",
+          "—",
+          "选配\n必须与光纤终端盒配套使用\n如需获取更多信息请访问经\n销商官方网站"
+        ],
+        [
+          "J",
+          "PID 模块",
+          "—",
+          "支持PID 防护和PID 修复\n功能，适用于PV-正偏置组\n件。支持交流ISO 检测功\n能。"
+        ],
+        [
+          "K",
+          "PLC 模块",
+          "—",
+          "—"
+        ],
+        [
+          "L",
+          "220V 市电插座",
+          "—",
+          "可为现场运维人员提供市电"
+        ]
+      ],
+      "bbox": [
+        96.859,
+        76.539,
+        443.918,
+        597.412
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B07115D81ED807D1",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 28,
+      "printed_page_label": "22",
+      "block_order": 2,
+      "section_id": "SEC-9F9B26EF0A16530D",
+      "section_path": [
+        "4 电气连接",
+        "4.3 内部结构"
+      ],
+      "section_title": "4.3 内部结构",
+      "block_type": "paragraph",
+      "text": "M\n风扇\n—\n—",
+      "table_cells": null,
+      "bbox": [
+        96.86,
+        603.318,
+        344.916,
+        614.271
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

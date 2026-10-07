@@ -1,0 +1,45 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-AF863F6252A43429",
+  "section_path": [
+    "7 Web界面",
+    "7.10 系统",
+    "7.10.2 系统维护"
+  ],
+  "section_title": "7.10.2 系统维护",
+  "start_pdf_page": 72,
+  "end_pdf_page": 72,
+  "blocks": [
+    {
+      "block_id": "BLK-436F36551140C3AD",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 12,
+      "section_id": "SEC-AF863F6252A43429",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.2 系统维护"
+      ],
+      "section_title": "7.10.2 系统维护",
+      "block_type": "heading",
+      "text": "7.10.2 系统维护",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        450.244,
+        129.247,
+        462.414
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

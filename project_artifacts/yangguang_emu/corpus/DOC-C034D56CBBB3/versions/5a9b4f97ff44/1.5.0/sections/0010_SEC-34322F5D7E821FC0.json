@@ -1,0 +1,175 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-34322F5D7E821FC0",
+  "section_path": [
+    "3 拆包与存储",
+    "3.1 供货范围"
+  ],
+  "section_title": "3.1 供货范围",
+  "start_pdf_page": 19,
+  "end_pdf_page": 19,
+  "blocks": [
+    {
+      "block_id": "BLK-D790B907DFD62637",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "9",
+      "block_order": 1,
+      "section_id": "SEC-34322F5D7E821FC0",
+      "section_path": [
+        "3 拆包与存储",
+        "3.1 供货范围"
+      ],
+      "section_title": "3.1 供货范围",
+      "block_type": "heading",
+      "text": "3.1 供货范围",
+      "table_cells": null,
+      "bbox": [
+        70.86,
+        162.258,
+        143.052,
+        176.862
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-070F3A94811855A1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "9",
+      "block_order": 2,
+      "section_id": "SEC-34322F5D7E821FC0",
+      "section_path": [
+        "3 拆包与存储",
+        "3.1 供货范围"
+      ],
+      "section_title": "3.1 供货范围",
+      "block_type": "paragraph",
+      "text": "数据采集器的交付清单，如下所示。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        189.906,
+        246.363,
+        200.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C8BE57001529D8E4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "9",
+      "block_order": 3,
+      "section_id": "SEC-34322F5D7E821FC0",
+      "section_path": [
+        "3 拆包与存储",
+        "3.1 供货范围"
+      ],
+      "section_title": "3.1 供货范围",
+      "block_type": "table",
+      "text": "序号\t名称\t说明\nA\t数据采集器\t-\nB\t随机文档\t快速安装指导，出厂检验记录，装箱单，产品\n保修卡，合格证\nC\t网线\t1 根\nD\t安装挂耳\t2 个\nE\t安装地脚\t2 个\nF\tPLC 连接线\t-\nG\tOT 端子\t2 个\nH\t尼龙扎带\t10 个\nI\t自攻螺钉组合件\t8 组，包含ST4.8 x 19 膨胀螺管和自攻螺钉，\n用于壁挂式安装。",
+      "table_cells": [
+        [
+          "序号",
+          "名称",
+          "说明"
+        ],
+        [
+          "A",
+          "数据采集器",
+          "-"
+        ],
+        [
+          "B",
+          "随机文档",
+          "快速安装指导，出厂检验记录，装箱单，产品\n保修卡，合格证"
+        ],
+        [
+          "C",
+          "网线",
+          "1 根"
+        ],
+        [
+          "D",
+          "安装挂耳",
+          "2 个"
+        ],
+        [
+          "E",
+          "安装地脚",
+          "2 个"
+        ],
+        [
+          "F",
+          "PLC 连接线",
+          "-"
+        ],
+        [
+          "G",
+          "OT 端子",
+          "2 个"
+        ],
+        [
+          "H",
+          "尼龙扎带",
+          "10 个"
+        ],
+        [
+          "I",
+          "自攻螺钉组合件",
+          "8 组，包含ST4.8 x 19 膨胀螺管和自攻螺钉，\n用于壁挂式安装。"
+        ]
+      ],
+      "bbox": [
+        111.035,
+        392.029,
+        455.993,
+        630.19
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FDDA488FCED8E23C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "9",
+      "block_order": 4,
+      "section_id": "SEC-34322F5D7E821FC0",
+      "section_path": [
+        "3 拆包与存储",
+        "3.1 供货范围"
+      ],
+      "section_title": "3.1 供货范围",
+      "block_type": "paragraph",
+      "text": "J\n紧固件组合\n6 组，M4 x 8 十字槽沉头螺钉，用于将安装挂\n耳固定至数据采集器",
+      "table_cells": null,
+      "bbox": [
+        111.035,
+        636.096,
+        456.506,
+        660.549
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

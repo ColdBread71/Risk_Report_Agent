@@ -1,0 +1,163 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-8F48F2DB3021537A",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.7 转发IEC104服务配置",
+    "7.8.7.2 直接生成点表"
+  ],
+  "section_title": "7.8.7.2 直接生成点表",
+  "start_pdf_page": 74,
+  "end_pdf_page": 74,
+  "blocks": [
+    {
+      "block_id": "BLK-B8A28B712E2999C3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 74,
+      "printed_page_label": "64",
+      "block_order": 0,
+      "section_id": "SEC-8F48F2DB3021537A",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.2 直接生成点表"
+      ],
+      "section_title": "7.8.7.2 直接生成点表",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.446,
+        48.088,
+        449.793,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9084D16DB589610F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 74,
+      "printed_page_label": "64",
+      "block_order": 20,
+      "section_id": "SEC-8F48F2DB3021537A",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.2 直接生成点表"
+      ],
+      "section_title": "7.8.7.2 直接生成点表",
+      "block_type": "heading",
+      "text": "7.8.7.2 直接生成点表",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        587.329,
+        152.024,
+        599.499
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0B50785E75050F4D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 74,
+      "printed_page_label": "64",
+      "block_order": 21,
+      "section_id": "SEC-8F48F2DB3021537A",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.2 直接生成点表"
+      ],
+      "section_title": "7.8.7.2 直接生成点表",
+      "block_type": "paragraph",
+      "text": "步骤 1 打开本地端口为2404 的开关。",
+      "table_cells": null,
+      "bbox": [
+        56.696,
+        611.223,
+        211.082,
+        623.706
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AEF1D159C4E0874B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 74,
+      "printed_page_label": "64",
+      "block_order": 22,
+      "section_id": "SEC-8F48F2DB3021537A",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.2 直接生成点表"
+      ],
+      "section_title": "7.8.7.2 直接生成点表",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击生成点表，IEC104 默认点表自动导入配置文件中。",
+      "table_cells": null,
+      "bbox": [
+        56.696,
+        627.723,
+        308.831,
+        640.206
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C7633FDC487B2F1C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 74,
+      "printed_page_label": "64",
+      "block_order": 23,
+      "section_id": "SEC-8F48F2DB3021537A",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.2 直接生成点表"
+      ],
+      "section_title": "7.8.7.2 直接生成点表",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        644.295,
+        112.19,
+        655.248
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

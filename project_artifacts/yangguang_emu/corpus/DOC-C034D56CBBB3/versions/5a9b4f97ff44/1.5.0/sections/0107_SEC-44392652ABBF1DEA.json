@@ -1,0 +1,213 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-44392652ABBF1DEA",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.7 转发IEC104服务配置"
+  ],
+  "section_title": "7.8.7 转发IEC104服务配置",
+  "start_pdf_page": 74,
+  "end_pdf_page": 74,
+  "blocks": [
+    {
+      "block_id": "BLK-E44D4ACF659A1A5D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 74,
+      "printed_page_label": "64",
+      "block_order": 10,
+      "section_id": "SEC-44392652ABBF1DEA",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置"
+      ],
+      "section_title": "7.8.7 转发IEC104服务配置",
+      "block_type": "heading",
+      "text": "7.8.7 转发IEC104 服务配置",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        330.279,
+        182.037,
+        342.449
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6F251C9B8852DA0B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 74,
+      "printed_page_label": "64",
+      "block_order": 11,
+      "section_id": "SEC-44392652ABBF1DEA",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置"
+      ],
+      "section_title": "7.8.7 转发IEC104服务配置",
+      "block_type": "paragraph",
+      "text": "“转发IEC104 服务配置”用于配置数据采集器转发IEC104 服务。",
+      "table_cells": null,
+      "bbox": [
+        88.197,
+        349.503,
+        329.053,
+        359.848
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-363CEA51CDDB682F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 74,
+      "printed_page_label": "64",
+      "block_order": 12,
+      "section_id": "SEC-44392652ABBF1DEA",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置"
+      ],
+      "section_title": "7.8.7 转发IEC104服务配置",
+      "block_type": "list",
+      "text": "•\n该协议为非安全协议，存在风险，请确认设备网络环境安全后再开启。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        376.845,
+        408.368,
+        387.798
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-70402C0BBBD7B531",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 74,
+      "printed_page_label": "64",
+      "block_order": 13,
+      "section_id": "SEC-44392652ABBF1DEA",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置"
+      ],
+      "section_title": "7.8.7 转发IEC104服务配置",
+      "block_type": "list",
+      "text": "•\n可根据需要开启TLS 加密功能，进一步保障信息安全。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        391.845,
+        348.374,
+        402.798
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8FC54D257CCA3F84",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 74,
+      "printed_page_label": "64",
+      "block_order": 14,
+      "section_id": "SEC-44392652ABBF1DEA",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置"
+      ],
+      "section_title": "7.8.7 转发IEC104服务配置",
+      "block_type": "paragraph",
+      "text": "Server 模式",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        420.423,
+        136.469,
+        432.906
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-90100C31051B410F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 74,
+      "printed_page_label": "64",
+      "block_order": 15,
+      "section_id": "SEC-44392652ABBF1DEA",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置"
+      ],
+      "section_title": "7.8.7 转发IEC104服务配置",
+      "block_type": "paragraph",
+      "text": "Server 模式是数据采集器作为服务器，上位机服务器连接数据采集器，进行数据和指令传\n输。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        443.345,
+        440.948,
+        467.798
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-587BB0B6E467E424",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 74,
+      "printed_page_label": "64",
+      "block_order": 16,
+      "section_id": "SEC-44392652ABBF1DEA",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置"
+      ],
+      "section_title": "7.8.7 转发IEC104服务配置",
+      "block_type": "paragraph",
+      "text": "进行IEC104 服务转发配置时本地端口号为2404。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        475.495,
+        315.983,
+        486.448
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

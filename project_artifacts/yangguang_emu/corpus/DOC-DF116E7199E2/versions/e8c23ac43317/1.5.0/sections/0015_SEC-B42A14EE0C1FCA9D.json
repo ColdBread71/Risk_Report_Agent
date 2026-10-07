@@ -1,0 +1,197 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-B42A14EE0C1FCA9D",
+  "section_path": [
+    "8 用户管理"
+  ],
+  "section_title": "8 用户管理",
+  "start_pdf_page": 17,
+  "end_pdf_page": 17,
+  "blocks": [
+    {
+      "block_id": "BLK-08E8F60318D1EDD7",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "13",
+      "block_order": 0,
+      "section_id": "SEC-B42A14EE0C1FCA9D",
+      "section_path": [
+        "8 用户管理"
+      ],
+      "section_title": "8 用户管理",
+      "block_type": "heading",
+      "text": "8\n用户管理",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        98.112,
+        168.624,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0FB300025B64DD8D",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "13",
+      "block_order": 1,
+      "section_id": "SEC-B42A14EE0C1FCA9D",
+      "section_path": [
+        "8 用户管理"
+      ],
+      "section_title": "8 用户管理",
+      "block_type": "paragraph",
+      "text": "管理员通过对不同的用户设置不同权限的账号，可以提高系统安全性、为不同的用户提升操作效\n率、降低管理成本。",
+      "table_cells": null,
+      "bbox": [
+        102.367,
+        145.414,
+        459.367,
+        168.508
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2C9EB29CBEE48879",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "13",
+      "block_order": 2,
+      "section_id": "SEC-B42A14EE0C1FCA9D",
+      "section_path": [
+        "8 用户管理"
+      ],
+      "section_title": "8 用户管理",
+      "block_type": "paragraph",
+      "text": "用户管理",
+      "table_cells": null,
+      "bbox": [
+        102.367,
+        177.584,
+        138.367,
+        190.067
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CE969232A195110E",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "13",
+      "block_order": 3,
+      "section_id": "SEC-B42A14EE0C1FCA9D",
+      "section_path": [
+        "8 用户管理"
+      ],
+      "section_title": "8 用户管理",
+      "block_type": "list",
+      "text": "•\n除“maintain”账号外，管理员至多可创建4 个运维账号。非必要请勿创建过多用户，以免\n多人抢占设备操作、用户密码泄露等。",
+      "table_cells": null,
+      "bbox": [
+        102.367,
+        194.006,
+        463.312,
+        218.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DBF11A90CC31126D",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "13",
+      "block_order": 4,
+      "section_id": "SEC-B42A14EE0C1FCA9D",
+      "section_path": [
+        "8 用户管理"
+      ],
+      "section_title": "8 用户管理",
+      "block_type": "list",
+      "text": "•\n如发现用户行为可疑，可通过登录管理员账户，删除该用户，即可立即终止该用户的访问\n权限。",
+      "table_cells": null,
+      "bbox": [
+        102.367,
+        222.506,
+        467.542,
+        246.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BDB4B6FD02F875A2",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "13",
+      "block_order": 5,
+      "section_id": "SEC-B42A14EE0C1FCA9D",
+      "section_path": [
+        "8 用户管理"
+      ],
+      "section_title": "8 用户管理",
+      "block_type": "list",
+      "text": "•\n如果发现用户密码泄露，可通过登录管理员账户，修改用户密码。",
+      "table_cells": null,
+      "bbox": [
+        102.367,
+        251.006,
+        377.542,
+        261.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-81634645B7FDAF2B",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "13",
+      "block_order": 6,
+      "section_id": "SEC-B42A14EE0C1FCA9D",
+      "section_path": [
+        "8 用户管理"
+      ],
+      "section_title": "8 用户管理",
+      "block_type": "list",
+      "text": "•\n新增用户时，用户名称需由2-16 位字母、数字组成，且必须以字母开头。",
+      "table_cells": null,
+      "bbox": [
+        102.367,
+        266.006,
+        409.051,
+        276.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

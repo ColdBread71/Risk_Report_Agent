@@ -1,0 +1,304 @@
+{
+  "schema_version": "asset_function_mapping_checkpoint.v1",
+  "fingerprint": "3911171441e785ce16f2378f4be5d17cd208d819c8487046de84d5502848b511",
+  "cache_inputs": {
+    "source_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "text_model": "qwen-plus",
+    "asset_rule_version": "node2_asset_rules.v2.2",
+    "material_sha256": "f30ae5c60ce7cb991286883f6aed657f1b7fec1ce84038758b4592fa1ba3c4e1",
+    "prompt_sha256": "9d62faf0ea26617918ecc89d574c3ed841626b0584ae2c78da20a21baf5a23d2",
+    "schema_sha256": "f34013dd5d1206f70f4d3e0a81a600fa99451a28c3d87faaa19600240bc989ad"
+  },
+  "result": {
+    "mappings": [
+      {
+        "asset_id": "ASSET-001",
+        "related_function_ids": [
+          "FUNC-034"
+        ]
+      },
+      {
+        "asset_id": "ASSET-002",
+        "related_function_ids": [
+          "FUNC-010",
+          "FUNC-017"
+        ]
+      },
+      {
+        "asset_id": "ASSET-003",
+        "related_function_ids": [
+          "FUNC-027",
+          "FUNC-028"
+        ]
+      },
+      {
+        "asset_id": "ASSET-004",
+        "related_function_ids": [
+          "FUNC-006",
+          "FUNC-012",
+          "FUNC-013"
+        ]
+      },
+      {
+        "asset_id": "ASSET-005",
+        "related_function_ids": [
+          "FUNC-008"
+        ]
+      },
+      {
+        "asset_id": "ASSET-006",
+        "related_function_ids": [
+          "FUNC-008",
+          "FUNC-012"
+        ]
+      },
+      {
+        "asset_id": "ASSET-007",
+        "related_function_ids": [
+          "FUNC-001",
+          "FUNC-002",
+          "FUNC-003",
+          "FUNC-004",
+          "FUNC-005"
+        ]
+      },
+      {
+        "asset_id": "ASSET-008",
+        "related_function_ids": [
+          "FUNC-001",
+          "FUNC-002"
+        ]
+      },
+      {
+        "asset_id": "ASSET-009",
+        "related_function_ids": []
+      },
+      {
+        "asset_id": "ASSET-010",
+        "related_function_ids": [
+          "FUNC-035"
+        ]
+      },
+      {
+        "asset_id": "ASSET-011",
+        "related_function_ids": [
+          "FUNC-001"
+        ]
+      },
+      {
+        "asset_id": "ASSET-012",
+        "related_function_ids": [
+          "FUNC-032"
+        ]
+      },
+      {
+        "asset_id": "ASSET-013",
+        "related_function_ids": [
+          "FUNC-035"
+        ]
+      },
+      {
+        "asset_id": "ASSET-014",
+        "related_function_ids": []
+      },
+      {
+        "asset_id": "ASSET-015",
+        "related_function_ids": [
+          "FUNC-006",
+          "FUNC-007",
+          "FUNC-008",
+          "FUNC-009",
+          "FUNC-010",
+          "FUNC-011",
+          "FUNC-012",
+          "FUNC-013",
+          "FUNC-014",
+          "FUNC-015",
+          "FUNC-016",
+          "FUNC-017",
+          "FUNC-018",
+          "FUNC-019",
+          "FUNC-020",
+          "FUNC-021",
+          "FUNC-022",
+          "FUNC-023",
+          "FUNC-024",
+          "FUNC-025",
+          "FUNC-026",
+          "FUNC-027",
+          "FUNC-028",
+          "FUNC-029",
+          "FUNC-030",
+          "FUNC-031",
+          "FUNC-032",
+          "FUNC-033",
+          "FUNC-034",
+          "FUNC-035",
+          "FUNC-036"
+        ]
+      },
+      {
+        "asset_id": "ASSET-016",
+        "related_function_ids": [
+          "FUNC-006",
+          "FUNC-007",
+          "FUNC-011",
+          "FUNC-012",
+          "FUNC-013"
+        ]
+      },
+      {
+        "asset_id": "ASSET-017",
+        "related_function_ids": [
+          "FUNC-006"
+        ]
+      },
+      {
+        "asset_id": "ASSET-018",
+        "related_function_ids": [
+          "FUNC-008",
+          "FUNC-009",
+          "FUNC-010",
+          "FUNC-012",
+          "FUNC-013",
+          "FUNC-014",
+          "FUNC-015",
+          "FUNC-016",
+          "FUNC-018",
+          "FUNC-019",
+          "FUNC-020",
+          "FUNC-021",
+          "FUNC-022",
+          "FUNC-023",
+          "FUNC-024",
+          "FUNC-025",
+          "FUNC-026",
+          "FUNC-027",
+          "FUNC-028",
+          "FUNC-029",
+          "FUNC-030",
+          "FUNC-031",
+          "FUNC-034",
+          "FUNC-035"
+        ]
+      },
+      {
+        "asset_id": "ASSET-019",
+        "related_function_ids": [
+          "FUNC-009",
+          "FUNC-024",
+          "FUNC-025",
+          "FUNC-028",
+          "FUNC-029",
+          "FUNC-030",
+          "FUNC-031",
+          "FUNC-034"
+        ]
+      },
+      {
+        "asset_id": "ASSET-020",
+        "related_function_ids": [
+          "FUNC-031",
+          "FUNC-034"
+        ]
+      },
+      {
+        "asset_id": "ASSET-021",
+        "related_function_ids": []
+      },
+      {
+        "asset_id": "ASSET-022",
+        "related_function_ids": []
+      },
+      {
+        "asset_id": "ASSET-023",
+        "related_function_ids": [
+          "FUNC-001",
+          "FUNC-002",
+          "FUNC-003",
+          "FUNC-004",
+          "FUNC-005"
+        ]
+      },
+      {
+        "asset_id": "ASSET-024",
+        "related_function_ids": [
+          "FUNC-006",
+          "FUNC-011",
+          "FUNC-012",
+          "FUNC-013",
+          "FUNC-016"
+        ]
+      },
+      {
+        "asset_id": "ASSET-025",
+        "related_function_ids": [
+          "FUNC-008",
+          "FUNC-009",
+          "FUNC-018",
+          "FUNC-024",
+          "FUNC-025",
+          "FUNC-026"
+        ]
+      },
+      {
+        "asset_id": "ASSET-026",
+        "related_function_ids": [
+          "FUNC-007",
+          "FUNC-010",
+          "FUNC-017"
+        ]
+      },
+      {
+        "asset_id": "ASSET-027",
+        "related_function_ids": [
+          "FUNC-014",
+          "FUNC-015",
+          "FUNC-022",
+          "FUNC-023"
+        ]
+      },
+      {
+        "asset_id": "ASSET-028",
+        "related_function_ids": [
+          "FUNC-019",
+          "FUNC-020",
+          "FUNC-021",
+          "FUNC-025",
+          "FUNC-027",
+          "FUNC-028",
+          "FUNC-029",
+          "FUNC-030"
+        ]
+      },
+      {
+        "asset_id": "ASSET-029",
+        "related_function_ids": [
+          "FUNC-031",
+          "FUNC-034"
+        ]
+      },
+      {
+        "asset_id": "ASSET-030",
+        "related_function_ids": [
+          "FUNC-035"
+        ]
+      },
+      {
+        "asset_id": "ASSET-031",
+        "related_function_ids": [
+          "FUNC-036"
+        ]
+      },
+      {
+        "asset_id": "ASSET-032",
+        "related_function_ids": []
+      },
+      {
+        "asset_id": "ASSET-033",
+        "related_function_ids": []
+      }
+    ],
+    "notes": "ASSET-014 (EMU300A整机硬件平台) is a generic physical carrier; per rule #5 and #6, it must not be linked to all functions merely due to co-location — its primary direct functional relationships are already covered by ASSET-015 (Logger5000) and security-specific assets (e.g., ASSET-012, ASSET-032, ASSET-033). All other mappings adhere strictly to direct, purpose-specific, and analytically discriminative relationships as defined in the rules."
+  }
+}

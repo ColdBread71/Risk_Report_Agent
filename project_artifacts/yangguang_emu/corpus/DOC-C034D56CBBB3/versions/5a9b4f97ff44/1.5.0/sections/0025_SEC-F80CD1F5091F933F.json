@@ -1,0 +1,205 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-F80CD1F5091F933F",
+  "section_path": [
+    "5 电气连接",
+    "5.5 与环境监测仪连接"
+  ],
+  "section_title": "5.5 与环境监测仪连接",
+  "start_pdf_page": 34,
+  "end_pdf_page": 34,
+  "blocks": [
+    {
+      "block_id": "BLK-D28D095AE83ACA89",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "24",
+      "block_order": 5,
+      "section_id": "SEC-F80CD1F5091F933F",
+      "section_path": [
+        "5 电气连接",
+        "5.5 与环境监测仪连接"
+      ],
+      "section_title": "5.5 与环境监测仪连接",
+      "block_type": "heading",
+      "text": "5.5 与环境监测仪连接",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        165.258,
+        176.873,
+        179.862
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6D9B9ACA4151AC8F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "24",
+      "block_order": 6,
+      "section_id": "SEC-F80CD1F5091F933F",
+      "section_path": [
+        "5 电气连接",
+        "5.5 与环境监测仪连接"
+      ],
+      "section_title": "5.5 与环境监测仪连接",
+      "block_type": "paragraph",
+      "text": "数据采集器支持接入Modbus-RTU 协议的环境监测仪。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        191.556,
+        308.291,
+        202.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A449646FEBF91469",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "24",
+      "block_order": 7,
+      "section_id": "SEC-F80CD1F5091F933F",
+      "section_path": [
+        "5 电气连接",
+        "5.5 与环境监测仪连接"
+      ],
+      "section_title": "5.5 与环境监测仪连接",
+      "block_type": "paragraph",
+      "text": "步骤 1 将从环境监测仪引出的RS485 线缆，引入数据采集器接线区域。",
+      "table_cells": null,
+      "bbox": [
+        56.696,
+        208.284,
+        344.579,
+        220.767
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-14AED0199D1637EE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "24",
+      "block_order": 8,
+      "section_id": "SEC-F80CD1F5091F933F",
+      "section_path": [
+        "5 电气连接",
+        "5.5 与环境监测仪连接"
+      ],
+      "section_title": "5.5 与环境监测仪连接",
+      "block_type": "paragraph",
+      "text": "步骤 2 使用剥线钳剥去通讯线缆的防护层和绝缘层，如下图所示。",
+      "table_cells": null,
+      "bbox": [
+        56.696,
+        224.784,
+        321.566,
+        237.267
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EFFDB5C32BD3CFC3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "24",
+      "block_order": 9,
+      "section_id": "SEC-F80CD1F5091F933F",
+      "section_path": [
+        "5 电气连接",
+        "5.5 与环境监测仪连接"
+      ],
+      "section_title": "5.5 与环境监测仪连接",
+      "block_type": "paragraph",
+      "text": "步骤 3 对剥除防护层和绝缘层后的通讯线缆安装合适的冷压端子，并使用压线钳压紧。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        335.173,
+        402.563,
+        347.656
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8CE6CE3873DBC530",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "24",
+      "block_order": 10,
+      "section_id": "SEC-F80CD1F5091F933F",
+      "section_path": [
+        "5 电气连接",
+        "5.5 与环境监测仪连接"
+      ],
+      "section_title": "5.5 与环境监测仪连接",
+      "block_type": "paragraph",
+      "text": "步骤 4 按下图所示，将接线端子连接到数据采集器的RS485 端口。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        429.552,
+        326.585,
+        442.035
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6CBB41A3F7D44D28",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "24",
+      "block_order": 11,
+      "section_id": "SEC-F80CD1F5091F933F",
+      "section_path": [
+        "5 电气连接",
+        "5.5 与环境监测仪连接"
+      ],
+      "section_title": "5.5 与环境监测仪连接",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        590.123,
+        112.187,
+        601.076
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

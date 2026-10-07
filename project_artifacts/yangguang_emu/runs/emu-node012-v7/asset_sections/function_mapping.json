@@ -1,0 +1,160 @@
+{
+  "schema_version": "asset_function_mapping_checkpoint.v1",
+  "fingerprint": "57ae8af4bf48de74c5879861869483dd820f145e69f81b94f02c34dc205eda11",
+  "cache_inputs": {
+    "source_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "text_model": "qwen-plus",
+    "asset_rule_version": "node2_asset_rules.v2.4",
+    "material_sha256": "6c3dc11aa923e860e8e08a6221c4434e7fd771798ae00b0a60623e751660a4a5",
+    "prompt_sha256": "7047c8075bac0a1fd6c95863ad4f0fa2ca8310ae0aec2c9df74eb5f84a655343",
+    "schema_sha256": "0b2259b5c1e816639fd51c417a456d76905efb29789c223fe1e854bf29fbcb5c"
+  },
+  "result": {
+    "mappings": [
+      {
+        "asset_id": "ASSET-001",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-023",
+            "relationship_type": "authenticates_with",
+            "rationale": "FUNC-023明确描述'支持安全登录，包括登录失败锁定防暴力破解和登录日志记录功能'，且描述中包含HTTPS/HTTP/SSH/SFTP接口，与Web用户账号凭据直接用于身份认证一致。"
+          },
+          {
+            "function_id": "FUNC-024",
+            "relationship_type": "authenticates_with",
+            "rationale": "FUNC-024定义'首次登录强制修改密码'，该行为以Web用户账号凭据为前提，且仅对首次使用该凭据的登录生效。"
+          },
+          {
+            "function_id": "FUNC-025",
+            "relationship_type": "authenticates_with",
+            "rationale": "FUNC-025定义'支持用户增删改功能以及密码安全策略配置'，其操作对象即为Web用户账号凭据集合，包括创建、重置、删除及策略应用。"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-002",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-023",
+            "relationship_type": "authenticates_with",
+            "rationale": "FUNC-023列出SSH/SFTP接口，且明确支持安全登录；ASSET-002是专用于SSH/SFTP协议的root用户凭据，构成该接口下身份认证的直接凭据基础。"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-003",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-034",
+            "relationship_type": "depends_on",
+            "rationale": "FUNC-034定义'支持软件和固件更新'，其安全执行依赖数字签名验证，而ASSET-003是验证所必需的公钥，FACT-004和FACT-014/015证实该依赖关系。"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-004",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-028",
+            "relationship_type": "implements",
+            "rationale": "FUNC-028明确定义'安全启动功能默认开启，建立启动链可信验证'，且限制说明'仅针对数采'，ASSET-004是其验证对象与信任锚点。"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-005",
+        "related_function_ids": [],
+        "relationships": []
+      },
+      {
+        "asset_id": "ASSET-006",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "transmits",
+            "rationale": "FUNC-005描述'可通过IEC104协议北向转发数据至...阳光云平台'，ASSET-006是该协议的目标服务端。"
+          },
+          {
+            "function_id": "FUNC-006",
+            "relationship_type": "transmits",
+            "rationale": "FUNC-006描述'可通过Modbus协议北向转发数据至...阳光云平台'，ASSET-006是该协议的目标服务端。"
+          },
+          {
+            "function_id": "FUNC-007",
+            "relationship_type": "transmits",
+            "rationale": "FUNC-007描述'可通过MQTT协议北向转发数据至...阳光云平台'，ASSET-006是该协议的目标服务端。"
+          },
+          {
+            "function_id": "FUNC-008",
+            "relationship_type": "transmits",
+            "rationale": "FUNC-008描述'可通过GOOSE协议北向转发数据至...阳光云平台'，ASSET-006是该协议的目标服务端。"
+          },
+          {
+            "function_id": "FUNC-012",
+            "relationship_type": "transmits",
+            "rationale": "FUNC-012描述'通过4G路由器传输至阳光云'，ASSET-006是该传输路径的终点服务。"
+          },
+          {
+            "function_id": "FUNC-020",
+            "relationship_type": "depends_on",
+            "rationale": "FUNC-020说明时钟源可配置为'阳光云'，且明确限定'前提为与阳光云平台连接'，表明其功能实现依赖ASSET-006可达性。"
+          },
+          {
+            "function_id": "FUNC-022",
+            "relationship_type": "transmits",
+            "rationale": "FUNC-022描述'阳光云服务默认接入站点按地区划分'，ASSET-006是其地域化部署的服务实例。"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-007",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-033",
+            "relationship_type": "transmits",
+            "rationale": "FUNC-033描述'支持操作日志、syslog记录功能'，且FACT-008证实日志可上传至远程Syslog服务器，ASSET-007即为此类外部服务器。"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-008",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-015",
+            "relationship_type": "transmits",
+            "rationale": "FUNC-015描述'可以通过Web界面配置数据转发服务，包括转发阳光云服务、转发GOOSE服务等'，FACT-015明确提及'三方云'需管理员授权后开启，表明ASSET-008是其转发目标之一。"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-009",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-031",
+            "relationship_type": "depends_on",
+            "rationale": "FUNC-031描述'支持NTS对时'，其运行必须连接外部NTS对时服务器，ASSET-009即为此类服务。"
+          },
+          {
+            "function_id": "FUNC-037",
+            "relationship_type": "depends_on",
+            "rationale": "FUNC-037描述'若使用NTS功能，客户需导入NTS服务器证书'，该证书用于与ASSET-009建立可信连接，构成直接依赖。"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-010",
+        "related_function_ids": [],
+        "relationships": []
+      }
+    ],
+    "notes": null
+  }
+}

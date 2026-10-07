@@ -1,0 +1,381 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-9A0B08822488E836",
+  "section_path": [
+    "9 用户管理",
+    "9.12 系统维护",
+    "9.12.2 恢复出厂设置"
+  ],
+  "section_title": "9.12.2 恢复出厂设置",
+  "start_pdf_page": 99,
+  "end_pdf_page": 99,
+  "blocks": [
+    {
+      "block_id": "BLK-7BB187712C307765",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 0,
+      "section_id": "SEC-9A0B08822488E836",
+      "section_path": [
+        "9 用户管理",
+        "9.12 系统维护",
+        "9.12.2 恢复出厂设置"
+      ],
+      "section_title": "9.12.2 恢复出厂设置",
+      "block_type": "paragraph",
+      "text": "用户手册\n9 用户管理",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-134B6A85CC4E3CD4",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 1,
+      "section_id": "SEC-9A0B08822488E836",
+      "section_path": [
+        "9 用户管理",
+        "9.12 系统维护",
+        "9.12.2 恢复出厂设置"
+      ],
+      "section_title": "9.12.2 恢复出厂设置",
+      "block_type": "paragraph",
+      "text": "参数名\n说明",
+      "table_cells": null,
+      "bbox": [
+        111.036,
+        74.539,
+        265.042,
+        84.883
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9F31B1F7F117415D",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 2,
+      "section_id": "SEC-9A0B08822488E836",
+      "section_path": [
+        "9 用户管理",
+        "9.12 系统维护",
+        "9.12.2 恢复出厂设置"
+      ],
+      "section_title": "9.12.2 恢复出厂设置",
+      "block_type": "paragraph",
+      "text": "密码\nLDAP 服务器密码",
+      "table_cells": null,
+      "bbox": [
+        111.035,
+        93.606,
+        318.799,
+        104.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F1828D80753AE520",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 3,
+      "section_id": "SEC-9A0B08822488E836",
+      "section_path": [
+        "9 用户管理",
+        "9.12 系统维护",
+        "9.12.2 恢复出厂设置"
+      ],
+      "section_title": "9.12.2 恢复出厂设置",
+      "block_type": "paragraph",
+      "text": "LDAP 登录开关开启后，需填写配置参数并点击保存。成功保存后，界面显示“操作\n成功”。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        126.506,
+        455.121,
+        148.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B051B2B8674E13E1",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 4,
+      "section_id": "SEC-9A0B08822488E836",
+      "section_path": [
+        "9 用户管理",
+        "9.12 系统维护",
+        "9.12.2 恢复出厂设置"
+      ],
+      "section_title": "9.12.2 恢复出厂设置",
+      "block_type": "paragraph",
+      "text": "启用LDAP 登录后，用户在LDAP 登录时将不再看到“请联系管理员开启<LDAP 登录>后重\n试 ”的提示，可输入用户名和密码登录。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        165.956,
+        458.658,
+        190.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1068E6FAF038CB40",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 5,
+      "section_id": "SEC-9A0B08822488E836",
+      "section_path": [
+        "9 用户管理",
+        "9.12 系统维护",
+        "9.12.2 恢复出厂设置"
+      ],
+      "section_title": "9.12.2 恢复出厂设置",
+      "block_type": "list",
+      "text": "•\nLDAP 登录不支持忘记密码。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        207.456,
+        259.299,
+        218.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5C46A4B7805B45EA",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 6,
+      "section_id": "SEC-9A0B08822488E836",
+      "section_path": [
+        "9 用户管理",
+        "9.12 系统维护",
+        "9.12.2 恢复出厂设置"
+      ],
+      "section_title": "9.12.2 恢复出厂设置",
+      "block_type": "list",
+      "text": "•\nLDAP 登录相关的用户认证信息均存储于客户自有的LDAP 服务器中。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        222.456,
+        422.307,
+        233.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C6A81544BEF27869",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 18,
+      "section_id": "SEC-9A0B08822488E836",
+      "section_path": [
+        "9 用户管理",
+        "9.12 系统维护",
+        "9.12.2 恢复出厂设置"
+      ],
+      "section_title": "9.12.2 恢复出厂设置",
+      "block_type": "heading",
+      "text": "9.12.2 恢复出厂设置",
+      "table_cells": null,
+      "bbox": [
+        70.861,
+        504.74,
+        163.421,
+        516.91
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CD796DC297DEE106",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 19,
+      "section_id": "SEC-9A0B08822488E836",
+      "section_path": [
+        "9 用户管理",
+        "9.12 系统维护",
+        "9.12.2 恢复出厂设置"
+      ],
+      "section_title": "9.12.2 恢复出厂设置",
+      "block_type": "paragraph",
+      "text": "步骤 1 管理员用户单击系统维护 > 恢复出厂设置，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        70.865,
+        522.634,
+        318.995,
+        535.117
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6627104E75DEE85F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 20,
+      "section_id": "SEC-9A0B08822488E836",
+      "section_path": [
+        "9 用户管理",
+        "9.12 系统维护",
+        "9.12.2 恢复出厂设置"
+      ],
+      "section_title": "9.12.2 恢复出厂设置",
+      "block_type": "paragraph",
+      "text": "步骤 2 弹出恢复出厂设置界面，单击确定。",
+      "table_cells": null,
+      "bbox": [
+        70.865,
+        539.134,
+        245.735,
+        551.617
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8CF4281B0C6FBE23",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 21,
+      "section_id": "SEC-9A0B08822488E836",
+      "section_path": [
+        "9 用户管理",
+        "9.12 系统维护",
+        "9.12.2 恢复出厂设置"
+      ],
+      "section_title": "9.12.2 恢复出厂设置",
+      "block_type": "paragraph",
+      "text": "步骤 3 界面弹出警示，输入当前用户密码，进行二次鉴权。",
+      "table_cells": null,
+      "bbox": [
+        70.865,
+        555.634,
+        308.735,
+        568.117
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2692A24CB20C3A3D",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 22,
+      "section_id": "SEC-9A0B08822488E836",
+      "section_path": [
+        "9 用户管理",
+        "9.12 系统维护",
+        "9.12.2 恢复出厂设置"
+      ],
+      "section_title": "9.12.2 恢复出厂设置",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        572.206,
+        126.359,
+        583.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-75C4E723A37A9854",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 23,
+      "section_id": "SEC-9A0B08822488E836",
+      "section_path": [
+        "9 用户管理",
+        "9.12 系统维护",
+        "9.12.2 恢复出厂设置"
+      ],
+      "section_title": "9.12.2 恢复出厂设置",
+      "block_type": "paragraph",
+      "text": "恢复出厂设置将清除所有历史数据及调试日志，请谨慎操作。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        595.506,
+        372.366,
+        606.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

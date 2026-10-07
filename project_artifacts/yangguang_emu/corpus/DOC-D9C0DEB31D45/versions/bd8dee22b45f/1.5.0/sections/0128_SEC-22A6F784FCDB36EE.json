@@ -1,0 +1,439 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-22A6F784FCDB36EE",
+  "section_path": [
+    "7 Web界面",
+    "7.10 系统",
+    "7.10.6 转发配置",
+    "7.10.6.3 转发MODBUS服务配置",
+    "7.10.6.3.3 Modbus TCP快调模式"
+  ],
+  "section_title": "7.10.6.3.3 Modbus TCP快调模式",
+  "start_pdf_page": 79,
+  "end_pdf_page": 79,
+  "blocks": [
+    {
+      "block_id": "BLK-E1CD550F99FE57BD",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 0,
+      "section_id": "SEC-22A6F784FCDB36EE",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.3 转发MODBUS服务配置",
+        "7.10.6.3.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.10.6.3.3 Modbus TCP快调模式",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EA4FD3717379E347",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 1,
+      "section_id": "SEC-22A6F784FCDB36EE",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.3 转发MODBUS服务配置",
+        "7.10.6.3.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.10.6.3.3 Modbus TCP快调模式",
+      "block_type": "paragraph",
+      "text": "步骤 5 单击设置，进行保存。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        71.484,
+        191.736,
+        83.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8630086B3426858E",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 2,
+      "section_id": "SEC-22A6F784FCDB36EE",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.3 转发MODBUS服务配置",
+        "7.10.6.3.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.10.6.3.3 Modbus TCP快调模式",
+      "block_type": "paragraph",
+      "text": "步骤 6 单击通用参数页签，设置设备通用参数。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        87.984,
+        263.736,
+        100.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FEA52E937BEC9E93",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 3,
+      "section_id": "SEC-22A6F784FCDB36EE",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.3 转发MODBUS服务配置",
+        "7.10.6.3.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.10.6.3.3 Modbus TCP快调模式",
+      "block_type": "paragraph",
+      "text": "步骤 7 选择设置，设置寄存器地址、数据类型和设置值。单击设置，完成对单台设备设置生效。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        104.484,
+        452.736,
+        116.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0D0032468D8D890E",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 4,
+      "section_id": "SEC-22A6F784FCDB36EE",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.3 转发MODBUS服务配置",
+        "7.10.6.3.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.10.6.3.3 Modbus TCP快调模式",
+      "block_type": "paragraph",
+      "text": "步骤 8 （可选）单击配置同步，在弹出的设备列表中勾选需要设置的设备，单击保存，完成批量设",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        120.984,
+        461.736,
+        133.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C2B13486B95C306D",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 5,
+      "section_id": "SEC-22A6F784FCDB36EE",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.3 转发MODBUS服务配置",
+        "7.10.6.3.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.10.6.3.3 Modbus TCP快调模式",
+      "block_type": "paragraph",
+      "text": "置设备通用参数。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        135.906,
+        173.736,
+        146.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-76154350D5877988",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 6,
+      "section_id": "SEC-22A6F784FCDB36EE",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.3 转发MODBUS服务配置",
+        "7.10.6.3.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.10.6.3.3 Modbus TCP快调模式",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        151.056,
+        126.36,
+        162.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-42F7A3FAFE97BF60",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 24,
+      "section_id": "SEC-22A6F784FCDB36EE",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.3 转发MODBUS服务配置",
+        "7.10.6.3.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.10.6.3.3 Modbus TCP快调模式",
+      "block_type": "heading",
+      "text": "7.10.6.3.3 Modbus TCP 快调模式",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        487.926,
+        208.365,
+        499.685
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7FAD9B6AEC9D2298",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 25,
+      "section_id": "SEC-22A6F784FCDB36EE",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.3 转发MODBUS服务配置",
+        "7.10.6.3.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.10.6.3.3 Modbus TCP快调模式",
+      "block_type": "paragraph",
+      "text": "Modbus TCP 快调开启后，可提高功率调节指令的响应速度。",
+      "table_cells": null,
+      "bbox": [
+        102.37,
+        502.94,
+        332.593,
+        513.285
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DB9AE00EFBD69F6B",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 26,
+      "section_id": "SEC-22A6F784FCDB36EE",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.3 转发MODBUS服务配置",
+        "7.10.6.3.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.10.6.3.3 Modbus TCP快调模式",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.364,
+        523.782,
+        138.364,
+        534.735
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5576B1BB0D89C04F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 27,
+      "section_id": "SEC-22A6F784FCDB36EE",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.3 转发MODBUS服务配置",
+        "7.10.6.3.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.10.6.3.3 Modbus TCP快调模式",
+      "block_type": "list",
+      "text": "•\n使用Modbus TCP 快调时，需在后台与Logger5000 的ETH3 或ETH4 快调口之间架设\n一台交换机，并通过网线将两者进行连接。网线类型选择通用性标准网线即可，如\nCAT5E 类/长度75cm 网线。",
+      "table_cells": null,
+      "bbox": [
+        102.364,
+        543.782,
+        461.113,
+        581.735
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-63AB5CA1F786DC31",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 28,
+      "section_id": "SEC-22A6F784FCDB36EE",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.3 转发MODBUS服务配置",
+        "7.10.6.3.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.10.6.3.3 Modbus TCP快调模式",
+      "block_type": "list",
+      "text": "•\n只需配置快调端口ETH3 或ETH4 其中一个网口的IP 地址即可，尽可能与后台IP 设置成\n同一网段。",
+      "table_cells": null,
+      "bbox": [
+        102.364,
+        585.782,
+        467.557,
+        610.235
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6F8C4E60D4FD891F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 29,
+      "section_id": "SEC-22A6F784FCDB36EE",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.3 转发MODBUS服务配置",
+        "7.10.6.3.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.10.6.3.3 Modbus TCP快调模式",
+      "block_type": "list",
+      "text": "•\nModbus TCP 快调与GOOSE 转发协议不可同时开启。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        625.282,
+        361.818,
+        636.235
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-055322CFC9915122",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 30,
+      "section_id": "SEC-22A6F784FCDB36EE",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.3 转发MODBUS服务配置",
+        "7.10.6.3.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.10.6.3.3 Modbus TCP快调模式",
+      "block_type": "list",
+      "text": "•\nModbus TCP 快调仅支持开环控制。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        640.282,
+        288.306,
+        651.235
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

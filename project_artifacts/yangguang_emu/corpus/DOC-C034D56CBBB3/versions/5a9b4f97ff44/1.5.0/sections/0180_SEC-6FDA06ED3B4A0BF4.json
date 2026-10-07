@@ -1,0 +1,43 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-6FDA06ED3B4A0BF4",
+  "section_path": [
+    "10 用户管理",
+    "10.11 通信设置"
+  ],
+  "section_title": "10.11 通信设置",
+  "start_pdf_page": 108,
+  "end_pdf_page": 108,
+  "blocks": [
+    {
+      "block_id": "BLK-6DDB234CCB4E5436",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 108,
+      "printed_page_label": "98",
+      "block_order": 20,
+      "section_id": "SEC-6FDA06ED3B4A0BF4",
+      "section_path": [
+        "10 用户管理",
+        "10.11 通信设置"
+      ],
+      "section_title": "10.11 通信设置",
+      "block_type": "heading",
+      "text": "10.11 通信设置",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        535.358,
+        141.329,
+        549.962
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

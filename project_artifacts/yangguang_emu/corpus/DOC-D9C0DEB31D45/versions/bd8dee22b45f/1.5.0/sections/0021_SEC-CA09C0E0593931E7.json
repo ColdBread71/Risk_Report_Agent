@@ -1,0 +1,206 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-CA09C0E0593931E7",
+  "section_path": [
+    "5 电气连接"
+  ],
+  "section_title": "5 电气连接",
+  "start_pdf_page": 26,
+  "end_pdf_page": 26,
+  "blocks": [
+    {
+      "block_id": "BLK-E50E50B1DF614CBC",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 26,
+      "printed_page_label": "16",
+      "block_order": 0,
+      "section_id": "SEC-CA09C0E0593931E7",
+      "section_path": [
+        "5 电气连接"
+      ],
+      "section_title": "5 电气连接",
+      "block_type": "heading",
+      "text": "5\n电气连接",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        98.112,
+        154.451,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2076430F5B65FE7D",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 26,
+      "printed_page_label": "16",
+      "block_order": 1,
+      "section_id": "SEC-CA09C0E0593931E7",
+      "section_path": [
+        "5 电气连接"
+      ],
+      "section_title": "5 电气连接",
+      "block_type": "table",
+      "text": "全规范总则\t\t\t\n\t危险\t\t\t\n\t注意高压危险。\t\t\t\n\t\t\t\t\n\t注意\t\t\t\n\t错误的接线，可能会\t损坏数据采集器，\t甚至伤害操作人员。\t\n\t\t\t\t\n\t注意\t\t\t\n\t所有线缆必须无破损\t、绝缘良好、尺寸\t适当并且连接牢固。\t\n\t部接口说明\n据采集器端子排布\t及标识，如下图所示\t。\t\n\t标识\t名称\t线缆推荐\t说明\n\t\t接地孔\t1~1.5mm2 户\n外型防紫外线\n导线\t连接保护地线。\n\tETH1~ETH2\t以太网接口\t-\t数据交换网口，可通过交换\n机、路由器等设备连接至后台\n主站。\n\tETH3~ETH4\t快速调度口\t-\t用于Goose 协议有功、无功\n快速调度\n\tETH5\t以太网接口\t-\t调试接口\n\tDebug\t调试串口\t-\t用于调试数据采集器",
+      "table_cells": [
+        [
+          null,
+          "全规范总则",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "危险",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "注意高压危险。",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "注意",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "错误的接线，可能会",
+          "损坏数据采集器，",
+          "甚至伤害操作人员。",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "注意",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "所有线缆必须无破损",
+          "、绝缘良好、尺寸",
+          "适当并且连接牢固。",
+          null
+        ],
+        [
+          null,
+          "部接口说明\n据采集器端子排布",
+          "及标识，如下图所示",
+          "。",
+          null
+        ],
+        [
+          null,
+          "标识",
+          "名称",
+          "线缆推荐",
+          "说明"
+        ],
+        [
+          null,
+          null,
+          "接地孔",
+          "1~1.5mm2 户\n外型防紫外线\n导线",
+          "连接保护地线。"
+        ],
+        [
+          null,
+          "ETH1~ETH2",
+          "以太网接口",
+          "-",
+          "数据交换网口，可通过交换\n机、路由器等设备连接至后台\n主站。"
+        ],
+        [
+          null,
+          "ETH3~ETH4",
+          "快速调度口",
+          "-",
+          "用于Goose 协议有功、无功\n快速调度"
+        ],
+        [
+          null,
+          "ETH5",
+          "以太网接口",
+          "-",
+          "调试接口"
+        ],
+        [
+          null,
+          "Debug",
+          "调试串口",
+          "-",
+          "用于调试数据采集器"
+        ]
+      ],
+      "bbox": [
+        92.693,
+        125.85,
+        444.008,
+        635.998
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A167A95B0D2807AE",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 26,
+      "printed_page_label": "16",
+      "block_order": 2,
+      "section_id": "SEC-CA09C0E0593931E7",
+      "section_path": [
+        "5 电气连接"
+      ],
+      "section_title": "5 电气连接",
+      "block_type": "paragraph",
+      "text": "RST\n复位口\n-\n长按（＞30s），用于重启数\n据采集器并恢复出厂设置",
+      "table_cells": null,
+      "bbox": [
+        96.866,
+        641.904,
+        442.766,
+        666.357
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

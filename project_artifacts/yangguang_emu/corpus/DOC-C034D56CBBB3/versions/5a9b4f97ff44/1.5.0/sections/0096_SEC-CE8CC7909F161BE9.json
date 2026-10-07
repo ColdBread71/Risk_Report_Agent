@@ -1,0 +1,163 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-CE8CC7909F161BE9",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.2 系统维护",
+    "7.8.2.1 日志导出"
+  ],
+  "section_title": "7.8.2.1 日志导出",
+  "start_pdf_page": 69,
+  "end_pdf_page": 69,
+  "blocks": [
+    {
+      "block_id": "BLK-2316CD773126D15A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 69,
+      "printed_page_label": "59",
+      "block_order": 9,
+      "section_id": "SEC-CE8CC7909F161BE9",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.1 日志导出"
+      ],
+      "section_title": "7.8.2.1 日志导出",
+      "block_type": "heading",
+      "text": "7.8.2.1 日志导出",
+      "table_cells": null,
+      "bbox": [
+        70.862,
+        263.49,
+        146.202,
+        275.66
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B2E24CD6C56B1783",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 69,
+      "printed_page_label": "59",
+      "block_order": 10,
+      "section_id": "SEC-CE8CC7909F161BE9",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.1 日志导出"
+      ],
+      "section_title": "7.8.2.1 日志导出",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击系统 > 系统维护，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        287.384,
+        237.993,
+        299.867
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4B0E47F1E1B73E65",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 69,
+      "printed_page_label": "59",
+      "block_order": 11,
+      "section_id": "SEC-CE8CC7909F161BE9",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.1 日志导出"
+      ],
+      "section_title": "7.8.2.1 日志导出",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击日志导出，进入日志导出界面。",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        303.884,
+        245.733,
+        316.367
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3405322043B7513C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 69,
+      "printed_page_label": "59",
+      "block_order": 12,
+      "section_id": "SEC-CE8CC7909F161BE9",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.1 日志导出"
+      ],
+      "section_title": "7.8.2.1 日志导出",
+      "block_type": "paragraph",
+      "text": "步骤 3 勾选需要的日志类型，单击确定。",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        320.384,
+        236.733,
+        332.867
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AE022AC58D0A7CA2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 69,
+      "printed_page_label": "59",
+      "block_order": 13,
+      "section_id": "SEC-CE8CC7909F161BE9",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.1 日志导出"
+      ],
+      "section_title": "7.8.2.1 日志导出",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        336.956,
+        126.357,
+        347.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

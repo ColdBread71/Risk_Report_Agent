@@ -1,0 +1,200 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-F8AEDADFD2BCFA60",
+  "section_path": [
+    "5 试运行",
+    "5.3 试运行步骤",
+    "5.3.2 数据采集器调试"
+  ],
+  "section_title": "5.3.2 数据采集器调试",
+  "start_pdf_page": 48,
+  "end_pdf_page": 48,
+  "blocks": [
+    {
+      "block_id": "BLK-9B1D4BDAA112F377",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 48,
+      "printed_page_label": "42",
+      "block_order": 0,
+      "section_id": "SEC-F8AEDADFD2BCFA60",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.2 数据采集器调试"
+      ],
+      "section_title": "5.3.2 数据采集器调试",
+      "block_type": "paragraph",
+      "text": "用户手册\n5 试运行",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-42A8AC547042A2C1",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 48,
+      "printed_page_label": "42",
+      "block_order": 1,
+      "section_id": "SEC-F8AEDADFD2BCFA60",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.2 数据采集器调试"
+      ],
+      "section_title": "5.3.2 数据采集器调试",
+      "block_type": "table",
+      "text": "编号\t说明\t\n4\t观察数据采集器外部运行指示灯：PWR 灯常\n熄灭，FAULT 灯熄灭，则运行正常。\t亮，RUN 灯闪烁，WLAN 指示灯\n5\t闭合箱变侧断路器。\t\n6\t调试后请锁好外部箱盖，妥善保管钥匙。\t\n据采集器\t调试\t\n编号\t说明\t\n1\t• EMU300A 内部有交换机：使用网线，将\n机上的以太网端口。以太网端口的IP 地址\n15.15.15.15。\n• EMU300A 内部无交换机：使用网线，将\n采集器的以太网端口。以太网端口ETH1\n址为15.15.15.15；以太网端口ETH2 的I\n16.16.16.16。\tPC 连接至EMU300A 内部的交换\n默认为12.12.12.12，虚拟地址为\nPC 连接至EMU300A 内部的数据\n的IP 地址为12.12.12.12，虚拟地\nP 地址13.13.13.13，虚拟地址为\n2\t• EMU300A 内部有交换机：配置PC 的IP\n网段，可配置为12.12.12.X，X 在1~255\n15.15.15.X，X 在1~255，且不能为14。\n• EMU300A 内部无交换机：配置PC 的IP\n太网端口处于同一网段。以ETH1 为例，\n1~255，且不能为12，子网掩码为255.2\t地址，使其与数据采集器处于同一\n，且不能为12。或可配置为\n子网掩码为255.255.255.0。\n地址，使其与数据采集器接入的以\n可配置为12.12.12.X，X 在\n55.255.0。\n3\t在PC 地址栏，输入数据采集器以太网端口的\n以IP 地址12.12.12.12 为例：\n• 登录Logger5000 的Web 端，请输\n功。\tIP 地址，进入Web 页面。\n\t\t入https://12.12.12.12 来登录成\n\t\t\n4\t配置串口参数。\t\n5\t添加设备。\t\n6\t配置设备的IP 地址。",
+      "table_cells": [
+        [
+          "编号",
+          "说明",
+          null
+        ],
+        [
+          "4",
+          "观察数据采集器外部运行指示灯：PWR 灯常\n熄灭，FAULT 灯熄灭，则运行正常。",
+          "亮，RUN 灯闪烁，WLAN 指示灯"
+        ],
+        [
+          "5",
+          "闭合箱变侧断路器。",
+          null
+        ],
+        [
+          "6",
+          "调试后请锁好外部箱盖，妥善保管钥匙。",
+          null
+        ],
+        [
+          "据采集器",
+          "调试",
+          null
+        ],
+        [
+          "编号",
+          "说明",
+          null
+        ],
+        [
+          "1",
+          "• EMU300A 内部有交换机：使用网线，将\n机上的以太网端口。以太网端口的IP 地址\n15.15.15.15。\n• EMU300A 内部无交换机：使用网线，将\n采集器的以太网端口。以太网端口ETH1\n址为15.15.15.15；以太网端口ETH2 的I\n16.16.16.16。",
+          "PC 连接至EMU300A 内部的交换\n默认为12.12.12.12，虚拟地址为\nPC 连接至EMU300A 内部的数据\n的IP 地址为12.12.12.12，虚拟地\nP 地址13.13.13.13，虚拟地址为"
+        ],
+        [
+          "2",
+          "• EMU300A 内部有交换机：配置PC 的IP\n网段，可配置为12.12.12.X，X 在1~255\n15.15.15.X，X 在1~255，且不能为14。\n• EMU300A 内部无交换机：配置PC 的IP\n太网端口处于同一网段。以ETH1 为例，\n1~255，且不能为12，子网掩码为255.2",
+          "地址，使其与数据采集器处于同一\n，且不能为12。或可配置为\n子网掩码为255.255.255.0。\n地址，使其与数据采集器接入的以\n可配置为12.12.12.X，X 在\n55.255.0。"
+        ],
+        [
+          "3",
+          "在PC 地址栏，输入数据采集器以太网端口的\n以IP 地址12.12.12.12 为例：\n• 登录Logger5000 的Web 端，请输\n功。",
+          "IP 地址，进入Web 页面。"
+        ],
+        [
+          null,
+          null,
+          "入https://12.12.12.12 来登录成"
+        ],
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          "4",
+          "配置串口参数。",
+          null
+        ],
+        [
+          "5",
+          "添加设备。",
+          null
+        ],
+        [
+          "6",
+          "配置设备的IP 地址。",
+          null
+        ]
+      ],
+      "bbox": [
+        96.859,
+        74.539,
+        444.262,
+        562.95
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F0ED78742CAE0A8F",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 48,
+      "printed_page_label": "42",
+      "block_order": 2,
+      "section_id": "SEC-F8AEDADFD2BCFA60",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.2 数据采集器调试"
+      ],
+      "section_title": "5.3.2 数据采集器调试",
+      "block_type": "paragraph",
+      "text": "7\n进入数据采集器的Web 界面，查看阳光电源生产的组串逆变器的运行数据是否\n正常。",
+      "table_cells": null,
+      "bbox": [
+        96.859,
+        568.856,
+        442.658,
+        593.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E6C3510A5EAD0713",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 48,
+      "printed_page_label": "42",
+      "block_order": 3,
+      "section_id": "SEC-F8AEDADFD2BCFA60",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.2 数据采集器调试"
+      ],
+      "section_title": "5.3.2 数据采集器调试",
+      "block_type": "paragraph",
+      "text": "请勿重复添加设备地址，重复添加设备地址可能会导致功能异常。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        621.256,
+        376.193,
+        632.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

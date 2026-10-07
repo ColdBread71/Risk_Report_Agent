@@ -1,0 +1,326 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-B56F3683ECDC4AFC",
+  "section_path": [
+    "7 Web界面",
+    "7.10 系统",
+    "7.10.7 端口参数",
+    "7.10.7.3 AI"
+  ],
+  "section_title": "7.10.7.3 AI",
+  "start_pdf_page": 83,
+  "end_pdf_page": 83,
+  "blocks": [
+    {
+      "block_id": "BLK-9149C59D08016133",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 83,
+      "printed_page_label": "73",
+      "block_order": 0,
+      "section_id": "SEC-B56F3683ECDC4AFC",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.7 端口参数",
+        "7.10.7.3 AI"
+      ],
+      "section_title": "7.10.7.3 AI",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.616,
+        48.088,
+        463.963,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-598D475B3618DDA1",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 83,
+      "printed_page_label": "73",
+      "block_order": 1,
+      "section_id": "SEC-B56F3683ECDC4AFC",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.7 端口参数",
+        "7.10.7.3 AI"
+      ],
+      "section_title": "7.10.7.3 AI",
+      "block_type": "paragraph",
+      "text": "参数名称\n默认参数值",
+      "table_cells": null,
+      "bbox": [
+        110.405,
+        76.189,
+        327.502,
+        86.534
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4761D6C8E484CDB0",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 83,
+      "printed_page_label": "73",
+      "block_order": 2,
+      "section_id": "SEC-B56F3683ECDC4AFC",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.7 端口参数",
+        "7.10.7.3 AI"
+      ],
+      "section_title": "7.10.7.3 AI",
+      "block_type": "table",
+      "text": "校验位\t\t\t无\t\t\n停止位\t\t\t1\t\t\nPLC 接入\t\t\t禁\t止\t\n快调开关\t\t\t禁\t止\t\n当数据\n、校验\n以及停\n必须与\n仅当C\n状态设\n，设置\nPLC 节\n结束\n以太网\n击系统 > 端\n自动分配I\t\t\t\t\t\n\t采集器串口连接设备\n位\n止位\n所连接设备配置相同\t时，该串口\n，才能保证\t端\n数\t口波特率\n据采集器与所连设备正常通讯。\t\n\t\t\t\t\t\n\tOM1~COM9 端口接\n置为使能\n使能后，COM1~CO\n点参数进行设置，具\t入设备时，才\nM9 端口对应\n体参见7.10\t能\n的\n.8\t将COM1~COM9 端口对应的\n波特率将自动修改为115200，\nMPLC（宽带PLC）。\tPLC 接\n此时可\n\t口参数 > 以太网，\nP 为开，则端口对应\t进入以太网界\n的IP 地址失\t面\n效，\t。\n可以通过虚拟IP 登录设备。\t\n端口\t默认IP 地址\t子网掩码\t\t网关 DNS1\tDNS2\nETH1\t12.12.12.12\t255.255.2\n55.0\t\t12.12.12.1 1.2.4.8\t8.8.8.8\nETH2\t13.13.13.13\t255.255.2\n55.0\t\t13.13.13.1 1.2.4.8\t8.8.8.8\nETH5\t14.14.14.14\t255.255.2\n55.0\t\t14.14.14.1 1.2.4.8\t8.8.8.8",
+      "table_cells": [
+        [
+          "校验位",
+          null,
+          null,
+          "无",
+          null,
+          null
+        ],
+        [
+          "停止位",
+          null,
+          null,
+          "1",
+          null,
+          null
+        ],
+        [
+          "PLC 接入",
+          null,
+          null,
+          "禁",
+          "止",
+          null
+        ],
+        [
+          "快调开关",
+          null,
+          null,
+          "禁",
+          "止",
+          null
+        ],
+        [
+          "当数据\n、校验\n以及停\n必须与\n仅当C\n状态设\n，设置\nPLC 节\n结束\n以太网\n击系统 > 端\n自动分配I",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "采集器串口连接设备\n位\n止位\n所连接设备配置相同",
+          "时，该串口\n，才能保证",
+          "端\n数",
+          "口波特率\n据采集器与所连设备正常通讯。",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "OM1~COM9 端口接\n置为使能\n使能后，COM1~CO\n点参数进行设置，具",
+          "入设备时，才\nM9 端口对应\n体参见7.10",
+          "能\n的\n.8",
+          "将COM1~COM9 端口对应的\n波特率将自动修改为115200，\nMPLC（宽带PLC）。",
+          "PLC 接\n此时可"
+        ],
+        [
+          null,
+          "口参数 > 以太网，\nP 为开，则端口对应",
+          "进入以太网界\n的IP 地址失",
+          "面\n效，",
+          "。\n可以通过虚拟IP 登录设备。",
+          null
+        ],
+        [
+          "端口",
+          "默认IP 地址",
+          "子网掩码",
+          null,
+          "网关 DNS1",
+          "DNS2"
+        ],
+        [
+          "ETH1",
+          "12.12.12.12",
+          "255.255.2\n55.0",
+          null,
+          "12.12.12.1 1.2.4.8",
+          "8.8.8.8"
+        ],
+        [
+          "ETH2",
+          "13.13.13.13",
+          "255.255.2\n55.0",
+          null,
+          "13.13.13.1 1.2.4.8",
+          "8.8.8.8"
+        ],
+        [
+          "ETH5",
+          "14.14.14.14",
+          "255.255.2\n55.0",
+          null,
+          "14.14.14.1 1.2.4.8",
+          "8.8.8.8"
+        ]
+      ],
+      "bbox": [
+        110.404,
+        91.0,
+        444.892,
+        525.85
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9905FEE6ACE33B10",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 83,
+      "printed_page_label": "73",
+      "block_order": 7,
+      "section_id": "SEC-B56F3683ECDC4AFC",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.7 端口参数",
+        "7.10.7.3 AI"
+      ],
+      "section_title": "7.10.7.3 AI",
+      "block_type": "heading",
+      "text": "7.10.7.3 AI",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        583.326,
+        118.71,
+        594.486
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2BACAFF74DC040A3",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 83,
+      "printed_page_label": "73",
+      "block_order": 8,
+      "section_id": "SEC-B56F3683ECDC4AFC",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.7 端口参数",
+        "7.10.7.3 AI"
+      ],
+      "section_title": "7.10.7.3 AI",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击系统 > 端口参数 > AI，进入AI 界面。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        601.11,
+        269.757,
+        613.593
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-87EC6162FEB9BFCC",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 83,
+      "printed_page_label": "73",
+      "block_order": 9,
+      "section_id": "SEC-B56F3683ECDC4AFC",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.7 端口参数",
+        "7.10.7.3 AI"
+      ],
+      "section_title": "7.10.7.3 AI",
+      "block_type": "paragraph",
+      "text": "步骤 2 选择输入类型，设置采样下限和采样上限，单击",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        618.937,
+        290.736,
+        631.42
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4862B6231F67B80F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 83,
+      "printed_page_label": "73",
+      "block_order": 10,
+      "section_id": "SEC-B56F3683ECDC4AFC",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.7 端口参数",
+        "7.10.7.3 AI"
+      ],
+      "section_title": "7.10.7.3 AI",
+      "block_type": "paragraph",
+      "text": "，信息设置成功。",
+      "table_cells": null,
+      "bbox": [
+        299.241,
+        620.359,
+        371.241,
+        631.312
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

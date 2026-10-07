@@ -1,0 +1,232 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-AC6F1BB59B715943",
+  "section_path": [
+    "5 电气连接",
+    "5.8 DO信号接线"
+  ],
+  "section_title": "5.8 DO信号接线",
+  "start_pdf_page": 37,
+  "end_pdf_page": 37,
+  "blocks": [
+    {
+      "block_id": "BLK-CE1AAC522092D20A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 37,
+      "printed_page_label": "27",
+      "block_order": 0,
+      "section_id": "SEC-AC6F1BB59B715943",
+      "section_path": [
+        "5 电气连接",
+        "5.8 DO信号接线"
+      ],
+      "section_title": "5.8 DO信号接线",
+      "block_type": "paragraph",
+      "text": "用户手册\n5 电气连接",
+      "table_cells": null,
+      "bbox": [
+        74.615,
+        48.088,
+        463.969,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-09FCE99F4B635A42",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 37,
+      "printed_page_label": "27",
+      "block_order": 1,
+      "section_id": "SEC-AC6F1BB59B715943",
+      "section_path": [
+        "5 电气连接",
+        "5.8 DO信号接线"
+      ],
+      "section_title": "5.8 DO信号接线",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        248.582,
+        126.36,
+        259.535
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DF3A69BA749F6FA2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 37,
+      "printed_page_label": "27",
+      "block_order": 2,
+      "section_id": "SEC-AC6F1BB59B715943",
+      "section_path": [
+        "5 电气连接",
+        "5.8 DO信号接线"
+      ],
+      "section_title": "5.8 DO信号接线",
+      "block_type": "heading",
+      "text": "5.8 DO 信号接线",
+      "table_cells": null,
+      "bbox": [
+        70.86,
+        283.484,
+        161.052,
+        298.088
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7404940EF9769650",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 37,
+      "printed_page_label": "27",
+      "block_order": 3,
+      "section_id": "SEC-AC6F1BB59B715943",
+      "section_path": [
+        "5 电气连接",
+        "5.8 DO信号接线"
+      ],
+      "section_title": "5.8 DO信号接线",
+      "block_type": "paragraph",
+      "text": "端口1 对应NO，端口2 对应NC，端口3 对应COM，NO/COM 为常开触点，NC/COM 为\n常闭触点。建议信号传输距离不超过10m。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        309.782,
+        461.121,
+        331.535
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FE909CDEA1501C0C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 37,
+      "printed_page_label": "27",
+      "block_order": 4,
+      "section_id": "SEC-AC6F1BB59B715943",
+      "section_path": [
+        "5 电气连接",
+        "5.8 DO信号接线"
+      ],
+      "section_title": "5.8 DO信号接线",
+      "block_type": "paragraph",
+      "text": "步骤 1 使用剥线钳剥去干接点输出信号线缆的防护层和绝缘层，如下图所示。",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        337.31,
+        380.733,
+        349.792
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-01FF01ADE90ECAFC",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 37,
+      "printed_page_label": "27",
+      "block_order": 5,
+      "section_id": "SEC-AC6F1BB59B715943",
+      "section_path": [
+        "5 电气连接",
+        "5.8 DO信号接线"
+      ],
+      "section_title": "5.8 DO信号接线",
+      "block_type": "paragraph",
+      "text": "步骤 2 安装合适的冷压端子，并使用压线钳压紧。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        447.699,
+        272.736,
+        460.182
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C8F6AF717A47B864",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 37,
+      "printed_page_label": "27",
+      "block_order": 6,
+      "section_id": "SEC-AC6F1BB59B715943",
+      "section_path": [
+        "5 电气连接",
+        "5.8 DO信号接线"
+      ],
+      "section_title": "5.8 DO信号接线",
+      "block_type": "paragraph",
+      "text": "步骤 3 将冷压端子接至数据采集器外部“DO1”~“D04”插头，如下图所示（以接入“DO1”端口的常开触",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        542.077,
+        466.497,
+        554.56
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-65280C6E6218EDD6",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 37,
+      "printed_page_label": "27",
+      "block_order": 7,
+      "section_id": "SEC-AC6F1BB59B715943",
+      "section_path": [
+        "5 电气连接",
+        "5.8 DO信号接线"
+      ],
+      "section_title": "5.8 DO信号接线",
+      "block_type": "paragraph",
+      "text": "点为例）。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        556.999,
+        146.736,
+        567.952
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

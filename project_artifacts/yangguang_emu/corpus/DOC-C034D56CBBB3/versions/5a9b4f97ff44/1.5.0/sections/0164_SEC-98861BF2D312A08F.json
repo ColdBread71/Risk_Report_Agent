@@ -1,0 +1,145 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-98861BF2D312A08F",
+  "section_path": [
+    "10 用户管理"
+  ],
+  "section_title": "10 用户管理",
+  "start_pdf_page": 103,
+  "end_pdf_page": 103,
+  "blocks": [
+    {
+      "block_id": "BLK-0AF2579E226D43DF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 103,
+      "printed_page_label": "93",
+      "block_order": 0,
+      "section_id": "SEC-98861BF2D312A08F",
+      "section_path": [
+        "10 用户管理"
+      ],
+      "section_title": "10 用户管理",
+      "block_type": "heading",
+      "text": "10\n用户管理",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        98.112,
+        178.632,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9642C4B0D7BD02B5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 103,
+      "printed_page_label": "93",
+      "block_order": 1,
+      "section_id": "SEC-98861BF2D312A08F",
+      "section_path": [
+        "10 用户管理"
+      ],
+      "section_title": "10 用户管理",
+      "block_type": "paragraph",
+      "text": "管理员账号可以创建运维用户账号、重置账号密码、设置账户保护和会话安全参数、启用研发调\n试开关。",
+      "table_cells": null,
+      "bbox": [
+        102.37,
+        145.414,
+        459.37,
+        168.508
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DC5E16E4B81BDAB3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 103,
+      "printed_page_label": "93",
+      "block_order": 2,
+      "section_id": "SEC-98861BF2D312A08F",
+      "section_path": [
+        "10 用户管理"
+      ],
+      "section_title": "10 用户管理",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.368,
+        179.006,
+        138.368,
+        189.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-110EB995EAA733B0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 103,
+      "printed_page_label": "93",
+      "block_order": 3,
+      "section_id": "SEC-98861BF2D312A08F",
+      "section_path": [
+        "10 用户管理"
+      ],
+      "section_title": "10 用户管理",
+      "block_type": "list",
+      "text": "•\nLogger4000 的固件版本为P018 或以上。见7.8.16 查看固件版本。",
+      "table_cells": null,
+      "bbox": [
+        102.368,
+        199.006,
+        384.131,
+        209.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D63AD7493D89F168",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 103,
+      "printed_page_label": "93",
+      "block_order": 4,
+      "section_id": "SEC-98861BF2D312A08F",
+      "section_path": [
+        "10 用户管理"
+      ],
+      "section_title": "10 用户管理",
+      "block_type": "list",
+      "text": "•\n操作人员具有管理员权限。",
+      "table_cells": null,
+      "bbox": [
+        102.368,
+        214.006,
+        224.543,
+        224.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

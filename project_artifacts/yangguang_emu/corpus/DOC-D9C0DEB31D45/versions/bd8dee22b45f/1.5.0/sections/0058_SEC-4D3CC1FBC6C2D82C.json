@@ -1,0 +1,437 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-4D3CC1FBC6C2D82C",
+  "section_path": [
+    "7 Web界面",
+    "7.5 设备监控",
+    "7.5.9 故障录波参数"
+  ],
+  "section_title": "7.5.9 故障录波参数",
+  "start_pdf_page": 48,
+  "end_pdf_page": 48,
+  "blocks": [
+    {
+      "block_id": "BLK-056C4C10365E0BE9",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 48,
+      "printed_page_label": "38",
+      "block_order": 10,
+      "section_id": "SEC-4D3CC1FBC6C2D82C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.9 故障录波参数"
+      ],
+      "section_title": "7.5.9 故障录波参数",
+      "block_type": "heading",
+      "text": "7.5.9 故障录波参数",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        234.761,
+        143.687,
+        246.931
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8BC7F01E4BCD4C80",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 48,
+      "printed_page_label": "38",
+      "block_order": 11,
+      "section_id": "SEC-4D3CC1FBC6C2D82C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.9 故障录波参数"
+      ],
+      "section_title": "7.5.9 故障录波参数",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击设备监控，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        258.655,
+        195.563,
+        271.138
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3845C25C8E0DDFA1",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 48,
+      "printed_page_label": "38",
+      "block_order": 12,
+      "section_id": "SEC-4D3CC1FBC6C2D82C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.9 故障录波参数"
+      ],
+      "section_title": "7.5.9 故障录波参数",
+      "block_type": "paragraph",
+      "text": "步骤 2 在左侧设备列表栏选择需要的设备，点击故障录波参数查看该设备故障录波参数。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        275.155,
+        411.563,
+        287.638
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2F1C6499BC0A58D3",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 48,
+      "printed_page_label": "38",
+      "block_order": 13,
+      "section_id": "SEC-4D3CC1FBC6C2D82C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.9 故障录波参数"
+      ],
+      "section_title": "7.5.9 故障录波参数",
+      "block_type": "paragraph",
+      "text": "步骤 3 在录波标准的当前值栏下拉框中选择录波标准模式，选择后会显示当前模式下所有参数的默",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        291.655,
+        447.563,
+        304.138
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2EE5D47994B371F7",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 48,
+      "printed_page_label": "38",
+      "block_order": 14,
+      "section_id": "SEC-4D3CC1FBC6C2D82C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.9 故障录波参数"
+      ],
+      "section_title": "7.5.9 故障录波参数",
+      "block_type": "paragraph",
+      "text": "认值。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        306.577,
+        114.563,
+        317.53
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4BEF97B7B5D5F49B",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 48,
+      "printed_page_label": "38",
+      "block_order": 15,
+      "section_id": "SEC-4D3CC1FBC6C2D82C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.9 故障录波参数"
+      ],
+      "section_title": "7.5.9 故障录波参数",
+      "block_type": "paragraph",
+      "text": "步骤 4 修改故障录波参数。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        321.655,
+        168.563,
+        334.138
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7FF89521798ABE10",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 48,
+      "printed_page_label": "38",
+      "block_order": 16,
+      "section_id": "SEC-4D3CC1FBC6C2D82C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.9 故障录波参数"
+      ],
+      "section_title": "7.5.9 故障录波参数",
+      "block_type": "paragraph",
+      "text": "若输入的参数值超出说明范围，保存时系统将提示“参数校验失败”，请根据提示重新设置。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        339.577,
+        444.557,
+        350.53
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-872AF33EFA7530AC",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 48,
+      "printed_page_label": "38",
+      "block_order": 17,
+      "section_id": "SEC-4D3CC1FBC6C2D82C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.9 故障录波参数"
+      ],
+      "section_title": "7.5.9 故障录波参数",
+      "block_type": "paragraph",
+      "text": "a. 修改数值参数时，在当前值栏键入参数值。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        356.077,
+        272.738,
+        367.03
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6A6C429DE19238CD",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 48,
+      "printed_page_label": "38",
+      "block_order": 18,
+      "section_id": "SEC-4D3CC1FBC6C2D82C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.9 故障录波参数"
+      ],
+      "section_title": "7.5.9 故障录波参数",
+      "block_type": "paragraph",
+      "text": "b. 修改状态参数时，在当前值栏点击",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        373.349,
+        236.738,
+        384.302
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CB2792E097B22194",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 48,
+      "printed_page_label": "38",
+      "block_order": 19,
+      "section_id": "SEC-4D3CC1FBC6C2D82C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.9 故障录波参数"
+      ],
+      "section_title": "7.5.9 故障录波参数",
+      "block_type": "paragraph",
+      "text": "，从下拉框中选择所需状态。",
+      "table_cells": null,
+      "bbox": [
+        250.913,
+        373.349,
+        367.913,
+        384.302
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-63094AA07B4AB7C1",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 48,
+      "printed_page_label": "38",
+      "block_order": 20,
+      "section_id": "SEC-4D3CC1FBC6C2D82C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.9 故障录波参数"
+      ],
+      "section_title": "7.5.9 故障录波参数",
+      "block_type": "paragraph",
+      "text": "c. 点击设置，并在弹出的对话窗口中点击确定进行保存。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        388.349,
+        317.738,
+        399.302
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-47EC3AF94BECA755",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 48,
+      "printed_page_label": "38",
+      "block_order": 21,
+      "section_id": "SEC-4D3CC1FBC6C2D82C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.9 故障录波参数"
+      ],
+      "section_title": "7.5.9 故障录波参数",
+      "block_type": "paragraph",
+      "text": "步骤 5 （可选）批量设置故障录波参数。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        403.427,
+        222.563,
+        415.91
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-024D0228A2C6CA8A",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 48,
+      "printed_page_label": "38",
+      "block_order": 22,
+      "section_id": "SEC-4D3CC1FBC6C2D82C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.9 故障录波参数"
+      ],
+      "section_title": "7.5.9 故障录波参数",
+      "block_type": "paragraph",
+      "text": "a. 单击配置同步。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        421.349,
+        164.738,
+        432.302
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8E015E17C2309336",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 48,
+      "printed_page_label": "38",
+      "block_order": 23,
+      "section_id": "SEC-4D3CC1FBC6C2D82C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.9 故障录波参数"
+      ],
+      "section_title": "7.5.9 故障录波参数",
+      "block_type": "paragraph",
+      "text": "b. 在弹出的对话窗口中点击确定，然后勾选列表中需要同步设置的设备，单击确定。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        436.349,
+        425.738,
+        447.302
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FEDE4E9C77EA34BD",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 48,
+      "printed_page_label": "38",
+      "block_order": 24,
+      "section_id": "SEC-4D3CC1FBC6C2D82C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.9 故障录波参数"
+      ],
+      "section_title": "7.5.9 故障录波参数",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        451.499,
+        112.187,
+        462.452
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

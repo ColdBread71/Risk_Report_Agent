@@ -1,0 +1,259 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-B917DBAE82C84E67",
+  "section_path": [
+    "10 用户管理",
+    "10.5 删除运维用户"
+  ],
+  "section_title": "10.5 删除运维用户",
+  "start_pdf_page": 105,
+  "end_pdf_page": 105,
+  "blocks": [
+    {
+      "block_id": "BLK-ACDD5485DE33A756",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 18,
+      "section_id": "SEC-B917DBAE82C84E67",
+      "section_path": [
+        "10 用户管理",
+        "10.5 删除运维用户"
+      ],
+      "section_title": "10.5 删除运维用户",
+      "block_type": "heading",
+      "text": "10.5 删除运维用户",
+      "table_cells": null,
+      "bbox": [
+        70.86,
+        406.958,
+        173.724,
+        421.562
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-16D4DD609E793543",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 19,
+      "section_id": "SEC-B917DBAE82C84E67",
+      "section_path": [
+        "10 用户管理",
+        "10.5 删除运维用户"
+      ],
+      "section_title": "10.5 删除运维用户",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        434.606,
+        138.363,
+        445.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F18AB13D06A90F0C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 20,
+      "section_id": "SEC-B917DBAE82C84E67",
+      "section_path": [
+        "10 用户管理",
+        "10.5 删除运维用户"
+      ],
+      "section_title": "10.5 删除运维用户",
+      "block_type": "list",
+      "text": "•\n通过管理员账号登录Web 端。见10.1 初始用户名和密码。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        454.606,
+        350.646,
+        465.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-26CB0A00854BE518",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 21,
+      "section_id": "SEC-B917DBAE82C84E67",
+      "section_path": [
+        "10 用户管理",
+        "10.5 删除运维用户"
+      ],
+      "section_title": "10.5 删除运维用户",
+      "block_type": "paragraph",
+      "text": "步骤 1 导航栏中点击用户管理，跳转至相应页面。",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        472.684,
+        272.733,
+        485.167
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9FF179B3E3B0A174",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 22,
+      "section_id": "SEC-B917DBAE82C84E67",
+      "section_path": [
+        "10 用户管理",
+        "10.5 删除运维用户"
+      ],
+      "section_title": "10.5 删除运维用户",
+      "block_type": "paragraph",
+      "text": "步骤 2 在用户账号对应的操作栏中，点击",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        497.93,
+        236.733,
+        510.413
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-84EDD30C066D0ACB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 23,
+      "section_id": "SEC-B917DBAE82C84E67",
+      "section_path": [
+        "10 用户管理",
+        "10.5 删除运维用户"
+      ],
+      "section_title": "10.5 删除运维用户",
+      "block_type": "paragraph",
+      "text": "。",
+      "table_cells": null,
+      "bbox": [
+        250.911,
+        499.353,
+        259.911,
+        510.306
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-26E59C364214D664",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 24,
+      "section_id": "SEC-B917DBAE82C84E67",
+      "section_path": [
+        "10 用户管理",
+        "10.5 删除运维用户"
+      ],
+      "section_title": "10.5 删除运维用户",
+      "block_type": "paragraph",
+      "text": "步骤 3 在弹窗中，点击确定，删除该用户。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        514.43,
+        245.736,
+        526.914
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9FA2B24B7A63EB38",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 25,
+      "section_id": "SEC-B917DBAE82C84E67",
+      "section_path": [
+        "10 用户管理",
+        "10.5 删除运维用户"
+      ],
+      "section_title": "10.5 删除运维用户",
+      "block_type": "paragraph",
+      "text": "步骤 4 点击清空用户，可删除所有用户账号。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        530.93,
+        254.736,
+        543.414
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BD14A00AB1CE2249",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 26,
+      "section_id": "SEC-B917DBAE82C84E67",
+      "section_path": [
+        "10 用户管理",
+        "10.5 删除运维用户"
+      ],
+      "section_title": "10.5 删除运维用户",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        547.502,
+        126.36,
+        558.455
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

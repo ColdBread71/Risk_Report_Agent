@@ -1,0 +1,367 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-93667AD32158EDA8",
+  "section_path": [
+    "5 电气连接",
+    "5.12 与外部交流供电电源接线"
+  ],
+  "section_title": "5.12 与外部交流供电电源接线",
+  "start_pdf_page": 41,
+  "end_pdf_page": 41,
+  "blocks": [
+    {
+      "block_id": "BLK-67843B23C36908B8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "31",
+      "block_order": 0,
+      "section_id": "SEC-93667AD32158EDA8",
+      "section_path": [
+        "5 电气连接",
+        "5.12 与外部交流供电电源接线"
+      ],
+      "section_title": "5.12 与外部交流供电电源接线",
+      "block_type": "paragraph",
+      "text": "用户手册\n5 电气连接",
+      "table_cells": null,
+      "bbox": [
+        74.615,
+        48.088,
+        463.969,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-17B76304510DB60A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "31",
+      "block_order": 1,
+      "section_id": "SEC-93667AD32158EDA8",
+      "section_path": [
+        "5 电气连接",
+        "5.12 与外部交流供电电源接线"
+      ],
+      "section_title": "5.12 与外部交流供电电源接线",
+      "block_type": "paragraph",
+      "text": "ETH5 网口仅用于调试，不可接入SCADA 通信系统。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        78.056,
+        343.125,
+        89.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1923058AFF23C6D3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "31",
+      "block_order": 2,
+      "section_id": "SEC-93667AD32158EDA8",
+      "section_path": [
+        "5 电气连接",
+        "5.12 与外部交流供电电源接线"
+      ],
+      "section_title": "5.12 与外部交流供电电源接线",
+      "block_type": "paragraph",
+      "text": "步骤 1 将交付件中的网线，一端接至以太网交换机网口，一端接至数据采集器的以太网接口。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        111.284,
+        443.736,
+        123.767
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E5D3295B71E8D247",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "31",
+      "block_order": 3,
+      "section_id": "SEC-93667AD32158EDA8",
+      "section_path": [
+        "5 电气连接",
+        "5.12 与外部交流供电电源接线"
+      ],
+      "section_title": "5.12 与外部交流供电电源接线",
+      "block_type": "paragraph",
+      "text": "步骤 2 配置网络参数。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        272.774,
+        164.736,
+        285.257
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-613E24CC91E1F56A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "31",
+      "block_order": 4,
+      "section_id": "SEC-93667AD32158EDA8",
+      "section_path": [
+        "5 电气连接",
+        "5.12 与外部交流供电电源接线"
+      ],
+      "section_title": "5.12 与外部交流供电电源接线",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        289.346,
+        126.36,
+        300.299
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-86D52D89A807EFE3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "31",
+      "block_order": 5,
+      "section_id": "SEC-93667AD32158EDA8",
+      "section_path": [
+        "5 电气连接",
+        "5.12 与外部交流供电电源接线"
+      ],
+      "section_title": "5.12 与外部交流供电电源接线",
+      "block_type": "list",
+      "text": "•\n以太网接口（ETH1、ETH2、ETH5）默认IP 地址参照6.2 试运行步骤。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        313.396,
+        431.82,
+        324.349
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FA298DA9E32E0D30",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "31",
+      "block_order": 6,
+      "section_id": "SEC-93667AD32158EDA8",
+      "section_path": [
+        "5 电气连接",
+        "5.12 与外部交流供电电源接线"
+      ],
+      "section_title": "5.12 与外部交流供电电源接线",
+      "block_type": "list",
+      "text": "•\n若以太网接口（ETH1、ETH2、ETH5）已开启自动获取地址（DHCP）功能，则\n可将以太网接口与路由器等设备连接后，读取该接口的IP 地址。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        328.396,
+        463.059,
+        352.849
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EC8D1E27D0270839",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "31",
+      "block_order": 7,
+      "section_id": "SEC-93667AD32158EDA8",
+      "section_path": [
+        "5 电气连接",
+        "5.12 与外部交流供电电源接线"
+      ],
+      "section_title": "5.12 与外部交流供电电源接线",
+      "block_type": "heading",
+      "text": "5.12 与外部交流供电电源接线",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        386.648,
+        233.718,
+        401.252
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B3AC533E7D97C8C3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "31",
+      "block_order": 8,
+      "section_id": "SEC-93667AD32158EDA8",
+      "section_path": [
+        "5 电气连接",
+        "5.12 与外部交流供电电源接线"
+      ],
+      "section_title": "5.12 与外部交流供电电源接线",
+      "block_type": "paragraph",
+      "text": "数据采集器可以接入电压范围为100~277Vac 的电源。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        412.946,
+        318.993,
+        423.899
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5992414468874DA9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "31",
+      "block_order": 9,
+      "section_id": "SEC-93667AD32158EDA8",
+      "section_path": [
+        "5 电气连接",
+        "5.12 与外部交流供电电源接线"
+      ],
+      "section_title": "5.12 与外部交流供电电源接线",
+      "block_type": "paragraph",
+      "text": "步骤 1 将外部供电电源线缆，引至数据采集器接线区域。",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        429.674,
+        299.733,
+        442.157
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A3E67CD741C60448",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "31",
+      "block_order": 10,
+      "section_id": "SEC-93667AD32158EDA8",
+      "section_path": [
+        "5 电气连接",
+        "5.12 与外部交流供电电源接线"
+      ],
+      "section_title": "5.12 与外部交流供电电源接线",
+      "block_type": "paragraph",
+      "text": "步骤 2 使用剥线钳剥去电源线缆的防护层和绝缘层，如下图所示。",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        446.174,
+        335.733,
+        458.657
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-589B93DDC2F860F7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "31",
+      "block_order": 11,
+      "section_id": "SEC-93667AD32158EDA8",
+      "section_path": [
+        "5 电气连接",
+        "5.12 与外部交流供电电源接线"
+      ],
+      "section_title": "5.12 与外部交流供电电源接线",
+      "block_type": "paragraph",
+      "text": "步骤 3 对剥除防护层和绝缘层后的电源线缆安装合适的冷压端子，并使用压线钳压紧。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        556.563,
+        416.736,
+        569.046
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6DE37A45F4060B25",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "31",
+      "block_order": 12,
+      "section_id": "SEC-93667AD32158EDA8",
+      "section_path": [
+        "5 电气连接",
+        "5.12 与外部交流供电电源接线"
+      ],
+      "section_title": "5.12 与外部交流供电电源接线",
+      "block_type": "paragraph",
+      "text": "步骤 4 将此冷压端子，接至数据采集器外部“AC IN 100~277V,0.48A”插头上。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        650.942,
+        380.718,
+        663.425
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

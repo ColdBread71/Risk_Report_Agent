@@ -1,0 +1,237 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-A9665858373240F5",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.2 系统维护",
+    "7.8.2.3 一键迁移"
+  ],
+  "section_title": "7.8.2.3 一键迁移",
+  "start_pdf_page": 69,
+  "end_pdf_page": 69,
+  "blocks": [
+    {
+      "block_id": "BLK-9137C794CC06552A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 69,
+      "printed_page_label": "59",
+      "block_order": 0,
+      "section_id": "SEC-A9665858373240F5",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.3 一键迁移"
+      ],
+      "section_title": "7.8.2.3 一键迁移",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E8DFD9E603CA10AF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 69,
+      "printed_page_label": "59",
+      "block_order": 18,
+      "section_id": "SEC-A9665858373240F5",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.3 一键迁移"
+      ],
+      "section_title": "7.8.2.3 一键迁移",
+      "block_type": "heading",
+      "text": "7.8.2.3 一键迁移",
+      "table_cells": null,
+      "bbox": [
+        70.861,
+        447.59,
+        146.201,
+        459.76
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DE6C16D126D494B4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 69,
+      "printed_page_label": "59",
+      "block_order": 19,
+      "section_id": "SEC-A9665858373240F5",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.3 一键迁移"
+      ],
+      "section_title": "7.8.2.3 一键迁移",
+      "block_type": "paragraph",
+      "text": "可将部分关键配置文件备份并导出至本地。或者将本地的配置文件导入到系统中，使其配置运行\n特性和本地配置文件中的配置一致。",
+      "table_cells": null,
+      "bbox": [
+        102.367,
+        466.814,
+        459.367,
+        489.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5C657EE200307718",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 69,
+      "printed_page_label": "59",
+      "block_order": 20,
+      "section_id": "SEC-A9665858373240F5",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.3 一键迁移"
+      ],
+      "section_title": "7.8.2.3 一键迁移",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击系统 > 系统维护。",
+      "table_cells": null,
+      "bbox": [
+        70.868,
+        498.984,
+        192.989,
+        511.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C8384A2BB22E56E8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 69,
+      "printed_page_label": "59",
+      "block_order": 21,
+      "section_id": "SEC-A9665858373240F5",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.3 一键迁移"
+      ],
+      "section_title": "7.8.2.3 一键迁移",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击一键迁移，在弹出的一键迁移的弹窗中，可根据实际情况选择导入或导出。",
+      "table_cells": null,
+      "bbox": [
+        70.868,
+        515.484,
+        416.738,
+        527.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-150BF57BED208A8D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 69,
+      "printed_page_label": "59",
+      "block_order": 22,
+      "section_id": "SEC-A9665858373240F5",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.3 一键迁移"
+      ],
+      "section_title": "7.8.2.3 一键迁移",
+      "block_type": "table",
+      "text": "表\t参数说明 7-8\t\n\t参数\t说明\n\t导出\t备份系统中的配置文件，并保存至本地。\n导出时，需输入压缩密码，用户可自行设置，只需要满足密码\n设置规则即可。",
+      "table_cells": [
+        [
+          "表",
+          "参数说明 7-8",
+          null
+        ],
+        [
+          null,
+          "参数",
+          "说明"
+        ],
+        [
+          null,
+          "导出",
+          "备份系统中的配置文件，并保存至本地。\n导出时，需输入压缩密码，用户可自行设置，只需要满足密码\n设置规则即可。"
+        ]
+      ],
+      "bbox": [
+        101.733,
+        539.406,
+        459.367,
+        639.6
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FE89D6C677691A11",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 69,
+      "printed_page_label": "59",
+      "block_order": 23,
+      "section_id": "SEC-A9665858373240F5",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.3 一键迁移"
+      ],
+      "section_title": "7.8.2.3 一键迁移",
+      "block_type": "paragraph",
+      "text": "导入\n将本地的配置文件导入到系统中。",
+      "table_cells": null,
+      "bbox": [
+        110.402,
+        645.506,
+        311.226,
+        656.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

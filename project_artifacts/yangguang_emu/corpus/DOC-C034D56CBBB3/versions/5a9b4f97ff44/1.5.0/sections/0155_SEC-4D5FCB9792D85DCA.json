@@ -1,0 +1,70 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-4D5FCB9792D85DCA",
+  "section_path": [
+    "9 电网调度",
+    "9.4 无功功率调节"
+  ],
+  "section_title": "9.4 无功功率调节",
+  "start_pdf_page": 98,
+  "end_pdf_page": 98,
+  "blocks": [
+    {
+      "block_id": "BLK-392C25541D1562BC",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 98,
+      "printed_page_label": "88",
+      "block_order": 23,
+      "section_id": "SEC-4D5FCB9792D85DCA",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节"
+      ],
+      "section_title": "9.4 无功功率调节",
+      "block_type": "heading",
+      "text": "9.4 无功功率调节",
+      "table_cells": null,
+      "bbox": [
+        56.69,
+        545.258,
+        152.87,
+        559.862
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A5FD4D175B86C07A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 98,
+      "printed_page_label": "88",
+      "block_order": 24,
+      "section_id": "SEC-4D5FCB9792D85DCA",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节"
+      ],
+      "section_title": "9.4 无功功率调节",
+      "block_type": "paragraph",
+      "text": "无功功率调节指调整无功功率的生成或消耗，以帮助维护电网的电压水平和整体稳定性。在电网\n需要无功功率补偿或注入时，运维人员需在Web 端选择适合的无功功率控制方式并设置相关参\n数，确保逆变器能准确响应数据采集器或第三方的调节指令。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        572.814,
+        445.193,
+        608.658
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

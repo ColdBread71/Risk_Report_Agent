@@ -1,0 +1,482 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-F3F876FEDDA54081",
+  "section_path": [
+    "7 Web界面",
+    "7.5 设备监控",
+    "7.5.14 风道健康度检测",
+    "7.5.14.2 设置风道健康度检测参数"
+  ],
+  "section_title": "7.5.14.2 设置风道健康度检测参数",
+  "start_pdf_page": 58,
+  "end_pdf_page": 58,
+  "blocks": [
+    {
+      "block_id": "BLK-8D3F9F63EC9205EF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 0,
+      "section_id": "SEC-F3F876FEDDA54081",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.2 设置风道健康度检测参数"
+      ],
+      "section_title": "7.5.14.2 设置风道健康度检测参数",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.441,
+        48.088,
+        449.795,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-968A719FFB402680",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 1,
+      "section_id": "SEC-F3F876FEDDA54081",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.2 设置风道健康度检测参数"
+      ],
+      "section_title": "7.5.14.2 设置风道健康度检测参数",
+      "block_type": "paragraph",
+      "text": "基于风扇转速控制、逆变器关键部件温度等，利用软件算法自动识别进风口堵塞、散热器堵\n塞等引起的散热故障及堵塞程度，并通过主动预警指导运维，提升逆变器的风道健康度。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        72.906,
+        448.193,
+        97.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BE14AC56529C4F3C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 2,
+      "section_id": "SEC-F3F876FEDDA54081",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.2 设置风道健康度检测参数"
+      ],
+      "section_title": "7.5.14.2 设置风道健康度检测参数",
+      "block_type": "paragraph",
+      "text": "注意",
+      "table_cells": null,
+      "bbox": [
+        97.941,
+        109.674,
+        119.941,
+        123.061
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3ADAFA7AFF21C6B0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 3,
+      "section_id": "SEC-F3F876FEDDA54081",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.2 设置风道健康度检测参数"
+      ],
+      "section_title": "7.5.14.2 设置风道健康度检测参数",
+      "block_type": "list",
+      "text": "•\n数据采集器安装海拔高度不高于5300m。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        128.206,
+        271.633,
+        139.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C9B83ED53CEE5688",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 4,
+      "section_id": "SEC-F3F876FEDDA54081",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.2 设置风道健康度检测参数"
+      ],
+      "section_title": "7.5.14.2 设置风道健康度检测参数",
+      "block_type": "list",
+      "text": "•\n数据采集器在阴天、雨天或多云天气因功率波动大可能会影响触发诊断，请在天气良好",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        143.206,
+        448.87,
+        154.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DD32B26A9408C6E5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 5,
+      "section_id": "SEC-F3F876FEDDA54081",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.2 设置风道健康度检测参数"
+      ],
+      "section_title": "7.5.14.2 设置风道健康度检测参数",
+      "block_type": "paragraph",
+      "text": "环境下操作。",
+      "table_cells": null,
+      "bbox": [
+        106.87,
+        156.706,
+        160.87,
+        167.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-20E6C15C11187342",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 6,
+      "section_id": "SEC-F3F876FEDDA54081",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.2 设置风道健康度检测参数"
+      ],
+      "section_title": "7.5.14.2 设置风道健康度检测参数",
+      "block_type": "paragraph",
+      "text": "Logger4000 固件版本为LOGGERSV400.001.00.P034 及以上版本支持此功能。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        189.856,
+        433.064,
+        200.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E05CBB7CA7C06352",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 19,
+      "section_id": "SEC-F3F876FEDDA54081",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.2 设置风道健康度检测参数"
+      ],
+      "section_title": "7.5.14.2 设置风道健康度检测参数",
+      "block_type": "heading",
+      "text": "7.5.14.2 设置风道健康度检测参数",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        461.59,
+        207.587,
+        473.76
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6A2223326C6A4111",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 20,
+      "section_id": "SEC-F3F876FEDDA54081",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.2 设置风道健康度检测参数"
+      ],
+      "section_title": "7.5.14.2 设置风道健康度检测参数",
+      "block_type": "paragraph",
+      "text": "在实际运维中，必须充分考虑光伏方阵的安装环境，排查可能干扰风道健康度检测数据的因素，\n提高风道健康度检测的准确性，从而减少现场排查的工作量。用户可根据需要设置风道健康度检\n测的灵敏度、诊断次数和诊断周期。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        480.814,
+        445.196,
+        516.658
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AF6CDA70C951E744",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 21,
+      "section_id": "SEC-F3F876FEDDA54081",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.2 设置风道健康度检测参数"
+      ],
+      "section_title": "7.5.14.2 设置风道健康度检测参数",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        88.197,
+        527.156,
+        124.197,
+        538.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-303BB95E9576387F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 22,
+      "section_id": "SEC-F3F876FEDDA54081",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.2 设置风道健康度检测参数"
+      ],
+      "section_title": "7.5.14.2 设置风道健康度检测参数",
+      "block_type": "paragraph",
+      "text": "风道健康度检测开关已使能。",
+      "table_cells": null,
+      "bbox": [
+        88.197,
+        544.306,
+        205.197,
+        555.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FBB4588A6A67F4E1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 23,
+      "section_id": "SEC-F3F876FEDDA54081",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.2 设置风道健康度检测参数"
+      ],
+      "section_title": "7.5.14.2 设置风道健康度检测参数",
+      "block_type": "paragraph",
+      "text": "步骤 1 导航栏中依次选择智能分析 > 风道健康度检测，跳转至对应界面。",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        561.034,
+        349.818,
+        573.517
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-85F82ECA8A9D0DDE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 24,
+      "section_id": "SEC-F3F876FEDDA54081",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.2 设置风道健康度检测参数"
+      ],
+      "section_title": "7.5.14.2 设置风道健康度检测参数",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击诊断设置，在弹出的对话框中完成诊断参数设置，单击确认。",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        577.534,
+        348.558,
+        590.017
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B3E70F307E761AC4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 25,
+      "section_id": "SEC-F3F876FEDDA54081",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.2 设置风道健康度检测参数"
+      ],
+      "section_title": "7.5.14.2 设置风道健康度检测参数",
+      "block_type": "list",
+      "text": "•\n单日最大诊断次数(1-50)：设置当天最大诊断次数，单位为次，单日最大诊断次数默认为\n3 次。当天达到诊断次数后将不再进行诊断。",
+      "table_cells": null,
+      "bbox": [
+        87.558,
+        595.456,
+        449.745,
+        619.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8AEBFE30BF7400A0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 26,
+      "section_id": "SEC-F3F876FEDDA54081",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.2 设置风道健康度检测参数"
+      ],
+      "section_title": "7.5.14.2 设置风道健康度检测参数",
+      "block_type": "list",
+      "text": "•\n诊断间隔周期设置(0-365)：设置诊断间隔周期时长，单位为天，诊断周期默认为7 天。\n诊断成功后需要等待一个周期后才能继续诊断。",
+      "table_cells": null,
+      "bbox": [
+        87.558,
+        623.956,
+        446.253,
+        648.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-213191169B8816B1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 27,
+      "section_id": "SEC-F3F876FEDDA54081",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.2 设置风道健康度检测参数"
+      ],
+      "section_title": "7.5.14.2 设置风道健康度检测参数",
+      "block_type": "paragraph",
+      "text": "步骤 3 单击灵敏度设置，在弹出的对话框中完成灵敏度参数设置，单击确认。",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        652.534,
+        366.558,
+        665.017
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-8D4D254A7027CD31",
+  "section_path": [
+    "7 Web界面",
+    "7.8 智能分析",
+    "7.8.1 离散率分析"
+  ],
+  "section_title": "7.8.1 离散率分析",
+  "start_pdf_page": 67,
+  "end_pdf_page": 67,
+  "blocks": [
+    {
+      "block_id": "BLK-2D31C199B88FF44A",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 67,
+      "printed_page_label": "57",
+      "block_order": 0,
+      "section_id": "SEC-8D4D254A7027CD31",
+      "section_path": [
+        "7 Web界面",
+        "7.8 智能分析",
+        "7.8.1 离散率分析"
+      ],
+      "section_title": "7.8.1 离散率分析",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-003B0BE3CA05C011",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 67,
+      "printed_page_label": "57",
+      "block_order": 16,
+      "section_id": "SEC-8D4D254A7027CD31",
+      "section_path": [
+        "7 Web界面",
+        "7.8 智能分析",
+        "7.8.1 离散率分析"
+      ],
+      "section_title": "7.8.1 离散率分析",
+      "block_type": "heading",
+      "text": "7.8.1 离散率分析",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        411.99,
+        147.856,
+        424.16
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E47C38182D3C1586",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 67,
+      "printed_page_label": "57",
+      "block_order": 17,
+      "section_id": "SEC-8D4D254A7027CD31",
+      "section_path": [
+        "7 Web界面",
+        "7.8 智能分析",
+        "7.8.1 离散率分析"
+      ],
+      "section_title": "7.8.1 离散率分析",
+      "block_type": "paragraph",
+      "text": "离散率是衡量光伏电站运行健康的关键指标，主要用于监测和评估各光伏组串的发电性能是否一\n致。离散率较低意味着各组串的电流曲线一致性好，发电性能稳定。相反，较高的离散率可能表\n明存在明显的性能偏差，这时就需要进一步的诊断分析。通过离散率一键诊断，运维人员可以查\n看各组串的离散率，快速识别并处理异常组串，从而提高电站的运维效率和发电量。",
+      "table_cells": null,
+      "bbox": [
+        102.364,
+        431.214,
+        459.364,
+        479.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D134B6BA8B4055AE",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 67,
+      "printed_page_label": "57",
+      "block_order": 18,
+      "section_id": "SEC-8D4D254A7027CD31",
+      "section_path": [
+        "7 Web界面",
+        "7.8 智能分析",
+        "7.8.1 离散率分析"
+      ],
+      "section_title": "7.8.1 离散率分析",
+      "block_type": "paragraph",
+      "text": "Logger5000 的离散率分析功能的算法采取了自学习机制，当新接入逆变器时，算法能够根据",
+      "table_cells": null,
+      "bbox": [
+        102.368,
+        490.306,
+        467.66,
+        501.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3BC9726542120A50",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 67,
+      "printed_page_label": "57",
+      "block_order": 19,
+      "section_id": "SEC-8D4D254A7027CD31",
+      "section_path": [
+        "7 Web界面",
+        "7.8 智能分析",
+        "7.8.1 离散率分析"
+      ],
+      "section_title": "7.8.1 离散率分析",
+      "block_type": "paragraph",
+      "text": "时间和光照条件的变化，以及用户设置的方阵参数，自动调整分析参数和模型，并推断导致\n光伏组件发电数据异常的原因供运维人员参考。",
+      "table_cells": null,
+      "bbox": [
+        102.368,
+        503.806,
+        462.368,
+        528.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AFF56F90F1E2FEFB",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 67,
+      "printed_page_label": "57",
+      "block_order": 20,
+      "section_id": "SEC-8D4D254A7027CD31",
+      "section_path": [
+        "7 Web界面",
+        "7.8 智能分析",
+        "7.8.1 离散率分析"
+      ],
+      "section_title": "7.8.1 离散率分析",
+      "block_type": "paragraph",
+      "text": "注意",
+      "table_cells": null,
+      "bbox": [
+        112.114,
+        533.924,
+        134.114,
+        547.311
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E37BE51F1B346F88",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 67,
+      "printed_page_label": "57",
+      "block_order": 21,
+      "section_id": "SEC-8D4D254A7027CD31",
+      "section_path": [
+        "7 Web界面",
+        "7.8 智能分析",
+        "7.8.1 离散率分析"
+      ],
+      "section_title": "7.8.1 离散率分析",
+      "block_type": "paragraph",
+      "text": "通常，系统从逆变器端收集了至少两天的晴天数据后，能够提供初步的可靠诊断结果。由\n于离散率算法的自学习在夜间进行，为了保证算法能够充分利用这一时段进行数据分析和\n模型优化，必须确保Logger5000 在夜间不断电。",
+      "table_cells": null,
+      "bbox": [
+        106.868,
+        552.456,
+        457.868,
+        585.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1DDF3B7885BF2BD3",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 67,
+      "printed_page_label": "57",
+      "block_order": 22,
+      "section_id": "SEC-8D4D254A7027CD31",
+      "section_path": [
+        "7 Web界面",
+        "7.8 智能分析",
+        "7.8.1 离散率分析"
+      ],
+      "section_title": "7.8.1 离散率分析",
+      "block_type": "paragraph",
+      "text": "跟踪式光伏支架会根据太阳的位置变化调整其角度和朝向，这种变动会影响离散率分\n析的计算与结果的准确性。因此，建议只在使用固定支架的电站应用离散率分析。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        605.856,
+        462.366,
+        627.609
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

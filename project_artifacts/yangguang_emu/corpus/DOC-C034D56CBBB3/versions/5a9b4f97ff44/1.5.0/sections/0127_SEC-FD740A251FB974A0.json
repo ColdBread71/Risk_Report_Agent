@@ -1,0 +1,605 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-FD740A251FB974A0",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.14 MPLC（宽带PLC）"
+  ],
+  "section_title": "7.8.14 MPLC（宽带PLC）",
+  "start_pdf_page": 84,
+  "end_pdf_page": 84,
+  "blocks": [
+    {
+      "block_id": "BLK-015005EEEAFB5374",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 10,
+      "section_id": "SEC-FD740A251FB974A0",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）"
+      ],
+      "section_title": "7.8.14 MPLC（宽带PLC）",
+      "block_type": "heading",
+      "text": "7.8.14 MPLC（宽带PLC）",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        260.788,
+        176.487,
+        272.958
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-51D8067A7E2562F7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 11,
+      "section_id": "SEC-FD740A251FB974A0",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）"
+      ],
+      "section_title": "7.8.14 MPLC（宽带PLC）",
+      "block_type": "paragraph",
+      "text": "如果数据采集器有内置PLC，可以对内置PLC 做对应的操作，包括添加设备、自动\n搜索、自动跳频、端口选择、端口参数设置、日志导出、查看版本。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        285.254,
+        444.962,
+        307.007
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3EA2298C970DE040",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 12,
+      "section_id": "SEC-FD740A251FB974A0",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）"
+      ],
+      "section_title": "7.8.14 MPLC（宽带PLC）",
+      "block_type": "paragraph",
+      "text": "步骤 1 导航栏中点击系统 > MPLC，跳转至相应页面。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        327.282,
+        275.825,
+        339.765
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-92B19D6B4621AD08",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 13,
+      "section_id": "SEC-FD740A251FB974A0",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）"
+      ],
+      "section_title": "7.8.14 MPLC（宽带PLC）",
+      "block_type": "paragraph",
+      "text": "Web 端默认显示MPLC 标签页。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        342.204,
+        218.657,
+        353.157
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E08F98541C325059",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 14,
+      "section_id": "SEC-FD740A251FB974A0",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）"
+      ],
+      "section_title": "7.8.14 MPLC（宽带PLC）",
+      "block_type": "paragraph",
+      "text": "步骤 2 在列表中找到待配置的PLC，在操作栏中点击",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        362.671,
+        269.318,
+        375.154
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-489E8E39699C0A6F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 15,
+      "section_id": "SEC-FD740A251FB974A0",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）"
+      ],
+      "section_title": "7.8.14 MPLC（宽带PLC）",
+      "block_type": "paragraph",
+      "text": "，打开PLC 设置对话框。",
+      "table_cells": null,
+      "bbox": [
+        283.493,
+        364.093,
+        386.498,
+        375.046
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AC74ED703F2E43ED",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 16,
+      "section_id": "SEC-FD740A251FB974A0",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）"
+      ],
+      "section_title": "7.8.14 MPLC（宽带PLC）",
+      "block_type": "paragraph",
+      "text": "步骤 3 设置PLC 主节点。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        379.171,
+        163.568,
+        391.654
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-225CAB676C3C1F81",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 17,
+      "section_id": "SEC-FD740A251FB974A0",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）"
+      ],
+      "section_title": "7.8.14 MPLC（宽带PLC）",
+      "block_type": "paragraph",
+      "text": "a. 在频段下拉列表中，选择通讯频段（默认为Band1）。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        397.093,
+        319.007,
+        408.046
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-278B3DDF2F2A52F6",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 18,
+      "section_id": "SEC-FD740A251FB974A0",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）"
+      ],
+      "section_title": "7.8.14 MPLC（宽带PLC）",
+      "block_type": "paragraph",
+      "text": "当Band1 通信状态不佳时可手动切换为Band2 或Band3。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        418.743,
+        362.06,
+        429.696
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4445C674A5142AC6",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 19,
+      "section_id": "SEC-FD740A251FB974A0",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）"
+      ],
+      "section_title": "7.8.14 MPLC（宽带PLC）",
+      "block_type": "paragraph",
+      "text": "b. 在方阵号输入框中，设置当前方阵的编号。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        446.893,
+        272.738,
+        457.846
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-62E9B9E6F0B94F27",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 20,
+      "section_id": "SEC-FD740A251FB974A0",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）"
+      ],
+      "section_title": "7.8.14 MPLC（宽带PLC）",
+      "block_type": "paragraph",
+      "text": "每个方阵的编号不能重复。",
+      "table_cells": null,
+      "bbox": [
+        101.738,
+        463.393,
+        209.738,
+        474.346
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F230BFC34359A64D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 21,
+      "section_id": "SEC-FD740A251FB974A0",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）"
+      ],
+      "section_title": "7.8.14 MPLC（宽带PLC）",
+      "block_type": "paragraph",
+      "text": "双分裂场景中，一个数据采集器下挂的2 个PLC 需要设置不同的方阵编号。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        482.043,
+        430.244,
+        492.996
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-88D3554D123E0C07",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 22,
+      "section_id": "SEC-FD740A251FB974A0",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）"
+      ],
+      "section_title": "7.8.14 MPLC（宽带PLC）",
+      "block_type": "paragraph",
+      "text": "不建议修改高级设置中的参数，请保持默认值。",
+      "table_cells": null,
+      "bbox": [
+        114.562,
+        516.843,
+        303.562,
+        527.796
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C1DF327D1FE4BDFA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 23,
+      "section_id": "SEC-FD740A251FB974A0",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）"
+      ],
+      "section_title": "7.8.14 MPLC（宽带PLC）",
+      "block_type": "paragraph",
+      "text": "步骤 4 点击下一步。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        545.071,
+        141.563,
+        557.554
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-729094051DBFB770",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 24,
+      "section_id": "SEC-FD740A251FB974A0",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）"
+      ],
+      "section_title": "7.8.14 MPLC（宽带PLC）",
+      "block_type": "paragraph",
+      "text": "步骤 5 配置PLC 从节点。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        561.571,
+        163.568,
+        574.054
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C9EDA23649ECDC9D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 25,
+      "section_id": "SEC-FD740A251FB974A0",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）"
+      ],
+      "section_title": "7.8.14 MPLC（宽带PLC）",
+      "block_type": "paragraph",
+      "text": "a. 勾选设备。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        579.493,
+        146.738,
+        590.446
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7107482D859ED89A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 26,
+      "section_id": "SEC-FD740A251FB974A0",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）"
+      ],
+      "section_title": "7.8.14 MPLC（宽带PLC）",
+      "block_type": "paragraph",
+      "text": "b. 点击同步，将主节点参数信息同步到从节点。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        594.493,
+        281.738,
+        605.446
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3E8B6226C84A36EF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 27,
+      "section_id": "SEC-FD740A251FB974A0",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）"
+      ],
+      "section_title": "7.8.14 MPLC（宽带PLC）",
+      "block_type": "paragraph",
+      "text": "步骤 6 同步完成后，点击退出，完成主、从节点的参数设置。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        609.571,
+        303.563,
+        622.054
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FC3326D55754D930",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 28,
+      "section_id": "SEC-FD740A251FB974A0",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）"
+      ],
+      "section_title": "7.8.14 MPLC（宽带PLC）",
+      "block_type": "paragraph",
+      "text": "PLC 主、从节点将自动重启使变更生效。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        624.493,
+        251.318,
+        635.446
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B626D674460DA8FD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 29,
+      "section_id": "SEC-FD740A251FB974A0",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）"
+      ],
+      "section_title": "7.8.14 MPLC（宽带PLC）",
+      "block_type": "paragraph",
+      "text": "步骤 7 点击操作标签页，可升级PLC 主节点或导出PLC 操作日志。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        639.571,
+        329.582,
+        652.054
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2A301F1F5FB68E8E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 30,
+      "section_id": "SEC-FD740A251FB974A0",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）"
+      ],
+      "section_title": "7.8.14 MPLC（宽带PLC）",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        656.143,
+        112.187,
+        667.096
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

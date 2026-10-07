@@ -1,0 +1,3537 @@
+[PACKET yangguang_emu_node_0_3 v1]
+Project: yangguang_emu
+Purpose: First controlled real-customer evidence input for Node [0]-[3] scope, context, asset, and STRIDE evaluation.
+Source rule: use only the cited document/page/block text; preserve stated uncertainties.
+
+[KNOWN GAPS]
+- GAP-LOGGER4000-SCOPE: A Logger4000 manual is present, but the EMU300A product and cybersecurity manuals identify Logger5000 as the standard internal collector; Logger4000 is excluded until the delivered configuration is confirmed. Disposition: Treat Logger4000 applicability as a customer/configuration question; do not infer its assets or threats in the baseline run.
+- GAP-DIAGRAM-SEMANTICS: Native text and figure captions are retained, but topology diagrams have not been manually transcribed into graph relationships. Disposition: Review missing topology only if the first evaluation shows unsupported or absent communication paths.
+- GAP-MIXED-PAGE-BLOCK: Logger5000 PDF page 82 merges the end of GOOSE, MMS forwarding, and the start of port parameters into one native PDF text block; its file/page/block anchor is exact but its single assigned section path is broader than the mixed content. Disposition: Require quote plus physical-page/block citation for this block; do not treat its section path alone as proof. Revisit parser splitting only if this locator affects evaluation.
+- GAP-CONTRACT-VARIANTS: The manuals describe optional and contract-dependent functions; the exact customer-enabled feature set is not independently confirmed. Disposition: Preserve uncertainty and produce customer questions instead of asserting optional functions as deployed facts.
+- GAP-LEGAL-BASIS: Product manuals establish product facts but are not authoritative CRA or prEN 40000 legal sources. Disposition: Use the controlled legal/rule layer for legal conclusions; never fabricate legal support from this packet.
+
+[DOCUMENT DOC-5067B181346D]
+File: EMU300A-UCN-Ver11-202603.pdf
+SHA-256: 985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e
+
+[PDF page 15; printed page 9; section 2 产品介绍 > 2.1 组网应用; blocks BLK-FFD438C63F25BCC4,BLK-7DF8897D9BB9225B,BLK-7FA29D70D79F1001,BLK-58481F3BF8C8F982,BLK-88F7F2D2F44E6545,BLK-202781F4D7F5C1D3,BLK-2FA416363E293835,BLK-A117B2CB2E7B47A8]
+2.1 组网应用
+
+能量管理单元EMU300A 内部配置有数据采集器Logger5000。基于Logger5000 的功能，
+EMU300A 可参与多种场景下的组网应用。EMU300A 可通过RS485 总线方式接入光伏发电
+系统中的逆变器、箱变、环境监测仪、电表等，还可以通过PLC 总线方式接入阳光电源生产
+的具备PLC 功能的组串式逆变器。
+
+•
+能量管理单元可以将采集到的设备数据，通过核心交换机传输至后台站控，例如
+Insight、SCADA。
+
+•
+能量管理单元也可将采集到的设备数据，直接通过4G 路由器传输至阳光云。
+
+通过核心交换机连接至后台站控
+
+能量管理单元通过核心交换机连接至Insight 或SCADA 的方式，如下图所示。
+
+图 2-1 环形组网方式
+
+当采用环形组网方式时，一个环网中最多可接入15 台EMU300A。
+
+[PDF page 16; printed page 10; section 2 产品介绍 > 2.2 主要特点; blocks BLK-06A4D464DB275CE5,BLK-77ED7F96663266B9,BLK-853407424F1C1351,BLK-1317C7BFFF509A67,BLK-EBE329C3EFA80ACF,BLK-C125441858A9A758,BLK-52E0EF74E19FBC91,BLK-BC449CE85DB4F669,BLK-B081A00CB116A76B,BLK-D13DD174206D8434]
+用户手册
+2 产品介绍
+
+图 2-2 星形组网方式
+
+通过路由器连接至阳光云
+
+能量管理单元可以直接通过路由器与阳光云连接，如下图所示。
+
+数据采集器将数据转发至阳光云平台的功能默认不可用。启用该功能前，客户需在充
+分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获
+得客户授权后方可生效，且相关操作受系统访问控制策略管理。
+
+2.2 主要特点
+
+灵活组网
+
+•
+支持RS485、以太网、MPLC 通信。
+
+•
+支持跟踪系统、箱变测控、电表、环境监测仪等多种设备接入。
+
+•
+支持 CT 采样，以毫秒级精度采集逆变器子阵电流，实现快速功率调节。
+
+[PDF page 27; printed page 21; section 4 电气连接 > 4.3 内部结构; blocks BLK-27C90C7572EDEC5D,BLK-5262DF940D97CB63,BLK-3A8D01066433220D,BLK-C6101C7708372E9A,BLK-84476EE197E5F77C]
+用户手册
+4 电气连接
+
+标签	说明
+ETH	以太网输入通讯防水端子
+RS485	RS485 通讯防水端子
+DO	干接点输出防水端子
+AI	模拟量输入防水端子
+DI	干接点输入防水端子
+Optical Fiber Ports	光纤防水端子
+MPLC	PLC 通讯防水端子
+Input AC	100Vac~277Vac 供电电源
+PID01 DO	PID 干接点输出防水端子
+PID02 DO	PID 干接点输出防水端子
+CT	CT 接线端子
+
+接地点，位于机器的右侧
+
+4.3 内部结构
+
+EMU300A 内部布局如下图所示。
+
+[PDF page 28; printed page 22; section 4 电气连接 > 4.3 内部结构; blocks BLK-AFC136CD8222B958,BLK-D8AA6F0C8103713A,BLK-B07115D81ED807D1]
+用户手册
+4 电气连接
+
+编
+号	名称	推荐线缆规格	说明
+A	光纤终端盒	—	选配
+必须与光纤环网交换机配套
+使用
+如需获取更多信息请访问经
+销商官方网站
+B	RS485 通讯端子	2 x (0.75~1.5) mm2 户
+外型防紫外线带屏蔽层
+双绞线	线缆未包含在供货范围
+C	CT 接线端子		单独成表说明
+D	交流熔丝盒	2.5mm²～10mm²户外型
+防紫外线导线，线缆耐
+压要求为：
+隔离电压＞1350V	线缆未包含在供货范围
+E	接地端子	4mm²～10mm²或7～
+11AWG	线缆未包含在供货范围
+E ：功能地排
+1
+E ：保护地排
+2
+F	防雷器	—	—
+G	开关电源	—	—
+H	Logger5000	—	—
+I	光纤环网交换机	—	选配
+必须与光纤终端盒配套使用
+如需获取更多信息请访问经
+销商官方网站
+J	PID 模块	—	支持PID 防护和PID 修复
+功能，适用于PV-正偏置组
+件。支持交流ISO 检测功
+能。
+K	PLC 模块	—	—
+L	220V 市电插座	—	可为现场运维人员提供市电
+
+M
+风扇
+—
+—
+
+[PDF page 33; printed page 27; section 4 电气连接 > 4.6 接线步骤 > 4.6.2 RS485通讯端子连接; blocks BLK-8184F1B83C31027C,BLK-075491044AF166BB,BLK-12B1B1AFE96ADE84,BLK-C1BA5ECEEBD08A94,BLK-58E3EDBADC674A48,BLK-3C030983C1948553,BLK-3D92288A7FC3F767,BLK-F6DC687E90CF4DA8,BLK-2DE42ED227776AE5]
+用户手册
+4 电气连接
+
+编号		定义	备注
+	A		M6 x 12 螺栓	包含在供货范围。
+	B		OT 端子	包含在供货范围。
+	C		接地孔	-
+S
+接	485
+线前			
+		为最大限
+或刷涂防	度地提高接地端子的防腐蚀能
+锈漆。	力，接线完成后建议在端子外部均匀涂抹硅胶
+		通讯端子
+要求	连接	
+	注	意		
+E	MU	300A 采用	RS485 方式与外部设备连接	时，务必确保外部设备已具备防雷保护功能。
+
+线缆要求
+
+设备支持RS485 通讯线缆规格为2 x (0.75~1.5)mm2。
+
+接线步骤
+
+步骤 1 拧开设备底部的“RS485”防水端子。
+
+步骤 2 将从外部引入的RS485 线缆，穿过设备内部的“RS485”防水端子后，接到设备内部的通讯端
+
+子处。
+
+步骤 3 使用剥线钳，剥去线缆的防护层。
+
+[PDF page 34; printed page 28; section 4 电气连接 > 4.6 接线步骤 > 4.6.3 光纤接入（可选）; blocks BLK-556F496E5FB0B381,BLK-BA26B99037449EBB,BLK-D9529B3949710D96,BLK-C4B41769E439EE9C,BLK-481008C76B632DC2,BLK-D6CB59693D7F6E9F,BLK-783613D24EFAE55A,BLK-7287F5F3E5BE1FE7,BLK-F1D069A4F51844A4,BLK-745867DE23A59734,BLK-F51CE9A4D415FE22,BLK-6372A886D7CAA2BA,BLK-79DD0290675DDC02,BLK-79C55DA12934EEF3,BLK-4D5A500AEE4F53C8,BLK-DAA72229F1B66EC2,BLK-6F85B7E01A2B0670]
+用户手册
+4 电气连接
+
+步骤 4 对剥除防护层后的线缆安装合适的冷压端子，并使用压线钳压紧。
+
+步骤 5 将线缆接入对应的接线孔。使用螺丝刀紧固接线端子，紧固扭矩为：0.5N.m~0.6N.m。
+
+端口标识
+定义
+
+A
+上层端子，接RS485–A
+
+B
+下层端子，接RS485–B
+
+GND
+屏蔽层接地
+
+对于Weidmuller 和Janitza 电能表，在连接EMU300A 时需要将A&B 端子倒转。
+
+步骤 6 拉拽线缆，确保紧固到位。
+
+步骤 7 拧紧设备底部的“RS485”防水端子。
+
+--结束
+
+4.6.3 光纤接入（可选）
+
+步骤 1 拧开“Optical Fiber Ports”防水端子，将光纤线穿过“Optical fiber ports”防水端子。
+
+步骤 2 将光纤线在光纤终端盒内部熔接。
+
+具体接线细节，请联系阳光电源股份有限公司客户服务中心。
+
+步骤 3 拧紧“Optical Fiber Ports”防水端子。
+
+--结束
+
+[PDF page 36; printed page 30; section 4 电气连接 > 4.6 接线步骤 > 4.6.5 连接PLC通讯线缆 > 4.6.5.1 应用场景; blocks BLK-57DBAC24F5201A99,BLK-F5926E8ECFBD0951,BLK-AA7EAFA2C412D604,BLK-B6F6942BCEED4328,BLK-DE1604C19E17D698,BLK-477CB83444B0BFDD]
+用户手册
+4 电气连接
+
+4.6.5.1 应用场景
+
+设备可以接至双绕组变压器和双分裂变压器，对应的接线图如下所示。以实际使用器件为
+准。
+
+图 4-1 与双绕组变压器连接
+
+图 4-2 与双分裂变压器连接
+
+北美场景下无ACB（Air Circuit Breaker，空气断路器），具体以现场实际情况为
+准。
+
+[PDF page 37; printed page 31; section 4 电气连接 > 4.6 接线步骤 > 4.6.5 连接PLC通讯线缆 > 4.6.5.2 PLC接线; blocks BLK-32BFC8E3E94B7FC4,BLK-2214644C46654F7A,BLK-AEE5967E75911F5A,BLK-02D5E580AC783603,BLK-A83A293CA6F53738,BLK-2FA70D0A97D12AA7,BLK-B985FF13FDCACB11,BLK-6F090AB2B3ECAE4D,BLK-5E943E8281679E9F,BLK-BA4E1D24C2DCB493,BLK-20C72CCBA50FC627]
+用户手册
+4 电气连接
+
+图中各参数说明如下表格中所示。
+
+参数	说明	规格	
+	D	1	箱变至逆变器
+线缆	•
+•
+•	若为多芯交流线缆，D2≤10m，多芯
+线缆最大长度为1000m。
+当D1 大于1000m 时，请
+登录Logger5000 Web 界
+面，选择系统 > MPLC 进
+入MPLC 界面，点击操作
+列的 ，在弹出的设置对
+话框中修改增益值为17。
+若为单芯交流线缆,D2≤10m 时单芯
+线缆最大长度为800m。
+若为双拼线缆，线缆长度要求同单
+芯交流线缆。
+	D	2	箱变至通讯箱
+或外置PLC 模
+块线缆	•
+•
+•	应选取户外型防紫外多芯铜线交流
+线缆，建议芯径为2.5mm²~10mm
+²。
+线缆耐压要求为：隔离电压＞
+1500V。
+线缆长度≤10m。
+					注意
+				实
+度	际长度越短，通讯越好。若线缆长
+超过10m，有通讯断链的风险。
+					
+	P	LC 模块	端口输入电压	≤11	50 Vac
+			端口供电电压	24	Vdc
+			最大接入逆变
+器数	80
+
+4.6.5.2 PLC 接线
+
+接线前准备
+
+•
+交流接线前，确保前级交流开关及设备内部各熔断器均处于断开状态。
+
+•
+请参考2.1 组网应用章节内容了解PLC 应用场景及选择相应规格线缆。
+
+•
+请参考4.6.5.3 PLC 布线原则章节内容了解其接线规则。
+
+接线步骤
+
+1. 拧开设备底部的“MPLC”防水端子，将外部交流线缆，穿过防水端子。
+
+2. 使用剥线钳，剥去线缆防护层，漏出线缆的铜芯部分，如下图所示。
+
+[PDF page 38; printed page 32; section 4 电气连接 > 4.6 接线步骤 > 4.6.5 连接PLC通讯线缆 > 4.6.5.2 PLC接线; blocks BLK-E6C99BD856980702,BLK-B4420697C19B9D8C,BLK-6A12869185200B02,BLK-A58C7DFAB1FC1C6B,BLK-F0A25D8B37628CE0]
+用户手册
+4 电气连接
+
+3. 根据实际线径，使用规格合适的OT 端子压接。
+
+4. 将线缆接入对应的端子处，如下图所示。
+
+图 4-3 三相三线制接法
+
+PLC 线缆连接箱变母排的耦合点位置建议选择母排中间的断路器。
+
+[PDF page 41; printed page 35; section 4 电气连接 > 4.6 接线步骤 > 4.6.6 DI/DO端口接线; blocks BLK-AB7D31474D31BE3F,BLK-E533C901640FFB69,BLK-8312F13D9295D448,BLK-DBA0C8CB006710EC,BLK-4D57742C134A2ED8,BLK-E3BDEAE84C370629,BLK-18F40716EAEFD3FD,BLK-C93AECD82ECE7EB8,BLK-276FF77975026540]
+用户手册
+4 电气连接
+
+-
+若两条电缆交叉布置，垂直间距需不低于0.5m。
+
+图 4-5 PLC 线缆交叉间距示意图
+
+箱变至通讯箱线缆
+
+•
+箱变和通讯箱之间的交流线缆需平行布置，不可在电缆线槽内缠绕。
+
+•
+PLC 线缆连接箱变母排的耦合点位置建议选择母排中间位置对应的断路器。例如母排共
+有8 个分支排，建议选择母排中间位置第4 个或第5 个分支排对应的耦合点；母排共有9
+个分支排，建议选择母排中间位置第5 个分支排对应的耦合点。
+
+4.6.6 DI/DO 端口接线
+
+如果用户所购机型未配备有IO 模块，DO/DI 端口需要直接接至数据采集器，具体接线方法请
+扫描下面二维码参考“Logger5000 用户手册”。
+
+如果用户所购机型配备有IO 模块，则DI/DO 端口需要接至IO 模块，具体接线方法请扫描下
+面二维码参考“IO 模块快速安装指导”。
+
+[PDF page 54; printed page 48; section 7 附录A：技术参数; blocks BLK-64817BA8BAE19A25,BLK-1EAC19030366F2E6,BLK-B33119997D4D8B57,BLK-FAF91A81DAFCE642]
+7
+附录A：技术参数
+
+通讯
+
+通讯	
+支持设备数	300
+RS485 接口	4
+MPLC 通信接口	1 或2，个数可选
+以太网口（ETH）	5× 10 / 100Mbps
+ETH 1/ 2 / 5 以太网口
+ETH 3 / 4 快速调度口
+ETH 5 调试口
+PID & ISO 控制盒	1 / 2
+光纤交换机（可选）	2 * 100 Mbps 光口，单模
+光纤终端盒（可选）	4 进24 出
+交流PID 抬升接入电压	
+额定电网电压	1000 Vac，50 / 60 Hz
+电压范围	850 Vac - 1150 Vac
+电网类型	IT（不包括角接地系统）
+交流ISO 检测精度	
+10kΩ - 1000 kΩ	±15 % @ 25 ℃
+0.2 kΩ - 10 kΩ	±2kΩ @ 25 ℃
+MPLC 通信	
+最大通信距离	多芯线 ≤1000m
+单芯线≤800m
+每通道最大接入数量	≤80
+额定工作电压	400~1000Vac
+
+最大耐压
+≤1150Vac
+
+[PDF page 55; printed page 49; section 7 附录A：技术参数; blocks BLK-680C545E55173387,BLK-9982C112074D0E60,BLK-CE3D928E7C421E03,BLK-D844E7AC55AEA6FE,BLK-409F387B605FF8FF]
+用户手册
+7 附录A：技术参数
+
+通讯
+
+电源	
+交流输入	100~277Vac，50 / 60Hz
+功耗	Max. 90 W ( 无PID ) /170 W ( 单PID ) /250 W ( 双PID
+环境参数	
+工作温度	-40 ℃ ~ 60 ℃（有遮阳）
+-40 ℃ ~ 50 ℃（无遮阳）
+存储温度	-40℃~+70℃
+工作湿度	≤100%（无冷凝）
+工作海拔	≤ 5000m
+防护等级	IP66
+机械参数	
+尺寸（宽x 高x 深）	940*697*287mm
+裸机重量	Max.53kg
+安装方式	室内或室外，壁挂、支架、落地安装
+箱体材料	金属
+进线规格	AC220V：1 mm ~ 1.5 mm²户外型防紫外线导线
+MPLC：2.5 mm ~ 10 mm²户外型防紫外线导线
+隔离电压＞1350V
+RS485：2 * ( 0.75 mm ~ 1.5 mm ）户外型防紫外线
+带屏蔽层双绞线
+光缆：外径 ≤ 18 mm，单模光缆
+订购信息
+
+内含Logger5000（含电压电流采样接口）、开关电源、
+防雷模块、微型断路 器、MPLC（可选1 或2）、
+PID&ISO 控制盒（可选）、光纤交换机 （可选）、光纤
+终端盒（可选）、IO 模组（可选）
+适用区域：国内
+
+EMU300A
+
+[DOCUMENT DOC-DF116E7199E2]
+File: EMU300A网络安全操作手册-UCN-Ver11-202607.pdf
+SHA-256: e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc
+
+[PDF page 5; printed page 1; section 1 关于本手册; blocks BLK-416F3D9DFECABFA5,BLK-EACD30600949DA50,BLK-08757CC89C9F0994,BLK-C0D38E5E6048DD8D,BLK-138A4F485D24EE25,BLK-0759E280FCF0F797,BLK-56E8583005AEAD98,BLK-84360B42B5E19748,BLK-DD040DA8DA055DE4,BLK-57769475C98ED17C,BLK-3ED23B4B06B73545,BLK-C3E902508FC69D62,BLK-4F06298C83E671CF,BLK-EEACEC282D1161CF,BLK-4142283250C19758,BLK-3B83C70F6F068CAB,BLK-629579B8188BB54C,BLK-8E7F66A7A4B2288D,BLK-CBB0DBDB5BE23AB9,BLK-0D5782B06D8B1BF9,BLK-174DBA1CA16FD97C,BLK-0A1B1AA787D531F4,BLK-BF7FDEAF45D1C8F1,BLK-D55D028F74D15863]
+1
+关于本手册
+
+本文档详细的描述了EMU300A 产品中各组件的安全特性介绍以及具体操作指导。以下内容
+涉及Logger5000 和交换机的网络安全。可登录www.sungrowpower.com 或设备制造商网
+站获取更多信息。
+
+适用范围
+
+•
+EMU300A
+
+•
+EMU300B
+
+•
+EMU300C
+
+适用人员
+
+本手册适用于以下人员：
+
+•
+现场维护人员
+
+•
+系统管理员
+
+•
+现场技术工程师
+
+手册说明
+
+本手册以标准配置的Logger5000 界面为例，对其安全功能做简要介绍。具体开放的功能，
+请以技术协议或合同规定内容为准。
+
+安全声明
+
+有关产品网络安全漏洞响应流程及漏洞披露的详情，请访问如下网址了解：https://
+www.sungrowpower.com/security.html。
+
+符号使用
+
+为了确保用户在使用产品时的人身及财产安全，更加高效优化地使用产品，手册中提供了相
+关的信息，并使用以下的符号加以突出强调。
+
+以下列举了本手册中可能使用到的符号，请认真阅读从而更好地使用本手册。
+
+危险
+
+表示有高度潜在危险，如果未能避免将会导致人员死亡或严重伤害的情况。
+
+警告
+
+表示有中度潜在危险，如果未能避免可能导致人员死亡或严重伤害的情况。
+
+小心
+
+表示有低度潜在危险，如果未能避免将可能导致人员中度或轻度伤害的情况。
+
+[PDF page 6; printed page 2; section 1 关于本手册; blocks BLK-642205FC9511F453,BLK-493E650CAF550B89,BLK-E3C1223513258C5B,BLK-45B75795F2547348]
+用户网络安全操作手册
+1 关于本手册
+
+注意
+
+表示有潜在风险，如果未能避免可能导致设备无法正常运行或造成财产损失的情况。
+
+“说明”是手册中的附加信息，对内容的强调和补充，也可能提供了产品优化使用的技
+巧或窍门，能帮助您解决某个问题或节省您的时间。
+
+[PDF page 7; printed page 3; section 2 基本安全说明; blocks BLK-BEF9D1FF3178841A,BLK-355A0793885F8B9D,BLK-A8903F0B3105707C,BLK-D0201C26B3FCE322,BLK-F4322E7C8FD3E6EB,BLK-B90C562DB9B696AD,BLK-1A706959C60B7DDA,BLK-CA61594E67B8255A,BLK-34C16F23565071B3]
+2
+基本安全说明
+
+警告
+
+未遵循安全说明和遗留风险可引发生命危险
+忽视随附硬件文档中的安全说明和遗留风险会导致重伤或死亡
+
+•
+遵守硬件文档中的安全说明。
+
+•
+进行风险评估时应考虑遗留风险。
+
+警告
+
+因参数设置错误或修改参数设置引发机器故障
+参数设置错误可导致机器出现故障，从而导致人员重伤或死亡
+
+•
+采取保护措施，防止未经授权的参数设置。
+
+•
+采取适当措施（如驻停或急停）处理可能出现的故障。
+
+[PDF page 8; printed page 4; section 3 工业网络安全; blocks BLK-93E5591956EDB451]
+3
+工业网络安全
+
+[PDF page 8; printed page 4; section 3 工业网络安全 > 3.1 工业网络安全简介; blocks BLK-1AD1C75D0156F46C,BLK-09BB4F761E6C697C,BLK-32D86711ED1302DA,BLK-D29A82FAFD09D484,BLK-14EB48F1B4784375]
+3.1 工业网络安全简介
+
+工业网络安全整合了所有用于保护工业控制系统（ICS）和运营技术（OT）环境的措施，其
+核心目标是保障以下三个关键方面：
+
+•
+可用性：确保系统、网络和数据在需要时可被授权用户访问和使用，防止因破坏、故障或
+拒绝服务攻击(DoS) 导致的业务中断。
+
+•
+保密性： 防止敏感数据、配置信息和网络资源等遭到非法访问、窃取或泄露。
+
+•
+完整性： 防止数据和应用程序遭到未授权的篡改、破坏或蓄意操纵，确保其准确性和可
+靠性。
+
+[PDF page 8; printed page 4; section 3 工业网络安全 > 3.2 工业网络安全保护目标; blocks BLK-58B1CE8BE56D60C7,BLK-F30391C2A61969FE,BLK-D91D8C5D38EFEB46,BLK-DB3FDECA1B79E396,BLK-F365C432A5D0C66E,BLK-5D9BB1795ED1309B,BLK-2BC99C167CF3B5F3]
+3.2 工业网络安全保护目标
+
+•
+确保生产设备和流程的无故障运行和可用性；
+
+•
+防范网络攻击危及人员安全与生产安全；
+
+•
+防止工业自动化系统及其组件被非法访问、操纵或者数据丢失；
+
+•
+防止工业通信信息被窃取和操纵；
+
+•
+防止机密数据遭受未经授权的访问；
+
+在实施安全措施时，确保这些措施不会反感或者危及自动化系统以及组件的可操作性。
+
+[PDF page 8; printed page 4; section 3 工业网络安全 > 3.3 工业网络安全参考的标准; blocks BLK-C9A3682A221073F4,BLK-32F06CE7CD351424,BLK-0C14642CF12BCD6D,BLK-5F6FAF6D64EBD1D8,BLK-6EACCBFBE9126A9C]
+3.3 工业网络安全参考的标准
+
+工业网络安全以IEC 62443 来介绍。
+
+IEC 62443
+
+IEC 62443 系列标准旨在为工业自动化系统（ICS 系统）的安全运行提供支持，涵盖设计、
+实施及管理等方面。为此，该系列中的各种标准规定了适用于组件制造商、系统集成商和运
+营商的规则。组件制造商必须确保产品的安全，而设备和系统制造商则要实现产品安全交
+互。运营商则对操作全流程的安全负最终责任。
+
+IEC 62443 基于ISO 27001 标准，ISO 27001 标准主要包含各种IT 安全规则。这两项标准
+可为企业提供全方位保护，避免网络威胁。
+
+[PDF page 9; printed page 5; section 4 纵深防御战略; blocks BLK-2A7C2336246FFBF3,BLK-063FA03B0275437B,BLK-864B9073B04B55EA]
+4
+纵深防御战略
+
+在
+据
+意
+关
+产
+•
+•
+•
+•
+•
+•
+介	IT 和控制系统中使用具
+保护方面的不足，减少
+用户越难破坏防御，获
+问题及解决策略。
+胁模型
+品已经通过安全设计在
+环境层面：为用户以及
+件设备固定、周界防范
+环境纵深防御说明章节
+物理层面：产品提供坚
+操作系统层面：经过加
+配置、应用操作系统漏
+份机制、可靠的日志系
+系统组件层面：遵循安
+数据存储层面：基于访
+数据传输层面：基于广
+全相关功能及使用
+绍以下安全相关功能和	有多种安全和防御控制措施的分层网络
+单点故障，并形成强大的网络安全态势
+取数字资产或造成中断。本章详细介绍
+不同层面对系统的可攻击面进行了最小
+工程实施人员提供了安全安装的建议，
+措施、安全可靠的网络空间、安全可靠
+。
+固封闭的外壳，并配备防拆标签帮助用
+固的操作系统，包括但不限于遵操作系
+洞补丁、防火墙与网络配置建议、基于
+统等。
+全的开发流程、完善的安全测试等。
+问控制列表的数据，符合最小特权原则
+泛证明安全的数据加密传输协议。
+说明
+使用程序的说明和建议：	方法，以最大限度地弥补数
+。网络中的安全层越多，恶
+EMU300A 纵深防御策略相
+化，包括但不限于：
+包括但不限于牢固可靠的
+的电源供应等，请参考部
+户识别产品完整性。
+统最佳实践对操作系统进
+用户组的访问控制、系统
+设计的数据访问策略。
+	安全功能	说明	安全建议
+	安全登录	支持登录失败锁定防暴力破解，支
+持登录日志记录，首次登陆强制修
+改密码	定期修改密码
+	用户及密码管理	用户增删改功能以及密码安全策略
+配置	建议所需启用最小数量用
+户，并合理配置密码安全
+	协议配置	北向MODBUS/IEC104/GOOSE
+等协议配置管理	建议按需启用，最小化启
+用
+	证书管理	支持PKI 颁发的证书管理	建议定期更新证书
+
+安全启动
+建立启动链可信验证，阻断非签名
+或篡改后的软件加载执行
+默认开启
+
+[PDF page 10; printed page 6; section 4 纵深防御战略 > 4.4 用户的缓解措施; blocks BLK-26A4B8B218CB053B,BLK-A31FF599B1E26CE2]
+用户网络安全操作手册
+4 纵深防御战略
+
+安全功能		说明	安全建议
+		安全	通信	HTTPS/北向IEC104/MODBUS/等
+协议TLS 加密通信	建议采用TLS 加密通信
+		安全	对时	支持NTS 对时	建议采用NTS 对时，以
+及定期更新证书
+		恢复	出厂配置	恢复出厂设置功能，删除设备数据	建议谨慎操作
+		安全	回溯	操作日志、syslog 记录功能	建议定期分析安全日志
+		安全	更新	软件和固件更新	建议关注产品相关安全公
+告，及时升级到最新版本
+					
+			上述安全功能作为
+多层次多维度的对
+储的私密性、可用
+能验证的需求，可	一个整体，从物理环境、计算机操作系
+EMU300A 及其毗邻的智能配电系统提
+性、完整性和用户操作与访问的可审计
+能需要对恶意软件保护功能进行验证。	统、EMU300A 系统组件等
+供保护，保证信息通讯和存
+性。出于对恶意软件保护功
+					
+			警告		
+	•
+•
+•	可能
+请
+请
+请
+不遵	损害系统可用性、完
+勿使用真实的恶意
+勿从不可信任的来
+勿在生产系统进行
+循这些说明可能会导	整性和保密性
+软件进行恶意软件保护功能测试。
+源下载任何反病毒测试文件。
+恶意软件保护功能测试。
+致设备损坏、敏感数据泄露或数据永久	丢失。
+
+[PDF page 10; printed page 6; section 4 纵深防御战略 > 4.3 纵深防御战略的威胁; blocks BLK-E6EE530826340D18,BLK-916567FFECD7233D]
+4.3 纵深防御战略的威胁
+
+EMU300A 产品的安全功能作为一个整体构成EMU300A 产品的纵深防御体系，在
+EMU300A 产品定义的安全上下文中，提供基础的包括欺骗、篡改、否认、信息泄露、拒绝
+服务等威胁的保护。
+
+[PDF page 10; printed page 6; section 4 纵深防御战略 > 4.4 用户的缓解措施; blocks BLK-B2FF43D3D8F682EC,BLK-27994D7BD485F39F,BLK-AF5815D0F7E277A5,BLK-BDEC2C4D8C8E8B36,BLK-C65542BD825C9290,BLK-F98DE46C72A1F829,BLK-B5B2DA70170FDE95,BLK-F710D860C74B4A06]
+4.4 用户的缓解措施
+
+设备安全
+
+企业的物理安全存在漏洞时， 未经授权的人员便有机会进入生产环境， 损坏或修改生产设
+
+备，导致机密信息丢失。 因此， 必须采取适当措施保护公司所在地和关键生产区域。
+
+•
+对关键生产区域进行单独的人员出入控制。
+
+•
+重要组件安装在可上锁的控制柜/控制室内。
+
+•
+控制柜/控制室必须配备锁， 并有监控和报警设施。 请勿使用结构简单的锁， 比如： 万
+能锁、 三角锁、 四角锁或双齿锁。
+
+•
+保护电源线和数据线。
+
+[PDF page 11; printed page 7; section 4 纵深防御战略 > 4.4 用户的缓解措施; blocks BLK-DA4BE6316799DA62,BLK-F95C116D465FFA4C,BLK-91073216560EB387,BLK-525F38DFF781D0C4,BLK-69FCE72C42994FF6,BLK-F15FEACD7EBFF705,BLK-A6E3C93078316D21,BLK-9F5E44DC2AD36DE5,BLK-EBA801C9172D3138,BLK-8F6370832FDE9250,BLK-54AA726BD0711BC2,BLK-F7284380BA3AF741,BLK-3FC2DAD3CEBBC860,BLK-A97E2435C2EE57FE,BLK-0965F40C703F7327,BLK-DA8EEE5EAB7E32E1]
+用户网络安全操作手册
+4 纵深防御战略
+
+•
+必须保护产品和其他驱动组件之间的电流和数据流不受他人蓄意操纵， 例如： 切断线
+路。
+
+•
+移动数据存储介质（例如 U 盘和存储卡） 的使用指南。
+
+•
+操作单元使用指南， 例如 PG/PC 或移动终端设备。
+
+网络安全
+
+网络安全涵盖了和规划、 实施、 监测网络安全相关的所有措施， 它包括了对所有接口的安
+全审查。
+
+•
+应进行网络隔离，最简单的情况， 通过一个防火墙实现隔离。 该防火墙可以控制和检查
+不同网络之间的通信。
+
+•
+建议部署防恶意代码设备。
+
+系统完整性
+
+系统完整性： 指数据完好无损或正确， 也指系统可以正常运行。 保护系统完整性的措施可
+以防止数据和系统功能被非法操纵， 并监测数据/功能操纵事件。
+
+•
+应只开启必要的服务和端口， 而关闭所有不必要的服务和端口。
+
+•
+对用户账号使用安全的登录密码，密码必须8 位以上，始终包含大写字母、 小写字母、
+数字和特殊字符中的三类。
+
+•
+减少用户账号数量到所需的最小数量。 禁用或删除未使用的用户账号。
+
+•
+仅为用户账号分配所需的权限。
+
+•
+定期对敏感数据进行备份。 妥善保护好备份数据， 防止擅自访问、 数据丢失和被操纵。
+
+•
+关注产品相关的新安全公告，请遵循产品安全公告中的说明。
+
+[PDF page 12; printed page 8; section 5 产品功能及部署情况介绍; blocks BLK-BDF435E6E7F273A5,BLK-0FE6A5150E10C5BC,BLK-153C2EE70C8A30F1,BLK-64FE47677390A3C6,BLK-76C33977D614288F,BLK-EAF433E21E1F1D8F]
+5
+产品功能及部署情况介绍
+
+能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入
+光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波
+通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的
+具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通
+过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光
+云平台，可接收北向远程调度指令或执行本地调度指令。
+
+•
+能量管理单元可以将采集到的设备数据，通过核心交换机传输至后台站控，例如
+Insight、SCADA。
+
+•
+能量管理单元也可将采集到的设备数据，直接通过4G 路由器传输至阳光云。
+
+通过核心交换机连接至后台站控
+
+能量管理单元通过核心交换机连接至Insight 或SCADA 的方式，如下图所示。
+
+[PDF page 13; printed page 9; section 5 产品功能及部署情况介绍; blocks BLK-3AD5ECCBD9B22E49]
+用户网络安全操作手册
+5 产品功能及部署情况介绍
+
+[PDF page 14; printed page 10; section 6 端口矩阵; blocks BLK-A91ACD7D76318635,BLK-5E9F7F46479A8667,BLK-69F47634827709FA,BLK-6F1F1D2BF197686D]
+6
+端口矩阵
+
+源设
+备	源端
+口	目的设
+备	目的
+端口	协议	认证方
+式	加密
+方式	说明
+PC	任意	EMU30
+0A	8080	HTTP	用户名/
+密码	无	默认关
+闭，支持
+开启
+PC	任意	EMU30
+0A	8443	HTTPS	用户名/
+密码	TLS	默认访问
+方式
+PC	任意	EMU30
+0A	443	HTTPS	用户名/
+密码	TLS	默认访问
+方式
+PC	任意	EMU30
+0A	22	SSH	用户名/
+密码	TLS	默认关闭
+PC	任意	EMU30
+0A	22	SFTP	用户名/
+密码	TLS	默认关闭
+北向
+设备	任意	EMU30
+0A	102	MMS	用户名/
+密码	无	默认关闭
+北向
+设备	任意	EMU30
+0A	2404-
+2418	IEC104	无	TLS	2418 默
+认开
+启,2404~
+2417 默
+认关闭
+北向
+设备	任意	EMU30
+0A	502-5
+16	MODBUS
+TCP	无	TLS	516 默认
+开
+启,502~5
+15 默认关
+闭
+北向
+设备	任意	EMU30
+0A	802	MODBUS
+TCP	无	TLS	默认开
+启，支持
+关闭
+
+默认关
+闭，内部
+调试使
+用，在
+
+PC
+任意
+EMU30
+0A
+9998-
+9999
+UDP
+无
+无
+
+[PDF page 15; printed page 11; section 6 端口矩阵; blocks BLK-80BDC5A7EB0594AE,BLK-5751A158B27985D4,BLK-6CDBA2C1126CE14A,BLK-7AC72625A2105DF8,BLK-9FDE0E7D9156114B,BLK-CE7F3E47EF540743]
+用户网络安全操作手册
+6 端口矩阵
+
+源设
+备	源端
+口	目的设
+备	目的
+端口	协议	认证方
+式	加密
+方式	说明
+							linux she
+中开启。
+PC	Deb
+ug
+口	EMU30
+0A	/	RS232 协
+议	用户名/
+密码	无	串口访问
+Linux。
+EMU
+300
+A	任意	阳光云	19999	MQTT	公钥	无	默认关
+闭，开启
+给予安全
+提示，可
+通过网
+口。
+EMU
+300
+A	任意	阳光云	16668	MQTT	公钥	TLS	默认关
+闭，开启
+给予安全
+提示，可
+通过网
+口。
+EMU
+300
+A	任意	NTP 对
+时服务
+器	123	NTP	无	无	默认关
+闭，开启
+给予安全
+提示。
+
+NTS 对
+时服务
+器
+
+EMU
+300
+A
+
+任意
+
+4460
+NTS
+无
+无
+默认关闭
+
+[PDF page 16; printed page 12; section 7 用户列表; blocks BLK-341F42D6A55FBC5E,BLK-61D4A48CF0FCF3E6,BLK-4417EC6A57B44907,BLK-9E90596A86CAF9FA,BLK-B69166A4A2ED2877]
+7
+用户列表
+
+管理员通过对不同的用户设置不同权限的账号，可以提高系统安全性、为不同的用户提升操
+作效率、降低管理成本。不同用户类型登录账号、默认密码和操作权限如下：
+
+表 7-1 1. Web 用户
+
+用户类型	用户名		操作权限
+普通用户	user		只有系统的监控权限和简单的设置权
+限。如概览、设备监控和部分历史数据
+的查看。
+运维用户	maintain		本手册默认描述的所有操作。
+审计用户	auditor		对所有用户的操作日志，Syslog 日志进
+行审计。
+管理员	administr	ator	增加用户、删除用户、修改用户、清空
+用户、会话管理、开发者调试开关、分
+配用户登录证书。
+开发者用户	develop		经管理员授权后可执行设备复杂故障的
+定位和排除。
+• 普通用户、运维用
+（SN）”拼接而成
+应的默认密码为“
+• 开发者用户的密码
+动态密码。
+7-2 2. 操作系统用户			
+	户、审计
+。例如，
+userSN12
+采用动态	用户、管理
+若设备SN 为
+345678”。
+生成机制，	员的密码由“用户名”与“设备序列号
+“SN12345678”，用户名为“user”，则对
+通过客户授权获得设备SN，生成对应的
+			
+用户名		默认密码	
+root		根据客户授权	获取SN 生成动态密码。
+
+sg
+根据客户授权获取SN 生成动态密码。
+
+[PDF page 17; printed page 13; section 8 用户管理; blocks BLK-08E8F60318D1EDD7,BLK-0FB300025B64DD8D,BLK-2C9EB29CBEE48879,BLK-CE969232A195110E,BLK-DBF11A90CC31126D,BLK-BDB4B6FD02F875A2,BLK-81634645B7FDAF2B]
+8
+用户管理
+
+管理员通过对不同的用户设置不同权限的账号，可以提高系统安全性、为不同的用户提升操作效
+率、降低管理成本。
+
+用户管理
+
+•
+除“maintain”账号外，管理员至多可创建4 个运维账号。非必要请勿创建过多用户，以免
+多人抢占设备操作、用户密码泄露等。
+
+•
+如发现用户行为可疑，可通过登录管理员账户，删除该用户，即可立即终止该用户的访问
+权限。
+
+•
+如果发现用户密码泄露，可通过登录管理员账户，修改用户密码。
+
+•
+新增用户时，用户名称需由2-16 位字母、数字组成，且必须以字母开头。
+
+[PDF page 17; printed page 13; section 8 用户管理 > 8.1 密码管理; blocks BLK-7FB2BFA2B0F157B2,BLK-BEEC0165FB5BDCD9,BLK-DA78CCDA3EA4B530,BLK-85430BA49A24FCF6,BLK-2C6B01ADDEB46BD0,BLK-75C7F0AB4AA5DAED,BLK-6F966CFAFB57F39C,BLK-C78B701D7228B189,BLK-A2D6E2A618D4144A,BLK-62C710106569541C,BLK-659A5757D7076C39,BLK-87F9E7FD87F93ED5]
+8.1 密码管理
+
+1. 所有密码均已被加密存储。
+
+2. 所有密码均要求强复杂度，默认密码在初次登陆后需要修改。
+
+3. 如果怀疑密码泄露，请立即修改密码，新密码与旧密码不能相同。
+
+登录管理员用户，可在密码管理页面，动态设置以下参数：
+
+•
+密码最小长度
+
+•
+密码复杂度
+
+•
+新旧密码重复次数
+
+设置完成后，点击保存生效。
+
+4. 所有用户的密码都具备有效期，密码有效期可以通过管理员账户自行设置，可设置的密码
+有效期范围为1~90 天，密码到期请及时修改。
+
+•
+管理员通过对不同的用户设置不同权限的账号，可以提高系统安全性、为不同的
+用户提升操作效率、降低管理成本。
+
+•
+当普通用户登录时出现其他用户登录提示语时，需要先退出其他用户登录。
+
+[PDF page 17; printed page 13; section 8 用户管理 > 8.2 设置账户保护和会话安全参数; blocks BLK-26F563AE42DEF035,BLK-F9A377EA3CE8B1A2,BLK-2BBF43FCE3EF62CF,BLK-114512FC39912CCE,BLK-BBDB5BE792654CA6]
+8.2 设置账户保护和会话安全参数
+
+为了增强账号安全性，你可以配置相关参数以控制登录行为和会话有效性。
+
+前提条件
+
+•
+通过管理员账号登录Web 端。
+
+步骤 1 导航栏中点击会话管理，跳转至相应页面。
+
+[PDF page 18; printed page 14; section 8 用户管理 > 8.3 LDAP管理; blocks BLK-832BE155CB22BEE4,BLK-3E116E29299FBC07,BLK-22FB0222499CA8C6,BLK-EF40A01A912F75D6,BLK-8C730E1F495B8594,BLK-B98E5F21EF898BD0,BLK-EAA01C51B675C447,BLK-0BB5824B798CD016,BLK-19C0E8D51DE6B8D2,BLK-737A412AACFA6215,BLK-A576336E38D22BDF,BLK-2EC3C8313B081AB4,BLK-AA223D07CD7BA2DB]
+用户网络安全操作手册
+8 用户管理
+
+步骤 2 修改账户保护和会话安全相关参数。
+
+支持修改下列参数：
+
+•
+非法访问次数：限制用户尝试登录的最大次数。如输入密码错误次数超过指定值，账号将
+自动被锁定。（参数范围：5~20 次；默认值：5）
+
+•
+非法访问时间窗：对用户的非法访问次数进行时间范围约束。如指定小时数内（参数范
+围：1~24h；默认值：24），若非法访问次数超限，则自动锁定账号。
+
+•
+会话超时时间：用户登录后，在指定时间范围内没有操作将导致会话超时，系统将提示用
+户重新登录。（参数范围：1~60min；默认值：10）
+
+•
+用户锁定时间：在账号因连续登录失败被锁定后，设定账号解锁的等待时间。（参数范
+围：1~60min；默认值：10）
+
+步骤 3 点击保存。
+
+--结束
+
+8.3 LDAP 管理
+
+支持LDAP 方式登录，适用于现场支持LDAP 服务的电站，可以对账号集中管理。
+
+通过登录管理员账户，点击LDAP 管理，进入LDAP 管理操作界面。
+
+当启用LDAP 登录开关时
+密，系统将发出安全警告：
+LDAP 服务端需支持TLS1	，系统
+“关闭
+.2 及其	将同步启用TLS 加密。若用户手动关闭TLS
+后数据传输将不再加密，请确认是否关闭？
+以上加密算法才能进行通信。
+				
+	参数名		说明	
+	IP 地址		LDAP	服务器的IP 地址
+	端口号		LDAP	服务器的端口
+	基本标识	名	LDAP	基本标识名
+	账号		LDAP	服务器账号
+	密码		LDAP	服务器密码
+				
+		AP 登录开关开启后，需填
+”。	写配置	参数并点击保存。成功保存后，界面显示“操
+
+[PDF page 19; printed page 15; section 8 用户管理 > 8.3 LDAP管理; blocks BLK-335A57CED8BC342D,BLK-07846E5A3E817767,BLK-CA9B71C2871D83CF,BLK-336FDB9546511A05]
+用户网络安全操作手册
+8 用户管理
+
+启用LDAP 登录后，用户在LDAP 登录时将不再看到“请联系管理员开启<LDAP 登录>后重
+试 ”的提示，可输入用户名和密码登录。
+
+•
+LDAP 登录不支持忘记密码。
+
+•
+LDAP 登录相关的用户认证信息均存储于客户自有的LDAP 服务器中。
+
+[PDF page 20; printed page 16; section 9 安全退役; blocks BLK-7087C429F36BA4C3,BLK-338E6AF2AA5A36A6,BLK-6F042AC19A0269C8,BLK-525B9314A5FDB5CB,BLK-7BB0886F0F8E6371,BLK-4D366B3D429D69D6,BLK-9AE61B78288E5DE6,BLK-D558E0F03D0C4DAC]
+9
+安全退役
+
+安全删除储存在环境中的引用、配置数据以及安全移除产品准则如下：
+
+•
+在安全删除产品之前，请参考10 安全配置指南章节相关内容进行操作。
+
+•
+当设备需要退役报废时，请参考10.6 恢复出厂设置章节操作，并通过安全的渠道销毁，
+删除用户安全数据，确保设备不被二次部署到用户的运营系统或被非法利用。
+
+产品报废场景如下：
+
+•
+产品达到规定的使用年限；
+
+•
+产品由于严重损坏，不具备使用条件；
+
+•
+产品主要部件或结构损坏，达不到最低使用要求，又无修复价值。
+
+[PDF page 21; printed page 17; section 10 安全配置指南; blocks BLK-29CA1560723B898D]
+10
+安全配置指南
+
+[PDF page 21; printed page 17; section 10 安全配置指南 > 10.1 部署安全; blocks BLK-822CCE383703B7BD,BLK-B6469A1F85E312C7,BLK-AFA75AA365265142,BLK-AFED3332E2924093,BLK-EB131CDE5EBDAAA4]
+10.1 部署安全
+
+产品北向属于安全重点关注区域，用户网络环境应在北向数据出口部署防火墙、防恶意代码
+设备、IDS 等安全设备，构建安全的北向安全网络。
+
+产品南向属于近端网络部署，网络环境相对安全，但并非绝对安全，建议：
+
+•
+南向和北向网络使用独立的交换机进行部署，网络隔离。
+
+•
+南向设备对本产品来说，属于三方设备，是否会对网络安全造成威胁由用户来保障。
+
+[PDF page 21; printed page 17; section 10 安全配置指南 > 10.2 安全启动; blocks BLK-FED60E901705B998,BLK-11E7630FDD454CE8,BLK-56710D21D4166A27,BLK-696CBA8087AAE64A]
+10.2 安全启动
+
+安全启动（Secure Boot）是一种基于逐级验证的启动链可信加载技术，用于确保系统固件与
+操作系统镜像的完整性与合法性，防止其被非法篡改或替换。
+
+在本产品中，安全启动功能默认处于启用状态。若启动过程中未严格执行安全启动验证流
+程，则存储在 eMMC 中的系统镜像可能面临被恶意攻击者替换的风险。一旦内核等关键镜像
+被篡改，系统将加载并运行被控制的恶意固件，导致设备完全由攻击者掌控。在此情况下，
+所有构建于操作系统之上的安全机制（如权限控制、加密存储、安全服务等）将失去保护作
+用，整个系统的安全性将彻底失效。
+
+本节所述安全启动仅针对数采。
+
+[PDF page 21; printed page 17; section 10 安全配置指南 > 10.3 协议配置; blocks BLK-558856A6F4BDE056,BLK-F8028F7583C31F09,BLK-77BA8AC5F8E3D8AA,BLK-F3F28C41B8BC7F6C,BLK-0B38BA310A4437DE,BLK-BC0D7FFFBF9753BA,BLK-BB34559451A9B90B]
+10.3 协议配置
+
+•
+MODBUS/IEC104/GOOSE 协议默认关闭状态。
+
+•
+北向MODBUS/IEC104/GOOSE 协议支持手动开启，通过系统 > 转发配置，单击
+IEC104 或MODBUS 或GOOSE 页签，将协议对应的端口或者功能开启。
+
+MODBUS、IEC104 和GOOSE 为非安全协议，使用前请确保网络环境安全。
+
+•
+对于不在使用的协议转发服务，请及时关闭，以免不安全协议引起安全事件。
+
+MODBUS
+
+登录Logger5000 Web 界面，导航栏依次选择系统 > 转发配置，单击MODBUS 页面，打开
+对应本地端口的开关按钮。
+
+[PDF page 22; printed page 18; section 10 安全配置指南 > 10.3 协议配置; blocks BLK-4F1FDFE658903F58,BLK-E3347A1F0CA7060D,BLK-59A987DF9304AB8A,BLK-D66104A846F8E96D,BLK-9E3131E0B39B0D10]
+用户网络安全操作手册
+10 安全配置指南
+
+IEC104
+
+登录Logger5000 Web 界面，导航栏依次选择系统 > 转发配置，单击IEC104 页面，打开对
+应本地端口的开关按钮。
+
+GOOSE
+
+登录Logger5000 Web 界面，导航栏依次选择系统 > 转发配置，单击GOOSE 页面，使能开
+关。
+
+[PDF page 23; printed page 19; section 10 安全配置指南 > 10.4 证书管理和维护 > 10.4.2 证书安全维护; blocks BLK-B3DAFF5B5E054918]
+用户网络安全操作手册
+10 安全配置指南
+
+[PDF page 23; printed page 19; section 10 安全配置指南 > 10.4 证书管理和维护; blocks BLK-574AB1EEDE7549A8]
+10.4 证书管理和维护
+
+[PDF page 23; printed page 19; section 10 安全配置指南 > 10.4 证书管理和维护 > 10.4.1 预置证书风险声明; blocks BLK-16F2EE3BE313F29E,BLK-12BF8540AA500417,BLK-46C00A4E0F6A683B,BLK-B775CA8B855D40B9,BLK-1F38C3E74276F886,BLK-4EC00AD997F9F3D6,BLK-A549330D551DA3ED]
+10.4.1 预置证书风险声明
+
+在生产阶段预置于阳光电源设备的阳光电源证书是阳光电源设备必备的出厂身份凭证，对其
+使用声明如下:
+
+•
+阳光电源预置证书仅用于部署阶段为设备接入客户网络建立初始安全通道，阳光电源不对
+预置证书的安全性做承诺与保证。
+
+•
+对于预置证书作为业务使用的场景，阳光电源不对其安全性做出承诺与保证，建议用户更
+换使用自己的安全证书。
+
+•
+阳光电源预置证书有效期为30 年。
+
+•
+如果用户使用自己的证书，则需做好对证书生命周期的管理，为保证安全性推荐使用短有
+效期的证书。
+
+•
+为保证安全性，建议用户每3 年更新一次证书。
+
+[PDF page 23; printed page 19; section 10 安全配置指南 > 10.4 证书管理和维护 > 10.4.2 证书安全维护; blocks BLK-B771530F2908E28F,BLK-76BE0FA03440A031,BLK-36828A2B13F690DE,BLK-1294EA0594DF6992,BLK-DB79507AFAE893E1,BLK-7880DE869ED955AB,BLK-C91D15E63E63AC74,BLK-FF46DF1AC58FFE2F]
+10.4.2 证书安全维护
+
+通过系统 > 证书管理 > 采集/转发/NTS 对时证书，支持导入证书。
+
+•
+设备出厂自带默认PKI 颁发的证书，建议导入客户的签名证书。
+
+•
+若使用NTS 功能，客户需导入NTS 服务器证书。NTS 证书从NTS 服务器获
+取，支持PEM 格式的X.509 证书导入。
+
+•
+用户未导入第三方证书的情况下，服务端的HTTPS、IEC104、MODBUS 证书使
+用默认转发证书。
+
+•
+更新或删除HTTPS 证书，需要重新建立链接，如遇网页无法正常打开， 请重启
+浏览器。
+
+客户端导入证书
+
+在证书管理页面，点击采集，单击新增，并填写证书名称，点击确定。
+
+[PDF page 24; printed page 20; section 10 安全配置指南 > 10.4 证书管理和维护 > 10.4.2 证书安全维护; blocks BLK-491E8999C527F9AB,BLK-2C2A709494518FF2,BLK-A86BFDC618E5F6FE,BLK-9D174BC29B6D4BCC,BLK-09E0877C5B050346,BLK-A7E85922A01F094C,BLK-39723E189E01F43C,BLK-D6CDBA4399FF2D2D]
+用户网络安全操作手册
+10 安全配置指南
+
+图 10-1 客户端新增证书
+
+在新增证书所在行的“操作”栏中，点击证书导入选择上传证书类型及格式，并上传证书文
+件，单击保存。
+
+图 10-2 客户端证书导入
+
+服务端导入证书
+
+在证书管理页面，点击转发，单击新增，选择上传证书名称、协议及端口，点击确定。
+
+图 10-3 服务端新增证书
+
+在新增证书所在行的“操作”栏中，点击证书导入选择上传证书类型及格式，并上传证书文
+件，单击保存。
+
+[PDF page 25; printed page 21; section 10 安全配置指南 > 10.4 证书管理和维护 > 10.4.2 证书安全维护; blocks BLK-59B6C9ED69C04D26,BLK-DD6230DC3409913A,BLK-F4E0959DF348FA62,BLK-A3DAA53B0237ECF1,BLK-3B2620DA6A239CAF,BLK-E1B7E29269EA92E3,BLK-0C005846289156C7,BLK-731B6EE8DB6B37A6,BLK-A1646F67D0B20DF6]
+用户网络安全操作手册
+10 安全配置指南
+
+图 10-4 服务端证书导入
+
+导入NTS 对时主服务器证书
+
+在证书管理页面，点击 NTS 对时证书。
+
+在主备服务器页面，点击证书导入，导入NTS 服务器证书。
+
+证书过期管理
+
+用户登录成功后，对于证书即将过期或已过期，系统将提示，并将结果记录至 syslog 日志。
+
+当证书距离过期时间不足90 天时，系统触发“即将过期”告警。
+
+当证书已过期时，系统触发“已过期”告警。
+
+[PDF page 26; printed page 22; section 10 安全配置指南 > 10.7 系统还原; blocks BLK-2DE3FC4B54EF9BA3,BLK-3CE5F6D9E152C62A,BLK-9746C05742AC12F0,BLK-562EB901BC002DDD,BLK-90A3EAF30CD1A413]
+用户网络安全操作手册
+10 安全配置指南
+
+GOOSE 安全功能
+
+GOOSE 支持防重放开关、密钥更新等功能。
+
+防重放功能：在系统 > 转发配置页面，点击goose，勾选防重放开关。用户可根据需要，自
+行设置检测时间参数。
+
+密钥更新：在系统 > 证书管理页面，点击goose 密钥，选择密钥导入，上传密钥文件即可完
+成更新。
+
+[PDF page 26; printed page 22; section 10 安全配置指南 > 10.5 安全存储; blocks BLK-17F69D2508F510DB,BLK-402F20D08666D8CF]
+10.5 安全存储
+
+Logger5000 依托于芯片TrustZone 及OP-TEE 安全OS，对上层应用提供一套在安全环境下
+执行的加解密及存储数据接口，主要功能实现基于客户端应用（CA）对安全应用（TA）调
+用，实现安全环境下敏感数据进行加密存储，解密使用，包括用户密码，终端证书对应的私
+钥等数据。
+
+[PDF page 26; printed page 22; section 10 安全配置指南 > 10.6 恢复出厂设置; blocks BLK-F1F025FAB3151C4E,BLK-C29E8F578D8594CD,BLK-4D35365BE9D96D4C,BLK-212D10C8A903B138,BLK-D363EE17F2352F27,BLK-58D3F3747543FEB9]
+10.6 恢复出厂设置
+
+步骤 1 管理员用户单击系统维护 > 恢复出厂设置，进入界面。
+
+步骤 2 弹出恢复出厂设置界面，单击确定。
+
+步骤 3 界面弹出警示，输入当前用户密码，进行二次鉴权。
+
+--结束
+
+恢复出厂设置将清除所有历史数据及调试日志，请谨慎操作。
+
+[PDF page 26; printed page 22; section 10 安全配置指南 > 10.7 系统还原; blocks BLK-E73A1F174F68804B,BLK-FAE24332B330471F]
+10.7 系统还原
+
+如果设备遭受攻击导致无法恢复正常运行，可联系阳光电源运维人员通过SD 卡重新烧制系
+统进行恢复。
+
+[PDF page 27; printed page 23; section 10 安全配置指南 > 10.9 安全回溯; blocks BLK-F2D44F36310D199B]
+用户网络安全操作手册
+10 安全配置指南
+
+[PDF page 27; printed page 23; section 10 安全配置指南 > 10.8 安全对时; blocks BLK-AB1E840A5C0E7E5C,BLK-CB47AB50419E3528,BLK-1ED71D28323CB9C9,BLK-64EAA0FFE9810D8E]
+10.8 安全对时
+
+设备支持通过NTS 对时。
+
+单击系统 > 系统时间， 勾选NTS 时钟源，即可实现NTS 对时功能。
+
+若使用NTS 功能，需配置客户实际的NTS 服务器站点以及导入NTS 服务器证书。
+
+[PDF page 27; printed page 23; section 10 安全配置指南 > 10.9 安全回溯; blocks BLK-95AB938E0CDAAE07,BLK-F8498C906AB0E901,BLK-5F6A443DCA6ACD81,BLK-CD059D5E3A2F7B95,BLK-E3C62727A6DC27CA]
+10.9 安全回溯
+
+对于已经发生的安全事件，可通过历史数据 > 操作日志或历史数据 > rsyslog > 日志记录对操
+作进行复盘；也可联系阳光电源运维人员访问设备后台，分析安全事件影响，评估风险并制
+定处置措施。
+
+表	用户权限 10-1		
+	用户列表	查询日志*	导出日志*
+	普通用户	不支持	不支持
+	运维用户	仅支持查看本用户日志	不支持
+
+审计用户
+支持
+支持
+
+日志类型包括操作日志和rsyslog 日志。
+
+[PDF page 28; printed page 24; section 10 安全配置指南 > 10.9 安全回溯 > 10.9.2 Syslog日志; blocks BLK-CCD0223911BC0B5D]
+用户网络安全操作手册
+10 安全配置指南
+
+[PDF page 28; printed page 24; section 10 安全配置指南 > 10.9 安全回溯 > 10.9.1 操作日志; blocks BLK-9EC58E9C9A9AD5DB,BLK-023CA0A3635B36FC,BLK-BF8EE66972453082,BLK-C5C28C44F2A471CD,BLK-B785ADE28C3B3C6F,BLK-AD0AD0E4808EB62F,BLK-C49B8A94F567A72F,BLK-A3763C62FEB794F4]
+10.9.1 操作日志
+
+查询操作日志
+
+在历史数据界面，点击操作日志，选择想要查询的时间段及操作类型，可以查看该时间内用
+户的操作记录。
+
+•
+操作日志时间戳采用本地时间（含时区）格式，精度为毫秒级，标准格式为
+YYYY-MM-DD HH:MM:SS.sss（示例：2026-03-18 09:55:25.219）。
+
+导出操作日志
+
+登录审计用户账号，在历史数据界面，点击操作日志中的
+
+图标，设置压缩密码后，可以将
+操作日志导出。
+
+压缩密码长度为8~32 位，需由大写字母、小写字母、数字、特殊符号中的三种或以
+上组成。
+
+[PDF page 28; printed page 24; section 10 安全配置指南 > 10.9 安全回溯 > 10.9.2 Syslog日志; blocks BLK-B5B3B7ADE22F0619,BLK-4127968E401939E5,BLK-4528A847EEA129E9,BLK-CB4EFB716BA9D3AD,BLK-C386F79105E65913,BLK-255D995E1FA65671,BLK-E954A37357F00904]
+10.9.2 Syslog 日志
+
+查询Syslog 日志
+
+在历史数据界面，点击Syslog，点击日志记录，选择时间段及日志等级，可以查看该时间内
+用户syslog 记录。
+
+•
+Syslog 日志时间戳采用本地时间（含时区）格式，精度为毫秒级，标准格式为
+YYYY-MM-DD HH:MM:SS.sss（示例：2026-03-18 09:55:25.220）。
+
+导出Syslog 日志
+
+登录审计用户账号，在历史数据界面，点击Syslog 中的
+
+图标，设置压缩密码后，可以将
+Syslog 日志导出。
+
+[PDF page 29; printed page 25; section 10 安全配置指南 > 10.10 安全更新; blocks BLK-46BD970AF8A75BBB,BLK-65CA5F49250566BD,BLK-A1D9D6BB6067D5DB,BLK-D8954C33CDD8EE0B,BLK-E8996EB5DD9CA4A6,BLK-8D8B9543DD137576,BLK-C8CDDA0E58006FDF,BLK-8B0F6D125A90C9EF,BLK-D6869021C6AA853C,BLK-F050A216E1006236,BLK-EF41A759914C4E3D,BLK-E414634044E2A2A1,BLK-2B5B1D3A14E0510C]
+用户网络安全操作手册
+10 安全配置指南
+
+压缩密码长度为8~32 位，需由大写字母、小写字母、数字、特殊符号中的三种或以
+上组成。
+
+10.10 安全更新
+
+前提条件
+
+根据升级方式准备对应资源文件或配置：
+
+•
+通过配置工具iConfig 升级：已安装iConfig 工具并下载相关升级包。
+
+•
+通过阳光云升级：已接入云服务且当前有可用升级包。
+
+步骤 1 点击系统 > 系统维护，跳转至相应页面。
+
+步骤 2 点击系统升级，在弹出的对话框中，根据实际情况，选择升级方式。
+
+步骤 3 根据升级方式，按照界面提示导入升级包，升级包通过数字签名校验成功后，方可进行升
+
+级。
+
+如弹窗提示缺少公钥文件，需通过系统 > 系统维护 > 公钥导入导入升级包对应的公
+钥文件，再进行升级操作。
+
+--结束
+Web 端将弹窗提示是否确认升级，确认后数据采集器自动重启。新版本在重启后生效。
+
+[PDF page 30; printed page 26; section 11 报告产品（组件）安全事件说明; blocks BLK-DA5EBB979CE8AC41,BLK-320531A2F3CDE7C1,BLK-465E5B8BD76AF4DA,BLK-3CE6028352D5908D]
+11
+报告产品（组件）安全事件说明
+
+产品安全应急响应流程如下：
+
+如果发现产品有漏洞或者相关组件有安全风险，通过点击https://www.sungrowpower.com/
+psirt.html 进入阳光电源官网 PSIRT 页面，查看文件列表和漏洞公告列表。如果发现了漏洞
+可以通过邮件将漏洞信息发送至psirt@sungrowpower.com。
+
+如果产品安全漏洞已修复，并提供了可升级的版本，可通过系统 > 系统维护 > 系统升级更新
+版本来修复漏洞。
+
+[PDF page 31; printed page 27; section 12 附录：MOXA EDS-408A 安全加固操作指导; blocks BLK-B796E8346B49A179]
+12
+附录：MOXA EDS-408A 安全加固操作指导
+
+[PDF page 31; printed page 27; section 12 附录：MOXA EDS-408A 安全加固操作指导 > 12.1 密码加固; blocks BLK-7AE78BEE57C8BCCB,BLK-0CD09AF226ECDCB0,BLK-DEA8BD95DC3A2816,BLK-7159355D9F761CA4,BLK-7E3AF4CC63DD5FC2]
+12.1 密码加固
+
+修改密码规则
+
+登录交换机WEB 管理界面后进入Password Login Policy 配置页，设置密码长度和规则及登
+录失败锁定策略，点击Activate 使配置生效。
+
+图 12-1 密码规则修改
+
+图 12-2 登录密码重置
+
+[PDF page 31; printed page 27; section 12 附录：MOXA EDS-408A 安全加固操作指导 > 12.2 交换机密码更新周期管理说明; blocks BLK-0AA9E33DB4CA9E5E,BLK-7F4ECB513EE3552D]
+12.2 交换机密码更新周期管理说明
+
+为了满足企业安全合规要求，防范密码泄露风险，需人工对交换机需严格执行定期的密码更
+新周期管理。
+
+[PDF page 32; printed page 28; section 12 附录：MOXA EDS-408A 安全加固操作指导 > 12.2 交换机密码更新周期管理说明 > 12.2.2 Menu密码更新指南; blocks BLK-B9F866F6C6BB1F53]
+用户网络安全操作手册
+12 附录：MOXA EDS-408A 安全加固操作指导
+
+[PDF page 32; printed page 28; section 12 附录：MOXA EDS-408A 安全加固操作指导 > 12.2 交换机密码更新周期管理说明 > 12.2.1 CLI密码更新指南; blocks BLK-2D167330417F4345,BLK-41C649321EC9FCF3,BLK-50F7C65843B01D86,BLK-D50D59F83CC89D41,BLK-9BBED192559D783F,BLK-387F7247F652EBDC,BLK-5A185CC707FED6BB,BLK-6F1A193FFBDE0B79,BLK-F94892BCD1273A15,BLK-6183CA1F30AEA325,BLK-36B8CDA301E2C895,BLK-A86DCAE431FBEAD0,BLK-817426C5CD0D42EC,BLK-906B407995F96014]
+12.2.1 CLI 密码更新指南
+
+步骤 1 首先通过console 连接交换机，然后打开串口调试界面。
+
+•
+波特率：115200
+
+•
+数据位：8
+
+•
+校验位：None
+
+•
+停止位：1
+
+•
+终端类型：vt100
+
+修改密码操作命令如下所示：
+
+步骤 2 通过configure 进入配置修改。
+
+密码修改命令：username admin password XXXXXX
+
+步骤 3 修改完成后，输入exit 退出配置模式。
+
+步骤 4 输入save config 保存密码。
+
+如果密码遗忘，会导致无法进行登入设备，只能将设备寄回由Moxa 处理。
+
+--结束
+
+[PDF page 32; printed page 28; section 12 附录：MOXA EDS-408A 安全加固操作指导 > 12.2 交换机密码更新周期管理说明 > 12.2.2 Menu密码更新指南; blocks BLK-F612C84973551D27,BLK-DFA4AA3DD410C090,BLK-9325B46BFDD64DEA]
+12.2.2 Menu 密码更新指南
+
+步骤 1 进入界面。
+
+步骤 2 输入账号密码。
+
+[PDF page 33; printed page 29; section 12 附录：MOXA EDS-408A 安全加固操作指导 > 12.3 关闭对工业通讯协议访问的支持; blocks BLK-00FC84C95E2AD58C,BLK-5FC9F42129A0D69C,BLK-0B1450A3D831B242,BLK-0A43DABFFCDA84A6,BLK-7503D4473DA09408,BLK-87525099CC729508]
+用户网络安全操作手册
+12 附录：MOXA EDS-408A 安全加固操作指导
+
+步骤 3 选择Basic Setting。
+
+步骤 4 选择Login mode，然后Press Y 进入即可。
+
+--结束
+
+12.3 关闭对工业通讯协议访问的支持
+
+登录交换机 Web 管理界面，将左侧菜单栏滚动至底部，找到并进入EtherNet/IP 配置项；选
+择Disable 以禁用该协议，配置完成后点击Activate，启用设置。
+
+[PDF page 34; printed page 30; section 12 附录：MOXA EDS-408A 安全加固操作指导 > 12.4 关闭交换机 DIP 拨码功能; blocks BLK-BC19CB9FE39A1897,BLK-A32566ED8635CD8D,BLK-25641884F0744F7F,BLK-A6CE34E7612E82E4]
+用户网络安全操作手册
+12 附录：MOXA EDS-408A 安全加固操作指导
+
+登录交换机 Web 管理界面，将左侧菜单栏滚动至底部，找到并进入Modbus TCP 配置项，
+取消Enable 的勾选，配置完成后点击Activate，启用设置。
+
+12.4 关闭交换机 DIP 拨码功能
+
+登录交换机 Web 管理界面，点击Basic Setting > Turbo Ring DIP Switch，勾选Disable，配
+置完成后点击Activate 按钮，启用设置。
+
+[PDF page 35; printed page 31; section 12 附录：MOXA EDS-408A 安全加固操作指导 > 12.6 VLAN 配置; blocks BLK-E37AACE530E2DA58]
+用户网络安全操作手册
+12 附录：MOXA EDS-408A 安全加固操作指导
+
+[PDF page 35; printed page 31; section 12 附录：MOXA EDS-408A 安全加固操作指导 > 12.5 关闭非必要管理接口; blocks BLK-70A4CD243FF3FDC7,BLK-36FB0A68AF75FE85,BLK-EDC5C2184DE9105D]
+12.5 关闭非必要管理接口
+
+登录交换机 Web 管理界面，点击Basic Setting > Security > Management Interface，勾选
+Disable，配置完成后点击Activate，启用设置。
+
+取消了这些管理接口之后，如果需要对交换机进行管理，可以通 Console 串口进行
+登录管理，Console 口的登录操作可以参考 MOXA 交换机的操作手册
+
+[PDF page 35; printed page 31; section 12 附录：MOXA EDS-408A 安全加固操作指导 > 12.6 VLAN 配置; blocks BLK-7AAF60FBBD2ACC7D,BLK-3305A273213DB104,BLK-3F4392A2E7C1AC4D]
+12.6 VLAN 配置
+
+VLAN 设置
+
+登录交换机 Web 管理界面，点击Virtual LAN > VLAN Settings，选择接口 Type，设置
+PVID、Fixed VLAN（Tagged）等参数，配置完成后点击Activate，启用设置。
+
+[PDF page 36; printed page 32; section 12 附录：MOXA EDS-408A 安全加固操作指导 > 12.6 VLAN 配置; blocks BLK-7284C4108BEAE889,BLK-7E28186BC348DB1D,BLK-9A30F47EBE526FFD,BLK-29C1D2687B061739]
+用户网络安全操作手册
+12 附录：MOXA EDS-408A 安全加固操作指导
+
+修改管理VLAN
+
+登录进入交换机，进入“Virtual LAN”-> “VLAN Settings”设定项，设置Management VLAN
+ID，并”Activate“；
+
+可将交换机接口分为业务接口与管理接口。若未预留管理接口，且需要对交换机进行
+管理，可以通Console 串口进行登录管理，Console 口的登录操作可以参考MOXA
+交换机的操作手册。
+
+[PDF page 37; printed page 33; section 12 附录：MOXA EDS-408A 安全加固操作指导 > 12.6 VLAN 配置; blocks BLK-975020BB29D47E2B,BLK-D25529DE0C511ADC,BLK-D461EA18B8ABC390,BLK-7C5D39239B9843C5,BLK-C86C4026B83ECFDC,BLK-A75E8BB4828C6CA4,BLK-AD6F8BBF2F6C4A78]
+用户网络安全操作手册
+12 附录：MOXA EDS-408A 安全加固操作指导
+
+具体 VLAN 划分指导
+
+图 12-3 设备连接与 VLAN 区域示意图
+
+交换机 VLAN 划分规划如下：
+
+设备或系统	VLAN ID	交换机端口
+LC（Other）
+【ETH1&2】& TL	10	1,2,3,4 (Ac
+SCADA & Insight	20	7,8 (Trunk)
+
+LC（Goose）
+【ETH3&4】
+30
+5,6 (Access)
+
+配置如下图：
+
+[PDF page 38; printed page 34; section 12 附录：MOXA EDS-408A 安全加固操作指导 > 12.7 固件升级流程; blocks BLK-EB1DEEB29D35FA80,BLK-999DF3F8C4C296B0,BLK-D5AB9846183D6366,BLK-42AE20546D1829A6,BLK-D892ED6378D2911C,BLK-32A3E24D25495774,BLK-15FAC0E90BF4AB3A,BLK-A7DEB7DDA7283067,BLK-E4E8C2CFA8AF72E8,BLK-F095B49D97DF0B62,BLK-8229B56B805BA0ED,BLK-40D70FFE00F6164E,BLK-C72EB392ECFFB8FD,BLK-C3ECFB31775B312B]
+用户网络安全操作手册
+12 附录：MOXA EDS-408A 安全加固操作指导
+
+设置完成后，如果需要更改设置，则只能通过 console 登录到交换机进行配置修
+改。
+
+12.7 固件升级流程
+
+前提条件
+
+固件升级过程中，因为会临时打开网络接口，故需要先将连接在交换机上的网线移除，然后
+进行固件升级。
+
+步骤 1 首先通过console 登入交换机cli 界面。
+
+步骤 2 进入配置模式：configure。
+
+步骤 3 修改管理接口：interface mgmt。
+
+步骤 4 绑定管理VLAN 10：bind vlan 10。
+
+步骤 5 退出配置管理接口：exit。
+
+步骤 6 使能https：ip http-server secure。
+
+步骤 7 退出配置模式：exit。
+
+步骤 8 保存配置：save config。
+
+--结束
+
+[PDF page 39; printed page 35; section 12 附录：MOXA EDS-408A 安全加固操作指导 > 12.8 配置导入流程; blocks BLK-68332C567DAE0B99,BLK-EBC2AAA9362F3A94,BLK-C065F821956D8A8F,BLK-DCA16E70D082FCB6,BLK-C32AC35F27DEDF1E,BLK-503D0552FE29ADF3,BLK-A16B3D221FD1CF9A,BLK-C8FCE4A305C22C80,BLK-D9958F38B8A12F8F,BLK-430FDAE0E0DCC7A9,BLK-0D00EBFC3C485363,BLK-159B980CB7159CBE,BLK-E929E727F633CA78]
+用户网络安全操作手册
+12 附录：MOXA EDS-408A 安全加固操作指导
+
+配置完成之后，将笔记本网口连接到端口1，通过交换机IP 地址，访问交换机web https 配
+置界面，进行固件升级。
+
+升级过程中不要断电，升级成功后，交换机会自动重启。
+
+升级完成后可以在浏览器界面最上方看到固件版本。确认升级完成后，重新通过console 进
+入交换机cli 配置界面，关闭https 和修改管理vlan。
+
+如下所示，修改完成后，保存配置。
+
+做完配置之后，执行安全功能验证，确认当前配置安全，然后恢复网线的连接。
+
+12.8 配置导入流程
+
+前提条件
+
+配置导入时，因为会临时打开网络接口，故需要先将连接在交换机上的网线移除，然后进行
+配置导入和备份。
+
+步骤 1 首先通过console 登入交换机cli 界面。
+
+步骤 2 进入配置模式：configure。
+
+步骤 3 修改管理接口：interface mgmt。
+
+步骤 4 绑定管理VLAN 10：bind vlan 10。
+
+[PDF page 40; printed page 36; section 12 附录：MOXA EDS-408A 安全加固操作指导 > 12.8 配置导入流程; blocks BLK-F6AE388869ECF315,BLK-1D9DCD798D06562B,BLK-0782743CB76B8A9A,BLK-EA11E94E6C5F40F1,BLK-63CBCE78F86EB9D5,BLK-C197FC251B6DDDDA,BLK-DBBF223192FF25E4,BLK-E110AF44C67757BB,BLK-0EE4F15A6D257C09,BLK-001A9911E6F98BE2]
+用户网络安全操作手册
+12 附录：MOXA EDS-408A 安全加固操作指导
+
+步骤 5 退出配置管理接口：exit。
+
+步骤 6 使能https：ip http-server secure。
+
+步骤 7 退出配置模式：exit。
+
+步骤 8 保存配置：save config。
+
+--结束
+配置完成之后，将笔记本网口连接到端口1，通过交换机IP 地址，访问交换机web https 配
+置界面，进行配置导入和备份。
+
+配置导入之后。确认升级完成后，重新通过console 进入交换机cli 配置界面，关闭https 和
+修改管理vlan。
+
+如下所示，修改完成后，保存配置。
+
+导入配置之后，执行安全功能验证，确认当前配置安全，然后恢复网线的连接。
+
+恢复出厂配置：
+
+[PDF page 41; printed page 37; section 12 附录：MOXA EDS-408A 安全加固操作指导 > 12.9 安全功能验证; blocks BLK-7C1F47D892EC034F,BLK-2F226338819C211D,BLK-CD24723E4F7A4294,BLK-389AD06D3D56B74E,BLK-C324EA9A6C2C76F3,BLK-5D985A3BE95AA6EF]
+用户网络安全操作手册
+12 附录：MOXA EDS-408A 安全加固操作指导
+
+cli 界面：reload factory-default
+
+然后输入y，确认恢复出厂：
+
+恢复出厂之后，请重新进行安全功能配置。
+
+12.9 安全功能验证
+
+针对交换机网口进行逐一测试，连接笔记本网口通过cmd 执行ping 命令，确认每一个网口
+都无法访问到交换机。
+
+[PDF page 42; printed page 38; section 12 附录：MOXA EDS-408A 安全加固操作指导 > 12.9 安全功能验证; blocks BLK-AAAB07E441B22709,BLK-5BCC4B0AF3A65D47,BLK-2A2A980160499F33,BLK-1B9DD6AD87190BD0,BLK-9427A46751B93AEA]
+阳光电源股份有限公司
+
+网
+址：www.sungrowpower.com
+
+邮
+编：230088
+
+公司地址：安徽省合肥市高新区习友路1699 号
+
+生产地址：安徽省合肥市高新区长宁大道608 号
+
+[DOCUMENT DOC-D9C0DEB31D45]
+File: logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf
+SHA-256: bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d
+
+[PDF page 13; printed page 3; section 2 产品描述 > 2.1 功能描述; blocks BLK-D4130DEFA5B318DF,BLK-3B23400D8C12EF53,BLK-E3F0927286FAE321,BLK-1E418B79BCDA0B57,BLK-9EF37D5FB5E04397,BLK-4229FA7FE6635AED,BLK-810917AE84EC90E0,BLK-27076CE0D8D035A4,BLK-254543AB77B4B866,BLK-276B765BAAD65005,BLK-DCE8A1FE2B86D398,BLK-8CF56F6958CD33E1,BLK-ABD8EE23CFEA3B93,BLK-536C2D01D46C74B8,BLK-1AF38C7935ED3716,BLK-915BE31950823B72,BLK-6838AC80DEF03AC8,BLK-A0E52C3C63687B7D,BLK-275D81C277F1A9EC,BLK-59B73DED760093DE,BLK-05D223D067B96BC3,BLK-9FEE6C4E83C7B395]
+2.1 功能描述
+
+数据采集器具有以下功能：
+
+支持设备接入
+
+数据采集器可以通过RS485 总线的方式，接入光伏发电系统的各种设备。对设备信息进行存
+储和处理，并通过规约转换来转换数据的通讯协议。
+
+通讯设备管理
+
+数据采集器可以对接入的设备进行集中管理，包括参数配置、固件升级等，便于现场运维。
+
+Web 界面配置
+
+数据采集器可以通过嵌入式Web 界面，对系统时间、网络、串口等进行设置，对协议点表进
+行维护。
+
+网口配置
+
+数据采集器集成五路具备数据交换功能的以太网口（即ETH1~ETH5），三路以太网口，两
+路快速调度口。北向可以接入综自系统或站控系统，南向可以接入三方设备。
+
+数据转发功能
+
+数据采集器具备将收集到的数据转发综自系统、站控系统或阳光云平台的功能。
+
+•
+数据采集器的数据转发功能默认不可用。启用该功能前，客户需在充分知情的前
+提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获得客户
+授权后方可生效，且相关操作受系统访问控制策略管理。
+
+•
+阳光云平台在北美区域禁止使用。
+
+支持协议转换服务
+
+数据采集器具备协议转换服务，包括ModbusRTU 转IEC104、MQTT、ModbusTCP 等。
+
+功率调节
+
+数据采集器可以接受和执行来自电网的调度指令，包括远程调度控制指令、模拟量及数字量
+调度控制指令。
+
+数据采集器可以对接入的逆变器进行有功功率调节和无功功率调节。
+
+本手册中涉及的远程调度、有功功率调度和无功功率调度均代表上位机调度。
+
+本地调度
+
+数据采集器可以接受和执行本地调度指令，包括固定值下发、电表闭环调度等。
+
+[PDF page 14; printed page 4; section 2 产品描述 > 2.2 组网应用; blocks BLK-DD430D8BD0A5BDD4,BLK-C0987D1A37C6AD36,BLK-35AFB59C2585607F,BLK-1C60C3C197329896,BLK-0C4AD7EA3CDC2CB2,BLK-EE4926450C5E2B17,BLK-0E8FEC54AF1BFA37,BLK-182EE50E531ABD2E,BLK-4E0353B94569ABFF,BLK-4DD68A8558951CBD,BLK-C228A8BF893CBE2B,BLK-D0C7F3E335D74113,BLK-6CE168B46221CF6A,BLK-8460ED050333704C]
+用户手册
+2 产品描述
+
+快速调度
+
+数据采集器可以接受和执行有功或无功快速调度指令，包括Goose 指令，实现无功30ms 调
+度下发控制。
+
+IV 曲线在线诊断
+
+数据采集器支持自研逆变器IV 曲线在线诊断功能，并可通过Insight、iSolarSuite 或
+iSolarCloud 进行查看。参考Insight、iSolarSuite 或iSolarCloud 手册，以获取IV 曲线在线
+诊断的详细介绍。
+
+2.2 组网应用
+
+数据采集器可参与多种场景下的组网应用。数据采集器通过RS485 总线方式接入光伏发电系
+统中的逆变器、箱变、环境监测仪、电表等，还可以通过MPLC 总线方式接入阳光电源生产
+的具备MPLC 功能的组串式逆变器。
+
+•
+数据采集器可以将采集到的设备数据，通过核心交换机传输至后台站控，例如Insight、
+SCADA。
+
+•
+数据采集器也可将采集到的设备数据，直接通过4G 路由器传输至阳光云。
+
+通过核心交换机连接至后台站控
+
+数据采集器通过核心交换机连接至Insight 或SCADA 的方式，如下图所示
+
+图 2-1 星形组网方式
+
+通过路由器连接至阳光云
+
+数据采集器可以直接通过路由器与阳光云连接，如下图所示。
+
+[PDF page 15; printed page 5; section 2 产品描述 > 2.2 组网应用; blocks BLK-ECC17DEAAFB5CF44,BLK-10A8D5FE01AF321E]
+用户手册
+2 产品描述
+
+路由器和防火墙不在供货范围内，由客户自行购买。
+
+[PDF page 16; printed page 6; section 2 产品描述 > 2.3 产品介绍; blocks BLK-FB33558EDF0B1D71,BLK-E1C327278246983A,BLK-6366AC7A36560DB2,BLK-280B19ADFD874C31,BLK-2F4309740282D108]
+用户手册
+2 产品描述
+
+2.3 产品介绍
+
+外观
+
+编号	说明			
+A	指示灯			
+B	接线端子			
+示灯				
+指示灯		名称	状态	状态说明
+PWR		电源指示灯	常亮	供电正常
+			灭	供电异常
+RUN		运行指示灯	闪烁	运行正常
+			灭/常亮	运行异常
+WLAN		WLAN 指示
+灯	灭	暂无WLAN 功能支持
+
+FAULT
+故障指示灯
+常亮
+所接逆变器存在告警或故障
+
+[PDF page 17; printed page 7; section 2 产品描述 > 2.3 产品介绍; blocks BLK-F1773C490E9F448A,BLK-5E39F972389DBAD0,BLK-001D01D63B826B76,BLK-52041C0029DEC214]
+用户手册
+2 产品描述
+
+指示灯
+名称
+状态
+状态说明
+
+灭
+所接逆变器无故障
+
+外观尺寸
+
+[PDF page 27; printed page 17; section 5 电气连接 > 5.2 外部接口说明; blocks BLK-620E54D88F061730,BLK-ED5B5D7F1329F5AC,BLK-8A67DF492330767C,BLK-53B1B184B909BD96]
+用户手册
+5 电气连接
+
+标识	名称	线缆推荐	说明
+				短按（＜3s），功能预留
+	Micro SD	SD 卡接口	-	设备软件烧写（该端口仅阳光
+电源技术人员可用）
+	IRIG-B	B 码对时接口	-	B 码对时
+	DO1~DO4	数字量输出	0.75mm2 户外
+型防紫外线导
+线	继电器输出接口
+继电器规格24Vdc/3A
+	AI1~AI2	模拟量输入	0.75mm2 户外
+型防紫外线导
+线	接线方法：二线制
+AI1：0~10Vdc
+AI2：4~20mA
+	DI1-4	数字量输入	0.75mm2 户外
+型防紫外线导
+线	无源干接点输入接口
+	A1B1~A9B9	RS485 通信接
+口	2 x
+(0.75~1.5)mm2
+户外型防紫外
+线带屏蔽层双
+绞线	支持9 路RS485
+可以接入从站设备，也可以接
+入后台
+	FAN	风扇驱动接口	_	支持24V 风扇驱动及转速反
+馈
+	SPD	防雷遥信状态
+监测接口	_	支持2 路防雷器遥信状态监测
+	I AC1~AC2
+_	交流电流采样
+端口	_	支持2 路5A 三相交流电流采
+样
+	U AC1~AC2
+_	交流电压采样
+端口	_	支持2 路100V 三相电压采样
+	DC IN
+24V	DC24V 供电端
+口	0.75~1.5mm2
+户外型防紫外
+线导线	电流≤1.25A，该端口所使用
+的开关电源需要加强绝缘
+
+数字量输入、输出端口
+
+数字量输入端口（DI）、数字量输出端口（DO1~DO4）用于采集接点数据和控制接点通
+讯。
+
+[PDF page 41; printed page 31; section 7 Web界面; blocks BLK-85D29C869E5B9FD7,BLK-A68C8242FF33543F,BLK-9CA70E906ACECA96,BLK-4AA1BAD22379D860,BLK-DC55A181BD8749CB,BLK-23234D7799B6A7AD,BLK-04C254A7D47F23FD,BLK-F6876A7D1ADE497A,BLK-3D2AE51B14433CA1]
+7 Web 界面
+
+录Web 端
+登录所需信息
+Web 端用户账号密码具体
+表 7-1 ETH 端口信息		
+	见9 用户管理。	
+		
+端口 IP 地址		子网掩码
+默认IP
+ETH1
+虚拟IP	地址：12.12.12.12
+地址：15.15.15.15
+地址：13.13.13.13
+地址：16.16.16.16
+地址：14.14.14.14
+地址：17.17.17.17	255.255.255.0
+默认IP
+ETH2
+虚拟IP		
+默认IP
+ETH5
+虚拟IP		
+前提条件
+• 已通过以太网线连接数据采集
+以通过ETH1 端口连接为例：
+修改PC 网络配置，确保与数据	器与PC。
+采集器的IP 地址为同一网段。	
+设置项	数据采集器默认设置	PC 设置示例
+IP 地址	12.12.12.12	12.12.12.125
+子网掩码	255.255.255.0	255.255.255.0
+		
+	位数一致。第四位取值范围为：	0~255（不包
+
+步骤 2 在浏览器地址栏中输入IP 地址https://12.12.12.12，按下[Enter]，访问Web 端。
+
+步骤 3 以运维用户角色登录Web 端。
+
+a. 在Web 端右上角，点击
+
+，打开登录对话框。
+
+b. 根据对话框显示，输入用户名称和密码。
+
+登录后Web 端将展示运维用户的操作界面。
+
+步骤 4 查看Logger5000 固件版本，确认是否需要升级。见7.11.1 查看固件版本。
+
+[PDF page 43; printed page 33; section 7 Web界面 > 7.3 Web端简介 > 7.3.2 运行环境要求; blocks BLK-5D157B178E3A734B,BLK-DDE8620E264E5D79,BLK-7A58EE43A6730709,BLK-07CE953E4C5BC179,BLK-1DC0483C55C3ACF2]
+用户手册
+7 Web 界面
+
+编号	名称		说明
+A	导航菜单		显示Web 主功能模块
+B	功能显示区		显示当前选择查询或参数设置的功能界面
+C	告警图标		显示当前系统告警的级别及数量，可以单击对应的数值
+直接进入该告警的显示界面
+D	语言显示		根据需要切换语言类型
+E	用户		显示当前登录用户
+图标指示数据
+图标指示数据
+行环境要求	采集器以太网
+采集器接入云	端
+服	口连接状态。
+务状态。
+项目		说	明
+浏览器		Ch	rome65 以上、Safari11 以上
+最小分辨率		19	20*1080
+
+当前Web 端界面支持8 种语言系统，分别是简体中文、英
+语、德语、西班牙语、巴葡语、法语、日语和韩语。
+
+语言显示
+
+登录嵌入式Web 的电脑语言系统当前仅支持以上8
+种语言，否则将无法登录。
+
+[PDF page 44; printed page 34; section 7 Web界面 > 7.3 Web端简介 > 7.3.3 操作流程; blocks BLK-B863C8424743D15E,BLK-7A5ADEC5261034BB,BLK-6C7C72494C942C30,BLK-9303867DE6FFFA2D,BLK-F35F6914BB86B3D0,BLK-1D309B34B6FD3992,BLK-CC20EC858010640A,BLK-E26AC6F747290E72,BLK-7B84FC926E9DC7FA,BLK-56E7AAFC06200895,BLK-4712520ABCDE75C5,BLK-5227A5A901B614C4,BLK-187A22E6684426E0,BLK-94D032ED39562867]
+7.3.3 操作流程
+
+前提条件
+
+•
+已经完成电气连接。
+
+•
+已经成功登录Web。
+
+步骤 1 配置数据采集器串口。
+
+登录Web 后，首先进行串口配置，保证数据采集器可以与下级设备正常通讯。参考7.10.7
+端口参数。
+
+步骤 2 校准系统时间。
+
+检查系统当前时间是否正确，可以手动对时和自动对时。参考7.10.5 系统时间。
+
+步骤 3 自动搜索设备。
+
+对于支持自动搜索的设备，如阳光电源生产的组串逆变器，可通过自动搜索添加设备并为其
+自动分配地址。参考7.6.1 设备列表。
+
+步骤 4 添加设备。参考7.6.1 设备列表。
+
+步骤 5 转发配置服务。
+
+添加完成所有设备后，配置数据采集器转发服务，保证数据采集器可将数据转发至上级设
+备。参考7.10.6.1 转发阳光云服务设置~7.10.6.5 转发GOOSE 服务配置。
+
+--结束
+
+[PDF page 49; printed page 39; section 7 Web界面 > 7.6 设备维护 > 7.6.1 设备列表; blocks BLK-4DA082251D2A15B4,BLK-F952E9FB2BDE064C]
+7.6.1 设备列表
+
+“设备列表”功能模块用于管理数据采集器所接入的设备并为其配置地址。可以自动搜索设备
+与添加设备。
+
+[PDF page 50; printed page 40; section 7 Web界面 > 7.6 设备维护 > 7.6.1 设备列表 > 7.6.1.4 添加设备; blocks BLK-B12FE4EF147ECAF8,BLK-7FF2925E00E64F86,BLK-AF583BCB2ADF0323,BLK-8C345F18D8625034]
+用户手册
+7 Web 界面
+
+步骤 3 弹出自动搜索界面，单击搜索。
+
+步骤 4 搜索完成后，即可查看符合条件的设备。
+
+--结束
+
+[PDF page 50; printed page 40; section 7 Web界面 > 7.6 设备维护 > 7.6.1 设备列表 > 7.6.1.3 导入; blocks BLK-7652848FAB24D8C2,BLK-9DCACB1F987DA36D,BLK-0D2CCA004EFAF801,BLK-0F9E940F0DF98E08,BLK-664E1514DA1BF1C6,BLK-0933A8E279CC676B,BLK-0045D3B218F931B2,BLK-98BE617FA3760D4D,BLK-DE5B252EC17C3A51]
+7.6.1.3 导入
+
+步骤 1 单击设备维护 > 设备列表，进入界面。
+
+步骤 2 单击
+
+按钮，将设备列表信息导出到本地。
+
+步骤 3 导出设备列表后，可对多台设备的名称进行批量修改。
+
+步骤 4 修改完成后，将设备列表文件另存为.csv 格式。
+
+步骤 5 单击
+
+按钮，将.csv 格式文件导入到Web 中。
+
+--结束
+
+[PDF page 50; printed page 40; section 7 Web界面 > 7.6 设备维护 > 7.6.1 设备列表 > 7.6.1.4 添加设备; blocks BLK-2319C41114B0049F,BLK-51A425119BF9C792,BLK-AADCE5ABB34FF09D,BLK-CB7D7254E51AD180,BLK-7AAABB78AF34B6A8,BLK-6B795FE8D8B12850,BLK-90F13B724D076FEB]
+7.6.1.4 添加设备
+
+步骤 1 单击设备维护 > 设备列表，进入界面。
+
+步骤 2 单击添加设备，弹出添加设备界面，选择设备类型，按照提示填写完成。
+
+步骤 3 选择组串逆变器以及对应的通讯方式，通讯方式分为PLC 以及RS485。
+
+单个光伏方阵内逆变器地址唯一。
+
+•
+选PLC：推荐通过白名单方式添加。
+
+PLC 通讯方式下的自动搜索与顺序添加功能，仅适用于不存在 PLC 串扰的场
+景。
+
+[PDF page 51; printed page 41; section 7 Web界面 > 7.6 设备维护 > 7.6.1 设备列表 > 7.6.1.5 编辑设备; blocks BLK-3C0C65E5F10C7C4A,BLK-0D46736869D554C1,BLK-ACB625B26F864108,BLK-F65DB0DFB4F518FA,BLK-96C25992B7721ADA,BLK-3DBA924856D8EB58,BLK-446577C5372AFA81,BLK-988D16ADEF8A3452,BLK-B41FFC5AB411E20F,BLK-B580D76FDD44F08B,BLK-C3A8FE939378621E,BLK-D840E662284A440C,BLK-A696F29AE9B7888A,BLK-E88A0B226112559D,BLK-B85D3442C4F76590,BLK-9565F327F887D925,BLK-276E748A60208EB8,BLK-2491D9EF7280A664,BLK-9372E9DE2D85DA8C]
+用户手册
+7 Web 界面
+
+-
+白名单添加：白名单文件通过手机APP 扫描逆变器的条形码生成，传到电脑，点击导
+入图标，可以将白名单文件导入到数采中。白名单组网完成后，显示白名单组网的结
+果。针对新电站添加场景，优先推荐白名单添加以确保添加准确度。
+
+在阳光云APP 点击更多——modubs 白名单配置——命名文件名称以及PLC
+类型——可通过扫描逆变器二维码或者手动录入的方式生成白名单文件。
+
+-
+顺序添加：优先保证数采主节点与从节点方阵号和band 号保持一致；此外，需要提
+前获取逆变器地址，并且保证逆变器地址连续。
+
+-
+自动搜索：不优先推荐在PLC 下使用。
+
+•
+选RS485：可选择自动搜索以及顺序添加。
+
+-
+自动搜索：推荐在通讯方式为RS485 的前提下使用。
+
+-
+顺序添加：需要提前添加逆变器地址，数采方阵号添加逆变器地址时，需要保证地址
+连续。
+
+•
+同一端口只能选择一种通讯方式，当端口PLC 功能使能时，则不能使用RS485
+通讯方式添加。
+
+•
+通过白名单方式添加设备后，页面将新增更换设备按钮，可更新设备SN。
+
+图 7-1 更换设备
+
+--结束
+
+7.6.1.5 编辑设备
+
+步骤 1 单击设备维护 > 设备列表，进入界面。
+
+步骤 2 单击操作栏
+
+，弹出编辑设备界面。可修改数据采集器所接设备的设备名称和指令间隔时间
+等。
+
+默认设备名称按照设备型号（端口号-通信地址）方式命名。
+如“SG36KTL-M(COM1-7)”中，“SG36KTL-M”为设备型号，“COM1”表示通信端口为
+COM1，“7”表示通信地址为7。
+
+步骤 3 单击保存，修改信息。
+
+--结束
+
+[PDF page 52; printed page 42; section 7 Web界面 > 7.6 设备维护 > 7.6.1 设备列表 > 7.6.1.6 删除设备; blocks BLK-4727733030DF4D9C,BLK-38B2775FE4D373AD,BLK-81DE9A9B6EE880BE,BLK-10231F26B7D06C1E,BLK-6D4AC6951D1CCEBB,BLK-7640752BAA8ED1F9,BLK-C2C8E6CEA11E3ED0]
+用户手册
+7 Web 界面
+
+7.6.1.6 删除设备
+
+实际设备从现场删除后，可在设备列表界面对设备进行删除，以保持数据采集器配置的设备
+与实际现场的一致性。
+
+步骤 1 单击设备维护 > 设备列表，进入界面。
+
+步骤 2 勾选需要删除的设备，单击删除按钮。
+
+步骤 3 弹出确认删除界面，单击确定。
+
+--结束
+
+[PDF page 52; printed page 42; section 7 Web界面 > 7.6 设备维护 > 7.6.2 设备日志; blocks BLK-5263D21A4778E2DD,BLK-2465985A185112FF,BLK-3B4DAB7B15E25DE9,BLK-2E81848AE976228F,BLK-DCED41251282E541,BLK-A6F7687DCA6020E3,BLK-F426BCF9D1901C14]
+7.6.2 设备日志
+
+步骤 1 单击设备维护 > 设备日志，进入界面。
+
+步骤 2 勾选设备名称相应的设备运行信息，单击
+
+，显示导出进度。
+
+步骤 3 单击导出，导出日志信息到本地。
+
+步骤 4 单击取消，弹出取消任务提示，单击确定，取消当前任务。
+
+--结束
+
+[PDF page 69; printed page 59; section 7 Web界面 > 7.9 历史数据 > 7.9.1 操作日志; blocks BLK-2B338B9A6B380B17,BLK-9F090597BEC405AD,BLK-3AA245FA71819D21,BLK-12445F87EB8CB581,BLK-09568BF4F0FB55DC,BLK-DA44C5042255F7CF,BLK-73D4FCD6F516C6DF,BLK-D886173F3AC9D66B,BLK-F6FBE428FFCF352A,BLK-8AA977F1013ED492,BLK-97D7A5630977A85C,BLK-3F0006804B7D9458,BLK-A65C4752A75CA5C0]
+用户手册
+7 Web 界面
+
+•
+高：高灵敏度设置触发告警的频率较高，可以更早的检测出风道异常。
+
+•
+低：低灵敏度设置触发告警的频率较低，需要阻塞较为严重时才会进行告警。
+
+--结束
+
+首次添加设备后至少需要检测一个晴天才能检测出诊断结果。
+
+7.9.1 操作日志
+
+通过操作日志页面，可以查看到各用户关键事件的操作记录，以便回溯。
+
+表 7-2 操作日志权限
+
+用户类型	操作 记录信息
+所有用户	登录和退出 用户名、用户IP
+运维用户	访问及关键操作：
+• 用户登录
+• 系统升级 查看本用户操作时间、操
+• 一键迁移导 容
+入、导出
+• 证书导入
+审计用户	所有操作日志，包
+括但不限于：增加
+用户、删除用户、 查看所有用户操作类型、
+修改用户、清空用 内容、操作结果
+户、会话管理、研
+发调试开关。
+	，进入界面。
+置时间和操作类型，单击 过滤日志记录。
+	采用本地时间（含时区）格式，精度为毫秒级，
+HH:MM:SS.sss（示例：2026-03-18 09:55:25.2
+
+步骤 3 导出操作日志。
+
+a. 登录审计用户账号，进入历史数据界面。
+
+b. 点击操作日志中的
+
+图标，设置压缩密码后，可以将操作日志导出。
+
+[PDF page 70; printed page 60; section 7 Web界面 > 7.9 历史数据 > 7.9.2 故障记录; blocks BLK-3DB8D7E5928AA20D,BLK-AD640A06C2C74C29,BLK-0B4538FE15A366D8,BLK-A275DFC906E2F363,BLK-843CC399A2D2187D,BLK-C142E1FD74EB8D0B,BLK-0F71406C05ED5C61,BLK-D59C029811209B46,BLK-F50A1437D36E71CA,BLK-1229233693B002BA,BLK-F9421FEECCA59712,BLK-6AD07B24FC6CA0E3,BLK-058197CD7BA3CE7F,BLK-AC69E157831B76EA,BLK-75BD28C32F16CDD0,BLK-939EF1627627C712,BLK-495034A22424CD93]
+7.9.2 故障记录
+
+通过设置搜索信息，可查看设备在某一时间段内的故障信息。
+
+步骤 1 单击历史数据 > 故障记录，进入页面。
+
+步骤 2 设置起止时间，单击
+
+图标选择需要查看的设备名称和故障类型。
+
+步骤 3 单击
+
+图标即可查看该时间段下的故障记录，故障记录主要展示以下参数信息。
+
+表 7-3 故障信息参数表
+
+参数
+说明
+
+时间
+出现故障的时间。
+
+设备名称
+出现故障的设备。
+
+名称
+故障具体的描述。
+
+类型
+该故障对应的类型。
+
+状态
+-
+
+步骤 4 单击
+
+可将查询到的信息，导出到本地进行查看。
+
+--结束
+
+[PDF page 71; printed page 61; section 7 Web界面 > 7.9 历史数据 > 7.9.4 Syslog日志; blocks BLK-7ED6DF2CFC85C628,BLK-7978F7253E387B5A,BLK-767B5A369B8BF7C6,BLK-9CBCB1DE0A77EC93,BLK-5330FB0F7D55D75E,BLK-11D6FB8018FC1468,BLK-A3BA38611AC0C157,BLK-4A10B94D9780B36C,BLK-55FF51761C56362D,BLK-1B770EBE1946B023,BLK-3A3B4ECBD6181C29,BLK-D7C7ABE5B5DE4BFA,BLK-0EB7C88814580101,BLK-EDA06DC9BBBBBF1D,BLK-C6EBE1582BE68226,BLK-1B829F8C6B96FA24]
+用户手册
+7 Web 界面
+
+表 7-4 图标信息
+
+图标		说明	
+			表示切换为表格形	式展示。
+			表示切换为曲线形	式展示。
+击
+结
+l	图标，可将查询到
+束
+og 日志
+7-5 Syslog 日志权限	的信	息，导出到本地进	行查看。
+用	户类型	操作		记录信息
+所	有用户	登录	和退出	用户名、用户IP
+运	维用户	访问
+• 用
+• 系
+• 一
+入
+• 证	及关键操作：
+户登录
+统升级
+键迁移导
+、导出
+书导入	查看本用户操作时间、操作类型、操作内
+容
+审	计用户	所有
+括但
+用户
+修改
+户、
+发调	操作日志，包
+不限于：增加
+、删除用户、
+用户、清空用
+会话管理、研
+试开关。	查看所有用户操作类型、操作对象、设置
+内容、操作结果
+
+步骤 4 单击
+
+7.9.4 Syslog 日志
+
+步骤 1 在历史数据界面，点击Syslog，进入页面。
+
+步骤 2 设置Syslog 服务IP，Syslog 日志将传到服务IP 下。
+
+a. 选择远程服务器页面，单击操作栏
+
+，弹出设置界面。
+
+b. 对服务器IP、端口、日志等级进行记录，点击保存，使设置生效。
+
+步骤 3 查看Syslog 日志。点击日志记录，选择时间段及日志等级，可以查看该时间内用户Syslog
+
+记录。
+
+步骤 4 导出Syslog 日志。
+
+a. 登录审计用户账号，在历史数据界面，点击Syslog，单击日志界面的
+
+图标，设置压缩
+
+密码后，可以将Syslog 日志导出。
+
+[PDF page 73; printed page 63; section 7 Web界面 > 7.10 系统 > 7.10.2 系统维护 > 7.10.2.4 备份与恢复; blocks BLK-A11BEFF4997E09FA,BLK-ABB9BBB49EB81A63,BLK-CE4D2898AF039871,BLK-01424CF4705A73CD,BLK-F76B36B7C5D3BF6F,BLK-334C2A157478B3DC,BLK-A8DBB8E42DD9CC06,BLK-E5001E1FDE439942,BLK-FE96788B5B5565EB,BLK-1F41C5DDA4A62BC0]
+7.10.2.4 备份与恢复
+
+点击系统 > 系统维护 > 备份与恢复。
+
+备份
+
+1. 点击备份与恢复 > 备份，按下确定按钮以执行备份操作。
+
+2. 设置压缩密码并点击确定，系统将在本地生成加密压缩包。
+
+压缩密码长度为8~32 位，需由大写字母、小写字母、数字、特殊符号中的三种或以
+上组成。
+
+恢复
+
+1. 点击备份与恢复 > 恢复，按下确定按钮以执行恢复操作。
+
+2. 输入备份压缩包的密码，并点击确定。
+
+3. 选择加密的备份压缩包，触发系统重启并完成恢复。
+
+[PDF page 74; printed page 64; section 7 Web界面 > 7.10 系统 > 7.10.2 系统维护 > 7.10.2.6 公钥导入; blocks BLK-328F0B4CD63B450A,BLK-01E214DE404D7DD4,BLK-778ACBA4155D7836,BLK-58CB2C32C481CA32,BLK-7E91E1D459AFB27A,BLK-4476FA2A566A19BB,BLK-112B478856ADF183,BLK-FF9E916AD7FE93EB,BLK-5B4421727B6BF311,BLK-F9A4F9723511D487,BLK-25EC72F7D907113E,BLK-35A4A8029CBCFB09,BLK-14719D4D62193798,BLK-B55FA78F8CD90B3D,BLK-9B23B9DED76DBAC2]
+用户手册
+7 Web 界面
+
+步骤 3 在弹出的对话框中，选择方阵模式。
+
+表 7-7 参数表格
+
+方阵模式
+说明
+
+常规模式
+表示此方阵正常参与调度。
+
+样板机模式
+表示此方阵不参与调度。
+
+步骤 4 单击确定。
+
+--结束
+
+7.10.2.6 公钥导入
+
+为确保系统升级的安全，保证升级包文件的真实性和完整性，使用数字签名技术对升级包文件进
+行校验。数据采集器升级时，可能需要导入升级包文件对应的公钥，以完成数字签名校验流程。
+
+步骤 1 单击系统 > 系统维护。
+
+步骤 2 单击公钥导入。
+
+步骤 3 在弹出的对话框中，选择公钥文件（.pem 格式）。
+
+步骤 4 单击打开，导入公钥。
+
+--结束
+
+[PDF page 74; printed page 64; section 7 Web界面 > 7.10 系统 > 7.10.3 远程维护; blocks BLK-3DF4FC14838A12B6,BLK-E8D208159F329BFA,BLK-F3444968819BD4B6,BLK-75BC08D3A0B8DBCF,BLK-32F041E2A1781182,BLK-9A20096B42235E21]
+7.10.3 远程维护
+
+远程维护功能默认关闭。启用该功能前，客户需在充分知情的前提下使用
+administrator 账号进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在
+获得administrator 账号授权后方可生效，且相关操作受系统访问控制策略管理。
+
+步骤 1 单击系统 > 远程维护，进入界面。
+
+表 7-8 参数说明
+
+远程维护开关状态
+说明
+
+禁止
+不可对数据采集器进行远程维护
+
+[PDF page 75; printed page 65; section 7 Web界面 > 7.10 系统 > 7.10.4 报文导出; blocks BLK-49D71FD4AFB1DBC6,BLK-3B8229B61C3D4B6A,BLK-E18EAF15FE2DD90B,BLK-B6018789D5A26BD1,BLK-3383085F657D89D4,BLK-04C45730C735FF8B,BLK-581F692171984371,BLK-C6BF4B6F0BB1A31E,BLK-5C1A8F0BA0601716,BLK-8D46E0990D848239,BLK-CD022E4010C77967,BLK-B06F96C8A2C8E1CF,BLK-B64FA2882C335B0C,BLK-D8F4CF1101C0041E,BLK-213C23A840CFE4D5,BLK-A7C24A987E732A27,BLK-52C2F8A640CC799C,BLK-083DCDAF130BAA12,BLK-51733682EB662185,BLK-A437C9C9ABDC3669,BLK-177D5C167B8E1044,BLK-C94A39D9BB350041,BLK-EBE4BFE6EC1E774D,BLK-D1389EDF99A172FA,BLK-0ACC1AC4C97E0E20,BLK-1CDD04636EE3C88B,BLK-275CAD637AD75FBC]
+用户手册
+7 Web 界面
+
+远程维护开关状态
+说明
+
+使能
+可对数据采集器进行远程维护
+
+步骤 2 如已开启阳光云转发服务，服务器站点与阳光云转发地址绑定。如需修改，请修改阳光云站
+
+点。
+
+步骤 3 单击保存，进入远程访问界面。
+
+步骤 4 输入登录密码，单击确定。
+
+步骤 5 通过以下两种方式保存访问信息。
+
+•
+单击复制远程访问信息，复制成功后，将访问信息保存至本地。
+
+•
+输入邮箱地址，单击发送，将访问信息发送至邮箱。
+
+该邮箱仅用于远程访问信息发送，需登录相应账户页面，才允许访问查看。邮箱信息
+不会存储在设备端和服务端，不存在用户个人隐私泄漏风险。
+
+步骤 6 网址栏输入访问链接，进入远程维护界面。输入设备S/N 和密码，单击登录，进行远程维
+
+护。
+
+--结束
+
+7.10.4 报文导出
+
+步骤 1 单击系统 > 报文导出，进入界面。
+
+参数名称
+说明
+
+类型
+-
+
+•
+主机模式
+•
+监听模式
+
+例如：设备接在COM1 口，主机
+模式是选择COM1 口，直接从
+COM1 口获取报文。监听模式是
+选择COM2 口，设备接线到
+COM1 的RS485 口上，通过
+COM2 口上获取COM1 总线上的
+报文。
+
+工作模式
+
+端口
+-
+
+时长
+导出所设时长的报文记录
+
+步骤 2 设置参数后，单击启动，开始记录报文，在设置时间结束后，自动停止，也可单击停止手动
+
+中断报文记录。
+
+步骤 3 单击导出，可导出报文。
+
+--结束
+
+[PDF page 76; printed page 66; section 7 Web界面 > 7.10 系统 > 7.10.5 系统时间; blocks BLK-E251A8A9BA42D0BD,BLK-7F0843944B536FD1,BLK-EE560ABA849CAB28,BLK-6EE1268D308A5083]
+用户手册
+7 Web 界面
+
+7.10.5 系统时间
+
+用于检查系统当前时间是否正确，并且可对系统当前时间，以及是否对逆变器进行定时对时设
+置。
+
+TP，请确认设备网络环境安全。
+择采用IEC104 对时方式，其次选择采用阳光云对时方式，其他对时
+选择。
+只有一个时钟源生效。
+		，进入界面。
+时，可将数据采集器时间同步到设备。
+的时钟源。
+	时钟源	说明
+	手动对时	可通过以下两种方式对系统当前时间和时区进行手动设置：
+• 勾选同步本机时间，将数据采集器时间与本机时间同步。
+• 选择当地所在时区、日期和时间，单击保存，手动设置数据采集
+器时间。
+推荐在调试时使用手动对时。
+	NTP/NTS	可同步网络中各设备的时间。选择当地所在时区。填入域名，设置时
+间间隔，单击保存。则数据采集器与服务器时间同步。
+	IEC104	前提是数据采集器与后台使用IEC104 通信规约，否则时钟源设置为
+“IEC104”的对时方式无效。
+
+[PDF page 77; printed page 67; section 7 Web界面 > 7.10 系统 > 7.10.6 转发配置 > 7.10.6.2 转发IEC104服务配置; blocks BLK-BE153AA192B48930,BLK-89A6CAB539794403]
+用户手册
+7 Web 界面
+
+时钟源		说明
+阳光	云	前提是数据采集器与阳光云平台连接，否则时钟源设置为“阳光云”的
+对时方式无效。
+MOD
+TCP	BUS-	前提是数据采集器与后台使用MODBUS-TCP 通信规约，否则时钟源
+设置为“MODBUS-TCP”的对时方式无效。
+B 码		通过B 码协议实现时间同步。
+PTP		通过后台时间服务器对电站内的多个数据采集器进行统一对时。
+结束		
+注意		
+数据	采集器首次使用	必须配置系统时间。
+	置
+阳光云服务	设置
+	• 数据采集器
+提下进行手
+授权后方可
+• 阳光云平台	的数据转发功能默认不可用。启用该功能前，客户需在充分知情的前
+动授权，并通过安全加密认证接入公共网络。远程访问仅在获得客户
+生效，且相关操作受系统访问控制策略管理。
+在北美区域已停止服务。
+		
+	云服务与外网	有数据交互，请确认设备网络环境安全后再开启。
+	统 > 转发配置
+入站点开关，	，进入界面。
+单击操作栏 ，可修改阳光云转发配置信息。
+	默认接入阳光
+站”，澳洲地区
+为保证数据采
+参考路由器白	云站点为“中国站”。中国大陆地区接入“中国站”，欧洲地区接入“欧洲
+接入“澳洲站”，其他地区接入“国际站”。
+集器功能正常使用，需要对路由器的白名单进行相关设置。设置参数请
+名单设置。
+	IEC104 服务
+EC104 服务配置	配置
+”用于配置数据采集器转发IEC104 服务。
+
+[PDF page 77; printed page 67; section 7 Web界面 > 7.10 系统 > 7.10.6 转发配置; blocks BLK-2201E27641EB8839,BLK-80D6896F1D53BCDF,BLK-2B3D8D7A125A408A,BLK-0659A3A36343885F]
+7.10.6 转发配置
+
+•
+该协议为非安全协议，存在风险，请确认设备网络环境安全后再开启。
+
+•
+可根据需要开启TLS 加密功能，进一步保障信息安全。
+
+Server 模式
+
+[PDF page 78; printed page 68; section 7 Web界面 > 7.10 系统 > 7.10.6 转发配置 > 7.10.6.2 转发IEC104服务配置 > 7.10.6.2.5 设置IEC104调度模式; blocks BLK-B0A773F42332B508,BLK-443237FA5FBA455D,BLK-537121EF58EB3129]
+用户手册
+7 Web 界面
+
+Server 模式是数据采集器作为服务器，上位机服务器连接数据采集器，进行数据和指令传
+输。
+
+进行IEC104 服务转发配置时本地端口号为2418。
+
+[PDF page 78; printed page 68; section 7 Web界面 > 7.10 系统 > 7.10.6 转发配置 > 7.10.6.2 转发IEC104服务配置 > 7.10.6.2.1 白名单设置; blocks BLK-42CDE066C74C42D0,BLK-C2B2B9991AFBEDE3,BLK-2C68E1B75B166F11,BLK-A91BF21B2E29A89E]
+7.10.6.2.1 白名单设置
+
+单击系统 > 转发配置 > IEC104，默认进入Server 界面，点击白名单设置。
+
+•
+不勾选启用白名单，默认IP 地址为“0.0.0.0”，则允许任意具有合法IP 地址的后
+台设备访问数据采集器。
+
+•
+勾选启用白名单，输入IP 地址，则只有指定的IP 设备可以访问数据采集器。
+
+[PDF page 78; printed page 68; section 7 Web界面 > 7.10 系统 > 7.10.6 转发配置 > 7.10.6.2 转发IEC104服务配置 > 7.10.6.2.2 直接生成点表; blocks BLK-8E2F8B84CF2F3A6A,BLK-2388B11541E28393,BLK-26FD0A5B4E80F24C,BLK-B25CF6F7219373A8,BLK-8C6D73E1AA5EDA64,BLK-555BBD43936532E6,BLK-AA548C5732F889F4,BLK-3C54F28B75598E8D,BLK-CFBCB12AAED16E1E,BLK-83651C9703027D50]
+7.10.6.2.2 直接生成点表
+
+步骤 1 打开本地端口为2404 的开关。
+
+步骤 2 单击生成点表，IEC104 默认点表自动导入配置文件中。
+
+--结束
+7.10.6.2.3 导入IEC104 转发点表
+
+步骤 1 单击操作栏
+
+，弹出高级设置界面。
+
+步骤 2 单击
+
+，导入zip 文件。
+
+步骤 3 点击保存。
+
+--结束
+
+[PDF page 78; printed page 68; section 7 Web界面 > 7.10 系统 > 7.10.6 转发配置 > 7.10.6.2 转发IEC104服务配置 > 7.10.6.2.4 导出IEC104转发点表; blocks BLK-288CCE5EDDA50F3A,BLK-6065C12EF3E5A229,BLK-080669DA84E645F6,BLK-B1C6F694EB774F52,BLK-4D30566BF7F400C5]
+7.10.6.2.4 导出IEC104 转发点表
+
+步骤 1 单击系统 > 转发配置 > IEC104，默认进入Server 界面。
+
+步骤 2 单击
+
+导出点表，将转发点表导出至本地，导出的点表为.csv 格式。
+
+--结束
+
+[PDF page 78; printed page 68; section 7 Web界面 > 7.10 系统 > 7.10.6 转发配置 > 7.10.6.2 转发IEC104服务配置 > 7.10.6.2.5 设置IEC104调度模式; blocks BLK-3265D901FFBB3DBC,BLK-6B1A01E25A346C67,BLK-5F6D0E4C7CB8872B,BLK-3DFECD672165B24B,BLK-1CDC31BC9AB25272,BLK-86739BBB5DA56E15,BLK-D23265917E151AA6,BLK-59D3D728D6702873,BLK-A4334FEC16723AA4,BLK-852EF5EF40407E7E]
+7.10.6.2.5 设置IEC104 调度模式
+
+步骤 1 单击设备监控，跳转到相应页面。
+
+步骤 2 页面左侧选择逆变器设备，单击功率调节参数页面，设置功率调节参数。
+
+步骤 3 在电网快速调度模式下拉列表中：
+
+•
+选择使能，打开IEC104 快速调度模式。
+
+•
+选择禁止，关闭IEC104 快速调度模式。
+
+步骤 4 在电网极速调度模式下拉列表中：
+
+•
+选择使能，打开IEC104 极速调度模式。
+
+•
+选择禁止，关闭IEC104 极速调度模式。
+
+如果电网快速调度模式和电网极速调度模式同时使能时，有功功率调节和无功功率调
+节优先选择电网极速调度模式。
+
+[PDF page 79; printed page 69; section 7 Web界面 > 7.10 系统 > 7.10.6 转发配置 > 7.10.6.3 转发MODBUS服务配置 > 7.10.6.3.3 Modbus TCP快调模式; blocks BLK-E1CD550F99FE57BD,BLK-EA4FD3717379E347,BLK-8630086B3426858E,BLK-FEA52E937BEC9E93,BLK-0D0032468D8D890E,BLK-C2B13486B95C306D,BLK-76154350D5877988]
+用户手册
+7 Web 界面
+
+步骤 5 单击设置，进行保存。
+
+步骤 6 单击通用参数页签，设置设备通用参数。
+
+步骤 7 选择设置，设置寄存器地址、数据类型和设置值。单击设置，完成对单台设备设置生效。
+
+步骤 8 （可选）单击配置同步，在弹出的设备列表中勾选需要设置的设备，单击保存，完成批量设
+
+置设备通用参数。
+
+--结束
+
+[PDF page 79; printed page 69; section 7 Web界面 > 7.10 系统 > 7.10.6 转发配置 > 7.10.6.3 转发MODBUS服务配置; blocks BLK-800138C3A43B38C6,BLK-670A0CFFD3A070B8,BLK-56749449C35E3B07,BLK-DDA362253105BFCD]
+7.10.6.3 转发MODBUS 服务配置
+
+“转发MODBUS 服务配置”用于配置数据采集器转发MODBUS 服务。
+
+•
+该协议为非安全协议，存在风险，请确认设备网络环境安全后再开启。
+
+•
+可根据需要开启TLS 加密功能，进一步保障信息安全。
+
+[PDF page 79; printed page 69; section 7 Web界面 > 7.10 系统 > 7.10.6 转发配置 > 7.10.6.3 转发MODBUS服务配置 > 7.10.6.3.1 Server模式; blocks BLK-91BD494E227E9491,BLK-B01BCA0CF2CF0FF3,BLK-BB09EC23E9993C6F,BLK-95854C3A2BB544AA,BLK-9235A9F1444B3B6C]
+7.10.6.3.1 Server 模式
+
+“Server 模式”是数据采集器作为服务器，通过Modbus TCP 协议，上位机服务器连接数据采集
+器，进行数据和指令传输。
+
+步骤 1 单击系统 > 转发配置 > MODBUS，默认进入Server 界面。
+
+步骤 2 白名单设置参考7.10.6.2.1 白名单设置。
+
+--结束
+
+[PDF page 79; printed page 69; section 7 Web界面 > 7.10 系统 > 7.10.6 转发配置 > 7.10.6.3 转发MODBUS服务配置 > 7.10.6.3.2 RTU模式; blocks BLK-B4E277EDDD910A35,BLK-7258B309D2A1F136,BLK-93488C673AE2238A,BLK-6549F40552F56D94,BLK-5319C00BAE4AECE3,BLK-EC69CBC7984A2676,BLK-9E4D279E8710F90F,BLK-40B2BCC1F07751B3]
+7.10.6.3.2 RTU 模式
+
+“RTU 模式”是数据采集器通过Modbus RTU 协议，连接上位机服务器，进行数据和指令传输。
+
+步骤 1 单击系统 > 转发配置 > MODBUS，默认进入Server 界面。
+
+步骤 2 单击RTU，进入RTU 界面。
+
+步骤 3 选择串口名称，输入延时时间。
+
+步骤 4 单击
+
+。
+
+--结束
+
+[PDF page 79; printed page 69; section 7 Web界面 > 7.10 系统 > 7.10.6 转发配置 > 7.10.6.3 转发MODBUS服务配置 > 7.10.6.3.3 Modbus TCP快调模式; blocks BLK-42F7A3FAFE97BF60,BLK-7FAD9B6AEC9D2298,BLK-DB9AE00EFBD69F6B,BLK-5576B1BB0D89C04F,BLK-63AB5CA1F786DC31,BLK-6F8C4E60D4FD891F,BLK-055322CFC9915122]
+7.10.6.3.3 Modbus TCP 快调模式
+
+Modbus TCP 快调开启后，可提高功率调节指令的响应速度。
+
+前提条件
+
+•
+使用Modbus TCP 快调时，需在后台与Logger5000 的ETH3 或ETH4 快调口之间架设
+一台交换机，并通过网线将两者进行连接。网线类型选择通用性标准网线即可，如
+CAT5E 类/长度75cm 网线。
+
+•
+只需配置快调端口ETH3 或ETH4 其中一个网口的IP 地址即可，尽可能与后台IP 设置成
+同一网段。
+
+•
+Modbus TCP 快调与GOOSE 转发协议不可同时开启。
+
+•
+Modbus TCP 快调仅支持开环控制。
+
+[PDF page 80; printed page 70; section 7 Web界面 > 7.10 系统 > 7.10.6 转发配置 > 7.10.6.3 转发MODBUS服务配置 > 7.10.6.3.4 Modbus TCP普通调度模式; blocks BLK-FD501372EEF6667B,BLK-59EB09A3EAC8E39D,BLK-5EE0648759C815DA,BLK-B7710BDA434B8B0F,BLK-0B2AD0202191D7F9,BLK-6162EE8B992F2482,BLK-79ADD6AFC5611D0B,BLK-6218A519F3E63876,BLK-3E32D8D1092331C7,BLK-E732AB2637F3C908,BLK-D3021688D8BA5157,BLK-42E1FAE2C4034A96,BLK-0DE5473B9D03AD91,BLK-0D669A175FF0D872,BLK-5530390EB4EAB73F,BLK-A6F13E49391BC8B5,BLK-DF8338E1AFF6BD5C,BLK-D1FA60EC80F0CC91,BLK-B61BF16FE8CE2194,BLK-EC450C15C2633FBF,BLK-326A3653500BBF68,BLK-6E187B1CF57C2A5E,BLK-5A0D3CB1ED5CE3E0,BLK-A65D77DD94373D44,BLK-AEDE5FD5D5B903B9,BLK-839647368468A197,BLK-564CE0ABCDACD107,BLK-8AFFB8F5B70CB840,BLK-E650C44EFB715041,BLK-D222A72C8626AC55]
+用户手册
+7 Web 界面
+
+开启Modbus TCP 快调功能后，必须确保后台下发的调度指令的间隔时间满足以下
+要求，否则逆变器可能无法完全响应目标值。
+
+•
+有功功率调节：调度间隔需为60 毫秒或以上。
+
+•
+无功功率调节：调度间隔需为30 毫秒或以上。
+
+步骤 1 导航栏中点击系统 > 转发配置 > MODBUS，跳转到相应页面。
+
+默认显示Server 标签页。
+
+步骤 2 点击Modbus TCP 快调。
+
+步骤 3 在开关下拉列表中，选择使能。
+
+步骤 4 在端口下拉列表中，选择后台的端口号。
+
+步骤 5 根据电站实际情况，配置快调端口ETH3、ETH4 的网络参数。
+
+步骤 6 如需开启北向通信异常保护，在保护开关字段下方，选择使能。
+
+a. 在对端IP 文本框内，输入对端设备的IP 地址。
+
+b. 在通讯异常检测时间文本框内，指定数据采集器对逆变器执行保护操作之前需等待的时
+
+间。
+例如，当设置通讯异常检测时间为“30”时，表示数据采集器在限制逆变器输出功率之前需
+等待30 秒。
+
+c. 在通讯异常输出文本框内，输入当判定通信出现异常时，逆变器的输出功率（单位为百分
+
+比）。
+例如，当设置为通讯异常输出“80”时，表示通讯中断后，数据采集器限制逆变器的输出功
+率为其额定功率的80%。
+
+d. 在通讯异常自恢复时间文本框中，指定数据采集器在通讯恢复后需等待的时间。
+
+超出该段时间后，数据采集器将根据通讯恢复输出的设置，调整逆变器的输出功率或对逆
+变器执行开机操作。
+
+e. 在通讯恢复输出下拉列表中，指定数据采集器在通讯恢复后的操作。
+
+•
+无动作：通讯恢复后，数据采集器将保持异常输出值，需后台重新下发调度命令，调
+整逆变器的输出功率。
+
+•
+开机：数据采集器先对逆变器下发开机指令，再根据后台最近一次下发的目标值，调
+整逆变器的输出功率。适用于逆变器因通讯异常而关机的情况。
+
+步骤 7 点击保存。
+
+Web 端弹窗提示设置在重启后生效。
+
+--结束
+7.10.6.3.4 Modbus TCP 普通调度模式
+
+步骤 1 单击设备监控，跳转到相应页面。
+
+步骤 2 在左侧选择逆变器设备，单击功率调节参数页面，设置功率调节参数。
+
+步骤 3 在电网快速调度模式下拉列表中：
+
+•
+选择使能，打开Modbus TCP 快速调度模式。
+
+•
+选择禁止，关闭Modbus TCP 快速调度模式。
+
+步骤 4 在电网极速调度模式下拉列表中：
+
+[PDF page 81; printed page 71; section 7 Web界面 > 7.10 系统 > 7.10.6 转发配置 > 7.10.6.5 转发GOOSE服务配置; blocks BLK-E2E61244B953A613,BLK-66288754209A09F7,BLK-17C1368A55624973,BLK-3806BBA58DDF438E,BLK-047EDF9B33A3A0F0,BLK-215C16F40ADA3ED6,BLK-8BB27D15D3F5F9E3,BLK-C30385DFC620E917,BLK-38266E3E081B26DE,BLK-EAFBA946D314F06B]
+用户手册
+7 Web 界面
+
+•
+选择使能，打开Modbus TCP 极速调度模式。
+
+•
+选择禁止，关闭Modbus TCP 极速调度模式。
+
+如果电网快速调度模式和电网极速调度模式同时使能时，有功功率调节和无功功率调
+节优先选择电网极速调度模式。
+
+步骤 5 单击设置。
+
+步骤 6 单击通用参数页签，设置设备通用参数。
+
+步骤 7 选择设置，设置寄存器地址、数据类型和设置值。单击设置，完成对单台设备设置生效。
+
+步骤 8 （可选）单击配置同步，在弹出的设备列表中勾选需要设置的设备，单击保存，完成批量设
+
+置设备通用参数。
+
+--结束
+
+[PDF page 81; printed page 71; section 7 Web界面 > 7.10 系统 > 7.10.6 转发配置 > 7.10.6.4 转发三方云服务配置; blocks BLK-7CA94C17A4F80A13,BLK-0F6F7B781E8A2D1C,BLK-AD1E6A7FA18DAC21,BLK-F6A17CB61436E6E2,BLK-0EE002454BC28BB1,BLK-0008A4A10DC846AD,BLK-F3A8448214531A75,BLK-82B2A8F0EB8A4F2D,BLK-BC550FAF2948123A,BLK-58F020AE67A34D0C]
+7.10.6.4 转发三方云服务配置
+
+“转发三方云服务配置”用于配置数据采集器转发三方云服务。
+
+1.云服务与外网有数据交互，请确认设备网络环境安全后再开启。
+2.转发三方云功能默认关闭。启用该功能前，客户需在充分知情的前提下使用管理员
+账号进行手动授权，并通过安全加密认证接入公共网络。该功能仅在获得管理员账号
+授权后方可生效，且相关操作受系统访问控制策略管理。
+
+步骤 1 登录运维用户账号，单击系统 > 转发配置 > 三方云，进入三方云界面。
+
+步骤 2 打开开关。
+
+步骤 3 单击
+
+，弹出高级设置界面。
+
+步骤 4 修改配置信息，单击保存。
+
+设置FTP 路径按照“/FTP 服务器目录”方式命名。
+如“/SUNGROW”中/表示根目录，SUNGROW 是FTP 服务器中存放数据的目录。
+
+--结束
+
+[PDF page 81; printed page 71; section 7 Web界面 > 7.10 系统 > 7.10.6 转发配置 > 7.10.6.5 转发GOOSE服务配置; blocks BLK-EEB2B1F9E2CDDDA4,BLK-AB44867E4A1BA9E5,BLK-7B86552EBB6F8E10,BLK-EA5A0C28976E4DA9,BLK-FE691405B62CB021,BLK-B8C9A21640CC06B6]
+7.10.6.5 转发GOOSE 服务配置
+
+配置数据采集器转发GOOSE 服务。
+
+前提条件
+
+•
+使用GOOSE 快调时，需在后台与数据采集器的ETH3 或ETH4 快调口之间架设一台交
+换机，并通过网线将两者进行连接。网线类型选择通用性标准网线即可，如CAT5E 类/长
+度75cm 网线。
+
+•
+只需配置快调端口ETH3 或ETH4 其中一个网口的IP 地址即可，尽可能与后台IP 设置成
+同一网段。
+
+该协议为非安全协议，存在风险，请确认设备网络环境安全后再开启。
+
+[PDF page 82; printed page 72; section 7 Web界面 > 7.10 系统 > 7.10.7 端口参数 > 7.10.7.1 RS485; blocks BLK-2167C50D9C68B56F,BLK-788DFADD83BC0251,BLK-763DD0DF8E16A74B,BLK-BF64D98C12519E50]
+用户手册
+7 Web 界面
+
+单
+将
+单
+解
+配
+保
+单
+置
+--
+6
+配
+单
+在
+单
+导
+（
+--
+端
+配
+1
+单
+单
+如	开启GOOSE 转发服务功能后，必须确
+要求，否则逆变器可能无法完全响应目
+• 有功功率调节：调度间隔需为60 毫
+• 无功功率调节：调度间隔需为30 毫
+击系统 > 转发配置 > GOOSE，进入GOOS
+开关设置为使能。
+击配置文件导出，可将GOOSE 数据配置文
+压导出的压缩包，使用Excel 打开压缩包中
+置文件。
+存重新设置后的GOOSE 数据配置文件。
+击配置文件导入，选择保存后的GOOSE 数
+文件导入。
+结束
+可开启防重放功能，降低重放攻击风险
+转发MMS 服务配置
+置数据采集器转发MMS 服务。
+击 系统 > 转发配置 > MMS， 进入MMS 界
+开关 下拉框选择 使能 。默认情况下开关为
+击配置文件导入，导入.zip 格式的配置文件。
+入完成后需重启后生效，单击确定。 单击配
+可选）单击配置文件导出，可将已导入生效
+结束
+口参数
+置数据采集器端口参数。
+RS485
+击系统 > 端口参数 > RS485，进入RS485
+击 ，可修改波特率、校验位、停止位及P
+下所示。	
+		保后台下发的调度指令的间
+标值。
+秒或以上。
+秒或以上。
+		E 界面。
+件导出至本地。
+的.cfg 文件，可查看并重新
+据配置文件，单击打开，完
+		，可根据需要设置检测时间
+		面。
+禁止状态。
+置文件
+后的配置文件导出到本地。
+界面。
+LC 接入信息，各个端口对
+	参数名称	默认参数值
+	端口功能	采集
+
+步骤 2 单击
+
+波特率
+9600
+
+[PDF page 83; printed page 73; section 7 Web界面 > 7.10 系统 > 7.10.7 端口参数 > 7.10.7.3 AI; blocks BLK-9149C59D08016133,BLK-598D475B3618DDA1,BLK-4761D6C8E484CDB0]
+用户手册
+7 Web 界面
+
+参数名称
+默认参数值
+
+校验位			无		
+停止位			1		
+PLC 接入			禁	止	
+快调开关			禁	止	
+当数据
+、校验
+以及停
+必须与
+仅当C
+状态设
+，设置
+PLC 节
+结束
+以太网
+击系统 > 端
+自动分配I					
+	采集器串口连接设备
+位
+止位
+所连接设备配置相同	时，该串口
+，才能保证	端
+数	口波特率
+据采集器与所连设备正常通讯。	
+					
+	OM1~COM9 端口接
+置为使能
+使能后，COM1~CO
+点参数进行设置，具	入设备时，才
+M9 端口对应
+体参见7.10	能
+的
+.8	将COM1~COM9 端口对应的
+波特率将自动修改为115200，
+MPLC（宽带PLC）。	PLC 接
+此时可
+	口参数 > 以太网，
+P 为开，则端口对应	进入以太网界
+的IP 地址失	面
+效，	。
+可以通过虚拟IP 登录设备。	
+端口	默认IP 地址	子网掩码		网关 DNS1	DNS2
+ETH1	12.12.12.12	255.255.2
+55.0		12.12.12.1 1.2.4.8	8.8.8.8
+ETH2	13.13.13.13	255.255.2
+55.0		13.13.13.1 1.2.4.8	8.8.8.8
+ETH5	14.14.14.14	255.255.2
+55.0		14.14.14.1 1.2.4.8	8.8.8.8
+
+[PDF page 83; printed page 73; section 7 Web界面 > 7.10 系统 > 7.10.7 端口参数 > 7.10.7.2 以太网; blocks BLK-63F5288CB3E113B9,BLK-12398DF2517BD5E9,BLK-FE5C957241A1880A,BLK-16AB8C343C63F15C]
+7.10.7.2 以太网
+
+步骤 3 若自动分配IP 为关，填入IP 地址、子网掩码、网关地址等信息，单击
+
+，设置成功。
+
+--结束
+
+[PDF page 83; printed page 73; section 7 Web界面 > 7.10 系统 > 7.10.7 端口参数 > 7.10.7.3 AI; blocks BLK-9905FEE6ACE33B10,BLK-2BACAFF74DC040A3,BLK-87EC6162FEB9BFCC,BLK-4862B6231F67B80F]
+7.10.7.3 AI
+
+步骤 1 单击系统 > 端口参数 > AI，进入AI 界面。
+
+步骤 2 选择输入类型，设置采样下限和采样上限，单击
+
+，信息设置成功。
+
+[PDF page 84; printed page 74; section 7 Web界面 > 7.10 系统 > 7.10.7 端口参数 > 7.10.7.6 电压电流采样; blocks BLK-AB65C0727B87C0A0,BLK-AE3A6D1F5670FA0C]
+用户手册
+7 Web 界面
+
+AI 端口	输入类型	采样下限	采样上限
+AI1	电压（V）	0	10
+AI2	电流（mA）	4	20
+	设备，单击外置，进入
+I，默认进入内置界面。
+常闭，单击 ，信息设
+设备，单击外置，进入
+O，默认进入内置界面。
+或常闭，点击 设置功	界面，可对该设备的A
+置成功。
+界面，可对该设备的D
+能、动作方式，输入脉	I 信息进
+I 信息进
+冲持续时
+	通讯控制表示后台和数	采对端口下发指令，选	择手动控
+
+[PDF page 84; printed page 74; section 7 Web界面 > 7.10 系统 > 7.10.7 端口参数 > 7.10.7.4 DI; blocks BLK-160092A9CBD05865]
+7.10.7.4 DI
+
+[PDF page 84; printed page 74; section 7 Web界面 > 7.10 系统 > 7.10.7 端口参数 > 7.10.7.5 DO; blocks BLK-5DE02BB4395F3928,BLK-036E7B63714B983D,BLK-3FA496A047C0E9EC]
+7.10.7.5 DO
+
+步骤 3 若数据采集器接有外置IO 设备，单击外置，进入界面，可对该设备的DO 信息进行设置。
+
+--结束
+
+[PDF page 84; printed page 74; section 7 Web界面 > 7.10 系统 > 7.10.7 端口参数 > 7.10.7.6 电压电流采样; blocks BLK-455A56B022E859A2,BLK-EBB510754F156D48,BLK-441B1385DFCC8096,BLK-B9604616B0546925,BLK-8BE6BA7EF3B40D78]
+7.10.7.6 电压电流采样
+
+步骤 1 单击系统 > 端口参数 > 电压电流采样，进入界面。
+
+步骤 2 在使能开关下拉框选择使能。默认情况下开关为禁止状态。
+
+步骤 3 若开启电压电流采样功能，可对该设备的电压电流采样接入方式进行设置。
+
+--结束
+
+[PDF page 85; printed page 75; section 7 Web界面 > 7.10 系统 > 7.10.9 证书安全维护; blocks BLK-2827A8ABC0791A16,BLK-6FB2615E828A375D]
+7.10.9 证书安全维护
+
+通过系统 > 证书管理 > 采集/转发/NTS 对时证书，支持导入证书。
+
+[PDF page 91; printed page 81; section 8 固件升级; blocks BLK-E8FA981E7002C693,BLK-DC02C8FBAB3CFB88,BLK-CAC7F1B53FD56605,BLK-9BE7D0EB955D7982,BLK-5DC9B72C577D320F,BLK-6526B1BEA655A990,BLK-B365C6DDD636B615,BLK-07A4FCE58B7628EA]
+8
+固件升级
+
+固件升级提供关键的安全更新和性能优化，是确保设备稳定、安全和高效运行的关键措施。及时
+更新固件可以修复安全漏洞和性能问题，从而减少系统故障并降低维护成本。用户可通过Web 端
+升级阳光电源逆变器、数据采集器和PLC 节点。
+
+升级方式
+说明
+
+Web 端先检测数据采集器同一局域网下是否安
+装iConfig 工具。如已安装iConfig 并下载可用
+升级包，Web 端展示与当前设备匹配的升级
+包。
+
+通过配置工具iConfig 升级*
+
+通过阳光云升级
+Web 端展示阳光云上与当前设备匹配的线上升
+级包。
+
+*通过远程维护登录数据采集器时，不支持通过配置工具iConfig 升级方式进行升级。
+
+iConfig 工具的安装包及使用方法请联系阳光电源客户服务中心获取。
+
+[PDF page 91; printed page 81; section 8 固件升级 > 8.1 升级阳光电源逆变器或PLC从节点; blocks BLK-6F995D23A5D3D37F,BLK-A2F7FF8CA624A568,BLK-094C18FCF698B8F2,BLK-980C03EC9D178B03,BLK-86DACA655BC61901,BLK-2ACAA0C94AEC1891,BLK-5C2AC22C871188FF,BLK-01A37D2316B69D83,BLK-574076E2BF2ED611,BLK-232C3DDCDB94D295,BLK-280C6DAB6D74A307]
+8.1 升级阳光电源逆变器或PLC 从节点
+
+前提条件
+
+根据升级方式准备对应资源文件或配置：
+
+•
+通过配置工具iConfig 升级：已安装iConfig 工具并下载相关升级包。
+
+•
+通过阳光云升级：已接入云服务且当前有可用升级包。见7.10.6.1 转发阳光云服务设
+置。
+
+升级过程不可中断。
+
+步骤 1 导航栏中点击设备维护 > 设备升级，跳转至相应页面。
+
+步骤 2 点击选择升级包，在弹出的对话框中，根据实际情况，选择升级方式。
+
+Web 端将根据升级包文件校验匹配的设备。
+
+步骤 3 在设备升级页勾选需要升级的设备，点击开始升级。
+
+--结束
+升级完成后可查看当前版本号、目标版本号和升级时间等信息。
+
+[PDF page 92; printed page 82; section 8 固件升级 > 8.3 升级PLC主节点; blocks BLK-9E8628F8C1DC27AD]
+用户手册
+8 固件升级
+
+[PDF page 92; printed page 82; section 8 固件升级 > 8.2 升级数据采集器; blocks BLK-C32D08F0543F780F,BLK-CA390CCB45DB7101,BLK-706DACFDF2BECE0D,BLK-E42FAA2B91DEAFA6,BLK-A8F30CB0E2DE9C4D,BLK-54DE19A6DEAB1720,BLK-F6306D106E899EA1,BLK-B947107B49705E6B,BLK-56AA86C794BB112B,BLK-AA1F4A66BBA10E2B,BLK-C7B013E731017C66]
+8.2 升级数据采集器
+
+前提条件
+
+根据升级方式准备对应资源文件或配置：
+
+•
+通过配置工具iConfig 升级：已安装iConfig 工具并下载相关升级包。
+
+•
+通过阳光云升级：已接入云服务且当前有可用升级包。见7.10.6.1 转发阳光云服务设
+置。
+
+步骤 1 导航栏中点击系统 > 系统维护，跳转至相应页面。
+
+步骤 2 点击系统升级，在弹出的对话框中，根据实际情况，选择升级方式。
+
+步骤 3 根据升级方式，按照界面提示，完成升级。
+
+如弹窗提示缺少公钥文件，需通过系统 > 系统维护 > 公钥导入导入升级包对应的公
+钥文件，再进行升级操作。
+
+Web 端将弹窗提示是否确认升级，确认后数据采集器自动重启。新版本在重启后生效。
+
+--结束
+
+[PDF page 92; printed page 82; section 8 固件升级 > 8.3 升级PLC主节点; blocks BLK-F41A2A150A41CB56,BLK-241145DFB399ECFC,BLK-8246E87DD240EF6E,BLK-A4EE323DC1775EDF,BLK-4990168AEBD8747F,BLK-CD2440BC7CF4889E,BLK-D89A4040C71436C0,BLK-89DC53982E98C800,BLK-D8717F9E6AFE41C9,BLK-CC2B0FBDDFA6A31D]
+8.3 升级PLC 主节点
+
+前提条件
+
+根据升级方式准备对应资源文件或配置：
+
+•
+通过配置工具iConfig 升级：已安装iConfig 工具并下载相关升级包。
+
+•
+通过阳光云升级：已接入云服务且当前有可用升级包。见7.10.6.1 转发阳光云服务设
+置。
+
+如当前数据采集器版本为P012 及以下，通过系统 > 系统维护 > 系统升级方式，升
+级PLC 主节点。
+
+步骤 1 导航栏中点击系统 > MPLC > 操作，跳转至相应页面。
+
+步骤 2 点击PLC 模块升级，在弹出的对话框中，根据实际情况，选择升级方式。
+
+步骤 3 根据升级方式，按照界面提示，完成升级。
+
+--结束
+
+[PDF page 93; printed page 83; section 9 用户管理; blocks BLK-BEF8CE06580329CF,BLK-17E66B8FE1AEAB17,BLK-F7D2832BBD8F2998,BLK-EB7FCBF878624CA0]
+9
+用户管理
+
+管理员账号可以创建用户账号、重置账号密码、设置账户保护和会话安全参数、启用研发调试开
+关。
+
+前提条件
+
+•
+操作人员具有管理员权限。
+
+[PDF page 93; printed page 83; section 9 用户管理 > 9.1 初始用户名和密码; blocks BLK-D95F6B18D5ECA7EC,BLK-3D831B5BDD0CBD81,BLK-55CFEFE65B8FCCB4,BLK-2663D9583766CD4D,BLK-1429A3505D4AB3AA]
+9.1 初始用户名和密码
+
+管理员通过对不同的用户设置不同权限的账号，可以提高系统安全性、为不同的用户提升操
+作效率、降低管理成本。不同用户类型登录账号、默认密码和操作权限如下：
+
+表	9-1 1.	用户 Web		
+	用户类型		用户名	操作权限
+	普通用户		user	只有系统的监控权限和简单的设置权
+限。如概览、设备监控和部分历史数据
+的查看。
+	运维用户		maintain	本手册默认描述的所有操作。
+	审计用户		auditor	对所有用户的操作日志，Syslog 日志进
+行审计。
+	管理员		administrator	增加用户、删除用户、修改用户、清空
+用户、会话管理、开发者调试开关、分
+配用户登录证书。
+	开发者用	户	develop	经管理员授权后可执行设备复杂故障的
+定位和排除。
+
+•
+普通用户、运维用户、审计用户、管理员的密码由“用户名”与“设备序列号
+（SN）”拼接而成。例如，若设备SN 为“SN12345678”，用户名为“user”，则对
+应的默认密码为“userSN12345678”。
+
+•
+开发者用户的密码采用动态生成机制，通过客户授权获得设备SN，生成对应的
+动态密码。
+
+[PDF page 94; printed page 84; section 9 用户管理 > 9.2 LDAP管理; blocks BLK-0B43E6127D4C9FB4,BLK-39ADF6C94658C518,BLK-FF43098141B96FB5,BLK-0A1AF9F86AB5C7D6,BLK-638A4ED665545BAD,BLK-BE438B45654EBD94,BLK-0B42C02D05C05B48,BLK-BE5F93824970D94A,BLK-E0A4953DF9726AC6,BLK-2F8718CADAED8FE2]
+用户手册
+9 用户管理
+
+表 9-2 2. 操作系统用户
+
+用户名	默认密码	
+root	根据客户授权获取SN	生成动态密码。
+sg	根据客户授权获取SN	生成动态密码。
+AP 管理
+持LDAP 方式登录，适用于现场支
+过登录管理员账户，点击LDAP 管
+• 当启用LDAP 登录开关时
+密，系统将发出安全警告：
+• LDAP 服务端需支持TLS1	持LDAP 服务的电站，
+理，进入LDAP 管理操	可以对账号集中管理。
+作界面。
+	，系统将同步启用TLS
+“关闭后数据传输将不
+.2 及其以上加密算法才	加密。若用户手动关闭TLS
+再加密，请确认是否关闭？
+能进行通信。
+		
+参数名	说明	
+IP 地址	LDAP 服务器的IP 地址	
+端口号	LDAP 服务器的端口	
+基本标识名	LDAP 基本标识名	
+账号	LDAP 服务器账号
+
+9.2 LDAP 管理
+
+密码
+LDAP 服务器密码
+
+LDAP 登录开关开启后，需填写配置参数并点击保存。成功保存后，界面显示“操作
+成功”。
+
+启用LDAP 登录后，用户在LDAP 登录时将不再看到“请联系管理员开启<LDAP 登录>后重
+
+试 ”的提示，可输入用户名和密码登录。
+
+•
+LDAP 登录不支持忘记密码。
+
+•
+LDAP 登录相关的用户认证信息均存储于客户自有的LDAP 服务器中。
+
+[PDF page 95; printed page 85; section 9 用户管理 > 9.4 忘记密码 > 9.4.2 重置管理员账号密码; blocks BLK-5F4D76FEDB108A0C]
+用户手册
+9 用户管理
+
+[PDF page 95; printed page 85; section 9 用户管理 > 9.3 密码管理; blocks BLK-92C834EBC0635F93,BLK-2C9747AE28F203FD,BLK-11F7C46680143F4F,BLK-1DE0E2FB74C29126,BLK-042C128DE24F5A13,BLK-4004CEF6DF86CAAB,BLK-91774FD95BF952F6,BLK-503C3E9F50A69446,BLK-1A9E9F8A1E61ACA2,BLK-A4723AAA2B990E87,BLK-1ADA4D0AE6DB7D4A,BLK-05304F306447D2C0]
+9.3 密码管理
+
+1. 所有密码均已被加密存储。
+
+2. 所有密码均要求强复杂度，默认密码在初次登陆后需要修改。
+
+3. 如果怀疑密码泄露，请立即修改密码，新密码与旧密码不能相同。
+
+登录管理员用户，可在密码管理页面，动态设置以下参数：
+
+•
+密码最小长度
+
+•
+密码复杂度
+
+•
+新旧密码重复次数
+
+设置完成后，点击保存生效。
+
+4. 所有用户的密码都具备有效期，密码有效期可以通过管理员账户自行设置，可设置的密码
+有效期范围为1~90 天，密码到期请及时修改。
+
+•
+管理员通过对不同的用户设置不同权限的账号，可以提高系统安全性、为不同的
+用户提升操作效率、降低管理成本。
+
+•
+当普通用户登录时出现其他用户登录提示语时，需要先退出其他用户登录。
+
+[PDF page 95; printed page 85; section 9 用户管理 > 9.4 忘记密码; blocks BLK-4015EC4DD36EF2C6,BLK-D6E2E59E13493326]
+9.4 忘记密码
+
+账号密码无法找回。如用户忘记密码，只能通过重置方式重新设置。
+
+[PDF page 95; printed page 85; section 9 用户管理 > 9.4 忘记密码 > 9.4.1 重置用户账号密码; blocks BLK-6129E287F2F1168F,BLK-61275F681ECF4D1E,BLK-8FFFDB405DE7A234,BLK-4426BD4984D9B293,BLK-929758496B500C47,BLK-E1BD1B41E544127F,BLK-790542F3B5C438EC,BLK-644D709F1B2AE07E,BLK-924FCCBC40A5A0F4,BLK-3439E33CFD71C23E]
+9.4.1 重置用户账号密码
+
+重置普通用户、运维用户、审计用户账号。
+
+前提条件
+
+•
+通过管理员账号登录Web 端。见9.1 初始用户名和密码。
+
+步骤 1 导航栏中点击用户管理，跳转至相应页面。
+
+步骤 2 在用户账号对应的操作栏中，点击
+
+，打开修改用户对话框。
+
+步骤 3 重置密码。
+
+步骤 4 点击确定。
+
+--结束
+
+[PDF page 95; printed page 85; section 9 用户管理 > 9.4 忘记密码 > 9.4.2 重置管理员账号密码; blocks BLK-292B9CD931E909F1,BLK-70B36BD10F8E960B,BLK-1B5CDD7127691343,BLK-F21A6FC7F4B2A958,BLK-70F40B0CCFC973A7,BLK-4384E460893C3259]
+9.4.2 重置管理员账号密码
+
+步骤 1 打开Logger5000 的Web 端。
+
+步骤 2 输入管理员账号名称：administrator。
+
+步骤 3 点击忘记密码，打开修改密码对话框。
+
+步骤 4 若管理员账户忘记登录密码，可以通过以下操作，将校验码与设备SN 号发送至SUNGROW
+
+运维，再输入SUNGROW 运维返回的密钥，即可重置密码。
+
+[PDF page 96; printed page 86; section 9 用户管理 > 9.6 创建用户账号; blocks BLK-E8E1C06BE348B86D,BLK-620B618C1489FFE0,BLK-876AB643F43BC32F,BLK-9BD41CAFD1B95288]
+用户手册
+9 用户管理
+
+步骤 5 输入新密码并确认。
+
+步骤 6 点击确定。
+
+--结束
+
+[PDF page 96; printed page 86; section 9 用户管理 > 9.5 配置系统提示; blocks BLK-C72E6B4E5A7402FC,BLK-0E05C6A4B5CC0754,BLK-D5070F0CA37C9742,BLK-A7D8621421EF4161,BLK-DAF12CBC9A00EF32,BLK-4B46BC98E47D47A7]
+9.5 配置系统提示
+
+管理员可配置登录页面系统提示。
+
+步骤 1 通过管理员账号登录Web 端。
+
+步骤 2 点击系统维护，选择系统提示配置。
+
+步骤 3 根据实际需求勾选相应选项，点击确定保存。
+
+--结束
+
+[PDF page 96; printed page 86; section 9 用户管理 > 9.6 创建用户账号; blocks BLK-6BEB8F15426042E7,BLK-FCF1590643813B77,BLK-A9543ED26C0333D9,BLK-AC0987EB40099210,BLK-058363ADCC6FD876,BLK-02A02C9A4C14CC49,BLK-F006F3569F404BB2]
+9.6 创建用户账号
+
+管理员可以创建普通用户、运维用户、审计用户账号，以满足团队的运维需求。
+
+系统默认提供一个运维用户账号“maintain”。
+
+管理员可创建账号，Web 端用户账号总数上限为7 个。
+
+用户名称要求
+
+•
+用户名长度为2~16 位字符，名称需由2-16 位字母、数字组成，且必须以字母开头。
+
+密码要求
+
+[PDF page 97; printed page 87; section 9 用户管理 > 9.9 设置账户保护和会话安全参数; blocks BLK-7D53DBB10BE04067,BLK-E69584649BB2D2FB,BLK-4C1E47DBC136BCD9,BLK-D79577A90636A1A5,BLK-0DD4D91B3B04A9DE,BLK-8D961053F204C49F,BLK-873951595C419C51,BLK-118917D96B86E551,BLK-853C612C4DDE4051,BLK-5651AE02DD8BE0BA]
+用户手册
+9 用户管理
+
+用户设置的密码必须满足管理员设定的复杂度要求，参见9.3 密码管理。
+
+前提条件
+
+•
+通过管理员账号登录Web 端。见9.1 初始用户名和密码。
+
+步骤 1 导航栏中点击用户管理，跳转至相应页面。
+
+步骤 2 点击新增，打开新增用户对话框。
+
+步骤 3 设置用户名和密码。
+
+步骤 4 在权限角色下拉列表中，选择运维用户。
+
+步骤 5 点击确定。
+
+--结束
+
+[PDF page 97; printed page 87; section 9 用户管理 > 9.7 删除用户账号; blocks BLK-60432880A64751E1,BLK-0C35197A1D081414,BLK-D20312BDCC4EF38D,BLK-B9BDEA6C236A70A3,BLK-F983492F53DB39D8,BLK-5368F5CEF5A76B52,BLK-20EF5B9C2EE634CA,BLK-FC88DABE9D851731,BLK-24FDECC7EB8790CC]
+9.7 删除用户账号
+
+前提条件
+
+•
+通过管理员账号登录Web 端。见9.1 初始用户名和密码。
+
+步骤 1 导航栏中点击用户管理，跳转至相应页面。
+
+步骤 2 在用户账号对应的操作栏中，点击
+
+。
+
+步骤 3 在弹窗中，点击确定，删除该用户账号。
+
+步骤 4 点击清空用户，可删除所有用户账号。
+
+--结束
+
+[PDF page 97; printed page 87; section 9 用户管理 > 9.8 重置账号密码; blocks BLK-FF9B86F7696CB16C]
+9.8 重置账号密码
+
+[PDF page 97; printed page 87; section 9 用户管理 > 9.9 设置账户保护和会话安全参数; blocks BLK-1BFBA900726B812A,BLK-28E1BFCE90A9BDBC,BLK-84D45CB76A903A47,BLK-546817B67E7DBFA5,BLK-8593A5A01430EFC1,BLK-FCA98F835D13FB7F,BLK-6316306234344C1A,BLK-D31E9623C5F3B7AD,BLK-B284674F56F08961,BLK-577E857EC8C26D28]
+9.9 设置账户保护和会话安全参数
+
+为了增强账号安全性，你可以配置相关参数以控制登录行为和会话有效性。
+
+前提条件
+
+•
+通过管理员账号登录Web 端。
+
+步骤 1 导航栏中点击会话管理，跳转至相应页面。
+
+步骤 2 修改账户保护和会话安全相关参数。
+
+支持修改下列参数：
+
+•
+非法访问次数：限制用户尝试登录的最大次数。如输入密码错误次数超过指定值，账号将
+自动被锁定。（参数范围：5~20 次；默认值：5）
+
+•
+非法访问时间窗：对用户的非法访问次数进行时间范围约束。如指定小时数内（参数范
+围：1~24h；默认值：24），若非法访问次数超限，则自动锁定账号。
+
+•
+会话超时时间：用户登录后，在指定时间范围内没有操作将导致会话超时，系统将提示用
+户重新登录。（参数范围：1~60min；默认值：10）
+
+[PDF page 98; printed page 88; section 9 用户管理 > 9.11 LDAP管理; blocks BLK-6F3486FE3E0127CE,BLK-71A035BC45D69E05,BLK-76ABA3B6DE8E7399,BLK-A762522DA70C0FCD]
+用户手册
+9 用户管理
+
+•
+用户锁定时间：在账号因连续登录失败被锁定后，设定账号解锁的等待时间。（参数范
+围：1~60min；默认值：10）
+
+步骤 3 点击保存。
+
+--结束
+
+[PDF page 98; printed page 88; section 9 用户管理 > 9.10 启用运维模式; blocks BLK-659503B79BD90D98,BLK-9F22AE64275E5C71]
+9.10 启用运维模式
+
+如允许研发用户登录Web		端进行调试操作，管理员务必启用研发调试开关。
+		态。	
+		9.1 初
+页面。
+。
+持LDA
+理，进	始用户名和密
+P 服务的电站
+入LDAP 管理
+		，系统
+“关闭
+.2 及其	将同步启用TL
+后数据传输将
+以上加密算法
+			
+	参数名	说明	
+	IP 地址	LDAP	服务器的IP 地
+	端口号	LDAP	服务器的端口
+	基本标识名	LDAP	基本标识名
+	账号	LDAP	服务器账号
+
+[PDF page 99; printed page 89; section 9 用户管理 > 9.12 系统维护 > 9.12.2 恢复出厂设置; blocks BLK-7BB187712C307765,BLK-134B6A85CC4E3CD4,BLK-9F31B1F7F117415D,BLK-F1828D80753AE520,BLK-B051B2B8674E13E1,BLK-1068E6FAF038CB40,BLK-5C46A4B7805B45EA]
+用户手册
+9 用户管理
+
+参数名
+说明
+
+密码
+LDAP 服务器密码
+
+LDAP 登录开关开启后，需填写配置参数并点击保存。成功保存后，界面显示“操作
+成功”。
+
+启用LDAP 登录后，用户在LDAP 登录时将不再看到“请联系管理员开启<LDAP 登录>后重
+试 ”的提示，可输入用户名和密码登录。
+
+•
+LDAP 登录不支持忘记密码。
+
+•
+LDAP 登录相关的用户认证信息均存储于客户自有的LDAP 服务器中。
+
+[PDF page 99; printed page 89; section 9 用户管理 > 9.12 系统维护; blocks BLK-B7CD3FB300265D77]
+9.12 系统维护
+
+[PDF page 99; printed page 89; section 9 用户管理 > 9.12 系统维护 > 9.12.1 备份与恢复; blocks BLK-447704D7147D2870,BLK-A9F89FEA3F305DD5,BLK-9C967A055F9E9168,BLK-A22ADF6CA83CD35B,BLK-0E039E633B8DB9DD,BLK-F51FC18FC7B47FC1,BLK-31845A7F7DC63D8E,BLK-1C83D01CB890DE32,BLK-2353C363586A2B4A,BLK-D74AD131180DCDE4]
+9.12.1 备份与恢复
+
+通过管理员用户账号登录，点击系统维护 > 备份与恢复。
+
+备份
+
+1. 点击备份与恢复 > 备份，按下确定按钮以执行备份操作。
+
+2. 设置压缩密码并点击确定，系统将在本地生成加密压缩包。
+
+压缩密码长度为8~32 位，需由大写字母、小写字母、数字、特殊符号中的三种或以
+上组成。
+
+恢复
+
+1. 点击备份与恢复 > 恢复，按下确定按钮以执行恢复操作。
+
+2. 输入备份压缩包的密码，并点击确定。
+
+3. 选择加密的备份压缩包，触发系统重启并完成恢复。
+
+[PDF page 99; printed page 89; section 9 用户管理 > 9.12 系统维护 > 9.12.2 恢复出厂设置; blocks BLK-C6A81544BEF27869,BLK-CD796DC297DEE106,BLK-6627104E75DEE85F,BLK-8CF4281B0C6FBE23,BLK-2692A24CB20C3A3D,BLK-75C4E723A37A9854]
+9.12.2 恢复出厂设置
+
+步骤 1 管理员用户单击系统维护 > 恢复出厂设置，进入界面。
+
+步骤 2 弹出恢复出厂设置界面，单击确定。
+
+步骤 3 界面弹出警示，输入当前用户密码，进行二次鉴权。
+
+--结束
+
+恢复出厂设置将清除所有历史数据及调试日志，请谨慎操作。
+
+[PDF page 100; printed page 90; section 9 用户管理 > 9.13 通信设置 > 9.13.2 三方云; blocks BLK-A223DA90918AA1D3]
+用户手册
+9 用户管理
+
+[PDF page 100; printed page 90; section 9 用户管理 > 9.13 通信设置; blocks BLK-805C60C7E5C2F827]
+9.13 通信设置
+
+[PDF page 100; printed page 90; section 9 用户管理 > 9.13 通信设置 > 9.13.1 阳光云; blocks BLK-9706445749F8889A,BLK-95BE5E587B8C4342,BLK-246DEBE9E6F8F66F,BLK-EE7C24440CF96358,BLK-A20249CED9F8FE4F,BLK-D958717003DF6D60]
+9.13.1 阳光云
+
+1. 请以administrator 身份进行登录，点击通信设置模块，进入 阳光云子模块。
+
+2. 选择通信总开关，接入阳光云功能，授权运维人员可配置远程维护、接入阳光云功能，开
+启该功能则启用阳光云通信通道。
+
+3. 点击下行通信开关，可根据需求设置授权有效期，点击确定进行授权。
+
+如需更新授权有效期，可点击有效期更新重新设置权限时间。权限延长时间将以
+当前设置的时间点为基准进行计算。
+
+4. 配置授权运维人员的查看与控制功能权限范围，按需开启对应功能开关。
+
+[PDF page 100; printed page 90; section 9 用户管理 > 9.13 通信设置 > 9.13.2 三方云; blocks BLK-1A16DF155B1154B9,BLK-84E2F121165CC7A2,BLK-8C65146392F8991F]
+9.13.2 三方云
+
+1. 请以administrator 身份进行登录，点击通讯设置 > 三方云，进入 三方云子页面。
+
+2. 开启三方云开关，并对提示进行确认授权。授权运维人员可配置三方云功能，开启该功能
+则允许设备数据上传到配置的服务器。
+
+[PDF page 112; printed page 102; section 13 附录 > 13.4 软件安全更新说明; blocks BLK-BDFAA79CEA10F3FD,BLK-B41C128EAD54DB78]
+13.4 软件安全更新说明
+
+本产品的软件安全更新期限与产品质保期保持一致。在质保期内，如发现安全漏洞或兼容性
+问题，将提供相应的软件修复补丁或安全更新。

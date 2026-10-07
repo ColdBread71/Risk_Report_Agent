@@ -1,0 +1,123 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-18698C284F3A9E6B",
+  "section_path": [
+    "3 拆包与存储"
+  ],
+  "section_title": "3 拆包与存储",
+  "start_pdf_page": 18,
+  "end_pdf_page": 18,
+  "blocks": [
+    {
+      "block_id": "BLK-FC00E086AD7C05EE",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "8",
+      "block_order": 0,
+      "section_id": "SEC-18698C284F3A9E6B",
+      "section_path": [
+        "3 拆包与存储"
+      ],
+      "section_title": "3 拆包与存储",
+      "block_type": "heading",
+      "text": "3\n拆包与存储",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        98.112,
+        172.451,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A5408F664DBF40A6",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "8",
+      "block_order": 1,
+      "section_id": "SEC-18698C284F3A9E6B",
+      "section_path": [
+        "3 拆包与存储"
+      ],
+      "section_title": "3 拆包与存储",
+      "block_type": "table",
+      "text": "货范围\n据采集器的交\t付清单，如下所示。\t\n序号\t名称\t说明\nA\t数据采集器\t-\nB\t随机文档\t快速安装指导，出厂检验记录，装箱单，产品\n保修卡，合格证\nC\t网线\t1 根\nD\t安装挂耳\t2 个\nE\t安装地脚\t2 个\nF\tOT 端子\t2 个\nG\t尼龙扎带\t10 个\nH\t自攻螺钉组合件\t8 组，包含ST4.8 x 19 膨胀螺管和自攻螺钉，\n用于壁挂式安装。\nI\t紧固件组合\t6 组，M4 x 8 十字槽沉头螺钉，用于将安装挂\n耳固定至数据采集器",
+      "table_cells": [
+        [
+          "货范围\n据采集器的交",
+          "付清单，如下所示。",
+          null
+        ],
+        [
+          "序号",
+          "名称",
+          "说明"
+        ],
+        [
+          "A",
+          "数据采集器",
+          "-"
+        ],
+        [
+          "B",
+          "随机文档",
+          "快速安装指导，出厂检验记录，装箱单，产品\n保修卡，合格证"
+        ],
+        [
+          "C",
+          "网线",
+          "1 根"
+        ],
+        [
+          "D",
+          "安装挂耳",
+          "2 个"
+        ],
+        [
+          "E",
+          "安装地脚",
+          "2 个"
+        ],
+        [
+          "F",
+          "OT 端子",
+          "2 个"
+        ],
+        [
+          "G",
+          "尼龙扎带",
+          "10 个"
+        ],
+        [
+          "H",
+          "自攻螺钉组合件",
+          "8 组，包含ST4.8 x 19 膨胀螺管和自攻螺钉，\n用于壁挂式安装。"
+        ],
+        [
+          "I",
+          "紧固件组合",
+          "6 组，M4 x 8 十字槽沉头螺钉，用于将安装挂\n耳固定至数据采集器"
+        ]
+      ],
+      "bbox": [
+        96.862,
+        125.85,
+        441.819,
+        643.75
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

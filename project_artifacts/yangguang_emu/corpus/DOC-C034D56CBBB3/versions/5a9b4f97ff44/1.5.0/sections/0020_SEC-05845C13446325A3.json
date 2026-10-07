@@ -1,0 +1,773 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-05845C13446325A3",
+  "section_path": [
+    "5 电气连接",
+    "5.4 与逆变器连接",
+    "5.4.1 与RS485端口型逆变器连接"
+  ],
+  "section_title": "5.4.1 与RS485端口型逆变器连接",
+  "start_pdf_page": 29,
+  "end_pdf_page": 30,
+  "blocks": [
+    {
+      "block_id": "BLK-2D25A18F15AE5CC0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "19",
+      "block_order": 0,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "paragraph",
+      "text": "用户手册\n5 电气连接",
+      "table_cells": null,
+      "bbox": [
+        74.619,
+        48.088,
+        463.966,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-475CECA6373D34CB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "19",
+      "block_order": 1,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "paragraph",
+      "text": "标识\n名称\n线缆推荐\n说明",
+      "table_cells": null,
+      "bbox": [
+        111.036,
+        74.539,
+        358.178,
+        84.883
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-02D9E87721F7DA02",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "19",
+      "block_order": 2,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "list",
+      "text": "0.5~0.75mm2",
+      "table_cells": null,
+      "bbox": [
+        263.504,
+        93.829,
+        317.538,
+        104.837
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B3AFB66C0072FFD5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "19",
+      "block_order": 3,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "paragraph",
+      "text": "，线缆耐压要\n求为：线缆对\n地工作电压\n≥1000V",
+      "table_cells": null,
+      "bbox": [
+        263.502,
+        108.193,
+        317.502,
+        158.837
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-80218E2BCD7FB2DB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "19",
+      "block_order": 4,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "paragraph",
+      "text": "L1、L2、L3\nMPLC 通讯接\n口",
+      "table_cells": null,
+      "bbox": [
+        111.035,
+        114.4,
+        240.083,
+        138.853
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-021597B5454F73F2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "19",
+      "block_order": 5,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "paragraph",
+      "text": "可连接至具备MPLC 通讯功\n能的组串逆变器。",
+      "table_cells": null,
+      "bbox": [
+        341.175,
+        114.4,
+        451.686,
+        138.853
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5DF3AB2E6B41981D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "19",
+      "block_order": 6,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "paragraph",
+      "text": "交流供电端口以及MPLC 通讯接口",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        175.094,
+        239.868,
+        186.047
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3D4CA00384B3B00C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "19",
+      "block_order": 7,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "paragraph",
+      "text": "数据采集器上的交流供电端口“AC IN 100–277V,0.48A”以及MPLC 通讯接口“L1、L2、L3”均\n具有高压电。因此，在对数据采集器进行接线前，需确保两种供电输入端均已断电，同时接\n地线已经良好接地。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        193.243,
+        464.625,
+        231.197
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9C1F97425CECBA31",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "19",
+      "block_order": 8,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "paragraph",
+      "text": "数字量输入、输出端口",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        240.393,
+        192.366,
+        251.346
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EAED845BF6F441E2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "19",
+      "block_order": 9,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "paragraph",
+      "text": "数字量输入端口（DI）、数字量输出端口（DO1~DO4）用于采集接点数据和控制接点通\n讯。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        258.543,
+        450.63,
+        282.996
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E49B4AA6ABF9DE5A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "19",
+      "block_order": 10,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "paragraph",
+      "text": "RS485 通讯端口",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        292.194,
+        168.138,
+        303.147
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3679787235425D37",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "19",
+      "block_order": 11,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "paragraph",
+      "text": "RS485 通讯端口（A1B1~A7B7）可支持的通讯距离最大为1000m。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        310.343,
+        373.194,
+        321.296
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A8A3B52A769ACD7E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "19",
+      "block_order": 18,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "heading",
+      "text": "5.4.1 与RS485 端口型逆变器连接",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        486.328,
+        223.433,
+        498.498
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C34628E1199B8254",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "19",
+      "block_order": 19,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "paragraph",
+      "text": "使用RS485 双绞屏蔽线，将数据采集器的任一RS485（A1B1–A7B7）端口与逆变器的\nRS485 通讯端子连接。",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        505.644,
+        447.191,
+        530.097
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9472E58CD002B0B4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "19",
+      "block_order": 20,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "paragraph",
+      "text": "与单台设备接线",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        545.294,
+        165.365,
+        556.247
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-634A054DA5CDA1B7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "19",
+      "block_order": 21,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "paragraph",
+      "text": "与多台设备接线",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        638.248,
+        165.366,
+        649.201
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-828BD06EC1661023",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "19",
+      "block_order": 22,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "paragraph",
+      "text": "数据采集器与多台逆变器连接时，采用RS485 菊花链的总线方式。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        656.398,
+        368.388,
+        667.351
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-30D51DE9CA37096B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 30,
+      "printed_page_label": "20",
+      "block_order": 0,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "paragraph",
+      "text": "用户手册\n5 电气连接",
+      "table_cells": null,
+      "bbox": [
+        60.446,
+        48.088,
+        449.793,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-587C784CBD08AEE9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 30,
+      "printed_page_label": "20",
+      "block_order": 1,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "list",
+      "text": "•\n数据采集器最多支持7 路RS485 总线，最多支持300 台设备接入，每路RS485 总线最\n多支持80 台设备接入。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        304.114,
+        447.428,
+        328.567
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-57E644B6BA521F93",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 30,
+      "printed_page_label": "20",
+      "block_order": 2,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "list",
+      "text": "•\n不同的设备类型必须接入数据采集器不同的RS485 端口，例如箱变与逆变器接入数据采\n集器不同RS485 通讯口。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        332.614,
+        449.381,
+        357.067
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DBE1FCF3C5D8AEA5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 30,
+      "printed_page_label": "20",
+      "block_order": 3,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "list",
+      "text": "•\n每路RS485 总线上所有设备的地址，都必须在数据采集器设置的地址范围（1~246）\n内，而且不能出现重复，否则会导致通信失败。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        361.114,
+        438.662,
+        385.567
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B7D10137BB4373AE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 30,
+      "printed_page_label": "20",
+      "block_order": 4,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "list",
+      "text": "•\n每路RS485 总线上所有设备的串口参数，均与数据采集器的串口参数保持一致。串口参\n数包括波特率、数据位、停止位、校验位。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        389.614,
+        449.381,
+        414.067
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-64BD92208C83D282",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 30,
+      "printed_page_label": "20",
+      "block_order": 5,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "list",
+      "text": "•\n为保障系统通信稳定与数据准确，请确保同一绕组下的逆变器使用同一条RS485 通道接\n入数据采集器。不同绕组下的逆变器不得通过RS485 串联的方式接入数据采集器，否则\n可能导致数据采集失败，由此产生的问题不在保修范围内。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        418.114,
+        449.381,
+        456.067
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-84F4644FE287D571",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 30,
+      "printed_page_label": "20",
+      "block_order": 6,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "paragraph",
+      "text": "接线方法",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        463.264,
+        124.193,
+        474.217
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1BA506873860D344",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 30,
+      "printed_page_label": "20",
+      "block_order": 7,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "paragraph",
+      "text": "步骤 1 将从逆变器引出的RS485 通讯线缆，引至数据采集器接线区域。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        485.992,
+        344.585,
+        498.475
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-03E1DC5F5FDEB6D4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 30,
+      "printed_page_label": "20",
+      "block_order": 8,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "paragraph",
+      "text": "步骤 2 使用剥线钳剥去通讯线缆的防护层。线缆规格及剥线长度，如下所示。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        502.492,
+        366.563,
+        514.975
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-61128DF15056DBD3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 30,
+      "printed_page_label": "20",
+      "block_order": 9,
+      "section_id": "SEC-05845C13446325A3",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.1 与RS485端口型逆变器连接"
+      ],
+      "section_title": "5.4.1 与RS485端口型逆变器连接",
+      "block_type": "paragraph",
+      "text": "步骤 3 对剥除防护层后的通讯线缆安装合适的冷压端子，并使用压线钳压紧。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        612.882,
+        366.563,
+        625.365
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

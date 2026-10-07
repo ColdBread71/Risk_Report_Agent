@@ -1,0 +1,73 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-F8616883A7F8B59D",
+  "section_path": [
+    "5 试运行",
+    "5.3 试运行步骤",
+    "5.3.4 PLC模块连接"
+  ],
+  "section_title": "5.3.4 PLC模块连接",
+  "start_pdf_page": 50,
+  "end_pdf_page": 50,
+  "blocks": [
+    {
+      "block_id": "BLK-6BD51F02D208708C",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "44",
+      "block_order": 3,
+      "section_id": "SEC-F8616883A7F8B59D",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.4 PLC模块连接"
+      ],
+      "section_title": "5.3.4 PLC模块连接",
+      "block_type": "heading",
+      "text": "5.3.4 PLC 模块连接",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        165.59,
+        143.137,
+        177.76
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-74EDC320B52C99C5",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "44",
+      "block_order": 4,
+      "section_id": "SEC-F8616883A7F8B59D",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.4 PLC模块连接"
+      ],
+      "section_title": "5.3.4 PLC模块连接",
+      "block_type": "paragraph",
+      "text": "PLC 模块连接可以通过数据采集器嵌入式Web 进行参数设置。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        184.814,
+        323.923,
+        195.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

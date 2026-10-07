@@ -1,0 +1,353 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-401FE8904E334A75",
+  "section_path": [
+    "3 机械安装",
+    "3.5 安装方法",
+    "3.5.3 落地式安装"
+  ],
+  "section_title": "3.5.3 落地式安装",
+  "start_pdf_page": 24,
+  "end_pdf_page": 25,
+  "blocks": [
+    {
+      "block_id": "BLK-11D24DE7EA31BD30",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 24,
+      "printed_page_label": "18",
+      "block_order": 0,
+      "section_id": "SEC-401FE8904E334A75",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.3 落地式安装"
+      ],
+      "section_title": "3.5.3 落地式安装",
+      "block_type": "paragraph",
+      "text": "用户手册\n3 机械安装",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B05770913EA72780",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 24,
+      "printed_page_label": "18",
+      "block_order": 1,
+      "section_id": "SEC-401FE8904E334A75",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.3 落地式安装"
+      ],
+      "section_title": "3.5.3 落地式安装",
+      "block_type": "paragraph",
+      "text": "步骤 3 检查以确认设备安装牢固。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        216.747,
+        195.563,
+        229.23
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C8185C5F447CA53F",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 24,
+      "printed_page_label": "18",
+      "block_order": 2,
+      "section_id": "SEC-401FE8904E334A75",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.3 落地式安装"
+      ],
+      "section_title": "3.5.3 落地式安装",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        233.319,
+        112.187,
+        244.272
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CDDA5CA545605A96",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 24,
+      "printed_page_label": "18",
+      "block_order": 3,
+      "section_id": "SEC-401FE8904E334A75",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.3 落地式安装"
+      ],
+      "section_title": "3.5.3 落地式安装",
+      "block_type": "heading",
+      "text": "3.5.3 落地式安装",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        260.153,
+        133.687,
+        272.323
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A13A2BD7D5C3CE6D",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 24,
+      "printed_page_label": "18",
+      "block_order": 4,
+      "section_id": "SEC-401FE8904E334A75",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.3 落地式安装"
+      ],
+      "section_title": "3.5.3 落地式安装",
+      "block_type": "paragraph",
+      "text": "落地式安装通过设备底部的安装孔（下图A）固定在地基上。",
+      "table_cells": null,
+      "bbox": [
+        88.192,
+        279.469,
+        330.445,
+        290.422
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E63E1F7C4BCF307F",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 24,
+      "printed_page_label": "18",
+      "block_order": 5,
+      "section_id": "SEC-401FE8904E334A75",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.3 落地式安装"
+      ],
+      "section_title": "3.5.3 落地式安装",
+      "block_type": "paragraph",
+      "text": "为避免电缆过度弯曲，建议EMU300A 底部距离地面为30cm。",
+      "table_cells": null,
+      "bbox": [
+        88.192,
+        300.969,
+        337.969,
+        311.922
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E546C527DF870DAC",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 24,
+      "printed_page_label": "18",
+      "block_order": 6,
+      "section_id": "SEC-401FE8904E334A75",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.3 落地式安装"
+      ],
+      "section_title": "3.5.3 落地式安装",
+      "block_type": "paragraph",
+      "text": "步骤 1 根据设备的外形尺寸，建造地基。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        406.674,
+        222.563,
+        419.157
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F73FDE0E1C23A747",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 24,
+      "printed_page_label": "18",
+      "block_order": 7,
+      "section_id": "SEC-401FE8904E334A75",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.3 落地式安装"
+      ],
+      "section_title": "3.5.3 落地式安装",
+      "block_type": "paragraph",
+      "text": "步骤 2 在地基的四角预埋地脚螺栓，螺栓规格：M10。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        423.174,
+        276.068,
+        435.657
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-59015588721FB02D",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 25,
+      "printed_page_label": "19",
+      "block_order": 0,
+      "section_id": "SEC-401FE8904E334A75",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.3 落地式安装"
+      ],
+      "section_title": "3.5.3 落地式安装",
+      "block_type": "paragraph",
+      "text": "用户手册\n3 机械安装",
+      "table_cells": null,
+      "bbox": [
+        74.616,
+        48.088,
+        463.963,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E266CF94A8E3F0A2",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 25,
+      "printed_page_label": "19",
+      "block_order": 1,
+      "section_id": "SEC-401FE8904E334A75",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.3 落地式安装"
+      ],
+      "section_title": "3.5.3 落地式安装",
+      "block_type": "paragraph",
+      "text": "地脚螺栓未包含在供货范围。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        78.056,
+        245.735,
+        89.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-39047CC2A6E069E3",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 25,
+      "printed_page_label": "19",
+      "block_order": 2,
+      "section_id": "SEC-401FE8904E334A75",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.3 落地式安装"
+      ],
+      "section_title": "3.5.3 落地式安装",
+      "block_type": "paragraph",
+      "text": "步骤 3 将设备底部安装孔与地基固定。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        106.284,
+        227.736,
+        118.767
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-66312375EC32C459",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 25,
+      "printed_page_label": "19",
+      "block_order": 3,
+      "section_id": "SEC-401FE8904E334A75",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.3 落地式安装"
+      ],
+      "section_title": "3.5.3 落地式安装",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        122.856,
+        126.36,
+        133.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

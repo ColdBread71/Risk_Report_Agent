@@ -1,0 +1,163 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-A3635CC0586AC838",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.8 转发MODBUS服务配置",
+    "7.8.8.1 Server模式"
+  ],
+  "section_title": "7.8.8.1 Server模式",
+  "start_pdf_page": 76,
+  "end_pdf_page": 76,
+  "blocks": [
+    {
+      "block_id": "BLK-62E5FA2B5885A1C8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 1,
+      "section_id": "SEC-A3635CC0586AC838",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.1 Server模式"
+      ],
+      "section_title": "7.8.8.1 Server模式",
+      "block_type": "heading",
+      "text": "7.8.8.1 Server 模式",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        71.59,
+        141.473,
+        83.76
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1A4272749FA98472",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 2,
+      "section_id": "SEC-A3635CC0586AC838",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.1 Server模式"
+      ],
+      "section_title": "7.8.8.1 Server模式",
+      "block_type": "paragraph",
+      "text": "“Server 模式”是数据采集器作为服务器，通过Modbus TCP 协议，上位机服务器连接数据采集\n器，进行数据和指令传输。",
+      "table_cells": null,
+      "bbox": [
+        88.195,
+        90.814,
+        438.369,
+        113.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6CC3983B34C70217",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 3,
+      "section_id": "SEC-A3635CC0586AC838",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.1 Server模式"
+      ],
+      "section_title": "7.8.8.1 Server模式",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击系统 > 转发配置 > MODBUS，默认进入Server 界面。",
+      "table_cells": null,
+      "bbox": [
+        56.689,
+        122.984,
+        322.585,
+        135.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F904AAB8889B6BB4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 4,
+      "section_id": "SEC-A3635CC0586AC838",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.1 Server模式"
+      ],
+      "section_title": "7.8.8.1 Server模式",
+      "block_type": "paragraph",
+      "text": "步骤 2 白名单设置参考7.8.7.1 白名单设置。",
+      "table_cells": null,
+      "bbox": [
+        56.689,
+        139.484,
+        236.833,
+        151.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-57B5BE574242AEEA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 5,
+      "section_id": "SEC-A3635CC0586AC838",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.1 Server模式"
+      ],
+      "section_title": "7.8.8.1 Server模式",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.189,
+        156.056,
+        112.183,
+        167.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

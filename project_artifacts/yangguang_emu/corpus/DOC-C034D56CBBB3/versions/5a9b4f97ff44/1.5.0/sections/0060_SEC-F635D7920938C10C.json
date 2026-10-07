@@ -1,0 +1,353 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-F635D7920938C10C",
+  "section_path": [
+    "7 Web界面",
+    "7.5 设备监控",
+    "7.5.11 设备指令"
+  ],
+  "section_title": "7.5.11 设备指令",
+  "start_pdf_page": 53,
+  "end_pdf_page": 53,
+  "blocks": [
+    {
+      "block_id": "BLK-A17BDA4718775DF2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 17,
+      "section_id": "SEC-F635D7920938C10C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.11 设备指令"
+      ],
+      "section_title": "7.5.11 设备指令",
+      "block_type": "heading",
+      "text": "7.5.11 设备指令",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        362.49,
+        142.68,
+        374.66
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-036937E644E5C631",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 18,
+      "section_id": "SEC-F635D7920938C10C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.11 设备指令"
+      ],
+      "section_title": "7.5.11 设备指令",
+      "block_type": "paragraph",
+      "text": "可以对阳光电源的逆变器执行开机、关机和恢复出厂设置操作。支持单台设置和批量设置。",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        381.714,
+        442.365,
+        392.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CD3E32F3743EC3A1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 19,
+      "section_id": "SEC-F635D7920938C10C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.11 设备指令"
+      ],
+      "section_title": "7.5.11 设备指令",
+      "block_type": "paragraph",
+      "text": "以开机操作为例：",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        401.206,
+        174.363,
+        412.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DD03625369B4E137",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 20,
+      "section_id": "SEC-F635D7920938C10C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.11 设备指令"
+      ],
+      "section_title": "7.5.11 设备指令",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击设备监控 > 设备指令，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        417.934,
+        255.993,
+        430.417
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-368848A833C807AA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 21,
+      "section_id": "SEC-F635D7920938C10C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.11 设备指令"
+      ],
+      "section_title": "7.5.11 设备指令",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        436.705,
+        119.733,
+        449.188
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D2A23F948F31D671",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 22,
+      "section_id": "SEC-F635D7920938C10C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.11 设备指令"
+      ],
+      "section_title": "7.5.11 设备指令",
+      "block_type": "paragraph",
+      "text": "，在下拉框中选择需要的设备类型。",
+      "table_cells": null,
+      "bbox": [
+        133.911,
+        438.127,
+        277.911,
+        449.08
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-863A6C36198C719B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 23,
+      "section_id": "SEC-F635D7920938C10C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.11 设备指令"
+      ],
+      "section_title": "7.5.11 设备指令",
+      "block_type": "paragraph",
+      "text": "步骤 3 选择设备，单击开机，弹出开机对话框。点击开机。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        453.205,
+        308.736,
+        465.688
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-862D230F4734913A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 24,
+      "section_id": "SEC-F635D7920938C10C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.11 设备指令"
+      ],
+      "section_title": "7.5.11 设备指令",
+      "block_type": "paragraph",
+      "text": "步骤 4 单击是，对单台设备执行开机操作。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        469.705,
+        245.736,
+        482.188
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0225DF1781C7C4A6",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 25,
+      "section_id": "SEC-F635D7920938C10C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.11 设备指令"
+      ],
+      "section_title": "7.5.11 设备指令",
+      "block_type": "paragraph",
+      "text": "步骤 5 批量开机。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        486.205,
+        146.736,
+        498.688
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-114BF9D0DC0BFA52",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 26,
+      "section_id": "SEC-F635D7920938C10C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.11 设备指令"
+      ],
+      "section_title": "7.5.11 设备指令",
+      "block_type": "paragraph",
+      "text": "a. 在开机对话框中，单击配置同步。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        504.127,
+        250.911,
+        515.08
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9E3F43F9D94C3FA5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 27,
+      "section_id": "SEC-F635D7920938C10C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.11 设备指令"
+      ],
+      "section_title": "7.5.11 设备指令",
+      "block_type": "paragraph",
+      "text": "b. 在弹出的设备列表中勾选需要设置的设备，单击保存。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        519.127,
+        331.911,
+        530.08
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-35B5E61607F841D3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 28,
+      "section_id": "SEC-F635D7920938C10C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.11 设备指令"
+      ],
+      "section_title": "7.5.11 设备指令",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        534.277,
+        126.36,
+        545.23
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

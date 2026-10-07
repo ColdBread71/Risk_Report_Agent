@@ -1,0 +1,366 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-0069B43004C21283",
+  "section_path": [
+    "7 Web界面",
+    "7.5 设备监控",
+    "7.5.14 风道健康度检测",
+    "7.5.14.1 使能风道健康度检测开关"
+  ],
+  "section_title": "7.5.14.1 使能风道健康度检测开关",
+  "start_pdf_page": 58,
+  "end_pdf_page": 58,
+  "blocks": [
+    {
+      "block_id": "BLK-1C669DD7B08E977A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 7,
+      "section_id": "SEC-0069B43004C21283",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.1 使能风道健康度检测开关"
+      ],
+      "section_title": "7.5.14.1 使能风道健康度检测开关",
+      "block_type": "heading",
+      "text": "7.5.14.1 使能风道健康度检测开关",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        225.19,
+        207.583,
+        237.36
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CC390202E32872BD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 8,
+      "section_id": "SEC-0069B43004C21283",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.1 使能风道健康度检测开关"
+      ],
+      "section_title": "7.5.14.1 使能风道健康度检测开关",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        88.189,
+        244.506,
+        124.189,
+        255.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0C7312D561B6D61E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 9,
+      "section_id": "SEC-0069B43004C21283",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.1 使能风道健康度检测开关"
+      ],
+      "section_title": "7.5.14.1 使能风道健康度检测开关",
+      "block_type": "paragraph",
+      "text": "已完成逆变器设备添加且方阵中必须包含SG320HX-20 设备。",
+      "table_cells": null,
+      "bbox": [
+        88.189,
+        261.656,
+        335.221,
+        272.609
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DFEA7B1EED16AEA4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 10,
+      "section_id": "SEC-0069B43004C21283",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.1 使能风道健康度检测开关"
+      ],
+      "section_title": "7.5.14.1 使能风道健康度检测开关",
+      "block_type": "paragraph",
+      "text": "开启风道健康度检测功能前，请先使能风道健康度检测开关。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        284.956,
+        358.193,
+        295.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8DB62ECE4EE6F657",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 11,
+      "section_id": "SEC-0069B43004C21283",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.1 使能风道健康度检测开关"
+      ],
+      "section_title": "7.5.14.1 使能风道健康度检测开关",
+      "block_type": "paragraph",
+      "text": "步骤 1 导航栏中依次单击智能分析 > 风道健康度检测，跳转至对应界面。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        316.184,
+        349.823,
+        328.667
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1336676C8C40CAD5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 12,
+      "section_id": "SEC-0069B43004C21283",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.1 使能风道健康度检测开关"
+      ],
+      "section_title": "7.5.14.1 使能风道健康度检测开关",
+      "block_type": "paragraph",
+      "text": "步骤 2 默认情况下，风道健康度检测功能开关处于关闭状态，在风道健康度检测下拉框中选择使",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        332.684,
+        438.563,
+        345.167
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9301FFB19E803546",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 13,
+      "section_id": "SEC-0069B43004C21283",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.1 使能风道健康度检测开关"
+      ],
+      "section_title": "7.5.14.1 使能风道健康度检测开关",
+      "block_type": "paragraph",
+      "text": "能，打开风道健康度检测开关。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        347.606,
+        213.563,
+        358.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-39744D03DD277009",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 14,
+      "section_id": "SEC-0069B43004C21283",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.1 使能风道健康度检测开关"
+      ],
+      "section_title": "7.5.14.1 使能风道健康度检测开关",
+      "block_type": "paragraph",
+      "text": "步骤 3 在海拔高度文本框中输入数据采集器准确的海拔高度。默认为0~1500，单位为m。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        362.684,
+        417.845,
+        375.167
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-32FF9E76FFD9B44A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 15,
+      "section_id": "SEC-0069B43004C21283",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.1 使能风道健康度检测开关"
+      ],
+      "section_title": "7.5.14.1 使能风道健康度检测开关",
+      "block_type": "list",
+      "text": "•\n若海拔高度超过1500m，必须进行设置，否则会影响检测数据不准确；若海拔高度不超\n过1500m，则无需设置。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        380.606,
+        446.501,
+        405.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-50C04EDD9BA8CBA5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 16,
+      "section_id": "SEC-0069B43004C21283",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.1 使能风道健康度检测开关"
+      ],
+      "section_title": "7.5.14.1 使能风道健康度检测开关",
+      "block_type": "list",
+      "text": "•\n海拔高度设置误差不得超过200m，否则会影响数据检测准确性。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        409.106,
+        360.497,
+        420.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4275F4F35BB6F6B1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 17,
+      "section_id": "SEC-0069B43004C21283",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.1 使能风道健康度检测开关"
+      ],
+      "section_title": "7.5.14.1 使能风道健康度检测开关",
+      "block_type": "paragraph",
+      "text": "步骤 4 单击保存。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        424.184,
+        132.563,
+        436.667
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-51BAE834F9E259E2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 58,
+      "printed_page_label": "48",
+      "block_order": 18,
+      "section_id": "SEC-0069B43004C21283",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.14 风道健康度检测",
+        "7.5.14.1 使能风道健康度检测开关"
+      ],
+      "section_title": "7.5.14.1 使能风道健康度检测开关",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        440.756,
+        112.187,
+        451.709
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

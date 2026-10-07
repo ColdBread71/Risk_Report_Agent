@@ -1,0 +1,409 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-2F94D27FD3E7386F",
+  "section_path": [
+    "12 附录：MOXA EDS-408A 安全加固操作指导",
+    "12.2 交换机密码更新周期管理说明",
+    "12.2.1 CLI密码更新指南"
+  ],
+  "section_title": "12.2.1 CLI密码更新指南",
+  "start_pdf_page": 32,
+  "end_pdf_page": 32,
+  "blocks": [
+    {
+      "block_id": "BLK-2D167330417F4345",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "28",
+      "block_order": 1,
+      "section_id": "SEC-2F94D27FD3E7386F",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.2 交换机密码更新周期管理说明",
+        "12.2.1 CLI密码更新指南"
+      ],
+      "section_title": "12.2.1 CLI密码更新指南",
+      "block_type": "heading",
+      "text": "12.2.1 CLI 密码更新指南",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        71.59,
+        164.803,
+        83.76
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-41C649321EC9FCF3",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "28",
+      "block_order": 2,
+      "section_id": "SEC-2F94D27FD3E7386F",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.2 交换机密码更新周期管理说明",
+        "12.2.1 CLI密码更新指南"
+      ],
+      "section_title": "12.2.1 CLI密码更新指南",
+      "block_type": "paragraph",
+      "text": "步骤 1 首先通过console 连接交换机，然后打开串口调试界面。",
+      "table_cells": null,
+      "bbox": [
+        56.695,
+        89.484,
+        312.079,
+        101.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-50F7C65843B01D86",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "28",
+      "block_order": 3,
+      "section_id": "SEC-2F94D27FD3E7386F",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.2 交换机密码更新周期管理说明",
+        "12.2.1 CLI密码更新指南"
+      ],
+      "section_title": "12.2.1 CLI密码更新指南",
+      "block_type": "list",
+      "text": "•\n波特率：115200",
+      "table_cells": null,
+      "bbox": [
+        87.565,
+        107.406,
+        167.089,
+        118.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D50D59F83CC89D41",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "28",
+      "block_order": 4,
+      "section_id": "SEC-2F94D27FD3E7386F",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.2 交换机密码更新周期管理说明",
+        "12.2.1 CLI密码更新指南"
+      ],
+      "section_title": "12.2.1 CLI密码更新指南",
+      "block_type": "list",
+      "text": "•\n数据位：8",
+      "table_cells": null,
+      "bbox": [
+        87.565,
+        122.406,
+        142.744,
+        133.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9BBED192559D783F",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "28",
+      "block_order": 5,
+      "section_id": "SEC-2F94D27FD3E7386F",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.2 交换机密码更新周期管理说明",
+        "12.2.1 CLI密码更新指南"
+      ],
+      "section_title": "12.2.1 CLI密码更新指南",
+      "block_type": "list",
+      "text": "•\n校验位：None",
+      "table_cells": null,
+      "bbox": [
+        87.565,
+        137.406,
+        159.25,
+        148.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-387F7247F652EBDC",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "28",
+      "block_order": 6,
+      "section_id": "SEC-2F94D27FD3E7386F",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.2 交换机密码更新周期管理说明",
+        "12.2.1 CLI密码更新指南"
+      ],
+      "section_title": "12.2.1 CLI密码更新指南",
+      "block_type": "list",
+      "text": "•\n停止位：1",
+      "table_cells": null,
+      "bbox": [
+        87.565,
+        152.406,
+        142.744,
+        163.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5A185CC707FED6BB",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "28",
+      "block_order": 7,
+      "section_id": "SEC-2F94D27FD3E7386F",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.2 交换机密码更新周期管理说明",
+        "12.2.1 CLI密码更新指南"
+      ],
+      "section_title": "12.2.1 CLI密码更新指南",
+      "block_type": "list",
+      "text": "•\n终端类型：vt100",
+      "table_cells": null,
+      "bbox": [
+        87.565,
+        167.406,
+        168.754,
+        178.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6F1A193FFBDE0B79",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "28",
+      "block_order": 8,
+      "section_id": "SEC-2F94D27FD3E7386F",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.2 交换机密码更新周期管理说明",
+        "12.2.1 CLI密码更新指南"
+      ],
+      "section_title": "12.2.1 CLI密码更新指南",
+      "block_type": "paragraph",
+      "text": "修改密码操作命令如下所示：",
+      "table_cells": null,
+      "bbox": [
+        87.565,
+        182.406,
+        204.565,
+        193.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F94892BCD1273A15",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "28",
+      "block_order": 9,
+      "section_id": "SEC-2F94D27FD3E7386F",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.2 交换机密码更新周期管理说明",
+        "12.2.1 CLI密码更新指南"
+      ],
+      "section_title": "12.2.1 CLI密码更新指南",
+      "block_type": "paragraph",
+      "text": "步骤 2 通过configure 进入配置修改。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        285.762,
+        210.089,
+        298.245
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6183CA1F30AEA325",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "28",
+      "block_order": 10,
+      "section_id": "SEC-2F94D27FD3E7386F",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.2 交换机密码更新周期管理说明",
+        "12.2.1 CLI密码更新指南"
+      ],
+      "section_title": "12.2.1 CLI密码更新指南",
+      "block_type": "paragraph",
+      "text": "密码修改命令：username admin password XXXXXX",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        303.684,
+        297.119,
+        314.637
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-36B8CDA301E2C895",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "28",
+      "block_order": 11,
+      "section_id": "SEC-2F94D27FD3E7386F",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.2 交换机密码更新周期管理说明",
+        "12.2.1 CLI密码更新指南"
+      ],
+      "section_title": "12.2.1 CLI密码更新指南",
+      "block_type": "paragraph",
+      "text": "步骤 3 修改完成后，输入exit 退出配置模式。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        354.32,
+        241.067,
+        366.803
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A86DCAE431FBEAD0",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "28",
+      "block_order": 12,
+      "section_id": "SEC-2F94D27FD3E7386F",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.2 交换机密码更新周期管理说明",
+        "12.2.1 CLI密码更新指南"
+      ],
+      "section_title": "12.2.1 CLI密码更新指南",
+      "block_type": "paragraph",
+      "text": "步骤 4 输入save config 保存密码。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        370.82,
+        200.594,
+        383.303
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-817426C5CD0D42EC",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "28",
+      "block_order": 13,
+      "section_id": "SEC-2F94D27FD3E7386F",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.2 交换机密码更新周期管理说明",
+        "12.2.1 CLI密码更新指南"
+      ],
+      "section_title": "12.2.1 CLI密码更新指南",
+      "block_type": "paragraph",
+      "text": "如果密码遗忘，会导致无法进行登入设备，只能将设备寄回由Moxa 处理。",
+      "table_cells": null,
+      "bbox": [
+        114.562,
+        393.892,
+        411.067,
+        404.845
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-906B407995F96014",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "28",
+      "block_order": 14,
+      "section_id": "SEC-2F94D27FD3E7386F",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.2 交换机密码更新周期管理说明",
+        "12.2.1 CLI密码更新指南"
+      ],
+      "section_title": "12.2.1 CLI密码更新指南",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        422.192,
+        112.187,
+        433.145
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

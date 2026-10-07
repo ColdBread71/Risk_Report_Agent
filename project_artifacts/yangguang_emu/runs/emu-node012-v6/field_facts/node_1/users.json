@@ -1,0 +1,377 @@
+{
+  "schema_version": "field_fact_checkpoint.v2",
+  "node_id": "node_1",
+  "field_id": "users",
+  "index_id": "IDX-3B116ADDF3BB03CC",
+  "packet_sha256": "72b4edb157146ab00e787c44d51d83fccc65b72bc299506d24f38be0fd4704bc",
+  "text_model": "qwen-plus",
+  "retrieval_profile_version": "1.1",
+  "field_fact_prompt_version": "2.2",
+  "field_fact_schema_sha256": "0f478546b256a855e3ca4dc4218d2b3a32d2d428b89b976aa69639129864c0e5",
+  "result": {
+    "node_id": "node_1",
+    "field_id": "users",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "系统定义五类Web用户类型：普通用户、运维用户、审计用户、管理员、开发者用户。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "普通用户的默认用户名为“user”，操作权限仅限于系统监控和简单设置，如概览、设备监控及部分历史数据查看。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "运维用户的默认用户名为“maintain”，操作权限覆盖本手册默认描述的所有操作。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "审计用户的默认用户名为“auditor”，操作权限为对所有用户的操作日志和Syslog日志进行审计。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "管理员的默认用户名为“administrator”，操作权限包括增加/删除/修改/清空用户、会话管理、开发者调试开关、分配用户登录证书。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "开发者用户的默认用户名为“develop”，需经管理员授权后方可执行设备复杂故障的定位和排除。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "普通用户、运维用户、审计用户、管理员的默认密码由“用户名”与“设备序列号（SN）”拼接生成；例如SN为“SN12345678”、用户名为“user”，则默认密码为“userSN12345678”。",
+        "block_ids": [
+          "BLK-9E90596A86CAF9FA",
+          "BLK-2663D9583766CD4D"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "开发者用户的密码采用动态密码机制，通过客户授权获取设备SN后生成。",
+        "block_ids": [
+          "BLK-9E90596A86CAF9FA"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "操作系统用户“root”的默认密码根据客户授权获取SN生成动态密码。",
+        "block_ids": [
+          "BLK-9E90596A86CAF9FA",
+          "BLK-B69166A4A2ED2877"
+        ],
+        "is_uncertain": true
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "所有用户的密码具备有效期，有效期范围为1~90天，且可通过管理员账户自行设置。",
+        "block_ids": [
+          "BLK-62C710106569541C",
+          "BLK-A4723AAA2B990E87"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "当普通用户登录时出现其他用户登录提示语，需先退出其他用户登录。",
+        "block_ids": [
+          "BLK-87F9E7FD87F93ED5",
+          "BLK-05304F306447D2C0"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "在用户管理界面中，可为新账户选择“运维用户”作为权限角色。",
+        "block_ids": [
+          "BLK-118917D96B86E551"
+        ],
+        "is_uncertain": false
+      }
+    ],
+    "unknowns": [
+      "Logger4000是否交付或启用未确认，其用户体系未被证据支持（GAP-LOGGER4000-SCOPE）",
+      "是否存在安装人员角色未在任何用户列表中提及",
+      "‘阳光云’通信设置中‘授权运维人员’的具体身份定义（是否等同于本手册定义的运维用户？是否含远程第三方？）未明确说明",
+      "开发者用户授权的具体流程、触发条件及是否依赖合同配置未说明",
+      "管理员是否为唯一可执行用户管理操作的角色（即：是否存在其他高权限角色可执行子集操作）未明确"
+    ],
+    "contradictions": []
+  },
+  "retrieval_trace": {
+    "schema_version": "1.0",
+    "request": {
+      "project_id": "yangguang_emu",
+      "node_id": "node_1",
+      "field_id": "users",
+      "query": null,
+      "filters": {
+        "document_ids": [],
+        "section_path_terms": [],
+        "block_types": [],
+        "exclude_review_required": false
+      },
+      "token_budget": 12000,
+      "max_blocks": 24,
+      "neighbor_window": 1
+    },
+    "effective_query": "用户类型 管理员 运维人员 安装人员 操作员 权限 角色 责任 经验要求",
+    "index_id": "IDX-3B116ADDF3BB03CC",
+    "scope_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "packet_id": "rag_yangguang_emu_node_1_users_1d58065e34d2",
+    "packet_sha256": "72b4edb157146ab00e787c44d51d83fccc65b72bc299506d24f38be0fd4704bc",
+    "candidate_count": 1041,
+    "selected_count": 24,
+    "selected_token_count": 2254,
+    "truncated_by_budget": false,
+    "truncated_by_max_blocks": true,
+    "hits": [
+      {
+        "block_id": "BLK-55CFEFE65B8FCCB4",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 1,
+        "score": 0.5759066263834636,
+        "estimated_tokens": 271,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-3D831B5BDD0CBD81",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 2,
+        "score": 0.5759066263834636,
+        "estimated_tokens": 142,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-55CFEFE65B8FCCB4"
+      },
+      {
+        "block_id": "BLK-2663D9583766CD4D",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 3,
+        "score": 0.5759066263834636,
+        "estimated_tokens": 156,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-55CFEFE65B8FCCB4"
+      },
+      {
+        "block_id": "BLK-61D4A48CF0FCF3E6",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 4,
+        "score": 0.5737146059672038,
+        "estimated_tokens": 96,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-341F42D6A55FBC5E",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 5,
+        "score": 0.5737146059672038,
+        "estimated_tokens": 38,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-61D4A48CF0FCF3E6"
+      },
+      {
+        "block_id": "BLK-4417EC6A57B44907",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 6,
+        "score": 0.5737146059672038,
+        "estimated_tokens": 44,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-61D4A48CF0FCF3E6"
+      },
+      {
+        "block_id": "BLK-D95F6B18D5ECA7EC",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 7,
+        "score": 0.567568318049113,
+        "estimated_tokens": 88,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-3D831B5BDD0CBD81"
+      },
+      {
+        "block_id": "BLK-9E90596A86CAF9FA",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 8,
+        "score": 0.548124901453654,
+        "estimated_tokens": 370,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-B69166A4A2ED2877",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 9,
+        "score": 0.548124901453654,
+        "estimated_tokens": 51,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-9E90596A86CAF9FA"
+      },
+      {
+        "block_id": "BLK-EB7FCBF878624CA0",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 10,
+        "score": 0.5381313112046984,
+        "estimated_tokens": 80,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-F7D2832BBD8F2998",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 11,
+        "score": 0.5381313112046984,
+        "estimated_tokens": 73,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-EB7FCBF878624CA0"
+      },
+      {
+        "block_id": "BLK-0FB300025B64DD8D",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 12,
+        "score": 0.5307979371812609,
+        "estimated_tokens": 78,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-08E8F60318D1EDD7",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 13,
+        "score": 0.5307979371812609,
+        "estimated_tokens": 38,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-0FB300025B64DD8D"
+      },
+      {
+        "block_id": "BLK-2C9EB29CBEE48879",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 14,
+        "score": 0.5307979371812609,
+        "estimated_tokens": 36,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-0FB300025B64DD8D"
+      },
+      {
+        "block_id": "BLK-1ADA4D0AE6DB7D4A",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 15,
+        "score": 0.5226151254442003,
+        "estimated_tokens": 125,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-A4723AAA2B990E87",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 16,
+        "score": 0.5226151254442003,
+        "estimated_tokens": 131,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-1ADA4D0AE6DB7D4A"
+      },
+      {
+        "block_id": "BLK-05304F306447D2C0",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 17,
+        "score": 0.5226151254442003,
+        "estimated_tokens": 104,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-1ADA4D0AE6DB7D4A"
+      },
+      {
+        "block_id": "BLK-118917D96B86E551",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 18,
+        "score": 0.5078140046861437,
+        "estimated_tokens": 108,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-873951595C419C51",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 19,
+        "score": 0.5078140046861437,
+        "estimated_tokens": 98,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-118917D96B86E551"
+      },
+      {
+        "block_id": "BLK-853C612C4DDE4051",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 20,
+        "score": 0.5078140046861437,
+        "estimated_tokens": 98,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-118917D96B86E551"
+      },
+      {
+        "block_id": "BLK-659A5757D7076C39",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 21,
+        "score": 0.5038952138688829,
+        "estimated_tokens": 89,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-62C710106569541C",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 22,
+        "score": 0.5038952138688829,
+        "estimated_tokens": 95,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-659A5757D7076C39"
+      },
+      {
+        "block_id": "BLK-87F9E7FD87F93ED5",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 23,
+        "score": 0.5038952138688829,
+        "estimated_tokens": 68,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-659A5757D7076C39"
+      },
+      {
+        "block_id": "BLK-D958717003DF6D60",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 24,
+        "score": 0.5016859319474962,
+        "estimated_tokens": 129,
+        "is_neighbor": false,
+        "seed_block_id": null
+      }
+    ]
+  }
+}

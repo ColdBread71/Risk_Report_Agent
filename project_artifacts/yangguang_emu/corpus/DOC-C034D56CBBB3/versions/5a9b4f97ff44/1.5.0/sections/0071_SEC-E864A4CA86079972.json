@@ -1,0 +1,221 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-E864A4CA86079972",
+  "section_path": [
+    "7 Web界面",
+    "7.6 设备维护",
+    "7.6.1 设备列表",
+    "7.6.1.2 导出"
+  ],
+  "section_title": "7.6.1.2 导出",
+  "start_pdf_page": 59,
+  "end_pdf_page": 59,
+  "blocks": [
+    {
+      "block_id": "BLK-DE232A582285A39A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 59,
+      "printed_page_label": "49",
+      "block_order": 0,
+      "section_id": "SEC-E864A4CA86079972",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.2 导出"
+      ],
+      "section_title": "7.6.1.2 导出",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.617,
+        48.088,
+        463.964,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6EBBF2481E2ECB2A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 59,
+      "printed_page_label": "49",
+      "block_order": 1,
+      "section_id": "SEC-E864A4CA86079972",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.2 导出"
+      ],
+      "section_title": "7.6.1.2 导出",
+      "block_type": "paragraph",
+      "text": "可根据不能程度的阻塞故障设置灵敏度进行设置，默认为低。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        72.906,
+        344.736,
+        83.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-50D88109FEDC6991",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 59,
+      "printed_page_label": "49",
+      "block_order": 2,
+      "section_id": "SEC-E864A4CA86079972",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.2 导出"
+      ],
+      "section_title": "7.6.1.2 导出",
+      "block_type": "list",
+      "text": "•\n高：高灵敏度设置触发告警的频率较高，可以更早的检测出风道异常。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        87.906,
+        394.911,
+        98.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C84525DD3A1E2F8E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 59,
+      "printed_page_label": "49",
+      "block_order": 3,
+      "section_id": "SEC-E864A4CA86079972",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.2 导出"
+      ],
+      "section_title": "7.6.1.2 导出",
+      "block_type": "list",
+      "text": "•\n低：低灵敏度设置触发告警的频率较低，需要阻塞较为严重时才会进行告警。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        102.906,
+        421.911,
+        113.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4F362A65D578041D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 59,
+      "printed_page_label": "49",
+      "block_order": 4,
+      "section_id": "SEC-E864A4CA86079972",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.2 导出"
+      ],
+      "section_title": "7.6.1.2 导出",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        118.056,
+        126.36,
+        129.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-33CAD1986643AF7B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 59,
+      "printed_page_label": "49",
+      "block_order": 5,
+      "section_id": "SEC-E864A4CA86079972",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.2 导出"
+      ],
+      "section_title": "7.6.1.2 导出",
+      "block_type": "paragraph",
+      "text": "首次添加设备后至少需要检测一个晴天才能检测出诊断结果。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        135.356,
+        372.366,
+        146.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-94B504EB92DA7581",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 59,
+      "printed_page_label": "49",
+      "block_order": 20,
+      "section_id": "SEC-E864A4CA86079972",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.2 导出"
+      ],
+      "section_title": "7.6.1.2 导出",
+      "block_type": "heading",
+      "text": "7.6.1.2 导出",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        656.361,
+        126.2,
+        668.531
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

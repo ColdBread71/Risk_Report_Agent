@@ -1,0 +1,94 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-FCC07808078A4687",
+  "section_path": [
+    "7 Web界面",
+    "7.3 Web端简介",
+    "7.3.2 运行环境要求"
+  ],
+  "section_title": "7.3.2 运行环境要求",
+  "start_pdf_page": 50,
+  "end_pdf_page": 50,
+  "blocks": [
+    {
+      "block_id": "BLK-8AA9938BD6D0C834",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "40",
+      "block_order": 2,
+      "section_id": "SEC-FCC07808078A4687",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.2 运行环境要求"
+      ],
+      "section_title": "7.3.2 运行环境要求",
+      "block_type": "heading",
+      "text": "7.3.2 运行环境要求",
+      "table_cells": null,
+      "bbox": [
+        56.688,
+        100.523,
+        143.688,
+        112.693
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DDCBF19644D6F708",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "40",
+      "block_order": 3,
+      "section_id": "SEC-FCC07808078A4687",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.2 运行环境要求"
+      ],
+      "section_title": "7.3.2 运行环境要求",
+      "block_type": "table",
+      "text": "项目\t说明\n\t浏览器\tChrome65 以上、Safari11 以上\n\t最小分辨率\t1024*768\n\t语言显示\t当前Web 端界面支持8 种语言系统，分别是简体中文、英\n语、德语、西班牙语、巴葡语、法语、日语和韩语。\n登录嵌入式Web 的电脑语言系统当前仅支持以上8\n种语言，否则将无法登录。",
+      "table_cells": [
+        [
+          null,
+          "项目",
+          "说明"
+        ],
+        [
+          null,
+          "浏览器",
+          "Chrome65 以上、Safari11 以上"
+        ],
+        [
+          null,
+          "最小分辨率",
+          "1024*768"
+        ],
+        [
+          null,
+          "语言显示",
+          "当前Web 端界面支持8 种语言系统，分别是简体中文、英\n语、德语、西班牙语、巴葡语、法语、日语和韩语。\n登录嵌入式Web 的电脑语言系统当前仅支持以上8\n种语言，否则将无法登录。"
+        ]
+      ],
+      "bbox": [
+        87.566,
+        120.183,
+        447.566,
+        258.733
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

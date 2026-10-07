@@ -1,0 +1,374 @@
+{
+  "schema_version": "field_fact_checkpoint.v2",
+  "node_id": "node_2",
+  "field_id": "software_and_configuration",
+  "index_id": "IDX-3B116ADDF3BB03CC",
+  "packet_sha256": "aeb7fbbbde278c1aaaff11cd83c99124fb19779fb03a7849cce1591a27c1c33d",
+  "text_model": "qwen-plus",
+  "retrieval_profile_version": "1.1",
+  "field_fact_prompt_version": "2.2",
+  "field_fact_schema_sha256": "0f478546b256a855e3ca4dc4218d2b3a32d2d428b89b976aa69639129864c0e5",
+  "result": {
+    "node_id": "node_2",
+    "field_id": "software_and_configuration",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "安全启动（Secure Boot）是一种基于逐级验证的启动链可信加载技术，用于确保系统固件与操作系统镜像的完整性与合法性，防止其被非法篡改或替换。",
+        "block_ids": [
+          "BLK-11E7630FDD454CE8"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "在本产品中，安全启动功能默认处于启用状态。",
+        "block_ids": [
+          "BLK-56710D21D4166A27"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "本节所述安全启动仅针对数采。",
+        "block_ids": [
+          "BLK-696CBA8087AAE64A"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "固件升级提供关键的安全更新和性能优化，是确保设备稳定、安全和高效运行的关键措施。",
+        "block_ids": [
+          "BLK-DC02C8FBAB3CFB88"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "用户可通过Web端升级阳光电源逆变器、数据采集器和PLC节点。",
+        "block_ids": [
+          "BLK-DC02C8FBAB3CFB88"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "Web端先检测数据采集器同一局域网下是否安装iConfig工具；如已安装iConfig并下载可用升级包，Web端展示与当前设备匹配的升级包。",
+        "block_ids": [
+          "BLK-9BE7D0EB955D7982"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "支持通过配置工具iConfig升级数据采集器。",
+        "block_ids": [
+          "BLK-5DC9B72C577D320F",
+          "BLK-E42FAA2B91DEAFA6"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "支持通过阳光云升级数据采集器。",
+        "block_ids": [
+          "BLK-6526B1BEA655A990",
+          "BLK-A8F30CB0E2DE9C4D"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "通过远程维护登录数据采集器时，不支持通过配置工具iConfig升级方式进行升级。",
+        "block_ids": [
+          "BLK-B365C6DDD636B615"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "升级数据采集器时，若弹窗提示缺少公钥文件，需通过系统 > 系统维护 > 公钥导入导入升级包对应的公钥文件，再进行升级操作。",
+        "block_ids": [
+          "BLK-56AA86C794BB112B"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "Web端将弹窗提示是否确认升级，确认后数据采集器自动重启；新版本在重启后生效。",
+        "block_ids": [
+          "BLK-AA1F4A66BBA10E2B"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "通过阳光云升级需已接入云服务且当前有可用升级包；相关设置见7.10.6.1 转发阳光云服务设置。",
+        "block_ids": [
+          "BLK-86DACA655BC61901",
+          "BLK-A8F30CB0E2DE9C4D",
+          "BLK-4990168AEBD8747F"
+        ],
+        "is_uncertain": false
+      }
+    ],
+    "unknowns": [
+      "Logger4000是否为本产品实际交付配置中的组件（GAP-LOGGER4000-SCOPE）",
+      "安全启动是否覆盖除数采外的其他组件（如逆变器、PLC）",
+      "iConfig工具是否为产品标准内置组件，或仅为可选外部工具",
+      "阳光云服务的运营方、数据主权归属及RDPS依赖关系未明确说明",
+      "固件升级包的签名验证机制（如公钥来源、证书信任链）未在证据中描述",
+      "eMMC中存储的系统镜像具体组成（如BootROM、BL2、U-Boot、内核、rootfs）未列出",
+      "安全启动所依赖的根密钥（Root of Trust）是否固化于硬件（如eFuse/OTP）未说明",
+      "是否存在禁用安全启动的配置方式或调试模式（证据仅提默认启用，未提可禁用性）"
+    ],
+    "contradictions": []
+  },
+  "retrieval_trace": {
+    "schema_version": "1.0",
+    "request": {
+      "project_id": "yangguang_emu",
+      "node_id": "node_2",
+      "field_id": "software_and_configuration",
+      "query": null,
+      "filters": {
+        "document_ids": [],
+        "section_path_terms": [],
+        "block_types": [],
+        "exclude_review_required": false
+      },
+      "token_budget": 12000,
+      "max_blocks": 24,
+      "neighbor_window": 1
+    },
+    "effective_query": "软件 固件 操作系统 配置文件 参数 策略 升级包 完整性 版本 启动镜像",
+    "index_id": "IDX-3B116ADDF3BB03CC",
+    "scope_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "packet_id": "rag_yangguang_emu_node_2_software_and_configuration_d3bcbbef5ddc",
+    "packet_sha256": "aeb7fbbbde278c1aaaff11cd83c99124fb19779fb03a7849cce1591a27c1c33d",
+    "candidate_count": 1041,
+    "selected_count": 24,
+    "selected_token_count": 2043,
+    "truncated_by_budget": false,
+    "truncated_by_max_blocks": true,
+    "hits": [
+      {
+        "block_id": "BLK-DC02C8FBAB3CFB88",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 1,
+        "score": 0.5507227611541748,
+        "estimated_tokens": 195,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-E8FA981E7002C693",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 2,
+        "score": 0.5507227611541748,
+        "estimated_tokens": 82,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-DC02C8FBAB3CFB88"
+      },
+      {
+        "block_id": "BLK-CAC7F1B53FD56605",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 3,
+        "score": 0.5507227611541748,
+        "estimated_tokens": 80,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-DC02C8FBAB3CFB88"
+      },
+      {
+        "block_id": "BLK-11E7630FDD454CE8",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 4,
+        "score": 0.5400979614257813,
+        "estimated_tokens": 116,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-FED60E901705B998",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 5,
+        "score": 0.5400979614257813,
+        "estimated_tokens": 56,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-11E7630FDD454CE8"
+      },
+      {
+        "block_id": "BLK-56710D21D4166A27",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 6,
+        "score": 0.5400979614257813,
+        "estimated_tokens": 237,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-11E7630FDD454CE8"
+      },
+      {
+        "block_id": "BLK-9BE7D0EB955D7982",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 7,
+        "score": 0.5377598667144776,
+        "estimated_tokens": 141,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-5DC9B72C577D320F",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 8,
+        "score": 0.5377598667144776,
+        "estimated_tokens": 84,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-9BE7D0EB955D7982"
+      },
+      {
+        "block_id": "BLK-56AA86C794BB112B",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 9,
+        "score": 0.5326234245300293,
+        "estimated_tokens": 141,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-B947107B49705E6B",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 10,
+        "score": 0.5326234245300293,
+        "estimated_tokens": 113,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-56AA86C794BB112B"
+      },
+      {
+        "block_id": "BLK-AA1F4A66BBA10E2B",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 11,
+        "score": 0.5326234245300293,
+        "estimated_tokens": 124,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-56AA86C794BB112B"
+      },
+      {
+        "block_id": "BLK-6526B1BEA655A990",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 12,
+        "score": 0.5255634021759034,
+        "estimated_tokens": 112,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-5DC9B72C577D320F"
+      },
+      {
+        "block_id": "BLK-E42FAA2B91DEAFA6",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 13,
+        "score": 0.5180508518218995,
+        "estimated_tokens": 115,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-706DACFDF2BECE0D",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 14,
+        "score": 0.5180508518218995,
+        "estimated_tokens": 104,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-E42FAA2B91DEAFA6"
+      },
+      {
+        "block_id": "BLK-A8F30CB0E2DE9C4D",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 15,
+        "score": 0.5180508518218995,
+        "estimated_tokens": 138,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-E42FAA2B91DEAFA6"
+      },
+      {
+        "block_id": "BLK-A4EE323DC1775EDF",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 16,
+        "score": 0.5099564933776856,
+        "estimated_tokens": 114,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-8246E87DD240EF6E",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 17,
+        "score": 0.5099564933776856,
+        "estimated_tokens": 103,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-A4EE323DC1775EDF"
+      },
+      {
+        "block_id": "BLK-4990168AEBD8747F",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 18,
+        "score": 0.5099564933776856,
+        "estimated_tokens": 137,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-A4EE323DC1775EDF"
+      },
+      {
+        "block_id": "BLK-696CBA8087AAE64A",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 19,
+        "score": 0.5092783355712891,
+        "estimated_tokens": 65,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-56710D21D4166A27"
+      },
+      {
+        "block_id": "BLK-980C03EC9D178B03",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 20,
+        "score": 0.5086208724975586,
+        "estimated_tokens": 124,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-094C18FCF698B8F2",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 21,
+        "score": 0.5086208724975586,
+        "estimated_tokens": 113,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-980C03EC9D178B03"
+      },
+      {
+        "block_id": "BLK-86DACA655BC61901",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 22,
+        "score": 0.5086208724975586,
+        "estimated_tokens": 147,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-980C03EC9D178B03"
+      },
+      {
+        "block_id": "BLK-07A4FCE58B7628EA",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 23,
+        "score": 0.5054570388793945,
+        "estimated_tokens": 100,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-B365C6DDD636B615",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 24,
+        "score": 0.5054570388793945,
+        "estimated_tokens": 109,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-07A4FCE58B7628EA"
+      }
+    ]
+  }
+}

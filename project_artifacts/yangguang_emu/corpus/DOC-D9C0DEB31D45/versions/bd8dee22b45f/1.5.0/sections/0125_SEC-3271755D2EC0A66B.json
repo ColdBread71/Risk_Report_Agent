@@ -1,0 +1,139 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-3271755D2EC0A66B",
+  "section_path": [
+    "7 Web界面",
+    "7.10 系统",
+    "7.10.6 转发配置",
+    "7.10.6.2 转发IEC104服务配置",
+    "7.10.6.2.1 白名单设置"
+  ],
+  "section_title": "7.10.6.2.1 白名单设置",
+  "start_pdf_page": 78,
+  "end_pdf_page": 78,
+  "blocks": [
+    {
+      "block_id": "BLK-42CDE066C74C42D0",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 3,
+      "section_id": "SEC-3271755D2EC0A66B",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.2 转发IEC104服务配置",
+        "7.10.6.2.1 白名单设置"
+      ],
+      "section_title": "7.10.6.2.1 白名单设置",
+      "block_type": "heading",
+      "text": "7.10.6.2.1 白名单设置",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        138.4,
+        150.673,
+        150.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C2B2B9991AFBEDE3",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 4,
+      "section_id": "SEC-3271755D2EC0A66B",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.2 转发IEC104服务配置",
+        "7.10.6.2.1 白名单设置"
+      ],
+      "section_title": "7.10.6.2.1 白名单设置",
+      "block_type": "paragraph",
+      "text": "单击系统 > 转发配置 > IEC104，默认进入Server 界面，点击白名单设置。",
+      "table_cells": null,
+      "bbox": [
+        88.195,
+        153.506,
+        385.735,
+        164.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2C68E1B75B166F11",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 5,
+      "section_id": "SEC-3271755D2EC0A66B",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.2 转发IEC104服务配置",
+        "7.10.6.2.1 白名单设置"
+      ],
+      "section_title": "7.10.6.2.1 白名单设置",
+      "block_type": "list",
+      "text": "•\n不勾选启用白名单，默认IP 地址为“0.0.0.0”，则允许任意具有合法IP 地址的后\n台设备访问数据采集器。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        181.506,
+        440.894,
+        205.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A91BF21B2E29A89E",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 6,
+      "section_id": "SEC-3271755D2EC0A66B",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.2 转发IEC104服务配置",
+        "7.10.6.2.1 白名单设置"
+      ],
+      "section_title": "7.10.6.2.1 白名单设置",
+      "block_type": "list",
+      "text": "•\n勾选启用白名单，输入IP 地址，则只有指定的IP 设备可以访问数据采集器。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        210.006,
+        434.369,
+        220.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

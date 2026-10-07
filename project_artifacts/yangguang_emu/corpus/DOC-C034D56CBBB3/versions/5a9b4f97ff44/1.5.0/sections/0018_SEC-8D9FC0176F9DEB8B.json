@@ -1,0 +1,206 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-8D9FC0176F9DEB8B",
+  "section_path": [
+    "5 电气连接"
+  ],
+  "section_title": "5 电气连接",
+  "start_pdf_page": 27,
+  "end_pdf_page": 27,
+  "blocks": [
+    {
+      "block_id": "BLK-15C1CE8E487CD3AD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 27,
+      "printed_page_label": "17",
+      "block_order": 0,
+      "section_id": "SEC-8D9FC0176F9DEB8B",
+      "section_path": [
+        "5 电气连接"
+      ],
+      "section_title": "5 电气连接",
+      "block_type": "heading",
+      "text": "5\n电气连接",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        98.112,
+        168.624,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C466A6F248A9225A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 27,
+      "printed_page_label": "17",
+      "block_order": 1,
+      "section_id": "SEC-8D9FC0176F9DEB8B",
+      "section_path": [
+        "5 电气连接"
+      ],
+      "section_title": "5 电气连接",
+      "block_type": "table",
+      "text": "全规范总则\t\t\t\n\t危险\t\t\t\n2\t注意高压危险。\n数据采集器应良好接\n77V，0.48A”和MP\t地。在设备带电时\nLC 端口“L1、L2、L\t，严禁触摸数据采集\n3”。\t器的交流供电端口“AC IN 100\n\t\t\t\t\n\t注意\t\t\t\n\t注意高压风险。MP\n要等待30 秒，以便\tLC 通讯断电后仍带\n支撑电容放电完毕。\t有危险电压，不能立\t即对其进行任何操作。至少需\n\t\t\t\t\n\t注意\t\t\t\n\t错误的接线，可能会\t损坏数据采集器，\t甚至伤害操作人员。\t\n\t\t\t\t\n\t注意\t\t\t\n\t所有线缆必须无破损\t、绝缘良好、尺寸\t适当并且连接牢固。\t\n数\t口简介\n据采集器端子排布\t及标识，如下图所示\t。\t\n\t标识\t名称\t线缆推荐\t说明\n\tETH1~ETH2\t以太网接口\t-\t数据交换网口，可通过交换\n机、路由器等设备连接至后台\n主站。\n\tETH3~ETH4\t快速调度口\t-\t用于Goose 协议有功、无功\n快速调度",
+      "table_cells": [
+        [
+          null,
+          "全规范总则",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "危险",
+          null,
+          null,
+          null
+        ],
+        [
+          "2",
+          "注意高压危险。\n数据采集器应良好接\n77V，0.48A”和MP",
+          "地。在设备带电时\nLC 端口“L1、L2、L",
+          "，严禁触摸数据采集\n3”。",
+          "器的交流供电端口“AC IN 100"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "注意",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "注意高压风险。MP\n要等待30 秒，以便",
+          "LC 通讯断电后仍带\n支撑电容放电完毕。",
+          "有危险电压，不能立",
+          "即对其进行任何操作。至少需"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "注意",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "错误的接线，可能会",
+          "损坏数据采集器，",
+          "甚至伤害操作人员。",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "注意",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "所有线缆必须无破损",
+          "、绝缘良好、尺寸",
+          "适当并且连接牢固。",
+          null
+        ],
+        [
+          "数",
+          "口简介\n据采集器端子排布",
+          "及标识，如下图所示",
+          "。",
+          null
+        ],
+        [
+          null,
+          "标识",
+          "名称",
+          "线缆推荐",
+          "说明"
+        ],
+        [
+          null,
+          "ETH1~ETH2",
+          "以太网接口",
+          "-",
+          "数据交换网口，可通过交换\n机、路由器等设备连接至后台\n主站。"
+        ],
+        [
+          null,
+          "ETH3~ETH4",
+          "快速调度口",
+          "-",
+          "用于Goose 协议有功、无功\n快速调度"
+        ]
+      ],
+      "bbox": [
+        106.866,
+        125.85,
+        458.177,
+        613.942
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A2F6345E2A3A8B59",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 27,
+      "printed_page_label": "17",
+      "block_order": 2,
+      "section_id": "SEC-8D9FC0176F9DEB8B",
+      "section_path": [
+        "5 电气连接"
+      ],
+      "section_title": "5 电气连接",
+      "block_type": "paragraph",
+      "text": "ETH5\n以太网接口\n-\n主备机功能预留",
+      "table_cells": null,
+      "bbox": [
+        111.035,
+        619.848,
+        404.177,
+        630.801
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

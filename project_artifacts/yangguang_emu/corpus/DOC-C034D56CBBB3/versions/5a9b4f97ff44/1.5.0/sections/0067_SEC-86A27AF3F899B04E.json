@@ -1,0 +1,769 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-86A27AF3F899B04E",
+  "section_path": [
+    "7 Web界面",
+    "7.5 设备监控",
+    "7.5.13 离散率分析",
+    "7.5.13.4 查看诊断结果",
+    "7.5.13.4.2 取消屏蔽组串告警"
+  ],
+  "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+  "start_pdf_page": 57,
+  "end_pdf_page": 57,
+  "blocks": [
+    {
+      "block_id": "BLK-FD2D32D6E8E0BE8C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 0,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.614,
+        48.088,
+        463.968,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B5C1455101BFCFC9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 1,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "paragraph",
+      "text": "在诊断结果页，用户可查看离散率指标异常的光伏组串，查看告警的异常原因及分析结果。对于\n短期暂无处理计划的组串告警，支持用户屏蔽。",
+      "table_cells": null,
+      "bbox": [
+        102.367,
+        72.814,
+        459.367,
+        95.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-02B1EADFEB12D7D7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 2,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.37,
+        106.406,
+        138.37,
+        117.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C07554E4F2696B7A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 3,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "list",
+      "text": "•\n已完成离散率诊断。见7.5.13.4 查看诊断结果。",
+      "table_cells": null,
+      "bbox": [
+        102.37,
+        126.406,
+        306.814,
+        137.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CAF905F46ED1B166",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 4,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "paragraph",
+      "text": "离散率诊断主要识别以下三种异常类型。",
+      "table_cells": null,
+      "bbox": [
+        102.37,
+        144.556,
+        264.37,
+        155.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B8EDA08F26DF9061",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 5,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "paragraph",
+      "text": "表 7-3 告警的异常类型",
+      "table_cells": null,
+      "bbox": [
+        102.37,
+        161.356,
+        192.379,
+        172.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1A09C094C2C19D71",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 6,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "paragraph",
+      "text": "异常类型\n说明",
+      "table_cells": null,
+      "bbox": [
+        111.036,
+        179.139,
+        254.455,
+        189.484
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8F47343BEBE88015",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 7,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "paragraph",
+      "text": "数据采集器异常\n因数据采集器的配置问题或设备故障，无法正确采集数\n据，导致组串电流值显示异常。",
+      "table_cells": null,
+      "bbox": [
+        111.035,
+        198.206,
+        453.454,
+        222.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A8F1DE05C3E20204",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 8,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "paragraph",
+      "text": "逆变器运行异常\n因逆变器无法正常运行导致组串电流值显示异常。",
+      "table_cells": null,
+      "bbox": [
+        111.035,
+        233.706,
+        435.454,
+        244.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F316C463A8FE4219",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 9,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "paragraph",
+      "text": "环境异常\n因组件安装位置有遮挡或其他环境因素导致组串电流值\n异常。",
+      "table_cells": null,
+      "bbox": [
+        111.035,
+        255.706,
+        453.454,
+        280.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4B23C2553C063687",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 10,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "paragraph",
+      "text": "步骤 1 在离散率详情列表中，如果组串中存在异常电流，点击电流值上方的",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        305.884,
+        371.736,
+        318.367
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FCD9A670EBE9AE17",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 11,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "paragraph",
+      "text": "，打开告警弹窗，\n查看告警的异常原因及分析结果。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        307.306,
+        461.736,
+        331.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E04C2412DE690E1C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 12,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "paragraph",
+      "text": "步骤 2 如果用户对告警暂无处理计划，勾选设备名称前的选择框，点击屏蔽告警。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        335.884,
+        398.736,
+        348.367
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5145736BD9A3CF44",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 13,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "paragraph",
+      "text": "未来的离散率诊断任务中，该组串的诊断结果不会显示已屏蔽的告警信息。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        353.806,
+        398.736,
+        364.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-19FC80590138EBF2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 14,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "paragraph",
+      "text": "同一组串可能包含多个告警，可勾选多个告警信息并屏蔽。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        372.456,
+        362.735,
+        383.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7A2451F672298E10",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 15,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "paragraph",
+      "text": "如需取消屏蔽组串告警，见7.5.13.4.2 取消屏蔽组串告警。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        404.256,
+        362.519,
+        415.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F61290BF862C12B3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 16,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "list",
+      "text": "--结束\n7.5.13.4.2 取消屏蔽组串告警",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        432.556,
+        191.85,
+        455.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-49BC50B0F0FD85A5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 17,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "paragraph",
+      "text": "可以在处理完历史离散率诊断中的组串告警后，取消对该组串的告警屏蔽。",
+      "table_cells": null,
+      "bbox": [
+        102.362,
+        458.414,
+        382.862,
+        468.758
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1B11CC261FC87934",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 18,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.368,
+        479.256,
+        138.368,
+        490.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2114A930809555D4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 19,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "list",
+      "text": "•\n已完成离散率诊断。见7.5.13.4 查看诊断结果。",
+      "table_cells": null,
+      "bbox": [
+        102.368,
+        499.256,
+        306.821,
+        510.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B5C7FD5F50A85349",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 20,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "paragraph",
+      "text": "步骤 1 在离散率详情列表中，点击组串电流右侧的",
+      "table_cells": null,
+      "bbox": [
+        70.868,
+        527.084,
+        272.738,
+        539.567
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-370638890B46CA51",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 21,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "paragraph",
+      "text": "，打开屏蔽告警历史记录对话框。\n用户可查看当前所有组串已屏蔽的告警。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        528.506,
+        425.133,
+        552.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F559FA8706C1BA40",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 22,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "paragraph",
+      "text": "步骤 2 如果某项告警已处理，勾选设备名称列前的选择框，点击对应操作栏中的删除。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        557.084,
+        416.736,
+        569.567
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2C1D017074F998F2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 23,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "paragraph",
+      "text": "步骤 3 点击确认。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        573.584,
+        146.736,
+        586.067
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5B50D67496EDF2F2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 57,
+      "printed_page_label": "47",
+      "block_order": 24,
+      "section_id": "SEC-86A27AF3F899B04E",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.2 取消屏蔽组串告警"
+      ],
+      "section_title": "7.5.13.4.2 取消屏蔽组串告警",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        590.156,
+        126.36,
+        601.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-A870E2A451F89E9E",
+  "section_path": [
+    "3 拆包与存储",
+    "3.3 检查运输完整性"
+  ],
+  "section_title": "3.3 检查运输完整性",
+  "start_pdf_page": 19,
+  "end_pdf_page": 19,
+  "blocks": [
+    {
+      "block_id": "BLK-21DF0AD6D915E735",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "9",
+      "block_order": 5,
+      "section_id": "SEC-A870E2A451F89E9E",
+      "section_path": [
+        "3 拆包与存储",
+        "3.3 检查运输完整性"
+      ],
+      "section_title": "3.3 检查运输完整性",
+      "block_type": "heading",
+      "text": "3.3 检查运输完整性",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        302.747,
+        179.046,
+        317.351
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-22119B5E3B6C6A5E",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "9",
+      "block_order": 6,
+      "section_id": "SEC-A870E2A451F89E9E",
+      "section_path": [
+        "3 拆包与存储",
+        "3.3 检查运输完整性"
+      ],
+      "section_title": "3.3 检查运输完整性",
+      "block_type": "paragraph",
+      "text": "出厂前，产品已经过认真检查并牢固包装。但在运输过程中，可能会存在设备碰撞或损坏。\n因此，在收到产品之后，务必仔细检查以下各项：",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        330.395,
+        462.366,
+        354.848
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A25571BE9286FD8F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "9",
+      "block_order": 7,
+      "section_id": "SEC-A870E2A451F89E9E",
+      "section_path": [
+        "3 拆包与存储",
+        "3.3 检查运输完整性"
+      ],
+      "section_title": "3.3 检查运输完整性",
+      "block_type": "list",
+      "text": "•\n检查所有发货组件是否齐全。参见3.1 供货范围。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        365.395,
+        313.803,
+        376.348
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-13A2B29121A612E3",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "9",
+      "block_order": 8,
+      "section_id": "SEC-A870E2A451F89E9E",
+      "section_path": [
+        "3 拆包与存储",
+        "3.3 检查运输完整性"
+      ],
+      "section_title": "3.3 检查运输完整性",
+      "block_type": "list",
+      "text": "•\n确认收到的实际机型与所购机型型号一致。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        380.395,
+        287.541,
+        391.348
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9FE30740CF2A4C70",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "9",
+      "block_order": 9,
+      "section_id": "SEC-A870E2A451F89E9E",
+      "section_path": [
+        "3 拆包与存储",
+        "3.3 检查运输完整性"
+      ],
+      "section_title": "3.3 检查运输完整性",
+      "block_type": "list",
+      "text": "•\n仔细检查产品，确保外观无损坏。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        395.395,
+        251.541,
+        406.348
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1140F9E998393436",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "9",
+      "block_order": 10,
+      "section_id": "SEC-A870E2A451F89E9E",
+      "section_path": [
+        "3 拆包与存储",
+        "3.3 检查运输完整性"
+      ],
+      "section_title": "3.3 检查运输完整性",
+      "block_type": "paragraph",
+      "text": "在检查过程中，若发现任何异常，务必及时与阳光电源或运输公司联系。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        410.895,
+        390.366,
+        421.848
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9F114635452127FE",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "9",
+      "block_order": 11,
+      "section_id": "SEC-A870E2A451F89E9E",
+      "section_path": [
+        "3 拆包与存储",
+        "3.3 检查运输完整性"
+      ],
+      "section_title": "3.3 检查运输完整性",
+      "block_type": "paragraph",
+      "text": "警告",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        434.413,
+        146.863,
+        447.8
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B7421ABAB7E1CC31",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "9",
+      "block_order": 12,
+      "section_id": "SEC-A870E2A451F89E9E",
+      "section_path": [
+        "3 拆包与存储",
+        "3.3 检查运输完整性"
+      ],
+      "section_title": "3.3 检查运输完整性",
+      "block_type": "paragraph",
+      "text": "只有完整且无损伤的产品，才可进行安装与试运行。安装前，务必确保：",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        451.595,
+        394.866,
+        462.548
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-70D5509B1876ED83",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "9",
+      "block_order": 13,
+      "section_id": "SEC-A870E2A451F89E9E",
+      "section_path": [
+        "3 拆包与存储",
+        "3.3 检查运输完整性"
+      ],
+      "section_title": "3.3 检查运输完整性",
+      "block_type": "list",
+      "text": "•\n产品本身完好且无损坏。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        465.245,
+        220.041,
+        476.198
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-579CB6DD16CBD07D",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "9",
+      "block_order": 14,
+      "section_id": "SEC-A870E2A451F89E9E",
+      "section_path": [
+        "3 拆包与存储",
+        "3.3 检查运输完整性"
+      ],
+      "section_title": "3.3 检查运输完整性",
+      "block_type": "list",
+      "text": "•\n随机发货附带的相关文件，如快速用户手册等文档资料齐全。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        480.245,
+        364.041,
+        491.198
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

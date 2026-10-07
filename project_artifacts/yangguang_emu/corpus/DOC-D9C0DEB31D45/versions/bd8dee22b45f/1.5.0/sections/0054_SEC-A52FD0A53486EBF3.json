@@ -1,0 +1,353 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-A52FD0A53486EBF3",
+  "section_path": [
+    "7 Web界面",
+    "7.5 设备监控",
+    "7.5.5 系统参数"
+  ],
+  "section_title": "7.5.5 系统参数",
+  "start_pdf_page": 46,
+  "end_pdf_page": 46,
+  "blocks": [
+    {
+      "block_id": "BLK-912F91B9DC31581D",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "36",
+      "block_order": 18,
+      "section_id": "SEC-A52FD0A53486EBF3",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.5 系统参数"
+      ],
+      "section_title": "7.5.5 系统参数",
+      "block_type": "heading",
+      "text": "7.5.5 系统参数",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        375.311,
+        123.687,
+        387.481
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1CFEF6C7BE8E027B",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "36",
+      "block_order": 19,
+      "section_id": "SEC-A52FD0A53486EBF3",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.5 系统参数"
+      ],
+      "section_title": "7.5.5 系统参数",
+      "block_type": "paragraph",
+      "text": "选择逆变器设备，设置系统参数。支持单台设置和批量设置。",
+      "table_cells": null,
+      "bbox": [
+        88.191,
+        394.535,
+        317.691,
+        404.88
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C689815101EDDB53",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "36",
+      "block_order": 20,
+      "section_id": "SEC-A52FD0A53486EBF3",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.5 系统参数"
+      ],
+      "section_title": "7.5.5 系统参数",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击设备监控，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        56.691,
+        413.955,
+        195.561,
+        426.438
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2B162BA742CA4114",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "36",
+      "block_order": 21,
+      "section_id": "SEC-A52FD0A53486EBF3",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.5 系统参数"
+      ],
+      "section_title": "7.5.5 系统参数",
+      "block_type": "paragraph",
+      "text": "步骤 2 在左侧设备列表栏选择需要的设备，点击系统参数查看该设备系统参数。",
+      "table_cells": null,
+      "bbox": [
+        56.691,
+        430.455,
+        375.561,
+        442.938
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7B89C728A928688B",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "36",
+      "block_order": 22,
+      "section_id": "SEC-A52FD0A53486EBF3",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.5 系统参数"
+      ],
+      "section_title": "7.5.5 系统参数",
+      "block_type": "paragraph",
+      "text": "步骤 3 修改系统参数。",
+      "table_cells": null,
+      "bbox": [
+        56.691,
+        446.955,
+        150.561,
+        459.438
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6733848136726B2A",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "36",
+      "block_order": 23,
+      "section_id": "SEC-A52FD0A53486EBF3",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.5 系统参数"
+      ],
+      "section_title": "7.5.5 系统参数",
+      "block_type": "paragraph",
+      "text": "若输入的参数值超出说明范围，保存时系统将提示“参数校验失败”，请根据提示重新\n设置。",
+      "table_cells": null,
+      "bbox": [
+        114.562,
+        470.027,
+        444.556,
+        491.78
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1024F60D46571750",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "36",
+      "block_order": 24,
+      "section_id": "SEC-A52FD0A53486EBF3",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.5 系统参数"
+      ],
+      "section_title": "7.5.5 系统参数",
+      "block_type": "paragraph",
+      "text": "a. 修改数值参数时，在当前值栏键入参数值。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        510.477,
+        272.738,
+        521.43
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F18C5C73FAACFA50",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "36",
+      "block_order": 25,
+      "section_id": "SEC-A52FD0A53486EBF3",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.5 系统参数"
+      ],
+      "section_title": "7.5.5 系统参数",
+      "block_type": "paragraph",
+      "text": "b. 点击设置，并在在弹出的对话窗口中点击确定进行保存。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        525.477,
+        326.738,
+        536.43
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0A8C300A051281B3",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "36",
+      "block_order": 26,
+      "section_id": "SEC-A52FD0A53486EBF3",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.5 系统参数"
+      ],
+      "section_title": "7.5.5 系统参数",
+      "block_type": "paragraph",
+      "text": "步骤 4 （可选）批量设置系统参数。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        540.555,
+        204.563,
+        553.038
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-216656BE9A9A1D60",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "36",
+      "block_order": 27,
+      "section_id": "SEC-A52FD0A53486EBF3",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.5 系统参数"
+      ],
+      "section_title": "7.5.5 系统参数",
+      "block_type": "paragraph",
+      "text": "a. 单击配置同步。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        558.477,
+        164.738,
+        569.43
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0B3E31A53B640190",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "36",
+      "block_order": 28,
+      "section_id": "SEC-A52FD0A53486EBF3",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.5 系统参数"
+      ],
+      "section_title": "7.5.5 系统参数",
+      "block_type": "paragraph",
+      "text": "b. 在弹出的对话窗口中点击确定，然后勾选列表中需要同步设置的设备，单击确定。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        573.477,
+        425.738,
+        584.43
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-536E92602189CE35",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "36",
+      "block_order": 29,
+      "section_id": "SEC-A52FD0A53486EBF3",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.5 系统参数"
+      ],
+      "section_title": "7.5.5 系统参数",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        588.627,
+        112.187,
+        599.58
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

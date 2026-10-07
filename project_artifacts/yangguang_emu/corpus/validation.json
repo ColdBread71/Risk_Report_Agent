@@ -1,0 +1,55 @@
+{
+  "project_id": "yangguang_emu",
+  "parser_version": "1.5.0",
+  "documents": 4,
+  "pages": 335,
+  "sections": 487,
+  "blocks": 4607,
+  "tables": 94,
+  "review_pages": 0,
+  "block_types": {
+    "figure_caption": 37,
+    "heading": 464,
+    "list": 1115,
+    "paragraph": 2897,
+    "table": 94
+  },
+  "document_summaries": [
+    {
+      "document_id": "DOC-5067B181346D",
+      "source_file_name": "EMU300A-UCN-Ver11-202603.pdf",
+      "pages": 58,
+      "sections": 63,
+      "blocks": 674,
+      "tables": 15,
+      "review_pages": []
+    },
+    {
+      "document_id": "DOC-DF116E7199E2",
+      "source_file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+      "pages": 42,
+      "sections": 48,
+      "blocks": 399,
+      "tables": 8,
+      "review_pages": []
+    },
+    {
+      "document_id": "DOC-C034D56CBBB3",
+      "source_file_name": "Logger4000-UCN-Ver34-202604（P038）=GUID-CA820001-012C-4F1D-B205-BDAA17A6C730=1=PDF (产品信息设计部_基础版)=zh-CN (6).pdf",
+      "pages": 122,
+      "sections": 193,
+      "blocks": 1840,
+      "tables": 38,
+      "review_pages": []
+    },
+    {
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+      "pages": 113,
+      "sections": 183,
+      "blocks": 1694,
+      "tables": 33,
+      "review_pages": []
+    }
+  ]
+}

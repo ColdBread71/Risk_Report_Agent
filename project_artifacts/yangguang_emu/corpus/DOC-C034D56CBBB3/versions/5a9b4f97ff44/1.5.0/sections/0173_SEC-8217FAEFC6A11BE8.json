@@ -1,0 +1,340 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-8217FAEFC6A11BE8",
+  "section_path": [
+    "10 用户管理",
+    "10.7 设置账户保护和会话安全参数"
+  ],
+  "section_title": "10.7 设置账户保护和会话安全参数",
+  "start_pdf_page": 106,
+  "end_pdf_page": 106,
+  "blocks": [
+    {
+      "block_id": "BLK-BFF097227BC5F24A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 16,
+      "section_id": "SEC-8217FAEFC6A11BE8",
+      "section_path": [
+        "10 用户管理",
+        "10.7 设置账户保护和会话安全参数"
+      ],
+      "section_title": "10.7 设置账户保护和会话安全参数",
+      "block_type": "heading",
+      "text": "10.7 设置账户保护和会话安全参数",
+      "table_cells": null,
+      "bbox": [
+        56.687,
+        423.653,
+        243.551,
+        438.257
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-82BF7A99640ED3F3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 17,
+      "section_id": "SEC-8217FAEFC6A11BE8",
+      "section_path": [
+        "10 用户管理",
+        "10.7 设置账户保护和会话安全参数"
+      ],
+      "section_title": "10.7 设置账户保护和会话安全参数",
+      "block_type": "paragraph",
+      "text": "为了增强账号安全性，你可以配置相关参数以控制登录行为和会话有效性。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        451.209,
+        368.696,
+        461.553
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-53E1E7B4831F1FBD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 18,
+      "section_id": "SEC-8217FAEFC6A11BE8",
+      "section_path": [
+        "10 用户管理",
+        "10.7 设置账户保护和会话安全参数"
+      ],
+      "section_title": "10.7 设置账户保护和会话安全参数",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        472.051,
+        124.193,
+        483.004
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-275D2514B420F665",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 19,
+      "section_id": "SEC-8217FAEFC6A11BE8",
+      "section_path": [
+        "10 用户管理",
+        "10.7 设置账户保护和会话安全参数"
+      ],
+      "section_title": "10.7 设置账户保护和会话安全参数",
+      "block_type": "list",
+      "text": "•\n通过管理员账号登录Web 端。见10.1 初始用户名和密码。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        492.051,
+        336.476,
+        503.004
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-69927B21D06EF462",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 20,
+      "section_id": "SEC-8217FAEFC6A11BE8",
+      "section_path": [
+        "10 用户管理",
+        "10.7 设置账户保护和会话安全参数"
+      ],
+      "section_title": "10.7 设置账户保护和会话安全参数",
+      "block_type": "paragraph",
+      "text": "步骤 1 导航栏中点击会话管理，跳转至相应页面。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        510.129,
+        258.563,
+        522.612
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5DC13C94B8E3BE62",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 21,
+      "section_id": "SEC-8217FAEFC6A11BE8",
+      "section_path": [
+        "10 用户管理",
+        "10.7 设置账户保护和会话安全参数"
+      ],
+      "section_title": "10.7 设置账户保护和会话安全参数",
+      "block_type": "paragraph",
+      "text": "步骤 2 修改账户保护和会话安全相关参数。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        526.629,
+        231.563,
+        539.112
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A484A7A83CB5A44C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 22,
+      "section_id": "SEC-8217FAEFC6A11BE8",
+      "section_path": [
+        "10 用户管理",
+        "10.7 设置账户保护和会话安全参数"
+      ],
+      "section_title": "10.7 设置账户保护和会话安全参数",
+      "block_type": "paragraph",
+      "text": "支持修改下列参数：",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        544.551,
+        168.563,
+        555.504
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CDBCFF5F84D9B407",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 23,
+      "section_id": "SEC-8217FAEFC6A11BE8",
+      "section_path": [
+        "10 用户管理",
+        "10.7 设置账户保护和会话安全参数"
+      ],
+      "section_title": "10.7 设置账户保护和会话安全参数",
+      "block_type": "list",
+      "text": "•\n非法访问次数：限制用户尝试登录的最大次数。如输入密码错误次数超过指定值，账号将\n自动被锁定。（参数范围：5~20；默认值：5）",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        559.551,
+        452.738,
+        584.004
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BB556C20FC87BD6F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 24,
+      "section_id": "SEC-8217FAEFC6A11BE8",
+      "section_path": [
+        "10 用户管理",
+        "10.7 设置账户保护和会话安全参数"
+      ],
+      "section_title": "10.7 设置账户保护和会话安全参数",
+      "block_type": "list",
+      "text": "•\n会话超时时间：用户登录后，在指定时间范围内没有操作将导致会话超时，系统将提示用\n户重新登录。（参数范围：1~60；默认值：10）",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        588.051,
+        452.738,
+        612.504
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A21C967D3866B376",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 25,
+      "section_id": "SEC-8217FAEFC6A11BE8",
+      "section_path": [
+        "10 用户管理",
+        "10.7 设置账户保护和会话安全参数"
+      ],
+      "section_title": "10.7 设置账户保护和会话安全参数",
+      "block_type": "list",
+      "text": "•\n用户锁定时间：在账号因连续登录失败被锁定后，设定账号解锁的等待时间。（参数范\n围：1~60；默认值：10）",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        616.551,
+        443.738,
+        641.004
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-48365DDFC494C7FA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 26,
+      "section_id": "SEC-8217FAEFC6A11BE8",
+      "section_path": [
+        "10 用户管理",
+        "10.7 设置账户保护和会话安全参数"
+      ],
+      "section_title": "10.7 设置账户保护和会话安全参数",
+      "block_type": "paragraph",
+      "text": "步骤 3 点击保存。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        645.129,
+        132.563,
+        657.612
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B25C29EE867C0831",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 27,
+      "section_id": "SEC-8217FAEFC6A11BE8",
+      "section_path": [
+        "10 用户管理",
+        "10.7 设置账户保护和会话安全参数"
+      ],
+      "section_title": "10.7 设置账户保护和会话安全参数",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        661.701,
+        112.187,
+        672.654
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

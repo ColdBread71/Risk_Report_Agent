@@ -1,0 +1,70 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-07B6DE43928AC62C",
+  "section_path": [
+    "4 机械安装",
+    "4.2 安装工具"
+  ],
+  "section_title": "4.2 安装工具",
+  "start_pdf_page": 22,
+  "end_pdf_page": 22,
+  "blocks": [
+    {
+      "block_id": "BLK-0A780CA60036EB18",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "12",
+      "block_order": 12,
+      "section_id": "SEC-07B6DE43928AC62C",
+      "section_path": [
+        "4 机械安装",
+        "4.2 安装工具"
+      ],
+      "section_title": "4.2 安装工具",
+      "block_type": "heading",
+      "text": "4.2 安装工具",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        524.252,
+        128.873,
+        538.856
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-27828B04DCE8A953",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "12",
+      "block_order": 13,
+      "section_id": "SEC-07B6DE43928AC62C",
+      "section_path": [
+        "4 机械安装",
+        "4.2 安装工具"
+      ],
+      "section_title": "4.2 安装工具",
+      "block_type": "paragraph",
+      "text": "安装工具包括但不限于以下推荐的工具。必要时，可在现场使用其他辅助工具。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        551.9,
+        403.193,
+        562.853
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

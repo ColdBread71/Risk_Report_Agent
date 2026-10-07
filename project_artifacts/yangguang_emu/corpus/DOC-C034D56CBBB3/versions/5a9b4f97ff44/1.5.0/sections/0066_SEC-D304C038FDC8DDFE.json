@@ -1,0 +1,302 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-D304C038FDC8DDFE",
+  "section_path": [
+    "7 Web界面",
+    "7.5 设备监控",
+    "7.5.13 离散率分析",
+    "7.5.13.4 查看诊断结果",
+    "7.5.13.4.1 查看光伏组串告警"
+  ],
+  "section_title": "7.5.13.4.1 查看光伏组串告警",
+  "start_pdf_page": 56,
+  "end_pdf_page": 56,
+  "blocks": [
+    {
+      "block_id": "BLK-1FC16B3E148DFDC5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "46",
+      "block_order": 0,
+      "section_id": "SEC-D304C038FDC8DDFE",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.1 查看光伏组串告警"
+      ],
+      "section_title": "7.5.13.4.1 查看光伏组串告警",
+      "block_type": "table",
+      "text": "界面\t\t\t用户手册\n\t\t\t\n\t位置\t内容\t说明\n\t1\t离散率等级\t诊断结果根据离散率数据将逆变器分为四个等级，以\n柱状图的形式呈现不同评价等级下的逆变器数量。\n• 优秀（0~5%）：支路电流运行稳定。\n• 良好（5~10%）：支路电流总体运行情况良好，\n个别支路偏低。\n• 稍差（10~20%）：支路电流总体运行情况有待提\n高，个别支路相对其他支路存在明显偏低。\n• 建议整改（20%以上）：个别支路存在断路故\n障，影响电站发电量，必须进行整改。\n\t2\t离散率详情列表\t列表中展示了每台逆变器的离散率、每个组串的电流\n值以及存在的告警信息。\n\t\t\t\n\t\t发的离散率诊断任务\n时间和屏蔽组串告警\t支持在离散率详情列表中查看组串的告警情况、设置对\n。",
+      "table_cells": [
+        [
+          "界面",
+          null,
+          null,
+          "用户手册"
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "位置",
+          "内容",
+          "说明"
+        ],
+        [
+          null,
+          "1",
+          "离散率等级",
+          "诊断结果根据离散率数据将逆变器分为四个等级，以\n柱状图的形式呈现不同评价等级下的逆变器数量。\n• 优秀（0~5%）：支路电流运行稳定。\n• 良好（5~10%）：支路电流总体运行情况良好，\n个别支路偏低。\n• 稍差（10~20%）：支路电流总体运行情况有待提\n高，个别支路相对其他支路存在明显偏低。\n• 建议整改（20%以上）：个别支路存在断路故\n障，影响电站发电量，必须进行整改。"
+        ],
+        [
+          null,
+          "2",
+          "离散率详情列表",
+          "列表中展示了每台逆变器的离散率、每个组串的电流\n值以及存在的告警信息。"
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "发的离散率诊断任务\n时间和屏蔽组串告警",
+          "支持在离散率详情列表中查看组串的告警情况、设置对\n。"
+        ]
+      ],
+      "bbox": [
+        87.563,
+        48.088,
+        447.563,
+        494.721
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-586F49DED2031983",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "46",
+      "block_order": 1,
+      "section_id": "SEC-D304C038FDC8DDFE",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.1 查看光伏组串告警"
+      ],
+      "section_title": "7.5.13.4.1 查看光伏组串告警",
+      "block_type": "paragraph",
+      "text": "步骤 1 通过以下方式导航至诊断结果页。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        510.955,
+        222.563,
+        523.438
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C716325AFC33BCD5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "46",
+      "block_order": 2,
+      "section_id": "SEC-D304C038FDC8DDFE",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.1 查看光伏组串告警"
+      ],
+      "section_title": "7.5.13.4.1 查看光伏组串告警",
+      "block_type": "list",
+      "text": "•\n查看即时诊断结果：在智能分析 > 离散率诊断页完成一键诊断，点击查看。见7.5.13.3\n智能一键诊断。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        528.877,
+        443.765,
+        553.33
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1E05C559A508A927",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "46",
+      "block_order": 3,
+      "section_id": "SEC-D304C038FDC8DDFE",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.1 查看光伏组串告警"
+      ],
+      "section_title": "7.5.13.4.1 查看光伏组串告警",
+      "block_type": "list",
+      "text": "•\n查看历史诊断结果：在智能分析 > 离散率诊断页下方的诊断记录面板中，在历史诊断任\n务对应的操作栏中，点击查看。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        557.377,
+        444.989,
+        581.83
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7ED121434B1BC33F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "46",
+      "block_order": 4,
+      "section_id": "SEC-D304C038FDC8DDFE",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.1 查看光伏组串告警"
+      ],
+      "section_title": "7.5.13.4.1 查看光伏组串告警",
+      "block_type": "paragraph",
+      "text": "步骤 2 如需查看指定逆变器的离散率诊断结果，在离散率数据列表左上角找到设备名称输入框，输",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        588.955,
+        447.563,
+        601.438
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-071D963559908871",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "46",
+      "block_order": 5,
+      "section_id": "SEC-D304C038FDC8DDFE",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.1 查看光伏组串告警"
+      ],
+      "section_title": "7.5.13.4.1 查看光伏组串告警",
+      "block_type": "paragraph",
+      "text": "入设备名称。\n诊断结果页将返回对应设备的离散率诊断数据。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        603.877,
+        276.563,
+        628.33
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6F5A2CDC4C162831",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "46",
+      "block_order": 6,
+      "section_id": "SEC-D304C038FDC8DDFE",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.1 查看光伏组串告警"
+      ],
+      "section_title": "7.5.13.4.1 查看光伏组串告警",
+      "block_type": "paragraph",
+      "text": "步骤 3 在页面右上角点击导出诊断结果，将诊断结果（.xlsx 格式）下载至本地。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        632.455,
+        377.813,
+        644.938
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-395F9D2B6551C6F5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 56,
+      "printed_page_label": "46",
+      "block_order": 7,
+      "section_id": "SEC-D304C038FDC8DDFE",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析",
+        "7.5.13.4 查看诊断结果",
+        "7.5.13.4.1 查看光伏组串告警"
+      ],
+      "section_title": "7.5.13.4.1 查看光伏组串告警",
+      "block_type": "list",
+      "text": "--结束\n7.5.13.4.1 查看光伏组串告警",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        649.027,
+        177.677,
+        671.63
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

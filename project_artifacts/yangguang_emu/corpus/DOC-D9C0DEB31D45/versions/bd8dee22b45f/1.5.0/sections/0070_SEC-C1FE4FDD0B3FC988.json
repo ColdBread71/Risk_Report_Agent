@@ -1,0 +1,241 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-C1FE4FDD0B3FC988",
+  "section_path": [
+    "7 Web界面",
+    "7.6 设备维护",
+    "7.6.3 AFCI检测"
+  ],
+  "section_title": "7.6.3 AFCI检测",
+  "start_pdf_page": 52,
+  "end_pdf_page": 52,
+  "blocks": [
+    {
+      "block_id": "BLK-0C0B989913B7090B",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 14,
+      "section_id": "SEC-C1FE4FDD0B3FC988",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.3 AFCI检测"
+      ],
+      "section_title": "7.6.3 AFCI检测",
+      "block_type": "heading",
+      "text": "7.6.3 AFCI 检测",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        311.563,
+        126.467,
+        323.733
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C8DFF6E0EAECFEE5",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 15,
+      "section_id": "SEC-C1FE4FDD0B3FC988",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.3 AFCI检测"
+      ],
+      "section_title": "7.6.3 AFCI检测",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击设备维护 > AFCI 检测，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        56.69,
+        335.457,
+        246.572,
+        347.94
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-36F184B45541AD4B",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 16,
+      "section_id": "SEC-C1FE4FDD0B3FC988",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.3 AFCI检测"
+      ],
+      "section_title": "7.6.3 AFCI检测",
+      "block_type": "paragraph",
+      "text": "步骤 2 勾选需要自检的设备，单击自检，弹出对话框，单击确定。",
+      "table_cells": null,
+      "bbox": [
+        56.69,
+        351.957,
+        321.56,
+        364.44
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D0FAD1F36E5ECBC0",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 17,
+      "section_id": "SEC-C1FE4FDD0B3FC988",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.3 AFCI检测"
+      ],
+      "section_title": "7.6.3 AFCI检测",
+      "block_type": "paragraph",
+      "text": "，将自检状态设置为使\n能。",
+      "table_cells": null,
+      "bbox": [
+        114.562,
+        377.3,
+        443.737,
+        399.053
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CB867AD780A099F1",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 18,
+      "section_id": "SEC-C1FE4FDD0B3FC988",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.3 AFCI检测"
+      ],
+      "section_title": "7.6.3 AFCI检测",
+      "block_type": "paragraph",
+      "text": "自检设备的状态必须为使能。若自检状态为禁止，可单击",
+      "table_cells": null,
+      "bbox": [
+        114.562,
+        377.3,
+        339.562,
+        388.253
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2CBC351402D74CD1",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 19,
+      "section_id": "SEC-C1FE4FDD0B3FC988",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.3 AFCI检测"
+      ],
+      "section_title": "7.6.3 AFCI检测",
+      "block_type": "paragraph",
+      "text": "步骤 3 结果栏显示自检状态为“自检中”，7~8 秒后，显示自检结果为“自检失败”或“自检成功”。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        416.328,
+        429.059,
+        428.811
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-00A17DE8B4691C0B",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 20,
+      "section_id": "SEC-C1FE4FDD0B3FC988",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.3 AFCI检测"
+      ],
+      "section_title": "7.6.3 AFCI检测",
+      "block_type": "paragraph",
+      "text": "步骤 4 单击故障清除，弹出对话框，显示故障清除的状态。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        432.828,
+        294.563,
+        445.311
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1237E08DCE14BCA3",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 21,
+      "section_id": "SEC-C1FE4FDD0B3FC988",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.3 AFCI检测"
+      ],
+      "section_title": "7.6.3 AFCI检测",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        449.4,
+        112.187,
+        460.353
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

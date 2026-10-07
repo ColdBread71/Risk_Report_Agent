@@ -1,0 +1,394 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-B841375E8D12EA96",
+  "section_path": [
+    "4 电气连接",
+    "4.5 接线前准备"
+  ],
+  "section_title": "4.5 接线前准备",
+  "start_pdf_page": 29,
+  "end_pdf_page": 30,
+  "blocks": [
+    {
+      "block_id": "BLK-C6825A038B221142",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "23",
+      "block_order": 0,
+      "section_id": "SEC-B841375E8D12EA96",
+      "section_path": [
+        "4 电气连接",
+        "4.5 接线前准备"
+      ],
+      "section_title": "4.5 接线前准备",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 电气连接",
+      "table_cells": null,
+      "bbox": [
+        74.615,
+        48.088,
+        463.969,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2AAD245CBFEDB5E3",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "23",
+      "block_order": 4,
+      "section_id": "SEC-B841375E8D12EA96",
+      "section_path": [
+        "4 电气连接",
+        "4.5 接线前准备"
+      ],
+      "section_title": "4.5 接线前准备",
+      "block_type": "heading",
+      "text": "4.5 接线前准备",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        410.839,
+        155.046,
+        425.443
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1F59266321284D5E",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "23",
+      "block_order": 5,
+      "section_id": "SEC-B841375E8D12EA96",
+      "section_path": [
+        "4 电气连接",
+        "4.5 接线前准备"
+      ],
+      "section_title": "4.5 接线前准备",
+      "block_type": "paragraph",
+      "text": "步骤 1 开启机箱。使用专用钥匙，将机箱门锁打开。",
+      "table_cells": null,
+      "bbox": [
+        70.869,
+        437.065,
+        281.739,
+        449.548
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-08CCDCCEB3680BE2",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "23",
+      "block_order": 6,
+      "section_id": "SEC-B841375E8D12EA96",
+      "section_path": [
+        "4 电气连接",
+        "4.5 接线前准备"
+      ],
+      "section_title": "4.5 接线前准备",
+      "block_type": "paragraph",
+      "text": "步骤 2 打开机箱顶部和底部卡扣。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        539.429,
+        209.736,
+        551.912
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7CDA007DC759F2C0",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 30,
+      "printed_page_label": "24",
+      "block_order": 0,
+      "section_id": "SEC-B841375E8D12EA96",
+      "section_path": [
+        "4 电气连接",
+        "4.5 接线前准备"
+      ],
+      "section_title": "4.5 接线前准备",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 电气连接",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2A117BD66EE104F3",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 30,
+      "printed_page_label": "24",
+      "block_order": 1,
+      "section_id": "SEC-B841375E8D12EA96",
+      "section_path": [
+        "4 电气连接",
+        "4.5 接线前准备"
+      ],
+      "section_title": "4.5 接线前准备",
+      "block_type": "paragraph",
+      "text": "步骤 3 断开设备前级输入开关，并将设备内部的供电电源控制开关置于“OFF”位置，以确保设备不",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        235.134,
+        444.548,
+        247.617
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D36005C4E94166D6",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 30,
+      "printed_page_label": "24",
+      "block_order": 2,
+      "section_id": "SEC-B841375E8D12EA96",
+      "section_path": [
+        "4 电气连接",
+        "4.5 接线前准备"
+      ],
+      "section_title": "4.5 接线前准备",
+      "block_type": "paragraph",
+      "text": "带电。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        250.056,
+        114.563,
+        261.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2598D9FC52764FE2",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 30,
+      "printed_page_label": "24",
+      "block_order": 3,
+      "section_id": "SEC-B841375E8D12EA96",
+      "section_path": [
+        "4 电气连接",
+        "4.5 接线前准备"
+      ],
+      "section_title": "4.5 接线前准备",
+      "block_type": "paragraph",
+      "text": "步骤 4 断开箱变侧开关。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        340.504,
+        159.563,
+        352.987
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B775EE4F09CEFFB8",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 30,
+      "printed_page_label": "24",
+      "block_order": 4,
+      "section_id": "SEC-B841375E8D12EA96",
+      "section_path": [
+        "4 电气连接",
+        "4.5 接线前准备"
+      ],
+      "section_title": "4.5 接线前准备",
+      "block_type": "paragraph",
+      "text": "步骤 5 拆除机箱内部的防护盖板。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        357.004,
+        195.563,
+        369.487
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FF86D1A5C48E2C73",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 30,
+      "printed_page_label": "24",
+      "block_order": 5,
+      "section_id": "SEC-B841375E8D12EA96",
+      "section_path": [
+        "4 电气连接",
+        "4.5 接线前准备"
+      ],
+      "section_title": "4.5 接线前准备",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        530.05,
+        112.187,
+        541.003
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A80DC22422018BA4",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 30,
+      "printed_page_label": "24",
+      "block_order": 6,
+      "section_id": "SEC-B841375E8D12EA96",
+      "section_path": [
+        "4 电气连接",
+        "4.5 接线前准备"
+      ],
+      "section_title": "4.5 接线前准备",
+      "block_type": "list",
+      "text": "•\n请选择合适线径的线缆，确保符合防水端子孔径要求，否则会导致盐雾、水汽进\n入机箱内部，器件失效。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        554.1,
+        444.368,
+        578.553
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-533F594ACE2C3509",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 30,
+      "printed_page_label": "24",
+      "block_order": 7,
+      "section_id": "SEC-B841375E8D12EA96",
+      "section_path": [
+        "4 电气连接",
+        "4.5 接线前准备"
+      ],
+      "section_title": "4.5 接线前准备",
+      "block_type": "list",
+      "text": "•\n已穿线防水端子，请在机器内部使用防火泥封堵。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        582.6,
+        327.368,
+        593.553
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E48465238DE43589",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 30,
+      "printed_page_label": "24",
+      "block_order": 8,
+      "section_id": "SEC-B841375E8D12EA96",
+      "section_path": [
+        "4 电气连接",
+        "4.5 接线前准备"
+      ],
+      "section_title": "4.5 接线前准备",
+      "block_type": "list",
+      "text": "•\n未穿线的防水端子请确保密封圈未被破坏，密封完好。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        597.6,
+        345.368,
+        608.553
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1BDD7C903DD122AA",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 30,
+      "printed_page_label": "24",
+      "block_order": 9,
+      "section_id": "SEC-B841375E8D12EA96",
+      "section_path": [
+        "4 电气连接",
+        "4.5 接线前准备"
+      ],
+      "section_title": "4.5 接线前准备",
+      "block_type": "list",
+      "text": "•\n为确保设备长期可靠运行，所选用的发泡胶与防火泥须符合所在国标准，并确保\n在-40℃至85℃运行温度范围内稳定、不释放腐蚀性气体，且为环保无卤材料。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        612.6,
+        444.368,
+        637.053
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,437 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-52630D598E7E0AF8",
+  "section_path": [
+    "7 Web界面",
+    "7.7 历史数据",
+    "7.7.4 Syslog日志"
+  ],
+  "section_title": "7.7.4 Syslog日志",
+  "start_pdf_page": 68,
+  "end_pdf_page": 68,
+  "blocks": [
+    {
+      "block_id": "BLK-342792E091A6E004",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 0,
+      "section_id": "SEC-52630D598E7E0AF8",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.4 Syslog日志"
+      ],
+      "section_title": "7.7.4 Syslog日志",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EF68CF1FCE939847",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 1,
+      "section_id": "SEC-52630D598E7E0AF8",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.4 Syslog日志"
+      ],
+      "section_title": "7.7.4 Syslog日志",
+      "block_type": "paragraph",
+      "text": "参数\n说明",
+      "table_cells": null,
+      "bbox": [
+        96.232,
+        76.189,
+        224.856,
+        86.534
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8AAC7F65BF104DD2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 2,
+      "section_id": "SEC-52630D598E7E0AF8",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.4 Syslog日志"
+      ],
+      "section_title": "7.7.4 Syslog日志",
+      "block_type": "paragraph",
+      "text": "类型\n该故障对应的类型。",
+      "table_cells": null,
+      "bbox": [
+        96.231,
+        96.906,
+        288.855,
+        107.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AC3266452413A0D2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 3,
+      "section_id": "SEC-52630D598E7E0AF8",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.4 Syslog日志"
+      ],
+      "section_title": "7.7.4 Syslog日志",
+      "block_type": "paragraph",
+      "text": "状态\n故障当前状态",
+      "table_cells": null,
+      "bbox": [
+        96.231,
+        118.906,
+        261.855,
+        129.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EE6DAF3E90C3E65A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 4,
+      "section_id": "SEC-52630D598E7E0AF8",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.4 Syslog日志"
+      ],
+      "section_title": "7.7.4 Syslog日志",
+      "block_type": "paragraph",
+      "text": "步骤 4 单击",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        153.265,
+        105.563,
+        165.748
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-15B5283A619A4CC4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 5,
+      "section_id": "SEC-52630D598E7E0AF8",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.4 Syslog日志"
+      ],
+      "section_title": "7.7.4 Syslog日志",
+      "block_type": "paragraph",
+      "text": "可将查询到的信息，导出到本地进行查看。",
+      "table_cells": null,
+      "bbox": [
+        119.738,
+        154.687,
+        290.738,
+        165.64
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-882796D6EE6DE110",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 6,
+      "section_id": "SEC-52630D598E7E0AF8",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.4 Syslog日志"
+      ],
+      "section_title": "7.7.4 Syslog日志",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        169.837,
+        112.187,
+        180.79
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1E231E077DFBC5D8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 22,
+      "section_id": "SEC-52630D598E7E0AF8",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.4 Syslog日志"
+      ],
+      "section_title": "7.7.4 Syslog日志",
+      "block_type": "heading",
+      "text": "7.7.4 Syslog 日志",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        476.009,
+        133.697,
+        488.179
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-34A6AB135650B539",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 23,
+      "section_id": "SEC-52630D598E7E0AF8",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.4 Syslog日志"
+      ],
+      "section_title": "7.7.4 Syslog日志",
+      "block_type": "paragraph",
+      "text": "查询Syslog 日志",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        493.975,
+        155.702,
+        504.928
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F92C65159143EC6E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 24,
+      "section_id": "SEC-52630D598E7E0AF8",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.4 Syslog日志"
+      ],
+      "section_title": "7.7.4 Syslog日志",
+      "block_type": "paragraph",
+      "text": "在历史数据界面，点击Syslog，点击日志记录，选择时间段及日志登记，可以查看该时间内\n用户syslog 记录。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        510.775,
+        450.452,
+        532.528
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FF97E56718877152",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 25,
+      "section_id": "SEC-52630D598E7E0AF8",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.4 Syslog日志"
+      ],
+      "section_title": "7.7.4 Syslog日志",
+      "block_type": "paragraph",
+      "text": "Syslog 日志最多支持存储 11 MB 数据，Web 最多支持查询 1000 条记录。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        538.875,
+        409.412,
+        549.828
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-56442B9654019356",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 26,
+      "section_id": "SEC-52630D598E7E0AF8",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.4 Syslog日志"
+      ],
+      "section_title": "7.7.4 Syslog日志",
+      "block_type": "paragraph",
+      "text": "导出Syslog 日志",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        570.175,
+        155.702,
+        581.128
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6D850A8F401D281A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 27,
+      "section_id": "SEC-52630D598E7E0AF8",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.4 Syslog日志"
+      ],
+      "section_title": "7.7.4 Syslog日志",
+      "block_type": "paragraph",
+      "text": "登录审计用户账号，在历史数据界面，点击Syslog 中的",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        593.498,
+        308.702,
+        604.451
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FD2FA58CEAE16257",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 28,
+      "section_id": "SEC-52630D598E7E0AF8",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.4 Syslog日志"
+      ],
+      "section_title": "7.7.4 Syslog日志",
+      "block_type": "paragraph",
+      "text": "图标，设置压缩密码后，可以将\nSyslog 日志导出。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        593.498,
+        448.877,
+        615.251
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-16AA523F006D22C8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 68,
+      "printed_page_label": "58",
+      "block_order": 29,
+      "section_id": "SEC-52630D598E7E0AF8",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.4 Syslog日志"
+      ],
+      "section_title": "7.7.4 Syslog日志",
+      "block_type": "paragraph",
+      "text": "压缩密码长度为8~32 位，需由大写字母、小写字母、数字、特殊符号中的三种或以\n上组成。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        621.598,
+        445.961,
+        643.351
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

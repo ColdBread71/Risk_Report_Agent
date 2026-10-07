@@ -1,0 +1,806 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-E4B48E1D6B4CB247",
+  "section_path": [
+    "5 电气连接",
+    "5.4 与逆变器连接",
+    "5.4.2 与MPLC通讯型逆变器连接"
+  ],
+  "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+  "start_pdf_page": 31,
+  "end_pdf_page": 33,
+  "blocks": [
+    {
+      "block_id": "BLK-3EAF726B8DEDB66F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 31,
+      "printed_page_label": "21",
+      "block_order": 0,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "paragraph",
+      "text": "用户手册\n5 电气连接",
+      "table_cells": null,
+      "bbox": [
+        74.615,
+        48.088,
+        463.969,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-95D3E537C6E89E55",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 31,
+      "printed_page_label": "21",
+      "block_order": 1,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "paragraph",
+      "text": "步骤 4 压接接线端子。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        149.362,
+        164.736,
+        161.845
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AF15B71FF5141C22",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 31,
+      "printed_page_label": "21",
+      "block_order": 2,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "paragraph",
+      "text": "注意",
+      "table_cells": null,
+      "bbox": [
+        111.483,
+        249.4,
+        133.483,
+        262.787
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9EB69F00DE4B05A8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 31,
+      "printed_page_label": "21",
+      "block_order": 3,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "list",
+      "text": "•\n接线时，RS485A 连接到A 端口，RS485B 连接到B 端口。",
+      "table_cells": null,
+      "bbox": [
+        106.237,
+        269.282,
+        356.959,
+        280.235
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-74048CC5D020B3D2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 31,
+      "printed_page_label": "21",
+      "block_order": 4,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "list",
+      "text": "•\nRS485 通讯线必须采用屏蔽双绞线，屏蔽层单点接地。",
+      "table_cells": null,
+      "bbox": [
+        106.237,
+        284.282,
+        339.175,
+        295.235
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-10FEA4836EC0788E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 31,
+      "printed_page_label": "21",
+      "block_order": 5,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "paragraph",
+      "text": "采用多芯多股铜芯线时，接入到数据采集器的RS485 端口的通讯线缆头必须压接合\n适规格的冷压端子。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        317.432,
+        457.757,
+        339.185
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8FAC2F96D6702ECD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 31,
+      "printed_page_label": "21",
+      "block_order": 6,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "paragraph",
+      "text": "步骤 5 将接线端子与数据采集器上的“A1B1~A7B7”端子连接。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        356.46,
+        319.014,
+        368.943
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B1EAAC688FFA705F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 31,
+      "printed_page_label": "21",
+      "block_order": 7,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        496.068,
+        126.36,
+        507.021
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-78E262EE9D26836A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 31,
+      "printed_page_label": "21",
+      "block_order": 8,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "heading",
+      "text": "5.4.2 与MPLC 通讯型逆变器连接",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        516.902,
+        220.64,
+        529.072
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A11E9FEB1BD14519",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 31,
+      "printed_page_label": "21",
+      "block_order": 9,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "paragraph",
+      "text": "数据采集器集成了MPLC 主节点，可以与集成了MPLC 从节点的逆变器连接，利用现有电力\n线实现MPLC 通讯。",
+      "table_cells": null,
+      "bbox": [
+        102.362,
+        534.868,
+        467.375,
+        556.621
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A9BCE89B3A47BF96",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "22",
+      "block_order": 0,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "paragraph",
+      "text": "用户手册\n5 电气连接",
+      "table_cells": null,
+      "bbox": [
+        60.442,
+        48.088,
+        449.796,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DB345DCDE9AB44A4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "22",
+      "block_order": 1,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "paragraph",
+      "text": "接线前准备",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        229.613,
+        133.193,
+        240.566
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C344C906C4CA75F3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "22",
+      "block_order": 2,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "list",
+      "text": "•\n断开变压器与电网的连接。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        247.763,
+        210.368,
+        258.716
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E968CFC9B157A676",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "22",
+      "block_order": 3,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "list",
+      "text": "•\n断开逆变器直流侧连接，确保系统处于安全操作状态。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        262.763,
+        318.368,
+        273.716
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-59E1A6BA3B9F0176",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "22",
+      "block_order": 4,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "list",
+      "text": "•\n若供货范围中的MPLC 电力线的线缆长度不满足现场要求，可参考以下步骤安装MPLC\n电力线。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        277.763,
+        447.122,
+        302.216
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6F44B255DEF9275D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "22",
+      "block_order": 5,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "list",
+      "text": "1. 使用剥线钳剥去MPLC 线缆的防护层。剥线长度如下图所示。",
+      "table_cells": null,
+      "bbox": [
+        102.368,
+        306.263,
+        362.045,
+        317.216
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2DB6D7AA9DE6AC06",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "22",
+      "block_order": 6,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "list",
+      "text": "2. 对剥除防护层后的MPLC 线缆安装插针，并使用压线钳压紧，操作如下所示。需制作\n3 根安装插针的MPLC 线缆。",
+      "table_cells": null,
+      "bbox": [
+        102.368,
+        363.963,
+        452.045,
+        388.416
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AD2CBD4F909321DC",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "22",
+      "block_order": 7,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "list",
+      "text": "3. 将接好线缆的插针分别接入插头，制作完成后如下图所示。",
+      "table_cells": null,
+      "bbox": [
+        102.368,
+        475.002,
+        350.543,
+        485.955
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A98EECA3B917A07D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "22",
+      "block_order": 8,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "paragraph",
+      "text": "接线方法",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        580.949,
+        124.193,
+        591.902
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C6F5A1AB16833483",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "22",
+      "block_order": 9,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "paragraph",
+      "text": "将供货范围中的MPLC 电力线，一端连接到数据采集器的MPLC 端口“L1、L2、L3”，另一端\n连接到断路器的三相接口。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        599.099,
+        453.233,
+        623.552
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-02564FA7CC294C5B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "22",
+      "block_order": 10,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "paragraph",
+      "text": "数据采集器的L1 端口需对应断路器A 相连接，L2 对应断路器B 相连接，L3 对应断路器C\n相连接。具体如下图所示。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        634.099,
+        444.98,
+        658.552
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6D343AB4D1337D41",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 33,
+      "printed_page_label": "23",
+      "block_order": 0,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "paragraph",
+      "text": "用户手册\n5 电气连接",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ADA0FC6DFEE0DE39",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 33,
+      "printed_page_label": "23",
+      "block_order": 1,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "paragraph",
+      "text": "外接的断路器不属于交付件，需要用户根据现场情况，自行配备。\n外接的断路器只需满足上述两个参数（额定工作电压、额定电流），其他参数，如分\n断能力等不做限制。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        346.835,
+        462.366,
+        379.388
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-79AE16B716EFF507",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 33,
+      "printed_page_label": "23",
+      "block_order": 2,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "table",
+      "text": "注意\t\nMPLC\nMPLC\t连接线隔离电压需大于1000V，推荐线缆规格为0.5~0.75mm2。\n连接线必须接入三级防雷器，否则可能造成设备损坏。\n\t\n注意\t\n数据\n采用\t采集器内置MPLC 模块，可以支持的交流电压＜1000V。\nMPLC 方式通讯时，数据采集器与逆变器的通讯距离不超过1000 米。\n\t\n注意",
+      "table_cells": [
+        [
+          null,
+          null
+        ],
+        [
+          "注意",
+          null
+        ],
+        [
+          "MPLC\nMPLC",
+          "连接线隔离电压需大于1000V，推荐线缆规格为0.5~0.75mm2。\n连接线必须接入三级防雷器，否则可能造成设备损坏。"
+        ],
+        [
+          null,
+          null
+        ],
+        [
+          "注意",
+          null
+        ],
+        [
+          "数据\n采用",
+          "采集器内置MPLC 模块，可以支持的交流电压＜1000V。\nMPLC 方式通讯时，数据采集器与逆变器的通讯距离不超过1000 米。"
+        ],
+        [
+          null,
+          null
+        ],
+        [
+          "注意",
+          null
+        ]
+      ],
+      "bbox": [
+        106.868,
+        383.804,
+        462.366,
+        529.867
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-38457974E93A952E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 33,
+      "printed_page_label": "23",
+      "block_order": 3,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "paragraph",
+      "text": "MPLC 组网适用于中压并网场景。如果应用于低压并网场景组网，需满足以下2 个条件：",
+      "table_cells": null,
+      "bbox": [
+        106.868,
+        533.923,
+        458.624,
+        544.876
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-72B1032346260118",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 33,
+      "printed_page_label": "23",
+      "block_order": 4,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "list",
+      "text": "•\n数据采集器和逆变器中的MPLC 从节点之间不能接负载。",
+      "table_cells": null,
+      "bbox": [
+        106.868,
+        547.573,
+        348.545,
+        558.526
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E1148EA91E7735DA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 33,
+      "printed_page_label": "23",
+      "block_order": 5,
+      "section_id": "SEC-E4B48E1D6B4CB247",
+      "section_path": [
+        "5 电气连接",
+        "5.4 与逆变器连接",
+        "5.4.2 与MPLC通讯型逆变器连接"
+      ],
+      "section_title": "5.4.2 与MPLC通讯型逆变器连接",
+      "block_type": "list",
+      "text": "•\n数据采集器与负载之间距离大于20m，即低压并网点到最近的负载配电线路大于\n20m，负载包括厂区的空调、机床、电动机等。",
+      "table_cells": null,
+      "bbox": [
+        106.868,
+        562.573,
+        437.798,
+        587.026
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

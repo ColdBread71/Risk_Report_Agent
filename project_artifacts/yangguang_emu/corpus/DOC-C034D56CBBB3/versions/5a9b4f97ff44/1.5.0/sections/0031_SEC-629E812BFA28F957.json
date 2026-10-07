@@ -1,0 +1,280 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-629E812BFA28F957",
+  "section_path": [
+    "5 电气连接",
+    "5.10 PT信号连接"
+  ],
+  "section_title": "5.10 PT信号连接",
+  "start_pdf_page": 39,
+  "end_pdf_page": 39,
+  "blocks": [
+    {
+      "block_id": "BLK-06E0A434EBF9A0D1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "29",
+      "block_order": 0,
+      "section_id": "SEC-629E812BFA28F957",
+      "section_path": [
+        "5 电气连接",
+        "5.10 PT信号连接"
+      ],
+      "section_title": "5.10 PT信号连接",
+      "block_type": "paragraph",
+      "text": "用户手册\n5 电气连接",
+      "table_cells": null,
+      "bbox": [
+        74.615,
+        48.088,
+        463.969,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-826CA3B504D78B47",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "29",
+      "block_order": 1,
+      "section_id": "SEC-629E812BFA28F957",
+      "section_path": [
+        "5 电气连接",
+        "5.10 PT信号连接"
+      ],
+      "section_title": "5.10 PT信号连接",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        257.259,
+        126.36,
+        268.212
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F6A8AD73836AC5EA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "29",
+      "block_order": 2,
+      "section_id": "SEC-629E812BFA28F957",
+      "section_path": [
+        "5 电气连接",
+        "5.10 PT信号连接"
+      ],
+      "section_title": "5.10 PT信号连接",
+      "block_type": "table",
+      "text": "标识\t说明\nAI1\t支持0V～10Vdc\n入。\nAI2\nAI3\nAI4\t支持4mA～20mA\n输入。\n\t\n-连接AI 信号–。",
+      "table_cells": [
+        [
+          "标识",
+          "说明"
+        ],
+        [
+          "AI1",
+          "支持0V～10Vdc\n入。"
+        ],
+        [
+          "AI2\nAI3\nAI4",
+          "支持4mA～20mA\n输入。"
+        ],
+        [
+          null,
+          null
+        ],
+        [
+          "-连接AI 信号–。",
+          null
+        ]
+      ],
+      "bbox": [
+        232.818,
+        273.042,
+        425.864,
+        419.878
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D17E16D6F9D5D1CB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "29",
+      "block_order": 3,
+      "section_id": "SEC-629E812BFA28F957",
+      "section_path": [
+        "5 电气连接",
+        "5.10 PT信号连接"
+      ],
+      "section_title": "5.10 PT信号连接",
+      "block_type": "paragraph",
+      "text": "AI",
+      "table_cells": null,
+      "bbox": [
+        111.035,
+        331.958,
+        119.54,
+        342.002
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C42215C087357089",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "29",
+      "block_order": 4,
+      "section_id": "SEC-629E812BFA28F957",
+      "section_path": [
+        "5 电气连接",
+        "5.10 PT信号连接"
+      ],
+      "section_title": "5.10 PT信号连接",
+      "block_type": "paragraph",
+      "text": "AI 端口的+连接AI 信号+，-连接AI 信号–。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        404.509,
+        301.644,
+        415.462
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-12107AA888177F8E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "29",
+      "block_order": 5,
+      "section_id": "SEC-629E812BFA28F957",
+      "section_path": [
+        "5 电气连接",
+        "5.10 PT信号连接"
+      ],
+      "section_title": "5.10 PT信号连接",
+      "block_type": "heading",
+      "text": "5.10 PT 信号连接",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        453.911,
+        165.054,
+        468.515
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EA73D266DFAE9662",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "29",
+      "block_order": 6,
+      "section_id": "SEC-629E812BFA28F957",
+      "section_path": [
+        "5 电气连接",
+        "5.10 PT信号连接"
+      ],
+      "section_title": "5.10 PT信号连接",
+      "block_type": "paragraph",
+      "text": "数据采集器共有2 路PT 端口，支持3 线制或者2 线制PT100/PT1000 温度传感器接入。",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        481.559,
+        454.926,
+        492.512
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7149BB878485ADDE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "29",
+      "block_order": 7,
+      "section_id": "SEC-629E812BFA28F957",
+      "section_path": [
+        "5 电气连接",
+        "5.10 PT信号连接"
+      ],
+      "section_title": "5.10 PT信号连接",
+      "block_type": "paragraph",
+      "text": "步骤 1 使用剥线钳剥去温度检测信号线缆的防护层和绝缘层，如下图所示。",
+      "table_cells": null,
+      "bbox": [
+        70.869,
+        501.637,
+        371.739,
+        514.12
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FA2EDC25DBC33A0C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "29",
+      "block_order": 8,
+      "section_id": "SEC-629E812BFA28F957",
+      "section_path": [
+        "5 电气连接",
+        "5.10 PT信号连接"
+      ],
+      "section_title": "5.10 PT信号连接",
+      "block_type": "paragraph",
+      "text": "步骤 2 安装合适的冷压端子，并使用压线钳压紧。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        612.026,
+        272.736,
+        624.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

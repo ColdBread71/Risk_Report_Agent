@@ -1,0 +1,482 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-81C0A7BD9B76451C",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.8 转发MODBUS服务配置",
+    "7.8.8.3 Modbus TCP快调模式"
+  ],
+  "section_title": "7.8.8.3 Modbus TCP快调模式",
+  "start_pdf_page": 76,
+  "end_pdf_page": 76,
+  "blocks": [
+    {
+      "block_id": "BLK-9C75A380BB656DF1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 0,
+      "section_id": "SEC-81C0A7BD9B76451C",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.8.8.3 Modbus TCP快调模式",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A6AE22CD5A61ECB9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 14,
+      "section_id": "SEC-81C0A7BD9B76451C",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.8.8.3 Modbus TCP快调模式",
+      "block_type": "heading",
+      "text": "7.8.8.3 Modbus TCP 快调模式",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        315.766,
+        190.377,
+        327.936
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2AF2678AB7C36F76",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 15,
+      "section_id": "SEC-81C0A7BD9B76451C",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.8.8.3 Modbus TCP快调模式",
+      "block_type": "paragraph",
+      "text": "Modbus TCP 快调开启后，可提高功率调节指令的响应速度。",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        334.99,
+        318.421,
+        345.335
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-502865057033334B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 16,
+      "section_id": "SEC-81C0A7BD9B76451C",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.8.8.3 Modbus TCP快调模式",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        88.192,
+        355.832,
+        124.192,
+        366.785
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6ED4084DFDA51F88",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 17,
+      "section_id": "SEC-81C0A7BD9B76451C",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.8.8.3 Modbus TCP快调模式",
+      "block_type": "list",
+      "text": "•\n使用Modbus TCP 快调时，需在后台与数采Logger4000 的ETH3 或ETH4 快调口之间\n架设一台交换机，并通过网线将两者进行连接。网线类型选择通用性标准网线即可，如\nCAT5E 类/长度75cm 网线。",
+      "table_cells": null,
+      "bbox": [
+        88.192,
+        375.832,
+        446.941,
+        413.785
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-16D41FADCB0DFC60",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 18,
+      "section_id": "SEC-81C0A7BD9B76451C",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.8.8.3 Modbus TCP快调模式",
+      "block_type": "list",
+      "text": "•\n只需配置快调端口ETH3 或ETH4 其中一个网口的IP 地址即可，尽可能与后台IP 设置成\n同一网段。",
+      "table_cells": null,
+      "bbox": [
+        88.192,
+        417.832,
+        453.385,
+        442.285
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F28FB76EE6ADD06B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 19,
+      "section_id": "SEC-81C0A7BD9B76451C",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.8.8.3 Modbus TCP快调模式",
+      "block_type": "list",
+      "text": "•\nLogger4000 的固件版本为P019 及以上支持Modbus TCP 快调。见7.8.16 查看\n固件版本。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        457.332,
+        444.971,
+        481.785
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BAAA89CF6564A4CC",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 20,
+      "section_id": "SEC-81C0A7BD9B76451C",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.8.8.3 Modbus TCP快调模式",
+      "block_type": "list",
+      "text": "•\nModbus TCP 快调与GOOSE 转发协议不可同时开启。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        485.832,
+        347.645,
+        496.785
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F6FF3E74A3F15F2B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 21,
+      "section_id": "SEC-81C0A7BD9B76451C",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.8.8.3 Modbus TCP快调模式",
+      "block_type": "list",
+      "text": "•\nModbus TCP 快调仅支持开环控制。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        500.832,
+        274.133,
+        511.785
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E00DABB660BAFCEA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 22,
+      "section_id": "SEC-81C0A7BD9B76451C",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.8.8.3 Modbus TCP快调模式",
+      "block_type": "paragraph",
+      "text": "开启Modbus TCP 快调功能后，必须确保后台下发的调度指令的间隔时间满足以下\n要求，否则逆变器可能无法完全响应目标值。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        533.982,
+        442.208,
+        555.735
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AD0FBB0DC18CBDD4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 23,
+      "section_id": "SEC-81C0A7BD9B76451C",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.8.8.3 Modbus TCP快调模式",
+      "block_type": "list",
+      "text": "•\n有功功率调节：调度间隔需为60 毫秒或以上。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        558.432,
+        314.876,
+        569.385
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1037D0D1B80AE5C0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 24,
+      "section_id": "SEC-81C0A7BD9B76451C",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.8.8.3 Modbus TCP快调模式",
+      "block_type": "list",
+      "text": "•\n无功功率调节：调度间隔需为30 毫秒或以上。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        573.432,
+        314.876,
+        584.385
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EE8F8A85DA188305",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 25,
+      "section_id": "SEC-81C0A7BD9B76451C",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.8.8.3 Modbus TCP快调模式",
+      "block_type": "paragraph",
+      "text": "步骤 1 导航栏中点击系统 > 转发配置 > MODBUS，跳转到相应页面。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        606.01,
+        336.575,
+        618.493
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4A6D69B672C0FEFC",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 26,
+      "section_id": "SEC-81C0A7BD9B76451C",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.8.8.3 Modbus TCP快调模式",
+      "block_type": "paragraph",
+      "text": "默认显示Server 标签页。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        620.932,
+        190.568,
+        631.885
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1D0A3EA13D12E607",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 27,
+      "section_id": "SEC-81C0A7BD9B76451C",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.8.8.3 Modbus TCP快调模式",
+      "block_type": "paragraph",
+      "text": "步骤 2 点击Modbus TCP 快调。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        636.01,
+        189.578,
+        648.493
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AE6F849B4E277C20",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 28,
+      "section_id": "SEC-81C0A7BD9B76451C",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.3 Modbus TCP快调模式"
+      ],
+      "section_title": "7.8.8.3 Modbus TCP快调模式",
+      "block_type": "paragraph",
+      "text": "步骤 3 在开关下拉列表中，选择使能。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        652.51,
+        213.563,
+        664.993
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

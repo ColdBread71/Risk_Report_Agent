@@ -1,0 +1,134 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-FA1BCEB24D48FD28",
+  "section_path": [
+    "9 电网调度",
+    "9.3 有功功率调节",
+    "9.3.2 本地有功调节",
+    "9.3.2.1 开环控制"
+  ],
+  "section_title": "9.3.2.1 开环控制",
+  "start_pdf_page": 92,
+  "end_pdf_page": 92,
+  "blocks": [
+    {
+      "block_id": "BLK-6B965437D6493EB4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 0,
+      "section_id": "SEC-FA1BCEB24D48FD28",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.1 开环控制"
+      ],
+      "section_title": "9.3.2.1 开环控制",
+      "block_type": "paragraph",
+      "text": "用户手册\n9 电网调度",
+      "table_cells": null,
+      "bbox": [
+        60.441,
+        48.088,
+        449.795,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DA07739FA04A5B31",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 1,
+      "section_id": "SEC-FA1BCEB24D48FD28",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.1 开环控制"
+      ],
+      "section_title": "9.3.2.1 开环控制",
+      "block_type": "paragraph",
+      "text": "远程调度配置完成后，运维人员可通过后台发送功率调节目标值。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        71.556,
+        349.193,
+        82.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3D73C8057EF53680",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 25,
+      "section_id": "SEC-FA1BCEB24D48FD28",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.1 开环控制"
+      ],
+      "section_title": "9.3.2.1 开环控制",
+      "block_type": "heading",
+      "text": "9.3.2.1 开环控制",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        636.54,
+        132.027,
+        648.71
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9892E81B48C4CA1C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 26,
+      "section_id": "SEC-FA1BCEB24D48FD28",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.1 开环控制"
+      ],
+      "section_title": "9.3.2.1 开环控制",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        88.197,
+        655.856,
+        124.197,
+        666.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

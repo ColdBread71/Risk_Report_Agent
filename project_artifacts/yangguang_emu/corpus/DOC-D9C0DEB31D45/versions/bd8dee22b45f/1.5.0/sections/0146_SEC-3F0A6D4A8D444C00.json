@@ -1,0 +1,437 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-3F0A6D4A8D444C00",
+  "section_path": [
+    "7 Web界面",
+    "7.11 关于",
+    "7.11.1 查看固件版本"
+  ],
+  "section_title": "7.11.1 查看固件版本",
+  "start_pdf_page": 89,
+  "end_pdf_page": 90,
+  "blocks": [
+    {
+      "block_id": "BLK-1A37B95AFFA82A4D",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 89,
+      "printed_page_label": "79",
+      "block_order": 0,
+      "section_id": "SEC-3F0A6D4A8D444C00",
+      "section_path": [
+        "7 Web界面",
+        "7.11 关于",
+        "7.11.1 查看固件版本"
+      ],
+      "section_title": "7.11.1 查看固件版本",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.617,
+        48.088,
+        463.964,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F3E20FA5243AB4A2",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 89,
+      "printed_page_label": "79",
+      "block_order": 1,
+      "section_id": "SEC-3F0A6D4A8D444C00",
+      "section_path": [
+        "7 Web界面",
+        "7.11 关于",
+        "7.11.1 查看固件版本"
+      ],
+      "section_title": "7.11.1 查看固件版本",
+      "block_type": "list",
+      "text": "•\n设置为使能，则支持数据采集器与逆变器为PLC 通讯时，当逆变器处于孤岛状态，数据\n采集器会把逆变器的通讯状态设置为离线。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        72.906,
+        461.916,
+        97.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BB753BA1887288CB",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 89,
+      "printed_page_label": "79",
+      "block_order": 2,
+      "section_id": "SEC-3F0A6D4A8D444C00",
+      "section_path": [
+        "7 Web界面",
+        "7.11 关于",
+        "7.11.1 查看固件版本"
+      ],
+      "section_title": "7.11.1 查看固件版本",
+      "block_type": "list",
+      "text": "•\n设置为禁止，则不支持上述操作。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        101.406,
+        250.911,
+        112.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FF03B9FCEB36BE84",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 89,
+      "printed_page_label": "79",
+      "block_order": 3,
+      "section_id": "SEC-3F0A6D4A8D444C00",
+      "section_path": [
+        "7 Web界面",
+        "7.11 关于",
+        "7.11.1 查看固件版本"
+      ],
+      "section_title": "7.11.1 查看固件版本",
+      "block_type": "paragraph",
+      "text": "步骤 4 使用下拉框选择Ping 功能状态：使能或禁止。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        116.484,
+        286.245,
+        128.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-25EEE5B55A0D021E",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 89,
+      "printed_page_label": "79",
+      "block_order": 4,
+      "section_id": "SEC-3F0A6D4A8D444C00",
+      "section_path": [
+        "7 Web界面",
+        "7.11 关于",
+        "7.11.1 查看固件版本"
+      ],
+      "section_title": "7.11.1 查看固件版本",
+      "block_type": "list",
+      "text": "•\n设置为使能，则设备支持被 ping 命令所探测，用户可通过 ping 设备IP 验证网络连通\n性。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        134.406,
+        452.196,
+        158.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-50BAF21BD2AE6EE3",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 89,
+      "printed_page_label": "79",
+      "block_order": 5,
+      "section_id": "SEC-3F0A6D4A8D444C00",
+      "section_path": [
+        "7 Web界面",
+        "7.11 关于",
+        "7.11.1 查看固件版本"
+      ],
+      "section_title": "7.11.1 查看固件版本",
+      "block_type": "list",
+      "text": "•\n设置为禁止，则不支持上述操作。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        162.906,
+        250.911,
+        173.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A8C4EF3AD1545A66",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 89,
+      "printed_page_label": "79",
+      "block_order": 6,
+      "section_id": "SEC-3F0A6D4A8D444C00",
+      "section_path": [
+        "7 Web界面",
+        "7.11 关于",
+        "7.11.1 查看固件版本"
+      ],
+      "section_title": "7.11.1 查看固件版本",
+      "block_type": "paragraph",
+      "text": "该协议为非安全协议，存在风险，请确认设备网络环境安全后再开启。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        183.056,
+        407.735,
+        194.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0339B2AA85482D4E",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 89,
+      "printed_page_label": "79",
+      "block_order": 7,
+      "section_id": "SEC-3F0A6D4A8D444C00",
+      "section_path": [
+        "7 Web界面",
+        "7.11 关于",
+        "7.11.1 查看固件版本"
+      ],
+      "section_title": "7.11.1 查看固件版本",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        211.356,
+        126.36,
+        222.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9EC022F5FEBD1289",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 89,
+      "printed_page_label": "79",
+      "block_order": 10,
+      "section_id": "SEC-3F0A6D4A8D444C00",
+      "section_path": [
+        "7 Web界面",
+        "7.11 关于",
+        "7.11.1 查看固件版本"
+      ],
+      "section_title": "7.11.1 查看固件版本",
+      "block_type": "heading",
+      "text": "7.11.1 查看固件版本",
+      "table_cells": null,
+      "bbox": [
+        70.865,
+        302.74,
+        162.675,
+        314.91
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7F0197F5C2E7CF29",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 89,
+      "printed_page_label": "79",
+      "block_order": 11,
+      "section_id": "SEC-3F0A6D4A8D444C00",
+      "section_path": [
+        "7 Web界面",
+        "7.11 关于",
+        "7.11.1 查看固件版本"
+      ],
+      "section_title": "7.11.1 查看固件版本",
+      "block_type": "paragraph",
+      "text": "查看数据采集器的固件信息。",
+      "table_cells": null,
+      "bbox": [
+        102.368,
+        321.964,
+        212.868,
+        332.308
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-40746738AEF77CD4",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 89,
+      "printed_page_label": "79",
+      "block_order": 12,
+      "section_id": "SEC-3F0A6D4A8D444C00",
+      "section_path": [
+        "7 Web界面",
+        "7.11 关于",
+        "7.11.1 查看固件版本"
+      ],
+      "section_title": "7.11.1 查看固件版本",
+      "block_type": "paragraph",
+      "text": "步骤 1 导航栏中点击关于，跳转至相应页面。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        347.384,
+        254.736,
+        359.867
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-957815CC0914660E",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 89,
+      "printed_page_label": "79",
+      "block_order": 13,
+      "section_id": "SEC-3F0A6D4A8D444C00",
+      "section_path": [
+        "7 Web界面",
+        "7.11 关于",
+        "7.11.1 查看固件版本"
+      ],
+      "section_title": "7.11.1 查看固件版本",
+      "block_type": "paragraph",
+      "text": "步骤 2 点击5 次版本对应的字段，查看数据采集器的版本信息。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        363.884,
+        327.24,
+        376.367
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7ED14CE81856DBB1",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 89,
+      "printed_page_label": "79",
+      "block_order": 14,
+      "section_id": "SEC-3F0A6D4A8D444C00",
+      "section_path": [
+        "7 Web界面",
+        "7.11 关于",
+        "7.11.1 查看固件版本"
+      ],
+      "section_title": "7.11.1 查看固件版本",
+      "block_type": "paragraph",
+      "text": "数据采集器的固件版本即产品发布软件版本，版本号格式为：“LOGGER-\nSV400.001.00.P[XXX]”。用户可通过“P[XXX]”部分识别具体的固件版本。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        476.162,
+        390.303,
+        500.615
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4BA7668538C000DF",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 90,
+      "printed_page_label": "80",
+      "block_order": 0,
+      "section_id": "SEC-3F0A6D4A8D444C00",
+      "section_path": [
+        "7 Web界面",
+        "7.11 关于",
+        "7.11.1 查看固件版本"
+      ],
+      "section_title": "7.11.1 查看固件版本",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.443,
+        48.088,
+        449.79,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4E32BC73F4E8B5E6",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 90,
+      "printed_page_label": "80",
+      "block_order": 1,
+      "section_id": "SEC-3F0A6D4A8D444C00",
+      "section_path": [
+        "7 Web界面",
+        "7.11 关于",
+        "7.11.1 查看固件版本"
+      ],
+      "section_title": "7.11.1 查看固件版本",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        260.346,
+        112.187,
+        271.299
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

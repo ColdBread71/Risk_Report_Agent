@@ -1,0 +1,381 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-6CCE602F24161CEF",
+  "section_path": [
+    "7 Web界面",
+    "7.5 设备监控",
+    "7.5.2 直流信息"
+  ],
+  "section_title": "7.5.2 直流信息",
+  "start_pdf_page": 51,
+  "end_pdf_page": 51,
+  "blocks": [
+    {
+      "block_id": "BLK-718DE3B50E16E4A0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 0,
+      "section_id": "SEC-6CCE602F24161CEF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.2 直流信息"
+      ],
+      "section_title": "7.5.2 直流信息",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.613,
+        48.088,
+        463.967,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4A1448566D0F9B13",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 1,
+      "section_id": "SEC-6CCE602F24161CEF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.2 直流信息"
+      ],
+      "section_title": "7.5.2 直流信息",
+      "block_type": "paragraph",
+      "text": "常用功能",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        157.59,
+        138.366,
+        168.543
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-19310063156BD6C5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 2,
+      "section_id": "SEC-6CCE602F24161CEF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.2 直流信息"
+      ],
+      "section_title": "7.5.2 直流信息",
+      "block_type": "list",
+      "text": "•\n设备接入：可以自动搜索设备和添加设备。支持对设备进行增、删、改、查操作；能够自\n动搜索设备，按条件添加设备，自动分配地址。参考7.6.1 设备列表。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        175.74,
+        467.541,
+        200.193
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-933CC4BF0F6BD06D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 3,
+      "section_id": "SEC-6CCE602F24161CEF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.2 直流信息"
+      ],
+      "section_title": "7.5.2 直流信息",
+      "block_type": "list",
+      "text": "•\n网络管理：可以对以太网参数进行设置。参考7.8.13 端口参数。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        204.24,
+        371.313,
+        215.193
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4E1E1E2CF319D51E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 4,
+      "section_id": "SEC-6CCE602F24161CEF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.2 直流信息"
+      ],
+      "section_title": "7.5.2 直流信息",
+      "block_type": "list",
+      "text": "•\n转发配置：将系统采集的数据转发给后台。参考7.8.6 转发阳光云服务设置~7.8.10 转发\nGOOSE 服务配置。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        219.24,
+        462.087,
+        243.693
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0DDE5C0B44B034DE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 5,
+      "section_id": "SEC-6CCE602F24161CEF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.2 直流信息"
+      ],
+      "section_title": "7.5.2 直流信息",
+      "block_type": "list",
+      "text": "•\n系统维护：可以进行系统升级、日志导出和系统重启等操作。参考7.8.2 系统维护。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        247.74,
+        447.309,
+        258.693
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7D2D34F4223E0C29",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 6,
+      "section_id": "SEC-6CCE602F24161CEF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.2 直流信息"
+      ],
+      "section_title": "7.5.2 直流信息",
+      "block_type": "paragraph",
+      "text": "数据指标",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        265.89,
+        138.366,
+        276.843
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9B71F06C205F4124",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 7,
+      "section_id": "SEC-6CCE602F24161CEF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.2 直流信息"
+      ],
+      "section_title": "7.5.2 直流信息",
+      "block_type": "paragraph",
+      "text": "查看今日发电量、累计发电量、实时有功功率、可调有功功率上限、离线设备数量、在线设\n备数量、实时无功功率、无功功率范围、有功功率设定值、无功功率设定值。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        284.04,
+        462.366,
+        308.493
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-951203F2DECF4344",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 8,
+      "section_id": "SEC-6CCE602F24161CEF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.2 直流信息"
+      ],
+      "section_title": "7.5.2 直流信息",
+      "block_type": "paragraph",
+      "text": "单击展开，可查看更多信息。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        319.04,
+        219.366,
+        329.993
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9B2FF68727C05319",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 9,
+      "section_id": "SEC-6CCE602F24161CEF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.2 直流信息"
+      ],
+      "section_title": "7.5.2 直流信息",
+      "block_type": "paragraph",
+      "text": "逆变器运行数据",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        339.19,
+        165.366,
+        350.143
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-303844953B4D0A87",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 10,
+      "section_id": "SEC-6CCE602F24161CEF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.2 直流信息"
+      ],
+      "section_title": "7.5.2 直流信息",
+      "block_type": "paragraph",
+      "text": "可查看逆变器的运行状态、日发电量、有功功率和无功功率等信息。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        357.34,
+        372.366,
+        368.293
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2381E2C373F2311C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 24,
+      "section_id": "SEC-6CCE602F24161CEF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.2 直流信息"
+      ],
+      "section_title": "7.5.2 直流信息",
+      "block_type": "heading",
+      "text": "7.5.2 直流信息",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        636.245,
+        137.86,
+        648.415
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-96252ECFBFA62509",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 25,
+      "section_id": "SEC-6CCE602F24161CEF",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.2 直流信息"
+      ],
+      "section_title": "7.5.2 直流信息",
+      "block_type": "paragraph",
+      "text": "可查看多路MPPT 和多路组串的电压电流信息。",
+      "table_cells": null,
+      "bbox": [
+        102.364,
+        655.469,
+        283.227,
+        665.814
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

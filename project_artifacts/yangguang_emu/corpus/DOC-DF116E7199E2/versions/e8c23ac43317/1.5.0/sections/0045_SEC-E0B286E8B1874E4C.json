@@ -1,0 +1,394 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-E0B286E8B1874E4C",
+  "section_path": [
+    "12 附录：MOXA EDS-408A 安全加固操作指导",
+    "12.7 固件升级流程"
+  ],
+  "section_title": "12.7 固件升级流程",
+  "start_pdf_page": 38,
+  "end_pdf_page": 38,
+  "blocks": [
+    {
+      "block_id": "BLK-EB1DEEB29D35FA80",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "34",
+      "block_order": 0,
+      "section_id": "SEC-E0B286E8B1874E4C",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.7 固件升级流程"
+      ],
+      "section_title": "12.7 固件升级流程",
+      "block_type": "paragraph",
+      "text": "用户网络安全操作手册\n12 附录：MOXA EDS-408A 安全加固操作指导",
+      "table_cells": null,
+      "bbox": [
+        60.443,
+        48.088,
+        449.79,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-999DF3F8C4C296B0",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "34",
+      "block_order": 1,
+      "section_id": "SEC-E0B286E8B1874E4C",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.7 固件升级流程"
+      ],
+      "section_title": "12.7 固件升级流程",
+      "block_type": "paragraph",
+      "text": "设置完成后，如果需要更改设置，则只能通过 console 登录到交换机进行配置修\n改。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        256.487,
+        430.211,
+        278.24
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D5AB9846183D6366",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "34",
+      "block_order": 2,
+      "section_id": "SEC-E0B286E8B1874E4C",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.7 固件升级流程"
+      ],
+      "section_title": "12.7 固件升级流程",
+      "block_type": "heading",
+      "text": "12.7 固件升级流程",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        310.689,
+        159.545,
+        325.293
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-42AE20546D1829A6",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "34",
+      "block_order": 3,
+      "section_id": "SEC-E0B286E8B1874E4C",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.7 固件升级流程"
+      ],
+      "section_title": "12.7 固件升级流程",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        338.337,
+        124.193,
+        349.29
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D892ED6378D2911C",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "34",
+      "block_order": 4,
+      "section_id": "SEC-E0B286E8B1874E4C",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.7 固件升级流程"
+      ],
+      "section_title": "12.7 固件升级流程",
+      "block_type": "paragraph",
+      "text": "固件升级过程中，因为会临时打开网络接口，故需要先将连接在交换机上的网线移除，然后\n进行固件升级。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        358.837,
+        448.193,
+        383.29
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-32A3E24D25495774",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "34",
+      "block_order": 5,
+      "section_id": "SEC-E0B286E8B1874E4C",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.7 固件升级流程"
+      ],
+      "section_title": "12.7 固件升级流程",
+      "block_type": "paragraph",
+      "text": "步骤 1 首先通过console 登入交换机cli 界面。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        392.414,
+        244.082,
+        404.897
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-15FAC0E90BF4AB3A",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "34",
+      "block_order": 6,
+      "section_id": "SEC-E0B286E8B1874E4C",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.7 固件升级流程"
+      ],
+      "section_title": "12.7 固件升级流程",
+      "block_type": "paragraph",
+      "text": "步骤 2 进入配置模式：configure。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        408.914,
+        196.589,
+        421.397
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A7DEB7DDA7283067",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "34",
+      "block_order": 7,
+      "section_id": "SEC-E0B286E8B1874E4C",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.7 固件升级流程"
+      ],
+      "section_title": "12.7 固件升级流程",
+      "block_type": "paragraph",
+      "text": "步骤 3 修改管理接口：interface mgmt。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        425.414,
+        219.08,
+        437.897
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E4E8C2CFA8AF72E8",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "34",
+      "block_order": 8,
+      "section_id": "SEC-E0B286E8B1874E4C",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.7 固件升级流程"
+      ],
+      "section_title": "12.7 固件升级流程",
+      "block_type": "paragraph",
+      "text": "步骤 4 绑定管理VLAN 10：bind vlan 10。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        441.914,
+        228.368,
+        454.397
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F095B49D97DF0B62",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "34",
+      "block_order": 9,
+      "section_id": "SEC-E0B286E8B1874E4C",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.7 固件升级流程"
+      ],
+      "section_title": "12.7 固件升级流程",
+      "block_type": "paragraph",
+      "text": "步骤 5 退出配置管理接口：exit。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        458.414,
+        191.567,
+        470.897
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8229B56B805BA0ED",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "34",
+      "block_order": 10,
+      "section_id": "SEC-E0B286E8B1874E4C",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.7 固件升级流程"
+      ],
+      "section_title": "12.7 固件升级流程",
+      "block_type": "paragraph",
+      "text": "步骤 6 使能https：ip http-server secure。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        474.914,
+        227.36,
+        487.397
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-40D70FFE00F6164E",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "34",
+      "block_order": 11,
+      "section_id": "SEC-E0B286E8B1874E4C",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.7 固件升级流程"
+      ],
+      "section_title": "12.7 固件升级流程",
+      "block_type": "paragraph",
+      "text": "步骤 7 退出配置模式：exit。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        491.414,
+        173.567,
+        503.897
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C72EB392ECFFB8FD",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "34",
+      "block_order": 12,
+      "section_id": "SEC-E0B286E8B1874E4C",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.7 固件升级流程"
+      ],
+      "section_title": "12.7 固件升级流程",
+      "block_type": "paragraph",
+      "text": "步骤 8 保存配置：save config。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        507.914,
+        187.094,
+        520.398
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C3ECFB31775B312B",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "34",
+      "block_order": 13,
+      "section_id": "SEC-E0B286E8B1874E4C",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.7 固件升级流程"
+      ],
+      "section_title": "12.7 固件升级流程",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        646.572,
+        112.187,
+        657.525
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

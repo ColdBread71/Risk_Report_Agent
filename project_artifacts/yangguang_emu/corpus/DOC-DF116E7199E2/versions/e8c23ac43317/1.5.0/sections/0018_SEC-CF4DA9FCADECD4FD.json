@@ -1,0 +1,546 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-CF4DA9FCADECD4FD",
+  "section_path": [
+    "8 用户管理",
+    "8.3 LDAP管理"
+  ],
+  "section_title": "8.3 LDAP管理",
+  "start_pdf_page": 18,
+  "end_pdf_page": 19,
+  "blocks": [
+    {
+      "block_id": "BLK-832BE155CB22BEE4",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "14",
+      "block_order": 0,
+      "section_id": "SEC-CF4DA9FCADECD4FD",
+      "section_path": [
+        "8 用户管理",
+        "8.3 LDAP管理"
+      ],
+      "section_title": "8.3 LDAP管理",
+      "block_type": "paragraph",
+      "text": "用户网络安全操作手册\n8 用户管理",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3E116E29299FBC07",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "14",
+      "block_order": 1,
+      "section_id": "SEC-CF4DA9FCADECD4FD",
+      "section_path": [
+        "8 用户管理",
+        "8.3 LDAP管理"
+      ],
+      "section_title": "8.3 LDAP管理",
+      "block_type": "paragraph",
+      "text": "步骤 2 修改账户保护和会话安全相关参数。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        71.484,
+        231.563,
+        83.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-22FB0222499CA8C6",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "14",
+      "block_order": 2,
+      "section_id": "SEC-CF4DA9FCADECD4FD",
+      "section_path": [
+        "8 用户管理",
+        "8.3 LDAP管理"
+      ],
+      "section_title": "8.3 LDAP管理",
+      "block_type": "paragraph",
+      "text": "支持修改下列参数：",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        89.406,
+        168.563,
+        100.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EF40A01A912F75D6",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "14",
+      "block_order": 3,
+      "section_id": "SEC-CF4DA9FCADECD4FD",
+      "section_path": [
+        "8 用户管理",
+        "8.3 LDAP管理"
+      ],
+      "section_title": "8.3 LDAP管理",
+      "block_type": "list",
+      "text": "•\n非法访问次数：限制用户尝试登录的最大次数。如输入密码错误次数超过指定值，账号将\n自动被锁定。（参数范围：5~20 次；默认值：5）",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        104.406,
+        452.738,
+        128.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8C730E1F495B8594",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "14",
+      "block_order": 4,
+      "section_id": "SEC-CF4DA9FCADECD4FD",
+      "section_path": [
+        "8 用户管理",
+        "8.3 LDAP管理"
+      ],
+      "section_title": "8.3 LDAP管理",
+      "block_type": "list",
+      "text": "•\n非法访问时间窗：对用户的非法访问次数进行时间范围约束。如指定小时数内（参数范\n围：1~24h；默认值：24），若非法访问次数超限，则自动锁定账号。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        132.906,
+        443.738,
+        157.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B98E5F21EF898BD0",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "14",
+      "block_order": 5,
+      "section_id": "SEC-CF4DA9FCADECD4FD",
+      "section_path": [
+        "8 用户管理",
+        "8.3 LDAP管理"
+      ],
+      "section_title": "8.3 LDAP管理",
+      "block_type": "list",
+      "text": "•\n会话超时时间：用户登录后，在指定时间范围内没有操作将导致会话超时，系统将提示用\n户重新登录。（参数范围：1~60min；默认值：10）",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        161.406,
+        452.738,
+        185.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EAA01C51B675C447",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "14",
+      "block_order": 6,
+      "section_id": "SEC-CF4DA9FCADECD4FD",
+      "section_path": [
+        "8 用户管理",
+        "8.3 LDAP管理"
+      ],
+      "section_title": "8.3 LDAP管理",
+      "block_type": "list",
+      "text": "•\n用户锁定时间：在账号因连续登录失败被锁定后，设定账号解锁的等待时间。（参数范\n围：1~60min；默认值：10）",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        189.906,
+        443.738,
+        214.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0BB5824B798CD016",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "14",
+      "block_order": 7,
+      "section_id": "SEC-CF4DA9FCADECD4FD",
+      "section_path": [
+        "8 用户管理",
+        "8.3 LDAP管理"
+      ],
+      "section_title": "8.3 LDAP管理",
+      "block_type": "paragraph",
+      "text": "步骤 3 点击保存。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        218.484,
+        132.563,
+        230.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-19C0E8D51DE6B8D2",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "14",
+      "block_order": 8,
+      "section_id": "SEC-CF4DA9FCADECD4FD",
+      "section_path": [
+        "8 用户管理",
+        "8.3 LDAP管理"
+      ],
+      "section_title": "8.3 LDAP管理",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        235.056,
+        112.187,
+        246.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-737A412AACFA6215",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "14",
+      "block_order": 9,
+      "section_id": "SEC-CF4DA9FCADECD4FD",
+      "section_path": [
+        "8 用户管理",
+        "8.3 LDAP管理"
+      ],
+      "section_title": "8.3 LDAP管理",
+      "block_type": "heading",
+      "text": "8.3 LDAP 管理",
+      "table_cells": null,
+      "bbox": [
+        56.687,
+        263.958,
+        136.223,
+        278.562
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A576336E38D22BDF",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "14",
+      "block_order": 10,
+      "section_id": "SEC-CF4DA9FCADECD4FD",
+      "section_path": [
+        "8 用户管理",
+        "8.3 LDAP管理"
+      ],
+      "section_title": "8.3 LDAP管理",
+      "block_type": "paragraph",
+      "text": "支持LDAP 方式登录，适用于现场支持LDAP 服务的电站，可以对账号集中管理。",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        291.606,
+        414.215,
+        302.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2EC3C8313B081AB4",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "14",
+      "block_order": 11,
+      "section_id": "SEC-CF4DA9FCADECD4FD",
+      "section_path": [
+        "8 用户管理",
+        "8.3 LDAP管理"
+      ],
+      "section_title": "8.3 LDAP管理",
+      "block_type": "paragraph",
+      "text": "通过登录管理员账户，点击LDAP 管理，进入LDAP 管理操作界面。",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        313.106,
+        360.215,
+        324.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AA223D07CD7BA2DB",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 18,
+      "printed_page_label": "14",
+      "block_order": 12,
+      "section_id": "SEC-CF4DA9FCADECD4FD",
+      "section_path": [
+        "8 用户管理",
+        "8.3 LDAP管理"
+      ],
+      "section_title": "8.3 LDAP管理",
+      "block_type": "table",
+      "text": "当启用LDAP 登录开关时\n密，系统将发出安全警告：\nLDAP 服务端需支持TLS1\t，系统\n“关闭\n.2 及其\t将同步启用TLS 加密。若用户手动关闭TLS\n后数据传输将不再加密，请确认是否关闭？\n以上加密算法才能进行通信。\n\t\t\t\t\n\t参数名\t\t说明\t\n\tIP 地址\t\tLDAP\t服务器的IP 地址\n\t端口号\t\tLDAP\t服务器的端口\n\t基本标识\t名\tLDAP\t基本标识名\n\t账号\t\tLDAP\t服务器账号\n\t密码\t\tLDAP\t服务器密码\n\t\t\t\t\n\t\tAP 登录开关开启后，需填\n”。\t写配置\t参数并点击保存。成功保存后，界面显示“操",
+      "table_cells": [
+        [
+          null,
+          null,
+          "当启用LDAP 登录开关时\n密，系统将发出安全警告：\nLDAP 服务端需支持TLS1",
+          "，系统\n“关闭\n.2 及其",
+          "将同步启用TLS 加密。若用户手动关闭TLS\n后数据传输将不再加密，请确认是否关闭？\n以上加密算法才能进行通信。"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "参数名",
+          null,
+          "说明",
+          null
+        ],
+        [
+          null,
+          "IP 地址",
+          null,
+          "LDAP",
+          "服务器的IP 地址"
+        ],
+        [
+          null,
+          "端口号",
+          null,
+          "LDAP",
+          "服务器的端口"
+        ],
+        [
+          null,
+          "基本标识",
+          "名",
+          "LDAP",
+          "基本标识名"
+        ],
+        [
+          null,
+          "账号",
+          null,
+          "LDAP",
+          "服务器账号"
+        ],
+        [
+          null,
+          "密码",
+          null,
+          "LDAP",
+          "服务器密码"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "AP 登录开关开启后，需填\n”。",
+          "写配置",
+          "参数并点击保存。成功保存后，界面显示“操"
+        ]
+      ],
+      "bbox": [
+        87.563,
+        415.014,
+        429.365,
+        647.814
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-335A57CED8BC342D",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "15",
+      "block_order": 0,
+      "section_id": "SEC-CF4DA9FCADECD4FD",
+      "section_path": [
+        "8 用户管理",
+        "8.3 LDAP管理"
+      ],
+      "section_title": "8.3 LDAP管理",
+      "block_type": "paragraph",
+      "text": "用户网络安全操作手册\n8 用户管理",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-07846E5A3E817767",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "15",
+      "block_order": 1,
+      "section_id": "SEC-CF4DA9FCADECD4FD",
+      "section_path": [
+        "8 用户管理",
+        "8.3 LDAP管理"
+      ],
+      "section_title": "8.3 LDAP管理",
+      "block_type": "paragraph",
+      "text": "启用LDAP 登录后，用户在LDAP 登录时将不再看到“请联系管理员开启<LDAP 登录>后重\n试 ”的提示，可输入用户名和密码登录。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        72.906,
+        458.658,
+        97.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CA9B71C2871D83CF",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "15",
+      "block_order": 2,
+      "section_id": "SEC-CF4DA9FCADECD4FD",
+      "section_path": [
+        "8 用户管理",
+        "8.3 LDAP管理"
+      ],
+      "section_title": "8.3 LDAP管理",
+      "block_type": "list",
+      "text": "•\nLDAP 登录不支持忘记密码。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        114.406,
+        259.299,
+        125.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-336FDB9546511A05",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "15",
+      "block_order": 3,
+      "section_id": "SEC-CF4DA9FCADECD4FD",
+      "section_path": [
+        "8 用户管理",
+        "8.3 LDAP管理"
+      ],
+      "section_title": "8.3 LDAP管理",
+      "block_type": "list",
+      "text": "•\nLDAP 登录相关的用户认证信息均存储于客户自有的LDAP 服务器中。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        129.406,
+        422.307,
+        140.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

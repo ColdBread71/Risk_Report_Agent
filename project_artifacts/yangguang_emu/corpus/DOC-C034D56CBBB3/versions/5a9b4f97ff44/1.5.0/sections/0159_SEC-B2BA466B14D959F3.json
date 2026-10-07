@@ -1,0 +1,969 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-B2BA466B14D959F3",
+  "section_path": [
+    "9 电网调度",
+    "9.4 无功功率调节",
+    "9.4.4 干节点无功调节"
+  ],
+  "section_title": "9.4.4 干节点无功调节",
+  "start_pdf_page": 100,
+  "end_pdf_page": 100,
+  "blocks": [
+    {
+      "block_id": "BLK-9F947DBDC1EF3AA6",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 0,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "paragraph",
+      "text": "用户手册\n9 电网调度",
+      "table_cells": null,
+      "bbox": [
+        60.444,
+        48.088,
+        449.791,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-765B261B98ACDB24",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 1,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "paragraph",
+      "text": "步骤 1 在控制策略下拉列表中，选择开环控制或闭环控制。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        71.484,
+        294.563,
+        83.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6F4D1BC222B715C8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 2,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "paragraph",
+      "text": "步骤 2 选择闭环控制时，需配置下列参数。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        87.984,
+        231.563,
+        100.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C76587058B118C2A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 3,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "paragraph",
+      "text": "a. 在选择电表下拉列表中，选择参与功率调节的电表。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        105.906,
+        308.738,
+        116.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4C531642C5D3A276",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 4,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "paragraph",
+      "text": "b. 在控制周期文本框中，输入数据采集器向逆变器发送功率调节指令的时间间隔。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        120.906,
+        416.738,
+        131.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-766EF67BAB2A65A0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 5,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "paragraph",
+      "text": "步骤 3 在AI 通道下拉列表中，选择接收模拟量输入的AI 端口。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        135.984,
+        311.573,
+        148.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-60FF98936CC07E8E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 6,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "paragraph",
+      "text": "点击配置AI 可跳转至系统 > 端口参数 > AI 页，根据实际需求，修改AI 端口参数。参见\n7.8.13.3 AI。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        153.906,
+        432.839,
+        178.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-90FD91C21C630D87",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 7,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "paragraph",
+      "text": "步骤 4 在指令类型下拉列表中，选择功率调节指令目标值的单位。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        182.484,
+        321.563,
+        194.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C1EF3A74909457C4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 8,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "list",
+      "text": "•\nPF：通过设置功率因数进行功率调节。适用于需要逆变器维持特定功率因数水平的场\n景。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        200.406,
+        437.24,
+        224.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5CCACDE4497EEDA1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 9,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "list",
+      "text": "•\n%：通过设置逆变器输出功率的百分比进行功率调节。适合需要根据逆变器的最大额定功\n率来调节其输出的场景。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        228.906,
+        451.739,
+        253.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5B25F0BE00227632",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 10,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "paragraph",
+      "text": "步骤 5 根据指令类型，在下限和上限的文本框中，设置与模拟量输入对应的功率调节目标值范围。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        257.484,
+        447.563,
+        269.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-13FEEB8A25085156",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 11,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "list",
+      "text": "•\nPF：下限和上限的取值范围为0.8~1。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        275.406,
+        255.26,
+        286.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-80DE128B8770A91A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 12,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "list",
+      "text": "•\n%：下限和上限的取值范围均为0%~100%。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        290.406,
+        279.272,
+        301.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-15968DA6E58D72B2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 13,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "paragraph",
+      "text": "步骤 6 根据指令类型，在步长文本框中，设置连续两次功率调度指令下发相差的值。即设置调节时",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        305.484,
+        447.563,
+        317.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E4ACC6E0B34AC5F5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 14,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "paragraph",
+      "text": "允许的最小调节变化量，如果小于步长，不下发调节指令，维持原调节值不变；如果大于或\n等于步长，允许下发调节指令。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        320.406,
+        447.563,
+        344.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CC6A332E67B166FA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 15,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "paragraph",
+      "text": "步骤 7 在闭环控制控制策略下，如果设置指令类型为PF，可在滞环区间文本框中，指定维持PF 为",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        348.984,
+        450.317,
+        361.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-25A8360850685261",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 16,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "paragraph",
+      "text": "±1 的死区范围，避免功率因数频繁跳变。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        363.906,
+        252.758,
+        374.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-82FBD0C276865CEE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 17,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "paragraph",
+      "text": "步骤 8 点击保存。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        378.984,
+        132.563,
+        391.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-669E743AD0430666",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 18,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        395.556,
+        112.187,
+        406.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-02B8EB2E94388CD0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 19,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "heading",
+      "text": "9.4.4 干节点无功调节",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        416.39,
+        153.687,
+        428.56
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A7D089BC18F694C0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 20,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        88.194,
+        435.706,
+        124.194,
+        446.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E0976C7DCC663229",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 21,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "list",
+      "text": "•\n当前无功控制方式已选择干节点。见9.2 选择功率控制方式。",
+      "table_cells": null,
+      "bbox": [
+        88.194,
+        455.706,
+        344.631,
+        466.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D0EBC4E6D00ED0CE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 22,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "list",
+      "text": "•\n如选择闭环控制，需接入用于功率调节的关口电表。",
+      "table_cells": null,
+      "bbox": [
+        88.194,
+        470.706,
+        309.369,
+        481.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9DA5150358A8165C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 23,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "paragraph",
+      "text": "步骤 1 在控制策略下拉列表中，选择开环控制或闭环控制。",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        488.784,
+        294.564,
+        501.267
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-915B0748A2BF5BC9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 24,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "paragraph",
+      "text": "步骤 2 选择闭环控制时，需配置下列参数。",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        505.284,
+        231.564,
+        517.767
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A365A9CAAB2EA07A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 25,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "paragraph",
+      "text": "a. 在选择电表下拉列表中，选择参与功率调节的电表。",
+      "table_cells": null,
+      "bbox": [
+        87.564,
+        523.206,
+        308.739,
+        534.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D4AF5892E4DC6A3F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 26,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "paragraph",
+      "text": "b. 在控制周期文本框中，输入数据采集器向逆变器发送功率调节指令的时间间隔。",
+      "table_cells": null,
+      "bbox": [
+        87.564,
+        538.206,
+        416.739,
+        549.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-90AC1EEBF3AC9521",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 27,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "paragraph",
+      "text": "步骤 3 在指令类型下拉列表中，选择功率调节指令目标值的单位。",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        553.284,
+        321.564,
+        565.767
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AF4976813AED2FCA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 28,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "list",
+      "text": "•\nPF：通过设置功率因数进行功率调节。适用于需要逆变器维持特定功率因数水平的场",
+      "table_cells": null,
+      "bbox": [
+        87.564,
+        571.206,
+        437.232,
+        582.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-91E047DA181AC0EF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 29,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "paragraph",
+      "text": "景。",
+      "table_cells": null,
+      "bbox": [
+        101.739,
+        584.706,
+        119.739,
+        595.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0AD546FA3048AE96",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 30,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "list",
+      "text": "•\n%：通过设置逆变器输出功率的百分比进行功率调节。适合需要根据逆变器的最大额定功\n率来调节其输出的场景。",
+      "table_cells": null,
+      "bbox": [
+        87.564,
+        599.706,
+        451.74,
+        624.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A8B39E72C60C1D47",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 31,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "paragraph",
+      "text": "步骤 4 在页面下方的表格中，设置数字量输入信号对应的功率调节目标值。",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        628.284,
+        357.564,
+        640.767
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F9EDB880BFF353D1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 32,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "paragraph",
+      "text": "a. 根据DI 端口接收的干节点信号，勾选对应的DI 端口。",
+      "table_cells": null,
+      "bbox": [
+        87.564,
+        646.206,
+        317.739,
+        657.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-24186CE2D85D4A71",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 100,
+      "printed_page_label": "90",
+      "block_order": 33,
+      "section_id": "SEC-B2BA466B14D959F3",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.4 干节点无功调节"
+      ],
+      "section_title": "9.4.4 干节点无功调节",
+      "block_type": "paragraph",
+      "text": "b. 根据指令类型，输入无功功率百分比或功率因数。",
+      "table_cells": null,
+      "bbox": [
+        87.564,
+        661.206,
+        299.739,
+        672.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

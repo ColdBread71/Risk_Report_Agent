@@ -1,0 +1,129 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-C0D6B1BD5A21BBDA",
+  "section_path": [
+    "7 Web界面",
+    "7.10 系统",
+    "7.10.6 转发配置"
+  ],
+  "section_title": "7.10.6 转发配置",
+  "start_pdf_page": 77,
+  "end_pdf_page": 77,
+  "blocks": [
+    {
+      "block_id": "BLK-2201E27641EB8839",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 2,
+      "section_id": "SEC-C0D6B1BD5A21BBDA",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置"
+      ],
+      "section_title": "7.10.6 转发配置",
+      "block_type": "heading",
+      "text": "7.10.6 转发配置",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        285.74,
+        143.416,
+        297.91
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-80D6896F1D53BCDF",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 3,
+      "section_id": "SEC-C0D6B1BD5A21BBDA",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置"
+      ],
+      "section_title": "7.10.6 转发配置",
+      "block_type": "list",
+      "text": "•\n该协议为非安全协议，存在风险，请确认设备网络环境安全后再开启。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        618.995,
+        422.541,
+        629.948
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2B3D8D7A125A408A",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 4,
+      "section_id": "SEC-C0D6B1BD5A21BBDA",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置"
+      ],
+      "section_title": "7.10.6 转发配置",
+      "block_type": "list",
+      "text": "•\n可根据需要开启TLS 加密功能，进一步保障信息安全。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        633.995,
+        362.547,
+        644.948
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0659A3A36343885F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 77,
+      "printed_page_label": "67",
+      "block_order": 5,
+      "section_id": "SEC-C0D6B1BD5A21BBDA",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置"
+      ],
+      "section_title": "7.10.6 转发配置",
+      "block_type": "paragraph",
+      "text": "Server 模式",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        662.573,
+        150.642,
+        675.056
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

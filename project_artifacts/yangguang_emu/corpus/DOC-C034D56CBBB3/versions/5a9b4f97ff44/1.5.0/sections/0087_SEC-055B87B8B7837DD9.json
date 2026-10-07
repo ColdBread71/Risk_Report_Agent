@@ -1,0 +1,129 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-055B87B8B7837DD9",
+  "section_path": [
+    "7 Web界面",
+    "7.7 历史数据",
+    "7.7.2 故障记录"
+  ],
+  "section_title": "7.7.2 故障记录",
+  "start_pdf_page": 67,
+  "end_pdf_page": 67,
+  "blocks": [
+    {
+      "block_id": "BLK-B11B3940C3E109A3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 67,
+      "printed_page_label": "57",
+      "block_order": 0,
+      "section_id": "SEC-055B87B8B7837DD9",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.2 故障记录"
+      ],
+      "section_title": "7.7.2 故障记录",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5318FF593AA2E42B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 67,
+      "printed_page_label": "57",
+      "block_order": 6,
+      "section_id": "SEC-055B87B8B7837DD9",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.2 故障记录"
+      ],
+      "section_title": "7.7.2 故障记录",
+      "block_type": "heading",
+      "text": "7.7.2 故障记录",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        455.542,
+        137.86,
+        467.712
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-22AE20F311BA724E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 67,
+      "printed_page_label": "57",
+      "block_order": 7,
+      "section_id": "SEC-055B87B8B7837DD9",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.2 故障记录"
+      ],
+      "section_title": "7.7.2 故障记录",
+      "block_type": "paragraph",
+      "text": "步骤 3 单击",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        532.937,
+        119.736,
+        545.42
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-82CC4562B16F2252",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 67,
+      "printed_page_label": "57",
+      "block_order": 8,
+      "section_id": "SEC-055B87B8B7837DD9",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.2 故障记录"
+      ],
+      "section_title": "7.7.2 故障记录",
+      "block_type": "paragraph",
+      "text": "名称\n故障具体的描述。",
+      "table_cells": null,
+      "bbox": [
+        110.404,
+        642.359,
+        294.029,
+        653.312
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-FB9DA059006C6154",
+  "section_path": [
+    "7 Web界面",
+    "7.5 设备监控",
+    "7.5.2 直流信息"
+  ],
+  "section_title": "7.5.2 直流信息",
+  "start_pdf_page": 45,
+  "end_pdf_page": 45,
+  "blocks": [
+    {
+      "block_id": "BLK-C56B48E2171AADE1",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 45,
+      "printed_page_label": "35",
+      "block_order": 19,
+      "section_id": "SEC-FB9DA059006C6154",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.2 直流信息"
+      ],
+      "section_title": "7.5.2 直流信息",
+      "block_type": "heading",
+      "text": "7.5.2 直流信息",
+      "table_cells": null,
+      "bbox": [
+        70.862,
+        481.711,
+        137.862,
+        493.881
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-080D5F68872F2ADF",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 45,
+      "printed_page_label": "35",
+      "block_order": 20,
+      "section_id": "SEC-FB9DA059006C6154",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.2 直流信息"
+      ],
+      "section_title": "7.5.2 直流信息",
+      "block_type": "paragraph",
+      "text": "可查看多路MPPT 和多路组串的电压电流信息。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        500.935,
+        283.229,
+        511.28
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-411BC2615686CEBB",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 45,
+      "printed_page_label": "35",
+      "block_order": 21,
+      "section_id": "SEC-FB9DA059006C6154",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.2 直流信息"
+      ],
+      "section_title": "7.5.2 直流信息",
+      "block_type": "list",
+      "text": "•\n单击设备监控，进入界面。在左侧设备列表栏选择需要的设备，点击直流信息查看该设备\n直流信息。",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        521.777,
+        467.54,
+        546.23
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

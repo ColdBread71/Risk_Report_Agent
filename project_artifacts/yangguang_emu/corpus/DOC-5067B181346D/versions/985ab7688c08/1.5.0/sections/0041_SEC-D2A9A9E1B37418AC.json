@@ -1,0 +1,743 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-D2A9A9E1B37418AC",
+  "section_path": [
+    "4 电气连接",
+    "4.6 接线步骤",
+    "4.6.5 连接PLC通讯线缆",
+    "4.6.5.3 PLC布线原则"
+  ],
+  "section_title": "4.6.5.3 PLC布线原则",
+  "start_pdf_page": 39,
+  "end_pdf_page": 40,
+  "blocks": [
+    {
+      "block_id": "BLK-FFD80EB74ED9177D",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "33",
+      "block_order": 0,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 电气连接",
+      "table_cells": null,
+      "bbox": [
+        74.615,
+        48.088,
+        463.969,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-735FC2B3F297F541",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "33",
+      "block_order": 1,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "list",
+      "text": "•\n接线时，务必注意线缆和端子相序。",
+      "table_cells": null,
+      "bbox": [
+        143.539,
+        79.406,
+        301.714,
+        90.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-06EB67F1E725CACB",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "33",
+      "block_order": 2,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "list",
+      "text": "•\n箱变侧断路器参数，可参考上图所示EMU300A 内部断路器的参数。",
+      "table_cells": null,
+      "bbox": [
+        143.539,
+        94.406,
+        428.227,
+        105.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C53934498DF9E33B",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "33",
+      "block_order": 3,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "list",
+      "text": "5. 检查线缆无误后，使用螺钉紧固。紧固扭矩为：5.5N·m。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        123.906,
+        344.043,
+        134.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-15EF7DBF89DE846A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "33",
+      "block_order": 4,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "heading",
+      "text": "4.6.5.3 PLC 布线原则",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        146.09,
+        165.653,
+        158.26
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7F5045F96D7C9F6D",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "33",
+      "block_order": 5,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "paragraph",
+      "text": "箱变至逆变器PLC 线缆",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        164.056,
+        196.37,
+        175.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B4E7BC07DD3B01A3",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "33",
+      "block_order": 6,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "paragraph",
+      "text": "基本要求",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        180.784,
+        138.365,
+        193.267
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A68B742D829CF88F",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "33",
+      "block_order": 7,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "paragraph",
+      "text": "连接箱变和逆变器的线缆可以选择使用多芯交流线缆、单芯交流线缆或双拼线缆，具体类型\n应根据实际项目要求而定。",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        203.706,
+        462.365,
+        228.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-206B7B83D5ADC41E",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "33",
+      "block_order": 8,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "paragraph",
+      "text": "为保证通信质量，建议优先考虑使用多芯线缆。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        243.856,
+        318.366,
+        254.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EC667FD967AA1528",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "33",
+      "block_order": 9,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "list",
+      "text": "•\n箱变与逆变器之间的交流线缆可以铺设在电缆沟、电缆槽或管道内。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        272.006,
+        386.541,
+        282.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BF58D29D93F270CA",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "33",
+      "block_order": 10,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "list",
+      "text": "•\n线缆在线槽内平行敷设，且不能打结或缠绕。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        287.006,
+        296.541,
+        297.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F75B9DA9A3E8339A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "33",
+      "block_order": 11,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "list",
+      "text": "•\n如使用单芯线缆，每隔1m 捆扎固定，且三相线扎线呈“品”字形。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        358.596,
+        373.536,
+        369.549
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CEE5EB54EE1CF1BC",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "33",
+      "block_order": 12,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "paragraph",
+      "text": "此场景下，线缆不易弯折，建议在拐弯处前后10cm 处分别进行绑扎。",
+      "table_cells": null,
+      "bbox": [
+        143.539,
+        440.496,
+        422.044,
+        451.449
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B8DF5E3FCFB7F770",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "33",
+      "block_order": 13,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "list",
+      "text": "•\n当单芯线缆长度超过200 米时，登录Logger5000 的Web 端，在系统 > MPLC 页，设置\nPLC 主节点的频段为Band2 或Band3。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        557.111,
+        464.958,
+        581.564
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-11C75AC338CD7D7A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "33",
+      "block_order": 14,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "paragraph",
+      "text": "双拼线缆要求",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        584.689,
+        156.366,
+        597.172
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4264273FA19FFF39",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 39,
+      "printed_page_label": "33",
+      "block_order": 15,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "paragraph",
+      "text": "使用双拼线缆时，为保证MPLC 通讯质量，需保证两组线缆长度差值不超过5m。如为单芯\n双拼，两组线缆要求及频段设置要求同上。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        607.611,
+        461.619,
+        632.064
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D806CECFD68B1610",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "34",
+      "block_order": 0,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 电气连接",
+      "table_cells": null,
+      "bbox": [
+        60.446,
+        48.088,
+        449.793,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FC0F76AC7644EE46",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "34",
+      "block_order": 1,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "figure_caption",
+      "text": "图 4-4 双拼线缆示意图",
+      "table_cells": null,
+      "bbox": [
+        225.866,
+        250.859,
+        315.875,
+        261.812
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-93DCA9DA69897EC2",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "34",
+      "block_order": 2,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "paragraph",
+      "text": "PLC 线缆施工要求",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        271.587,
+        162.443,
+        284.07
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3620EE4C8877504B",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "34",
+      "block_order": 3,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "list",
+      "text": "•\n低压交流线缆和中压交流线缆的间距满足如下要求。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        294.509,
+        309.368,
+        305.462
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1F5B37FAE33E9738",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "34",
+      "block_order": 4,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "list",
+      "text": "-\n若两条电缆平行布置，水平间距需不低于0.5m。",
+      "table_cells": null,
+      "bbox": [
+        102.368,
+        309.509,
+        309.8,
+        320.462
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-086DFD42FC288425",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "34",
+      "block_order": 5,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "list",
+      "text": "-\n若两条电缆交叉布置，垂直间距需不低于0.5m。",
+      "table_cells": null,
+      "bbox": [
+        102.368,
+        469.038,
+        309.8,
+        479.991
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B16BEF17AAD6874B",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "34",
+      "block_order": 6,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "list",
+      "text": "•\n同一线槽内只能部署同一箱变下的交流线缆。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        584.47,
+        282.368,
+        595.423
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1F65E4DC417970F7",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "34",
+      "block_order": 7,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "list",
+      "text": "•\n使用不同箱变时，低压侧电缆桥架的的距离需满足如下要求。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        599.47,
+        345.368,
+        610.423
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F7A2C78D2308ED9C",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "34",
+      "block_order": 8,
+      "section_id": "SEC-D2A9A9E1B37418AC",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.3 PLC布线原则"
+      ],
+      "section_title": "4.6.5.3 PLC布线原则",
+      "block_type": "list",
+      "text": "-\n若两条电缆平行布置，水平间距需不低于0.5m。",
+      "table_cells": null,
+      "bbox": [
+        102.368,
+        614.47,
+        309.8,
+        625.423
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,718 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-DDE04BAE5DCB58BE",
+  "section_path": [
+    "1 安全注意事项",
+    "1.6 运行安全"
+  ],
+  "section_title": "1.6 运行安全",
+  "start_pdf_page": 12,
+  "end_pdf_page": 12,
+  "blocks": [
+    {
+      "block_id": "BLK-A1CB79DF693D5660",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 0,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "paragraph",
+      "text": "用户手册\n1 安全注意事项",
+      "table_cells": null,
+      "bbox": [
+        60.444,
+        48.088,
+        449.791,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B2E8D824928AFF4D",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 1,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "paragraph",
+      "text": "危险",
+      "table_cells": null,
+      "bbox": [
+        110.69,
+        76.274,
+        132.69,
+        89.661
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E6025D34B873C52D",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 2,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "paragraph",
+      "text": "在进行电气连接前：",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        94.806,
+        173.693,
+        105.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7F7772FFC0C0FECD",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 3,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "list",
+      "text": "•\n请确保产品无损坏，否则可能造成危险！",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        108.456,
+        268.868,
+        119.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-451FEB757342AA7B",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 4,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "list",
+      "text": "•\n请务必断开前级输入开关，确保设备不带电，否则可能导致电击危险！",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        123.456,
+        385.868,
+        134.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-57E6A742B1AE6C21",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 5,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "paragraph",
+      "text": "危险",
+      "table_cells": null,
+      "bbox": [
+        110.69,
+        154.824,
+        132.69,
+        168.211
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-141DD543C2B1F8B7",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 6,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "paragraph",
+      "text": "不规范、不正确的电气连接操作，可能会引起火灾或电击等意外事故。",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        173.356,
+        371.693,
+        184.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1E4A9AD9856F6BA1",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 7,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "paragraph",
+      "text": "危险",
+      "table_cells": null,
+      "bbox": [
+        110.69,
+        203.374,
+        132.69,
+        216.761
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3E041322398F37E8",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 8,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "paragraph",
+      "text": "设备内部可能存在致命高电压！",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        221.906,
+        218.693,
+        232.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F9F710EE622D4F7D",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 9,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "list",
+      "text": "•\n在进行电气连接操作时，操作人员请务必佩戴个人防护用具和使用专用绝缘工具，避免",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        235.556,
+        448.868,
+        246.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FF1B4E8F204F361B",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 10,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "paragraph",
+      "text": "发生电击伤害或短路故障。",
+      "table_cells": null,
+      "bbox": [
+        106.868,
+        249.056,
+        214.868,
+        260.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A6E667B235BBD4ED",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 11,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "list",
+      "text": "•\n触碰线缆之前，请务必使用测量设备确保线缆不带电。",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        264.056,
+        322.868,
+        275.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6020AC7CB2793A71",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 12,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "list",
+      "text": "•\n请注意箱体上的警告标识，并遵守其安全指示进行操作。",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        279.056,
+        331.868,
+        290.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1518054F294859FD",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 13,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "paragraph",
+      "text": "警告",
+      "table_cells": null,
+      "bbox": [
+        110.69,
+        310.424,
+        132.69,
+        323.811
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-56982C37C172299A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 14,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "paragraph",
+      "text": "需接地的设备，安装时，必须首先安装保护地线；拆除设备时，必须最后拆除保护地线。",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        328.956,
+        443.693,
+        339.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CB0473DCB108DA9F",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 15,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "paragraph",
+      "text": "警告",
+      "table_cells": null,
+      "bbox": [
+        110.69,
+        358.974,
+        132.69,
+        372.361
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-62126075A75AFAEF",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 16,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "paragraph",
+      "text": "操作设备前，应检查设备的电气连接，确保设备已可靠接地。",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        377.506,
+        335.693,
+        388.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BBCAC0F4DFFB39A9",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 17,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "paragraph",
+      "text": "警告",
+      "table_cells": null,
+      "bbox": [
+        110.69,
+        407.524,
+        132.69,
+        420.911
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-409FC9AD70E26350",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 18,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "paragraph",
+      "text": "如发现电源线长度不够时，须重新更换电源线，严禁在电源线中做接头或焊点。",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        426.056,
+        407.693,
+        437.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ED8144CA8588021E",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 19,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "paragraph",
+      "text": "警告",
+      "table_cells": null,
+      "bbox": [
+        110.69,
+        456.074,
+        132.69,
+        469.461
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-285E8B5E71D7D660",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 20,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "list",
+      "text": "•\n电气连接操作务必由专业人员完成。",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        475.956,
+        250.868,
+        486.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-695379E5AE48C929",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 21,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "list",
+      "text": "•\n所有与接线有关的操作，必须遵守当地国家或地区的相关法规和条例。",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        490.956,
+        385.868,
+        501.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F880D14A6DECC3BE",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 22,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "list",
+      "text": "•\n请务必注意设备上的警告标识，并遵守其安全指示进行操作。",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        505.956,
+        349.868,
+        516.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B4339CB0E4D111FA",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 23,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "list",
+      "text": "•\n错误的接线可能会导致产品损坏，由此引起的损坏将不在质保范围内。",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        520.956,
+        385.868,
+        531.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7ACF076E4DDE2A96",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 24,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "heading",
+      "text": "1.6 运行安全",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        565.708,
+        128.873,
+        580.312
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-238F56AACBDFDB47",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "6",
+      "block_order": 25,
+      "section_id": "SEC-DDE04BAE5DCB58BE",
+      "section_path": [
+        "1 安全注意事项",
+        "1.6 运行安全"
+      ],
+      "section_title": "1.6 运行安全",
+      "block_type": "paragraph",
+      "text": "设备在运行过程中存在高电压，不当的运行操作可能导致人员伤亡或财产损失，请严格按照\n本手册及其他相关文件中列出的安全注意事项进行操作。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        593.356,
+        448.193,
+        617.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

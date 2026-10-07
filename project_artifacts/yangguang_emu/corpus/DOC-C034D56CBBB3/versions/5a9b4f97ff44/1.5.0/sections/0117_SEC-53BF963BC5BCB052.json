@@ -1,0 +1,493 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-53BF963BC5BCB052",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.10 转发GOOSE服务配置"
+  ],
+  "section_title": "7.8.10 转发GOOSE服务配置",
+  "start_pdf_page": 78,
+  "end_pdf_page": 78,
+  "blocks": [
+    {
+      "block_id": "BLK-2F70B1F63140189F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 0,
+      "section_id": "SEC-53BF963BC5BCB052",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.10 转发GOOSE服务配置"
+      ],
+      "section_title": "7.8.10 转发GOOSE服务配置",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BEB26AC0C2D199A8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 1,
+      "section_id": "SEC-53BF963BC5BCB052",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.10 转发GOOSE服务配置"
+      ],
+      "section_title": "7.8.10 转发GOOSE服务配置",
+      "block_type": "paragraph",
+      "text": "步骤 7 选择设置，设置寄存器地址、数据类型和设置值。单击设置，完成对单台设备设置生效。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        71.484,
+        438.563,
+        83.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FEA7CBB0AA47A89A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 2,
+      "section_id": "SEC-53BF963BC5BCB052",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.10 转发GOOSE服务配置"
+      ],
+      "section_title": "7.8.10 转发GOOSE服务配置",
+      "block_type": "paragraph",
+      "text": "步骤 8 （可选）单击配置同步，在弹出的设备列表中勾选需要设置的设备，单击保存，完成批量设",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        87.984,
+        447.563,
+        100.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EFA620C0C1F2FECA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 3,
+      "section_id": "SEC-53BF963BC5BCB052",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.10 转发GOOSE服务配置"
+      ],
+      "section_title": "7.8.10 转发GOOSE服务配置",
+      "block_type": "paragraph",
+      "text": "置设备通用参数。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        102.906,
+        159.563,
+        113.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-25BA2F2516134619",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 4,
+      "section_id": "SEC-53BF963BC5BCB052",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.10 转发GOOSE服务配置"
+      ],
+      "section_title": "7.8.10 转发GOOSE服务配置",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        118.056,
+        112.187,
+        129.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-73B517627F4C003F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 15,
+      "section_id": "SEC-53BF963BC5BCB052",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.10 转发GOOSE服务配置"
+      ],
+      "section_title": "7.8.10 转发GOOSE服务配置",
+      "block_type": "heading",
+      "text": "7.8.10 转发GOOSE 服务配置",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        385.629,
+        190.917,
+        397.799
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-371E23FCDDDE0831",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 16,
+      "section_id": "SEC-53BF963BC5BCB052",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.10 转发GOOSE服务配置"
+      ],
+      "section_title": "7.8.10 转发GOOSE服务配置",
+      "block_type": "paragraph",
+      "text": "配置数据采集器转发GOOSE 服务。",
+      "table_cells": null,
+      "bbox": [
+        88.194,
+        404.853,
+        225.614,
+        415.198
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D721F56B2F5FF1F3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 17,
+      "section_id": "SEC-53BF963BC5BCB052",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.10 转发GOOSE服务配置"
+      ],
+      "section_title": "7.8.10 转发GOOSE服务配置",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        425.695,
+        124.193,
+        436.648
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BB9C0E83BCBE31E0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 18,
+      "section_id": "SEC-53BF963BC5BCB052",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.10 转发GOOSE服务配置"
+      ],
+      "section_title": "7.8.10 转发GOOSE服务配置",
+      "block_type": "list",
+      "text": "•\n使用GOOSE 快调时，需在后台与数采Logger4000 的ETH3 或ETH4 快调口之间架设\n一台交换机，并通过网线将两者进行连接。网线类型选择通用性标准网线即可，如\nCAT5E 类/长度75cm 网线。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        445.695,
+        445.43,
+        483.648
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-14343DD55CC16CE1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 19,
+      "section_id": "SEC-53BF963BC5BCB052",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.10 转发GOOSE服务配置"
+      ],
+      "section_title": "7.8.10 转发GOOSE服务配置",
+      "block_type": "list",
+      "text": "•\n只需配置快调端口ETH3 或ETH4 其中一个网口的IP 地址即可，尽可能与后台IP 设置成\n同一网段。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        487.695,
+        453.386,
+        512.148
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-502A54E779352FBC",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 20,
+      "section_id": "SEC-53BF963BC5BCB052",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.10 转发GOOSE服务配置"
+      ],
+      "section_title": "7.8.10 转发GOOSE服务配置",
+      "block_type": "paragraph",
+      "text": "该协议为非安全协议，存在风险，请确认设备网络环境安全后再开启。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        525.845,
+        394.193,
+        536.798
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F9A060C41F9406F2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 21,
+      "section_id": "SEC-53BF963BC5BCB052",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.10 转发GOOSE服务配置"
+      ],
+      "section_title": "7.8.10 转发GOOSE服务配置",
+      "block_type": "paragraph",
+      "text": "开启GOOSE 转发服务功能后，必须确保后台下发的调度指令的间隔时间满足以下\n要求，否则逆变器可能无法完全响应目标值。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        557.645,
+        440.696,
+        579.398
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E068D4921827AECA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 22,
+      "section_id": "SEC-53BF963BC5BCB052",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.10 转发GOOSE服务配置"
+      ],
+      "section_title": "7.8.10 转发GOOSE服务配置",
+      "block_type": "list",
+      "text": "•\n有功功率调节：调度间隔需为60 毫秒或以上。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        582.095,
+        314.876,
+        593.048
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E9F5A43CD7864B9B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 23,
+      "section_id": "SEC-53BF963BC5BCB052",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.10 转发GOOSE服务配置"
+      ],
+      "section_title": "7.8.10 转发GOOSE服务配置",
+      "block_type": "list",
+      "text": "•\n无功功率调节：调度间隔需为30 毫秒或以上。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        597.095,
+        314.876,
+        608.048
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1EE39E9F80DF1E65",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 24,
+      "section_id": "SEC-53BF963BC5BCB052",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.10 转发GOOSE服务配置"
+      ],
+      "section_title": "7.8.10 转发GOOSE服务配置",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击系统 > 转发配置 > GOOSE，进入GOOSE 界面。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        629.673,
+        304.589,
+        642.156
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4ED7AD3BEA942C1A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 25,
+      "section_id": "SEC-53BF963BC5BCB052",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.10 转发GOOSE服务配置"
+      ],
+      "section_title": "7.8.10 转发GOOSE服务配置",
+      "block_type": "paragraph",
+      "text": "步骤 2 将开关设置为使能。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        646.173,
+        168.563,
+        658.656
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-770744ED5A4C1747",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 26,
+      "section_id": "SEC-53BF963BC5BCB052",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.10 转发GOOSE服务配置"
+      ],
+      "section_title": "7.8.10 转发GOOSE服务配置",
+      "block_type": "paragraph",
+      "text": "步骤 3 单击配置文件导出，可将GOOSE 数据配置文件导出至本地。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        662.673,
+        332.066,
+        675.156
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

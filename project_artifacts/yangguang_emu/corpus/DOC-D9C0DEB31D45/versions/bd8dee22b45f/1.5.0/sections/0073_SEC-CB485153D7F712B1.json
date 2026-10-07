@@ -1,0 +1,157 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-CB485153D7F712B1",
+  "section_path": [
+    "7 Web界面",
+    "7.7 功率调节",
+    "7.7.2 功率控制策略"
+  ],
+  "section_title": "7.7.2 功率控制策略",
+  "start_pdf_page": 54,
+  "end_pdf_page": 54,
+  "blocks": [
+    {
+      "block_id": "BLK-1A7198E8BAAD3CFA",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "44",
+      "block_order": 0,
+      "section_id": "SEC-CB485153D7F712B1",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.2 功率控制策略"
+      ],
+      "section_title": "7.7.2 功率控制策略",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.793,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E52A5785BC447BD0",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "44",
+      "block_order": 1,
+      "section_id": "SEC-CB485153D7F712B1",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.2 功率控制策略"
+      ],
+      "section_title": "7.7.2 功率控制策略",
+      "block_type": "paragraph",
+      "text": "注意",
+      "table_cells": null,
+      "bbox": [
+        97.941,
+        74.674,
+        119.941,
+        88.061
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E61E7B2B4A6FD1AD",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "44",
+      "block_order": 2,
+      "section_id": "SEC-CB485153D7F712B1",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.2 功率控制策略"
+      ],
+      "section_title": "7.7.2 功率控制策略",
+      "block_type": "paragraph",
+      "text": "功率调节参数须由专业人士设置。设置错误可能会导致电站未按照电网要求并网，影响发\n电量。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        91.856,
+        443.695,
+        113.609
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-16EA81A6A62CE8DA",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "44",
+      "block_order": 10,
+      "section_id": "SEC-CB485153D7F712B1",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.2 功率控制策略"
+      ],
+      "section_title": "7.7.2 功率控制策略",
+      "block_type": "heading",
+      "text": "7.7.2 功率控制策略",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        615.74,
+        143.687,
+        627.91
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D35C95977900D13F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "44",
+      "block_order": 11,
+      "section_id": "SEC-CB485153D7F712B1",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.2 功率控制策略"
+      ],
+      "section_title": "7.7.2 功率控制策略",
+      "block_type": "paragraph",
+      "text": "在进行有功或无功功率调节时，运维人员可以根据需求选择开环控制或闭环控制两种策略。",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        634.964,
+        428.19,
+        645.308
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

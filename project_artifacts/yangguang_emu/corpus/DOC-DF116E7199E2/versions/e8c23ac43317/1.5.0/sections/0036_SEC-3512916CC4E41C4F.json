@@ -1,0 +1,41 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-3512916CC4E41C4F",
+  "section_path": [
+    "12 附录：MOXA EDS-408A 安全加固操作指导"
+  ],
+  "section_title": "12 附录：MOXA EDS-408A 安全加固操作指导",
+  "start_pdf_page": 31,
+  "end_pdf_page": 31,
+  "blocks": [
+    {
+      "block_id": "BLK-B796E8346B49A179",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 31,
+      "printed_page_label": "27",
+      "block_order": 0,
+      "section_id": "SEC-3512916CC4E41C4F",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导"
+      ],
+      "section_title": "12 附录：MOXA EDS-408A 安全加固操作指导",
+      "block_type": "heading",
+      "text": "12\n附录：MOXA EDS-408A 安全加固操作指导",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        98.112,
+        452.682,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

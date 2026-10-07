@@ -1,0 +1,371 @@
+{
+  "schema_version": "field_fact_checkpoint.v2",
+  "node_id": "node_2",
+  "field_id": "hardware_and_network",
+  "index_id": "IDX-3B116ADDF3BB03CC",
+  "packet_sha256": "d79d97eaaf2fe68f3ae41d1293b948e038407039537386e46c7fa0dbb76ea062",
+  "text_model": "qwen-plus",
+  "retrieval_profile_version": "1.1",
+  "field_fact_prompt_version": "2.2",
+  "field_fact_schema_sha256": "0f478546b256a855e3ca4dc4218d2b3a32d2d428b89b976aa69639129864c0e5",
+  "result": {
+    "node_id": "node_2",
+    "field_id": "hardware_and_network",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "EMU300A 设备提供 RS232 协议的 Debug 口，用于串口访问 Linux 系统。",
+        "block_ids": [
+          "BLK-5751A158B27985D4"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "EMU300A 支持通过网口向阳光云发送 MQTT 消息，目标端口为 19999，使用公钥认证、无加密方式，该功能默认关闭，开启时给予安全提示。",
+        "block_ids": [
+          "BLK-5751A158B27985D4"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "EMU300A 支持通过网口向阳光云发送 MQTT 消息，目标端口为 16668，使用公钥认证、TLS 加密方式，该功能默认关闭，开启时给予安全提示。",
+        "block_ids": [
+          "BLK-5751A158B27985D4"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "EMU300A 支持通过网口向 NTP 对时服务器发送 NTP 请求，目标端口为 123，无需认证与加密，该功能默认关闭，开启时给予安全提示。",
+        "block_ids": [
+          "BLK-5751A158B27985D4"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "MOXA EDS-408A 交换机支持通过 Console 串口连接，CLI 密码更新操作需在波特率 115200 下进行。",
+        "block_ids": [
+          "BLK-41C649321EC9FCF3",
+          "BLK-50F7C65843B01D86"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "MOXA EDS-408A 交换机支持通过 Web 管理界面关闭非必要管理接口（Basic Setting > Security > Management Interface）。",
+        "block_ids": [
+          "BLK-36FB0A68AF75FE85"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "MOXA EDS-408A 交换机在取消管理接口后，仍可通过 Console 串口进行登录管理。",
+        "block_ids": [
+          "BLK-EDC5C2184DE9105D"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "MOXA EDS-408A 交换机支持 VLAN 配置，可在 'Virtual LAN' → 'VLAN Settings' 中设置 Management VLAN ID 并激活。",
+        "block_ids": [
+          "BLK-9A30F47EBE526FFD"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "MOXA EDS-408A 交换机可将物理接口划分为业务接口与管理接口；若未预留管理接口，仍可通过 Console 串口进行登录管理。",
+        "block_ids": [
+          "BLK-29C1D2687B061739"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "MOXA EDS-408A 交换机支持通过笔记本网口连接端口 1，使用 HTTPS 访问其 Web 配置界面以执行固件升级。",
+        "block_ids": [
+          "BLK-EBC2AAA9362F3A94"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "MOXA EDS-408A 交换机支持通过笔记本网口连接端口 1，使用 HTTPS 访问其 Web 配置界面以执行配置导入和备份。",
+        "block_ids": [
+          "BLK-C197FC251B6DDDDA"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "MOXA EDS-408A 交换机支持通过 CLI 执行 'save config' 命令保存配置。",
+        "block_ids": [
+          "BLK-63CBCE78F86EB9D5"
+        ],
+        "is_uncertain": false
+      }
+    ],
+    "unknowns": [
+      "Logger4000 是否实际交付或启用（GAP-LOGGER4000-SCOPE 明确指出其适用性取决于客户配置，未确认）",
+      "EMU300A 是否内置或外接 MOXA EDS-408A 交换机（证据仅描述其加固操作指导，未说明其是否为 EMU300A 系统组成部分或部署关系）",
+      "EMU300A 的 Debug 口物理位置、数量及是否为板载/外置接口（仅提协议与用途，未说明硬件实现形式）",
+      "Logger5000 的五路以太网口（ETH1~ETH5）中‘三路以太网口，两路快速调度口’的具体物理归属与网络边界归属（未说明是否全部集成于同一设备壳体，或是否含光口/电口、速率、隔离设计等）",
+      "Logger5000 的 COM1 等串口通信端口是否属于 hardware_and_network 范畴内的硬件接口（证据仅出现在设备编辑命名示例中，未说明其物理存在性、数量、电气特性或启用状态）",
+      "‘阳光云’的运营方、部署位置（公有云/私有云/本地）、以及其与 EMU300A 间 MQTT 连接是否依赖客户现场网络策略（证据未说明）",
+      "NTP 对时服务器与 NTS 对时服务器是否为同一逻辑实体或不同部署实例（文档中并列列出但未定义关系）",
+      "MOXA EDS-408A 交换机的 HTTPS 管理界面是否在加固后被显式关闭（BLK-DBBF223192FF25E4 提到‘关闭https’，但未说明是标准步骤还是可选动作）"
+    ],
+    "contradictions": []
+  },
+  "retrieval_trace": {
+    "schema_version": "1.0",
+    "request": {
+      "project_id": "yangguang_emu",
+      "node_id": "node_2",
+      "field_id": "hardware_and_network",
+      "query": null,
+      "filters": {
+        "document_ids": [],
+        "section_path_terms": [],
+        "block_types": [],
+        "exclude_review_required": false
+      },
+      "token_budget": 12000,
+      "max_blocks": 24,
+      "neighbor_window": 1
+    },
+    "effective_query": "硬件设备 网络接口 通信端口 交换机 串口 网口 USB 网络边界 相邻设备",
+    "index_id": "IDX-3B116ADDF3BB03CC",
+    "scope_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "packet_id": "rag_yangguang_emu_node_2_hardware_and_network_0fe2920aa367",
+    "packet_sha256": "d79d97eaaf2fe68f3ae41d1293b948e038407039537386e46c7fa0dbb76ea062",
+    "candidate_count": 1041,
+    "selected_count": 24,
+    "selected_token_count": 2339,
+    "truncated_by_budget": false,
+    "truncated_by_max_blocks": true,
+    "hits": [
+      {
+        "block_id": "BLK-29C1D2687B061739",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 1,
+        "score": 0.526079347398546,
+        "estimated_tokens": 131,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-9A30F47EBE526FFD",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 2,
+        "score": 0.526079347398546,
+        "estimated_tokens": 95,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-29C1D2687B061739"
+      },
+      {
+        "block_id": "BLK-975020BB29D47E2B",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 3,
+        "score": 0.526079347398546,
+        "estimated_tokens": 92,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-29C1D2687B061739"
+      },
+      {
+        "block_id": "BLK-EDC5C2184DE9105D",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 4,
+        "score": 0.5076985147264269,
+        "estimated_tokens": 115,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-36FB0A68AF75FE85",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 5,
+        "score": 0.5076985147264269,
+        "estimated_tokens": 103,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-EDC5C2184DE9105D"
+      },
+      {
+        "block_id": "BLK-5D985A3BE95AA6EF",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 6,
+        "score": 0.5070473935869005,
+        "estimated_tokens": 112,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-C324EA9A6C2C76F3",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 7,
+        "score": 0.5070473935869005,
+        "estimated_tokens": 71,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-5D985A3BE95AA6EF"
+      },
+      {
+        "block_id": "BLK-AAAB07E441B22709",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 8,
+        "score": 0.5070473935869005,
+        "estimated_tokens": 74,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-5D985A3BE95AA6EF"
+      },
+      {
+        "block_id": "BLK-41C649321EC9FCF3",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 9,
+        "score": 0.4764925744798449,
+        "estimated_tokens": 109,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-2D167330417F4345",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 10,
+        "score": 0.4764925744798449,
+        "estimated_tokens": 91,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-41C649321EC9FCF3"
+      },
+      {
+        "block_id": "BLK-50F7C65843B01D86",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 11,
+        "score": 0.4764925744798449,
+        "estimated_tokens": 88,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-41C649321EC9FCF3"
+      },
+      {
+        "block_id": "BLK-C197FC251B6DDDDA",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 12,
+        "score": 0.471262624528673,
+        "estimated_tokens": 118,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-63CBCE78F86EB9D5",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 13,
+        "score": 0.471262624528673,
+        "estimated_tokens": 78,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-C197FC251B6DDDDA"
+      },
+      {
+        "block_id": "BLK-DBBF223192FF25E4",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 14,
+        "score": 0.471262624528673,
+        "estimated_tokens": 102,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-C197FC251B6DDDDA"
+      },
+      {
+        "block_id": "BLK-276E748A60208EB8",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 15,
+        "score": 0.4710037602318658,
+        "estimated_tokens": 178,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-9565F327F887D925",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 16,
+        "score": 0.4710037602318658,
+        "estimated_tokens": 142,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-276E748A60208EB8"
+      },
+      {
+        "block_id": "BLK-2491D9EF7280A664",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 17,
+        "score": 0.4710037602318658,
+        "estimated_tokens": 120,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-276E748A60208EB8"
+      },
+      {
+        "block_id": "BLK-5751A158B27985D4",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 18,
+        "score": 0.46592534912957084,
+        "estimated_tokens": 268,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-80BDC5A7EB0594AE",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 19,
+        "score": 0.46592534912957084,
+        "estimated_tokens": 59,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-5751A158B27985D4"
+      },
+      {
+        "block_id": "BLK-6CDBA2C1126CE14A",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 20,
+        "score": 0.46592534912957084,
+        "estimated_tokens": 49,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-5751A158B27985D4"
+      },
+      {
+        "block_id": "BLK-276B765BAAD65005",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 21,
+        "score": 0.46476873291863335,
+        "estimated_tokens": 151,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-254543AB77B4B866",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 22,
+        "score": 0.46476873291863335,
+        "estimated_tokens": 82,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-276B765BAAD65005"
+      },
+      {
+        "block_id": "BLK-DCE8A1FE2B86D398",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 23,
+        "score": 0.46476873291863335,
+        "estimated_tokens": 83,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-276B765BAAD65005"
+      },
+      {
+        "block_id": "BLK-EBC2AAA9362F3A94",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 24,
+        "score": 0.4635396268632677,
+        "estimated_tokens": 115,
+        "is_neighbor": false,
+        "seed_block_id": null
+      }
+    ]
+  }
+}

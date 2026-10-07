@@ -1,0 +1,439 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-C05790B0172D7CF2",
+  "section_path": [
+    "7 Web界面",
+    "7.7 功率调节",
+    "7.7.3 有功功率",
+    "7.7.3.2 远程调度",
+    "7.7.3.2.1 开环控制"
+  ],
+  "section_title": "7.7.3.2.1 开环控制",
+  "start_pdf_page": 55,
+  "end_pdf_page": 55,
+  "blocks": [
+    {
+      "block_id": "BLK-1F500592F30BF288",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "45",
+      "block_order": 0,
+      "section_id": "SEC-C05790B0172D7CF2",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.2 远程调度",
+        "7.7.3.2.1 开环控制"
+      ],
+      "section_title": "7.7.3.2.1 开环控制",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.613,
+        48.088,
+        463.967,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-59FD542609CF7094",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "45",
+      "block_order": 1,
+      "section_id": "SEC-C05790B0172D7CF2",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.2 远程调度",
+        "7.7.3.2.1 开环控制"
+      ],
+      "section_title": "7.7.3.2.1 开环控制",
+      "block_type": "paragraph",
+      "text": "开环控制",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        71.556,
+        138.366,
+        82.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E0F2B677281A6B47",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "45",
+      "block_order": 2,
+      "section_id": "SEC-C05790B0172D7CF2",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.2 远程调度",
+        "7.7.3.2.1 开环控制"
+      ],
+      "section_title": "7.7.3.2.1 开环控制",
+      "block_type": "paragraph",
+      "text": "开环控制不依赖于逆变器实际输出值的反馈。选择开环控制后，数据采集器一旦向逆变器发\n送初始功率调节指令，就不会根据逆变器的实际输出进行后续调整。这种控制策略适用于对\n功率调节响应速度要求较高的场景。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        89.706,
+        462.366,
+        127.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0184D9EDD7854B45",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "45",
+      "block_order": 3,
+      "section_id": "SEC-C05790B0172D7CF2",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.2 远程调度",
+        "7.7.3.2.1 开环控制"
+      ],
+      "section_title": "7.7.3.2.1 开环控制",
+      "block_type": "paragraph",
+      "text": "闭环控制",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        136.856,
+        138.366,
+        147.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2673EDC6366877DC",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "45",
+      "block_order": 4,
+      "section_id": "SEC-C05790B0172D7CF2",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.2 远程调度",
+        "7.7.3.2.1 开环控制"
+      ],
+      "section_title": "7.7.3.2.1 开环控制",
+      "block_type": "paragraph",
+      "text": "闭环控制依赖于逆变器实际输出值的反馈。选择闭环控制后，数据采集器会持续监测逆变器\n的输出功率，并将其与目标功率进行比较。一旦检测到任何偏差，数据采集器便自动调整控\n制命令，确保输出功率的准确性和稳定性。这种控制策略适用于对功率调节精度要求较高的\n场景。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        155.006,
+        462.366,
+        206.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CB566436C3DE4EF8",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "45",
+      "block_order": 5,
+      "section_id": "SEC-C05790B0172D7CF2",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.2 远程调度",
+        "7.7.3.2.1 开环控制"
+      ],
+      "section_title": "7.7.3.2.1 开环控制",
+      "block_type": "paragraph",
+      "text": "为了确保准确获取必要的数据反馈，采用闭环控制策略时需要在数据采集器端接入电\n表或包含测控装置的箱变。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        222.156,
+        462.366,
+        243.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D6A6747EB23C183D",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "45",
+      "block_order": 14,
+      "section_id": "SEC-C05790B0172D7CF2",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.2 远程调度",
+        "7.7.3.2.1 开环控制"
+      ],
+      "section_title": "7.7.3.2.1 开环控制",
+      "block_type": "heading",
+      "text": "7.7.3.2.1 开环控制\n前提条件",
+      "table_cells": null,
+      "bbox": [
+        70.867,
+        474.7,
+        150.287,
+        498.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-310C1F94A1E5745C",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "45",
+      "block_order": 15,
+      "section_id": "SEC-C05790B0172D7CF2",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.2 远程调度",
+        "7.7.3.2.1 开环控制"
+      ],
+      "section_title": "7.7.3.2.1 开环控制",
+      "block_type": "list",
+      "text": "•\n当前有功控制方式已选择远程调度。见7.7.1 选择功率控制方式。",
+      "table_cells": null,
+      "bbox": [
+        102.362,
+        507.806,
+        375.305,
+        518.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CD4E3ED4B2D562A8",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "45",
+      "block_order": 16,
+      "section_id": "SEC-C05790B0172D7CF2",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.2 远程调度",
+        "7.7.3.2.1 开环控制"
+      ],
+      "section_title": "7.7.3.2.1 开环控制",
+      "block_type": "paragraph",
+      "text": "步骤 1 在控制策略下拉列表中，选择开环控制。",
+      "table_cells": null,
+      "bbox": [
+        70.862,
+        531.884,
+        263.732,
+        544.367
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-750A6F4CC4E70CB0",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "45",
+      "block_order": 17,
+      "section_id": "SEC-C05790B0172D7CF2",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.2 远程调度",
+        "7.7.3.2.1 开环控制"
+      ],
+      "section_title": "7.7.3.2.1 开环控制",
+      "block_type": "paragraph",
+      "text": "步骤 2 在查询恢复时间文本框内，输入暂停数据采集器与逆变器进行数据交互的时间。",
+      "table_cells": null,
+      "bbox": [
+        70.862,
+        548.384,
+        416.732,
+        560.867
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6F88895C8A337203",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "45",
+      "block_order": 18,
+      "section_id": "SEC-C05790B0172D7CF2",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.2 远程调度",
+        "7.7.3.2.1 开环控制"
+      ],
+      "section_title": "7.7.3.2.1 开环控制",
+      "block_type": "paragraph",
+      "text": "功率调节开始后，数据采集器暂时停止常规的数据读取，优先调整逆变器的功率输出，以确",
+      "table_cells": null,
+      "bbox": [
+        101.732,
+        566.306,
+        461.732,
+        577.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5F267DDD9167CFD2",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "45",
+      "block_order": 19,
+      "section_id": "SEC-C05790B0172D7CF2",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.2 远程调度",
+        "7.7.3.2.1 开环控制"
+      ],
+      "section_title": "7.7.3.2.1 开环控制",
+      "block_type": "paragraph",
+      "text": "保调节操作的快速和准确。",
+      "table_cells": null,
+      "bbox": [
+        101.732,
+        579.806,
+        209.732,
+        590.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4D9A878941291CFC",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "45",
+      "block_order": 20,
+      "section_id": "SEC-C05790B0172D7CF2",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.2 远程调度",
+        "7.7.3.2.1 开环控制"
+      ],
+      "section_title": "7.7.3.2.1 开环控制",
+      "block_type": "paragraph",
+      "text": "例如，当设置查询恢复时间为“60”时，表示当逆变器收到功率调节指令后60 秒内，数据采集\n器不会采集逆变器的数据。在该段时间，由于常规的数据交互被暂停，运维人员通过Web 端\n或云平台查看设备的数据会出现滞后。",
+      "table_cells": null,
+      "bbox": [
+        101.732,
+        596.306,
+        466.574,
+        634.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B51F212439B3A154",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "45",
+      "block_order": 21,
+      "section_id": "SEC-C05790B0172D7CF2",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.2 远程调度",
+        "7.7.3.2.1 开环控制"
+      ],
+      "section_title": "7.7.3.2.1 开环控制",
+      "block_type": "paragraph",
+      "text": "步骤 3 在目标值过滤下拉列表中，选择合适的目标值过滤方式。",
+      "table_cells": null,
+      "bbox": [
+        70.862,
+        638.384,
+        326.732,
+        650.867
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

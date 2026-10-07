@@ -1,0 +1,192 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-21460C054E7B1147",
+  "section_path": [
+    "4 电气连接",
+    "4.6 接线步骤",
+    "4.6.1 接地连接",
+    "4.6.1.1 铜排接地"
+  ],
+  "section_title": "4.6.1.1 铜排接地",
+  "start_pdf_page": 31,
+  "end_pdf_page": 31,
+  "blocks": [
+    {
+      "block_id": "BLK-434AA6E0DF5388F7",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 31,
+      "printed_page_label": "25",
+      "block_order": 0,
+      "section_id": "SEC-21460C054E7B1147",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.1 接地连接",
+        "4.6.1.1 铜排接地"
+      ],
+      "section_title": "4.6.1.1 铜排接地",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 电气连接",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-21EC7DD76D2FF42C",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 31,
+      "printed_page_label": "25",
+      "block_order": 15,
+      "section_id": "SEC-21460C054E7B1147",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.1 接地连接",
+        "4.6.1.1 铜排接地"
+      ],
+      "section_title": "4.6.1.1 铜排接地",
+      "block_type": "heading",
+      "text": "4.6.1.1 铜排接地",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        466.246,
+        146.196,
+        478.416
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-84E07EE1B334486F",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 31,
+      "printed_page_label": "25",
+      "block_order": 16,
+      "section_id": "SEC-21460C054E7B1147",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.1 接地连接",
+        "4.6.1.1 铜排接地"
+      ],
+      "section_title": "4.6.1.1 铜排接地",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        485.562,
+        138.366,
+        496.515
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-90E1C0CBE078F552",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 31,
+      "printed_page_label": "25",
+      "block_order": 17,
+      "section_id": "SEC-21460C054E7B1147",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.1 接地连接",
+        "4.6.1.1 铜排接地"
+      ],
+      "section_title": "4.6.1.1 铜排接地",
+      "block_type": "paragraph",
+      "text": "位置说明",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        504.64,
+        138.366,
+        517.123
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3E87480598E0B711",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 31,
+      "printed_page_label": "25",
+      "block_order": 18,
+      "section_id": "SEC-21460C054E7B1147",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.1 接地连接",
+        "4.6.1.1 铜排接地"
+      ],
+      "section_title": "4.6.1.1 铜排接地",
+      "block_type": "paragraph",
+      "text": "设备内部的接地铜排位于箱体内部，功能地排如下图所示：",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        527.562,
+        336.366,
+        538.515
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D4C10C1A63663707",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 31,
+      "printed_page_label": "25",
+      "block_order": 19,
+      "section_id": "SEC-21460C054E7B1147",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.1 接地连接",
+        "4.6.1.1 铜排接地"
+      ],
+      "section_title": "4.6.1.1 铜排接地",
+      "block_type": "paragraph",
+      "text": "需要独立一根地线从等电位连接保护地排接到机器内部的功能地排上。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        554.212,
+        408.366,
+        565.165
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

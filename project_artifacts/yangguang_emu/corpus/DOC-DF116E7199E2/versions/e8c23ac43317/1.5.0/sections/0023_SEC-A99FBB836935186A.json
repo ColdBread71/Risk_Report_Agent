@@ -1,0 +1,124 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-A99FBB836935186A",
+  "section_path": [
+    "10 安全配置指南",
+    "10.2 安全启动"
+  ],
+  "section_title": "10.2 安全启动",
+  "start_pdf_page": 21,
+  "end_pdf_page": 21,
+  "blocks": [
+    {
+      "block_id": "BLK-FED60E901705B998",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "17",
+      "block_order": 6,
+      "section_id": "SEC-A99FBB836935186A",
+      "section_path": [
+        "10 安全配置指南",
+        "10.2 安全启动"
+      ],
+      "section_title": "10.2 安全启动",
+      "block_type": "heading",
+      "text": "10.2 安全启动",
+      "table_cells": null,
+      "bbox": [
+        70.869,
+        285.158,
+        149.721,
+        299.762
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-11E7630FDD454CE8",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "17",
+      "block_order": 7,
+      "section_id": "SEC-A99FBB836935186A",
+      "section_path": [
+        "10 安全配置指南",
+        "10.2 安全启动"
+      ],
+      "section_title": "10.2 安全启动",
+      "block_type": "paragraph",
+      "text": "安全启动（Secure Boot）是一种基于逐级验证的启动链可信加载技术，用于确保系统固件与\n操作系统镜像的完整性与合法性，防止其被非法篡改或替换。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        312.806,
+        466.899,
+        337.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-56710D21D4166A27",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "17",
+      "block_order": 8,
+      "section_id": "SEC-A99FBB836935186A",
+      "section_path": [
+        "10 安全配置指南",
+        "10.2 安全启动"
+      ],
+      "section_title": "10.2 安全启动",
+      "block_type": "paragraph",
+      "text": "在本产品中，安全启动功能默认处于启用状态。若启动过程中未严格执行安全启动验证流\n程，则存储在 eMMC 中的系统镜像可能面临被恶意攻击者替换的风险。一旦内核等关键镜像\n被篡改，系统将加载并运行被控制的恶意固件，导致设备完全由攻击者掌控。在此情况下，\n所有构建于操作系统之上的安全机制（如权限控制、加密存储、安全服务等）将失去保护作\n用，整个系统的安全性将彻底失效。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        347.806,
+        466.863,
+        412.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-696CBA8087AAE64A",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "17",
+      "block_order": 9,
+      "section_id": "SEC-A99FBB836935186A",
+      "section_path": [
+        "10 安全配置指南",
+        "10.2 安全启动"
+      ],
+      "section_title": "10.2 安全启动",
+      "block_type": "paragraph",
+      "text": "本节所述安全启动仅针对数采。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        428.456,
+        255.366,
+        439.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

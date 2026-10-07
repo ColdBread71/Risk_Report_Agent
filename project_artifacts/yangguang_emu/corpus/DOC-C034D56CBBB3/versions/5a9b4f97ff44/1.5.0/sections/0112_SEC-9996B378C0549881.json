@@ -1,0 +1,129 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-9996B378C0549881",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.8 转发MODBUS服务配置"
+  ],
+  "section_title": "7.8.8 转发MODBUS服务配置",
+  "start_pdf_page": 75,
+  "end_pdf_page": 75,
+  "blocks": [
+    {
+      "block_id": "BLK-F81DBF075BDD8B55",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 29,
+      "section_id": "SEC-9996B378C0549881",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置"
+      ],
+      "section_title": "7.8.8 转发MODBUS服务配置",
+      "block_type": "heading",
+      "text": "7.8.8 转发MODBUS 服务配置",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        567.773,
+        206.75,
+        579.943
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5963DA89EB64FBF3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 30,
+      "section_id": "SEC-9996B378C0549881",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置"
+      ],
+      "section_title": "7.8.8 转发MODBUS服务配置",
+      "block_type": "paragraph",
+      "text": "“转发MODBUS 服务配置”用于配置数据采集器转发MODBUS 服务。",
+      "table_cells": null,
+      "bbox": [
+        102.37,
+        586.997,
+        361.144,
+        597.342
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5EF8C6824B00F020",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 31,
+      "section_id": "SEC-9996B378C0549881",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置"
+      ],
+      "section_title": "7.8.8 转发MODBUS服务配置",
+      "block_type": "list",
+      "text": "•\n该协议为非安全协议，存在风险，请确认设备网络环境安全后再开启。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        614.339,
+        422.541,
+        625.292
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BD9FE63308E9D00E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 32,
+      "section_id": "SEC-9996B378C0549881",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置"
+      ],
+      "section_title": "7.8.8 转发MODBUS服务配置",
+      "block_type": "list",
+      "text": "•\n可根据需要开启TLS 加密功能，进一步保障信息安全。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        629.339,
+        362.547,
+        640.292
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

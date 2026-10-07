@@ -1,0 +1,395 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-3B448DFDA09213B7",
+  "section_path": [
+    "4 电气连接",
+    "4.6 接线步骤",
+    "4.6.1 接地连接",
+    "4.6.1.2 接地点接地"
+  ],
+  "section_title": "4.6.1.2 接地点接地",
+  "start_pdf_page": 32,
+  "end_pdf_page": 32,
+  "blocks": [
+    {
+      "block_id": "BLK-4ED50A8F87270F46",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "26",
+      "block_order": 0,
+      "section_id": "SEC-3B448DFDA09213B7",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.1 接地连接",
+        "4.6.1.2 接地点接地"
+      ],
+      "section_title": "4.6.1.2 接地点接地",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 电气连接",
+      "table_cells": null,
+      "bbox": [
+        60.441,
+        48.088,
+        449.795,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1EF3B6ACEF656456",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "26",
+      "block_order": 1,
+      "section_id": "SEC-3B448DFDA09213B7",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.1 接地连接",
+        "4.6.1.2 接地点接地"
+      ],
+      "section_title": "4.6.1.2 接地点接地",
+      "block_type": "paragraph",
+      "text": "接线步骤",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        242.712,
+        124.193,
+        255.195
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FA42114465A924B0",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "26",
+      "block_order": 2,
+      "section_id": "SEC-3B448DFDA09213B7",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.1 接地连接",
+        "4.6.1.2 接地点接地"
+      ],
+      "section_title": "4.6.1.2 接地点接地",
+      "block_type": "paragraph",
+      "text": "步骤 1 拧开设备底部的PLC 防水端子。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        260.862,
+        217.568,
+        273.345
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-926C8E67B90A0E89",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "26",
+      "block_order": 3,
+      "section_id": "SEC-3B448DFDA09213B7",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.1 接地连接",
+        "4.6.1.2 接地点接地"
+      ],
+      "section_title": "4.6.1.2 接地点接地",
+      "block_type": "paragraph",
+      "text": "步骤 2 将从外部引入的黄绿接地线缆，穿过设备内部的“MPLC ”防水端子后，接到设备内部的接地",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        277.362,
+        445.061,
+        289.845
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-896BF011A54A033A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "26",
+      "block_order": 4,
+      "section_id": "SEC-3B448DFDA09213B7",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.1 接地连接",
+        "4.6.1.2 接地点接地"
+      ],
+      "section_title": "4.6.1.2 接地点接地",
+      "block_type": "paragraph",
+      "text": "铜排处。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        292.284,
+        123.563,
+        303.237
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4E48D728421CF49E",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "26",
+      "block_order": 5,
+      "section_id": "SEC-3B448DFDA09213B7",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.1 接地连接",
+        "4.6.1.2 接地点接地"
+      ],
+      "section_title": "4.6.1.2 接地点接地",
+      "block_type": "paragraph",
+      "text": "步骤 3 将螺栓紧固。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        307.362,
+        141.563,
+        319.845
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-49A070E2E0020906",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "26",
+      "block_order": 6,
+      "section_id": "SEC-3B448DFDA09213B7",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.1 接地连接",
+        "4.6.1.2 接地点接地"
+      ],
+      "section_title": "4.6.1.2 接地点接地",
+      "block_type": "paragraph",
+      "text": "步骤 4 拧紧设备底部防水端子。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        323.862,
+        186.563,
+        336.345
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9F5147BCF5169D44",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "26",
+      "block_order": 7,
+      "section_id": "SEC-3B448DFDA09213B7",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.1 接地连接",
+        "4.6.1.2 接地点接地"
+      ],
+      "section_title": "4.6.1.2 接地点接地",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        340.434,
+        112.187,
+        351.387
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-420FB42037BC0E44",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "26",
+      "block_order": 8,
+      "section_id": "SEC-3B448DFDA09213B7",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.1 接地连接",
+        "4.6.1.2 接地点接地"
+      ],
+      "section_title": "4.6.1.2 接地点接地",
+      "block_type": "heading",
+      "text": "4.6.1.2 接地点接地",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        367.268,
+        142.027,
+        379.438
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5253FCEFBB533AF7",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "26",
+      "block_order": 9,
+      "section_id": "SEC-3B448DFDA09213B7",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.1 接地连接",
+        "4.6.1.2 接地点接地"
+      ],
+      "section_title": "4.6.1.2 接地点接地",
+      "block_type": "paragraph",
+      "text": "位置说明",
+      "table_cells": null,
+      "bbox": [
+        88.189,
+        385.234,
+        124.189,
+        396.187
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E632097585FAB69F",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "26",
+      "block_order": 10,
+      "section_id": "SEC-3B448DFDA09213B7",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.1 接地连接",
+        "4.6.1.2 接地点接地"
+      ],
+      "section_title": "4.6.1.2 接地点接地",
+      "block_type": "paragraph",
+      "text": "设备外部接地点的位置，如下图A 所示。",
+      "table_cells": null,
+      "bbox": [
+        88.189,
+        402.034,
+        251.692,
+        412.987
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-881386B3B0947FF4",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "26",
+      "block_order": 11,
+      "section_id": "SEC-3B448DFDA09213B7",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.1 接地连接",
+        "4.6.1.2 接地点接地"
+      ],
+      "section_title": "4.6.1.2 接地点接地",
+      "block_type": "paragraph",
+      "text": "接线步骤",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        581.242,
+        124.193,
+        592.195
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E36D3641F44DEDFD",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 32,
+      "printed_page_label": "26",
+      "block_order": 12,
+      "section_id": "SEC-3B448DFDA09213B7",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.1 接地连接",
+        "4.6.1.2 接地点接地"
+      ],
+      "section_title": "4.6.1.2 接地点接地",
+      "block_type": "paragraph",
+      "text": "使用螺栓组合件，将已制作的OT 端子与接地孔紧固。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        598.042,
+        303.194,
+        608.995
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

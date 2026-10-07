@@ -1,0 +1,221 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-DA67980BE2947432",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.7 转发IEC104服务配置",
+    "7.8.7.3 导入IEC104转发点表"
+  ],
+  "section_title": "7.8.7.3 导入IEC104转发点表",
+  "start_pdf_page": 75,
+  "end_pdf_page": 75,
+  "blocks": [
+    {
+      "block_id": "BLK-00BB81986E512233",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 1,
+      "section_id": "SEC-DA67980BE2947432",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.3 导入IEC104转发点表"
+      ],
+      "section_title": "7.8.7.3 导入IEC104转发点表",
+      "block_type": "heading",
+      "text": "7.8.7.3 导入IEC104 转发点表",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        71.59,
+        204.556,
+        83.76
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1105C716A4197469",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 2,
+      "section_id": "SEC-DA67980BE2947432",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.3 导入IEC104转发点表"
+      ],
+      "section_title": "7.8.7.3 导入IEC104转发点表",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击操作栏",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        100.873,
+        146.731,
+        113.356
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1E54B6868F00BB53",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 3,
+      "section_id": "SEC-DA67980BE2947432",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.3 导入IEC104转发点表"
+      ],
+      "section_title": "7.8.7.3 导入IEC104转发点表",
+      "block_type": "paragraph",
+      "text": "，弹出高级设置界面。",
+      "table_cells": null,
+      "bbox": [
+        160.911,
+        102.295,
+        250.911,
+        113.248
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9AC77577A7445782",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 4,
+      "section_id": "SEC-DA67980BE2947432",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.3 导入IEC104转发点表"
+      ],
+      "section_title": "7.8.7.3 导入IEC104转发点表",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        118.794,
+        119.736,
+        131.277
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0F7658D3979914AC",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 5,
+      "section_id": "SEC-DA67980BE2947432",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.3 导入IEC104转发点表"
+      ],
+      "section_title": "7.8.7.3 导入IEC104转发点表",
+      "block_type": "paragraph",
+      "text": "，导入zip 文件。",
+      "table_cells": null,
+      "bbox": [
+        133.911,
+        120.216,
+        203.913,
+        131.169
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-460A5A9B1C291051",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 6,
+      "section_id": "SEC-DA67980BE2947432",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.3 导入IEC104转发点表"
+      ],
+      "section_title": "7.8.7.3 导入IEC104转发点表",
+      "block_type": "paragraph",
+      "text": "步骤 3 点击保存。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        135.294,
+        146.736,
+        147.777
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DEC7431C33C8A5A3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 75,
+      "printed_page_label": "65",
+      "block_order": 7,
+      "section_id": "SEC-DA67980BE2947432",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.7 转发IEC104服务配置",
+        "7.8.7.3 导入IEC104转发点表"
+      ],
+      "section_title": "7.8.7.3 导入IEC104转发点表",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        151.866,
+        126.36,
+        162.819
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

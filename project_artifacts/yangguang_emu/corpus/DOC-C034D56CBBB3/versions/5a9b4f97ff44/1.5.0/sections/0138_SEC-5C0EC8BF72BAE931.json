@@ -1,0 +1,70 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-5C0EC8BF72BAE931",
+  "section_path": [
+    "9 电网调度",
+    "9.3 有功功率调节"
+  ],
+  "section_title": "9.3 有功功率调节",
+  "start_pdf_page": 90,
+  "end_pdf_page": 90,
+  "blocks": [
+    {
+      "block_id": "BLK-FE71787B79FAAEF4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 90,
+      "printed_page_label": "80",
+      "block_order": 6,
+      "section_id": "SEC-5C0EC8BF72BAE931",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节"
+      ],
+      "section_title": "9.3 有功功率调节",
+      "block_type": "heading",
+      "text": "9.3 有功功率调节",
+      "table_cells": null,
+      "bbox": [
+        56.687,
+        441.408,
+        152.879,
+        456.012
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4D39F13F029B1E14",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 90,
+      "printed_page_label": "80",
+      "block_order": 7,
+      "section_id": "SEC-5C0EC8BF72BAE931",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节"
+      ],
+      "section_title": "9.3 有功功率调节",
+      "block_type": "paragraph",
+      "text": "有功功率调节指调节电站向电网的有功功率馈入，进而优化电力系统的负载分配。收到有功功率\n调节需求后，运维人员应在Web 端选择合适的有功功率控制方式并设置相关参数，确保逆变器能\n及时响应数据采集器或其他控制设备的调节指令。",
+      "table_cells": null,
+      "bbox": [
+        88.194,
+        468.964,
+        449.767,
+        504.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

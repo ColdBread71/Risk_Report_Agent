@@ -1,0 +1,105 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-22EF20D9FF65D571",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.13 端口参数",
+    "7.8.13.3 AI"
+  ],
+  "section_title": "7.8.13.3 AI",
+  "start_pdf_page": 83,
+  "end_pdf_page": 83,
+  "blocks": [
+    {
+      "block_id": "BLK-77974F9E09EDB7E3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 83,
+      "printed_page_label": "73",
+      "block_order": 4,
+      "section_id": "SEC-22EF20D9FF65D571",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.3 AI"
+      ],
+      "section_title": "7.8.13.3 AI",
+      "block_type": "heading",
+      "text": "7.8.13.3 AI",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        307.976,
+        118.71,
+        319.136
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F96565686FEE4E0B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 83,
+      "printed_page_label": "73",
+      "block_order": 5,
+      "section_id": "SEC-22EF20D9FF65D571",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.3 AI"
+      ],
+      "section_title": "7.8.13.3 AI",
+      "block_type": "paragraph",
+      "text": "步骤 3 若数据采集器接有外置IO 设备，单击外置，进入界面，可对该设备的AI 信息进行设置。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        558.637,
+        452.736,
+        571.12
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-396CC114E15C5A5C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 83,
+      "printed_page_label": "73",
+      "block_order": 6,
+      "section_id": "SEC-22EF20D9FF65D571",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.3 AI"
+      ],
+      "section_title": "7.8.13.3 AI",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        575.209,
+        126.36,
+        586.162
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

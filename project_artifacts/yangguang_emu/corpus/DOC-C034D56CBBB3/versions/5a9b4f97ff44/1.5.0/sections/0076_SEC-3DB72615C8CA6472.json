@@ -1,0 +1,279 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-3DB72615C8CA6472",
+  "section_path": [
+    "7 Web界面",
+    "7.6 设备维护",
+    "7.6.1 设备列表",
+    "7.6.1.3 导入"
+  ],
+  "section_title": "7.6.1.3 导入",
+  "start_pdf_page": 60,
+  "end_pdf_page": 60,
+  "blocks": [
+    {
+      "block_id": "BLK-656D034B9BF55620",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 5,
+      "section_id": "SEC-3DB72615C8CA6472",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.3 导入"
+      ],
+      "section_title": "7.6.1.3 导入",
+      "block_type": "heading",
+      "text": "7.6.1.3 导入",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        139.263,
+        112.027,
+        151.433
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-39CE6859BE921E76",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 6,
+      "section_id": "SEC-3DB72615C8CA6472",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.3 导入"
+      ],
+      "section_title": "7.6.1.3 导入",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击设备维护 > 设备列表，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        56.695,
+        163.157,
+        241.816,
+        175.64
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A0A2A6BBA9411E42",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 7,
+      "section_id": "SEC-3DB72615C8CA6472",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.3 导入"
+      ],
+      "section_title": "7.6.1.3 导入",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击",
+      "table_cells": null,
+      "bbox": [
+        56.695,
+        187.53,
+        105.565,
+        200.013
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A5BE77A1F654410A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 8,
+      "section_id": "SEC-3DB72615C8CA6472",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.3 导入"
+      ],
+      "section_title": "7.6.1.3 导入",
+      "block_type": "paragraph",
+      "text": "按钮，将设备列表信息导出到本地。",
+      "table_cells": null,
+      "bbox": [
+        119.738,
+        188.952,
+        263.738,
+        199.905
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B248A8D5657E3AB3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 9,
+      "section_id": "SEC-3DB72615C8CA6472",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.3 导入"
+      ],
+      "section_title": "7.6.1.3 导入",
+      "block_type": "paragraph",
+      "text": "步骤 3 导出设备列表后，可对多台设备的名称进行批量修改。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        204.03,
+        303.563,
+        216.513
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6F91E70A2ACA6A41",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 10,
+      "section_id": "SEC-3DB72615C8CA6472",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.3 导入"
+      ],
+      "section_title": "7.6.1.3 导入",
+      "block_type": "paragraph",
+      "text": "步骤 4 修改完成后，将设备列表文件另存为.csv 格式。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        220.53,
+        276.815,
+        233.013
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9268C3326C81CD4F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 11,
+      "section_id": "SEC-3DB72615C8CA6472",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.3 导入"
+      ],
+      "section_title": "7.6.1.3 导入",
+      "block_type": "paragraph",
+      "text": "步骤 5 单击",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        243.028,
+        105.563,
+        255.511
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C069056F203AF8FB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 12,
+      "section_id": "SEC-3DB72615C8CA6472",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.3 导入"
+      ],
+      "section_title": "7.6.1.3 导入",
+      "block_type": "paragraph",
+      "text": "按钮，将.csv 格式文件导入到Web 中。",
+      "table_cells": null,
+      "bbox": [
+        119.738,
+        244.45,
+        277.832,
+        255.403
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6708486BDB27D0D1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 13,
+      "section_id": "SEC-3DB72615C8CA6472",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.3 导入"
+      ],
+      "section_title": "7.6.1.3 导入",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        259.6,
+        112.187,
+        270.553
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

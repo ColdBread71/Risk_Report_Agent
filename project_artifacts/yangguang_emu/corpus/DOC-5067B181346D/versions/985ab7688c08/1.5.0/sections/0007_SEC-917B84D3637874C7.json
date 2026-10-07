@@ -1,0 +1,232 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-917B84D3637874C7",
+  "section_path": [
+    "1 安全注意事项",
+    "1.4 安装安全"
+  ],
+  "section_title": "1.4 安装安全",
+  "start_pdf_page": 10,
+  "end_pdf_page": 10,
+  "blocks": [
+    {
+      "block_id": "BLK-083C46B0E92E9BEE",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 0,
+      "section_id": "SEC-917B84D3637874C7",
+      "section_path": [
+        "1 安全注意事项",
+        "1.4 安装安全"
+      ],
+      "section_title": "1.4 安装安全",
+      "block_type": "paragraph",
+      "text": "用户手册\n1 安全注意事项",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1D2666E098D20DCF",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 1,
+      "section_id": "SEC-917B84D3637874C7",
+      "section_path": [
+        "1 安全注意事项",
+        "1.4 安装安全"
+      ],
+      "section_title": "1.4 安装安全",
+      "block_type": "paragraph",
+      "text": "注意",
+      "table_cells": null,
+      "bbox": [
+        97.941,
+        74.674,
+        119.941,
+        88.061
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5D41D17D61906A49",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 2,
+      "section_id": "SEC-917B84D3637874C7",
+      "section_path": [
+        "1 安全注意事项",
+        "1.4 安装安全"
+      ],
+      "section_title": "1.4 安装安全",
+      "block_type": "paragraph",
+      "text": "保证设备的安全标识、警告标签及铭牌清晰可见。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        91.856,
+        290.695,
+        102.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3C7510D17C93775B",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 20,
+      "section_id": "SEC-917B84D3637874C7",
+      "section_path": [
+        "1 安全注意事项",
+        "1.4 安装安全"
+      ],
+      "section_title": "1.4 安装安全",
+      "block_type": "heading",
+      "text": "1.4 安装安全",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        446.158,
+        128.873,
+        460.762
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E63C489D5A3FB01F",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 21,
+      "section_id": "SEC-917B84D3637874C7",
+      "section_path": [
+        "1 安全注意事项",
+        "1.4 安装安全"
+      ],
+      "section_title": "1.4 安装安全",
+      "block_type": "paragraph",
+      "text": "危险",
+      "table_cells": null,
+      "bbox": [
+        110.69,
+        477.174,
+        132.69,
+        490.561
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CF42796269767D4D",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 22,
+      "section_id": "SEC-917B84D3637874C7",
+      "section_path": [
+        "1 安全注意事项",
+        "1.4 安装安全"
+      ],
+      "section_title": "1.4 安装安全",
+      "block_type": "paragraph",
+      "text": "安装过程严禁带电操作。禁止带电安装、拆除线缆，线缆线芯在接触导体的瞬间，会产生\n电弧或电火花，会导致火灾或人身伤害。",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        495.706,
+        443.693,
+        517.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1E78EE077446D340",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 23,
+      "section_id": "SEC-917B84D3637874C7",
+      "section_path": [
+        "1 安全注意事项",
+        "1.4 安装安全"
+      ],
+      "section_title": "1.4 安装安全",
+      "block_type": "paragraph",
+      "text": "注意",
+      "table_cells": null,
+      "bbox": [
+        97.941,
+        536.274,
+        119.941,
+        549.661
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-30080A3161AD9C41",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "4",
+      "block_order": 24,
+      "section_id": "SEC-917B84D3637874C7",
+      "section_path": [
+        "1 安全注意事项",
+        "1.4 安装安全"
+      ],
+      "section_title": "1.4 安装安全",
+      "block_type": "paragraph",
+      "text": "安装时应遵守当地的法律法规、标准和规范要求。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        554.806,
+        290.695,
+        565.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

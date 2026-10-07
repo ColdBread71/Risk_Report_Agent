@@ -1,0 +1,151 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-6B103546EE3E4AAA",
+  "section_path": [
+    "5 电气连接",
+    "5.3 接线概述"
+  ],
+  "section_title": "5.3 接线概述",
+  "start_pdf_page": 29,
+  "end_pdf_page": 29,
+  "blocks": [
+    {
+      "block_id": "BLK-22B8D26D1ACA569A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "19",
+      "block_order": 12,
+      "section_id": "SEC-6B103546EE3E4AAA",
+      "section_path": [
+        "5 电气连接",
+        "5.3 接线概述"
+      ],
+      "section_title": "5.3 接线概述",
+      "block_type": "heading",
+      "text": "5.3 接线概述",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        340.596,
+        143.046,
+        355.2
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-87CBB9D9C74152E1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "19",
+      "block_order": 13,
+      "section_id": "SEC-6B103546EE3E4AAA",
+      "section_path": [
+        "5 电气连接",
+        "5.3 接线概述"
+      ],
+      "section_title": "5.3 接线概述",
+      "block_type": "paragraph",
+      "text": "数据采集器：",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        368.244,
+        156.366,
+        379.197
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-75FC913253C09163",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "19",
+      "block_order": 14,
+      "section_id": "SEC-6B103546EE3E4AAA",
+      "section_path": [
+        "5 电气连接",
+        "5.3 接线概述"
+      ],
+      "section_title": "5.3 接线概述",
+      "block_type": "list",
+      "text": "•\n通过RS485 端口接入光伏系统中的设备，如逆变器、汇流箱、环境检测仪、电表等。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        389.744,
+        454.554,
+        400.697
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DCF0141F8150BC26",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "19",
+      "block_order": 15,
+      "section_id": "SEC-6B103546EE3E4AAA",
+      "section_path": [
+        "5 电气连接",
+        "5.3 接线概述"
+      ],
+      "section_title": "5.3 接线概述",
+      "block_type": "list",
+      "text": "•\n通过以太网端口接至后台设备。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        404.744,
+        242.541,
+        415.697
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C88DB5AB9277ECC2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "19",
+      "block_order": 16,
+      "section_id": "SEC-6B103546EE3E4AAA",
+      "section_path": [
+        "5 电气连接",
+        "5.3 接线概述"
+      ],
+      "section_title": "5.3 接线概述",
+      "block_type": "list",
+      "text": "•\n通过MPLC 端口与变压器等设备连接。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        419.744,
+        272.043,
+        430.697
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

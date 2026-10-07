@@ -1,0 +1,70 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-FAB0BDB1329C8277",
+  "section_path": [
+    "5 电气连接",
+    "5.8 DO信号接线"
+  ],
+  "section_title": "5.8 DO信号接线",
+  "start_pdf_page": 33,
+  "end_pdf_page": 33,
+  "blocks": [
+    {
+      "block_id": "BLK-51B52D9D9E5DF9C5",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 33,
+      "printed_page_label": "23",
+      "block_order": 10,
+      "section_id": "SEC-FAB0BDB1329C8277",
+      "section_path": [
+        "5 电气连接",
+        "5.8 DO信号接线"
+      ],
+      "section_title": "5.8 DO信号接线",
+      "block_type": "heading",
+      "text": "5.8 DO 信号接线",
+      "table_cells": null,
+      "bbox": [
+        70.86,
+        616.295,
+        161.052,
+        630.899
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-43CE81B12CAFC110",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 33,
+      "printed_page_label": "23",
+      "block_order": 11,
+      "section_id": "SEC-FAB0BDB1329C8277",
+      "section_path": [
+        "5 电气连接",
+        "5.8 DO信号接线"
+      ],
+      "section_title": "5.8 DO信号接线",
+      "block_type": "paragraph",
+      "text": "端口1 对应NO，端口2 对应NC，端口3 对应COM，NO/COM 为常开触点，NC/COM 为\n常闭触点。建议信号传输距离不超过10m。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        642.593,
+        461.121,
+        664.346
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

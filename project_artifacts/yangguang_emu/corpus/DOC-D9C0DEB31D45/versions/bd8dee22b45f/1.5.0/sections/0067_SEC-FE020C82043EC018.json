@@ -1,0 +1,569 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-FE020C82043EC018",
+  "section_path": [
+    "7 Web界面",
+    "7.6 设备维护",
+    "7.6.1 设备列表",
+    "7.6.1.5 编辑设备"
+  ],
+  "section_title": "7.6.1.5 编辑设备",
+  "start_pdf_page": 51,
+  "end_pdf_page": 51,
+  "blocks": [
+    {
+      "block_id": "BLK-3C0C65E5F10C7C4A",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 0,
+      "section_id": "SEC-FE020C82043EC018",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.616,
+        48.088,
+        463.963,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0D46736869D554C1",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 1,
+      "section_id": "SEC-FE020C82043EC018",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "list",
+      "text": "-\n白名单添加：白名单文件通过手机APP 扫描逆变器的条形码生成，传到电脑，点击导\n入图标，可以将白名单文件导入到数采中。白名单组网完成后，显示白名单组网的结\n果。针对新电站添加场景，优先推荐白名单添加以确保添加准确度。",
+      "table_cells": null,
+      "bbox": [
+        115.911,
+        72.906,
+        467.595,
+        110.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ACB625B26F864108",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 2,
+      "section_id": "SEC-FE020C82043EC018",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "paragraph",
+      "text": "在阳光云APP 点击更多——modubs 白名单配置——命名文件名称以及PLC\n类型——可通过扫描逆变器二维码或者手动录入的方式生成白名单文件。",
+      "table_cells": null,
+      "bbox": [
+        157.082,
+        118.556,
+        458.618,
+        140.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F65DB0DFB4F518FA",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 3,
+      "section_id": "SEC-FE020C82043EC018",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "list",
+      "text": "-\n顺序添加：优先保证数采主节点与从节点方阵号和band 号保持一致；此外，需要提\n前获取逆变器地址，并且保证逆变器地址连续。",
+      "table_cells": null,
+      "bbox": [
+        115.911,
+        157.506,
+        460.602,
+        181.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-96C25992B7721ADA",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 4,
+      "section_id": "SEC-FE020C82043EC018",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "list",
+      "text": "-\n自动搜索：不优先推荐在PLC 下使用。",
+      "table_cells": null,
+      "bbox": [
+        115.911,
+        186.006,
+        287.091,
+        196.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3DBA924856D8EB58",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 5,
+      "section_id": "SEC-FE020C82043EC018",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "list",
+      "text": "•\n选RS485：可选择自动搜索以及顺序添加。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        201.006,
+        289.674,
+        211.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-446577C5372AFA81",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 6,
+      "section_id": "SEC-FE020C82043EC018",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "list",
+      "text": "-\n自动搜索：推荐在通讯方式为RS485 的前提下使用。",
+      "table_cells": null,
+      "bbox": [
+        115.911,
+        216.006,
+        342.099,
+        226.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-988D16ADEF8A3452",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 7,
+      "section_id": "SEC-FE020C82043EC018",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "list",
+      "text": "-\n顺序添加：需要提前添加逆变器地址，数采方阵号添加逆变器地址时，需要保证地址\n连续。",
+      "table_cells": null,
+      "bbox": [
+        115.911,
+        231.006,
+        463.086,
+        255.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B41FFC5AB411E20F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 8,
+      "section_id": "SEC-FE020C82043EC018",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "list",
+      "text": "•\n同一端口只能选择一种通讯方式，当端口PLC 功能使能时，则不能使用RS485\n通讯方式添加。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        266.006,
+        455.678,
+        290.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B580D76FDD44F08B",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 9,
+      "section_id": "SEC-FE020C82043EC018",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "list",
+      "text": "•\n通过白名单方式添加设备后，页面将新增更换设备按钮，可更新设备SN。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        294.506,
+        436.661,
+        305.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C3A8FE939378621E",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 10,
+      "section_id": "SEC-FE020C82043EC018",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "figure_caption",
+      "text": "图 7-1 更换设备",
+      "table_cells": null,
+      "bbox": [
+        271.556,
+        429.762,
+        334.565,
+        440.715
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D840E662284A440C",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 11,
+      "section_id": "SEC-FE020C82043EC018",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        459.412,
+        126.36,
+        470.365
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A696F29AE9B7888A",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 12,
+      "section_id": "SEC-FE020C82043EC018",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "heading",
+      "text": "7.6.1.5 编辑设备",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        480.246,
+        146.2,
+        492.416
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E88A0B226112559D",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 13,
+      "section_id": "SEC-FE020C82043EC018",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击设备维护 > 设备列表，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        504.14,
+        255.991,
+        516.623
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B85D3442C4F76590",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 14,
+      "section_id": "SEC-FE020C82043EC018",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击操作栏",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        526.029,
+        146.731,
+        538.512
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9565F327F887D925",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 15,
+      "section_id": "SEC-FE020C82043EC018",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "paragraph",
+      "text": "，弹出编辑设备界面。可修改数据采集器所接设备的设备名称和指令间隔时间\n等。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        527.451,
+        466.911,
+        551.904
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-276E748A60208EB8",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 16,
+      "section_id": "SEC-FE020C82043EC018",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "paragraph",
+      "text": "默认设备名称按照设备型号（端口号-通信地址）方式命名。\n如“SG36KTL-M(COM1-7)”中，“SG36KTL-M”为设备型号，“COM1”表示通信端口为\nCOM1，“7”表示通信地址为7。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        562.601,
+        456.749,
+        595.154
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2491D9EF7280A664",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 17,
+      "section_id": "SEC-FE020C82043EC018",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "paragraph",
+      "text": "步骤 3 单击保存，修改信息。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        612.429,
+        191.736,
+        624.912
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9372E9DE2D85DA8C",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 18,
+      "section_id": "SEC-FE020C82043EC018",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        629.001,
+        126.36,
+        639.954
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

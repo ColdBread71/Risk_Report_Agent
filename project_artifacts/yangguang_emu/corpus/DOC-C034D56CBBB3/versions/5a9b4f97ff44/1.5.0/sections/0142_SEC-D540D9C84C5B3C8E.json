@@ -1,0 +1,656 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-D540D9C84C5B3C8E",
+  "section_path": [
+    "9 电网调度",
+    "9.3 有功功率调节",
+    "9.3.1 远程有功调节",
+    "9.3.1.3 设置北向通讯异常保护"
+  ],
+  "section_title": "9.3.1.3 设置北向通讯异常保护",
+  "start_pdf_page": 92,
+  "end_pdf_page": 92,
+  "blocks": [
+    {
+      "block_id": "BLK-BA81426E4B0D160D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 2,
+      "section_id": "SEC-D540D9C84C5B3C8E",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.3 设置北向通讯异常保护"
+      ],
+      "section_title": "9.3.1.3 设置北向通讯异常保护",
+      "block_type": "heading",
+      "text": "9.3.1.3 设置北向通讯异常保护",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        92.39,
+        192.023,
+        104.56
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F0B3F657618684B8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 3,
+      "section_id": "SEC-D540D9C84C5B3C8E",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.3 设置北向通讯异常保护"
+      ],
+      "section_title": "9.3.1.3 设置北向通讯异常保护",
+      "block_type": "paragraph",
+      "text": "当数据采集器与后台之间的通讯出现问题时，后台的有功功率调节指令无法正常传达至逆变器，\n逆变器可能处于不受控状态进而导致电网受到冲击。为避免这种情况，可以在数据采集器端对逆\n变器进行功率限制。",
+      "table_cells": null,
+      "bbox": [
+        88.195,
+        111.614,
+        445.195,
+        147.458
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-28D9430F0042E4C4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 4,
+      "section_id": "SEC-D540D9C84C5B3C8E",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.3 设置北向通讯异常保护"
+      ],
+      "section_title": "9.3.1.3 设置北向通讯异常保护",
+      "block_type": "paragraph",
+      "text": "如不启用额外的通讯保护功能，在北向通信异常保护下拉列表中选择关闭（默认）。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        163.106,
+        448.193,
+        174.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-278B10E306E18E97",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 5,
+      "section_id": "SEC-D540D9C84C5B3C8E",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.3 设置北向通讯异常保护"
+      ],
+      "section_title": "9.3.1.3 设置北向通讯异常保护",
+      "block_type": "paragraph",
+      "text": "步骤 1 在北向通信异常保护下拉列表中，选择后台与数据采集器之间的通讯协议。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        194.334,
+        384.563,
+        206.817
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A993E331FC5332A8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 6,
+      "section_id": "SEC-D540D9C84C5B3C8E",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.3 设置北向通讯异常保护"
+      ],
+      "section_title": "9.3.1.3 设置北向通讯异常保护",
+      "block_type": "list",
+      "text": "•\nModbus-TCP/IEC104：数据采集与与后台的通讯协议为Modbus-TCP 或IEC104。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        212.256,
+        430.058,
+        223.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-57CA8168DEE22B5E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 7,
+      "section_id": "SEC-D540D9C84C5B3C8E",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.3 设置北向通讯异常保护"
+      ],
+      "section_title": "9.3.1.3 设置北向通讯异常保护",
+      "block_type": "list",
+      "text": "•\nModbus-RTU：数据采集与后台的通讯协议为Modbus-RTU。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        227.256,
+        345.683,
+        238.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A82A73924F15A81D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 8,
+      "section_id": "SEC-D540D9C84C5B3C8E",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.3 设置北向通讯异常保护"
+      ],
+      "section_title": "9.3.1.3 设置北向通讯异常保护",
+      "block_type": "paragraph",
+      "text": "页面下方显示通信异常保护配置表。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        243.756,
+        231.563,
+        254.709
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5114C5B09BA00D37",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 9,
+      "section_id": "SEC-D540D9C84C5B3C8E",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.3 设置北向通讯异常保护"
+      ],
+      "section_title": "9.3.1.3 设置北向通讯异常保护",
+      "block_type": "paragraph",
+      "text": "步骤 2 配置通信异常保护参数。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        258.834,
+        186.563,
+        271.317
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2799DAAE905D24F0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 10,
+      "section_id": "SEC-D540D9C84C5B3C8E",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.3 设置北向通讯异常保护"
+      ],
+      "section_title": "9.3.1.3 设置北向通讯异常保护",
+      "block_type": "paragraph",
+      "text": "运维人员最多可设置三个逆变器输出功率备用值。",
+      "table_cells": null,
+      "bbox": [
+        114.562,
+        281.906,
+        312.562,
+        292.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-59379E3298F36527",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 11,
+      "section_id": "SEC-D540D9C84C5B3C8E",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.3 设置北向通讯异常保护"
+      ],
+      "section_title": "9.3.1.3 设置北向通讯异常保护",
+      "block_type": "paragraph",
+      "text": "a. 在保护开关字段下方，选择使能，激活通信异常保护配置项。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        311.556,
+        344.738,
+        322.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-067B5D0B9A5BE82A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 12,
+      "section_id": "SEC-D540D9C84C5B3C8E",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.3 设置北向通讯异常保护"
+      ],
+      "section_title": "9.3.1.3 设置北向通讯异常保护",
+      "block_type": "paragraph",
+      "text": "b. 在对端IP 和端口文本框内，分别输入后台的IP 地址和端口号。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        326.556,
+        352.739,
+        337.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B9C912F20138F697",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 13,
+      "section_id": "SEC-D540D9C84C5B3C8E",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.3 设置北向通讯异常保护"
+      ],
+      "section_title": "9.3.1.3 设置北向通讯异常保护",
+      "block_type": "paragraph",
+      "text": "c. 在通讯异常检测时间文本框内，指定数据采集器对逆变器执行保护操作之前需等待的时",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        341.556,
+        443.738,
+        352.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7F61EA2DC1713BFF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 14,
+      "section_id": "SEC-D540D9C84C5B3C8E",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.3 设置北向通讯异常保护"
+      ],
+      "section_title": "9.3.1.3 设置北向通讯异常保护",
+      "block_type": "paragraph",
+      "text": "间。\n例如，当设置通讯异常检测时间为“30”时，表示数据采集器在限制逆变器输出功率之前需\n等待30 秒。",
+      "table_cells": null,
+      "bbox": [
+        101.738,
+        355.056,
+        450.74,
+        393.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8B6976F4E7BAD117",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 15,
+      "section_id": "SEC-D540D9C84C5B3C8E",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.3 设置北向通讯异常保护"
+      ],
+      "section_title": "9.3.1.3 设置北向通讯异常保护",
+      "block_type": "paragraph",
+      "text": "d. 在通讯异常输出文本框内，输入当判定通信出现异常时，逆变器的输出功率（单位为百分",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        397.056,
+        452.738,
+        408.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4888F49CD00C6A3E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 16,
+      "section_id": "SEC-D540D9C84C5B3C8E",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.3 设置北向通讯异常保护"
+      ],
+      "section_title": "9.3.1.3 设置北向通讯异常保护",
+      "block_type": "paragraph",
+      "text": "比）。\n例如，当设置为通讯异常输出“80”时，表示通讯中断后，数据采集器限制逆变器的输出功\n率为其额定功率的80%。",
+      "table_cells": null,
+      "bbox": [
+        101.738,
+        410.556,
+        450.74,
+        448.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A0057ECF39BDFC94",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 17,
+      "section_id": "SEC-D540D9C84C5B3C8E",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.3 设置北向通讯异常保护"
+      ],
+      "section_title": "9.3.1.3 设置北向通讯异常保护",
+      "block_type": "paragraph",
+      "text": "e. 在通讯异常自恢复时间文本框中，指定数据采集器在通讯恢复后需等待的时间。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        452.556,
+        416.738,
+        463.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-529A3158AD88E26B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 18,
+      "section_id": "SEC-D540D9C84C5B3C8E",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.3 设置北向通讯异常保护"
+      ],
+      "section_title": "9.3.1.3 设置北向通讯异常保护",
+      "block_type": "paragraph",
+      "text": "超出该段时间后，数据采集器将根据通讯恢复输出的设置，调整逆变器的输出功率或对逆\n变器执行开机操作。",
+      "table_cells": null,
+      "bbox": [
+        101.738,
+        469.056,
+        452.738,
+        493.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0F3036822AC2D476",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 19,
+      "section_id": "SEC-D540D9C84C5B3C8E",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.3 设置北向通讯异常保护"
+      ],
+      "section_title": "9.3.1.3 设置北向通讯异常保护",
+      "block_type": "paragraph",
+      "text": "f.\n在通讯恢复输出下拉列表中，指定数据采集器在通讯恢复后的操作。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        497.556,
+        371.738,
+        508.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2F1BCDC3499C500C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 20,
+      "section_id": "SEC-D540D9C84C5B3C8E",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.3 设置北向通讯异常保护"
+      ],
+      "section_title": "9.3.1.3 设置北向通讯异常保护",
+      "block_type": "list",
+      "text": "•\n无动作：通讯恢复后，数据采集器将保持异常输出值，需后台重新下发调度命令，调\n整逆变器的输出功率。",
+      "table_cells": null,
+      "bbox": [
+        101.738,
+        514.056,
+        448.913,
+        538.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6DE8E4DD5BD9E08B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 21,
+      "section_id": "SEC-D540D9C84C5B3C8E",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.3 设置北向通讯异常保护"
+      ],
+      "section_title": "9.3.1.3 设置北向通讯异常保护",
+      "block_type": "list",
+      "text": "•\n开机：数据采集器先对逆变器下发开机指令，再根据后台最近一次下发的目标值，调\n整逆变器的输出功率。适用于逆变器因通讯异常而关机的情况。",
+      "table_cells": null,
+      "bbox": [
+        101.738,
+        542.556,
+        448.913,
+        567.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CF38AACE65D09680",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 22,
+      "section_id": "SEC-D540D9C84C5B3C8E",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.3 设置北向通讯异常保护"
+      ],
+      "section_title": "9.3.1.3 设置北向通讯异常保护",
+      "block_type": "paragraph",
+      "text": "步骤 3 点击保存。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        571.134,
+        132.563,
+        583.617
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-41EF57A075ABDECC",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 92,
+      "printed_page_label": "82",
+      "block_order": 23,
+      "section_id": "SEC-D540D9C84C5B3C8E",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.1 远程有功调节",
+        "9.3.1.3 设置北向通讯异常保护"
+      ],
+      "section_title": "9.3.1.3 设置北向通讯异常保护",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        587.706,
+        112.187,
+        598.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

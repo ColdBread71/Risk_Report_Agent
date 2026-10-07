@@ -1,0 +1,540 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-D6D7C64AA0B7DB16",
+  "section_path": [
+    "7 Web界面",
+    "7.7 功率调节",
+    "7.7.4 无功功率",
+    "7.7.4.2 远程调度"
+  ],
+  "section_title": "7.7.4.2 远程调度",
+  "start_pdf_page": 63,
+  "end_pdf_page": 63,
+  "blocks": [
+    {
+      "block_id": "BLK-FD68D839CDEF7531",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 0,
+      "section_id": "SEC-D6D7C64AA0B7DB16",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.2 远程调度"
+      ],
+      "section_title": "7.7.4.2 远程调度",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.617,
+        48.088,
+        463.964,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-72A5DE4CACD87596",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 1,
+      "section_id": "SEC-D6D7C64AA0B7DB16",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.2 远程调度"
+      ],
+      "section_title": "7.7.4.2 远程调度",
+      "block_type": "list",
+      "text": "--结束\n设置完成后，逆变器以当前的有功功率调节限制，继续运行。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        71.556,
+        345.366,
+        93.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-60704A46ED792E76",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 10,
+      "section_id": "SEC-D6D7C64AA0B7DB16",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.2 远程调度"
+      ],
+      "section_title": "7.7.4.2 远程调度",
+      "block_type": "heading",
+      "text": "7.7.4.2 远程调度",
+      "table_cells": null,
+      "bbox": [
+        70.862,
+        306.29,
+        146.192,
+        318.46
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4319B590715FE26D",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 11,
+      "section_id": "SEC-D6D7C64AA0B7DB16",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.2 远程调度"
+      ],
+      "section_title": "7.7.4.2 远程调度",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.362,
+        325.606,
+        138.362,
+        336.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FFF059C2E1474A88",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 12,
+      "section_id": "SEC-D6D7C64AA0B7DB16",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.2 远程调度"
+      ],
+      "section_title": "7.7.4.2 远程调度",
+      "block_type": "list",
+      "text": "•\n当前无功控制方式已选择远程调度。见7.7.1 选择功率控制方式。",
+      "table_cells": null,
+      "bbox": [
+        102.362,
+        345.606,
+        375.305,
+        356.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A2481F08B12EA0FC",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 13,
+      "section_id": "SEC-D6D7C64AA0B7DB16",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.2 远程调度"
+      ],
+      "section_title": "7.7.4.2 远程调度",
+      "block_type": "list",
+      "text": "•\n如选择闭环控制，需接入关口电表或包含测控装置的箱变。",
+      "table_cells": null,
+      "bbox": [
+        102.362,
+        360.606,
+        350.537,
+        371.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-601EB65C722174E2",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 14,
+      "section_id": "SEC-D6D7C64AA0B7DB16",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.2 远程调度"
+      ],
+      "section_title": "7.7.4.2 远程调度",
+      "block_type": "paragraph",
+      "text": "步骤 1 在控制策略下拉列表中，选择开环控制或闭环控制。",
+      "table_cells": null,
+      "bbox": [
+        70.862,
+        378.684,
+        308.732,
+        391.167
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4981195A2B4CADE3",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 15,
+      "section_id": "SEC-D6D7C64AA0B7DB16",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.2 远程调度"
+      ],
+      "section_title": "7.7.4.2 远程调度",
+      "block_type": "paragraph",
+      "text": "步骤 2 选择开环控制时，参考远程有功功率调节，配置相应参数。见7.7.3.2.1 开环控制。",
+      "table_cells": null,
+      "bbox": [
+        70.862,
+        395.184,
+        429.512,
+        407.667
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DDC81153086281E2",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 16,
+      "section_id": "SEC-D6D7C64AA0B7DB16",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.2 远程调度"
+      ],
+      "section_title": "7.7.4.2 远程调度",
+      "block_type": "paragraph",
+      "text": "智能无功分配默认关闭，可根据选择使能开启。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        418.256,
+        317.735,
+        429.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A1EC72CE991C547E",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 17,
+      "section_id": "SEC-D6D7C64AA0B7DB16",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.2 远程调度"
+      ],
+      "section_title": "7.7.4.2 远程调度",
+      "block_type": "paragraph",
+      "text": "步骤 3 选择闭环控制时，参考远程有功功率调节，配置相应参数。见7.7.3.2.2 闭环控制。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        446.484,
+        429.516,
+        458.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F61781EB113AAB23",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 18,
+      "section_id": "SEC-D6D7C64AA0B7DB16",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.2 远程调度"
+      ],
+      "section_title": "7.7.4.2 远程调度",
+      "block_type": "paragraph",
+      "text": "在闭环控制界面的参数配置中，误差范围的百分比值需大于调节比例的百分比值。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        469.556,
+        452.735,
+        480.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-71DC981C6450F91A",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 19,
+      "section_id": "SEC-D6D7C64AA0B7DB16",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.2 远程调度"
+      ],
+      "section_title": "7.7.4.2 远程调度",
+      "block_type": "paragraph",
+      "text": "步骤 4 选择闭环控制时，在无功方向下拉列表中，需选择电表或箱变记录的无功输出方向是否与逆",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        497.784,
+        461.736,
+        510.267
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9523BE41BAA6B2BD",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 20,
+      "section_id": "SEC-D6D7C64AA0B7DB16",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.2 远程调度"
+      ],
+      "section_title": "7.7.4.2 远程调度",
+      "block_type": "paragraph",
+      "text": "变器一致。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        512.706,
+        146.736,
+        523.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-902D82A9501DB954",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 21,
+      "section_id": "SEC-D6D7C64AA0B7DB16",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.2 远程调度"
+      ],
+      "section_title": "7.7.4.2 远程调度",
+      "block_type": "paragraph",
+      "text": "阳光电源逆变器默认在电网需要提高电压时输出感性无功（正），在需要降低电压时\n输出容性无功（负）。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        534.356,
+        461.735,
+        556.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F0EF22046E6BE0D4",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 22,
+      "section_id": "SEC-D6D7C64AA0B7DB16",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.2 远程调度"
+      ],
+      "section_title": "7.7.4.2 远程调度",
+      "block_type": "list",
+      "text": "•\n正向：并网点记录的无功方向与逆变器无功方向一致。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        573.306,
+        331.911,
+        584.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EC27DAA927990D4B",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 23,
+      "section_id": "SEC-D6D7C64AA0B7DB16",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.2 远程调度"
+      ],
+      "section_title": "7.7.4.2 远程调度",
+      "block_type": "list",
+      "text": "•\n反向：并网点记录的无功方向与逆变器无功方向相反。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        588.306,
+        331.911,
+        599.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-201DF0B6257F982F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 24,
+      "section_id": "SEC-D6D7C64AA0B7DB16",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.2 远程调度"
+      ],
+      "section_title": "7.7.4.2 远程调度",
+      "block_type": "paragraph",
+      "text": "步骤 5 点击保存。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        603.384,
+        146.736,
+        615.867
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-26CE6B8C3E3267D6",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 63,
+      "printed_page_label": "53",
+      "block_order": 25,
+      "section_id": "SEC-D6D7C64AA0B7DB16",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.2 远程调度"
+      ],
+      "section_title": "7.7.4.2 远程调度",
+      "block_type": "list",
+      "text": "--结束\n配置完成后，运维人员可通过后台发送功率调节目标值。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        619.956,
+        327.366,
+        641.709
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "chapters": [
+    {
+      "chapter_title": "安全注意事项",
+      "end_page": 8,
+      "start_page": 1
+    },
+    {
+      "chapter_title": "产品介绍",
+      "end_page": 11,
+      "start_page": 9
+    },
+    {
+      "chapter_title": "机械安装",
+      "end_page": 18,
+      "start_page": 12
+    },
+    {
+      "chapter_title": "电气连接",
+      "end_page": 40,
+      "start_page": 20
+    },
+    {
+      "chapter_title": "试运行",
+      "end_page": 45,
+      "start_page": 41
+    },
+    {
+      "chapter_title": "故障排查与维护",
+      "end_page": 46,
+      "start_page": 45
+    },
+    {
+      "chapter_title": "附录 A：技术参数",
+      "end_page": 48,
+      "start_page": 48
+    },
+    {
+      "chapter_title": "附录 B：通用信息",
+      "end_page": 50,
+      "start_page": 50
+    }
+  ]
+}

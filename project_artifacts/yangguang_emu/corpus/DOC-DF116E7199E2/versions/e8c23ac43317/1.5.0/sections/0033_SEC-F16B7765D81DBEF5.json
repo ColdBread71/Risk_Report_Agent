@@ -1,0 +1,241 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-F16B7765D81DBEF5",
+  "section_path": [
+    "10 安全配置指南",
+    "10.9 安全回溯",
+    "10.9.1 操作日志"
+  ],
+  "section_title": "10.9.1 操作日志",
+  "start_pdf_page": 28,
+  "end_pdf_page": 28,
+  "blocks": [
+    {
+      "block_id": "BLK-9EC58E9C9A9AD5DB",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 28,
+      "printed_page_label": "24",
+      "block_order": 1,
+      "section_id": "SEC-F16B7765D81DBEF5",
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯",
+        "10.9.1 操作日志"
+      ],
+      "section_title": "10.9.1 操作日志",
+      "block_type": "heading",
+      "text": "10.9.1 操作日志",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        71.59,
+        129.243,
+        83.76
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-023CA0A3635B36FC",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 28,
+      "printed_page_label": "24",
+      "block_order": 2,
+      "section_id": "SEC-F16B7765D81DBEF5",
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯",
+        "10.9.1 操作日志"
+      ],
+      "section_title": "10.9.1 操作日志",
+      "block_type": "paragraph",
+      "text": "查询操作日志",
+      "table_cells": null,
+      "bbox": [
+        88.194,
+        89.556,
+        142.194,
+        100.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BF8EE66972453082",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 28,
+      "printed_page_label": "24",
+      "block_order": 3,
+      "section_id": "SEC-F16B7765D81DBEF5",
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯",
+        "10.9.1 操作日志"
+      ],
+      "section_title": "10.9.1 操作日志",
+      "block_type": "paragraph",
+      "text": "在历史数据界面，点击操作日志，选择想要查询的时间段及操作类型，可以查看该时间内用\n户的操作记录。",
+      "table_cells": null,
+      "bbox": [
+        88.194,
+        106.356,
+        448.194,
+        128.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C5C28C44F2A471CD",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 28,
+      "printed_page_label": "24",
+      "block_order": 4,
+      "section_id": "SEC-F16B7765D81DBEF5",
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯",
+        "10.9.1 操作日志"
+      ],
+      "section_title": "10.9.1 操作日志",
+      "block_type": "list",
+      "text": "•\n操作日志时间戳采用本地时间（含时区）格式，精度为毫秒级，标准格式为\nYYYY-MM-DD HH:MM:SS.sss（示例：2026-03-18 09:55:25.219）。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        204.158,
+        426.368,
+        228.611
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B785ADE28C3B3C6F",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 28,
+      "printed_page_label": "24",
+      "block_order": 5,
+      "section_id": "SEC-F16B7765D81DBEF5",
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯",
+        "10.9.1 操作日志"
+      ],
+      "section_title": "10.9.1 操作日志",
+      "block_type": "paragraph",
+      "text": "导出操作日志",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        250.308,
+        142.193,
+        261.261
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AD0AD0E4808EB62F",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 28,
+      "printed_page_label": "24",
+      "block_order": 6,
+      "section_id": "SEC-F16B7765D81DBEF5",
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯",
+        "10.9.1 操作日志"
+      ],
+      "section_title": "10.9.1 操作日志",
+      "block_type": "paragraph",
+      "text": "登录审计用户账号，在历史数据界面，点击操作日志中的",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        273.632,
+        313.193,
+        284.585
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C49B8A94F567A72F",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 28,
+      "printed_page_label": "24",
+      "block_order": 7,
+      "section_id": "SEC-F16B7765D81DBEF5",
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯",
+        "10.9.1 操作日志"
+      ],
+      "section_title": "10.9.1 操作日志",
+      "block_type": "paragraph",
+      "text": "图标，设置压缩密码后，可以将\n操作日志导出。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        273.632,
+        453.368,
+        295.385
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A3763C62FEB794F4",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 28,
+      "printed_page_label": "24",
+      "block_order": 8,
+      "section_id": "SEC-F16B7765D81DBEF5",
+      "section_path": [
+        "10 安全配置指南",
+        "10.9 安全回溯",
+        "10.9.1 操作日志"
+      ],
+      "section_title": "10.9.1 操作日志",
+      "block_type": "paragraph",
+      "text": "压缩密码长度为8~32 位，需由大写字母、小写字母、数字、特殊符号中的三种或以\n上组成。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        358.427,
+        445.961,
+        380.18
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

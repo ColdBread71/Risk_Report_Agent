@@ -1,0 +1,112 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-0D647F5C782988D2",
+  "section_path": [
+    "4 电气连接"
+  ],
+  "section_title": "4 电气连接",
+  "start_pdf_page": 26,
+  "end_pdf_page": 26,
+  "blocks": [
+    {
+      "block_id": "BLK-89EDFC8563004567",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 26,
+      "printed_page_label": "20",
+      "block_order": 0,
+      "section_id": "SEC-0D647F5C782988D2",
+      "section_path": [
+        "4 电气连接"
+      ],
+      "section_title": "4 电气连接",
+      "block_type": "heading",
+      "text": "4\n电气连接",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        98.112,
+        154.451,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-95A26DA93B414D89",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 26,
+      "printed_page_label": "20",
+      "block_order": 1,
+      "section_id": "SEC-0D647F5C782988D2",
+      "section_path": [
+        "4 电气连接"
+      ],
+      "section_title": "4 电气连接",
+      "block_type": "table",
+      "text": "气注意\n在电气连接\n气安全”章\t事项\n操作前，请务必优先阅读并满足“通用安全说明”章节中注意事项，且同时满足“电\n节中注意事项。\n危险\t\n在进行电\n• 请确\n• 请务\t气连接前：\n保产品无损坏，否则可能造成危险！\n必断开前级输入开关，确保设备不带电，否则可能导致电击危险！\n\t\n危险\t\n设备内部\n• 在进\n发生\n• 触碰\n• 请注\t可能存在致命高电压！\n行电气连接操作时，操作人员请务必佩戴个人防护用具和使用专用绝缘工具，避\n电击伤害或短路故障。\n线缆之前，请务必使用测量设备确保线缆不带电。\n意箱体上的警告标识，并遵守其安全指示进行操作。\n\t\n警告\t\n• 电气\n• 请务\t连接操作务必由专业人员完成。\n必注意设备上的警告标识，并遵守其安全指示进行操作。\n\t\n\t现场布线需确保线缆弯曲半径满足线缆规格要求。\n供电和信号线缆，穿出防水端子后需要增加固定限位，防止线缆摆动导致防水端\n子受力，带来的搭接不良、受损断裂、密封失效问题。",
+      "table_cells": [
+        [
+          "气注意\n在电气连接\n气安全”章",
+          "事项\n操作前，请务必优先阅读并满足“通用安全说明”章节中注意事项，且同时满足“电\n节中注意事项。"
+        ],
+        [
+          "危险",
+          null
+        ],
+        [
+          "在进行电\n• 请确\n• 请务",
+          "气连接前：\n保产品无损坏，否则可能造成危险！\n必断开前级输入开关，确保设备不带电，否则可能导致电击危险！"
+        ],
+        [
+          null,
+          null
+        ],
+        [
+          "危险",
+          null
+        ],
+        [
+          "设备内部\n• 在进\n发生\n• 触碰\n• 请注",
+          "可能存在致命高电压！\n行电气连接操作时，操作人员请务必佩戴个人防护用具和使用专用绝缘工具，避\n电击伤害或短路故障。\n线缆之前，请务必使用测量设备确保线缆不带电。\n意箱体上的警告标识，并遵守其安全指示进行操作。"
+        ],
+        [
+          null,
+          null
+        ],
+        [
+          "警告",
+          null
+        ],
+        [
+          "• 电气\n• 请务",
+          "连接操作务必由专业人员完成。\n必注意设备上的警告标识，并遵守其安全指示进行操作。"
+        ],
+        [
+          null,
+          null
+        ],
+        [
+          null,
+          "现场布线需确保线缆弯曲半径满足线缆规格要求。\n供电和信号线缆，穿出防水端子后需要增加固定限位，防止线缆摆动导致防水端\n子受力，带来的搭接不良、受损断裂、密封失效问题。"
+        ]
+      ],
+      "bbox": [
+        92.693,
+        125.85,
+        444.368,
+        510.475
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

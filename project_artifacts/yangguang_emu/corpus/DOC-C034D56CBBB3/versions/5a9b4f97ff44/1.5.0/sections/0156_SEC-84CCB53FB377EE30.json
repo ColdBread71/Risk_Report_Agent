@@ -1,0 +1,73 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-84CCB53FB377EE30",
+  "section_path": [
+    "9 电网调度",
+    "9.4 无功功率调节",
+    "9.4.1 远程无功调节"
+  ],
+  "section_title": "9.4.1 远程无功调节",
+  "start_pdf_page": 98,
+  "end_pdf_page": 98,
+  "blocks": [
+    {
+      "block_id": "BLK-901AF1C0F8426958",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 98,
+      "printed_page_label": "88",
+      "block_order": 25,
+      "section_id": "SEC-84CCB53FB377EE30",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.1 远程无功调节"
+      ],
+      "section_title": "9.4.1 远程无功调节",
+      "block_type": "heading",
+      "text": "9.4.1 远程无功调节",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        627.84,
+        143.683,
+        640.01
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BF591242EE396AAD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 98,
+      "printed_page_label": "88",
+      "block_order": 26,
+      "section_id": "SEC-84CCB53FB377EE30",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.1 远程无功调节"
+      ],
+      "section_title": "9.4.1 远程无功调节",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        88.189,
+        647.156,
+        124.189,
+        658.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

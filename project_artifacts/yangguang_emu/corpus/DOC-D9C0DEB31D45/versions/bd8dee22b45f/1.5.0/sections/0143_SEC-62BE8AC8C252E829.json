@@ -1,0 +1,192 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-62BE8AC8C252E829",
+  "section_path": [
+    "7 Web界面",
+    "7.10 系统",
+    "7.10.8 MPLC（宽带PLC）",
+    "7.10.8.1 MPLC日志导出"
+  ],
+  "section_title": "7.10.8.1 MPLC日志导出",
+  "start_pdf_page": 85,
+  "end_pdf_page": 85,
+  "blocks": [
+    {
+      "block_id": "BLK-F386290DE6F6E2D3",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 14,
+      "section_id": "SEC-62BE8AC8C252E829",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.8 MPLC（宽带PLC）",
+        "7.10.8.1 MPLC日志导出"
+      ],
+      "section_title": "7.10.8.1 MPLC日志导出",
+      "block_type": "heading",
+      "text": "7.10.8.1 MPLC 日志导出",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        336.29,
+        179.54,
+        348.46
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F8BBB42AE91CDFA7",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 15,
+      "section_id": "SEC-62BE8AC8C252E829",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.8 MPLC（宽带PLC）",
+        "7.10.8.1 MPLC日志导出"
+      ],
+      "section_title": "7.10.8.1 MPLC日志导出",
+      "block_type": "paragraph",
+      "text": "步骤 1 导航栏中点击系统 > MPLC > 操作，跳转至相应页面。",
+      "table_cells": null,
+      "bbox": [
+        70.865,
+        360.184,
+        318.257,
+        372.667
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1AB1D3E18E98CE61",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 16,
+      "section_id": "SEC-62BE8AC8C252E829",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.8 MPLC（宽带PLC）",
+        "7.10.8.1 MPLC日志导出"
+      ],
+      "section_title": "7.10.8.1 MPLC日志导出",
+      "block_type": "paragraph",
+      "text": "步骤 2 点击MPLC 日志导出。",
+      "table_cells": null,
+      "bbox": [
+        70.865,
+        376.684,
+        194.237,
+        389.167
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E8E2812C5AC4A938",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 17,
+      "section_id": "SEC-62BE8AC8C252E829",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.8 MPLC（宽带PLC）",
+        "7.10.8.1 MPLC日志导出"
+      ],
+      "section_title": "7.10.8.1 MPLC日志导出",
+      "block_type": "paragraph",
+      "text": "步骤 3 在弹出的对话框中，勾选需日志导出的MPLC 链路。",
+      "table_cells": null,
+      "bbox": [
+        70.865,
+        393.184,
+        311.237,
+        405.667
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3F3481197E89DD09",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 18,
+      "section_id": "SEC-62BE8AC8C252E829",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.8 MPLC（宽带PLC）",
+        "7.10.8.1 MPLC日志导出"
+      ],
+      "section_title": "7.10.8.1 MPLC日志导出",
+      "block_type": "paragraph",
+      "text": "步骤 4 点击确定。",
+      "table_cells": null,
+      "bbox": [
+        70.865,
+        409.684,
+        146.735,
+        422.167
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C13E9FB6D1DB907A",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 19,
+      "section_id": "SEC-62BE8AC8C252E829",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.8 MPLC（宽带PLC）",
+        "7.10.8.1 MPLC日志导出"
+      ],
+      "section_title": "7.10.8.1 MPLC日志导出",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        426.256,
+        126.359,
+        437.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

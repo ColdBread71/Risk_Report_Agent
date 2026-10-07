@@ -1,0 +1,213 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-C56E459A62C8E5F9",
+  "section_path": [
+    "10 安全配置指南",
+    "10.4 证书管理和维护",
+    "10.4.1 预置证书风险声明"
+  ],
+  "section_title": "10.4.1 预置证书风险声明",
+  "start_pdf_page": 23,
+  "end_pdf_page": 23,
+  "blocks": [
+    {
+      "block_id": "BLK-16F2EE3BE313F29E",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 23,
+      "printed_page_label": "19",
+      "block_order": 2,
+      "section_id": "SEC-C56E459A62C8E5F9",
+      "section_path": [
+        "10 安全配置指南",
+        "10.4 证书管理和维护",
+        "10.4.1 预置证书风险声明"
+      ],
+      "section_title": "10.4.1 预置证书风险声明",
+      "block_type": "heading",
+      "text": "10.4.1 预置证书风险声明",
+      "table_cells": null,
+      "bbox": [
+        70.868,
+        285.4,
+        183.418,
+        297.57
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-12BF8540AA500417",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 23,
+      "printed_page_label": "19",
+      "block_order": 3,
+      "section_id": "SEC-C56E459A62C8E5F9",
+      "section_path": [
+        "10 安全配置指南",
+        "10.4 证书管理和维护",
+        "10.4.1 预置证书风险声明"
+      ],
+      "section_title": "10.4.1 预置证书风险声明",
+      "block_type": "paragraph",
+      "text": "在生产阶段预置于阳光电源设备的阳光电源证书是阳光电源设备必备的出厂身份凭证，对其\n使用声明如下:",
+      "table_cells": null,
+      "bbox": [
+        102.364,
+        304.716,
+        462.364,
+        329.169
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-46C00A4E0F6A683B",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 23,
+      "printed_page_label": "19",
+      "block_order": 4,
+      "section_id": "SEC-C56E459A62C8E5F9",
+      "section_path": [
+        "10 安全配置指南",
+        "10.4 证书管理和维护",
+        "10.4.1 预置证书风险声明"
+      ],
+      "section_title": "10.4.1 预置证书风险声明",
+      "block_type": "list",
+      "text": "•\n阳光电源预置证书仅用于部署阶段为设备接入客户网络建立初始安全通道，阳光电源不对\n预置证书的安全性做承诺与保证。",
+      "table_cells": null,
+      "bbox": [
+        102.364,
+        333.216,
+        467.539,
+        357.669
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B775CA8B855D40B9",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 23,
+      "printed_page_label": "19",
+      "block_order": 5,
+      "section_id": "SEC-C56E459A62C8E5F9",
+      "section_path": [
+        "10 安全配置指南",
+        "10.4 证书管理和维护",
+        "10.4.1 预置证书风险声明"
+      ],
+      "section_title": "10.4.1 预置证书风险声明",
+      "block_type": "list",
+      "text": "•\n对于预置证书作为业务使用的场景，阳光电源不对其安全性做出承诺与保证，建议用户更\n换使用自己的安全证书。",
+      "table_cells": null,
+      "bbox": [
+        102.364,
+        361.716,
+        467.539,
+        386.169
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1F38C3E74276F886",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 23,
+      "printed_page_label": "19",
+      "block_order": 6,
+      "section_id": "SEC-C56E459A62C8E5F9",
+      "section_path": [
+        "10 安全配置指南",
+        "10.4 证书管理和维护",
+        "10.4.1 预置证书风险声明"
+      ],
+      "section_title": "10.4.1 预置证书风险声明",
+      "block_type": "list",
+      "text": "•\n阳光电源预置证书有效期为30 年。",
+      "table_cells": null,
+      "bbox": [
+        102.364,
+        390.216,
+        257.047,
+        401.169
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4EC00AD997F9F3D6",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 23,
+      "printed_page_label": "19",
+      "block_order": 7,
+      "section_id": "SEC-C56E459A62C8E5F9",
+      "section_path": [
+        "10 安全配置指南",
+        "10.4 证书管理和维护",
+        "10.4.1 预置证书风险声明"
+      ],
+      "section_title": "10.4.1 预置证书风险声明",
+      "block_type": "list",
+      "text": "•\n如果用户使用自己的证书，则需做好对证书生命周期的管理，为保证安全性推荐使用短有\n效期的证书。",
+      "table_cells": null,
+      "bbox": [
+        102.364,
+        405.216,
+        467.539,
+        429.669
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A549330D551DA3ED",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 23,
+      "printed_page_label": "19",
+      "block_order": 8,
+      "section_id": "SEC-C56E459A62C8E5F9",
+      "section_path": [
+        "10 安全配置指南",
+        "10.4 证书管理和维护",
+        "10.4.1 预置证书风险声明"
+      ],
+      "section_title": "10.4.1 预置证书风险声明",
+      "block_type": "list",
+      "text": "•\n为保证安全性，建议用户每3 年更新一次证书。",
+      "table_cells": null,
+      "bbox": [
+        102.364,
+        433.716,
+        306.043,
+        444.669
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,590 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-7634658E73F564BB",
+  "section_path": [
+    "4 电气连接",
+    "4.6 接线步骤",
+    "4.6.8 CT接线"
+  ],
+  "section_title": "4.6.8 CT接线",
+  "start_pdf_page": 44,
+  "end_pdf_page": 45,
+  "blocks": [
+    {
+      "block_id": "BLK-B73137BC105308D6",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 44,
+      "printed_page_label": "38",
+      "block_order": 0,
+      "section_id": "SEC-7634658E73F564BB",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.8 CT接线"
+      ],
+      "section_title": "4.6.8 CT接线",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 电气连接",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ADECE4D37A7323CC",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 44,
+      "printed_page_label": "38",
+      "block_order": 1,
+      "section_id": "SEC-7634658E73F564BB",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.8 CT接线"
+      ],
+      "section_title": "4.6.8 CT接线",
+      "block_type": "paragraph",
+      "text": "步骤 6 轻轻拉动线缆，确认线缆连接紧固。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        211.954,
+        231.563,
+        224.437
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4BCB48C2B010271E",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 44,
+      "printed_page_label": "38",
+      "block_order": 2,
+      "section_id": "SEC-7634658E73F564BB",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.8 CT接线"
+      ],
+      "section_title": "4.6.8 CT接线",
+      "block_type": "paragraph",
+      "text": "步骤 7 拧紧EMU300A 底部的“PID01 DO”防水端子。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        228.454,
+        270.092,
+        240.937
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-527ADDFCFD9BDA1D",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 44,
+      "printed_page_label": "38",
+      "block_order": 3,
+      "section_id": "SEC-7634658E73F564BB",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.8 CT接线"
+      ],
+      "section_title": "4.6.8 CT接线",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        245.026,
+        112.187,
+        255.979
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-429550164B0CA029",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 44,
+      "printed_page_label": "38",
+      "block_order": 4,
+      "section_id": "SEC-7634658E73F564BB",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.8 CT接线"
+      ],
+      "section_title": "4.6.8 CT接线",
+      "block_type": "heading",
+      "text": "4.6.8 CT 接线",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        271.86,
+        117.017,
+        284.03
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-70FB301A5B96B1AD",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 44,
+      "printed_page_label": "38",
+      "block_order": 5,
+      "section_id": "SEC-7634658E73F564BB",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.8 CT接线"
+      ],
+      "section_title": "4.6.8 CT接线",
+      "block_type": "paragraph",
+      "text": "危险",
+      "table_cells": null,
+      "bbox": [
+        110.69,
+        293.194,
+        132.69,
+        306.581
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-14DCE530FF7B16E2",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 44,
+      "printed_page_label": "38",
+      "block_order": 6,
+      "section_id": "SEC-7634658E73F564BB",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.8 CT接线"
+      ],
+      "section_title": "4.6.8 CT接线",
+      "block_type": "list",
+      "text": "•\n电流互感器（CT）运行时二次侧禁止开路，否则会产生过流或高压，导致人员伤亡或\n设备损坏。",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        311.726,
+        442.865,
+        336.179
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4952F5D5B420BAF9",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 44,
+      "printed_page_label": "38",
+      "block_order": 7,
+      "section_id": "SEC-7634658E73F564BB",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.8 CT接线"
+      ],
+      "section_title": "4.6.8 CT接线",
+      "block_type": "list",
+      "text": "•\n连接电流检测信号线或进行维护操作前，务必确保电流互感器（CT）一次侧回路下\n电。",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        340.226,
+        433.865,
+        364.679
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DA2CE71ACA885914",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 44,
+      "printed_page_label": "38",
+      "block_order": 8,
+      "section_id": "SEC-7634658E73F564BB",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.8 CT接线"
+      ],
+      "section_title": "4.6.8 CT接线",
+      "block_type": "list",
+      "text": "•\n高压线缆接线时，务必使线芯全部压入端子，任何裸露都将引发致命危险。",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        368.726,
+        403.868,
+        379.679
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-296DA99E314464EC",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 44,
+      "printed_page_label": "38",
+      "block_order": 9,
+      "section_id": "SEC-7634658E73F564BB",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.8 CT接线"
+      ],
+      "section_title": "4.6.8 CT接线",
+      "block_type": "list",
+      "text": "•\n电流采样线缆连接后，务必确认每个采样回路导通。如果采样回路出现开路，有产生过\n电压的危险。",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        383.726,
+        448.868,
+        408.179
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0857ED80335CE9A8",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 44,
+      "printed_page_label": "38",
+      "block_order": 10,
+      "section_id": "SEC-7634658E73F564BB",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.8 CT接线"
+      ],
+      "section_title": "4.6.8 CT接线",
+      "block_type": "paragraph",
+      "text": "推荐使用冷压端子接入。请选用与线径匹配的冷压端子，否则可能导致接触不良。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        430.376,
+        439.193,
+        441.329
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F2E765A3B66DD383",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 44,
+      "printed_page_label": "38",
+      "block_order": 11,
+      "section_id": "SEC-7634658E73F564BB",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.8 CT接线"
+      ],
+      "section_title": "4.6.8 CT接线",
+      "block_type": "figure_caption",
+      "text": "图 4-8 拆卸CT 端子短接片（仅三相六线制接入场景）",
+      "table_cells": null,
+      "bbox": [
+        163.613,
+        590.574,
+        378.119,
+        601.527
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0E5503165F0E962F",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 45,
+      "printed_page_label": "39",
+      "block_order": 0,
+      "section_id": "SEC-7634658E73F564BB",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.8 CT接线"
+      ],
+      "section_title": "4.6.8 CT接线",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 电气连接",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0E1C715FDFF2E05C",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 45,
+      "printed_page_label": "39",
+      "block_order": 1,
+      "section_id": "SEC-7634658E73F564BB",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.8 CT接线"
+      ],
+      "section_title": "4.6.8 CT接线",
+      "block_type": "figure_caption",
+      "text": "图 4-9 接线方案：按压弹簧端子进行接线",
+      "table_cells": null,
+      "bbox": [
+        204.039,
+        260.44,
+        366.048,
+        271.393
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7BEBF7E4A82BC9A9",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 45,
+      "printed_page_label": "39",
+      "block_order": 2,
+      "section_id": "SEC-7634658E73F564BB",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.8 CT接线"
+      ],
+      "section_title": "4.6.8 CT接线",
+      "block_type": "paragraph",
+      "text": "表 4-1 CT 额定负荷选型推荐",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        287.24,
+        215.622,
+        298.193
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-394DF5C506DD06F3",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 45,
+      "printed_page_label": "39",
+      "block_order": 3,
+      "section_id": "SEC-7634658E73F564BB",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.8 CT接线"
+      ],
+      "section_title": "4.6.8 CT接线",
+      "block_type": "table",
+      "text": "接线距离/m\t线缆横截面积/mm2\tCT\n10\n（线缆总长度20m）\t1.5\t15\n\t2.5\t10\n15\n（线缆总长度30m）\t1.5\t20\n\t2.5\t15\n25\n（线缆总长度50m）\t1.5\t30\n\t2.5\t20\n\t1.5\t60",
+      "table_cells": [
+        [
+          "接线距离/m",
+          "线缆横截面积/mm2",
+          "CT"
+        ],
+        [
+          "10\n（线缆总长度20m）",
+          "1.5",
+          "15"
+        ],
+        [
+          null,
+          "2.5",
+          "10"
+        ],
+        [
+          "15\n（线缆总长度30m）",
+          "1.5",
+          "20"
+        ],
+        [
+          null,
+          "2.5",
+          "15"
+        ],
+        [
+          "25\n（线缆总长度50m）",
+          "1.5",
+          "30"
+        ],
+        [
+          null,
+          "2.5",
+          "20"
+        ],
+        [
+          null,
+          "1.5",
+          "60"
+        ]
+      ],
+      "bbox": [
+        111.036,
+        305.233,
+        365.933,
+        473.211
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F35ACFEA0E01BD8B",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 45,
+      "printed_page_label": "39",
+      "block_order": 4,
+      "section_id": "SEC-7634658E73F564BB",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.8 CT接线"
+      ],
+      "section_title": "4.6.8 CT接线",
+      "block_type": "paragraph",
+      "text": "50\n（线缆总长度100m）",
+      "table_cells": null,
+      "bbox": [
+        111.038,
+        461.466,
+        198.797,
+        485.82
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D78629CA30067E67",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 45,
+      "printed_page_label": "39",
+      "block_order": 5,
+      "section_id": "SEC-7634658E73F564BB",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.8 CT接线"
+      ],
+      "section_title": "4.6.8 CT接线",
+      "block_type": "list",
+      "text": "2.5\n40",
+      "table_cells": null,
+      "bbox": [
+        232.822,
+        479.216,
+        364.613,
+        489.26
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3A54CEA8EE08E84A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 45,
+      "printed_page_label": "39",
+      "block_order": 6,
+      "section_id": "SEC-7634658E73F564BB",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.8 CT接线"
+      ],
+      "section_title": "4.6.8 CT接线",
+      "block_type": "paragraph",
+      "text": "由于用户所选产品型号不同，内部组成也有所差异，具体请以实物为准。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        512.017,
+        417.366,
+        522.97
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

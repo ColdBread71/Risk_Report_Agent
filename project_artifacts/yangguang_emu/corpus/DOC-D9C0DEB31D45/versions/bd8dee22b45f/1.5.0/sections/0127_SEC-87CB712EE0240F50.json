@@ -1,0 +1,169 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-87CB712EE0240F50",
+  "section_path": [
+    "7 Web界面",
+    "7.10 系统",
+    "7.10.6 转发配置",
+    "7.10.6.2 转发IEC104服务配置",
+    "7.10.6.2.4 导出IEC104转发点表"
+  ],
+  "section_title": "7.10.6.2.4 导出IEC104转发点表",
+  "start_pdf_page": 78,
+  "end_pdf_page": 78,
+  "blocks": [
+    {
+      "block_id": "BLK-288CCE5EDDA50F3A",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 17,
+      "section_id": "SEC-87CB712EE0240F50",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.2 转发IEC104服务配置",
+        "7.10.6.2.4 导出IEC104转发点表"
+      ],
+      "section_title": "7.10.6.2.4 导出IEC104转发点表",
+      "block_type": "heading",
+      "text": "7.10.6.2.4 导出IEC104 转发点表",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        395.21,
+        194.192,
+        406.969
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6065C12EF3E5A229",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 18,
+      "section_id": "SEC-87CB712EE0240F50",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.2 转发IEC104服务配置",
+        "7.10.6.2.4 导出IEC104转发点表"
+      ],
+      "section_title": "7.10.6.2.4 导出IEC104转发点表",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击系统 > 转发配置 > IEC104，默认进入Server 界面。",
+      "table_cells": null,
+      "bbox": [
+        56.69,
+        412.894,
+        313.1,
+        425.377
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-080669DA84E645F6",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 19,
+      "section_id": "SEC-87CB712EE0240F50",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.2 转发IEC104服务配置",
+        "7.10.6.2.4 导出IEC104转发点表"
+      ],
+      "section_title": "7.10.6.2.4 导出IEC104转发点表",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击",
+      "table_cells": null,
+      "bbox": [
+        56.69,
+        437.267,
+        105.56,
+        449.75
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B1C6F694EB774F52",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 20,
+      "section_id": "SEC-87CB712EE0240F50",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.2 转发IEC104服务配置",
+        "7.10.6.2.4 导出IEC104转发点表"
+      ],
+      "section_title": "7.10.6.2.4 导出IEC104转发点表",
+      "block_type": "paragraph",
+      "text": "导出点表，将转发点表导出至本地，导出的点表为.csv 格式。",
+      "table_cells": null,
+      "bbox": [
+        119.738,
+        438.689,
+        362.99,
+        449.642
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4D30566BF7F400C5",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 21,
+      "section_id": "SEC-87CB712EE0240F50",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.2 转发IEC104服务配置",
+        "7.10.6.2.4 导出IEC104转发点表"
+      ],
+      "section_title": "7.10.6.2.4 导出IEC104转发点表",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        453.839,
+        112.187,
+        464.792
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

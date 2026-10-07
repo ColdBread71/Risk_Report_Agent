@@ -1,0 +1,157 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-A1911D00E124B986",
+  "section_path": [
+    "7 Web界面",
+    "7.5 设备监控",
+    "7.5.1 实时信息"
+  ],
+  "section_title": "7.5.1 实时信息",
+  "start_pdf_page": 45,
+  "end_pdf_page": 45,
+  "blocks": [
+    {
+      "block_id": "BLK-51AEF03B466E87A4",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 45,
+      "printed_page_label": "35",
+      "block_order": 14,
+      "section_id": "SEC-A1911D00E124B986",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.1 实时信息"
+      ],
+      "section_title": "7.5.1 实时信息",
+      "block_type": "heading",
+      "text": "7.5.1 实时信息",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        383.161,
+        137.856,
+        395.331
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-06A386F422D9F48A",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 45,
+      "printed_page_label": "35",
+      "block_order": 15,
+      "section_id": "SEC-A1911D00E124B986",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.1 实时信息"
+      ],
+      "section_title": "7.5.1 实时信息",
+      "block_type": "paragraph",
+      "text": "实时信息界面可查看设备的发电量、设备状态和有功功率等信息。",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        402.385,
+        348.869,
+        412.73
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7B169C9A3CE7C964",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 45,
+      "printed_page_label": "35",
+      "block_order": 16,
+      "section_id": "SEC-A1911D00E124B986",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.1 实时信息"
+      ],
+      "section_title": "7.5.1 实时信息",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击设备监控，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        70.868,
+        421.805,
+        209.738,
+        434.288
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E199A3DAFBE46847",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 45,
+      "printed_page_label": "35",
+      "block_order": 17,
+      "section_id": "SEC-A1911D00E124B986",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.1 实时信息"
+      ],
+      "section_title": "7.5.1 实时信息",
+      "block_type": "paragraph",
+      "text": "步骤 2 在左侧设备列表栏选择需要的设备，点击实时信息查看该设备实时信息。",
+      "table_cells": null,
+      "bbox": [
+        70.868,
+        438.305,
+        389.738,
+        450.788
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-234CDE53FDB1B175",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 45,
+      "printed_page_label": "35",
+      "block_order": 18,
+      "section_id": "SEC-A1911D00E124B986",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.1 实时信息"
+      ],
+      "section_title": "7.5.1 实时信息",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.368,
+        454.877,
+        126.362,
+        465.83
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

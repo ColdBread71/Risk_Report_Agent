@@ -1,0 +1,212 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-9F1A5C191CBBD8F6",
+  "section_path": [
+    "7 用户列表"
+  ],
+  "section_title": "7 用户列表",
+  "start_pdf_page": 16,
+  "end_pdf_page": 16,
+  "blocks": [
+    {
+      "block_id": "BLK-341F42D6A55FBC5E",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 16,
+      "printed_page_label": "12",
+      "block_order": 0,
+      "section_id": "SEC-9F1A5C191CBBD8F6",
+      "section_path": [
+        "7 用户列表"
+      ],
+      "section_title": "7 用户列表",
+      "block_type": "heading",
+      "text": "7\n用户列表",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        98.112,
+        154.451,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-61D4A48CF0FCF3E6",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 16,
+      "printed_page_label": "12",
+      "block_order": 1,
+      "section_id": "SEC-9F1A5C191CBBD8F6",
+      "section_path": [
+        "7 用户列表"
+      ],
+      "section_title": "7 用户列表",
+      "block_type": "paragraph",
+      "text": "管理员通过对不同的用户设置不同权限的账号，可以提高系统安全性、为不同的用户提升操\n作效率、降低管理成本。不同用户类型登录账号、默认密码和操作权限如下：",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        145.506,
+        448.193,
+        169.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4417EC6A57B44907",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 16,
+      "printed_page_label": "12",
+      "block_order": 2,
+      "section_id": "SEC-9F1A5C191CBBD8F6",
+      "section_path": [
+        "7 用户列表"
+      ],
+      "section_title": "7 用户列表",
+      "block_type": "paragraph",
+      "text": "表 7-1 1. Web 用户",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        185.156,
+        163.802,
+        196.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9E90596A86CAF9FA",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 16,
+      "printed_page_label": "12",
+      "block_order": 3,
+      "section_id": "SEC-9F1A5C191CBBD8F6",
+      "section_path": [
+        "7 用户列表"
+      ],
+      "section_title": "7 用户列表",
+      "block_type": "table",
+      "text": "用户类型\t用户名\t\t操作权限\n普通用户\tuser\t\t只有系统的监控权限和简单的设置权\n限。如概览、设备监控和部分历史数据\n的查看。\n运维用户\tmaintain\t\t本手册默认描述的所有操作。\n审计用户\tauditor\t\t对所有用户的操作日志，Syslog 日志进\n行审计。\n管理员\tadministr\tator\t增加用户、删除用户、修改用户、清空\n用户、会话管理、开发者调试开关、分\n配用户登录证书。\n开发者用户\tdevelop\t\t经管理员授权后可执行设备复杂故障的\n定位和排除。\n• 普通用户、运维用\n（SN）”拼接而成\n应的默认密码为“\n• 开发者用户的密码\n动态密码。\n7-2 2. 操作系统用户\t\t\t\n\t户、审计\n。例如，\nuserSN12\n采用动态\t用户、管理\n若设备SN 为\n345678”。\n生成机制，\t员的密码由“用户名”与“设备序列号\n“SN12345678”，用户名为“user”，则对\n通过客户授权获得设备SN，生成对应的\n\t\t\t\n用户名\t\t默认密码\t\nroot\t\t根据客户授权\t获取SN 生成动态密码。",
+      "table_cells": [
+        [
+          "用户类型",
+          "用户名",
+          null,
+          "操作权限"
+        ],
+        [
+          "普通用户",
+          "user",
+          null,
+          "只有系统的监控权限和简单的设置权\n限。如概览、设备监控和部分历史数据\n的查看。"
+        ],
+        [
+          "运维用户",
+          "maintain",
+          null,
+          "本手册默认描述的所有操作。"
+        ],
+        [
+          "审计用户",
+          "auditor",
+          null,
+          "对所有用户的操作日志，Syslog 日志进\n行审计。"
+        ],
+        [
+          "管理员",
+          "administr",
+          "ator",
+          "增加用户、删除用户、修改用户、清空\n用户、会话管理、开发者调试开关、分\n配用户登录证书。"
+        ],
+        [
+          "开发者用户",
+          "develop",
+          null,
+          "经管理员授权后可执行设备复杂故障的\n定位和排除。"
+        ],
+        [
+          "• 普通用户、运维用\n（SN）”拼接而成\n应的默认密码为“\n• 开发者用户的密码\n动态密码。\n7-2 2. 操作系统用户",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "户、审计\n。例如，\nuserSN12\n采用动态",
+          "用户、管理\n若设备SN 为\n345678”。\n生成机制，",
+          "员的密码由“用户名”与“设备序列号\n“SN12345678”，用户名为“user”，则对\n通过客户授权获得设备SN，生成对应的"
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "用户名",
+          null,
+          "默认密码",
+          null
+        ],
+        [
+          "root",
+          null,
+          "根据客户授权",
+          "获取SN 生成动态密码。"
+        ]
+      ],
+      "bbox": [
+        96.861,
+        202.939,
+        438.835,
+        566.35
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B69166A4A2ED2877",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 16,
+      "printed_page_label": "12",
+      "block_order": 4,
+      "section_id": "SEC-9F1A5C191CBBD8F6",
+      "section_path": [
+        "7 用户列表"
+      ],
+      "section_title": "7 用户列表",
+      "block_type": "paragraph",
+      "text": "sg\n根据客户授权获取SN 生成动态密码。",
+      "table_cells": null,
+      "bbox": [
+        96.861,
+        572.256,
+        385.868,
+        583.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

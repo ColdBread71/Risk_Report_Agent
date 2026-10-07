@@ -1,0 +1,119 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-7863E93F89A70A14",
+  "section_path": [
+    "11 报告产品（组件）安全事件说明"
+  ],
+  "section_title": "11 报告产品（组件）安全事件说明",
+  "start_pdf_page": 30,
+  "end_pdf_page": 30,
+  "blocks": [
+    {
+      "block_id": "BLK-DA5EBB979CE8AC41",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 30,
+      "printed_page_label": "26",
+      "block_order": 0,
+      "section_id": "SEC-7863E93F89A70A14",
+      "section_path": [
+        "11 报告产品（组件）安全事件说明"
+      ],
+      "section_title": "11 报告产品（组件）安全事件说明",
+      "block_type": "heading",
+      "text": "11\n报告产品（组件）安全事件说明",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        98.112,
+        343.127,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-320531A2F3CDE7C1",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 30,
+      "printed_page_label": "26",
+      "block_order": 1,
+      "section_id": "SEC-7863E93F89A70A14",
+      "section_path": [
+        "11 报告产品（组件）安全事件说明"
+      ],
+      "section_title": "11 报告产品（组件）安全事件说明",
+      "block_type": "paragraph",
+      "text": "产品安全应急响应流程如下：",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        145.506,
+        205.193,
+        156.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-465E5B8BD76AF4DA",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 30,
+      "printed_page_label": "26",
+      "block_order": 2,
+      "section_id": "SEC-7863E93F89A70A14",
+      "section_path": [
+        "11 报告产品（组件）安全事件说明"
+      ],
+      "section_title": "11 报告产品（组件）安全事件说明",
+      "block_type": "paragraph",
+      "text": "如果发现产品有漏洞或者相关组件有安全风险，通过点击https://www.sungrowpower.com/\npsirt.html 进入阳光电源官网 PSIRT 页面，查看文件列表和漏洞公告列表。如果发现了漏洞\n可以通过邮件将漏洞信息发送至psirt@sungrowpower.com。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        439.074,
+        446.042,
+        477.027
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3CE6028352D5908D",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 30,
+      "printed_page_label": "26",
+      "block_order": 3,
+      "section_id": "SEC-7863E93F89A70A14",
+      "section_path": [
+        "11 报告产品（组件）安全事件说明"
+      ],
+      "section_title": "11 报告产品（组件）安全事件说明",
+      "block_type": "paragraph",
+      "text": "如果产品安全漏洞已修复，并提供了可升级的版本，可通过系统 > 系统维护 > 系统升级更新\n版本来修复漏洞。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        487.574,
+        450.704,
+        512.027
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

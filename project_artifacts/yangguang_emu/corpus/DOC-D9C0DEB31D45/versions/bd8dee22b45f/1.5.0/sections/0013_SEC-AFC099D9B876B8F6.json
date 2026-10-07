@@ -1,0 +1,124 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-AFC099D9B876B8F6",
+  "section_path": [
+    "3 拆包与存储",
+    "3.2 识别数据采集器"
+  ],
+  "section_title": "3.2 识别数据采集器",
+  "start_pdf_page": 19,
+  "end_pdf_page": 19,
+  "blocks": [
+    {
+      "block_id": "BLK-E866238407C92AEC",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "9",
+      "block_order": 1,
+      "section_id": "SEC-AFC099D9B876B8F6",
+      "section_path": [
+        "3 拆包与存储",
+        "3.2 识别数据采集器"
+      ],
+      "section_title": "3.2 识别数据采集器",
+      "block_type": "heading",
+      "text": "3.2 识别数据采集器",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        71.658,
+        179.046,
+        86.262
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E4DBC785F080AD24",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "9",
+      "block_order": 2,
+      "section_id": "SEC-AFC099D9B876B8F6",
+      "section_path": [
+        "3 拆包与存储",
+        "3.2 识别数据采集器"
+      ],
+      "section_title": "3.2 识别数据采集器",
+      "block_type": "paragraph",
+      "text": "数据采集器的型号及重要的技术参数，均可通过铭牌来读取。数据采集器的铭牌位于数据采\n集器顶部，如下图A 所示。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        99.306,
+        462.366,
+        123.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8849B89BB3FE1C36",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "9",
+      "block_order": 3,
+      "section_id": "SEC-AFC099D9B876B8F6",
+      "section_path": [
+        "3 拆包与存储",
+        "3.2 识别数据采集器"
+      ],
+      "section_title": "3.2 识别数据采集器",
+      "block_type": "paragraph",
+      "text": "警告",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        242.163,
+        146.863,
+        255.55
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C839CD3A986A969B",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "9",
+      "block_order": 4,
+      "section_id": "SEC-AFC099D9B876B8F6",
+      "section_path": [
+        "3 拆包与存储",
+        "3.2 识别数据采集器"
+      ],
+      "section_title": "3.2 识别数据采集器",
+      "block_type": "paragraph",
+      "text": "铭牌上包含有重要的参数，务必保证其能够清晰可见，且无污损。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        259.345,
+        367.866,
+        270.298
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

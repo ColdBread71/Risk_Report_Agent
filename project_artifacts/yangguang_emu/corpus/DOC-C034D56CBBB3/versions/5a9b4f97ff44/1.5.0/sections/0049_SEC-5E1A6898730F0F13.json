@@ -1,0 +1,124 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-5E1A6898730F0F13",
+  "section_path": [
+    "7 Web界面",
+    "7.5 设备监控"
+  ],
+  "section_title": "7.5 设备监控",
+  "start_pdf_page": 51,
+  "end_pdf_page": 51,
+  "blocks": [
+    {
+      "block_id": "BLK-BB41042908483F11",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 14,
+      "section_id": "SEC-5E1A6898730F0F13",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控"
+      ],
+      "section_title": "7.5 设备监控",
+      "block_type": "heading",
+      "text": "7.5 设备监控",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        450.592,
+        143.043,
+        465.196
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0C91FCCF17CD762D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 15,
+      "section_id": "SEC-5E1A6898730F0F13",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控"
+      ],
+      "section_title": "7.5 设备监控",
+      "block_type": "paragraph",
+      "text": "单击设备监控，进入界面，查看设备信息。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        478.24,
+        273.363,
+        489.193
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-89C07B68A5E0E40E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 16,
+      "section_id": "SEC-5E1A6898730F0F13",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控"
+      ],
+      "section_title": "7.5 设备监控",
+      "block_type": "paragraph",
+      "text": "可查看设备的实时信息、直流数据、初始参数、保护参数、通用参数、设备指令和设备信息",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        499.74,
+        462.363,
+        510.693
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-948C390C719318B7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 51,
+      "printed_page_label": "41",
+      "block_order": 17,
+      "section_id": "SEC-5E1A6898730F0F13",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控"
+      ],
+      "section_title": "7.5 设备监控",
+      "block_type": "paragraph",
+      "text": "等。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        513.24,
+        120.363,
+        524.193
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

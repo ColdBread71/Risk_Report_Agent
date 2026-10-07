@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0",
+  "packet_id": "yangguang_emu_node_0_3",
+  "packet_version": 1,
+  "project_id": "yangguang_emu",
+  "purpose": "First controlled real-customer evidence input for Node [0]-[3] scope, context, asset, and STRIDE evaluation.",
+  "manifest_path": "project_artifacts/yangguang_emu/corpus/manifest.json",
+  "selections": [
+    {
+      "selection_id": "SEL-SECURITY-MAIN",
+      "document_id": "DOC-DF116E7199E2",
+      "selector_kind": "page_range",
+      "section_ids": [],
+      "section_path_prefix": [],
+      "pdf_page_start": 5,
+      "pdf_page_end": 30,
+      "block_ids": [],
+      "rationale": "The compact cybersecurity manual is the primary source for scope, deployment, ports, users, security functions, lifecycle controls, and incident handling.",
+      "target_nodes": ["node_0", "node_1", "node_2", "node_3"]
+    },
+    {
+      "selection_id": "SEL-SECURITY-SWITCH",
+      "document_id": "DOC-DF116E7199E2",
+      "selector_kind": "page_range",
+      "section_ids": [],
+      "section_path_prefix": [],
+      "pdf_page_start": 31,
+      "pdf_page_end": 42,
+      "block_ids": [],
+      "rationale": "The integrated MOXA switch hardening appendix identifies component attack surfaces and available mitigations.",
+      "target_nodes": ["node_1", "node_2", "node_3"]
+    },
+    {
+      "selection_id": "SEL-EMU-TOPOLOGY",
+      "document_id": "DOC-5067B181346D",
+      "selector_kind": "section_ids",
+      "section_ids": [
+        "SEC-6731718444E17352",
+        "SEC-A23A3DA30768620F",
+        "SEC-9F9B26EF0A16530D",
+        "SEC-030FF5F5FC3212CF",
+        "SEC-8620EBEBF30AE006",
+        "SEC-6BD0974C8044740E",
+        "SEC-753E033A8A2263C1",
+        "SEC-AECFC3015A41674D",
+        "SEC-9C61980B69EAE9DE"
+      ],
+      "section_path_prefix": [],
+      "pdf_page_start": null,
+      "pdf_page_end": null,
+      "block_ids": [],
+      "rationale": "The general EMU manual supplements the security manual with system topology, internal modules, physical communication interfaces, and technical parameters.",
+      "target_nodes": ["node_1", "node_2", "node_3"]
+    },
+    {
+      "selection_id": "SEL-LOGGER-CORE",
+      "document_id": "DOC-D9C0DEB31D45",
+      "selector_kind": "section_ids",
+      "section_ids": [
+        "SEC-EA65CBD77AD5C8DC",
+        "SEC-1A9901213E09DD9D",
+        "SEC-2D8E1B6D4BCB75A2",
+        "SEC-210FDFCB87F26864",
+        "SEC-10945ABB61948DD0",
+        "SEC-1D4692C76E8ED73E",
+        "SEC-80B524D385308B02",
+        "SEC-568C44CA164BF01D",
+        "SEC-883EB3D74CC043B9",
+        "SEC-C8DFD83C92224895",
+        "SEC-FE020C82043EC018",
+        "SEC-EA4EA10D81C723DE",
+        "SEC-A6D262189CBD8189",
+        "SEC-E930D52DE0C11874",
+        "SEC-06E7E6FE0AB7A55A",
+        "SEC-CA490D38E4B63CA7",
+        "SEC-AC75DF2201CFBAF5",
+        "SEC-48483CAB7BDD642B",
+        "SEC-40FD321EB2F76D55",
+        "SEC-BE6C19442AC2850C",
+        "SEC-FDD14EB582DF266E",
+        "SEC-4B86851C635ED7B5",
+        "SEC-7ABDFB52A4FE6A6F"
+      ],
+      "section_path_prefix": [],
+      "pdf_page_start": null,
+      "pdf_page_end": null,
+      "block_ids": [],
+      "rationale": "Logger5000 is the EMU300A standard internal collector; retain its functions, interfaces, mutable device inventory, logs, recovery, remote access, keys, time, certificates, and update evidence.",
+      "target_nodes": ["node_1", "node_2", "node_3"]
+    },
+    {
+      "selection_id": "SEL-LOGGER-FORWARDING",
+      "document_id": "DOC-D9C0DEB31D45",
+      "selector_kind": "section_path_prefix",
+      "section_ids": [],
+      "section_path_prefix": ["7 Web界面", "7.10 系统", "7.10.6 转发配置"],
+      "pdf_page_start": null,
+      "pdf_page_end": null,
+      "block_ids": [],
+      "rationale": "Northbound IEC104, Modbus, cloud, GOOSE, and MMS forwarding paths are major trust boundaries and threat entry points.",
+      "target_nodes": ["node_1", "node_2", "node_3"]
+    },
+    {
+      "selection_id": "SEL-LOGGER-PORTS",
+      "document_id": "DOC-D9C0DEB31D45",
+      "selector_kind": "section_path_prefix",
+      "section_ids": [],
+      "section_path_prefix": ["7 Web界面", "7.10 系统", "7.10.7 端口参数"],
+      "pdf_page_start": null,
+      "pdf_page_end": null,
+      "block_ids": [],
+      "rationale": "Runtime port configuration completes the communication-matrix and exposed-interface context.",
+      "target_nodes": ["node_1", "node_2", "node_3"]
+    },
+    {
+      "selection_id": "SEL-LOGGER-UPGRADE",
+      "document_id": "DOC-D9C0DEB31D45",
+      "selector_kind": "section_path_prefix",
+      "section_ids": [],
+      "section_path_prefix": ["8 固件升级"],
+      "pdf_page_start": null,
+      "pdf_page_end": null,
+      "block_ids": [],
+      "rationale": "Firmware and subordinate-device upgrade operations expose integrity-sensitive assets and attack paths.",
+      "target_nodes": ["node_1", "node_2", "node_3"]
+    },
+    {
+      "selection_id": "SEL-LOGGER-USERS",
+      "document_id": "DOC-D9C0DEB31D45",
+      "selector_kind": "section_path_prefix",
+      "section_ids": [],
+      "section_path_prefix": ["9 用户管理"],
+      "pdf_page_start": null,
+      "pdf_page_end": null,
+      "block_ids": [],
+      "rationale": "Accounts, roles, passwords, LDAP, session protection, maintenance mode, recovery, and cloud settings define identity and authorization assets.",
+      "target_nodes": ["node_1", "node_2", "node_3"]
+    }
+  ],
+  "known_gaps": [
+    {
+      "gap_id": "GAP-LOGGER4000-SCOPE",
+      "description": "A Logger4000 manual is present, but the EMU300A product and cybersecurity manuals identify Logger5000 as the standard internal collector; Logger4000 is excluded until the delivered configuration is confirmed.",
+      "affected_nodes": ["node_0", "node_1", "node_2", "node_3"],
+      "disposition": "Treat Logger4000 applicability as a customer/configuration question; do not infer its assets or threats in the baseline run."
+    },
+    {
+      "gap_id": "GAP-DIAGRAM-SEMANTICS",
+      "description": "Native text and figure captions are retained, but topology diagrams have not been manually transcribed into graph relationships.",
+      "affected_nodes": ["node_1", "node_2", "node_3"],
+      "disposition": "Review missing topology only if the first evaluation shows unsupported or absent communication paths."
+    },
+    {
+      "gap_id": "GAP-MIXED-PAGE-BLOCK",
+      "description": "Logger5000 PDF page 82 merges the end of GOOSE, MMS forwarding, and the start of port parameters into one native PDF text block; its file/page/block anchor is exact but its single assigned section path is broader than the mixed content.",
+      "affected_nodes": ["node_1", "node_2", "node_3"],
+      "disposition": "Require quote plus physical-page/block citation for this block; do not treat its section path alone as proof. Revisit parser splitting only if this locator affects evaluation."
+    },
+    {
+      "gap_id": "GAP-CONTRACT-VARIANTS",
+      "description": "The manuals describe optional and contract-dependent functions; the exact customer-enabled feature set is not independently confirmed.",
+      "affected_nodes": ["node_0", "node_1", "node_2", "node_3"],
+      "disposition": "Preserve uncertainty and produce customer questions instead of asserting optional functions as deployed facts."
+    },
+    {
+      "gap_id": "GAP-LEGAL-BASIS",
+      "description": "Product manuals establish product facts but are not authoritative CRA or prEN 40000 legal sources.",
+      "affected_nodes": ["node_0", "node_2"],
+      "disposition": "Use the controlled legal/rule layer for legal conclusions; never fabricate legal support from this packet."
+    }
+  ]
+}

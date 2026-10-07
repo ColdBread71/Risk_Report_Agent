@@ -1,0 +1,101 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-3F170C0604794131",
+  "section_path": [
+    "5 试运行",
+    "5.3 试运行步骤",
+    "5.3.3 PID模块调试（可选）"
+  ],
+  "section_title": "5.3.3 PID模块调试（可选）",
+  "start_pdf_page": 49,
+  "end_pdf_page": 49,
+  "blocks": [
+    {
+      "block_id": "BLK-F3DCC48064DAB2F2",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "43",
+      "block_order": 2,
+      "section_id": "SEC-3F170C0604794131",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.3 PID模块调试（可选）"
+      ],
+      "section_title": "5.3.3 PID模块调试（可选）",
+      "block_type": "heading",
+      "text": "5.3.3 PID 模块调试（可选）",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        124.19,
+        194.526,
+        136.36
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4715E29243CD795A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "43",
+      "block_order": 3,
+      "section_id": "SEC-3F170C0604794131",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.3 PID模块调试（可选）"
+      ],
+      "section_title": "5.3.3 PID模块调试（可选）",
+      "block_type": "paragraph",
+      "text": "PID 模块可以通过数据采集器嵌入式Web 进行参数设置。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        142.156,
+        331.461,
+        153.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-753E6750B0AEF9AC",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "43",
+      "block_order": 4,
+      "section_id": "SEC-3F170C0604794131",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.3 PID模块调试（可选）"
+      ],
+      "section_title": "5.3.3 PID模块调试（可选）",
+      "block_type": "paragraph",
+      "text": "登录Web，确认PID 模块在线。\n更多详细信息请参考数据采集器用户手册。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        159.456,
+        300.366,
+        181.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,501 @@
+{
+  "schema_version": "context_section_checkpoint.v1",
+  "fingerprint": "77078784500ef53a81a4e444a456ed5ed1f818785eba6f8a8ae33624cafd4668",
+  "cache_inputs": {
+    "section_name": "overview",
+    "source_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "text_model": "qwen-plus",
+    "context_rule_version": "node1_context_rules.v6.5",
+    "material_sha256": "a5c5274990a05cac460e9b1c60737b1938766ba77341eae97e54d08e704f01c8",
+    "prompt_sha256": "f3a25d013563faf53014440443095db7ea4b52007893079af41ecfc32315afc1",
+    "schema_sha256": "c53c8bd29ff8954c1aa0041eb692c75ef078661a3e96c4138d47fce756c3596c"
+  },
+  "result": {
+    "product_name": "能量管理单元EMU300A",
+    "product_version": null,
+    "iprfu": {
+      "intended_purpose": "能量管理单元EMU300A用于采集光伏发电系统中逆变器、箱变、环境监测仪、电表等南向设备数据，并通过IEC104、Modbus、MQTT、GOOSE等协议北向转发至综自系统、站控系统或阳光云平台；支持接收北向远程调度指令或执行本地调度指令，具备有功/无功功率调节能力。",
+      "reasonably_foreseeable_use": [
+        "客户在充分知情前提下手动授权启用阳光云平台数据转发功能",
+        "客户授权启用三方云服务转发功能",
+        "通过4G路由器或核心交换机直连阳光云平台",
+        "在工业控制环境中与第三方南向设备（如逆变器、电表）集成运行",
+        "在关键生产区域部署于可上锁的控制柜/控制室内"
+      ],
+      "health_safety_considerations": [
+        "未遵循安全说明和遗留风险可引发生命危险",
+        "忽视随附硬件文档中的安全说明和遗留风险会导致重伤或死亡",
+        "产品报废时若未安全删除用户安全数据，可能导致设备被非法利用并危及生产安全"
+      ],
+      "accessibility_considerations": [],
+      "support_period": null,
+      "evidence": [
+        {
+          "evidence_id": "EVD-001",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-0FE6A5150E10C5BC",
+            "parser_version": "1.5.0",
+            "page_number": 12,
+            "printed_page_label": "8",
+            "section_path": [
+              "5 产品功能及部署情况介绍"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\n云平台，可接收北向远程调度指令或执行本地调度指令。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": null,
+          "created_at": "2024-06-15T08:22:33Z"
+        },
+        {
+          "evidence_id": "EVD-004",
+          "source": {
+            "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-5067B181346D",
+            "block_id": "BLK-EBE329C3EFA80ACF",
+            "parser_version": "1.5.0",
+            "page_number": 16,
+            "printed_page_label": "10",
+            "section_path": [
+              "2 产品介绍",
+              "2.2 主要特点"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+          },
+          "quote": "数据采集器将数据转发至阳光云平台的功能默认不可用。启用该功能前，客户需在充\n分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获\n得客户授权后方可生效，且相关操作受系统访问控制策略管理。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": null,
+          "created_at": "2024-06-15T08:22:33Z"
+        },
+        {
+          "evidence_id": "EVD-IPRFU-001",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-A8903F0B3105707C",
+            "parser_version": "1.5.0",
+            "page_number": 7,
+            "printed_page_label": "3",
+            "section_path": [
+              "2 基本安全说明"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "未遵循安全说明和遗留风险可引发生命危险\n忽视随附硬件文档中的安全说明和遗留风险会导致重伤或死亡",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+          "created_at": "2024-06-15T08:22:33Z"
+        },
+        {
+          "evidence_id": "EVD-IPRFU-002",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-525B9314A5FDB5CB",
+            "parser_version": "1.5.0",
+            "page_number": 20,
+            "printed_page_label": "16",
+            "section_path": [
+              "9 安全退役"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "•\n当设备需要退役报废时，请参考10.6 恢复出厂设置章节操作，并通过安全的渠道销毁，\n删除用户安全数据，确保设备不被二次部署到用户的运营系统或被非法利用。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+          "created_at": "2024-06-15T08:22:33Z"
+        }
+      ]
+    },
+    "user_description": {
+      "user_types": [
+        "普通用户",
+        "运维用户",
+        "审计用户",
+        "管理员",
+        "开发者用户"
+      ],
+      "experience_level": null,
+      "vulnerable_groups": [],
+      "is_component": null,
+      "rdps_dependence": null,
+      "responsibilities": [
+        "对关键生产区域实施单独的人员出入控制",
+        "将重要组件安装在可上锁的控制柜/控制室内",
+        "为控制柜/控制室配备符合要求的锁具，并配置监控和报警设施",
+        "在退役前按第10章安全配置指南执行安全删除操作",
+        "对路由器白名单进行必要设置以保障阳光云功能正常使用"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVD-USERS-001",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-4417EC6A57B44907",
+            "parser_version": "1.5.0",
+            "page_number": 16,
+            "printed_page_label": "12",
+            "section_path": [
+              "7 用户列表"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "表 7-1 1. Web 用户",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+          "created_at": "2024-06-15T08:22:33Z"
+        },
+        {
+          "evidence_id": "EVD-USERS-002",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-C65542BD825C9290",
+            "parser_version": "1.5.0",
+            "page_number": 10,
+            "printed_page_label": "6",
+            "section_path": [
+              "4 纵深防御战略",
+              "4.4 用户的缓解措施"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "•\n对关键生产区域进行单独的人员出入控制。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+          "created_at": "2024-06-15T08:22:33Z"
+        },
+        {
+          "evidence_id": "EVD-USERS-003",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-F98DE46C72A1F829",
+            "parser_version": "1.5.0",
+            "page_number": 10,
+            "printed_page_label": "6",
+            "section_path": [
+              "4 纵深防御战略",
+              "4.4 用户的缓解措施"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "•\n重要组件安装在可上锁的控制柜/控制室内。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+          "created_at": "2024-06-15T08:22:33Z"
+        },
+        {
+          "evidence_id": "EVD-USERS-004",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-B5B2DA70170FDE95",
+            "parser_version": "1.5.0",
+            "page_number": 10,
+            "printed_page_label": "6",
+            "section_path": [
+              "4 纵深防御战略",
+              "4.4 用户的缓解措施"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "•\n控制柜/控制室必须配备锁， 并有监控和报警设施。 请勿使用结构简单的锁， 比如： 万\n能锁、 三角锁、 四角锁或双齿锁。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+          "created_at": "2024-06-15T08:22:33Z"
+        },
+        {
+          "evidence_id": "EVD-USERS-005",
+          "source": {
+            "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-D9C0DEB31D45",
+            "block_id": "BLK-89A6CAB539794403",
+            "parser_version": "1.5.0",
+            "page_number": 77,
+            "printed_page_label": "67",
+            "section_path": [
+              "7 Web界面",
+              "7.10 系统",
+              "7.10.6 转发配置",
+              "7.10.6.2 转发IEC104服务配置"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+          },
+          "quote": "时钟源\t\t说明\n阳光\t云\t前提是数据采集器与阳光云平台连接，否则时钟源设置为“阳光云”的\n对时方式无效。\nMOD\nTCP\tBUS-\t前提是数据采集器与后台使用MODBUS-TCP 通信规约，否则时钟源\n设置为“MODBUS-TCP”的对时方式无效。\nB 码\t\t通过B 码协议实现时间同步。\nPTP\t\t通过后台时间服务器对电站内的多个数据采集器进行统一对时。\n结束\t\t\n注意\t\t\n数据\t采集器首次使用\t必须配置系统时间。\n\t置\n阳光云服务\t设置\n\t• 数据采集器\n提下进行手\n授权后方可\n• 阳光云平台\t的数据转发功能默认不可用。启用该功能前，客户需在充分知情的前\n动授权，并通过安全加密认证接入公共网络。远程访问仅在获得客户\n生效，且相关操作受系统访问控制策略管理。\n在北美区域已停止服务。\n\t\t\n\t云服务与外网\t有数据交互，请确认设备网络环境安全后再开启。\n\t统 > 转发配置\n入站点开关，\t，进入界面。\n单击操作栏 ，可修改阳光云转发配置信息。\n\t默认接入阳光\n站”，澳洲地区\n为保证数据采\n参考路由器白\t云站点为“中国站”。中国大陆地区接入“中国站”，欧洲地区接入“欧洲\n接入“澳洲站”，其他地区接入“国际站”。\n集器功能正常使用，需要对路由器的白名单进行相关设置。设置参数请\n名单设置。\n\tIEC104 服务\nEC104 服务配置\t配置\n”用于配置数据采集器转发IEC104 服务。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+          "created_at": "2024-06-15T08:22:33Z"
+        }
+      ]
+    },
+    "operational_environment": {
+      "description": "EMU300A部署于工业控制环境，南向连接逆变器、电表等第三方设备，北向连接综自系统、站控系统或阳光云平台；北向为安全重点关注区域，需在数据出口部署防火墙、防恶意代码设备、IDS等安全设备；南向属近端网络，相对安全但非绝对安全；南向与北向网络建议使用独立交换机实现隔离。",
+      "networks": [
+        "南向RS485总线网络",
+        "南向PLC电力载波网络",
+        "南向MPLC网络",
+        "北向以太网",
+        "北向互联网（经4G路由器）",
+        "北向企业内网（经核心交换机）"
+      ],
+      "integrated_systems": [
+        "阳光云平台",
+        "综自系统",
+        "站控系统",
+        "Insight系统",
+        "SCADA系统",
+        "逆变器",
+        "电表",
+        "箱变",
+        "环境监测仪"
+      ],
+      "physical_environment": [],
+      "network_boundaries": [
+        "南向RS485/PLC/MPLC接口与第三方设备之间的物理与逻辑边界",
+        "北向以太网/4G接口与外部网络（阳光云、站控系统等）之间的安全边界",
+        "南向与北向网络之间通过独立交换机实现的隔离边界"
+      ],
+      "constraints": [
+        "南向设备为第三方设备，其网络安全威胁由用户保障",
+        "北向数据出口须部署防火墙、防恶意代码设备、IDS等安全设备",
+        "MODBUS/IEC104/GOOSE协议默认关闭状态"
+      ],
+      "rdps_dependency_map": null,
+      "evidence": [
+        {
+          "evidence_id": "EVD-ENV-001",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-B6469A1F85E312C7",
+            "parser_version": "1.5.0",
+            "page_number": 21,
+            "printed_page_label": "17",
+            "section_path": [
+              "10 安全配置指南",
+              "10.1 部署安全"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "产品北向属于安全重点关注区域，用户网络环境应在北向数据出口部署防火墙、防恶意代码\n设备、IDS 等安全设备，构建安全的北向安全网络。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+          "created_at": "2024-06-15T08:22:33Z"
+        },
+        {
+          "evidence_id": "EVD-ENV-002",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-AFA75AA365265142",
+            "parser_version": "1.5.0",
+            "page_number": 21,
+            "printed_page_label": "17",
+            "section_path": [
+              "10 安全配置指南",
+              "10.1 部署安全"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "产品南向属于近端网络部署，网络环境相对安全，但并非绝对安全，建议：",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+          "created_at": "2024-06-15T08:22:33Z"
+        },
+        {
+          "evidence_id": "EVD-ENV-003",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-EB131CDE5EBDAAA4",
+            "parser_version": "1.5.0",
+            "page_number": 21,
+            "printed_page_label": "17",
+            "section_path": [
+              "10 安全配置指南",
+              "10.1 部署安全"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "•\n南向设备对本产品来说，属于三方设备，是否会对网络安全造成威胁由用户来保障。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+          "created_at": "2024-06-15T08:22:33Z"
+        },
+        {
+          "evidence_id": "EVD-ENV-004",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-AFED3332E2924093",
+            "parser_version": "1.5.0",
+            "page_number": 21,
+            "printed_page_label": "17",
+            "section_path": [
+              "10 安全配置指南",
+              "10.1 部署安全"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "•\n南向和北向网络使用独立的交换机进行部署，网络隔离。",
+          "evidence_level": "derived",
+          "confidence": "medium",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+          "created_at": "2024-06-15T08:22:33Z"
+        },
+        {
+          "evidence_id": "EVD-ENV-005",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-F8028F7583C31F09",
+            "parser_version": "1.5.0",
+            "page_number": 21,
+            "printed_page_label": "17",
+            "section_path": [
+              "10 安全配置指南",
+              "10.3 协议配置"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "MODBUS/IEC104/GOOSE 协议默认关闭状态。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": null,
+          "created_at": "2024-06-15T08:22:33Z"
+        }
+      ]
+    },
+    "rdps_dependencies": null,
+    "evidence": [
+      {
+        "evidence_id": "EVD-001",
+        "source": {
+          "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+          "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+          "file_type": "pdf",
+          "document_id": "DOC-DF116E7199E2",
+          "block_id": "BLK-0FE6A5150E10C5BC",
+          "parser_version": "1.5.0",
+          "page_number": 12,
+          "printed_page_label": "8",
+          "section_path": [
+            "5 产品功能及部署情况介绍"
+          ],
+          "clause_number": null,
+          "annex": null,
+          "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+        },
+        "quote": "能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\n云平台，可接收北向远程调度指令或执行本地调度指令。",
+        "evidence_level": "direct",
+        "confidence": "high",
+        "retrieved_by": "node_field_retrieval",
+        "is_human_confirmed": false,
+        "notes": null,
+        "created_at": "2024-06-15T08:22:33Z"
+      }
+    ],
+    "assessment": "PARTIAL",
+    "assessment_notes": "存在多项未知项：产品预期用途具体功能范围未明确；合理可预见误用类型未说明；物理部署环境（温度、防护等级等）缺失；RDPS必要性、责任归属、断网降级行为、数据交换范围及信任边界均无明确证据；南向网络中三方设备类型、协议未说明；Web端运行环境要求未提供；IEC 62443适用子标准未指明；证书安全责任与密钥材料销毁技术手段未覆盖。依据规则，assessment设为PARTIAL。"
+  }
+}

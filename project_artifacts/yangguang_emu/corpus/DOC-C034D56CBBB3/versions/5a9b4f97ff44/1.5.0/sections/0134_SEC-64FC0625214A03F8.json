@@ -1,0 +1,70 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-64FC0625214A03F8",
+  "section_path": [
+    "8 固件升级",
+    "8.2 升级数据采集器"
+  ],
+  "section_title": "8.2 升级数据采集器",
+  "start_pdf_page": 87,
+  "end_pdf_page": 87,
+  "blocks": [
+    {
+      "block_id": "BLK-9E31F3741C846724",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 87,
+      "printed_page_label": "77",
+      "block_order": 19,
+      "section_id": "SEC-64FC0625214A03F8",
+      "section_path": [
+        "8 固件升级",
+        "8.2 升级数据采集器"
+      ],
+      "section_title": "8.2 升级数据采集器",
+      "block_type": "heading",
+      "text": "8.2 升级数据采集器",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        629.058,
+        179.046,
+        643.662
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B86FA8CBF510AAEB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 87,
+      "printed_page_label": "77",
+      "block_order": 20,
+      "section_id": "SEC-64FC0625214A03F8",
+      "section_path": [
+        "8 固件升级",
+        "8.2 升级数据采集器"
+      ],
+      "section_title": "8.2 升级数据采集器",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        656.706,
+        138.366,
+        667.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

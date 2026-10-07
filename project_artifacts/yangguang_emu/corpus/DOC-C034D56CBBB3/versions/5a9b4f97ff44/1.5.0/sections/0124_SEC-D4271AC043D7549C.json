@@ -1,0 +1,271 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-D4271AC043D7549C",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.13 端口参数",
+    "7.8.13.2 以太网"
+  ],
+  "section_title": "7.8.13.2 以太网",
+  "start_pdf_page": 83,
+  "end_pdf_page": 83,
+  "blocks": [
+    {
+      "block_id": "BLK-3B4B456CF6731105",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 83,
+      "printed_page_label": "73",
+      "block_order": 1,
+      "section_id": "SEC-D4271AC043D7549C",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.2 以太网"
+      ],
+      "section_title": "7.8.13.2 以太网",
+      "block_type": "heading",
+      "text": "7.8.13.2 以太网",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        71.59,
+        141.756,
+        83.76
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-92FDE72896E99799",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 83,
+      "printed_page_label": "73",
+      "block_order": 2,
+      "section_id": "SEC-D4271AC043D7549C",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.2 以太网"
+      ],
+      "section_title": "7.8.13.2 以太网",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击系统 > 端口参数 > 以太网，进入以太网界面。",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        89.484,
+        302.253,
+        101.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4A5D2F134D698CC5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 83,
+      "printed_page_label": "73",
+      "block_order": 3,
+      "section_id": "SEC-D4271AC043D7549C",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.2 以太网"
+      ],
+      "section_title": "7.8.13.2 以太网",
+      "block_type": "table",
+      "text": "若自动分配IP\t\t\t为开，则端口对应的IP\t\t地址失效，可以通过虚拟IP\t\t登录设备。\t\n端口\t\t默认IP 地址\t\t子网掩码\t网关\tDNS1\t\tDNS2\nETH1\t\t12.12.12.12\t\t255.255.2\n55.0\t12.12.12.1\t1.2.4.8\t\t8.8.8.8\nETH2\t\t13.13.13.13\t\t255.255.2\n55.0\t13.13.13.1\t1.2.4.8\t\t8.8.8.8\nETH5\t\t14.14.14.14\t\t255.255.2\n55.0\t14.14.14.1\t1.2.4.8\t\t8.8.8.8\n自动分\n结束\nAI\n击系统\n择输入\t配I\n> 端\n类型\tP 为关，填入\n口参数 > AI\n，设置采样\tIP 地址\n，进入\n下限和采\t、子网掩码、\nAI 界面。\n样上限，单击\t网关地址等信息\n，信息设置成\t，单击\n功。\t，设置\t成功。\nAI 端口\t\t\t输入类型\t\t采样下限\t\t采样上限\t\nAI1\t\t\t电压（V\t）\t0\t\t10\t\nAI2\t\t\t电流（m\tA）\t4\t\t20\t\nAI3\t\t\t电流（m\tA）\t4\t\t20\t\nAI4\t\t\t电流（m\tA）\t4\t\t20\t\nPT1\t\t\t-\t\t-30\t\t160\t\nPT2\t\t\t-\t\t-30\t\t160\t\n\t\t\t\t\t\t\t\t\n\tgge\tr4000 固件版\t本为P\t028 之后版本，\tPT100 温度上限\t由120\t℃扩大至\t160℃",
+      "table_cells": [
+        [
+          "若自动分配IP",
+          null,
+          null,
+          "为开，则端口对应的IP",
+          null,
+          "地址失效，可以通过虚拟IP",
+          null,
+          "登录设备。",
+          null
+        ],
+        [
+          "端口",
+          null,
+          "默认IP 地址",
+          null,
+          "子网掩码",
+          "网关",
+          "DNS1",
+          null,
+          "DNS2"
+        ],
+        [
+          "ETH1",
+          null,
+          "12.12.12.12",
+          null,
+          "255.255.2\n55.0",
+          "12.12.12.1",
+          "1.2.4.8",
+          null,
+          "8.8.8.8"
+        ],
+        [
+          "ETH2",
+          null,
+          "13.13.13.13",
+          null,
+          "255.255.2\n55.0",
+          "13.13.13.1",
+          "1.2.4.8",
+          null,
+          "8.8.8.8"
+        ],
+        [
+          "ETH5",
+          null,
+          "14.14.14.14",
+          null,
+          "255.255.2\n55.0",
+          "14.14.14.1",
+          "1.2.4.8",
+          null,
+          "8.8.8.8"
+        ],
+        [
+          "自动分\n结束\nAI\n击系统\n择输入",
+          "配I\n> 端\n类型",
+          "P 为关，填入\n口参数 > AI\n，设置采样",
+          "IP 地址\n，进入\n下限和采",
+          "、子网掩码、\nAI 界面。\n样上限，单击",
+          "网关地址等信息\n，信息设置成",
+          "，单击\n功。",
+          "，设置",
+          "成功。"
+        ],
+        [
+          "AI 端口",
+          null,
+          null,
+          "输入类型",
+          null,
+          "采样下限",
+          null,
+          "采样上限",
+          null
+        ],
+        [
+          "AI1",
+          null,
+          null,
+          "电压（V",
+          "）",
+          "0",
+          null,
+          "10",
+          null
+        ],
+        [
+          "AI2",
+          null,
+          null,
+          "电流（m",
+          "A）",
+          "4",
+          null,
+          "20",
+          null
+        ],
+        [
+          "AI3",
+          null,
+          null,
+          "电流（m",
+          "A）",
+          "4",
+          null,
+          "20",
+          null
+        ],
+        [
+          "AI4",
+          null,
+          null,
+          "电流（m",
+          "A）",
+          "4",
+          null,
+          "20",
+          null
+        ],
+        [
+          "PT1",
+          null,
+          null,
+          "-",
+          null,
+          "-30",
+          null,
+          "160",
+          null
+        ],
+        [
+          "PT2",
+          null,
+          null,
+          "-",
+          null,
+          "-30",
+          null,
+          "160",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "gge",
+          "r4000 固件版",
+          "本为P",
+          "028 之后版本，",
+          "PT100 温度上限",
+          "由120",
+          "℃扩大至",
+          "160℃"
+        ]
+      ],
+      "bbox": [
+        110.403,
+        107.406,
+        444.892,
+        545.778
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

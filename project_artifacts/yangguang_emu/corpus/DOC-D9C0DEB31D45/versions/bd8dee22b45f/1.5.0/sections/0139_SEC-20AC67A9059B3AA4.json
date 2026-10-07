@@ -1,0 +1,47 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-20AC67A9059B3AA4",
+  "section_path": [
+    "7 Web界面",
+    "7.10 系统",
+    "7.10.7 端口参数",
+    "7.10.7.4 DI"
+  ],
+  "section_title": "7.10.7.4 DI",
+  "start_pdf_page": 84,
+  "end_pdf_page": 84,
+  "blocks": [
+    {
+      "block_id": "BLK-160092A9CBD05865",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 2,
+      "section_id": "SEC-20AC67A9059B3AA4",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.7 端口参数",
+        "7.10.7.4 DI"
+      ],
+      "section_title": "7.10.7.4 DI",
+      "block_type": "heading",
+      "text": "7.10.7.4 DI",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        187.75,
+        105.087,
+        198.91
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

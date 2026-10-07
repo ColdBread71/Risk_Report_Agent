@@ -1,0 +1,73 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-204F8A16F3025D2D",
+  "section_path": [
+    "5 试运行",
+    "5.3 试运行步骤",
+    "5.3.1 系统上电"
+  ],
+  "section_title": "5.3.1 系统上电",
+  "start_pdf_page": 47,
+  "end_pdf_page": 47,
+  "blocks": [
+    {
+      "block_id": "BLK-BC4AF48F2D0DA6B6",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 47,
+      "printed_page_label": "41",
+      "block_order": 2,
+      "section_id": "SEC-204F8A16F3025D2D",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.1 系统上电"
+      ],
+      "section_title": "5.3.1 系统上电",
+      "block_type": "heading",
+      "text": "5.3.1 系统上电",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        500.39,
+        137.856,
+        512.56
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3EE2FB11182F189D",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 47,
+      "printed_page_label": "41",
+      "block_order": 3,
+      "section_id": "SEC-204F8A16F3025D2D",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.1 系统上电"
+      ],
+      "section_title": "5.3.1 系统上电",
+      "block_type": "paragraph",
+      "text": "3\n观察交换机、24V 开关电源是否正常工作。",
+      "table_cells": null,
+      "bbox": [
+        111.035,
+        659.856,
+        317.252,
+        670.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

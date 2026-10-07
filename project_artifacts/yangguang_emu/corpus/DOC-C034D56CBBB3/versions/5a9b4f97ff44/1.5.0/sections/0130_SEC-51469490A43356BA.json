@@ -1,0 +1,269 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-51469490A43356BA",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.15 更多"
+  ],
+  "section_title": "7.8.15 更多",
+  "start_pdf_page": 85,
+  "end_pdf_page": 85,
+  "blocks": [
+    {
+      "block_id": "BLK-C9D3DD017449E9FF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 22,
+      "section_id": "SEC-51469490A43356BA",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.15 更多"
+      ],
+      "section_title": "7.8.15 更多",
+      "block_type": "heading",
+      "text": "7.8.15 更多",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        479.24,
+        123.42,
+        491.41
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-613E8C408FC28C23",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 23,
+      "section_id": "SEC-51469490A43356BA",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.15 更多"
+      ],
+      "section_title": "7.8.15 更多",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击系统 > 更多，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        70.869,
+        503.134,
+        219.99,
+        515.617
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5A6879215E860353",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 24,
+      "section_id": "SEC-51469490A43356BA",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.15 更多"
+      ],
+      "section_title": "7.8.15 更多",
+      "block_type": "paragraph",
+      "text": "步骤 2 使用下拉框选择自动上线状态：禁止或使能。",
+      "table_cells": null,
+      "bbox": [
+        70.869,
+        519.634,
+        281.739,
+        532.117
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A15D24753690CC52",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 25,
+      "section_id": "SEC-51469490A43356BA",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.15 更多"
+      ],
+      "section_title": "7.8.15 更多",
+      "block_type": "list",
+      "text": "•\n设置为使能，则支持自动添加阳光电源自研组串逆变器设备参数，而不需要在Web 上进\n行额外操作。",
+      "table_cells": null,
+      "bbox": [
+        101.739,
+        537.556,
+        462.756,
+        562.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D6E5EFF847710098",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 26,
+      "section_id": "SEC-51469490A43356BA",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.15 更多"
+      ],
+      "section_title": "7.8.15 更多",
+      "block_type": "list",
+      "text": "•\n设置为禁止，则不支持上述操作。",
+      "table_cells": null,
+      "bbox": [
+        101.739,
+        566.056,
+        250.905,
+        577.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D9C7CFF635181A99",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 27,
+      "section_id": "SEC-51469490A43356BA",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.15 更多"
+      ],
+      "section_title": "7.8.15 更多",
+      "block_type": "paragraph",
+      "text": "步骤 3 使用下拉框选择逆变器孤岛状态置离线状态：使能或禁止。",
+      "table_cells": null,
+      "bbox": [
+        70.869,
+        581.134,
+        335.739,
+        593.617
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CDC4BC949E332786",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 28,
+      "section_id": "SEC-51469490A43356BA",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.15 更多"
+      ],
+      "section_title": "7.8.15 更多",
+      "block_type": "list",
+      "text": "•\n设置为使能，则支持数据采集器与逆变器为PLC 通讯时，当逆变器处于孤岛状态，数据\n采集器会把逆变器的通讯状态设置为离线。",
+      "table_cells": null,
+      "bbox": [
+        101.739,
+        599.056,
+        461.919,
+        623.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4C365ABFC8DA4A6E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 29,
+      "section_id": "SEC-51469490A43356BA",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.15 更多"
+      ],
+      "section_title": "7.8.15 更多",
+      "block_type": "list",
+      "text": "•\n设置为禁止，则不支持上述操作。",
+      "table_cells": null,
+      "bbox": [
+        101.739,
+        627.556,
+        250.905,
+        638.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-887A594F61249484",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 30,
+      "section_id": "SEC-51469490A43356BA",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.15 更多"
+      ],
+      "section_title": "7.8.15 更多",
+      "block_type": "paragraph",
+      "text": "Logger4000 的固件版本为P028 或以上。见7.8.16 查看固件版本。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        647.706,
+        396.323,
+        658.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

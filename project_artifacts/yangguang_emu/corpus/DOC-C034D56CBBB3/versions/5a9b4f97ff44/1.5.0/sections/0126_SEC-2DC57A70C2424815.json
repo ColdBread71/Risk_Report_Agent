@@ -1,0 +1,308 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-2DC57A70C2424815",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.13 端口参数",
+    "7.8.13.5 DO"
+  ],
+  "section_title": "7.8.13.5 DO",
+  "start_pdf_page": 84,
+  "end_pdf_page": 84,
+  "blocks": [
+    {
+      "block_id": "BLK-5AEFE7E7A82ED332",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 0,
+      "section_id": "SEC-2DC57A70C2424815",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.5 DO"
+      ],
+      "section_title": "7.8.13.5 DO",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.443,
+        48.088,
+        449.79,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6A7A400AC91D9A34",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 1,
+      "section_id": "SEC-2DC57A70C2424815",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.5 DO"
+      ],
+      "section_title": "7.8.13.5 DO",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        71.556,
+        112.187,
+        82.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-249B2BEE1A017CA9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 2,
+      "section_id": "SEC-2DC57A70C2424815",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.5 DO"
+      ],
+      "section_title": "7.8.13.5 DO",
+      "block_type": "heading",
+      "text": "7.8.13.5 DO",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        97.9,
+        110.087,
+        109.06
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-285634C96444C052",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 3,
+      "section_id": "SEC-2DC57A70C2424815",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.5 DO"
+      ],
+      "section_title": "7.8.13.5 DO",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击系统 > 端口参数 > DO，默认进入内置界面。",
+      "table_cells": null,
+      "bbox": [
+        56.69,
+        121.684,
+        283.58,
+        134.167
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-67D21F1C58483130",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 4,
+      "section_id": "SEC-2DC57A70C2424815",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.5 DO"
+      ],
+      "section_title": "7.8.13.5 DO",
+      "block_type": "paragraph",
+      "text": "步骤 2 选择DO 初始状态为常开或常闭，点击",
+      "table_cells": null,
+      "bbox": [
+        56.69,
+        140.455,
+        240.56,
+        152.938
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6DE3ADDCB793FF68",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 5,
+      "section_id": "SEC-2DC57A70C2424815",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.5 DO"
+      ],
+      "section_title": "7.8.13.5 DO",
+      "block_type": "paragraph",
+      "text": "设置功能、动作方式，输入脉冲持续时间，单击",
+      "table_cells": null,
+      "bbox": [
+        254.738,
+        141.877,
+        443.738,
+        152.83
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0EBF7708A48729DE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 6,
+      "section_id": "SEC-2DC57A70C2424815",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.5 DO"
+      ],
+      "section_title": "7.8.13.5 DO",
+      "block_type": "paragraph",
+      "text": "，信息设置成功。",
+      "table_cells": null,
+      "bbox": [
+        96.068,
+        156.704,
+        168.068,
+        167.657
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ACB0E2495DFB4E46",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 7,
+      "section_id": "SEC-2DC57A70C2424815",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.5 DO"
+      ],
+      "section_title": "7.8.13.5 DO",
+      "block_type": "paragraph",
+      "text": "功能选项中，选择通讯控制表示后台和数采对端口下发指令，选择手动控制表示手动\n对端口下发指令。",
+      "table_cells": null,
+      "bbox": [
+        114.562,
+        178.354,
+        447.562,
+        200.107
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-27190EFFE64A625B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 8,
+      "section_id": "SEC-2DC57A70C2424815",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.5 DO"
+      ],
+      "section_title": "7.8.13.5 DO",
+      "block_type": "paragraph",
+      "text": "步骤 3 若数据采集器接有外置IO 设备，单击外置，进入界面，可对该设备的DO 信息进行设置。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        217.382,
+        443.567,
+        229.865
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6D723BA6D5FC6341",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 84,
+      "printed_page_label": "74",
+      "block_order": 9,
+      "section_id": "SEC-2DC57A70C2424815",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.5 DO"
+      ],
+      "section_title": "7.8.13.5 DO",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        233.954,
+        112.187,
+        244.907
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

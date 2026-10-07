@@ -1,0 +1,232 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-299B850F0DBF05A2",
+  "section_path": [
+    "5 电气连接",
+    "5.11 与后台通讯设备接线"
+  ],
+  "section_title": "5.11 与后台通讯设备接线",
+  "start_pdf_page": 40,
+  "end_pdf_page": 40,
+  "blocks": [
+    {
+      "block_id": "BLK-862DEA4068DEC952",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "30",
+      "block_order": 0,
+      "section_id": "SEC-299B850F0DBF05A2",
+      "section_path": [
+        "5 电气连接",
+        "5.11 与后台通讯设备接线"
+      ],
+      "section_title": "5.11 与后台通讯设备接线",
+      "block_type": "paragraph",
+      "text": "用户手册\n5 电气连接",
+      "table_cells": null,
+      "bbox": [
+        60.443,
+        48.088,
+        449.79,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-16A996983744462D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "30",
+      "block_order": 1,
+      "section_id": "SEC-299B850F0DBF05A2",
+      "section_path": [
+        "5 电气连接",
+        "5.11 与后台通讯设备接线"
+      ],
+      "section_title": "5.11 与后台通讯设备接线",
+      "block_type": "paragraph",
+      "text": "步骤 3 将冷压端子接至数据采集器外部“PT1”和“PT2”插头，如下图所示（以接入“PT1”端口为例）。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        149.362,
+        452.063,
+        161.845
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-778EB4BAF7FA895C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "30",
+      "block_order": 2,
+      "section_id": "SEC-299B850F0DBF05A2",
+      "section_path": [
+        "5 电气连接",
+        "5.11 与后台通讯设备接线"
+      ],
+      "section_title": "5.11 与后台通讯设备接线",
+      "block_type": "figure_caption",
+      "text": "图 5-1 连接3 线制PT100/PT1000",
+      "table_cells": null,
+      "bbox": [
+        202.898,
+        346.31,
+        338.195,
+        357.263
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B429BBDE02BA2F4A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "30",
+      "block_order": 3,
+      "section_id": "SEC-299B850F0DBF05A2",
+      "section_path": [
+        "5 电气连接",
+        "5.11 与后台通讯设备接线"
+      ],
+      "section_title": "5.11 与后台通讯设备接线",
+      "block_type": "figure_caption",
+      "text": "图 5-2 连接2 线制PT100/PT1000",
+      "table_cells": null,
+      "bbox": [
+        202.898,
+        548.835,
+        338.195,
+        559.788
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-982F600AD8114CB7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "30",
+      "block_order": 4,
+      "section_id": "SEC-299B850F0DBF05A2",
+      "section_path": [
+        "5 电气连接",
+        "5.11 与后台通讯设备接线"
+      ],
+      "section_title": "5.11 与后台通讯设备接线",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        563.985,
+        112.187,
+        574.938
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-964ACEA704ED09F9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "30",
+      "block_order": 5,
+      "section_id": "SEC-299B850F0DBF05A2",
+      "section_path": [
+        "5 电气连接",
+        "5.11 与后台通讯设备接线"
+      ],
+      "section_title": "5.11 与后台通讯设备接线",
+      "block_type": "heading",
+      "text": "5.11 与后台通讯设备接线",
+      "table_cells": null,
+      "bbox": [
+        56.687,
+        598.887,
+        194.663,
+        613.491
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D48EB1E5F3E4432E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "30",
+      "block_order": 6,
+      "section_id": "SEC-299B850F0DBF05A2",
+      "section_path": [
+        "5 电气连接",
+        "5.11 与后台通讯设备接线"
+      ],
+      "section_title": "5.11 与后台通讯设备接线",
+      "block_type": "paragraph",
+      "text": "数据采集器可以通过以太网交换机、路由器等接入后台通讯设备。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        626.535,
+        349.193,
+        637.488
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3A5A1F40B40BAC84",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 40,
+      "printed_page_label": "30",
+      "block_order": 7,
+      "section_id": "SEC-299B850F0DBF05A2",
+      "section_path": [
+        "5 电气连接",
+        "5.11 与后台通讯设备接线"
+      ],
+      "section_title": "5.11 与后台通讯设备接线",
+      "block_type": "paragraph",
+      "text": "数据采集器有三个以太网接口：ETH1、ETH2、ETH5。可以通过其中任一端口接入以太网\n交换机、路由器等。以接入以太网交换机为例进行接线步骤示意。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        648.035,
+        445.205,
+        672.488
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

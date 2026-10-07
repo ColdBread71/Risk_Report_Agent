@@ -1,0 +1,367 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-C292D01286912E00",
+  "section_path": [
+    "10 安全配置指南",
+    "10.10 安全更新"
+  ],
+  "section_title": "10.10 安全更新",
+  "start_pdf_page": 29,
+  "end_pdf_page": 29,
+  "blocks": [
+    {
+      "block_id": "BLK-46BD970AF8A75BBB",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "25",
+      "block_order": 0,
+      "section_id": "SEC-C292D01286912E00",
+      "section_path": [
+        "10 安全配置指南",
+        "10.10 安全更新"
+      ],
+      "section_title": "10.10 安全更新",
+      "block_type": "paragraph",
+      "text": "用户网络安全操作手册\n10 安全配置指南",
+      "table_cells": null,
+      "bbox": [
+        74.614,
+        48.088,
+        463.968,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-65CA5F49250566BD",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "25",
+      "block_order": 1,
+      "section_id": "SEC-C292D01286912E00",
+      "section_path": [
+        "10 安全配置指南",
+        "10.10 安全更新"
+      ],
+      "section_title": "10.10 安全更新",
+      "block_type": "paragraph",
+      "text": "压缩密码长度为8~32 位，需由大写字母、小写字母、数字、特殊符号中的三种或以\n上组成。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        134.864,
+        460.134,
+        156.617
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A1D9D6BB6067D5DB",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "25",
+      "block_order": 2,
+      "section_id": "SEC-C292D01286912E00",
+      "section_path": [
+        "10 安全配置指南",
+        "10.10 安全更新"
+      ],
+      "section_title": "10.10 安全更新",
+      "block_type": "heading",
+      "text": "10.10 安全更新",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        189.066,
+        156.39,
+        203.67
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D8954C33CDD8EE0B",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "25",
+      "block_order": 3,
+      "section_id": "SEC-C292D01286912E00",
+      "section_path": [
+        "10 安全配置指南",
+        "10.10 安全更新"
+      ],
+      "section_title": "10.10 安全更新",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        216.714,
+        138.363,
+        227.667
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E8996EB5DD9CA4A6",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "25",
+      "block_order": 4,
+      "section_id": "SEC-C292D01286912E00",
+      "section_path": [
+        "10 安全配置指南",
+        "10.10 安全更新"
+      ],
+      "section_title": "10.10 安全更新",
+      "block_type": "paragraph",
+      "text": "根据升级方式准备对应资源文件或配置：",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        233.864,
+        264.363,
+        244.817
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8D8B9543DD137576",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "25",
+      "block_order": 5,
+      "section_id": "SEC-C292D01286912E00",
+      "section_path": [
+        "10 安全配置指南",
+        "10.10 安全更新"
+      ],
+      "section_title": "10.10 安全更新",
+      "block_type": "list",
+      "text": "•\n通过配置工具iConfig 升级：已安装iConfig 工具并下载相关升级包。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        247.514,
+        388.572,
+        258.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C8CDDA0E58006FDF",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "25",
+      "block_order": 6,
+      "section_id": "SEC-C292D01286912E00",
+      "section_path": [
+        "10 安全配置指南",
+        "10.10 安全更新"
+      ],
+      "section_title": "10.10 安全更新",
+      "block_type": "list",
+      "text": "•\n通过阳光云升级：已接入云服务且当前有可用升级包。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        262.514,
+        332.538,
+        273.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8B0F6D125A90C9EF",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "25",
+      "block_order": 7,
+      "section_id": "SEC-C292D01286912E00",
+      "section_path": [
+        "10 安全配置指南",
+        "10.10 安全更新"
+      ],
+      "section_title": "10.10 安全更新",
+      "block_type": "paragraph",
+      "text": "步骤 1 点击系统 > 系统维护，跳转至相应页面。",
+      "table_cells": null,
+      "bbox": [
+        70.863,
+        286.592,
+        264.993,
+        299.075
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D6869021C6AA853C",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "25",
+      "block_order": 8,
+      "section_id": "SEC-C292D01286912E00",
+      "section_path": [
+        "10 安全配置指南",
+        "10.10 安全更新"
+      ],
+      "section_title": "10.10 安全更新",
+      "block_type": "paragraph",
+      "text": "步骤 2 点击系统升级，在弹出的对话框中，根据实际情况，选择升级方式。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        508.965,
+        371.736,
+        521.448
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F050A216E1006236",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "25",
+      "block_order": 9,
+      "section_id": "SEC-C292D01286912E00",
+      "section_path": [
+        "10 安全配置指南",
+        "10.10 安全更新"
+      ],
+      "section_title": "10.10 安全更新",
+      "block_type": "paragraph",
+      "text": "步骤 3 根据升级方式，按照界面提示导入升级包，升级包通过数字签名校验成功后，方可进行升",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        525.465,
+        452.736,
+        537.948
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EF41A759914C4E3D",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "25",
+      "block_order": 10,
+      "section_id": "SEC-C292D01286912E00",
+      "section_path": [
+        "10 安全配置指南",
+        "10.10 安全更新"
+      ],
+      "section_title": "10.10 安全更新",
+      "block_type": "paragraph",
+      "text": "级。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        540.387,
+        119.736,
+        551.34
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E414634044E2A2A1",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "25",
+      "block_order": 11,
+      "section_id": "SEC-C292D01286912E00",
+      "section_path": [
+        "10 安全配置指南",
+        "10.10 安全更新"
+      ],
+      "section_title": "10.10 安全更新",
+      "block_type": "paragraph",
+      "text": "如弹窗提示缺少公钥文件，需通过系统 > 系统维护 > 公钥导入导入升级包对应的公\n钥文件，再进行升级操作。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        562.037,
+        455.246,
+        583.79
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2B5B1D3A14E0510C",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 29,
+      "printed_page_label": "25",
+      "block_order": 12,
+      "section_id": "SEC-C292D01286912E00",
+      "section_path": [
+        "10 安全配置指南",
+        "10.10 安全更新"
+      ],
+      "section_title": "10.10 安全更新",
+      "block_type": "list",
+      "text": "--结束\nWeb 端将弹窗提示是否确认升级，确认后数据采集器自动重启。新版本在重启后生效。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        601.137,
+        446.958,
+        622.89
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

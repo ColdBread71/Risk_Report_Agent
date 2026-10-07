@@ -1,0 +1,333 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-030FF5F5FC3212CF",
+  "section_path": [
+    "4 电气连接",
+    "4.6 接线步骤",
+    "4.6.2 RS485通讯端子连接"
+  ],
+  "section_title": "4.6.2 RS485通讯端子连接",
+  "start_pdf_page": 33,
+  "end_pdf_page": 33,
+  "blocks": [
+    {
+      "block_id": "BLK-8184F1B83C31027C",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 33,
+      "printed_page_label": "27",
+      "block_order": 0,
+      "section_id": "SEC-030FF5F5FC3212CF",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.2 RS485通讯端子连接"
+      ],
+      "section_title": "4.6.2 RS485通讯端子连接",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 电气连接",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-075491044AF166BB",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 33,
+      "printed_page_label": "27",
+      "block_order": 1,
+      "section_id": "SEC-030FF5F5FC3212CF",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.2 RS485通讯端子连接"
+      ],
+      "section_title": "4.6.2 RS485通讯端子连接",
+      "block_type": "table",
+      "text": "编号\t\t定义\t备注\n\tA\t\tM6 x 12 螺栓\t包含在供货范围。\n\tB\t\tOT 端子\t包含在供货范围。\n\tC\t\t接地孔\t-\nS\n接\t485\n线前\t\t\t\n\t\t为最大限\n或刷涂防\t度地提高接地端子的防腐蚀能\n锈漆。\t力，接线完成后建议在端子外部均匀涂抹硅胶\n\t\t通讯端子\n要求\t连接\t\n\t注\t意\t\t\nE\tMU\t300A 采用\tRS485 方式与外部设备连接\t时，务必确保外部设备已具备防雷保护功能。",
+      "table_cells": [
+        [
+          null,
+          "编号",
+          null,
+          "定义",
+          "备注"
+        ],
+        [
+          null,
+          "A",
+          null,
+          "M6 x 12 螺栓",
+          "包含在供货范围。"
+        ],
+        [
+          null,
+          "B",
+          null,
+          "OT 端子",
+          "包含在供货范围。"
+        ],
+        [
+          null,
+          "C",
+          null,
+          "接地孔",
+          "-"
+        ],
+        [
+          "S\n接",
+          "485\n线前",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "为最大限\n或刷涂防",
+          "度地提高接地端子的防腐蚀能\n锈漆。",
+          "力，接线完成后建议在端子外部均匀涂抹硅胶"
+        ],
+        [
+          null,
+          null,
+          "通讯端子\n要求",
+          "连接",
+          null
+        ],
+        [
+          null,
+          "注",
+          "意",
+          null,
+          null
+        ],
+        [
+          "E",
+          "MU",
+          "300A 采用",
+          "RS485 方式与外部设备连接",
+          "时，务必确保外部设备已具备防雷保护功能。"
+        ]
+      ],
+      "bbox": [
+        101.736,
+        214.985,
+        462.366,
+        427.521
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-12B1B1AFE96ADE84",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 33,
+      "printed_page_label": "27",
+      "block_order": 2,
+      "section_id": "SEC-030FF5F5FC3212CF",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.2 RS485通讯端子连接"
+      ],
+      "section_title": "4.6.2 RS485通讯端子连接",
+      "block_type": "paragraph",
+      "text": "线缆要求",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        443.452,
+        138.366,
+        454.405
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C1BA5ECEEBD08A94",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 33,
+      "printed_page_label": "27",
+      "block_order": 3,
+      "section_id": "SEC-030FF5F5FC3212CF",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.2 RS485通讯端子连接"
+      ],
+      "section_title": "4.6.2 RS485通讯端子连接",
+      "block_type": "paragraph",
+      "text": "设备支持RS485 通讯线缆规格为2 x (0.75~1.5)mm2。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        460.475,
+        319.167,
+        472.293
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-58E3EDBADC674A48",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 33,
+      "printed_page_label": "27",
+      "block_order": 4,
+      "section_id": "SEC-030FF5F5FC3212CF",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.2 RS485通讯端子连接"
+      ],
+      "section_title": "4.6.2 RS485通讯端子连接",
+      "block_type": "paragraph",
+      "text": "接线步骤",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        478.14,
+        138.366,
+        489.093
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3C030983C1948553",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 33,
+      "printed_page_label": "27",
+      "block_order": 5,
+      "section_id": "SEC-030FF5F5FC3212CF",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.2 RS485通讯端子连接"
+      ],
+      "section_title": "4.6.2 RS485通讯端子连接",
+      "block_type": "paragraph",
+      "text": "步骤 1 拧开设备底部的“RS485”防水端子。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        500.868,
+        243.252,
+        513.351
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3D92288A7FC3F767",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 33,
+      "printed_page_label": "27",
+      "block_order": 6,
+      "section_id": "SEC-030FF5F5FC3212CF",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.2 RS485通讯端子连接"
+      ],
+      "section_title": "4.6.2 RS485通讯端子连接",
+      "block_type": "paragraph",
+      "text": "步骤 2 将从外部引入的RS485 线缆，穿过设备内部的“RS485”防水端子后，接到设备内部的通讯端",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        517.368,
+        464.265,
+        529.851
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F6DC687E90CF4DA8",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 33,
+      "printed_page_label": "27",
+      "block_order": 7,
+      "section_id": "SEC-030FF5F5FC3212CF",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.2 RS485通讯端子连接"
+      ],
+      "section_title": "4.6.2 RS485通讯端子连接",
+      "block_type": "paragraph",
+      "text": "子处。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        532.29,
+        128.736,
+        543.243
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2DE42ED227776AE5",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 33,
+      "printed_page_label": "27",
+      "block_order": 8,
+      "section_id": "SEC-030FF5F5FC3212CF",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.2 RS485通讯端子连接"
+      ],
+      "section_title": "4.6.2 RS485通讯端子连接",
+      "block_type": "paragraph",
+      "text": "步骤 3 使用剥线钳，剥去线缆的防护层。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        547.368,
+        236.736,
+        559.851
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-2D8E1B6D4BCB75A2",
+  "section_path": [
+    "2 产品描述",
+    "2.3 产品介绍"
+  ],
+  "section_title": "2.3 产品介绍",
+  "start_pdf_page": 16,
+  "end_pdf_page": 17,
+  "blocks": [
+    {
+      "block_id": "BLK-FB33558EDF0B1D71",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 16,
+      "printed_page_label": "6",
+      "block_order": 0,
+      "section_id": "SEC-2D8E1B6D4BCB75A2",
+      "section_path": [
+        "2 产品描述",
+        "2.3 产品介绍"
+      ],
+      "section_title": "2.3 产品介绍",
+      "block_type": "paragraph",
+      "text": "用户手册\n2 产品描述",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E1C327278246983A",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 16,
+      "printed_page_label": "6",
+      "block_order": 1,
+      "section_id": "SEC-2D8E1B6D4BCB75A2",
+      "section_path": [
+        "2 产品描述",
+        "2.3 产品介绍"
+      ],
+      "section_title": "2.3 产品介绍",
+      "block_type": "heading",
+      "text": "2.3 产品介绍",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        71.658,
+        128.873,
+        86.262
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6366AC7A36560DB2",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 16,
+      "printed_page_label": "6",
+      "block_order": 2,
+      "section_id": "SEC-2D8E1B6D4BCB75A2",
+      "section_path": [
+        "2 产品描述",
+        "2.3 产品介绍"
+      ],
+      "section_title": "2.3 产品介绍",
+      "block_type": "paragraph",
+      "text": "外观",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        97.956,
+        106.193,
+        108.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-280B19ADFD874C31",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 16,
+      "printed_page_label": "6",
+      "block_order": 3,
+      "section_id": "SEC-2D8E1B6D4BCB75A2",
+      "section_path": [
+        "2 产品描述",
+        "2.3 产品介绍"
+      ],
+      "section_title": "2.3 产品介绍",
+      "block_type": "table",
+      "text": "编号\t说明\t\t\t\nA\t指示灯\t\t\t\nB\t接线端子\t\t\t\n示灯\t\t\t\t\n指示灯\t\t名称\t状态\t状态说明\nPWR\t\t电源指示灯\t常亮\t供电正常\n\t\t\t灭\t供电异常\nRUN\t\t运行指示灯\t闪烁\t运行正常\n\t\t\t灭/常亮\t运行异常\nWLAN\t\tWLAN 指示\n灯\t灭\t暂无WLAN 功能支持",
+      "table_cells": [
+        [
+          "编号",
+          "说明",
+          null,
+          null,
+          null
+        ],
+        [
+          "A",
+          "指示灯",
+          null,
+          null,
+          null
+        ],
+        [
+          "B",
+          "接线端子",
+          null,
+          null,
+          null
+        ],
+        [
+          "示灯",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "指示灯",
+          null,
+          "名称",
+          "状态",
+          "状态说明"
+        ],
+        [
+          "PWR",
+          null,
+          "电源指示灯",
+          "常亮",
+          "供电正常"
+        ],
+        [
+          null,
+          null,
+          null,
+          "灭",
+          "供电异常"
+        ],
+        [
+          "RUN",
+          null,
+          "运行指示灯",
+          "闪烁",
+          "运行正常"
+        ],
+        [
+          null,
+          null,
+          null,
+          "灭/常亮",
+          "运行异常"
+        ],
+        [
+          "WLAN",
+          null,
+          "WLAN 指示\n灯",
+          "灭",
+          "暂无WLAN 功能支持"
+        ]
+      ],
+      "bbox": [
+        96.861,
+        411.022,
+        419.373,
+        642.933
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2F4309740282D108",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 16,
+      "printed_page_label": "6",
+      "block_order": 4,
+      "section_id": "SEC-2D8E1B6D4BCB75A2",
+      "section_path": [
+        "2 产品描述",
+        "2.3 产品介绍"
+      ],
+      "section_title": "2.3 产品介绍",
+      "block_type": "paragraph",
+      "text": "FAULT\n故障指示灯\n常亮\n所接逆变器存在告警或故障",
+      "table_cells": null,
+      "bbox": [
+        96.861,
+        648.839,
+        419.373,
+        659.917
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F1773C490E9F448A",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "7",
+      "block_order": 0,
+      "section_id": "SEC-2D8E1B6D4BCB75A2",
+      "section_path": [
+        "2 产品描述",
+        "2.3 产品介绍"
+      ],
+      "section_title": "2.3 产品介绍",
+      "block_type": "paragraph",
+      "text": "用户手册\n2 产品描述",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5E39F972389DBAD0",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "7",
+      "block_order": 1,
+      "section_id": "SEC-2D8E1B6D4BCB75A2",
+      "section_path": [
+        "2 产品描述",
+        "2.3 产品介绍"
+      ],
+      "section_title": "2.3 产品介绍",
+      "block_type": "paragraph",
+      "text": "指示灯\n名称\n状态\n状态说明",
+      "table_cells": null,
+      "bbox": [
+        111.036,
+        74.539,
+        359.548,
+        84.883
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-001D01D63B826B76",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "7",
+      "block_order": 2,
+      "section_id": "SEC-2D8E1B6D4BCB75A2",
+      "section_path": [
+        "2 产品描述",
+        "2.3 产品介绍"
+      ],
+      "section_title": "2.3 产品介绍",
+      "block_type": "paragraph",
+      "text": "灭\n所接逆变器无故障",
+      "table_cells": null,
+      "bbox": [
+        263.727,
+        93.606,
+        397.546,
+        104.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-52041C0029DEC214",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "7",
+      "block_order": 3,
+      "section_id": "SEC-2D8E1B6D4BCB75A2",
+      "section_path": [
+        "2 产品描述",
+        "2.3 产品介绍"
+      ],
+      "section_title": "2.3 产品介绍",
+      "block_type": "paragraph",
+      "text": "外观尺寸",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        126.006,
+        138.366,
+        136.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

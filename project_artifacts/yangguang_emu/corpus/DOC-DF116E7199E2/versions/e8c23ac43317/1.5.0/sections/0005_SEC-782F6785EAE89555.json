@@ -1,0 +1,41 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-782F6785EAE89555",
+  "section_path": [
+    "3 工业网络安全"
+  ],
+  "section_title": "3 工业网络安全",
+  "start_pdf_page": 8,
+  "end_pdf_page": 8,
+  "blocks": [
+    {
+      "block_id": "BLK-93E5591956EDB451",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "4",
+      "block_order": 0,
+      "section_id": "SEC-782F6785EAE89555",
+      "section_path": [
+        "3 工业网络安全"
+      ],
+      "section_title": "3 工业网络安全",
+      "block_type": "heading",
+      "text": "3\n工业网络安全",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        98.112,
+        190.451,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

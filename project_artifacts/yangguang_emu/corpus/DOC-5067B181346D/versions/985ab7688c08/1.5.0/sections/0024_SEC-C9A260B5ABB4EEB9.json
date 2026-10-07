@@ -1,0 +1,241 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-C9A260B5ABB4EEB9",
+  "section_path": [
+    "3 机械安装",
+    "3.5 安装方法",
+    "3.5.2 支架式安装"
+  ],
+  "section_title": "3.5.2 支架式安装",
+  "start_pdf_page": 23,
+  "end_pdf_page": 23,
+  "blocks": [
+    {
+      "block_id": "BLK-A13EE23D25699BBC",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 23,
+      "printed_page_label": "17",
+      "block_order": 0,
+      "section_id": "SEC-C9A260B5ABB4EEB9",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.2 支架式安装"
+      ],
+      "section_title": "3.5.2 支架式安装",
+      "block_type": "paragraph",
+      "text": "用户手册\n3 机械安装",
+      "table_cells": null,
+      "bbox": [
+        74.614,
+        48.088,
+        463.968,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5B725AD6DFEEB366",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 23,
+      "printed_page_label": "17",
+      "block_order": 1,
+      "section_id": "SEC-C9A260B5ABB4EEB9",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.2 支架式安装"
+      ],
+      "section_title": "3.5.2 支架式安装",
+      "block_type": "paragraph",
+      "text": "膨胀螺管的长度，需结合打孔深度，合理选择。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        215.839,
+        317.735,
+        226.792
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0FFFEB6BCE01BCB7",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 23,
+      "printed_page_label": "17",
+      "block_order": 2,
+      "section_id": "SEC-C9A260B5ABB4EEB9",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.2 支架式安装"
+      ],
+      "section_title": "3.5.2 支架式安装",
+      "block_type": "paragraph",
+      "text": "步骤 4 按照螺母、弹垫、平垫、挂耳、膨胀螺管的顺序，将设备固定在墙面上。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        244.067,
+        389.736,
+        256.55
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0241913BF51CF3B2",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 23,
+      "printed_page_label": "17",
+      "block_order": 3,
+      "section_id": "SEC-C9A260B5ABB4EEB9",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.2 支架式安装"
+      ],
+      "section_title": "3.5.2 支架式安装",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        419.156,
+        126.36,
+        430.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-156C7A324E584D05",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 23,
+      "printed_page_label": "17",
+      "block_order": 4,
+      "section_id": "SEC-C9A260B5ABB4EEB9",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.2 支架式安装"
+      ],
+      "section_title": "3.5.2 支架式安装",
+      "block_type": "heading",
+      "text": "3.5.2 支架式安装",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        445.39,
+        147.86,
+        457.56
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-18AAF42D33074850",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 23,
+      "printed_page_label": "17",
+      "block_order": 5,
+      "section_id": "SEC-C9A260B5ABB4EEB9",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.2 支架式安装"
+      ],
+      "section_title": "3.5.2 支架式安装",
+      "block_type": "paragraph",
+      "text": "步骤 1 根据挂耳的安装尺寸，在需要安装的支架上，标注钻孔位置，并根据螺栓的规格在标注位置",
+      "table_cells": null,
+      "bbox": [
+        70.865,
+        469.284,
+        461.735,
+        481.767
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D9596C086F1FE855",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 23,
+      "printed_page_label": "17",
+      "block_order": 6,
+      "section_id": "SEC-C9A260B5ABB4EEB9",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.2 支架式安装"
+      ],
+      "section_title": "3.5.2 支架式安装",
+      "block_type": "paragraph",
+      "text": "处钻孔。",
+      "table_cells": null,
+      "bbox": [
+        101.735,
+        484.206,
+        137.735,
+        495.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-28DDBECD39FDCC18",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 23,
+      "printed_page_label": "17",
+      "block_order": 7,
+      "section_id": "SEC-C9A260B5ABB4EEB9",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法",
+        "3.5.2 支架式安装"
+      ],
+      "section_title": "3.5.2 支架式安装",
+      "block_type": "paragraph",
+      "text": "步骤 2 根据M10x45 螺栓、挂耳，安装支架、螺母的顺序固定。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        606.571,
+        327.258,
+        619.054
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

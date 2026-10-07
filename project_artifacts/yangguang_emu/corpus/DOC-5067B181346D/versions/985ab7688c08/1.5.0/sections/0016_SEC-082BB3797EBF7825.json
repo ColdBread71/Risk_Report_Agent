@@ -1,0 +1,340 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-082BB3797EBF7825",
+  "section_path": [
+    "2 产品介绍",
+    "2.3 外观尺寸"
+  ],
+  "section_title": "2.3 外观尺寸",
+  "start_pdf_page": 17,
+  "end_pdf_page": 17,
+  "blocks": [
+    {
+      "block_id": "BLK-F4317E4B42147BD8",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "11",
+      "block_order": 0,
+      "section_id": "SEC-082BB3797EBF7825",
+      "section_path": [
+        "2 产品介绍",
+        "2.3 外观尺寸"
+      ],
+      "section_title": "2.3 外观尺寸",
+      "block_type": "paragraph",
+      "text": "用户手册\n2 产品介绍",
+      "table_cells": null,
+      "bbox": [
+        74.619,
+        48.088,
+        463.966,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-00D9869B8DFE2AC0",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "11",
+      "block_order": 1,
+      "section_id": "SEC-082BB3797EBF7825",
+      "section_path": [
+        "2 产品介绍",
+        "2.3 外观尺寸"
+      ],
+      "section_title": "2.3 外观尺寸",
+      "block_type": "paragraph",
+      "text": "辅助运维",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        71.556,
+        138.366,
+        82.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C5E247A0475DDC61",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "11",
+      "block_order": 2,
+      "section_id": "SEC-082BB3797EBF7825",
+      "section_path": [
+        "2 产品介绍",
+        "2.3 外观尺寸"
+      ],
+      "section_title": "2.3 外观尺寸",
+      "block_type": "list",
+      "text": "•\n支持对逆变器进行批量参数配置与软件升级。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        89.706,
+        296.541,
+        100.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4DD9E143EADBBD71",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "11",
+      "block_order": 3,
+      "section_id": "SEC-082BB3797EBF7825",
+      "section_path": [
+        "2 产品介绍",
+        "2.3 外观尺寸"
+      ],
+      "section_title": "2.3 外观尺寸",
+      "block_type": "list",
+      "text": "•\n支持电网控制指令与功率因素控制，支持30ms 无功快速调度。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        104.706,
+        368.046,
+        115.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2FB49C1856C007D6",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "11",
+      "block_order": 4,
+      "section_id": "SEC-082BB3797EBF7825",
+      "section_path": [
+        "2 产品介绍",
+        "2.3 外观尺寸"
+      ],
+      "section_title": "2.3 外观尺寸",
+      "block_type": "paragraph",
+      "text": "安全可靠",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        122.856,
+        138.366,
+        133.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1F96CCB5A800B6A0",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "11",
+      "block_order": 5,
+      "section_id": "SEC-082BB3797EBF7825",
+      "section_path": [
+        "2 产品介绍",
+        "2.3 外观尺寸"
+      ],
+      "section_title": "2.3 外观尺寸",
+      "block_type": "list",
+      "text": "•\n端口内置电气隔离和防雷模块，安全可靠。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        141.006,
+        287.541,
+        151.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A10010A4D4BAC947",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "11",
+      "block_order": 6,
+      "section_id": "SEC-082BB3797EBF7825",
+      "section_path": [
+        "2 产品介绍",
+        "2.3 外观尺寸"
+      ],
+      "section_title": "2.3 外观尺寸",
+      "block_type": "list",
+      "text": "•\n集成反PID 功能、绝缘阻抗检测（ISO）功能。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        156.006,
+        304.542,
+        166.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FCB095648A1B430F",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "11",
+      "block_order": 7,
+      "section_id": "SEC-082BB3797EBF7825",
+      "section_path": [
+        "2 产品介绍",
+        "2.3 外观尺寸"
+      ],
+      "section_title": "2.3 外观尺寸",
+      "block_type": "list",
+      "text": "•\nIP66 防护等级，保障设备户外长期稳定运行。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        171.006,
+        299.304,
+        181.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ABFB6C1417D2B1FC",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "11",
+      "block_order": 8,
+      "section_id": "SEC-082BB3797EBF7825",
+      "section_path": [
+        "2 产品介绍",
+        "2.3 外观尺寸"
+      ],
+      "section_title": "2.3 外观尺寸",
+      "block_type": "heading",
+      "text": "2.3 外观尺寸",
+      "table_cells": null,
+      "bbox": [
+        70.86,
+        201.258,
+        143.052,
+        215.862
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7565552BC7A2160B",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "11",
+      "block_order": 9,
+      "section_id": "SEC-082BB3797EBF7825",
+      "section_path": [
+        "2 产品介绍",
+        "2.3 外观尺寸"
+      ],
+      "section_title": "2.3 外观尺寸",
+      "block_type": "paragraph",
+      "text": "产品尺寸如下图所示。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        228.906,
+        192.363,
+        239.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E63D3A9CA9F92DCD",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "11",
+      "block_order": 10,
+      "section_id": "SEC-082BB3797EBF7825",
+      "section_path": [
+        "2 产品介绍",
+        "2.3 外观尺寸"
+      ],
+      "section_title": "2.3 外观尺寸",
+      "block_type": "figure_caption",
+      "text": "图 2-3 产品尺寸标注（单位：mm）",
+      "table_cells": null,
+      "bbox": [
+        214.542,
+        445.012,
+        355.545,
+        455.965
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F092698C1A74597E",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 17,
+      "printed_page_label": "11",
+      "block_order": 11,
+      "section_id": "SEC-082BB3797EBF7825",
+      "section_path": [
+        "2 产品介绍",
+        "2.3 外观尺寸"
+      ],
+      "section_title": "2.3 外观尺寸",
+      "block_type": "paragraph",
+      "text": "*图片仅供参考，请以实物为准。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        467.162,
+        231.867,
+        478.115
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,807 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-C7FB3ABEA252D593",
+  "section_path": [
+    "4 纵深防御战略",
+    "4.4 用户的缓解措施"
+  ],
+  "section_title": "4.4 用户的缓解措施",
+  "start_pdf_page": 10,
+  "end_pdf_page": 11,
+  "blocks": [
+    {
+      "block_id": "BLK-26A4B8B218CB053B",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "6",
+      "block_order": 0,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "paragraph",
+      "text": "用户网络安全操作手册\n4 纵深防御战略",
+      "table_cells": null,
+      "bbox": [
+        60.443,
+        48.088,
+        449.79,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A31FF599B1E26CE2",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "6",
+      "block_order": 1,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "table",
+      "text": "安全功能\t\t说明\t安全建议\n\t\t安全\t通信\tHTTPS/北向IEC104/MODBUS/等\n协议TLS 加密通信\t建议采用TLS 加密通信\n\t\t安全\t对时\t支持NTS 对时\t建议采用NTS 对时，以\n及定期更新证书\n\t\t恢复\t出厂配置\t恢复出厂设置功能，删除设备数据\t建议谨慎操作\n\t\t安全\t回溯\t操作日志、syslog 记录功能\t建议定期分析安全日志\n\t\t安全\t更新\t软件和固件更新\t建议关注产品相关安全公\n告，及时升级到最新版本\n\t\t\t\t\t\n\t\t\t上述安全功能作为\n多层次多维度的对\n储的私密性、可用\n能验证的需求，可\t一个整体，从物理环境、计算机操作系\nEMU300A 及其毗邻的智能配电系统提\n性、完整性和用户操作与访问的可审计\n能需要对恶意软件保护功能进行验证。\t统、EMU300A 系统组件等\n供保护，保证信息通讯和存\n性。出于对恶意软件保护功\n\t\t\t\t\t\n\t\t\t警告\t\t\n\t•\n•\n•\t可能\n请\n请\n请\n不遵\t损害系统可用性、完\n勿使用真实的恶意\n勿从不可信任的来\n勿在生产系统进行\n循这些说明可能会导\t整性和保密性\n软件进行恶意软件保护功能测试。\n源下载任何反病毒测试文件。\n恶意软件保护功能测试。\n致设备损坏、敏感数据泄露或数据永久\t丢失。",
+      "table_cells": [
+        [
+          null,
+          null,
+          "安全功能",
+          null,
+          "说明",
+          "安全建议"
+        ],
+        [
+          null,
+          null,
+          "安全",
+          "通信",
+          "HTTPS/北向IEC104/MODBUS/等\n协议TLS 加密通信",
+          "建议采用TLS 加密通信"
+        ],
+        [
+          null,
+          null,
+          "安全",
+          "对时",
+          "支持NTS 对时",
+          "建议采用NTS 对时，以\n及定期更新证书"
+        ],
+        [
+          null,
+          null,
+          "恢复",
+          "出厂配置",
+          "恢复出厂设置功能，删除设备数据",
+          "建议谨慎操作"
+        ],
+        [
+          null,
+          null,
+          "安全",
+          "回溯",
+          "操作日志、syslog 记录功能",
+          "建议定期分析安全日志"
+        ],
+        [
+          null,
+          null,
+          "安全",
+          "更新",
+          "软件和固件更新",
+          "建议关注产品相关安全公\n告，及时升级到最新版本"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          "上述安全功能作为\n多层次多维度的对\n储的私密性、可用\n能验证的需求，可",
+          "一个整体，从物理环境、计算机操作系\nEMU300A 及其毗邻的智能配电系统提\n性、完整性和用户操作与访问的可审计\n能需要对恶意软件保护功能进行验证。",
+          "统、EMU300A 系统组件等\n供保护，保证信息通讯和存\n性。出于对恶意软件保护功"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          "警告",
+          null,
+          null
+        ],
+        [
+          null,
+          "•\n•\n•",
+          "可能\n请\n请\n请\n不遵",
+          "损害系统可用性、完\n勿使用真实的恶意\n勿从不可信任的来\n勿在生产系统进行\n循这些说明可能会导",
+          "整性和保密性\n软件进行恶意软件保护功能测试。\n源下载任何反病毒测试文件。\n恶意软件保护功能测试。\n致设备损坏、敏感数据泄露或数据永久",
+          "丢失。"
+        ]
+      ],
+      "bbox": [
+        88.19,
+        76.189,
+        448.193,
+        417.225
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B2FF43D3D8F682EC",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "6",
+      "block_order": 4,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "heading",
+      "text": "4.4 用户的缓解措施",
+      "table_cells": null,
+      "bbox": [
+        56.69,
+        530.158,
+        164.87,
+        544.762
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-27994D7BD485F39F",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "6",
+      "block_order": 5,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "paragraph",
+      "text": "设备安全",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        556.456,
+        124.19,
+        567.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AF5815D0F7E277A5",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "6",
+      "block_order": 6,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "paragraph",
+      "text": "企业的物理安全存在漏洞时， 未经授权的人员便有机会进入生产环境， 损坏或修改生产设",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        574.606,
+        444.194,
+        585.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BDEC2C4D8C8E8B36",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "6",
+      "block_order": 7,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "paragraph",
+      "text": "备，导致机密信息丢失。 因此， 必须采取适当措施保护公司所在地和关键生产区域。",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        588.106,
+        426.194,
+        599.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C65542BD825C9290",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "6",
+      "block_order": 8,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "list",
+      "text": "•\n对关键生产区域进行单独的人员出入控制。",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        603.106,
+        273.365,
+        614.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F98DE46C72A1F829",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "6",
+      "block_order": 9,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "list",
+      "text": "•\n重要组件安装在可上锁的控制柜/控制室内。",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        618.106,
+        275.867,
+        629.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B5B2DA70170FDE95",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "6",
+      "block_order": 10,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "list",
+      "text": "•\n控制柜/控制室必须配备锁， 并有监控和报警设施。 请勿使用结构简单的锁， 比如： 万\n能锁、 三角锁、 四角锁或双齿锁。",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        633.106,
+        447.866,
+        657.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F710D860C74B4A06",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 10,
+      "printed_page_label": "6",
+      "block_order": 11,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "list",
+      "text": "•\n保护电源线和数据线。",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        661.606,
+        192.365,
+        672.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DA4BE6316799DA62",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "7",
+      "block_order": 0,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "paragraph",
+      "text": "用户网络安全操作手册\n4 纵深防御战略",
+      "table_cells": null,
+      "bbox": [
+        74.613,
+        48.088,
+        463.967,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F95C116D465FFA4C",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "7",
+      "block_order": 1,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "list",
+      "text": "•\n必须保护产品和其他驱动组件之间的电流和数据流不受他人蓄意操纵， 例如： 切断线\n路。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        72.906,
+        454.536,
+        97.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-91073216560EB387",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "7",
+      "block_order": 2,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "list",
+      "text": "•\n移动数据存储介质（例如 U 盘和存储卡） 的使用指南。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        101.406,
+        337.536,
+        112.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-525F38DFF781D0C4",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "7",
+      "block_order": 3,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "list",
+      "text": "•\n操作单元使用指南， 例如 PG/PC 或移动终端设备。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        116.406,
+        323.046,
+        127.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-69FCE72C42994FF6",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "7",
+      "block_order": 4,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "paragraph",
+      "text": "网络安全",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        136.556,
+        138.366,
+        147.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F15FEACD7EBFF705",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "7",
+      "block_order": 5,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "paragraph",
+      "text": "网络安全涵盖了和规划、 实施、 监测网络安全相关的所有措施， 它包括了对所有接口的安\n全审查。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        154.706,
+        460.863,
+        179.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A6E3C93078316D21",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "7",
+      "block_order": 6,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "list",
+      "text": "•\n应进行网络隔离，最简单的情况， 通过一个防火墙实现隔离。 该防火墙可以控制和检查\n不同网络之间的通信。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        183.206,
+        463.536,
+        207.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9F5E44DC2AD36DE5",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "7",
+      "block_order": 7,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "list",
+      "text": "•\n建议部署防恶意代码设备。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        211.706,
+        224.541,
+        222.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EBA801C9172D3138",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "7",
+      "block_order": 8,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "paragraph",
+      "text": "系统完整性",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        231.856,
+        147.366,
+        242.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8F6370832FDE9250",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "7",
+      "block_order": 9,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "paragraph",
+      "text": "系统完整性： 指数据完好无损或正确， 也指系统可以正常运行。 保护系统完整性的措施可\n以防止数据和系统功能被非法操纵， 并监测数据/功能操纵事件。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        250.006,
+        460.863,
+        274.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-54AA726BD0711BC2",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "7",
+      "block_order": 10,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "list",
+      "text": "•\n应只开启必要的服务和端口， 而关闭所有不必要的服务和端口。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        278.506,
+        371.043,
+        289.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F7284380BA3AF741",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "7",
+      "block_order": 11,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "list",
+      "text": "•\n对用户账号使用安全的登录密码，密码必须8 位以上，始终包含大写字母、 小写字母、\n数字和特殊字符中的三类。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        293.506,
+        461.547,
+        317.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3FC2DAD3CEBBC860",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "7",
+      "block_order": 12,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "list",
+      "text": "•\n减少用户账号数量到所需的最小数量。 禁用或删除未使用的用户账号。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        322.006,
+        398.043,
+        332.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A97E2435C2EE57FE",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "7",
+      "block_order": 13,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "list",
+      "text": "•\n仅为用户账号分配所需的权限。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        337.006,
+        242.541,
+        347.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0965F40C703F7327",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "7",
+      "block_order": 14,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "list",
+      "text": "•\n定期对敏感数据进行备份。 妥善保护好备份数据， 防止擅自访问、 数据丢失和被操纵。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        352.006,
+        466.038,
+        362.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DA8EEE5EAB7E32E1",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 11,
+      "printed_page_label": "7",
+      "block_order": 15,
+      "section_id": "SEC-C7FB3ABEA252D593",
+      "section_path": [
+        "4 纵深防御战略",
+        "4.4 用户的缓解措施"
+      ],
+      "section_title": "4.4 用户的缓解措施",
+      "block_type": "list",
+      "text": "•\n关注产品相关的新安全公告，请遵循产品安全公告中的说明。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        367.006,
+        359.541,
+        377.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

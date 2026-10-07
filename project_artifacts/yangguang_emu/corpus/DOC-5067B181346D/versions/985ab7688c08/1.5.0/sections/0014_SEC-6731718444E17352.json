@@ -1,0 +1,232 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-6731718444E17352",
+  "section_path": [
+    "2 产品介绍",
+    "2.1 组网应用"
+  ],
+  "section_title": "2.1 组网应用",
+  "start_pdf_page": 15,
+  "end_pdf_page": 15,
+  "blocks": [
+    {
+      "block_id": "BLK-FFD438C63F25BCC4",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 15,
+      "printed_page_label": "9",
+      "block_order": 1,
+      "section_id": "SEC-6731718444E17352",
+      "section_path": [
+        "2 产品介绍",
+        "2.1 组网应用"
+      ],
+      "section_title": "2.1 组网应用",
+      "block_type": "heading",
+      "text": "2.1 组网应用",
+      "table_cells": null,
+      "bbox": [
+        70.86,
+        144.258,
+        143.052,
+        158.862
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7DF8897D9BB9225B",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 15,
+      "printed_page_label": "9",
+      "block_order": 2,
+      "section_id": "SEC-6731718444E17352",
+      "section_path": [
+        "2 产品介绍",
+        "2.1 组网应用"
+      ],
+      "section_title": "2.1 组网应用",
+      "block_type": "paragraph",
+      "text": "能量管理单元EMU300A 内部配置有数据采集器Logger5000。基于Logger5000 的功能，\nEMU300A 可参与多种场景下的组网应用。EMU300A 可通过RS485 总线方式接入光伏发电\n系统中的逆变器、箱变、环境监测仪、电表等，还可以通过PLC 总线方式接入阳光电源生产\n的具备PLC 功能的组串式逆变器。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        171.906,
+        466.377,
+        223.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7FA29D70D79F1001",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 15,
+      "printed_page_label": "9",
+      "block_order": 3,
+      "section_id": "SEC-6731718444E17352",
+      "section_path": [
+        "2 产品介绍",
+        "2.1 组网应用"
+      ],
+      "section_title": "2.1 组网应用",
+      "block_type": "list",
+      "text": "•\n能量管理单元可以将采集到的设备数据，通过核心交换机传输至后台站控，例如\nInsight、SCADA。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        233.906,
+        431.538,
+        258.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-58481F3BF8C8F982",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 15,
+      "printed_page_label": "9",
+      "block_order": 4,
+      "section_id": "SEC-6731718444E17352",
+      "section_path": [
+        "2 产品介绍",
+        "2.1 组网应用"
+      ],
+      "section_title": "2.1 组网应用",
+      "block_type": "list",
+      "text": "•\n能量管理单元也可将采集到的设备数据，直接通过4G 路由器传输至阳光云。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        262.406,
+        421.044,
+        273.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-88F7F2D2F44E6545",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 15,
+      "printed_page_label": "9",
+      "block_order": 5,
+      "section_id": "SEC-6731718444E17352",
+      "section_path": [
+        "2 产品介绍",
+        "2.1 组网应用"
+      ],
+      "section_title": "2.1 组网应用",
+      "block_type": "paragraph",
+      "text": "通过核心交换机连接至后台站控",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        276.056,
+        228.363,
+        287.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-202781F4D7F5C1D3",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 15,
+      "printed_page_label": "9",
+      "block_order": 6,
+      "section_id": "SEC-6731718444E17352",
+      "section_path": [
+        "2 产品介绍",
+        "2.1 组网应用"
+      ],
+      "section_title": "2.1 组网应用",
+      "block_type": "paragraph",
+      "text": "能量管理单元通过核心交换机连接至Insight 或SCADA 的方式，如下图所示。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        294.206,
+        411.891,
+        305.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2FA416363E293835",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 15,
+      "printed_page_label": "9",
+      "block_order": 7,
+      "section_id": "SEC-6731718444E17352",
+      "section_path": [
+        "2 产品介绍",
+        "2.1 组网应用"
+      ],
+      "section_title": "2.1 组网应用",
+      "block_type": "figure_caption",
+      "text": "图 2-1 环形组网方式",
+      "table_cells": null,
+      "bbox": [
+        244.539,
+        595.076,
+        325.548,
+        606.029
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A117B2CB2E7B47A8",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 15,
+      "printed_page_label": "9",
+      "block_order": 8,
+      "section_id": "SEC-6731718444E17352",
+      "section_path": [
+        "2 产品介绍",
+        "2.1 组网应用"
+      ],
+      "section_title": "2.1 组网应用",
+      "block_type": "paragraph",
+      "text": "当采用环形组网方式时，一个环网中最多可接入15 台EMU300A。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        617.226,
+        367.146,
+        628.179
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

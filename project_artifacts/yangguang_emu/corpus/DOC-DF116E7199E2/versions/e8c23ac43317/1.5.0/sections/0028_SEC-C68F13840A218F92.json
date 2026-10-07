@@ -1,0 +1,70 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-C68F13840A218F92",
+  "section_path": [
+    "10 安全配置指南",
+    "10.5 安全存储"
+  ],
+  "section_title": "10.5 安全存储",
+  "start_pdf_page": 26,
+  "end_pdf_page": 26,
+  "blocks": [
+    {
+      "block_id": "BLK-17F69D2508F510DB",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 26,
+      "printed_page_label": "22",
+      "block_order": 5,
+      "section_id": "SEC-C68F13840A218F92",
+      "section_path": [
+        "10 安全配置指南",
+        "10.5 安全存储"
+      ],
+      "section_title": "10.5 安全存储",
+      "block_type": "heading",
+      "text": "10.5 安全存储",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        353.658,
+        135.545,
+        368.262
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-402F20D08666D8CF",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 26,
+      "printed_page_label": "22",
+      "block_order": 6,
+      "section_id": "SEC-C68F13840A218F92",
+      "section_path": [
+        "10 安全配置指南",
+        "10.5 安全存储"
+      ],
+      "section_title": "10.5 安全存储",
+      "block_type": "paragraph",
+      "text": "Logger5000 依托于芯片TrustZone 及OP-TEE 安全OS，对上层应用提供一套在安全环境下\n执行的加解密及存储数据接口，主要功能实现基于客户端应用（CA）对安全应用（TA）调\n用，实现安全环境下敏感数据进行加密存储，解密使用，包括用户密码，终端证书对应的私\n钥等数据。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        381.306,
+        452.93,
+        432.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

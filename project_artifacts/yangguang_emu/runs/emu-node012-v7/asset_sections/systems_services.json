@@ -1,0 +1,687 @@
+{
+  "schema_version": "asset_section_checkpoint.v1",
+  "fingerprint": "e431eed4b263d0630ebcca44a79f35867f44fc73c31642484e73839e0d3a8fd3",
+  "cache_inputs": {
+    "section_name": "systems_services",
+    "source_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "text_model": "qwen-plus",
+    "asset_rule_version": "node2_asset_rules.v2.4",
+    "material_sha256": "6fa2d9148f6b01a9c80fddb1353b1e52e18d467399b77ab1569ed9d454924d52",
+    "prompt_sha256": "d4f271425644d21fe2a5d31cdf08a2bde50b090b106beab63d6520efdcd12ebb",
+    "schema_sha256": "7b5b978b3b07784109f5a4f6afe1d8101320aef8a1fc2034ef3a676fdabd13cf"
+  },
+  "result": {
+    "assets": [
+      {
+        "asset_id": "ASSET-001",
+        "name": "阳光云平台",
+        "asset_type": "service",
+        "status": "external_affected",
+        "related_function_ids": [
+          "FUNC-005",
+          "FUNC-006",
+          "FUNC-007",
+          "FUNC-008",
+          "FUNC-012",
+          "FUNC-020",
+          "FUNC-022"
+        ],
+        "function_relationships": [
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "transmits",
+            "rationale": "Logger5000通过IEC104协议北向转发数据至阳光云平台（FACT-002, FACT-019）"
+          },
+          {
+            "function_id": "FUNC-006",
+            "relationship_type": "transmits",
+            "rationale": "Logger5000通过Modbus协议北向转发数据至阳光云平台（FACT-002, FACT-019）"
+          },
+          {
+            "function_id": "FUNC-007",
+            "relationship_type": "transmits",
+            "rationale": "Logger5000通过MQTT协议北向转发数据至阳光云平台（FACT-002, FACT-019）"
+          },
+          {
+            "function_id": "FUNC-008",
+            "relationship_type": "transmits",
+            "rationale": "Logger5000通过GOOSE协议北向转发数据至阳光云平台（FACT-002, FACT-019）"
+          },
+          {
+            "function_id": "FUNC-012",
+            "relationship_type": "transmits",
+            "rationale": "Logger5000通过4G路由器将设备数据直接传输至阳光云平台（FACT-005）"
+          },
+          {
+            "function_id": "FUNC-020",
+            "relationship_type": "depends_on",
+            "rationale": "时钟源可配置为‘阳光云’，但仅在与阳光云平台连接前提下有效（FACT-011）"
+          },
+          {
+            "function_id": "FUNC-022",
+            "relationship_type": "transmits",
+            "rationale": "阳光云服务按地域划分站点，EMU300A接入对应区域站（FACT-007）"
+          }
+        ],
+        "description": "由阳光电源运营的远程云服务平台，接收并处理EMU300A上传的运行数据、日志及遥测信息，提供监控、分析与远程维护能力；其服务可用性、数据完整性及通信机密性直接影响EMU300A的远程功能实现。",
+        "location": null,
+        "value": "支撑能量管理单元的远程监控、故障诊断、功率调度优化及合规数据上报；若服务不可用或遭篡改，将导致本地控制降级、运维中断、数据丢失及电网调度指令延迟/失效。",
+        "related_objectives": [
+          {
+            "objective_id": "OBJ-001",
+            "description": "确保EMU300A与阳光云平台之间传输的数据在传输过程中不被未授权访问或窃取。",
+            "category": "confidentiality",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-001",
+                "source": {
+                  "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-5067B181346D",
+                  "block_id": "BLK-EBE329C3EFA80ACF",
+                  "parser_version": "1.5.0",
+                  "page_number": 16,
+                  "printed_page_label": "10",
+                  "section_path": [
+                    "2 产品介绍",
+                    "2.2 主要特点"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+                },
+                "quote": "数据采集器将数据转发至阳光云平台的功能默认不可用。启用该功能前，客户需在充\n分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获\n得客户授权后方可生效，且相关操作受系统访问控制策略管理。",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "automated_extractor_v3.1",
+                "is_human_confirmed": false,
+                "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-05-12T08:22:14Z"
+              }
+            ]
+          },
+          {
+            "objective_id": "OBJ-002",
+            "description": "确保EMU300A向阳光云平台上传的数据在传输过程中不被篡改或注入伪造内容。",
+            "category": "integrity",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-002",
+                "source": {
+                  "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-5067B181346D",
+                  "block_id": "BLK-EBE329C3EFA80ACF",
+                  "parser_version": "1.5.0",
+                  "page_number": 16,
+                  "printed_page_label": "10",
+                  "section_path": [
+                    "2 产品介绍",
+                    "2.2 主要特点"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+                },
+                "quote": "数据采集器将数据转发至阳光云平台的功能默认不可用。启用该功能前，客户需在充\n分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获\n得客户授权后方可生效，且相关操作受系统访问控制策略管理。",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "automated_extractor_v3.1",
+                "is_human_confirmed": false,
+                "notes": "‘安全加密认证’隐含完整性保护要求，否则无法防止中间人篡改；FACT-004亦明确‘远程访问受系统访问控制策略管理’，表明完整性是基础保障前提。\n系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-05-12T08:22:14Z"
+              }
+            ]
+          },
+          {
+            "objective_id": "OBJ-003",
+            "description": "确保阳光云平台服务在约定地域内持续可用，以支持EMU300A关键远程功能（如调度指令接收、对时、日志归集）。",
+            "category": "availability",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-003",
+                "source": {
+                  "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-D9C0DEB31D45",
+                  "block_id": "BLK-7CA94C17A4F80A13",
+                  "parser_version": "1.5.0",
+                  "page_number": 81,
+                  "printed_page_label": "71",
+                  "section_path": [
+                    "7 Web界面",
+                    "7.10 系统",
+                    "7.10.6 转发配置",
+                    "7.10.6.4 转发三方云服务配置"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+                },
+                "quote": "7.10.6.4 转发三方云服务配置",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "automated_extractor_v3.1",
+                "is_human_confirmed": false,
+                "notes": "地域化部署设计表明服务可用性具有地理边界约束，且FACT-016指出‘开启前需确认设备网络环境安全’，反向印证其可用性非无条件保障。\n系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-05-12T08:22:14Z"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-004",
+            "source": {
+              "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-5067B181346D",
+              "block_id": "BLK-853407424F1C1351",
+              "parser_version": "1.5.0",
+              "page_number": 16,
+              "printed_page_label": "10",
+              "section_path": [
+                "2 产品介绍",
+                "2.2 主要特点"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+            },
+            "quote": "通过路由器连接至阳光云",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "automated_extractor_v3.1",
+            "is_human_confirmed": false,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-12T08:22:14Z"
+          },
+          {
+            "evidence_id": "EVID-005",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-8CF56F6958CD33E1",
+              "parser_version": "1.5.0",
+              "page_number": 13,
+              "printed_page_label": "3",
+              "section_path": [
+                "2 产品描述",
+                "2.1 功能描述"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "数据采集器具备将收集到的数据转发综自系统、站控系统或阳光云平台的功能。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "automated_extractor_v3.1",
+            "is_human_confirmed": false,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-12T08:22:14Z"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-002",
+        "name": "Syslog远程服务器",
+        "asset_type": "service",
+        "status": "external_affected",
+        "related_function_ids": [],
+        "function_relationships": [
+          {
+            "function_id": "FUNC-033",
+            "relationship_type": "transmits",
+            "rationale": "Logger5000支持Syslog日志上传至远程服务器（FACT-008）"
+          }
+        ],
+        "description": "接收并存储EMU300A发送的操作日志、安全事件日志及系统状态日志的外部日志服务器，其配置由用户指定IP地址，不属于EMU300A内置组件。",
+        "location": null,
+        "value": "支撑安全审计、事件溯源、合规留痕及异常行为检测；若日志传输中断、被篡改或服务器不可用，将导致安全事件无法追溯、监管检查失败及故障定位延迟。",
+        "related_objectives": [
+          {
+            "objective_id": "OBJ-004",
+            "description": "确保EMU300A向Syslog远程服务器发送的日志数据在传输过程中不被未授权访问。",
+            "category": "confidentiality",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-006",
+                "source": {
+                  "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-D9C0DEB31D45",
+                  "block_id": "BLK-A3BA38611AC0C157",
+                  "parser_version": "1.5.0",
+                  "page_number": 71,
+                  "printed_page_label": "61",
+                  "section_path": [
+                    "7 Web界面",
+                    "7.9 历史数据",
+                    "7.9.4 Syslog日志"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+                },
+                "quote": "步骤 2 设置Syslog 服务IP，Syslog 日志将传到服务IP 下。",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "automated_extractor_v3.1",
+                "is_human_confirmed": false,
+                "notes": "日志包含敏感操作记录（如登录、配置变更、证书更新），其保密性是审计有效性前提。\n系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-05-12T08:22:14Z"
+              }
+            ]
+          },
+          {
+            "objective_id": "OBJ-005",
+            "description": "确保EMU300A上传至Syslog远程服务器的日志内容在传输过程中保持完整、未被篡改。",
+            "category": "integrity",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-007",
+                "source": {
+                  "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-D9C0DEB31D45",
+                  "block_id": "BLK-A3BA38611AC0C157",
+                  "parser_version": "1.5.0",
+                  "page_number": 71,
+                  "printed_page_label": "61",
+                  "section_path": [
+                    "7 Web界面",
+                    "7.9 历史数据",
+                    "7.9.4 Syslog日志"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+                },
+                "quote": "步骤 2 设置Syslog 服务IP，Syslog 日志将传到服务IP 下。",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "automated_extractor_v3.1",
+                "is_human_confirmed": false,
+                "notes": "日志完整性是司法取证与合规审计的核心要求；FACT-033明确该功能为安全日志记录，隐含完整性保障必要性。\n系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-05-12T08:22:14Z"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-008",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-A3BA38611AC0C157",
+              "parser_version": "1.5.0",
+              "page_number": 71,
+              "printed_page_label": "61",
+              "section_path": [
+                "7 Web界面",
+                "7.9 历史数据",
+                "7.9.4 Syslog日志"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "步骤 2 设置Syslog 服务IP，Syslog 日志将传到服务IP 下。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "automated_extractor_v3.1",
+            "is_human_confirmed": false,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-12T08:22:14Z"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-003",
+        "name": "三方云服务",
+        "asset_type": "service",
+        "status": "external_affected",
+        "related_function_ids": [],
+        "function_relationships": [
+          {
+            "function_id": "FUNC-015",
+            "relationship_type": "transmits",
+            "rationale": "接入三方云功能需管理员授权后开启开关并确认授权（FACT-015）"
+          }
+        ],
+        "description": "由客户自主配置的第三方云服务平台，用于接收EMU300A转发的设备数据；其服务商、协议类型及数据范围未在证据中明确，但功能存在性已证实。",
+        "location": null,
+        "value": "扩展数据集成能力，支持客户私有云、行业平台或定制化分析系统；若服务不可靠或遭入侵，将导致数据泄露、业务逻辑被干扰或下游系统污染。",
+        "related_objectives": [
+          {
+            "objective_id": "OBJ-006",
+            "description": "确保EMU300A向三方云服务上传的数据在传输过程中不被未授权访问。",
+            "category": "confidentiality",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-009",
+                "source": {
+                  "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-D9C0DEB31D45",
+                  "block_id": "BLK-AD1E6A7FA18DAC21",
+                  "parser_version": "1.5.0",
+                  "page_number": 81,
+                  "printed_page_label": "71",
+                  "section_path": [
+                    "7 Web界面",
+                    "7.10 系统",
+                    "7.10.6 转发配置",
+                    "7.10.6.4 转发三方云服务配置"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+                },
+                "quote": "1.云服务与外网有数据交互，请确认设备网络环境安全后再开启。\n2.转发三方云功能默认关闭。启用该功能前，客户需在充分知情的前提下使用管理员\n账号进行手动授权，并通过安全加密认证接入公共网络。该功能仅在获得管理员账号\n授权后方可生效，且相关操作受系统访问控制策略管理。",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "automated_extractor_v3.1",
+                "is_human_confirmed": false,
+                "notes": "‘安全加密认证’直接支撑保密性目标；FACT-017亦强调‘与外网有数据交互，开启前需确认设备网络环境安全’，佐证保密性为必要属性。\n系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-05-12T08:22:14Z"
+              }
+            ]
+          },
+          {
+            "objective_id": "OBJ-007",
+            "description": "确保EMU300A向三方云服务上传的数据在传输过程中保持完整、未被篡改。",
+            "category": "integrity",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-010",
+                "source": {
+                  "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-D9C0DEB31D45",
+                  "block_id": "BLK-AD1E6A7FA18DAC21",
+                  "parser_version": "1.5.0",
+                  "page_number": 81,
+                  "printed_page_label": "71",
+                  "section_path": [
+                    "7 Web界面",
+                    "7.10 系统",
+                    "7.10.6 转发配置",
+                    "7.10.6.4 转发三方云服务配置"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+                },
+                "quote": "1.云服务与外网有数据交互，请确认设备网络环境安全后再开启。\n2.转发三方云功能默认关闭。启用该功能前，客户需在充分知情的前提下使用管理员\n账号进行手动授权，并通过安全加密认证接入公共网络。该功能仅在获得管理员账号\n授权后方可生效，且相关操作受系统访问控制策略管理。",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "automated_extractor_v3.1",
+                "is_human_confirmed": false,
+                "notes": "加密认证机制必然包含完整性校验（如TLS MAC或数字签名），否则无法抵御重放或篡改攻击；FACT-013明确‘启用后允许设备数据上传到配置的服务器’，完整性是可信数据交付前提。\n系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-05-12T08:22:14Z"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-011",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-AD1E6A7FA18DAC21",
+              "parser_version": "1.5.0",
+              "page_number": 81,
+              "printed_page_label": "71",
+              "section_path": [
+                "7 Web界面",
+                "7.10 系统",
+                "7.10.6 转发配置",
+                "7.10.6.4 转发三方云服务配置"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "1.云服务与外网有数据交互，请确认设备网络环境安全后再开启。\n2.转发三方云功能默认关闭。启用该功能前，客户需在充分知情的前提下使用管理员\n账号进行手动授权，并通过安全加密认证接入公共网络。该功能仅在获得管理员账号\n授权后方可生效，且相关操作受系统访问控制策略管理。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "automated_extractor_v3.1",
+            "is_human_confirmed": false,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-12T08:22:14Z"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-004",
+        "name": "NTS对时服务器",
+        "asset_type": "service",
+        "status": "external_affected",
+        "related_function_ids": [
+          "FUNC-031",
+          "FUNC-037"
+        ],
+        "function_relationships": [
+          {
+            "function_id": "FUNC-031",
+            "relationship_type": "depends_on",
+            "rationale": "Logger5000支持NTS对时（FACT-015）"
+          },
+          {
+            "function_id": "FUNC-037",
+            "relationship_type": "depends_on",
+            "rationale": "若使用NTS功能，需导入NTS服务器证书（FACT-015）"
+          }
+        ],
+        "description": "为EMU300A提供高精度、抗中间人攻击的网络时间同步服务的外部服务器，其证书需由用户导入，不属于EMU300A内置组件。",
+        "location": null,
+        "value": "保障全站设备时间一致性，支撑SOE（事件顺序记录）、故障录波分析、调度指令时效性验证及合规时间戳生成；若时间偏差超限或遭恶意偏移，将导致保护误动、事件定序错误及审计失效。",
+        "related_objectives": [
+          {
+            "objective_id": "OBJ-008",
+            "description": "确保EMU300A从NTS对时服务器获取的时间信息在传输过程中不被篡改或伪造。",
+            "category": "integrity",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-012",
+                "source": {
+                  "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-D9C0DEB31D45",
+                  "block_id": "BLK-89A6CAB539794403",
+                  "parser_version": "1.5.0",
+                  "page_number": 77,
+                  "printed_page_label": "67",
+                  "section_path": [
+                    "7 Web界面",
+                    "7.10 系统",
+                    "7.10.6 转发配置",
+                    "7.10.6.2 转发IEC104服务配置"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+                },
+                "quote": "时钟源\t\t说明\n阳光\t云\t前提是数据采集器与阳光云平台连接，否则时钟源设置为“阳光云”的\n对时方式无效。\nMOD\nTCP\tBUS-\t前提是数据采集器与后台使用MODBUS-TCP 通信规约，否则时钟源\n设置为“MODBUS-TCP”的对时方式无效。\nB 码\t\t通过B 码协议实现时间同步。\nPTP\t\t通过后台时间服务器对电站内的多个数据采集器进行统一对时。\n结束\t\t\n注意\t\t\n数据\t采集器首次使用\t必须配置系统时间。\n\t置\n阳光云服务\t设置\n\t• 数据采集器\n提下进行手\n授权后方可\n• 阳光云平台\t的数据转发功能默认不可用。启用该功能前，客户需在充分知情的前\n动授权，并通过安全加密认证接入公共网络。远程访问仅在获得客户\n生效，且相关操作受系统访问控制策略管理。\n在北美区域已停止服务。\n\t\t\n\t云服务与外网\t有数据交互，请确认设备网络环境安全后再开启。\n\t统 > 转发配置\n入站点开关，\t，进入界面。\n单击操作栏 ，可修改阳光云转发配置信息。\n\t默认接入阳光\n站”，澳洲地区\n为保证数据采\n参考路由器白\t云站点为“中国站”。中国大陆地区接入“中国站”，欧洲地区接入“欧洲\n接入“澳洲站”，其他地区接入“国际站”。\n集器功能正常使用，需要对路由器的白名单进行相关设置。设置参数请\n名单设置。\n\tIEC104 服务\nEC104 服务配置\t配置\n”用于配置数据采集器转发IEC104 服务。",
+                "evidence_level": "derived",
+                "confidence": "medium",
+                "retrieved_by": "automated_extractor_v3.1",
+                "is_human_confirmed": false,
+                "notes": "FACT-011虽针对阳光云对时，但其逻辑适用于所有外部对时源；FACT-037明确‘需导入NTS服务器证书’，证书机制即为保障时间响应完整性与真实性。\n系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-05-12T08:22:14Z"
+              }
+            ]
+          },
+          {
+            "objective_id": "OBJ-009",
+            "description": "确保EMU300A与NTS对时服务器之间的通信信道具备抗重放与抗中间人攻击能力。",
+            "category": "authenticity",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-013",
+                "source": {
+                  "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-D9C0DEB31D45",
+                  "block_id": "BLK-89A6CAB539794403",
+                  "parser_version": "1.5.0",
+                  "page_number": 77,
+                  "printed_page_label": "67",
+                  "section_path": [
+                    "7 Web界面",
+                    "7.10 系统",
+                    "7.10.6 转发配置",
+                    "7.10.6.2 转发IEC104服务配置"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+                },
+                "quote": "时钟源\t\t说明\n阳光\t云\t前提是数据采集器与阳光云平台连接，否则时钟源设置为“阳光云”的\n对时方式无效。\nMOD\nTCP\tBUS-\t前提是数据采集器与后台使用MODBUS-TCP 通信规约，否则时钟源\n设置为“MODBUS-TCP”的对时方式无效。\nB 码\t\t通过B 码协议实现时间同步。\nPTP\t\t通过后台时间服务器对电站内的多个数据采集器进行统一对时。\n结束\t\t\n注意\t\t\n数据\t采集器首次使用\t必须配置系统时间。\n\t置\n阳光云服务\t设置\n\t• 数据采集器\n提下进行手\n授权后方可\n• 阳光云平台\t的数据转发功能默认不可用。启用该功能前，客户需在充分知情的前\n动授权，并通过安全加密认证接入公共网络。远程访问仅在获得客户\n生效，且相关操作受系统访问控制策略管理。\n在北美区域已停止服务。\n\t\t\n\t云服务与外网\t有数据交互，请确认设备网络环境安全后再开启。\n\t统 > 转发配置\n入站点开关，\t，进入界面。\n单击操作栏 ，可修改阳光云转发配置信息。\n\t默认接入阳光\n站”，澳洲地区\n为保证数据采\n参考路由器白\t云站点为“中国站”。中国大陆地区接入“中国站”，欧洲地区接入“欧洲\n接入“澳洲站”，其他地区接入“国际站”。\n集器功能正常使用，需要对路由器的白名单进行相关设置。设置参数请\n名单设置。\n\tIEC104 服务\nEC104 服务配置\t配置\n”用于配置数据采集器转发IEC104 服务。",
+                "evidence_level": "derived",
+                "confidence": "medium",
+                "retrieved_by": "automated_extractor_v3.1",
+                "is_human_confirmed": false,
+                "notes": "NTS协议本身即为NTP的安全演进，核心目标即提供时间源真实性与防重放；FACT-037要求导入服务器证书，直接支撑authenticity目标。\n系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-05-12T08:22:14Z"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-014",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-89A6CAB539794403",
+              "parser_version": "1.5.0",
+              "page_number": 77,
+              "printed_page_label": "67",
+              "section_path": [
+                "7 Web界面",
+                "7.10 系统",
+                "7.10.6 转发配置",
+                "7.10.6.2 转发IEC104服务配置"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "时钟源\t\t说明\n阳光\t云\t前提是数据采集器与阳光云平台连接，否则时钟源设置为“阳光云”的\n对时方式无效。\nMOD\nTCP\tBUS-\t前提是数据采集器与后台使用MODBUS-TCP 通信规约，否则时钟源\n设置为“MODBUS-TCP”的对时方式无效。\nB 码\t\t通过B 码协议实现时间同步。\nPTP\t\t通过后台时间服务器对电站内的多个数据采集器进行统一对时。\n结束\t\t\n注意\t\t\n数据\t采集器首次使用\t必须配置系统时间。\n\t置\n阳光云服务\t设置\n\t• 数据采集器\n提下进行手\n授权后方可\n• 阳光云平台\t的数据转发功能默认不可用。启用该功能前，客户需在充分知情的前\n动授权，并通过安全加密认证接入公共网络。远程访问仅在获得客户\n生效，且相关操作受系统访问控制策略管理。\n在北美区域已停止服务。\n\t\t\n\t云服务与外网\t有数据交互，请确认设备网络环境安全后再开启。\n\t统 > 转发配置\n入站点开关，\t，进入界面。\n单击操作栏 ，可修改阳光云转发配置信息。\n\t默认接入阳光\n站”，澳洲地区\n为保证数据采\n参考路由器白\t云站点为“中国站”。中国大陆地区接入“中国站”，欧洲地区接入“欧洲\n接入“澳洲站”，其他地区接入“国际站”。\n集器功能正常使用，需要对路由器的白名单进行相关设置。设置参数请\n名单设置。\n\tIEC104 服务\nEC104 服务配置\t配置\n”用于配置数据采集器转发IEC104 服务。",
+            "evidence_level": "derived",
+            "confidence": "medium",
+            "retrieved_by": "automated_extractor_v3.1",
+            "is_human_confirmed": false,
+            "notes": "作为NTS对时的同类外部依赖，其存在性与约束逻辑可类推；FACT-015明确NTS功能存在且需证书导入，构成直接支持。\n系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-12T08:22:14Z"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-005",
+        "name": "NTP对时服务器",
+        "asset_type": "service",
+        "status": "external_affected",
+        "related_function_ids": [],
+        "function_relationships": [],
+        "description": "为EMU300A提供基础网络时间同步服务的外部服务器，其协议未加密，安全性低于NTS；功能存在性由FACT-014间接支持（对比NTS启用前提）。",
+        "location": null,
+        "value": "支撑基本时间同步需求；若时间偏差过大或服务器被劫持，将影响日志时序、简单调度执行及非安全场景下的事件关联。",
+        "related_objectives": [
+          {
+            "objective_id": "OBJ-010",
+            "description": "确保EMU300A从NTP对时服务器获取的时间信息在传输过程中不被恶意篡改。",
+            "category": "integrity",
+            "basis": "analyst_minimum",
+            "status": "needs_confirmation",
+            "legal_basis": [],
+            "evidence": []
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-015",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-89A6CAB539794403",
+              "parser_version": "1.5.0",
+              "page_number": 77,
+              "printed_page_label": "67",
+              "section_path": [
+                "7 Web界面",
+                "7.10 系统",
+                "7.10.6 转发配置",
+                "7.10.6.2 转发IEC104服务配置"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "时钟源\t\t说明\n阳光\t云\t前提是数据采集器与阳光云平台连接，否则时钟源设置为“阳光云”的\n对时方式无效。\nMOD\nTCP\tBUS-\t前提是数据采集器与后台使用MODBUS-TCP 通信规约，否则时钟源\n设置为“MODBUS-TCP”的对时方式无效。\nB 码\t\t通过B 码协议实现时间同步。\nPTP\t\t通过后台时间服务器对电站内的多个数据采集器进行统一对时。\n结束\t\t\n注意\t\t\n数据\t采集器首次使用\t必须配置系统时间。\n\t置\n阳光云服务\t设置\n\t• 数据采集器\n提下进行手\n授权后方可\n• 阳光云平台\t的数据转发功能默认不可用。启用该功能前，客户需在充分知情的前\n动授权，并通过安全加密认证接入公共网络。远程访问仅在获得客户\n生效，且相关操作受系统访问控制策略管理。\n在北美区域已停止服务。\n\t\t\n\t云服务与外网\t有数据交互，请确认设备网络环境安全后再开启。\n\t统 > 转发配置\n入站点开关，\t，进入界面。\n单击操作栏 ，可修改阳光云转发配置信息。\n\t默认接入阳光\n站”，澳洲地区\n为保证数据采\n参考路由器白\t云站点为“中国站”。中国大陆地区接入“中国站”，欧洲地区接入“欧洲\n接入“澳洲站”，其他地区接入“国际站”。\n集器功能正常使用，需要对路由器的白名单进行相关设置。设置参数请\n名单设置。\n\tIEC104 服务\nEC104 服务配置\t配置\n”用于配置数据采集器转发IEC104 服务。",
+            "evidence_level": "derived",
+            "confidence": "low",
+            "retrieved_by": "automated_extractor_v3.1",
+            "is_human_confirmed": false,
+            "notes": "FACT-014提及NTP端口（FLOW-014），但未说明其是否启用或配置；FACT-011仅确认阳光云对时依赖连接，未提NTP。故NTP存在性属‘候选’，价值与完整性目标依据不足，标needs_confirmation。\n系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-12T08:22:14Z"
+          }
+        ]
+      }
+    ],
+    "assessment": "PARTIAL",
+    "notes": "hardware_and_network field failed with technical_failure; no hardware/network assets can be confirmed from facts. Only external services with direct evidence (FACT-001–020) are included. RS485/MPLC/IEC104/Modbus/MQTT/GOOSE interfaces are communication protocols or logical functions — not standalone hardware/network assets per rules. Core switch, Insight, SCADA, station control system, inverters, transformers, environmental monitors and meters are listed in integrated_systems but lack explicit evidence of being *externally affected* (e.g., no fact states ‘EMU300A transmits to SCADA’); thus excluded per rule #3 (no guessing). All candidate services requiring confirmation (e.g., NTP server) are marked needs_confirmation. No conditional hardware (e.g., MPLC, fiber switch) is included because field_batches.facts for hardware_and_network is empty — only external_services facts are available and usable."
+  }
+}

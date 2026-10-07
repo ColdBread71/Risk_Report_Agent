@@ -1,0 +1,218 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-1D4692C76E8ED73E",
+  "section_path": [
+    "7 Web界面",
+    "7.3 Web端简介",
+    "7.3.2 运行环境要求"
+  ],
+  "section_title": "7.3.2 运行环境要求",
+  "start_pdf_page": 43,
+  "end_pdf_page": 43,
+  "blocks": [
+    {
+      "block_id": "BLK-5D157B178E3A734B",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 43,
+      "printed_page_label": "33",
+      "block_order": 0,
+      "section_id": "SEC-1D4692C76E8ED73E",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.2 运行环境要求"
+      ],
+      "section_title": "7.3.2 运行环境要求",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DDE8620E264E5D79",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 43,
+      "printed_page_label": "33",
+      "block_order": 1,
+      "section_id": "SEC-1D4692C76E8ED73E",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.2 运行环境要求"
+      ],
+      "section_title": "7.3.2 运行环境要求",
+      "block_type": "table",
+      "text": "编号\t名称\t\t说明\nA\t导航菜单\t\t显示Web 主功能模块\nB\t功能显示区\t\t显示当前选择查询或参数设置的功能界面\nC\t告警图标\t\t显示当前系统告警的级别及数量，可以单击对应的数值\n直接进入该告警的显示界面\nD\t语言显示\t\t根据需要切换语言类型\nE\t用户\t\t显示当前登录用户\n图标指示数据\n图标指示数据\n行环境要求\t采集器以太网\n采集器接入云\t端\n服\t口连接状态。\n务状态。\n项目\t\t说\t明\n浏览器\t\tCh\trome65 以上、Safari11 以上\n最小分辨率\t\t19\t20*1080",
+      "table_cells": [
+        [
+          "编号",
+          "名称",
+          null,
+          "说明"
+        ],
+        [
+          "A",
+          "导航菜单",
+          null,
+          "显示Web 主功能模块"
+        ],
+        [
+          "B",
+          "功能显示区",
+          null,
+          "显示当前选择查询或参数设置的功能界面"
+        ],
+        [
+          "C",
+          "告警图标",
+          null,
+          "显示当前系统告警的级别及数量，可以单击对应的数值\n直接进入该告警的显示界面"
+        ],
+        [
+          "D",
+          "语言显示",
+          null,
+          "根据需要切换语言类型"
+        ],
+        [
+          "E",
+          "用户",
+          null,
+          "显示当前登录用户"
+        ],
+        [
+          "图标指示数据\n图标指示数据\n行环境要求",
+          "采集器以太网\n采集器接入云",
+          "端\n服",
+          "口连接状态。\n务状态。"
+        ],
+        [
+          "项目",
+          null,
+          "说",
+          "明"
+        ],
+        [
+          "浏览器",
+          null,
+          "Ch",
+          "rome65 以上、Safari11 以上"
+        ],
+        [
+          "最小分辨率",
+          null,
+          "19",
+          "20*1080"
+        ]
+      ],
+      "bbox": [
+        111.035,
+        281.268,
+        450.862,
+        565.27
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7A58EE43A6730709",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 43,
+      "printed_page_label": "33",
+      "block_order": 2,
+      "section_id": "SEC-1D4692C76E8ED73E",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.2 运行环境要求"
+      ],
+      "section_title": "7.3.2 运行环境要求",
+      "block_type": "paragraph",
+      "text": "当前Web 端界面支持8 种语言系统，分别是简体中文、英\n语、德语、西班牙语、巴葡语、法语、日语和韩语。",
+      "table_cells": null,
+      "bbox": [
+        222.467,
+        571.176,
+        452.813,
+        595.629
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-07CE953E4C5BC179",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 43,
+      "printed_page_label": "33",
+      "block_order": 3,
+      "section_id": "SEC-1D4692C76E8ED73E",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.2 运行环境要求"
+      ],
+      "section_title": "7.3.2 运行环境要求",
+      "block_type": "paragraph",
+      "text": "语言显示",
+      "table_cells": null,
+      "bbox": [
+        111.035,
+        599.226,
+        147.035,
+        610.179
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1DC0483C55C3ACF2",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 43,
+      "printed_page_label": "33",
+      "block_order": 4,
+      "section_id": "SEC-1D4692C76E8ED73E",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.2 运行环境要求"
+      ],
+      "section_title": "7.3.2 运行环境要求",
+      "block_type": "paragraph",
+      "text": "登录嵌入式Web 的电脑语言系统当前仅支持以上8\n种语言，否则将无法登录。",
+      "table_cells": null,
+      "bbox": [
+        249.467,
+        603.326,
+        450.563,
+        625.079
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-DF1E418CD1F96524",
+  "section_path": [
+    "9 用户管理",
+    "9.7 删除用户账号"
+  ],
+  "section_title": "9.7 删除用户账号",
+  "start_pdf_page": 97,
+  "end_pdf_page": 97,
+  "blocks": [
+    {
+      "block_id": "BLK-60432880A64751E1",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 10,
+      "section_id": "SEC-DF1E418CD1F96524",
+      "section_path": [
+        "9 用户管理",
+        "9.7 删除用户账号"
+      ],
+      "section_title": "9.7 删除用户账号",
+      "block_type": "heading",
+      "text": "9.7 删除用户账号",
+      "table_cells": null,
+      "bbox": [
+        70.86,
+        243.958,
+        167.052,
+        258.562
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0C35197A1D081414",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 11,
+      "section_id": "SEC-DF1E418CD1F96524",
+      "section_path": [
+        "9 用户管理",
+        "9.7 删除用户账号"
+      ],
+      "section_title": "9.7 删除用户账号",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        271.606,
+        138.369,
+        282.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D20312BDCC4EF38D",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 12,
+      "section_id": "SEC-DF1E418CD1F96524",
+      "section_path": [
+        "9 用户管理",
+        "9.7 删除用户账号"
+      ],
+      "section_title": "9.7 删除用户账号",
+      "block_type": "list",
+      "text": "•\n通过管理员账号登录Web 端。见9.1 初始用户名和密码。",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        291.606,
+        345.648,
+        302.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B9BDEA6C236A70A3",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 13,
+      "section_id": "SEC-DF1E418CD1F96524",
+      "section_path": [
+        "9 用户管理",
+        "9.7 删除用户账号"
+      ],
+      "section_title": "9.7 删除用户账号",
+      "block_type": "paragraph",
+      "text": "步骤 1 导航栏中点击用户管理，跳转至相应页面。",
+      "table_cells": null,
+      "bbox": [
+        70.869,
+        309.684,
+        272.739,
+        322.167
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F983492F53DB39D8",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 14,
+      "section_id": "SEC-DF1E418CD1F96524",
+      "section_path": [
+        "9 用户管理",
+        "9.7 删除用户账号"
+      ],
+      "section_title": "9.7 删除用户账号",
+      "block_type": "paragraph",
+      "text": "步骤 2 在用户账号对应的操作栏中，点击",
+      "table_cells": null,
+      "bbox": [
+        70.869,
+        334.93,
+        236.739,
+        347.413
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5368F5CEF5A76B52",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 15,
+      "section_id": "SEC-DF1E418CD1F96524",
+      "section_path": [
+        "9 用户管理",
+        "9.7 删除用户账号"
+      ],
+      "section_title": "9.7 删除用户账号",
+      "block_type": "paragraph",
+      "text": "。",
+      "table_cells": null,
+      "bbox": [
+        250.911,
+        336.352,
+        259.911,
+        347.305
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-20EF5B9C2EE634CA",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 16,
+      "section_id": "SEC-DF1E418CD1F96524",
+      "section_path": [
+        "9 用户管理",
+        "9.7 删除用户账号"
+      ],
+      "section_title": "9.7 删除用户账号",
+      "block_type": "paragraph",
+      "text": "步骤 3 在弹窗中，点击确定，删除该用户账号。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        351.43,
+        263.736,
+        363.913
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FC88DABE9D851731",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 17,
+      "section_id": "SEC-DF1E418CD1F96524",
+      "section_path": [
+        "9 用户管理",
+        "9.7 删除用户账号"
+      ],
+      "section_title": "9.7 删除用户账号",
+      "block_type": "paragraph",
+      "text": "步骤 4 点击清空用户，可删除所有用户账号。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        367.93,
+        254.736,
+        380.413
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-24FDECC7EB8790CC",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 97,
+      "printed_page_label": "87",
+      "block_order": 18,
+      "section_id": "SEC-DF1E418CD1F96524",
+      "section_path": [
+        "9 用户管理",
+        "9.7 删除用户账号"
+      ],
+      "section_title": "9.7 删除用户账号",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        384.502,
+        126.36,
+        395.455
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-6F7433BB9576B338",
+  "section_path": [
+    "10 安全配置指南",
+    "10.7 系统还原"
+  ],
+  "section_title": "10.7 系统还原",
+  "start_pdf_page": 26,
+  "end_pdf_page": 26,
+  "blocks": [
+    {
+      "block_id": "BLK-2DE3FC4B54EF9BA3",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 26,
+      "printed_page_label": "22",
+      "block_order": 0,
+      "section_id": "SEC-6F7433BB9576B338",
+      "section_path": [
+        "10 安全配置指南",
+        "10.7 系统还原"
+      ],
+      "section_title": "10.7 系统还原",
+      "block_type": "paragraph",
+      "text": "用户网络安全操作手册\n10 安全配置指南",
+      "table_cells": null,
+      "bbox": [
+        60.443,
+        48.088,
+        449.79,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3CE5F6D9E152C62A",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 26,
+      "printed_page_label": "22",
+      "block_order": 1,
+      "section_id": "SEC-6F7433BB9576B338",
+      "section_path": [
+        "10 安全配置指南",
+        "10.7 系统还原"
+      ],
+      "section_title": "10.7 系统还原",
+      "block_type": "paragraph",
+      "text": "GOOSE 安全功能",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        240.656,
+        159.446,
+        251.609
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9746C05742AC12F0",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 26,
+      "printed_page_label": "22",
+      "block_order": 2,
+      "section_id": "SEC-6F7433BB9576B338",
+      "section_path": [
+        "10 安全配置指南",
+        "10.7 系统还原"
+      ],
+      "section_title": "10.7 系统还原",
+      "block_type": "paragraph",
+      "text": "GOOSE 支持防重放开关、密钥更新等功能。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        258.806,
+        267.446,
+        269.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-562EB901BC002DDD",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 26,
+      "printed_page_label": "22",
+      "block_order": 3,
+      "section_id": "SEC-6F7433BB9576B338",
+      "section_path": [
+        "10 安全配置指南",
+        "10.7 系统还原"
+      ],
+      "section_title": "10.7 系统还原",
+      "block_type": "paragraph",
+      "text": "防重放功能：在系统 > 转发配置页面，点击goose，勾选防重放开关。用户可根据需要，自\n行设置检测时间参数。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        280.306,
+        449.219,
+        304.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-90A3EAF30CD1A413",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 26,
+      "printed_page_label": "22",
+      "block_order": 4,
+      "section_id": "SEC-6F7433BB9576B338",
+      "section_path": [
+        "10 安全配置指南",
+        "10.7 系统还原"
+      ],
+      "section_title": "10.7 系统还原",
+      "block_type": "paragraph",
+      "text": "密钥更新：在系统 > 证书管理页面，点击goose 密钥，选择密钥导入，上传密钥文件即可完\n成更新。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        313.956,
+        451.469,
+        335.709
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E73A1F174F68804B",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 26,
+      "printed_page_label": "22",
+      "block_order": 13,
+      "section_id": "SEC-6F7433BB9576B338",
+      "section_path": [
+        "10 安全配置指南",
+        "10.7 系统还原"
+      ],
+      "section_title": "10.7 系统还原",
+      "block_type": "heading",
+      "text": "10.7 系统还原",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        594.558,
+        135.545,
+        609.162
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FAE24332B330471F",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 26,
+      "printed_page_label": "22",
+      "block_order": 14,
+      "section_id": "SEC-6F7433BB9576B338",
+      "section_path": [
+        "10 安全配置指南",
+        "10.7 系统还原"
+      ],
+      "section_title": "10.7 系统还原",
+      "block_type": "paragraph",
+      "text": "如果设备遭受攻击导致无法恢复正常运行，可联系阳光电源运维人员通过SD 卡重新烧制系\n统进行恢复。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        622.206,
+        447.197,
+        646.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

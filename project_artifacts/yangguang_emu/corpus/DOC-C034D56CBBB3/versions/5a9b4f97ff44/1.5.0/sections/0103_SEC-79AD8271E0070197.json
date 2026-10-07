@@ -1,0 +1,630 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-79AD8271E0070197",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.5 系统时间"
+  ],
+  "section_title": "7.8.5 系统时间",
+  "start_pdf_page": 72,
+  "end_pdf_page": 73,
+  "blocks": [
+    {
+      "block_id": "BLK-5B89CBE9B5EA1B30",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 0,
+      "section_id": "SEC-79AD8271E0070197",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.5 系统时间"
+      ],
+      "section_title": "7.8.5 系统时间",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.443,
+        48.088,
+        449.79,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4C8B2F307B64C48F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 1,
+      "section_id": "SEC-79AD8271E0070197",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.5 系统时间"
+      ],
+      "section_title": "7.8.5 系统时间",
+      "block_type": "paragraph",
+      "text": "步骤 5 通过以下两种方式保存访问信息。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        71.484,
+        222.563,
+        83.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-03A67210729DCD45",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 2,
+      "section_id": "SEC-79AD8271E0070197",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.5 系统时间"
+      ],
+      "section_title": "7.8.5 系统时间",
+      "block_type": "list",
+      "text": "•\n单击复制远程访问信息，复制成功后，将访问信息保存至本地。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        89.406,
+        353.738,
+        100.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F175237C8A3A0CAD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 3,
+      "section_id": "SEC-79AD8271E0070197",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.5 系统时间"
+      ],
+      "section_title": "7.8.5 系统时间",
+      "block_type": "list",
+      "text": "•\n输入邮箱地址，单击发送，将访问信息发送至邮箱。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        104.406,
+        308.738,
+        115.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A743838484F698D4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 4,
+      "section_id": "SEC-79AD8271E0070197",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.5 系统时间"
+      ],
+      "section_title": "7.8.5 系统时间",
+      "block_type": "paragraph",
+      "text": "步骤 6 网址栏输入访问链接，进入远程维护界面。输入设备S/N 和密码，单击登录，进行远程维",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        119.484,
+        440.066,
+        131.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-10C93C959541E685",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 5,
+      "section_id": "SEC-79AD8271E0070197",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.5 系统时间"
+      ],
+      "section_title": "7.8.5 系统时间",
+      "block_type": "paragraph",
+      "text": "护。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        134.406,
+        105.563,
+        145.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CC3A680AB0B7EF0B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 6,
+      "section_id": "SEC-79AD8271E0070197",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.5 系统时间"
+      ],
+      "section_title": "7.8.5 系统时间",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        149.556,
+        112.187,
+        160.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-219F057364E733E8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 20,
+      "section_id": "SEC-79AD8271E0070197",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.5 系统时间"
+      ],
+      "section_title": "7.8.5 系统时间",
+      "block_type": "heading",
+      "text": "7.8.5 系统时间",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        522.44,
+        123.687,
+        534.61
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5F5F17CBCBC0EA51",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 21,
+      "section_id": "SEC-79AD8271E0070197",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.5 系统时间"
+      ],
+      "section_title": "7.8.5 系统时间",
+      "block_type": "paragraph",
+      "text": "用于检查系统当前时间是否正确，并且可对系统当前时间，以及是否对逆变器进行定时对时设\n置。",
+      "table_cells": null,
+      "bbox": [
+        88.191,
+        541.664,
+        436.691,
+        564.758
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-904AC92D194A8073",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 22,
+      "section_id": "SEC-79AD8271E0070197",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.5 系统时间"
+      ],
+      "section_title": "7.8.5 系统时间",
+      "block_type": "list",
+      "text": "•\n如需开启NTP，请确认设备网络环境安全。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        581.756,
+        302.618,
+        592.709
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-71DA328398A3C9F2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 23,
+      "section_id": "SEC-79AD8271E0070197",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.5 系统时间"
+      ],
+      "section_title": "7.8.5 系统时间",
+      "block_type": "list",
+      "text": "•\n建议首先选择采用IEC104 对时方式，其次选择采用阳光云对时方式，其他对时\n方式请自行选择。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        596.756,
+        442.883,
+        621.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D4D3B1D2CA503647",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 24,
+      "section_id": "SEC-79AD8271E0070197",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.5 系统时间"
+      ],
+      "section_title": "7.8.5 系统时间",
+      "block_type": "list",
+      "text": "•\n同一时间，只有一个时钟源生效。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        625.256,
+        264.368,
+        636.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CEACC2A0558D762D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 72,
+      "printed_page_label": "62",
+      "block_order": 25,
+      "section_id": "SEC-79AD8271E0070197",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.5 系统时间"
+      ],
+      "section_title": "7.8.5 系统时间",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击系统 > 系统时间，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        657.834,
+        223.823,
+        670.317
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-07105124139AEE8C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 73,
+      "printed_page_label": "63",
+      "block_order": 0,
+      "section_id": "SEC-79AD8271E0070197",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.5 系统时间"
+      ],
+      "section_title": "7.8.5 系统时间",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D7DAEC0ADAA7F6CD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 73,
+      "printed_page_label": "63",
+      "block_order": 1,
+      "section_id": "SEC-79AD8271E0070197",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.5 系统时间"
+      ],
+      "section_title": "7.8.5 系统时间",
+      "block_type": "paragraph",
+      "text": "步骤 2 勾选定时对逆变器对时，可将数据采集器时间同步到设备。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        305.394,
+        335.736,
+        317.877
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EFE9BCC38D6D8708",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 73,
+      "printed_page_label": "63",
+      "block_order": 2,
+      "section_id": "SEC-79AD8271E0070197",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.5 系统时间"
+      ],
+      "section_title": "7.8.5 系统时间",
+      "block_type": "paragraph",
+      "text": "步骤 3 在下拉框，选择对应的时钟源。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        321.894,
+        227.736,
+        334.377
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-632B65C075CD799F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 73,
+      "printed_page_label": "63",
+      "block_order": 3,
+      "section_id": "SEC-79AD8271E0070197",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.5 系统时间"
+      ],
+      "section_title": "7.8.5 系统时间",
+      "block_type": "table",
+      "text": "时钟源\t说明\n手动对时\t可通过以下两种方式对系统当前时间和时区进行手动设置：\n• 勾选同步本机时间，将数据采集器时间与本机时间同步。\n• 选择当地所在时区、日期和时间，单击保存，手动设置数据采集\n器时间。\n推荐在调试时使用手动对时。\nNTP\t可同步网络中各设备的时间。选择当地所在时区。填入域名，设置时\n间间隔，单击保存。则数据采集器与服务器时间同步。\nIEC104\t前提是数据采集器与后台使用IEC104 通信规约，否则时钟源设置为\n“IEC104”的对时方式无效。\n阳光云\t前提是数据采集器与阳光云平台连接，否则时钟源设置为“阳光云”的\n对时方式无效。\nMODBUS-\nTCP\t前提是数据采集器与后台使用MODBUS-TCP 通信规约，否则时钟源\n设置为“MODBUS-TCP”的对时方式无效。",
+      "table_cells": [
+        [
+          "时钟源",
+          "说明"
+        ],
+        [
+          "手动对时",
+          "可通过以下两种方式对系统当前时间和时区进行手动设置：\n• 勾选同步本机时间，将数据采集器时间与本机时间同步。\n• 选择当地所在时区、日期和时间，单击保存，手动设置数据采集\n器时间。\n推荐在调试时使用手动对时。"
+        ],
+        [
+          "NTP",
+          "可同步网络中各设备的时间。选择当地所在时区。填入域名，设置时\n间间隔，单击保存。则数据采集器与服务器时间同步。"
+        ],
+        [
+          "IEC104",
+          "前提是数据采集器与后台使用IEC104 通信规约，否则时钟源设置为\n“IEC104”的对时方式无效。"
+        ],
+        [
+          "阳光云",
+          "前提是数据采集器与阳光云平台连接，否则时钟源设置为“阳光云”的\n对时方式无效。"
+        ],
+        [
+          "MODBUS-\nTCP",
+          "前提是数据采集器与后台使用MODBUS-TCP 通信规约，否则时钟源\n设置为“MODBUS-TCP”的对时方式无效。"
+        ]
+      ],
+      "bbox": [
+        110.404,
+        345.099,
+        455.4,
+        577.91
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-401FC8FD05D3D673",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 73,
+      "printed_page_label": "63",
+      "block_order": 4,
+      "section_id": "SEC-79AD8271E0070197",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.5 系统时间"
+      ],
+      "section_title": "7.8.5 系统时间",
+      "block_type": "paragraph",
+      "text": "B 码\n通过B 码协议实现时间同步。",
+      "table_cells": null,
+      "bbox": [
+        110.404,
+        583.816,
+        303.903,
+        594.769
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C9851E04A3821998",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 73,
+      "printed_page_label": "63",
+      "block_order": 5,
+      "section_id": "SEC-79AD8271E0070197",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.5 系统时间"
+      ],
+      "section_title": "7.8.5 系统时间",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        613.216,
+        126.36,
+        624.169
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3AB312422B91A47F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 73,
+      "printed_page_label": "63",
+      "block_order": 6,
+      "section_id": "SEC-79AD8271E0070197",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.5 系统时间"
+      ],
+      "section_title": "7.8.5 系统时间",
+      "block_type": "paragraph",
+      "text": "注意",
+      "table_cells": null,
+      "bbox": [
+        112.114,
+        627.134,
+        134.114,
+        640.521
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-911FAA0D47A33C3B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 73,
+      "printed_page_label": "63",
+      "block_order": 7,
+      "section_id": "SEC-79AD8271E0070197",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.5 系统时间"
+      ],
+      "section_title": "7.8.5 系统时间",
+      "block_type": "paragraph",
+      "text": "数据采集器首次使用必须配置系统时间。",
+      "table_cells": null,
+      "bbox": [
+        106.868,
+        644.316,
+        268.868,
+        655.269
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

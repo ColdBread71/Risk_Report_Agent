@@ -1,0 +1,337 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-42D80DBCCEEDD6B1",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.14 MPLC（宽带PLC）",
+    "7.8.14.2 MPLC一键诊断"
+  ],
+  "section_title": "7.8.14.2 MPLC一键诊断",
+  "start_pdf_page": 85,
+  "end_pdf_page": 85,
+  "blocks": [
+    {
+      "block_id": "BLK-1EF02C168138DB42",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 0,
+      "section_id": "SEC-42D80DBCCEEDD6B1",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）",
+        "7.8.14.2 MPLC一键诊断"
+      ],
+      "section_title": "7.8.14.2 MPLC一键诊断",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EFA720F6FDE48725",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 12,
+      "section_id": "SEC-42D80DBCCEEDD6B1",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）",
+        "7.8.14.2 MPLC一键诊断"
+      ],
+      "section_title": "7.8.14.2 MPLC一键诊断",
+      "block_type": "heading",
+      "text": "7.8.14.2 MPLC 一键诊断",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        300.69,
+        179.54,
+        312.86
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FC01B1794469B005",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 13,
+      "section_id": "SEC-42D80DBCCEEDD6B1",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）",
+        "7.8.14.2 MPLC一键诊断"
+      ],
+      "section_title": "7.8.14.2 MPLC一键诊断",
+      "block_type": "paragraph",
+      "text": "当数据采集器与逆变器之间通讯异常时，可通过一键诊断功能查看可能的故障原因及修复建议。",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        319.914,
+        459.369,
+        330.258
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-60FFFED010ACCAE8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 14,
+      "section_id": "SEC-42D80DBCCEEDD6B1",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）",
+        "7.8.14.2 MPLC一键诊断"
+      ],
+      "section_title": "7.8.14.2 MPLC一键诊断",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        340.756,
+        138.366,
+        351.709
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-25FC4B99B5A30742",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 15,
+      "section_id": "SEC-42D80DBCCEEDD6B1",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）",
+        "7.8.14.2 MPLC一键诊断"
+      ],
+      "section_title": "7.8.14.2 MPLC一键诊断",
+      "block_type": "list",
+      "text": "•\nLogger4000 的固件版本为P025 或以上。见7.8.16 查看固件版本。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        360.756,
+        384.129,
+        371.709
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-645E3D425C75D7E4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 16,
+      "section_id": "SEC-42D80DBCCEEDD6B1",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）",
+        "7.8.14.2 MPLC一键诊断"
+      ],
+      "section_title": "7.8.14.2 MPLC一键诊断",
+      "block_type": "paragraph",
+      "text": "步骤 1 导航栏中点击系统 > MPLC > 操作，跳转至相应页面。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        378.834,
+        318.258,
+        391.317
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5585F06C49F31DDB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 17,
+      "section_id": "SEC-42D80DBCCEEDD6B1",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）",
+        "7.8.14.2 MPLC一键诊断"
+      ],
+      "section_title": "7.8.14.2 MPLC一键诊断",
+      "block_type": "paragraph",
+      "text": "步骤 2 点击MPLC 一键诊断。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        395.334,
+        194.238,
+        407.817
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0E9ADB1CFA96B1EA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 18,
+      "section_id": "SEC-42D80DBCCEEDD6B1",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）",
+        "7.8.14.2 MPLC一键诊断"
+      ],
+      "section_title": "7.8.14.2 MPLC一键诊断",
+      "block_type": "paragraph",
+      "text": "对话框中将显示当前诊断进度。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        410.256,
+        227.736,
+        421.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0E32A2B5A1966F38",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 19,
+      "section_id": "SEC-42D80DBCCEEDD6B1",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）",
+        "7.8.14.2 MPLC一键诊断"
+      ],
+      "section_title": "7.8.14.2 MPLC一键诊断",
+      "block_type": "paragraph",
+      "text": "步骤 3 诊断完成后，根据界面提示处理故障节点。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        425.334,
+        272.736,
+        437.817
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7A9C210276610C17",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 20,
+      "section_id": "SEC-42D80DBCCEEDD6B1",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）",
+        "7.8.14.2 MPLC一键诊断"
+      ],
+      "section_title": "7.8.14.2 MPLC一键诊断",
+      "block_type": "paragraph",
+      "text": "步骤 4 点击导出，将诊断结果保存至本地。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        441.834,
+        245.736,
+        454.317
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6B16D9ECA5042870",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 85,
+      "printed_page_label": "75",
+      "block_order": 21,
+      "section_id": "SEC-42D80DBCCEEDD6B1",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.14 MPLC（宽带PLC）",
+        "7.8.14.2 MPLC一键诊断"
+      ],
+      "section_title": "7.8.14.2 MPLC一键诊断",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        458.406,
+        126.36,
+        469.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

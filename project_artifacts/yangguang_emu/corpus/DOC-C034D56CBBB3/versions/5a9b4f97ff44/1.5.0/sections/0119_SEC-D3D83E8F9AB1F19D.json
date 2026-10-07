@@ -1,0 +1,1053 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-D3D83E8F9AB1F19D",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.11 证书安全维护"
+  ],
+  "section_title": "7.8.11 证书安全维护",
+  "start_pdf_page": 79,
+  "end_pdf_page": 81,
+  "blocks": [
+    {
+      "block_id": "BLK-ED50B26B9CF3F069",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 0,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EE7993163BAC7597",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 1,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "步骤 4 解压导出的压缩包，使用Excel 打开压缩包中的.cfg 文件，可查看并重新设置GOOSE 数据",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        71.484,
+        461.511,
+        83.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-21D367992E20718D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 2,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "配置文件。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        86.406,
+        146.736,
+        97.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-78A8B9281DD3904A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 3,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "步骤 5 保存重新设置后的GOOSE 数据配置文件。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        101.484,
+        274.239,
+        113.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C87E8AD3E623028B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 4,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "步骤 6 单击配置文件导入，选择保存后的GOOSE 数据配置文件，单击打开，完成GOOSE 数据配",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        117.984,
+        464.751,
+        130.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E81C6B3FAA2C29F4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 5,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "置文件导入。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        132.906,
+        155.736,
+        143.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5412F27995F4E868",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 6,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        148.056,
+        126.36,
+        159.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-282DAB28A5EF9F9A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 7,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "可开启防重放功能，降低重放攻击风险，可根据需要设置检测时间。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        169.334,
+        399.366,
+        181.817
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C3A681DA30393DC1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 8,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "heading",
+      "text": "7.8.11 证书安全维护",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        206.09,
+        162.676,
+        218.26
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B15F10B180F2EF6C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 9,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "通过系统 > 证书管理 > 采集/转发/NTS 对时证书，支持导入证书。",
+      "table_cells": null,
+      "bbox": [
+        102.367,
+        225.406,
+        364.132,
+        236.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A2F27CB4082A369F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 10,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "list",
+      "text": "•\n设备出厂自带默认PKI 颁发的证书，建议导入客户的签名证书。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        253.406,
+        396.549,
+        264.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D633C49C7E61C875",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 11,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "list",
+      "text": "•\n若使用NTS 功能，客户需导入NTS 服务器证书。NTS 证书从NTS 服务器获\n取，支持PEM 格式的X.509 证书导入。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        268.406,
+        447.291,
+        292.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-888EEE15DC1D72C1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 12,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "list",
+      "text": "•\n用户未导入第三方证书的情况下，服务端的HTTPS、IEC104、MODBUS 证书使\n用默认转发证书。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        296.906,
+        463.059,
+        321.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AF819714D046AE24",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 13,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "list",
+      "text": "•\n更新或删除HTTPS 证书，需要重新建立链接，如遇网页无法正常打开， 请重启\n浏览器。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        325.406,
+        459.036,
+        349.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5785560996F3689E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 14,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "客户端导入证书",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        365.556,
+        165.366,
+        376.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-15D6769603F8307A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 15,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "在证书管理页面，点击采集，单击新增，并填写证书名称，点击确定。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        382.356,
+        381.366,
+        393.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B51E218B64DA3A1B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 16,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "figure_caption",
+      "text": "图 7-2 客户端新增证书",
+      "table_cells": null,
+      "bbox": [
+        240.039,
+        520.147,
+        330.048,
+        531.1
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A62B6103BFCD2130",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 17,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "在新增证书所在行的“操作”栏中，点击证书导入选择上传证书类型及格式，并上传证书文\n件，单击保存。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        540.947,
+        450.36,
+        562.7
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-12F4E995FA0F9109",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 80,
+      "printed_page_label": "70",
+      "block_order": 0,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.441,
+        48.088,
+        449.795,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-06417F7042939D05",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 80,
+      "printed_page_label": "70",
+      "block_order": 1,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "figure_caption",
+      "text": "图 7-3 客户端证书导入",
+      "table_cells": null,
+      "bbox": [
+        225.866,
+        198.192,
+        315.875,
+        209.145
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9CBC0C202604B6C4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 80,
+      "printed_page_label": "70",
+      "block_order": 2,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "服务端导入证书",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        218.992,
+        151.193,
+        229.945
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-09E83EB90B2DC70B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 80,
+      "printed_page_label": "70",
+      "block_order": 3,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "在证书管理页面，点击转发，单击新增，选择上传证书名称、协议及端口，点击确定。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        235.792,
+        430.193,
+        246.745
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BEDA66D2E2A7194C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 80,
+      "printed_page_label": "70",
+      "block_order": 4,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "figure_caption",
+      "text": "图 7-4 服务端新增证书",
+      "table_cells": null,
+      "bbox": [
+        225.866,
+        380.668,
+        315.875,
+        391.621
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8CB8B4CE849B8B21",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 80,
+      "printed_page_label": "70",
+      "block_order": 5,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "在新增证书所在行的“操作”栏中，点击证书导入选择上传证书类型及格式，并上传证书文\n件，单击保存。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        401.468,
+        436.187,
+        423.221
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8C339F633AAB7153",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 80,
+      "printed_page_label": "70",
+      "block_order": 6,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "figure_caption",
+      "text": "图 7-5 服务端证书导入",
+      "table_cells": null,
+      "bbox": [
+        225.866,
+        549.681,
+        315.875,
+        560.634
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AD40061B2E7CD92A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 80,
+      "printed_page_label": "70",
+      "block_order": 7,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "导入NTS 对时主服务器证书",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        570.481,
+        200.693,
+        581.434
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B79C4203098D5BD8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 80,
+      "printed_page_label": "70",
+      "block_order": 8,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "在证书管理页面，点击 NTS 对时证书。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        588.631,
+        245.945,
+        599.584
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4ED2003C71574BAF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 80,
+      "printed_page_label": "70",
+      "block_order": 9,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "在主备服务器页面，点击证书导入，导入NTS 服务器证书。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        610.131,
+        326.693,
+        621.084
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-93335AFE2B35A263",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 81,
+      "printed_page_label": "71",
+      "block_order": 0,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.617,
+        48.088,
+        463.964,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5DF3738E40CE6594",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 81,
+      "printed_page_label": "71",
+      "block_order": 1,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "证书过期管理",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        156.212,
+        156.366,
+        167.165
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-690DBED86F1816BD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 81,
+      "printed_page_label": "71",
+      "block_order": 2,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "用户登录成功后，对于证书即将过期或已过期，系统将提示，并将结果记录至 Syslog 日志。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        174.362,
+        467.379,
+        185.315
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EA8AC7E9405C6C01",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 81,
+      "printed_page_label": "71",
+      "block_order": 3,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "当证书距离过期时间不足90 天时，系统触发“即将过期”告警。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        195.862,
+        347.868,
+        206.815
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-62CAAB59615DFD0E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 81,
+      "printed_page_label": "71",
+      "block_order": 4,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "当证书已过期时，系统触发“已过期”告警。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        396.478,
+        270.36,
+        407.431
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CED91E43B95C31B0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 81,
+      "printed_page_label": "71",
+      "block_order": 5,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "GOOSE 安全功能",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        576.378,
+        173.619,
+        587.331
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-783097B8DC239A78",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 81,
+      "printed_page_label": "71",
+      "block_order": 6,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "GOOSE 支持防重放开关、密钥更新等功能。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        594.528,
+        281.619,
+        605.481
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AAA209D1A32AD49E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 81,
+      "printed_page_label": "71",
+      "block_order": 7,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "防重放功能：在系统 > 转发配置页面，点击goose，勾选防重放开关。用户可根据需要，自\n行设置检测时间参数。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        616.028,
+        463.392,
+        640.481
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-59EAE38D15E5458E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 81,
+      "printed_page_label": "71",
+      "block_order": 8,
+      "section_id": "SEC-D3D83E8F9AB1F19D",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.11 证书安全维护"
+      ],
+      "section_title": "7.8.11 证书安全维护",
+      "block_type": "paragraph",
+      "text": "密钥更新：在系统 > 证书管理页面，点击goose 密钥，选择密钥导入，上传密钥文件即可完\n成更新。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        649.678,
+        465.642,
+        671.431
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

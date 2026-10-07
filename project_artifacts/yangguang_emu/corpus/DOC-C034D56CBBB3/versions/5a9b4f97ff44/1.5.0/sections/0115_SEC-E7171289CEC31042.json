@@ -1,0 +1,250 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-E7171289CEC31042",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.8 转发MODBUS服务配置",
+    "7.8.8.2 RTU模式"
+  ],
+  "section_title": "7.8.8.2 RTU模式",
+  "start_pdf_page": 76,
+  "end_pdf_page": 76,
+  "blocks": [
+    {
+      "block_id": "BLK-C21BFD6890694E60",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 6,
+      "section_id": "SEC-E7171289CEC31042",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.2 RTU模式"
+      ],
+      "section_title": "7.8.8.2 RTU模式",
+      "block_type": "heading",
+      "text": "7.8.8.2 RTU 模式",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        182.89,
+        132.393,
+        195.06
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-647ACBDB364FAD56",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 7,
+      "section_id": "SEC-E7171289CEC31042",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.2 RTU模式"
+      ],
+      "section_title": "7.8.8.2 RTU模式",
+      "block_type": "paragraph",
+      "text": "“RTU 模式”是数据采集器通过Modbus RTU 协议，连接上位机服务器，进行数据和指令传输。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        202.114,
+        439.464,
+        212.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7B5CFC4F2DEA2D45",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 8,
+      "section_id": "SEC-E7171289CEC31042",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.2 RTU模式"
+      ],
+      "section_title": "7.8.8.2 RTU模式",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击系统 > 转发配置 > MODBUS，默认进入Server 界面。",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        221.534,
+        322.59,
+        234.017
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7B4453D0F2D2DB7D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 9,
+      "section_id": "SEC-E7171289CEC31042",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.2 RTU模式"
+      ],
+      "section_title": "7.8.8.2 RTU模式",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击RTU，进入RTU 界面。",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        238.034,
+        202.98,
+        250.517
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FDA7635B6FA7BF1A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 10,
+      "section_id": "SEC-E7171289CEC31042",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.2 RTU模式"
+      ],
+      "section_title": "7.8.8.2 RTU模式",
+      "block_type": "paragraph",
+      "text": "步骤 3 选择串口名称，输入延时时间。",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        254.534,
+        213.564,
+        267.017
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-62C7ED14938861E1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 11,
+      "section_id": "SEC-E7171289CEC31042",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.2 RTU模式"
+      ],
+      "section_title": "7.8.8.2 RTU模式",
+      "block_type": "paragraph",
+      "text": "步骤 4 单击",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        272.36,
+        105.564,
+        284.843
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-025FFAD12320F77A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 12,
+      "section_id": "SEC-E7171289CEC31042",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.2 RTU模式"
+      ],
+      "section_title": "7.8.8.2 RTU模式",
+      "block_type": "paragraph",
+      "text": "。",
+      "table_cells": null,
+      "bbox": [
+        114.068,
+        273.782,
+        123.068,
+        284.735
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A319542D1EC970E8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 76,
+      "printed_page_label": "66",
+      "block_order": 13,
+      "section_id": "SEC-E7171289CEC31042",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.8 转发MODBUS服务配置",
+        "7.8.8.2 RTU模式"
+      ],
+      "section_title": "7.8.8.2 RTU模式",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        288.932,
+        112.187,
+        299.885
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

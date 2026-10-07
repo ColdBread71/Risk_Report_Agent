@@ -1,0 +1,124 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-0AE6C0BF218726B7",
+  "section_path": [
+    "9 电网调度",
+    "9.5 配置紧急停机"
+  ],
+  "section_title": "9.5 配置紧急停机",
+  "start_pdf_page": 101,
+  "end_pdf_page": 101,
+  "blocks": [
+    {
+      "block_id": "BLK-5DF9DCA0F6C37220",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 101,
+      "printed_page_label": "91",
+      "block_order": 24,
+      "section_id": "SEC-0AE6C0BF218726B7",
+      "section_path": [
+        "9 电网调度",
+        "9.5 配置紧急停机"
+      ],
+      "section_title": "9.5 配置紧急停机",
+      "block_type": "heading",
+      "text": "9.5 配置紧急停机",
+      "table_cells": null,
+      "bbox": [
+        70.868,
+        564.008,
+        167.048,
+        578.612
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CE56A364FC3387A5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 101,
+      "printed_page_label": "91",
+      "block_order": 25,
+      "section_id": "SEC-0AE6C0BF218726B7",
+      "section_path": [
+        "9 电网调度",
+        "9.5 配置紧急停机"
+      ],
+      "section_title": "9.5 配置紧急停机",
+      "block_type": "paragraph",
+      "text": "当电网中出现如短路、过载或设备故障等问题时，紧急停机可以迅速对逆变器执行批量关机操\n作，从而维护电网的整体稳定性和运行安全。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        591.564,
+        450.863,
+        614.658
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-29C8A85E73A2DEF0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 101,
+      "printed_page_label": "91",
+      "block_order": 26,
+      "section_id": "SEC-0AE6C0BF218726B7",
+      "section_path": [
+        "9 电网调度",
+        "9.5 配置紧急停机"
+      ],
+      "section_title": "9.5 配置紧急停机",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.362,
+        625.156,
+        138.362,
+        636.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7CC3DB89441824B5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 101,
+      "printed_page_label": "91",
+      "block_order": 27,
+      "section_id": "SEC-0AE6C0BF218726B7",
+      "section_path": [
+        "9 电网调度",
+        "9.5 配置紧急停机"
+      ],
+      "section_title": "9.5 配置紧急停机",
+      "block_type": "list",
+      "text": "•\n数据采集器已连接急停装置。",
+      "table_cells": null,
+      "bbox": [
+        102.362,
+        645.156,
+        233.537,
+        656.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

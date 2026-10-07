@@ -1,0 +1,221 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-D440E7617051322E",
+  "section_path": [
+    "7 Web界面",
+    "7.6 设备维护",
+    "7.6.1 设备列表",
+    "7.6.1.5 编辑设备"
+  ],
+  "section_title": "7.6.1.5 编辑设备",
+  "start_pdf_page": 61,
+  "end_pdf_page": 61,
+  "blocks": [
+    {
+      "block_id": "BLK-6ACC76124F30B685",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 61,
+      "printed_page_label": "51",
+      "block_order": 5,
+      "section_id": "SEC-D440E7617051322E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "heading",
+      "text": "7.6.1.5 编辑设备",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        293.645,
+        146.2,
+        305.815
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ADB2F8B5A920ED4C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 61,
+      "printed_page_label": "51",
+      "block_order": 6,
+      "section_id": "SEC-D440E7617051322E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击设备维护 > 设备列表，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        317.539,
+        255.991,
+        330.022
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6BE80A41C47AC778",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 61,
+      "printed_page_label": "51",
+      "block_order": 7,
+      "section_id": "SEC-D440E7617051322E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击操作栏",
+      "table_cells": null,
+      "bbox": [
+        70.87,
+        339.429,
+        146.731,
+        351.912
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F4BD04E519406CCA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 61,
+      "printed_page_label": "51",
+      "block_order": 8,
+      "section_id": "SEC-D440E7617051322E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "paragraph",
+      "text": "，弹出编辑设备界面。可修改数据采集器所接设备的设备名称和指令间隔时间\n等。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        340.851,
+        466.911,
+        365.304
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-35E80A4228C27DCD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 61,
+      "printed_page_label": "51",
+      "block_order": 9,
+      "section_id": "SEC-D440E7617051322E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "paragraph",
+      "text": "默认设备名称按照设备型号（端口号-通信地址）方式命名。\n如“SG36KTL-M(COM1-7)”中，“SG36KTL-M”为设备型号，“COM1”表示通信端口为\nCOM1，“7”表示通信地址为7。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        376.001,
+        456.749,
+        408.554
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E38D89055C07EF65",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 61,
+      "printed_page_label": "51",
+      "block_order": 10,
+      "section_id": "SEC-D440E7617051322E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "paragraph",
+      "text": "步骤 3 单击保存，修改信息。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        425.829,
+        191.736,
+        438.312
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1339F74C684A95CF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 61,
+      "printed_page_label": "51",
+      "block_order": 11,
+      "section_id": "SEC-D440E7617051322E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.5 编辑设备"
+      ],
+      "section_title": "7.6.1.5 编辑设备",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        442.401,
+        126.36,
+        453.354
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

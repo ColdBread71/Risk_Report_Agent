@@ -1,0 +1,313 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-BB6557E64C56E3C3",
+  "section_path": [
+    "1 安全注意事项",
+    "1.1 了解箱体安全标识"
+  ],
+  "section_title": "1.1 了解箱体安全标识",
+  "start_pdf_page": 7,
+  "end_pdf_page": 7,
+  "blocks": [
+    {
+      "block_id": "BLK-4722F411F5A75249",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 7,
+      "printed_page_label": "1",
+      "block_order": 6,
+      "section_id": "SEC-BB6557E64C56E3C3",
+      "section_path": [
+        "1 安全注意事项",
+        "1.1 了解箱体安全标识"
+      ],
+      "section_title": "1.1 了解箱体安全标识",
+      "block_type": "heading",
+      "text": "1.1 了解箱体安全标识",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        303.758,
+        191.046,
+        318.362
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-07B28B51AE399C61",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 7,
+      "printed_page_label": "1",
+      "block_order": 7,
+      "section_id": "SEC-BB6557E64C56E3C3",
+      "section_path": [
+        "1 安全注意事项",
+        "1.1 了解箱体安全标识"
+      ],
+      "section_title": "1.1 了解箱体安全标识",
+      "block_type": "paragraph",
+      "text": "箱体上的符号说明",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        338.056,
+        174.369,
+        349.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7C205D64B3573676",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 7,
+      "printed_page_label": "1",
+      "block_order": 8,
+      "section_id": "SEC-BB6557E64C56E3C3",
+      "section_path": [
+        "1 安全注意事项",
+        "1.1 了解箱体安全标识"
+      ],
+      "section_title": "1.1 了解箱体安全标识",
+      "block_type": "paragraph",
+      "text": "请时刻注意箱体上的警告标识，标识包括：",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        356.206,
+        273.369,
+        367.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5DE3E28309630740",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 7,
+      "printed_page_label": "1",
+      "block_order": 9,
+      "section_id": "SEC-BB6557E64C56E3C3",
+      "section_path": [
+        "1 安全注意事项",
+        "1.1 了解箱体安全标识"
+      ],
+      "section_title": "1.1 了解箱体安全标识",
+      "block_type": "paragraph",
+      "text": "标识\n说明",
+      "table_cells": null,
+      "bbox": [
+        111.036,
+        381.339,
+        208.413,
+        391.684
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0393712E551644CE",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 7,
+      "printed_page_label": "1",
+      "block_order": 10,
+      "section_id": "SEC-BB6557E64C56E3C3",
+      "section_path": [
+        "1 安全注意事项",
+        "1.1 了解箱体安全标识"
+      ],
+      "section_title": "1.1 了解箱体安全标识",
+      "block_type": "paragraph",
+      "text": "此标识表示箱体内部含有高压，触摸可能会导致电击危险。",
+      "table_cells": null,
+      "bbox": [
+        191.41,
+        409.098,
+        425.41,
+        420.051
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2B08B5278F4EDCA9",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 7,
+      "printed_page_label": "1",
+      "block_order": 11,
+      "section_id": "SEC-BB6557E64C56E3C3",
+      "section_path": [
+        "1 安全注意事项",
+        "1.1 了解箱体安全标识"
+      ],
+      "section_title": "1.1 了解箱体安全标识",
+      "block_type": "paragraph",
+      "text": "此符号表示此处为保护接地（PE）端，需要牢固接地以保证操作人\n员安全。",
+      "table_cells": null,
+      "bbox": [
+        191.41,
+        441.403,
+        455.416,
+        465.856
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ADEDDC0C987CC5D1",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 7,
+      "printed_page_label": "1",
+      "block_order": 12,
+      "section_id": "SEC-BB6557E64C56E3C3",
+      "section_path": [
+        "1 安全注意事项",
+        "1.1 了解箱体安全标识"
+      ],
+      "section_title": "1.1 了解箱体安全标识",
+      "block_type": "paragraph",
+      "text": "箱体内的标签说明",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        488.917,
+        174.366,
+        499.87
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-64D03178A470EBF0",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 7,
+      "printed_page_label": "1",
+      "block_order": 13,
+      "section_id": "SEC-BB6557E64C56E3C3",
+      "section_path": [
+        "1 安全注意事项",
+        "1.1 了解箱体安全标识"
+      ],
+      "section_title": "1.1 了解箱体安全标识",
+      "block_type": "paragraph",
+      "text": "请时刻注意箱体内的标签，标签包括：",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        507.067,
+        255.366,
+        518.02
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-56FEB9AF57159A7B",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 7,
+      "printed_page_label": "1",
+      "block_order": 14,
+      "section_id": "SEC-BB6557E64C56E3C3",
+      "section_path": [
+        "1 安全注意事项",
+        "1.1 了解箱体安全标识"
+      ],
+      "section_title": "1.1 了解箱体安全标识",
+      "block_type": "paragraph",
+      "text": "标识\n说明",
+      "table_cells": null,
+      "bbox": [
+        111.036,
+        532.2,
+        208.413,
+        542.545
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F33C557BDDE0202F",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 7,
+      "printed_page_label": "1",
+      "block_order": 15,
+      "section_id": "SEC-BB6557E64C56E3C3",
+      "section_path": [
+        "1 安全注意事项",
+        "1.1 了解箱体安全标识"
+      ],
+      "section_title": "1.1 了解箱体安全标识",
+      "block_type": "paragraph",
+      "text": "当心触电。",
+      "table_cells": null,
+      "bbox": [
+        191.41,
+        560.665,
+        236.41,
+        571.618
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-712B5769FE05E6EA",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 7,
+      "printed_page_label": "1",
+      "block_order": 16,
+      "section_id": "SEC-BB6557E64C56E3C3",
+      "section_path": [
+        "1 安全注意事项",
+        "1.1 了解箱体安全标识"
+      ],
+      "section_title": "1.1 了解箱体安全标识",
+      "block_type": "paragraph",
+      "text": "必须穿戴绝缘保护用品。",
+      "table_cells": null,
+      "bbox": [
+        191.41,
+        602.666,
+        290.41,
+        613.619
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

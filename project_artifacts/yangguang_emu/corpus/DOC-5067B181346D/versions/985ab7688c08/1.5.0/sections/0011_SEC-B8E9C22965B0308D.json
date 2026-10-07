@@ -1,0 +1,637 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-B8E9C22965B0308D",
+  "section_path": [
+    "1 安全注意事项",
+    "1.7 维护安全"
+  ],
+  "section_title": "1.7 维护安全",
+  "start_pdf_page": 13,
+  "end_pdf_page": 13,
+  "blocks": [
+    {
+      "block_id": "BLK-A06092014E063899",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "7",
+      "block_order": 0,
+      "section_id": "SEC-B8E9C22965B0308D",
+      "section_path": [
+        "1 安全注意事项",
+        "1.7 维护安全"
+      ],
+      "section_title": "1.7 维护安全",
+      "block_type": "paragraph",
+      "text": "用户手册\n1 安全注意事项",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-525DCDDB97C3B282",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "7",
+      "block_order": 1,
+      "section_id": "SEC-B8E9C22965B0308D",
+      "section_path": [
+        "1 安全注意事项",
+        "1.7 维护安全"
+      ],
+      "section_title": "1.7 维护安全",
+      "block_type": "paragraph",
+      "text": "危险",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        76.274,
+        146.863,
+        89.661
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AC06B94E77C3DBEC",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "7",
+      "block_order": 2,
+      "section_id": "SEC-B8E9C22965B0308D",
+      "section_path": [
+        "1 安全注意事项",
+        "1.7 维护安全"
+      ],
+      "section_title": "1.7 维护安全",
+      "block_type": "paragraph",
+      "text": "高温可能会造成线缆绝缘层老化、破损，线缆与发热器件或热源区域外围之间应保持至少\n30mm 的距离。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        94.806,
+        457.866,
+        116.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0C66E16F5777821C",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "7",
+      "block_order": 3,
+      "section_id": "SEC-B8E9C22965B0308D",
+      "section_path": [
+        "1 安全注意事项",
+        "1.7 维护安全"
+      ],
+      "section_title": "1.7 维护安全",
+      "block_type": "paragraph",
+      "text": "危险",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        135.624,
+        146.863,
+        149.011
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ED008385917988CA",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "7",
+      "block_order": 4,
+      "section_id": "SEC-B8E9C22965B0308D",
+      "section_path": [
+        "1 安全注意事项",
+        "1.7 维护安全"
+      ],
+      "section_title": "1.7 维护安全",
+      "block_type": "paragraph",
+      "text": "设备运行时：",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        154.156,
+        160.866,
+        165.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D506A9365A97CB89",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "7",
+      "block_order": 5,
+      "section_id": "SEC-B8E9C22965B0308D",
+      "section_path": [
+        "1 安全注意事项",
+        "1.7 维护安全"
+      ],
+      "section_title": "1.7 维护安全",
+      "block_type": "list",
+      "text": "•\n严禁触摸设备的带电部件，否则可能会有触电危险。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        167.806,
+        328.041,
+        178.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6C33E9094F7DD615",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "7",
+      "block_order": 6,
+      "section_id": "SEC-B8E9C22965B0308D",
+      "section_path": [
+        "1 安全注意事项",
+        "1.7 维护安全"
+      ],
+      "section_title": "1.7 维护安全",
+      "block_type": "list",
+      "text": "•\n严禁触摸设备的任何接线端子，否则可能会有触电危险。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        182.806,
+        346.041,
+        193.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-38AE408D17C55D31",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "7",
+      "block_order": 7,
+      "section_id": "SEC-B8E9C22965B0308D",
+      "section_path": [
+        "1 安全注意事项",
+        "1.7 维护安全"
+      ],
+      "section_title": "1.7 维护安全",
+      "block_type": "list",
+      "text": "•\n严禁触摸设备的灼热部件(如散热器等)，否则可能会有灼伤危险。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        197.806,
+        379.035,
+        208.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-41AD17D04728E739",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "7",
+      "block_order": 8,
+      "section_id": "SEC-B8E9C22965B0308D",
+      "section_path": [
+        "1 安全注意事项",
+        "1.7 维护安全"
+      ],
+      "section_title": "1.7 维护安全",
+      "block_type": "heading",
+      "text": "1.7 维护安全",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        242.558,
+        143.046,
+        257.162
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DEEA2B317D2B142B",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "7",
+      "block_order": 9,
+      "section_id": "SEC-B8E9C22965B0308D",
+      "section_path": [
+        "1 安全注意事项",
+        "1.7 维护安全"
+      ],
+      "section_title": "1.7 维护安全",
+      "block_type": "paragraph",
+      "text": "不当的维护操作可能导致人员伤亡或财产损失。因此在对设备维护前，必须先将设备下电，\n并严格按照本手册及其他相关文件中列出的安全注意事项进行操作。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        270.206,
+        462.366,
+        294.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D81C770C1536D4E3",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "7",
+      "block_order": 10,
+      "section_id": "SEC-B8E9C22965B0308D",
+      "section_path": [
+        "1 安全注意事项",
+        "1.7 维护安全"
+      ],
+      "section_title": "1.7 维护安全",
+      "block_type": "paragraph",
+      "text": "危险",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        308.574,
+        146.863,
+        321.961
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-772C8B632EE37D4A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "7",
+      "block_order": 11,
+      "section_id": "SEC-B8E9C22965B0308D",
+      "section_path": [
+        "1 安全注意事项",
+        "1.7 维护安全"
+      ],
+      "section_title": "1.7 维护安全",
+      "block_type": "list",
+      "text": "•\n维护操作前，请先断开前级供电电源及PLC 电源，否则会导致人员伤害！",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        328.456,
+        413.046,
+        339.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8404185B5913F2FC",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "7",
+      "block_order": 12,
+      "section_id": "SEC-B8E9C22965B0308D",
+      "section_path": [
+        "1 安全注意事项",
+        "1.7 维护安全"
+      ],
+      "section_title": "1.7 维护安全",
+      "block_type": "list",
+      "text": "•\n设备下电25 分钟后，使用检测设备检测，确保无电压和电流，请佩戴防护装备对设备\n进行操作维护。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        343.456,
+        459.549,
+        367.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-34B33E92B5134C20",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "7",
+      "block_order": 13,
+      "section_id": "SEC-B8E9C22965B0308D",
+      "section_path": [
+        "1 安全注意事项",
+        "1.7 维护安全"
+      ],
+      "section_title": "1.7 维护安全",
+      "block_type": "list",
+      "text": "•\n设备停机后，依然存在灼伤危险。待产品冷却后，需要佩戴防护手套再对设备进行操\n作。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        371.956,
+        454.041,
+        396.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-592724CE4CDB224A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "7",
+      "block_order": 14,
+      "section_id": "SEC-B8E9C22965B0308D",
+      "section_path": [
+        "1 安全注意事项",
+        "1.7 维护安全"
+      ],
+      "section_title": "1.7 维护安全",
+      "block_type": "paragraph",
+      "text": "危险",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        416.824,
+        146.863,
+        430.211
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A48124E84462053A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "7",
+      "block_order": 15,
+      "section_id": "SEC-B8E9C22965B0308D",
+      "section_path": [
+        "1 安全注意事项",
+        "1.7 维护安全"
+      ],
+      "section_title": "1.7 维护安全",
+      "block_type": "paragraph",
+      "text": "严禁触摸电网或产品内部与之相连接的触点、端子等，存在电击危险！",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        435.356,
+        385.866,
+        446.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-386F8031D0B57EF3",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "7",
+      "block_order": 16,
+      "section_id": "SEC-B8E9C22965B0308D",
+      "section_path": [
+        "1 安全注意事项",
+        "1.7 维护安全"
+      ],
+      "section_title": "1.7 维护安全",
+      "block_type": "paragraph",
+      "text": "警告",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        465.374,
+        146.863,
+        478.761
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-46C3FDBAE0BFC559",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "7",
+      "block_order": 17,
+      "section_id": "SEC-B8E9C22965B0308D",
+      "section_path": [
+        "1 安全注意事项",
+        "1.7 维护安全"
+      ],
+      "section_title": "1.7 维护安全",
+      "block_type": "paragraph",
+      "text": "在进行维护工作之前，请先将设备下电，才能对设备进行操作。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        483.906,
+        358.866,
+        494.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-46537F62CAFBE9AE",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "7",
+      "block_order": 18,
+      "section_id": "SEC-B8E9C22965B0308D",
+      "section_path": [
+        "1 安全注意事项",
+        "1.7 维护安全"
+      ],
+      "section_title": "1.7 维护安全",
+      "block_type": "paragraph",
+      "text": "警告",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        513.924,
+        146.863,
+        527.311
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7C90406D59E9961A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "7",
+      "block_order": 19,
+      "section_id": "SEC-B8E9C22965B0308D",
+      "section_path": [
+        "1 安全注意事项",
+        "1.7 维护安全"
+      ],
+      "section_title": "1.7 维护安全",
+      "block_type": "list",
+      "text": "•\n设备维修只能由本公司的服务部门或具备专业资格的人员进行。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        533.806,
+        373.041,
+        544.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-458146EF8335CEF8",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "7",
+      "block_order": 20,
+      "section_id": "SEC-B8E9C22965B0308D",
+      "section_path": [
+        "1 安全注意事项",
+        "1.7 维护安全"
+      ],
+      "section_title": "1.7 维护安全",
+      "block_type": "list",
+      "text": "•\n禁止用户自行从事维修保养、更换模块等作业，否则可能造成严重的人身伤害或重大的\n财产损失！",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        548.806,
+        463.041,
+        573.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EF8D2390F7916C50",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "7",
+      "block_order": 21,
+      "section_id": "SEC-B8E9C22965B0308D",
+      "section_path": [
+        "1 安全注意事项",
+        "1.7 维护安全"
+      ],
+      "section_title": "1.7 维护安全",
+      "block_type": "paragraph",
+      "text": "小心",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        593.674,
+        146.863,
+        607.061
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8242D3C8136F883C",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "7",
+      "block_order": 22,
+      "section_id": "SEC-B8E9C22965B0308D",
+      "section_path": [
+        "1 安全注意事项",
+        "1.7 维护安全"
+      ],
+      "section_title": "1.7 维护安全",
+      "block_type": "paragraph",
+      "text": "为防止无关人员靠近产品误操作或发生意外，请在产品周边放置醒目的警告标识牌或设立\n安全警示带。",
+      "table_cells": null,
+      "bbox": [
+        106.864,
+        612.206,
+        457.864,
+        633.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

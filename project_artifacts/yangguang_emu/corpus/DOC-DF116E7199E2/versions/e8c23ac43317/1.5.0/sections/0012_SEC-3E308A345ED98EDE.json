@@ -1,0 +1,197 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-3E308A345ED98EDE",
+  "section_path": [
+    "5 产品功能及部署情况介绍"
+  ],
+  "section_title": "5 产品功能及部署情况介绍",
+  "start_pdf_page": 12,
+  "end_pdf_page": 13,
+  "blocks": [
+    {
+      "block_id": "BLK-BDF435E6E7F273A5",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "8",
+      "block_order": 0,
+      "section_id": "SEC-3E308A345ED98EDE",
+      "section_path": [
+        "5 产品功能及部署情况介绍"
+      ],
+      "section_title": "5 产品功能及部署情况介绍",
+      "block_type": "heading",
+      "text": "5\n产品功能及部署情况介绍",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        98.112,
+        280.451,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0FE6A5150E10C5BC",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "8",
+      "block_order": 1,
+      "section_id": "SEC-3E308A345ED98EDE",
+      "section_path": [
+        "5 产品功能及部署情况介绍"
+      ],
+      "section_title": "5 产品功能及部署情况介绍",
+      "block_type": "paragraph",
+      "text": "能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\n云平台，可接收北向远程调度指令或执行本地调度指令。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        145.506,
+        452.198,
+        223.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-153C2EE70C8A30F1",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "8",
+      "block_order": 2,
+      "section_id": "SEC-3E308A345ED98EDE",
+      "section_path": [
+        "5 产品功能及部署情况介绍"
+      ],
+      "section_title": "5 产品功能及部署情况介绍",
+      "block_type": "list",
+      "text": "•\n能量管理单元可以将采集到的设备数据，通过核心交换机传输至后台站控，例如\nInsight、SCADA。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        234.506,
+        417.368,
+        258.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-64FE47677390A3C6",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "8",
+      "block_order": 3,
+      "section_id": "SEC-3E308A345ED98EDE",
+      "section_path": [
+        "5 产品功能及部署情况介绍"
+      ],
+      "section_title": "5 产品功能及部署情况介绍",
+      "block_type": "list",
+      "text": "•\n能量管理单元也可将采集到的设备数据，直接通过4G 路由器传输至阳光云。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        263.006,
+        406.874,
+        273.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-76C33977D614288F",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "8",
+      "block_order": 4,
+      "section_id": "SEC-3E308A345ED98EDE",
+      "section_path": [
+        "5 产品功能及部署情况介绍"
+      ],
+      "section_title": "5 产品功能及部署情况介绍",
+      "block_type": "paragraph",
+      "text": "通过核心交换机连接至后台站控",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        283.156,
+        214.193,
+        294.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EAF433E21E1F1D8F",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 12,
+      "printed_page_label": "8",
+      "block_order": 5,
+      "section_id": "SEC-3E308A345ED98EDE",
+      "section_path": [
+        "5 产品功能及部署情况介绍"
+      ],
+      "section_title": "5 产品功能及部署情况介绍",
+      "block_type": "paragraph",
+      "text": "能量管理单元通过核心交换机连接至Insight 或SCADA 的方式，如下图所示。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        301.306,
+        397.721,
+        312.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3AD5ECCBD9B22E49",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 13,
+      "printed_page_label": "9",
+      "block_order": 0,
+      "section_id": "SEC-3E308A345ED98EDE",
+      "section_path": [
+        "5 产品功能及部署情况介绍"
+      ],
+      "section_title": "5 产品功能及部署情况介绍",
+      "block_type": "paragraph",
+      "text": "用户网络安全操作手册\n5 产品功能及部署情况介绍",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

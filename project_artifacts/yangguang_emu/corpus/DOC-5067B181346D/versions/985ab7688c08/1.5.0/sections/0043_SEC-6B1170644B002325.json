@@ -1,0 +1,493 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-6B1170644B002325",
+  "section_path": [
+    "4 电气连接",
+    "4.6 接线步骤",
+    "4.6.7 PID干接点连接（可选）"
+  ],
+  "section_title": "4.6.7 PID干接点连接（可选）",
+  "start_pdf_page": 42,
+  "end_pdf_page": 43,
+  "blocks": [
+    {
+      "block_id": "BLK-E0D77732D3C49978",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 42,
+      "printed_page_label": "36",
+      "block_order": 0,
+      "section_id": "SEC-6B1170644B002325",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.7 PID干接点连接（可选）"
+      ],
+      "section_title": "4.6.7 PID干接点连接（可选）",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 电气连接",
+      "table_cells": null,
+      "bbox": [
+        60.441,
+        48.088,
+        449.795,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3E21EE8C3D5B633B",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 42,
+      "printed_page_label": "36",
+      "block_order": 1,
+      "section_id": "SEC-6B1170644B002325",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.7 PID干接点连接（可选）"
+      ],
+      "section_title": "4.6.7 PID干接点连接（可选）",
+      "block_type": "heading",
+      "text": "4.6.7 PID 干接点连接（可选）",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        210.473,
+        190.353,
+        222.643
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-31F0FCBDECF72334",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 42,
+      "printed_page_label": "36",
+      "block_order": 2,
+      "section_id": "SEC-6B1170644B002325",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.7 PID干接点连接（可选）"
+      ],
+      "section_title": "4.6.7 PID干接点连接（可选）",
+      "block_type": "list",
+      "text": "•\n继电器可设置为故障警报输出，可由用户配置为常开触点（NO&COM）或常闭触\n点（NC&COM）。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        236.289,
+        448.868,
+        260.742
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3B70F13D351395D4",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 42,
+      "printed_page_label": "36",
+      "block_order": 3,
+      "section_id": "SEC-6B1170644B002325",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.7 PID干接点连接（可选）"
+      ],
+      "section_title": "4.6.7 PID干接点连接（可选）",
+      "block_type": "list",
+      "text": "•\n继电器初始位置在NC 端子。当交流绝缘阻抗值低于交流绝缘保护阈值时，继电\n器动作跳至另一触点，可以通过外接LED 指示灯或其他装置来反映该种情况。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        264.789,
+        443.864,
+        289.242
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-12352FB8DCD59EF2",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 42,
+      "printed_page_label": "36",
+      "block_order": 4,
+      "section_id": "SEC-6B1170644B002325",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.7 PID干接点连接（可选）"
+      ],
+      "section_title": "4.6.7 PID干接点连接（可选）",
+      "block_type": "list",
+      "text": "•\n下图为通过DO 干接点输出故障状态的典型应用举例，共有两种接线方式：",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        293.289,
+        426.368,
+        304.242
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B751A0DB760464B3",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 42,
+      "printed_page_label": "36",
+      "block_order": 5,
+      "section_id": "SEC-6B1170644B002325",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.7 PID干接点连接（可选）"
+      ],
+      "section_title": "4.6.7 PID干接点连接（可选）",
+      "block_type": "figure_caption",
+      "text": "图 4-6 常开电路连接示意图",
+      "table_cells": null,
+      "bbox": [
+        235.199,
+        421.621,
+        343.208,
+        432.574
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9442E5D5DE3FB8BF",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 42,
+      "printed_page_label": "36",
+      "block_order": 6,
+      "section_id": "SEC-6B1170644B002325",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.7 PID干接点连接（可选）"
+      ],
+      "section_title": "4.6.7 PID干接点连接（可选）",
+      "block_type": "figure_caption",
+      "text": "图 4-7 常闭电路连接示意图",
+      "table_cells": null,
+      "bbox": [
+        235.199,
+        559.954,
+        343.208,
+        570.907
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9D8BB2AFF052E233",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 42,
+      "printed_page_label": "36",
+      "block_order": 7,
+      "section_id": "SEC-6B1170644B002325",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.7 PID干接点连接（可选）"
+      ],
+      "section_title": "4.6.7 PID干接点连接（可选）",
+      "block_type": "paragraph",
+      "text": "注：以上图示中的“X”表示电路不导通，“√”表示电路导通。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        573.604,
+        345.125,
+        584.557
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C6E4CA09FC4657A2",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 42,
+      "printed_page_label": "36",
+      "block_order": 8,
+      "section_id": "SEC-6B1170644B002325",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.7 PID干接点连接（可选）"
+      ],
+      "section_title": "4.6.7 PID干接点连接（可选）",
+      "block_type": "paragraph",
+      "text": "线缆未包含在发货范围内，推荐线缆规格为：1~1.5 mm2。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        605.627,
+        348.212,
+        617.445
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B9BDF99D5C968299",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 42,
+      "printed_page_label": "36",
+      "block_order": 9,
+      "section_id": "SEC-6B1170644B002325",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.7 PID干接点连接（可选）"
+      ],
+      "section_title": "4.6.7 PID干接点连接（可选）",
+      "block_type": "paragraph",
+      "text": "步骤 1 将引入的线缆穿过EMU300A 底部的“PID01 DO”防水端子后，使用剥线钳剥去线缆的防护",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        637.72,
+        441.092,
+        650.203
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-32E1482CB150DB6C",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 42,
+      "printed_page_label": "36",
+      "block_order": 10,
+      "section_id": "SEC-6B1170644B002325",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.7 PID干接点连接（可选）"
+      ],
+      "section_title": "4.6.7 PID干接点连接（可选）",
+      "block_type": "paragraph",
+      "text": "层。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        652.642,
+        105.563,
+        663.595
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4BC74A3D631CA692",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 43,
+      "printed_page_label": "37",
+      "block_order": 0,
+      "section_id": "SEC-6B1170644B002325",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.7 PID干接点连接（可选）"
+      ],
+      "section_title": "4.6.7 PID干接点连接（可选）",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 电气连接",
+      "table_cells": null,
+      "bbox": [
+        74.619,
+        48.088,
+        463.966,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5AA3D865ABC18018",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 43,
+      "printed_page_label": "37",
+      "block_order": 1,
+      "section_id": "SEC-6B1170644B002325",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.7 PID干接点连接（可选）"
+      ],
+      "section_title": "4.6.7 PID干接点连接（可选）",
+      "block_type": "paragraph",
+      "text": "线缆未包含在发货范围内，推荐线缆规格为1~1.5 mm2。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        170.617,
+        355.004,
+        182.435
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-830E55C3E19B7E54",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 43,
+      "printed_page_label": "37",
+      "block_order": 2,
+      "section_id": "SEC-6B1170644B002325",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.7 PID干接点连接（可选）"
+      ],
+      "section_title": "4.6.7 PID干接点连接（可选）",
+      "block_type": "paragraph",
+      "text": "步骤 2 安装冷压端子，并使用压线钳压紧。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        199.71,
+        245.736,
+        212.193
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E48D040FB5D1321E",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 43,
+      "printed_page_label": "37",
+      "block_order": 3,
+      "section_id": "SEC-6B1170644B002325",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.7 PID干接点连接（可选）"
+      ],
+      "section_title": "4.6.7 PID干接点连接（可选）",
+      "block_type": "paragraph",
+      "text": "步骤 3 将PID 模块的COM、NC 和NO 端口上的接线端子拔掉。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        341.559,
+        330.732,
+        354.042
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5AF943B72744DB60",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 43,
+      "printed_page_label": "37",
+      "block_order": 4,
+      "section_id": "SEC-6B1170644B002325",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.7 PID干接点连接（可选）"
+      ],
+      "section_title": "4.6.7 PID干接点连接（可选）",
+      "block_type": "paragraph",
+      "text": "步骤 4 （以常闭触点为例）压接接线端子，紧固力矩为0.2N.m。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        358.059,
+        330.993,
+        370.542
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EA42A58A889380A0",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 43,
+      "printed_page_label": "37",
+      "block_order": 5,
+      "section_id": "SEC-6B1170644B002325",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.7 PID干接点连接（可选）"
+      ],
+      "section_title": "4.6.7 PID干接点连接（可选）",
+      "block_type": "paragraph",
+      "text": "步骤 5 将压接好的端子与PID 模块的NC 和COM 端子连接。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        551.31,
+        317.232,
+        563.793
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

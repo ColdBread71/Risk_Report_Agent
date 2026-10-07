@@ -1,0 +1,409 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-765F51FEF04AACB0",
+  "section_path": [
+    "7 Web界面",
+    "7.3 Web端简介",
+    "7.3.3 操作流程"
+  ],
+  "section_title": "7.3.3 操作流程",
+  "start_pdf_page": 50,
+  "end_pdf_page": 50,
+  "blocks": [
+    {
+      "block_id": "BLK-6435E199D9884EA1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "40",
+      "block_order": 4,
+      "section_id": "SEC-765F51FEF04AACB0",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.3 操作流程"
+      ],
+      "section_title": "7.3.3 操作流程",
+      "block_type": "heading",
+      "text": "7.3.3 操作流程",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        281.073,
+        123.683,
+        293.243
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2633F24F0CB1B5EA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "40",
+      "block_order": 5,
+      "section_id": "SEC-765F51FEF04AACB0",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.3 操作流程"
+      ],
+      "section_title": "7.3.3 操作流程",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        300.389,
+        124.196,
+        311.342
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C7DA18534C72FDC8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "40",
+      "block_order": 6,
+      "section_id": "SEC-765F51FEF04AACB0",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.3 操作流程"
+      ],
+      "section_title": "7.3.3 操作流程",
+      "block_type": "list",
+      "text": "•\n已经完成电气连接。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        320.389,
+        183.362,
+        331.342
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-36B3B5A5B6D935A9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "40",
+      "block_order": 7,
+      "section_id": "SEC-765F51FEF04AACB0",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.3 操作流程"
+      ],
+      "section_title": "7.3.3 操作流程",
+      "block_type": "list",
+      "text": "•\n已经成功登录Web。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        335.389,
+        185.963,
+        346.342
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D7B87703294DA202",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "40",
+      "block_order": 8,
+      "section_id": "SEC-765F51FEF04AACB0",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.3 操作流程"
+      ],
+      "section_title": "7.3.3 操作流程",
+      "block_type": "paragraph",
+      "text": "步骤 1 配置数据采集器串口。",
+      "table_cells": null,
+      "bbox": [
+        56.696,
+        359.467,
+        177.566,
+        371.95
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-603D0D81C874475E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "40",
+      "block_order": 9,
+      "section_id": "SEC-765F51FEF04AACB0",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.3 操作流程"
+      ],
+      "section_title": "7.3.3 操作流程",
+      "block_type": "paragraph",
+      "text": "登录Web 后，首先进行串口配置，保证数据采集器可以与下级设备正常通讯。参考7.8.13\n端口参数。",
+      "table_cells": null,
+      "bbox": [
+        87.566,
+        377.389,
+        443.678,
+        401.842
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-60A24167D626C419",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "40",
+      "block_order": 10,
+      "section_id": "SEC-765F51FEF04AACB0",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.3 操作流程"
+      ],
+      "section_title": "7.3.3 操作流程",
+      "block_type": "paragraph",
+      "text": "步骤 2 校准系统时间。",
+      "table_cells": null,
+      "bbox": [
+        56.696,
+        405.967,
+        150.566,
+        418.45
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BE18D775356A0119",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "40",
+      "block_order": 11,
+      "section_id": "SEC-765F51FEF04AACB0",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.3 操作流程"
+      ],
+      "section_title": "7.3.3 操作流程",
+      "block_type": "paragraph",
+      "text": "检查系统当前时间是否正确，可以手动对时和自动对时。参考7.8.5 系统时间。",
+      "table_cells": null,
+      "bbox": [
+        87.566,
+        423.889,
+        400.334,
+        434.842
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3A59459ADB188261",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "40",
+      "block_order": 12,
+      "section_id": "SEC-765F51FEF04AACB0",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.3 操作流程"
+      ],
+      "section_title": "7.3.3 操作流程",
+      "block_type": "paragraph",
+      "text": "步骤 3 自动搜索设备。",
+      "table_cells": null,
+      "bbox": [
+        56.696,
+        438.967,
+        150.566,
+        451.45
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-999CABA48AF5D1C4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "40",
+      "block_order": 13,
+      "section_id": "SEC-765F51FEF04AACB0",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.3 操作流程"
+      ],
+      "section_title": "7.3.3 操作流程",
+      "block_type": "paragraph",
+      "text": "对于支持自动搜索的设备，如阳光电源生产的组串逆变器，可通过自动搜索添加设备并为其\n自动分配地址。参考7.6.1 设备列表。",
+      "table_cells": null,
+      "bbox": [
+        87.566,
+        456.889,
+        447.566,
+        481.342
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C22E46D9BDD2995B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "40",
+      "block_order": 14,
+      "section_id": "SEC-765F51FEF04AACB0",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.3 操作流程"
+      ],
+      "section_title": "7.3.3 操作流程",
+      "block_type": "paragraph",
+      "text": "步骤 4 添加设备。参考7.6.1 设备列表。",
+      "table_cells": null,
+      "bbox": [
+        56.696,
+        485.467,
+        220.334,
+        497.95
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-19EF9052800491F2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "40",
+      "block_order": 15,
+      "section_id": "SEC-765F51FEF04AACB0",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.3 操作流程"
+      ],
+      "section_title": "7.3.3 操作流程",
+      "block_type": "paragraph",
+      "text": "步骤 5 转发配置服务。",
+      "table_cells": null,
+      "bbox": [
+        56.696,
+        501.967,
+        150.566,
+        514.45
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CE3B284B04C814C2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "40",
+      "block_order": 16,
+      "section_id": "SEC-765F51FEF04AACB0",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.3 操作流程"
+      ],
+      "section_title": "7.3.3 操作流程",
+      "block_type": "paragraph",
+      "text": "添加完成所有设备后，配置数据采集器转发服务，保证数据采集器可将数据转发至上级设\n备。参考7.8.6 转发阳光云服务设置~7.8.10 转发GOOSE 服务配置。",
+      "table_cells": null,
+      "bbox": [
+        87.566,
+        519.889,
+        438.566,
+        544.342
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C0A907A774773DDE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "40",
+      "block_order": 17,
+      "section_id": "SEC-765F51FEF04AACB0",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.3 操作流程"
+      ],
+      "section_title": "7.3.3 操作流程",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        548.539,
+        112.19,
+        559.492
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

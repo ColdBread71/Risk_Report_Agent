@@ -1,0 +1,610 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-32798B0B6E581F48",
+  "section_path": [
+    "2 产品描述",
+    "2.2 组网应用"
+  ],
+  "section_title": "2.2 组网应用",
+  "start_pdf_page": 14,
+  "end_pdf_page": 16,
+  "blocks": [
+    {
+      "block_id": "BLK-30F88FEA45DE868B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "4",
+      "block_order": 0,
+      "section_id": "SEC-32798B0B6E581F48",
+      "section_path": [
+        "2 产品描述",
+        "2.2 组网应用"
+      ],
+      "section_title": "2.2 组网应用",
+      "block_type": "paragraph",
+      "text": "用户手册\n2 产品描述",
+      "table_cells": null,
+      "bbox": [
+        60.446,
+        48.088,
+        449.793,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7EE7E39A4ABB1E3A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "4",
+      "block_order": 1,
+      "section_id": "SEC-32798B0B6E581F48",
+      "section_path": [
+        "2 产品描述",
+        "2.2 组网应用"
+      ],
+      "section_title": "2.2 组网应用",
+      "block_type": "paragraph",
+      "text": "本地调度",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        71.556,
+        124.193,
+        82.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-010942CD2E663173",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "4",
+      "block_order": 2,
+      "section_id": "SEC-32798B0B6E581F48",
+      "section_path": [
+        "2 产品描述",
+        "2.2 组网应用"
+      ],
+      "section_title": "2.2 组网应用",
+      "block_type": "paragraph",
+      "text": "数据采集器可以接受和执行本地调度指令，包括固定值下发、电表闭环调度等。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        89.706,
+        403.193,
+        100.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F78D868FFB99930E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "4",
+      "block_order": 3,
+      "section_id": "SEC-32798B0B6E581F48",
+      "section_path": [
+        "2 产品描述",
+        "2.2 组网应用"
+      ],
+      "section_title": "2.2 组网应用",
+      "block_type": "paragraph",
+      "text": "快速调度",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        109.856,
+        124.193,
+        120.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C45CBD486AE267BE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "4",
+      "block_order": 4,
+      "section_id": "SEC-32798B0B6E581F48",
+      "section_path": [
+        "2 产品描述",
+        "2.2 组网应用"
+      ],
+      "section_title": "2.2 组网应用",
+      "block_type": "paragraph",
+      "text": "数据采集器可以接受和执行有功或无功快速调度指令，包括Goose 指令，实现无功30ms 调\n度下发控制。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        128.006,
+        451.721,
+        152.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-329E50FFC94814C6",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "4",
+      "block_order": 5,
+      "section_id": "SEC-32798B0B6E581F48",
+      "section_path": [
+        "2 产品描述",
+        "2.2 组网应用"
+      ],
+      "section_title": "2.2 组网应用",
+      "block_type": "paragraph",
+      "text": "IV 曲线在线诊断",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        161.656,
+        152.948,
+        172.609
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E3F6ECEF3B84C750",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "4",
+      "block_order": 6,
+      "section_id": "SEC-32798B0B6E581F48",
+      "section_path": [
+        "2 产品描述",
+        "2.2 组网应用"
+      ],
+      "section_title": "2.2 组网应用",
+      "block_type": "paragraph",
+      "text": "数据采集器支持自研逆变器IV 曲线在线诊断功能，并可通过Insight、iSolarSuite 或\niSolarCloud 进行查看。参考Insight、iSolarSuite 或iSolarCloud 手册，以获取IV 曲线在线\n诊断的详细介绍。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        179.806,
+        446.537,
+        217.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DC1248D089FBC532",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "4",
+      "block_order": 7,
+      "section_id": "SEC-32798B0B6E581F48",
+      "section_path": [
+        "2 产品描述",
+        "2.2 组网应用"
+      ],
+      "section_title": "2.2 组网应用",
+      "block_type": "paragraph",
+      "text": "内置MPLC",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        226.956,
+        133.445,
+        237.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0D83775CEED68C64",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "4",
+      "block_order": 8,
+      "section_id": "SEC-32798B0B6E581F48",
+      "section_path": [
+        "2 产品描述",
+        "2.2 组网应用"
+      ],
+      "section_title": "2.2 组网应用",
+      "block_type": "paragraph",
+      "text": "数据采集器内置一路MPLC（宽带电力载波通信）主节点，可以直接接入阳光电源生产的具\n备MPLC 功能的组串式逆变器。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        245.106,
+        448.445,
+        269.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F552EA12563F0CB2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "4",
+      "block_order": 9,
+      "section_id": "SEC-32798B0B6E581F48",
+      "section_path": [
+        "2 产品描述",
+        "2.2 组网应用"
+      ],
+      "section_title": "2.2 组网应用",
+      "block_type": "heading",
+      "text": "2.2 组网应用",
+      "table_cells": null,
+      "bbox": [
+        56.687,
+        288.858,
+        128.879,
+        303.462
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E22DE271FA406AC8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "4",
+      "block_order": 10,
+      "section_id": "SEC-32798B0B6E581F48",
+      "section_path": [
+        "2 产品描述",
+        "2.2 组网应用"
+      ],
+      "section_title": "2.2 组网应用",
+      "block_type": "paragraph",
+      "text": "数据采集器可参与多种场景下的组网应用。数据采集器通过RS485 总线方式接入光伏发电系\n统中的逆变器、箱变、环境监测仪、电表等，还可以通过MPLC 总线方式接入阳光电源生产\n的具备MPLC 功能的组串式逆变器。",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        316.506,
+        453.212,
+        354.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E865E0F76E594E40",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "4",
+      "block_order": 11,
+      "section_id": "SEC-32798B0B6E581F48",
+      "section_path": [
+        "2 产品描述",
+        "2.2 组网应用"
+      ],
+      "section_title": "2.2 组网应用",
+      "block_type": "list",
+      "text": "•\n数据采集器可以将采集到的设备数据，通过核心交换机传输至后台站控，例如Insight、\nSCADA。",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        365.006,
+        446.129,
+        389.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E5ACB51D62098CCA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "4",
+      "block_order": 12,
+      "section_id": "SEC-32798B0B6E581F48",
+      "section_path": [
+        "2 产品描述",
+        "2.2 组网应用"
+      ],
+      "section_title": "2.2 组网应用",
+      "block_type": "list",
+      "text": "•\n数据采集器也可将采集到的设备数据，直接通过4G 路由器传输至阳光云。",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        393.506,
+        397.871,
+        404.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-83E58D1486451C89",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "4",
+      "block_order": 13,
+      "section_id": "SEC-32798B0B6E581F48",
+      "section_path": [
+        "2 产品描述",
+        "2.2 组网应用"
+      ],
+      "section_title": "2.2 组网应用",
+      "block_type": "paragraph",
+      "text": "通过核心交换机连接至后台站控",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        407.156,
+        214.19,
+        418.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BE3EA4AAABA7122C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "4",
+      "block_order": 14,
+      "section_id": "SEC-32798B0B6E581F48",
+      "section_path": [
+        "2 产品描述",
+        "2.2 组网应用"
+      ],
+      "section_title": "2.2 组网应用",
+      "block_type": "paragraph",
+      "text": "数据采集器通过核心交换机连接至Insight 或SCADA 的方式，如下图所示。",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        425.306,
+        388.718,
+        436.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-00A6EA3429DA805C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 15,
+      "printed_page_label": "5",
+      "block_order": 0,
+      "section_id": "SEC-32798B0B6E581F48",
+      "section_path": [
+        "2 产品描述",
+        "2.2 组网应用"
+      ],
+      "section_title": "2.2 组网应用",
+      "block_type": "paragraph",
+      "text": "用户手册\n2 产品描述",
+      "table_cells": null,
+      "bbox": [
+        74.615,
+        48.088,
+        463.969,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-76718D1FF9BECD60",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 15,
+      "printed_page_label": "5",
+      "block_order": 1,
+      "section_id": "SEC-32798B0B6E581F48",
+      "section_path": [
+        "2 产品描述",
+        "2.2 组网应用"
+      ],
+      "section_title": "2.2 组网应用",
+      "block_type": "figure_caption",
+      "text": "图 2-1 环形组网方式",
+      "table_cells": null,
+      "bbox": [
+        244.539,
+        369.332,
+        325.548,
+        380.285
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-156D7DCBDC253463",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 15,
+      "printed_page_label": "5",
+      "block_order": 2,
+      "section_id": "SEC-32798B0B6E581F48",
+      "section_path": [
+        "2 产品描述",
+        "2.2 组网应用"
+      ],
+      "section_title": "2.2 组网应用",
+      "block_type": "paragraph",
+      "text": "当采用环形组网方式时，一个环网中最多可接入15 台数据采集器。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        391.482,
+        368.874,
+        402.435
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-413CC2E090501149",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 16,
+      "printed_page_label": "6",
+      "block_order": 0,
+      "section_id": "SEC-32798B0B6E581F48",
+      "section_path": [
+        "2 产品描述",
+        "2.2 组网应用"
+      ],
+      "section_title": "2.2 组网应用",
+      "block_type": "paragraph",
+      "text": "用户手册\n2 产品描述",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1C39D1E60E4D80E4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 16,
+      "printed_page_label": "6",
+      "block_order": 1,
+      "section_id": "SEC-32798B0B6E581F48",
+      "section_path": [
+        "2 产品描述",
+        "2.2 组网应用"
+      ],
+      "section_title": "2.2 组网应用",
+      "block_type": "figure_caption",
+      "text": "图 2-2 星形组网方式",
+      "table_cells": null,
+      "bbox": [
+        230.366,
+        353.555,
+        311.375,
+        364.508
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-03F0F382600E8208",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 16,
+      "printed_page_label": "6",
+      "block_order": 2,
+      "section_id": "SEC-32798B0B6E581F48",
+      "section_path": [
+        "2 产品描述",
+        "2.2 组网应用"
+      ],
+      "section_title": "2.2 组网应用",
+      "block_type": "paragraph",
+      "text": "通过路由器连接至阳光云",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        374.355,
+        187.193,
+        385.308
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-48C9876F07A241C4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 16,
+      "printed_page_label": "6",
+      "block_order": 3,
+      "section_id": "SEC-32798B0B6E581F48",
+      "section_path": [
+        "2 产品描述",
+        "2.2 组网应用"
+      ],
+      "section_title": "2.2 组网应用",
+      "block_type": "paragraph",
+      "text": "数据采集器可以直接通过路由器与阳光云连接，如下图所示。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        392.505,
+        331.193,
+        403.458
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

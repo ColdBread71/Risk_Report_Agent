@@ -1,0 +1,169 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-8F11476F8862A417",
+  "section_path": [
+    "7 Web界面",
+    "7.10 系统",
+    "7.10.6 转发配置",
+    "7.10.6.3 转发MODBUS服务配置",
+    "7.10.6.3.1 Server模式"
+  ],
+  "section_title": "7.10.6.3.1 Server模式",
+  "start_pdf_page": 79,
+  "end_pdf_page": 79,
+  "blocks": [
+    {
+      "block_id": "BLK-91BD494E227E9491",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 11,
+      "section_id": "SEC-8F11476F8862A417",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.3 转发MODBUS服务配置",
+        "7.10.6.3.1 Server模式"
+      ],
+      "section_title": "7.10.6.3.1 Server模式",
+      "block_type": "heading",
+      "text": "7.10.6.3.1 Server 模式",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        260.15,
+        164.36,
+        271.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B01BCA0CF2CF0FF3",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 12,
+      "section_id": "SEC-8F11476F8862A417",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.3 转发MODBUS服务配置",
+        "7.10.6.3.1 Server模式"
+      ],
+      "section_title": "7.10.6.3.1 Server模式",
+      "block_type": "paragraph",
+      "text": "“Server 模式”是数据采集器作为服务器，通过Modbus TCP 协议，上位机服务器连接数据采集\n器，进行数据和指令传输。",
+      "table_cells": null,
+      "bbox": [
+        102.37,
+        275.164,
+        452.536,
+        298.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BB09EC23E9993C6F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 13,
+      "section_id": "SEC-8F11476F8862A417",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.3 转发MODBUS服务配置",
+        "7.10.6.3.1 Server模式"
+      ],
+      "section_title": "7.10.6.3.1 Server模式",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击系统 > 转发配置 > MODBUS，默认进入Server 界面。",
+      "table_cells": null,
+      "bbox": [
+        70.864,
+        307.334,
+        336.76,
+        319.817
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-95854C3A2BB544AA",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 14,
+      "section_id": "SEC-8F11476F8862A417",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.3 转发MODBUS服务配置",
+        "7.10.6.3.1 Server模式"
+      ],
+      "section_title": "7.10.6.3.1 Server模式",
+      "block_type": "paragraph",
+      "text": "步骤 2 白名单设置参考7.10.6.2.1 白名单设置。",
+      "table_cells": null,
+      "bbox": [
+        70.864,
+        323.834,
+        263.518,
+        336.317
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9235A9F1444B3B6C",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 79,
+      "printed_page_label": "69",
+      "block_order": 15,
+      "section_id": "SEC-8F11476F8862A417",
+      "section_path": [
+        "7 Web界面",
+        "7.10 系统",
+        "7.10.6 转发配置",
+        "7.10.6.3 转发MODBUS服务配置",
+        "7.10.6.3.1 Server模式"
+      ],
+      "section_title": "7.10.6.3.1 Server模式",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.364,
+        340.406,
+        126.358,
+        351.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,313 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-0A1105DE6C8DCFF9",
+  "section_path": [
+    "4 机械安装",
+    "4.1 选择安装地点"
+  ],
+  "section_title": "4.1 选择安装地点",
+  "start_pdf_page": 22,
+  "end_pdf_page": 22,
+  "blocks": [
+    {
+      "block_id": "BLK-6E429B0630B53BE3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "12",
+      "block_order": 1,
+      "section_id": "SEC-0A1105DE6C8DCFF9",
+      "section_path": [
+        "4 机械安装",
+        "4.1 选择安装地点"
+      ],
+      "section_title": "4.1 选择安装地点",
+      "block_type": "heading",
+      "text": "4.1 选择安装地点",
+      "table_cells": null,
+      "bbox": [
+        56.687,
+        162.258,
+        152.879,
+        176.862
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3FBBA0406157F7F1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "12",
+      "block_order": 2,
+      "section_id": "SEC-0A1105DE6C8DCFF9",
+      "section_path": [
+        "4 机械安装",
+        "4.1 选择安装地点"
+      ],
+      "section_title": "4.1 选择安装地点",
+      "block_type": "paragraph",
+      "text": "安装环境要求",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        188.556,
+        142.196,
+        199.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9F4EA657B6CAE20D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "12",
+      "block_order": 3,
+      "section_id": "SEC-0A1105DE6C8DCFF9",
+      "section_path": [
+        "4 机械安装",
+        "4.1 选择安装地点"
+      ],
+      "section_title": "4.1 选择安装地点",
+      "block_type": "list",
+      "text": "•\n数据采集器的防护等级为IP20，仅能安装于室内。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        212.706,
+        303.134,
+        223.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DC15992BC404A6CE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "12",
+      "block_order": 4,
+      "section_id": "SEC-0A1105DE6C8DCFF9",
+      "section_path": [
+        "4 机械安装",
+        "4.1 选择安装地点"
+      ],
+      "section_title": "4.1 选择安装地点",
+      "block_type": "list",
+      "text": "•\n安装时，应保证环境温度范围为：-30℃~ +60℃，环境湿度为0~95%（无冷凝），湿度\n过大可能会引起内部元器件损坏。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        227.706,
+        447.917,
+        252.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D86699108A850B1A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "12",
+      "block_order": 5,
+      "section_id": "SEC-0A1105DE6C8DCFF9",
+      "section_path": [
+        "4 机械安装",
+        "4.1 选择安装地点"
+      ],
+      "section_title": "4.1 选择安装地点",
+      "block_type": "list",
+      "text": "•\n注意防潮、防湿，确保安装环境周围无易燃、易爆及化学腐蚀性物质。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        256.206,
+        381.362,
+        267.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FF7C87169AA91D9B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "12",
+      "block_order": 6,
+      "section_id": "SEC-0A1105DE6C8DCFF9",
+      "section_path": [
+        "4 机械安装",
+        "4.1 选择安装地点"
+      ],
+      "section_title": "4.1 选择安装地点",
+      "block_type": "paragraph",
+      "text": "安装空间距离要求",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        269.856,
+        160.196,
+        280.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-425D18747115961E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "12",
+      "block_order": 7,
+      "section_id": "SEC-0A1105DE6C8DCFF9",
+      "section_path": [
+        "4 机械安装",
+        "4.1 选择安装地点"
+      ],
+      "section_title": "4.1 选择安装地点",
+      "block_type": "list",
+      "text": "•\n安装数据采集器之前，需确保安装位置四周具有足够的空间距离。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        288.006,
+        363.362,
+        298.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ADCE6B3D5D9F3E85",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "12",
+      "block_order": 8,
+      "section_id": "SEC-0A1105DE6C8DCFF9",
+      "section_path": [
+        "4 机械安装",
+        "4.1 选择安装地点"
+      ],
+      "section_title": "4.1 选择安装地点",
+      "block_type": "list",
+      "text": "•\n安装前，务必注意数据采集器的方向，确保接线端子位于数据采集器底部，以免长时间使\n用时，空气中的灰尘、颗粒等物质进入，影响设备的使用寿命。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        303.006,
+        453.362,
+        327.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-00E3B1C62A4B90B9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "12",
+      "block_order": 9,
+      "section_id": "SEC-0A1105DE6C8DCFF9",
+      "section_path": [
+        "4 机械安装",
+        "4.1 选择安装地点"
+      ],
+      "section_title": "4.1 选择安装地点",
+      "block_type": "list",
+      "text": "•\n安装位置距离地面1500mm，以及预留至少500mm 的维护空间。最小间距要求如下图所\n示。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        331.506,
+        453.146,
+        355.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-16D00A654F5CD526",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "12",
+      "block_order": 10,
+      "section_id": "SEC-0A1105DE6C8DCFF9",
+      "section_path": [
+        "4 机械安装",
+        "4.1 选择安装地点"
+      ],
+      "section_title": "4.1 选择安装地点",
+      "block_type": "paragraph",
+      "text": "注意",
+      "table_cells": null,
+      "bbox": [
+        97.941,
+        452.868,
+        119.941,
+        466.255
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2E72323A973FD443",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "12",
+      "block_order": 11,
+      "section_id": "SEC-0A1105DE6C8DCFF9",
+      "section_path": [
+        "4 机械安装",
+        "4.1 选择安装地点"
+      ],
+      "section_title": "4.1 选择安装地点",
+      "block_type": "paragraph",
+      "text": "户外设备（如环境检测仪等）接入数据采集器时，需根据现场实际情况，额外增加相应的\n通讯防雷器。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        470.05,
+        443.695,
+        491.803
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

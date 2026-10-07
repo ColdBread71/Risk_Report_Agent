@@ -1,0 +1,73 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-5E0ED916CCBE894F",
+  "section_path": [
+    "7 Web界面",
+    "7.6 设备维护",
+    "7.6.6 （可选）绕组温度检测"
+  ],
+  "section_title": "7.6.6 （可选）绕组温度检测",
+  "start_pdf_page": 64,
+  "end_pdf_page": 64,
+  "blocks": [
+    {
+      "block_id": "BLK-35482405A9348D2D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 21,
+      "section_id": "SEC-5E0ED916CCBE894F",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测"
+      ],
+      "section_title": "7.6.6 （可选）绕组温度检测",
+      "block_type": "heading",
+      "text": "7.6.6 （可选）绕组温度检测",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        584.747,
+        181.187,
+        596.917
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5400B96F4775B3C3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 22,
+      "section_id": "SEC-5E0ED916CCBE894F",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测"
+      ],
+      "section_title": "7.6.6 （可选）绕组温度检测",
+      "block_type": "paragraph",
+      "text": "绕组温度检测功能通过实时采集逆变器整机视在功率、变压器油温数据，结合变压器额定容\n量、绕组温度、油顶温升，计算出变压器绕组的温度，进而将实时温度数值上传至监控系\n统、告警和跳闸信息展示、告警和跳闸信息转发监控后台等功能。同时，运维人员可以通过\n设置绕组温度报警和跳闸参数，提前识别出变压器温度绕组异常，提高电站的运维效率。",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        604.063,
+        448.19,
+        655.516
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

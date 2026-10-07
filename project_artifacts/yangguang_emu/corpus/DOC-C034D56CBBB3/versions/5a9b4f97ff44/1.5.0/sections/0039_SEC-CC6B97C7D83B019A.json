@@ -1,0 +1,240 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-CC6B97C7D83B019A",
+  "section_path": [
+    "7 Web界面",
+    "7.1 登录Web端"
+  ],
+  "section_title": "7.1 登录Web端",
+  "start_pdf_page": 47,
+  "end_pdf_page": 47,
+  "blocks": [
+    {
+      "block_id": "BLK-980A24B837F77352",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 47,
+      "printed_page_label": "37",
+      "block_order": 1,
+      "section_id": "SEC-CC6B97C7D83B019A",
+      "section_path": [
+        "7 Web界面",
+        "7.1 登录Web端"
+      ],
+      "section_title": "7.1 登录Web端",
+      "block_type": "heading",
+      "text": "7.1 登录Web 端",
+      "table_cells": null,
+      "bbox": [
+        70.86,
+        144.258,
+        161.508,
+        158.862
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8797720BA986310E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 47,
+      "printed_page_label": "37",
+      "block_order": 2,
+      "section_id": "SEC-CC6B97C7D83B019A",
+      "section_path": [
+        "7 Web界面",
+        "7.1 登录Web端"
+      ],
+      "section_title": "7.1 登录Web端",
+      "block_type": "paragraph",
+      "text": "登录所需信息",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        170.484,
+        156.369,
+        182.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-200B7FD5506661C5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 47,
+      "printed_page_label": "37",
+      "block_order": 3,
+      "section_id": "SEC-CC6B97C7D83B019A",
+      "section_path": [
+        "7 Web界面",
+        "7.1 登录Web端"
+      ],
+      "section_title": "7.1 登录Web端",
+      "block_type": "paragraph",
+      "text": "表 7-1 初始账号和密码",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        191.406,
+        192.378,
+        202.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DEFD57F30B3270F9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 47,
+      "printed_page_label": "37",
+      "block_order": 4,
+      "section_id": "SEC-CC6B97C7D83B019A",
+      "section_path": [
+        "7 Web界面",
+        "7.1 登录Web端"
+      ],
+      "section_title": "7.1 登录Web端",
+      "block_type": "table",
+      "text": "用户类型\t\t用户名\t\t默认密码\t操作权限\n普通用户\t\tuser\t\t用户名加SN 组成\t只有系统的监控权\n限和简单的设置权\n限。如概览、设备\n监控和部分历史数\n据的查看。\n运维用户\t\tmainta\tin\t用户名加SN 组成\t本手册默认描述的\n所有操作。\n审计用户\t\tauditor\t\t用户名加SN 组成\t对所有用户的操作\n日志，Syslog 日\n志进行审计。\n管理员\t\tadmini\tstrator\t用户名加SN 组成\t增加用户、删除用\n户、修改用户、清\n空用户、会话管\n理、开发者调试开\n关、分配证书。\n开发者用户\t\tdevelo\tp\t根据客户授权获取\nSN 生成动态密\n码。\t经管理员授权后可\n执行设备复杂故障\n的定位和排除。\n自Logger4000 固\n理。\n7-2 ETH 端口信息\t\t\t\t\t\n\t\t件版本\tP018 起，Web\t端新增用户管理功能。\t具体见10 用户管\n\t\t\t\t\t\n端口\tI\tP 地址\t\t子网掩码\t\nETH1\t\t默认IP\n虚拟IP\t地址：12.12.12.\n地址：15.15.15.",
+      "table_cells": [
+        [
+          "用户类型",
+          null,
+          "用户名",
+          null,
+          "默认密码",
+          "操作权限"
+        ],
+        [
+          "普通用户",
+          null,
+          "user",
+          null,
+          "用户名加SN 组成",
+          "只有系统的监控权\n限和简单的设置权\n限。如概览、设备\n监控和部分历史数\n据的查看。"
+        ],
+        [
+          "运维用户",
+          null,
+          "mainta",
+          "in",
+          "用户名加SN 组成",
+          "本手册默认描述的\n所有操作。"
+        ],
+        [
+          "审计用户",
+          null,
+          "auditor",
+          null,
+          "用户名加SN 组成",
+          "对所有用户的操作\n日志，Syslog 日\n志进行审计。"
+        ],
+        [
+          "管理员",
+          null,
+          "admini",
+          "strator",
+          "用户名加SN 组成",
+          "增加用户、删除用\n户、修改用户、清\n空用户、会话管\n理、开发者调试开\n关、分配证书。"
+        ],
+        [
+          "开发者用户",
+          null,
+          "develo",
+          "p",
+          "根据客户授权获取\nSN 生成动态密\n码。",
+          "经管理员授权后可\n执行设备复杂故障\n的定位和排除。"
+        ],
+        [
+          "自Logger4000 固\n理。\n7-2 ETH 端口信息",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "件版本",
+          "P018 起，Web",
+          "端新增用户管理功能。",
+          "具体见10 用户管"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "端口",
+          "I",
+          "P 地址",
+          null,
+          "子网掩码",
+          null
+        ],
+        [
+          "ETH1",
+          null,
+          "默认IP\n虚拟IP",
+          "地址：12.12.12.\n地址：15.15.15.",
+          null,
+          null
+        ]
+      ],
+      "bbox": [
+        111.034,
+        212.189,
+        457.047,
+        645.85
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E608897FE0E12DC6",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 47,
+      "printed_page_label": "37",
+      "block_order": 5,
+      "section_id": "SEC-CC6B97C7D83B019A",
+      "section_path": [
+        "7 Web界面",
+        "7.1 登录Web端"
+      ],
+      "section_title": "7.1 登录Web端",
+      "block_type": "paragraph",
+      "text": "ETH2\n默认IP 地址：13.13.13.13",
+      "table_cells": null,
+      "bbox": [
+        111.034,
+        651.756,
+        304.191,
+        662.709
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

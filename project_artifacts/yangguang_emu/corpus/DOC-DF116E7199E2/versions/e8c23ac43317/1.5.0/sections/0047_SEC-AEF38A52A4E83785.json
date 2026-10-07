@@ -1,0 +1,313 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-AEF38A52A4E83785",
+  "section_path": [
+    "12 附录：MOXA EDS-408A 安全加固操作指导",
+    "12.9 安全功能验证"
+  ],
+  "section_title": "12.9 安全功能验证",
+  "start_pdf_page": 41,
+  "end_pdf_page": 42,
+  "blocks": [
+    {
+      "block_id": "BLK-7C1F47D892EC034F",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "37",
+      "block_order": 0,
+      "section_id": "SEC-AEF38A52A4E83785",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.9 安全功能验证"
+      ],
+      "section_title": "12.9 安全功能验证",
+      "block_type": "paragraph",
+      "text": "用户网络安全操作手册\n12 附录：MOXA EDS-408A 安全加固操作指导",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2F226338819C211D",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "37",
+      "block_order": 1,
+      "section_id": "SEC-AEF38A52A4E83785",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.9 安全功能验证"
+      ],
+      "section_title": "12.9 安全功能验证",
+      "block_type": "paragraph",
+      "text": "cli 界面：reload factory-default",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        72.906,
+        224.649,
+        83.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CD24723E4F7A4294",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "37",
+      "block_order": 2,
+      "section_id": "SEC-AEF38A52A4E83785",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.9 安全功能验证"
+      ],
+      "section_title": "12.9 安全功能验证",
+      "block_type": "paragraph",
+      "text": "然后输入y，确认恢复出厂：",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        94.406,
+        217.116,
+        105.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-389AD06D3D56B74E",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "37",
+      "block_order": 3,
+      "section_id": "SEC-AEF38A52A4E83785",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.9 安全功能验证"
+      ],
+      "section_title": "12.9 安全功能验证",
+      "block_type": "paragraph",
+      "text": "恢复出厂之后，请重新进行安全功能配置。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        167.443,
+        273.366,
+        178.396
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C324EA9A6C2C76F3",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "37",
+      "block_order": 4,
+      "section_id": "SEC-AEF38A52A4E83785",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.9 安全功能验证"
+      ],
+      "section_title": "12.9 安全功能验证",
+      "block_type": "heading",
+      "text": "12.9 安全功能验证",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        196.345,
+        173.718,
+        210.949
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5D985A3BE95AA6EF",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "37",
+      "block_order": 5,
+      "section_id": "SEC-AEF38A52A4E83785",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.9 安全功能验证"
+      ],
+      "section_title": "12.9 安全功能验证",
+      "block_type": "paragraph",
+      "text": "针对交换机网口进行逐一测试，连接笔记本网口通过cmd 执行ping 命令，确认每一个网口\n都无法访问到交换机。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        223.993,
+        460.386,
+        248.446
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AAAB07E441B22709",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 42,
+      "printed_page_label": "38",
+      "block_order": 0,
+      "section_id": "SEC-AEF38A52A4E83785",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.9 安全功能验证"
+      ],
+      "section_title": "12.9 安全功能验证",
+      "block_type": "paragraph",
+      "text": "阳光电源股份有限公司",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        642.676,
+        174.693,
+        654.846
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5BCC4B0AF3A65D47",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 42,
+      "printed_page_label": "38",
+      "block_order": 1,
+      "section_id": "SEC-AEF38A52A4E83785",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.9 安全功能验证"
+      ],
+      "section_title": "12.9 安全功能验证",
+      "block_type": "paragraph",
+      "text": "网\n址：www.sungrowpower.com",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        663.951,
+        168.715,
+        671.763
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2A2A980160499F33",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 42,
+      "printed_page_label": "38",
+      "block_order": 2,
+      "section_id": "SEC-AEF38A52A4E83785",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.9 安全功能验证"
+      ],
+      "section_title": "12.9 安全功能验证",
+      "block_type": "paragraph",
+      "text": "邮\n编：230088",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        678.634,
+        115.046,
+        686.446
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1B9DD6AD87190BD0",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 42,
+      "printed_page_label": "38",
+      "block_order": 3,
+      "section_id": "SEC-AEF38A52A4E83785",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.9 安全功能验证"
+      ],
+      "section_title": "12.9 安全功能验证",
+      "block_type": "paragraph",
+      "text": "公司地址：安徽省合肥市高新区习友路1699 号",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        693.634,
+        200.194,
+        700.634
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9427A46751B93AEA",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 42,
+      "printed_page_label": "38",
+      "block_order": 4,
+      "section_id": "SEC-AEF38A52A4E83785",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.9 安全功能验证"
+      ],
+      "section_title": "12.9 安全功能验证",
+      "block_type": "paragraph",
+      "text": "生产地址：安徽省合肥市高新区长宁大道608 号",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        708.184,
+        203.694,
+        715.184
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

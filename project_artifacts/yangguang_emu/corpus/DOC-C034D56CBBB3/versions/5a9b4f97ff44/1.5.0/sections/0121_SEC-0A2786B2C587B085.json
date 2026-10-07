@@ -1,0 +1,297 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-0A2786B2C587B085",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.12 转发MMS服务配置"
+  ],
+  "section_title": "7.8.12 转发MMS服务配置",
+  "start_pdf_page": 82,
+  "end_pdf_page": 82,
+  "blocks": [
+    {
+      "block_id": "BLK-E4D127C3962FAC8E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 1,
+      "section_id": "SEC-0A2786B2C587B085",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.12 转发MMS服务配置"
+      ],
+      "section_title": "7.8.12 转发MMS服务配置",
+      "block_type": "heading",
+      "text": "7.8.12 转发MMS 服务配置",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        71.59,
+        177.573,
+        83.76
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7B4B31DF6737645E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 2,
+      "section_id": "SEC-0A2786B2C587B085",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.12 转发MMS服务配置"
+      ],
+      "section_title": "7.8.12 转发MMS服务配置",
+      "block_type": "paragraph",
+      "text": "配置数据采集器转发MMS 服务。",
+      "table_cells": null,
+      "bbox": [
+        88.195,
+        90.814,
+        214.276,
+        101.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A6634C488852A3EF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 3,
+      "section_id": "SEC-0A2786B2C587B085",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.12 转发MMS服务配置"
+      ],
+      "section_title": "7.8.12 转发MMS服务配置",
+      "block_type": "paragraph",
+      "text": "LOGGERSV400.001.00.P031 及之后版本支持此功能。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        116.806,
+        335.774,
+        127.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-266A4C6D382CF543",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 4,
+      "section_id": "SEC-0A2786B2C587B085",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.12 转发MMS服务配置"
+      ],
+      "section_title": "7.8.12 转发MMS服务配置",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击系统 > 转发配置 > MMS，进入MMS 界面。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        148.034,
+        280.568,
+        160.517
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BCFE8B201BD9F222",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 5,
+      "section_id": "SEC-0A2786B2C587B085",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.12 转发MMS服务配置"
+      ],
+      "section_title": "7.8.12 转发MMS服务配置",
+      "block_type": "paragraph",
+      "text": "步骤 2 在开关下拉框选择使能。默认情况下开关为禁止状态。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        164.534,
+        303.563,
+        177.017
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D21391E7748D8AB4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 6,
+      "section_id": "SEC-0A2786B2C587B085",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.12 转发MMS服务配置"
+      ],
+      "section_title": "7.8.12 转发MMS服务配置",
+      "block_type": "paragraph",
+      "text": "步骤 3 单击配置文件导入，导入.zip 格式的配置文件。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        181.034,
+        274.817,
+        193.517
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-33BD52E7264480CD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 7,
+      "section_id": "SEC-0A2786B2C587B085",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.12 转发MMS服务配置"
+      ],
+      "section_title": "7.8.12 转发MMS服务配置",
+      "block_type": "paragraph",
+      "text": "步骤 4 导入完成后需重启后生效，单击确定。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        197.534,
+        240.563,
+        210.017
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F11F7F0A70F8498C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 8,
+      "section_id": "SEC-0A2786B2C587B085",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.12 转发MMS服务配置"
+      ],
+      "section_title": "7.8.12 转发MMS服务配置",
+      "block_type": "paragraph",
+      "text": "单击配置文件",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        215.456,
+        141.563,
+        226.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8E2CE48BDF63EEE8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 9,
+      "section_id": "SEC-0A2786B2C587B085",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.12 转发MMS服务配置"
+      ],
+      "section_title": "7.8.12 转发MMS服务配置",
+      "block_type": "paragraph",
+      "text": "步骤 5 （可选）单击配置文件导出，可将已导入生效后的配置文件导出到本地。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        230.534,
+        375.563,
+        243.017
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-96E462D3B5C65D0C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 10,
+      "section_id": "SEC-0A2786B2C587B085",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.12 转发MMS服务配置"
+      ],
+      "section_title": "7.8.12 转发MMS服务配置",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        247.106,
+        112.187,
+        258.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-4BF708A1DBCFB9B3",
+  "section_path": [
+    "9 用户管理",
+    "9.11 LDAP管理"
+  ],
+  "section_title": "9.11 LDAP管理",
+  "start_pdf_page": 98,
+  "end_pdf_page": 98,
+  "blocks": [
+    {
+      "block_id": "BLK-6F3486FE3E0127CE",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 98,
+      "printed_page_label": "88",
+      "block_order": 0,
+      "section_id": "SEC-4BF708A1DBCFB9B3",
+      "section_path": [
+        "9 用户管理",
+        "9.11 LDAP管理"
+      ],
+      "section_title": "9.11 LDAP管理",
+      "block_type": "paragraph",
+      "text": "用户手册\n9 用户管理",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-71A035BC45D69E05",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 98,
+      "printed_page_label": "88",
+      "block_order": 1,
+      "section_id": "SEC-4BF708A1DBCFB9B3",
+      "section_path": [
+        "9 用户管理",
+        "9.11 LDAP管理"
+      ],
+      "section_title": "9.11 LDAP管理",
+      "block_type": "list",
+      "text": "•\n用户锁定时间：在账号因连续登录失败被锁定后，设定账号解锁的等待时间。（参数范\n围：1~60min；默认值：10）",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        72.906,
+        443.738,
+        97.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-76ABA3B6DE8E7399",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 98,
+      "printed_page_label": "88",
+      "block_order": 2,
+      "section_id": "SEC-4BF708A1DBCFB9B3",
+      "section_path": [
+        "9 用户管理",
+        "9.11 LDAP管理"
+      ],
+      "section_title": "9.11 LDAP管理",
+      "block_type": "paragraph",
+      "text": "步骤 3 点击保存。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        101.484,
+        132.563,
+        113.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A762522DA70C0FCD",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 98,
+      "printed_page_label": "88",
+      "block_order": 3,
+      "section_id": "SEC-4BF708A1DBCFB9B3",
+      "section_path": [
+        "9 用户管理",
+        "9.11 LDAP管理"
+      ],
+      "section_title": "9.11 LDAP管理",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        118.056,
+        112.187,
+        129.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

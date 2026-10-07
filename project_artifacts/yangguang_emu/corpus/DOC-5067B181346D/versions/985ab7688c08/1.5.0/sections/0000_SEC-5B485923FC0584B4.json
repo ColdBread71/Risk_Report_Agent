@@ -1,0 +1,119 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-5B485923FC0584B4",
+  "section_path": [
+    "Front Matter"
+  ],
+  "section_title": "Front Matter",
+  "start_pdf_page": 1,
+  "end_pdf_page": 1,
+  "blocks": [
+    {
+      "block_id": "BLK-6304F84B8E12DB7F",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 1,
+      "printed_page_label": "1",
+      "block_order": 0,
+      "section_id": "SEC-5B485923FC0584B4",
+      "section_path": [
+        "Front Matter"
+      ],
+      "section_title": "Front Matter",
+      "block_type": "paragraph",
+      "text": "用户手册",
+      "table_cells": null,
+      "bbox": [
+        48.189,
+        93.123,
+        128.189,
+        117.463
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A4BD4687C8F37C01",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 1,
+      "printed_page_label": "1",
+      "block_order": 1,
+      "section_id": "SEC-5B485923FC0584B4",
+      "section_path": [
+        "Front Matter"
+      ],
+      "section_title": "Front Matter",
+      "block_type": "paragraph",
+      "text": "能量管理单元",
+      "table_cells": null,
+      "bbox": [
+        48.189,
+        126.437,
+        144.189,
+        145.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6A59B9A968325E58",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 1,
+      "printed_page_label": "1",
+      "block_order": 2,
+      "section_id": "SEC-5B485923FC0584B4",
+      "section_path": [
+        "Front Matter"
+      ],
+      "section_title": "Front Matter",
+      "block_type": "paragraph",
+      "text": "EMU300A",
+      "table_cells": null,
+      "bbox": [
+        48.189,
+        153.483,
+        102.873,
+        166.875
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-94AF21AFA422E702",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 1,
+      "printed_page_label": "1",
+      "block_order": 3,
+      "section_id": "SEC-5B485923FC0584B4",
+      "section_path": [
+        "Front Matter"
+      ],
+      "section_title": "Front Matter",
+      "block_type": "paragraph",
+      "text": "EMU300A-UCN-Ver11-202604",
+      "table_cells": null,
+      "bbox": [
+        394.623,
+        697.608,
+        476.205,
+        704.304
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

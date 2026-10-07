@@ -1,0 +1,199 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-0C1806BFD29C84E4",
+  "section_path": [
+    "6 试运行",
+    "6.2 试运行步骤"
+  ],
+  "section_title": "6.2 试运行步骤",
+  "start_pdf_page": 46,
+  "end_pdf_page": 46,
+  "blocks": [
+    {
+      "block_id": "BLK-9C305639DA99B196",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "36",
+      "block_order": 0,
+      "section_id": "SEC-0C1806BFD29C84E4",
+      "section_path": [
+        "6 试运行",
+        "6.2 试运行步骤"
+      ],
+      "section_title": "6.2 试运行步骤",
+      "block_type": "paragraph",
+      "text": "用户手册\n6 试运行",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AC1BAE9D67445402",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "36",
+      "block_order": 1,
+      "section_id": "SEC-0C1806BFD29C84E4",
+      "section_path": [
+        "6 试运行",
+        "6.2 试运行步骤"
+      ],
+      "section_title": "6.2 试运行步骤",
+      "block_type": "table",
+      "text": "编\n号\t\t说明\n9\t\t进入数据采集器的Web\n正常。\n10\t\t使用阳光云App 新建电\n阳光云平台在北",
+      "table_cells": [
+        [
+          "编\n号",
+          null,
+          "说明"
+        ],
+        [
+          "9",
+          null,
+          "进入数据采集器的Web\n正常。"
+        ],
+        [
+          "10",
+          null,
+          "使用阳光云App 新建电\n阳光云平台在北"
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ],
+      "bbox": [
+        96.862,
+        74.539,
+        220.508,
+        199.2
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EAFAD4231F4FDD64",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "36",
+      "block_order": 2,
+      "section_id": "SEC-0C1806BFD29C84E4",
+      "section_path": [
+        "6 试运行",
+        "6.2 试运行步骤"
+      ],
+      "section_title": "6.2 试运行步骤",
+      "block_type": "paragraph",
+      "text": "9\n进入数据采集器的Web 界面，查看阳光电源生产的组串逆变器的运行数据是否\n正常。",
+      "table_cells": null,
+      "bbox": [
+        96.862,
+        103.806,
+        438.758,
+        128.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8B9F8E9D5AE03693",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "36",
+      "block_order": 3,
+      "section_id": "SEC-0C1806BFD29C84E4",
+      "section_path": [
+        "6 试运行",
+        "6.2 试运行步骤"
+      ],
+      "section_title": "6.2 试运行步骤",
+      "block_type": "paragraph",
+      "text": "使用阳光云App 新建电站，查看阳光云平台上的数据是否正常。",
+      "table_cells": null,
+      "bbox": [
+        127.917,
+        139.306,
+        382.427,
+        150.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F3DE60F1B48CDC28",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "36",
+      "block_order": 4,
+      "section_id": "SEC-0C1806BFD29C84E4",
+      "section_path": [
+        "6 试运行",
+        "6.2 试运行步骤"
+      ],
+      "section_title": "6.2 试运行步骤",
+      "block_type": "paragraph",
+      "text": "阳光云平台在北美区域已停止服务。",
+      "table_cells": null,
+      "bbox": [
+        154.917,
+        157.956,
+        298.917,
+        168.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-97E1EBDE7EB7D90B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 46,
+      "printed_page_label": "36",
+      "block_order": 5,
+      "section_id": "SEC-0C1806BFD29C84E4",
+      "section_path": [
+        "6 试运行",
+        "6.2 试运行步骤"
+      ],
+      "section_title": "6.2 试运行步骤",
+      "block_type": "paragraph",
+      "text": "使用阳光云App 新建电站，可直接扫描数据采集器正面标签上的二维码或者手动输\n入S/N 号添加通信设备，具体操作参考“阳光云App 快速使用指南”。扫描以下二维\n码获取阳光云App 快速使用指南。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        204.006,
+        441.704,
+        236.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

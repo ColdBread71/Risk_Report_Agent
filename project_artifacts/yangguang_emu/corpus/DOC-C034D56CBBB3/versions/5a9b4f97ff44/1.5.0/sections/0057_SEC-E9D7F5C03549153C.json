@@ -1,0 +1,101 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-E9D7F5C03549153C",
+  "section_path": [
+    "7 Web界面",
+    "7.5 设备监控",
+    "7.5.8 功率调节参数"
+  ],
+  "section_title": "7.5.8 功率调节参数",
+  "start_pdf_page": 52,
+  "end_pdf_page": 52,
+  "blocks": [
+    {
+      "block_id": "BLK-130EEACA1097D1C9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 26,
+      "section_id": "SEC-E9D7F5C03549153C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.8 功率调节参数"
+      ],
+      "section_title": "7.5.8 功率调节参数",
+      "block_type": "heading",
+      "text": "7.5.8 功率调节参数",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        534.711,
+        143.683,
+        546.881
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C1607DE2BF564F8E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 27,
+      "section_id": "SEC-E9D7F5C03549153C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.8 功率调节参数"
+      ],
+      "section_title": "7.5.8 功率调节参数",
+      "block_type": "list",
+      "text": "•\n单击设备监控 > 功率调节参数，进入界面，设置功率调节参数。",
+      "table_cells": null,
+      "bbox": [
+        88.189,
+        554.027,
+        355.624,
+        564.98
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FC58A6B5B259DE91",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 28,
+      "section_id": "SEC-E9D7F5C03549153C",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.8 功率调节参数"
+      ],
+      "section_title": "7.5.8 功率调节参数",
+      "block_type": "paragraph",
+      "text": "功率调节参数设置包含两种设置方式：单台设置和批量设置。设置方法参考7.5.3 初始参\n数。",
+      "table_cells": null,
+      "bbox": [
+        102.364,
+        570.527,
+        451.132,
+        594.98
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

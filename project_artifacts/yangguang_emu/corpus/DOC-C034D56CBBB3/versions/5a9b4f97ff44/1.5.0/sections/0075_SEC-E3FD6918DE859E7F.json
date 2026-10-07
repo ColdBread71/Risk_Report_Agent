@@ -1,0 +1,569 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-E3FD6918DE859E7F",
+  "section_path": [
+    "7 Web界面",
+    "7.6 设备维护",
+    "7.6.1 设备列表",
+    "7.6.1.4 添加设备"
+  ],
+  "section_title": "7.6.1.4 添加设备",
+  "start_pdf_page": 60,
+  "end_pdf_page": 60,
+  "blocks": [
+    {
+      "block_id": "BLK-944DBE5CB40AA29C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 0,
+      "section_id": "SEC-E3FD6918DE859E7F",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.4 添加设备"
+      ],
+      "section_title": "7.6.1.4 添加设备",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.446,
+        48.088,
+        449.793,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B344E8E3BC367A27",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 1,
+      "section_id": "SEC-E3FD6918DE859E7F",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.4 添加设备"
+      ],
+      "section_title": "7.6.1.4 添加设备",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击设备维护 > 设备列表，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        71.484,
+        241.823,
+        83.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A4C6D295F8843549",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 2,
+      "section_id": "SEC-E3FD6918DE859E7F",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.4 添加设备"
+      ],
+      "section_title": "7.6.1.4 添加设备",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        95.857,
+        105.563,
+        108.34
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0FB3C2A2D164B07A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 3,
+      "section_id": "SEC-E3FD6918DE859E7F",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.4 添加设备"
+      ],
+      "section_title": "7.6.1.4 添加设备",
+      "block_type": "paragraph",
+      "text": "按钮，将设备列表信息导出到本地。",
+      "table_cells": null,
+      "bbox": [
+        119.738,
+        97.279,
+        263.738,
+        108.232
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5766649BFF2843F6",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 4,
+      "section_id": "SEC-E3FD6918DE859E7F",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.4 添加设备"
+      ],
+      "section_title": "7.6.1.4 添加设备",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        112.429,
+        112.187,
+        123.382
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1CD4B3B4753954E1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 14,
+      "section_id": "SEC-E3FD6918DE859E7F",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.4 添加设备"
+      ],
+      "section_title": "7.6.1.4 添加设备",
+      "block_type": "heading",
+      "text": "7.6.1.4 添加设备",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        280.434,
+        132.027,
+        292.604
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C333FC93019FFEA2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 15,
+      "section_id": "SEC-E3FD6918DE859E7F",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.4 添加设备"
+      ],
+      "section_title": "7.6.1.4 添加设备",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击设备维护 > 设备列表，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        304.328,
+        241.818,
+        316.811
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-853FFAF1DAD14166",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 16,
+      "section_id": "SEC-E3FD6918DE859E7F",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.4 添加设备"
+      ],
+      "section_title": "7.6.1.4 添加设备",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击添加设备，弹出添加设备界面，选择设备类型，按照提示填写完成。",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        320.828,
+        375.558,
+        333.311
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B0E612F6609FC1DC",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 17,
+      "section_id": "SEC-E3FD6918DE859E7F",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.4 添加设备"
+      ],
+      "section_title": "7.6.1.4 添加设备",
+      "block_type": "paragraph",
+      "text": "步骤 3 选择组串逆变器以及对应的通讯方式，通讯方式分为PLC 以及RS485。",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        337.328,
+        373.335,
+        349.811
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-475EA2C4704525B6",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 18,
+      "section_id": "SEC-E3FD6918DE859E7F",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.4 添加设备"
+      ],
+      "section_title": "7.6.1.4 添加设备",
+      "block_type": "paragraph",
+      "text": "单个光伏方阵内逆变器地址唯一。",
+      "table_cells": null,
+      "bbox": [
+        114.562,
+        360.4,
+        249.562,
+        371.353
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3A5A389FFC247EB9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 19,
+      "section_id": "SEC-E3FD6918DE859E7F",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.4 添加设备"
+      ],
+      "section_title": "7.6.1.4 添加设备",
+      "block_type": "list",
+      "text": "•\n选PLC：推荐通过白名单方式添加。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        388.55,
+        247.493,
+        399.503
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-290B542C00E0072E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 20,
+      "section_id": "SEC-E3FD6918DE859E7F",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.4 添加设备"
+      ],
+      "section_title": "7.6.1.4 添加设备",
+      "block_type": "paragraph",
+      "text": "PLC 通讯方式下的自动搜索与顺序添加功能，仅适用于不存在 PLC 串扰的场\n景。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        407.2,
+        432.251,
+        428.953
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-876450E15AA2FEFB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 21,
+      "section_id": "SEC-E3FD6918DE859E7F",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.4 添加设备"
+      ],
+      "section_title": "7.6.1.4 添加设备",
+      "block_type": "list",
+      "text": "-\n白名单添加：白名单文件通过手机APP 扫描逆变器的条形码生成，传到电脑，点击导\n入图标，可以将白名单文件导入到数采中。白名单组网完成后，显示白名单组网的结\n果。针对新电站添加场景，优先推荐白名单添加以确保添加准确度。",
+      "table_cells": null,
+      "bbox": [
+        101.738,
+        446.15,
+        453.422,
+        484.103
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5E47A6C894244DB1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 22,
+      "section_id": "SEC-E3FD6918DE859E7F",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.4 添加设备"
+      ],
+      "section_title": "7.6.1.4 添加设备",
+      "block_type": "paragraph",
+      "text": "在阳光云APP 点击更多——modubs 白名单配置——命名文件名称以及PLC\n类型——可通过扫描逆变器二维码或者手动录入的方式生成白名单文件。",
+      "table_cells": null,
+      "bbox": [
+        142.909,
+        491.8,
+        444.445,
+        513.553
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-774C35AF8356ED01",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 23,
+      "section_id": "SEC-E3FD6918DE859E7F",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.4 添加设备"
+      ],
+      "section_title": "7.6.1.4 添加设备",
+      "block_type": "list",
+      "text": "-\n顺序添加：优先保证数采主节点与从节点方阵号和band 号保持一致；此外，需要提\n前获取逆变器地址，并且保证逆变器地址连续。",
+      "table_cells": null,
+      "bbox": [
+        101.738,
+        530.75,
+        446.429,
+        555.203
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B2EC3BF69414EEE8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 24,
+      "section_id": "SEC-E3FD6918DE859E7F",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.4 添加设备"
+      ],
+      "section_title": "7.6.1.4 添加设备",
+      "block_type": "list",
+      "text": "-\n自动搜索：不优先推荐在PLC 下使用。",
+      "table_cells": null,
+      "bbox": [
+        101.738,
+        559.25,
+        272.918,
+        570.203
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-010DD33F92113B87",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 25,
+      "section_id": "SEC-E3FD6918DE859E7F",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.4 添加设备"
+      ],
+      "section_title": "7.6.1.4 添加设备",
+      "block_type": "list",
+      "text": "•\n选RS485：可选择自动搜索以及顺序添加。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        574.25,
+        275.501,
+        585.203
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B4A8E56D80FF3531",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 26,
+      "section_id": "SEC-E3FD6918DE859E7F",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.4 添加设备"
+      ],
+      "section_title": "7.6.1.4 添加设备",
+      "block_type": "list",
+      "text": "-\n自动搜索：推荐在通讯方式为RS485 的前提下使用。",
+      "table_cells": null,
+      "bbox": [
+        101.738,
+        589.25,
+        327.926,
+        600.203
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9F4A1B1EAE851CC7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 60,
+      "printed_page_label": "50",
+      "block_order": 27,
+      "section_id": "SEC-E3FD6918DE859E7F",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.4 添加设备"
+      ],
+      "section_title": "7.6.1.4 添加设备",
+      "block_type": "list",
+      "text": "-\n顺序添加：需要提前添加逆变器地址，数采方阵号添加逆变器地址时，需要保证地址\n连续。",
+      "table_cells": null,
+      "bbox": [
+        101.738,
+        604.25,
+        448.913,
+        628.703
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

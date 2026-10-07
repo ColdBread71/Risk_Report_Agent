@@ -1,0 +1,453 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-AEFF73622A77CE54",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.13 端口参数",
+    "7.8.13.1 RS485"
+  ],
+  "section_title": "7.8.13.1 RS485",
+  "start_pdf_page": 82,
+  "end_pdf_page": 82,
+  "blocks": [
+    {
+      "block_id": "BLK-1DF23FA62E63E355",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 0,
+      "section_id": "SEC-AEFF73622A77CE54",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.1 RS485"
+      ],
+      "section_title": "7.8.13.1 RS485",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.443,
+        48.088,
+        449.79,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0E4984D3C624C0AC",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 13,
+      "section_id": "SEC-AEFF73622A77CE54",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.1 RS485"
+      ],
+      "section_title": "7.8.13.1 RS485",
+      "block_type": "heading",
+      "text": "7.8.13.1 RS485",
+      "table_cells": null,
+      "bbox": [
+        56.689,
+        309.55,
+        125.659,
+        320.71
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-264E6A5359BEB3C0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 14,
+      "section_id": "SEC-AEFF73622A77CE54",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.1 RS485"
+      ],
+      "section_title": "7.8.13.1 RS485",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击系统 > 端口参数 > RS485，进入RS485 界面。",
+      "table_cells": null,
+      "bbox": [
+        56.692,
+        333.334,
+        293.617,
+        345.817
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E4CE685AA0CF6D40",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 15,
+      "section_id": "SEC-AEFF73622A77CE54",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.1 RS485"
+      ],
+      "section_title": "7.8.13.1 RS485",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击",
+      "table_cells": null,
+      "bbox": [
+        56.692,
+        355.223,
+        105.562,
+        367.706
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B88517F8E43F1C6B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 16,
+      "section_id": "SEC-AEFF73622A77CE54",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.1 RS485"
+      ],
+      "section_title": "7.8.13.1 RS485",
+      "block_type": "paragraph",
+      "text": "，可修改波特率、校验位、停止位及PLC 接入信息，各个端口对应的参数默认值，\n如下所示。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        356.645,
+        447.743,
+        381.098
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7A8B6AD479215F4E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 17,
+      "section_id": "SEC-AEFF73622A77CE54",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.1 RS485"
+      ],
+      "section_title": "7.8.13.1 RS485",
+      "block_type": "paragraph",
+      "text": "参数名称\n默认参数值",
+      "table_cells": null,
+      "bbox": [
+        96.232,
+        391.928,
+        313.328,
+        402.273
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-98456B8800D61C64",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 18,
+      "section_id": "SEC-AEFF73622A77CE54",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.1 RS485"
+      ],
+      "section_title": "7.8.13.1 RS485",
+      "block_type": "paragraph",
+      "text": "端口功能\n采集",
+      "table_cells": null,
+      "bbox": [
+        96.234,
+        412.645,
+        288.831,
+        423.598
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4192F73A56BA4F99",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 19,
+      "section_id": "SEC-AEFF73622A77CE54",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.1 RS485"
+      ],
+      "section_title": "7.8.13.1 RS485",
+      "block_type": "paragraph",
+      "text": "波特率\n9600",
+      "table_cells": null,
+      "bbox": [
+        96.234,
+        434.645,
+        290.847,
+        445.598
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7FBF4A0C865657CE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 20,
+      "section_id": "SEC-AEFF73622A77CE54",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.1 RS485"
+      ],
+      "section_title": "7.8.13.1 RS485",
+      "block_type": "paragraph",
+      "text": "校验位\n无",
+      "table_cells": null,
+      "bbox": [
+        96.234,
+        456.645,
+        279.831,
+        467.598
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-35088FA1AAF7869A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 21,
+      "section_id": "SEC-AEFF73622A77CE54",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.1 RS485"
+      ],
+      "section_title": "7.8.13.1 RS485",
+      "block_type": "paragraph",
+      "text": "停止位\n1",
+      "table_cells": null,
+      "bbox": [
+        96.234,
+        478.645,
+        275.835,
+        489.598
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5BC4D6ED946AA688",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 22,
+      "section_id": "SEC-AEFF73622A77CE54",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.1 RS485"
+      ],
+      "section_title": "7.8.13.1 RS485",
+      "block_type": "paragraph",
+      "text": "PLC 接入\n禁止",
+      "table_cells": null,
+      "bbox": [
+        96.234,
+        500.645,
+        288.831,
+        511.598
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-64532C0BD0FB4627",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 23,
+      "section_id": "SEC-AEFF73622A77CE54",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.1 RS485"
+      ],
+      "section_title": "7.8.13.1 RS485",
+      "block_type": "paragraph",
+      "text": "快调开关\n禁止",
+      "table_cells": null,
+      "bbox": [
+        96.234,
+        522.645,
+        288.831,
+        533.598
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-64661D84D26D7E47",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 24,
+      "section_id": "SEC-AEFF73622A77CE54",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.1 RS485"
+      ],
+      "section_title": "7.8.13.1 RS485",
+      "block_type": "paragraph",
+      "text": "当数据采集器串口连接设备时，该串口端口波特率、校验位以及停止位必须与所连接\n设备配置相同，才能保证数据采集器与所连设备正常通讯。",
+      "table_cells": null,
+      "bbox": [
+        114.562,
+        555.545,
+        447.562,
+        577.298
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E9211BE6C49D54E9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 25,
+      "section_id": "SEC-AEFF73622A77CE54",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.1 RS485"
+      ],
+      "section_title": "7.8.13.1 RS485",
+      "block_type": "paragraph",
+      "text": "仅当COM1~COM7 端口接入设备时，才能将COM1~COM7 端口对应的PLC 接入\n状态设置为使能，设置使能后，COM1~COM7 端口对应的波特率将自动修改为\n115200，此时可对PLC 节点参数进行设置，具体参见7.8.14 MPLC（宽带PLC）。",
+      "table_cells": null,
+      "bbox": [
+        114.562,
+        598.145,
+        447.472,
+        630.698
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F134EAD0A0FF0A3C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 82,
+      "printed_page_label": "72",
+      "block_order": 26,
+      "section_id": "SEC-AEFF73622A77CE54",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.13 端口参数",
+        "7.8.13.1 RS485"
+      ],
+      "section_title": "7.8.13.1 RS485",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        648.045,
+        112.187,
+        658.998
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-F619624BE7F48485",
+  "section_path": [
+    "7 Web界面",
+    "7.7 功率调节",
+    "7.7.3 有功功率",
+    "7.7.3.7 禁止调度"
+  ],
+  "section_title": "7.7.3.7 禁止调度",
+  "start_pdf_page": 62,
+  "end_pdf_page": 62,
+  "blocks": [
+    {
+      "block_id": "BLK-7AC95B1E2E420EF2",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 62,
+      "printed_page_label": "52",
+      "block_order": 30,
+      "section_id": "SEC-F619624BE7F48485",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.7 禁止调度"
+      ],
+      "section_title": "7.7.3.7 禁止调度",
+      "block_type": "heading",
+      "text": "7.7.3.7 禁止调度",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        587.69,
+        132.024,
+        599.86
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-06C35A9D988351CC",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 62,
+      "printed_page_label": "52",
+      "block_order": 31,
+      "section_id": "SEC-F619624BE7F48485",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.7 禁止调度"
+      ],
+      "section_title": "7.7.3.7 禁止调度",
+      "block_type": "paragraph",
+      "text": "如数据采集器已经对逆变器限制有功功率，且需要逆变器保持当前状态不变，此时可禁止有功功\n率调节。",
+      "table_cells": null,
+      "bbox": [
+        88.189,
+        606.914,
+        445.189,
+        630.008
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-469FA4B0B6FA6DA1",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 62,
+      "printed_page_label": "52",
+      "block_order": 32,
+      "section_id": "SEC-F619624BE7F48485",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.7 禁止调度"
+      ],
+      "section_title": "7.7.3.7 禁止调度",
+      "block_type": "paragraph",
+      "text": "步骤 1 在有功功率页，设置有功控制方式为禁止调度。",
+      "table_cells": null,
+      "bbox": [
+        56.696,
+        645.084,
+        276.566,
+        657.567
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0695956BD611ED7F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 62,
+      "printed_page_label": "52",
+      "block_order": 33,
+      "section_id": "SEC-F619624BE7F48485",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.3 有功功率",
+        "7.7.3.7 禁止调度"
+      ],
+      "section_title": "7.7.3.7 禁止调度",
+      "block_type": "paragraph",
+      "text": "步骤 2 点击保存。",
+      "table_cells": null,
+      "bbox": [
+        56.696,
+        661.584,
+        132.566,
+        674.067
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,437 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-737A09FE2B70DD16",
+  "section_path": [
+    "6 端口矩阵"
+  ],
+  "section_title": "6 端口矩阵",
+  "start_pdf_page": 14,
+  "end_pdf_page": 15,
+  "blocks": [
+    {
+      "block_id": "BLK-A91ACD7D76318635",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "10",
+      "block_order": 0,
+      "section_id": "SEC-737A09FE2B70DD16",
+      "section_path": [
+        "6 端口矩阵"
+      ],
+      "section_title": "6 端口矩阵",
+      "block_type": "heading",
+      "text": "6\n端口矩阵",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        98.112,
+        154.451,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5E9F7F46479A8667",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "10",
+      "block_order": 1,
+      "section_id": "SEC-737A09FE2B70DD16",
+      "section_path": [
+        "6 端口矩阵"
+      ],
+      "section_title": "6 端口矩阵",
+      "block_type": "table",
+      "text": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+      "table_cells": [
+        [
+          "源设\n备",
+          "源端\n口",
+          "目的设\n备",
+          "目的\n端口",
+          "协议",
+          "认证方\n式",
+          "加密\n方式",
+          "说明"
+        ],
+        [
+          "PC",
+          "任意",
+          "EMU30\n0A",
+          "8080",
+          "HTTP",
+          "用户名/\n密码",
+          "无",
+          "默认关\n闭，支持\n开启"
+        ],
+        [
+          "PC",
+          "任意",
+          "EMU30\n0A",
+          "8443",
+          "HTTPS",
+          "用户名/\n密码",
+          "TLS",
+          "默认访问\n方式"
+        ],
+        [
+          "PC",
+          "任意",
+          "EMU30\n0A",
+          "443",
+          "HTTPS",
+          "用户名/\n密码",
+          "TLS",
+          "默认访问\n方式"
+        ],
+        [
+          "PC",
+          "任意",
+          "EMU30\n0A",
+          "22",
+          "SSH",
+          "用户名/\n密码",
+          "TLS",
+          "默认关闭"
+        ],
+        [
+          "PC",
+          "任意",
+          "EMU30\n0A",
+          "22",
+          "SFTP",
+          "用户名/\n密码",
+          "TLS",
+          "默认关闭"
+        ],
+        [
+          "北向\n设备",
+          "任意",
+          "EMU30\n0A",
+          "102",
+          "MMS",
+          "用户名/\n密码",
+          "无",
+          "默认关闭"
+        ],
+        [
+          "北向\n设备",
+          "任意",
+          "EMU30\n0A",
+          "2404-\n2418",
+          "IEC104",
+          "无",
+          "TLS",
+          "2418 默\n认开\n启,2404~\n2417 默\n认关闭"
+        ],
+        [
+          "北向\n设备",
+          "任意",
+          "EMU30\n0A",
+          "502-5\n16",
+          "MODBUS\nTCP",
+          "无",
+          "TLS",
+          "516 默认\n开\n启,502~5\n15 默认关\n闭"
+        ],
+        [
+          "北向\n设备",
+          "任意",
+          "EMU30\n0A",
+          "802",
+          "MODBUS\nTCP",
+          "无",
+          "TLS",
+          "默认开\n启，支持\n关闭"
+        ]
+      ],
+      "bbox": [
+        96.861,
+        149.139,
+        442.048,
+        600.0
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-69F47634827709FA",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "10",
+      "block_order": 2,
+      "section_id": "SEC-737A09FE2B70DD16",
+      "section_path": [
+        "6 端口矩阵"
+      ],
+      "section_title": "6 端口矩阵",
+      "block_type": "paragraph",
+      "text": "默认关\n闭，内部\n调试使\n用，在",
+      "table_cells": null,
+      "bbox": [
+        405.274,
+        605.906,
+        441.274,
+        657.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6F1F1D2BF197686D",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 14,
+      "printed_page_label": "10",
+      "block_order": 3,
+      "section_id": "SEC-737A09FE2B70DD16",
+      "section_path": [
+        "6 端口矩阵"
+      ],
+      "section_title": "6 端口矩阵",
+      "block_type": "paragraph",
+      "text": "PC\n任意\nEMU30\n0A\n9998-\n9999\nUDP\n无\n无",
+      "table_cells": null,
+      "bbox": [
+        96.861,
+        619.505,
+        376.316,
+        643.049
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-80BDC5A7EB0594AE",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 15,
+      "printed_page_label": "11",
+      "block_order": 0,
+      "section_id": "SEC-737A09FE2B70DD16",
+      "section_path": [
+        "6 端口矩阵"
+      ],
+      "section_title": "6 端口矩阵",
+      "block_type": "paragraph",
+      "text": "用户网络安全操作手册\n6 端口矩阵",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5751A158B27985D4",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 15,
+      "printed_page_label": "11",
+      "block_order": 1,
+      "section_id": "SEC-737A09FE2B70DD16",
+      "section_path": [
+        "6 端口矩阵"
+      ],
+      "section_title": "6 端口矩阵",
+      "block_type": "table",
+      "text": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\n\t\t\t\t\t\t\tlinux she\n中开启。\nPC\tDeb\nug\n口\tEMU30\n0A\t/\tRS232 协\n议\t用户名/\n密码\t无\t串口访问\nLinux。\nEMU\n300\nA\t任意\t阳光云\t19999\tMQTT\t公钥\t无\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\t阳光云\t16668\tMQTT\t公钥\tTLS\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\tNTP 对\n时服务\n器\t123\tNTP\t无\t无\t默认关\n闭，开启\n给予安全\n提示。",
+      "table_cells": [
+        [
+          "源设\n备",
+          "源端\n口",
+          "目的设\n备",
+          "目的\n端口",
+          "协议",
+          "认证方\n式",
+          "加密\n方式",
+          "说明"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "linux she\n中开启。"
+        ],
+        [
+          "PC",
+          "Deb\nug\n口",
+          "EMU30\n0A",
+          "/",
+          "RS232 协\n议",
+          "用户名/\n密码",
+          "无",
+          "串口访问\nLinux。"
+        ],
+        [
+          "EMU\n300\nA",
+          "任意",
+          "阳光云",
+          "19999",
+          "MQTT",
+          "公钥",
+          "无",
+          "默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。"
+        ],
+        [
+          "EMU\n300\nA",
+          "任意",
+          "阳光云",
+          "16668",
+          "MQTT",
+          "公钥",
+          "TLS",
+          "默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。"
+        ],
+        [
+          "EMU\n300\nA",
+          "任意",
+          "NTP 对\n时服务\n器",
+          "123",
+          "NTP",
+          "无",
+          "无",
+          "默认关\n闭，开启\n给予安全\n提示。"
+        ]
+      ],
+      "bbox": [
+        111.035,
+        74.539,
+        455.448,
+        423.9
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6CDBA2C1126CE14A",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 15,
+      "printed_page_label": "11",
+      "block_order": 2,
+      "section_id": "SEC-737A09FE2B70DD16",
+      "section_path": [
+        "6 端口矩阵"
+      ],
+      "section_title": "6 端口矩阵",
+      "block_type": "paragraph",
+      "text": "NTS 对\n时服务\n器",
+      "table_cells": null,
+      "bbox": [
+        186.952,
+        429.806,
+        216.202,
+        467.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7AC72625A2105DF8",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 15,
+      "printed_page_label": "11",
+      "block_order": 3,
+      "section_id": "SEC-737A09FE2B70DD16",
+      "section_path": [
+        "6 端口矩阵"
+      ],
+      "section_title": "6 端口矩阵",
+      "block_type": "paragraph",
+      "text": "EMU\n300\nA",
+      "table_cells": null,
+      "bbox": [
+        111.035,
+        429.905,
+        131.033,
+        466.949
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9FDE0E7D9156114B",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 15,
+      "printed_page_label": "11",
+      "block_order": 4,
+      "section_id": "SEC-737A09FE2B70DD16",
+      "section_path": [
+        "6 端口矩阵"
+      ],
+      "section_title": "6 端口矩阵",
+      "block_type": "paragraph",
+      "text": "任意",
+      "table_cells": null,
+      "bbox": [
+        148.993,
+        443.306,
+        166.993,
+        454.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CE7F3E47EF540743",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 15,
+      "printed_page_label": "11",
+      "block_order": 5,
+      "section_id": "SEC-737A09FE2B70DD16",
+      "section_path": [
+        "6 端口矩阵"
+      ],
+      "section_title": "6 端口矩阵",
+      "block_type": "paragraph",
+      "text": "4460\nNTS\n无\n无\n默认关闭",
+      "table_cells": null,
+      "bbox": [
+        234.4,
+        443.306,
+        455.448,
+        454.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

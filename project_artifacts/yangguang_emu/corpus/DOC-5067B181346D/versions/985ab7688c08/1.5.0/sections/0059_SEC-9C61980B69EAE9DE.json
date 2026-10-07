@@ -1,0 +1,391 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-9C61980B69EAE9DE",
+  "section_path": [
+    "7 附录A：技术参数"
+  ],
+  "section_title": "7 附录A：技术参数",
+  "start_pdf_page": 54,
+  "end_pdf_page": 55,
+  "blocks": [
+    {
+      "block_id": "BLK-64817BA8BAE19A25",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "48",
+      "block_order": 0,
+      "section_id": "SEC-9C61980B69EAE9DE",
+      "section_path": [
+        "7 附录A：技术参数"
+      ],
+      "section_title": "7 附录A：技术参数",
+      "block_type": "heading",
+      "text": "7\n附录A：技术参数",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        98.112,
+        224.957,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1EAC19030366F2E6",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "48",
+      "block_order": 1,
+      "section_id": "SEC-9C61980B69EAE9DE",
+      "section_path": [
+        "7 附录A：技术参数"
+      ],
+      "section_title": "7 附录A：技术参数",
+      "block_type": "paragraph",
+      "text": "通讯",
+      "table_cells": null,
+      "bbox": [
+        96.861,
+        149.139,
+        113.861,
+        159.483
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B33119997D4D8B57",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "48",
+      "block_order": 2,
+      "section_id": "SEC-9C61980B69EAE9DE",
+      "section_path": [
+        "7 附录A：技术参数"
+      ],
+      "section_title": "7 附录A：技术参数",
+      "block_type": "table",
+      "text": "通讯\t\n支持设备数\t300\nRS485 接口\t4\nMPLC 通信接口\t1 或2，个数可选\n以太网口（ETH）\t5× 10 / 100Mbps\nETH 1/ 2 / 5 以太网口\nETH 3 / 4 快速调度口\nETH 5 调试口\nPID & ISO 控制盒\t1 / 2\n光纤交换机（可选）\t2 * 100 Mbps 光口，单模\n光纤终端盒（可选）\t4 进24 出\n交流PID 抬升接入电压\t\n额定电网电压\t1000 Vac，50 / 60 Hz\n电压范围\t850 Vac - 1150 Vac\n电网类型\tIT（不包括角接地系统）\n交流ISO 检测精度\t\n10kΩ - 1000 kΩ\t±15 % @ 25 ℃\n0.2 kΩ - 10 kΩ\t±2kΩ @ 25 ℃\nMPLC 通信\t\n最大通信距离\t多芯线 ≤1000m\n单芯线≤800m\n每通道最大接入数量\t≤80\n额定工作电压\t400~1000Vac",
+      "table_cells": [
+        [
+          "通讯",
+          null
+        ],
+        [
+          "支持设备数",
+          "300"
+        ],
+        [
+          "RS485 接口",
+          "4"
+        ],
+        [
+          "MPLC 通信接口",
+          "1 或2，个数可选"
+        ],
+        [
+          "以太网口（ETH）",
+          "5× 10 / 100Mbps\nETH 1/ 2 / 5 以太网口\nETH 3 / 4 快速调度口\nETH 5 调试口"
+        ],
+        [
+          "PID & ISO 控制盒",
+          "1 / 2"
+        ],
+        [
+          "光纤交换机（可选）",
+          "2 * 100 Mbps 光口，单模"
+        ],
+        [
+          "光纤终端盒（可选）",
+          "4 进24 出"
+        ],
+        [
+          "交流PID 抬升接入电压",
+          null
+        ],
+        [
+          "额定电网电压",
+          "1000 Vac，50 / 60 Hz"
+        ],
+        [
+          "电压范围",
+          "850 Vac - 1150 Vac"
+        ],
+        [
+          "电网类型",
+          "IT（不包括角接地系统）"
+        ],
+        [
+          "交流ISO 检测精度",
+          null
+        ],
+        [
+          "10kΩ - 1000 kΩ",
+          "±15 % @ 25 ℃"
+        ],
+        [
+          "0.2 kΩ - 10 kΩ",
+          "±2kΩ @ 25 ℃"
+        ],
+        [
+          "MPLC 通信",
+          null
+        ],
+        [
+          "最大通信距离",
+          "多芯线 ≤1000m\n单芯线≤800m"
+        ],
+        [
+          "每通道最大接入数量",
+          "≤80"
+        ],
+        [
+          "额定工作电压",
+          "400~1000Vac"
+        ]
+      ],
+      "bbox": [
+        96.86,
+        162.3,
+        317.253,
+        634.3
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FAF91A81DAFCE642",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 54,
+      "printed_page_label": "48",
+      "block_order": 3,
+      "section_id": "SEC-9C61980B69EAE9DE",
+      "section_path": [
+        "7 附录A：技术参数"
+      ],
+      "section_title": "7 附录A：技术参数",
+      "block_type": "paragraph",
+      "text": "最大耐压\n≤1150Vac",
+      "table_cells": null,
+      "bbox": [
+        96.86,
+        640.206,
+        258.384,
+        651.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-680C545E55173387",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "49",
+      "block_order": 0,
+      "section_id": "SEC-9C61980B69EAE9DE",
+      "section_path": [
+        "7 附录A：技术参数"
+      ],
+      "section_title": "7 附录A：技术参数",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 附录A：技术参数",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9982C112074D0E60",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "49",
+      "block_order": 1,
+      "section_id": "SEC-9C61980B69EAE9DE",
+      "section_path": [
+        "7 附录A：技术参数"
+      ],
+      "section_title": "7 附录A：技术参数",
+      "block_type": "paragraph",
+      "text": "通讯",
+      "table_cells": null,
+      "bbox": [
+        111.036,
+        74.539,
+        128.036,
+        84.883
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CE3D928E7C421E03",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "49",
+      "block_order": 2,
+      "section_id": "SEC-9C61980B69EAE9DE",
+      "section_path": [
+        "7 附录A：技术参数"
+      ],
+      "section_title": "7 附录A：技术参数",
+      "block_type": "table",
+      "text": "电源\t\n交流输入\t100~277Vac，50 / 60Hz\n功耗\tMax. 90 W ( 无PID ) /170 W ( 单PID ) /250 W ( 双PID\n环境参数\t\n工作温度\t-40 ℃ ~ 60 ℃（有遮阳）\n-40 ℃ ~ 50 ℃（无遮阳）\n存储温度\t-40℃~+70℃\n工作湿度\t≤100%（无冷凝）\n工作海拔\t≤ 5000m\n防护等级\tIP66\n机械参数\t\n尺寸（宽x 高x 深）\t940*697*287mm\n裸机重量\tMax.53kg\n安装方式\t室内或室外，壁挂、支架、落地安装\n箱体材料\t金属\n进线规格\tAC220V：1 mm ~ 1.5 mm²户外型防紫外线导线\nMPLC：2.5 mm ~ 10 mm²户外型防紫外线导线\n隔离电压＞1350V\nRS485：2 * ( 0.75 mm ~ 1.5 mm ）户外型防紫外线\n带屏蔽层双绞线\n光缆：外径 ≤ 18 mm，单模光缆\n订购信息",
+      "table_cells": [
+        [
+          "电源",
+          null
+        ],
+        [
+          "交流输入",
+          "100~277Vac，50 / 60Hz"
+        ],
+        [
+          "功耗",
+          "Max. 90 W ( 无PID ) /170 W ( 单PID ) /250 W ( 双PID"
+        ],
+        [
+          "环境参数",
+          null
+        ],
+        [
+          "工作温度",
+          "-40 ℃ ~ 60 ℃（有遮阳）\n-40 ℃ ~ 50 ℃（无遮阳）"
+        ],
+        [
+          "存储温度",
+          "-40℃~+70℃"
+        ],
+        [
+          "工作湿度",
+          "≤100%（无冷凝）"
+        ],
+        [
+          "工作海拔",
+          "≤ 5000m"
+        ],
+        [
+          "防护等级",
+          "IP66"
+        ],
+        [
+          "机械参数",
+          null
+        ],
+        [
+          "尺寸（宽x 高x 深）",
+          "940*697*287mm"
+        ],
+        [
+          "裸机重量",
+          "Max.53kg"
+        ],
+        [
+          "安装方式",
+          "室内或室外，壁挂、支架、落地安装"
+        ],
+        [
+          "箱体材料",
+          "金属"
+        ],
+        [
+          "进线规格",
+          "AC220V：1 mm ~ 1.5 mm²户外型防紫外线导线\nMPLC：2.5 mm ~ 10 mm²户外型防紫外线导线\n隔离电压＞1350V\nRS485：2 * ( 0.75 mm ~ 1.5 mm ）户外型防紫外线\n带屏蔽层双绞线\n光缆：外径 ≤ 18 mm，单模光缆"
+        ],
+        [
+          "订购信息",
+          null
+        ]
+      ],
+      "bbox": [
+        111.035,
+        87.7,
+        454.719,
+        520.7
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D844E7AC55AEA6FE",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "49",
+      "block_order": 3,
+      "section_id": "SEC-9C61980B69EAE9DE",
+      "section_path": [
+        "7 附录A：技术参数"
+      ],
+      "section_title": "7 附录A：技术参数",
+      "block_type": "paragraph",
+      "text": "内含Logger5000（含电压电流采样接口）、开关电源、\n防雷模块、微型断路 器、MPLC（可选1 或2）、\nPID&ISO 控制盒（可选）、光纤交换机 （可选）、光纤\n终端盒（可选）、IO 模组（可选）\n适用区域：国内",
+      "table_cells": null,
+      "bbox": [
+        233.427,
+        526.606,
+        454.719,
+        591.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-409F387B605FF8FF",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 55,
+      "printed_page_label": "49",
+      "block_order": 4,
+      "section_id": "SEC-9C61980B69EAE9DE",
+      "section_path": [
+        "7 附录A：技术参数"
+      ],
+      "section_title": "7 附录A：技术参数",
+      "block_type": "paragraph",
+      "text": "EMU300A",
+      "table_cells": null,
+      "bbox": [
+        111.035,
+        553.705,
+        152.048,
+        563.749
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

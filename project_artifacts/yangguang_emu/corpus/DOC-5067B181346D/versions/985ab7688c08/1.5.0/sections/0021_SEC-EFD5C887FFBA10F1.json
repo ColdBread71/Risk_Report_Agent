@@ -1,0 +1,610 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-EFD5C887FFBA10F1",
+  "section_path": [
+    "3 机械安装",
+    "3.4 安装位置要求"
+  ],
+  "section_title": "3.4 安装位置要求",
+  "start_pdf_page": 20,
+  "end_pdf_page": 20,
+  "blocks": [
+    {
+      "block_id": "BLK-339E5E7BF44F6D4E",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "14",
+      "block_order": 0,
+      "section_id": "SEC-EFD5C887FFBA10F1",
+      "section_path": [
+        "3 机械安装",
+        "3.4 安装位置要求"
+      ],
+      "section_title": "3.4 安装位置要求",
+      "block_type": "paragraph",
+      "text": "用户手册\n3 机械安装",
+      "table_cells": null,
+      "bbox": [
+        60.442,
+        48.088,
+        449.796,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-828980DE01ED0431",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "14",
+      "block_order": 1,
+      "section_id": "SEC-EFD5C887FFBA10F1",
+      "section_path": [
+        "3 机械安装",
+        "3.4 安装位置要求"
+      ],
+      "section_title": "3.4 安装位置要求",
+      "block_type": "paragraph",
+      "text": "绝缘鞋",
+      "table_cells": null,
+      "bbox": [
+        96.859,
+        153.622,
+        123.859,
+        164.575
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-230369C42245389E",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "14",
+      "block_order": 2,
+      "section_id": "SEC-EFD5C887FFBA10F1",
+      "section_path": [
+        "3 机械安装",
+        "3.4 安装位置要求"
+      ],
+      "section_title": "3.4 安装位置要求",
+      "block_type": "paragraph",
+      "text": "工具刀",
+      "table_cells": null,
+      "bbox": [
+        186.873,
+        153.622,
+        213.873,
+        164.575
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CC93CC31CE149C8A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "14",
+      "block_order": 3,
+      "section_id": "SEC-EFD5C887FFBA10F1",
+      "section_path": [
+        "3 机械安装",
+        "3.4 安装位置要求"
+      ],
+      "section_title": "3.4 安装位置要求",
+      "block_type": "paragraph",
+      "text": "记号笔",
+      "table_cells": null,
+      "bbox": [
+        277.164,
+        153.622,
+        304.164,
+        164.575
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1617964ACF579000",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "14",
+      "block_order": 4,
+      "section_id": "SEC-EFD5C887FFBA10F1",
+      "section_path": [
+        "3 机械安装",
+        "3.4 安装位置要求"
+      ],
+      "section_title": "3.4 安装位置要求",
+      "block_type": "paragraph",
+      "text": "静电手环",
+      "table_cells": null,
+      "bbox": [
+        369.936,
+        153.622,
+        405.936,
+        164.575
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2B0B4CEB9043F5C5",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "14",
+      "block_order": 5,
+      "section_id": "SEC-EFD5C887FFBA10F1",
+      "section_path": [
+        "3 机械安装",
+        "3.4 安装位置要求"
+      ],
+      "section_title": "3.4 安装位置要求",
+      "block_type": "paragraph",
+      "text": "水平尺",
+      "table_cells": null,
+      "bbox": [
+        96.859,
+        251.838,
+        123.859,
+        262.791
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7382180398BB9075",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "14",
+      "block_order": 6,
+      "section_id": "SEC-EFD5C887FFBA10F1",
+      "section_path": [
+        "3 机械安装",
+        "3.4 安装位置要求"
+      ],
+      "section_title": "3.4 安装位置要求",
+      "block_type": "paragraph",
+      "text": "冲击钻(φ12)",
+      "table_cells": null,
+      "bbox": [
+        186.873,
+        251.838,
+        235.707,
+        262.791
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7740A0E15F9109E7",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "14",
+      "block_order": 7,
+      "section_id": "SEC-EFD5C887FFBA10F1",
+      "section_path": [
+        "3 机械安装",
+        "3.4 安装位置要求"
+      ],
+      "section_title": "3.4 安装位置要求",
+      "block_type": "paragraph",
+      "text": "十字螺丝刀(M4，\nM6)",
+      "table_cells": null,
+      "bbox": [
+        277.164,
+        251.838,
+        346.671,
+        275.481
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AB3B6D4D5420C478",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "14",
+      "block_order": 8,
+      "section_id": "SEC-EFD5C887FFBA10F1",
+      "section_path": [
+        "3 机械安装",
+        "3.4 安装位置要求"
+      ],
+      "section_title": "3.4 安装位置要求",
+      "block_type": "paragraph",
+      "text": "一字螺丝刀(M2)",
+      "table_cells": null,
+      "bbox": [
+        369.936,
+        251.838,
+        433.431,
+        262.791
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F9B5A6A54A0CD508",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "14",
+      "block_order": 9,
+      "section_id": "SEC-EFD5C887FFBA10F1",
+      "section_path": [
+        "3 机械安装",
+        "3.4 安装位置要求"
+      ],
+      "section_title": "3.4 安装位置要求",
+      "block_type": "paragraph",
+      "text": "橡胶锤",
+      "table_cells": null,
+      "bbox": [
+        96.859,
+        363.554,
+        123.859,
+        374.507
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A43D16A1D30C90E8",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "14",
+      "block_order": 10,
+      "section_id": "SEC-EFD5C887FFBA10F1",
+      "section_path": [
+        "3 机械安装",
+        "3.4 安装位置要求"
+      ],
+      "section_title": "3.4 安装位置要求",
+      "block_type": "paragraph",
+      "text": "扳手(18 mm, 21\nmm)",
+      "table_cells": null,
+      "bbox": [
+        186.873,
+        363.554,
+        250.386,
+        387.197
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-22BCE15F60D3B7CE",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "14",
+      "block_order": 11,
+      "section_id": "SEC-EFD5C887FFBA10F1",
+      "section_path": [
+        "3 机械安装",
+        "3.4 安装位置要求"
+      ],
+      "section_title": "3.4 安装位置要求",
+      "block_type": "paragraph",
+      "text": "钳子",
+      "table_cells": null,
+      "bbox": [
+        277.164,
+        363.554,
+        295.164,
+        374.507
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-68386C50F71898FB",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "14",
+      "block_order": 12,
+      "section_id": "SEC-EFD5C887FFBA10F1",
+      "section_path": [
+        "3 机械安装",
+        "3.4 安装位置要求"
+      ],
+      "section_title": "3.4 安装位置要求",
+      "block_type": "paragraph",
+      "text": "剪线钳",
+      "table_cells": null,
+      "bbox": [
+        369.936,
+        363.554,
+        396.936,
+        374.507
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6F6C18403602A583",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "14",
+      "block_order": 13,
+      "section_id": "SEC-EFD5C887FFBA10F1",
+      "section_path": [
+        "3 机械安装",
+        "3.4 安装位置要求"
+      ],
+      "section_title": "3.4 安装位置要求",
+      "block_type": "paragraph",
+      "text": "剥线钳",
+      "table_cells": null,
+      "bbox": [
+        96.859,
+        475.271,
+        123.859,
+        486.224
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-36A3F50E05FD1105",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "14",
+      "block_order": 14,
+      "section_id": "SEC-EFD5C887FFBA10F1",
+      "section_path": [
+        "3 机械安装",
+        "3.4 安装位置要求"
+      ],
+      "section_title": "3.4 安装位置要求",
+      "block_type": "paragraph",
+      "text": "压线钳",
+      "table_cells": null,
+      "bbox": [
+        186.873,
+        475.271,
+        213.873,
+        486.224
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B20B264D450F53C9",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "14",
+      "block_order": 15,
+      "section_id": "SEC-EFD5C887FFBA10F1",
+      "section_path": [
+        "3 机械安装",
+        "3.4 安装位置要求"
+      ],
+      "section_title": "3.4 安装位置要求",
+      "block_type": "paragraph",
+      "text": "热风枪",
+      "table_cells": null,
+      "bbox": [
+        277.164,
+        475.271,
+        304.164,
+        486.224
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FD40C8168ACB5D24",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "14",
+      "block_order": 16,
+      "section_id": "SEC-EFD5C887FFBA10F1",
+      "section_path": [
+        "3 机械安装",
+        "3.4 安装位置要求"
+      ],
+      "section_title": "3.4 安装位置要求",
+      "block_type": "paragraph",
+      "text": "万用表(≥ 1500\nVdc)",
+      "table_cells": null,
+      "bbox": [
+        369.936,
+        475.271,
+        427.392,
+        498.914
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-97A87DAB985365E9",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "14",
+      "block_order": 17,
+      "section_id": "SEC-EFD5C887FFBA10F1",
+      "section_path": [
+        "3 机械安装",
+        "3.4 安装位置要求"
+      ],
+      "section_title": "3.4 安装位置要求",
+      "block_type": "heading",
+      "text": "3.4 安装位置要求",
+      "table_cells": null,
+      "bbox": [
+        56.69,
+        533.023,
+        152.87,
+        547.627
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C389EEA71E8A3CC6",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "14",
+      "block_order": 18,
+      "section_id": "SEC-EFD5C887FFBA10F1",
+      "section_path": [
+        "3 机械安装",
+        "3.4 安装位置要求"
+      ],
+      "section_title": "3.4 安装位置要求",
+      "block_type": "list",
+      "text": "•\n设备的防护等级为IP66，可安装在户外环境。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        560.671,
+        285.134,
+        571.624
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8B472CB5016F3DFE",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "14",
+      "block_order": 19,
+      "section_id": "SEC-EFD5C887FFBA10F1",
+      "section_path": [
+        "3 机械安装",
+        "3.4 安装位置要求"
+      ],
+      "section_title": "3.4 安装位置要求",
+      "block_type": "list",
+      "text": "•\n请将设备安装在通风环境中，确保设备通风散热良好。如果设备安装在密闭环境，需要加\n装散热装置或通风装置。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        575.671,
+        453.362,
+        600.124
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-42138DD7016803A0",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "14",
+      "block_order": 20,
+      "section_id": "SEC-EFD5C887FFBA10F1",
+      "section_path": [
+        "3 机械安装",
+        "3.4 安装位置要求"
+      ],
+      "section_title": "3.4 安装位置要求",
+      "block_type": "list",
+      "text": "•\n环境温度范围为：-40℃~ +60℃，相对环境湿度≤100%，无冷凝。湿度过大可能会引起\n内部元器件损坏。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        604.171,
+        445.352,
+        628.624
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AF4E1673928170EC",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 20,
+      "printed_page_label": "14",
+      "block_order": 21,
+      "section_id": "SEC-EFD5C887FFBA10F1",
+      "section_path": [
+        "3 机械安装",
+        "3.4 安装位置要求"
+      ],
+      "section_title": "3.4 安装位置要求",
+      "block_type": "list",
+      "text": "•\n注意设备防潮、防湿；严禁将设备安装在空调口、通风口、机房出线窗等易漏水位置下\n方，以防止液体进入设备内部造成设备故障或短路。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        632.671,
+        444.362,
+        657.124
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

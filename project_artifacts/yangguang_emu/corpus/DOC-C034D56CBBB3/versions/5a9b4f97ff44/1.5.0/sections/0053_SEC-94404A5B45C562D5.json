@@ -1,0 +1,101 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-94404A5B45C562D5",
+  "section_path": [
+    "7 Web界面",
+    "7.5 设备监控",
+    "7.5.4 运行参数"
+  ],
+  "section_title": "7.5.4 运行参数",
+  "start_pdf_page": 52,
+  "end_pdf_page": 52,
+  "blocks": [
+    {
+      "block_id": "BLK-07C644AEA99E4B60",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 13,
+      "section_id": "SEC-94404A5B45C562D5",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.4 运行参数"
+      ],
+      "section_title": "7.5.4 运行参数",
+      "block_type": "heading",
+      "text": "7.5.4 运行参数",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        270.911,
+        123.687,
+        283.081
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AF64824368905828",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 14,
+      "section_id": "SEC-94404A5B45C562D5",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.4 运行参数"
+      ],
+      "section_title": "7.5.4 运行参数",
+      "block_type": "list",
+      "text": "•\n单击设备监控 > 运行参数，进入界面，设置设备的运行参数。",
+      "table_cells": null,
+      "bbox": [
+        88.191,
+        290.227,
+        346.626,
+        301.18
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7BD4E66974DE5990",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 15,
+      "section_id": "SEC-94404A5B45C562D5",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.4 运行参数"
+      ],
+      "section_title": "7.5.4 运行参数",
+      "block_type": "paragraph",
+      "text": "运行参数设置包含两种设置方式：单台设置和批量设置。设置方法参考7.5.3 初始参数。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        306.727,
+        451.134,
+        317.68
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

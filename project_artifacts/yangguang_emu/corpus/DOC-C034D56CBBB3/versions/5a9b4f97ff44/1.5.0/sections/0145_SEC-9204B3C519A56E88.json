@@ -1,0 +1,569 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-9204B3C519A56E88",
+  "section_path": [
+    "9 电网调度",
+    "9.3 有功功率调节",
+    "9.3.2 本地有功调节",
+    "9.3.2.3 设置调节时间及目标值"
+  ],
+  "section_title": "9.3.2.3 设置调节时间及目标值",
+  "start_pdf_page": 94,
+  "end_pdf_page": 94,
+  "blocks": [
+    {
+      "block_id": "BLK-ED4617494B16AE40",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 94,
+      "printed_page_label": "84",
+      "block_order": 0,
+      "section_id": "SEC-9204B3C519A56E88",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.3 设置调节时间及目标值"
+      ],
+      "section_title": "9.3.2.3 设置调节时间及目标值",
+      "block_type": "paragraph",
+      "text": "用户手册\n9 电网调度",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DAE9AB886213127F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 94,
+      "printed_page_label": "84",
+      "block_order": 1,
+      "section_id": "SEC-9204B3C519A56E88",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.3 设置调节时间及目标值"
+      ],
+      "section_title": "9.3.2.3 设置调节时间及目标值",
+      "block_type": "paragraph",
+      "text": "步骤 6 如有零功率馈网需求，在接线模式下拉列表中，根据实际情况，选择数据采集器的连接模",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        71.484,
+        438.563,
+        83.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FDECC65372E9E706",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 94,
+      "printed_page_label": "84",
+      "block_order": 2,
+      "section_id": "SEC-9204B3C519A56E88",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.3 设置调节时间及目标值"
+      ],
+      "section_title": "9.3.2.3 设置调节时间及目标值",
+      "block_type": "paragraph",
+      "text": "式。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        86.406,
+        105.563,
+        97.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0EBBE4C1216D4FAF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 94,
+      "printed_page_label": "84",
+      "block_order": 3,
+      "section_id": "SEC-9204B3C519A56E88",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.3 设置调节时间及目标值"
+      ],
+      "section_title": "9.3.2.3 设置调节时间及目标值",
+      "block_type": "list",
+      "text": "•\n直连：一台数据采集器连接所有的逆变器，逆变器必须全部为组串逆变器或者集中式逆变\n器。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        102.906,
+        452.738,
+        127.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-56937353C62D4C97",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 94,
+      "printed_page_label": "84",
+      "block_order": 4,
+      "section_id": "SEC-9204B3C519A56E88",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.3 设置调节时间及目标值"
+      ],
+      "section_title": "9.3.2.3 设置调节时间及目标值",
+      "block_type": "list",
+      "text": "•\n级联：多台数据采集器级联，且本台数据采集器作为主机。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        131.406,
+        335.738,
+        142.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0FC62E5B1F67DEB1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 94,
+      "printed_page_label": "84",
+      "block_order": 5,
+      "section_id": "SEC-9204B3C519A56E88",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.3 设置调节时间及目标值"
+      ],
+      "section_title": "9.3.2.3 设置调节时间及目标值",
+      "block_type": "paragraph",
+      "text": "步骤 7 在馈网关机下拉列表中，选择当检测到有馈网功率时，数据采集器是否对逆变器下发关机指",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        146.484,
+        447.563,
+        158.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4F76828F6AD9009C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 94,
+      "printed_page_label": "84",
+      "block_order": 6,
+      "section_id": "SEC-9204B3C519A56E88",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.3 设置调节时间及目标值"
+      ],
+      "section_title": "9.3.2.3 设置调节时间及目标值",
+      "block_type": "paragraph",
+      "text": "令。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        161.406,
+        105.563,
+        172.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B45CC8490457FEC4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 94,
+      "printed_page_label": "84",
+      "block_order": 7,
+      "section_id": "SEC-9204B3C519A56E88",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.3 设置调节时间及目标值"
+      ],
+      "section_title": "9.3.2.3 设置调节时间及目标值",
+      "block_type": "list",
+      "text": "•\n使能：当电表检测到馈网功率时，数据采集器对逆变器下发关机指令。在有零功率馈网需\n求时启用。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        177.906,
+        452.738,
+        202.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A0F52D0E255E0C89",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 94,
+      "printed_page_label": "84",
+      "block_order": 8,
+      "section_id": "SEC-9204B3C519A56E88",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.3 设置调节时间及目标值"
+      ],
+      "section_title": "9.3.2.3 设置调节时间及目标值",
+      "block_type": "list",
+      "text": "•\n禁止：当电表检测到馈网功率时，逆变器保持开机。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        206.406,
+        308.738,
+        217.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-50CB32A070A4A4E0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 94,
+      "printed_page_label": "84",
+      "block_order": 9,
+      "section_id": "SEC-9204B3C519A56E88",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.3 设置调节时间及目标值"
+      ],
+      "section_title": "9.3.2.3 设置调节时间及目标值",
+      "block_type": "paragraph",
+      "text": "步骤 8 在馈网控制模式下拉列表中，根据电表采集的数据类型选择馈网控制模式。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        221.484,
+        384.563,
+        233.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E57C35F1A8005948",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 94,
+      "printed_page_label": "84",
+      "block_order": 10,
+      "section_id": "SEC-9204B3C519A56E88",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.3 设置调节时间及目标值"
+      ],
+      "section_title": "9.3.2.3 设置调节时间及目标值",
+      "block_type": "list",
+      "text": "•\n总有功控制：电表采集并网侧三相数据作为反馈值进行调节。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        237.984,
+        344.738,
+        250.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3801609C896B43B9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 94,
+      "printed_page_label": "84",
+      "block_order": 11,
+      "section_id": "SEC-9204B3C519A56E88",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.3 设置调节时间及目标值"
+      ],
+      "section_title": "9.3.2.3 设置调节时间及目标值",
+      "block_type": "list",
+      "text": "•\n分相有功控制：电表采集单相数据选择作为反馈值进行调节。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        252.984,
+        344.738,
+        265.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-047EF24628ECCE77",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 94,
+      "printed_page_label": "84",
+      "block_order": 12,
+      "section_id": "SEC-9204B3C519A56E88",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.3 设置调节时间及目标值"
+      ],
+      "section_title": "9.3.2.3 设置调节时间及目标值",
+      "block_type": "paragraph",
+      "text": "Logger4000 的固件版本为P028 或以上支持此步骤。见7.8.16 查看固件版本。",
+      "table_cells": null,
+      "bbox": [
+        114.562,
+        274.556,
+        427.15,
+        285.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A60AD80DB9A96701",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 94,
+      "printed_page_label": "84",
+      "block_order": 13,
+      "section_id": "SEC-9204B3C519A56E88",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.3 设置调节时间及目标值"
+      ],
+      "section_title": "9.3.2.3 设置调节时间及目标值",
+      "block_type": "paragraph",
+      "text": "步骤 9 点击保存。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        302.784,
+        132.563,
+        315.267
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5FF3D8A5E9BB7421",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 94,
+      "printed_page_label": "84",
+      "block_order": 14,
+      "section_id": "SEC-9204B3C519A56E88",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.3 设置调节时间及目标值"
+      ],
+      "section_title": "9.3.2.3 设置调节时间及目标值",
+      "block_type": "list",
+      "text": "--结束\n配置完成后，设置数据采集器在本地下发功率调节指令的时间及目标值。见9.3.2.3 设置调节\n时间及目标值。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        319.356,
+        453.467,
+        351.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E992BD41EFF20D30",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 94,
+      "printed_page_label": "84",
+      "block_order": 15,
+      "section_id": "SEC-9204B3C519A56E88",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.3 设置调节时间及目标值"
+      ],
+      "section_title": "9.3.2.3 设置调节时间及目标值",
+      "block_type": "heading",
+      "text": "9.3.2.3 设置调节时间及目标值",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        361.79,
+        192.023,
+        373.96
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D1AA664AA7CA9320",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 94,
+      "printed_page_label": "84",
+      "block_order": 16,
+      "section_id": "SEC-9204B3C519A56E88",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.3 设置调节时间及目标值"
+      ],
+      "section_title": "9.3.2.3 设置调节时间及目标值",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        381.106,
+        124.19,
+        392.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-226624473FF5D8F8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 94,
+      "printed_page_label": "84",
+      "block_order": 17,
+      "section_id": "SEC-9204B3C519A56E88",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.3 设置调节时间及目标值"
+      ],
+      "section_title": "9.3.2.3 设置调节时间及目标值",
+      "block_type": "list",
+      "text": "•\n已根据需求选择合适的功率控制策略并完成相关配置。",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        401.106,
+        318.365,
+        412.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AE38D21C7BCA4225",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 94,
+      "printed_page_label": "84",
+      "block_order": 18,
+      "section_id": "SEC-9204B3C519A56E88",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.3 设置调节时间及目标值"
+      ],
+      "section_title": "9.3.2.3 设置调节时间及目标值",
+      "block_type": "paragraph",
+      "text": "本地功率调节指令下发的具体时间及目标值以表格的形式呈现。",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        419.256,
+        340.19,
+        430.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

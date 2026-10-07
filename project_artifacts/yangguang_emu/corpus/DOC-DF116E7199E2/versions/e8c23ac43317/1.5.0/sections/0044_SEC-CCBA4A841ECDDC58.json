@@ -1,0 +1,97 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-CCBA4A841ECDDC58",
+  "section_path": [
+    "12 附录：MOXA EDS-408A 安全加固操作指导",
+    "12.5 关闭非必要管理接口"
+  ],
+  "section_title": "12.5 关闭非必要管理接口",
+  "start_pdf_page": 35,
+  "end_pdf_page": 35,
+  "blocks": [
+    {
+      "block_id": "BLK-70A4CD243FF3FDC7",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 35,
+      "printed_page_label": "31",
+      "block_order": 1,
+      "section_id": "SEC-CCBA4A841ECDDC58",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.5 关闭非必要管理接口"
+      ],
+      "section_title": "12.5 关闭非必要管理接口",
+      "block_type": "heading",
+      "text": "12.5 关闭非必要管理接口",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        208.344,
+        209.718,
+        222.948
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-36FB0A68AF75FE85",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 35,
+      "printed_page_label": "31",
+      "block_order": 2,
+      "section_id": "SEC-CCBA4A841ECDDC58",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.5 关闭非必要管理接口"
+      ],
+      "section_title": "12.5 关闭非必要管理接口",
+      "block_type": "paragraph",
+      "text": "登录交换机 Web 管理界面，点击Basic Setting > Security > Management Interface，勾选\nDisable，配置完成后点击Activate，启用设置。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        235.992,
+        458.568,
+        260.445
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EDC5C2184DE9105D",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 35,
+      "printed_page_label": "31",
+      "block_order": 3,
+      "section_id": "SEC-CCBA4A841ECDDC58",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.5 关闭非必要管理接口"
+      ],
+      "section_title": "12.5 关闭非必要管理接口",
+      "block_type": "paragraph",
+      "text": "取消了这些管理接口之后，如果需要对交换机进行管理，可以通 Console 串口进行\n登录管理，Console 口的登录操作可以参考 MOXA 交换机的操作手册",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        276.142,
+        455.391,
+        297.895
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

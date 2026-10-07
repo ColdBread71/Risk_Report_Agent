@@ -1,0 +1,297 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-56D63DA4C4C257DB",
+  "section_path": [
+    "7 Web界面",
+    "7.5 设备监控",
+    "7.5.13 离散率分析"
+  ],
+  "section_title": "7.5.13 离散率分析",
+  "start_pdf_page": 53,
+  "end_pdf_page": 53,
+  "blocks": [
+    {
+      "block_id": "BLK-1E8270657A7C318B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 0,
+      "section_id": "SEC-56D63DA4C4C257DB",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析"
+      ],
+      "section_title": "7.5.13 离散率分析",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.616,
+        48.088,
+        463.963,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6531262DA16F7599",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 1,
+      "section_id": "SEC-56D63DA4C4C257DB",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析"
+      ],
+      "section_title": "7.5.13 离散率分析",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击设备监控 > 故障录波参数，进入界面，设置故障录波参数。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        71.484,
+        354.996,
+        83.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CA0A28AD76931055",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 2,
+      "section_id": "SEC-56D63DA4C4C257DB",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析"
+      ],
+      "section_title": "7.5.13 离散率分析",
+      "block_type": "paragraph",
+      "text": "步骤 2 在录波标准下拉框中选择录波标准模式，选择后会显示当前模式下所有参数的默认值。可根",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        87.984,
+        461.736,
+        100.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-61E9C47F58B60ACE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 3,
+      "section_id": "SEC-56D63DA4C4C257DB",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析"
+      ],
+      "section_title": "7.5.13 离散率分析",
+      "block_type": "paragraph",
+      "text": "据情况对参数进行修改。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        102.906,
+        200.736,
+        113.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EBC7BCAB6105EC03",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 4,
+      "section_id": "SEC-56D63DA4C4C257DB",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析"
+      ],
+      "section_title": "7.5.13 离散率分析",
+      "block_type": "paragraph",
+      "text": "步骤 3 单击右上角的设置，在弹出框确定信息后，单击保存，使单台设备生效。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        117.984,
+        389.736,
+        130.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-024B32BBCB738AF1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 5,
+      "section_id": "SEC-56D63DA4C4C257DB",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析"
+      ],
+      "section_title": "7.5.13 离散率分析",
+      "block_type": "paragraph",
+      "text": "步骤 4 （可选）单击右上角的配置同步，在弹出的设备列表中勾选需要设置的设备，单击保存，可",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        134.484,
+        461.736,
+        146.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-315824EE949E89E7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 6,
+      "section_id": "SEC-56D63DA4C4C257DB",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析"
+      ],
+      "section_title": "7.5.13 离散率分析",
+      "block_type": "paragraph",
+      "text": "批量设置录波参数。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        149.406,
+        182.736,
+        160.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3249C4FEE147B76F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 7,
+      "section_id": "SEC-56D63DA4C4C257DB",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析"
+      ],
+      "section_title": "7.5.13 离散率分析",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        164.556,
+        126.36,
+        175.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-39526FB0755F4CAF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 32,
+      "section_id": "SEC-56D63DA4C4C257DB",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析"
+      ],
+      "section_title": "7.5.13 离散率分析",
+      "block_type": "heading",
+      "text": "7.5.13 离散率分析",
+      "table_cells": null,
+      "bbox": [
+        70.865,
+        618.111,
+        153.415,
+        630.281
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-001BCBED22D818A2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 53,
+      "printed_page_label": "43",
+      "block_order": 33,
+      "section_id": "SEC-56D63DA4C4C257DB",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.13 离散率分析"
+      ],
+      "section_title": "7.5.13 离散率分析",
+      "block_type": "paragraph",
+      "text": "离散率是衡量光伏电站运行健康的关键指标，主要用于监测和评估各光伏组串的发电性能是否一\n致。离散率较低意味着各组串的电流曲线一致性好，发电性能稳定。相反，较高的离散率可能表",
+      "table_cells": null,
+      "bbox": [
+        102.364,
+        637.335,
+        459.364,
+        660.43
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

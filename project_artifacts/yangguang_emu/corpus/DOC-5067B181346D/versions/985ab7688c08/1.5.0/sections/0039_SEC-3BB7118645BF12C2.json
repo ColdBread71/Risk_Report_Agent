@@ -1,0 +1,45 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-3BB7118645BF12C2",
+  "section_path": [
+    "4 电气连接",
+    "4.6 接线步骤",
+    "4.6.5 连接PLC通讯线缆"
+  ],
+  "section_title": "4.6.5 连接PLC通讯线缆",
+  "start_pdf_page": 36,
+  "end_pdf_page": 36,
+  "blocks": [
+    {
+      "block_id": "BLK-FD2F1218ED062A35",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 36,
+      "printed_page_label": "30",
+      "block_order": 1,
+      "section_id": "SEC-3BB7118645BF12C2",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆"
+      ],
+      "section_title": "4.6.5 连接PLC通讯线缆",
+      "block_type": "heading",
+      "text": "4.6.5 连接PLC 通讯线缆",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        71.59,
+        168.133,
+        83.76
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

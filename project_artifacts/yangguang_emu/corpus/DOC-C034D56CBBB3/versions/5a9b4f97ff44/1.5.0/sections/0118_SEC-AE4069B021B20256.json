@@ -1,0 +1,297 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-AE4069B021B20256",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.9 转发三方云服务配置"
+  ],
+  "section_title": "7.8.9 转发三方云服务配置",
+  "start_pdf_page": 78,
+  "end_pdf_page": 78,
+  "blocks": [
+    {
+      "block_id": "BLK-B7E5F909212E57B9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 5,
+      "section_id": "SEC-AE4069B021B20256",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.9 转发三方云服务配置"
+      ],
+      "section_title": "7.8.9 转发三方云服务配置",
+      "block_type": "heading",
+      "text": "7.8.9 转发三方云服务配置",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        138.89,
+        173.687,
+        151.06
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2B36136186E50641",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 6,
+      "section_id": "SEC-AE4069B021B20256",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.9 转发三方云服务配置"
+      ],
+      "section_title": "7.8.9 转发三方云服务配置",
+      "block_type": "paragraph",
+      "text": "“转发三方云服务配置”用于配置数据采集器转发三方云服务。",
+      "table_cells": null,
+      "bbox": [
+        88.194,
+        158.114,
+        314.855,
+        168.458
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-923A2816865BC69E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 7,
+      "section_id": "SEC-AE4069B021B20256",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.9 转发三方云服务配置"
+      ],
+      "section_title": "7.8.9 转发三方云服务配置",
+      "block_type": "list",
+      "text": "1.云服务与外网有数据交互，请确认设备网络环境安全后再开启。\n2.转发三方云功能默认关闭。启用该功能前，客户需在充分知情的前提下使用\nadministrator 账号进行手动授权，并通过安全加密认证接入公共网络。该功能仅在获\n得administrator 账号授权后方可生效，且相关操作受系统访问控制策略管理，",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        184.106,
+        448.463,
+        227.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F70B8E93C4C5C1E5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 8,
+      "section_id": "SEC-AE4069B021B20256",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.9 转发三方云服务配置"
+      ],
+      "section_title": "7.8.9 转发三方云服务配置",
+      "block_type": "paragraph",
+      "text": "步骤 1 登录maintan 账号，单击系统 > 转发配置 > 三方云，进入三方云界面。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        247.734,
+        369.596,
+        260.217
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-178E229F88A24ACD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 9,
+      "section_id": "SEC-AE4069B021B20256",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.9 转发三方云服务配置"
+      ],
+      "section_title": "7.8.9 转发三方云服务配置",
+      "block_type": "paragraph",
+      "text": "步骤 2 打开开关。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        264.234,
+        132.563,
+        276.717
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E44A524F8FA07C40",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 10,
+      "section_id": "SEC-AE4069B021B20256",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.9 转发三方云服务配置"
+      ],
+      "section_title": "7.8.9 转发三方云服务配置",
+      "block_type": "paragraph",
+      "text": "步骤 3 单击",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        286.123,
+        105.563,
+        298.606
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1144A3591A46DE48",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 11,
+      "section_id": "SEC-AE4069B021B20256",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.9 转发三方云服务配置"
+      ],
+      "section_title": "7.8.9 转发三方云服务配置",
+      "block_type": "paragraph",
+      "text": "，弹出高级设置界面。",
+      "table_cells": null,
+      "bbox": [
+        119.738,
+        287.545,
+        209.738,
+        298.498
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3C31ED0653A90DAA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 12,
+      "section_id": "SEC-AE4069B021B20256",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.9 转发三方云服务配置"
+      ],
+      "section_title": "7.8.9 转发三方云服务配置",
+      "block_type": "paragraph",
+      "text": "步骤 4 修改配置信息，单击保存。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        302.623,
+        195.563,
+        315.106
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DB657EBB01B48C08",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 13,
+      "section_id": "SEC-AE4069B021B20256",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.9 转发三方云服务配置"
+      ],
+      "section_title": "7.8.9 转发三方云服务配置",
+      "block_type": "paragraph",
+      "text": "设置FTP 路径按照“/FTP 服务器目录”方式命名。\n如“/SUNGROW”中/表示根目录，SUNGROW 是FTP 服务器中存放数据的目录。",
+      "table_cells": null,
+      "bbox": [
+        114.562,
+        325.695,
+        434.296,
+        347.448
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1BC1810BF5CD0C86",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 78,
+      "printed_page_label": "68",
+      "block_order": 14,
+      "section_id": "SEC-AE4069B021B20256",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.9 转发三方云服务配置"
+      ],
+      "section_title": "7.8.9 转发三方云服务配置",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        364.795,
+        112.187,
+        375.748
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

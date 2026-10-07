@@ -1,0 +1,555 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-753E033A8A2263C1",
+  "section_path": [
+    "4 电气连接",
+    "4.6 接线步骤",
+    "4.6.5 连接PLC通讯线缆",
+    "4.6.5.2 PLC接线"
+  ],
+  "section_title": "4.6.5.2 PLC接线",
+  "start_pdf_page": 37,
+  "end_pdf_page": 38,
+  "blocks": [
+    {
+      "block_id": "BLK-32BFC8E3E94B7FC4",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 37,
+      "printed_page_label": "31",
+      "block_order": 0,
+      "section_id": "SEC-753E033A8A2263C1",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.2 PLC接线"
+      ],
+      "section_title": "4.6.5.2 PLC接线",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 电气连接",
+      "table_cells": null,
+      "bbox": [
+        74.613,
+        48.088,
+        463.967,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2214644C46654F7A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 37,
+      "printed_page_label": "31",
+      "block_order": 1,
+      "section_id": "SEC-753E033A8A2263C1",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.2 PLC接线"
+      ],
+      "section_title": "4.6.5.2 PLC接线",
+      "block_type": "paragraph",
+      "text": "图中各参数说明如下表格中所示。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        72.906,
+        237.366,
+        83.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AEE5967E75911F5A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 37,
+      "printed_page_label": "31",
+      "block_order": 2,
+      "section_id": "SEC-753E033A8A2263C1",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.2 PLC接线"
+      ],
+      "section_title": "4.6.5.2 PLC接线",
+      "block_type": "table",
+      "text": "参数\t说明\t规格\t\n\tD\t1\t箱变至逆变器\n线缆\t•\n•\n•\t若为多芯交流线缆，D2≤10m，多芯\n线缆最大长度为1000m。\n当D1 大于1000m 时，请\n登录Logger5000 Web 界\n面，选择系统 > MPLC 进\n入MPLC 界面，点击操作\n列的 ，在弹出的设置对\n话框中修改增益值为17。\n若为单芯交流线缆,D2≤10m 时单芯\n线缆最大长度为800m。\n若为双拼线缆，线缆长度要求同单\n芯交流线缆。\n\tD\t2\t箱变至通讯箱\n或外置PLC 模\n块线缆\t•\n•\n•\t应选取户外型防紫外多芯铜线交流\n线缆，建议芯径为2.5mm²~10mm\n²。\n线缆耐压要求为：隔离电压＞\n1500V。\n线缆长度≤10m。\n\t\t\t\t\t注意\n\t\t\t\t实\n度\t际长度越短，通讯越好。若线缆长\n超过10m，有通讯断链的风险。\n\t\t\t\t\t\n\tP\tLC 模块\t端口输入电压\t≤11\t50 Vac\n\t\t\t端口供电电压\t24\tVdc\n\t\t\t最大接入逆变\n器数\t80",
+      "table_cells": [
+        [
+          null,
+          null,
+          "参数",
+          "说明",
+          "规格",
+          null
+        ],
+        [
+          null,
+          "D",
+          "1",
+          "箱变至逆变器\n线缆",
+          "•\n•\n•",
+          "若为多芯交流线缆，D2≤10m，多芯\n线缆最大长度为1000m。\n当D1 大于1000m 时，请\n登录Logger5000 Web 界\n面，选择系统 > MPLC 进\n入MPLC 界面，点击操作\n列的 ，在弹出的设置对\n话框中修改增益值为17。\n若为单芯交流线缆,D2≤10m 时单芯\n线缆最大长度为800m。\n若为双拼线缆，线缆长度要求同单\n芯交流线缆。"
+        ],
+        [
+          null,
+          "D",
+          "2",
+          "箱变至通讯箱\n或外置PLC 模\n块线缆",
+          "•\n•\n•",
+          "应选取户外型防紫外多芯铜线交流\n线缆，建议芯径为2.5mm²~10mm\n²。\n线缆耐压要求为：隔离电压＞\n1500V。\n线缆长度≤10m。"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "注意"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          "实\n度",
+          "际长度越短，通讯越好。若线缆长\n超过10m，有通讯断链的风险。"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "P",
+          "LC 模块",
+          "端口输入电压",
+          "≤11",
+          "50 Vac"
+        ],
+        [
+          null,
+          null,
+          null,
+          "端口供电电压",
+          "24",
+          "Vdc"
+        ],
+        [
+          null,
+          null,
+          null,
+          "最大接入逆变\n器数",
+          "80",
+          null
+        ]
+      ],
+      "bbox": [
+        102.365,
+        91.689,
+        457.362,
+        517.998
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-02D5E580AC783603",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 37,
+      "printed_page_label": "31",
+      "block_order": 3,
+      "section_id": "SEC-753E033A8A2263C1",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.2 PLC接线"
+      ],
+      "section_title": "4.6.5.2 PLC接线",
+      "block_type": "heading",
+      "text": "4.6.5.2 PLC 接线",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        538.338,
+        145.646,
+        550.508
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A83A293CA6F53738",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 37,
+      "printed_page_label": "31",
+      "block_order": 4,
+      "section_id": "SEC-753E033A8A2263C1",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.2 PLC接线"
+      ],
+      "section_title": "4.6.5.2 PLC接线",
+      "block_type": "paragraph",
+      "text": "接线前准备",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        556.304,
+        147.365,
+        567.257
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2FA70D0A97D12AA7",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 37,
+      "printed_page_label": "31",
+      "block_order": 5,
+      "section_id": "SEC-753E033A8A2263C1",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.2 PLC接线"
+      ],
+      "section_title": "4.6.5.2 PLC接线",
+      "block_type": "list",
+      "text": "•\n交流接线前，确保前级交流开关及设备内部各熔断器均处于断开状态。",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        574.454,
+        395.54,
+        585.407
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B985FF13FDCACB11",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 37,
+      "printed_page_label": "31",
+      "block_order": 6,
+      "section_id": "SEC-753E033A8A2263C1",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.2 PLC接线"
+      ],
+      "section_title": "4.6.5.2 PLC接线",
+      "block_type": "list",
+      "text": "•\n请参考2.1 组网应用章节内容了解PLC 应用场景及选择相应规格线缆。",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        589.454,
+        398.807,
+        600.407
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6F090AB2B3ECAE4D",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 37,
+      "printed_page_label": "31",
+      "block_order": 7,
+      "section_id": "SEC-753E033A8A2263C1",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.2 PLC接线"
+      ],
+      "section_title": "4.6.5.2 PLC接线",
+      "block_type": "list",
+      "text": "•\n请参考4.6.5.3 PLC 布线原则章节内容了解其接线规则。",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        604.454,
+        339.569,
+        615.407
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5E943E8281679E9F",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 37,
+      "printed_page_label": "31",
+      "block_order": 8,
+      "section_id": "SEC-753E033A8A2263C1",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.2 PLC接线"
+      ],
+      "section_title": "4.6.5.2 PLC接线",
+      "block_type": "paragraph",
+      "text": "接线步骤",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        622.604,
+        138.365,
+        633.557
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BA4E1D24C2DCB493",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 37,
+      "printed_page_label": "31",
+      "block_order": 9,
+      "section_id": "SEC-753E033A8A2263C1",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.2 PLC接线"
+      ],
+      "section_title": "4.6.5.2 PLC接线",
+      "block_type": "list",
+      "text": "1. 拧开设备底部的“MPLC”防水端子，将外部交流线缆，穿过防水端子。",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        640.754,
+        390.536,
+        651.707
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-20C72CCBA50FC627",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 37,
+      "printed_page_label": "31",
+      "block_order": 10,
+      "section_id": "SEC-753E033A8A2263C1",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.2 PLC接线"
+      ],
+      "section_title": "4.6.5.2 PLC接线",
+      "block_type": "list",
+      "text": "2. 使用剥线钳，剥去线缆防护层，漏出线缆的铜芯部分，如下图所示。",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        655.754,
+        386.54,
+        666.707
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E6C99BD856980702",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "32",
+      "block_order": 0,
+      "section_id": "SEC-753E033A8A2263C1",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.2 PLC接线"
+      ],
+      "section_title": "4.6.5.2 PLC接线",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 电气连接",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B4420697C19B9D8C",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "32",
+      "block_order": 1,
+      "section_id": "SEC-753E033A8A2263C1",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.2 PLC接线"
+      ],
+      "section_title": "4.6.5.2 PLC接线",
+      "block_type": "list",
+      "text": "3. 根据实际线径，使用规格合适的OT 端子压接。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        179.938,
+        290.36,
+        190.891
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6A12869185200B02",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "32",
+      "block_order": 2,
+      "section_id": "SEC-753E033A8A2263C1",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.2 PLC接线"
+      ],
+      "section_title": "4.6.5.2 PLC接线",
+      "block_type": "list",
+      "text": "4. 将线缆接入对应的端子处，如下图所示。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        410.653,
+        264.368,
+        421.606
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A58C7DFAB1FC1C6B",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "32",
+      "block_order": 3,
+      "section_id": "SEC-753E033A8A2263C1",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.2 PLC接线"
+      ],
+      "section_title": "4.6.5.2 PLC接线",
+      "block_type": "figure_caption",
+      "text": "图 4-3 三相三线制接法",
+      "table_cells": null,
+      "bbox": [
+        232.949,
+        602.204,
+        322.958,
+        613.157
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F0A25D8B37628CE0",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 38,
+      "printed_page_label": "32",
+      "block_order": 4,
+      "section_id": "SEC-753E033A8A2263C1",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.5 连接PLC通讯线缆",
+        "4.6.5.2 PLC接线"
+      ],
+      "section_title": "4.6.5.2 PLC接线",
+      "block_type": "paragraph",
+      "text": "PLC 线缆连接箱变母排的耦合点位置建议选择母排中间的断路器。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        630.854,
+        392.121,
+        641.807
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

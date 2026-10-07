@@ -1,0 +1,1258 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-7DEFFABFEE3BF6D0",
+  "section_path": [
+    "1 安全注意事项",
+    "1.2 通用安全说明"
+  ],
+  "section_title": "1.2 通用安全说明",
+  "start_pdf_page": 8,
+  "end_pdf_page": 9,
+  "blocks": [
+    {
+      "block_id": "BLK-5FF567B8C4C6A53D",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "2",
+      "block_order": 0,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "用户手册\n1 安全注意事项",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-08E2F35ACEC4CB3E",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "2",
+      "block_order": 1,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "heading",
+      "text": "1.2 通用安全说明",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        71.658,
+        152.873,
+        86.262
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-639CEEB4B93248B9",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "2",
+      "block_order": 2,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "法律法规要求",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        97.956,
+        142.19,
+        108.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1CB6C43FB4BE023B",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "2",
+      "block_order": 3,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "注意",
+      "table_cells": null,
+      "bbox": [
+        97.941,
+        119.224,
+        119.941,
+        132.611
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4DEF8FD954725C1C",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "2",
+      "block_order": 4,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "运输、存储、安装、操作、使用、维护等所有作业时应遵守当地的法律法规、标准和规范\n要求。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        137.756,
+        443.695,
+        159.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7C479A4066A24DBB",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "2",
+      "block_order": 5,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "人员要求",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        181.856,
+        124.193,
+        192.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ECB049C850C4EA27",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "2",
+      "block_order": 6,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "注意",
+      "table_cells": null,
+      "bbox": [
+        97.941,
+        203.124,
+        119.941,
+        216.511
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3195016CD9F375C2",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "2",
+      "block_order": 7,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "对设备进行操作的人员须具备以下条件：",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        221.656,
+        254.695,
+        232.609
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-927D48EAEDF4C524",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "2",
+      "block_order": 8,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "list",
+      "text": "•\n应接受过与电气设备安装和试运行相关的专业培训，且具备必要经验的人员。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        235.306,
+        412.87,
+        246.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-00A8D736C4EA0EDE",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "2",
+      "block_order": 9,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "list",
+      "text": "•\n应具备紧急应对安装或试运行过程中出现的危险或突发情况的能力。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        250.306,
+        376.87,
+        261.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AD97E0723DF60798",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "2",
+      "block_order": 10,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "list",
+      "text": "•\n负责安装维护设备的人员，必须先经严格培训，掌握正确的操作方法，了解各种安全注\n意事项和所在国家/地区的相关标准。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        265.306,
+        448.87,
+        289.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-007A275087EA3C01",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "2",
+      "block_order": 11,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "list",
+      "text": "•\n特殊场景（例如电气操作、登高作业等）操作的人员必须持有当地国家/地区要求的特\n种操作资质。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        293.806,
+        442.363,
+        318.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0449273AFF9DFD20",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "2",
+      "block_order": 12,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "危险",
+      "table_cells": null,
+      "bbox": [
+        110.69,
+        338.674,
+        132.69,
+        352.061
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8203A62524B01EDD",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "2",
+      "block_order": 13,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "list",
+      "text": "•\n在作业过程中严禁佩戴手表、手链、手镯、戒指、项链等易导电物体，以免被电击灼\n伤。",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        358.556,
+        439.868,
+        383.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1C84645F0DA1E918",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "2",
+      "block_order": 14,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "list",
+      "text": "•\n禁止在设备所在区域吸烟，以免发生火灾、电击或爆炸，导致人员伤亡或财产损失。",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        387.056,
+        439.868,
+        398.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A81BBDB6DA928381",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "2",
+      "block_order": 15,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "危险",
+      "table_cells": null,
+      "bbox": [
+        110.69,
+        418.424,
+        132.69,
+        431.811
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-978D41622EC0650A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "2",
+      "block_order": 16,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "在作业过程中必须使用专用绝缘工具，避免发生电击伤害或短路故障，绝缘耐压等级须满\n足当地法律法规、标准以及规范要求。",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        436.956,
+        443.693,
+        458.709
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BE3C8A396ED49EDB",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "2",
+      "block_order": 17,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "警告",
+      "table_cells": null,
+      "bbox": [
+        110.69,
+        477.774,
+        132.69,
+        491.161
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-80F5CD418C65EF2C",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "2",
+      "block_order": 18,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "在作业过程中必须使用专用的防护用具，如穿防护服、绝缘鞋，戴护目镜、安全帽、绝缘\n手套等。",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        496.306,
+        443.693,
+        518.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A28842F8DA47D748",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "2",
+      "block_order": 19,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "警告",
+      "table_cells": null,
+      "bbox": [
+        110.69,
+        537.124,
+        132.69,
+        550.511
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C9A7A8550C2105E8",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 8,
+      "printed_page_label": "2",
+      "block_order": 20,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "除了对设备进行操作的人员，其他人员请勿接近设备。",
+      "table_cells": null,
+      "bbox": [
+        92.693,
+        555.656,
+        308.693,
+        566.609
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8C4EF5FB2F37329B",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 0,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "用户手册\n1 安全注意事项",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F5CA793C612D42C1",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 1,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "工具要求",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        71.556,
+        138.366,
+        82.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FA2EDAA94AD615BB",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 2,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "警告",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        93.074,
+        146.863,
+        106.461
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A1E103D518177F31",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 3,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "list",
+      "text": "•\n工具需准备齐全且没有损坏，并经专业机构检验合格，严禁使用有损坏或者检验不合格\n的工具，需保证工具牢固。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        112.956,
+        463.041,
+        137.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3EEFB7B2D8563296",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 4,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "list",
+      "text": "•\n使用工具前，请掌握工具的正确使用方法，避免人员伤害和损坏设备。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        141.456,
+        400.041,
+        152.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-769D7B6FD64C2391",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 5,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "警告",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        172.824,
+        146.863,
+        186.211
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-495C8042A06C5559",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 6,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "list",
+      "text": "•\n登高作业时，应使用木梯或绝缘梯，以防被电击。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        192.706,
+        319.041,
+        203.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FDED92EBBFDC3B0F",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 7,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "list",
+      "text": "•\n使用梯子前，请检查梯子是否完整无损，以及承重是否符合要求，严禁超重使用。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        207.706,
+        445.041,
+        218.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-876338131EF4A3FF",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 8,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "环境要求",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        242.356,
+        138.366,
+        253.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E6CAED279C9A98F9",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 9,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "危险",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        262.524,
+        146.863,
+        275.911
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6CE3B14F09813A70",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 10,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "禁止将设备靠近热源或火源，以防导致设备损坏或引发火灾。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        279.706,
+        349.866,
+        290.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D6B1990F324F4EBF",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 11,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "危险",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        308.374,
+        146.863,
+        321.761
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6D328816F97A8E81",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 12,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "禁止在设备区域存放易燃、易爆物品。以及严禁将设备置于易燃、易爆气体或烟雾的环境\n中，禁止在该环境下进行任何操作。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        325.556,
+        457.866,
+        347.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F43C1B162AA8EBEC",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 13,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "警告",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        365.024,
+        146.863,
+        378.411
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-164BEEEDA625DD97",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 14,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "严禁将设备安装在靠近液体的区域，防止液体进入设备内部造成设备故障或短路。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        382.206,
+        430.866,
+        393.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0F190F919A755A78",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 15,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "警告",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        410.874,
+        146.863,
+        424.261
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2EC6C48517AF94CF",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 16,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "安装设备时，请确保地基稳固，满足设备承重要求。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        428.056,
+        313.866,
+        439.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6CD960A3C72860E0",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 17,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "警告",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        456.724,
+        146.863,
+        470.111
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-68DE30075DB3D31C",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 18,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "严禁在雷电、雨、雪、六级以上大风等恶劣天气下对产品进行操作（包括但不限于搬运、\n安装、电气连接、上电、维护、高空作业等）。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        473.906,
+        457.866,
+        495.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6E453C618BDDFD72",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 19,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "警告",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        513.374,
+        146.863,
+        526.761
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A87D234B85FFFD89",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 20,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "设备应存放在清洁干燥、通风良好的区域，并防止灰尘和凝露。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        530.556,
+        358.866,
+        541.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F580FE1B37EE75A1",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 21,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "警告",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        565.224,
+        146.863,
+        578.611
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BA70189E5CBFBED8",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 22,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "严禁将设备安装在强振、强噪声源和强电磁场干扰区域。",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        582.406,
+        331.866,
+        593.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B1A606DB20BD3D03",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 23,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "小心",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        611.074,
+        146.863,
+        624.461
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D30C4ED77F053F4A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 9,
+      "printed_page_label": "3",
+      "block_order": 24,
+      "section_id": "SEC-7DEFFABFEE3BF6D0",
+      "section_path": [
+        "1 安全注意事项",
+        "1.2 通用安全说明"
+      ],
+      "section_title": "1.2 通用安全说明",
+      "block_type": "paragraph",
+      "text": "为防止无关人员靠近产品误操作或发生意外，请在产品周边放置醒目的警告标识牌或设立\n安全警示带。",
+      "table_cells": null,
+      "bbox": [
+        106.864,
+        628.256,
+        457.864,
+        650.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

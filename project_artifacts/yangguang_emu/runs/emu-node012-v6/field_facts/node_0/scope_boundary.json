@@ -1,0 +1,368 @@
+{
+  "schema_version": "field_fact_checkpoint.v2",
+  "node_id": "node_0",
+  "field_id": "scope_boundary",
+  "index_id": "IDX-3B116ADDF3BB03CC",
+  "packet_sha256": "78ad5e969ce4923a9b373a56b00595c469a5c4bc4b5f3382197fee8260e406dd",
+  "text_model": "qwen-plus",
+  "retrieval_profile_version": "1.1",
+  "field_fact_prompt_version": "2.2",
+  "field_fact_schema_sha256": "0f478546b256a855e3ca4dc4218d2b3a32d2d428b89b976aa69639129864c0e5",
+  "result": {
+    "node_id": "node_0",
+    "field_id": "scope_boundary",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "能量管理单元可通过4G路由器将采集到的设备数据传输至阳光云。",
+        "block_ids": [
+          "BLK-58481F3BF8C8F982"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "能量管理单元通过核心交换机连接至后台站控。",
+        "block_ids": [
+          "BLK-88F7F2D2F44E6545"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "能量管理单元通过核心交换机连接至Insight或SCADA。",
+        "block_ids": [
+          "BLK-202781F4D7F5C1D3"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "环形组网方式下，一个环网中最多可接入15台EMU300A。",
+        "block_ids": [
+          "BLK-A117B2CB2E7B47A8"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "光纤终端盒为选配，必须与光纤环网交换机配套使用。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "RS485通讯端子线缆未包含在供货范围内。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "交流熔丝盒线缆未包含在供货范围内。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "接地端子线缆未包含在供货范围内。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "光纤环网交换机为选配，必须与光纤终端盒配套使用。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "PID模块支持PID防护和PID修复功能，适用于PV-正偏置组件；支持交流ISO检测功能。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "MPLC通信接口数量为1或2，个数可选。",
+        "block_ids": [
+          "BLK-B33119997D4D8B57"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "订购信息中明确内含Logger5000（含电压电流采样接口）、开关电源、防雷模块、微型断路器、MPLC（可选1或2）、PID&ISO控制盒（可选）、光纤交换机（可选）、光纤终端盒（可选）、IO模组（可选）。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": false
+      }
+    ],
+    "unknowns": [
+      "Logger4000是否属于本产品供货范围或实际交付配置（GAP-LOGGER4000-SCOPE）",
+      "南向三方设备的具体类型、接口协议及是否纳入产品边界（仅说明‘由用户保障’，未定义责任边界）",
+      "‘通过路由器连接至阳光云’中的路由器是否为EMU300A内置组件、外置选配设备或客户侧设备（BLK-853407424F1C1351未明确归属）",
+      "星形组网方式下EMU300A与阳光云/Insight/SCADA之间的具体网络路径及中间设备是否属于产品边界（图2-2未提供文字描述）",
+      "‘南向和北向网络使用独立的交换机进行部署’中的交换机是否属于EMU300A供货范围或客户侧设备（BLK-AFED3332E2924093未明确）",
+      "光纤交换机（可选）与光纤终端盒（可选）是否构成完整可选子系统，或可单独选购（BLK-D844E7AC55AEA6FE与BLK-AFC136CD8222B958均称‘可选’/‘选配’，但未说明组合约束）"
+    ],
+    "contradictions": []
+  },
+  "retrieval_trace": {
+    "schema_version": "1.0",
+    "request": {
+      "project_id": "yangguang_emu",
+      "node_id": "node_0",
+      "field_id": "scope_boundary",
+      "query": null,
+      "filters": {
+        "document_ids": [],
+        "section_path_terms": [],
+        "block_types": [],
+        "exclude_review_required": false
+      },
+      "token_budget": 12000,
+      "max_blocks": 24,
+      "neighbor_window": 1
+    },
+    "effective_query": "系统边界 产品边界 内部组件 外部系统 标准配置 供货范围 BOM 选配 选购 可选模块 交换机 接口 依赖 排除范围",
+    "index_id": "IDX-3B116ADDF3BB03CC",
+    "scope_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "packet_id": "rag_yangguang_emu_node_0_scope_boundary_5711a036d0e4",
+    "packet_sha256": "78ad5e969ce4923a9b373a56b00595c469a5c4bc4b5f3382197fee8260e406dd",
+    "candidate_count": 363,
+    "selected_count": 24,
+    "selected_token_count": 2722,
+    "truncated_by_budget": false,
+    "truncated_by_max_blocks": true,
+    "hits": [
+      {
+        "block_id": "BLK-D8AA6F0C8103713A",
+        "document_id": "DOC-5067B181346D",
+        "rank": 1,
+        "score": 0.4746571268354144,
+        "estimated_tokens": 504,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-AFC136CD8222B958",
+        "document_id": "DOC-5067B181346D",
+        "rank": 2,
+        "score": 0.4746571268354144,
+        "estimated_tokens": 51,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-D8AA6F0C8103713A"
+      },
+      {
+        "block_id": "BLK-B07115D81ED807D1",
+        "document_id": "DOC-5067B181346D",
+        "rank": 3,
+        "score": 0.4746571268354144,
+        "estimated_tokens": 51,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-D8AA6F0C8103713A"
+      },
+      {
+        "block_id": "BLK-D844E7AC55AEA6FE",
+        "document_id": "DOC-5067B181346D",
+        "rank": 4,
+        "score": 0.4462819712502616,
+        "estimated_tokens": 138,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-CE3D928E7C421E03",
+        "document_id": "DOC-5067B181346D",
+        "rank": 5,
+        "score": 0.4462819712502616,
+        "estimated_tokens": 393,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-D844E7AC55AEA6FE"
+      },
+      {
+        "block_id": "BLK-409F387B605FF8FF",
+        "document_id": "DOC-5067B181346D",
+        "rank": 6,
+        "score": 0.4462819712502616,
+        "estimated_tokens": 39,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-D844E7AC55AEA6FE"
+      },
+      {
+        "block_id": "BLK-77ED7F96663266B9",
+        "document_id": "DOC-5067B181346D",
+        "rank": 7,
+        "score": 0.43018245697021484,
+        "estimated_tokens": 52,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-06A4D464DB275CE5",
+        "document_id": "DOC-5067B181346D",
+        "rank": 8,
+        "score": 0.43018245697021484,
+        "estimated_tokens": 50,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-77ED7F96663266B9"
+      },
+      {
+        "block_id": "BLK-853407424F1C1351",
+        "document_id": "DOC-5067B181346D",
+        "rank": 9,
+        "score": 0.43018245697021484,
+        "estimated_tokens": 51,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-77ED7F96663266B9"
+      },
+      {
+        "block_id": "BLK-2FA416363E293835",
+        "document_id": "DOC-5067B181346D",
+        "rank": 10,
+        "score": 0.4242295265197754,
+        "estimated_tokens": 54,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-202781F4D7F5C1D3",
+        "document_id": "DOC-5067B181346D",
+        "rank": 11,
+        "score": 0.4242295265197754,
+        "estimated_tokens": 68,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-2FA416363E293835"
+      },
+      {
+        "block_id": "BLK-A117B2CB2E7B47A8",
+        "document_id": "DOC-5067B181346D",
+        "rank": 12,
+        "score": 0.4242295265197754,
+        "estimated_tokens": 68,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-2FA416363E293835"
+      },
+      {
+        "block_id": "BLK-88F7F2D2F44E6545",
+        "document_id": "DOC-5067B181346D",
+        "rank": 13,
+        "score": 0.4203155108860561,
+        "estimated_tokens": 54,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-58481F3BF8C8F982",
+        "document_id": "DOC-5067B181346D",
+        "rank": 14,
+        "score": 0.4203155108860561,
+        "estimated_tokens": 79,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-88F7F2D2F44E6545"
+      },
+      {
+        "block_id": "BLK-B081A00CB116A76B",
+        "document_id": "DOC-5067B181346D",
+        "rank": 15,
+        "score": 0.41695680618286135,
+        "estimated_tokens": 77,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-BC449CE85DB4F669",
+        "document_id": "DOC-5067B181346D",
+        "rank": 16,
+        "score": 0.41695680618286135,
+        "estimated_tokens": 59,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-B081A00CB116A76B"
+      },
+      {
+        "block_id": "BLK-D13DD174206D8434",
+        "document_id": "DOC-5067B181346D",
+        "rank": 17,
+        "score": 0.41695680618286135,
+        "estimated_tokens": 81,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-B081A00CB116A76B"
+      },
+      {
+        "block_id": "BLK-AFED3332E2924093",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 18,
+        "score": 0.4156414576939174,
+        "estimated_tokens": 78,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-AFA75AA365265142",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 19,
+        "score": 0.4156414576939174,
+        "estimated_tokens": 84,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-AFED3332E2924093"
+      },
+      {
+        "block_id": "BLK-EB131CDE5EBDAAA4",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 20,
+        "score": 0.4156414576939174,
+        "estimated_tokens": 90,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-AFED3332E2924093"
+      },
+      {
+        "block_id": "BLK-D558E0F03D0C4DAC",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 21,
+        "score": 0.41365928649902345,
+        "estimated_tokens": 71,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-9AE61B78288E5DE6",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 22,
+        "score": 0.41365928649902345,
+        "estimated_tokens": 57,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-D558E0F03D0C4DAC"
+      },
+      {
+        "block_id": "BLK-B33119997D4D8B57",
+        "document_id": "DOC-5067B181346D",
+        "rank": 23,
+        "score": 0.4128699915749686,
+        "estimated_tokens": 367,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-1EAC19030366F2E6",
+        "document_id": "DOC-5067B181346D",
+        "rank": 24,
+        "score": 0.4128699915749686,
+        "estimated_tokens": 39,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-B33119997D4D8B57"
+      }
+    ]
+  }
+}

@@ -1,0 +1,888 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-0FF59275B7EF2968",
+  "section_path": [
+    "9 电网调度",
+    "9.3 有功功率调节",
+    "9.3.2 本地有功调节",
+    "9.3.2.2 闭环控制"
+  ],
+  "section_title": "9.3.2.2 闭环控制",
+  "start_pdf_page": 93,
+  "end_pdf_page": 93,
+  "blocks": [
+    {
+      "block_id": "BLK-DBC04A7C7973F60E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 0,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "paragraph",
+      "text": "用户手册\n9 电网调度",
+      "table_cells": null,
+      "bbox": [
+        74.616,
+        48.088,
+        463.963,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3E8926E62378BD0D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 1,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "list",
+      "text": "•\n当前有功控制方式已选择本地调度。见9.2 选择功率控制方式。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        72.906,
+        367.803,
+        83.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C2FA0C5CF191CBEE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 2,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "paragraph",
+      "text": "步骤 1 在控制策略下拉列表中，选择开环控制。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        90.984,
+        263.736,
+        103.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C63D7C67DE61FBC0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 3,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "paragraph",
+      "text": "步骤 2 在控制周期文本框中，输入数据采集器向逆变器发送功率调节指令的时间间隔。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        107.484,
+        416.736,
+        119.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7280E6AEAB98E738",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 4,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "paragraph",
+      "text": "步骤 3 在指令类型下拉列表中，选择功率调节指令目标值的单位。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        123.984,
+        335.736,
+        136.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1484617D6923AB17",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 5,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "list",
+      "text": "•\nkW：通过设置逆变器方阵的总额定功率进行功率调节。适用于需要定量控制逆变器输出\n功率的场景，如电站需满足电网的容量限制。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        141.906,
+        461.907,
+        166.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-07D45609524EE461",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 6,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "list",
+      "text": "•\n%：通过设置逆变器输出功率的百分比进行功率调节。适合需要根据逆变器的最大额定功\n率来调节其输出的场景。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        170.406,
+        465.912,
+        194.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4D606368B1B52B6D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 7,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "paragraph",
+      "text": "步骤 4 点击保存。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        198.984,
+        146.736,
+        211.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-472574F29F3A8F94",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 8,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "list",
+      "text": "--结束\n配置完成后，设置数据采集器在本地下发功率调节指令的时间及目标值。见9.3.2.3 设置调节\n时间及目标值。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        215.556,
+        467.64,
+        248.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AE5C08D123EAC805",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 9,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "heading",
+      "text": "9.3.2.2 闭环控制",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        257.99,
+        146.196,
+        270.16
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D1CA641BFA373813",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 10,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        277.306,
+        138.366,
+        288.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ECA233BFBAE51901",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 11,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "list",
+      "text": "•\n当前有功控制方式已选择本地调度。见9.2 选择功率控制方式。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        297.306,
+        367.803,
+        308.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EE692389D27C1798",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 12,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "list",
+      "text": "•\n如选择闭环控制，需接入用于功率调节的关口电表。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        312.306,
+        323.541,
+        323.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5C2B3866F76174C2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 13,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "paragraph",
+      "text": "步骤 1 在控制策略下拉列表中，选择闭环控制。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        330.384,
+        263.736,
+        342.867
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-13744212D61AB155",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 14,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "paragraph",
+      "text": "步骤 2 在控制周期文本框中，输入数据采集器向逆变器发送功率调节指令的时间间隔。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        346.884,
+        416.736,
+        359.367
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DBF33950495283D5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 15,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "paragraph",
+      "text": "步骤 3 在指令类型下拉列表中，选择功率调节指令目标值的单位。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        363.384,
+        335.736,
+        375.867
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-41DD79A0E8DD0FA8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 16,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "list",
+      "text": "•\nkW：通过设置逆变器方阵的总额定功率进行功率调节。适用于需要定量控制逆变器输出\n功率的场景，如电站需满足电网的容量限制。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        381.306,
+        461.907,
+        405.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EA8A3E29E5682D62",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 17,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "list",
+      "text": "•\n%：通过设置逆变器输出功率的百分比进行功率调节。适合需要根据逆变器的最大额定功\n率来调节其输出的场景。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        409.806,
+        465.912,
+        434.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1EBE548FD5DCD643",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 18,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "paragraph",
+      "text": "步骤 4 在选择电表下拉列表中，选择参与功率调节的电表。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        438.384,
+        308.736,
+        450.867
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A184895BCE32396A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 19,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "paragraph",
+      "text": "步骤 5 根据逆变器限功率0%关机的使能情况，配置当电表通讯异常时，数据采集器的相关参数。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        454.884,
+        458.991,
+        467.367
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3874ADD8B9324FFF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 20,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "paragraph",
+      "text": "在设备监控 > 功率调节参数页，可设置逆变器限功率0%关机为使能或禁止。",
+      "table_cells": null,
+      "bbox": [
+        128.735,
+        477.956,
+        433.25,
+        488.909
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-390EEA2B2E38BFC2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 21,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "paragraph",
+      "text": "a. 在通讯异常输出文本框中，设置当电表通讯异常时，数据采集器下发功率调节指令目标值",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        507.606,
+        466.911,
+        518.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-120E828C456C521C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 22,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "paragraph",
+      "text": "的比例。",
+      "table_cells": null,
+      "bbox": [
+        115.911,
+        521.106,
+        151.911,
+        532.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-641D7F3F329C4B46",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 23,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "paragraph",
+      "text": "当限功率0%关机使能，且通讯异常输出设置为“0%”时，数据采集器对逆变器下发关机指\n令。",
+      "table_cells": null,
+      "bbox": [
+        115.911,
+        537.606,
+        465.165,
+        562.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7BA6F38C965A7DF4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 24,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "paragraph",
+      "text": "b. 当逆变器因限功率0%关机使能而关机时，在通讯恢复开机下拉列表中，选择当电表通讯",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        566.106,
+        464.166,
+        577.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9A39D98C78EAE622",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 25,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "paragraph",
+      "text": "恢复后，数据采集器是否对逆变器执行开机操作。",
+      "table_cells": null,
+      "bbox": [
+        115.911,
+        579.606,
+        313.911,
+        590.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1FB3DB684C00460C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 26,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "list",
+      "text": "•\n使能：电表通讯恢复后，数据采集器对逆变器下发开机指令。",
+      "table_cells": null,
+      "bbox": [
+        115.911,
+        596.106,
+        373.086,
+        607.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F1300E6A63604BD5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 27,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "list",
+      "text": "•\n禁止：电表通讯恢复后，逆变器保持关机。",
+      "table_cells": null,
+      "bbox": [
+        115.911,
+        611.106,
+        301.086,
+        622.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-946F10A08A82C71C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 28,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "paragraph",
+      "text": "c. 在通讯恢复开机延时文本框中，当电表通讯恢复后，如数据采集器需对逆变器下发开机指",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        626.106,
+        466.911,
+        637.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FEE4F9387D0DE926",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 93,
+      "printed_page_label": "83",
+      "block_order": 29,
+      "section_id": "SEC-0FF59275B7EF2968",
+      "section_path": [
+        "9 电网调度",
+        "9.3 有功功率调节",
+        "9.3.2 本地有功调节",
+        "9.3.2.2 闭环控制"
+      ],
+      "section_title": "9.3.2.2 闭环控制",
+      "block_type": "paragraph",
+      "text": "令，指定数据采集器等待的时间。",
+      "table_cells": null,
+      "bbox": [
+        115.911,
+        639.606,
+        250.911,
+        650.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

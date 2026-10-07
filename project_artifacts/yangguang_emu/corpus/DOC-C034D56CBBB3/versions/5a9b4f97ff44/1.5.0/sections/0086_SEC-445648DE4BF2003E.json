@@ -1,0 +1,929 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-445648DE4BF2003E",
+  "section_path": [
+    "7 Web界面",
+    "7.6 设备维护",
+    "7.6.6 （可选）绕组温度检测",
+    "7.6.6.1 查看实时信息"
+  ],
+  "section_title": "7.6.6.1 查看实时信息",
+  "start_pdf_page": 65,
+  "end_pdf_page": 66,
+  "blocks": [
+    {
+      "block_id": "BLK-5F957E72A5FC9A32",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 65,
+      "printed_page_label": "55",
+      "block_order": 0,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-90CD28B4D0B35978",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 65,
+      "printed_page_label": "55",
+      "block_order": 1,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "table",
+      "text": "分钟时，绕组温度检测的数据无效。\t请确保设备通信良好，且设备正常通电时进行检测，如果设备掉电或检测时间小于3\t\n\t\t\t\t\n\tLogger4000 的固\n箱变参数设置界面\n能。\t件版本为P029 或以\n的高压绕组温度检\t上。见7.8.1\n测或低压绕组\t6 查看固件版本。仅在研发用户下\n温度检测开关使能时才支持此功\n\t实时信息\n户下完成箱变参数设\n告警状态以及高低压\t置和告警参数设置\n侧温度跳闸状态。\t后，可以实时\t查看高低压侧绕组温度数值、高低压\n\t仅在研发用户下箱\t变参数设置界面的\t绕组温度检测\t开关使能时才支持查看实时信息。\n\t实时信息\t\t\t\n参数\t名称\t取值范围\t\t说明\n高压\t侧绕组温度\t浮点形式，单位是\n度为0.1。\t℃，精\n示没有\n告警阈值\n示没有\n跳闸阈值\t只有当使能高压侧绕组温度检测\n时，才会有数值，当禁止或检测\n持续时间小于3 分钟时，显示\n为-- 。\n高压\n警\t侧绕组温度告\t取值为0 或1，0 表\n告警，1 表示超过\n发生告警。\t\t\n高压\n闸\t侧绕组温度跳\t取值为0 或1，0 表\n跳闸，1 表示超过\n发生跳闸。\t\t\n低压\t侧绕组温度\t浮点形式，单位是\n度为0.1。\t℃，精\n示没有\n告警阈值\n示没有\n跳闸阈值\t只有当使能低压侧绕组温度检测\n时，才会有数值，当禁止或检测\n持续时间小于3 分钟时，显示\n为-- 。\n仅变压器类型为双绕组时显示。\n低压\n警\t侧绕组温度告\t取值为0 或1，0 表\n告警，1 表示超过\n发生告警。\t\t\n低压\n闸\t侧绕组温度跳\t取值为0 或1，0 表\n跳闸，1 表示超过\n发生跳闸。\t\t\n1#低\n度\t压侧绕组温\t浮点形式，单位是\n度为0.1。",
+      "table_cells": [
+        [
+          null,
+          null,
+          "分钟时，绕组温度检测的数据无效。",
+          "请确保设备通信良好，且设备正常通电时进行检测，如果设备掉电或检测时间小于3",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Logger4000 的固\n箱变参数设置界面\n能。",
+          "件版本为P029 或以\n的高压绕组温度检",
+          "上。见7.8.1\n测或低压绕组",
+          "6 查看固件版本。仅在研发用户下\n温度检测开关使能时才支持此功"
+        ],
+        [
+          null,
+          "实时信息\n户下完成箱变参数设\n告警状态以及高低压",
+          "置和告警参数设置\n侧温度跳闸状态。",
+          "后，可以实时",
+          "查看高低压侧绕组温度数值、高低压"
+        ],
+        [
+          null,
+          "仅在研发用户下箱",
+          "变参数设置界面的",
+          "绕组温度检测",
+          "开关使能时才支持查看实时信息。"
+        ],
+        [
+          null,
+          "实时信息",
+          null,
+          null,
+          null
+        ],
+        [
+          "参数",
+          "名称",
+          "取值范围",
+          null,
+          "说明"
+        ],
+        [
+          "高压",
+          "侧绕组温度",
+          "浮点形式，单位是\n度为0.1。",
+          "℃，精\n示没有\n告警阈值\n示没有\n跳闸阈值",
+          "只有当使能高压侧绕组温度检测\n时，才会有数值，当禁止或检测\n持续时间小于3 分钟时，显示\n为-- 。"
+        ],
+        [
+          "高压\n警",
+          "侧绕组温度告",
+          "取值为0 或1，0 表\n告警，1 表示超过\n发生告警。",
+          null,
+          null
+        ],
+        [
+          "高压\n闸",
+          "侧绕组温度跳",
+          "取值为0 或1，0 表\n跳闸，1 表示超过\n发生跳闸。",
+          null,
+          null
+        ],
+        [
+          "低压",
+          "侧绕组温度",
+          "浮点形式，单位是\n度为0.1。",
+          "℃，精\n示没有\n告警阈值\n示没有\n跳闸阈值",
+          "只有当使能低压侧绕组温度检测\n时，才会有数值，当禁止或检测\n持续时间小于3 分钟时，显示\n为-- 。\n仅变压器类型为双绕组时显示。"
+        ],
+        [
+          "低压\n警",
+          "侧绕组温度告",
+          "取值为0 或1，0 表\n告警，1 表示超过\n发生告警。",
+          null,
+          null
+        ],
+        [
+          "低压\n闸",
+          "侧绕组温度跳",
+          "取值为0 或1，0 表\n跳闸，1 表示超过\n发生跳闸。",
+          null,
+          null
+        ],
+        [
+          "1#低\n度",
+          "压侧绕组温",
+          "浮点形式，单位是\n度为0.1。",
+          null,
+          null
+        ]
+      ],
+      "bbox": [
+        111.035,
+        78.056,
+        462.366,
+        600.3
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F20DF09419D0C091",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 65,
+      "printed_page_label": "55",
+      "block_order": 2,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "paragraph",
+      "text": "只有当使能1#低压绕组温度检测\n和2#低压绕组温度检测时，才会\n有数值，当禁止或检测持续时间\n小于3 分钟时，显示为-- 。\n仅变压器类型为双分裂组时显\n示。",
+      "table_cells": null,
+      "bbox": [
+        324.68,
+        570.706,
+        453.938,
+        649.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9AA75DAF1954122E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 65,
+      "printed_page_label": "55",
+      "block_order": 3,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "paragraph",
+      "text": "取值为0 或1，0 表示没有\n告警，1 表示超过告警阈值\n发生告警。",
+      "table_cells": null,
+      "bbox": [
+        200.802,
+        608.581,
+        307.056,
+        646.534
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0B2F00D26C70FAAD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 65,
+      "printed_page_label": "55",
+      "block_order": 4,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "paragraph",
+      "text": "1#低压侧绕组温\n度告警",
+      "table_cells": null,
+      "bbox": [
+        111.035,
+        615.331,
+        175.043,
+        639.784
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CB1ADF97B9D265C7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 0,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.443,
+        48.088,
+        449.79,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0DE5ABD842D234BE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 1,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "paragraph",
+      "text": "参数名称\n取值范围\n说明",
+      "table_cells": null,
+      "bbox": [
+        96.863,
+        74.539,
+        327.507,
+        84.883
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1D046837AE1D96C3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 2,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "paragraph",
+      "text": "取值为0 或1，0 表示没有\n跳闸，1 表示超过跳闸阈值",
+      "table_cells": null,
+      "bbox": [
+        186.628,
+        93.606,
+        292.882,
+        118.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3C24B540DD3657FA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 3,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "paragraph",
+      "text": "1#低压侧绕组温\n度跳闸",
+      "table_cells": null,
+      "bbox": [
+        96.862,
+        100.356,
+        160.87,
+        124.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-45FA97B6DE1A1A24",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 4,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "paragraph",
+      "text": "发生跳闸。",
+      "table_cells": null,
+      "bbox": [
+        186.628,
+        120.606,
+        231.628,
+        131.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8F917EC417587492",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 5,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "paragraph",
+      "text": "2#低压侧绕组温\n度",
+      "table_cells": null,
+      "bbox": [
+        96.862,
+        142.606,
+        160.87,
+        167.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AA868A16B0423311",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 6,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "paragraph",
+      "text": "浮点形式，单位是 ℃，精\n度为0.1。",
+      "table_cells": null,
+      "bbox": [
+        186.628,
+        142.606,
+        288.13,
+        167.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-96D0A8900E1BD779",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 7,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "paragraph",
+      "text": "取值为0 或1，0 表示没有\n告警，1 表示超过告警阈值",
+      "table_cells": null,
+      "bbox": [
+        186.628,
+        178.106,
+        292.882,
+        202.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E2467E5EB5A53C79",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 8,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "paragraph",
+      "text": "2#低压侧绕组温",
+      "table_cells": null,
+      "bbox": [
+        96.862,
+        184.856,
+        160.87,
+        195.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0C18119D087CCA98",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 9,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "paragraph",
+      "text": "度告警",
+      "table_cells": null,
+      "bbox": [
+        96.862,
+        198.356,
+        123.862,
+        209.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C53EE311BD799841",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 10,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "paragraph",
+      "text": "发生告警。",
+      "table_cells": null,
+      "bbox": [
+        186.628,
+        205.106,
+        231.628,
+        216.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-85E68D2A73771E71",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 11,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "paragraph",
+      "text": "取值为0 或1，0 表示没有\n跳闸，1 表示超过跳闸阈值",
+      "table_cells": null,
+      "bbox": [
+        186.628,
+        227.106,
+        292.882,
+        251.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2B84A1D9A1E1BCC6",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 12,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "paragraph",
+      "text": "2#低压侧绕组温",
+      "table_cells": null,
+      "bbox": [
+        96.862,
+        233.856,
+        160.87,
+        244.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-34071B4CACC973E3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 13,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "paragraph",
+      "text": "度跳闸",
+      "table_cells": null,
+      "bbox": [
+        96.862,
+        247.356,
+        123.862,
+        258.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EAD242F8E041269D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 14,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "paragraph",
+      "text": "发生跳闸。",
+      "table_cells": null,
+      "bbox": [
+        186.628,
+        254.106,
+        231.628,
+        265.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E22594DBDAF2D153",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 15,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "paragraph",
+      "text": "如果温度达到高压侧设置的告警阈值和跳闸阈值，且检测持续时间大于3 分钟时，实\n时信息中高压侧绕组告警状态和跳闸状态值为1。",
+      "table_cells": null,
+      "bbox": [
+        115.193,
+        287.006,
+        448.697,
+        308.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E07B38B8EF47AB17",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 16,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "paragraph",
+      "text": "步骤 1 在导航栏中，依次单击其他功能 > 绕组温度检测，进入绕组温度检测界面。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        329.034,
+        385.823,
+        341.517
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-034E8443FB1A28F3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 17,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击实时信息页签，即查看实时信息。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        345.534,
+        240.563,
+        358.017
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ED073175FFEF2AC1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 18,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "list",
+      "text": "•\n双绕组变压器场景",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        362.034,
+        173.738,
+        374.517
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9C362FFB2C9526CF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 19,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "list",
+      "text": "•\n双分裂变压器场景",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        468.183,
+        173.738,
+        480.666
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C5F6F485E5ED0D31",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 20,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "paragraph",
+      "text": "步骤 3 查看绕组温度历史数值。在导航栏中，依次单击历史数据 > 历史曲线，单击右上角的",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        610.612,
+        421.823,
+        623.095
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A7E9DC7AE7EBA1DD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 21,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "paragraph",
+      "text": "按钮，即可查看绕组温度历史数据。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        625.534,
+        231.563,
+        636.487
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-08F2D8275E6FE8AD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 22,
+      "section_id": "SEC-445648DE4BF2003E",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.6 （可选）绕组温度检测",
+        "7.6.6.1 查看实时信息"
+      ],
+      "section_title": "7.6.6.1 查看实时信息",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        640.684,
+        112.187,
+        651.637
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

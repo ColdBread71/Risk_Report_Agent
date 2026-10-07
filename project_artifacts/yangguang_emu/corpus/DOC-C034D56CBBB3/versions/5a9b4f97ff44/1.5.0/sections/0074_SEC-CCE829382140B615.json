@@ -1,0 +1,337 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-CCE829382140B615",
+  "section_path": [
+    "7 Web界面",
+    "7.6 设备维护",
+    "7.6.1 设备列表",
+    "7.6.1.1 自动搜索"
+  ],
+  "section_title": "7.6.1.1 自动搜索",
+  "start_pdf_page": 59,
+  "end_pdf_page": 59,
+  "blocks": [
+    {
+      "block_id": "BLK-E7601C068F3BE265",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 59,
+      "printed_page_label": "49",
+      "block_order": 9,
+      "section_id": "SEC-CCE829382140B615",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.1 自动搜索"
+      ],
+      "section_title": "7.6.1.1 自动搜索",
+      "block_type": "heading",
+      "text": "7.6.1.1 自动搜索",
+      "table_cells": null,
+      "bbox": [
+        70.869,
+        260.09,
+        146.199,
+        272.26
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-953FE449C49A96AE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 59,
+      "printed_page_label": "49",
+      "block_order": 10,
+      "section_id": "SEC-CCE829382140B615",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.1 自动搜索"
+      ],
+      "section_title": "7.6.1.1 自动搜索",
+      "block_type": "paragraph",
+      "text": "“自动搜索”用于搜索阳光电源生产的组串逆变器，并且为其自动分配地址。",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        279.314,
+        380.026,
+        289.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-35A0D0F695794ACD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 59,
+      "printed_page_label": "49",
+      "block_order": 11,
+      "section_id": "SEC-CCE829382140B615",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.1 自动搜索"
+      ],
+      "section_title": "7.6.1.1 自动搜索",
+      "block_type": "paragraph",
+      "text": "自动搜索和设备添加功能不支持无SN 号的逆变器。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        305.306,
+        335.367,
+        316.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DCC920CF3AB2EC48",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 59,
+      "printed_page_label": "49",
+      "block_order": 12,
+      "section_id": "SEC-CCE829382140B615",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.1 自动搜索"
+      ],
+      "section_title": "7.6.1.1 自动搜索",
+      "block_type": "paragraph",
+      "text": "地址自动分配只会在实际存在地址冲突时才会弹出提示。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        337.106,
+        354.366,
+        348.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3D7A003041058253",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 59,
+      "printed_page_label": "49",
+      "block_order": 13,
+      "section_id": "SEC-CCE829382140B615",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.1 自动搜索"
+      ],
+      "section_title": "7.6.1.1 自动搜索",
+      "block_type": "paragraph",
+      "text": "PLC 通讯方式下的自动搜索功能仅限无 PLC 串扰时使用。否则请勿使用，避免设备\n搜索出错。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        368.906,
+        459.63,
+        390.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-13CB00960D428ECC",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 59,
+      "printed_page_label": "49",
+      "block_order": 14,
+      "section_id": "SEC-CCE829382140B615",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.1 自动搜索"
+      ],
+      "section_title": "7.6.1.1 自动搜索",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击设备维护 > 设备列表，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        410.934,
+        255.996,
+        423.417
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DAD45BF92F6BE82A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 59,
+      "printed_page_label": "49",
+      "block_order": 15,
+      "section_id": "SEC-CCE829382140B615",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.1 自动搜索"
+      ],
+      "section_title": "7.6.1.1 自动搜索",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击添加设备，弹出添加设备窗口，选择设备类型及通讯方式后，界面显示添加方式选项，",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        427.434,
+        461.736,
+        439.917
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3CA0E080A7CB0F2A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 59,
+      "printed_page_label": "49",
+      "block_order": 16,
+      "section_id": "SEC-CCE829382140B615",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.1 自动搜索"
+      ],
+      "section_title": "7.6.1.1 自动搜索",
+      "block_type": "paragraph",
+      "text": "选择自动搜索，单击下一步。",
+      "table_cells": null,
+      "bbox": [
+        101.736,
+        442.356,
+        218.736,
+        453.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BAF6AF5E25F06103",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 59,
+      "printed_page_label": "49",
+      "block_order": 17,
+      "section_id": "SEC-CCE829382140B615",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.1 自动搜索"
+      ],
+      "section_title": "7.6.1.1 自动搜索",
+      "block_type": "paragraph",
+      "text": "步骤 3 弹出自动搜索界面，单击搜索。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        602.455,
+        227.736,
+        614.938
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5F41153E31D6FD4A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 59,
+      "printed_page_label": "49",
+      "block_order": 18,
+      "section_id": "SEC-CCE829382140B615",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.1 自动搜索"
+      ],
+      "section_title": "7.6.1.1 自动搜索",
+      "block_type": "paragraph",
+      "text": "步骤 4 搜索完成后，即可查看符合条件的设备。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        618.955,
+        263.736,
+        631.438
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-30FE2FD660A23B84",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 59,
+      "printed_page_label": "49",
+      "block_order": 19,
+      "section_id": "SEC-CCE829382140B615",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.1 设备列表",
+        "7.6.1.1 自动搜索"
+      ],
+      "section_title": "7.6.1.1 自动搜索",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        635.527,
+        126.36,
+        646.48
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

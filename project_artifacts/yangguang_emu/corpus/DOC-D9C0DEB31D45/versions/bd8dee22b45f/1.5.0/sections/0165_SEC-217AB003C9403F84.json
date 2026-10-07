@@ -1,0 +1,131 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-217AB003C9403F84",
+  "section_path": [
+    "9 用户管理",
+    "9.10 启用运维模式"
+  ],
+  "section_title": "9.10 启用运维模式",
+  "start_pdf_page": 98,
+  "end_pdf_page": 98,
+  "blocks": [
+    {
+      "block_id": "BLK-659503B79BD90D98",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 98,
+      "printed_page_label": "88",
+      "block_order": 4,
+      "section_id": "SEC-217AB003C9403F84",
+      "section_path": [
+        "9 用户管理",
+        "9.10 启用运维模式"
+      ],
+      "section_title": "9.10 启用运维模式",
+      "block_type": "heading",
+      "text": "9.10 启用运维模式",
+      "table_cells": null,
+      "bbox": [
+        56.687,
+        146.958,
+        159.551,
+        161.562
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9F22AE64275E5C71",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 98,
+      "printed_page_label": "88",
+      "block_order": 5,
+      "section_id": "SEC-217AB003C9403F84",
+      "section_path": [
+        "9 用户管理",
+        "9.10 启用运维模式"
+      ],
+      "section_title": "9.10 启用运维模式",
+      "block_type": "table",
+      "text": "如允许研发用户登录Web\t\t端进行调试操作，管理员务必启用研发调试开关。\n\t\t态。\t\n\t\t9.1 初\n页面。\n。\n持LDA\n理，进\t始用户名和密\nP 服务的电站\n入LDAP 管理\n\t\t，系统\n“关闭\n.2 及其\t将同步启用TL\n后数据传输将\n以上加密算法\n\t\t\t\n\t参数名\t说明\t\n\tIP 地址\tLDAP\t服务器的IP 地\n\t端口号\tLDAP\t服务器的端口\n\t基本标识名\tLDAP\t基本标识名\n\t账号\tLDAP\t服务器账号",
+      "table_cells": [
+        [
+          null,
+          "如允许研发用户登录Web",
+          null,
+          "端进行调试操作，管理员务必启用研发调试开关。"
+        ],
+        [
+          null,
+          null,
+          "态。",
+          null
+        ],
+        [
+          null,
+          null,
+          "9.1 初\n页面。\n。\n持LDA\n理，进",
+          "始用户名和密\nP 服务的电站\n入LDAP 管理"
+        ],
+        [
+          null,
+          null,
+          "，系统\n“关闭\n.2 及其",
+          "将同步启用TL\n后数据传输将\n以上加密算法"
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "参数名",
+          "说明",
+          null
+        ],
+        [
+          null,
+          "IP 地址",
+          "LDAP",
+          "服务器的IP 地"
+        ],
+        [
+          null,
+          "端口号",
+          "LDAP",
+          "服务器的端口"
+        ],
+        [
+          null,
+          "基本标识名",
+          "LDAP",
+          "基本标识名"
+        ],
+        [
+          null,
+          "账号",
+          "LDAP",
+          "服务器账号"
+        ]
+      ],
+      "bbox": [
+        87.551,
+        174.514,
+        313.626,
+        671.289
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

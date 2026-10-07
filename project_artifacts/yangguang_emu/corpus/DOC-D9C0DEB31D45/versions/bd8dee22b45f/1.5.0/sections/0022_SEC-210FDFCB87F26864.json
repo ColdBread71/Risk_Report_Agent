@@ -1,0 +1,216 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-210FDFCB87F26864",
+  "section_path": [
+    "5 电气连接",
+    "5.2 外部接口说明"
+  ],
+  "section_title": "5.2 外部接口说明",
+  "start_pdf_page": 27,
+  "end_pdf_page": 27,
+  "blocks": [
+    {
+      "block_id": "BLK-620E54D88F061730",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 27,
+      "printed_page_label": "17",
+      "block_order": 0,
+      "section_id": "SEC-210FDFCB87F26864",
+      "section_path": [
+        "5 电气连接",
+        "5.2 外部接口说明"
+      ],
+      "section_title": "5.2 外部接口说明",
+      "block_type": "paragraph",
+      "text": "用户手册\n5 电气连接",
+      "table_cells": null,
+      "bbox": [
+        74.614,
+        48.088,
+        463.968,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ED5B5D7F1329F5AC",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 27,
+      "printed_page_label": "17",
+      "block_order": 1,
+      "section_id": "SEC-210FDFCB87F26864",
+      "section_path": [
+        "5 电气连接",
+        "5.2 外部接口说明"
+      ],
+      "section_title": "5.2 外部接口说明",
+      "block_type": "table",
+      "text": "标识\t名称\t线缆推荐\t说明\n\t\t\t\t短按（＜3s），功能预留\n\tMicro SD\tSD 卡接口\t-\t设备软件烧写（该端口仅阳光\n电源技术人员可用）\n\tIRIG-B\tB 码对时接口\t-\tB 码对时\n\tDO1~DO4\t数字量输出\t0.75mm2 户外\n型防紫外线导\n线\t继电器输出接口\n继电器规格24Vdc/3A\n\tAI1~AI2\t模拟量输入\t0.75mm2 户外\n型防紫外线导\n线\t接线方法：二线制\nAI1：0~10Vdc\nAI2：4~20mA\n\tDI1-4\t数字量输入\t0.75mm2 户外\n型防紫外线导\n线\t无源干接点输入接口\n\tA1B1~A9B9\tRS485 通信接\n口\t2 x\n(0.75~1.5)mm2\n户外型防紫外\n线带屏蔽层双\n绞线\t支持9 路RS485\n可以接入从站设备，也可以接\n入后台\n\tFAN\t风扇驱动接口\t_\t支持24V 风扇驱动及转速反\n馈\n\tSPD\t防雷遥信状态\n监测接口\t_\t支持2 路防雷器遥信状态监测\n\tI AC1~AC2\n_\t交流电流采样\n端口\t_\t支持2 路5A 三相交流电流采\n样\n\tU AC1~AC2\n_\t交流电压采样\n端口\t_\t支持2 路100V 三相电压采样\n\tDC IN\n24V\tDC24V 供电端\n口\t0.75~1.5mm2\n户外型防紫外\n线导线\t电流≤1.25A，该端口所使用\n的开关电源需要加强绝缘",
+      "table_cells": [
+        [
+          null,
+          "标识",
+          "名称",
+          "线缆推荐",
+          "说明"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          "短按（＜3s），功能预留"
+        ],
+        [
+          null,
+          "Micro SD",
+          "SD 卡接口",
+          "-",
+          "设备软件烧写（该端口仅阳光\n电源技术人员可用）"
+        ],
+        [
+          null,
+          "IRIG-B",
+          "B 码对时接口",
+          "-",
+          "B 码对时"
+        ],
+        [
+          null,
+          "DO1~DO4",
+          "数字量输出",
+          "0.75mm2 户外\n型防紫外线导\n线",
+          "继电器输出接口\n继电器规格24Vdc/3A"
+        ],
+        [
+          null,
+          "AI1~AI2",
+          "模拟量输入",
+          "0.75mm2 户外\n型防紫外线导\n线",
+          "接线方法：二线制\nAI1：0~10Vdc\nAI2：4~20mA"
+        ],
+        [
+          null,
+          "DI1-4",
+          "数字量输入",
+          "0.75mm2 户外\n型防紫外线导\n线",
+          "无源干接点输入接口"
+        ],
+        [
+          null,
+          "A1B1~A9B9",
+          "RS485 通信接\n口",
+          "2 x\n(0.75~1.5)mm2\n户外型防紫外\n线带屏蔽层双\n绞线",
+          "支持9 路RS485\n可以接入从站设备，也可以接\n入后台"
+        ],
+        [
+          null,
+          "FAN",
+          "风扇驱动接口",
+          "_",
+          "支持24V 风扇驱动及转速反\n馈"
+        ],
+        [
+          null,
+          "SPD",
+          "防雷遥信状态\n监测接口",
+          "_",
+          "支持2 路防雷器遥信状态监测"
+        ],
+        [
+          null,
+          "I AC1~AC2\n_",
+          "交流电流采样\n端口",
+          "_",
+          "支持2 路5A 三相交流电流采\n样"
+        ],
+        [
+          null,
+          "U AC1~AC2\n_",
+          "交流电压采样\n端口",
+          "_",
+          "支持2 路100V 三相电压采样"
+        ],
+        [
+          null,
+          "DC IN\n24V",
+          "DC24V 供电端\n口",
+          "0.75~1.5mm2\n户外型防紫外\n线导线",
+          "电流≤1.25A，该端口所使用\n的开关电源需要加强绝缘"
+        ]
+      ],
+      "bbox": [
+        102.366,
+        74.539,
+        458.177,
+        586.638
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8A67DF492330767C",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 27,
+      "printed_page_label": "17",
+      "block_order": 2,
+      "section_id": "SEC-210FDFCB87F26864",
+      "section_path": [
+        "5 电气连接",
+        "5.2 外部接口说明"
+      ],
+      "section_title": "5.2 外部接口说明",
+      "block_type": "paragraph",
+      "text": "数字量输入、输出端口",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        596.944,
+        192.366,
+        607.897
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-53B1B184B909BD96",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 27,
+      "printed_page_label": "17",
+      "block_order": 3,
+      "section_id": "SEC-210FDFCB87F26864",
+      "section_path": [
+        "5 电气连接",
+        "5.2 外部接口说明"
+      ],
+      "section_title": "5.2 外部接口说明",
+      "block_type": "paragraph",
+      "text": "数字量输入端口（DI）、数字量输出端口（DO1~DO4）用于采集接点数据和控制接点通\n讯。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        615.094,
+        450.63,
+        639.547
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

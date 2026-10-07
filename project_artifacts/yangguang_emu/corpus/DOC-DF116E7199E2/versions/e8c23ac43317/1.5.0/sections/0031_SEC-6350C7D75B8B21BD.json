@@ -1,0 +1,124 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-6350C7D75B8B21BD",
+  "section_path": [
+    "10 安全配置指南",
+    "10.8 安全对时"
+  ],
+  "section_title": "10.8 安全对时",
+  "start_pdf_page": 27,
+  "end_pdf_page": 27,
+  "blocks": [
+    {
+      "block_id": "BLK-AB1E840A5C0E7E5C",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 27,
+      "printed_page_label": "23",
+      "block_order": 1,
+      "section_id": "SEC-6350C7D75B8B21BD",
+      "section_path": [
+        "10 安全配置指南",
+        "10.8 安全对时"
+      ],
+      "section_title": "10.8 安全对时",
+      "block_type": "heading",
+      "text": "10.8 安全对时",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        71.658,
+        149.718,
+        86.262
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CB47AB50419E3528",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 27,
+      "printed_page_label": "23",
+      "block_order": 2,
+      "section_id": "SEC-6350C7D75B8B21BD",
+      "section_path": [
+        "10 安全配置指南",
+        "10.8 安全对时"
+      ],
+      "section_title": "10.8 安全对时",
+      "block_type": "paragraph",
+      "text": "设备支持通过NTS 对时。",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        99.214,
+        200.115,
+        109.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1ED71D28323CB9C9",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 27,
+      "printed_page_label": "23",
+      "block_order": 3,
+      "section_id": "SEC-6350C7D75B8B21BD",
+      "section_path": [
+        "10 安全配置指南",
+        "10.8 安全对时"
+      ],
+      "section_title": "10.8 安全对时",
+      "block_type": "paragraph",
+      "text": "单击系统 > 系统时间， 勾选NTS 时钟源，即可实现NTS 对时功能。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        118.706,
+        376.128,
+        129.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-64EAA0FFE9810D8E",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 27,
+      "printed_page_label": "23",
+      "block_order": 4,
+      "section_id": "SEC-6350C7D75B8B21BD",
+      "section_path": [
+        "10 安全配置指南",
+        "10.8 安全对时"
+      ],
+      "section_title": "10.8 安全对时",
+      "block_type": "paragraph",
+      "text": "若使用NTS 功能，需配置客户实际的NTS 服务器站点以及导入NTS 服务器证书。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        374.292,
+        430.866,
+        385.245
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

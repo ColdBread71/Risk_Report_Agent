@@ -1,0 +1,185 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-006F8C21F38677DB",
+  "section_path": [
+    "7 Web界面",
+    "7.3 Web端简介",
+    "7.3.1 Web主界面"
+  ],
+  "section_title": "7.3.1 Web主界面",
+  "start_pdf_page": 42,
+  "end_pdf_page": 42,
+  "blocks": [
+    {
+      "block_id": "BLK-E07DF5BCB928FC3E",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 42,
+      "printed_page_label": "32",
+      "block_order": 0,
+      "section_id": "SEC-006F8C21F38677DB",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.1 Web主界面"
+      ],
+      "section_title": "7.3.1 Web主界面",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.442,
+        48.088,
+        449.796,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ED2D8BBB03DF5134",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 42,
+      "printed_page_label": "32",
+      "block_order": 1,
+      "section_id": "SEC-006F8C21F38677DB",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.1 Web主界面"
+      ],
+      "section_title": "7.3.1 Web主界面",
+      "block_type": "paragraph",
+      "text": "如需要升级，见8.2 升级数据采集器。",
+      "table_cells": null,
+      "bbox": [
+        114.562,
+        78.056,
+        266.824,
+        89.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B06415DBEA7291BD",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 42,
+      "printed_page_label": "32",
+      "block_order": 2,
+      "section_id": "SEC-006F8C21F38677DB",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.1 Web主界面"
+      ],
+      "section_title": "7.3.1 Web主界面",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        106.356,
+        112.187,
+        117.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-77D7EB5A4DAE0181",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 42,
+      "printed_page_label": "32",
+      "block_order": 14,
+      "section_id": "SEC-006F8C21F38677DB",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.1 Web主界面"
+      ],
+      "section_title": "7.3.1 Web主界面",
+      "block_type": "heading",
+      "text": "7.3.1 Web 主界面",
+      "table_cells": null,
+      "bbox": [
+        56.689,
+        435.303,
+        134.069,
+        447.473
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C4C351414053EA39",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 42,
+      "printed_page_label": "32",
+      "block_order": 15,
+      "section_id": "SEC-006F8C21F38677DB",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.1 Web主界面"
+      ],
+      "section_title": "7.3.1 Web主界面",
+      "block_type": "paragraph",
+      "text": "首次以运维用户登录时，弹出新手帮助界面，按照提示可以进行校准系统时间、设备接入和\n转发配置等操作。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        454.619,
+        448.196,
+        479.072
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D56A224C17E8E382",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 42,
+      "printed_page_label": "32",
+      "block_order": 16,
+      "section_id": "SEC-006F8C21F38677DB",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.1 Web主界面"
+      ],
+      "section_title": "7.3.1 Web主界面",
+      "block_type": "paragraph",
+      "text": "Web 主界面如下图所示。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        489.619,
+        189.788,
+        500.572
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

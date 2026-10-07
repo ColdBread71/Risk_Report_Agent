@@ -1,0 +1,193 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-A3B69ACC8D76BC72",
+  "section_path": [
+    "13 附录",
+    "13.1 技术参数"
+  ],
+  "section_title": "13.1 技术参数",
+  "start_pdf_page": 109,
+  "end_pdf_page": 109,
+  "blocks": [
+    {
+      "block_id": "BLK-558C0EE845AEA33C",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 109,
+      "printed_page_label": "99",
+      "block_order": 1,
+      "section_id": "SEC-A3B69ACC8D76BC72",
+      "section_path": [
+        "13 附录",
+        "13.1 技术参数"
+      ],
+      "section_title": "13.1 技术参数",
+      "block_type": "heading",
+      "text": "13.1 技术参数",
+      "table_cells": null,
+      "bbox": [
+        70.86,
+        162.258,
+        149.724,
+        176.862
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B5A8ADB04A009B68",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 109,
+      "printed_page_label": "99",
+      "block_order": 2,
+      "section_id": "SEC-A3B69ACC8D76BC72",
+      "section_path": [
+        "13 附录",
+        "13.1 技术参数"
+      ],
+      "section_title": "13.1 技术参数",
+      "block_type": "paragraph",
+      "text": "通信",
+      "table_cells": null,
+      "bbox": [
+        111.032,
+        194.484,
+        129.032,
+        206.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-81D81F31D574647E",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 109,
+      "printed_page_label": "99",
+      "block_order": 3,
+      "section_id": "SEC-A3B69ACC8D76BC72",
+      "section_path": [
+        "13 附录",
+        "13.1 技术参数"
+      ],
+      "section_title": "13.1 技术参数",
+      "block_type": "table",
+      "text": "逆变器通讯\tRS485、MPLC\n通信接口\t10 / 100M 以太\n最大通信范围\t\nRS485\t1000m\nMPLC\t1000m\n以太网\t100m\n接口设计\t\nRS485\t9\n以太网口\t5 * 10 / 100 Mb\nETH 1 / 2 / 5 以\nETH 3 / 4 快速\nETH 5 调试口\n数字量输入口\t4\n数字量输出口\t4\n模拟量输入（AI）\t2（1 Analog In\n4 ~ 20 mA ）\n电源\t\n直流输入\t24Vdc，1.25A\n功耗\t• 平均功耗：\n• 最大功耗：\n环境\t\n工作温度\t- 40℃~+60℃",
+      "table_cells": [
+        [
+          "逆变器通讯",
+          "RS485、MPLC"
+        ],
+        [
+          "通信接口",
+          "10 / 100M 以太"
+        ],
+        [
+          "最大通信范围",
+          null
+        ],
+        [
+          "RS485",
+          "1000m"
+        ],
+        [
+          "MPLC",
+          "1000m"
+        ],
+        [
+          "以太网",
+          "100m"
+        ],
+        [
+          "接口设计",
+          null
+        ],
+        [
+          "RS485",
+          "9"
+        ],
+        [
+          "以太网口",
+          "5 * 10 / 100 Mb\nETH 1 / 2 / 5 以\nETH 3 / 4 快速\nETH 5 调试口"
+        ],
+        [
+          "数字量输入口",
+          "4"
+        ],
+        [
+          "数字量输出口",
+          "4"
+        ],
+        [
+          "模拟量输入（AI）",
+          "2（1 Analog In\n4 ~ 20 mA ）"
+        ],
+        [
+          "电源",
+          null
+        ],
+        [
+          "直流输入",
+          "24Vdc，1.25A"
+        ],
+        [
+          "功耗",
+          "• 平均功耗：\n• 最大功耗："
+        ],
+        [
+          "环境",
+          null
+        ],
+        [
+          "工作温度",
+          "- 40℃~+60℃"
+        ]
+      ],
+      "bbox": [
+        111.032,
+        212.0,
+        320.523,
+        653.5
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-879FD6D6A67B6915",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 109,
+      "printed_page_label": "99",
+      "block_order": 4,
+      "section_id": "SEC-A3B69ACC8D76BC72",
+      "section_path": [
+        "13 附录",
+        "13.1 技术参数"
+      ],
+      "section_title": "13.1 技术参数",
+      "block_type": "paragraph",
+      "text": "存储温度\n- 40℃~+70℃",
+      "table_cells": null,
+      "bbox": [
+        111.032,
+        659.406,
+        313.035,
+        670.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

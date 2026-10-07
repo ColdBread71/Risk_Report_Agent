@@ -1,0 +1,603 @@
+{
+  "schema_version": "field_fact_checkpoint.v3",
+  "node_id": "node_1",
+  "field_id": "functions",
+  "index_id": "IDX-3B116ADDF3BB03CC",
+  "packet_sha256": "7a53401bfaeab959db58fce4ba31f2cb327ce1f1369e449dcc9f1356c2361b95",
+  "retrieval_profile_version": "1.7",
+  "field_fact_prompt_version": "2.5",
+  "cache_inputs": {
+    "node_id": "node_1",
+    "field_id": "functions",
+    "source_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "retrieval_packet_sha256": "7a53401bfaeab959db58fce4ba31f2cb327ce1f1369e449dcc9f1356c2361b95",
+    "rag_index_id": "IDX-3B116ADDF3BB03CC",
+    "text_model": "qwen-plus",
+    "retrieval_profile_sha256": "ca31be23f11a8eaad7b4d3b464d24dab81fc08004fdcc8073d9680b4becee012",
+    "field_prompt_sha256": "a9e025f1a83a6baceada8b2468bcbf3deeda009b28e2c51f4276a76df1c04c9d",
+    "field_schema_sha256": "274f8b8154b7460072684fe5412b57adab5c136594e1f9cc94f578c4a39b43af"
+  },
+  "cache_fingerprint": "1db90f40ad35d751d8b6de2b84c49bf62fc4703a55ae5a219ba7aee9ce426743",
+  "result": {
+    "node_id": "node_1",
+    "field_id": "functions",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "能量管理单元EMU300A内部配置有数据采集器Logger5000。",
+        "block_ids": [
+          "BLK-0FE6A5150E10C5BC"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "数据采集器Logger5000可通过RS485总线方式接入光伏发电系统中的逆变器、箱变、环境监测仪、电表等设备。",
+        "block_ids": [
+          "BLK-0FE6A5150E10C5BC",
+          "BLK-0E8FEC54AF1BFA37"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "数据采集器Logger5000可通过MPLC总线方式接入阳光电源生产的具备MPLC功能的组串式逆变器。",
+        "block_ids": [
+          "BLK-0E8FEC54AF1BFA37"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "数据采集器Logger5000支持通过Modbus协议、PLC电力载波通信支持南向设备接入。",
+        "block_ids": [
+          "BLK-0FE6A5150E10C5BC"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "数据采集器Logger5000可对接入的逆变器进行有功功率调节和无功功率调节。",
+        "block_ids": [
+          "BLK-0FE6A5150E10C5BC",
+          "BLK-275D81C277F1A9EC"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "数据采集器Logger5000可通过IEC104、Modbus、MQTT、GOOSE等通信协议北向转发数据至综自系统、站控系统或阳光云平台。",
+        "block_ids": [
+          "BLK-0FE6A5150E10C5BC"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "数据采集器Logger5000可接收北向远程调度指令或执行本地调度指令。",
+        "block_ids": [
+          "BLK-0FE6A5150E10C5BC"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "数据采集器Logger5000可以接受和执行来自电网的调度指令，包括远程调度控制指令、模拟量及数字量调度控制指令。",
+        "block_ids": [
+          "BLK-A0E52C3C63687B7D"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "数据采集器Logger5000具备将收集到的数据转发至综自系统、站控系统或阳光云平台的功能。",
+        "block_ids": [
+          "BLK-8CF56F6958CD33E1"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "数据采集器Logger5000的数据转发功能默认不可用；启用该功能前，客户需在充分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。",
+        "block_ids": [
+          "BLK-ABD8EE23CFEA3B93",
+          "BLK-EBE329C3EFA80ACF"
+        ],
+        "is_uncertain": true,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "远程访问仅在获得客户授权后方可生效，且相关操作受系统访问控制策略管理。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF",
+          "BLK-ABD8EE23CFEA3B93"
+        ],
+        "is_uncertain": true,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "数据采集器Logger5000可以将采集到的设备数据通过核心交换机传输至后台站控系统，例如Insight、SCADA。",
+        "block_ids": [
+          "BLK-153C2EE70C8A30F1",
+          "BLK-182EE50E531ABD2E"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-013",
+        "statement": "数据采集器Logger5000也可将采集到的设备数据直接通过4G路由器传输至阳光云。",
+        "block_ids": [
+          "BLK-4E0353B94569ABFF"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-014",
+        "statement": "数据采集器Logger5000支持设备接入功能。",
+        "block_ids": [
+          "BLK-E3F0927286FAE321"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-015",
+        "statement": "数据采集器Logger5000支持通讯设备管理功能。",
+        "block_ids": [
+          "BLK-9EF37D5FB5E04397"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-016",
+        "statement": "数据采集器Logger5000支持Web界面配置功能。",
+        "block_ids": [
+          "BLK-810917AE84EC90E0"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-017",
+        "statement": "数据采集器Logger5000支持网口配置功能。",
+        "block_ids": [
+          "BLK-254543AB77B4B866"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-018",
+        "statement": "数据采集器Logger5000支持数据转发功能。",
+        "block_ids": [
+          "BLK-DCE8A1FE2B86D398"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-019",
+        "statement": "数据采集器Logger5000支持功率调节功能。",
+        "block_ids": [
+          "BLK-6838AC80DEF03AC8"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-020",
+        "statement": "数据采集器Logger5000可以通过嵌入式Web界面，对系统时间、网络、串口等进行设置，对协议点表进行维护。",
+        "block_ids": [
+          "BLK-27076CE0D8D035A4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-021",
+        "statement": "数据采集器Logger5000可以对接入的设备进行集中管理，包括参数配置、固件升级等，便于现场运维。",
+        "block_ids": [
+          "BLK-4229FA7FE6635AED"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-022",
+        "statement": "“设备列表”功能模块用于管理数据采集器所接入的设备并为其配置地址，支持自动搜索设备与添加设备。",
+        "block_ids": [
+          "BLK-4DA082251D2A15B4",
+          "BLK-F952E9FB2BDE064C"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-023",
+        "statement": "数据采集器Logger5000在IEC104服务配置中支持Server模式，即作为服务器供上位机服务器连接，进行数据和指令传输。",
+        "block_ids": [
+          "BLK-443237FA5FBA455D"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "Logger4000是否为EMU300A实际交付配置（GAP-LOGGER4000-SCOPE明确指出其适用性待确认）",
+      "远程数据转发功能是否为产品功能所必需（证据未说明其必要性，仅说明其可选性与授权依赖）",
+      "阳光云平台的运营方是否为阳光电源自身（证据未明确说明云平台归属与运营主体）",
+      "4G路由器是否为EMU300A内置组件或外配设备（证据仅提及其作为传输路径，未说明归属）",
+      "‘安全加密认证’的具体技术实现（如TLS版本、证书机制、密钥管理方式）未在证据中说明",
+      "阳光云平台在北美区域禁止使用（文档中亦表述为‘已停止服务’）这一事实的权威来源是否为当前有效版本（BLK-536C2D01D46C74B8明确陈述，但BLK-77A5A901B614C4不存在，属无效block_id）"
+    ],
+    "contradictions": []
+  },
+  "retrieval_trace": {
+    "schema_version": "1.0",
+    "request": {
+      "project_id": "yangguang_emu",
+      "node_id": "node_1",
+      "field_id": "functions",
+      "query": null,
+      "filters": {
+        "document_ids": [],
+        "section_path_terms": [],
+        "block_types": [],
+        "exclude_review_required": false
+      },
+      "token_budget": 12000,
+      "max_blocks": 36,
+      "neighbor_window": 1
+    },
+    "effective_query": "产品功能 数据采集 控制 配置 转发 通信 监控 告警 日志 升级 维护",
+    "index_id": "IDX-3B116ADDF3BB03CC",
+    "scope_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "packet_id": "rag_yangguang_emu_node_1_functions_1397c20c74c7",
+    "packet_sha256": "7a53401bfaeab959db58fce4ba31f2cb327ce1f1369e449dcc9f1356c2361b95",
+    "candidate_count": 1041,
+    "selected_count": 36,
+    "selected_token_count": 3313,
+    "truncated_by_budget": false,
+    "truncated_by_max_blocks": true,
+    "hits": [
+      {
+        "block_id": "BLK-4229FA7FE6635AED",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 1,
+        "score": 0.6339435143904253,
+        "estimated_tokens": 119,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-9EF37D5FB5E04397",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 2,
+        "score": 0.6339435143904253,
+        "estimated_tokens": 85,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-4229FA7FE6635AED"
+      },
+      {
+        "block_id": "BLK-810917AE84EC90E0",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 3,
+        "score": 0.6339435143904253,
+        "estimated_tokens": 84,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-4229FA7FE6635AED"
+      },
+      {
+        "block_id": "BLK-8CF56F6958CD33E1",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 4,
+        "score": 0.6221540797840466,
+        "estimated_tokens": 114,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-DCE8A1FE2B86D398",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 5,
+        "score": 0.6221540797840466,
+        "estimated_tokens": 83,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-8CF56F6958CD33E1"
+      },
+      {
+        "block_id": "BLK-ABD8EE23CFEA3B93",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 6,
+        "score": 0.6221540797840466,
+        "estimated_tokens": 177,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-8CF56F6958CD33E1"
+      },
+      {
+        "block_id": "BLK-187A22E6684426E0",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 7,
+        "score": 0.5994730992750689,
+        "estimated_tokens": 165,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-5227A5A901B614C4",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 8,
+        "score": 0.5994730992750689,
+        "estimated_tokens": 104,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-187A22E6684426E0"
+      },
+      {
+        "block_id": "BLK-94D032ED39562867",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 9,
+        "score": 0.5994730992750689,
+        "estimated_tokens": 93,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-187A22E6684426E0"
+      },
+      {
+        "block_id": "BLK-536C2D01D46C74B8",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 10,
+        "score": 0.5993500276045366,
+        "estimated_tokens": 99,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-ABD8EE23CFEA3B93"
+      },
+      {
+        "block_id": "BLK-89A6CAB539794403",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 11,
+        "score": 0.5879553231326017,
+        "estimated_tokens": 631,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-BE153AA192B48930",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 12,
+        "score": 0.5879553231326017,
+        "estimated_tokens": 118,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-89A6CAB539794403"
+      },
+      {
+        "block_id": "BLK-EBE329C3EFA80ACF",
+        "document_id": "DOC-5067B181346D",
+        "rank": 13,
+        "score": 0.5867614312605425,
+        "estimated_tokens": 145,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-1317C7BFFF509A67",
+        "document_id": "DOC-5067B181346D",
+        "rank": 14,
+        "score": 0.5867614312605425,
+        "estimated_tokens": 66,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-EBE329C3EFA80ACF"
+      },
+      {
+        "block_id": "BLK-C125441858A9A758",
+        "document_id": "DOC-5067B181346D",
+        "rank": 15,
+        "score": 0.5867614312605425,
+        "estimated_tokens": 47,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-EBE329C3EFA80ACF"
+      },
+      {
+        "block_id": "BLK-0FE6A5150E10C5BC",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 16,
+        "score": 0.5841431704434482,
+        "estimated_tokens": 276,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-BDF435E6E7F273A5",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 17,
+        "score": 0.5841431704434482,
+        "estimated_tokens": 59,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-0FE6A5150E10C5BC"
+      },
+      {
+        "block_id": "BLK-153C2EE70C8A30F1",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 18,
+        "score": 0.5841431704434482,
+        "estimated_tokens": 86,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-0FE6A5150E10C5BC"
+      },
+      {
+        "block_id": "BLK-A0E52C3C63687B7D",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 19,
+        "score": 0.5830355037342418,
+        "estimated_tokens": 133,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-6838AC80DEF03AC8",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 20,
+        "score": 0.5830355037342418,
+        "estimated_tokens": 83,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-A0E52C3C63687B7D"
+      },
+      {
+        "block_id": "BLK-275D81C277F1A9EC",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 21,
+        "score": 0.5830355037342418,
+        "estimated_tokens": 108,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-A0E52C3C63687B7D"
+      },
+      {
+        "block_id": "BLK-F952E9FB2BDE064C",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 22,
+        "score": 0.5724255128340288,
+        "estimated_tokens": 133,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-4DA082251D2A15B4",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 23,
+        "score": 0.5724255128340288,
+        "estimated_tokens": 100,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-F952E9FB2BDE064C"
+      },
+      {
+        "block_id": "BLK-182EE50E531ABD2E",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 24,
+        "score": 0.5717665845697577,
+        "estimated_tokens": 122,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-0E8FEC54AF1BFA37",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 25,
+        "score": 0.5717665845697577,
+        "estimated_tokens": 183,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-182EE50E531ABD2E"
+      },
+      {
+        "block_id": "BLK-4E0353B94569ABFF",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 26,
+        "score": 0.5717665845697577,
+        "estimated_tokens": 119,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-182EE50E531ABD2E"
+      },
+      {
+        "block_id": "BLK-3B23400D8C12EF53",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 27,
+        "score": 0.57061635797674,
+        "estimated_tokens": 89,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-D4130DEFA5B318DF",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 28,
+        "score": 0.57061635797674,
+        "estimated_tokens": 85,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-3B23400D8C12EF53"
+      },
+      {
+        "block_id": "BLK-E3F0927286FAE321",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 29,
+        "score": 0.57061635797674,
+        "estimated_tokens": 85,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-3B23400D8C12EF53"
+      },
+      {
+        "block_id": "BLK-27076CE0D8D035A4",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 30,
+        "score": 0.5681880820881237,
+        "estimated_tokens": 122,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-254543AB77B4B866",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 31,
+        "score": 0.5681880820881237,
+        "estimated_tokens": 82,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-27076CE0D8D035A4"
+      },
+      {
+        "block_id": "BLK-D1FA60EC80F0CC91",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 32,
+        "score": 0.5638124986128374,
+        "estimated_tokens": 177,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-DF8338E1AFF6BD5C",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 33,
+        "score": 0.5638124986128374,
+        "estimated_tokens": 168,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-D1FA60EC80F0CC91"
+      },
+      {
+        "block_id": "BLK-B61BF16FE8CE2194",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 34,
+        "score": 0.5638124986128374,
+        "estimated_tokens": 162,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-D1FA60EC80F0CC91"
+      },
+      {
+        "block_id": "BLK-443237FA5FBA455D",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 35,
+        "score": 0.5631537480787798,
+        "estimated_tokens": 163,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-B0A773F42332B508",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 36,
+        "score": 0.5631537480787798,
+        "estimated_tokens": 137,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-443237FA5FBA455D"
+      }
+    ]
+  }
+}

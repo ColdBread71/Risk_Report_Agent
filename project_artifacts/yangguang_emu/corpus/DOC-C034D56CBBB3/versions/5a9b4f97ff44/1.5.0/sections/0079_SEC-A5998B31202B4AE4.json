@@ -1,0 +1,185 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-A5998B31202B4AE4",
+  "section_path": [
+    "7 Web界面",
+    "7.6 设备维护",
+    "7.6.2 设备日志"
+  ],
+  "section_title": "7.6.2 设备日志",
+  "start_pdf_page": 61,
+  "end_pdf_page": 61,
+  "blocks": [
+    {
+      "block_id": "BLK-7D153F267A522900",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 61,
+      "printed_page_label": "51",
+      "block_order": 18,
+      "section_id": "SEC-A5998B31202B4AE4",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.2 设备日志"
+      ],
+      "section_title": "7.6.2 设备日志",
+      "block_type": "heading",
+      "text": "7.6.2 设备日志",
+      "table_cells": null,
+      "bbox": [
+        70.864,
+        579.135,
+        137.854,
+        591.305
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C0A2E8ABA76C3683",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 61,
+      "printed_page_label": "51",
+      "block_order": 19,
+      "section_id": "SEC-A5998B31202B4AE4",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.2 设备日志"
+      ],
+      "section_title": "7.6.2 设备日志",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击设备维护 > 设备日志，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        70.867,
+        603.029,
+        255.988,
+        615.512
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E59AA7EF39DEC359",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 61,
+      "printed_page_label": "51",
+      "block_order": 20,
+      "section_id": "SEC-A5998B31202B4AE4",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.2 设备日志"
+      ],
+      "section_title": "7.6.2 设备日志",
+      "block_type": "paragraph",
+      "text": "步骤 2 勾选设备名称相应的设备运行信息，单击",
+      "table_cells": null,
+      "bbox": [
+        70.867,
+        627.402,
+        263.737,
+        639.885
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6F471E4C7D311A13",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 61,
+      "printed_page_label": "51",
+      "block_order": 21,
+      "section_id": "SEC-A5998B31202B4AE4",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.2 设备日志"
+      ],
+      "section_title": "7.6.2 设备日志",
+      "block_type": "paragraph",
+      "text": "，显示导出进度。",
+      "table_cells": null,
+      "bbox": [
+        277.911,
+        628.824,
+        349.911,
+        639.777
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D0DFD10EC5BFC099",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 61,
+      "printed_page_label": "51",
+      "block_order": 22,
+      "section_id": "SEC-A5998B31202B4AE4",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.2 设备日志"
+      ],
+      "section_title": "7.6.2 设备日志",
+      "block_type": "paragraph",
+      "text": "步骤 3 单击导出，导出日志信息到本地。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        643.902,
+        236.736,
+        656.385
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-72EDB361B1763F1E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 61,
+      "printed_page_label": "51",
+      "block_order": 23,
+      "section_id": "SEC-A5998B31202B4AE4",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.2 设备日志"
+      ],
+      "section_title": "7.6.2 设备日志",
+      "block_type": "paragraph",
+      "text": "步骤 4 单击取消，弹出取消任务提示，单击确定，取消当前任务。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        660.402,
+        335.736,
+        672.885
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

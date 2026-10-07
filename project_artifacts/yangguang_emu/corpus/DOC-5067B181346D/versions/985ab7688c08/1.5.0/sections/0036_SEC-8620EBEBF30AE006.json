@@ -1,0 +1,493 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-8620EBEBF30AE006",
+  "section_path": [
+    "4 电气连接",
+    "4.6 接线步骤",
+    "4.6.3 光纤接入（可选）"
+  ],
+  "section_title": "4.6.3 光纤接入（可选）",
+  "start_pdf_page": 34,
+  "end_pdf_page": 34,
+  "blocks": [
+    {
+      "block_id": "BLK-556F496E5FB0B381",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "28",
+      "block_order": 0,
+      "section_id": "SEC-8620EBEBF30AE006",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.3 光纤接入（可选）"
+      ],
+      "section_title": "4.6.3 光纤接入（可选）",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 电气连接",
+      "table_cells": null,
+      "bbox": [
+        60.443,
+        48.088,
+        449.79,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BA26B99037449EBB",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "28",
+      "block_order": 1,
+      "section_id": "SEC-8620EBEBF30AE006",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.3 光纤接入（可选）"
+      ],
+      "section_title": "4.6.3 光纤接入（可选）",
+      "block_type": "paragraph",
+      "text": "步骤 4 对剥除防护层后的线缆安装合适的冷压端子，并使用压线钳压紧。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        71.484,
+        348.563,
+        83.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D9529B3949710D96",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "28",
+      "block_order": 2,
+      "section_id": "SEC-8620EBEBF30AE006",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.3 光纤接入（可选）"
+      ],
+      "section_title": "4.6.3 光纤接入（可选）",
+      "block_type": "paragraph",
+      "text": "步骤 5 将线缆接入对应的接线孔。使用螺丝刀紧固接线端子，紧固扭矩为：0.5N.m~0.6N.m。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        216.15,
+        429.833,
+        228.633
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C4B41769E439EE9C",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "28",
+      "block_order": 3,
+      "section_id": "SEC-8620EBEBF30AE006",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.3 光纤接入（可选）"
+      ],
+      "section_title": "4.6.3 光纤接入（可选）",
+      "block_type": "paragraph",
+      "text": "端口标识\n定义",
+      "table_cells": null,
+      "bbox": [
+        96.232,
+        322.251,
+        177.279,
+        332.596
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-481008C76B632DC2",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "28",
+      "block_order": 4,
+      "section_id": "SEC-8620EBEBF30AE006",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.3 光纤接入（可选）"
+      ],
+      "section_title": "4.6.3 光纤接入（可选）",
+      "block_type": "paragraph",
+      "text": "A\n上层端子，接RS485–A",
+      "table_cells": null,
+      "bbox": [
+        96.231,
+        342.968,
+        255.057,
+        353.921
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D6CB59693D7F6E9F",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "28",
+      "block_order": 5,
+      "section_id": "SEC-8620EBEBF30AE006",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.3 光纤接入（可选）"
+      ],
+      "section_title": "4.6.3 光纤接入（可选）",
+      "block_type": "paragraph",
+      "text": "B\n下层端子，接RS485–B",
+      "table_cells": null,
+      "bbox": [
+        96.231,
+        364.968,
+        255.057,
+        375.921
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-783613D24EFAE55A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "28",
+      "block_order": 6,
+      "section_id": "SEC-8620EBEBF30AE006",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.3 光纤接入（可选）"
+      ],
+      "section_title": "4.6.3 光纤接入（可选）",
+      "block_type": "paragraph",
+      "text": "GND\n屏蔽层接地",
+      "table_cells": null,
+      "bbox": [
+        96.231,
+        386.968,
+        205.278,
+        397.921
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7287F5F3E5BE1FE7",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "28",
+      "block_order": 7,
+      "section_id": "SEC-8620EBEBF30AE006",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.3 光纤接入（可选）"
+      ],
+      "section_title": "4.6.3 光纤接入（可选）",
+      "block_type": "paragraph",
+      "text": "对于Weidmuller 和Janitza 电能表，在连接EMU300A 时需要将A&B 端子倒转。",
+      "table_cells": null,
+      "bbox": [
+        114.562,
+        419.868,
+        435.952,
+        430.821
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F1D069A4F51844A4",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "28",
+      "block_order": 8,
+      "section_id": "SEC-8620EBEBF30AE006",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.3 光纤接入（可选）"
+      ],
+      "section_title": "4.6.3 光纤接入（可选）",
+      "block_type": "paragraph",
+      "text": "步骤 6 拉拽线缆，确保紧固到位。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        448.096,
+        195.563,
+        460.579
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-745867DE23A59734",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "28",
+      "block_order": 9,
+      "section_id": "SEC-8620EBEBF30AE006",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.3 光纤接入（可选）"
+      ],
+      "section_title": "4.6.3 光纤接入（可选）",
+      "block_type": "paragraph",
+      "text": "步骤 7 拧紧设备底部的“RS485”防水端子。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        464.596,
+        229.079,
+        477.079
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F51CE9A4D415FE22",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "28",
+      "block_order": 10,
+      "section_id": "SEC-8620EBEBF30AE006",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.3 光纤接入（可选）"
+      ],
+      "section_title": "4.6.3 光纤接入（可选）",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        481.168,
+        112.187,
+        492.121
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6372A886D7CAA2BA",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "28",
+      "block_order": 11,
+      "section_id": "SEC-8620EBEBF30AE006",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.3 光纤接入（可选）"
+      ],
+      "section_title": "4.6.3 光纤接入（可选）",
+      "block_type": "heading",
+      "text": "4.6.3 光纤接入（可选）",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        507.402,
+        163.687,
+        519.572
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-79DD0290675DDC02",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "28",
+      "block_order": 12,
+      "section_id": "SEC-8620EBEBF30AE006",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.3 光纤接入（可选）"
+      ],
+      "section_title": "4.6.3 光纤接入（可选）",
+      "block_type": "paragraph",
+      "text": "步骤 1 拧开“Optical Fiber Ports”防水端子，将光纤线穿过“Optical fiber ports”防水端子。",
+      "table_cells": null,
+      "bbox": [
+        56.695,
+        525.296,
+        406.597,
+        537.779
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-79C55DA12934EEF3",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "28",
+      "block_order": 13,
+      "section_id": "SEC-8620EBEBF30AE006",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.3 光纤接入（可选）"
+      ],
+      "section_title": "4.6.3 光纤接入（可选）",
+      "block_type": "paragraph",
+      "text": "步骤 2 将光纤线在光纤终端盒内部熔接。",
+      "table_cells": null,
+      "bbox": [
+        56.695,
+        541.796,
+        222.565,
+        554.279
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4D5A500AEE4F53C8",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "28",
+      "block_order": 14,
+      "section_id": "SEC-8620EBEBF30AE006",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.3 光纤接入（可选）"
+      ],
+      "section_title": "4.6.3 光纤接入（可选）",
+      "block_type": "paragraph",
+      "text": "具体接线细节，请联系阳光电源股份有限公司客户服务中心。",
+      "table_cells": null,
+      "bbox": [
+        114.562,
+        564.868,
+        357.562,
+        575.821
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DAA72229F1B66EC2",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "28",
+      "block_order": 15,
+      "section_id": "SEC-8620EBEBF30AE006",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.3 光纤接入（可选）"
+      ],
+      "section_title": "4.6.3 光纤接入（可选）",
+      "block_type": "paragraph",
+      "text": "步骤 3 拧紧“Optical Fiber Ports”防水端子。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        593.096,
+        231.077,
+        605.579
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6F85B7E01A2B0670",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "28",
+      "block_order": 16,
+      "section_id": "SEC-8620EBEBF30AE006",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.3 光纤接入（可选）"
+      ],
+      "section_title": "4.6.3 光纤接入（可选）",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        609.668,
+        112.187,
+        620.621
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

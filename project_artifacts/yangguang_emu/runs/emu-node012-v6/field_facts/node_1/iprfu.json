@@ -1,0 +1,376 @@
+{
+  "schema_version": "field_fact_checkpoint.v2",
+  "node_id": "node_1",
+  "field_id": "iprfu",
+  "index_id": "IDX-3B116ADDF3BB03CC",
+  "packet_sha256": "0d30bf47c50eeb8abb1675a17ce865478ef199acd3c7734ba585141bfe252e7b",
+  "text_model": "qwen-plus",
+  "retrieval_profile_version": "1.1",
+  "field_fact_prompt_version": "2.2",
+  "field_fact_schema_sha256": "0f478546b256a855e3ca4dc4218d2b3a32d2d428b89b976aa69639129864c0e5",
+  "result": {
+    "node_id": "node_1",
+    "field_id": "iprfu",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "未遵循安全说明和遗留风险可引发生命危险。",
+        "block_ids": [
+          "BLK-A8903F0B3105707C"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "忽视随附硬件文档中的安全说明和遗留风险会导致重伤或死亡。",
+        "block_ids": [
+          "BLK-A8903F0B3105707C"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "进行风险评估时应考虑遗留风险。",
+        "block_ids": [
+          "BLK-F4322E7C8FD3E6EB"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "对关键生产区域进行单独的人员出入控制是用户的缓解措施之一。",
+        "block_ids": [
+          "BLK-C65542BD825C9290"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "重要组件应安装在可上锁的控制柜/控制室内。",
+        "block_ids": [
+          "BLK-F98DE46C72A1F829"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "控制柜/控制室必须配备锁，并有监控和报警设施；不得使用结构简单的锁（如万能锁、三角锁、四角锁或双齿锁）。",
+        "block_ids": [
+          "BLK-B5B2DA70170FDE95"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "在安全删除产品之前，需参考第10章安全配置指南相关内容进行操作。",
+        "block_ids": [
+          "BLK-6F042AC19A0269C8"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "当设备需要退役报废时，应参考10.6节恢复出厂设置章节操作，并通过安全渠道销毁、删除用户安全数据，确保设备不被二次部署或非法利用。",
+        "block_ids": [
+          "BLK-525B9314A5FDB5CB"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "产品报废场景包括：达到规定的使用年限；因严重损坏不具备使用条件；主要部件或结构损坏且无修复价值。",
+        "block_ids": [
+          "BLK-4D366B3D429D69D6",
+          "BLK-9AE61B78288E5DE6",
+          "BLK-D558E0F03D0C4DAC"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "对于预置证书作为业务使用的场景，阳光电源不对其安全性做出承诺与保证，建议用户更换使用自己的安全证书。",
+        "block_ids": [
+          "BLK-B775CA8B855D40B9"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "阳光电源预置证书有效期为30年。",
+        "block_ids": [
+          "BLK-1F38C3E74276F886"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "当证书距离过期时间不足90天时，系统触发“即将过期”告警；当证书已过期时，系统触发“已过期”告警；告警结果记录至syslog日志。",
+        "block_ids": [
+          "BLK-0C005846289156C7",
+          "BLK-731B6EE8DB6B37A6",
+          "BLK-A1646F67D0B20DF6"
+        ],
+        "is_uncertain": false
+      }
+    ],
+    "unknowns": [
+      "未明确说明产品支持期限（如设计寿命、保修期、软件支持周期）的具体数值或判定依据。",
+      "未说明‘遗留风险’在本产品上下文中的具体定义、来源或典型示例。",
+      "未说明‘安全删除’所指的数据范围是否涵盖所有存储介质（如eMMC、TF卡、外部USB设备）及固件中嵌入的敏感信息。",
+      "未说明恢复出厂设置是否彻底清除所有密钥、证书、用户配置及日志数据，或是否存在残留风险。",
+      "未说明证书生命周期管理功能（如自动轮换、吊销检查）是否由产品内置实现，抑或完全依赖用户手动操作。",
+      "未说明syslog日志的存储位置、保留时长、访问控制机制及是否支持远程传输。",
+      "GAP-LOGGER4000-SCOPE：Logger4000是否属于EMU300A交付配置尚不确认，其相关IPRFU影响无法确定。",
+      "GAP-CONTRACT-VARIANTS：手册中描述的用户缓解措施（如出入控制、锁具类型）是否为强制要求或仅属推荐性指导，未明确其合同约束力。",
+      "未说明‘安全渠道销毁’的具体技术方式（如物理销毁、符合NIST SP 800-88标准的擦除）及责任主体（用户或供应商）。",
+      "未说明第10章安全配置指南中所述操作是否适用于所有交付形态（如不同BOM版本、现场升级后状态）"
+    ],
+    "contradictions": []
+  },
+  "retrieval_trace": {
+    "schema_version": "1.0",
+    "request": {
+      "project_id": "yangguang_emu",
+      "node_id": "node_1",
+      "field_id": "iprfu",
+      "query": null,
+      "filters": {
+        "document_ids": [],
+        "section_path_terms": [],
+        "block_types": [],
+        "exclude_review_required": false
+      },
+      "token_budget": 12000,
+      "max_blocks": 24,
+      "neighbor_window": 1
+    },
+    "effective_query": "预期用途 合理可预见使用 误用 安装 操作 维护 退役 支持期限 安全影响",
+    "index_id": "IDX-3B116ADDF3BB03CC",
+    "scope_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "packet_id": "rag_yangguang_emu_node_1_iprfu_28944dc2ac38",
+    "packet_sha256": "0d30bf47c50eeb8abb1675a17ce865478ef199acd3c7734ba585141bfe252e7b",
+    "candidate_count": 1041,
+    "selected_count": 24,
+    "selected_token_count": 1658,
+    "truncated_by_budget": false,
+    "truncated_by_max_blocks": true,
+    "hits": [
+      {
+        "block_id": "BLK-4D366B3D429D69D6",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 1,
+        "score": 0.5451473024156358,
+        "estimated_tokens": 50,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-7BB0886F0F8E6371",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 2,
+        "score": 0.5451473024156358,
+        "estimated_tokens": 47,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-4D366B3D429D69D6"
+      },
+      {
+        "block_id": "BLK-9AE61B78288E5DE6",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 3,
+        "score": 0.5451473024156358,
+        "estimated_tokens": 57,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-4D366B3D429D69D6"
+      },
+      {
+        "block_id": "BLK-525B9314A5FDB5CB",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 4,
+        "score": 0.5362688806321886,
+        "estimated_tokens": 113,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-6F042AC19A0269C8",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 5,
+        "score": 0.5362688806321886,
+        "estimated_tokens": 64,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-525B9314A5FDB5CB"
+      },
+      {
+        "block_id": "BLK-D558E0F03D0C4DAC",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 6,
+        "score": 0.5360428598192003,
+        "estimated_tokens": 71,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-A8903F0B3105707C",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 7,
+        "score": 0.5067131413353815,
+        "estimated_tokens": 105,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-355A0793885F8B9D",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 8,
+        "score": 0.5067131413353815,
+        "estimated_tokens": 42,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-A8903F0B3105707C"
+      },
+      {
+        "block_id": "BLK-D0201C26B3FCE322",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 9,
+        "score": 0.5067131413353815,
+        "estimated_tokens": 57,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-A8903F0B3105707C"
+      },
+      {
+        "block_id": "BLK-338E6AF2AA5A36A6",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 10,
+        "score": 0.5028920438554552,
+        "estimated_tokens": 67,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-7087C429F36BA4C3",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 11,
+        "score": 0.5028920438554552,
+        "estimated_tokens": 45,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-338E6AF2AA5A36A6"
+      },
+      {
+        "block_id": "BLK-731B6EE8DB6B37A6",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 12,
+        "score": 0.5012989785936144,
+        "estimated_tokens": 100,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-0C005846289156C7",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 13,
+        "score": 0.5012989785936144,
+        "estimated_tokens": 98,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-731B6EE8DB6B37A6"
+      },
+      {
+        "block_id": "BLK-A1646F67D0B20DF6",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 14,
+        "score": 0.5012989785936144,
+        "estimated_tokens": 89,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-731B6EE8DB6B37A6"
+      },
+      {
+        "block_id": "BLK-4EC00AD997F9F3D6",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 15,
+        "score": 0.5011414792802599,
+        "estimated_tokens": 115,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-1F38C3E74276F886",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 16,
+        "score": 0.5011414792802599,
+        "estimated_tokens": 88,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-4EC00AD997F9F3D6"
+      },
+      {
+        "block_id": "BLK-A549330D551DA3ED",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 17,
+        "score": 0.5011414792802599,
+        "estimated_tokens": 92,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-4EC00AD997F9F3D6"
+      },
+      {
+        "block_id": "BLK-F98DE46C72A1F829",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 18,
+        "score": 0.4965157296922472,
+        "estimated_tokens": 86,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-C65542BD825C9290",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 19,
+        "score": 0.4965157296922472,
+        "estimated_tokens": 83,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-F98DE46C72A1F829"
+      },
+      {
+        "block_id": "BLK-B5B2DA70170FDE95",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 20,
+        "score": 0.4965157296922472,
+        "estimated_tokens": 139,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-F98DE46C72A1F829"
+      },
+      {
+        "block_id": "BLK-B775CA8B855D40B9",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 21,
+        "score": 0.49462425973680285,
+        "estimated_tokens": 125,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-1F38C3E74276F886"
+      },
+      {
+        "block_id": "BLK-E1B7E29269EA92E3",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 22,
+        "score": 0.4907387521531847,
+        "estimated_tokens": 73,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-0C005846289156C7"
+      },
+      {
+        "block_id": "BLK-F4322E7C8FD3E6EB",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 23,
+        "score": 0.48246868981255425,
+        "estimated_tokens": 63,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-B90C562DB9B696AD",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 24,
+        "score": 0.48246868981255425,
+        "estimated_tokens": 42,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-F4322E7C8FD3E6EB"
+      }
+    ]
+  }
+}

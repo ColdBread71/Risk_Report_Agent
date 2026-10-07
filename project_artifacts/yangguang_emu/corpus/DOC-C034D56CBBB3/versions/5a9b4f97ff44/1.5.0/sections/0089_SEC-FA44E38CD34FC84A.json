@@ -1,0 +1,178 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-FA44E38CD34FC84A",
+  "section_path": [
+    "7 Web界面",
+    "7.7 历史数据",
+    "7.7.1 操作日志"
+  ],
+  "section_title": "7.7.1 操作日志",
+  "start_pdf_page": 67,
+  "end_pdf_page": 67,
+  "blocks": [
+    {
+      "block_id": "BLK-60C50400589588E4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 67,
+      "printed_page_label": "57",
+      "block_order": 2,
+      "section_id": "SEC-FA44E38CD34FC84A",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.1 操作日志"
+      ],
+      "section_title": "7.7.1 操作日志",
+      "block_type": "heading",
+      "text": "7.7.1 操作日志",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        97.99,
+        137.856,
+        110.16
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F867F363236FED30",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 67,
+      "printed_page_label": "57",
+      "block_order": 3,
+      "section_id": "SEC-FA44E38CD34FC84A",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.1 操作日志"
+      ],
+      "section_title": "7.7.1 操作日志",
+      "block_type": "paragraph",
+      "text": "通过操作日志页面，可以查看到各用户关键事件的操作记录，以便回溯。",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        117.214,
+        374.369,
+        127.559
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0259D595991823F1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 67,
+      "printed_page_label": "57",
+      "block_order": 4,
+      "section_id": "SEC-FA44E38CD34FC84A",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.1 操作日志"
+      ],
+      "section_title": "7.7.1 操作日志",
+      "block_type": "paragraph",
+      "text": "表 7-5 操作日志",
+      "table_cells": null,
+      "bbox": [
+        102.362,
+        142.706,
+        165.371,
+        153.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-945229B860039827",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 67,
+      "printed_page_label": "57",
+      "block_order": 5,
+      "section_id": "SEC-FA44E38CD34FC84A",
+      "section_path": [
+        "7 Web界面",
+        "7.7 历史数据",
+        "7.7.1 操作日志"
+      ],
+      "section_title": "7.7.1 操作日志",
+      "block_type": "table",
+      "text": "用户类型\t操作\t\t记录信息\n所有用户\t登录\t和退出\t用户名、用户IP\n系统管理员\t所有\n括但\n用户\n修改\n户、\n发调\t操作日志，包\n不限于：增加\n、删除用户、\n用户、清空用\n会话管理、研\n试开关。\t操作类型、操作对象、设置内容、操作结\n果\n运维用户\t访问\n• 用\n• 系\n• 一\n入\n• 证\t及关键操作：\n户登录\n统升级\n键迁移导\n、导出\n书导入\t操作时间、操作类型、操作内容\n击历史数据 > 操作日志\n看操作日志。可通过设\n结束\n障记录\n过设置搜索信息，可查\n击历史数据 > 故障记录\n置起止时间，单击\n击 图标即可查看该时\n7-6 故障信息参数表\t，进\n置时\n看设\n，进\n图标\n间段\t入界面。\n间和操作类型，单\n备在某一时间段内\n入页面。\n选择需要查看的设\n下的故障记录，故\t击 过滤日志记录。\n的故障信息。\n备名称和故障类型。\n障记录主要展示以下参数信息。\n参数\t\t说明\t\n时间\t\t出现故障的时间。\t\n设备名称\t\t出现故障的设备。",
+      "table_cells": [
+        [
+          "用户类型",
+          "操作",
+          null,
+          "记录信息"
+        ],
+        [
+          "所有用户",
+          "登录",
+          "和退出",
+          "用户名、用户IP"
+        ],
+        [
+          "系统管理员",
+          "所有\n括但\n用户\n修改\n户、\n发调",
+          "操作日志，包\n不限于：增加\n、删除用户、\n用户、清空用\n会话管理、研\n试开关。",
+          "操作类型、操作对象、设置内容、操作结\n果"
+        ],
+        [
+          "运维用户",
+          "访问\n• 用\n• 系\n• 一\n入\n• 证",
+          "及关键操作：\n户登录\n统升级\n键迁移导\n、导出\n书导入",
+          "操作时间、操作类型、操作内容"
+        ],
+        [
+          "击历史数据 > 操作日志\n看操作日志。可通过设\n结束\n障记录\n过设置搜索信息，可查\n击历史数据 > 故障记录\n置起止时间，单击\n击 图标即可查看该时\n7-6 故障信息参数表",
+          "，进\n置时\n看设\n，进\n图标\n间段",
+          "入界面。\n间和操作类型，单\n备在某一时间段内\n入页面。\n选择需要查看的设\n下的故障记录，故",
+          "击 过滤日志记录。\n的故障信息。\n备名称和故障类型。\n障记录主要展示以下参数信息。"
+        ],
+        [
+          "参数",
+          null,
+          "说明",
+          null
+        ],
+        [
+          "时间",
+          null,
+          "出现故障的时间。",
+          null
+        ],
+        [
+          "设备名称",
+          null,
+          "出现故障的设备。",
+          null
+        ]
+      ],
+      "bbox": [
+        110.404,
+        157.2,
+        456.393,
+        636.453
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

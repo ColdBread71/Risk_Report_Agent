@@ -1,0 +1,283 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-75EF437D8F142CB2",
+  "section_path": [
+    "3 机械安装",
+    "3.3 安装工具"
+  ],
+  "section_title": "3.3 安装工具",
+  "start_pdf_page": 19,
+  "end_pdf_page": 19,
+  "blocks": [
+    {
+      "block_id": "BLK-14467281E43D43DC",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "13",
+      "block_order": 0,
+      "section_id": "SEC-75EF437D8F142CB2",
+      "section_path": [
+        "3 机械安装",
+        "3.3 安装工具"
+      ],
+      "section_title": "3.3 安装工具",
+      "block_type": "paragraph",
+      "text": "用户手册\n3 机械安装",
+      "table_cells": null,
+      "bbox": [
+        74.618,
+        48.088,
+        463.965,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6596F4719B7D4BB2",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "13",
+      "block_order": 1,
+      "section_id": "SEC-75EF437D8F142CB2",
+      "section_path": [
+        "3 机械安装",
+        "3.3 安装工具"
+      ],
+      "section_title": "3.3 安装工具",
+      "block_type": "table",
+      "text": "编号\t说明\t数目\nA\tEMU300A\t1 台\nB\t相关文档，包括合格证、保修卡、出厂检\n验报告、快速安装指导等。\t1 套\nC\t钥匙\t4 把\nD\tM10x45 螺栓组合件\t4 个\nE\tM6x12 螺栓\t1 个\nF\tOT 端子\t1 个\n\t\t\n注意\t\t\n虽然在运输前已\n以在安装前，应\n源股份有限公司\t对产品进行仔细测试和检测，但在运输过程中\n对设备进行检查。若检查到有任何损坏情况请\n联系。\t可能\n与运",
+      "table_cells": [
+        [
+          "编号",
+          "说明",
+          "数目"
+        ],
+        [
+          "A",
+          "EMU300A",
+          "1 台"
+        ],
+        [
+          "B",
+          "相关文档，包括合格证、保修卡、出厂检\n验报告、快速安装指导等。",
+          "1 套"
+        ],
+        [
+          "C",
+          "钥匙",
+          "4 把"
+        ],
+        [
+          "D",
+          "M10x45 螺栓组合件",
+          "4 个"
+        ],
+        [
+          "E",
+          "M6x12 螺栓",
+          "1 个"
+        ],
+        [
+          "F",
+          "OT 端子",
+          "1 个"
+        ],
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          "注意",
+          null,
+          null
+        ],
+        [
+          "虽然在运输前已\n以在安装前，应\n源股份有限公司",
+          "对产品进行仔细测试和检测，但在运输过程中\n对设备进行检查。若检查到有任何损坏情况请\n联系。",
+          "可能\n与运"
+        ]
+      ],
+      "bbox": [
+        111.032,
+        265.39,
+        370.432,
+        491.626
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4B5DE5066BD9FD46",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "13",
+      "block_order": 2,
+      "section_id": "SEC-75EF437D8F142CB2",
+      "section_path": [
+        "3 机械安装",
+        "3.3 安装工具"
+      ],
+      "section_title": "3.3 安装工具",
+      "block_type": "heading",
+      "text": "3.3 安装工具",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        519.659,
+        143.046,
+        534.263
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2E98E70D1DF54BC3",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "13",
+      "block_order": 3,
+      "section_id": "SEC-75EF437D8F142CB2",
+      "section_path": [
+        "3 机械安装",
+        "3.3 安装工具"
+      ],
+      "section_title": "3.3 安装工具",
+      "block_type": "paragraph",
+      "text": "安装工具包括但不限于以下推荐的工具。必要时，可在现场使用其他辅助工具。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        547.307,
+        417.366,
+        558.26
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-29B7E0A4AFEF963A",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "13",
+      "block_order": 4,
+      "section_id": "SEC-75EF437D8F142CB2",
+      "section_path": [
+        "3 机械安装",
+        "3.3 安装工具"
+      ],
+      "section_title": "3.3 安装工具",
+      "block_type": "paragraph",
+      "text": "防护眼镜",
+      "table_cells": null,
+      "bbox": [
+        111.032,
+        651.523,
+        147.032,
+        662.477
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-84BD9AEA29B4C0DD",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "13",
+      "block_order": 5,
+      "section_id": "SEC-75EF437D8F142CB2",
+      "section_path": [
+        "3 机械安装",
+        "3.3 安装工具"
+      ],
+      "section_title": "3.3 安装工具",
+      "block_type": "paragraph",
+      "text": "防噪耳塞",
+      "table_cells": null,
+      "bbox": [
+        201.047,
+        651.523,
+        237.047,
+        662.477
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E836EF1254F16810",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "13",
+      "block_order": 6,
+      "section_id": "SEC-75EF437D8F142CB2",
+      "section_path": [
+        "3 机械安装",
+        "3.3 安装工具"
+      ],
+      "section_title": "3.3 安装工具",
+      "block_type": "paragraph",
+      "text": "防尘口罩",
+      "table_cells": null,
+      "bbox": [
+        291.337,
+        651.523,
+        327.337,
+        662.477
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DE9C6F8EC0B2857E",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 19,
+      "printed_page_label": "13",
+      "block_order": 7,
+      "section_id": "SEC-75EF437D8F142CB2",
+      "section_path": [
+        "3 机械安装",
+        "3.3 安装工具"
+      ],
+      "section_title": "3.3 安装工具",
+      "block_type": "paragraph",
+      "text": "绝缘手套",
+      "table_cells": null,
+      "bbox": [
+        384.109,
+        651.523,
+        420.109,
+        662.477
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

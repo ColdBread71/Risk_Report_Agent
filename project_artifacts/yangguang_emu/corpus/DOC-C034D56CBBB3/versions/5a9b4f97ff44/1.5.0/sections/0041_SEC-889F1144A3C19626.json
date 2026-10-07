@@ -1,0 +1,231 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-889F1144A3C19626",
+  "section_path": [
+    "7 Web界面",
+    "7.3 Web端简介",
+    "7.3.1 Web主界面"
+  ],
+  "section_title": "7.3.1 Web主界面",
+  "start_pdf_page": 49,
+  "end_pdf_page": 49,
+  "blocks": [
+    {
+      "block_id": "BLK-E7B533A9677BA9FF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "39",
+      "block_order": 0,
+      "section_id": "SEC-889F1144A3C19626",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.1 Web主界面"
+      ],
+      "section_title": "7.3.1 Web主界面",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        74.615,
+        48.088,
+        463.969,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1B851BCAD3FDBCA8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "39",
+      "block_order": 1,
+      "section_id": "SEC-889F1144A3C19626",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.1 Web主界面"
+      ],
+      "section_title": "7.3.1 Web主界面",
+      "block_type": "table",
+      "text": "密码长度为8~32\t成。新旧密码不能相同。\t位，需由大写字母、小写字母、数字、特殊符号中的三种或以上组\n存，新密码\t设置成功。\t\n若忘记登录\t密码，联系管理\t员或阳光电源客服找回。\n简介\n界面\n运维用户登\n置等操作。\n界面如下\t录时，弹出新手\n图所示。\t帮助界面，按照提示可以进行校准系统时间、设备接入\n\t名称\t说明\n\t导航菜单\t显示Web 主功能模块\n\t功能显示区\t显示当前选择查询或参数设置的功能界面\n\t告警图标\t显示当前系统告警的级别及数量，可以单击对应的数值\n直接进入该告警的显示界面\n\t语言显示\t根据需要切换语言类型",
+      "table_cells": [
+        [
+          "密码长度为8~32",
+          "成。新旧密码不能相同。",
+          "位，需由大写字母、小写字母、数字、特殊符号中的三种或以上组"
+        ],
+        [
+          "存，新密码",
+          "设置成功。",
+          null
+        ],
+        [
+          "若忘记登录",
+          "密码，联系管理",
+          "员或阳光电源客服找回。"
+        ],
+        [
+          "简介\n界面\n运维用户登\n置等操作。\n界面如下",
+          "录时，弹出新手\n图所示。",
+          "帮助界面，按照提示可以进行校准系统时间、设备接入"
+        ],
+        [
+          null,
+          "名称",
+          "说明"
+        ],
+        [
+          null,
+          "导航菜单",
+          "显示Web 主功能模块"
+        ],
+        [
+          null,
+          "功能显示区",
+          "显示当前选择查询或参数设置的功能界面"
+        ],
+        [
+          null,
+          "告警图标",
+          "显示当前系统告警的级别及数量，可以单击对应的数值\n直接进入该告警的显示界面"
+        ],
+        [
+          null,
+          "语言显示",
+          "根据需要切换语言类型"
+        ]
+      ],
+      "bbox": [
+        128.735,
+        88.856,
+        450.862,
+        624.126
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-11517ADBADC0DD8F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "39",
+      "block_order": 2,
+      "section_id": "SEC-889F1144A3C19626",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.1 Web主界面"
+      ],
+      "section_title": "7.3.1 Web主界面",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        144.456,
+        126.36,
+        155.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-791391BD94DE86B8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "39",
+      "block_order": 4,
+      "section_id": "SEC-889F1144A3C19626",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.1 Web主界面"
+      ],
+      "section_title": "7.3.1 Web主界面",
+      "block_type": "heading",
+      "text": "7.3.1 Web 主界面",
+      "table_cells": null,
+      "bbox": [
+        70.862,
+        231.49,
+        148.242,
+        243.66
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E361F58E045CFDD2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "39",
+      "block_order": 5,
+      "section_id": "SEC-889F1144A3C19626",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.1 Web主界面"
+      ],
+      "section_title": "7.3.1 Web主界面",
+      "block_type": "paragraph",
+      "text": "E\n用户\n显示当前登录用户",
+      "table_cells": null,
+      "bbox": [
+        111.035,
+        630.032,
+        306.862,
+        640.985
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-571352D6059CC02B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 49,
+      "printed_page_label": "39",
+      "block_order": 6,
+      "section_id": "SEC-889F1144A3C19626",
+      "section_path": [
+        "7 Web界面",
+        "7.3 Web端简介",
+        "7.3.1 Web主界面"
+      ],
+      "section_title": "7.3.1 Web主界面",
+      "block_type": "paragraph",
+      "text": "图标指示数据采集器以太网端口连接状态。",
+      "table_cells": null,
+      "bbox": [
+        116.541,
+        664.24,
+        287.541,
+        675.193
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

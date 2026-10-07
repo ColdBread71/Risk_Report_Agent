@@ -1,0 +1,308 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-C1F55252E3C7861C",
+  "section_path": [
+    "7 Web界面",
+    "7.7 功率调节",
+    "7.7.4 无功功率",
+    "7.7.4.6 国家模式"
+  ],
+  "section_title": "7.7.4.6 国家模式",
+  "start_pdf_page": 66,
+  "end_pdf_page": 66,
+  "blocks": [
+    {
+      "block_id": "BLK-5F07C2729FD651D5",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 15,
+      "section_id": "SEC-C1F55252E3C7861C",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.6 国家模式"
+      ],
+      "section_title": "7.7.4.6 国家模式",
+      "block_type": "heading",
+      "text": "7.7.4.6 国家模式",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        350.69,
+        132.027,
+        362.86
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-CCE9627DD89F2174",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 16,
+      "section_id": "SEC-C1F55252E3C7861C",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.6 国家模式"
+      ],
+      "section_title": "7.7.4.6 国家模式",
+      "block_type": "paragraph",
+      "text": "选择国家电力调度指令作为调度指令来源。",
+      "table_cells": null,
+      "bbox": [
+        88.192,
+        369.914,
+        249.692,
+        380.258
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-39C33036F75901D9",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 17,
+      "section_id": "SEC-C1F55252E3C7861C",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.6 国家模式"
+      ],
+      "section_title": "7.7.4.6 国家模式",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        390.756,
+        124.196,
+        401.709
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FF2CC1EC20433203",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 18,
+      "section_id": "SEC-C1F55252E3C7861C",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.6 国家模式"
+      ],
+      "section_title": "7.7.4.6 国家模式",
+      "block_type": "list",
+      "text": "•\n当前无功控制方式已选择国家模式。见7.7.1 选择功率控制方式。",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        410.756,
+        361.13,
+        421.709
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A61EAFC7A3BCF997",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 19,
+      "section_id": "SEC-C1F55252E3C7861C",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.6 国家模式"
+      ],
+      "section_title": "7.7.4.6 国家模式",
+      "block_type": "paragraph",
+      "text": "步骤 1 在国家下拉列表中，选择设备所在国家。",
+      "table_cells": null,
+      "bbox": [
+        56.696,
+        428.834,
+        249.566,
+        441.317
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D8AF2CE7B4DFD2BB",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 20,
+      "section_id": "SEC-C1F55252E3C7861C",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.6 国家模式"
+      ],
+      "section_title": "7.7.4.6 国家模式",
+      "block_type": "paragraph",
+      "text": "步骤 2 当国家设置为韩国时，设置下列参数。",
+      "table_cells": null,
+      "bbox": [
+        56.696,
+        445.334,
+        240.566,
+        457.817
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C9DD604077B2D642",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 21,
+      "section_id": "SEC-C1F55252E3C7861C",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.6 国家模式"
+      ],
+      "section_title": "7.7.4.6 国家模式",
+      "block_type": "paragraph",
+      "text": "a. 在PPC 类型下拉列表中，选择DER-AVM 类型的PPC 设备。",
+      "table_cells": null,
+      "bbox": [
+        87.566,
+        463.256,
+        346.334,
+        474.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-78E227D40D29FFDE",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 22,
+      "section_id": "SEC-C1F55252E3C7861C",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.6 国家模式"
+      ],
+      "section_title": "7.7.4.6 国家模式",
+      "block_type": "paragraph",
+      "text": "b. 在转发地址文本框中，输入Modbus 转发地址（范围为1~10）。",
+      "table_cells": null,
+      "bbox": [
+        87.566,
+        478.256,
+        358.772,
+        489.209
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9B30829B55D7D1AF",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 23,
+      "section_id": "SEC-C1F55252E3C7861C",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.6 国家模式"
+      ],
+      "section_title": "7.7.4.6 国家模式",
+      "block_type": "paragraph",
+      "text": "步骤 3 点击保存。",
+      "table_cells": null,
+      "bbox": [
+        56.696,
+        493.334,
+        132.566,
+        505.817
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E72D81A6700FA419",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 66,
+      "printed_page_label": "56",
+      "block_order": 24,
+      "section_id": "SEC-C1F55252E3C7861C",
+      "section_path": [
+        "7 Web界面",
+        "7.7 功率调节",
+        "7.7.4 无功功率",
+        "7.7.4.6 国家模式"
+      ],
+      "section_title": "7.7.4.6 国家模式",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.196,
+        509.906,
+        112.19,
+        520.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

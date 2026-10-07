@@ -1,0 +1,325 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-4A36AC6577876335",
+  "section_path": [
+    "7 Web界面",
+    "7.5 设备监控",
+    "7.5.3 初始参数"
+  ],
+  "section_title": "7.5.3 初始参数",
+  "start_pdf_page": 52,
+  "end_pdf_page": 52,
+  "blocks": [
+    {
+      "block_id": "BLK-9CFD1924B4B2583E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 2,
+      "section_id": "SEC-4A36AC6577876335",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.3 初始参数"
+      ],
+      "section_title": "7.5.3 初始参数",
+      "block_type": "heading",
+      "text": "7.5.3 初始参数",
+      "table_cells": null,
+      "bbox": [
+        56.689,
+        95.09,
+        123.689,
+        107.26
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7192A4BD8C0E0E5B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 3,
+      "section_id": "SEC-4A36AC6577876335",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.3 初始参数"
+      ],
+      "section_title": "7.5.3 初始参数",
+      "block_type": "paragraph",
+      "text": "选择逆变器设备，设置初始参数设置。支持单台设置和批量设置。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        114.314,
+        334.693,
+        124.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2925CFBAC67DA149",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 4,
+      "section_id": "SEC-4A36AC6577876335",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.3 初始参数"
+      ],
+      "section_title": "7.5.3 初始参数",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击设备监控 > 初始参数，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        56.692,
+        133.734,
+        241.822,
+        146.217
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8E7838BF50AC3D1D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 5,
+      "section_id": "SEC-4A36AC6577876335",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.3 初始参数"
+      ],
+      "section_title": "7.5.3 初始参数",
+      "block_type": "paragraph",
+      "text": "步骤 2 在左侧设备列表栏中单击",
+      "table_cells": null,
+      "bbox": [
+        56.692,
+        152.505,
+        186.562,
+        164.988
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6AAB1DA0D6AA11D2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 6,
+      "section_id": "SEC-4A36AC6577876335",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.3 初始参数"
+      ],
+      "section_title": "7.5.3 初始参数",
+      "block_type": "paragraph",
+      "text": "，在下拉框中选择需要的设备类型。",
+      "table_cells": null,
+      "bbox": [
+        200.738,
+        153.927,
+        344.738,
+        164.88
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9CA6E7D154569EA9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 7,
+      "section_id": "SEC-4A36AC6577876335",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.3 初始参数"
+      ],
+      "section_title": "7.5.3 初始参数",
+      "block_type": "paragraph",
+      "text": "步骤 3 在右侧选择设备的国家/地区和电网类型。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        169.005,
+        252.065,
+        181.488
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C694740D7356E360",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 8,
+      "section_id": "SEC-4A36AC6577876335",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.3 初始参数"
+      ],
+      "section_title": "7.5.3 初始参数",
+      "block_type": "paragraph",
+      "text": "步骤 4 单击设置，可对单台设备进行初始参数设置。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        185.505,
+        267.563,
+        197.988
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6772A5BDC3C1E650",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 9,
+      "section_id": "SEC-4A36AC6577876335",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.3 初始参数"
+      ],
+      "section_title": "7.5.3 初始参数",
+      "block_type": "paragraph",
+      "text": "步骤 5 批量设置初始参数。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        202.005,
+        168.563,
+        214.488
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-175250A21477AE6F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 10,
+      "section_id": "SEC-4A36AC6577876335",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.3 初始参数"
+      ],
+      "section_title": "7.5.3 初始参数",
+      "block_type": "paragraph",
+      "text": "a. 单击配置同步。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        219.927,
+        164.738,
+        230.88
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5319720A2FECD4A4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 11,
+      "section_id": "SEC-4A36AC6577876335",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.3 初始参数"
+      ],
+      "section_title": "7.5.3 初始参数",
+      "block_type": "paragraph",
+      "text": "b. 在弹出的设备列表中勾选需要设置的设备，单击保存。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        234.927,
+        317.738,
+        245.88
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-025E88CF446487C5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 12,
+      "section_id": "SEC-4A36AC6577876335",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.3 初始参数"
+      ],
+      "section_title": "7.5.3 初始参数",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        250.077,
+        112.187,
+        261.03
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

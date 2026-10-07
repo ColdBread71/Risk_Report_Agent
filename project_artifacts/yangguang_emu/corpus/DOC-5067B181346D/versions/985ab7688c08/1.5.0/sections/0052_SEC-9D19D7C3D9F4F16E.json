@@ -1,0 +1,105 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-9D19D7C3D9F4F16E",
+  "section_path": [
+    "5 试运行",
+    "5.3 试运行步骤",
+    "5.3.4 PLC模块连接",
+    "5.3.4.4 设备连接与维护"
+  ],
+  "section_title": "5.3.4.4 设备连接与维护",
+  "start_pdf_page": 50,
+  "end_pdf_page": 50,
+  "blocks": [
+    {
+      "block_id": "BLK-92C415ECF106DEBA",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "44",
+      "block_order": 0,
+      "section_id": "SEC-9D19D7C3D9F4F16E",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.4 PLC模块连接",
+        "5.3.4.4 设备连接与维护"
+      ],
+      "section_title": "5.3.4.4 设备连接与维护",
+      "block_type": "paragraph",
+      "text": "用户手册\n5 试运行",
+      "table_cells": null,
+      "bbox": [
+        60.445,
+        48.088,
+        449.792,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6775964ACE2081E8",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "44",
+      "block_order": 1,
+      "section_id": "SEC-9D19D7C3D9F4F16E",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.4 PLC模块连接",
+        "5.3.4.4 设备连接与维护"
+      ],
+      "section_title": "5.3.4.4 设备连接与维护",
+      "block_type": "paragraph",
+      "text": "首次登录请务必修改初始密码。修改密码的方法为：单击运维用户 > 修改密码，即可\n设置新密码。\n若忘记登录密码，需要提供当前设备的S/N 和系统时间，联系阳光电源获取动态密\n码。",
+      "table_cells": null,
+      "bbox": [
+        114.562,
+        78.056,
+        448.822,
+        121.409
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0AF1D1981BF2FC92",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 50,
+      "printed_page_label": "44",
+      "block_order": 2,
+      "section_id": "SEC-9D19D7C3D9F4F16E",
+      "section_path": [
+        "5 试运行",
+        "5.3 试运行步骤",
+        "5.3.4 PLC模块连接",
+        "5.3.4.4 设备连接与维护"
+      ],
+      "section_title": "5.3.4.4 设备连接与维护",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        138.756,
+        112.187,
+        149.709
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

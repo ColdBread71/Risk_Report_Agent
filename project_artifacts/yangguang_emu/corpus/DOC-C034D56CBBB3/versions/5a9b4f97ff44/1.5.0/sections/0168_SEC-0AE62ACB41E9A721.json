@@ -1,0 +1,367 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-0AE62ACB41E9A721",
+  "section_path": [
+    "10 用户管理",
+    "10.3 设置管理员账号"
+  ],
+  "section_title": "10.3 设置管理员账号",
+  "start_pdf_page": 104,
+  "end_pdf_page": 104,
+  "blocks": [
+    {
+      "block_id": "BLK-B7A730B681068573",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 13,
+      "section_id": "SEC-0AE62ACB41E9A721",
+      "section_path": [
+        "10 用户管理",
+        "10.3 设置管理员账号"
+      ],
+      "section_title": "10.3 设置管理员账号",
+      "block_type": "heading",
+      "text": "10.3 设置管理员账号",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        348.158,
+        171.545,
+        362.762
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4B1042EDB3222B50",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 14,
+      "section_id": "SEC-0AE62ACB41E9A721",
+      "section_path": [
+        "10 用户管理",
+        "10.3 设置管理员账号"
+      ],
+      "section_title": "10.3 设置管理员账号",
+      "block_type": "paragraph",
+      "text": "管理员账号必须与邮箱或手机号绑定，以便在忘记密码时通过手机或邮箱验证来重置密码。",
+      "table_cells": null,
+      "bbox": [
+        88.194,
+        375.714,
+        428.194,
+        386.059
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A09832941F7642A7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 15,
+      "section_id": "SEC-0AE62ACB41E9A721",
+      "section_path": [
+        "10 用户管理",
+        "10.3 设置管理员账号"
+      ],
+      "section_title": "10.3 设置管理员账号",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        88.192,
+        396.556,
+        124.192,
+        407.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2CF48E7F7657D9DB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 16,
+      "section_id": "SEC-0AE62ACB41E9A721",
+      "section_path": [
+        "10 用户管理",
+        "10.3 设置管理员账号"
+      ],
+      "section_title": "10.3 设置管理员账号",
+      "block_type": "list",
+      "text": "•\n通过管理员账号登录Web 端。见10.1 初始用户名和密码。",
+      "table_cells": null,
+      "bbox": [
+        88.192,
+        416.556,
+        336.475,
+        427.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0060A6AD6BE05D5D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 17,
+      "section_id": "SEC-0AE62ACB41E9A721",
+      "section_path": [
+        "10 用户管理",
+        "10.3 设置管理员账号"
+      ],
+      "section_title": "10.3 设置管理员账号",
+      "block_type": "paragraph",
+      "text": "步骤 1 导航栏中点击账号绑定管理，跳转至相应页面。",
+      "table_cells": null,
+      "bbox": [
+        56.692,
+        434.634,
+        276.562,
+        447.117
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-49F11659259BE488",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 18,
+      "section_id": "SEC-0AE62ACB41E9A721",
+      "section_path": [
+        "10 用户管理",
+        "10.3 设置管理员账号"
+      ],
+      "section_title": "10.3 设置管理员账号",
+      "block_type": "paragraph",
+      "text": "步骤 2 设置管理员账号绑定信息。",
+      "table_cells": null,
+      "bbox": [
+        56.692,
+        451.134,
+        195.562,
+        463.617
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-24658F59446BB9B7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 19,
+      "section_id": "SEC-0AE62ACB41E9A721",
+      "section_path": [
+        "10 用户管理",
+        "10.3 设置管理员账号"
+      ],
+      "section_title": "10.3 设置管理员账号",
+      "block_type": "paragraph",
+      "text": "根据界面语言，支持绑定如下信息：",
+      "table_cells": null,
+      "bbox": [
+        87.562,
+        469.056,
+        231.562,
+        480.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9B7BCF4BB6000BD2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 20,
+      "section_id": "SEC-0AE62ACB41E9A721",
+      "section_path": [
+        "10 用户管理",
+        "10.3 设置管理员账号"
+      ],
+      "section_title": "10.3 设置管理员账号",
+      "block_type": "list",
+      "text": "•\n邮箱地址",
+      "table_cells": null,
+      "bbox": [
+        87.562,
+        484.056,
+        137.737,
+        495.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ED6DE519BEE1AA8B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 21,
+      "section_id": "SEC-0AE62ACB41E9A721",
+      "section_path": [
+        "10 用户管理",
+        "10.3 设置管理员账号"
+      ],
+      "section_title": "10.3 设置管理员账号",
+      "block_type": "list",
+      "text": "•\n手机号码",
+      "table_cells": null,
+      "bbox": [
+        87.562,
+        499.056,
+        137.737,
+        510.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E725958CB0033BDB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 22,
+      "section_id": "SEC-0AE62ACB41E9A721",
+      "section_path": [
+        "10 用户管理",
+        "10.3 设置管理员账号"
+      ],
+      "section_title": "10.3 设置管理员账号",
+      "block_type": "paragraph",
+      "text": "如同时绑定邮箱和手机号，优先通过手机号进行验证。",
+      "table_cells": null,
+      "bbox": [
+        114.562,
+        519.206,
+        330.562,
+        530.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A61ACBC49A72AE58",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 23,
+      "section_id": "SEC-0AE62ACB41E9A721",
+      "section_path": [
+        "10 用户管理",
+        "10.3 设置管理员账号"
+      ],
+      "section_title": "10.3 设置管理员账号",
+      "block_type": "paragraph",
+      "text": "步骤 3 点击保存。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        547.434,
+        132.563,
+        559.917
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-10360FE4348FE823",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 24,
+      "section_id": "SEC-0AE62ACB41E9A721",
+      "section_path": [
+        "10 用户管理",
+        "10.3 设置管理员账号"
+      ],
+      "section_title": "10.3 设置管理员账号",
+      "block_type": "paragraph",
+      "text": "步骤 4 如需删除账号绑定信息，点击解除绑定。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        563.934,
+        249.563,
+        576.417
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B1578F5323C402F9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 104,
+      "printed_page_label": "94",
+      "block_order": 25,
+      "section_id": "SEC-0AE62ACB41E9A721",
+      "section_path": [
+        "10 用户管理",
+        "10.3 设置管理员账号"
+      ],
+      "section_title": "10.3 设置管理员账号",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        580.506,
+        112.187,
+        591.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

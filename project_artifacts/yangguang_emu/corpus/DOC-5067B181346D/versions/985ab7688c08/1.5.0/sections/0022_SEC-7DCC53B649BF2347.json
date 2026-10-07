@@ -1,0 +1,502 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-7DCC53B649BF2347",
+  "section_path": [
+    "3 机械安装",
+    "3.5 安装方法"
+  ],
+  "section_title": "3.5 安装方法",
+  "start_pdf_page": 21,
+  "end_pdf_page": 21,
+  "blocks": [
+    {
+      "block_id": "BLK-63973FFED2F59F76",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "15",
+      "block_order": 0,
+      "section_id": "SEC-7DCC53B649BF2347",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法"
+      ],
+      "section_title": "3.5 安装方法",
+      "block_type": "paragraph",
+      "text": "用户手册\n3 机械安装",
+      "table_cells": null,
+      "bbox": [
+        74.614,
+        48.088,
+        463.968,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-30AC58AE2C95B144",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "15",
+      "block_order": 1,
+      "section_id": "SEC-7DCC53B649BF2347",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法"
+      ],
+      "section_title": "3.5 安装方法",
+      "block_type": "list",
+      "text": "•\n严禁将设备安装在易燃易爆或烟雾的环境中，其中包括但不局限具有可燃气体环境、粉尘\n烟雾环境、靠近压力容器和可燃物等。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        72.906,
+        467.541,
+        97.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2B1485A9CE1DAB97",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "15",
+      "block_order": 2,
+      "section_id": "SEC-7DCC53B649BF2347",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法"
+      ],
+      "section_title": "3.5 安装方法",
+      "block_type": "list",
+      "text": "•\n严禁将设备安装在含有易腐蚀物区域内，如腐蚀气体、有机溶剂等。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        101.406,
+        386.541,
+        112.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-85D5A4D9E5C33B5F",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "15",
+      "block_order": 3,
+      "section_id": "SEC-7DCC53B649BF2347",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法"
+      ],
+      "section_title": "3.5 安装方法",
+      "block_type": "list",
+      "text": "•\n严禁将设备安装在被化工污染的环境中，如卤元素、硫化物等。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        116.406,
+        368.541,
+        127.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-514D18BAD6684D52",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "15",
+      "block_order": 4,
+      "section_id": "SEC-7DCC53B649BF2347",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法"
+      ],
+      "section_title": "3.5 安装方法",
+      "block_type": "list",
+      "text": "•\n如果设备安装在盐害地区前，请咨询阳光电源。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        131.406,
+        305.541,
+        142.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-B5FB447B1919EE6F",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "15",
+      "block_order": 5,
+      "section_id": "SEC-7DCC53B649BF2347",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法"
+      ],
+      "section_title": "3.5 安装方法",
+      "block_type": "paragraph",
+      "text": "盐害地区主要指距离海岸500m 以内的沿海地区。盐雾的沉降量与邻近海域海水\n的特性、海风、降水、空气湿度、地形及森林覆盖情况有关，且有较大差异。",
+      "table_cells": null,
+      "bbox": [
+        143.539,
+        150.056,
+        458.548,
+        171.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FD5D046C9FE6E166",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "15",
+      "block_order": 6,
+      "section_id": "SEC-7DCC53B649BF2347",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法"
+      ],
+      "section_title": "3.5 安装方法",
+      "block_type": "list",
+      "text": "•\n严禁将设备安装在可能产生共振的载体上，确保设备安装后无振动。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        189.006,
+        386.541,
+        199.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-64CA59CC853597B4",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "15",
+      "block_order": 7,
+      "section_id": "SEC-7DCC53B649BF2347",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法"
+      ],
+      "section_title": "3.5 安装方法",
+      "block_type": "list",
+      "text": "•\n建议选择带遮挡的地方安装设备，或搭建遮阳棚。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        204.006,
+        314.541,
+        214.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5B3E5B61072279C0",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "15",
+      "block_order": 8,
+      "section_id": "SEC-7DCC53B649BF2347",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法"
+      ],
+      "section_title": "3.5 安装方法",
+      "block_type": "paragraph",
+      "text": "如果设备周边环温>50℃且辐照强度高于1000W/m²，则设备必须安装在有遮挡\n的地方或配装遮阳棚，以避免阳光直射造成的设备内部过温。如果设备安装在室\n内时，要求设备周边环温不高于60℃，超过会导致设备内部过温。 (设备周边环\n温：以设备周围约1m 处温度平均值)",
+      "table_cells": null,
+      "bbox": [
+        143.539,
+        222.656,
+        458.539,
+        266.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-45BAEAE3523E9B62",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "15",
+      "block_order": 9,
+      "section_id": "SEC-7DCC53B649BF2347",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法"
+      ],
+      "section_title": "3.5 安装方法",
+      "block_type": "list",
+      "text": "•\n设备安装需远离热源，避免选择安装在变压器、热风出口路径等热源附近，并保持不低于\n1m 以上距离。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        283.206,
+        467.541,
+        307.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F1EE31AA0BF49940",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "15",
+      "block_order": 10,
+      "section_id": "SEC-7DCC53B649BF2347",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法"
+      ],
+      "section_title": "3.5 安装方法",
+      "block_type": "list",
+      "text": "•\n设备正前方1m 以内不得有障碍物影响设备开门维护，如支架、栏杆等。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        311.706,
+        403.542,
+        322.659
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C482703C61DF2063",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "15",
+      "block_order": 11,
+      "section_id": "SEC-7DCC53B649BF2347",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法"
+      ],
+      "section_title": "3.5 安装方法",
+      "block_type": "list",
+      "text": "•\n请选择设备安装的环境地面坚实，无橡皮土、软弱土或易下沉等不良地质；严禁将设备安\n装在水能淹没的位置，若设备水淹不在质保范围内。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        326.706,
+        467.541,
+        351.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-47D0E411CE2CB1FC",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "15",
+      "block_order": 12,
+      "section_id": "SEC-7DCC53B649BF2347",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法"
+      ],
+      "section_title": "3.5 安装方法",
+      "block_type": "list",
+      "text": "•\n通讯箱已安装，但长期未投入运行期间的安装要求：\n当通讯箱处于海光场景下，若通讯箱挂装后持续超过3 个月未运行，建议在重新投入运\n行前，联系专业人员进行一次全面的检查与测试，以确保设备处于最佳工作状态。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        355.206,
+        459.297,
+        393.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AC729DB8BE5ABFA9",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "15",
+      "block_order": 13,
+      "section_id": "SEC-7DCC53B649BF2347",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法"
+      ],
+      "section_title": "3.5 安装方法",
+      "block_type": "list",
+      "text": "•\n如有遮阳棚需求，请联系阳光电源。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        397.206,
+        260.541,
+        408.159
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D252EB99133DF626",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "15",
+      "block_order": 14,
+      "section_id": "SEC-7DCC53B649BF2347",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法"
+      ],
+      "section_title": "3.5 安装方法",
+      "block_type": "heading",
+      "text": "3.5 安装方法",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        537.696,
+        143.046,
+        552.3
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5AAF37F4168B8F23",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "15",
+      "block_order": 15,
+      "section_id": "SEC-7DCC53B649BF2347",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法"
+      ],
+      "section_title": "3.5 安装方法",
+      "block_type": "paragraph",
+      "text": "警告",
+      "table_cells": null,
+      "bbox": [
+        124.863,
+        567.362,
+        146.863,
+        580.749
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ADF477377016B7BA",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "15",
+      "block_order": 16,
+      "section_id": "SEC-7DCC53B649BF2347",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法"
+      ],
+      "section_title": "3.5 安装方法",
+      "block_type": "paragraph",
+      "text": "在机械安装过程中，请始终牢记设备重量！\n如果处理不当，机器倾斜或滑落可能导致人员受伤！",
+      "table_cells": null,
+      "bbox": [
+        106.866,
+        584.544,
+        313.866,
+        606.297
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-55762C670EEB61D3",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "15",
+      "block_order": 17,
+      "section_id": "SEC-7DCC53B649BF2347",
+      "section_path": [
+        "3 机械安装",
+        "3.5 安装方法"
+      ],
+      "section_title": "3.5 安装方法",
+      "block_type": "paragraph",
+      "text": "设备背面挂耳的安装尺寸，如下图所示（单位：mm）。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        623.994,
+        324.36,
+        634.947
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

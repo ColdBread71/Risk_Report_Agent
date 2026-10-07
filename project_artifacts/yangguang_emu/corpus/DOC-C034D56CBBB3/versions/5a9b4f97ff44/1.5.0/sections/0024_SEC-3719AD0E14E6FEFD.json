@@ -1,0 +1,205 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-3719AD0E14E6FEFD",
+  "section_path": [
+    "5 电气连接",
+    "5.6 与电表连接"
+  ],
+  "section_title": "5.6 与电表连接",
+  "start_pdf_page": 34,
+  "end_pdf_page": 34,
+  "blocks": [
+    {
+      "block_id": "BLK-249133505F02C256",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "24",
+      "block_order": 0,
+      "section_id": "SEC-3719AD0E14E6FEFD",
+      "section_path": [
+        "5 电气连接",
+        "5.6 与电表连接"
+      ],
+      "section_title": "5.6 与电表连接",
+      "block_type": "paragraph",
+      "text": "用户手册\n5 电气连接",
+      "table_cells": null,
+      "bbox": [
+        60.443,
+        48.088,
+        449.79,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2B15C1ECF7EB5E83",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "24",
+      "block_order": 1,
+      "section_id": "SEC-3719AD0E14E6FEFD",
+      "section_path": [
+        "5 电气连接",
+        "5.6 与电表连接"
+      ],
+      "section_title": "5.6 与电表连接",
+      "block_type": "paragraph",
+      "text": "注意",
+      "table_cells": null,
+      "bbox": [
+        97.941,
+        74.674,
+        119.941,
+        88.061
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-865622E4BB8C898D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "24",
+      "block_order": 2,
+      "section_id": "SEC-3719AD0E14E6FEFD",
+      "section_path": [
+        "5 电气连接",
+        "5.6 与电表连接"
+      ],
+      "section_title": "5.6 与电表连接",
+      "block_type": "paragraph",
+      "text": "采用MPLC 方式进行通讯时，需要注意：",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        91.856,
+        257.197,
+        102.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9F5215D683A6DC86",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "24",
+      "block_order": 3,
+      "section_id": "SEC-3719AD0E14E6FEFD",
+      "section_path": [
+        "5 电气连接",
+        "5.6 与电表连接"
+      ],
+      "section_title": "5.6 与电表连接",
+      "block_type": "list",
+      "text": "•\n逆变器与后级变压器之间的电气连接均已完成，且正确无误。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        105.506,
+        349.87,
+        116.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1C1287C42E7085EE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "24",
+      "block_order": 4,
+      "section_id": "SEC-3719AD0E14E6FEFD",
+      "section_path": [
+        "5 电气连接",
+        "5.6 与电表连接"
+      ],
+      "section_title": "5.6 与电表连接",
+      "block_type": "list",
+      "text": "•\n数据采集器、逆变器、变压器交流线缆的输入、输出断路器均处于闭合状态。",
+      "table_cells": null,
+      "bbox": [
+        92.695,
+        120.506,
+        412.87,
+        131.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AABFE885D84DBFA5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "24",
+      "block_order": 12,
+      "section_id": "SEC-3719AD0E14E6FEFD",
+      "section_path": [
+        "5 电气连接",
+        "5.6 与电表连接"
+      ],
+      "section_title": "5.6 与电表连接",
+      "block_type": "heading",
+      "text": "5.6 与电表连接",
+      "table_cells": null,
+      "bbox": [
+        56.687,
+        624.425,
+        140.879,
+        639.029
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-40D5B13D62B95EC7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "24",
+      "block_order": 13,
+      "section_id": "SEC-3719AD0E14E6FEFD",
+      "section_path": [
+        "5 电气连接",
+        "5.6 与电表连接"
+      ],
+      "section_title": "5.6 与电表连接",
+      "block_type": "paragraph",
+      "text": "数据采集器与电表之间可以通过RS485 端口连接，也可以通过以太网端口连接，具体对应关\n系，可参考下表。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        650.723,
+        453.215,
+        672.476
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

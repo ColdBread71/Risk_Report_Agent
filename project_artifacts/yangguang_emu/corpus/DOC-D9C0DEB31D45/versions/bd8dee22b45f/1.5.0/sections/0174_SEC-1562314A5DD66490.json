@@ -1,0 +1,206 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-1562314A5DD66490",
+  "section_path": [
+    "11 故障排查"
+  ],
+  "section_title": "11 故障排查",
+  "start_pdf_page": 103,
+  "end_pdf_page": 103,
+  "blocks": [
+    {
+      "block_id": "BLK-D2C02711065A9A57",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 103,
+      "printed_page_label": "93",
+      "block_order": 0,
+      "section_id": "SEC-1562314A5DD66490",
+      "section_path": [
+        "11 故障排查"
+      ],
+      "section_title": "11 故障排查",
+      "block_type": "heading",
+      "text": "11\n故障排查",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        98.112,
+        177.3,
+        120.018
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D434EE9D4CC4926F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 103,
+      "printed_page_label": "93",
+      "block_order": 1,
+      "section_id": "SEC-1562314A5DD66490",
+      "section_path": [
+        "11 故障排查"
+      ],
+      "section_title": "11 故障排查",
+      "block_type": "table",
+      "text": "安\t全注意事项\t\t\n\t危险\t\t\n\t故障处理前，确保接地线\t缆已经良好接地。否则，可能会对\t操作人员造成致命电击危险！\n常\n数\n或\n•\n•\n•\n•\t见的故障现象及排\n据采集器常见故障以及处\n依然存在疑问，请与阳光\n数据采集器序列号、生\n与数据采集器连接的设\n故障信息及简单描述\n故障现场的照片（若现\t查方法\n理方法如下表所示，如果在本手册\n电源联系。为了更高效的解决问题\n产日期以及软件版本信息\n备的品牌、型号、配置等信息\n场条件允许）\t的帮助下，仍然不能解决问题\n，需要同时提供以下信息：\n\t故障现象\t可能原因\t解决方法\n\t无法登录数据采集\n器Web 界面\tPC 与数据采集器的网络连接\n有误。\t检查PC 与数据采集器的网口\n连接是否正常。\n\t\tPC 网络信号异常。\t观察PC 网络信号图标是否正\n常。\n\t\tPC 的IP 地址设置有误。\t手动配置PC 网口的IP 地\n址，使其与数据采集器IP 地\n址处于同一网段。\n\t\tPC 不能正常接收数据。\t手动开启Ping 功能，使用快\n捷键Win+R 调出运行命令\n框，输入ping 12.12.12.12\n（数据采集器的IP 地址），\n查看是否可以接收到数据包。\n\t\t网卡、杀毒软件等冲突。\t若无法接收到数据包，请禁用\n其它网卡、杀毒软件或防火\n墙，并进行重试。",
+      "table_cells": [
+        [
+          "安",
+          "全注意事项",
+          null,
+          null
+        ],
+        [
+          null,
+          "危险",
+          null,
+          null
+        ],
+        [
+          null,
+          "故障处理前，确保接地线",
+          "缆已经良好接地。否则，可能会对",
+          "操作人员造成致命电击危险！"
+        ],
+        [
+          "常\n数\n或\n•\n•\n•\n•",
+          "见的故障现象及排\n据采集器常见故障以及处\n依然存在疑问，请与阳光\n数据采集器序列号、生\n与数据采集器连接的设\n故障信息及简单描述\n故障现场的照片（若现",
+          "查方法\n理方法如下表所示，如果在本手册\n电源联系。为了更高效的解决问题\n产日期以及软件版本信息\n备的品牌、型号、配置等信息\n场条件允许）",
+          "的帮助下，仍然不能解决问题\n，需要同时提供以下信息："
+        ],
+        [
+          null,
+          "故障现象",
+          "可能原因",
+          "解决方法"
+        ],
+        [
+          null,
+          "无法登录数据采集\n器Web 界面",
+          "PC 与数据采集器的网络连接\n有误。",
+          "检查PC 与数据采集器的网口\n连接是否正常。"
+        ],
+        [
+          null,
+          null,
+          "PC 网络信号异常。",
+          "观察PC 网络信号图标是否正\n常。"
+        ],
+        [
+          null,
+          null,
+          "PC 的IP 地址设置有误。",
+          "手动配置PC 网口的IP 地\n址，使其与数据采集器IP 地\n址处于同一网段。"
+        ],
+        [
+          null,
+          null,
+          "PC 不能正常接收数据。",
+          "手动开启Ping 功能，使用快\n捷键Win+R 调出运行命令\n框，输入ping 12.12.12.12\n（数据采集器的IP 地址），\n查看是否可以接收到数据包。"
+        ],
+        [
+          null,
+          null,
+          "网卡、杀毒软件等冲突。",
+          "若无法接收到数据包，请禁用\n其它网卡、杀毒软件或防火\n墙，并进行重试。"
+        ]
+      ],
+      "bbox": [
+        102.369,
+        125.85,
+        462.369,
+        633.75
+      ],
+      "extraction_method": "table_extraction",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5C4857E63FB8F7BD",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 103,
+      "printed_page_label": "93",
+      "block_order": 2,
+      "section_id": "SEC-1562314A5DD66490",
+      "section_path": [
+        "11 故障排查"
+      ],
+      "section_title": "11 故障排查",
+      "block_type": "paragraph",
+      "text": "数据采集器无法与\n设备通讯",
+      "table_cells": null,
+      "bbox": [
+        111.034,
+        639.656,
+        183.034,
+        664.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4D8B1BA65162B8F0",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 103,
+      "printed_page_label": "93",
+      "block_order": 3,
+      "section_id": "SEC-1562314A5DD66490",
+      "section_path": [
+        "11 故障排查"
+      ],
+      "section_title": "11 故障排查",
+      "block_type": "paragraph",
+      "text": "设备与数据采集器之间的\nRS485 通讯线缆异常。",
+      "table_cells": null,
+      "bbox": [
+        206.025,
+        639.656,
+        305.025,
+        664.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9091B98BC861A0B1",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 103,
+      "printed_page_label": "93",
+      "block_order": 4,
+      "section_id": "SEC-1562314A5DD66490",
+      "section_path": [
+        "11 故障排查"
+      ],
+      "section_title": "11 故障排查",
+      "block_type": "paragraph",
+      "text": "检查设备与数据采集器之间的\nRS485 通讯线缆是否存在短",
+      "table_cells": null,
+      "bbox": [
+        341.205,
+        639.656,
+        458.205,
+        664.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

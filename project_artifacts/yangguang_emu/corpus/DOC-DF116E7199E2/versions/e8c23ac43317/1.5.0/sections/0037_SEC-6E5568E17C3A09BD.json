@@ -1,0 +1,151 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-6E5568E17C3A09BD",
+  "section_path": [
+    "12 附录：MOXA EDS-408A 安全加固操作指导",
+    "12.1 密码加固"
+  ],
+  "section_title": "12.1 密码加固",
+  "start_pdf_page": 31,
+  "end_pdf_page": 31,
+  "blocks": [
+    {
+      "block_id": "BLK-7AE78BEE57C8BCCB",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 31,
+      "printed_page_label": "27",
+      "block_order": 1,
+      "section_id": "SEC-6E5568E17C3A09BD",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.1 密码加固"
+      ],
+      "section_title": "12.1 密码加固",
+      "block_type": "heading",
+      "text": "12.1 密码加固",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        144.258,
+        149.718,
+        158.862
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0CD09AF226ECDCB0",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 31,
+      "printed_page_label": "27",
+      "block_order": 2,
+      "section_id": "SEC-6E5568E17C3A09BD",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.1 密码加固"
+      ],
+      "section_title": "12.1 密码加固",
+      "block_type": "paragraph",
+      "text": "修改密码规则",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        170.556,
+        156.369,
+        181.509
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DEA8BD95DC3A2816",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 31,
+      "printed_page_label": "27",
+      "block_order": 3,
+      "section_id": "SEC-6E5568E17C3A09BD",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.1 密码加固"
+      ],
+      "section_title": "12.1 密码加固",
+      "block_type": "paragraph",
+      "text": "登录交换机WEB 管理界面后进入Password Login Policy 配置页，设置密码长度和规则及登\n录失败锁定策略，点击Activate 使配置生效。",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        187.356,
+        465.663,
+        209.109
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7159355D9F761CA4",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 31,
+      "printed_page_label": "27",
+      "block_order": 4,
+      "section_id": "SEC-6E5568E17C3A09BD",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.1 密码加固"
+      ],
+      "section_title": "12.1 密码加固",
+      "block_type": "figure_caption",
+      "text": "图 12-1 密码规则修改",
+      "table_cells": null,
+      "bbox": [
+        242.037,
+        349.874,
+        328.05,
+        360.827
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7E3AF4CC63DD5FC2",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 31,
+      "printed_page_label": "27",
+      "block_order": 5,
+      "section_id": "SEC-6E5568E17C3A09BD",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.1 密码加固"
+      ],
+      "section_title": "12.1 密码加固",
+      "block_type": "figure_caption",
+      "text": "图 12-2 登录密码重置",
+      "table_cells": null,
+      "bbox": [
+        242.037,
+        577.518,
+        328.05,
+        588.471
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

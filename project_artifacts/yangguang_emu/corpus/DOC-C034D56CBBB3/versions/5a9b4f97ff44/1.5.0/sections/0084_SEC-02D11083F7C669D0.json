@@ -1,0 +1,627 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-02D11083F7C669D0",
+  "section_path": [
+    "7 Web界面",
+    "7.6 设备维护",
+    "7.6.5 设置逆变器蓝牙配对码功能",
+    "7.6.5.2 禁用蓝牙配对功能"
+  ],
+  "section_title": "7.6.5.2 禁用蓝牙配对功能",
+  "start_pdf_page": 64,
+  "end_pdf_page": 64,
+  "blocks": [
+    {
+      "block_id": "BLK-AD3E6C84F463C1A2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 0,
+      "section_id": "SEC-02D11083F7C669D0",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能",
+        "7.6.5.2 禁用蓝牙配对功能"
+      ],
+      "section_title": "7.6.5.2 禁用蓝牙配对功能",
+      "block_type": "paragraph",
+      "text": "用户手册\n7 Web 界面",
+      "table_cells": null,
+      "bbox": [
+        60.441,
+        48.088,
+        449.795,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7FBACC1E4800A29E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 1,
+      "section_id": "SEC-02D11083F7C669D0",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能",
+        "7.6.5.2 禁用蓝牙配对功能"
+      ],
+      "section_title": "7.6.5.2 禁用蓝牙配对功能",
+      "block_type": "paragraph",
+      "text": "Web 端将以列表的形式展示已接入逆变器的信息，包括该逆变器机型是否支持蓝牙配对功\n能。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        129.734,
+        441.155,
+        154.187
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3F6271AFBB496A36",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 2,
+      "section_id": "SEC-02D11083F7C669D0",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能",
+        "7.6.5.2 禁用蓝牙配对功能"
+      ],
+      "section_title": "7.6.5.2 禁用蓝牙配对功能",
+      "block_type": "paragraph",
+      "text": "步骤 2 在设备列表中，勾选需要进行蓝牙连接的逆变器。单击页面右上角的蓝牙禁用功能关闭。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        158.312,
+        438.563,
+        170.795
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BE287E6A7C5640E1",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 3,
+      "section_id": "SEC-02D11083F7C669D0",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能",
+        "7.6.5.2 禁用蓝牙配对功能"
+      ],
+      "section_title": "7.6.5.2 禁用蓝牙配对功能",
+      "block_type": "paragraph",
+      "text": "步骤 3 在页面右上角单击设为配对模式。在弹出的对话框中，确认待设置的逆变器和蓝牙连接模",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        174.812,
+        438.563,
+        187.295
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0748DEB16A4AC2A3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 4,
+      "section_id": "SEC-02D11083F7C669D0",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能",
+        "7.6.5.2 禁用蓝牙配对功能"
+      ],
+      "section_title": "7.6.5.2 禁用蓝牙配对功能",
+      "block_type": "paragraph",
+      "text": "式，单击确定。Web 端将在蓝牙配对页显示逆变器的配对码。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        189.734,
+        333.155,
+        200.687
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2F643B9099CF0D99",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 5,
+      "section_id": "SEC-02D11083F7C669D0",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能",
+        "7.6.5.2 禁用蓝牙配对功能"
+      ],
+      "section_title": "7.6.5.2 禁用蓝牙配对功能",
+      "block_type": "paragraph",
+      "text": "步骤 4 在手机App 端上参考界面提示完成蓝牙配对。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        204.812,
+        270.074,
+        217.295
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-78E1712E65A139A9",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 6,
+      "section_id": "SEC-02D11083F7C669D0",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能",
+        "7.6.5.2 禁用蓝牙配对功能"
+      ],
+      "section_title": "7.6.5.2 禁用蓝牙配对功能",
+      "block_type": "paragraph",
+      "text": "步骤 5 （可选）手动更新配对码。在设备列表中，勾选需要更新配对码逆变器，在页面右上角单击",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        221.312,
+        447.563,
+        233.795
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4669253CFC120E5D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 7,
+      "section_id": "SEC-02D11083F7C669D0",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能",
+        "7.6.5.2 禁用蓝牙配对功能"
+      ],
+      "section_title": "7.6.5.2 禁用蓝牙配对功能",
+      "block_type": "paragraph",
+      "text": "配对码更新。在弹出的对话框中，确认待更新配对码的逆变器，单击确定。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        236.234,
+        384.563,
+        247.187
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-817E67493D1EE18B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 8,
+      "section_id": "SEC-02D11083F7C669D0",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能",
+        "7.6.5.2 禁用蓝牙配对功能"
+      ],
+      "section_title": "7.6.5.2 禁用蓝牙配对功能",
+      "block_type": "paragraph",
+      "text": "设为配对模式、设为直连模式和配对码更新功能仅在逆变器支持配对码且蓝牙禁用功\n能关闭时生效。",
+      "table_cells": null,
+      "bbox": [
+        114.562,
+        257.884,
+        447.562,
+        279.637
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-47FC34778689A942",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 9,
+      "section_id": "SEC-02D11083F7C669D0",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能",
+        "7.6.5.2 禁用蓝牙配对功能"
+      ],
+      "section_title": "7.6.5.2 禁用蓝牙配对功能",
+      "block_type": "paragraph",
+      "text": "步骤 6 （可选）导出逆变器蓝牙配对信息。在页面右上角单击导出。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        296.912,
+        330.563,
+        309.395
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-866F9B9F79F445D6",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 10,
+      "section_id": "SEC-02D11083F7C669D0",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能",
+        "7.6.5.2 禁用蓝牙配对功能"
+      ],
+      "section_title": "7.6.5.2 禁用蓝牙配对功能",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        313.484,
+        112.187,
+        324.437
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C66D68655799EAD3",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 11,
+      "section_id": "SEC-02D11083F7C669D0",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能",
+        "7.6.5.2 禁用蓝牙配对功能"
+      ],
+      "section_title": "7.6.5.2 禁用蓝牙配对功能",
+      "block_type": "heading",
+      "text": "7.6.5.2 禁用蓝牙配对功能",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        334.318,
+        172.027,
+        346.488
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-11E5A10A67E2EE5D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 12,
+      "section_id": "SEC-02D11083F7C669D0",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能",
+        "7.6.5.2 禁用蓝牙配对功能"
+      ],
+      "section_title": "7.6.5.2 禁用蓝牙配对功能",
+      "block_type": "paragraph",
+      "text": "步骤 1 导航栏中单击设备维护 > 蓝牙配对，跳转至相应页面。",
+      "table_cells": null,
+      "bbox": [
+        56.692,
+        352.212,
+        304.822,
+        364.695
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C28F8EE84E3E2DC0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 13,
+      "section_id": "SEC-02D11083F7C669D0",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能",
+        "7.6.5.2 禁用蓝牙配对功能"
+      ],
+      "section_title": "7.6.5.2 禁用蓝牙配对功能",
+      "block_type": "paragraph",
+      "text": "Web 端将以列表的形式展示已接入逆变器的信息，包括该逆变器机型是否支持蓝牙配对功\n能。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        423.963,
+        441.155,
+        448.416
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-16D4EAF9CDBA514C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 14,
+      "section_id": "SEC-02D11083F7C669D0",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能",
+        "7.6.5.2 禁用蓝牙配对功能"
+      ],
+      "section_title": "7.6.5.2 禁用蓝牙配对功能",
+      "block_type": "paragraph",
+      "text": "步骤 2 在设备列表中，勾选需要进行禁止蓝牙连接的逆变器。单击页面右上角的蓝牙禁用功能开",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        452.541,
+        438.563,
+        465.024
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-73C831FB85082FAD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 15,
+      "section_id": "SEC-02D11083F7C669D0",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能",
+        "7.6.5.2 禁用蓝牙配对功能"
+      ],
+      "section_title": "7.6.5.2 禁用蓝牙配对功能",
+      "block_type": "paragraph",
+      "text": "启。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        467.463,
+        105.563,
+        478.416
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4D69503F407DF5E8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 16,
+      "section_id": "SEC-02D11083F7C669D0",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能",
+        "7.6.5.2 禁用蓝牙配对功能"
+      ],
+      "section_title": "7.6.5.2 禁用蓝牙配对功能",
+      "block_type": "paragraph",
+      "text": "步骤 3 在弹出的对话框中，确认待设置的逆变器，单击确定。Web 端将在蓝牙配对页显示逆变器的",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        482.541,
+        450.155,
+        495.024
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F07A11DC5BD6A7DD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 17,
+      "section_id": "SEC-02D11083F7C669D0",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能",
+        "7.6.5.2 禁用蓝牙配对功能"
+      ],
+      "section_title": "7.6.5.2 禁用蓝牙配对功能",
+      "block_type": "paragraph",
+      "text": "连接模式和配对码显示为“--”。",
+      "table_cells": null,
+      "bbox": [
+        87.563,
+        497.463,
+        207.551,
+        508.416
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4C2170DA8269EE24",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 18,
+      "section_id": "SEC-02D11083F7C669D0",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能",
+        "7.6.5.2 禁用蓝牙配对功能"
+      ],
+      "section_title": "7.6.5.2 禁用蓝牙配对功能",
+      "block_type": "paragraph",
+      "text": "当逆变器不支持配对功能时，连接模式和配对码显示为“--”。",
+      "table_cells": null,
+      "bbox": [
+        114.562,
+        519.113,
+        351.55,
+        530.066
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C677F5610957AE7C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 19,
+      "section_id": "SEC-02D11083F7C669D0",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能",
+        "7.6.5.2 禁用蓝牙配对功能"
+      ],
+      "section_title": "7.6.5.2 禁用蓝牙配对功能",
+      "block_type": "paragraph",
+      "text": "步骤 4 （可选）导出逆变器蓝牙配对信息。在页面右上角单击导出。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        547.341,
+        330.563,
+        559.824
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8B716FCE14ADC9FF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 64,
+      "printed_page_label": "54",
+      "block_order": 20,
+      "section_id": "SEC-02D11083F7C669D0",
+      "section_path": [
+        "7 Web界面",
+        "7.6 设备维护",
+        "7.6.5 设置逆变器蓝牙配对码功能",
+        "7.6.5.2 禁用蓝牙配对功能"
+      ],
+      "section_title": "7.6.5.2 禁用蓝牙配对功能",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        563.913,
+        112.187,
+        574.866
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

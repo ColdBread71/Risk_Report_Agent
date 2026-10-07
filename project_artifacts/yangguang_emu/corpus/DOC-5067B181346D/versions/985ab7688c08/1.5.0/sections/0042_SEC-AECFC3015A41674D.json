@@ -1,0 +1,269 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-5067B181346D",
+  "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-AECFC3015A41674D",
+  "section_path": [
+    "4 电气连接",
+    "4.6 接线步骤",
+    "4.6.6 DI/DO端口接线"
+  ],
+  "section_title": "4.6.6 DI/DO端口接线",
+  "start_pdf_page": 41,
+  "end_pdf_page": 41,
+  "blocks": [
+    {
+      "block_id": "BLK-AB7D31474D31BE3F",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "35",
+      "block_order": 0,
+      "section_id": "SEC-AECFC3015A41674D",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.6 DI/DO端口接线"
+      ],
+      "section_title": "4.6.6 DI/DO端口接线",
+      "block_type": "paragraph",
+      "text": "用户手册\n4 电气连接",
+      "table_cells": null,
+      "bbox": [
+        74.619,
+        48.088,
+        463.966,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E533C901640FFB69",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "35",
+      "block_order": 1,
+      "section_id": "SEC-AECFC3015A41674D",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.6 DI/DO端口接线"
+      ],
+      "section_title": "4.6.6 DI/DO端口接线",
+      "block_type": "list",
+      "text": "-\n若两条电缆交叉布置，垂直间距需不低于0.5m。",
+      "table_cells": null,
+      "bbox": [
+        116.541,
+        218.936,
+        323.973,
+        229.889
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-8312F13D9295D448",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "35",
+      "block_order": 2,
+      "section_id": "SEC-AECFC3015A41674D",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.6 DI/DO端口接线"
+      ],
+      "section_title": "4.6.6 DI/DO端口接线",
+      "block_type": "figure_caption",
+      "text": "图 4-5 PLC 线缆交叉间距示意图",
+      "table_cells": null,
+      "bbox": [
+        235.332,
+        337.868,
+        363.096,
+        348.821
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DBA0C8CB006710EC",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "35",
+      "block_order": 3,
+      "section_id": "SEC-AECFC3015A41674D",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.6 DI/DO端口接线"
+      ],
+      "section_title": "4.6.6 DI/DO端口接线",
+      "block_type": "paragraph",
+      "text": "箱变至通讯箱线缆",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        356.018,
+        174.366,
+        366.971
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4D57742C134A2ED8",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "35",
+      "block_order": 4,
+      "section_id": "SEC-AECFC3015A41674D",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.6 DI/DO端口接线"
+      ],
+      "section_title": "4.6.6 DI/DO端口接线",
+      "block_type": "list",
+      "text": "•\n箱变和通讯箱之间的交流线缆需平行布置，不可在电缆线槽内缠绕。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        374.168,
+        386.541,
+        385.121
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E3BDEAE84C370629",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "35",
+      "block_order": 5,
+      "section_id": "SEC-AECFC3015A41674D",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.6 DI/DO端口接线"
+      ],
+      "section_title": "4.6.6 DI/DO端口接线",
+      "block_type": "list",
+      "text": "•\nPLC 线缆连接箱变母排的耦合点位置建议选择母排中间位置对应的断路器。例如母排共\n有8 个分支排，建议选择母排中间位置第4 个或第5 个分支排对应的耦合点；母排共有9\n个分支排，建议选择母排中间位置第5 个分支排对应的耦合点。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        389.168,
+        467.307,
+        427.121
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-18F40716EAEFD3FD",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "35",
+      "block_order": 6,
+      "section_id": "SEC-AECFC3015A41674D",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.6 DI/DO端口接线"
+      ],
+      "section_title": "4.6.6 DI/DO端口接线",
+      "block_type": "heading",
+      "text": "4.6.6 DI/DO 端口接线",
+      "table_cells": null,
+      "bbox": [
+        70.865,
+        438.352,
+        165.635,
+        450.522
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C93AECD82ECE7EB8",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "35",
+      "block_order": 7,
+      "section_id": "SEC-AECFC3015A41674D",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.6 DI/DO端口接线"
+      ],
+      "section_title": "4.6.6 DI/DO端口接线",
+      "block_type": "paragraph",
+      "text": "如果用户所购机型未配备有IO 模块，DO/DI 端口需要直接接至数据采集器，具体接线方法请\n扫描下面二维码参考“Logger5000 用户手册”。",
+      "table_cells": null,
+      "bbox": [
+        102.365,
+        457.668,
+        467.621,
+        482.121
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-276FF77975026540",
+      "document_id": "DOC-5067B181346D",
+      "source_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e",
+      "parser_version": "1.5.0",
+      "pdf_page": 41,
+      "printed_page_label": "35",
+      "block_order": 8,
+      "section_id": "SEC-AECFC3015A41674D",
+      "section_path": [
+        "4 电气连接",
+        "4.6 接线步骤",
+        "4.6.6 DI/DO端口接线"
+      ],
+      "section_title": "4.6.6 DI/DO端口接线",
+      "block_type": "paragraph",
+      "text": "如果用户所购机型配备有IO 模块，则DI/DO 端口需要接至IO 模块，具体接线方法请扫描下\n面二维码参考“IO 模块快速安装指导”。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        611.204,
+        465.867,
+        635.657
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

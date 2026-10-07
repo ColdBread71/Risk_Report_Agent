@@ -1,0 +1,101 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-05CFC8E967B788F7",
+  "section_path": [
+    "7 Web界面",
+    "7.5 设备监控",
+    "7.5.5 系统参数"
+  ],
+  "section_title": "7.5.5 系统参数",
+  "start_pdf_page": 52,
+  "end_pdf_page": 52,
+  "blocks": [
+    {
+      "block_id": "BLK-A1ABC43A1C1203D0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 16,
+      "section_id": "SEC-05CFC8E967B788F7",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.5 系统参数"
+      ],
+      "section_title": "7.5.5 系统参数",
+      "block_type": "heading",
+      "text": "7.5.5 系统参数",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        328.911,
+        123.684,
+        341.081
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BCAA86256DDE3853",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 17,
+      "section_id": "SEC-05CFC8E967B788F7",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.5 系统参数"
+      ],
+      "section_title": "7.5.5 系统参数",
+      "block_type": "list",
+      "text": "•\n单击设备监控 > 系统参数，进入界面，设置设备的系统时间。",
+      "table_cells": null,
+      "bbox": [
+        88.197,
+        348.227,
+        346.623,
+        359.18
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-06D25FE1CAA3A5AB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 18,
+      "section_id": "SEC-05CFC8E967B788F7",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.5 系统参数"
+      ],
+      "section_title": "7.5.5 系统参数",
+      "block_type": "paragraph",
+      "text": "系统参数设置包含两种设置方式：单台设置和批量设置。设置方法参考7.5.3 初始参数。",
+      "table_cells": null,
+      "bbox": [
+        102.363,
+        364.727,
+        451.131,
+        375.68
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

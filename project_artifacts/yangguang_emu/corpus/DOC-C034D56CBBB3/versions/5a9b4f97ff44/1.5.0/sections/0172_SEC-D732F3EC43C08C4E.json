@@ -1,0 +1,465 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-D732F3EC43C08C4E",
+  "section_path": [
+    "10 用户管理",
+    "10.6 重置账号密码",
+    "10.6.2 重置管理员账号密码"
+  ],
+  "section_title": "10.6.2 重置管理员账号密码",
+  "start_pdf_page": 106,
+  "end_pdf_page": 106,
+  "blocks": [
+    {
+      "block_id": "BLK-25087808FA423C91",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 0,
+      "section_id": "SEC-D732F3EC43C08C4E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.2 重置管理员账号密码"
+      ],
+      "section_title": "10.6.2 重置管理员账号密码",
+      "block_type": "paragraph",
+      "text": "用户手册\n10 用户管理",
+      "table_cells": null,
+      "bbox": [
+        60.443,
+        48.088,
+        449.791,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C0F993DC0BBA20B2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 1,
+      "section_id": "SEC-D732F3EC43C08C4E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.2 重置管理员账号密码"
+      ],
+      "section_title": "10.6.2 重置管理员账号密码",
+      "block_type": "paragraph",
+      "text": "步骤 1 导航栏中点击用户管理，跳转至相应页面。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        71.484,
+        258.563,
+        83.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-73DECAB51F23421D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 2,
+      "section_id": "SEC-D732F3EC43C08C4E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.2 重置管理员账号密码"
+      ],
+      "section_title": "10.6.2 重置管理员账号密码",
+      "block_type": "paragraph",
+      "text": "步骤 2 在用户账号对应的操作栏中，点击",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        93.373,
+        222.563,
+        105.856
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9D96560A0C1E901C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 3,
+      "section_id": "SEC-D732F3EC43C08C4E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.2 重置管理员账号密码"
+      ],
+      "section_title": "10.6.2 重置管理员账号密码",
+      "block_type": "paragraph",
+      "text": "，打开修改用户对话框。",
+      "table_cells": null,
+      "bbox": [
+        236.738,
+        94.795,
+        335.738,
+        105.748
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-902E3DA8B4953DC7",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 4,
+      "section_id": "SEC-D732F3EC43C08C4E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.2 重置管理员账号密码"
+      ],
+      "section_title": "10.6.2 重置管理员账号密码",
+      "block_type": "paragraph",
+      "text": "步骤 3 重置密码。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        109.873,
+        132.563,
+        122.356
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-62B3E21EBFC494BB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 5,
+      "section_id": "SEC-D732F3EC43C08C4E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.2 重置管理员账号密码"
+      ],
+      "section_title": "10.6.2 重置管理员账号密码",
+      "block_type": "paragraph",
+      "text": "步骤 4 点击确定。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        126.373,
+        132.563,
+        138.856
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C03D1541DBF72748",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 6,
+      "section_id": "SEC-D732F3EC43C08C4E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.2 重置管理员账号密码"
+      ],
+      "section_title": "10.6.2 重置管理员账号密码",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        142.945,
+        112.187,
+        153.898
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-38AD41B45B8C5704",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 7,
+      "section_id": "SEC-D732F3EC43C08C4E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.2 重置管理员账号密码"
+      ],
+      "section_title": "10.6.2 重置管理员账号密码",
+      "block_type": "heading",
+      "text": "10.6.2 重置管理员账号密码",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        163.779,
+        179.247,
+        175.949
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D035EFD7F9D64B88",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 8,
+      "section_id": "SEC-D732F3EC43C08C4E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.2 重置管理员账号密码"
+      ],
+      "section_title": "10.6.2 重置管理员账号密码",
+      "block_type": "paragraph",
+      "text": "步骤 1 打开Logger4000 的Web 端。",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        181.673,
+        207.948,
+        194.156
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-908BA3489C116219",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 9,
+      "section_id": "SEC-D732F3EC43C08C4E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.2 重置管理员账号密码"
+      ],
+      "section_title": "10.6.2 重置管理员账号密码",
+      "block_type": "paragraph",
+      "text": "步骤 2 输入管理员账号名称：administrator。",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        198.173,
+        238.584,
+        210.656
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-75B598CD0AB962AD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 10,
+      "section_id": "SEC-D732F3EC43C08C4E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.2 重置管理员账号密码"
+      ],
+      "section_title": "10.6.2 重置管理员账号密码",
+      "block_type": "paragraph",
+      "text": "步骤 3 点击忘记密码，打开修改密码对话框。",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        214.673,
+        240.564,
+        227.156
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-735301FECA87C588",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 11,
+      "section_id": "SEC-D732F3EC43C08C4E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.2 重置管理员账号密码"
+      ],
+      "section_title": "10.6.2 重置管理员账号密码",
+      "block_type": "paragraph",
+      "text": "步骤 4 若管理员账户忘记登录密码，可以通过以下操作，将校验码与设备SN 号发送至SUNGROW",
+      "table_cells": null,
+      "bbox": [
+        56.694,
+        231.173,
+        451.812,
+        243.656
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-10576BC1E3472312",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 12,
+      "section_id": "SEC-D732F3EC43C08C4E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.2 重置管理员账号密码"
+      ],
+      "section_title": "10.6.2 重置管理员账号密码",
+      "block_type": "paragraph",
+      "text": "运维，再输入SUNGROW 运维返回的密钥，即可重置密码。",
+      "table_cells": null,
+      "bbox": [
+        87.564,
+        246.095,
+        329.061,
+        257.048
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5E39FF6B9C2C43EF",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 13,
+      "section_id": "SEC-D732F3EC43C08C4E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.2 重置管理员账号密码"
+      ],
+      "section_title": "10.6.2 重置管理员账号密码",
+      "block_type": "paragraph",
+      "text": "步骤 5 输入新密码并确认。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        361.679,
+        168.563,
+        374.162
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-42E4AD4C1F581526",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 14,
+      "section_id": "SEC-D732F3EC43C08C4E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.2 重置管理员账号密码"
+      ],
+      "section_title": "10.6.2 重置管理员账号密码",
+      "block_type": "paragraph",
+      "text": "步骤 6 点击确定。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        378.179,
+        132.563,
+        390.662
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1C9AD64DDE759660",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 106,
+      "printed_page_label": "96",
+      "block_order": 15,
+      "section_id": "SEC-D732F3EC43C08C4E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.2 重置管理员账号密码"
+      ],
+      "section_title": "10.6.2 重置管理员账号密码",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        394.751,
+        112.187,
+        405.704
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

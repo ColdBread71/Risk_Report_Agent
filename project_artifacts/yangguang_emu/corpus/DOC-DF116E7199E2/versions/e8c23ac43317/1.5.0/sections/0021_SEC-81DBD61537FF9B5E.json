@@ -1,0 +1,340 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-81DBD61537FF9B5E",
+  "section_path": [
+    "10 安全配置指南",
+    "10.3 协议配置"
+  ],
+  "section_title": "10.3 协议配置",
+  "start_pdf_page": 21,
+  "end_pdf_page": 22,
+  "blocks": [
+    {
+      "block_id": "BLK-558856A6F4BDE056",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "17",
+      "block_order": 10,
+      "section_id": "SEC-81DBD61537FF9B5E",
+      "section_path": [
+        "10 安全配置指南",
+        "10.3 协议配置"
+      ],
+      "section_title": "10.3 协议配置",
+      "block_type": "heading",
+      "text": "10.3 协议配置",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        471.858,
+        149.718,
+        486.462
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F8028F7583C31F09",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "17",
+      "block_order": 11,
+      "section_id": "SEC-81DBD61537FF9B5E",
+      "section_path": [
+        "10 安全配置指南",
+        "10.3 协议配置"
+      ],
+      "section_title": "10.3 协议配置",
+      "block_type": "list",
+      "text": "•\nMODBUS/IEC104/GOOSE 协议默认关闭状态。",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        499.506,
+        307.317,
+        510.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-77BA8AC5F8E3D8AA",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "17",
+      "block_order": 12,
+      "section_id": "SEC-81DBD61537FF9B5E",
+      "section_path": [
+        "10 安全配置指南",
+        "10.3 协议配置"
+      ],
+      "section_title": "10.3 协议配置",
+      "block_type": "list",
+      "text": "•\n北向MODBUS/IEC104/GOOSE 协议支持手动开启，通过系统 > 转发配置，单击\nIEC104 或MODBUS 或GOOSE 页签，将协议对应的端口或者功能开启。",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        514.506,
+        436.827,
+        538.959
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F3F28C41B8BC7F6C",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "17",
+      "block_order": 13,
+      "section_id": "SEC-81DBD61537FF9B5E",
+      "section_path": [
+        "10 安全配置指南",
+        "10.3 协议配置"
+      ],
+      "section_title": "10.3 协议配置",
+      "block_type": "paragraph",
+      "text": "MODBUS、IEC104 和GOOSE 为非安全协议，使用前请确保网络环境安全。",
+      "table_cells": null,
+      "bbox": [
+        143.539,
+        546.656,
+        450.817,
+        557.609
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0B38BA310A4437DE",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "17",
+      "block_order": 14,
+      "section_id": "SEC-81DBD61537FF9B5E",
+      "section_path": [
+        "10 安全配置指南",
+        "10.3 协议配置"
+      ],
+      "section_title": "10.3 协议配置",
+      "block_type": "list",
+      "text": "•\n对于不在使用的协议转发服务，请及时关闭，以免不安全协议引起安全事件。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        574.806,
+        422.541,
+        585.759
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BC0D7FFFBF9753BA",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "17",
+      "block_order": 15,
+      "section_id": "SEC-81DBD61537FF9B5E",
+      "section_path": [
+        "10 安全配置指南",
+        "10.3 协议配置"
+      ],
+      "section_title": "10.3 协议配置",
+      "block_type": "paragraph",
+      "text": "MODBUS",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        596.405,
+        142.362,
+        606.449
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BB34559451A9B90B",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 21,
+      "printed_page_label": "17",
+      "block_order": 16,
+      "section_id": "SEC-81DBD61537FF9B5E",
+      "section_path": [
+        "10 安全配置指南",
+        "10.3 协议配置"
+      ],
+      "section_title": "10.3 协议配置",
+      "block_type": "paragraph",
+      "text": "登录Logger5000 Web 界面，导航栏依次选择系统 > 转发配置，单击MODBUS 页面，打开\n对应本地端口的开关按钮。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        617.806,
+        464.013,
+        642.259
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-4F1FDFE658903F58",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "18",
+      "block_order": 0,
+      "section_id": "SEC-81DBD61537FF9B5E",
+      "section_path": [
+        "10 安全配置指南",
+        "10.3 协议配置"
+      ],
+      "section_title": "10.3 协议配置",
+      "block_type": "paragraph",
+      "text": "用户网络安全操作手册\n10 安全配置指南",
+      "table_cells": null,
+      "bbox": [
+        60.441,
+        48.088,
+        449.795,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E3347A1F0CA7060D",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "18",
+      "block_order": 1,
+      "section_id": "SEC-81DBD61537FF9B5E",
+      "section_path": [
+        "10 安全配置指南",
+        "10.3 协议配置"
+      ],
+      "section_title": "10.3 协议配置",
+      "block_type": "paragraph",
+      "text": "IEC104",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        277.319,
+        118.208,
+        287.363
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-59A987DF9304AB8A",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "18",
+      "block_order": 2,
+      "section_id": "SEC-81DBD61537FF9B5E",
+      "section_path": [
+        "10 安全配置指南",
+        "10.3 协议配置"
+      ],
+      "section_title": "10.3 协议配置",
+      "block_type": "paragraph",
+      "text": "登录Logger5000 Web 界面，导航栏依次选择系统 > 转发配置，单击IEC104 页面，打开对\n应本地端口的开关按钮。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        298.72,
+        449.354,
+        323.173
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D66104A846F8E96D",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "18",
+      "block_order": 3,
+      "section_id": "SEC-81DBD61537FF9B5E",
+      "section_path": [
+        "10 安全配置指南",
+        "10.3 协议配置"
+      ],
+      "section_title": "10.3 协议配置",
+      "block_type": "paragraph",
+      "text": "GOOSE",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        521.725,
+        121.205,
+        531.769
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9E3131E0B39B0D10",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 22,
+      "printed_page_label": "18",
+      "block_order": 4,
+      "section_id": "SEC-81DBD61537FF9B5E",
+      "section_path": [
+        "10 安全配置指南",
+        "10.3 协议配置"
+      ],
+      "section_title": "10.3 协议配置",
+      "block_type": "paragraph",
+      "text": "登录Logger5000 Web 界面，导航栏依次选择系统 > 转发配置，单击GOOSE 页面，使能开\n关。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        543.126,
+        452.342,
+        567.579
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,409 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-2A2A4B9EA6FE3654",
+  "section_path": [
+    "9 电网调度",
+    "9.4 无功功率调节",
+    "9.4.2 本地无功调节"
+  ],
+  "section_title": "9.4.2 本地无功调节",
+  "start_pdf_page": 99,
+  "end_pdf_page": 99,
+  "blocks": [
+    {
+      "block_id": "BLK-BF06668DFC705754",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 14,
+      "section_id": "SEC-2A2A4B9EA6FE3654",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.2 本地无功调节"
+      ],
+      "section_title": "9.4.2 本地无功调节",
+      "block_type": "heading",
+      "text": "9.4.2 本地无功调节",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        328.79,
+        157.856,
+        340.96
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E6EACEB2960CFCCD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 15,
+      "section_id": "SEC-2A2A4B9EA6FE3654",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.2 本地无功调节"
+      ],
+      "section_title": "9.4.2 本地无功调节",
+      "block_type": "paragraph",
+      "text": "在本地配置无功功率调节的各项参数。",
+      "table_cells": null,
+      "bbox": [
+        102.368,
+        348.014,
+        246.868,
+        358.358
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F0F0B93B5CDB68F6",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 16,
+      "section_id": "SEC-2A2A4B9EA6FE3654",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.2 本地无功调节"
+      ],
+      "section_title": "9.4.2 本地无功调节",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.364,
+        368.856,
+        138.364,
+        379.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7079B67C3F55D04E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 17,
+      "section_id": "SEC-2A2A4B9EA6FE3654",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.2 本地无功调节"
+      ],
+      "section_title": "9.4.2 本地无功调节",
+      "block_type": "list",
+      "text": "•\n当前无功控制方式已选择本地调度。见9.2 选择功率控制方式。",
+      "table_cells": null,
+      "bbox": [
+        102.364,
+        388.856,
+        367.801,
+        399.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-D64E8133A44B4708",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 18,
+      "section_id": "SEC-2A2A4B9EA6FE3654",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.2 本地无功调节"
+      ],
+      "section_title": "9.4.2 本地无功调节",
+      "block_type": "list",
+      "text": "•\n如选择闭环控制，需接入用于功率调节的关口电表。",
+      "table_cells": null,
+      "bbox": [
+        102.364,
+        403.856,
+        323.539,
+        414.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ACE4D5CE161F6434",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 19,
+      "section_id": "SEC-2A2A4B9EA6FE3654",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.2 本地无功调节"
+      ],
+      "section_title": "9.4.2 本地无功调节",
+      "block_type": "paragraph",
+      "text": "步骤 1 在控制策略下拉列表中，选择开环控制或闭环控制。",
+      "table_cells": null,
+      "bbox": [
+        70.864,
+        421.934,
+        308.734,
+        434.417
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-DAD7CE212211477F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 20,
+      "section_id": "SEC-2A2A4B9EA6FE3654",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.2 本地无功调节"
+      ],
+      "section_title": "9.4.2 本地无功调节",
+      "block_type": "paragraph",
+      "text": "步骤 2 在指令类型下拉列表中，选择功率调节指令目标值的单位。",
+      "table_cells": null,
+      "bbox": [
+        70.864,
+        438.434,
+        335.734,
+        450.917
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-3E99748D13425D1A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 21,
+      "section_id": "SEC-2A2A4B9EA6FE3654",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.2 本地无功调节"
+      ],
+      "section_title": "9.4.2 本地无功调节",
+      "block_type": "list",
+      "text": "•\nPF：通过设置功率因数进行功率调节。适用于需要逆变器维持特定功率因数水平的场\n景。",
+      "table_cells": null,
+      "bbox": [
+        101.734,
+        456.356,
+        451.411,
+        480.809
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-476EA26145647AD4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 22,
+      "section_id": "SEC-2A2A4B9EA6FE3654",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.2 本地无功调节"
+      ],
+      "section_title": "9.4.2 本地无功调节",
+      "block_type": "list",
+      "text": "•\n%：通过设置逆变器输出功率的百分比进行功率调节。适合需要根据逆变器的最大额定功\n率来调节其输出的场景。",
+      "table_cells": null,
+      "bbox": [
+        101.734,
+        484.856,
+        465.91,
+        509.309
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-23710E2A7161290D",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 23,
+      "section_id": "SEC-2A2A4B9EA6FE3654",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.2 本地无功调节"
+      ],
+      "section_title": "9.4.2 本地无功调节",
+      "block_type": "paragraph",
+      "text": "步骤 3 选择开环控制时，参考本地有功功率调节，配置相应参数。见9.3.2.1 开环控制。",
+      "table_cells": null,
+      "bbox": [
+        70.864,
+        513.434,
+        422.008,
+        525.917
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-7115C25D565AE956",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 24,
+      "section_id": "SEC-2A2A4B9EA6FE3654",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.2 本地无功调节"
+      ],
+      "section_title": "9.4.2 本地无功调节",
+      "block_type": "paragraph",
+      "text": "步骤 4 选择闭环控制时，参考本地有功功率调节，配置相应参数。见9.3.2.2 闭环控制。",
+      "table_cells": null,
+      "bbox": [
+        70.864,
+        529.934,
+        422.008,
+        542.417
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-23D6419A21F1975C",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 25,
+      "section_id": "SEC-2A2A4B9EA6FE3654",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.2 本地无功调节"
+      ],
+      "section_title": "9.4.2 本地无功调节",
+      "block_type": "paragraph",
+      "text": "步骤 5 选择闭环控制时，在线路无功补偿文本框中，预估并设置线路中损耗的无功功率的数值。",
+      "table_cells": null,
+      "bbox": [
+        70.864,
+        546.434,
+        452.734,
+        558.917
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C731D99FBE2F1E26",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 26,
+      "section_id": "SEC-2A2A4B9EA6FE3654",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.2 本地无功调节"
+      ],
+      "section_title": "9.4.2 本地无功调节",
+      "block_type": "paragraph",
+      "text": "步骤 6 参考本地有功功率调节，增加调度时间及目标值。见9.3.2.3 设置调节时间及目标值。",
+      "table_cells": null,
+      "bbox": [
+        70.864,
+        562.934,
+        440.008,
+        575.417
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A4844E978FCD2099",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 99,
+      "printed_page_label": "89",
+      "block_order": 27,
+      "section_id": "SEC-2A2A4B9EA6FE3654",
+      "section_path": [
+        "9 电网调度",
+        "9.4 无功功率调节",
+        "9.4.2 本地无功调节"
+      ],
+      "section_title": "9.4.2 本地无功调节",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.364,
+        579.506,
+        126.358,
+        590.459
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

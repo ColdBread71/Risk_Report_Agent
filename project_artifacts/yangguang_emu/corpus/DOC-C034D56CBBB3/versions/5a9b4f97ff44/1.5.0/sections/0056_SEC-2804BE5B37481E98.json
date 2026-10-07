@@ -1,0 +1,129 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-2804BE5B37481E98",
+  "section_path": [
+    "7 Web界面",
+    "7.5 设备监控",
+    "7.5.7 保护参数（其他）"
+  ],
+  "section_title": "7.5.7 保护参数（其他）",
+  "start_pdf_page": 52,
+  "end_pdf_page": 52,
+  "blocks": [
+    {
+      "block_id": "BLK-9004CF5732FF4045",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 22,
+      "section_id": "SEC-2804BE5B37481E98",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.7 保护参数（其他）"
+      ],
+      "section_title": "7.5.7 保护参数（其他）",
+      "block_type": "heading",
+      "text": "7.5.7 保护参数（其他）",
+      "table_cells": null,
+      "bbox": [
+        56.697,
+        444.911,
+        163.687,
+        457.081
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-1201154D58B3A196",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 23,
+      "section_id": "SEC-2804BE5B37481E98",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.7 保护参数（其他）"
+      ],
+      "section_title": "7.5.7 保护参数（其他）",
+      "block_type": "list",
+      "text": "•\n单击设备监控 > 保护参数（其他），进入界面，设置设备保护参数。",
+      "table_cells": null,
+      "bbox": [
+        88.195,
+        464.227,
+        373.621,
+        475.18
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-08024D08AEF1E9B4",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 24,
+      "section_id": "SEC-2804BE5B37481E98",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.7 保护参数（其他）"
+      ],
+      "section_title": "7.5.7 保护参数（其他）",
+      "block_type": "paragraph",
+      "text": "保护参数设置包含两种设置方式：单台设置和批量设置。设置方法参考7.5.3 初始参数。",
+      "table_cells": null,
+      "bbox": [
+        102.37,
+        480.727,
+        451.138,
+        491.68
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2CD32460FA9D8D81",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 52,
+      "printed_page_label": "42",
+      "block_order": 25,
+      "section_id": "SEC-2804BE5B37481E98",
+      "section_path": [
+        "7 Web界面",
+        "7.5 设备监控",
+        "7.5.7 保护参数（其他）"
+      ],
+      "section_title": "7.5.7 保护参数（其他）",
+      "block_type": "paragraph",
+      "text": "保护参数（其他）界面的参数与逆变器型号相关，具体内容以实际页面为准。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        499.377,
+        435.366,
+        510.33
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

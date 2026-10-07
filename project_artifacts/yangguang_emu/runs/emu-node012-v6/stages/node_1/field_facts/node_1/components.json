@@ -1,0 +1,622 @@
+{
+  "schema_version": "field_fact_checkpoint.v3",
+  "node_id": "node_1",
+  "field_id": "components",
+  "index_id": "IDX-3B116ADDF3BB03CC",
+  "packet_sha256": "411314efdc0836609d5e24061688877c6d62a4202a27f178666dc10cecfe3fd2",
+  "retrieval_profile_version": "1.2",
+  "field_fact_prompt_version": "2.3",
+  "cache_inputs": {
+    "node_id": "node_1",
+    "field_id": "components",
+    "source_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "retrieval_packet_sha256": "411314efdc0836609d5e24061688877c6d62a4202a27f178666dc10cecfe3fd2",
+    "rag_index_id": "IDX-3B116ADDF3BB03CC",
+    "text_model": "qwen-plus",
+    "retrieval_profile_sha256": "c482d0cd6e470a0d97985c9c71a06e2f3a0d2377ec93891d8aa73fefcfaaf48b",
+    "field_prompt_sha256": "21ec1ddb761fb5e16a33918fd584c9a3392e06535c8604f09fc813b0ef29a6d2",
+    "field_schema_sha256": "0dcb4f25406389cda17acfbed3239842ca693c6f53db84e2b8c3a678c83c0bb3"
+  },
+  "cache_fingerprint": "5cad1e475cb4eff15828c8fd5accd1621cda838e4dcbf2fe49723dc8c8f4c578",
+  "result": {
+    "node_id": "node_1",
+    "field_id": "components",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "EMU300A 内含 Logger5000（含电压电流采样接口）",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "EMU300A 内含开关电源",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "EMU300A 内含防雷模块",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "EMU300A 内含微型断路器",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "EMU300A 内含 MPLC（可选1 或2）",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "EMU300A 内含 PID&ISO 控制盒（可选）",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "EMU300A 内含光纤交换机（可选）",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "EMU300A 内含光纤终端盒（可选）",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "EMU300A 内含 IO 模组（可选）",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "EMU300A 配置中包含光纤终端盒（选配），必须与光纤环网交换机配套使用",
+        "block_ids": [
+          "BLK-D8AA6F0C8103713A"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "EMU300A 配置中包含光纤环网交换机（选配），必须与光纤终端盒配套使用",
+        "block_ids": [
+          "BLK-D8AA6F0C8103713A"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "EMU300A 配置中包含 PID 模块，支持PID 防护和PID 修复功能，适用于PV-正偏置组件；支持交流ISO 检测功能",
+        "block_ids": [
+          "BLK-D8AA6F0C8103713A"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-013",
+        "statement": "EMU300A 配置中包含 PLC 模块",
+        "block_ids": [
+          "BLK-D8AA6F0C8103713A"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-014",
+        "statement": "EMU300A 配置中包含防雷器",
+        "block_ids": [
+          "BLK-D8AA6F0C8103713A"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-015",
+        "statement": "EMU300A 配置中包含开关电源",
+        "block_ids": [
+          "BLK-D8AA6F0C8103713A"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-016",
+        "statement": "EMU300A 配置中包含 Logger5000",
+        "block_ids": [
+          "BLK-D8AA6F0C8103713A"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-017",
+        "statement": "Logger5000 集成五路具备数据交换功能的以太网口（ETH1~ETH5），其中三路为以太网口、两路为快速调度口",
+        "block_ids": [
+          "BLK-276B765BAAD65005"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-018",
+        "statement": "Logger5000 具备协议转换服务，包括 ModbusRTU 转 IEC104、MQTT、ModbusTCP 等",
+        "block_ids": [
+          "BLK-915BE31950823B72"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-019",
+        "statement": "Logger5000 支持通过 RS485 总线接入逆变器、箱变、环境监测仪、电表等设备",
+        "block_ids": [
+          "BLK-0E8FEC54AF1BFA37"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-020",
+        "statement": "Logger5000 支持通过 MPLC 总线接入阳光电源生产的具备 MPLC 功能的组串式逆变器",
+        "block_ids": [
+          "BLK-0E8FEC54AF1BFA37"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-021",
+        "statement": "Logger5000 具有 Micro SD 卡接口，用于设备软件烧写（该端口仅阳光电源技术人员可用）",
+        "block_ids": [
+          "BLK-620E54D88F061730"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-022",
+        "statement": "Logger5000 具有 IRIG-B B 码对时接口",
+        "block_ids": [
+          "BLK-620E54D88F061730"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-023",
+        "statement": "Logger5000 具有 DO1~DO4 数字量输出端口，继电器规格为 24Vdc/3A",
+        "block_ids": [
+          "BLK-620E54D88F061730"
+        ],
+        "is_uncertain": false
+      },
+      {
+        "fact_id": "FACT-024",
+        "statement": "Logger5000 具有 DI1~DI4 数字量输入端口，为无源干接点输入接口",
+        "block_ids": [
+          "BLK-620E54D88F061730"
+        ],
+        "is_uncertain": false
+      }
+    ],
+    "unknowns": [
+      "Logger4000 是否属于本次交付配置（GAP-LOGGER4000-SCOPE 明确其适用性未确认）",
+      "MPLC 的具体型号或固件版本未说明",
+      "PID&ISO 控制盒是否实际交付（仅标注‘可选’，无合同/BOM佐证）",
+      "光纤交换机品牌是否为 MOXA（证据提及 MOXA 属于检索意图，但未在证据文本中出现）",
+      "Logger5000 操作系统名称及版本未说明",
+      "Logger5000 固件名称及版本未说明",
+      "Logger5000 是否内置防火墙（仅说明‘路由器和防火墙不在供货范围内’，未说明其自身是否含防火墙功能）",
+      "‘MPLC’是否指代特定嵌入式子系统或仅为通信协议栈（证据未定义 MPLC 实体性质）",
+      "‘IO 模组’具体类型、数量及接口规格未说明",
+      "‘微型断路器’型号、极数、额定电流等参数未说明"
+    ],
+    "contradictions": []
+  },
+  "retrieval_trace": {
+    "schema_version": "1.0",
+    "request": {
+      "project_id": "yangguang_emu",
+      "node_id": "node_1",
+      "field_id": "components",
+      "query": null,
+      "filters": {
+        "document_ids": [],
+        "section_path_terms": [],
+        "block_types": [],
+        "exclude_review_required": false
+      },
+      "token_budget": 12000,
+      "max_blocks": 40,
+      "neighbor_window": 1
+    },
+    "effective_query": "产品组成 内部配置 内含 标准配置 订购信息 供货范围 BOM 硬件模块 Logger5000 开关电源 防雷模块 微型断路器 MPLC PID ISO IO模组 光纤交换机 光纤终端盒 MOXA 固件 软件 操作系统 外部设备 选配 可选",
+    "index_id": "IDX-3B116ADDF3BB03CC",
+    "scope_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "packet_id": "rag_yangguang_emu_node_1_components_5fafd3e40a75",
+    "packet_sha256": "411314efdc0836609d5e24061688877c6d62a4202a27f178666dc10cecfe3fd2",
+    "candidate_count": 1041,
+    "selected_count": 40,
+    "selected_token_count": 3810,
+    "truncated_by_budget": false,
+    "truncated_by_max_blocks": true,
+    "hits": [
+      {
+        "block_id": "BLK-D844E7AC55AEA6FE",
+        "document_id": "DOC-5067B181346D",
+        "rank": 1,
+        "score": 0.7221699924468994,
+        "estimated_tokens": 138,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-CE3D928E7C421E03",
+        "document_id": "DOC-5067B181346D",
+        "rank": 2,
+        "score": 0.7221699924468994,
+        "estimated_tokens": 393,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-D844E7AC55AEA6FE"
+      },
+      {
+        "block_id": "BLK-409F387B605FF8FF",
+        "document_id": "DOC-5067B181346D",
+        "rank": 3,
+        "score": 0.7221699924468994,
+        "estimated_tokens": 39,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-D844E7AC55AEA6FE"
+      },
+      {
+        "block_id": "BLK-ED5B5D7F1329F5AC",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 4,
+        "score": 0.6165827503204346,
+        "estimated_tokens": 633,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-620E54D88F061730",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 5,
+        "score": 0.6165827503204346,
+        "estimated_tokens": 94,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-ED5B5D7F1329F5AC"
+      },
+      {
+        "block_id": "BLK-8A67DF492330767C",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 6,
+        "score": 0.6165827503204346,
+        "estimated_tokens": 91,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-ED5B5D7F1329F5AC"
+      },
+      {
+        "block_id": "BLK-D8AA6F0C8103713A",
+        "document_id": "DOC-5067B181346D",
+        "rank": 7,
+        "score": 0.6133317527770997,
+        "estimated_tokens": 504,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-AFC136CD8222B958",
+        "document_id": "DOC-5067B181346D",
+        "rank": 8,
+        "score": 0.6133317527770997,
+        "estimated_tokens": 51,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-D8AA6F0C8103713A"
+      },
+      {
+        "block_id": "BLK-B07115D81ED807D1",
+        "document_id": "DOC-5067B181346D",
+        "rank": 9,
+        "score": 0.6133317527770997,
+        "estimated_tokens": 51,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-D8AA6F0C8103713A"
+      },
+      {
+        "block_id": "BLK-001D01D63B826B76",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 10,
+        "score": 0.5946397857666016,
+        "estimated_tokens": 95,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-5E39F972389DBAD0",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 11,
+        "score": 0.5946397857666016,
+        "estimated_tokens": 92,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-001D01D63B826B76"
+      },
+      {
+        "block_id": "BLK-52041C0029DEC214",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 12,
+        "score": 0.5946397857666016,
+        "estimated_tokens": 88,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-001D01D63B826B76"
+      },
+      {
+        "block_id": "BLK-280B19ADFD874C31",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 13,
+        "score": 0.5945767478942872,
+        "estimated_tokens": 203,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-6366AC7A36560DB2",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 14,
+        "score": 0.5945767478942872,
+        "estimated_tokens": 84,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-280B19ADFD874C31"
+      },
+      {
+        "block_id": "BLK-2F4309740282D108",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 15,
+        "score": 0.5945767478942872,
+        "estimated_tokens": 111,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-280B19ADFD874C31"
+      },
+      {
+        "block_id": "BLK-4DD68A8558951CBD",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 16,
+        "score": 0.5944327430725098,
+        "estimated_tokens": 94,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-4E0353B94569ABFF",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 17,
+        "score": 0.5944327430725098,
+        "estimated_tokens": 119,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-4DD68A8558951CBD"
+      },
+      {
+        "block_id": "BLK-C228A8BF893CBE2B",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 18,
+        "score": 0.5944327430725098,
+        "estimated_tokens": 107,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-4DD68A8558951CBD"
+      },
+      {
+        "block_id": "BLK-276B765BAAD65005",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 19,
+        "score": 0.5921631889343262,
+        "estimated_tokens": 151,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-254543AB77B4B866",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 20,
+        "score": 0.5921631889343262,
+        "estimated_tokens": 82,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-276B765BAAD65005"
+      },
+      {
+        "block_id": "BLK-DCE8A1FE2B86D398",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 21,
+        "score": 0.5921631889343262,
+        "estimated_tokens": 83,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-276B765BAAD65005"
+      },
+      {
+        "block_id": "BLK-53B1B184B909BD96",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 22,
+        "score": 0.58364697265625,
+        "estimated_tokens": 123,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-8A67DF492330767C"
+      },
+      {
+        "block_id": "BLK-27076CE0D8D035A4",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 23,
+        "score": 0.5787562446594239,
+        "estimated_tokens": 122,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-254543AB77B4B866"
+      },
+      {
+        "block_id": "BLK-10A8D5FE01AF321E",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 24,
+        "score": 0.5758543167114258,
+        "estimated_tokens": 109,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-ECC17DEAAFB5CF44",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 25,
+        "score": 0.5758543167114258,
+        "estimated_tokens": 89,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-10A8D5FE01AF321E"
+      },
+      {
+        "block_id": "BLK-0E8FEC54AF1BFA37",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 26,
+        "score": 0.5742656860351563,
+        "estimated_tokens": 183,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-EE4926450C5E2B17",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 27,
+        "score": 0.5742656860351563,
+        "estimated_tokens": 89,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-0E8FEC54AF1BFA37"
+      },
+      {
+        "block_id": "BLK-182EE50E531ABD2E",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 28,
+        "score": 0.5742656860351563,
+        "estimated_tokens": 122,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-0E8FEC54AF1BFA37"
+      },
+      {
+        "block_id": "BLK-A2F7FF8CA624A568",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 29,
+        "score": 0.5739580307006836,
+        "estimated_tokens": 99,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-6F995D23A5D3D37F",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 30,
+        "score": 0.5739580307006836,
+        "estimated_tokens": 117,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-A2F7FF8CA624A568"
+      },
+      {
+        "block_id": "BLK-094C18FCF698B8F2",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 31,
+        "score": 0.5739580307006836,
+        "estimated_tokens": 113,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-A2F7FF8CA624A568"
+      },
+      {
+        "block_id": "BLK-280C6DAB6D74A307",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 32,
+        "score": 0.5708782348632813,
+        "estimated_tokens": 123,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-232C3DDCDB94D295",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 33,
+        "score": 0.5708782348632813,
+        "estimated_tokens": 126,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-280C6DAB6D74A307"
+      },
+      {
+        "block_id": "BLK-2ACAA0C94AEC1891",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 34,
+        "score": 0.5705699119567872,
+        "estimated_tokens": 106,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-86DACA655BC61901",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 35,
+        "score": 0.5705699119567872,
+        "estimated_tokens": 147,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-2ACAA0C94AEC1891"
+      },
+      {
+        "block_id": "BLK-5C2AC22C871188FF",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 36,
+        "score": 0.5705699119567872,
+        "estimated_tokens": 131,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-2ACAA0C94AEC1891"
+      },
+      {
+        "block_id": "BLK-01A37D2316B69D83",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 37,
+        "score": 0.5689160976409913,
+        "estimated_tokens": 137,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-5C2AC22C871188FF"
+      },
+      {
+        "block_id": "BLK-6838AC80DEF03AC8",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 38,
+        "score": 0.5688052253723145,
+        "estimated_tokens": 83,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-915BE31950823B72",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 39,
+        "score": 0.5688052253723145,
+        "estimated_tokens": 117,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-6838AC80DEF03AC8"
+      },
+      {
+        "block_id": "BLK-A0E52C3C63687B7D",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 40,
+        "score": 0.5688052253723145,
+        "estimated_tokens": 133,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-6838AC80DEF03AC8"
+      }
+    ]
+  }
+}

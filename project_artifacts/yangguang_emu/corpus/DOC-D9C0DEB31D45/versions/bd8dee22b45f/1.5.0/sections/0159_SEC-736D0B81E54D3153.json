@@ -1,0 +1,313 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-D9C0DEB31D45",
+  "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-736D0B81E54D3153",
+  "section_path": [
+    "9 用户管理",
+    "9.6 创建用户账号"
+  ],
+  "section_title": "9.6 创建用户账号",
+  "start_pdf_page": 96,
+  "end_pdf_page": 96,
+  "blocks": [
+    {
+      "block_id": "BLK-E8E1C06BE348B86D",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 96,
+      "printed_page_label": "86",
+      "block_order": 0,
+      "section_id": "SEC-736D0B81E54D3153",
+      "section_path": [
+        "9 用户管理",
+        "9.6 创建用户账号"
+      ],
+      "section_title": "9.6 创建用户账号",
+      "block_type": "paragraph",
+      "text": "用户手册\n9 用户管理",
+      "table_cells": null,
+      "bbox": [
+        60.441,
+        48.088,
+        449.795,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-620B618C1489FFE0",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 96,
+      "printed_page_label": "86",
+      "block_order": 1,
+      "section_id": "SEC-736D0B81E54D3153",
+      "section_path": [
+        "9 用户管理",
+        "9.6 创建用户账号"
+      ],
+      "section_title": "9.6 创建用户账号",
+      "block_type": "paragraph",
+      "text": "步骤 5 输入新密码并确认。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        171.989,
+        168.563,
+        184.472
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-876AB643F43BC32F",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 96,
+      "printed_page_label": "86",
+      "block_order": 2,
+      "section_id": "SEC-736D0B81E54D3153",
+      "section_path": [
+        "9 用户管理",
+        "9.6 创建用户账号"
+      ],
+      "section_title": "9.6 创建用户账号",
+      "block_type": "paragraph",
+      "text": "步骤 6 点击确定。",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        188.489,
+        132.563,
+        200.972
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-9BD41CAFD1B95288",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 96,
+      "printed_page_label": "86",
+      "block_order": 3,
+      "section_id": "SEC-736D0B81E54D3153",
+      "section_path": [
+        "9 用户管理",
+        "9.6 创建用户账号"
+      ],
+      "section_title": "9.6 创建用户账号",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        205.061,
+        112.187,
+        216.014
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6BEB8F15426042E7",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 96,
+      "printed_page_label": "86",
+      "block_order": 10,
+      "section_id": "SEC-736D0B81E54D3153",
+      "section_path": [
+        "9 用户管理",
+        "9.6 创建用户账号"
+      ],
+      "section_title": "9.6 创建用户账号",
+      "block_type": "heading",
+      "text": "9.6 创建用户账号",
+      "table_cells": null,
+      "bbox": [
+        56.687,
+        515.473,
+        152.879,
+        530.077
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FCF1590643813B77",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 96,
+      "printed_page_label": "86",
+      "block_order": 11,
+      "section_id": "SEC-736D0B81E54D3153",
+      "section_path": [
+        "9 用户管理",
+        "9.6 创建用户账号"
+      ],
+      "section_title": "9.6 创建用户账号",
+      "block_type": "paragraph",
+      "text": "管理员可以创建普通用户、运维用户、审计用户账号，以满足团队的运维需求。",
+      "table_cells": null,
+      "bbox": [
+        88.194,
+        543.029,
+        385.694,
+        553.374
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A9543ED26C0333D9",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 96,
+      "printed_page_label": "86",
+      "block_order": 12,
+      "section_id": "SEC-736D0B81E54D3153",
+      "section_path": [
+        "9 用户管理",
+        "9.6 创建用户账号"
+      ],
+      "section_title": "9.6 创建用户账号",
+      "block_type": "paragraph",
+      "text": "系统默认提供一个运维用户账号“maintain”。",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        563.871,
+        263.204,
+        574.824
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AC0987EB40099210",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 96,
+      "printed_page_label": "86",
+      "block_order": 13,
+      "section_id": "SEC-736D0B81E54D3153",
+      "section_path": [
+        "9 用户管理",
+        "9.6 创建用户账号"
+      ],
+      "section_title": "9.6 创建用户账号",
+      "block_type": "paragraph",
+      "text": "管理员可创建账号，Web 端用户账号总数上限为7 个。",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        585.371,
+        307.295,
+        596.324
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-058363ADCC6FD876",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 96,
+      "printed_page_label": "86",
+      "block_order": 14,
+      "section_id": "SEC-736D0B81E54D3153",
+      "section_path": [
+        "9 用户管理",
+        "9.6 创建用户账号"
+      ],
+      "section_title": "9.6 创建用户账号",
+      "block_type": "paragraph",
+      "text": "用户名称要求",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        605.449,
+        142.19,
+        617.932
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-02A02C9A4C14CC49",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 96,
+      "printed_page_label": "86",
+      "block_order": 15,
+      "section_id": "SEC-736D0B81E54D3153",
+      "section_path": [
+        "9 用户管理",
+        "9.6 创建用户账号"
+      ],
+      "section_title": "9.6 创建用户账号",
+      "block_type": "list",
+      "text": "•\n用户名长度为2~16 位字符，名称需由2-16 位字母、数字组成，且必须以字母开头。",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        628.371,
+        437.651,
+        639.324
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F006F3569F404BB2",
+      "document_id": "DOC-D9C0DEB31D45",
+      "source_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d",
+      "parser_version": "1.5.0",
+      "pdf_page": 96,
+      "printed_page_label": "86",
+      "block_order": 16,
+      "section_id": "SEC-736D0B81E54D3153",
+      "section_path": [
+        "9 用户管理",
+        "9.6 创建用户账号"
+      ],
+      "section_title": "9.6 创建用户账号",
+      "block_type": "paragraph",
+      "text": "密码要求",
+      "table_cells": null,
+      "bbox": [
+        88.19,
+        646.449,
+        124.19,
+        658.932
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

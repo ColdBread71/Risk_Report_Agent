@@ -1,0 +1,605 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-D3426834E778CE8E",
+  "section_path": [
+    "10 用户管理",
+    "10.6 重置账号密码",
+    "10.6.1 重置运维账号密码"
+  ],
+  "section_title": "10.6.1 重置运维账号密码",
+  "start_pdf_page": 105,
+  "end_pdf_page": 105,
+  "blocks": [
+    {
+      "block_id": "BLK-1CAC968DB3BC9F31",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 0,
+      "section_id": "SEC-D3426834E778CE8E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.1 重置运维账号密码"
+      ],
+      "section_title": "10.6.1 重置运维账号密码",
+      "block_type": "paragraph",
+      "text": "用户手册\n10 用户管理",
+      "table_cells": null,
+      "bbox": [
+        74.614,
+        48.088,
+        463.968,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-219268DA45221131",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 1,
+      "section_id": "SEC-D3426834E778CE8E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.1 重置运维账号密码"
+      ],
+      "section_title": "10.6.1 重置运维账号密码",
+      "block_type": "paragraph",
+      "text": "除“maintain”账号外，管理员至多可创建4 个运维账号。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        72.906,
+        322.884,
+        83.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-ACF5E026494E9B3E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 2,
+      "section_id": "SEC-D3426834E778CE8E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.1 重置运维账号密码"
+      ],
+      "section_title": "10.6.1 重置运维账号密码",
+      "block_type": "paragraph",
+      "text": "用户名称要求",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        92.984,
+        156.366,
+        105.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F18FB786EDA14838",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 3,
+      "section_id": "SEC-D3426834E778CE8E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.1 重置运维账号密码"
+      ],
+      "section_title": "10.6.1 重置运维账号密码",
+      "block_type": "list",
+      "text": "•\n可以包含大写字母、小写字母、数字以及下划线",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        115.906,
+        305.541,
+        126.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-EED1AE1645DA2CD5",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 4,
+      "section_id": "SEC-D3426834E778CE8E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.1 重置运维账号密码"
+      ],
+      "section_title": "10.6.1 重置运维账号密码",
+      "block_type": "list",
+      "text": "•\n必须以字母开头",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        130.906,
+        179.541,
+        141.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-84BB002086B29967",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 5,
+      "section_id": "SEC-D3426834E778CE8E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.1 重置运维账号密码"
+      ],
+      "section_title": "10.6.1 重置运维账号密码",
+      "block_type": "list",
+      "text": "•\n用户名长度为4~16 位字符",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        145.906,
+        222.309,
+        156.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-840E1E3BF427ECD0",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 6,
+      "section_id": "SEC-D3426834E778CE8E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.1 重置运维账号密码"
+      ],
+      "section_title": "10.6.1 重置运维账号密码",
+      "block_type": "paragraph",
+      "text": "密码要求",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        163.984,
+        138.366,
+        176.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-05F3D6621861A3FC",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 7,
+      "section_id": "SEC-D3426834E778CE8E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.1 重置运维账号密码"
+      ],
+      "section_title": "10.6.1 重置运维账号密码",
+      "block_type": "list",
+      "text": "•\n由大写字母、小写字母、数字、特殊符号中的三种或以上组成",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        186.906,
+        359.541,
+        197.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-90C70AF5BCC7EAFD",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 8,
+      "section_id": "SEC-D3426834E778CE8E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.1 重置运维账号密码"
+      ],
+      "section_title": "10.6.1 重置运维账号密码",
+      "block_type": "list",
+      "text": "•\n密码长度为8~32 位字符",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        201.906,
+        213.309,
+        212.859
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-E7B3DF180498F53E",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 9,
+      "section_id": "SEC-D3426834E778CE8E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.1 重置运维账号密码"
+      ],
+      "section_title": "10.6.1 重置运维账号密码",
+      "block_type": "list",
+      "text": "•\n管理员可根据不同类型的用户设置密码有效期，范围为1–90 天。",
+      "table_cells": null,
+      "bbox": [
+        129.366,
+        223.406,
+        402.057,
+        234.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-6057026AC788DA12",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 10,
+      "section_id": "SEC-D3426834E778CE8E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.1 重置运维账号密码"
+      ],
+      "section_title": "10.6.1 重置运维账号密码",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        257.406,
+        138.366,
+        268.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-F915C02692D0F1BA",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 11,
+      "section_id": "SEC-D3426834E778CE8E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.1 重置运维账号密码"
+      ],
+      "section_title": "10.6.1 重置运维账号密码",
+      "block_type": "list",
+      "text": "•\n通过管理员账号登录Web 端。见10.1 初始用户名和密码。",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        277.406,
+        350.649,
+        288.359
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5968F9C0E5C78067",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 12,
+      "section_id": "SEC-D3426834E778CE8E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.1 重置运维账号密码"
+      ],
+      "section_title": "10.6.1 重置运维账号密码",
+      "block_type": "paragraph",
+      "text": "步骤 1 导航栏中点击用户管理，跳转至相应页面。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        295.484,
+        272.736,
+        307.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-BA2F33074C4ABCD2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 13,
+      "section_id": "SEC-D3426834E778CE8E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.1 重置运维账号密码"
+      ],
+      "section_title": "10.6.1 重置运维账号密码",
+      "block_type": "paragraph",
+      "text": "步骤 2 点击新增，打开新增用户对话框。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        311.984,
+        236.736,
+        324.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-079E930CAC9D27CE",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 14,
+      "section_id": "SEC-D3426834E778CE8E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.1 重置运维账号密码"
+      ],
+      "section_title": "10.6.1 重置运维账号密码",
+      "block_type": "paragraph",
+      "text": "步骤 3 设置用户名和密码。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        328.484,
+        182.736,
+        340.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-0DA05A0B3742B0BC",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 15,
+      "section_id": "SEC-D3426834E778CE8E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.1 重置运维账号密码"
+      ],
+      "section_title": "10.6.1 重置运维账号密码",
+      "block_type": "paragraph",
+      "text": "步骤 4 在权限角色下拉列表中，选择运维用户。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        344.984,
+        263.736,
+        357.467
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-5B45382A42A28F39",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 16,
+      "section_id": "SEC-D3426834E778CE8E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.1 重置运维账号密码"
+      ],
+      "section_title": "10.6.1 重置运维账号密码",
+      "block_type": "paragraph",
+      "text": "步骤 5 点击确定。",
+      "table_cells": null,
+      "bbox": [
+        70.866,
+        361.484,
+        146.736,
+        373.967
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-C4A5845CFDBC843B",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 17,
+      "section_id": "SEC-D3426834E778CE8E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.1 重置运维账号密码"
+      ],
+      "section_title": "10.6.1 重置运维账号密码",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.366,
+        378.056,
+        126.36,
+        389.009
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-AC87830C90B7377F",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 28,
+      "section_id": "SEC-D3426834E778CE8E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.1 重置运维账号密码"
+      ],
+      "section_title": "10.6.1 重置运维账号密码",
+      "block_type": "heading",
+      "text": "10.6.1 重置运维账号密码",
+      "table_cells": null,
+      "bbox": [
+        70.864,
+        612.737,
+        183.414,
+        624.907
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-FECBCAF1CDBF60C2",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 29,
+      "section_id": "SEC-D3426834E778CE8E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.1 重置运维账号密码"
+      ],
+      "section_title": "10.6.1 重置运维账号密码",
+      "block_type": "paragraph",
+      "text": "前提条件",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        632.053,
+        138.369,
+        643.006
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2073D8291DE6EF75",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 105,
+      "printed_page_label": "95",
+      "block_order": 30,
+      "section_id": "SEC-D3426834E778CE8E",
+      "section_path": [
+        "10 用户管理",
+        "10.6 重置账号密码",
+        "10.6.1 重置运维账号密码"
+      ],
+      "section_title": "10.6.1 重置运维账号密码",
+      "block_type": "list",
+      "text": "•\n通过管理员账号登录Web 端。见10.1 初始用户名和密码。",
+      "table_cells": null,
+      "bbox": [
+        102.369,
+        652.053,
+        350.652,
+        663.006
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-DF116E7199E2",
+  "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-96B4F5934BCAE17E",
+  "section_path": [
+    "12 附录：MOXA EDS-408A 安全加固操作指导",
+    "12.4 关闭交换机 DIP 拨码功能"
+  ],
+  "section_title": "12.4 关闭交换机 DIP 拨码功能",
+  "start_pdf_page": 34,
+  "end_pdf_page": 34,
+  "blocks": [
+    {
+      "block_id": "BLK-BC19CB9FE39A1897",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "30",
+      "block_order": 0,
+      "section_id": "SEC-96B4F5934BCAE17E",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.4 关闭交换机 DIP 拨码功能"
+      ],
+      "section_title": "12.4 关闭交换机 DIP 拨码功能",
+      "block_type": "paragraph",
+      "text": "用户网络安全操作手册\n12 附录：MOXA EDS-408A 安全加固操作指导",
+      "table_cells": null,
+      "bbox": [
+        60.446,
+        48.088,
+        449.793,
+        56.607
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A32566ED8635CD8D",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "30",
+      "block_order": 1,
+      "section_id": "SEC-96B4F5934BCAE17E",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.4 关闭交换机 DIP 拨码功能"
+      ],
+      "section_title": "12.4 关闭交换机 DIP 拨码功能",
+      "block_type": "paragraph",
+      "text": "登录交换机 Web 管理界面，将左侧菜单栏滚动至底部，找到并进入Modbus TCP 配置项，\n取消Enable 的勾选，配置完成后点击Activate，启用设置。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        299.617,
+        447.554,
+        324.07
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-25641884F0744F7F",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "30",
+      "block_order": 2,
+      "section_id": "SEC-96B4F5934BCAE17E",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.4 关闭交换机 DIP 拨码功能"
+      ],
+      "section_title": "12.4 关闭交换机 DIP 拨码功能",
+      "block_type": "heading",
+      "text": "12.4 关闭交换机 DIP 拨码功能",
+      "table_cells": null,
+      "bbox": [
+        56.693,
+        621.588,
+        222.221,
+        636.192
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-A6CE34E7612E82E4",
+      "document_id": "DOC-DF116E7199E2",
+      "source_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc",
+      "parser_version": "1.5.0",
+      "pdf_page": 34,
+      "printed_page_label": "30",
+      "block_order": 3,
+      "section_id": "SEC-96B4F5934BCAE17E",
+      "section_path": [
+        "12 附录：MOXA EDS-408A 安全加固操作指导",
+        "12.4 关闭交换机 DIP 拨码功能"
+      ],
+      "section_title": "12.4 关闭交换机 DIP 拨码功能",
+      "block_type": "paragraph",
+      "text": "登录交换机 Web 管理界面，点击Basic Setting > Turbo Ring DIP Switch，勾选Disable，配\n置完成后点击Activate 按钮，启用设置。",
+      "table_cells": null,
+      "bbox": [
+        88.193,
+        649.236,
+        452.531,
+        673.689
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}

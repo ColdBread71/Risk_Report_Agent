@@ -1,0 +1,134 @@
+{
+  "project_id": "yangguang_emu",
+  "document_id": "DOC-C034D56CBBB3",
+  "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+  "parser_version": "1.5.0",
+  "section_id": "SEC-ADE0655C7CC7F351",
+  "section_path": [
+    "7 Web界面",
+    "7.8 系统",
+    "7.8.2 系统维护",
+    "7.8.2.2 系统重启"
+  ],
+  "section_title": "7.8.2.2 系统重启",
+  "start_pdf_page": 69,
+  "end_pdf_page": 69,
+  "blocks": [
+    {
+      "block_id": "BLK-326F2BB45D902DA8",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 69,
+      "printed_page_label": "59",
+      "block_order": 14,
+      "section_id": "SEC-ADE0655C7CC7F351",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.2 系统重启"
+      ],
+      "section_title": "7.8.2.2 系统重启",
+      "block_type": "heading",
+      "text": "7.8.2.2 系统重启",
+      "table_cells": null,
+      "bbox": [
+        70.867,
+        363.79,
+        146.197,
+        375.96
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-613A99B6BB479F9A",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 69,
+      "printed_page_label": "59",
+      "block_order": 15,
+      "section_id": "SEC-ADE0655C7CC7F351",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.2 系统重启"
+      ],
+      "section_title": "7.8.2.2 系统重启",
+      "block_type": "paragraph",
+      "text": "步骤 1 单击系统 > 系统维护，进入界面。",
+      "table_cells": null,
+      "bbox": [
+        70.867,
+        387.684,
+        237.988,
+        400.167
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-229F38B717069AAB",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 69,
+      "printed_page_label": "59",
+      "block_order": 16,
+      "section_id": "SEC-ADE0655C7CC7F351",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.2 系统重启"
+      ],
+      "section_title": "7.8.2.2 系统重启",
+      "block_type": "paragraph",
+      "text": "步骤 2 单击系统重启，弹出警告界面，单击确定，可执行系统重启操作。",
+      "table_cells": null,
+      "bbox": [
+        70.867,
+        404.184,
+        362.737,
+        416.667
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    },
+    {
+      "block_id": "BLK-2675EE889F4B1002",
+      "document_id": "DOC-C034D56CBBB3",
+      "source_sha256": "5a9b4f97ff44c0e39b26b5dff963b60b40eede9431301fd5c6324ac9da5f1d99",
+      "parser_version": "1.5.0",
+      "pdf_page": 69,
+      "printed_page_label": "59",
+      "block_order": 17,
+      "section_id": "SEC-ADE0655C7CC7F351",
+      "section_path": [
+        "7 Web界面",
+        "7.8 系统",
+        "7.8.2 系统维护",
+        "7.8.2.2 系统重启"
+      ],
+      "section_title": "7.8.2.2 系统重启",
+      "block_type": "list",
+      "text": "--结束",
+      "table_cells": null,
+      "bbox": [
+        102.367,
+        420.756,
+        126.361,
+        431.709
+      ],
+      "extraction_method": "native_text",
+      "needs_review": false,
+      "review_notes": []
+    }
+  ]
+}
