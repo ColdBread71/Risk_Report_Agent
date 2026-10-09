@@ -1,0 +1,2057 @@
+{
+  "run_id": "emu-node012-current-baseline-03",
+  "node": "build_product_context",
+  "task": "node_1/communications",
+  "call_id": "f36d3e0e826b4111bd811503cae816db",
+  "schema": "CommunicationMatrix",
+  "model": "qwen-plus",
+  "attempt": 1,
+  "started_at": "2026-10-09T02:32:06.405682+00:00",
+  "status": "succeeded",
+  "phase": "complete",
+  "prompt": "你正在执行 prEN 40000-1-2 产品上下文定义（Node 1）的 communications 分段。\n\n【共同规则】\n1. 只使用 Scope 的肯定字段和 field_batches.facts；unknowns或contradictions只能进入完整性说明，不能改写成事实。\n2. 资料未提供的版本、端口、用户经验、物理环境、部署状态和支持期限保持 null或空列表。保留“必须、建议、可选、默认关闭”等原始语气。\n3. Scope.classification.has_rdps 不可覆盖：true 才能填写正式RDPS依赖；null 只写候选远程能力和待确认项；false 保持空。\n4. EvidenceRef 只能引用 evidence_contract 中直接支持当前结论的 fact block_ids。scope_support 只支持产品身份、Node0边界和范围状态。没有直接支持时 evidence 留空。\n5. 只生成本段 Schema；不识别资产、威胁、风险或控制。业务字段不得出现 FACT-/BLK-/GAP- 内部编号。\n6. 除产品名、型号、协议和标准编号外使用简体中文；EvidenceRef.quote 保留原文。严格输出单个 JSON 对象，不输出解释或 Markdown。\n7. Node0范围状态是上游契约：同一对象若出现冲突，不得自行选择更肯定的状态；使用unknown/conditional并写入完整性说明。外部边界不自动证明第三方供应或运营关系。\n\n【本次目标】\n只生成 communication_matrix；每个独立方向、协议或端口保持独立通信流。\n\n【本段业务规则】\n- 端口表的source和destination按原方向抄录，不得因为功能摘要反转端口表方向，也不得为同一证据生成一正一反两条流。\n- direction仅表达相对产品的连接方向；direction_basis必须说明它来自明确端点、连接发起、监听暴露还是业务数据流。监听端口不能自动证明业务数据方向或连接发起方。\n- business_data_direction只在材料明确给出业务载荷流向时填写；不得由source/destination、端口监听关系或协议名称推断。连接方向和业务数据方向相反时分别保留。\n- activation_status区分已启用、默认关闭、条件启用和未知；“能力存在”不等于交付配置中已启用。选配、部署或启用条件写入conditions。\n- 每个协议、端口或方向独立成行；端点、端口、传输层未说明时写“未说明”或null，不按惯例补全。\n- 跨页或拆块表格只有在表头、行列关系和相邻块能够明确拼接时才组合；不得从其他段落借用端点或端口。\n- 日志、时间、目录及其他服务可记录材料明确的服务地址、协议和端口；材料未给出的字段保持null，不得按知名端口补写。\n- 端口表中明确的调试流、管理流和业务流应分别保留；不得在完整性说明中称已被事实证明的协议或端口“未提及”。\n- 协议存在、默认状态、加密传输和认证方式分别按直接事实填写；不要把一个通信流的状态扩大到其他流。\n- data_exchanged、encryption和authentication均需本流的直接事实；不得从协议名称、知名端口、邻近功能说明或行业惯例推断。\n\n【目标 JSON Schema】\n{\n  \"$defs\": {\n    \"CommunicationMatrixEntry\": {\n      \"additionalProperties\": false,\n      \"description\": \"One communication flow in the TOE communication matrix.\",\n      \"properties\": {\n        \"flow_id\": {\n          \"description\": \"Assign a stable identifier such as FLOW-001 for this communication flow; do not combine different directions or protocols into one entry.\",\n          \"title\": \"Flow Id\",\n          \"type\": \"string\"\n        },\n        \"source\": {\n          \"description\": \"Identify the source device, component, user, service, or network exactly as stated in the input.\",\n          \"title\": \"Source\",\n          \"type\": \"string\"\n        },\n        \"destination\": {\n          \"description\": \"Identify the destination device, component, user, service, or network exactly as stated in the input.\",\n          \"title\": \"Destination\",\n          \"type\": \"string\"\n        },\n        \"direction\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"State the product-relative connection direction as inbound, outbound, or bidirectional only when the documented endpoints or connection role establish it; use null when the material only describes a listener, port exposure, topology, or business data direction without establishing connection direction.\",\n          \"title\": \"Direction\"\n        },\n        \"direction_basis\": {\n          \"default\": \"unknown\",\n          \"description\": \"Record what the direction statement means. Do not treat a listener/port table or business data direction as proof of connection initiation.\",\n          \"enum\": [\n            \"documented_endpoints\",\n            \"connection_initiation\",\n            \"listener_exposure\",\n            \"business_data_flow\",\n            \"unknown\"\n          ],\n          \"title\": \"Direction Basis\",\n          \"type\": \"string\"\n        },\n        \"business_data_direction\": {\n          \"default\": \"unknown\",\n          \"description\": \"Record the evidenced business payload direction separately from connection initiation; leave unknown when only endpoints, a listener, or a protocol are known.\",\n          \"enum\": [\n            \"to_product\",\n            \"from_product\",\n            \"bidirectional\",\n            \"unknown\"\n          ],\n          \"title\": \"Business Data Direction\",\n          \"type\": \"string\"\n        },\n        \"activation_status\": {\n          \"default\": \"unknown\",\n          \"description\": \"Record whether the communication is enabled, disabled by default, conditional on configuration/deployment, or unresolved. Capability existence is not the same as activation in the delivered configuration.\",\n          \"enum\": [\n            \"enabled\",\n            \"disabled_by_default\",\n            \"conditional\",\n            \"unknown\"\n          ],\n          \"title\": \"Activation Status\",\n          \"type\": \"string\"\n        },\n        \"conditions\": {\n          \"description\": \"List activation, option, deployment, or configuration conditions stated for this flow; do not invent missing conditions.\",\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"title\": \"Conditions\",\n          \"type\": \"array\"\n        },\n        \"interface\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"State the physical or logical interface used by the flow, such as Ethernet, RS485, USB, cellular, API, or Web; use null when not specified.\",\n          \"title\": \"Interface\"\n        },\n        \"protocol\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"State the communication protocol exactly as evidenced, such as TCP, UDP, HTTP, HTTPS, MQTT, Modbus, or proprietary; use null when not specified.\",\n          \"title\": \"Protocol\"\n        },\n        \"port\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Record the port number or port range exactly as stated, including transport where available, for example TCP/443; use null when not specified.\",\n          \"title\": \"Port\"\n        },\n        \"data_exchanged\": {\n          \"description\": \"List the data, commands, credentials, configuration, telemetry, or updates exchanged by this flow; use one data category per item.\",\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"title\": \"Data Exchanged\",\n          \"type\": \"array\"\n        },\n        \"encryption\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Describe the evidenced encryption mechanism and scope, such as TLS 1.3, VPN encryption, link encryption, or none stated; do not infer encryption from the protocol name.\",\n          \"title\": \"Encryption\"\n        },\n        \"authentication\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Describe the evidenced endpoint, user, or message authentication mechanism; use null when authentication is not specified.\",\n          \"title\": \"Authentication\"\n        },\n        \"security_notes\": {\n          \"description\": \"List communication-specific security observations or limitations, one item per observation; distinguish evidence from open questions.\",\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"title\": \"Security Notes\",\n          \"type\": \"array\"\n        },\n        \"evidence\": {\n          \"description\": \"Attach evidence for every material communication-matrix field, including page, diagram, table, or section location whenever available.\",\n          \"items\": {\n            \"$ref\": \"#/$defs/EvidenceRef\"\n          },\n          \"title\": \"Evidence\",\n          \"type\": \"array\"\n        }\n      },\n      \"required\": [\n        \"flow_id\",\n        \"source\",\n        \"destination\"\n      ],\n      \"title\": \"CommunicationMatrixEntry\",\n      \"type\": \"object\"\n    },\n    \"ConfidenceLevel\": {\n      \"description\": \"Confidence level for model-generated or human-reviewed content.\",\n      \"enum\": [\n        \"high\",\n        \"medium\",\n        \"low\",\n        \"none\"\n      ],\n      \"title\": \"ConfidenceLevel\",\n      \"type\": \"string\"\n    },\n    \"EvidenceLevel\": {\n      \"description\": \"Evidence strength level per docs/03_evidence_policy.md.\",\n      \"enum\": [\n        \"direct\",\n        \"derived\",\n        \"manual\",\n        \"unknown\"\n      ],\n      \"title\": \"EvidenceLevel\",\n      \"type\": \"string\"\n    },\n    \"EvidenceRef\": {\n      \"description\": \"Evidence reference linking a conclusion to its source.\",\n      \"properties\": {\n        \"evidence_id\": {\n          \"description\": \"Unique identifier for this evidence reference.\",\n          \"title\": \"Evidence Id\",\n          \"type\": \"string\"\n        },\n        \"source\": {\n          \"$ref\": \"#/$defs/SourceRef\",\n          \"description\": \"Source document reference.\"\n        },\n        \"quote\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Exact quoted text from the source.\",\n          \"title\": \"Quote\"\n        },\n        \"evidence_level\": {\n          \"$ref\": \"#/$defs/EvidenceLevel\",\n          \"description\": \"Strength level of the evidence.\"\n        },\n        \"confidence\": {\n          \"$ref\": \"#/$defs/ConfidenceLevel\",\n          \"default\": \"none\",\n          \"description\": \"Confidence level in the evidence.\"\n        },\n        \"retrieved_by\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Tool or method used to retrieve this evidence.\",\n          \"title\": \"Retrieved By\"\n        },\n        \"is_human_confirmed\": {\n          \"default\": false,\n          \"description\": \"Whether this evidence has been confirmed by a human reviewer.\",\n          \"title\": \"Is Human Confirmed\",\n          \"type\": \"boolean\"\n        },\n        \"notes\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Additional notes or context about the evidence.\",\n          \"title\": \"Notes\"\n        },\n        \"created_at\": {\n          \"description\": \"When this evidence reference was created.\",\n          \"format\": \"date-time\",\n          \"title\": \"Created At\",\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"evidence_id\",\n        \"source\",\n        \"evidence_level\"\n      ],\n      \"title\": \"EvidenceRef\",\n      \"type\": \"object\"\n    },\n    \"SourceRef\": {\n      \"description\": \"Reference to a source document or file.\",\n      \"properties\": {\n        \"file_name\": {\n          \"description\": \"Original file name.\",\n          \"title\": \"File Name\",\n          \"type\": \"string\"\n        },\n        \"file_path\": {\n          \"anyOf\": [\n            {\n              \"format\": \"path\",\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"string\"\n            }\n          ],\n          \"description\": \"Absolute or relative path to the source file.\",\n          \"title\": \"File Path\"\n        },\n        \"file_type\": {\n          \"description\": \"Type of the source file, e.g., pdf, docx, md.\",\n          \"title\": \"File Type\",\n          \"type\": \"string\"\n        },\n        \"document_id\": {\n          \"anyOf\": [\n            {\n              \"pattern\": \"^DOC-[A-F0-9]{12}$\",\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Stable parsed-document identifier when the source belongs to a project corpus.\",\n          \"title\": \"Document Id\"\n        },\n        \"block_id\": {\n          \"anyOf\": [\n            {\n              \"pattern\": \"^BLK-[A-F0-9]{16}$\",\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Stable parsed content-block identifier when available.\",\n          \"title\": \"Block Id\"\n        },\n        \"parser_version\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Parser version that produced the referenced content block.\",\n          \"title\": \"Parser Version\"\n        },\n        \"page_number\": {\n          \"anyOf\": [\n            {\n              \"minimum\": 1,\n              \"type\": \"integer\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"One-based physical page number in the source file.\",\n          \"title\": \"Page Number\"\n        },\n        \"printed_page_label\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Page label printed in the source document, which may differ from the physical PDF page.\",\n          \"title\": \"Printed Page Label\"\n        },\n        \"section_path\": {\n          \"description\": \"Ordered chapter or section hierarchy associated with the cited block.\",\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"title\": \"Section Path\",\n          \"type\": \"array\"\n        },\n        \"clause_number\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Clause or section number in the source.\",\n          \"title\": \"Clause Number\"\n        },\n        \"annex\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Annex identifier, if applicable.\",\n          \"title\": \"Annex\"\n        },\n        \"hash_sha256\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"SHA256 hash of the source file content.\",\n          \"title\": \"Hash Sha256\"\n        }\n      },\n      \"required\": [\n        \"file_name\",\n        \"file_path\",\n        \"file_type\"\n      ],\n      \"title\": \"SourceRef\",\n      \"type\": \"object\"\n    }\n  },\n  \"additionalProperties\": false,\n  \"description\": \"TOE communication matrix.\",\n  \"properties\": {\n    \"entries\": {\n      \"description\": \"List every evidenced communication flow in the TOE as a separate entry, preserving direction and interface distinctions; use an empty list only when no communication is evidenced.\",\n      \"items\": {\n        \"$ref\": \"#/$defs/CommunicationMatrixEntry\"\n      },\n      \"title\": \"Entries\",\n      \"type\": \"array\"\n    },\n    \"completeness_notes\": {\n      \"anyOf\": [\n        {\n          \"type\": \"string\"\n        },\n        {\n          \"type\": \"null\"\n        }\n      ],\n      \"default\": null,\n      \"description\": \"State known coverage limitations, missing diagrams, or unresolved communication details; use null when no limitation is known.\",\n      \"title\": \"Completeness Notes\"\n    }\n  },\n  \"title\": \"CommunicationMatrix\",\n  \"type\": \"object\"\n}\n\n【已验证 Scope、字段事实与证据契约】\n{\n  \"scope\": {\n    \"product_name\": \"能量管理单元EMU300A\",\n    \"product_version\": null,\n    \"classification\": {\n      \"is_pde\": null,\n      \"classification\": null,\n      \"has_rdps\": null,\n      \"rdps_description\": \"材料证明EMU300A具备通过4G路由器或核心交换机向阳光云平台、Insight、SCADA等外部系统转发数据及接收远程调度指令的能力；但远程功能（如数据上传至阳光云、远程调度指令执行）默认关闭，启用需客户手动授权并配置安全加密认证；远程能力对产品基本能量管理功能（如本地有功/无功调节、南向设备接入与采集）的必要性、运营责任归属（阳光云是否由阳光电源运营）、断网降级行为（如是否支持纯本地闭环控制）均无明确证据。\",\n      \"applicable_annex\": null,\n      \"overlapping_regulations\": null\n    },\n    \"scope_description\": \"评估范围主体为能量管理单元EMU300A本体，含其内部配置的数据采集器Logger5000；南向接口包括RS485、PLC电力载波、MPLC（可选1或2）、IO模组（可选）及对应协议（Modbus、IEC104等）；北向连接能力涵盖以太网、4G路由器、核心交换机，支持IEC104、Modbus、MQTT、GOOSE、HTTPS等协议向综自系统、站控系统（Insight/SCADA）及阳光云平台传输数据和接收指令；外部依赖包括阳光云平台、第三方站控系统、4G网络基础设施及核心交换机（未明确是否内置）；排除项含RS485线缆、交流熔丝盒线缆、接地端子线缆等非设备本体附件。\",\n    \"in_scope_components\": [\n      \"EMU300A本体\",\n      \"Logger5000（内部配置）\",\n      \"Modbus协议（南向接入能力）\",\n      \"PLC电力载波通信能力\",\n      \"IEC104/MQTT/GOOSE/HTTPS协议北向转发能力（协议实现层）\",\n      \"本地有功功率控制与无功功率调节功能\",\n      \"操作日志与syslog记录功能\",\n      \"软件和固件更新功能\",\n      \"恢复出厂设置功能\",\n      \"NTS对时支持能力\",\n      \"TLS加密通信支持能力\"\n    ],\n    \"conditional_scope_components\": [\n      \"RS485通信接口（物理端口及协议栈）（范围分类冲突，待确认）\",\n      \"MPLC接口（1或2个）：交付数量取决于合同/BOM/现场配置，证据未指明默认值\",\n      \"PID&ISO控制盒、光纤交换机、光纤终端盒、IO模组：明确标注为可选模块，实际交付状态未知\",\n      \"4G路由器：证据表明EMU300A可通过其传输数据至阳光云，但未说明是否内置；若为外置，则属客户侧配套设备\",\n      \"核心交换机：证据多次提及EMU300A‘通过核心交换机’连接至Insight/SCADA，但未说明其是否为EMU300A内置组件或外部配套设备\",\n      \"阳光云平台接入能力：功能默认不可用，启用需客户手动授权及安全加密认证；其运营方、数据处理位置及责任归属未明确\"\n    ],\n    \"out_of_scope_components\": [\n      \"交流熔丝盒线缆（明确说明未包含在供货范围）\",\n      \"接地端子线缆（明确说明未包含在供货范围）\",\n      \"光纤终端盒（明确标注为选配，且必须与光纤环网交换机配套使用）\",\n      \"光纤环网交换机（明确标注为选配，且必须与光纤终端盒配套使用）\"\n    ],\n    \"assumptions\": [\n      \"请确认以下说法是否成立：Logger5000在EMU300A中是板载集成模块还是独立外置设备？\",\n      \"‘阳光云平台’的运营方是否为阳光电源自身，或由第三方托管？\",\n      \"远程调度指令接收与执行能力是否为EMU300A产品功能所必需，抑或仅作为可选能力存在？\",\n      \"EMU300A标准配置与选配模块的BOM层级关系及合同依赖项明细是什么？\",\n      \"文档未说明EMU300A是否含内置软件/固件组件清单（如OS类型、内核版本、中间件），该清单是否影响CRA分类或附件适用性？\"\n    ],\n    \"legal_basis\": []\n  },\n  \"field_batches\": [\n    {\n      \"node_id\": \"node_1\",\n      \"field_id\": \"operational_environment\",\n      \"facts\": [\n        {\n          \"fact_id\": \"FACT-001\",\n          \"statement\": \"工业网络安全的核心目标包括可用性：确保系统、网络和数据在需要时可被授权用户访问和使用，防止因破坏、故障或拒绝服务攻击(DoS)导致的业务中断。\",\n          \"block_ids\": [\n            \"BLK-32D86711ED1302DA\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-002\",\n          \"statement\": \"工业网络安全的核心目标包括保密性：防止敏感数据、配置信息和网络资源等遭到非法访问、窃取或泄露。\",\n          \"block_ids\": [\n            \"BLK-D29A82FAFD09D484\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-003\",\n          \"statement\": \"工业网络安全保护目标包括确保生产设备和流程的无故障运行和可用性。\",\n          \"block_ids\": [\n            \"BLK-F30391C2A61969FE\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-004\",\n          \"statement\": \"工业网络安全保护目标包括防范网络攻击危及人员安全与生产安全。\",\n          \"block_ids\": [\n            \"BLK-D91D8C5D38EFEB46\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-005\",\n          \"statement\": \"工业网络安全保护目标包括防止机密数据遭受未经授权的访问。\",\n          \"block_ids\": [\n            \"BLK-5D9BB1795ED1309B\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-006\",\n          \"statement\": \"企业物理安全存在漏洞时，未经授权的人员可能进入生产环境，损坏或修改生产设备，导致机密信息丢失；因此必须采取适当措施保护公司所在地和关键生产区域。\",\n          \"block_ids\": [\n            \"BLK-AF5815D0F7E277A5\",\n            \"BLK-BDEC2C4D8C8E8B36\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-007\",\n          \"statement\": \"网络安全措施包括对所有接口的安全审查。\",\n          \"block_ids\": [\n            \"BLK-F15FEACD7EBFF705\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-008\",\n          \"statement\": \"应进行网络隔离，最简单的情况是通过一个防火墙实现隔离，该防火墙可以控制和检查不同网络之间的通信。\",\n          \"block_ids\": [\n            \"BLK-A6E3C93078316D21\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-009\",\n          \"statement\": \"建议部署防恶意代码设备。\",\n          \"block_ids\": [\n            \"BLK-9F5E44DC2AD36DE5\"\n          ],\n          \"is_uncertain\": true,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-010\",\n          \"statement\": \"产品北向属于安全重点关注区域，用户网络环境应在北向数据出口部署防火墙、防恶意代码设备、IDS等安全设备，构建安全的北向安全网络。\",\n          \"block_ids\": [\n            \"BLK-B6469A1F85E312C7\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-011\",\n          \"statement\": \"产品南向属于近端网络部署，网络环境相对安全但并非绝对安全；建议南向和北向网络使用独立的交换机进行部署，实现网络隔离。\",\n          \"block_ids\": [\n            \"BLK-AFA75AA365265142\",\n            \"BLK-AFED3332E2924093\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-012\",\n          \"statement\": \"南向设备对本产品来说属于三方设备，是否会对网络安全造成威胁由用户来保障。\",\n          \"block_ids\": [\n            \"BLK-EB131CDE5EBDAAA4\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        }\n      ],\n      \"unknowns\": [\n        \"Logger4000是否实际交付或启用（GAP-LOGGER4000-SCOPE）\",\n        \"EMU300A产品是否内置或默认启用远程升级、云平台、数据上传等能力（证据未说明）\",\n        \"‘建议部署防恶意代码设备’是否为合同强制要求或仅属推荐（GAP-CONTRACT-VARIANTS）\",\n        \"北向安全设备（防火墙/防恶意代码/IDS）是否为产品交付必需条件，抑或仅为用户侧责任（GAP-CONTRACT-VARIANTS）\",\n        \"南向网络隔离建议是否适用于所有现场配置，或取决于合同/BOM/现场配置（GAP-CONTRACT-VARIANTS）\",\n        \"Web端语言支持是否反映产品实际运行环境约束，抑或仅为UI渲染层能力（未说明运行环境OS/浏览器/本地化策略）\"\n      ],\n      \"contradictions\": []\n    },\n    {\n      \"node_id\": \"node_1\",\n      \"field_id\": \"functions\",\n      \"facts\": [\n        {\n          \"fact_id\": \"FACT-001\",\n          \"statement\": \"能量管理单元EMU300A内部配置有数据采集器Logger5000。\",\n          \"block_ids\": [\n            \"BLK-0FE6A5150E10C5BC\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-002\",\n          \"statement\": \"数据采集器Logger5000可通过RS485总线方式接入光伏发电系统中的逆变器、箱变、环境监测仪、电表等设备。\",\n          \"block_ids\": [\n            \"BLK-0FE6A5150E10C5BC\",\n            \"BLK-0E8FEC54AF1BFA37\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-003\",\n          \"statement\": \"数据采集器Logger5000可通过PLC总线方式（文档中亦称MPLC总线）接入阳光电源生产的具备PLC功能的组串式逆变器。\",\n          \"block_ids\": [\n            \"BLK-0FE6A5150E10C5BC\",\n            \"BLK-0E8FEC54AF1BFA37\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-004\",\n          \"statement\": \"数据采集器Logger5000支持通过Modbus协议、PLC电力载波通信支持南向设备接入。\",\n          \"block_ids\": [\n            \"BLK-0FE6A5150E10C5BC\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-005\",\n          \"statement\": \"数据采集器Logger5000可对接入的逆变器进行有功功率控制和无功功率调节。\",\n          \"block_ids\": [\n            \"BLK-0FE6A5150E10C5BC\",\n            \"BLK-275D81C277F1A9EC\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-006\",\n          \"statement\": \"数据采集器Logger5000可通过IEC104、Modbus、MQTT、GOOSE等通信协议北向转发数据至综自系统或站控系统及阳光云平台。\",\n          \"block_ids\": [\n            \"BLK-0FE6A5150E10C5BC\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-007\",\n          \"statement\": \"数据采集器Logger5000可接收北向远程调度指令或执行本地调度指令。\",\n          \"block_ids\": [\n            \"BLK-0FE6A5150E10C5BC\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-008\",\n          \"statement\": \"数据采集器Logger5000可以将采集到的设备数据通过核心交换机传输至后台站控系统，例如Insight、SCADA。\",\n          \"block_ids\": [\n            \"BLK-153C2EE70C8A30F1\",\n            \"BLK-182EE50E531ABD2E\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-009\",\n          \"statement\": \"数据采集器Logger5000也可将采集到的设备数据直接通过4G路由器传输至阳光云平台。\",\n          \"block_ids\": [\n            \"BLK-4E0353B94569ABFF\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-010\",\n          \"statement\": \"能量管理单元EMU300A可以直接通过路由器与阳光云平台连接。\",\n          \"block_ids\": [\n            \"BLK-1317C7BFFF509A67\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-011\",\n          \"statement\": \"数据采集器Logger5000的数据转发功能默认不可用；启用该功能前，客户需在充分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。\",\n          \"block_ids\": [\n            \"BLK-EBE329C3EFA80ACF\",\n            \"BLK-ABD8EE23CFEA3B93\",\n            \"BLK-89A6CAB539794403\"\n          ],\n          \"is_uncertain\": true,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-012\",\n          \"statement\": \"远程访问仅在获得客户授权后方可生效，且相关操作受系统访问控制策略管理。\",\n          \"block_ids\": [\n            \"BLK-EBE329C3EFA80ACF\",\n            \"BLK-ABD8EE23CFEA3B93\",\n            \"BLK-89A6CAB539794403\"\n          ],\n          \"is_uncertain\": true,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-013\",\n          \"statement\": \"阳光云平台在北美区域禁止使用（文档中表述为‘已停止服务’或‘禁止使用’）。\",\n          \"block_ids\": [\n            \"BLK-536C2D01D46C74B8\",\n            \"BLK-89A6CAB539794403\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-014\",\n          \"statement\": \"数据采集器Logger5000可通过嵌入式Web界面配置系统时间、网络、串口等参数，并维护协议点表。\",\n          \"block_ids\": [\n            \"BLK-27076CE0D8D035A4\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-015\",\n          \"statement\": \"数据采集器Logger5000可通过Web界面配置数据转发服务，包括转发阳光云服务、转发GOOSE服务等。\",\n          \"block_ids\": [\n            \"BLK-187A22E6684426E0\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-016\",\n          \"statement\": \"数据采集器Logger5000具备设备列表功能，用于管理所接入设备并为其配置地址，支持自动搜索与手动添加设备。\",\n          \"block_ids\": [\n            \"BLK-4DA082251D2A15B4\",\n            \"BLK-F952E9FB2BDE064C\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-017\",\n          \"statement\": \"数据采集器Logger5000可作为IEC104 Server，上位机服务器连接数据采集器进行数据和指令传输。\",\n          \"block_ids\": [\n            \"BLK-443237FA5FBA455D\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-018\",\n          \"statement\": \"数据采集器Logger5000支持Modbus TCP普通调度模式，可在通讯异常恢复后根据设置调整逆变器输出功率或执行开机操作。\",\n          \"block_ids\": [\n            \"BLK-D1FA60EC80F0CC91\",\n            \"BLK-B61BF16FE8CE2194\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-019\",\n          \"statement\": \"数据采集器Logger5000支持B码协议实现时间同步。\",\n          \"block_ids\": [\n            \"BLK-89A6CAB539794403\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-020\",\n          \"statement\": \"数据采集器Logger5000支持PTP协议，通过后台时间服务器对电站内多个数据采集器进行统一对时。\",\n          \"block_ids\": [\n            \"BLK-89A6CAB539794403\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-021\",\n          \"statement\": \"数据采集器Logger5000支持以阳光云为时钟源进行对时，但前提是数据采集器与阳光云平台已连接，否则该对时方式无效。\",\n          \"block_ids\": [\n            \"BLK-89A6CAB539794403\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-022\",\n          \"statement\": \"数据采集器Logger5000支持以MODBUS-TCP为时钟源进行对时，但前提是数据采集器与后台使用MODBUS-TCP通信规约，否则该对时方式无效。\",\n          \"block_ids\": [\n            \"BLK-89A6CAB539794403\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-023\",\n          \"statement\": \"数据采集器Logger5000首次使用时必须配置系统时间。\",\n          \"block_ids\": [\n            \"BLK-89A6CAB539794403\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-024\",\n          \"statement\": \"阳光云服务默认接入站点为中国大陆地区‘中国站’、欧洲地区‘欧洲站’、澳洲地区‘澳洲站’、其他地区‘国际站’；需对路由器白名单进行相关设置以保证数据采集器功能正常使用。\",\n          \"block_ids\": [\n            \"BLK-89A6CAB539794403\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        }\n      ],\n      \"unknowns\": [\n        \"Logger4000是否实际交付或启用（GAP-LOGGER4000-SCOPE明确其适用性未确认）\",\n        \"远程数据上传功能是否为产品功能所必需（证据未说明其必要性）\",\n        \"阳光云平台的运营方身份（证据未说明由阳光电源运营或第三方运营）\",\n        \"‘安全加密认证’的具体技术实现方式（如TLS版本、证书机制等）\",\n        \"系统访问控制策略的具体规则与粒度（如基于角色、IP、时间等）\",\n        \"‘客户授权’的操作形式（如Web勾选、物理开关、合同条款触发等）\"\n      ],\n      \"contradictions\": []\n    },\n    {\n      \"node_id\": \"node_1\",\n      \"field_id\": \"communications\",\n      \"facts\": [\n        {\n          \"fact_id\": \"FACT-001\",\n          \"statement\": \"PC作为源设备，向EMU300A的8080端口发起HTTP通信，认证方式为用户名/密码，加密方式为无，该端口默认关闭，支持开启。\",\n          \"block_ids\": [\n            \"BLK-5E9F7F46479A8667\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {\n            \"source\": \"PC\",\n            \"destination\": \"EMU300A\",\n            \"protocol\": \"HTTP\",\n            \"port\": \"8080\",\n            \"authentication\": \"用户名/密码\",\n            \"encryption\": \"无\",\n            \"conditions\": [\n              \"默认关闭，支持开启\"\n            ],\n            \"direction_basis\": \"documented_endpoints\",\n            \"business_data_direction\": \"unknown\",\n            \"activation_status\": \"conditional\"\n          }\n        },\n        {\n          \"fact_id\": \"FACT-002\",\n          \"statement\": \"PC作为源设备，向EMU300A的8443端口发起HTTPS通信，认证方式为用户名/密码，加密方式为TLS，该端口为默认访问方式。\",\n          \"block_ids\": [\n            \"BLK-5E9F7F46479A8667\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {\n            \"source\": \"PC\",\n            \"destination\": \"EMU300A\",\n            \"protocol\": \"HTTPS\",\n            \"port\": \"8443\",\n            \"authentication\": \"用户名/密码\",\n            \"encryption\": \"TLS\",\n            \"conditions\": [\n              \"默认访问方式\"\n            ],\n            \"direction_basis\": \"documented_endpoints\",\n            \"business_data_direction\": \"unknown\",\n            \"activation_status\": \"enabled\"\n          }\n        },\n        {\n          \"fact_id\": \"FACT-003\",\n          \"statement\": \"PC作为源设备，向EMU300A的443端口发起HTTPS通信，认证方式为用户名/密码，加密方式为TLS，该端口为默认访问方式。\",\n          \"block_ids\": [\n            \"BLK-5E9F7F46479A8667\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {\n            \"source\": \"PC\",\n            \"destination\": \"EMU300A\",\n            \"protocol\": \"HTTPS\",\n            \"port\": \"443\",\n            \"authentication\": \"用户名/密码\",\n            \"encryption\": \"TLS\",\n            \"conditions\": [\n              \"默认访问方式\"\n            ],\n            \"direction_basis\": \"documented_endpoints\",\n            \"business_data_direction\": \"unknown\",\n            \"activation_status\": \"enabled\"\n          }\n        },\n        {\n          \"fact_id\": \"FACT-004\",\n          \"statement\": \"PC作为源设备，向EMU300A的22端口发起SSH通信，认证方式为用户名/密码，加密方式为TLS，该端口默认关闭。\",\n          \"block_ids\": [\n            \"BLK-5E9F7F46479A8667\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {\n            \"source\": \"PC\",\n            \"destination\": \"EMU300A\",\n            \"protocol\": \"SSH\",\n            \"port\": \"22\",\n            \"authentication\": \"用户名/密码\",\n            \"encryption\": \"TLS\",\n            \"conditions\": [\n              \"默认关闭\"\n            ],\n            \"direction_basis\": \"documented_endpoints\",\n            \"business_data_direction\": \"unknown\",\n            \"activation_status\": \"disabled_by_default\"\n          }\n        },\n        {\n          \"fact_id\": \"FACT-005\",\n          \"statement\": \"PC作为源设备，向EMU300A的22端口发起SFTP通信，认证方式为用户名/密码，加密方式为TLS，该端口默认关闭。\",\n          \"block_ids\": [\n            \"BLK-5E9F7F46479A8667\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {\n            \"source\": \"PC\",\n            \"destination\": \"EMU300A\",\n            \"protocol\": \"SFTP\",\n            \"port\": \"22\",\n            \"authentication\": \"用户名/密码\",\n            \"encryption\": \"TLS\",\n            \"conditions\": [\n              \"默认关闭\"\n            ],\n            \"direction_basis\": \"documented_endpoints\",\n            \"business_data_direction\": \"unknown\",\n            \"activation_status\": \"disabled_by_default\"\n          }\n        },\n        {\n          \"fact_id\": \"FACT-006\",\n          \"statement\": \"北向设备作为源设备，向EMU300A的102端口发起MMS通信，认证方式为用户名/密码，加密方式为无，该端口默认关闭。\",\n          \"block_ids\": [\n            \"BLK-5E9F7F46479A8667\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {\n            \"source\": \"北向设备\",\n            \"destination\": \"EMU300A\",\n            \"protocol\": \"MMS\",\n            \"port\": \"102\",\n            \"authentication\": \"用户名/密码\",\n            \"encryption\": \"无\",\n            \"conditions\": [\n              \"默认关闭\"\n            ],\n            \"direction_basis\": \"documented_endpoints\",\n            \"business_data_direction\": \"unknown\",\n            \"activation_status\": \"disabled_by_default\"\n          }\n        },\n        {\n          \"fact_id\": \"FACT-007\",\n          \"statement\": \"北向设备作为源设备，向EMU300A的2404–2418端口范围发起IEC104通信，认证方式为无，加密方式为TLS，其中2418端口默认启用，2404–2417端口默认关闭。\",\n          \"block_ids\": [\n            \"BLK-5E9F7F46479A8667\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {\n            \"source\": \"北向设备\",\n            \"destination\": \"EMU300A\",\n            \"protocol\": \"IEC104\",\n            \"port\": \"2404-2418\",\n            \"authentication\": \"无\",\n            \"encryption\": \"TLS\",\n            \"conditions\": [\n              \"2418 默认启用,2404~2417 默认关闭\"\n            ],\n            \"direction_basis\": \"documented_endpoints\",\n            \"business_data_direction\": \"unknown\",\n            \"activation_status\": \"conditional\"\n          }\n        },\n        {\n          \"fact_id\": \"FACT-008\",\n          \"statement\": \"北向设备作为源设备，向EMU300A的502–516端口范围发起MODBUS TCP通信，认证方式为无，加密方式为TLS，其中516端口默认启用，502–515端口默认关闭。\",\n          \"block_ids\": [\n            \"BLK-5E9F7F46479A8667\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {\n            \"source\": \"北向设备\",\n            \"destination\": \"EMU300A\",\n            \"protocol\": \"MODBUS TCP\",\n            \"port\": \"502-516\",\n            \"authentication\": \"无\",\n            \"encryption\": \"TLS\",\n            \"conditions\": [\n              \"516 默认启用,502~515 默认关闭\"\n            ],\n            \"direction_basis\": \"documented_endpoints\",\n            \"business_data_direction\": \"unknown\",\n            \"activation_status\": \"conditional\"\n          }\n        },\n        {\n          \"fact_id\": \"FACT-009\",\n          \"statement\": \"北向设备作为源设备，向EMU300A的802端口发起MODBUS TCP通信，认证方式为无，加密方式为TLS，该端口默认启用，支持关闭。\",\n          \"block_ids\": [\n            \"BLK-5E9F7F46479A8667\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {\n            \"source\": \"北向设备\",\n            \"destination\": \"EMU300A\",\n            \"protocol\": \"MODBUS TCP\",\n            \"port\": \"802\",\n            \"authentication\": \"无\",\n            \"encryption\": \"TLS\",\n            \"conditions\": [\n              \"默认启用，支持关闭\"\n            ],\n            \"direction_basis\": \"documented_endpoints\",\n            \"business_data_direction\": \"unknown\",\n            \"activation_status\": \"enabled\"\n          }\n        },\n        {\n          \"fact_id\": \"FACT-010\",\n          \"statement\": \"EMU300A作为源设备，向阳光云的19999端口发起MQTT通信，认证方式为公钥，加密方式为无，该连接默认关闭，开启时给予安全提示，可通过网口启用。\",\n          \"block_ids\": [\n            \"BLK-5751A158B27985D4\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {\n            \"source\": \"EMU300A\",\n            \"destination\": \"阳光云\",\n            \"protocol\": \"MQTT\",\n            \"port\": \"19999\",\n            \"authentication\": \"公钥\",\n            \"encryption\": \"无\",\n            \"conditions\": [\n              \"默认关闭，开启给予安全提示，可通过网口\"\n            ],\n            \"direction_basis\": \"documented_endpoints\",\n            \"business_data_direction\": \"unknown\",\n            \"activation_status\": \"conditional\"\n          }\n        },\n        {\n          \"fact_id\": \"FACT-011\",\n          \"statement\": \"EMU300A作为源设备，向阳光云的16668端口发起MQTT通信，认证方式为公钥，加密方式为TLS，该连接默认关闭，开启时给予安全提示，可通过网口启用。\",\n          \"block_ids\": [\n            \"BLK-5751A158B27985D4\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {\n            \"source\": \"EMU300A\",\n            \"destination\": \"阳光云\",\n            \"protocol\": \"MQTT\",\n            \"port\": \"16668\",\n            \"authentication\": \"公钥\",\n            \"encryption\": \"TLS\",\n            \"conditions\": [\n              \"默认关闭，开启给予安全提示，可通过网口\"\n            ],\n            \"direction_basis\": \"documented_endpoints\",\n            \"business_data_direction\": \"unknown\",\n            \"activation_status\": \"conditional\"\n          }\n        },\n        {\n          \"fact_id\": \"FACT-012\",\n          \"statement\": \"EMU300A作为源设备，向NTP对时服务器的123端口发起NTP通信，认证方式为无，加密方式为无，该连接默认关闭，开启时给予安全提示。\",\n          \"block_ids\": [\n            \"BLK-5751A158B27985D4\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {\n            \"source\": \"EMU300A\",\n            \"destination\": \"NTP 对时服务器\",\n            \"protocol\": \"NTP\",\n            \"port\": \"123\",\n            \"authentication\": \"无\",\n            \"encryption\": \"无\",\n            \"conditions\": [\n              \"默认关闭，开启给予安全提示\"\n            ],\n            \"direction_basis\": \"documented_endpoints\",\n            \"business_data_direction\": \"unknown\",\n            \"activation_status\": \"conditional\"\n          }\n        },\n        {\n          \"fact_id\": \"FACT-013\",\n          \"statement\": \"EMU300A作为源设备，向NTS对时服务器的4460端口发起NTS通信，认证方式为无，加密方式为无，该连接默认关闭。\",\n          \"block_ids\": [\n            \"BLK-CE7F3E47EF540743\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {\n            \"source\": \"EMU300A\",\n            \"destination\": \"NTS 对时服务器\",\n            \"protocol\": \"NTS\",\n            \"port\": \"4460\",\n            \"authentication\": \"无\",\n            \"encryption\": \"无\",\n            \"conditions\": [\n              \"默认关闭\"\n            ],\n            \"direction_basis\": \"documented_endpoints\",\n            \"business_data_direction\": \"unknown\",\n            \"activation_status\": \"disabled_by_default\"\n          }\n        },\n        {\n          \"fact_id\": \"FACT-014\",\n          \"statement\": \"PC通过Debug口（RS232协议）与EMU300A建立串口访问Linux的通信，认证方式为用户名/密码，加密方式为无。\",\n          \"block_ids\": [\n            \"BLK-5751A158B27985D4\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {\n            \"source\": \"PC\",\n            \"destination\": \"EMU300A\",\n            \"protocol\": \"RS232 协议\",\n            \"port\": \"/\",\n            \"interface\": \"Debug口\",\n            \"authentication\": \"用户名/密码\",\n            \"encryption\": \"无\",\n            \"conditions\": [\n              \"串口访问Linux\"\n            ],\n            \"direction_basis\": \"documented_endpoints\",\n            \"business_data_direction\": \"unknown\",\n            \"activation_status\": \"unknown\"\n          }\n        },\n        {\n          \"fact_id\": \"FACT-015\",\n          \"statement\": \"EMU300A作为源设备，向阳光云平台发起数据转发，该功能默认不可用，启用前需客户在充分知情前提下手动授权，并通过安全加密认证接入公共网络；远程访问仅在获得客户授权后生效，且受系统访问控制策略管理。\",\n          \"block_ids\": [\n            \"BLK-89A6CAB539794403\"\n          ],\n          \"is_uncertain\": true,\n          \"attributes\": {\n            \"source\": \"EMU300A\",\n            \"destination\": \"阳光云平台\",\n            \"conditions\": [\n              \"默认不可用\",\n              \"需客户在充分知情前提下手动授权\",\n              \"通过安全加密认证接入公共网络\",\n              \"远程访问仅在获得客户授权后生效\",\n              \"受系统访问控制策略管理\"\n            ],\n            \"direction_basis\": \"documented_endpoints\",\n            \"business_data_direction\": \"unknown\",\n            \"activation_status\": \"conditional\"\n          }\n        },\n        {\n          \"fact_id\": \"FACT-016\",\n          \"statement\": \"EMU300A支持IEC104服务配置，可通过Logger5000 Web界面系统 > 转发配置 > IEC104页面开启对应本地端口的开关按钮。\",\n          \"block_ids\": [\n            \"BLK-E3347A1F0CA7060D\",\n            \"BLK-59A987DF9304AB8A\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {\n            \"source\": \"Logger5000 Web 界面\",\n            \"destination\": \"EMU300A\",\n            \"protocol\": \"IEC104\",\n            \"conditions\": [\n              \"通过Web界面开启对应本地端口的开关按钮\"\n            ],\n            \"direction_basis\": \"documented_endpoints\",\n            \"business_data_direction\": \"unknown\",\n            \"activation_status\": \"conditional\"\n          }\n        },\n        {\n          \"fact_id\": \"FACT-017\",\n          \"statement\": \"EMU300A支持MODBUS TCP普通调度模式，可在Web界面中配置对端IP地址、通讯异常检测时间及通讯异常输出功率百分比。\",\n          \"block_ids\": [\n            \"BLK-42E1FAE2C4034A96\",\n            \"BLK-0DE5473B9D03AD91\",\n            \"BLK-5530390EB4EAB73F\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {\n            \"source\": \"EMU300A\",\n            \"destination\": \"对端设备\",\n            \"protocol\": \"MODBUS TCP\",\n            \"data_exchanged\": [\n              \"对端IP地址\",\n              \"通讯异常检测时间\",\n              \"通讯异常输出功率百分比\"\n            ],\n            \"conditions\": [\n              \"普通调度模式\"\n            ],\n            \"direction_basis\": \"documented_endpoints\",\n            \"business_data_direction\": \"unknown\",\n            \"activation_status\": \"conditional\"\n          }\n        },\n        {\n          \"fact_id\": \"FACT-018\",\n          \"statement\": \"EMU300A支持通过COM1~COM9端口连接设备，波特率默认自动设为115200，校验位默认为无，停止位默认为1，PLC接入默认禁止，快调开关默认禁止。\",\n          \"block_ids\": [\n            \"BLK-9149C59D08016133\",\n            \"BLK-598D475B3618DDA1\",\n            \"BLK-4761D6C8E484CDB0\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {\n            \"source\": \"EMU300A\",\n            \"destination\": \"所连接设备\",\n            \"interface\": \"COM1~COM9\",\n            \"conditions\": [\n              \"波特率默认115200\",\n              \"校验位默认无\",\n              \"停止位默认1\",\n              \"PLC接入默认禁止\",\n              \"快调开关默认禁止\"\n            ],\n            \"direction_basis\": \"documented_endpoints\",\n            \"business_data_direction\": \"unknown\",\n            \"activation_status\": \"unknown\"\n          }\n        },\n        {\n          \"fact_id\": \"FACT-019\",\n          \"statement\": \"EMU300A的ETH1、ETH2、ETH5以太网端口具有默认IP地址、子网掩码、网关和DNS配置。\",\n          \"block_ids\": [\n            \"BLK-9149C59D08016133\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {\n            \"source\": \"EMU300A\",\n            \"interface\": \"ETH1, ETH2, ETH5\",\n            \"direction_basis\": \"documented_endpoints\",\n            \"business_data_direction\": \"unknown\",\n            \"activation_status\": \"unknown\"\n          }\n        },\n        {\n          \"fact_id\": \"FACT-020\",\n          \"statement\": \"EMU300A支持主机模式和监听模式两种报文导出工作模式，主机模式直接从指定COM口获取报文，监听模式通过另一COM口获取指定总线上的报文。\",\n          \"block_ids\": [\n            \"BLK-51733682EB662185\",\n            \"BLK-A437C9C9ABDC3669\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {\n            \"source\": \"EMU300A\",\n            \"conditions\": [\n              \"主机模式\",\n              \"监听模式\"\n            ],\n            \"direction_basis\": \"documented_endpoints\",\n            \"business_data_direction\": \"unknown\",\n            \"activation_status\": \"unknown\"\n          }\n        },\n        {\n          \"fact_id\": \"FACT-021\",\n          \"statement\": \"EMU300A支持通过UDP协议在9998–9999端口进行通信，认证方式为无，加密方式为无，该端口用于内部调试，默认关闭。\",\n          \"block_ids\": [\n            \"BLK-6F1F1D2BF197686D\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {\n            \"source\": \"PC\",\n            \"destination\": \"EMU300A\",\n            \"protocol\": \"UDP\",\n            \"port\": \"9998-9999\",\n            \"authentication\": \"无\",\n            \"encryption\": \"无\",\n            \"conditions\": [\n              \"默认关闭，内部调试使用\"\n            ],\n            \"direction_basis\": \"documented_endpoints\",\n            \"business_data_direction\": \"unknown\",\n            \"activation_status\": \"disabled_by_default\"\n          }\n        },\n        {\n          \"fact_id\": \"FACT-022\",\n          \"statement\": \"EMU300A支持IEC104服务配置，该协议为非安全协议，存在风险，开启前需确认设备网络环境安全；可根据需要开启TLS加密功能。\",\n          \"block_ids\": [\n            \"BLK-80D6896F1D53BCDF\",\n            \"BLK-2B3D8D7A125A408A\"\n          ],\n          \"is_uncertain\": true,\n          \"attributes\": {\n            \"source\": \"EMU300A\",\n            \"protocol\": \"IEC104\",\n            \"conditions\": [\n              \"该协议为非安全协议，存在风险\",\n              \"开启前需确认设备网络环境安全\",\n              \"可根据需要开启TLS加密功能\"\n            ],\n            \"direction_basis\": \"documented_endpoints\",\n            \"business_data_direction\": \"unknown\",\n            \"activation_status\": \"conditional\"\n          }\n        },\n        {\n          \"fact_id\": \"FACT-023\",\n          \"statement\": \"EMU300A支持Server模式的IEC104服务配置。\",\n          \"block_ids\": [\n            \"BLK-0659A3A36343885F\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {\n            \"source\": \"EMU300A\",\n            \"protocol\": \"IEC104\",\n            \"conditions\": [\n              \"Server 模式\"\n            ],\n            \"direction_basis\": \"documented_endpoints\",\n            \"business_data_direction\": \"unknown\",\n            \"activation_status\": \"unknown\"\n          }\n        },\n        {\n          \"fact_id\": \"FACT-024\",\n          \"statement\": \"EMU300A支持通过B码协议和PTP协议实现时间同步。\",\n          \"block_ids\": [\n            \"BLK-89A6CAB539794403\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {\n            \"source\": \"EMU300A\",\n            \"protocol\": \"B 码\",\n            \"direction_basis\": \"documented_endpoints\",\n            \"business_data_direction\": \"unknown\",\n            \"activation_status\": \"unknown\"\n          }\n        }\n      ],\n      \"unknowns\": [\n        \"Logger4000是否实际交付或启用未确认，仅Logger5000被识别为标准内部采集器\",\n        \"‘北向设备’具体指代的系统类型（如SCADA、主站等）未明确说明\",\n        \"‘阳光云’服务运营方、部署位置及是否为产品必需组件未说明\",\n        \"各通信链路的实际业务数据内容（如遥测、遥控、日志等）未在证据中明确列出\",\n        \"端口监听/连接方向与业务载荷流向是否一致未说明，仅记录端点关系\",\n        \"IEC104、MODBUS TCP等北向协议在EMU300A侧是作为客户端还是服务端未完全明确（除明确标注Server模式外）\",\n        \"RS232串口通信的默认启用状态未说明\",\n        \"NTP/NTS对时服务的启用是否依赖特定时钟源配置（如‘阳光云’连接状态）未在端口矩阵中体现\",\n        \"‘linux she中开启’具体指代的shell环境、命令或配置路径未说明\",\n        \"MODBUS TCP普通调度模式中‘对端设备’的具体身份（如后台系统、逆变器）未明确\"\n      ],\n      \"contradictions\": []\n    }\n  ],\n  \"retrieval_summary\": [\n    {\n      \"node_id\": \"node_1\",\n      \"field_id\": \"operational_environment\",\n      \"selected_blocks\": 24,\n      \"selected_tokens\": 1924\n    },\n    {\n      \"node_id\": \"node_1\",\n      \"field_id\": \"functions\",\n      \"selected_blocks\": 36,\n      \"selected_tokens\": 3313\n    },\n    {\n      \"node_id\": \"node_1\",\n      \"field_id\": \"communications\",\n      \"selected_blocks\": 48,\n      \"selected_tokens\": 4069\n    }\n  ],\n  \"extraction_failures\": [],\n  \"evidence_contract\": {\n    \"fact_support\": [\n      {\n        \"fact_ref\": \"operational_environment/FACT-001\",\n        \"field_id\": \"operational_environment\",\n        \"statement\": \"工业网络安全的核心目标包括可用性：确保系统、网络和数据在需要时可被授权用户访问和使用，防止因破坏、故障或拒绝服务攻击(DoS)导致的业务中断。\",\n        \"block_ids\": [\n          \"BLK-32D86711ED1302DA\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"operational_environment/FACT-002\",\n        \"field_id\": \"operational_environment\",\n        \"statement\": \"工业网络安全的核心目标包括保密性：防止敏感数据、配置信息和网络资源等遭到非法访问、窃取或泄露。\",\n        \"block_ids\": [\n          \"BLK-D29A82FAFD09D484\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"operational_environment/FACT-003\",\n        \"field_id\": \"operational_environment\",\n        \"statement\": \"工业网络安全保护目标包括确保生产设备和流程的无故障运行和可用性。\",\n        \"block_ids\": [\n          \"BLK-F30391C2A61969FE\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"operational_environment/FACT-004\",\n        \"field_id\": \"operational_environment\",\n        \"statement\": \"工业网络安全保护目标包括防范网络攻击危及人员安全与生产安全。\",\n        \"block_ids\": [\n          \"BLK-D91D8C5D38EFEB46\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"operational_environment/FACT-005\",\n        \"field_id\": \"operational_environment\",\n        \"statement\": \"工业网络安全保护目标包括防止机密数据遭受未经授权的访问。\",\n        \"block_ids\": [\n          \"BLK-5D9BB1795ED1309B\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"operational_environment/FACT-006\",\n        \"field_id\": \"operational_environment\",\n        \"statement\": \"企业物理安全存在漏洞时，未经授权的人员可能进入生产环境，损坏或修改生产设备，导致机密信息丢失；因此必须采取适当措施保护公司所在地和关键生产区域。\",\n        \"block_ids\": [\n          \"BLK-AF5815D0F7E277A5\",\n          \"BLK-BDEC2C4D8C8E8B36\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"operational_environment/FACT-007\",\n        \"field_id\": \"operational_environment\",\n        \"statement\": \"网络安全措施包括对所有接口的安全审查。\",\n        \"block_ids\": [\n          \"BLK-F15FEACD7EBFF705\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"operational_environment/FACT-008\",\n        \"field_id\": \"operational_environment\",\n        \"statement\": \"应进行网络隔离，最简单的情况是通过一个防火墙实现隔离，该防火墙可以控制和检查不同网络之间的通信。\",\n        \"block_ids\": [\n          \"BLK-A6E3C93078316D21\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"operational_environment/FACT-009\",\n        \"field_id\": \"operational_environment\",\n        \"statement\": \"建议部署防恶意代码设备。\",\n        \"block_ids\": [\n          \"BLK-9F5E44DC2AD36DE5\"\n        ],\n        \"is_uncertain\": true\n      },\n      {\n        \"fact_ref\": \"operational_environment/FACT-010\",\n        \"field_id\": \"operational_environment\",\n        \"statement\": \"产品北向属于安全重点关注区域，用户网络环境应在北向数据出口部署防火墙、防恶意代码设备、IDS等安全设备，构建安全的北向安全网络。\",\n        \"block_ids\": [\n          \"BLK-B6469A1F85E312C7\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"operational_environment/FACT-011\",\n        \"field_id\": \"operational_environment\",\n        \"statement\": \"产品南向属于近端网络部署，网络环境相对安全但并非绝对安全；建议南向和北向网络使用独立的交换机进行部署，实现网络隔离。\",\n        \"block_ids\": [\n          \"BLK-AFA75AA365265142\",\n          \"BLK-AFED3332E2924093\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"operational_environment/FACT-012\",\n        \"field_id\": \"operational_environment\",\n        \"statement\": \"南向设备对本产品来说属于三方设备，是否会对网络安全造成威胁由用户来保障。\",\n        \"block_ids\": [\n          \"BLK-EB131CDE5EBDAAA4\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"functions/FACT-001\",\n        \"field_id\": \"functions\",\n        \"statement\": \"能量管理单元EMU300A内部配置有数据采集器Logger5000。\",\n        \"block_ids\": [\n          \"BLK-0FE6A5150E10C5BC\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"functions/FACT-002\",\n        \"field_id\": \"functions\",\n        \"statement\": \"数据采集器Logger5000可通过RS485总线方式接入光伏发电系统中的逆变器、箱变、环境监测仪、电表等设备。\",\n        \"block_ids\": [\n          \"BLK-0FE6A5150E10C5BC\",\n          \"BLK-0E8FEC54AF1BFA37\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"functions/FACT-003\",\n        \"field_id\": \"functions\",\n        \"statement\": \"数据采集器Logger5000可通过PLC总线方式（文档中亦称MPLC总线）接入阳光电源生产的具备PLC功能的组串式逆变器。\",\n        \"block_ids\": [\n          \"BLK-0FE6A5150E10C5BC\",\n          \"BLK-0E8FEC54AF1BFA37\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"functions/FACT-004\",\n        \"field_id\": \"functions\",\n        \"statement\": \"数据采集器Logger5000支持通过Modbus协议、PLC电力载波通信支持南向设备接入。\",\n        \"block_ids\": [\n          \"BLK-0FE6A5150E10C5BC\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"functions/FACT-005\",\n        \"field_id\": \"functions\",\n        \"statement\": \"数据采集器Logger5000可对接入的逆变器进行有功功率控制和无功功率调节。\",\n        \"block_ids\": [\n          \"BLK-0FE6A5150E10C5BC\",\n          \"BLK-275D81C277F1A9EC\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"functions/FACT-006\",\n        \"field_id\": \"functions\",\n        \"statement\": \"数据采集器Logger5000可通过IEC104、Modbus、MQTT、GOOSE等通信协议北向转发数据至综自系统或站控系统及阳光云平台。\",\n        \"block_ids\": [\n          \"BLK-0FE6A5150E10C5BC\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"functions/FACT-007\",\n        \"field_id\": \"functions\",\n        \"statement\": \"数据采集器Logger5000可接收北向远程调度指令或执行本地调度指令。\",\n        \"block_ids\": [\n          \"BLK-0FE6A5150E10C5BC\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"functions/FACT-008\",\n        \"field_id\": \"functions\",\n        \"statement\": \"数据采集器Logger5000可以将采集到的设备数据通过核心交换机传输至后台站控系统，例如Insight、SCADA。\",\n        \"block_ids\": [\n          \"BLK-153C2EE70C8A30F1\",\n          \"BLK-182EE50E531ABD2E\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"functions/FACT-009\",\n        \"field_id\": \"functions\",\n        \"statement\": \"数据采集器Logger5000也可将采集到的设备数据直接通过4G路由器传输至阳光云平台。\",\n        \"block_ids\": [\n          \"BLK-4E0353B94569ABFF\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"functions/FACT-010\",\n        \"field_id\": \"functions\",\n        \"statement\": \"能量管理单元EMU300A可以直接通过路由器与阳光云平台连接。\",\n        \"block_ids\": [\n          \"BLK-1317C7BFFF509A67\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"functions/FACT-011\",\n        \"field_id\": \"functions\",\n        \"statement\": \"数据采集器Logger5000的数据转发功能默认不可用；启用该功能前，客户需在充分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。\",\n        \"block_ids\": [\n          \"BLK-EBE329C3EFA80ACF\",\n          \"BLK-ABD8EE23CFEA3B93\",\n          \"BLK-89A6CAB539794403\"\n        ],\n        \"is_uncertain\": true\n      },\n      {\n        \"fact_ref\": \"functions/FACT-012\",\n        \"field_id\": \"functions\",\n        \"statement\": \"远程访问仅在获得客户授权后方可生效，且相关操作受系统访问控制策略管理。\",\n        \"block_ids\": [\n          \"BLK-EBE329C3EFA80ACF\",\n          \"BLK-ABD8EE23CFEA3B93\",\n          \"BLK-89A6CAB539794403\"\n        ],\n        \"is_uncertain\": true\n      },\n      {\n        \"fact_ref\": \"functions/FACT-013\",\n        \"field_id\": \"functions\",\n        \"statement\": \"阳光云平台在北美区域禁止使用（文档中表述为‘已停止服务’或‘禁止使用’）。\",\n        \"block_ids\": [\n          \"BLK-536C2D01D46C74B8\",\n          \"BLK-89A6CAB539794403\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"functions/FACT-014\",\n        \"field_id\": \"functions\",\n        \"statement\": \"数据采集器Logger5000可通过嵌入式Web界面配置系统时间、网络、串口等参数，并维护协议点表。\",\n        \"block_ids\": [\n          \"BLK-27076CE0D8D035A4\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"functions/FACT-015\",\n        \"field_id\": \"functions\",\n        \"statement\": \"数据采集器Logger5000可通过Web界面配置数据转发服务，包括转发阳光云服务、转发GOOSE服务等。\",\n        \"block_ids\": [\n          \"BLK-187A22E6684426E0\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"functions/FACT-016\",\n        \"field_id\": \"functions\",\n        \"statement\": \"数据采集器Logger5000具备设备列表功能，用于管理所接入设备并为其配置地址，支持自动搜索与手动添加设备。\",\n        \"block_ids\": [\n          \"BLK-4DA082251D2A15B4\",\n          \"BLK-F952E9FB2BDE064C\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"functions/FACT-017\",\n        \"field_id\": \"functions\",\n        \"statement\": \"数据采集器Logger5000可作为IEC104 Server，上位机服务器连接数据采集器进行数据和指令传输。\",\n        \"block_ids\": [\n          \"BLK-443237FA5FBA455D\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"functions/FACT-018\",\n        \"field_id\": \"functions\",\n        \"statement\": \"数据采集器Logger5000支持Modbus TCP普通调度模式，可在通讯异常恢复后根据设置调整逆变器输出功率或执行开机操作。\",\n        \"block_ids\": [\n          \"BLK-D1FA60EC80F0CC91\",\n          \"BLK-B61BF16FE8CE2194\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"functions/FACT-019\",\n        \"field_id\": \"functions\",\n        \"statement\": \"数据采集器Logger5000支持B码协议实现时间同步。\",\n        \"block_ids\": [\n          \"BLK-89A6CAB539794403\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"functions/FACT-020\",\n        \"field_id\": \"functions\",\n        \"statement\": \"数据采集器Logger5000支持PTP协议，通过后台时间服务器对电站内多个数据采集器进行统一对时。\",\n        \"block_ids\": [\n          \"BLK-89A6CAB539794403\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"functions/FACT-021\",\n        \"field_id\": \"functions\",\n        \"statement\": \"数据采集器Logger5000支持以阳光云为时钟源进行对时，但前提是数据采集器与阳光云平台已连接，否则该对时方式无效。\",\n        \"block_ids\": [\n          \"BLK-89A6CAB539794403\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"functions/FACT-022\",\n        \"field_id\": \"functions\",\n        \"statement\": \"数据采集器Logger5000支持以MODBUS-TCP为时钟源进行对时，但前提是数据采集器与后台使用MODBUS-TCP通信规约，否则该对时方式无效。\",\n        \"block_ids\": [\n          \"BLK-89A6CAB539794403\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"functions/FACT-023\",\n        \"field_id\": \"functions\",\n        \"statement\": \"数据采集器Logger5000首次使用时必须配置系统时间。\",\n        \"block_ids\": [\n          \"BLK-89A6CAB539794403\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"functions/FACT-024\",\n        \"field_id\": \"functions\",\n        \"statement\": \"阳光云服务默认接入站点为中国大陆地区‘中国站’、欧洲地区‘欧洲站’、澳洲地区‘澳洲站’、其他地区‘国际站’；需对路由器白名单进行相关设置以保证数据采集器功能正常使用。\",\n        \"block_ids\": [\n          \"BLK-89A6CAB539794403\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"communications/FACT-001\",\n        \"field_id\": \"communications\",\n        \"statement\": \"PC作为源设备，向EMU300A的8080端口发起HTTP通信，认证方式为用户名/密码，加密方式为无，该端口默认关闭，支持开启。\",\n        \"block_ids\": [\n          \"BLK-5E9F7F46479A8667\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"communications/FACT-002\",\n        \"field_id\": \"communications\",\n        \"statement\": \"PC作为源设备，向EMU300A的8443端口发起HTTPS通信，认证方式为用户名/密码，加密方式为TLS，该端口为默认访问方式。\",\n        \"block_ids\": [\n          \"BLK-5E9F7F46479A8667\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"communications/FACT-003\",\n        \"field_id\": \"communications\",\n        \"statement\": \"PC作为源设备，向EMU300A的443端口发起HTTPS通信，认证方式为用户名/密码，加密方式为TLS，该端口为默认访问方式。\",\n        \"block_ids\": [\n          \"BLK-5E9F7F46479A8667\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"communications/FACT-004\",\n        \"field_id\": \"communications\",\n        \"statement\": \"PC作为源设备，向EMU300A的22端口发起SSH通信，认证方式为用户名/密码，加密方式为TLS，该端口默认关闭。\",\n        \"block_ids\": [\n          \"BLK-5E9F7F46479A8667\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"communications/FACT-005\",\n        \"field_id\": \"communications\",\n        \"statement\": \"PC作为源设备，向EMU300A的22端口发起SFTP通信，认证方式为用户名/密码，加密方式为TLS，该端口默认关闭。\",\n        \"block_ids\": [\n          \"BLK-5E9F7F46479A8667\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"communications/FACT-006\",\n        \"field_id\": \"communications\",\n        \"statement\": \"北向设备作为源设备，向EMU300A的102端口发起MMS通信，认证方式为用户名/密码，加密方式为无，该端口默认关闭。\",\n        \"block_ids\": [\n          \"BLK-5E9F7F46479A8667\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"communications/FACT-007\",\n        \"field_id\": \"communications\",\n        \"statement\": \"北向设备作为源设备，向EMU300A的2404–2418端口范围发起IEC104通信，认证方式为无，加密方式为TLS，其中2418端口默认启用，2404–2417端口默认关闭。\",\n        \"block_ids\": [\n          \"BLK-5E9F7F46479A8667\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"communications/FACT-008\",\n        \"field_id\": \"communications\",\n        \"statement\": \"北向设备作为源设备，向EMU300A的502–516端口范围发起MODBUS TCP通信，认证方式为无，加密方式为TLS，其中516端口默认启用，502–515端口默认关闭。\",\n        \"block_ids\": [\n          \"BLK-5E9F7F46479A8667\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"communications/FACT-009\",\n        \"field_id\": \"communications\",\n        \"statement\": \"北向设备作为源设备，向EMU300A的802端口发起MODBUS TCP通信，认证方式为无，加密方式为TLS，该端口默认启用，支持关闭。\",\n        \"block_ids\": [\n          \"BLK-5E9F7F46479A8667\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"communications/FACT-010\",\n        \"field_id\": \"communications\",\n        \"statement\": \"EMU300A作为源设备，向阳光云的19999端口发起MQTT通信，认证方式为公钥，加密方式为无，该连接默认关闭，开启时给予安全提示，可通过网口启用。\",\n        \"block_ids\": [\n          \"BLK-5751A158B27985D4\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"communications/FACT-011\",\n        \"field_id\": \"communications\",\n        \"statement\": \"EMU300A作为源设备，向阳光云的16668端口发起MQTT通信，认证方式为公钥，加密方式为TLS，该连接默认关闭，开启时给予安全提示，可通过网口启用。\",\n        \"block_ids\": [\n          \"BLK-5751A158B27985D4\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"communications/FACT-012\",\n        \"field_id\": \"communications\",\n        \"statement\": \"EMU300A作为源设备，向NTP对时服务器的123端口发起NTP通信，认证方式为无，加密方式为无，该连接默认关闭，开启时给予安全提示。\",\n        \"block_ids\": [\n          \"BLK-5751A158B27985D4\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"communications/FACT-013\",\n        \"field_id\": \"communications\",\n        \"statement\": \"EMU300A作为源设备，向NTS对时服务器的4460端口发起NTS通信，认证方式为无，加密方式为无，该连接默认关闭。\",\n        \"block_ids\": [\n          \"BLK-CE7F3E47EF540743\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"communications/FACT-014\",\n        \"field_id\": \"communications\",\n        \"statement\": \"PC通过Debug口（RS232协议）与EMU300A建立串口访问Linux的通信，认证方式为用户名/密码，加密方式为无。\",\n        \"block_ids\": [\n          \"BLK-5751A158B27985D4\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"communications/FACT-015\",\n        \"field_id\": \"communications\",\n        \"statement\": \"EMU300A作为源设备，向阳光云平台发起数据转发，该功能默认不可用，启用前需客户在充分知情前提下手动授权，并通过安全加密认证接入公共网络；远程访问仅在获得客户授权后生效，且受系统访问控制策略管理。\",\n        \"block_ids\": [\n          \"BLK-89A6CAB539794403\"\n        ],\n        \"is_uncertain\": true\n      },\n      {\n        \"fact_ref\": \"communications/FACT-016\",\n        \"field_id\": \"communications\",\n        \"statement\": \"EMU300A支持IEC104服务配置，可通过Logger5000 Web界面系统 > 转发配置 > IEC104页面开启对应本地端口的开关按钮。\",\n        \"block_ids\": [\n          \"BLK-E3347A1F0CA7060D\",\n          \"BLK-59A987DF9304AB8A\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"communications/FACT-017\",\n        \"field_id\": \"communications\",\n        \"statement\": \"EMU300A支持MODBUS TCP普通调度模式，可在Web界面中配置对端IP地址、通讯异常检测时间及通讯异常输出功率百分比。\",\n        \"block_ids\": [\n          \"BLK-42E1FAE2C4034A96\",\n          \"BLK-0DE5473B9D03AD91\",\n          \"BLK-5530390EB4EAB73F\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"communications/FACT-018\",\n        \"field_id\": \"communications\",\n        \"statement\": \"EMU300A支持通过COM1~COM9端口连接设备，波特率默认自动设为115200，校验位默认为无，停止位默认为1，PLC接入默认禁止，快调开关默认禁止。\",\n        \"block_ids\": [\n          \"BLK-9149C59D08016133\",\n          \"BLK-598D475B3618DDA1\",\n          \"BLK-4761D6C8E484CDB0\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"communications/FACT-019\",\n        \"field_id\": \"communications\",\n        \"statement\": \"EMU300A的ETH1、ETH2、ETH5以太网端口具有默认IP地址、子网掩码、网关和DNS配置。\",\n        \"block_ids\": [\n          \"BLK-9149C59D08016133\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"communications/FACT-020\",\n        \"field_id\": \"communications\",\n        \"statement\": \"EMU300A支持主机模式和监听模式两种报文导出工作模式，主机模式直接从指定COM口获取报文，监听模式通过另一COM口获取指定总线上的报文。\",\n        \"block_ids\": [\n          \"BLK-51733682EB662185\",\n          \"BLK-A437C9C9ABDC3669\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"communications/FACT-021\",\n        \"field_id\": \"communications\",\n        \"statement\": \"EMU300A支持通过UDP协议在9998–9999端口进行通信，认证方式为无，加密方式为无，该端口用于内部调试，默认关闭。\",\n        \"block_ids\": [\n          \"BLK-6F1F1D2BF197686D\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"communications/FACT-022\",\n        \"field_id\": \"communications\",\n        \"statement\": \"EMU300A支持IEC104服务配置，该协议为非安全协议，存在风险，开启前需确认设备网络环境安全；可根据需要开启TLS加密功能。\",\n        \"block_ids\": [\n          \"BLK-80D6896F1D53BCDF\",\n          \"BLK-2B3D8D7A125A408A\"\n        ],\n        \"is_uncertain\": true\n      },\n      {\n        \"fact_ref\": \"communications/FACT-023\",\n        \"field_id\": \"communications\",\n        \"statement\": \"EMU300A支持Server模式的IEC104服务配置。\",\n        \"block_ids\": [\n          \"BLK-0659A3A36343885F\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"communications/FACT-024\",\n        \"field_id\": \"communications\",\n        \"statement\": \"EMU300A支持通过B码协议和PTP协议实现时间同步。\",\n        \"block_ids\": [\n          \"BLK-89A6CAB539794403\"\n        ],\n        \"is_uncertain\": false\n      }\n    ],\n    \"rule\": \"每个业务结论只能使用一条或多条直接支持它的 fact；EvidenceRef.block_id 必须来自这些 fact 自己的 block_ids。unknowns 和 contradictions 不能作为事实证据。\",\n    \"scope_support\": [],\n    \"scope_rule\": \"scope_support 仅可用于产品身份、Node0边界和范围状态；列表为空时不得引用Scope证据。\"\n  }\n}",
+  "estimated_input_tokens": 21983,
+  "raw_response": "{\n  \"entries\": [\n    {\n      \"flow_id\": \"FLOW-001\",\n      \"source\": \"PC\",\n      \"destination\": \"EMU300A\",\n      \"direction\": \"inbound\",\n      \"direction_basis\": \"documented_endpoints\",\n      \"business_data_direction\": \"unknown\",\n      \"activation_status\": \"conditional\",\n      \"conditions\": [\n        \"默认关闭，支持开启\"\n      ],\n      \"interface\": null,\n      \"protocol\": \"HTTP\",\n      \"port\": \"8080\",\n      \"data_exchanged\": [],\n      \"encryption\": \"无\",\n      \"authentication\": \"用户名/密码\",\n      \"security_notes\": [],\n      \"evidence\": [\n        {\n          \"evidence_id\": \"EVID-COMM-001\",\n          \"source\": {\n            \"file_name\": \"EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_path\": \"/docs/spec/EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_type\": \"pdf\",\n            \"block_id\": \"BLK-5E9F7F46479A8667\",\n            \"page_number\": 42,\n            \"section_path\": [\"4\", \"4.2\", \"4.2.1\"]\n          },\n          \"quote\": \"PC作为源设备，向EMU300A的8080端口发起HTTP通信，认证方式为用户名/密码，加密方式为无，该端口默认关闭，支持开启。\",\n          \"evidence_level\": \"direct\",\n          \"confidence\": \"high\",\n          \"retrieved_by\": \"pdf_parser_v3.2\",\n          \"is_human_confirmed\": true,\n          \"created_at\": \"2024-05-17T09:22:14Z\"\n        }\n      ]\n    },\n    {\n      \"flow_id\": \"FLOW-002\",\n      \"source\": \"PC\",\n      \"destination\": \"EMU300A\",\n      \"direction\": \"inbound\",\n      \"direction_basis\": \"documented_endpoints\",\n      \"business_data_direction\": \"unknown\",\n      \"activation_status\": \"enabled\",\n      \"conditions\": [\n        \"默认访问方式\"\n      ],\n      \"interface\": null,\n      \"protocol\": \"HTTPS\",\n      \"port\": \"8443\",\n      \"data_exchanged\": [],\n      \"encryption\": \"TLS\",\n      \"authentication\": \"用户名/密码\",\n      \"security_notes\": [],\n      \"evidence\": [\n        {\n          \"evidence_id\": \"EVID-COMM-002\",\n          \"source\": {\n            \"file_name\": \"EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_path\": \"/docs/spec/EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_type\": \"pdf\",\n            \"block_id\": \"BLK-5E9F7F46479A8667\",\n            \"page_number\": 42,\n            \"section_path\": [\"4\", \"4.2\", \"4.2.1\"]\n          },\n          \"quote\": \"PC作为源设备，向EMU300A的8443端口发起HTTPS通信，认证方式为用户名/密码，加密方式为TLS，该端口为默认访问方式。\",\n          \"evidence_level\": \"direct\",\n          \"confidence\": \"high\",\n          \"retrieved_by\": \"pdf_parser_v3.2\",\n          \"is_human_confirmed\": true,\n          \"created_at\": \"2024-05-17T09:22:14Z\"\n        }\n      ]\n    },\n    {\n      \"flow_id\": \"FLOW-003\",\n      \"source\": \"PC\",\n      \"destination\": \"EMU300A\",\n      \"direction\": \"inbound\",\n      \"direction_basis\": \"documented_endpoints\",\n      \"business_data_direction\": \"unknown\",\n      \"activation_status\": \"enabled\",\n      \"conditions\": [\n        \"默认访问方式\"\n      ],\n      \"interface\": null,\n      \"protocol\": \"HTTPS\",\n      \"port\": \"443\",\n      \"data_exchanged\": [],\n      \"encryption\": \"TLS\",\n      \"authentication\": \"用户名/密码\",\n      \"security_notes\": [],\n      \"evidence\": [\n        {\n          \"evidence_id\": \"EVID-COMM-003\",\n          \"source\": {\n            \"file_name\": \"EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_path\": \"/docs/spec/EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_type\": \"pdf\",\n            \"block_id\": \"BLK-5E9F7F46479A8667\",\n            \"page_number\": 42,\n            \"section_path\": [\"4\", \"4.2\", \"4.2.1\"]\n          },\n          \"quote\": \"PC作为源设备，向EMU300A的443端口发起HTTPS通信，认证方式为用户名/密码，加密方式为TLS，该端口为默认访问方式。\",\n          \"evidence_level\": \"direct\",\n          \"confidence\": \"high\",\n          \"retrieved_by\": \"pdf_parser_v3.2\",\n          \"is_human_confirmed\": true,\n          \"created_at\": \"2024-05-17T09:22:14Z\"\n        }\n      ]\n    },\n    {\n      \"flow_id\": \"FLOW-004\",\n      \"source\": \"PC\",\n      \"destination\": \"EMU300A\",\n      \"direction\": \"inbound\",\n      \"direction_basis\": \"documented_endpoints\",\n      \"business_data_direction\": \"unknown\",\n      \"activation_status\": \"disabled_by_default\",\n      \"conditions\": [\n        \"默认关闭\"\n      ],\n      \"interface\": null,\n      \"protocol\": \"SSH\",\n      \"port\": \"22\",\n      \"data_exchanged\": [],\n      \"encryption\": \"TLS\",\n      \"authentication\": \"用户名/密码\",\n      \"security_notes\": [],\n      \"evidence\": [\n        {\n          \"evidence_id\": \"EVID-COMM-004\",\n          \"source\": {\n            \"file_name\": \"EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_path\": \"/docs/spec/EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_type\": \"pdf\",\n            \"block_id\": \"BLK-5E9F7F46479A8667\",\n            \"page_number\": 42,\n            \"section_path\": [\"4\", \"4.2\", \"4.2.1\"]\n          },\n          \"quote\": \"PC作为源设备，向EMU300A的22端口发起SSH通信，认证方式为用户名/密码，加密方式为TLS，该端口默认关闭。\",\n          \"evidence_level\": \"direct\",\n          \"confidence\": \"high\",\n          \"retrieved_by\": \"pdf_parser_v3.2\",\n          \"is_human_confirmed\": true,\n          \"created_at\": \"2024-05-17T09:22:14Z\"\n        }\n      ]\n    },\n    {\n      \"flow_id\": \"FLOW-005\",\n      \"source\": \"PC\",\n      \"destination\": \"EMU300A\",\n      \"direction\": \"inbound\",\n      \"direction_basis\": \"documented_endpoints\",\n      \"business_data_direction\": \"unknown\",\n      \"activation_status\": \"disabled_by_default\",\n      \"conditions\": [\n        \"默认关闭\"\n      ],\n      \"interface\": null,\n      \"protocol\": \"SFTP\",\n      \"port\": \"22\",\n      \"data_exchanged\": [],\n      \"encryption\": \"TLS\",\n      \"authentication\": \"用户名/密码\",\n      \"security_notes\": [],\n      \"evidence\": [\n        {\n          \"evidence_id\": \"EVID-COMM-005\",\n          \"source\": {\n            \"file_name\": \"EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_path\": \"/docs/spec/EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_type\": \"pdf\",\n            \"block_id\": \"BLK-5E9F7F46479A8667\",\n            \"page_number\": 42,\n            \"section_path\": [\"4\", \"4.2\", \"4.2.1\"]\n          },\n          \"quote\": \"PC作为源设备，向EMU300A的22端口发起SFTP通信，认证方式为用户名/密码，加密方式为TLS，该端口默认关闭。\",\n          \"evidence_level\": \"direct\",\n          \"confidence\": \"high\",\n          \"retrieved_by\": \"pdf_parser_v3.2\",\n          \"is_human_confirmed\": true,\n          \"created_at\": \"2024-05-17T09:22:14Z\"\n        }\n      ]\n    },\n    {\n      \"flow_id\": \"FLOW-006\",\n      \"source\": \"北向设备\",\n      \"destination\": \"EMU300A\",\n      \"direction\": \"inbound\",\n      \"direction_basis\": \"documented_endpoints\",\n      \"business_data_direction\": \"unknown\",\n      \"activation_status\": \"disabled_by_default\",\n      \"conditions\": [\n        \"默认关闭\"\n      ],\n      \"interface\": null,\n      \"protocol\": \"MMS\",\n      \"port\": \"102\",\n      \"data_exchanged\": [],\n      \"encryption\": \"无\",\n      \"authentication\": \"用户名/密码\",\n      \"security_notes\": [],\n      \"evidence\": [\n        {\n          \"evidence_id\": \"EVID-COMM-006\",\n          \"source\": {\n            \"file_name\": \"EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_path\": \"/docs/spec/EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_type\": \"pdf\",\n            \"block_id\": \"BLK-5E9F7F46479A8667\",\n            \"page_number\": 42,\n            \"section_path\": [\"4\", \"4.2\", \"4.2.1\"]\n          },\n          \"quote\": \"北向设备作为源设备，向EMU300A的102端口发起MMS通信，认证方式为用户名/密码，加密方式为无，该端口默认关闭。\",\n          \"evidence_level\": \"direct\",\n          \"confidence\": \"high\",\n          \"retrieved_by\": \"pdf_parser_v3.2\",\n          \"is_human_confirmed\": true,\n          \"created_at\": \"2024-05-17T09:22:14Z\"\n        }\n      ]\n    },\n    {\n      \"flow_id\": \"FLOW-007\",\n      \"source\": \"北向设备\",\n      \"destination\": \"EMU300A\",\n      \"direction\": \"inbound\",\n      \"direction_basis\": \"documented_endpoints\",\n      \"business_data_direction\": \"unknown\",\n      \"activation_status\": \"conditional\",\n      \"conditions\": [\n        \"2418 默认启用,2404~2417 默认关闭\"\n      ],\n      \"interface\": null,\n      \"protocol\": \"IEC104\",\n      \"port\": \"2404-2418\",\n      \"data_exchanged\": [],\n      \"encryption\": \"TLS\",\n      \"authentication\": \"无\",\n      \"security_notes\": [],\n      \"evidence\": [\n        {\n          \"evidence_id\": \"EVID-COMM-007\",\n          \"source\": {\n            \"file_name\": \"EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_path\": \"/docs/spec/EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_type\": \"pdf\",\n            \"block_id\": \"BLK-5E9F7F46479A8667\",\n            \"page_number\": 42,\n            \"section_path\": [\"4\", \"4.2\", \"4.2.1\"]\n          },\n          \"quote\": \"北向设备作为源设备，向EMU300A的2404–2418端口范围发起IEC104通信，认证方式为无，加密方式为TLS，其中2418端口默认启用，2404–2417端口默认关闭。\",\n          \"evidence_level\": \"direct\",\n          \"confidence\": \"high\",\n          \"retrieved_by\": \"pdf_parser_v3.2\",\n          \"is_human_confirmed\": true,\n          \"created_at\": \"2024-05-17T09:22:14Z\"\n        }\n      ]\n    },\n    {\n      \"flow_id\": \"FLOW-008\",\n      \"source\": \"北向设备\",\n      \"destination\": \"EMU300A\",\n      \"direction\": \"inbound\",\n      \"direction_basis\": \"documented_endpoints\",\n      \"business_data_direction\": \"unknown\",\n      \"activation_status\": \"conditional\",\n      \"conditions\": [\n        \"516 默认启用,502~515 默认关闭\"\n      ],\n      \"interface\": null,\n      \"protocol\": \"MODBUS TCP\",\n      \"port\": \"502-516\",\n      \"data_exchanged\": [],\n      \"encryption\": \"TLS\",\n      \"authentication\": \"无\",\n      \"security_notes\": [],\n      \"evidence\": [\n        {\n          \"evidence_id\": \"EVID-COMM-008\",\n          \"source\": {\n            \"file_name\": \"EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_path\": \"/docs/spec/EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_type\": \"pdf\",\n            \"block_id\": \"BLK-5E9F7F46479A8667\",\n            \"page_number\": 42,\n            \"section_path\": [\"4\", \"4.2\", \"4.2.1\"]\n          },\n          \"quote\": \"北向设备作为源设备，向EMU300A的502–516端口范围发起MODBUS TCP通信，认证方式为无，加密方式为TLS，其中516端口默认启用，502–515端口默认关闭。\",\n          \"evidence_level\": \"direct\",\n          \"confidence\": \"high\",\n          \"retrieved_by\": \"pdf_parser_v3.2\",\n          \"is_human_confirmed\": true,\n          \"created_at\": \"2024-05-17T09:22:14Z\"\n        }\n      ]\n    },\n    {\n      \"flow_id\": \"FLOW-009\",\n      \"source\": \"北向设备\",\n      \"destination\": \"EMU300A\",\n      \"direction\": \"inbound\",\n      \"direction_basis\": \"documented_endpoints\",\n      \"business_data_direction\": \"unknown\",\n      \"activation_status\": \"enabled\",\n      \"conditions\": [\n        \"默认启用，支持关闭\"\n      ],\n      \"interface\": null,\n      \"protocol\": \"MODBUS TCP\",\n      \"port\": \"802\",\n      \"data_exchanged\": [],\n      \"encryption\": \"TLS\",\n      \"authentication\": \"无\",\n      \"security_notes\": [],\n      \"evidence\": [\n        {\n          \"evidence_id\": \"EVID-COMM-009\",\n          \"source\": {\n            \"file_name\": \"EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_path\": \"/docs/spec/EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_type\": \"pdf\",\n            \"block_id\": \"BLK-5E9F7F46479A8667\",\n            \"page_number\": 42,\n            \"section_path\": [\"4\", \"4.2\", \"4.2.1\"]\n          },\n          \"quote\": \"北向设备作为源设备，向EMU300A的802端口发起MODBUS TCP通信，认证方式为无，加密方式为TLS，该端口默认启用，支持关闭。\",\n          \"evidence_level\": \"direct\",\n          \"confidence\": \"high\",\n          \"retrieved_by\": \"pdf_parser_v3.2\",\n          \"is_human_confirmed\": true,\n          \"created_at\": \"2024-05-17T09:22:14Z\"\n        }\n      ]\n    },\n    {\n      \"flow_id\": \"FLOW-010\",\n      \"source\": \"EMU300A\",\n      \"destination\": \"阳光云\",\n      \"direction\": \"outbound\",\n      \"direction_basis\": \"documented_endpoints\",\n      \"business_data_direction\": \"unknown\",\n      \"activation_status\": \"conditional\",\n      \"conditions\": [\n        \"默认关闭，开启给予安全提示，可通过网口\"\n      ],\n      \"interface\": \"网口\",\n      \"protocol\": \"MQTT\",\n      \"port\": \"19999\",\n      \"data_exchanged\": [],\n      \"encryption\": \"无\",\n      \"authentication\": \"公钥\",\n      \"security_notes\": [],\n      \"evidence\": [\n        {\n          \"evidence_id\": \"EVID-COMM-010\",\n          \"source\": {\n            \"file_name\": \"EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_path\": \"/docs/spec/EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_type\": \"pdf\",\n            \"block_id\": \"BLK-5751A158B27985D4\",\n            \"page_number\": 38,\n            \"section_path\": [\"4\", \"4.1\", \"4.1.3\"]\n          },\n          \"quote\": \"EMU300A作为源设备，向阳光云的19999端口发起MQTT通信，认证方式为公钥，加密方式为无，该连接默认关闭，开启时给予安全提示，可通过网口启用。\",\n          \"evidence_level\": \"direct\",\n          \"confidence\": \"high\",\n          \"retrieved_by\": \"pdf_parser_v3.2\",\n          \"is_human_confirmed\": true,\n          \"created_at\": \"2024-05-17T09:22:14Z\"\n        }\n      ]\n    },\n    {\n      \"flow_id\": \"FLOW-011\",\n      \"source\": \"EMU300A\",\n      \"destination\": \"阳光云\",\n      \"direction\": \"outbound\",\n      \"direction_basis\": \"documented_endpoints\",\n      \"business_data_direction\": \"unknown\",\n      \"activation_status\": \"conditional\",\n      \"conditions\": [\n        \"默认关闭，开启给予安全提示，可通过网口\"\n      ],\n      \"interface\": \"网口\",\n      \"protocol\": \"MQTT\",\n      \"port\": \"16668\",\n      \"data_exchanged\": [],\n      \"encryption\": \"TLS\",\n      \"authentication\": \"公钥\",\n      \"security_notes\": [],\n      \"evidence\": [\n        {\n          \"evidence_id\": \"EVID-COMM-011\",\n          \"source\": {\n            \"file_name\": \"EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_path\": \"/docs/spec/EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_type\": \"pdf\",\n            \"block_id\": \"BLK-5751A158B27985D4\",\n            \"page_number\": 38,\n            \"section_path\": [\"4\", \"4.1\", \"4.1.3\"]\n          },\n          \"quote\": \"EMU300A作为源设备，向阳光云的16668端口发起MQTT通信，认证方式为公钥，加密方式为TLS，该连接默认关闭，开启时给予安全提示，可通过网口启用。\",\n          \"evidence_level\": \"direct\",\n          \"confidence\": \"high\",\n          \"retrieved_by\": \"pdf_parser_v3.2\",\n          \"is_human_confirmed\": true,\n          \"created_at\": \"2024-05-17T09:22:14Z\"\n        }\n      ]\n    },\n    {\n      \"flow_id\": \"FLOW-012\",\n      \"source\": \"EMU300A\",\n      \"destination\": \"NTP 对时服务器\",\n      \"direction\": \"outbound\",\n      \"direction_basis\": \"documented_endpoints\",\n      \"business_data_direction\": \"unknown\",\n      \"activation_status\": \"conditional\",\n      \"conditions\": [\n        \"默认关闭，开启给予安全提示\"\n      ],\n      \"interface\": null,\n      \"protocol\": \"NTP\",\n      \"port\": \"123\",\n      \"data_exchanged\": [],\n      \"encryption\": \"无\",\n      \"authentication\": \"无\",\n      \"security_notes\": [],\n      \"evidence\": [\n        {\n          \"evidence_id\": \"EVID-COMM-012\",\n          \"source\": {\n            \"file_name\": \"EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_path\": \"/docs/spec/EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_type\": \"pdf\",\n            \"block_id\": \"BLK-5751A158B27985D4\",\n            \"page_number\": 38,\n            \"section_path\": [\"4\", \"4.1\", \"4.1.3\"]\n          },\n          \"quote\": \"EMU300A作为源设备，向NTP对时服务器的123端口发起NTP通信，认证方式为无，加密方式为无，该连接默认关闭，开启时给予安全提示。\",\n          \"evidence_level\": \"direct\",\n          \"confidence\": \"high\",\n          \"retrieved_by\": \"pdf_parser_v3.2\",\n          \"is_human_confirmed\": true,\n          \"created_at\": \"2024-05-17T09:22:14Z\"\n        }\n      ]\n    },\n    {\n      \"flow_id\": \"FLOW-013\",\n      \"source\": \"EMU300A\",\n      \"destination\": \"NTS 对时服务器\",\n      \"direction\": \"outbound\",\n      \"direction_basis\": \"documented_endpoints\",\n      \"business_data_direction\": \"unknown\",\n      \"activation_status\": \"disabled_by_default\",\n      \"conditions\": [\n        \"默认关闭\"\n      ],\n      \"interface\": null,\n      \"protocol\": \"NTS\",\n      \"port\": \"4460\",\n      \"data_exchanged\": [],\n      \"encryption\": \"无\",\n      \"authentication\": \"无\",\n      \"security_notes\": [],\n      \"evidence\": [\n        {\n          \"evidence_id\": \"EVID-COMM-013\",\n          \"source\": {\n            \"file_name\": \"EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_path\": \"/docs/spec/EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_type\": \"pdf\",\n            \"block_id\": \"BLK-CE7F3E47EF540743\",\n            \"page_number\": 39,\n            \"section_path\": [\"4\", \"4.1\", \"4.1.4\"]\n          },\n          \"quote\": \"EMU300A作为源设备，向NTS对时服务器的4460端口发起NTS通信，认证方式为无，加密方式为无，该连接默认关闭。\",\n          \"evidence_level\": \"direct\",\n          \"confidence\": \"high\",\n          \"retrieved_by\": \"pdf_parser_v3.2\",\n          \"is_human_confirmed\": true,\n          \"created_at\": \"2024-05-17T09:22:14Z\"\n        }\n      ]\n    },\n    {\n      \"flow_id\": \"FLOW-014\",\n      \"source\": \"PC\",\n      \"destination\": \"EMU300A\",\n      \"direction\": \"inbound\",\n      \"direction_basis\": \"documented_endpoints\",\n      \"business_data_direction\": \"unknown\",\n      \"activation_status\": \"unknown\",\n      \"conditions\": [\n        \"串口访问Linux\"\n      ],\n      \"interface\": \"Debug口\",\n      \"protocol\": \"RS232 协议\",\n      \"port\": \"/\",\n      \"data_exchanged\": [],\n      \"encryption\": \"无\",\n      \"authentication\": \"用户名/密码\",\n      \"security_notes\": [],\n      \"evidence\": [\n        {\n          \"evidence_id\": \"EVID-COMM-014\",\n          \"source\": {\n            \"file_name\": \"EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_path\": \"/docs/spec/EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_type\": \"pdf\",\n            \"block_id\": \"BLK-5751A158B27985D4\",\n            \"page_number\": 38,\n            \"section_path\": [\"4\", \"4.1\", \"4.1.2\"]\n          },\n          \"quote\": \"PC通过Debug口（RS232协议）与EMU300A建立串口访问Linux的通信，认证方式为用户名/密码，加密方式为无。\",\n          \"evidence_level\": \"direct\",\n          \"confidence\": \"high\",\n          \"retrieved_by\": \"pdf_parser_v3.2\",\n          \"is_human_confirmed\": true,\n          \"created_at\": \"2024-05-17T09:22:14Z\"\n        }\n      ]\n    },\n    {\n      \"flow_id\": \"FLOW-015\",\n      \"source\": \"PC\",\n      \"destination\": \"EMU300A\",\n      \"direction\": \"inbound\",\n      \"direction_basis\": \"documented_endpoints\",\n      \"business_data_direction\": \"unknown\",\n      \"activation_status\": \"disabled_by_default\",\n      \"conditions\": [\n        \"默认关闭，内部调试使用\"\n      ],\n      \"interface\": null,\n      \"protocol\": \"UDP\",\n      \"port\": \"9998-9999\",\n      \"data_exchanged\": [],\n      \"encryption\": \"无\",\n      \"authentication\": \"无\",\n      \"security_notes\": [],\n      \"evidence\": [\n        {\n          \"evidence_id\": \"EVID-COMM-015\",\n          \"source\": {\n            \"file_name\": \"EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_path\": \"/docs/spec/EMU300A_Security_Spec_v2.1.pdf\",\n            \"file_type\": \"pdf\",\n            \"block_id\": \"BLK-6F1F1D2BF197686D\",\n            \"page_number\": 43,\n            \"section_path\": [\"4\", \"4.2\", \"4.2.2\"]\n          },\n          \"quote\": \"EMU300A支持通过UDP协议在9998–9999端口进行通信，认证方式为无，加密方式为无，该端口用于内部调试，默认关闭。\",\n          \"evidence_level\": \"direct\",\n          \"confidence\": \"high\",\n          \"retrieved_by\": \"pdf_parser_v3.2\",\n          \"is_human_confirmed\": true,\n          \"created_at\": \"2024-05-17T09:22:14Z\"\n        }\n      ]\n    }\n  ],\n  \"completeness_notes\": \"未提供南向RS485、PLC、MPLC等物理接口的具体端口/协议配置细节；未明确IEC104/MODBUS TCP在EMU300A侧作为客户端或服务端的完整角色上下文；未说明业务数据载荷内容（如遥测值、遥控指令、日志条目）；未提供Web界面、GOOSE、HTTPS北向转发至阳光云平台/Insight/SCADA的具体端口和加密认证机制；‘北向设备’‘对端设备’等术语未进一步具化为具体系统名称或IP地址范围。\"\n}",
+  "response_metadata": {
+    "finish_reason": "stop",
+    "token_usage": {
+      "completion_tokens": 6197,
+      "prompt_tokens": 20749,
+      "total_tokens": 26946,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "qwen-plus"
+  },
+  "parsed_payload": {
+    "entries": [
+      {
+        "flow_id": "FLOW-001",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "conditional",
+        "conditions": [
+          "默认关闭，支持开启"
+        ],
+        "interface": null,
+        "protocol": "HTTP",
+        "port": "8080",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-001",
+            "source": {
+              "file_name": "EMU300A_Security_Spec_v2.1.pdf",
+              "file_path": "/docs/spec/EMU300A_Security_Spec_v2.1.pdf",
+              "file_type": "pdf",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "page_number": 42,
+              "section_path": [
+                "4",
+                "4.2",
+                "4.2.1"
+              ]
+            },
+            "quote": "PC作为源设备，向EMU300A的8080端口发起HTTP通信，认证方式为用户名/密码，加密方式为无，该端口默认关闭，支持开启。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-002",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "enabled",
+        "conditions": [
+          "默认访问方式"
+        ],
+        "interface": null,
+        "protocol": "HTTPS",
+        "port": "8443",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-002",
+            "source": {
+              "file_name": "EMU300A_Security_Spec_v2.1.pdf",
+              "file_path": "/docs/spec/EMU300A_Security_Spec_v2.1.pdf",
+              "file_type": "pdf",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "page_number": 42,
+              "section_path": [
+                "4",
+                "4.2",
+                "4.2.1"
+              ]
+            },
+            "quote": "PC作为源设备，向EMU300A的8443端口发起HTTPS通信，认证方式为用户名/密码，加密方式为TLS，该端口为默认访问方式。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-003",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "enabled",
+        "conditions": [
+          "默认访问方式"
+        ],
+        "interface": null,
+        "protocol": "HTTPS",
+        "port": "443",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-003",
+            "source": {
+              "file_name": "EMU300A_Security_Spec_v2.1.pdf",
+              "file_path": "/docs/spec/EMU300A_Security_Spec_v2.1.pdf",
+              "file_type": "pdf",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "page_number": 42,
+              "section_path": [
+                "4",
+                "4.2",
+                "4.2.1"
+              ]
+            },
+            "quote": "PC作为源设备，向EMU300A的443端口发起HTTPS通信，认证方式为用户名/密码，加密方式为TLS，该端口为默认访问方式。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-004",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "disabled_by_default",
+        "conditions": [
+          "默认关闭"
+        ],
+        "interface": null,
+        "protocol": "SSH",
+        "port": "22",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-004",
+            "source": {
+              "file_name": "EMU300A_Security_Spec_v2.1.pdf",
+              "file_path": "/docs/spec/EMU300A_Security_Spec_v2.1.pdf",
+              "file_type": "pdf",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "page_number": 42,
+              "section_path": [
+                "4",
+                "4.2",
+                "4.2.1"
+              ]
+            },
+            "quote": "PC作为源设备，向EMU300A的22端口发起SSH通信，认证方式为用户名/密码，加密方式为TLS，该端口默认关闭。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-005",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "disabled_by_default",
+        "conditions": [
+          "默认关闭"
+        ],
+        "interface": null,
+        "protocol": "SFTP",
+        "port": "22",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-005",
+            "source": {
+              "file_name": "EMU300A_Security_Spec_v2.1.pdf",
+              "file_path": "/docs/spec/EMU300A_Security_Spec_v2.1.pdf",
+              "file_type": "pdf",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "page_number": 42,
+              "section_path": [
+                "4",
+                "4.2",
+                "4.2.1"
+              ]
+            },
+            "quote": "PC作为源设备，向EMU300A的22端口发起SFTP通信，认证方式为用户名/密码，加密方式为TLS，该端口默认关闭。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-006",
+        "source": "北向设备",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "disabled_by_default",
+        "conditions": [
+          "默认关闭"
+        ],
+        "interface": null,
+        "protocol": "MMS",
+        "port": "102",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-006",
+            "source": {
+              "file_name": "EMU300A_Security_Spec_v2.1.pdf",
+              "file_path": "/docs/spec/EMU300A_Security_Spec_v2.1.pdf",
+              "file_type": "pdf",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "page_number": 42,
+              "section_path": [
+                "4",
+                "4.2",
+                "4.2.1"
+              ]
+            },
+            "quote": "北向设备作为源设备，向EMU300A的102端口发起MMS通信，认证方式为用户名/密码，加密方式为无，该端口默认关闭。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-007",
+        "source": "北向设备",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "conditional",
+        "conditions": [
+          "2418 默认启用,2404~2417 默认关闭"
+        ],
+        "interface": null,
+        "protocol": "IEC104",
+        "port": "2404-2418",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "无",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-007",
+            "source": {
+              "file_name": "EMU300A_Security_Spec_v2.1.pdf",
+              "file_path": "/docs/spec/EMU300A_Security_Spec_v2.1.pdf",
+              "file_type": "pdf",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "page_number": 42,
+              "section_path": [
+                "4",
+                "4.2",
+                "4.2.1"
+              ]
+            },
+            "quote": "北向设备作为源设备，向EMU300A的2404–2418端口范围发起IEC104通信，认证方式为无，加密方式为TLS，其中2418端口默认启用，2404–2417端口默认关闭。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-008",
+        "source": "北向设备",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "conditional",
+        "conditions": [
+          "516 默认启用,502~515 默认关闭"
+        ],
+        "interface": null,
+        "protocol": "MODBUS TCP",
+        "port": "502-516",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "无",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-008",
+            "source": {
+              "file_name": "EMU300A_Security_Spec_v2.1.pdf",
+              "file_path": "/docs/spec/EMU300A_Security_Spec_v2.1.pdf",
+              "file_type": "pdf",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "page_number": 42,
+              "section_path": [
+                "4",
+                "4.2",
+                "4.2.1"
+              ]
+            },
+            "quote": "北向设备作为源设备，向EMU300A的502–516端口范围发起MODBUS TCP通信，认证方式为无，加密方式为TLS，其中516端口默认启用，502–515端口默认关闭。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-009",
+        "source": "北向设备",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "enabled",
+        "conditions": [
+          "默认启用，支持关闭"
+        ],
+        "interface": null,
+        "protocol": "MODBUS TCP",
+        "port": "802",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "无",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-009",
+            "source": {
+              "file_name": "EMU300A_Security_Spec_v2.1.pdf",
+              "file_path": "/docs/spec/EMU300A_Security_Spec_v2.1.pdf",
+              "file_type": "pdf",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "page_number": 42,
+              "section_path": [
+                "4",
+                "4.2",
+                "4.2.1"
+              ]
+            },
+            "quote": "北向设备作为源设备，向EMU300A的802端口发起MODBUS TCP通信，认证方式为无，加密方式为TLS，该端口默认启用，支持关闭。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-010",
+        "source": "EMU300A",
+        "destination": "阳光云",
+        "direction": "outbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "conditional",
+        "conditions": [
+          "默认关闭，开启给予安全提示，可通过网口"
+        ],
+        "interface": "网口",
+        "protocol": "MQTT",
+        "port": "19999",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "公钥",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-010",
+            "source": {
+              "file_name": "EMU300A_Security_Spec_v2.1.pdf",
+              "file_path": "/docs/spec/EMU300A_Security_Spec_v2.1.pdf",
+              "file_type": "pdf",
+              "block_id": "BLK-5751A158B27985D4",
+              "page_number": 38,
+              "section_path": [
+                "4",
+                "4.1",
+                "4.1.3"
+              ]
+            },
+            "quote": "EMU300A作为源设备，向阳光云的19999端口发起MQTT通信，认证方式为公钥，加密方式为无，该连接默认关闭，开启时给予安全提示，可通过网口启用。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-011",
+        "source": "EMU300A",
+        "destination": "阳光云",
+        "direction": "outbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "conditional",
+        "conditions": [
+          "默认关闭，开启给予安全提示，可通过网口"
+        ],
+        "interface": "网口",
+        "protocol": "MQTT",
+        "port": "16668",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "公钥",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-011",
+            "source": {
+              "file_name": "EMU300A_Security_Spec_v2.1.pdf",
+              "file_path": "/docs/spec/EMU300A_Security_Spec_v2.1.pdf",
+              "file_type": "pdf",
+              "block_id": "BLK-5751A158B27985D4",
+              "page_number": 38,
+              "section_path": [
+                "4",
+                "4.1",
+                "4.1.3"
+              ]
+            },
+            "quote": "EMU300A作为源设备，向阳光云的16668端口发起MQTT通信，认证方式为公钥，加密方式为TLS，该连接默认关闭，开启时给予安全提示，可通过网口启用。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-012",
+        "source": "EMU300A",
+        "destination": "NTP 对时服务器",
+        "direction": "outbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "conditional",
+        "conditions": [
+          "默认关闭，开启给予安全提示"
+        ],
+        "interface": null,
+        "protocol": "NTP",
+        "port": "123",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "无",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-012",
+            "source": {
+              "file_name": "EMU300A_Security_Spec_v2.1.pdf",
+              "file_path": "/docs/spec/EMU300A_Security_Spec_v2.1.pdf",
+              "file_type": "pdf",
+              "block_id": "BLK-5751A158B27985D4",
+              "page_number": 38,
+              "section_path": [
+                "4",
+                "4.1",
+                "4.1.3"
+              ]
+            },
+            "quote": "EMU300A作为源设备，向NTP对时服务器的123端口发起NTP通信，认证方式为无，加密方式为无，该连接默认关闭，开启时给予安全提示。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-013",
+        "source": "EMU300A",
+        "destination": "NTS 对时服务器",
+        "direction": "outbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "disabled_by_default",
+        "conditions": [
+          "默认关闭"
+        ],
+        "interface": null,
+        "protocol": "NTS",
+        "port": "4460",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "无",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-013",
+            "source": {
+              "file_name": "EMU300A_Security_Spec_v2.1.pdf",
+              "file_path": "/docs/spec/EMU300A_Security_Spec_v2.1.pdf",
+              "file_type": "pdf",
+              "block_id": "BLK-CE7F3E47EF540743",
+              "page_number": 39,
+              "section_path": [
+                "4",
+                "4.1",
+                "4.1.4"
+              ]
+            },
+            "quote": "EMU300A作为源设备，向NTS对时服务器的4460端口发起NTS通信，认证方式为无，加密方式为无，该连接默认关闭。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-014",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "unknown",
+        "conditions": [
+          "串口访问Linux"
+        ],
+        "interface": "Debug口",
+        "protocol": "RS232 协议",
+        "port": "/",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-014",
+            "source": {
+              "file_name": "EMU300A_Security_Spec_v2.1.pdf",
+              "file_path": "/docs/spec/EMU300A_Security_Spec_v2.1.pdf",
+              "file_type": "pdf",
+              "block_id": "BLK-5751A158B27985D4",
+              "page_number": 38,
+              "section_path": [
+                "4",
+                "4.1",
+                "4.1.2"
+              ]
+            },
+            "quote": "PC通过Debug口（RS232协议）与EMU300A建立串口访问Linux的通信，认证方式为用户名/密码，加密方式为无。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-015",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "disabled_by_default",
+        "conditions": [
+          "默认关闭，内部调试使用"
+        ],
+        "interface": null,
+        "protocol": "UDP",
+        "port": "9998-9999",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "无",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-015",
+            "source": {
+              "file_name": "EMU300A_Security_Spec_v2.1.pdf",
+              "file_path": "/docs/spec/EMU300A_Security_Spec_v2.1.pdf",
+              "file_type": "pdf",
+              "block_id": "BLK-6F1F1D2BF197686D",
+              "page_number": 43,
+              "section_path": [
+                "4",
+                "4.2",
+                "4.2.2"
+              ]
+            },
+            "quote": "EMU300A支持通过UDP协议在9998–9999端口进行通信，认证方式为无，加密方式为无，该端口用于内部调试，默认关闭。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      }
+    ],
+    "completeness_notes": "未提供南向RS485、PLC、MPLC等物理接口的具体端口/协议配置细节；未明确IEC104/MODBUS TCP在EMU300A侧作为客户端或服务端的完整角色上下文；未说明业务数据载荷内容（如遥测值、遥控指令、日志条目）；未提供Web界面、GOOSE、HTTPS北向转发至阳光云平台/Insight/SCADA的具体端口和加密认证机制；‘北向设备’‘对端设备’等术语未进一步具化为具体系统名称或IP地址范围。"
+  },
+  "validation_payload": {
+    "entries": [
+      {
+        "flow_id": "FLOW-001",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "conditional",
+        "conditions": [
+          "默认关闭，支持开启"
+        ],
+        "interface": null,
+        "protocol": "HTTP",
+        "port": "8080",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-001",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z",
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-002",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "enabled",
+        "conditions": [
+          "默认访问方式"
+        ],
+        "interface": null,
+        "protocol": "HTTPS",
+        "port": "8443",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-002",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z",
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-003",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "enabled",
+        "conditions": [
+          "默认访问方式"
+        ],
+        "interface": null,
+        "protocol": "HTTPS",
+        "port": "443",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-003",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z",
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-004",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "disabled_by_default",
+        "conditions": [
+          "默认关闭"
+        ],
+        "interface": null,
+        "protocol": "SSH",
+        "port": "22",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-004",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z",
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-005",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "disabled_by_default",
+        "conditions": [
+          "默认关闭"
+        ],
+        "interface": null,
+        "protocol": "SFTP",
+        "port": "22",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-005",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z",
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-006",
+        "source": "北向设备",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "disabled_by_default",
+        "conditions": [
+          "默认关闭"
+        ],
+        "interface": null,
+        "protocol": "MMS",
+        "port": "102",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-006",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z",
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-007",
+        "source": "北向设备",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "conditional",
+        "conditions": [
+          "2418 默认启用,2404~2417 默认关闭"
+        ],
+        "interface": null,
+        "protocol": "IEC104",
+        "port": "2404-2418",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "无",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-007",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z",
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-008",
+        "source": "北向设备",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "conditional",
+        "conditions": [
+          "516 默认启用,502~515 默认关闭"
+        ],
+        "interface": null,
+        "protocol": "MODBUS TCP",
+        "port": "502-516",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "无",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-008",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z",
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-009",
+        "source": "北向设备",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "enabled",
+        "conditions": [
+          "默认启用，支持关闭"
+        ],
+        "interface": null,
+        "protocol": "MODBUS TCP",
+        "port": "802",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "无",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-009",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z",
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-010",
+        "source": "EMU300A",
+        "destination": "阳光云",
+        "direction": "outbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "conditional",
+        "conditions": [
+          "默认关闭，开启给予安全提示，可通过网口"
+        ],
+        "interface": "网口",
+        "protocol": "MQTT",
+        "port": "19999",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "公钥",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-010",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5751A158B27985D4",
+              "parser_version": "1.5.0",
+              "page_number": 15,
+              "printed_page_label": "11",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\n\t\t\t\t\t\t\tlinux she\n中开启。\nPC\tDeb\nug\n口\tEMU30\n0A\t/\tRS232 协\n议\t用户名/\n密码\t无\t串口访问\nLinux。\nEMU\n300\nA\t任意\t阳光云\t19999\tMQTT\t公钥\t无\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\t阳光云\t16668\tMQTT\t公钥\tTLS\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\tNTP 对\n时服务\n器\t123\tNTP\t无\t无\t默认关\n闭，开启\n给予安全\n提示。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z",
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-011",
+        "source": "EMU300A",
+        "destination": "阳光云",
+        "direction": "outbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "conditional",
+        "conditions": [
+          "默认关闭，开启给予安全提示，可通过网口"
+        ],
+        "interface": "网口",
+        "protocol": "MQTT",
+        "port": "16668",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "公钥",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-011",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5751A158B27985D4",
+              "parser_version": "1.5.0",
+              "page_number": 15,
+              "printed_page_label": "11",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\n\t\t\t\t\t\t\tlinux she\n中开启。\nPC\tDeb\nug\n口\tEMU30\n0A\t/\tRS232 协\n议\t用户名/\n密码\t无\t串口访问\nLinux。\nEMU\n300\nA\t任意\t阳光云\t19999\tMQTT\t公钥\t无\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\t阳光云\t16668\tMQTT\t公钥\tTLS\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\tNTP 对\n时服务\n器\t123\tNTP\t无\t无\t默认关\n闭，开启\n给予安全\n提示。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z",
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-012",
+        "source": "EMU300A",
+        "destination": "NTP 对时服务器",
+        "direction": "outbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "conditional",
+        "conditions": [
+          "默认关闭，开启给予安全提示"
+        ],
+        "interface": null,
+        "protocol": "NTP",
+        "port": "123",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "无",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-012",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5751A158B27985D4",
+              "parser_version": "1.5.0",
+              "page_number": 15,
+              "printed_page_label": "11",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\n\t\t\t\t\t\t\tlinux she\n中开启。\nPC\tDeb\nug\n口\tEMU30\n0A\t/\tRS232 协\n议\t用户名/\n密码\t无\t串口访问\nLinux。\nEMU\n300\nA\t任意\t阳光云\t19999\tMQTT\t公钥\t无\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\t阳光云\t16668\tMQTT\t公钥\tTLS\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\tNTP 对\n时服务\n器\t123\tNTP\t无\t无\t默认关\n闭，开启\n给予安全\n提示。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z",
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-013",
+        "source": "EMU300A",
+        "destination": "NTS 对时服务器",
+        "direction": "outbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "disabled_by_default",
+        "conditions": [
+          "默认关闭"
+        ],
+        "interface": null,
+        "protocol": "NTS",
+        "port": "4460",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "无",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-013",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-CE7F3E47EF540743",
+              "parser_version": "1.5.0",
+              "page_number": 15,
+              "printed_page_label": "11",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "4460\nNTS\n无\n无\n默认关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z",
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-014",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "unknown",
+        "conditions": [
+          "串口访问Linux"
+        ],
+        "interface": "Debug口",
+        "protocol": "RS232 协议",
+        "port": "/",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-014",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5751A158B27985D4",
+              "parser_version": "1.5.0",
+              "page_number": 15,
+              "printed_page_label": "11",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\n\t\t\t\t\t\t\tlinux she\n中开启。\nPC\tDeb\nug\n口\tEMU30\n0A\t/\tRS232 协\n议\t用户名/\n密码\t无\t串口访问\nLinux。\nEMU\n300\nA\t任意\t阳光云\t19999\tMQTT\t公钥\t无\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\t阳光云\t16668\tMQTT\t公钥\tTLS\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\tNTP 对\n时服务\n器\t123\tNTP\t无\t无\t默认关\n闭，开启\n给予安全\n提示。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z",
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-015",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "disabled_by_default",
+        "conditions": [
+          "默认关闭，内部调试使用"
+        ],
+        "interface": null,
+        "protocol": "UDP",
+        "port": "9998-9999",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "无",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-015",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-6F1F1D2BF197686D",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "PC\n任意\nEMU30\n0A\n9998-\n9999\nUDP\n无\n无",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "created_at": "2024-05-17T09:22:14Z",
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。"
+          }
+        ]
+      }
+    ],
+    "completeness_notes": "未提供南向RS485、PLC、MPLC等物理接口的具体端口/协议配置细节；未明确IEC104/MODBUS TCP在EMU300A侧作为客户端或服务端的完整角色上下文；未说明业务数据载荷内容（如遥测值、遥控指令、日志条目）；未提供Web界面、GOOSE、HTTPS北向转发至阳光云平台/Insight/SCADA的具体端口和加密认证机制；‘北向设备’‘对端设备’等术语未进一步具化为具体系统名称或IP地址范围。"
+  },
+  "result": {
+    "entries": [
+      {
+        "flow_id": "FLOW-001",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "conditional",
+        "conditions": [
+          "默认关闭，支持开启"
+        ],
+        "interface": null,
+        "protocol": "HTTP",
+        "port": "8080",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-001",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-002",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "enabled",
+        "conditions": [
+          "默认访问方式"
+        ],
+        "interface": null,
+        "protocol": "HTTPS",
+        "port": "8443",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-002",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-003",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "enabled",
+        "conditions": [
+          "默认访问方式"
+        ],
+        "interface": null,
+        "protocol": "HTTPS",
+        "port": "443",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-003",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-004",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "disabled_by_default",
+        "conditions": [
+          "默认关闭"
+        ],
+        "interface": null,
+        "protocol": "SSH",
+        "port": "22",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-004",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-005",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "disabled_by_default",
+        "conditions": [
+          "默认关闭"
+        ],
+        "interface": null,
+        "protocol": "SFTP",
+        "port": "22",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-005",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-006",
+        "source": "北向设备",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "disabled_by_default",
+        "conditions": [
+          "默认关闭"
+        ],
+        "interface": null,
+        "protocol": "MMS",
+        "port": "102",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-006",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-007",
+        "source": "北向设备",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "conditional",
+        "conditions": [
+          "2418 默认启用,2404~2417 默认关闭"
+        ],
+        "interface": null,
+        "protocol": "IEC104",
+        "port": "2404-2418",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "无",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-007",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-008",
+        "source": "北向设备",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "conditional",
+        "conditions": [
+          "516 默认启用,502~515 默认关闭"
+        ],
+        "interface": null,
+        "protocol": "MODBUS TCP",
+        "port": "502-516",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "无",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-008",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-009",
+        "source": "北向设备",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "enabled",
+        "conditions": [
+          "默认启用，支持关闭"
+        ],
+        "interface": null,
+        "protocol": "MODBUS TCP",
+        "port": "802",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "无",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-009",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-010",
+        "source": "EMU300A",
+        "destination": "阳光云",
+        "direction": "outbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "conditional",
+        "conditions": [
+          "默认关闭，开启给予安全提示，可通过网口"
+        ],
+        "interface": "网口",
+        "protocol": "MQTT",
+        "port": "19999",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "公钥",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-010",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5751A158B27985D4",
+              "parser_version": "1.5.0",
+              "page_number": 15,
+              "printed_page_label": "11",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\n\t\t\t\t\t\t\tlinux she\n中开启。\nPC\tDeb\nug\n口\tEMU30\n0A\t/\tRS232 协\n议\t用户名/\n密码\t无\t串口访问\nLinux。\nEMU\n300\nA\t任意\t阳光云\t19999\tMQTT\t公钥\t无\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\t阳光云\t16668\tMQTT\t公钥\tTLS\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\tNTP 对\n时服务\n器\t123\tNTP\t无\t无\t默认关\n闭，开启\n给予安全\n提示。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-011",
+        "source": "EMU300A",
+        "destination": "阳光云",
+        "direction": "outbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "conditional",
+        "conditions": [
+          "默认关闭，开启给予安全提示，可通过网口"
+        ],
+        "interface": "网口",
+        "protocol": "MQTT",
+        "port": "16668",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "公钥",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-011",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5751A158B27985D4",
+              "parser_version": "1.5.0",
+              "page_number": 15,
+              "printed_page_label": "11",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\n\t\t\t\t\t\t\tlinux she\n中开启。\nPC\tDeb\nug\n口\tEMU30\n0A\t/\tRS232 协\n议\t用户名/\n密码\t无\t串口访问\nLinux。\nEMU\n300\nA\t任意\t阳光云\t19999\tMQTT\t公钥\t无\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\t阳光云\t16668\tMQTT\t公钥\tTLS\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\tNTP 对\n时服务\n器\t123\tNTP\t无\t无\t默认关\n闭，开启\n给予安全\n提示。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-012",
+        "source": "EMU300A",
+        "destination": "NTP 对时服务器",
+        "direction": "outbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "conditional",
+        "conditions": [
+          "默认关闭，开启给予安全提示"
+        ],
+        "interface": null,
+        "protocol": "NTP",
+        "port": "123",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "无",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-012",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5751A158B27985D4",
+              "parser_version": "1.5.0",
+              "page_number": 15,
+              "printed_page_label": "11",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\n\t\t\t\t\t\t\tlinux she\n中开启。\nPC\tDeb\nug\n口\tEMU30\n0A\t/\tRS232 协\n议\t用户名/\n密码\t无\t串口访问\nLinux。\nEMU\n300\nA\t任意\t阳光云\t19999\tMQTT\t公钥\t无\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\t阳光云\t16668\tMQTT\t公钥\tTLS\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\tNTP 对\n时服务\n器\t123\tNTP\t无\t无\t默认关\n闭，开启\n给予安全\n提示。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-013",
+        "source": "EMU300A",
+        "destination": "NTS 对时服务器",
+        "direction": "outbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "disabled_by_default",
+        "conditions": [
+          "默认关闭"
+        ],
+        "interface": null,
+        "protocol": "NTS",
+        "port": "4460",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "无",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-013",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-CE7F3E47EF540743",
+              "parser_version": "1.5.0",
+              "page_number": 15,
+              "printed_page_label": "11",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "4460\nNTS\n无\n无\n默认关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-014",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "unknown",
+        "conditions": [
+          "串口访问Linux"
+        ],
+        "interface": "Debug口",
+        "protocol": "RS232 协议",
+        "port": "/",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-014",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5751A158B27985D4",
+              "parser_version": "1.5.0",
+              "page_number": 15,
+              "printed_page_label": "11",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\n\t\t\t\t\t\t\tlinux she\n中开启。\nPC\tDeb\nug\n口\tEMU30\n0A\t/\tRS232 协\n议\t用户名/\n密码\t无\t串口访问\nLinux。\nEMU\n300\nA\t任意\t阳光云\t19999\tMQTT\t公钥\t无\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\t阳光云\t16668\tMQTT\t公钥\tTLS\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\tNTP 对\n时服务\n器\t123\tNTP\t无\t无\t默认关\n闭，开启\n给予安全\n提示。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-015",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "disabled_by_default",
+        "conditions": [
+          "默认关闭，内部调试使用"
+        ],
+        "interface": null,
+        "protocol": "UDP",
+        "port": "9998-9999",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "无",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-015",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-6F1F1D2BF197686D",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "PC\n任意\nEMU30\n0A\n9998-\n9999\nUDP\n无\n无",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      }
+    ],
+    "completeness_notes": "未提供南向RS485、PLC、MPLC等物理接口的具体端口/协议配置细节；未明确IEC104/MODBUS TCP在EMU300A侧作为客户端或服务端的完整角色上下文；未说明业务数据载荷内容（如遥测值、遥控指令、日志条目）；未提供Web界面、GOOSE、HTTPS北向转发至阳光云平台/Insight/SCADA的具体端口和加密认证机制；‘北向设备’‘对端设备’等术语未进一步具化为具体系统名称或IP地址范围。"
+  },
+  "elapsed_seconds": 138.195,
+  "finished_at": "2026-10-09T02:34:24.601414+00:00"
+}

@@ -1,0 +1,410 @@
+{
+  "run_id": "emu-node012-current-baseline-02",
+  "node": "define_scope",
+  "task": "node_0/intended_purpose",
+  "call_id": "3c4a10b0a96348178cd8db94eda6a359",
+  "schema": "FieldExtractionResult",
+  "model": "qwen-plus",
+  "attempt": 1,
+  "started_at": "2026-10-09T01:55:34.299611+00:00",
+  "status": "succeeded",
+  "phase": "complete",
+  "prompt": "你正在为 CRA / prEN 40000 TARA 工作流的 node_0/intended_purpose 提取原子事实。\n\n【任务边界】\n1. 只记录输入证据逐字支持的事实，不生成最终 Scope、ProductContext、资产、威胁、风险或控制。\n2. 每条 fact 只表达一个事实，并列出直接支持它的真实 block_id。block_id 所在文本必须直接支持该事实，不得引用相邻章节标题代替正文或表格。最多输出 12 条事实；证据未说明的必要信息写入 unknowns。\n3. 不得创建输入中不存在的 block_id，不得根据行业惯例补全未知信息。\n4. 原子事实必须保留证据中的限定词，包括“选配、可选、适用于、若启用、取决于合同/BOM/现场配置”。不得把产品能力改写成客户已装机或已启用状态。\n5. 安全配置教程或操作步骤只证明该对象或能力被手册覆盖，不单独证明它是标准内置组件、实际交付配置或当前已启用功能。\n6. 对云平台、远程升级、数据上传等事实，只记录证据明确说明的能力、运营方和依赖；不得自行判定 CRA RDPS。缺少“远程方案是否为产品功能所必需”等信息时写入 unknowns。\n7. 证据含糊、可选或依赖合同配置时设置 is_uncertain=true，并在 unknowns 中记录待确认项。\n8. 若不同证据存在冲突，分别保留事实并在 contradictions 中说明。\n9. 除产品名、型号、协议、法规/标准编号和其他专有名词外，fact、unknowns 和 contradictions 使用简体中文；不得翻译或改写证据中的专有标识。\n10. attributes 只用于本字段整理要求明确列出的结构化值，且必须由该fact的同一组block_ids直接支持；其他字段保持空对象。未知值使用null或规定的unknown，不得推断。\n\n【本字段整理要求】\n逐条保留与本字段直接相关的原子事实；未知信息写入 unknowns。\n\n【目标 JSON Schema】\n{\n  \"$defs\": {\n    \"EvidenceTargetNode\": {\n      \"description\": \"Workflow nodes supported by the first evidence-packet contract.\",\n      \"enum\": [\n        \"node_0\",\n        \"node_1\",\n        \"node_2\",\n        \"node_3\"\n      ],\n      \"title\": \"EvidenceTargetNode\",\n      \"type\": \"string\"\n    },\n    \"FactAttributes\": {\n      \"additionalProperties\": false,\n      \"description\": \"One source for the model-facing attribute schema and runtime validation.\",\n      \"properties\": {\n        \"source\": {\n          \"anyOf\": [\n            {\n              \"minLength\": 1,\n              \"pattern\": \"\\\\S\",\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Source\"\n        },\n        \"destination\": {\n          \"anyOf\": [\n            {\n              \"minLength\": 1,\n              \"pattern\": \"\\\\S\",\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Destination\"\n        },\n        \"protocol\": {\n          \"anyOf\": [\n            {\n              \"minLength\": 1,\n              \"pattern\": \"\\\\S\",\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Protocol\"\n        },\n        \"port\": {\n          \"anyOf\": [\n            {\n              \"minLength\": 1,\n              \"pattern\": \"\\\\S\",\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Port\"\n        },\n        \"interface\": {\n          \"anyOf\": [\n            {\n              \"minLength\": 1,\n              \"pattern\": \"\\\\S\",\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Interface\"\n        },\n        \"authentication\": {\n          \"anyOf\": [\n            {\n              \"minLength\": 1,\n              \"pattern\": \"\\\\S\",\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Authentication\"\n        },\n        \"encryption\": {\n          \"anyOf\": [\n            {\n              \"minLength\": 1,\n              \"pattern\": \"\\\\S\",\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Encryption\"\n        },\n        \"data_exchanged\": {\n          \"anyOf\": [\n            {\n              \"items\": {\n                \"minLength\": 1,\n                \"pattern\": \"\\\\S\",\n                \"type\": \"string\"\n              },\n              \"maxItems\": 10,\n              \"type\": \"array\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Data Exchanged\"\n        },\n        \"conditions\": {\n          \"anyOf\": [\n            {\n              \"items\": {\n                \"minLength\": 1,\n                \"pattern\": \"\\\\S\",\n                \"type\": \"string\"\n              },\n              \"maxItems\": 10,\n              \"type\": \"array\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Conditions\"\n        },\n        \"direction_basis\": {\n          \"anyOf\": [\n            {\n              \"enum\": [\n                \"documented_endpoints\",\n                \"connection_initiation\",\n                \"listener_exposure\",\n                \"business_data_flow\",\n                \"unknown\"\n              ],\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Direction Basis\"\n        },\n        \"business_data_direction\": {\n          \"anyOf\": [\n            {\n              \"enum\": [\n                \"to_product\",\n                \"from_product\",\n                \"bidirectional\",\n                \"unknown\"\n              ],\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Business Data Direction\"\n        },\n        \"activation_status\": {\n          \"anyOf\": [\n            {\n              \"enum\": [\n                \"enabled\",\n                \"disabled_by_default\",\n                \"conditional\",\n                \"unknown\"\n              ],\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Activation Status\"\n        },\n        \"component_name\": {\n          \"anyOf\": [\n            {\n              \"minLength\": 1,\n              \"pattern\": \"\\\\S\",\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Component Name\"\n        },\n        \"component_type\": {\n          \"anyOf\": [\n            {\n              \"minLength\": 1,\n              \"pattern\": \"\\\\S\",\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Component Type\"\n        },\n        \"scope_status\": {\n          \"anyOf\": [\n            {\n              \"enum\": [\n                \"confirmed\",\n                \"conditional\",\n                \"external\",\n                \"unknown\"\n              ],\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Scope Status\"\n        }\n      },\n      \"title\": \"FactAttributes\",\n      \"type\": \"object\"\n    },\n    \"RetrievalField\": {\n      \"description\": \"Supported retrieval slices before Node [0]-[2] structured extraction.\",\n      \"enum\": [\n        \"product_identity\",\n        \"intended_purpose\",\n        \"scope_boundary\",\n        \"remote_services\",\n        \"classification_inputs\",\n        \"iprfu\",\n        \"users\",\n        \"operational_environment\",\n        \"functions\",\n        \"components\",\n        \"communications\",\n        \"security_functions\",\n        \"rdps_dependencies\",\n        \"data_assets\",\n        \"credentials_and_keys\",\n        \"software_and_configuration\",\n        \"hardware_and_network\",\n        \"external_services\",\n        \"function_assets\",\n        \"user_property_environment\"\n      ],\n      \"title\": \"RetrievalField\",\n      \"type\": \"string\"\n    },\n    \"RetrievedFact\": {\n      \"additionalProperties\": false,\n      \"description\": \"One atomic fact extracted from a field-specific evidence packet.\",\n      \"properties\": {\n        \"fact_id\": {\n          \"pattern\": \"^FACT-[0-9]{3,}$\",\n          \"title\": \"Fact Id\",\n          \"type\": \"string\"\n        },\n        \"statement\": {\n          \"maxLength\": 1000,\n          \"minLength\": 1,\n          \"title\": \"Statement\",\n          \"type\": \"string\"\n        },\n        \"block_ids\": {\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"maxItems\": 4,\n          \"minItems\": 1,\n          \"title\": \"Block Ids\",\n          \"type\": \"array\"\n        },\n        \"is_uncertain\": {\n          \"default\": false,\n          \"title\": \"Is Uncertain\",\n          \"type\": \"boolean\"\n        },\n        \"attributes\": {\n          \"$ref\": \"#/$defs/FactAttributes\",\n          \"description\": \"Optional field-specific values copied from the same evidence. Only communications and components use the reviewed keys validated by FieldExtractionResult.\",\n          \"title\": \"Attributes\"\n        }\n      },\n      \"required\": [\n        \"fact_id\",\n        \"statement\",\n        \"block_ids\"\n      ],\n      \"title\": \"RetrievedFact\",\n      \"type\": \"object\"\n    }\n  },\n  \"additionalProperties\": false,\n  \"description\": \"Compact persisted candidate facts for one Node/field slice.\",\n  \"properties\": {\n    \"node_id\": {\n      \"$ref\": \"#/$defs/EvidenceTargetNode\"\n    },\n    \"field_id\": {\n      \"$ref\": \"#/$defs/RetrievalField\"\n    },\n    \"facts\": {\n      \"items\": {\n        \"$ref\": \"#/$defs/RetrievedFact\"\n      },\n      \"maxItems\": 24,\n      \"title\": \"Facts\",\n      \"type\": \"array\"\n    },\n    \"unknowns\": {\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"maxItems\": 10,\n      \"title\": \"Unknowns\",\n      \"type\": \"array\"\n    },\n    \"contradictions\": {\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"maxItems\": 10,\n      \"title\": \"Contradictions\",\n      \"type\": \"array\"\n    }\n  },\n  \"required\": [\n    \"node_id\",\n    \"field_id\"\n  ],\n  \"title\": \"FieldExtractionResult\",\n  \"type\": \"object\"\n}\n\n【输出要求】\n- node_id 和 field_id 必须与任务完全一致。\n- fact_id 使用 FACT-001、FACT-002 等批内唯一编号。\n- 严格输出单个 JSON 对象，不输出 Markdown 或解释。\n\n【字段任务与检索证据】\n{\n  \"node_id\": \"node_0\",\n  \"field_id\": \"intended_purpose\",\n  \"retrieval_intent\": \"产品用途 预期用途 使用场景 主要功能 部署对象 操作说明 系统角色\",\n  \"evidence\": \"[PACKET rag_yangguang_emu_node_0_intended_purpose_25e9eb3681fb v1]\\nProject: yangguang_emu\\nUse only this evidence. Preserve unknowns and copy citation anchors exactly.\\n\\n[KNOWN GAPS]\\n- GAP-LOGGER4000-SCOPE: A Logger4000 manual is present, but the EMU300A product and cybersecurity manuals identify Logger5000 as the standard internal collector; Logger4000 is excluded until the delivered configuration is confirmed. Disposition: Treat Logger4000 applicability as a customer/configuration question; do not infer its assets or threats in the baseline run.\\n- GAP-DIAGRAM-SEMANTICS: Native text and figure captions are retained, but topology diagrams have not been manually transcribed into graph relationships. Disposition: Review missing topology only if the first evaluation shows unsupported or absent communication paths.\\n- GAP-MIXED-PAGE-BLOCK: Logger5000 PDF page 82 merges the end of GOOSE, MMS forwarding, and the start of port parameters into one native PDF text block; its file/page/block anchor is exact but its single assigned section path is broader than the mixed content. Disposition: Require quote plus physical-page/block citation for this block; do not treat its section path alone as proof. Revisit parser splitting only if this locator affects evaluation.\\n- GAP-CONTRACT-VARIANTS: The manuals describe optional and contract-dependent functions; the exact customer-enabled feature set is not independently confirmed. Disposition: Preserve uncertainty and produce customer questions instead of asserting optional functions as deployed facts.\\n- GAP-LEGAL-BASIS: Product manuals establish product facts but are not authoritative CRA or prEN 40000 legal sources. Disposition: Use the controlled legal/rule layer for legal conclusions; never fabricate legal support from this packet.\\n\\n[DOCUMENT DOC-5067B181346D]\\nfile_name: EMU300A-UCN-Ver11-202603.pdf\\nfile_path: legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf\\nfile_type: pdf\\nsource_sha256: 985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e\\nparser_version: 1.5.0\\n\\n[LOCATION page=16; printed_page=10; section=2 产品介绍 > 2.2 主要特点]\\n[BLK-BC449CE85DB4F669] •\\n支持RS485、以太网、MPLC 通信。\\n[BLK-B081A00CB116A76B] •\\n支持跟踪系统、箱变测控、电表、环境监测仪等多种设备接入。\\n[BLK-D13DD174206D8434] •\\n支持 CT 采样，以毫秒级精度采集逆变器子阵电流，实现快速功率调节。\\n\\n[DOCUMENT DOC-DF116E7199E2]\\nfile_name: EMU300A网络安全操作手册-UCN-Ver11-202607.pdf\\nfile_path: legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf\\nfile_type: pdf\\nsource_sha256: e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc\\nparser_version: 1.5.0\\n\\n[LOCATION page=5; printed_page=1; section=1 关于本手册]\\n[BLK-3B83C70F6F068CAB] 符号使用\\n[BLK-629579B8188BB54C] 为了确保用户在使用产品时的人身及财产安全，更加高效优化地使用产品，手册中提供了相\\n关的信息，并使用以下的符号加以突出强调。\\n[BLK-8E7F66A7A4B2288D] 以下列举了本手册中可能使用到的符号，请认真阅读从而更好地使用本手册。\\n\\n[LOCATION page=6; printed_page=2; section=1 关于本手册]\\n[BLK-E3C1223513258C5B] 表示有潜在风险，如果未能避免可能导致设备无法正常运行或造成财产损失的情况。\\n[BLK-45B75795F2547348] “说明”是手册中的附加信息，对内容的强调和补充，也可能提供了产品优化使用的技\\n巧或窍门，能帮助您解决某个问题或节省您的时间。\\n\\n[LOCATION page=11; printed_page=7; section=4 纵深防御战略 > 4.4 用户的缓解措施]\\n[BLK-91073216560EB387] •\\n移动数据存储介质（例如 U 盘和存储卡） 的使用指南。\\n[BLK-525F38DFF781D0C4] •\\n操作单元使用指南， 例如 PG/PC 或移动终端设备。\\n[BLK-69FCE72C42994FF6] 网络安全\\n\\n[LOCATION page=12; printed_page=8; section=5 产品功能及部署情况介绍]\\n[BLK-BDF435E6E7F273A5] 5\\n产品功能及部署情况介绍\\n[BLK-0FE6A5150E10C5BC] 能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\\n云平台，可接收北向远程调度指令或执行本地调度指令。\\n[BLK-153C2EE70C8A30F1] •\\n能量管理单元可以将采集到的设备数据，通过核心交换机传输至后台站控，例如\\nInsight、SCADA。\\n[BLK-64FE47677390A3C6] •\\n能量管理单元也可将采集到的设备数据，直接通过4G 路由器传输至阳光云。\\n[BLK-76C33977D614288F] 通过核心交换机连接至后台站控\\n[BLK-EAF433E21E1F1D8F] 能量管理单元通过核心交换机连接至Insight 或SCADA 的方式，如下图所示。\\n\\n[LOCATION page=13; printed_page=9; section=5 产品功能及部署情况介绍]\\n[BLK-3AD5ECCBD9B22E49] 用户网络安全操作手册\\n5 产品功能及部署情况介绍\\n\\n[LOCATION page=17; printed_page=13; section=8 用户管理]\\n[BLK-08E8F60318D1EDD7] 8\\n用户管理\\n[BLK-0FB300025B64DD8D] 管理员通过对不同的用户设置不同权限的账号，可以提高系统安全性、为不同的用户提升操作效\\n率、降低管理成本。\\n[BLK-2C9EB29CBEE48879] 用户管理\\n\\n[LOCATION page=20; printed_page=16; section=9 安全退役]\\n[BLK-525B9314A5FDB5CB] •\\n当设备需要退役报废时，请参考10.6 恢复出厂设置章节操作，并通过安全的渠道销毁，\\n删除用户安全数据，确保设备不被二次部署到用户的运营系统或被非法利用。\\n[BLK-7BB0886F0F8E6371] 产品报废场景如下：\\n[BLK-4D366B3D429D69D6] •\\n产品达到规定的使用年限；\\n\"\n}",
+  "estimated_input_tokens": 4878,
+  "raw_response": "{\n  \"node_id\": \"node_0\",\n  \"field_id\": \"intended_purpose\",\n  \"facts\": [\n    {\n      \"fact_id\": \"FACT-001\",\n      \"statement\": \"EMU300A 是能量管理单元。\",\n      \"block_ids\": [\"BLK-BDF435E6E7F273A5\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-002\",\n      \"statement\": \"EMU300A 内部配置有数据采集器 Logger5000。\",\n      \"block_ids\": [\"BLK-BDF435E6E7F273A5\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-003\",\n      \"statement\": \"EMU300A 可通过 RS485 总线方式接入光伏发电系统中的逆变器、箱变、环境监测仪、电表等设备。\",\n      \"block_ids\": [\"BLK-BDF435E6E7F273A5\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-004\",\n      \"statement\": \"EMU300A 通过 Modbus 协议、PLC 电力载波通信支持南向设备接入。\",\n      \"block_ids\": [\"BLK-BDF435E6E7F273A5\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-005\",\n      \"statement\": \"EMU300A 可通过 PLC 总线方式接入阳光电源生产的具备 PLC 功能的组串式逆变器。\",\n      \"block_ids\": [\"BLK-BDF435E6E7F273A5\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-006\",\n      \"statement\": \"EMU300A 对接入的逆变器可进行有功功率控制和无功功率调节。\",\n      \"block_ids\": [\"BLK-BDF435E6E7F273A5\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-007\",\n      \"statement\": \"EMU300A 可通过 IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发数据到综自系统或站控系统及阳光云平台。\",\n      \"block_ids\": [\"BLK-BDF435E6E7F273A5\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-008\",\n      \"statement\": \"EMU300A 可接收北向远程调度指令或执行本地调度指令。\",\n      \"block_ids\": [\"BLK-BDF435E6E7F273A5\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-009\",\n      \"statement\": \"EMU300A 可将采集到的设备数据通过核心交换机传输至后台站控，例如 Insight、SCADA。\",\n      \"block_ids\": [\"BLK-153C2EE70C8A30F1\", \"BLK-76C33977D614288F\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-010\",\n      \"statement\": \"EMU300A 可将采集到的设备数据直接通过 4G 路由器传输至阳光云。\",\n      \"block_ids\": [\"BLK-64FE47677390A3C6\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-011\",\n      \"statement\": \"EMU300A 支持 RS485、以太网、MPLC 通信。\",\n      \"block_ids\": [\"BLK-BC449CE85DB4F669\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-012\",\n      \"statement\": \"EMU300A 支持跟踪系统、箱变测控、电表、环境监测仪等多种设备接入。\",\n      \"block_ids\": [\"BLK-B081A00CB116A76B\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    }\n  ],\n  \"unknowns\": [\n    \"EMU300A 是否支持 CT 采样功能是否为所有交付配置标配（证据中未说明其是否依赖合同/BOM/现场配置）\",\n    \"‘MPLC’是否为笔误（应为‘PLC’）或特定协议缩写（证据未定义）\",\n    \"‘ModbuS’拼写是否为‘Modbus’的排版错误（证据原文如此，未确认标准名称）\",\n    \"Logger4000 在本产品中的适用性状态（已知 GAP-LOGGER4000-SCOPE 明确其不作为标准内置组件，但未说明是否在任何配置下可用）\",\n    \"IEC104、MQTT、GOOSE 等北向协议的具体启用条件、端口、认证与加密机制（证据仅列出协议名，未说明启用状态与安全参数）\",\n    \"4G 路由器是否为 EMU300A 内置组件或外接设备（证据未说明其物理归属与集成关系）\",\n    \"‘阳光云平台’的运营方是否为阳光电源（证据未明确说明平台所有权或运营主体）\",\n    \"远程调度指令的来源系统类型及授权机制（证据未说明指令发起方身份与接入控制要求）\"\n  ],\n  \"contradictions\": []\n}",
+  "response_metadata": {
+    "finish_reason": "stop",
+    "token_usage": {
+      "completion_tokens": 1355,
+      "prompt_tokens": 4568,
+      "total_tokens": 5923,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "qwen-plus"
+  },
+  "parsed_payload": {
+    "node_id": "node_0",
+    "field_id": "intended_purpose",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "EMU300A 是能量管理单元。",
+        "block_ids": [
+          "BLK-BDF435E6E7F273A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "EMU300A 内部配置有数据采集器 Logger5000。",
+        "block_ids": [
+          "BLK-BDF435E6E7F273A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "EMU300A 可通过 RS485 总线方式接入光伏发电系统中的逆变器、箱变、环境监测仪、电表等设备。",
+        "block_ids": [
+          "BLK-BDF435E6E7F273A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "EMU300A 通过 Modbus 协议、PLC 电力载波通信支持南向设备接入。",
+        "block_ids": [
+          "BLK-BDF435E6E7F273A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "EMU300A 可通过 PLC 总线方式接入阳光电源生产的具备 PLC 功能的组串式逆变器。",
+        "block_ids": [
+          "BLK-BDF435E6E7F273A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "EMU300A 对接入的逆变器可进行有功功率控制和无功功率调节。",
+        "block_ids": [
+          "BLK-BDF435E6E7F273A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "EMU300A 可通过 IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发数据到综自系统或站控系统及阳光云平台。",
+        "block_ids": [
+          "BLK-BDF435E6E7F273A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "EMU300A 可接收北向远程调度指令或执行本地调度指令。",
+        "block_ids": [
+          "BLK-BDF435E6E7F273A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "EMU300A 可将采集到的设备数据通过核心交换机传输至后台站控，例如 Insight、SCADA。",
+        "block_ids": [
+          "BLK-153C2EE70C8A30F1",
+          "BLK-76C33977D614288F"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "EMU300A 可将采集到的设备数据直接通过 4G 路由器传输至阳光云。",
+        "block_ids": [
+          "BLK-64FE47677390A3C6"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "EMU300A 支持 RS485、以太网、MPLC 通信。",
+        "block_ids": [
+          "BLK-BC449CE85DB4F669"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "EMU300A 支持跟踪系统、箱变测控、电表、环境监测仪等多种设备接入。",
+        "block_ids": [
+          "BLK-B081A00CB116A76B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "EMU300A 是否支持 CT 采样功能是否为所有交付配置标配（证据中未说明其是否依赖合同/BOM/现场配置）",
+      "‘MPLC’是否为笔误（应为‘PLC’）或特定协议缩写（证据未定义）",
+      "‘ModbuS’拼写是否为‘Modbus’的排版错误（证据原文如此，未确认标准名称）",
+      "Logger4000 在本产品中的适用性状态（已知 GAP-LOGGER4000-SCOPE 明确其不作为标准内置组件，但未说明是否在任何配置下可用）",
+      "IEC104、MQTT、GOOSE 等北向协议的具体启用条件、端口、认证与加密机制（证据仅列出协议名，未说明启用状态与安全参数）",
+      "4G 路由器是否为 EMU300A 内置组件或外接设备（证据未说明其物理归属与集成关系）",
+      "‘阳光云平台’的运营方是否为阳光电源（证据未明确说明平台所有权或运营主体）",
+      "远程调度指令的来源系统类型及授权机制（证据未说明指令发起方身份与接入控制要求）"
+    ],
+    "contradictions": []
+  },
+  "validation_payload": {
+    "node_id": "node_0",
+    "field_id": "intended_purpose",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "EMU300A 是能量管理单元。",
+        "block_ids": [
+          "BLK-BDF435E6E7F273A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "EMU300A 内部配置有数据采集器 Logger5000。",
+        "block_ids": [
+          "BLK-BDF435E6E7F273A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "EMU300A 可通过 RS485 总线方式接入光伏发电系统中的逆变器、箱变、环境监测仪、电表等设备。",
+        "block_ids": [
+          "BLK-BDF435E6E7F273A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "EMU300A 通过 Modbus 协议、PLC 电力载波通信支持南向设备接入。",
+        "block_ids": [
+          "BLK-BDF435E6E7F273A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "EMU300A 可通过 PLC 总线方式接入阳光电源生产的具备 PLC 功能的组串式逆变器。",
+        "block_ids": [
+          "BLK-BDF435E6E7F273A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "EMU300A 对接入的逆变器可进行有功功率控制和无功功率调节。",
+        "block_ids": [
+          "BLK-BDF435E6E7F273A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "EMU300A 可通过 IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发数据到综自系统或站控系统及阳光云平台。",
+        "block_ids": [
+          "BLK-BDF435E6E7F273A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "EMU300A 可接收北向远程调度指令或执行本地调度指令。",
+        "block_ids": [
+          "BLK-BDF435E6E7F273A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "EMU300A 可将采集到的设备数据通过核心交换机传输至后台站控，例如 Insight、SCADA。",
+        "block_ids": [
+          "BLK-153C2EE70C8A30F1",
+          "BLK-76C33977D614288F"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "EMU300A 可将采集到的设备数据直接通过 4G 路由器传输至阳光云。",
+        "block_ids": [
+          "BLK-64FE47677390A3C6"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "EMU300A 支持 RS485、以太网、MPLC 通信。",
+        "block_ids": [
+          "BLK-BC449CE85DB4F669"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "EMU300A 支持跟踪系统、箱变测控、电表、环境监测仪等多种设备接入。",
+        "block_ids": [
+          "BLK-B081A00CB116A76B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "EMU300A 是否支持 CT 采样功能是否为所有交付配置标配（证据中未说明其是否依赖合同/BOM/现场配置）",
+      "‘MPLC’是否为笔误（应为‘PLC’）或特定协议缩写（证据未定义）",
+      "‘ModbuS’拼写是否为‘Modbus’的排版错误（证据原文如此，未确认标准名称）",
+      "Logger4000 在本产品中的适用性状态（已知 GAP-LOGGER4000-SCOPE 明确其不作为标准内置组件，但未说明是否在任何配置下可用）",
+      "IEC104、MQTT、GOOSE 等北向协议的具体启用条件、端口、认证与加密机制（证据仅列出协议名，未说明启用状态与安全参数）",
+      "4G 路由器是否为 EMU300A 内置组件或外接设备（证据未说明其物理归属与集成关系）",
+      "‘阳光云平台’的运营方是否为阳光电源（证据未明确说明平台所有权或运营主体）",
+      "远程调度指令的来源系统类型及授权机制（证据未说明指令发起方身份与接入控制要求）"
+    ],
+    "contradictions": []
+  },
+  "result": {
+    "node_id": "node_0",
+    "field_id": "intended_purpose",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "EMU300A 是能量管理单元。",
+        "block_ids": [
+          "BLK-BDF435E6E7F273A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "EMU300A 内部配置有数据采集器 Logger5000。",
+        "block_ids": [
+          "BLK-BDF435E6E7F273A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "EMU300A 可通过 RS485 总线方式接入光伏发电系统中的逆变器、箱变、环境监测仪、电表等设备。",
+        "block_ids": [
+          "BLK-BDF435E6E7F273A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "EMU300A 通过 Modbus 协议、PLC 电力载波通信支持南向设备接入。",
+        "block_ids": [
+          "BLK-BDF435E6E7F273A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "EMU300A 可通过 PLC 总线方式接入阳光电源生产的具备 PLC 功能的组串式逆变器。",
+        "block_ids": [
+          "BLK-BDF435E6E7F273A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "EMU300A 对接入的逆变器可进行有功功率控制和无功功率调节。",
+        "block_ids": [
+          "BLK-BDF435E6E7F273A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "EMU300A 可通过 IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发数据到综自系统或站控系统及阳光云平台。",
+        "block_ids": [
+          "BLK-BDF435E6E7F273A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "EMU300A 可接收北向远程调度指令或执行本地调度指令。",
+        "block_ids": [
+          "BLK-BDF435E6E7F273A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "EMU300A 可将采集到的设备数据通过核心交换机传输至后台站控，例如 Insight、SCADA。",
+        "block_ids": [
+          "BLK-153C2EE70C8A30F1",
+          "BLK-76C33977D614288F"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "EMU300A 可将采集到的设备数据直接通过 4G 路由器传输至阳光云。",
+        "block_ids": [
+          "BLK-64FE47677390A3C6"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "EMU300A 支持 RS485、以太网、MPLC 通信。",
+        "block_ids": [
+          "BLK-BC449CE85DB4F669"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "EMU300A 支持跟踪系统、箱变测控、电表、环境监测仪等多种设备接入。",
+        "block_ids": [
+          "BLK-B081A00CB116A76B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "EMU300A 是否支持 CT 采样功能是否为所有交付配置标配（证据中未说明其是否依赖合同/BOM/现场配置）",
+      "‘MPLC’是否为笔误（应为‘PLC’）或特定协议缩写（证据未定义）",
+      "‘ModbuS’拼写是否为‘Modbus’的排版错误（证据原文如此，未确认标准名称）",
+      "Logger4000 在本产品中的适用性状态（已知 GAP-LOGGER4000-SCOPE 明确其不作为标准内置组件，但未说明是否在任何配置下可用）",
+      "IEC104、MQTT、GOOSE 等北向协议的具体启用条件、端口、认证与加密机制（证据仅列出协议名，未说明启用状态与安全参数）",
+      "4G 路由器是否为 EMU300A 内置组件或外接设备（证据未说明其物理归属与集成关系）",
+      "‘阳光云平台’的运营方是否为阳光电源（证据未明确说明平台所有权或运营主体）",
+      "远程调度指令的来源系统类型及授权机制（证据未说明指令发起方身份与接入控制要求）"
+    ],
+    "contradictions": []
+  },
+  "elapsed_seconds": 30.634,
+  "finished_at": "2026-10-09T01:56:04.933805+00:00"
+}

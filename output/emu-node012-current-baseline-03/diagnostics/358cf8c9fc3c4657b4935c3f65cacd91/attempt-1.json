@@ -1,0 +1,416 @@
+{
+  "run_id": "emu-node012-current-baseline-03",
+  "node": "build_product_context",
+  "task": "node_1/iprfu",
+  "call_id": "358cf8c9fc3c4657b4935c3f65cacd91",
+  "schema": "FieldExtractionResult",
+  "model": "qwen-plus",
+  "attempt": 1,
+  "started_at": "2026-10-09T02:15:44.250580+00:00",
+  "status": "succeeded",
+  "phase": "complete",
+  "prompt": "你正在为 CRA / prEN 40000 TARA 工作流的 node_1/iprfu 提取原子事实。\n\n【任务边界】\n1. 只记录输入证据逐字支持的事实，不生成最终 Scope、ProductContext、资产、威胁、风险或控制。\n2. 每条 fact 只表达一个事实，并列出直接支持它的真实 block_id。block_id 所在文本必须直接支持该事实，不得引用相邻章节标题代替正文或表格。最多输出 12 条事实；证据未说明的必要信息写入 unknowns。\n3. 不得创建输入中不存在的 block_id，不得根据行业惯例补全未知信息。\n4. 原子事实必须保留证据中的限定词，包括“选配、可选、适用于、若启用、取决于合同/BOM/现场配置”。不得把产品能力改写成客户已装机或已启用状态。\n5. 安全配置教程或操作步骤只证明该对象或能力被手册覆盖，不单独证明它是标准内置组件、实际交付配置或当前已启用功能。\n6. 对云平台、远程升级、数据上传等事实，只记录证据明确说明的能力、运营方和依赖；不得自行判定 CRA RDPS。缺少“远程方案是否为产品功能所必需”等信息时写入 unknowns。\n7. 证据含糊、可选或依赖合同配置时设置 is_uncertain=true，并在 unknowns 中记录待确认项。\n8. 若不同证据存在冲突，分别保留事实并在 contradictions 中说明。\n9. 除产品名、型号、协议、法规/标准编号和其他专有名词外，fact、unknowns 和 contradictions 使用简体中文；不得翻译或改写证据中的专有标识。\n10. attributes 只用于本字段整理要求明确列出的结构化值，且必须由该fact的同一组block_ids直接支持；其他字段保持空对象。未知值使用null或规定的unknown，不得推断。\n\n【本字段整理要求】\n逐条保留与本字段直接相关的原子事实；未知信息写入 unknowns。\n\n【目标 JSON Schema】\n{\n  \"$defs\": {\n    \"FactAttributes\": {\n      \"additionalProperties\": false,\n      \"description\": \"One source for the model-facing attribute schema and runtime validation.\",\n      \"properties\": {},\n      \"title\": \"FactAttributes\",\n      \"type\": \"object\"\n    },\n    \"RetrievedFact\": {\n      \"additionalProperties\": false,\n      \"description\": \"One atomic fact extracted from a field-specific evidence packet.\",\n      \"properties\": {\n        \"fact_id\": {\n          \"pattern\": \"^FACT-[0-9]{3,}$\",\n          \"title\": \"Fact Id\",\n          \"type\": \"string\"\n        },\n        \"statement\": {\n          \"maxLength\": 1000,\n          \"minLength\": 1,\n          \"title\": \"Statement\",\n          \"type\": \"string\"\n        },\n        \"block_ids\": {\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"maxItems\": 4,\n          \"minItems\": 1,\n          \"title\": \"Block Ids\",\n          \"type\": \"array\"\n        },\n        \"is_uncertain\": {\n          \"default\": false,\n          \"title\": \"Is Uncertain\",\n          \"type\": \"boolean\"\n        },\n        \"attributes\": {\n          \"$ref\": \"#/$defs/FactAttributes\",\n          \"description\": \"Optional field-specific values copied from the same evidence. Only communications and components use the reviewed keys validated by FieldExtractionResult.\",\n          \"title\": \"Attributes\"\n        }\n      },\n      \"required\": [\n        \"fact_id\",\n        \"statement\",\n        \"block_ids\"\n      ],\n      \"title\": \"RetrievedFact\",\n      \"type\": \"object\"\n    }\n  },\n  \"additionalProperties\": false,\n  \"description\": \"Compact persisted candidate facts for one Node/field slice.\",\n  \"properties\": {\n    \"node_id\": {\n      \"type\": \"string\",\n      \"const\": \"node_1\"\n    },\n    \"field_id\": {\n      \"type\": \"string\",\n      \"const\": \"iprfu\"\n    },\n    \"facts\": {\n      \"items\": {\n        \"$ref\": \"#/$defs/RetrievedFact\"\n      },\n      \"maxItems\": 12,\n      \"title\": \"Facts\",\n      \"type\": \"array\"\n    },\n    \"unknowns\": {\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"maxItems\": 10,\n      \"title\": \"Unknowns\",\n      \"type\": \"array\"\n    },\n    \"contradictions\": {\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"maxItems\": 10,\n      \"title\": \"Contradictions\",\n      \"type\": \"array\"\n    }\n  },\n  \"required\": [\n    \"node_id\",\n    \"field_id\"\n  ],\n  \"title\": \"FieldExtractionResult\",\n  \"type\": \"object\"\n}\n\n【输出要求】\n- node_id 和 field_id 必须与任务完全一致。\n- fact_id 使用 FACT-001、FACT-002 等批内唯一编号。\n- 严格输出单个 JSON 对象，不输出 Markdown 或解释。\n\n【字段任务与检索证据】\n{\n  \"node_id\": \"node_1\",\n  \"field_id\": \"iprfu\",\n  \"retrieval_intent\": \"预期用途 合理可预见使用 误用 安装 操作 维护 退役 支持期限 安全影响\",\n  \"evidence\": \"[PACKET rag_yangguang_emu_node_1_iprfu_c7071afe0b08 v1]\\nProject: yangguang_emu\\nUse only this evidence. Preserve unknowns and copy citation anchors exactly.\\n\\n[KNOWN GAPS]\\n- GAP-LOGGER4000-SCOPE: A Logger4000 manual is present, but the EMU300A product and cybersecurity manuals identify Logger5000 as the standard internal collector; Logger4000 is excluded until the delivered configuration is confirmed. Disposition: Treat Logger4000 applicability as a customer/configuration question; do not infer its assets or threats in the baseline run.\\n- GAP-DIAGRAM-SEMANTICS: Native text and figure captions are retained, but topology diagrams have not been manually transcribed into graph relationships. Disposition: Review missing topology only if the first evaluation shows unsupported or absent communication paths.\\n- GAP-MIXED-PAGE-BLOCK: Logger5000 PDF page 82 merges the end of GOOSE, MMS forwarding, and the start of port parameters into one native PDF text block; its file/page/block anchor is exact but its single assigned section path is broader than the mixed content. Disposition: Require quote plus physical-page/block citation for this block; do not treat its section path alone as proof. Revisit parser splitting only if this locator affects evaluation.\\n- GAP-CONTRACT-VARIANTS: The manuals describe optional and contract-dependent functions; the exact customer-enabled feature set is not independently confirmed. Disposition: Preserve uncertainty and produce customer questions instead of asserting optional functions as deployed facts.\\n- GAP-LEGAL-BASIS: Product manuals establish product facts but are not authoritative CRA or prEN 40000 legal sources. Disposition: Use the controlled legal/rule layer for legal conclusions; never fabricate legal support from this packet.\\n\\n[DOCUMENT DOC-DF116E7199E2]\\nfile_name: EMU300A网络安全操作手册-UCN-Ver11-202607.pdf\\nfile_path: legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf\\nfile_type: pdf\\nsource_sha256: e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc\\nparser_version: 1.5.0\\n\\n[LOCATION page=7; printed_page=3; section=2 基本安全说明]\\n[BLK-355A0793885F8B9D] 警告\\n[BLK-A8903F0B3105707C] 未遵循安全说明和遗留风险可引发生命危险\\n忽视随附硬件文档中的安全说明和遗留风险会导致重伤或死亡\\n[BLK-D0201C26B3FCE322] •\\n遵守硬件文档中的安全说明。\\n[BLK-F4322E7C8FD3E6EB] •\\n进行风险评估时应考虑遗留风险。\\n[BLK-B90C562DB9B696AD] 警告\\n\\n[LOCATION page=10; printed_page=6; section=4 纵深防御战略 > 4.4 用户的缓解措施]\\n[BLK-C65542BD825C9290] •\\n对关键生产区域进行单独的人员出入控制。\\n[BLK-F98DE46C72A1F829] •\\n重要组件安装在可上锁的控制柜/控制室内。\\n[BLK-B5B2DA70170FDE95] •\\n控制柜/控制室必须配备锁， 并有监控和报警设施。 请勿使用结构简单的锁， 比如： 万\\n能锁、 三角锁、 四角锁或双齿锁。\\n\\n[LOCATION page=20; printed_page=16; section=9 安全退役]\\n[BLK-7087C429F36BA4C3] 9\\n安全退役\\n[BLK-338E6AF2AA5A36A6] 安全删除储存在环境中的引用、配置数据以及安全移除产品准则如下：\\n[BLK-6F042AC19A0269C8] •\\n在安全删除产品之前，请参考10 安全配置指南章节相关内容进行操作。\\n[BLK-525B9314A5FDB5CB] •\\n当设备需要退役报废时，请参考10.6 恢复出厂设置章节操作，并通过安全的渠道销毁，\\n删除用户安全数据，确保设备不被二次部署到用户的运营系统或被非法利用。\\n[BLK-7BB0886F0F8E6371] 产品报废场景如下：\\n[BLK-4D366B3D429D69D6] •\\n产品达到规定的使用年限；\\n[BLK-9AE61B78288E5DE6] •\\n产品由于严重损坏，不具备使用条件；\\n[BLK-D558E0F03D0C4DAC] •\\n产品主要部件或结构损坏，达不到最低使用要求，又无修复价值。\\n\\n[LOCATION page=23; printed_page=19; section=10 安全配置指南 > 10.4 证书管理和维护 > 10.4.1 预置证书风险声明]\\n[BLK-B775CA8B855D40B9] •\\n对于预置证书作为业务使用的场景，阳光电源不对其安全性做出承诺与保证，建议用户更\\n换使用自己的安全证书。\\n[BLK-1F38C3E74276F886] •\\n阳光电源预置证书有效期为30 年。\\n[BLK-4EC00AD997F9F3D6] •\\n如果用户使用自己的证书，则需做好对证书生命周期的管理，为保证安全性推荐使用短有\\n效期的证书。\\n[BLK-A549330D551DA3ED] •\\n为保证安全性，建议用户每3 年更新一次证书。\\n\\n[LOCATION page=25; printed_page=21; section=10 安全配置指南 > 10.4 证书管理和维护 > 10.4.2 证书安全维护]\\n[BLK-E1B7E29269EA92E3] 证书过期管理\\n[BLK-0C005846289156C7] 用户登录成功后，对于证书即将过期或已过期，系统将提示，并将结果记录至 syslog 日志。\\n[BLK-731B6EE8DB6B37A6] 当证书距离过期时间不足90 天时，系统触发“即将过期”告警。\\n[BLK-A1646F67D0B20DF6] 当证书已过期时，系统触发“已过期”告警。\\n\"\n}",
+  "estimated_input_tokens": 3233,
+  "raw_response": "{\n  \"node_id\": \"node_1\",\n  \"field_id\": \"iprfu\",\n  \"facts\": [\n    {\n      \"fact_id\": \"FACT-001\",\n      \"statement\": \"产品支持安全退役，包括安全删除储存的引用、配置数据及安全移除产品。\",\n      \"block_ids\": [\"BLK-338E6AF2AA5A36A6\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-002\",\n      \"statement\": \"安全删除产品前需参考第10章安全配置指南相关内容进行操作。\",\n      \"block_ids\": [\"BLK-6F042AC19A0269C8\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-003\",\n      \"statement\": \"设备退役报废时需执行10.6恢复出厂设置，并通过安全渠道销毁、删除用户安全数据，防止二次部署或非法利用。\",\n      \"block_ids\": [\"BLK-525B9314A5FDB5CB\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-004\",\n      \"statement\": \"产品报废场景包括：达到规定的使用年限；因严重损坏不具备使用条件；主要部件或结构损坏且无修复价值。\",\n      \"block_ids\": [\"BLK-7BB0886F0F8E6371\", \"BLK-4D366B3D429D69D6\", \"BLK-9AE61B78288E5DE6\", \"BLK-D558E0F03D0C4DAC\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-005\",\n      \"statement\": \"阳光电源预置证书有效期为30年。\",\n      \"block_ids\": [\"BLK-1F38C3E74276F886\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-006\",\n      \"statement\": \"对于预置证书作为业务使用的场景，阳光电源不对其安全性做出承诺与保证，建议用户更换使用自己的安全证书。\",\n      \"block_ids\": [\"BLK-B775CA8B855D40B9\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-007\",\n      \"statement\": \"若用户使用自己的证书，则需做好证书生命周期管理，推荐使用短有效期证书。\",\n      \"block_ids\": [\"BLK-4EC00AD997F9F3D6\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-008\",\n      \"statement\": \"为保证安全性，建议用户每3年更新一次证书。\",\n      \"block_ids\": [\"BLK-A549330D551DA3ED\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-009\",\n      \"statement\": \"系统在用户登录成功后，对证书即将过期或已过期情况进行提示，并将结果记录至syslog日志。\",\n      \"block_ids\": [\"BLK-0C005846289156C7\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-010\",\n      \"statement\": \"当证书距离过期时间不足90天时，系统触发“即将过期”告警。\",\n      \"block_ids\": [\"BLK-731B6EE8DB6B37A6\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-011\",\n      \"statement\": \"当证书已过期时，系统触发“已过期”告警。\",\n      \"block_ids\": [\"BLK-A1646F67D0B20DF6\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-012\",\n      \"statement\": \"进行风险评估时应考虑遗留风险。\",\n      \"block_ids\": [\"BLK-F4322E7C8FD3E6EB\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    }\n  ],\n  \"unknowns\": [\n    \"产品规定的使用年限具体数值未说明\",\n    \"安全渠道销毁的具体方式或定义未说明\",\n    \"‘恢复出厂设置’是否覆盖全部安全数据擦除未明确说明\",\n    \"预置证书的默认启用状态或是否随产品默认安装未说明\",\n    \"证书管理功能是否为所有交付配置标配，或是否依赖合同/BOM/现场配置未说明\",\n    \"syslog日志的存储位置、保留周期、访问控制策略未说明\",\n    \"‘关键生产区域’‘重要组件’等术语的范围和判定标准未定义\",\n    \"人员出入控制、监控和报警设施的具体技术实现或责任主体（客户/厂商）未说明\"\n  ],\n  \"contradictions\": []\n}",
+  "response_metadata": {
+    "finish_reason": "stop",
+    "token_usage": {
+      "completion_tokens": 1189,
+      "prompt_tokens": 2893,
+      "total_tokens": 4082,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "qwen-plus"
+  },
+  "parsed_payload": {
+    "node_id": "node_1",
+    "field_id": "iprfu",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "产品支持安全退役，包括安全删除储存的引用、配置数据及安全移除产品。",
+        "block_ids": [
+          "BLK-338E6AF2AA5A36A6"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "安全删除产品前需参考第10章安全配置指南相关内容进行操作。",
+        "block_ids": [
+          "BLK-6F042AC19A0269C8"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "设备退役报废时需执行10.6恢复出厂设置，并通过安全渠道销毁、删除用户安全数据，防止二次部署或非法利用。",
+        "block_ids": [
+          "BLK-525B9314A5FDB5CB"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "产品报废场景包括：达到规定的使用年限；因严重损坏不具备使用条件；主要部件或结构损坏且无修复价值。",
+        "block_ids": [
+          "BLK-7BB0886F0F8E6371",
+          "BLK-4D366B3D429D69D6",
+          "BLK-9AE61B78288E5DE6",
+          "BLK-D558E0F03D0C4DAC"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "阳光电源预置证书有效期为30年。",
+        "block_ids": [
+          "BLK-1F38C3E74276F886"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "对于预置证书作为业务使用的场景，阳光电源不对其安全性做出承诺与保证，建议用户更换使用自己的安全证书。",
+        "block_ids": [
+          "BLK-B775CA8B855D40B9"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "若用户使用自己的证书，则需做好证书生命周期管理，推荐使用短有效期证书。",
+        "block_ids": [
+          "BLK-4EC00AD997F9F3D6"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "为保证安全性，建议用户每3年更新一次证书。",
+        "block_ids": [
+          "BLK-A549330D551DA3ED"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "系统在用户登录成功后，对证书即将过期或已过期情况进行提示，并将结果记录至syslog日志。",
+        "block_ids": [
+          "BLK-0C005846289156C7"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "当证书距离过期时间不足90天时，系统触发“即将过期”告警。",
+        "block_ids": [
+          "BLK-731B6EE8DB6B37A6"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "当证书已过期时，系统触发“已过期”告警。",
+        "block_ids": [
+          "BLK-A1646F67D0B20DF6"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "进行风险评估时应考虑遗留风险。",
+        "block_ids": [
+          "BLK-F4322E7C8FD3E6EB"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "产品规定的使用年限具体数值未说明",
+      "安全渠道销毁的具体方式或定义未说明",
+      "‘恢复出厂设置’是否覆盖全部安全数据擦除未明确说明",
+      "预置证书的默认启用状态或是否随产品默认安装未说明",
+      "证书管理功能是否为所有交付配置标配，或是否依赖合同/BOM/现场配置未说明",
+      "syslog日志的存储位置、保留周期、访问控制策略未说明",
+      "‘关键生产区域’‘重要组件’等术语的范围和判定标准未定义",
+      "人员出入控制、监控和报警设施的具体技术实现或责任主体（客户/厂商）未说明"
+    ],
+    "contradictions": []
+  },
+  "validation_payload": {
+    "node_id": "node_1",
+    "field_id": "iprfu",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "产品支持安全退役，包括安全删除储存的引用、配置数据及安全移除产品。",
+        "block_ids": [
+          "BLK-338E6AF2AA5A36A6"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "安全删除产品前需参考第10章安全配置指南相关内容进行操作。",
+        "block_ids": [
+          "BLK-6F042AC19A0269C8"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "设备退役报废时需执行10.6恢复出厂设置，并通过安全渠道销毁、删除用户安全数据，防止二次部署或非法利用。",
+        "block_ids": [
+          "BLK-525B9314A5FDB5CB"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "产品报废场景包括：达到规定的使用年限；因严重损坏不具备使用条件；主要部件或结构损坏且无修复价值。",
+        "block_ids": [
+          "BLK-7BB0886F0F8E6371",
+          "BLK-4D366B3D429D69D6",
+          "BLK-9AE61B78288E5DE6",
+          "BLK-D558E0F03D0C4DAC"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "阳光电源预置证书有效期为30年。",
+        "block_ids": [
+          "BLK-1F38C3E74276F886"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "对于预置证书作为业务使用的场景，阳光电源不对其安全性做出承诺与保证，建议用户更换使用自己的安全证书。",
+        "block_ids": [
+          "BLK-B775CA8B855D40B9"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "若用户使用自己的证书，则需做好证书生命周期管理，推荐使用短有效期证书。",
+        "block_ids": [
+          "BLK-4EC00AD997F9F3D6"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "为保证安全性，建议用户每3年更新一次证书。",
+        "block_ids": [
+          "BLK-A549330D551DA3ED"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "系统在用户登录成功后，对证书即将过期或已过期情况进行提示，并将结果记录至syslog日志。",
+        "block_ids": [
+          "BLK-0C005846289156C7"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "当证书距离过期时间不足90天时，系统触发“即将过期”告警。",
+        "block_ids": [
+          "BLK-731B6EE8DB6B37A6"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "当证书已过期时，系统触发“已过期”告警。",
+        "block_ids": [
+          "BLK-A1646F67D0B20DF6"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "进行风险评估时应考虑遗留风险。",
+        "block_ids": [
+          "BLK-F4322E7C8FD3E6EB"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "产品规定的使用年限具体数值未说明",
+      "安全渠道销毁的具体方式或定义未说明",
+      "‘恢复出厂设置’是否覆盖全部安全数据擦除未明确说明",
+      "预置证书的默认启用状态或是否随产品默认安装未说明",
+      "证书管理功能是否为所有交付配置标配，或是否依赖合同/BOM/现场配置未说明",
+      "syslog日志的存储位置、保留周期、访问控制策略未说明",
+      "‘关键生产区域’‘重要组件’等术语的范围和判定标准未定义",
+      "人员出入控制、监控和报警设施的具体技术实现或责任主体（客户/厂商）未说明"
+    ],
+    "contradictions": []
+  },
+  "result": {
+    "node_id": "node_1",
+    "field_id": "iprfu",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "产品支持安全退役，包括安全删除储存的引用、配置数据及安全移除产品。",
+        "block_ids": [
+          "BLK-338E6AF2AA5A36A6"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "安全删除产品前需参考第10章安全配置指南相关内容进行操作。",
+        "block_ids": [
+          "BLK-6F042AC19A0269C8"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "设备退役报废时需执行10.6恢复出厂设置，并通过安全渠道销毁、删除用户安全数据，防止二次部署或非法利用。",
+        "block_ids": [
+          "BLK-525B9314A5FDB5CB"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "产品报废场景包括：达到规定的使用年限；因严重损坏不具备使用条件；主要部件或结构损坏且无修复价值。",
+        "block_ids": [
+          "BLK-7BB0886F0F8E6371",
+          "BLK-4D366B3D429D69D6",
+          "BLK-9AE61B78288E5DE6",
+          "BLK-D558E0F03D0C4DAC"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "阳光电源预置证书有效期为30年。",
+        "block_ids": [
+          "BLK-1F38C3E74276F886"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "对于预置证书作为业务使用的场景，阳光电源不对其安全性做出承诺与保证，建议用户更换使用自己的安全证书。",
+        "block_ids": [
+          "BLK-B775CA8B855D40B9"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "若用户使用自己的证书，则需做好证书生命周期管理，推荐使用短有效期证书。",
+        "block_ids": [
+          "BLK-4EC00AD997F9F3D6"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "为保证安全性，建议用户每3年更新一次证书。",
+        "block_ids": [
+          "BLK-A549330D551DA3ED"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "系统在用户登录成功后，对证书即将过期或已过期情况进行提示，并将结果记录至syslog日志。",
+        "block_ids": [
+          "BLK-0C005846289156C7"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "当证书距离过期时间不足90天时，系统触发“即将过期”告警。",
+        "block_ids": [
+          "BLK-731B6EE8DB6B37A6"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "当证书已过期时，系统触发“已过期”告警。",
+        "block_ids": [
+          "BLK-A1646F67D0B20DF6"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "进行风险评估时应考虑遗留风险。",
+        "block_ids": [
+          "BLK-F4322E7C8FD3E6EB"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "产品规定的使用年限具体数值未说明",
+      "安全渠道销毁的具体方式或定义未说明",
+      "‘恢复出厂设置’是否覆盖全部安全数据擦除未明确说明",
+      "预置证书的默认启用状态或是否随产品默认安装未说明",
+      "证书管理功能是否为所有交付配置标配，或是否依赖合同/BOM/现场配置未说明",
+      "syslog日志的存储位置、保留周期、访问控制策略未说明",
+      "‘关键生产区域’‘重要组件’等术语的范围和判定标准未定义",
+      "人员出入控制、监控和报警设施的具体技术实现或责任主体（客户/厂商）未说明"
+    ],
+    "contradictions": []
+  },
+  "elapsed_seconds": 26.606,
+  "finished_at": "2026-10-09T02:16:10.857030+00:00"
+}

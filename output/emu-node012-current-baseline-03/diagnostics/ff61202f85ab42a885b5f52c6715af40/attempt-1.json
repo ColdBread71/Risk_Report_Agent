@@ -1,0 +1,413 @@
+{
+  "run_id": "emu-node012-current-baseline-03",
+  "node": "define_scope",
+  "task": "node_0/remote_services",
+  "call_id": "ff61202f85ab42a885b5f52c6715af40",
+  "schema": "FieldExtractionResult",
+  "model": "qwen-plus",
+  "attempt": 1,
+  "started_at": "2026-10-09T02:13:47.625222+00:00",
+  "status": "succeeded",
+  "phase": "complete",
+  "prompt": "你正在为 CRA / prEN 40000 TARA 工作流的 node_0/remote_services 提取原子事实。\n\n【任务边界】\n1. 只记录输入证据逐字支持的事实，不生成最终 Scope、ProductContext、资产、威胁、风险或控制。\n2. 每条 fact 只表达一个事实，并列出直接支持它的真实 block_id。block_id 所在文本必须直接支持该事实，不得引用相邻章节标题代替正文或表格。最多输出 12 条事实；证据未说明的必要信息写入 unknowns。\n3. 不得创建输入中不存在的 block_id，不得根据行业惯例补全未知信息。\n4. 原子事实必须保留证据中的限定词，包括“选配、可选、适用于、若启用、取决于合同/BOM/现场配置”。不得把产品能力改写成客户已装机或已启用状态。\n5. 安全配置教程或操作步骤只证明该对象或能力被手册覆盖，不单独证明它是标准内置组件、实际交付配置或当前已启用功能。\n6. 对云平台、远程升级、数据上传等事实，只记录证据明确说明的能力、运营方和依赖；不得自行判定 CRA RDPS。缺少“远程方案是否为产品功能所必需”等信息时写入 unknowns。\n7. 证据含糊、可选或依赖合同配置时设置 is_uncertain=true，并在 unknowns 中记录待确认项。\n8. 若不同证据存在冲突，分别保留事实并在 contradictions 中说明。\n9. 除产品名、型号、协议、法规/标准编号和其他专有名词外，fact、unknowns 和 contradictions 使用简体中文；不得翻译或改写证据中的专有标识。\n10. attributes 只用于本字段整理要求明确列出的结构化值，且必须由该fact的同一组block_ids直接支持；其他字段保持空对象。未知值使用null或规定的unknown，不得推断。\n\n【本字段整理要求】\n逐条保留与本字段直接相关的原子事实；未知信息写入 unknowns。\n\n【目标 JSON Schema】\n{\n  \"$defs\": {\n    \"FactAttributes\": {\n      \"additionalProperties\": false,\n      \"description\": \"One source for the model-facing attribute schema and runtime validation.\",\n      \"properties\": {},\n      \"title\": \"FactAttributes\",\n      \"type\": \"object\"\n    },\n    \"RetrievedFact\": {\n      \"additionalProperties\": false,\n      \"description\": \"One atomic fact extracted from a field-specific evidence packet.\",\n      \"properties\": {\n        \"fact_id\": {\n          \"pattern\": \"^FACT-[0-9]{3,}$\",\n          \"title\": \"Fact Id\",\n          \"type\": \"string\"\n        },\n        \"statement\": {\n          \"maxLength\": 1000,\n          \"minLength\": 1,\n          \"title\": \"Statement\",\n          \"type\": \"string\"\n        },\n        \"block_ids\": {\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"maxItems\": 4,\n          \"minItems\": 1,\n          \"title\": \"Block Ids\",\n          \"type\": \"array\"\n        },\n        \"is_uncertain\": {\n          \"default\": false,\n          \"title\": \"Is Uncertain\",\n          \"type\": \"boolean\"\n        },\n        \"attributes\": {\n          \"$ref\": \"#/$defs/FactAttributes\",\n          \"description\": \"Optional field-specific values copied from the same evidence. Only communications and components use the reviewed keys validated by FieldExtractionResult.\",\n          \"title\": \"Attributes\"\n        }\n      },\n      \"required\": [\n        \"fact_id\",\n        \"statement\",\n        \"block_ids\"\n      ],\n      \"title\": \"RetrievedFact\",\n      \"type\": \"object\"\n    }\n  },\n  \"additionalProperties\": false,\n  \"description\": \"Compact persisted candidate facts for one Node/field slice.\",\n  \"properties\": {\n    \"node_id\": {\n      \"type\": \"string\",\n      \"const\": \"node_0\"\n    },\n    \"field_id\": {\n      \"type\": \"string\",\n      \"const\": \"remote_services\"\n    },\n    \"facts\": {\n      \"items\": {\n        \"$ref\": \"#/$defs/RetrievedFact\"\n      },\n      \"maxItems\": 12,\n      \"title\": \"Facts\",\n      \"type\": \"array\"\n    },\n    \"unknowns\": {\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"maxItems\": 10,\n      \"title\": \"Unknowns\",\n      \"type\": \"array\"\n    },\n    \"contradictions\": {\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"maxItems\": 10,\n      \"title\": \"Contradictions\",\n      \"type\": \"array\"\n    }\n  },\n  \"required\": [\n    \"node_id\",\n    \"field_id\"\n  ],\n  \"title\": \"FieldExtractionResult\",\n  \"type\": \"object\"\n}\n\n【输出要求】\n- node_id 和 field_id 必须与任务完全一致。\n- fact_id 使用 FACT-001、FACT-002 等批内唯一编号。\n- 严格输出单个 JSON 对象，不输出 Markdown 或解释。\n\n【字段任务与检索证据】\n{\n  \"node_id\": \"node_0\",\n  \"field_id\": \"remote_services\",\n  \"retrieval_intent\": \"远程服务 云平台 外部平台 远程数据处理 产品功能所需 缺少服务 功能不可用 运营方 责任方 远程运维 远程升级 数据上传 外部服务依赖 降级模式\",\n  \"evidence\": \"[PACKET rag_yangguang_emu_node_0_remote_services_26cfd64d6014 v1]\\nProject: yangguang_emu\\nUse only this evidence. Preserve unknowns and copy citation anchors exactly.\\n\\n[KNOWN GAPS]\\n- GAP-LOGGER4000-SCOPE: A Logger4000 manual is present, but the EMU300A product and cybersecurity manuals identify Logger5000 as the standard internal collector; Logger4000 is excluded until the delivered configuration is confirmed. Disposition: Treat Logger4000 applicability as a customer/configuration question; do not infer its assets or threats in the baseline run.\\n- GAP-DIAGRAM-SEMANTICS: Native text and figure captions are retained, but topology diagrams have not been manually transcribed into graph relationships. Disposition: Review missing topology only if the first evaluation shows unsupported or absent communication paths.\\n- GAP-MIXED-PAGE-BLOCK: Logger5000 PDF page 82 merges the end of GOOSE, MMS forwarding, and the start of port parameters into one native PDF text block; its file/page/block anchor is exact but its single assigned section path is broader than the mixed content. Disposition: Require quote plus physical-page/block citation for this block; do not treat its section path alone as proof. Revisit parser splitting only if this locator affects evaluation.\\n- GAP-CONTRACT-VARIANTS: The manuals describe optional and contract-dependent functions; the exact customer-enabled feature set is not independently confirmed. Disposition: Preserve uncertainty and produce customer questions instead of asserting optional functions as deployed facts.\\n- GAP-LEGAL-BASIS: Product manuals establish product facts but are not authoritative CRA or prEN 40000 legal sources. Disposition: Use the controlled legal/rule layer for legal conclusions; never fabricate legal support from this packet.\\n\\n[DOCUMENT DOC-5067B181346D]\\nfile_name: EMU300A-UCN-Ver11-202603.pdf\\nfile_path: legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf\\nfile_type: pdf\\nsource_sha256: 985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e\\nparser_version: 1.5.0\\n\\n[LOCATION page=15; printed_page=9; section=2 产品介绍 > 2.1 组网应用]\\n[BLK-7FA29D70D79F1001] •\\n能量管理单元可以将采集到的设备数据，通过核心交换机传输至后台站控，例如\\nInsight、SCADA。\\n[BLK-58481F3BF8C8F982] •\\n能量管理单元也可将采集到的设备数据，直接通过4G 路由器传输至阳光云。\\n[BLK-88F7F2D2F44E6545] 通过核心交换机连接至后台站控\\n\\n[LOCATION page=16; printed_page=10; section=2 产品介绍 > 2.2 主要特点]\\n[BLK-1317C7BFFF509A67] 能量管理单元可以直接通过路由器与阳光云连接，如下图所示。\\n[BLK-EBE329C3EFA80ACF] 数据采集器将数据转发至阳光云平台的功能默认不可用。启用该功能前，客户需在充\\n分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获\\n得客户授权后方可生效，且相关操作受系统访问控制策略管理。\\n[BLK-C125441858A9A758] 2.2 主要特点\\n\\n[DOCUMENT DOC-DF116E7199E2]\\nfile_name: EMU300A网络安全操作手册-UCN-Ver11-202607.pdf\\nfile_path: legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf\\nfile_type: pdf\\nsource_sha256: e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc\\nparser_version: 1.5.0\\n\\n[LOCATION page=5; printed_page=1; section=1 关于本手册]\\n[BLK-EEACEC282D1161CF] 安全声明\\n[BLK-4142283250C19758] 有关产品网络安全漏洞响应流程及漏洞披露的详情，请访问如下网址了解：https://\\nwww.sungrowpower.com/security.html。\\n[BLK-3B83C70F6F068CAB] 符号使用\\n\\n[LOCATION page=6; printed_page=2; section=1 关于本手册]\\n[BLK-493E650CAF550B89] 注意\\n[BLK-E3C1223513258C5B] 表示有潜在风险，如果未能避免可能导致设备无法正常运行或造成财产损失的情况。\\n\\n[LOCATION page=8; printed_page=4; section=3 工业网络安全 > 3.1 工业网络安全简介]\\n[BLK-09BB4F761E6C697C] 工业网络安全整合了所有用于保护工业控制系统（ICS）和运营技术（OT）环境的措施，其\\n核心目标是保障以下三个关键方面：\\n[BLK-32D86711ED1302DA] •\\n可用性：确保系统、网络和数据在需要时可被授权用户访问和使用，防止因破坏、故障或\\n拒绝服务攻击(DoS) 导致的业务中断。\\n[BLK-D29A82FAFD09D484] •\\n保密性： 防止敏感数据、配置信息和网络资源等遭到非法访问、窃取或泄露。\\n\\n[LOCATION page=10; printed_page=6; section=4 纵深防御战略 > 4.4 用户的缓解措施]\\n[BLK-26A4B8B218CB053B] 用户网络安全操作手册\\n4 纵深防御战略\\n[BLK-A31FF599B1E26CE2] 安全功能\\t\\t说明\\t安全建议\\n\\t\\t安全\\t通信\\tHTTPS/北向IEC104/MODBUS/等\\n协议TLS 加密通信\\t建议采用TLS 加密通信\\n\\t\\t安全\\t对时\\t支持NTS 对时\\t建议采用NTS 对时，以\\n及定期更新证书\\n\\t\\t恢复\\t出厂配置\\t恢复出厂设置功能，删除设备数据\\t建议谨慎操作\\n\\t\\t安全\\t回溯\\t操作日志、syslog 记录功能\\t建议定期分析安全日志\\n\\t\\t安全\\t更新\\t软件和固件更新\\t建议关注产品相关安全公\\n告，及时升级到最新版本\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t上述安全功能作为\\n多层次多维度的对\\n储的私密性、可用\\n能验证的需求，可\\t一个整体，从物理环境、计算机操作系\\nEMU300A 及其毗邻的智能配电系统提\\n性、完整性和用户操作与访问的可审计\\n能需要对恶意软件保护功能进行验证。\\t统、EMU300A 系统组件等\\n供保护，保证信息通讯和存\\n性。出于对恶意软件保护功\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t警告\\t\\t\\n\\t•\\n•\\n•\\t可能\\n请\\n请\\n请\\n不遵\\t损害系统可用性、完\\n勿使用真实的恶意\\n勿从不可信任的来\\n勿在生产系统进行\\n循这些说明可能会导\\t整性和保密性\\n软件进行恶意软件保护功能测试。\\n源下载任何反病毒测试文件。\\n恶意软件保护功能测试。\\n致设备损坏、敏感数据泄露或数据永久\\t丢失。\\n\\n[LOCATION page=12; printed_page=8; section=5 产品功能及部署情况介绍]\\n[BLK-BDF435E6E7F273A5] 5\\n产品功能及部署情况介绍\\n[BLK-0FE6A5150E10C5BC] 能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\\n云平台，可接收北向远程调度指令或执行本地调度指令。\\n[BLK-153C2EE70C8A30F1] •\\n能量管理单元可以将采集到的设备数据，通过核心交换机传输至后台站控，例如\\nInsight、SCADA。\\n[BLK-64FE47677390A3C6] •\\n能量管理单元也可将采集到的设备数据，直接通过4G 路由器传输至阳光云。\\n[BLK-76C33977D614288F] 通过核心交换机连接至后台站控\\n[BLK-EAF433E21E1F1D8F] 能量管理单元通过核心交换机连接至Insight 或SCADA 的方式，如下图所示。\\n\\n[LOCATION page=26; printed_page=22; section=10 安全配置指南 > 10.7 系统还原]\\n[BLK-E73A1F174F68804B] 10.7 系统还原\\n[BLK-FAE24332B330471F] 如果设备遭受攻击导致无法恢复正常运行，可联系阳光电源运维人员通过SD 卡重新烧制系\\n统进行恢复。\\n\"\n}",
+  "estimated_input_tokens": 4181,
+  "raw_response": "{\n  \"node_id\": \"node_0\",\n  \"field_id\": \"remote_services\",\n  \"facts\": [\n    {\n      \"fact_id\": \"FACT-001\",\n      \"statement\": \"能量管理单元可以将采集到的设备数据，通过核心交换机传输至后台站控，例如Insight、SCADA。\",\n      \"block_ids\": [\"BLK-7FA29D70D79F1001\", \"BLK-153C2EE70C8A30F1\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-002\",\n      \"statement\": \"能量管理单元也可将采集到的设备数据，直接通过4G路由器传输至阳光云。\",\n      \"block_ids\": [\"BLK-58481F3BF8C8F982\", \"BLK-64FE47677390A3C6\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-003\",\n      \"statement\": \"能量管理单元可以直接通过路由器与阳光云连接。\",\n      \"block_ids\": [\"BLK-1317C7BFFF509A67\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-004\",\n      \"statement\": \"数据采集器将数据转发至阳光云平台的功能默认不可用。\",\n      \"block_ids\": [\"BLK-EBE329C3EFA80ACF\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-005\",\n      \"statement\": \"启用数据采集器将数据转发至阳光云平台的功能前，客户需在充分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。\",\n      \"block_ids\": [\"BLK-EBE329C3EFA80ACF\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-006\",\n      \"statement\": \"远程访问仅在获得客户授权后方可生效，且相关操作受系统访问控制策略管理。\",\n      \"block_ids\": [\"BLK-EBE329C3EFA80ACF\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-007\",\n      \"statement\": \"EMU300A内部配置有数据采集器Logger5000。\",\n      \"block_ids\": [\"BLK-0FE6A5150E10C5BC\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-008\",\n      \"statement\": \"EMU300A可通过IEC104、Modbus、MQTT、GOOSE等通信协议北向转发数据至综自系统或站控系统及阳光云平台。\",\n      \"block_ids\": [\"BLK-0FE6A5150E10C5BC\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-009\",\n      \"statement\": \"EMU300A可接收北向远程调度指令或执行本地调度指令。\",\n      \"block_ids\": [\"BLK-0FE6A5150E10C5BC\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-010\",\n      \"statement\": \"若设备遭受攻击导致无法恢复正常运行，可联系阳光电源运维人员通过SD卡重新烧制系统进行恢复。\",\n      \"block_ids\": [\"BLK-FAE24332B330471F\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-011\",\n      \"statement\": \"手册中提及HTTPS、北向IEC104、MODBUS等协议用于安全通信。\",\n      \"block_ids\": [\"BLK-26A4B8B218CB053B\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-012\",\n      \"statement\": \"手册中提及TLS加密通信为安全建议。\",\n      \"block_ids\": [\"BLK-26A4B8B218CB053B\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    }\n  ],\n  \"unknowns\": [\n    \"远程服务是否为产品功能所必需\",\n    \"阳光云平台的运营方是否为阳光电源（证据未明确说明运营主体）\",\n    \"阳光云平台是否属于外部平台（证据仅称‘阳光云’，未定义其归属与部署模式）\",\n    \"是否存在降级模式及其触发条件和行为\",\n    \"缺少对‘远程升级’能力的直接证据（仅提及软件/固件更新建议，未说明是否支持远程方式）\",\n    \"缺少对‘数据上传’是否仅限于阳光云或也支持其他外部平台的说明\",\n    \"缺少对‘外部服务依赖’的具体清单（如证书颁发机构、时间同步服务器、漏洞披露网站是否构成运行依赖）\",\n    \"Logger5000是否支持直接上传至阳光云（证据仅说明其采集能力及北向协议支持，未明确其与阳光云上传路径的绑定关系）\"\n  ],\n  \"contradictions\": []\n}",
+  "response_metadata": {
+    "finish_reason": "stop",
+    "token_usage": {
+      "completion_tokens": 1234,
+      "prompt_tokens": 3691,
+      "total_tokens": 4925,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "qwen-plus"
+  },
+  "parsed_payload": {
+    "node_id": "node_0",
+    "field_id": "remote_services",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "能量管理单元可以将采集到的设备数据，通过核心交换机传输至后台站控，例如Insight、SCADA。",
+        "block_ids": [
+          "BLK-7FA29D70D79F1001",
+          "BLK-153C2EE70C8A30F1"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "能量管理单元也可将采集到的设备数据，直接通过4G路由器传输至阳光云。",
+        "block_ids": [
+          "BLK-58481F3BF8C8F982",
+          "BLK-64FE47677390A3C6"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "能量管理单元可以直接通过路由器与阳光云连接。",
+        "block_ids": [
+          "BLK-1317C7BFFF509A67"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "数据采集器将数据转发至阳光云平台的功能默认不可用。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "启用数据采集器将数据转发至阳光云平台的功能前，客户需在充分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "远程访问仅在获得客户授权后方可生效，且相关操作受系统访问控制策略管理。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "EMU300A内部配置有数据采集器Logger5000。",
+        "block_ids": [
+          "BLK-0FE6A5150E10C5BC"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "EMU300A可通过IEC104、Modbus、MQTT、GOOSE等通信协议北向转发数据至综自系统或站控系统及阳光云平台。",
+        "block_ids": [
+          "BLK-0FE6A5150E10C5BC"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "EMU300A可接收北向远程调度指令或执行本地调度指令。",
+        "block_ids": [
+          "BLK-0FE6A5150E10C5BC"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "若设备遭受攻击导致无法恢复正常运行，可联系阳光电源运维人员通过SD卡重新烧制系统进行恢复。",
+        "block_ids": [
+          "BLK-FAE24332B330471F"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "手册中提及HTTPS、北向IEC104、MODBUS等协议用于安全通信。",
+        "block_ids": [
+          "BLK-26A4B8B218CB053B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "手册中提及TLS加密通信为安全建议。",
+        "block_ids": [
+          "BLK-26A4B8B218CB053B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "远程服务是否为产品功能所必需",
+      "阳光云平台的运营方是否为阳光电源（证据未明确说明运营主体）",
+      "阳光云平台是否属于外部平台（证据仅称‘阳光云’，未定义其归属与部署模式）",
+      "是否存在降级模式及其触发条件和行为",
+      "缺少对‘远程升级’能力的直接证据（仅提及软件/固件更新建议，未说明是否支持远程方式）",
+      "缺少对‘数据上传’是否仅限于阳光云或也支持其他外部平台的说明",
+      "缺少对‘外部服务依赖’的具体清单（如证书颁发机构、时间同步服务器、漏洞披露网站是否构成运行依赖）",
+      "Logger5000是否支持直接上传至阳光云（证据仅说明其采集能力及北向协议支持，未明确其与阳光云上传路径的绑定关系）"
+    ],
+    "contradictions": []
+  },
+  "validation_payload": {
+    "node_id": "node_0",
+    "field_id": "remote_services",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "能量管理单元可以将采集到的设备数据，通过核心交换机传输至后台站控，例如Insight、SCADA。",
+        "block_ids": [
+          "BLK-7FA29D70D79F1001",
+          "BLK-153C2EE70C8A30F1"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "能量管理单元也可将采集到的设备数据，直接通过4G路由器传输至阳光云。",
+        "block_ids": [
+          "BLK-58481F3BF8C8F982",
+          "BLK-64FE47677390A3C6"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "能量管理单元可以直接通过路由器与阳光云连接。",
+        "block_ids": [
+          "BLK-1317C7BFFF509A67"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "数据采集器将数据转发至阳光云平台的功能默认不可用。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "启用数据采集器将数据转发至阳光云平台的功能前，客户需在充分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "远程访问仅在获得客户授权后方可生效，且相关操作受系统访问控制策略管理。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "EMU300A内部配置有数据采集器Logger5000。",
+        "block_ids": [
+          "BLK-0FE6A5150E10C5BC"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "EMU300A可通过IEC104、Modbus、MQTT、GOOSE等通信协议北向转发数据至综自系统或站控系统及阳光云平台。",
+        "block_ids": [
+          "BLK-0FE6A5150E10C5BC"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "EMU300A可接收北向远程调度指令或执行本地调度指令。",
+        "block_ids": [
+          "BLK-0FE6A5150E10C5BC"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "若设备遭受攻击导致无法恢复正常运行，可联系阳光电源运维人员通过SD卡重新烧制系统进行恢复。",
+        "block_ids": [
+          "BLK-FAE24332B330471F"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "手册中提及HTTPS、北向IEC104、MODBUS等协议用于安全通信。",
+        "block_ids": [
+          "BLK-26A4B8B218CB053B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "手册中提及TLS加密通信为安全建议。",
+        "block_ids": [
+          "BLK-26A4B8B218CB053B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "远程服务是否为产品功能所必需",
+      "阳光云平台的运营方是否为阳光电源（证据未明确说明运营主体）",
+      "阳光云平台是否属于外部平台（证据仅称‘阳光云’，未定义其归属与部署模式）",
+      "是否存在降级模式及其触发条件和行为",
+      "缺少对‘远程升级’能力的直接证据（仅提及软件/固件更新建议，未说明是否支持远程方式）",
+      "缺少对‘数据上传’是否仅限于阳光云或也支持其他外部平台的说明",
+      "缺少对‘外部服务依赖’的具体清单（如证书颁发机构、时间同步服务器、漏洞披露网站是否构成运行依赖）",
+      "Logger5000是否支持直接上传至阳光云（证据仅说明其采集能力及北向协议支持，未明确其与阳光云上传路径的绑定关系）"
+    ],
+    "contradictions": []
+  },
+  "result": {
+    "node_id": "node_0",
+    "field_id": "remote_services",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "能量管理单元可以将采集到的设备数据，通过核心交换机传输至后台站控，例如Insight、SCADA。",
+        "block_ids": [
+          "BLK-7FA29D70D79F1001",
+          "BLK-153C2EE70C8A30F1"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "能量管理单元也可将采集到的设备数据，直接通过4G路由器传输至阳光云。",
+        "block_ids": [
+          "BLK-58481F3BF8C8F982",
+          "BLK-64FE47677390A3C6"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "能量管理单元可以直接通过路由器与阳光云连接。",
+        "block_ids": [
+          "BLK-1317C7BFFF509A67"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "数据采集器将数据转发至阳光云平台的功能默认不可用。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "启用数据采集器将数据转发至阳光云平台的功能前，客户需在充分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "远程访问仅在获得客户授权后方可生效，且相关操作受系统访问控制策略管理。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "EMU300A内部配置有数据采集器Logger5000。",
+        "block_ids": [
+          "BLK-0FE6A5150E10C5BC"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "EMU300A可通过IEC104、Modbus、MQTT、GOOSE等通信协议北向转发数据至综自系统或站控系统及阳光云平台。",
+        "block_ids": [
+          "BLK-0FE6A5150E10C5BC"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "EMU300A可接收北向远程调度指令或执行本地调度指令。",
+        "block_ids": [
+          "BLK-0FE6A5150E10C5BC"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "若设备遭受攻击导致无法恢复正常运行，可联系阳光电源运维人员通过SD卡重新烧制系统进行恢复。",
+        "block_ids": [
+          "BLK-FAE24332B330471F"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "手册中提及HTTPS、北向IEC104、MODBUS等协议用于安全通信。",
+        "block_ids": [
+          "BLK-26A4B8B218CB053B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "手册中提及TLS加密通信为安全建议。",
+        "block_ids": [
+          "BLK-26A4B8B218CB053B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "远程服务是否为产品功能所必需",
+      "阳光云平台的运营方是否为阳光电源（证据未明确说明运营主体）",
+      "阳光云平台是否属于外部平台（证据仅称‘阳光云’，未定义其归属与部署模式）",
+      "是否存在降级模式及其触发条件和行为",
+      "缺少对‘远程升级’能力的直接证据（仅提及软件/固件更新建议，未说明是否支持远程方式）",
+      "缺少对‘数据上传’是否仅限于阳光云或也支持其他外部平台的说明",
+      "缺少对‘外部服务依赖’的具体清单（如证书颁发机构、时间同步服务器、漏洞披露网站是否构成运行依赖）",
+      "Logger5000是否支持直接上传至阳光云（证据仅说明其采集能力及北向协议支持，未明确其与阳光云上传路径的绑定关系）"
+    ],
+    "contradictions": []
+  },
+  "elapsed_seconds": 27.639,
+  "finished_at": "2026-10-09T02:14:15.264308+00:00"
+}

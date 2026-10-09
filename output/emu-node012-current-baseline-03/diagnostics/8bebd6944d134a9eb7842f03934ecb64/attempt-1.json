@@ -1,0 +1,434 @@
+{
+  "run_id": "emu-node012-current-baseline-03",
+  "node": "build_product_context",
+  "task": "node_1/users",
+  "call_id": "8bebd6944d134a9eb7842f03934ecb64",
+  "schema": "FieldExtractionResult",
+  "model": "qwen-plus",
+  "attempt": 1,
+  "started_at": "2026-10-09T02:16:10.936258+00:00",
+  "status": "succeeded",
+  "phase": "complete",
+  "prompt": "你正在为 CRA / prEN 40000 TARA 工作流的 node_1/users 提取原子事实。\n\n【任务边界】\n1. 只记录输入证据逐字支持的事实，不生成最终 Scope、ProductContext、资产、威胁、风险或控制。\n2. 每条 fact 只表达一个事实，并列出直接支持它的真实 block_id。block_id 所在文本必须直接支持该事实，不得引用相邻章节标题代替正文或表格。最多输出 12 条事实；证据未说明的必要信息写入 unknowns。\n3. 不得创建输入中不存在的 block_id，不得根据行业惯例补全未知信息。\n4. 原子事实必须保留证据中的限定词，包括“选配、可选、适用于、若启用、取决于合同/BOM/现场配置”。不得把产品能力改写成客户已装机或已启用状态。\n5. 安全配置教程或操作步骤只证明该对象或能力被手册覆盖，不单独证明它是标准内置组件、实际交付配置或当前已启用功能。\n6. 对云平台、远程升级、数据上传等事实，只记录证据明确说明的能力、运营方和依赖；不得自行判定 CRA RDPS。缺少“远程方案是否为产品功能所必需”等信息时写入 unknowns。\n7. 证据含糊、可选或依赖合同配置时设置 is_uncertain=true，并在 unknowns 中记录待确认项。\n8. 若不同证据存在冲突，分别保留事实并在 contradictions 中说明。\n9. 除产品名、型号、协议、法规/标准编号和其他专有名词外，fact、unknowns 和 contradictions 使用简体中文；不得翻译或改写证据中的专有标识。\n10. attributes 只用于本字段整理要求明确列出的结构化值，且必须由该fact的同一组block_ids直接支持；其他字段保持空对象。未知值使用null或规定的unknown，不得推断。\n\n【本字段整理要求】\n逐条保留与本字段直接相关的原子事实；未知信息写入 unknowns。\n\n【目标 JSON Schema】\n{\n  \"$defs\": {\n    \"FactAttributes\": {\n      \"additionalProperties\": false,\n      \"description\": \"One source for the model-facing attribute schema and runtime validation.\",\n      \"properties\": {},\n      \"title\": \"FactAttributes\",\n      \"type\": \"object\"\n    },\n    \"RetrievedFact\": {\n      \"additionalProperties\": false,\n      \"description\": \"One atomic fact extracted from a field-specific evidence packet.\",\n      \"properties\": {\n        \"fact_id\": {\n          \"pattern\": \"^FACT-[0-9]{3,}$\",\n          \"title\": \"Fact Id\",\n          \"type\": \"string\"\n        },\n        \"statement\": {\n          \"maxLength\": 1000,\n          \"minLength\": 1,\n          \"title\": \"Statement\",\n          \"type\": \"string\"\n        },\n        \"block_ids\": {\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"maxItems\": 4,\n          \"minItems\": 1,\n          \"title\": \"Block Ids\",\n          \"type\": \"array\"\n        },\n        \"is_uncertain\": {\n          \"default\": false,\n          \"title\": \"Is Uncertain\",\n          \"type\": \"boolean\"\n        },\n        \"attributes\": {\n          \"$ref\": \"#/$defs/FactAttributes\",\n          \"description\": \"Optional field-specific values copied from the same evidence. Only communications and components use the reviewed keys validated by FieldExtractionResult.\",\n          \"title\": \"Attributes\"\n        }\n      },\n      \"required\": [\n        \"fact_id\",\n        \"statement\",\n        \"block_ids\"\n      ],\n      \"title\": \"RetrievedFact\",\n      \"type\": \"object\"\n    }\n  },\n  \"additionalProperties\": false,\n  \"description\": \"Compact persisted candidate facts for one Node/field slice.\",\n  \"properties\": {\n    \"node_id\": {\n      \"type\": \"string\",\n      \"const\": \"node_1\"\n    },\n    \"field_id\": {\n      \"type\": \"string\",\n      \"const\": \"users\"\n    },\n    \"facts\": {\n      \"items\": {\n        \"$ref\": \"#/$defs/RetrievedFact\"\n      },\n      \"maxItems\": 12,\n      \"title\": \"Facts\",\n      \"type\": \"array\"\n    },\n    \"unknowns\": {\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"maxItems\": 10,\n      \"title\": \"Unknowns\",\n      \"type\": \"array\"\n    },\n    \"contradictions\": {\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"maxItems\": 10,\n      \"title\": \"Contradictions\",\n      \"type\": \"array\"\n    }\n  },\n  \"required\": [\n    \"node_id\",\n    \"field_id\"\n  ],\n  \"title\": \"FieldExtractionResult\",\n  \"type\": \"object\"\n}\n\n【输出要求】\n- node_id 和 field_id 必须与任务完全一致。\n- fact_id 使用 FACT-001、FACT-002 等批内唯一编号。\n- 严格输出单个 JSON 对象，不输出 Markdown 或解释。\n\n【字段任务与检索证据】\n{\n  \"node_id\": \"node_1\",\n  \"field_id\": \"users\",\n  \"retrieval_intent\": \"用户类型 管理员 运维人员 安装人员 操作员 权限 角色 责任 经验要求\",\n  \"evidence\": \"[PACKET rag_yangguang_emu_node_1_users_208997d81fcb v1]\\nProject: yangguang_emu\\nUse only this evidence. Preserve unknowns and copy citation anchors exactly.\\n\\n[KNOWN GAPS]\\n- GAP-LOGGER4000-SCOPE: A Logger4000 manual is present, but the EMU300A product and cybersecurity manuals identify Logger5000 as the standard internal collector; Logger4000 is excluded until the delivered configuration is confirmed. Disposition: Treat Logger4000 applicability as a customer/configuration question; do not infer its assets or threats in the baseline run.\\n- GAP-DIAGRAM-SEMANTICS: Native text and figure captions are retained, but topology diagrams have not been manually transcribed into graph relationships. Disposition: Review missing topology only if the first evaluation shows unsupported or absent communication paths.\\n- GAP-MIXED-PAGE-BLOCK: Logger5000 PDF page 82 merges the end of GOOSE, MMS forwarding, and the start of port parameters into one native PDF text block; its file/page/block anchor is exact but its single assigned section path is broader than the mixed content. Disposition: Require quote plus physical-page/block citation for this block; do not treat its section path alone as proof. Revisit parser splitting only if this locator affects evaluation.\\n- GAP-CONTRACT-VARIANTS: The manuals describe optional and contract-dependent functions; the exact customer-enabled feature set is not independently confirmed. Disposition: Preserve uncertainty and produce customer questions instead of asserting optional functions as deployed facts.\\n- GAP-LEGAL-BASIS: Product manuals establish product facts but are not authoritative CRA or prEN 40000 legal sources. Disposition: Use the controlled legal/rule layer for legal conclusions; never fabricate legal support from this packet.\\n\\n[DOCUMENT DOC-DF116E7199E2]\\nfile_name: EMU300A网络安全操作手册-UCN-Ver11-202607.pdf\\nfile_path: legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf\\nfile_type: pdf\\nsource_sha256: e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc\\nparser_version: 1.5.0\\n\\n[LOCATION page=16; printed_page=12; section=7 用户列表]\\n[BLK-341F42D6A55FBC5E] 7\\n用户列表\\n[BLK-61D4A48CF0FCF3E6] 管理员通过对不同的用户设置不同权限的账号，可以提高系统安全性、为不同的用户提升操\\n作效率、降低管理成本。不同用户类型登录账号、默认密码和操作权限如下：\\n[BLK-4417EC6A57B44907] 表 7-1 1. Web 用户\\n[BLK-9E90596A86CAF9FA] 用户类型\\t用户名\\t\\t操作权限\\n普通用户\\tuser\\t\\t只有系统的监控权限和简单的设置权\\n限。如概览、设备监控和部分历史数据\\n的查看。\\n运维用户\\tmaintain\\t\\t本手册默认描述的所有操作。\\n审计用户\\tauditor\\t\\t对所有用户的操作日志，Syslog 日志进\\n行审计。\\n管理员\\tadministr\\tator\\t增加用户、删除用户、修改用户、清空\\n用户、会话管理、开发者调试开关、分\\n配用户登录证书。\\n开发者用户\\tdevelop\\t\\t经管理员授权后可执行设备复杂故障的\\n定位和排除。\\n• 普通用户、运维用\\n（SN）”拼接而成\\n应的默认密码为“\\n• 开发者用户的密码\\n动态密码。\\n7-2 2. 操作系统用户\\t\\t\\t\\n\\t户、审计\\n。例如，\\nuserSN12\\n采用动态\\t用户、管理\\n若设备SN 为\\n345678”。\\n生成机制，\\t员的密码由“用户名”与“设备序列号\\n“SN12345678”，用户名为“user”，则对\\n通过客户授权获得设备SN，生成对应的\\n\\t\\t\\t\\n用户名\\t\\t默认密码\\t\\nroot\\t\\t根据客户授权\\t获取SN 生成动态密码。\\n[BLK-B69166A4A2ED2877] sg\\n根据客户授权获取SN 生成动态密码。\\n\\n[LOCATION page=17; printed_page=13; section=8 用户管理]\\n[BLK-08E8F60318D1EDD7] 8\\n用户管理\\n[BLK-0FB300025B64DD8D] 管理员通过对不同的用户设置不同权限的账号，可以提高系统安全性、为不同的用户提升操作效\\n率、降低管理成本。\\n[BLK-2C9EB29CBEE48879] 用户管理\\n\\n[LOCATION page=17; printed_page=13; section=8 用户管理 > 8.1 密码管理]\\n[BLK-62C710106569541C] 4. 所有用户的密码都具备有效期，密码有效期可以通过管理员账户自行设置，可设置的密码\\n有效期范围为1~90 天，密码到期请及时修改。\\n[BLK-659A5757D7076C39] •\\n管理员通过对不同的用户设置不同权限的账号，可以提高系统安全性、为不同的\\n用户提升操作效率、降低管理成本。\\n[BLK-87F9E7FD87F93ED5] •\\n当普通用户登录时出现其他用户登录提示语时，需要先退出其他用户登录。\\n\\n[DOCUMENT DOC-D9C0DEB31D45]\\nfile_name: logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf\\nfile_path: legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf\\nfile_type: pdf\\nsource_sha256: bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d\\nparser_version: 1.5.0\\n\\n[LOCATION page=93; printed_page=83; section=9 用户管理]\\n[BLK-F7D2832BBD8F2998] 前提条件\\n[BLK-EB7FCBF878624CA0] •\\n操作人员具有管理员权限。\\n\\n[LOCATION page=93; printed_page=83; section=9 用户管理 > 9.1 初始用户名和密码]\\n[BLK-D95F6B18D5ECA7EC] 9.1 初始用户名和密码\\n[BLK-3D831B5BDD0CBD81] 管理员通过对不同的用户设置不同权限的账号，可以提高系统安全性、为不同的用户提升操\\n作效率、降低管理成本。不同用户类型登录账号、默认密码和操作权限如下：\\n[BLK-55CFEFE65B8FCCB4] 表\\t9-1 1.\\t用户 Web\\t\\t\\n\\t用户类型\\t\\t用户名\\t操作权限\\n\\t普通用户\\t\\tuser\\t只有系统的监控权限和简单的设置权\\n限。如概览、设备监控和部分历史数据\\n的查看。\\n\\t运维用户\\t\\tmaintain\\t本手册默认描述的所有操作。\\n\\t审计用户\\t\\tauditor\\t对所有用户的操作日志，Syslog 日志进\\n行审计。\\n\\t管理员\\t\\tadministrator\\t增加用户、删除用户、修改用户、清空\\n用户、会话管理、开发者调试开关、分\\n配用户登录证书。\\n\\t开发者用\\t户\\tdevelop\\t经管理员授权后可执行设备复杂故障的\\n定位和排除。\\n[BLK-2663D9583766CD4D] •\\n普通用户、运维用户、审计用户、管理员的密码由“用户名”与“设备序列号\\n（SN）”拼接而成。例如，若设备SN 为“SN12345678”，用户名为“user”，则对\\n应的默认密码为“userSN12345678”。\\n\\n[LOCATION page=95; printed_page=85; section=9 用户管理 > 9.3 密码管理]\\n[BLK-A4723AAA2B990E87] 4. 所有用户的密码都具备有效期，密码有效期可以通过管理员账户自行设置，可设置的密码\\n有效期范围为1~90 天，密码到期请及时修改。\\n[BLK-1ADA4D0AE6DB7D4A] •\\n管理员通过对不同的用户设置不同权限的账号，可以提高系统安全性、为不同的\\n用户提升操作效率、降低管理成本。\\n[BLK-05304F306447D2C0] •\\n当普通用户登录时出现其他用户登录提示语时，需要先退出其他用户登录。\\n\\n[LOCATION page=97; printed_page=87; section=9 用户管理 > 9.9 设置账户保护和会话安全参数]\\n[BLK-873951595C419C51] 步骤 3 设置用户名和密码。\\n[BLK-118917D96B86E551] 步骤 4 在权限角色下拉列表中，选择运维用户。\\n[BLK-853C612C4DDE4051] 步骤 5 点击确定。\\n\\n[LOCATION page=100; printed_page=90; section=9 用户管理 > 9.13 通信设置 > 9.13.1 阳光云]\\n[BLK-D958717003DF6D60] 4. 配置授权运维人员的查看与控制功能权限范围，按需开启对应功能开关。\\n\"\n}",
+  "estimated_input_tokens": 3945,
+  "raw_response": "{\n  \"node_id\": \"node_1\",\n  \"field_id\": \"users\",\n  \"facts\": [\n    {\n      \"fact_id\": \"FACT-001\",\n      \"statement\": \"系统支持五类Web用户：普通用户、运维用户、审计用户、管理员、开发者用户。\",\n      \"block_ids\": [\"BLK-4417EC6A57B44907\", \"BLK-55CFEFE65B8FCCB4\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-002\",\n      \"statement\": \"普通用户的默认用户名为'user'，其默认密码由用户名与设备序列号（SN）拼接而成，例如SN为'SN12345678'时，默认密码为'userSN12345678'。\",\n      \"block_ids\": [\"BLK-4417EC6A57B44907\", \"BLK-2663D9583766CD4D\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-003\",\n      \"statement\": \"运维用户的默认用户名为'maintain'，其默认密码由用户名与设备序列号（SN）拼接而成。\",\n      \"block_ids\": [\"BLK-4417EC6A57B44907\", \"BLK-2663D9583766CD4D\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-004\",\n      \"statement\": \"审计用户的默认用户名为'auditor'，其默认密码由用户名与设备序列号（SN）拼接而成。\",\n      \"block_ids\": [\"BLK-4417EC6A57B44907\", \"BLK-2663D9583766CD4D\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-005\",\n      \"statement\": \"管理员的默认用户名为'administrator'，其默认密码由用户名与设备序列号（SN）拼接而成。\",\n      \"block_ids\": [\"BLK-4417EC6A57B44907\", \"BLK-2663D9583766CD4D\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-006\",\n      \"statement\": \"开发者用户的默认用户名为'develop'，其默认密码由用户名与设备序列号（SN）拼接而成。\",\n      \"block_ids\": [\"BLK-4417EC6A57B44907\", \"BLK-2663D9583766CD4D\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-007\",\n      \"statement\": \"操作系统用户包含root用户，其默认密码根据客户授权获取设备SN后生成动态密码。\",\n      \"block_ids\": [\"BLK-9E90596A86CAF9FA\", \"BLK-B69166A4A2ED2877\"],\n      \"is_uncertain\": true,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-008\",\n      \"statement\": \"所有用户的密码具备有效期，有效期范围为1~90天，且可通过管理员账户自行设置。\",\n      \"block_ids\": [\"BLK-62C710106569541C\", \"BLK-A4723AAA2B990E87\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-009\",\n      \"statement\": \"管理员用户具有增加用户、删除用户、修改用户、清空用户、会话管理、开发者调试开关、分配用户登录证书的操作权限。\",\n      \"block_ids\": [\"BLK-4417EC6A57B44907\", \"BLK-55CFEFE65B8FCCB4\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-010\",\n      \"statement\": \"运维用户具有本手册默认描述的所有操作权限。\",\n      \"block_ids\": [\"BLK-4417EC6A57B44907\", \"BLK-55CFEFE65B8FCCB4\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-011\",\n      \"statement\": \"审计用户具有对所有用户的操作日志、Syslog日志进行审计的操作权限。\",\n      \"block_ids\": [\"BLK-4417EC6A57B44907\", \"BLK-55CFEFE65B8FCCB4\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-012\",\n      \"statement\": \"普通用户仅有系统的监控权限和简单的设置权限，例如概览、设备监控和部分历史数据的查看。\",\n      \"block_ids\": [\"BLK-4417EC6A57B44907\", \"BLK-55CFEFE65B8FCCB4\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    }\n  ],\n  \"unknowns\": [\n    \"开发者用户是否为出厂默认启用状态，还是仅在管理员授权后才可激活使用？\",\n    \"root用户是否属于Web用户体系，还是独立于Web用户体系的操作系统级用户？\",\n    \"‘开发者调试开关’是否默认关闭，且仅管理员可开启？该开关的具体功能边界未说明。\",\n    \"‘授权运维人员的查看与控制功能权限范围’中‘授权运维人员’是否指代运维用户角色，还是特指经额外授权的特定运维人员？\",\n    \"GAP-CONTRACT-VARIANTS提示存在合同依赖功能，但未明确用户类型集合（如developer）是否受合同配置影响。\"\n  ],\n  \"contradictions\": []\n}",
+  "response_metadata": {
+    "finish_reason": "stop",
+    "token_usage": {
+      "completion_tokens": 1423,
+      "prompt_tokens": 3679,
+      "total_tokens": 5102,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "qwen-plus"
+  },
+  "parsed_payload": {
+    "node_id": "node_1",
+    "field_id": "users",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "系统支持五类Web用户：普通用户、运维用户、审计用户、管理员、开发者用户。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "普通用户的默认用户名为'user'，其默认密码由用户名与设备序列号（SN）拼接而成，例如SN为'SN12345678'时，默认密码为'userSN12345678'。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-2663D9583766CD4D"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "运维用户的默认用户名为'maintain'，其默认密码由用户名与设备序列号（SN）拼接而成。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-2663D9583766CD4D"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "审计用户的默认用户名为'auditor'，其默认密码由用户名与设备序列号（SN）拼接而成。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-2663D9583766CD4D"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "管理员的默认用户名为'administrator'，其默认密码由用户名与设备序列号（SN）拼接而成。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-2663D9583766CD4D"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "开发者用户的默认用户名为'develop'，其默认密码由用户名与设备序列号（SN）拼接而成。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-2663D9583766CD4D"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "操作系统用户包含root用户，其默认密码根据客户授权获取设备SN后生成动态密码。",
+        "block_ids": [
+          "BLK-9E90596A86CAF9FA",
+          "BLK-B69166A4A2ED2877"
+        ],
+        "is_uncertain": true,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "所有用户的密码具备有效期，有效期范围为1~90天，且可通过管理员账户自行设置。",
+        "block_ids": [
+          "BLK-62C710106569541C",
+          "BLK-A4723AAA2B990E87"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "管理员用户具有增加用户、删除用户、修改用户、清空用户、会话管理、开发者调试开关、分配用户登录证书的操作权限。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "运维用户具有本手册默认描述的所有操作权限。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "审计用户具有对所有用户的操作日志、Syslog日志进行审计的操作权限。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "普通用户仅有系统的监控权限和简单的设置权限，例如概览、设备监控和部分历史数据的查看。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "开发者用户是否为出厂默认启用状态，还是仅在管理员授权后才可激活使用？",
+      "root用户是否属于Web用户体系，还是独立于Web用户体系的操作系统级用户？",
+      "‘开发者调试开关’是否默认关闭，且仅管理员可开启？该开关的具体功能边界未说明。",
+      "‘授权运维人员的查看与控制功能权限范围’中‘授权运维人员’是否指代运维用户角色，还是特指经额外授权的特定运维人员？",
+      "GAP-CONTRACT-VARIANTS提示存在合同依赖功能，但未明确用户类型集合（如developer）是否受合同配置影响。"
+    ],
+    "contradictions": []
+  },
+  "validation_payload": {
+    "node_id": "node_1",
+    "field_id": "users",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "系统支持五类Web用户：普通用户、运维用户、审计用户、管理员、开发者用户。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "普通用户的默认用户名为'user'，其默认密码由用户名与设备序列号（SN）拼接而成，例如SN为'SN12345678'时，默认密码为'userSN12345678'。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-2663D9583766CD4D"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "运维用户的默认用户名为'maintain'，其默认密码由用户名与设备序列号（SN）拼接而成。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-2663D9583766CD4D"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "审计用户的默认用户名为'auditor'，其默认密码由用户名与设备序列号（SN）拼接而成。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-2663D9583766CD4D"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "管理员的默认用户名为'administrator'，其默认密码由用户名与设备序列号（SN）拼接而成。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-2663D9583766CD4D"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "开发者用户的默认用户名为'develop'，其默认密码由用户名与设备序列号（SN）拼接而成。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-2663D9583766CD4D"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "操作系统用户包含root用户，其默认密码根据客户授权获取设备SN后生成动态密码。",
+        "block_ids": [
+          "BLK-9E90596A86CAF9FA",
+          "BLK-B69166A4A2ED2877"
+        ],
+        "is_uncertain": true,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "所有用户的密码具备有效期，有效期范围为1~90天，且可通过管理员账户自行设置。",
+        "block_ids": [
+          "BLK-62C710106569541C",
+          "BLK-A4723AAA2B990E87"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "管理员用户具有增加用户、删除用户、修改用户、清空用户、会话管理、开发者调试开关、分配用户登录证书的操作权限。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "运维用户具有本手册默认描述的所有操作权限。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "审计用户具有对所有用户的操作日志、Syslog日志进行审计的操作权限。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "普通用户仅有系统的监控权限和简单的设置权限，例如概览、设备监控和部分历史数据的查看。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "开发者用户是否为出厂默认启用状态，还是仅在管理员授权后才可激活使用？",
+      "root用户是否属于Web用户体系，还是独立于Web用户体系的操作系统级用户？",
+      "‘开发者调试开关’是否默认关闭，且仅管理员可开启？该开关的具体功能边界未说明。",
+      "‘授权运维人员的查看与控制功能权限范围’中‘授权运维人员’是否指代运维用户角色，还是特指经额外授权的特定运维人员？",
+      "GAP-CONTRACT-VARIANTS提示存在合同依赖功能，但未明确用户类型集合（如developer）是否受合同配置影响。"
+    ],
+    "contradictions": []
+  },
+  "result": {
+    "node_id": "node_1",
+    "field_id": "users",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "系统支持五类Web用户：普通用户、运维用户、审计用户、管理员、开发者用户。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "普通用户的默认用户名为'user'，其默认密码由用户名与设备序列号（SN）拼接而成，例如SN为'SN12345678'时，默认密码为'userSN12345678'。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-2663D9583766CD4D"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "运维用户的默认用户名为'maintain'，其默认密码由用户名与设备序列号（SN）拼接而成。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-2663D9583766CD4D"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "审计用户的默认用户名为'auditor'，其默认密码由用户名与设备序列号（SN）拼接而成。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-2663D9583766CD4D"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "管理员的默认用户名为'administrator'，其默认密码由用户名与设备序列号（SN）拼接而成。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-2663D9583766CD4D"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "开发者用户的默认用户名为'develop'，其默认密码由用户名与设备序列号（SN）拼接而成。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-2663D9583766CD4D"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "操作系统用户包含root用户，其默认密码根据客户授权获取设备SN后生成动态密码。",
+        "block_ids": [
+          "BLK-9E90596A86CAF9FA",
+          "BLK-B69166A4A2ED2877"
+        ],
+        "is_uncertain": true,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "所有用户的密码具备有效期，有效期范围为1~90天，且可通过管理员账户自行设置。",
+        "block_ids": [
+          "BLK-62C710106569541C",
+          "BLK-A4723AAA2B990E87"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "管理员用户具有增加用户、删除用户、修改用户、清空用户、会话管理、开发者调试开关、分配用户登录证书的操作权限。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "运维用户具有本手册默认描述的所有操作权限。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "审计用户具有对所有用户的操作日志、Syslog日志进行审计的操作权限。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "普通用户仅有系统的监控权限和简单的设置权限，例如概览、设备监控和部分历史数据的查看。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "开发者用户是否为出厂默认启用状态，还是仅在管理员授权后才可激活使用？",
+      "root用户是否属于Web用户体系，还是独立于Web用户体系的操作系统级用户？",
+      "‘开发者调试开关’是否默认关闭，且仅管理员可开启？该开关的具体功能边界未说明。",
+      "‘授权运维人员的查看与控制功能权限范围’中‘授权运维人员’是否指代运维用户角色，还是特指经额外授权的特定运维人员？",
+      "GAP-CONTRACT-VARIANTS提示存在合同依赖功能，但未明确用户类型集合（如developer）是否受合同配置影响。"
+    ],
+    "contradictions": []
+  },
+  "elapsed_seconds": 31.793,
+  "finished_at": "2026-10-09T02:16:42.729459+00:00"
+}

@@ -1,0 +1,1069 @@
+{
+  "run_id": "emu-node012-current-baseline-03",
+  "node": "build_product_context",
+  "task": "node_1/components",
+  "call_id": "9364fc9e41814e9ab9e63657cc97a5c6",
+  "schema": "FieldExtractionResult",
+  "model": "qwen-plus",
+  "attempt": 1,
+  "started_at": "2026-10-09T02:18:07.103119+00:00",
+  "status": "succeeded",
+  "phase": "complete",
+  "prompt": "你正在为 CRA / prEN 40000 TARA 工作流的 node_1/components 提取原子事实。\n\n【任务边界】\n1. 只记录输入证据逐字支持的事实，不生成最终 Scope、ProductContext、资产、威胁、风险或控制。\n2. 每条 fact 只表达一个事实，并列出直接支持它的真实 block_id。block_id 所在文本必须直接支持该事实，不得引用相邻章节标题代替正文或表格。最多输出 24 条事实；证据未说明的必要信息写入 unknowns。\n3. 不得创建输入中不存在的 block_id，不得根据行业惯例补全未知信息。\n4. 原子事实必须保留证据中的限定词，包括“选配、可选、适用于、若启用、取决于合同/BOM/现场配置”。不得把产品能力改写成客户已装机或已启用状态。\n5. 安全配置教程或操作步骤只证明该对象或能力被手册覆盖，不单独证明它是标准内置组件、实际交付配置或当前已启用功能。\n6. 对云平台、远程升级、数据上传等事实，只记录证据明确说明的能力、运营方和依赖；不得自行判定 CRA RDPS。缺少“远程方案是否为产品功能所必需”等信息时写入 unknowns。\n7. 证据含糊、可选或依赖合同配置时设置 is_uncertain=true，并在 unknowns 中记录待确认项。\n8. 若不同证据存在冲突，分别保留事实并在 contradictions 中说明。\n9. 除产品名、型号、协议、法规/标准编号和其他专有名词外，fact、unknowns 和 contradictions 使用简体中文；不得翻译或改写证据中的专有标识。\n10. attributes 只用于本字段整理要求明确列出的结构化值，且必须由该fact的同一组block_ids直接支持；其他字段保持空对象。未知值使用null或规定的unknown，不得推断。\n\n【本字段整理要求】\n只提取硬件、嵌入式子系统、固件、软件、操作系统、服务或外部设备。安全功能、升级动作、配置步骤和数据不是组件，不得作为组件事实。设备与其固件分别记录；标准内置、选配、外置、仅有配置教程或交付状态未知必须逐字保留，配置教程本身不能证明该设备属于本次交付。每条组件fact在attributes中只填写component_name、component_type、scope_status、conditions；scope_status只能是confirmed、conditional、external、unknown，conditions仅在材料明确给出条件时填写，否则不输出该键。\n\n【目标 JSON Schema】\n{\n  \"$defs\": {\n    \"FactAttributes\": {\n      \"additionalProperties\": false,\n      \"description\": \"One source for the model-facing attribute schema and runtime validation.\",\n      \"properties\": {\n        \"conditions\": {\n          \"anyOf\": [\n            {\n              \"items\": {\n                \"minLength\": 1,\n                \"pattern\": \"\\\\S\",\n                \"type\": \"string\"\n              },\n              \"maxItems\": 10,\n              \"type\": \"array\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Conditions\"\n        },\n        \"component_name\": {\n          \"anyOf\": [\n            {\n              \"minLength\": 1,\n              \"pattern\": \"\\\\S\",\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Component Name\"\n        },\n        \"component_type\": {\n          \"anyOf\": [\n            {\n              \"minLength\": 1,\n              \"pattern\": \"\\\\S\",\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Component Type\"\n        },\n        \"scope_status\": {\n          \"anyOf\": [\n            {\n              \"enum\": [\n                \"confirmed\",\n                \"conditional\",\n                \"external\",\n                \"unknown\"\n              ],\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Scope Status\"\n        }\n      },\n      \"title\": \"FactAttributes\",\n      \"type\": \"object\"\n    },\n    \"RetrievedFact\": {\n      \"additionalProperties\": false,\n      \"description\": \"One atomic fact extracted from a field-specific evidence packet.\",\n      \"properties\": {\n        \"fact_id\": {\n          \"pattern\": \"^FACT-[0-9]{3,}$\",\n          \"title\": \"Fact Id\",\n          \"type\": \"string\"\n        },\n        \"statement\": {\n          \"maxLength\": 1000,\n          \"minLength\": 1,\n          \"title\": \"Statement\",\n          \"type\": \"string\"\n        },\n        \"block_ids\": {\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"maxItems\": 4,\n          \"minItems\": 1,\n          \"title\": \"Block Ids\",\n          \"type\": \"array\"\n        },\n        \"is_uncertain\": {\n          \"default\": false,\n          \"title\": \"Is Uncertain\",\n          \"type\": \"boolean\"\n        },\n        \"attributes\": {\n          \"$ref\": \"#/$defs/FactAttributes\",\n          \"description\": \"Optional field-specific values copied from the same evidence. Only communications and components use the reviewed keys validated by FieldExtractionResult.\",\n          \"title\": \"Attributes\"\n        }\n      },\n      \"required\": [\n        \"fact_id\",\n        \"statement\",\n        \"block_ids\"\n      ],\n      \"title\": \"RetrievedFact\",\n      \"type\": \"object\"\n    }\n  },\n  \"additionalProperties\": false,\n  \"description\": \"Compact persisted candidate facts for one Node/field slice.\",\n  \"properties\": {\n    \"node_id\": {\n      \"type\": \"string\",\n      \"const\": \"node_1\"\n    },\n    \"field_id\": {\n      \"type\": \"string\",\n      \"const\": \"components\"\n    },\n    \"facts\": {\n      \"items\": {\n        \"$ref\": \"#/$defs/RetrievedFact\"\n      },\n      \"maxItems\": 24,\n      \"title\": \"Facts\",\n      \"type\": \"array\"\n    },\n    \"unknowns\": {\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"maxItems\": 10,\n      \"title\": \"Unknowns\",\n      \"type\": \"array\"\n    },\n    \"contradictions\": {\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"maxItems\": 10,\n      \"title\": \"Contradictions\",\n      \"type\": \"array\"\n    }\n  },\n  \"required\": [\n    \"node_id\",\n    \"field_id\"\n  ],\n  \"title\": \"FieldExtractionResult\",\n  \"type\": \"object\"\n}\n\n【输出要求】\n- node_id 和 field_id 必须与任务完全一致。\n- fact_id 使用 FACT-001、FACT-002 等批内唯一编号。\n- 严格输出单个 JSON 对象，不输出 Markdown 或解释。\n\n【字段任务与检索证据】\n{\n  \"node_id\": \"node_1\",\n  \"field_id\": \"components\",\n  \"retrieval_intent\": \"产品组成 内部配置 内含 标准配置 订购信息 供货范围 BOM 硬件模块 控制器 数据采集器 通信模块 输入输出模块 交换机 路由器 网关 被动支撑部件 固件 软件 操作系统 外部设备 选配 可选\",\n  \"evidence\": \"[PACKET rag_yangguang_emu_node_1_components_3a492a7cdeda v1]\\nProject: yangguang_emu\\nUse only this evidence. Preserve unknowns and copy citation anchors exactly.\\n\\n[KNOWN GAPS]\\n- GAP-LOGGER4000-SCOPE: A Logger4000 manual is present, but the EMU300A product and cybersecurity manuals identify Logger5000 as the standard internal collector; Logger4000 is excluded until the delivered configuration is confirmed. Disposition: Treat Logger4000 applicability as a customer/configuration question; do not infer its assets or threats in the baseline run.\\n- GAP-DIAGRAM-SEMANTICS: Native text and figure captions are retained, but topology diagrams have not been manually transcribed into graph relationships. Disposition: Review missing topology only if the first evaluation shows unsupported or absent communication paths.\\n- GAP-MIXED-PAGE-BLOCK: Logger5000 PDF page 82 merges the end of GOOSE, MMS forwarding, and the start of port parameters into one native PDF text block; its file/page/block anchor is exact but its single assigned section path is broader than the mixed content. Disposition: Require quote plus physical-page/block citation for this block; do not treat its section path alone as proof. Revisit parser splitting only if this locator affects evaluation.\\n- GAP-CONTRACT-VARIANTS: The manuals describe optional and contract-dependent functions; the exact customer-enabled feature set is not independently confirmed. Disposition: Preserve uncertainty and produce customer questions instead of asserting optional functions as deployed facts.\\n- GAP-LEGAL-BASIS: Product manuals establish product facts but are not authoritative CRA or prEN 40000 legal sources. Disposition: Use the controlled legal/rule layer for legal conclusions; never fabricate legal support from this packet.\\n\\n[DOCUMENT DOC-5067B181346D]\\nfile_name: EMU300A-UCN-Ver11-202603.pdf\\nfile_path: legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf\\nfile_type: pdf\\nsource_sha256: 985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e\\nparser_version: 1.5.0\\n\\n[LOCATION page=15; printed_page=9; section=2 产品介绍 > 2.1 组网应用]\\n[BLK-FFD438C63F25BCC4] 2.1 组网应用\\n[BLK-7DF8897D9BB9225B] 能量管理单元EMU300A 内部配置有数据采集器Logger5000。基于Logger5000 的功能，\\nEMU300A 可参与多种场景下的组网应用。EMU300A 可通过RS485 总线方式接入光伏发电\\n系统中的逆变器、箱变、环境监测仪、电表等，还可以通过PLC 总线方式接入阳光电源生产\\n的具备PLC 功能的组串式逆变器。\\n[BLK-7FA29D70D79F1001] •\\n能量管理单元可以将采集到的设备数据，通过核心交换机传输至后台站控，例如\\nInsight、SCADA。\\n[BLK-58481F3BF8C8F982] •\\n能量管理单元也可将采集到的设备数据，直接通过4G 路由器传输至阳光云。\\n[BLK-88F7F2D2F44E6545] 通过核心交换机连接至后台站控\\n[BLK-202781F4D7F5C1D3] 能量管理单元通过核心交换机连接至Insight 或SCADA 的方式，如下图所示。\\n\\n[LOCATION page=16; printed_page=10; section=2 产品介绍 > 2.2 主要特点]\\n[BLK-BC449CE85DB4F669] •\\n支持RS485、以太网、MPLC 通信。\\n[BLK-B081A00CB116A76B] •\\n支持跟踪系统、箱变测控、电表、环境监测仪等多种设备接入。\\n[BLK-D13DD174206D8434] •\\n支持 CT 采样，以毫秒级精度采集逆变器子阵电流，实现快速功率调节。\\n\\n[LOCATION page=28; printed_page=22; section=4 电气连接 > 4.3 内部结构]\\n[BLK-AFC136CD8222B958] 用户手册\\n4 电气连接\\n[BLK-D8AA6F0C8103713A] 编\\n号\\t名称\\t推荐线缆规格\\t说明\\nA\\t光纤终端盒\\t—\\t选配\\n必须与光纤环网交换机配套\\n使用\\n如需获取更多信息请访问经\\n销商官方网站\\nB\\tRS485 通讯端子\\t2 x (0.75~1.5) mm2 户\\n外型防紫外线带屏蔽层\\n双绞线\\t线缆未包含在供货范围\\nC\\tCT 接线端子\\t\\t单独成表说明\\nD\\t交流熔丝盒\\t2.5mm²～10mm²户外型\\n防紫外线导线，线缆耐\\n压要求为：\\n隔离电压＞1350V\\t线缆未包含在供货范围\\nE\\t接地端子\\t4mm²～10mm²或7～\\n11AWG\\t线缆未包含在供货范围\\nE ：功能地排\\n1\\nE ：保护地排\\n2\\nF\\t防雷器\\t—\\t—\\nG\\t开关电源\\t—\\t—\\nH\\tLogger5000\\t—\\t—\\nI\\t光纤环网交换机\\t—\\t选配\\n必须与光纤终端盒配套使用\\n如需获取更多信息请访问经\\n销商官方网站\\nJ\\tPID 模块\\t—\\t支持PID 防护和PID 修复\\n功能，适用于PV-正偏置组\\n件。支持交流ISO 检测功\\n能。\\nK\\tPLC 模块\\t—\\t—\\nL\\t220V 市电插座\\t—\\t可为现场运维人员提供市电\\n[BLK-B07115D81ED807D1] M\\n风扇\\n—\\n—\\n\\n[LOCATION page=41; printed_page=35; section=4 电气连接 > 4.6 接线步骤 > 4.6.6 DI/DO端口接线]\\n[BLK-18F40716EAEFD3FD] 4.6.6 DI/DO 端口接线\\n[BLK-C93AECD82ECE7EB8] 如果用户所购机型未配备有IO 模块，DO/DI 端口需要直接接至数据采集器，具体接线方法请\\n扫描下面二维码参考“Logger5000 用户手册”。\\n[BLK-276FF77975026540] 如果用户所购机型配备有IO 模块，则DI/DO 端口需要接至IO 模块，具体接线方法请扫描下\\n面二维码参考“IO 模块快速安装指导”。\\n\\n[LOCATION page=55; printed_page=49; section=7 附录A：技术参数]\\n[BLK-CE3D928E7C421E03] 电源\\t\\n交流输入\\t100~277Vac，50 / 60Hz\\n功耗\\tMax. 90 W ( 无PID ) /170 W ( 单PID ) /250 W ( 双PID\\n环境参数\\t\\n工作温度\\t-40 ℃ ~ 60 ℃（有遮阳）\\n-40 ℃ ~ 50 ℃（无遮阳）\\n存储温度\\t-40℃~+70℃\\n工作湿度\\t≤100%（无冷凝）\\n工作海拔\\t≤ 5000m\\n防护等级\\tIP66\\n机械参数\\t\\n尺寸（宽x 高x 深）\\t940*697*287mm\\n裸机重量\\tMax.53kg\\n安装方式\\t室内或室外，壁挂、支架、落地安装\\n箱体材料\\t金属\\n进线规格\\tAC220V：1 mm ~ 1.5 mm²户外型防紫外线导线\\nMPLC：2.5 mm ~ 10 mm²户外型防紫外线导线\\n隔离电压＞1350V\\nRS485：2 * ( 0.75 mm ~ 1.5 mm ）户外型防紫外线\\n带屏蔽层双绞线\\n光缆：外径 ≤ 18 mm，单模光缆\\n订购信息\\n[BLK-D844E7AC55AEA6FE] 内含Logger5000（含电压电流采样接口）、开关电源、\\n防雷模块、微型断路 器、MPLC（可选1 或2）、\\nPID&ISO 控制盒（可选）、光纤交换机 （可选）、光纤\\n终端盒（可选）、IO 模组（可选）\\n适用区域：国内\\n[BLK-409F387B605FF8FF] EMU300A\\n\\n[DOCUMENT DOC-DF116E7199E2]\\nfile_name: EMU300A网络安全操作手册-UCN-Ver11-202607.pdf\\nfile_path: legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf\\nfile_type: pdf\\nsource_sha256: e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc\\nparser_version: 1.5.0\\n\\n[LOCATION page=12; printed_page=8; section=5 产品功能及部署情况介绍]\\n[BLK-BDF435E6E7F273A5] 5\\n产品功能及部署情况介绍\\n[BLK-0FE6A5150E10C5BC] 能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\\n云平台，可接收北向远程调度指令或执行本地调度指令。\\n[BLK-153C2EE70C8A30F1] •\\n能量管理单元可以将采集到的设备数据，通过核心交换机传输至后台站控，例如\\nInsight、SCADA。\\n\\n[DOCUMENT DOC-D9C0DEB31D45]\\nfile_name: logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf\\nfile_path: legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf\\nfile_type: pdf\\nsource_sha256: bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d\\nparser_version: 1.5.0\\n\\n[LOCATION page=13; printed_page=3; section=2 产品描述 > 2.1 功能描述]\\n[BLK-9EF37D5FB5E04397] 通讯设备管理\\n[BLK-4229FA7FE6635AED] 数据采集器可以对接入的设备进行集中管理，包括参数配置、固件升级等，便于现场运维。\\n[BLK-810917AE84EC90E0] Web 界面配置\\n[BLK-254543AB77B4B866] 网口配置\\n[BLK-276B765BAAD65005] 数据采集器集成五路具备数据交换功能的以太网口（即ETH1~ETH5），三路以太网口，两\\n路快速调度口。北向可以接入综自系统或站控系统，南向可以接入三方设备。\\n[BLK-DCE8A1FE2B86D398] 数据转发功能\\n[BLK-8CF56F6958CD33E1] 数据采集器具备将收集到的数据转发综自系统、站控系统或阳光云平台的功能。\\n[BLK-ABD8EE23CFEA3B93] •\\n数据采集器的数据转发功能默认不可用。启用该功能前，客户需在充分知情的前\\n提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获得客户\\n授权后方可生效，且相关操作受系统访问控制策略管理。\\n\\n[LOCATION page=14; printed_page=4; section=2 产品描述 > 2.2 组网应用]\\n[BLK-EE4926450C5E2B17] 2.2 组网应用\\n[BLK-0E8FEC54AF1BFA37] 数据采集器可参与多种场景下的组网应用。数据采集器通过RS485 总线方式接入光伏发电系\\n统中的逆变器、箱变、环境监测仪、电表等，还可以通过MPLC 总线方式接入阳光电源生产\\n的具备MPLC 功能的组串式逆变器。\\n[BLK-182EE50E531ABD2E] •\\n数据采集器可以将采集到的设备数据，通过核心交换机传输至后台站控，例如Insight、\\nSCADA。\\n[BLK-4E0353B94569ABFF] •\\n数据采集器也可将采集到的设备数据，直接通过4G 路由器传输至阳光云。\\n[BLK-4DD68A8558951CBD] 通过核心交换机连接至后台站控\\n[BLK-C228A8BF893CBE2B] 数据采集器通过核心交换机连接至Insight 或SCADA 的方式，如下图所示\\n[BLK-D0C7F3E335D74113] 图 2-1 星形组网方式\\n\\n[LOCATION page=15; printed_page=5; section=2 产品描述 > 2.2 组网应用]\\n[BLK-ECC17DEAAFB5CF44] 用户手册\\n2 产品描述\\n[BLK-10A8D5FE01AF321E] 路由器和防火墙不在供货范围内，由客户自行购买。\\n\\n[LOCATION page=49; printed_page=39; section=7 Web界面 > 7.6 设备维护 > 7.6.1 设备列表]\\n[BLK-4DA082251D2A15B4] 7.6.1 设备列表\\n[BLK-F952E9FB2BDE064C] “设备列表”功能模块用于管理数据采集器所接入的设备并为其配置地址。可以自动搜索设备\\n与添加设备。\\n\"\n}",
+  "estimated_input_tokens": 6090,
+  "raw_response": "{\n  \"node_id\": \"node_1\",\n  \"field_id\": \"components\",\n  \"facts\": [\n    {\n      \"fact_id\": \"FACT-001\",\n      \"statement\": \"能量管理单元EMU300A内部配置有数据采集器Logger5000。\",\n      \"block_ids\": [\"BLK-7DF8897D9BB9225B\", \"BLK-0FE6A5150E10C5BC\"],\n      \"is_uncertain\": false,\n      \"attributes\": {\n        \"component_name\": \"Logger5000\",\n        \"component_type\": \"数据采集器\",\n        \"scope_status\": \"confirmed\",\n        \"conditions\": null\n      }\n    },\n    {\n      \"fact_id\": \"FACT-002\",\n      \"statement\": \"EMU300A内含开关电源。\",\n      \"block_ids\": [\"BLK-D844E7AC55AEA6FE\"],\n      \"is_uncertain\": false,\n      \"attributes\": {\n        \"component_name\": \"开关电源\",\n        \"component_type\": \"硬件模块\",\n        \"scope_status\": \"confirmed\",\n        \"conditions\": null\n      }\n    },\n    {\n      \"fact_id\": \"FACT-003\",\n      \"statement\": \"EMU300A内含防雷模块。\",\n      \"block_ids\": [\"BLK-D844E7AC55AEA6FE\"],\n      \"is_uncertain\": false,\n      \"attributes\": {\n        \"component_name\": \"防雷模块\",\n        \"component_type\": \"硬件模块\",\n        \"scope_status\": \"confirmed\",\n        \"conditions\": null\n      }\n    },\n    {\n      \"fact_id\": \"FACT-004\",\n      \"statement\": \"EMU300A内含微型断路器。\",\n      \"block_ids\": [\"BLK-D844E7AC55AEA6FE\"],\n      \"is_uncertain\": false,\n      \"attributes\": {\n        \"component_name\": \"微型断路器\",\n        \"component_type\": \"硬件模块\",\n        \"scope_status\": \"confirmed\",\n        \"conditions\": null\n      }\n    },\n    {\n      \"fact_id\": \"FACT-005\",\n      \"statement\": \"EMU300A内含MPLC（可选1或2）。\",\n      \"block_ids\": [\"BLK-D844E7AC55AEA6FE\"],\n      \"is_uncertain\": true,\n      \"attributes\": {\n        \"component_name\": \"MPLC\",\n        \"component_type\": \"通信模块\",\n        \"scope_status\": \"conditional\",\n        \"conditions\": [\"可选1或2\"]\n      }\n    },\n    {\n      \"fact_id\": \"FACT-006\",\n      \"statement\": \"EMU300A内含PID&ISO控制盒（可选）。\",\n      \"block_ids\": [\"BLK-D844E7AC55AEA6FE\"],\n      \"is_uncertain\": true,\n      \"attributes\": {\n        \"component_name\": \"PID&ISO控制盒\",\n        \"component_type\": \"硬件模块\",\n        \"scope_status\": \"conditional\",\n        \"conditions\": [\"可选\"]\n      }\n    },\n    {\n      \"fact_id\": \"FACT-007\",\n      \"statement\": \"EMU300A内含光纤交换机（可选）。\",\n      \"block_ids\": [\"BLK-D844E7AC55AEA6FE\"],\n      \"is_uncertain\": true,\n      \"attributes\": {\n        \"component_name\": \"光纤交换机\",\n        \"component_type\": \"网络设备\",\n        \"scope_status\": \"conditional\",\n        \"conditions\": [\"可选\"]\n      }\n    },\n    {\n      \"fact_id\": \"FACT-008\",\n      \"statement\": \"EMU300A内含光纤终端盒（可选）。\",\n      \"block_ids\": [\"BLK-D844E7AC55AEA6FE\"],\n      \"is_uncertain\": true,\n      \"attributes\": {\n        \"component_name\": \"光纤终端盒\",\n        \"component_type\": \"被动支撑部件\",\n        \"scope_status\": \"conditional\",\n        \"conditions\": [\"可选\"]\n      }\n    },\n    {\n      \"fact_id\": \"FACT-009\",\n      \"statement\": \"EMU300A内含IO模组（可选）。\",\n      \"block_ids\": [\"BLK-D844E7AC55AEA6FE\"],\n      \"is_uncertain\": true,\n      \"attributes\": {\n        \"component_name\": \"IO模组\",\n        \"component_type\": \"输入输出模块\",\n        \"scope_status\": \"conditional\",\n        \"conditions\": [\"可选\"]\n      }\n    },\n    {\n      \"fact_id\": \"FACT-010\",\n      \"statement\": \"EMU300A内部结构中包含Logger5000。\",\n      \"block_ids\": [\"BLK-AFC136CD8222B958\"],\n      \"is_uncertain\": false,\n      \"attributes\": {\n        \"component_name\": \"Logger5000\",\n        \"component_type\": \"数据采集器\",\n        \"scope_status\": \"confirmed\",\n        \"conditions\": null\n      }\n    },\n    {\n      \"fact_id\": \"FACT-011\",\n      \"statement\": \"EMU300A内部结构中包含光纤环网交换机，为选配。\",\n      \"block_ids\": [\"BLK-AFC136CD8222B958\"],\n      \"is_uncertain\": true,\n      \"attributes\": {\n        \"component_name\": \"光纤环网交换机\",\n        \"component_type\": \"网络设备\",\n        \"scope_status\": \"conditional\",\n        \"conditions\": [\"选配\"]\n      }\n    },\n    {\n      \"fact_id\": \"FACT-012\",\n      \"statement\": \"EMU300A内部结构中包含PID模块，支持PID防护和PID修复功能，适用于PV-正偏置组件，支持交流ISO检测功能。\",\n      \"block_ids\": [\"BLK-AFC136CD8222B958\"],\n      \"is_uncertain\": false,\n      \"attributes\": {\n        \"component_name\": \"PID模块\",\n        \"component_type\": \"硬件模块\",\n        \"scope_status\": \"confirmed\",\n        \"conditions\": [\"适用于PV-正偏置组件\"]\n      }\n    },\n    {\n      \"fact_id\": \"FACT-013\",\n      \"statement\": \"EMU300A内部结构中包含PLC模块。\",\n      \"block_ids\": [\"BLK-AFC136CD8222B958\"],\n      \"is_uncertain\": false,\n      \"attributes\": {\n        \"component_name\": \"PLC模块\",\n        \"component_type\": \"通信模块\",\n        \"scope_status\": \"confirmed\",\n        \"conditions\": null\n      }\n    },\n    {\n      \"fact_id\": \"FACT-014\",\n      \"statement\": \"EMU300A内部结构中包含风扇。\",\n      \"block_ids\": [\"BLK-AFC136CD8222B958\"],\n      \"is_uncertain\": false,\n      \"attributes\": {\n        \"component_name\": \"风扇\",\n        \"component_type\": \"硬件模块\",\n        \"scope_status\": \"confirmed\",\n        \"conditions\": null\n      }\n    },\n    {\n      \"fact_id\": \"FACT-015\",\n      \"statement\": \"EMU300A内部结构中包含220V市电插座，可为现场运维人员提供市电。\",\n      \"block_ids\": [\"BLK-AFC136CD8222B958\"],\n      \"is_uncertain\": false,\n      \"attributes\": {\n        \"component_name\": \"220V市电插座\",\n        \"component_type\": \"硬件模块\",\n        \"scope_status\": \"confirmed\",\n        \"conditions\": null\n      }\n    },\n    {\n      \"fact_id\": \"FACT-016\",\n      \"statement\": \"EMU300A内部结构中包含RS485通讯端子，线缆未包含在供货范围。\",\n      \"block_ids\": [\"BLK-AFC136CD8222B958\"],\n      \"is_uncertain\": false,\n      \"attributes\": {\n        \"component_name\": \"RS485通讯端子\",\n        \"component_type\": \"输入输出模块\",\n        \"scope_status\": \"confirmed\",\n        \"conditions\": null\n      }\n    },\n    {\n      \"fact_id\": \"FACT-017\",\n      \"statement\": \"EMU300A内部结构中包含CT接线端子。\",\n      \"block_ids\": [\"BLK-AFC136CD8222B958\"],\n      \"is_uncertain\": false,\n      \"attributes\": {\n        \"component_name\": \"CT接线端子\",\n        \"component_type\": \"输入输出模块\",\n        \"scope_status\": \"confirmed\",\n        \"conditions\": null\n      }\n    },\n    {\n      \"fact_id\": \"FACT-018\",\n      \"statement\": \"EMU300A内部结构中包含交流熔丝盒，线缆未包含在供货范围。\",\n      \"block_ids\": [\"BLK-AFC136CD8222B958\"],\n      \"is_uncertain\": false,\n      \"attributes\": {\n        \"component_name\": \"交流熔丝盒\",\n        \"component_type\": \"硬件模块\",\n        \"scope_status\": \"confirmed\",\n        \"conditions\": null\n      }\n    },\n    {\n      \"fact_id\": \"FACT-019\",\n      \"statement\": \"EMU300A内部结构中包含接地端子（功能地排和保护地排），线缆未包含在供货范围。\",\n      \"block_ids\": [\"BLK-AFC136CD8222B958\"],\n      \"is_uncertain\": false,\n      \"attributes\": {\n        \"component_name\": \"接地端子\",\n        \"component_type\": \"被动支撑部件\",\n        \"scope_status\": \"confirmed\",\n        \"conditions\": null\n      }\n    },\n    {\n      \"fact_id\": \"FACT-020\",\n      \"statement\": \"EMU300A内部结构中包含防雷器。\",\n      \"block_ids\": [\"BLK-AFC136CD8222B958\"],\n      \"is_uncertain\": false,\n      \"attributes\": {\n        \"component_name\": \"防雷器\",\n        \"component_type\": \"硬件模块\",\n        \"scope_status\": \"confirmed\",\n        \"conditions\": null\n      }\n    },\n    {\n      \"fact_id\": \"FACT-021\",\n      \"statement\": \"Logger5000集成五路具备数据交换功能的以太网口（ETH1~ETH5），其中三路为以太网口、两路为快速调度口。\",\n      \"block_ids\": [\"BLK-276B765BAAD65005\"],\n      \"is_uncertain\": false,\n      \"attributes\": {\n        \"component_name\": \"Logger5000\",\n        \"component_type\": \"数据采集器\",\n        \"scope_status\": \"confirmed\",\n        \"conditions\": null\n      }\n    },\n    {\n      \"fact_id\": \"FACT-022\",\n      \"statement\": \"路由器和防火墙不在EMU300A供货范围内，由客户自行购买。\",\n      \"block_ids\": [\"BLK-10A8D5FE01AF321E\"],\n      \"is_uncertain\": false,\n      \"attributes\": {\n        \"component_name\": \"路由器\",\n        \"component_type\": \"网络设备\",\n        \"scope_status\": \"external\",\n        \"conditions\": null\n      }\n    },\n    {\n      \"fact_id\": \"FACT-023\",\n      \"statement\": \"路由器和防火墙不在EMU300A供货范围内，由客户自行购买。\",\n      \"block_ids\": [\"BLK-10A8D5FE01AF321E\"],\n      \"is_uncertain\": false,\n      \"attributes\": {\n        \"component_name\": \"防火墙\",\n        \"component_type\": \"网络安全设备\",\n        \"scope_status\": \"external\",\n        \"conditions\": null\n      }\n    }\n  ],\n  \"unknowns\": [\n    \"Logger4000是否属于本次交付配置（GAP-LOGGER4000-SCOPE）\",\n    \"光纤环网交换机与光纤终端盒是否实际配套交付（仅说明‘必须配套使用’，未确认是否同属一订单）\",\n    \"IO模组是否为标准内置或仅存在于部分订购型号（‘可选’未明确对应BOM层级）\",\n    \"MPLC数量（1或2）是否由合同/现场配置决定（证据未说明判定依据）\",\n    \"PID&ISO控制盒是否与PID模块为同一物理单元或独立模块（文档分别列出‘PID模块’与‘PID&ISO控制盒’）\"\n  ],\n  \"contradictions\": []\n}",
+  "response_metadata": {
+    "finish_reason": "stop",
+    "token_usage": {
+      "completion_tokens": 2790,
+      "prompt_tokens": 5538,
+      "total_tokens": 8328,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "qwen-plus"
+  },
+  "parsed_payload": {
+    "node_id": "node_1",
+    "field_id": "components",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "能量管理单元EMU300A内部配置有数据采集器Logger5000。",
+        "block_ids": [
+          "BLK-7DF8897D9BB9225B",
+          "BLK-0FE6A5150E10C5BC"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "Logger5000",
+          "component_type": "数据采集器",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "EMU300A内含开关电源。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "开关电源",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "EMU300A内含防雷模块。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "防雷模块",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "EMU300A内含微型断路器。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "微型断路器",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "EMU300A内含MPLC（可选1或2）。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "component_name": "MPLC",
+          "component_type": "通信模块",
+          "scope_status": "conditional",
+          "conditions": [
+            "可选1或2"
+          ]
+        }
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "EMU300A内含PID&ISO控制盒（可选）。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "component_name": "PID&ISO控制盒",
+          "component_type": "硬件模块",
+          "scope_status": "conditional",
+          "conditions": [
+            "可选"
+          ]
+        }
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "EMU300A内含光纤交换机（可选）。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "component_name": "光纤交换机",
+          "component_type": "网络设备",
+          "scope_status": "conditional",
+          "conditions": [
+            "可选"
+          ]
+        }
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "EMU300A内含光纤终端盒（可选）。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "component_name": "光纤终端盒",
+          "component_type": "被动支撑部件",
+          "scope_status": "conditional",
+          "conditions": [
+            "可选"
+          ]
+        }
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "EMU300A内含IO模组（可选）。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "component_name": "IO模组",
+          "component_type": "输入输出模块",
+          "scope_status": "conditional",
+          "conditions": [
+            "可选"
+          ]
+        }
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "EMU300A内部结构中包含Logger5000。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "Logger5000",
+          "component_type": "数据采集器",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "EMU300A内部结构中包含光纤环网交换机，为选配。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "component_name": "光纤环网交换机",
+          "component_type": "网络设备",
+          "scope_status": "conditional",
+          "conditions": [
+            "选配"
+          ]
+        }
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "EMU300A内部结构中包含PID模块，支持PID防护和PID修复功能，适用于PV-正偏置组件，支持交流ISO检测功能。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "PID模块",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed",
+          "conditions": [
+            "适用于PV-正偏置组件"
+          ]
+        }
+      },
+      {
+        "fact_id": "FACT-013",
+        "statement": "EMU300A内部结构中包含PLC模块。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "PLC模块",
+          "component_type": "通信模块",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-014",
+        "statement": "EMU300A内部结构中包含风扇。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "风扇",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-015",
+        "statement": "EMU300A内部结构中包含220V市电插座，可为现场运维人员提供市电。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "220V市电插座",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-016",
+        "statement": "EMU300A内部结构中包含RS485通讯端子，线缆未包含在供货范围。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "RS485通讯端子",
+          "component_type": "输入输出模块",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-017",
+        "statement": "EMU300A内部结构中包含CT接线端子。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "CT接线端子",
+          "component_type": "输入输出模块",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-018",
+        "statement": "EMU300A内部结构中包含交流熔丝盒，线缆未包含在供货范围。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "交流熔丝盒",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-019",
+        "statement": "EMU300A内部结构中包含接地端子（功能地排和保护地排），线缆未包含在供货范围。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "接地端子",
+          "component_type": "被动支撑部件",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-020",
+        "statement": "EMU300A内部结构中包含防雷器。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "防雷器",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-021",
+        "statement": "Logger5000集成五路具备数据交换功能的以太网口（ETH1~ETH5），其中三路为以太网口、两路为快速调度口。",
+        "block_ids": [
+          "BLK-276B765BAAD65005"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "Logger5000",
+          "component_type": "数据采集器",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-022",
+        "statement": "路由器和防火墙不在EMU300A供货范围内，由客户自行购买。",
+        "block_ids": [
+          "BLK-10A8D5FE01AF321E"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "路由器",
+          "component_type": "网络设备",
+          "scope_status": "external",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-023",
+        "statement": "路由器和防火墙不在EMU300A供货范围内，由客户自行购买。",
+        "block_ids": [
+          "BLK-10A8D5FE01AF321E"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "防火墙",
+          "component_type": "网络安全设备",
+          "scope_status": "external",
+          "conditions": null
+        }
+      }
+    ],
+    "unknowns": [
+      "Logger4000是否属于本次交付配置（GAP-LOGGER4000-SCOPE）",
+      "光纤环网交换机与光纤终端盒是否实际配套交付（仅说明‘必须配套使用’，未确认是否同属一订单）",
+      "IO模组是否为标准内置或仅存在于部分订购型号（‘可选’未明确对应BOM层级）",
+      "MPLC数量（1或2）是否由合同/现场配置决定（证据未说明判定依据）",
+      "PID&ISO控制盒是否与PID模块为同一物理单元或独立模块（文档分别列出‘PID模块’与‘PID&ISO控制盒’）"
+    ],
+    "contradictions": []
+  },
+  "validation_payload": {
+    "node_id": "node_1",
+    "field_id": "components",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "能量管理单元EMU300A内部配置有数据采集器Logger5000。",
+        "block_ids": [
+          "BLK-7DF8897D9BB9225B",
+          "BLK-0FE6A5150E10C5BC"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "Logger5000",
+          "component_type": "数据采集器",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "EMU300A内含开关电源。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "开关电源",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "EMU300A内含防雷模块。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "防雷模块",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "EMU300A内含微型断路器。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "微型断路器",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "EMU300A内含MPLC（可选1或2）。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "component_name": "MPLC",
+          "component_type": "通信模块",
+          "scope_status": "conditional",
+          "conditions": [
+            "可选1或2"
+          ]
+        }
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "EMU300A内含PID&ISO控制盒（可选）。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "component_name": "PID&ISO控制盒",
+          "component_type": "硬件模块",
+          "scope_status": "conditional",
+          "conditions": [
+            "可选"
+          ]
+        }
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "EMU300A内含光纤交换机（可选）。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "component_name": "光纤交换机",
+          "component_type": "网络设备",
+          "scope_status": "conditional",
+          "conditions": [
+            "可选"
+          ]
+        }
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "EMU300A内含光纤终端盒（可选）。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "component_name": "光纤终端盒",
+          "component_type": "被动支撑部件",
+          "scope_status": "conditional",
+          "conditions": [
+            "可选"
+          ]
+        }
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "EMU300A内含IO模组（可选）。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "component_name": "IO模组",
+          "component_type": "输入输出模块",
+          "scope_status": "conditional",
+          "conditions": [
+            "可选"
+          ]
+        }
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "EMU300A内部结构中包含Logger5000。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "Logger5000",
+          "component_type": "数据采集器",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "EMU300A内部结构中包含光纤环网交换机，为选配。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "component_name": "光纤环网交换机",
+          "component_type": "网络设备",
+          "scope_status": "conditional",
+          "conditions": [
+            "选配"
+          ]
+        }
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "EMU300A内部结构中包含PID模块，支持PID防护和PID修复功能，适用于PV-正偏置组件，支持交流ISO检测功能。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "PID模块",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed",
+          "conditions": [
+            "适用于PV-正偏置组件"
+          ]
+        }
+      },
+      {
+        "fact_id": "FACT-013",
+        "statement": "EMU300A内部结构中包含PLC模块。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "PLC模块",
+          "component_type": "通信模块",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-014",
+        "statement": "EMU300A内部结构中包含风扇。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "风扇",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-015",
+        "statement": "EMU300A内部结构中包含220V市电插座，可为现场运维人员提供市电。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "220V市电插座",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-016",
+        "statement": "EMU300A内部结构中包含RS485通讯端子，线缆未包含在供货范围。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "RS485通讯端子",
+          "component_type": "输入输出模块",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-017",
+        "statement": "EMU300A内部结构中包含CT接线端子。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "CT接线端子",
+          "component_type": "输入输出模块",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-018",
+        "statement": "EMU300A内部结构中包含交流熔丝盒，线缆未包含在供货范围。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "交流熔丝盒",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-019",
+        "statement": "EMU300A内部结构中包含接地端子（功能地排和保护地排），线缆未包含在供货范围。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "接地端子",
+          "component_type": "被动支撑部件",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-020",
+        "statement": "EMU300A内部结构中包含防雷器。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "防雷器",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-021",
+        "statement": "Logger5000集成五路具备数据交换功能的以太网口（ETH1~ETH5），其中三路为以太网口、两路为快速调度口。",
+        "block_ids": [
+          "BLK-276B765BAAD65005"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "Logger5000",
+          "component_type": "数据采集器",
+          "scope_status": "confirmed",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-022",
+        "statement": "路由器和防火墙不在EMU300A供货范围内，由客户自行购买。",
+        "block_ids": [
+          "BLK-10A8D5FE01AF321E"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "路由器",
+          "component_type": "网络设备",
+          "scope_status": "external",
+          "conditions": null
+        }
+      },
+      {
+        "fact_id": "FACT-023",
+        "statement": "路由器和防火墙不在EMU300A供货范围内，由客户自行购买。",
+        "block_ids": [
+          "BLK-10A8D5FE01AF321E"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "防火墙",
+          "component_type": "网络安全设备",
+          "scope_status": "external",
+          "conditions": null
+        }
+      }
+    ],
+    "unknowns": [
+      "Logger4000是否属于本次交付配置（GAP-LOGGER4000-SCOPE）",
+      "光纤环网交换机与光纤终端盒是否实际配套交付（仅说明‘必须配套使用’，未确认是否同属一订单）",
+      "IO模组是否为标准内置或仅存在于部分订购型号（‘可选’未明确对应BOM层级）",
+      "MPLC数量（1或2）是否由合同/现场配置决定（证据未说明判定依据）",
+      "PID&ISO控制盒是否与PID模块为同一物理单元或独立模块（文档分别列出‘PID模块’与‘PID&ISO控制盒’）"
+    ],
+    "contradictions": []
+  },
+  "result": {
+    "node_id": "node_1",
+    "field_id": "components",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "能量管理单元EMU300A内部配置有数据采集器Logger5000。",
+        "block_ids": [
+          "BLK-7DF8897D9BB9225B",
+          "BLK-0FE6A5150E10C5BC"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "Logger5000",
+          "component_type": "数据采集器",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "EMU300A内含开关电源。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "开关电源",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "EMU300A内含防雷模块。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "防雷模块",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "EMU300A内含微型断路器。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "微型断路器",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "EMU300A内含MPLC（可选1或2）。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "conditions": [
+            "可选1或2"
+          ],
+          "component_name": "MPLC",
+          "component_type": "通信模块",
+          "scope_status": "conditional"
+        }
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "EMU300A内含PID&ISO控制盒（可选）。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "conditions": [
+            "可选"
+          ],
+          "component_name": "PID&ISO控制盒",
+          "component_type": "硬件模块",
+          "scope_status": "conditional"
+        }
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "EMU300A内含光纤交换机（可选）。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "conditions": [
+            "可选"
+          ],
+          "component_name": "光纤交换机",
+          "component_type": "网络设备",
+          "scope_status": "conditional"
+        }
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "EMU300A内含光纤终端盒（可选）。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "conditions": [
+            "可选"
+          ],
+          "component_name": "光纤终端盒",
+          "component_type": "被动支撑部件",
+          "scope_status": "conditional"
+        }
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "EMU300A内含IO模组（可选）。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "conditions": [
+            "可选"
+          ],
+          "component_name": "IO模组",
+          "component_type": "输入输出模块",
+          "scope_status": "conditional"
+        }
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "EMU300A内部结构中包含Logger5000。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "Logger5000",
+          "component_type": "数据采集器",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "EMU300A内部结构中包含光纤环网交换机，为选配。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "conditions": [
+            "选配"
+          ],
+          "component_name": "光纤环网交换机",
+          "component_type": "网络设备",
+          "scope_status": "conditional"
+        }
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "EMU300A内部结构中包含PID模块，支持PID防护和PID修复功能，适用于PV-正偏置组件，支持交流ISO检测功能。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "conditions": [
+            "适用于PV-正偏置组件"
+          ],
+          "component_name": "PID模块",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-013",
+        "statement": "EMU300A内部结构中包含PLC模块。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "PLC模块",
+          "component_type": "通信模块",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-014",
+        "statement": "EMU300A内部结构中包含风扇。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "风扇",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-015",
+        "statement": "EMU300A内部结构中包含220V市电插座，可为现场运维人员提供市电。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "220V市电插座",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-016",
+        "statement": "EMU300A内部结构中包含RS485通讯端子，线缆未包含在供货范围。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "RS485通讯端子",
+          "component_type": "输入输出模块",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-017",
+        "statement": "EMU300A内部结构中包含CT接线端子。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "CT接线端子",
+          "component_type": "输入输出模块",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-018",
+        "statement": "EMU300A内部结构中包含交流熔丝盒，线缆未包含在供货范围。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "交流熔丝盒",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-019",
+        "statement": "EMU300A内部结构中包含接地端子（功能地排和保护地排），线缆未包含在供货范围。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "接地端子",
+          "component_type": "被动支撑部件",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-020",
+        "statement": "EMU300A内部结构中包含防雷器。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "防雷器",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-021",
+        "statement": "Logger5000集成五路具备数据交换功能的以太网口（ETH1~ETH5），其中三路为以太网口、两路为快速调度口。",
+        "block_ids": [
+          "BLK-276B765BAAD65005"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "Logger5000",
+          "component_type": "数据采集器",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-022",
+        "statement": "路由器和防火墙不在EMU300A供货范围内，由客户自行购买。",
+        "block_ids": [
+          "BLK-10A8D5FE01AF321E"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "路由器",
+          "component_type": "网络设备",
+          "scope_status": "external"
+        }
+      },
+      {
+        "fact_id": "FACT-023",
+        "statement": "路由器和防火墙不在EMU300A供货范围内，由客户自行购买。",
+        "block_ids": [
+          "BLK-10A8D5FE01AF321E"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "防火墙",
+          "component_type": "网络安全设备",
+          "scope_status": "external"
+        }
+      }
+    ],
+    "unknowns": [
+      "Logger4000是否属于本次交付配置（GAP-LOGGER4000-SCOPE）",
+      "光纤环网交换机与光纤终端盒是否实际配套交付（仅说明‘必须配套使用’，未确认是否同属一订单）",
+      "IO模组是否为标准内置或仅存在于部分订购型号（‘可选’未明确对应BOM层级）",
+      "MPLC数量（1或2）是否由合同/现场配置决定（证据未说明判定依据）",
+      "PID&ISO控制盒是否与PID模块为同一物理单元或独立模块（文档分别列出‘PID模块’与‘PID&ISO控制盒’）"
+    ],
+    "contradictions": []
+  },
+  "elapsed_seconds": 62.055,
+  "finished_at": "2026-10-09T02:19:09.157231+00:00"
+}

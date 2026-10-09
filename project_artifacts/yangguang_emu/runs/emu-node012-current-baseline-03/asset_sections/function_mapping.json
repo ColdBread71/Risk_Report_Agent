@@ -1,0 +1,320 @@
+{
+  "schema_version": "asset_function_mapping_checkpoint.v1",
+  "fingerprint": "48fcaa7a5542ff031eff4008dbaa6279369f44202b5317ec61b8679dfcaa056f",
+  "cache_inputs": {
+    "source_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "text_model": "qwen-plus",
+    "asset_rule_version": "node2_asset_rules.v2.7",
+    "material_sha256": "dbf9afcb662d2ace3e43ec90f5b6f177f2237386346e8f36cb8c99b7ce2aa38c",
+    "prompt_sha256": "7047c8075bac0a1fd6c95863ad4f0fa2ca8310ae0aec2c9df74eb5f84a655343",
+    "schema_sha256": "0b2259b5c1e816639fd51c417a456d76905efb29789c223fe1e854bf29fbcb5c"
+  },
+  "result": {
+    "mappings": [
+      {
+        "asset_id": "ASSET-001",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-033",
+            "relationship_type": "creates",
+            "rationale": "FUNC-033 explicitly names '操作日志、syslog记录功能' and directly generates this asset."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-002",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-025",
+            "relationship_type": "modifies",
+            "rationale": "FUNC-025 '北向协议配置管理' allows editing of IEC104 point table content; export is its persistent configuration snapshot."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-003",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "creates",
+            "rationale": "FUNC-005 '北向数据转发' with GOOSE service requires this ZIP configuration file to drive GOOSE frame generation and transmission."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-004",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-021",
+            "relationship_type": "authenticates_with",
+            "rationale": "FUNC-021 '登录失败锁定' explicitly operates on Web interface user credentials."
+          },
+          {
+            "function_id": "FUNC-023",
+            "relationship_type": "authenticates_with",
+            "rationale": "FUNC-023 '首次登录强制修改密码' applies directly to Web interface user credentials upon first use."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-005",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-021",
+            "relationship_type": "authenticates_with",
+            "rationale": "FUNC-021 '登录失败锁定' applies to all login entry points including CLI/SSH/SFTP, and root is the OS-level credential subject to this control."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-006",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-034",
+            "relationship_type": "depends_on",
+            "rationale": "FUNC-034 '软件和固件更新' requires digital signature verification of upgrade packages, which depends on the imported PEM public key."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-007",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-027",
+            "relationship_type": "implements",
+            "rationale": "FUNC-027 '安全启动' function directly verifies integrity and authenticity of firmware and OS images as part of the boot chain."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-008",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-034",
+            "relationship_type": "modifies",
+            "rationale": "FUNC-034 '软件和固件更新' consumes the firmware upgrade package as input and replaces existing firmware."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-009",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-026",
+            "relationship_type": "implements",
+            "rationale": "FUNC-026 'PKI证书管理' covers full lifecycle management of X.509 login certificates for Web interface authentication."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-010",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-001",
+            "relationship_type": "implements",
+            "rationale": "Logger5000 implements FUNC-001 '南向设备接入' via RS485 bus as stated in its description."
+          },
+          {
+            "function_id": "FUNC-002",
+            "relationship_type": "implements",
+            "rationale": "Logger5000 implements FUNC-002 'PLC电力载波南向接入' for PLC-capable inverters as described."
+          },
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "implements",
+            "rationale": "Logger5000 implements FUNC-005 '北向数据转发' using IEC104, Modbus, MQTT, GOOSE protocols as specified."
+          },
+          {
+            "function_id": "FUNC-006",
+            "relationship_type": "implements",
+            "rationale": "Logger5000 implements FUNC-006 '远程调度指令接收' for both northbound and local dispatch commands."
+          },
+          {
+            "function_id": "FUNC-030",
+            "relationship_type": "implements",
+            "rationale": "Logger5000 implements FUNC-030 'TLS加密通信' for HTTPS, IEC104, and Modbus TCP as stated."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-011",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-001",
+            "relationship_type": "depends_on",
+            "rationale": "RS485通讯端子 provides the physical connection channel required by FUNC-001 for southbound device access."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-012",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-002",
+            "relationship_type": "implements",
+            "rationale": "MPLC模块 provides the PLC power line carrier communication capability used by FUNC-002 for PLC-capable inverter access."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-013",
+        "related_function_ids": [],
+        "relationships": []
+      },
+      {
+        "asset_id": "ASSET-014",
+        "related_function_ids": [],
+        "relationships": []
+      },
+      {
+        "asset_id": "ASSET-015",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "affects",
+            "rationale": "阳光云平台 is the target destination for FUNC-005 '北向数据转发'; its availability and security directly impact data upload outcomes."
+          },
+          {
+            "function_id": "FUNC-043",
+            "relationship_type": "affects",
+            "rationale": "阳光云平台 is the external dependency of FUNC-043 '阳光云数据转发授权', and its operational scope and responsibility boundary are not defined in evidence."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-016",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "affects",
+            "rationale": "第三方站控系统 is a target system for FUNC-005 '北向数据转发' and FUNC-006 '远程调度指令接收'; its security state affects instruction execution trustworthiness."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-017",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-007",
+            "relationship_type": "affects",
+            "rationale": "核心交换机 is the network infrastructure for FUNC-007 '通过核心交换机传输至后台站控系统'; its failure or compromise blocks communication with Insight/SCADA."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-018",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-008",
+            "relationship_type": "affects",
+            "rationale": "4G路由器 is the communication carrier for FUNC-008 '通过4G路由器传输至阳光云平台'; its availability and security directly affect data upload reliability."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-019",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-001",
+            "relationship_type": "implements",
+            "rationale": "FUNC-001 '南向设备接入', FUNC-002 'PLC电力载波南向接入', and FUNC-003 '南向协议支持' collectively constitute the southbound data acquisition and protocol adaptation capability."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-020",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-004",
+            "relationship_type": "implements",
+            "rationale": "FUNC-004 explicitly describes '对接入逆变器进行有功功率控制和无功功率调节', directly realizing this function."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-021",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "implements",
+            "rationale": "FUNC-005 defines northbound data forwarding; FUNC-006, FUNC-007, FUNC-008, and FUNC-009 are specific instantiations of the same northbound communication capability."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-022",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-010",
+            "relationship_type": "implements",
+            "rationale": "FUNC-010 'Web界面系统配置' provides embedded Web interface for configuring system time, network, serial ports, etc., forming the core human-machine interaction channel."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-023",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-033",
+            "relationship_type": "implements",
+            "rationale": "FUNC-033 explicitly names '操作日志与syslog记录功能' and directly realizes this logging capability."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-024",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-034",
+            "relationship_type": "implements",
+            "rationale": "FUNC-034 is named '软件和固件更新' and directly realizes this secure update capability."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-025",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-032",
+            "relationship_type": "implements",
+            "rationale": "FUNC-032 is named '恢复出厂设置' and directly realizes full configuration wipe and user data erasure."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-026",
+        "related_function_ids": [],
+        "relationships": []
+      },
+      {
+        "asset_id": "ASSET-027",
+        "related_function_ids": [],
+        "relationships": []
+      }
+    ],
+    "notes": "ASSET-013, ASSET-014, ASSET-026, and ASSET-027 lack direct, evidenced functional relationships per criteria: no implementation, dependency, protection, or consequence is stated in input descriptions; co-location or generic platform role is insufficient for relationship establishment."
+  }
+}

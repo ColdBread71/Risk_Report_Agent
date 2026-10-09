@@ -366,6 +366,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     config = {
         "configurable": {
             "thread_id": run_id,
+            "extraction_log_dir": str(run_output_dir / "diagnostics"),
             "evidence_packet_path": args.evidence_packet,
             "workspace": str(workspace),
             "field_checkpoint_dir": str(cache_dir / "field_facts"),

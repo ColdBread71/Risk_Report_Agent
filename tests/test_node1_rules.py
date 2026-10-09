@@ -1097,7 +1097,7 @@ def test_empty_optional_fact_attributes_are_canonicalized_as_missing():
         "scope_status": "unknown",
     }
 
-    with pytest.raises(ValueError, match="items must be non-empty"):
+    with pytest.raises(ValueError, match="conditions.0"):
         FieldExtractionResult(
             node_id=EvidenceTargetNode.CONTEXT,
             field_id=RetrievalField.COMPONENTS,

@@ -623,6 +623,7 @@ def _extract_context_section(
 
     logger.info("Node [1] 生成分段：%s", section_name)
     result = extract_with_retry(
+        task_label=f"node_1/{section_name}",
         llm=llm,
         prompt_template=_context_section_prompt(section_name),
         schema_class=schema_class,

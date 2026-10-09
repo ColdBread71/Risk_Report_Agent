@@ -1,0 +1,557 @@
+{
+  "run_id": "emu-node012-current-baseline-03",
+  "node": "identify_assets",
+  "task": "node_2/credentials_and_keys",
+  "call_id": "cc560916ae8a43718b4943e9cf4e089d",
+  "schema": "FieldExtractionResult",
+  "model": "qwen-plus",
+  "attempt": 1,
+  "started_at": "2026-10-09T02:35:21.604310+00:00",
+  "status": "failed",
+  "phase": "schema_validation",
+  "prompt": "你正在为 CRA / prEN 40000 TARA 工作流的 node_2/credentials_and_keys 提取原子事实。\n\n【任务边界】\n1. 只记录输入证据逐字支持的事实，不生成最终 Scope、ProductContext、资产、威胁、风险或控制。\n2. 每条 fact 只表达一个事实，并列出直接支持它的真实 block_id。block_id 所在文本必须直接支持该事实，不得引用相邻章节标题代替正文或表格。最多输出 24 条事实；证据未说明的必要信息写入 unknowns。\n3. 不得创建输入中不存在的 block_id，不得根据行业惯例补全未知信息。\n4. 原子事实必须保留证据中的限定词，包括“选配、可选、适用于、若启用、取决于合同/BOM/现场配置”。不得把产品能力改写成客户已装机或已启用状态。\n5. 安全配置教程或操作步骤只证明该对象或能力被手册覆盖，不单独证明它是标准内置组件、实际交付配置或当前已启用功能。\n6. 对云平台、远程升级、数据上传等事实，只记录证据明确说明的能力、运营方和依赖；不得自行判定 CRA RDPS。缺少“远程方案是否为产品功能所必需”等信息时写入 unknowns。\n7. 证据含糊、可选或依赖合同配置时设置 is_uncertain=true，并在 unknowns 中记录待确认项。\n8. 若不同证据存在冲突，分别保留事实并在 contradictions 中说明。\n9. 除产品名、型号、协议、法规/标准编号和其他专有名词外，fact、unknowns 和 contradictions 使用简体中文；不得翻译或改写证据中的专有标识。\n10. attributes 只用于本字段整理要求明确列出的结构化值，且必须由该fact的同一组block_ids直接支持；其他字段保持空对象。未知值使用null或规定的unknown，不得推断。\n\n【本字段整理要求】\n逐项区分本地、Web、操作系统和外部目录账号凭据，设备标识，密码重置校验材料，证书及对应私钥，协议密钥，软件验签公钥，日志或备份导出密码和远程维护访问信息。证书不得与私钥混称为秘密；操作步骤只证明材料存在，不补写算法、有效期、存储位置或传递机制。\n\n【目标 JSON Schema】\n{\n  \"$defs\": {\n    \"FactAttributes\": {\n      \"additionalProperties\": false,\n      \"description\": \"One source for the model-facing attribute schema and runtime validation.\",\n      \"properties\": {},\n      \"title\": \"FactAttributes\",\n      \"type\": \"object\"\n    },\n    \"RetrievedFact\": {\n      \"additionalProperties\": false,\n      \"description\": \"One atomic fact extracted from a field-specific evidence packet.\",\n      \"properties\": {\n        \"fact_id\": {\n          \"pattern\": \"^FACT-[0-9]{3,}$\",\n          \"title\": \"Fact Id\",\n          \"type\": \"string\"\n        },\n        \"statement\": {\n          \"maxLength\": 1000,\n          \"minLength\": 1,\n          \"title\": \"Statement\",\n          \"type\": \"string\"\n        },\n        \"block_ids\": {\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"maxItems\": 4,\n          \"minItems\": 1,\n          \"title\": \"Block Ids\",\n          \"type\": \"array\"\n        },\n        \"is_uncertain\": {\n          \"default\": false,\n          \"title\": \"Is Uncertain\",\n          \"type\": \"boolean\"\n        },\n        \"attributes\": {\n          \"$ref\": \"#/$defs/FactAttributes\",\n          \"description\": \"Optional field-specific values copied from the same evidence. Only communications and components use the reviewed keys validated by FieldExtractionResult.\",\n          \"title\": \"Attributes\"\n        }\n      },\n      \"required\": [\n        \"fact_id\",\n        \"statement\",\n        \"block_ids\"\n      ],\n      \"title\": \"RetrievedFact\",\n      \"type\": \"object\"\n    }\n  },\n  \"additionalProperties\": false,\n  \"description\": \"Compact persisted candidate facts for one Node/field slice.\",\n  \"properties\": {\n    \"node_id\": {\n      \"type\": \"string\",\n      \"const\": \"node_2\"\n    },\n    \"field_id\": {\n      \"type\": \"string\",\n      \"const\": \"credentials_and_keys\"\n    },\n    \"facts\": {\n      \"items\": {\n        \"$ref\": \"#/$defs/RetrievedFact\"\n      },\n      \"maxItems\": 24,\n      \"title\": \"Facts\",\n      \"type\": \"array\"\n    },\n    \"unknowns\": {\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"maxItems\": 10,\n      \"title\": \"Unknowns\",\n      \"type\": \"array\"\n    },\n    \"contradictions\": {\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"maxItems\": 10,\n      \"title\": \"Contradictions\",\n      \"type\": \"array\"\n    }\n  },\n  \"required\": [\n    \"node_id\",\n    \"field_id\"\n  ],\n  \"title\": \"FieldExtractionResult\",\n  \"type\": \"object\"\n}\n\n【输出要求】\n- node_id 和 field_id 必须与任务完全一致。\n- fact_id 使用 FACT-001、FACT-002 等批内唯一编号。\n- 严格输出单个 JSON 对象，不输出 Markdown 或解释。\n\n【字段任务与检索证据】\n{\n  \"node_id\": \"node_2\",\n  \"field_id\": \"credentials_and_keys\",\n  \"retrieval_intent\": \"用户 账号 密码 口令 管理员 服务账号 目录账号 凭据 序列号 设备标识 校验码 重置秘密 令牌 远程维护 访问链接 证书 私钥 协议密钥 签名公钥 验签公钥 更新公钥 导出密码 备份密码\",\n  \"evidence\": \"[PACKET rag_yangguang_emu_node_2_credentials_and_keys_7ee814ccd788 v1]\\nProject: yangguang_emu\\nUse only this evidence. Preserve unknowns and copy citation anchors exactly.\\n\\n[KNOWN GAPS]\\n- GAP-LOGGER4000-SCOPE: A Logger4000 manual is present, but the EMU300A product and cybersecurity manuals identify Logger5000 as the standard internal collector; Logger4000 is excluded until the delivered configuration is confirmed. Disposition: Treat Logger4000 applicability as a customer/configuration question; do not infer its assets or threats in the baseline run.\\n- GAP-DIAGRAM-SEMANTICS: Native text and figure captions are retained, but topology diagrams have not been manually transcribed into graph relationships. Disposition: Review missing topology only if the first evaluation shows unsupported or absent communication paths.\\n- GAP-MIXED-PAGE-BLOCK: Logger5000 PDF page 82 merges the end of GOOSE, MMS forwarding, and the start of port parameters into one native PDF text block; its file/page/block anchor is exact but its single assigned section path is broader than the mixed content. Disposition: Require quote plus physical-page/block citation for this block; do not treat its section path alone as proof. Revisit parser splitting only if this locator affects evaluation.\\n- GAP-CONTRACT-VARIANTS: The manuals describe optional and contract-dependent functions; the exact customer-enabled feature set is not independently confirmed. Disposition: Preserve uncertainty and produce customer questions instead of asserting optional functions as deployed facts.\\n- GAP-LEGAL-BASIS: Product manuals establish product facts but are not authoritative CRA or prEN 40000 legal sources. Disposition: Use the controlled legal/rule layer for legal conclusions; never fabricate legal support from this packet.\\n\\n[DOCUMENT DOC-DF116E7199E2]\\nfile_name: EMU300A网络安全操作手册-UCN-Ver11-202607.pdf\\nfile_path: legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf\\nfile_type: pdf\\nsource_sha256: e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc\\nparser_version: 1.5.0\\n\\n[LOCATION page=16; printed_page=12; section=7 用户列表]\\n[BLK-341F42D6A55FBC5E] 7\\n用户列表\\n[BLK-61D4A48CF0FCF3E6] 管理员通过对不同的用户设置不同权限的账号，可以提高系统安全性、为不同的用户提升操\\n作效率、降低管理成本。不同用户类型登录账号、默认密码和操作权限如下：\\n[BLK-4417EC6A57B44907] 表 7-1 1. Web 用户\\n[BLK-9E90596A86CAF9FA] 用户类型\\t用户名\\t\\t操作权限\\n普通用户\\tuser\\t\\t只有系统的监控权限和简单的设置权\\n限。如概览、设备监控和部分历史数据\\n的查看。\\n运维用户\\tmaintain\\t\\t本手册默认描述的所有操作。\\n审计用户\\tauditor\\t\\t对所有用户的操作日志，Syslog 日志进\\n行审计。\\n管理员\\tadministr\\tator\\t增加用户、删除用户、修改用户、清空\\n用户、会话管理、开发者调试开关、分\\n配用户登录证书。\\n开发者用户\\tdevelop\\t\\t经管理员授权后可执行设备复杂故障的\\n定位和排除。\\n• 普通用户、运维用\\n（SN）”拼接而成\\n应的默认密码为“\\n• 开发者用户的密码\\n动态密码。\\n7-2 2. 操作系统用户\\t\\t\\t\\n\\t户、审计\\n。例如，\\nuserSN12\\n采用动态\\t用户、管理\\n若设备SN 为\\n345678”。\\n生成机制，\\t员的密码由“用户名”与“设备序列号\\n“SN12345678”，用户名为“user”，则对\\n通过客户授权获得设备SN，生成对应的\\n\\t\\t\\t\\n用户名\\t\\t默认密码\\t\\nroot\\t\\t根据客户授权\\t获取SN 生成动态密码。\\n[BLK-B69166A4A2ED2877] sg\\n根据客户授权获取SN 生成动态密码。\\n\\n[LOCATION page=17; printed_page=13; section=8 用户管理]\\n[BLK-2C9EB29CBEE48879] 用户管理\\n[BLK-CE969232A195110E] •\\n除“maintain”账号外，管理员至多可创建4 个运维账号。非必要请勿创建过多用户，以免\\n多人抢占设备操作、用户密码泄露等。\\n[BLK-DBF11A90CC31126D] •\\n如发现用户行为可疑，可通过登录管理员账户，删除该用户，即可立即终止该用户的访问\\n权限。\\n[BLK-BDB4B6FD02F875A2] •\\n如果发现用户密码泄露，可通过登录管理员账户，修改用户密码。\\n[BLK-81634645B7FDAF2B] •\\n新增用户时，用户名称需由2-16 位字母、数字组成，且必须以字母开头。\\n\\n[LOCATION page=17; printed_page=13; section=8 用户管理 > 8.1 密码管理]\\n[BLK-C78B701D7228B189] •\\n新旧密码重复次数\\n[BLK-A2D6E2A618D4144A] 设置完成后，点击保存生效。\\n[BLK-62C710106569541C] 4. 所有用户的密码都具备有效期，密码有效期可以通过管理员账户自行设置，可设置的密码\\n有效期范围为1~90 天，密码到期请及时修改。\\n[BLK-659A5757D7076C39] •\\n管理员通过对不同的用户设置不同权限的账号，可以提高系统安全性、为不同的\\n用户提升操作效率、降低管理成本。\\n[BLK-87F9E7FD87F93ED5] •\\n当普通用户登录时出现其他用户登录提示语时，需要先退出其他用户登录。\\n\\n[DOCUMENT DOC-D9C0DEB31D45]\\nfile_name: logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf\\nfile_path: legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf\\nfile_type: pdf\\nsource_sha256: bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d\\nparser_version: 1.5.0\\n\\n[LOCATION page=74; printed_page=64; section=7 Web界面 > 7.10 系统 > 7.10.2 系统维护 > 7.10.2.6 公钥导入]\\n[BLK-112B478856ADF183] 步骤 4 单击确定。\\n[BLK-FF9E916AD7FE93EB] --结束\\n[BLK-5B4421727B6BF311] 7.10.2.6 公钥导入\\n[BLK-F9A4F9723511D487] 为确保系统升级的安全，保证升级包文件的真实性和完整性，使用数字签名技术对升级包文件进\\n行校验。数据采集器升级时，可能需要导入升级包文件对应的公钥，以完成数字签名校验流程。\\n[BLK-25EC72F7D907113E] 步骤 1 单击系统 > 系统维护。\\n[BLK-35A4A8029CBCFB09] 步骤 2 单击公钥导入。\\n[BLK-14719D4D62193798] 步骤 3 在弹出的对话框中，选择公钥文件（.pem 格式）。\\n\\n[LOCATION page=93; printed_page=83; section=9 用户管理]\\n[BLK-BEF8CE06580329CF] 9\\n用户管理\\n[BLK-17E66B8FE1AEAB17] 管理员账号可以创建用户账号、重置账号密码、设置账户保护和会话安全参数、启用研发调试开\\n关。\\n[BLK-F7D2832BBD8F2998] 前提条件\\n\\n[LOCATION page=93; printed_page=83; section=9 用户管理 > 9.1 初始用户名和密码]\\n[BLK-D95F6B18D5ECA7EC] 9.1 初始用户名和密码\\n[BLK-3D831B5BDD0CBD81] 管理员通过对不同的用户设置不同权限的账号，可以提高系统安全性、为不同的用户提升操\\n作效率、降低管理成本。不同用户类型登录账号、默认密码和操作权限如下：\\n[BLK-55CFEFE65B8FCCB4] 表\\t9-1 1.\\t用户 Web\\t\\t\\n\\t用户类型\\t\\t用户名\\t操作权限\\n\\t普通用户\\t\\tuser\\t只有系统的监控权限和简单的设置权\\n限。如概览、设备监控和部分历史数据\\n的查看。\\n\\t运维用户\\t\\tmaintain\\t本手册默认描述的所有操作。\\n\\t审计用户\\t\\tauditor\\t对所有用户的操作日志，Syslog 日志进\\n行审计。\\n\\t管理员\\t\\tadministrator\\t增加用户、删除用户、修改用户、清空\\n用户、会话管理、开发者调试开关、分\\n配用户登录证书。\\n\\t开发者用\\t户\\tdevelop\\t经管理员授权后可执行设备复杂故障的\\n定位和排除。\\n[BLK-2663D9583766CD4D] •\\n普通用户、运维用户、审计用户、管理员的密码由“用户名”与“设备序列号\\n（SN）”拼接而成。例如，若设备SN 为“SN12345678”，用户名为“user”，则对\\n应的默认密码为“userSN12345678”。\\n[BLK-1429A3505D4AB3AA] •\\n开发者用户的密码采用动态生成机制，通过客户授权获得设备SN，生成对应的\\n动态密码。\\n\\n[LOCATION page=95; printed_page=85; section=9 用户管理 > 9.3 密码管理]\\n[BLK-503C3E9F50A69446] •\\n新旧密码重复次数\\n[BLK-1A9E9F8A1E61ACA2] 设置完成后，点击保存生效。\\n[BLK-A4723AAA2B990E87] 4. 所有用户的密码都具备有效期，密码有效期可以通过管理员账户自行设置，可设置的密码\\n有效期范围为1~90 天，密码到期请及时修改。\\n[BLK-1ADA4D0AE6DB7D4A] •\\n管理员通过对不同的用户设置不同权限的账号，可以提高系统安全性、为不同的\\n用户提升操作效率、降低管理成本。\\n[BLK-05304F306447D2C0] •\\n当普通用户登录时出现其他用户登录提示语时，需要先退出其他用户登录。\\n\\n[LOCATION page=95; printed_page=85; section=9 用户管理 > 9.4 忘记密码 > 9.4.1 重置用户账号密码]\\n[BLK-6129E287F2F1168F] 9.4.1 重置用户账号密码\\n[BLK-61275F681ECF4D1E] 重置普通用户、运维用户、审计用户账号。\\n[BLK-8FFFDB405DE7A234] 前提条件\\n[BLK-4426BD4984D9B293] •\\n通过管理员账号登录Web 端。见9.1 初始用户名和密码。\\n[BLK-929758496B500C47] 步骤 1 导航栏中点击用户管理，跳转至相应页面。\\n[BLK-E1BD1B41E544127F] 步骤 2 在用户账号对应的操作栏中，点击\\n[BLK-790542F3B5C438EC] ，打开修改用户对话框。\\n\\n[LOCATION page=95; printed_page=85; section=9 用户管理 > 9.4 忘记密码 > 9.4.2 重置管理员账号密码]\\n[BLK-292B9CD931E909F1] 9.4.2 重置管理员账号密码\\n[BLK-70B36BD10F8E960B] 步骤 1 打开Logger5000 的Web 端。\\n[BLK-1B5CDD7127691343] 步骤 2 输入管理员账号名称：administrator。\\n[BLK-F21A6FC7F4B2A958] 步骤 3 点击忘记密码，打开修改密码对话框。\\n[BLK-70F40B0CCFC973A7] 步骤 4 若管理员账户忘记登录密码，可以通过以下操作，将校验码与设备SN 号发送至SUNGROW\\n[BLK-4384E460893C3259] 运维，再输入SUNGROW 运维返回的密钥，即可重置密码。\\n\"\n}",
+  "estimated_input_tokens": 5130,
+  "raw_response": "{\n  \"node_id\": \"node_2\",\n  \"field_id\": \"credentials_and_keys\",\n  \"facts\": [\n    {\n      \"fact_id\": \"FACT-001\",\n      \"statement\": \"Web界面支持普通用户、运维用户、审计用户、管理员和开发者用户五类用户类型。\",\n      \"block_ids\": [\"BLK-4417EC6A57B44907\", \"BLK-55CFEFE65B8FCCB4\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-002\",\n      \"statement\": \"Web用户默认用户名为：普通用户'user'、运维用户'maintain'、审计用户'auditor'、管理员'administrator'、开发者用户'develop'。\",\n      \"block_ids\": [\"BLK-4417EC6A57B44907\", \"BLK-55CFEFE65B8FCCB4\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-003\",\n      \"statement\": \"普通用户、运维用户、审计用户、管理员的默认密码由“用户名”与“设备序列号（SN）”拼接而成；例如SN为'SN12345678'、用户名为'user'时，默认密码为'userSN12345678'。\",\n      \"block_ids\": [\"BLK-9E90596A86CAF9FA\", \"BLK-2663D9583766CD4D\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-004\",\n      \"statement\": \"开发者用户的密码采用动态生成机制，需通过客户授权获取设备SN后生成对应的动态密码。\",\n      \"block_ids\": [\"BLK-9E90596A86CAF9FA\", \"BLK-1429A3505D4AB3AA\"],\n      \"is_uncertain\": true,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-005\",\n      \"statement\": \"操作系统用户包含root账号，其默认密码根据客户授权获取SN生成动态密码。\",\n      \"block_ids\": [\"BLK-9E90596A86CAF9FA\", \"BLK-B69166A4A2ED2877\"],\n      \"is_uncertain\": true,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-006\",\n      \"statement\": \"管理员账号可创建最多4个额外的运维账号（除默认maintain账号外）。\",\n      \"block_ids\": [\"BLK-CE969232A195110E\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-007\",\n      \"statement\": \"所有Web用户密码具备有效期，有效期范围为1~90天，可通过管理员账户自行设置。\",\n      \"block_ids\": [\"BLK-62C710106569541C\", \"BLK-A4723AAA2B990E87\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-008\",\n      \"statement\": \"管理员可通过Web界面删除用户以立即终止其访问权限。\",\n      \"block_ids\": [\"BLK-DBF11A90CC31126D\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-009\",\n      \"statement\": \"管理员可通过Web界面修改任意用户密码。\",\n      \"block_ids\": [\"BLK-BDB4B6FD02F875A2\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-010\",\n      \"statement\": \"重置普通用户、运维用户、审计用户账号密码需通过管理员账号登录Web端后，在用户管理页面操作。\",\n      \"block_ids\": [\"BLK-61275F681ECF4D1E\", \"BLK-4426BD4984D9B293\", \"BLK-929758496B500C47\", \"BLK-E1BD1B41E544127F\", \"BLK-790542F3B5C438EC\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-011\",\n      \"statement\": \"重置管理员账号密码需在Web端点击‘忘记密码’，将校验码与设备SN号发送至SUNGROW运维，再输入SUNGROW运维返回的密钥完成重置。\",\n      \"block_ids\": [\"BLK-292B9CD931E909F1\", \"BLK-70F40B0CCFC973A7\", \"BLK-4384E460893C3259\"],\n      \"is_uncertain\": true,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-012\",\n      \"statement\": \"系统升级时可能需要导入升级包文件对应的公钥（.pem格式）以完成数字签名校验。\",\n      \"block_ids\": [\"BLK-F9A4F9723511D487\", \"BLK-14719D4D62193798\"],\n      \"is_uncertain\": true,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-013\",\n      \"statement\": \"管理员可通过Web界面分配用户登录证书。\",\n      \"block_ids\": [\"BLK-9E90596A86CAF9FA\", \"BLK-55CFEFE65B8FCCB4\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-014\",\n      \"statement\": \"新增Web用户时，用户名需由2–16位字母、数字组成，且必须以字母开头。\",\n      \"block_ids\": [\"BLK-81634645B7FDAF2B\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-015\",\n      \"statement\": \"管理员可启用开发者调试开关。\",\n      \"block_ids\": [\"BLK-9E90596A86CAF9FA\", \"BLK-55CFEFE65B8FCCB4\", \"BLK-17E66B8FE1AEAB17\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-016\",\n      \"statement\": \"管理员可设置账户保护和会话安全参数。\",\n      \"block_ids\": [\"BLK-17E66B8FE1AEAB17\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-017\",\n      \"statement\": \"Web用户登录时若出现其他用户登录提示语，需先退出其他用户登录。\",\n      \"block_ids\": [\"BLK-87F9E7FD87F93ED5\", \"BLK-05304F306447D2C0\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-018\",\n      \"statement\": \"Logger5000 Web界面提供‘公钥导入’功能，位于‘系统 > 系统维护’菜单下。\",\n      \"block_ids\": [\"BLK-5B4421727B6BF311\", \"BLK-25EC72F7D907113E\", \"BLK-35A4A8029CBCFB09\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-019\",\n      \"statement\": \"设备标识（SN）用于生成Web用户默认密码及操作系统root账号动态密码。\",\n      \"block_ids\": [\"BLK-9E90596A86CAF9FA\", \"BLK-2663D9583766CD4D\", \"BLK-B69166A4A2ED2877\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-020\",\n      \"statement\": \"重置管理员密码需提供校验码与设备SN号。\",\n      \"block_ids\": [\"BLK-70F40B0CCFC973A7\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-021\",\n      \"statement\": \"Web用户权限划分明确：普通用户仅具监控与简单设置权限；运维用户覆盖手册默认所有操作；审计用户可审计全部操作日志与Syslog日志；管理员可增删改用户、会话管理、分配证书等；开发者用户经授权后可执行复杂故障定位与排除。\",\n      \"block_ids\": [\"BLK-4417EC6A57B44907\", \"BLK-55CFEFE65B8FCCB4\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-022\",\n      \"statement\": \"管理员账号具有清空用户、分配用户登录证书、会话管理等专属权限。\",\n      \"block_ids\": [\"BLK-9E90596A86CAF9FA\", \"BLK-55CFEFE65B8FCCB4\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-023\",\n      \"statement\": \"Web界面用户管理功能支持修改用户信息、重置密码、删除用户、清空用户等操作。\",\n      \"block_ids\": [\"BLK-9E90596A86CAF9FA\", \"BLK-55CFEFE65B8FCCB4\", \"BLK-DBF11A90CC31126D\", \"BLK-BDB4B6FD02F875A2\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    }\n  ],\n  \"unknowns\": [\n    \"是否存在本地CLI/串口登录的独立账号体系（非Web或OS用户）？\",\n    \"操作系统用户除root外是否还有其他预置账号（如sg、maintain等）？\",\n    \"Web用户登录证书的具体格式、算法、有效期、存储位置及分发机制未说明。\",\n    \"公钥导入所用公钥是否为设备出厂预置、是否支持多公钥、是否绑定特定升级源未说明。\",\n    \"校验码的生成方式、时效性、传输通道安全性未说明。\",\n    \"SUNGROW运维的身份认证机制、密钥生成逻辑、响应时效未说明。\",\n    \"远程维护访问是否依赖云平台、第三方服务或专用通道未说明。\",\n    \"是否存在外部目录账号（如LDAP/AD）集成能力？证据未提及。\",\n    \"是否存在协议密钥（如TLS PSK、GOOSE/MMS密钥）？证据未提及。\",\n    \"是否存在软件验签公钥（除升级公钥外）？证据未提及。\"\n  ],\n  \"contradictions\": []\n}",
+  "response_metadata": {
+    "finish_reason": "stop",
+    "token_usage": {
+      "completion_tokens": 2649,
+      "prompt_tokens": 4790,
+      "total_tokens": 7439,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "qwen-plus"
+  },
+  "parsed_payload": {
+    "node_id": "node_2",
+    "field_id": "credentials_and_keys",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "Web界面支持普通用户、运维用户、审计用户、管理员和开发者用户五类用户类型。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "Web用户默认用户名为：普通用户'user'、运维用户'maintain'、审计用户'auditor'、管理员'administrator'、开发者用户'develop'。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "普通用户、运维用户、审计用户、管理员的默认密码由“用户名”与“设备序列号（SN）”拼接而成；例如SN为'SN12345678'、用户名为'user'时，默认密码为'userSN12345678'。",
+        "block_ids": [
+          "BLK-9E90596A86CAF9FA",
+          "BLK-2663D9583766CD4D"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "开发者用户的密码采用动态生成机制，需通过客户授权获取设备SN后生成对应的动态密码。",
+        "block_ids": [
+          "BLK-9E90596A86CAF9FA",
+          "BLK-1429A3505D4AB3AA"
+        ],
+        "is_uncertain": true,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "操作系统用户包含root账号，其默认密码根据客户授权获取SN生成动态密码。",
+        "block_ids": [
+          "BLK-9E90596A86CAF9FA",
+          "BLK-B69166A4A2ED2877"
+        ],
+        "is_uncertain": true,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "管理员账号可创建最多4个额外的运维账号（除默认maintain账号外）。",
+        "block_ids": [
+          "BLK-CE969232A195110E"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "所有Web用户密码具备有效期，有效期范围为1~90天，可通过管理员账户自行设置。",
+        "block_ids": [
+          "BLK-62C710106569541C",
+          "BLK-A4723AAA2B990E87"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "管理员可通过Web界面删除用户以立即终止其访问权限。",
+        "block_ids": [
+          "BLK-DBF11A90CC31126D"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "管理员可通过Web界面修改任意用户密码。",
+        "block_ids": [
+          "BLK-BDB4B6FD02F875A2"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "重置普通用户、运维用户、审计用户账号密码需通过管理员账号登录Web端后，在用户管理页面操作。",
+        "block_ids": [
+          "BLK-61275F681ECF4D1E",
+          "BLK-4426BD4984D9B293",
+          "BLK-929758496B500C47",
+          "BLK-E1BD1B41E544127F",
+          "BLK-790542F3B5C438EC"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "重置管理员账号密码需在Web端点击‘忘记密码’，将校验码与设备SN号发送至SUNGROW运维，再输入SUNGROW运维返回的密钥完成重置。",
+        "block_ids": [
+          "BLK-292B9CD931E909F1",
+          "BLK-70F40B0CCFC973A7",
+          "BLK-4384E460893C3259"
+        ],
+        "is_uncertain": true,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "系统升级时可能需要导入升级包文件对应的公钥（.pem格式）以完成数字签名校验。",
+        "block_ids": [
+          "BLK-F9A4F9723511D487",
+          "BLK-14719D4D62193798"
+        ],
+        "is_uncertain": true,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-013",
+        "statement": "管理员可通过Web界面分配用户登录证书。",
+        "block_ids": [
+          "BLK-9E90596A86CAF9FA",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-014",
+        "statement": "新增Web用户时，用户名需由2–16位字母、数字组成，且必须以字母开头。",
+        "block_ids": [
+          "BLK-81634645B7FDAF2B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-015",
+        "statement": "管理员可启用开发者调试开关。",
+        "block_ids": [
+          "BLK-9E90596A86CAF9FA",
+          "BLK-55CFEFE65B8FCCB4",
+          "BLK-17E66B8FE1AEAB17"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-016",
+        "statement": "管理员可设置账户保护和会话安全参数。",
+        "block_ids": [
+          "BLK-17E66B8FE1AEAB17"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-017",
+        "statement": "Web用户登录时若出现其他用户登录提示语，需先退出其他用户登录。",
+        "block_ids": [
+          "BLK-87F9E7FD87F93ED5",
+          "BLK-05304F306447D2C0"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-018",
+        "statement": "Logger5000 Web界面提供‘公钥导入’功能，位于‘系统 > 系统维护’菜单下。",
+        "block_ids": [
+          "BLK-5B4421727B6BF311",
+          "BLK-25EC72F7D907113E",
+          "BLK-35A4A8029CBCFB09"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-019",
+        "statement": "设备标识（SN）用于生成Web用户默认密码及操作系统root账号动态密码。",
+        "block_ids": [
+          "BLK-9E90596A86CAF9FA",
+          "BLK-2663D9583766CD4D",
+          "BLK-B69166A4A2ED2877"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-020",
+        "statement": "重置管理员密码需提供校验码与设备SN号。",
+        "block_ids": [
+          "BLK-70F40B0CCFC973A7"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-021",
+        "statement": "Web用户权限划分明确：普通用户仅具监控与简单设置权限；运维用户覆盖手册默认所有操作；审计用户可审计全部操作日志与Syslog日志；管理员可增删改用户、会话管理、分配证书等；开发者用户经授权后可执行复杂故障定位与排除。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-022",
+        "statement": "管理员账号具有清空用户、分配用户登录证书、会话管理等专属权限。",
+        "block_ids": [
+          "BLK-9E90596A86CAF9FA",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-023",
+        "statement": "Web界面用户管理功能支持修改用户信息、重置密码、删除用户、清空用户等操作。",
+        "block_ids": [
+          "BLK-9E90596A86CAF9FA",
+          "BLK-55CFEFE65B8FCCB4",
+          "BLK-DBF11A90CC31126D",
+          "BLK-BDB4B6FD02F875A2"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "是否存在本地CLI/串口登录的独立账号体系（非Web或OS用户）？",
+      "操作系统用户除root外是否还有其他预置账号（如sg、maintain等）？",
+      "Web用户登录证书的具体格式、算法、有效期、存储位置及分发机制未说明。",
+      "公钥导入所用公钥是否为设备出厂预置、是否支持多公钥、是否绑定特定升级源未说明。",
+      "校验码的生成方式、时效性、传输通道安全性未说明。",
+      "SUNGROW运维的身份认证机制、密钥生成逻辑、响应时效未说明。",
+      "远程维护访问是否依赖云平台、第三方服务或专用通道未说明。",
+      "是否存在外部目录账号（如LDAP/AD）集成能力？证据未提及。",
+      "是否存在协议密钥（如TLS PSK、GOOSE/MMS密钥）？证据未提及。",
+      "是否存在软件验签公钥（除升级公钥外）？证据未提及。"
+    ],
+    "contradictions": []
+  },
+  "validation_payload": {
+    "node_id": "node_2",
+    "field_id": "credentials_and_keys",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "Web界面支持普通用户、运维用户、审计用户、管理员和开发者用户五类用户类型。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "Web用户默认用户名为：普通用户'user'、运维用户'maintain'、审计用户'auditor'、管理员'administrator'、开发者用户'develop'。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "普通用户、运维用户、审计用户、管理员的默认密码由“用户名”与“设备序列号（SN）”拼接而成；例如SN为'SN12345678'、用户名为'user'时，默认密码为'userSN12345678'。",
+        "block_ids": [
+          "BLK-9E90596A86CAF9FA",
+          "BLK-2663D9583766CD4D"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "开发者用户的密码采用动态生成机制，需通过客户授权获取设备SN后生成对应的动态密码。",
+        "block_ids": [
+          "BLK-9E90596A86CAF9FA",
+          "BLK-1429A3505D4AB3AA"
+        ],
+        "is_uncertain": true,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "操作系统用户包含root账号，其默认密码根据客户授权获取SN生成动态密码。",
+        "block_ids": [
+          "BLK-9E90596A86CAF9FA",
+          "BLK-B69166A4A2ED2877"
+        ],
+        "is_uncertain": true,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "管理员账号可创建最多4个额外的运维账号（除默认maintain账号外）。",
+        "block_ids": [
+          "BLK-CE969232A195110E"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "所有Web用户密码具备有效期，有效期范围为1~90天，可通过管理员账户自行设置。",
+        "block_ids": [
+          "BLK-62C710106569541C",
+          "BLK-A4723AAA2B990E87"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "管理员可通过Web界面删除用户以立即终止其访问权限。",
+        "block_ids": [
+          "BLK-DBF11A90CC31126D"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "管理员可通过Web界面修改任意用户密码。",
+        "block_ids": [
+          "BLK-BDB4B6FD02F875A2"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "重置普通用户、运维用户、审计用户账号密码需通过管理员账号登录Web端后，在用户管理页面操作。",
+        "block_ids": [
+          "BLK-61275F681ECF4D1E",
+          "BLK-4426BD4984D9B293",
+          "BLK-929758496B500C47",
+          "BLK-E1BD1B41E544127F",
+          "BLK-790542F3B5C438EC"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "重置管理员账号密码需在Web端点击‘忘记密码’，将校验码与设备SN号发送至SUNGROW运维，再输入SUNGROW运维返回的密钥完成重置。",
+        "block_ids": [
+          "BLK-292B9CD931E909F1",
+          "BLK-70F40B0CCFC973A7",
+          "BLK-4384E460893C3259"
+        ],
+        "is_uncertain": true,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "系统升级时可能需要导入升级包文件对应的公钥（.pem格式）以完成数字签名校验。",
+        "block_ids": [
+          "BLK-F9A4F9723511D487",
+          "BLK-14719D4D62193798"
+        ],
+        "is_uncertain": true,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-013",
+        "statement": "管理员可通过Web界面分配用户登录证书。",
+        "block_ids": [
+          "BLK-9E90596A86CAF9FA",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-014",
+        "statement": "新增Web用户时，用户名需由2–16位字母、数字组成，且必须以字母开头。",
+        "block_ids": [
+          "BLK-81634645B7FDAF2B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-015",
+        "statement": "管理员可启用开发者调试开关。",
+        "block_ids": [
+          "BLK-9E90596A86CAF9FA",
+          "BLK-55CFEFE65B8FCCB4",
+          "BLK-17E66B8FE1AEAB17"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-016",
+        "statement": "管理员可设置账户保护和会话安全参数。",
+        "block_ids": [
+          "BLK-17E66B8FE1AEAB17"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-017",
+        "statement": "Web用户登录时若出现其他用户登录提示语，需先退出其他用户登录。",
+        "block_ids": [
+          "BLK-87F9E7FD87F93ED5",
+          "BLK-05304F306447D2C0"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-018",
+        "statement": "Logger5000 Web界面提供‘公钥导入’功能，位于‘系统 > 系统维护’菜单下。",
+        "block_ids": [
+          "BLK-5B4421727B6BF311",
+          "BLK-25EC72F7D907113E",
+          "BLK-35A4A8029CBCFB09"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-019",
+        "statement": "设备标识（SN）用于生成Web用户默认密码及操作系统root账号动态密码。",
+        "block_ids": [
+          "BLK-9E90596A86CAF9FA",
+          "BLK-2663D9583766CD4D",
+          "BLK-B69166A4A2ED2877"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-020",
+        "statement": "重置管理员密码需提供校验码与设备SN号。",
+        "block_ids": [
+          "BLK-70F40B0CCFC973A7"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-021",
+        "statement": "Web用户权限划分明确：普通用户仅具监控与简单设置权限；运维用户覆盖手册默认所有操作；审计用户可审计全部操作日志与Syslog日志；管理员可增删改用户、会话管理、分配证书等；开发者用户经授权后可执行复杂故障定位与排除。",
+        "block_ids": [
+          "BLK-4417EC6A57B44907",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-022",
+        "statement": "管理员账号具有清空用户、分配用户登录证书、会话管理等专属权限。",
+        "block_ids": [
+          "BLK-9E90596A86CAF9FA",
+          "BLK-55CFEFE65B8FCCB4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-023",
+        "statement": "Web界面用户管理功能支持修改用户信息、重置密码、删除用户、清空用户等操作。",
+        "block_ids": [
+          "BLK-9E90596A86CAF9FA",
+          "BLK-55CFEFE65B8FCCB4",
+          "BLK-DBF11A90CC31126D",
+          "BLK-BDB4B6FD02F875A2"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "是否存在本地CLI/串口登录的独立账号体系（非Web或OS用户）？",
+      "操作系统用户除root外是否还有其他预置账号（如sg、maintain等）？",
+      "Web用户登录证书的具体格式、算法、有效期、存储位置及分发机制未说明。",
+      "公钥导入所用公钥是否为设备出厂预置、是否支持多公钥、是否绑定特定升级源未说明。",
+      "校验码的生成方式、时效性、传输通道安全性未说明。",
+      "SUNGROW运维的身份认证机制、密钥生成逻辑、响应时效未说明。",
+      "远程维护访问是否依赖云平台、第三方服务或专用通道未说明。",
+      "是否存在外部目录账号（如LDAP/AD）集成能力？证据未提及。",
+      "是否存在协议密钥（如TLS PSK、GOOSE/MMS密钥）？证据未提及。",
+      "是否存在软件验签公钥（除升级公钥外）？证据未提及。"
+    ],
+    "contradictions": []
+  },
+  "error_type": "ValidationError",
+  "error": "1 validation error for FieldExtractionResult\nfacts.9.block_ids\n  List should have at most 4 items after validation, not 5 [type=too_long, input_value=['BLK-61275F681ECF4D1E', ... 'BLK-790542F3B5C438EC'], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.13/v/too_long",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Coding\\Risk_Report_Agent\\core\\structured_extraction.py\", line 118, in extract_with_retry\n    validated = schema_class.model_validate(parsed_data)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\miniconda\\envs\\RiskAnalysis\\Lib\\site-packages\\pydantic\\main.py\", line 732, in model_validate\n    return cls.__pydantic_validator__.validate_python(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\npydantic_core._pydantic_core.ValidationError: 1 validation error for FieldExtractionResult\nfacts.9.block_ids\n  List should have at most 4 items after validation, not 5 [type=too_long, input_value=['BLK-61275F681ECF4D1E', ... 'BLK-790542F3B5C438EC'], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.13/v/too_long\n",
+  "validation_errors": [
+    {
+      "type": "too_long",
+      "loc": [
+        "facts",
+        9,
+        "block_ids"
+      ],
+      "msg": "List should have at most 4 items after validation, not 5",
+      "input": [
+        "BLK-61275F681ECF4D1E",
+        "BLK-4426BD4984D9B293",
+        "BLK-929758496B500C47",
+        "BLK-E1BD1B41E544127F",
+        "BLK-790542F3B5C438EC"
+      ]
+    }
+  ],
+  "elapsed_seconds": 58.879,
+  "finished_at": "2026-10-09T02:36:20.483948+00:00"
+}

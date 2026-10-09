@@ -1,0 +1,398 @@
+{
+  "schema_version": "field_fact_checkpoint.v3",
+  "node_id": "node_1",
+  "field_id": "rdps_dependencies",
+  "index_id": "IDX-3B116ADDF3BB03CC",
+  "packet_sha256": "6323bac758a3667d94eb2ce3f867e9a4d015e4492eb85d658d816603a9ef21fb",
+  "retrieval_profile_version": "1.7",
+  "field_fact_prompt_version": "2.5",
+  "cache_inputs": {
+    "node_id": "node_1",
+    "field_id": "rdps_dependencies",
+    "source_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "retrieval_packet_sha256": "6323bac758a3667d94eb2ce3f867e9a4d015e4492eb85d658d816603a9ef21fb",
+    "rag_index_id": "IDX-3B116ADDF3BB03CC",
+    "text_model": "qwen-plus",
+    "retrieval_profile_sha256": "34d0f4f2159041c1059706129a3013fdcc4c378ae3b974efd19b16ca479be8c6",
+    "field_prompt_sha256": "6af64cc12535269fc857e240e4c2503110de91877a205dd851581162366ae4f8",
+    "field_schema_sha256": "ed90c5e5dd8c6ce7d12137a9c676a05fd7bec8351cd949ea5d5c818642b642f1"
+  },
+  "cache_fingerprint": "65963cdc52ab95f07d530e27478c0ef15f8cb69a9dbc57c9d609b6afe271ae33",
+  "result": {
+    "node_id": "node_1",
+    "field_id": "rdps_dependencies",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "能量管理单元（EMU300A）可以直接通过路由器与阳光云连接。",
+        "block_ids": [
+          "BLK-1317C7BFFF509A67"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "数据采集器将数据转发至阳光云平台的功能默认不可用。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF",
+          "BLK-ABD8EE23CFEA3B93",
+          "BLK-AD1E6A7FA18DAC21"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "启用数据采集器向阳光云平台转发数据的功能前，客户需在充分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF",
+          "BLK-ABD8EE23CFEA3B93",
+          "BLK-AD1E6A7FA18DAC21"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "远程访问（含阳光云通信通道）仅在获得客户授权后方可生效，且相关操作受系统访问控制策略管理。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF",
+          "BLK-ABD8EE23CFEA3B93",
+          "BLK-AD1E6A7FA18DAC21"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "数据采集器具备将收集到的数据转发至综自系统、站控系统或阳光云平台的功能。",
+        "block_ids": [
+          "BLK-8CF56F6958CD33E1"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "阳光云平台在北美区域禁止使用。",
+        "block_ids": [
+          "BLK-536C2D01D46C74B8"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "阳光云服务配置中，中国大陆地区默认接入“中国站”，欧洲地区接入“欧洲站”，澳洲地区接入“澳洲站”，其他地区接入“国际站”。",
+        "block_ids": [
+          "BLK-89A6CAB539794403"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "转发三方云服务功能默认关闭。",
+        "block_ids": [
+          "BLK-AD1E6A7FA18DAC21"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "启用转发三方云功能前，客户需在充分知情的前提下使用管理员账号进行手动授权，并通过安全加密认证接入公共网络。",
+        "block_ids": [
+          "BLK-AD1E6A7FA18DAC21"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "转发三方云功能仅在获得管理员账号授权后方可生效，且相关操作受系统访问控制策略管理。",
+        "block_ids": [
+          "BLK-AD1E6A7FA18DAC21"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "云服务与外网有数据交互，需确认设备网络环境安全后再开启。",
+        "block_ids": [
+          "BLK-AD1E6A7FA18DAC21",
+          "BLK-89A6CAB539794403"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "时钟源设置为“阳光云”的对时方式，前提是数据采集器与阳光云平台连接；否则该对时方式无效。",
+        "block_ids": [
+          "BLK-89A6CAB539794403"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "阳光云平台的运营方是否为产品制造商（阳光）自身，还是第三方云服务商？",
+      "‘安全加密认证’所指的具体协议、算法或认证机制（如TLS版本、证书颁发机构、双向认证要求）未说明。",
+      "‘系统访问控制策略’的具体实现方式（如RBAC模型、策略存储位置、是否支持外部身份提供者）未说明。",
+      "‘路由器白名单设置’的具体参数、IP范围、端口或域名规则未说明。",
+      "‘三方云服务’是否包含特定已认证平台列表（如AWS IoT Core、Azure IoT Hub），或完全由用户自定义FTP/HTTP端点？",
+      "‘降级模式’是否存在（例如：当阳光云不可达时是否缓存数据并重传？是否切换至本地存储或备用云？），证据中未提及。",
+      "远程数据处理（RDPS）功能是否为产品出厂标配，抑或取决于合同/BOM/现场配置？证据仅说明‘默认不可用’，但未明确其交付状态。"
+    ],
+    "contradictions": []
+  },
+  "retrieval_trace": {
+    "schema_version": "1.0",
+    "request": {
+      "project_id": "yangguang_emu",
+      "node_id": "node_1",
+      "field_id": "rdps_dependencies",
+      "query": null,
+      "filters": {
+        "document_ids": [],
+        "section_path_terms": [],
+        "block_types": [],
+        "exclude_review_required": false
+      },
+      "token_budget": 12000,
+      "max_blocks": 24,
+      "neighbor_window": 1
+    },
+    "effective_query": "云服务 远程数据处理 外部平台 远程连接 身份认证 数据交换 降级模式 可用性",
+    "index_id": "IDX-3B116ADDF3BB03CC",
+    "scope_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "packet_id": "rag_yangguang_emu_node_1_rdps_dependencies_b938abd55b48",
+    "packet_sha256": "6323bac758a3667d94eb2ce3f867e9a4d015e4492eb85d658d816603a9ef21fb",
+    "candidate_count": 1041,
+    "selected_count": 24,
+    "selected_token_count": 2725,
+    "truncated_by_budget": false,
+    "truncated_by_max_blocks": true,
+    "hits": [
+      {
+        "block_id": "BLK-EBE329C3EFA80ACF",
+        "document_id": "DOC-5067B181346D",
+        "rank": 1,
+        "score": 0.483251953125,
+        "estimated_tokens": 145,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-1317C7BFFF509A67",
+        "document_id": "DOC-5067B181346D",
+        "rank": 2,
+        "score": 0.483251953125,
+        "estimated_tokens": 66,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-EBE329C3EFA80ACF"
+      },
+      {
+        "block_id": "BLK-C125441858A9A758",
+        "document_id": "DOC-5067B181346D",
+        "rank": 3,
+        "score": 0.483251953125,
+        "estimated_tokens": 47,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-EBE329C3EFA80ACF"
+      },
+      {
+        "block_id": "BLK-AD1E6A7FA18DAC21",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 4,
+        "score": 0.48062391281127936,
+        "estimated_tokens": 232,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-0F6F7B781E8A2D1C",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 5,
+        "score": 0.48062391281127936,
+        "estimated_tokens": 136,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-AD1E6A7FA18DAC21"
+      },
+      {
+        "block_id": "BLK-F6A17CB61436E6E2",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 6,
+        "score": 0.48062391281127936,
+        "estimated_tokens": 150,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-AD1E6A7FA18DAC21"
+      },
+      {
+        "block_id": "BLK-7CA94C17A4F80A13",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 7,
+        "score": 0.4574630737304688,
+        "estimated_tokens": 127,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-0F6F7B781E8A2D1C"
+      },
+      {
+        "block_id": "BLK-32D86711ED1302DA",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 8,
+        "score": 0.4488610744476319,
+        "estimated_tokens": 117,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-09BB4F761E6C697C",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 9,
+        "score": 0.4488610744476319,
+        "estimated_tokens": 111,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-32D86711ED1302DA"
+      },
+      {
+        "block_id": "BLK-D29A82FAFD09D484",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 10,
+        "score": 0.4488610744476319,
+        "estimated_tokens": 90,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-32D86711ED1302DA"
+      },
+      {
+        "block_id": "BLK-ABD8EE23CFEA3B93",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 11,
+        "score": 0.4430257797241211,
+        "estimated_tokens": 177,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-8CF56F6958CD33E1",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 12,
+        "score": 0.4430257797241211,
+        "estimated_tokens": 114,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-ABD8EE23CFEA3B93"
+      },
+      {
+        "block_id": "BLK-536C2D01D46C74B8",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 13,
+        "score": 0.4430257797241211,
+        "estimated_tokens": 99,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-ABD8EE23CFEA3B93"
+      },
+      {
+        "block_id": "BLK-0EE002454BC28BB1",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 14,
+        "score": 0.4382395744323731,
+        "estimated_tokens": 122,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-F6A17CB61436E6E2"
+      },
+      {
+        "block_id": "BLK-8C65146392F8991F",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 15,
+        "score": 0.432774019241333,
+        "estimated_tokens": 143,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-84E2F121165CC7A2",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 16,
+        "score": 0.432774019241333,
+        "estimated_tokens": 125,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-8C65146392F8991F"
+      },
+      {
+        "block_id": "BLK-89A6CAB539794403",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 17,
+        "score": 0.4318485260009766,
+        "estimated_tokens": 631,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-BE153AA192B48930",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 18,
+        "score": 0.4318485260009766,
+        "estimated_tokens": 118,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-89A6CAB539794403"
+      },
+      {
+        "block_id": "BLK-246DEBE9E6F8F66F",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 19,
+        "score": 0.43019013404846196,
+        "estimated_tokens": 156,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-95BE5E587B8C4342",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 20,
+        "score": 0.43019013404846196,
+        "estimated_tokens": 127,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-246DEBE9E6F8F66F"
+      },
+      {
+        "block_id": "BLK-EE7C24440CF96358",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 21,
+        "score": 0.43019013404846196,
+        "estimated_tokens": 123,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-246DEBE9E6F8F66F"
+      },
+      {
+        "block_id": "BLK-0008A4A10DC846AD",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 22,
+        "score": 0.4255748748779297,
+        "estimated_tokens": 119,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-0EE002454BC28BB1"
+      },
+      {
+        "block_id": "BLK-58F020AE67A34D0C",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 23,
+        "score": 0.42225058078765876,
+        "estimated_tokens": 112,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-BC550FAF2948123A",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 24,
+        "score": 0.42225058078765876,
+        "estimated_tokens": 161,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-58F020AE67A34D0C"
+      }
+    ]
+  }
+}

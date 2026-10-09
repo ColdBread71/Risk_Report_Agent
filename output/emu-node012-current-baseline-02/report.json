@@ -1,0 +1,40 @@
+{
+  "schema_version": "workflow_progress.v2",
+  "run_id": "emu-node012-current-baseline-02",
+  "saved_at": "2026-10-09T01:58:11.279614+00:00",
+  "completed_node": "define_scope",
+  "state": {
+    "evidence_packet_ref": {
+      "packet_id": "yangguang_emu_node_0_3",
+      "packet_version": 2,
+      "project_id": "yangguang_emu",
+      "packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+      "manifest_sha256": "3dcf5b466628209d69b62ee49402b9d05a6918db76e8288042818407e06857a2",
+      "config_sha256": "7189e425f0fad61ddcac685105c87c07aba1825821c4bb3e755a07d39e71335a",
+      "parser_name": "pymupdf-page-section-parser",
+      "parser_version": "1.5.0",
+      "document_ids": [
+        "DOC-5067B181346D",
+        "DOC-DF116E7199E2",
+        "DOC-D9C0DEB31D45"
+      ],
+      "block_count": 1041
+    },
+    "scope": null,
+    "product_context": null,
+    "risk_methodology": null,
+    "risk_acceptance_criteria": null,
+    "assets": [],
+    "asset_assessment": null,
+    "asset_notes": null,
+    "asset_review_approved": false,
+    "asset_review_notes": null,
+    "threat_assessment": null,
+    "errors": [
+      "Node [0] scope extraction failed: Extraction failed after 2 attempts. Task: node_0/scope_boundary/f9e40ac2; diagnostics: D:\\Coding\\Risk_Report_Agent\\output\\emu-node012-current-baseline-02\\diagnostics\\f9e40ac28f374e838b4f1f01a1017b37. Last error: 1 validation error for FieldExtractionResult\n  Value error, FACT-001: attributes are not allowed for scope_boundary: ['activation_status', 'authentication', 'business_data_direction', 'component_name', 'component_type', 'conditions', 'data_exchanged', 'destination', 'direction_basis', 'encryption', 'interface', 'port', 'protocol', 'scope_status', 'source'] [type=value_error, input_value={'node_id': 'node_0', 'fi...], 'contradictions': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error"
+    ],
+    "current_step": "node_0_scope",
+    "status": "node_0_failed"
+  },
+  "evidence_trace": []
+}

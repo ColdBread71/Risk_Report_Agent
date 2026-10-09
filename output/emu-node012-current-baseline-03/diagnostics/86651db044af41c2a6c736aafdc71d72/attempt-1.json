@@ -1,0 +1,743 @@
+{
+  "run_id": "emu-node012-current-baseline-03",
+  "node": "build_product_context",
+  "task": "node_1/security_functions",
+  "call_id": "86651db044af41c2a6c736aafdc71d72",
+  "schema": "FieldExtractionResult",
+  "model": "qwen-plus",
+  "attempt": 1,
+  "started_at": "2026-10-09T02:21:14.582854+00:00",
+  "status": "succeeded",
+  "phase": "complete",
+  "prompt": "你正在为 CRA / prEN 40000 TARA 工作流的 node_1/security_functions 提取原子事实。\n\n【任务边界】\n1. 只记录输入证据逐字支持的事实，不生成最终 Scope、ProductContext、资产、威胁、风险或控制。\n2. 每条 fact 只表达一个事实，并列出直接支持它的真实 block_id。block_id 所在文本必须直接支持该事实，不得引用相邻章节标题代替正文或表格。最多输出 24 条事实；证据未说明的必要信息写入 unknowns。\n3. 不得创建输入中不存在的 block_id，不得根据行业惯例补全未知信息。\n4. 原子事实必须保留证据中的限定词，包括“选配、可选、适用于、若启用、取决于合同/BOM/现场配置”。不得把产品能力改写成客户已装机或已启用状态。\n5. 安全配置教程或操作步骤只证明该对象或能力被手册覆盖，不单独证明它是标准内置组件、实际交付配置或当前已启用功能。\n6. 对云平台、远程升级、数据上传等事实，只记录证据明确说明的能力、运营方和依赖；不得自行判定 CRA RDPS。缺少“远程方案是否为产品功能所必需”等信息时写入 unknowns。\n7. 证据含糊、可选或依赖合同配置时设置 is_uncertain=true，并在 unknowns 中记录待确认项。\n8. 若不同证据存在冲突，分别保留事实并在 contradictions 中说明。\n9. 除产品名、型号、协议、法规/标准编号和其他专有名词外，fact、unknowns 和 contradictions 使用简体中文；不得翻译或改写证据中的专有标识。\n10. attributes 只用于本字段整理要求明确列出的结构化值，且必须由该fact的同一组block_ids直接支持；其他字段保持空对象。未知值使用null或规定的unknown，不得推断。\n\n【本字段整理要求】\n按安全登录、用户或密码、权限、协议配置、证书或密钥、安全启动、安全存储、安全通信、安全时间同步、日志、恢复和安全更新等独立能力逐条提取；严格区分功能存在、默认状态、可选配置和仅供用户参考的部署建议。每条功能事实必须引用包含功能名称或说明的正文或表格block，禁止引用章节标题或页眉；更新、恢复出厂和日志功能不得补写原文未说明的校验、回滚、清除范围或事件类型。\n\n【目标 JSON Schema】\n{\n  \"$defs\": {\n    \"FactAttributes\": {\n      \"additionalProperties\": false,\n      \"description\": \"One source for the model-facing attribute schema and runtime validation.\",\n      \"properties\": {},\n      \"title\": \"FactAttributes\",\n      \"type\": \"object\"\n    },\n    \"RetrievedFact\": {\n      \"additionalProperties\": false,\n      \"description\": \"One atomic fact extracted from a field-specific evidence packet.\",\n      \"properties\": {\n        \"fact_id\": {\n          \"pattern\": \"^FACT-[0-9]{3,}$\",\n          \"title\": \"Fact Id\",\n          \"type\": \"string\"\n        },\n        \"statement\": {\n          \"maxLength\": 1000,\n          \"minLength\": 1,\n          \"title\": \"Statement\",\n          \"type\": \"string\"\n        },\n        \"block_ids\": {\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"maxItems\": 4,\n          \"minItems\": 1,\n          \"title\": \"Block Ids\",\n          \"type\": \"array\"\n        },\n        \"is_uncertain\": {\n          \"default\": false,\n          \"title\": \"Is Uncertain\",\n          \"type\": \"boolean\"\n        },\n        \"attributes\": {\n          \"$ref\": \"#/$defs/FactAttributes\",\n          \"description\": \"Optional field-specific values copied from the same evidence. Only communications and components use the reviewed keys validated by FieldExtractionResult.\",\n          \"title\": \"Attributes\"\n        }\n      },\n      \"required\": [\n        \"fact_id\",\n        \"statement\",\n        \"block_ids\"\n      ],\n      \"title\": \"RetrievedFact\",\n      \"type\": \"object\"\n    }\n  },\n  \"additionalProperties\": false,\n  \"description\": \"Compact persisted candidate facts for one Node/field slice.\",\n  \"properties\": {\n    \"node_id\": {\n      \"type\": \"string\",\n      \"const\": \"node_1\"\n    },\n    \"field_id\": {\n      \"type\": \"string\",\n      \"const\": \"security_functions\"\n    },\n    \"facts\": {\n      \"items\": {\n        \"$ref\": \"#/$defs/RetrievedFact\"\n      },\n      \"maxItems\": 24,\n      \"title\": \"Facts\",\n      \"type\": \"array\"\n    },\n    \"unknowns\": {\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"maxItems\": 10,\n      \"title\": \"Unknowns\",\n      \"type\": \"array\"\n    },\n    \"contradictions\": {\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"maxItems\": 10,\n      \"title\": \"Contradictions\",\n      \"type\": \"array\"\n    }\n  },\n  \"required\": [\n    \"node_id\",\n    \"field_id\"\n  ],\n  \"title\": \"FieldExtractionResult\",\n  \"type\": \"object\"\n}\n\n【输出要求】\n- node_id 和 field_id 必须与任务完全一致。\n- fact_id 使用 FACT-001、FACT-002 等批内唯一编号。\n- 严格输出单个 JSON 对象，不输出 Markdown 或解释。\n\n【字段任务与检索证据】\n{\n  \"node_id\": \"node_1\",\n  \"field_id\": \"security_functions\",\n  \"retrieval_intent\": \"认证 授权 访问控制 加密 证书 密钥 安全启动 安全升级 日志 审计 完整性\",\n  \"evidence\": \"[PACKET rag_yangguang_emu_node_1_security_functions_9554f14c8fc9 v1]\\nProject: yangguang_emu\\nUse only this evidence. Preserve unknowns and copy citation anchors exactly.\\n\\n[KNOWN GAPS]\\n- GAP-LOGGER4000-SCOPE: A Logger4000 manual is present, but the EMU300A product and cybersecurity manuals identify Logger5000 as the standard internal collector; Logger4000 is excluded until the delivered configuration is confirmed. Disposition: Treat Logger4000 applicability as a customer/configuration question; do not infer its assets or threats in the baseline run.\\n- GAP-DIAGRAM-SEMANTICS: Native text and figure captions are retained, but topology diagrams have not been manually transcribed into graph relationships. Disposition: Review missing topology only if the first evaluation shows unsupported or absent communication paths.\\n- GAP-MIXED-PAGE-BLOCK: Logger5000 PDF page 82 merges the end of GOOSE, MMS forwarding, and the start of port parameters into one native PDF text block; its file/page/block anchor is exact but its single assigned section path is broader than the mixed content. Disposition: Require quote plus physical-page/block citation for this block; do not treat its section path alone as proof. Revisit parser splitting only if this locator affects evaluation.\\n- GAP-CONTRACT-VARIANTS: The manuals describe optional and contract-dependent functions; the exact customer-enabled feature set is not independently confirmed. Disposition: Preserve uncertainty and produce customer questions instead of asserting optional functions as deployed facts.\\n- GAP-LEGAL-BASIS: Product manuals establish product facts but are not authoritative CRA or prEN 40000 legal sources. Disposition: Use the controlled legal/rule layer for legal conclusions; never fabricate legal support from this packet.\\n\\n[DOCUMENT DOC-5067B181346D]\\nfile_name: EMU300A-UCN-Ver11-202603.pdf\\nfile_path: legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf\\nfile_type: pdf\\nsource_sha256: 985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e\\nparser_version: 1.5.0\\n\\n[LOCATION page=16; printed_page=10; section=2 产品介绍 > 2.2 主要特点]\\n[BLK-1317C7BFFF509A67] 能量管理单元可以直接通过路由器与阳光云连接，如下图所示。\\n[BLK-EBE329C3EFA80ACF] 数据采集器将数据转发至阳光云平台的功能默认不可用。启用该功能前，客户需在充\\n分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获\\n得客户授权后方可生效，且相关操作受系统访问控制策略管理。\\n[BLK-C125441858A9A758] 2.2 主要特点\\n\\n[DOCUMENT DOC-DF116E7199E2]\\nfile_name: EMU300A网络安全操作手册-UCN-Ver11-202607.pdf\\nfile_path: legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf\\nfile_type: pdf\\nsource_sha256: e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc\\nparser_version: 1.5.0\\n\\n[LOCATION page=8; printed_page=4; section=3 工业网络安全 > 3.1 工业网络安全简介]\\n[BLK-D29A82FAFD09D484] •\\n保密性： 防止敏感数据、配置信息和网络资源等遭到非法访问、窃取或泄露。\\n[BLK-14EB48F1B4784375] •\\n完整性： 防止数据和应用程序遭到未授权的篡改、破坏或蓄意操纵，确保其准确性和可\\n靠性。\\n\\n[LOCATION page=9; printed_page=5; section=4 纵深防御战略]\\n[BLK-2A7C2336246FFBF3] 4\\n纵深防御战略\\n[BLK-063FA03B0275437B] 在\\n据\\n意\\n关\\n产\\n•\\n•\\n•\\n•\\n•\\n•\\n介\\tIT 和控制系统中使用具\\n保护方面的不足，减少\\n用户越难破坏防御，获\\n问题及解决策略。\\n胁模型\\n品已经通过安全设计在\\n环境层面：为用户以及\\n件设备固定、周界防范\\n环境纵深防御说明章节\\n物理层面：产品提供坚\\n操作系统层面：经过加\\n配置、应用操作系统漏\\n份机制、可靠的日志系\\n系统组件层面：遵循安\\n数据存储层面：基于访\\n数据传输层面：基于广\\n全相关功能及使用\\n绍以下安全相关功能和\\t有多种安全和防御控制措施的分层网络\\n单点故障，并形成强大的网络安全态势\\n取数字资产或造成中断。本章详细介绍\\n不同层面对系统的可攻击面进行了最小\\n工程实施人员提供了安全安装的建议，\\n措施、安全可靠的网络空间、安全可靠\\n。\\n固封闭的外壳，并配备防拆标签帮助用\\n固的操作系统，包括但不限于遵操作系\\n洞补丁、防火墙与网络配置建议、基于\\n统等。\\n全的开发流程、完善的安全测试等。\\n问控制列表的数据，符合最小特权原则\\n泛证明安全的数据加密传输协议。\\n说明\\n使用程序的说明和建议：\\t方法，以最大限度地弥补数\\n。网络中的安全层越多，恶\\nEMU300A 纵深防御策略相\\n化，包括但不限于：\\n包括但不限于牢固可靠的\\n的电源供应等，请参考部\\n户识别产品完整性。\\n统最佳实践对操作系统进\\n用户组的访问控制、系统\\n设计的数据访问策略。\\n\\t安全功能\\t说明\\t安全建议\\n\\t安全登录\\t支持登录失败锁定防暴力破解，支\\n持登录日志记录，首次登陆强制修\\n改密码\\t定期修改密码\\n\\t用户及密码管理\\t用户增删改功能以及密码安全策略\\n配置\\t建议所需启用最小数量用\\n户，并合理配置密码安全\\n\\t协议配置\\t北向MODBUS/IEC104/GOOSE\\n等协议配置管理\\t建议按需启用，最小化启\\n用\\n\\t证书管理\\t支持PKI 颁发的证书管理\\t建议定期更新证书\\n[BLK-864B9073B04B55EA] 安全启动\\n建立启动链可信验证，阻断非签名\\n或篡改后的软件加载执行\\n默认开启\\n\\n[LOCATION page=10; printed_page=6; section=4 纵深防御战略 > 4.4 用户的缓解措施]\\n[BLK-26A4B8B218CB053B] 用户网络安全操作手册\\n4 纵深防御战略\\n[BLK-A31FF599B1E26CE2] 安全功能\\t\\t说明\\t安全建议\\n\\t\\t安全\\t通信\\tHTTPS/北向IEC104/MODBUS/等\\n协议TLS 加密通信\\t建议采用TLS 加密通信\\n\\t\\t安全\\t对时\\t支持NTS 对时\\t建议采用NTS 对时，以\\n及定期更新证书\\n\\t\\t恢复\\t出厂配置\\t恢复出厂设置功能，删除设备数据\\t建议谨慎操作\\n\\t\\t安全\\t回溯\\t操作日志、syslog 记录功能\\t建议定期分析安全日志\\n\\t\\t安全\\t更新\\t软件和固件更新\\t建议关注产品相关安全公\\n告，及时升级到最新版本\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t上述安全功能作为\\n多层次多维度的对\\n储的私密性、可用\\n能验证的需求，可\\t一个整体，从物理环境、计算机操作系\\nEMU300A 及其毗邻的智能配电系统提\\n性、完整性和用户操作与访问的可审计\\n能需要对恶意软件保护功能进行验证。\\t统、EMU300A 系统组件等\\n供保护，保证信息通讯和存\\n性。出于对恶意软件保护功\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t警告\\t\\t\\n\\t•\\n•\\n•\\t可能\\n请\\n请\\n请\\n不遵\\t损害系统可用性、完\\n勿使用真实的恶意\\n勿从不可信任的来\\n勿在生产系统进行\\n循这些说明可能会导\\t整性和保密性\\n软件进行恶意软件保护功能测试。\\n源下载任何反病毒测试文件。\\n恶意软件保护功能测试。\\n致设备损坏、敏感数据泄露或数据永久\\t丢失。\\n\\n[LOCATION page=16; printed_page=12; section=7 用户列表]\\n[BLK-4417EC6A57B44907] 表 7-1 1. Web 用户\\n[BLK-9E90596A86CAF9FA] 用户类型\\t用户名\\t\\t操作权限\\n普通用户\\tuser\\t\\t只有系统的监控权限和简单的设置权\\n限。如概览、设备监控和部分历史数据\\n的查看。\\n运维用户\\tmaintain\\t\\t本手册默认描述的所有操作。\\n审计用户\\tauditor\\t\\t对所有用户的操作日志，Syslog 日志进\\n行审计。\\n管理员\\tadministr\\tator\\t增加用户、删除用户、修改用户、清空\\n用户、会话管理、开发者调试开关、分\\n配用户登录证书。\\n开发者用户\\tdevelop\\t\\t经管理员授权后可执行设备复杂故障的\\n定位和排除。\\n• 普通用户、运维用\\n（SN）”拼接而成\\n应的默认密码为“\\n• 开发者用户的密码\\n动态密码。\\n7-2 2. 操作系统用户\\t\\t\\t\\n\\t户、审计\\n。例如，\\nuserSN12\\n采用动态\\t用户、管理\\n若设备SN 为\\n345678”。\\n生成机制，\\t员的密码由“用户名”与“设备序列号\\n“SN12345678”，用户名为“user”，则对\\n通过客户授权获得设备SN，生成对应的\\n\\t\\t\\t\\n用户名\\t\\t默认密码\\t\\nroot\\t\\t根据客户授权\\t获取SN 生成动态密码。\\n[BLK-B69166A4A2ED2877] sg\\n根据客户授权获取SN 生成动态密码。\\n\\n[LOCATION page=21; printed_page=17; section=10 安全配置指南 > 10.2 安全启动]\\n[BLK-FED60E901705B998] 10.2 安全启动\\n[BLK-11E7630FDD454CE8] 安全启动（Secure Boot）是一种基于逐级验证的启动链可信加载技术，用于确保系统固件与\\n操作系统镜像的完整性与合法性，防止其被非法篡改或替换。\\n[BLK-56710D21D4166A27] 在本产品中，安全启动功能默认处于启用状态。若启动过程中未严格执行安全启动验证流\\n程，则存储在 eMMC 中的系统镜像可能面临被恶意攻击者替换的风险。一旦内核等关键镜像\\n被篡改，系统将加载并运行被控制的恶意固件，导致设备完全由攻击者掌控。在此情况下，\\n所有构建于操作系统之上的安全机制（如权限控制、加密存储、安全服务等）将失去保护作\\n用，整个系统的安全性将彻底失效。\\n[BLK-696CBA8087AAE64A] 本节所述安全启动仅针对数采。\\n\\n[LOCATION page=23; printed_page=19; section=10 安全配置指南 > 10.4 证书管理和维护 > 10.4.2 证书安全维护]\\n[BLK-76BE0FA03440A031] 通过系统 > 证书管理 > 采集/转发/NTS 对时证书，支持导入证书。\\n[BLK-36828A2B13F690DE] •\\n设备出厂自带默认PKI 颁发的证书，建议导入客户的签名证书。\\n[BLK-1294EA0594DF6992] •\\n若使用NTS 功能，客户需导入NTS 服务器证书。NTS 证书从NTS 服务器获\\n取，支持PEM 格式的X.509 证书导入。\\n\\n[LOCATION page=25; printed_page=21; section=10 安全配置指南 > 10.4 证书管理和维护 > 10.4.2 证书安全维护]\\n[BLK-F4E0959DF348FA62] 导入NTS 对时主服务器证书\\n[BLK-A3DAA53B0237ECF1] 在证书管理页面，点击 NTS 对时证书。\\n[BLK-3B2620DA6A239CAF] 在主备服务器页面，点击证书导入，导入NTS 服务器证书。\\n[BLK-E1B7E29269EA92E3] 证书过期管理\\n[BLK-0C005846289156C7] 用户登录成功后，对于证书即将过期或已过期，系统将提示，并将结果记录至 syslog 日志。\\n[BLK-731B6EE8DB6B37A6] 当证书距离过期时间不足90 天时，系统触发“即将过期”告警。\\n\\n[LOCATION page=26; printed_page=22; section=10 安全配置指南 > 10.7 系统还原]\\n[BLK-562EB901BC002DDD] 防重放功能：在系统 > 转发配置页面，点击goose，勾选防重放开关。用户可根据需要，自\\n行设置检测时间参数。\\n[BLK-90A3EAF30CD1A413] 密钥更新：在系统 > 证书管理页面，点击goose 密钥，选择密钥导入，上传密钥文件即可完\\n成更新。\\n\\n[LOCATION page=26; printed_page=22; section=10 安全配置指南 > 10.5 安全存储]\\n[BLK-17F69D2508F510DB] 10.5 安全存储\\n[BLK-402F20D08666D8CF] Logger5000 依托于芯片TrustZone 及OP-TEE 安全OS，对上层应用提供一套在安全环境下\\n执行的加解密及存储数据接口，主要功能实现基于客户端应用（CA）对安全应用（TA）调\\n用，实现安全环境下敏感数据进行加密存储，解密使用，包括用户密码，终端证书对应的私\\n钥等数据。\\n\\n[DOCUMENT DOC-D9C0DEB31D45]\\nfile_name: logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf\\nfile_path: legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf\\nfile_type: pdf\\nsource_sha256: bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d\\nparser_version: 1.5.0\\n\\n[LOCATION page=13; printed_page=3; section=2 产品描述 > 2.1 功能描述]\\n[BLK-8CF56F6958CD33E1] 数据采集器具备将收集到的数据转发综自系统、站控系统或阳光云平台的功能。\\n[BLK-ABD8EE23CFEA3B93] •\\n数据采集器的数据转发功能默认不可用。启用该功能前，客户需在充分知情的前\\n提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获得客户\\n授权后方可生效，且相关操作受系统访问控制策略管理。\\n[BLK-536C2D01D46C74B8] •\\n阳光云平台在北美区域禁止使用。\\n\\n[LOCATION page=74; printed_page=64; section=7 Web界面 > 7.10 系统 > 7.10.3 远程维护]\\n[BLK-3DF4FC14838A12B6] 7.10.3 远程维护\\n[BLK-E8D208159F329BFA] 远程维护功能默认关闭。启用该功能前，客户需在充分知情的前提下使用\\nadministrator 账号进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在\\n获得administrator 账号授权后方可生效，且相关操作受系统访问控制策略管理。\\n[BLK-F3444968819BD4B6] 步骤 1 单击系统 > 远程维护，进入界面。\\n\"\n}",
+  "estimated_input_tokens": 6413,
+  "raw_response": "{\n  \"node_id\": \"node_1\",\n  \"field_id\": \"security_functions\",\n  \"facts\": [\n    {\n      \"fact_id\": \"FACT-001\",\n      \"statement\": \"支持登录失败锁定以防止暴力破解。\",\n      \"block_ids\": [\"BLK-063FA03B0275437B\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-002\",\n      \"statement\": \"支持登录日志记录。\",\n      \"block_ids\": [\"BLK-063FA03B0275437B\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-003\",\n      \"statement\": \"首次登录强制修改密码。\",\n      \"block_ids\": [\"BLK-063FA03B0275437B\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-004\",\n      \"statement\": \"支持用户增删改功能以及密码安全策略配置。\",\n      \"block_ids\": [\"BLK-063FA03B0275437B\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-005\",\n      \"statement\": \"支持北向MODBUS/IEC104/GOOSE等协议配置管理。\",\n      \"block_ids\": [\"BLK-063FA03B0275437B\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-006\",\n      \"statement\": \"支持PKI颁发的证书管理。\",\n      \"block_ids\": [\"BLK-063FA03B0275437B\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-007\",\n      \"statement\": \"安全启动功能默认开启。\",\n      \"block_ids\": [\"BLK-864B9073B04B55EA\", \"BLK-56710D21D4166A27\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-008\",\n      \"statement\": \"安全启动仅针对数采。\",\n      \"block_ids\": [\"BLK-696CBA8087AAE64A\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-009\",\n      \"statement\": \"Logger5000依托于芯片TrustZone及OP-TEE安全OS，对上层应用提供在安全环境下执行的加解密及存储数据接口。\",\n      \"block_ids\": [\"BLK-402F20D08666D8CF\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-010\",\n      \"statement\": \"Logger5000在安全环境下实现敏感数据加密存储、解密使用，包括用户密码和终端证书对应的私钥等数据。\",\n      \"block_ids\": [\"BLK-402F20D08666D8CF\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-011\",\n      \"statement\": \"支持HTTPS/北向IEC104/MODBUS等协议TLS加密通信。\",\n      \"block_ids\": [\"BLK-26A4B8B218CB053B\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-012\",\n      \"statement\": \"支持NTS对时。\",\n      \"block_ids\": [\"BLK-26A4B8B218CB053B\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-013\",\n      \"statement\": \"支持恢复出厂设置功能，删除设备数据。\",\n      \"block_ids\": [\"BLK-26A4B8B218CB053B\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-014\",\n      \"statement\": \"支持操作日志、syslog记录功能。\",\n      \"block_ids\": [\"BLK-26A4B8B218CB053B\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-015\",\n      \"statement\": \"支持软件和固件更新。\",\n      \"block_ids\": [\"BLK-26A4B8B218CB053B\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-016\",\n      \"statement\": \"通过系统 > 证书管理 > 采集/转发/NTS对时证书，支持导入证书。\",\n      \"block_ids\": [\"BLK-76BE0FA03440A031\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-017\",\n      \"statement\": \"设备出厂自带默认PKI颁发的证书，建议导入客户的签名证书。\",\n      \"block_ids\": [\"BLK-36828A2B13F690DE\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-018\",\n      \"statement\": \"若使用NTS功能，客户需导入NTS服务器证书；NTS证书从NTS服务器获取，支持PEM格式的X.509证书导入。\",\n      \"block_ids\": [\"BLK-1294EA0594DF6992\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-019\",\n      \"statement\": \"当证书距离过期时间不足90天时，系统触发“即将过期”告警。\",\n      \"block_ids\": [\"BLK-731B6EE8DB6B37A6\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-020\",\n      \"statement\": \"用户登录成功后，对于证书即将过期或已过期，系统将提示，并将结果记录至syslog日志。\",\n      \"block_ids\": [\"BLK-0C005846289156C7\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-021\",\n      \"statement\": \"在系统 > 转发配置页面，点击goose，勾选防重放开关；用户可根据需要自行设置检测时间参数。\",\n      \"block_ids\": [\"BLK-562EB901BC002DDD\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-022\",\n      \"statement\": \"在系统 > 证书管理页面，点击goose密钥，选择密钥导入，上传密钥文件即可完成更新。\",\n      \"block_ids\": [\"BLK-90A3EAF30CD1A413\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-023\",\n      \"statement\": \"远程维护功能默认关闭；启用该功能前，客户需在充分知情的前提下使用administrator账号进行手动授权，并通过安全加密认证接入公共网络；远程访问仅在获得administrator账号授权后方可生效，且相关操作受系统访问控制策略管理。\",\n      \"block_ids\": [\"BLK-E8D208159F329BFA\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-024\",\n      \"statement\": \"数据采集器将数据转发至阳光云平台的功能默认不可用；启用该功能前，客户需在充分知情的前提下进行手动授权，并通过安全加密认证接入公共网络；远程访问仅在获得客户授权后方可生效，且相关操作受系统访问控制策略管理。\",\n      \"block_ids\": [\"BLK-EBE329C3EFA80ACF\", \"BLK-ABD8EE23CFEA3B93\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    }\n  ],\n  \"unknowns\": [\n    \"远程方案是否为产品功能所必需\",\n    \"Logger4000是否实际交付并启用（GAP-LOGGER4000-SCOPE）\",\n    \"客户合同/BOM中是否包含NTS功能启用条款\",\n    \"客户是否已实际导入客户签名证书或NTS服务器证书\",\n    \"防重放功能是否默认启用\",\n    \"密钥更新是否支持自动轮换或仅支持手动上传\",\n    \"安全启动验证链覆盖的具体组件范围（如是否含BootROM、Bootloader、kernel、rootfs）\",\n    \"syslog日志的存储位置、保留周期及传输加密方式\",\n    \"恢复出厂配置是否清除所有安全密钥和证书\",\n    \"安全更新是否支持回滚机制及完整性校验\"\n  ],\n  \"contradictions\": []\n}",
+  "response_metadata": {
+    "finish_reason": "stop",
+    "token_usage": {
+      "completion_tokens": 2136,
+      "prompt_tokens": 5488,
+      "total_tokens": 7624,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "qwen-plus"
+  },
+  "parsed_payload": {
+    "node_id": "node_1",
+    "field_id": "security_functions",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "支持登录失败锁定以防止暴力破解。",
+        "block_ids": [
+          "BLK-063FA03B0275437B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "支持登录日志记录。",
+        "block_ids": [
+          "BLK-063FA03B0275437B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "首次登录强制修改密码。",
+        "block_ids": [
+          "BLK-063FA03B0275437B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "支持用户增删改功能以及密码安全策略配置。",
+        "block_ids": [
+          "BLK-063FA03B0275437B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "支持北向MODBUS/IEC104/GOOSE等协议配置管理。",
+        "block_ids": [
+          "BLK-063FA03B0275437B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "支持PKI颁发的证书管理。",
+        "block_ids": [
+          "BLK-063FA03B0275437B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "安全启动功能默认开启。",
+        "block_ids": [
+          "BLK-864B9073B04B55EA",
+          "BLK-56710D21D4166A27"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "安全启动仅针对数采。",
+        "block_ids": [
+          "BLK-696CBA8087AAE64A"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "Logger5000依托于芯片TrustZone及OP-TEE安全OS，对上层应用提供在安全环境下执行的加解密及存储数据接口。",
+        "block_ids": [
+          "BLK-402F20D08666D8CF"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "Logger5000在安全环境下实现敏感数据加密存储、解密使用，包括用户密码和终端证书对应的私钥等数据。",
+        "block_ids": [
+          "BLK-402F20D08666D8CF"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "支持HTTPS/北向IEC104/MODBUS等协议TLS加密通信。",
+        "block_ids": [
+          "BLK-26A4B8B218CB053B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "支持NTS对时。",
+        "block_ids": [
+          "BLK-26A4B8B218CB053B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-013",
+        "statement": "支持恢复出厂设置功能，删除设备数据。",
+        "block_ids": [
+          "BLK-26A4B8B218CB053B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-014",
+        "statement": "支持操作日志、syslog记录功能。",
+        "block_ids": [
+          "BLK-26A4B8B218CB053B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-015",
+        "statement": "支持软件和固件更新。",
+        "block_ids": [
+          "BLK-26A4B8B218CB053B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-016",
+        "statement": "通过系统 > 证书管理 > 采集/转发/NTS对时证书，支持导入证书。",
+        "block_ids": [
+          "BLK-76BE0FA03440A031"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-017",
+        "statement": "设备出厂自带默认PKI颁发的证书，建议导入客户的签名证书。",
+        "block_ids": [
+          "BLK-36828A2B13F690DE"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-018",
+        "statement": "若使用NTS功能，客户需导入NTS服务器证书；NTS证书从NTS服务器获取，支持PEM格式的X.509证书导入。",
+        "block_ids": [
+          "BLK-1294EA0594DF6992"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-019",
+        "statement": "当证书距离过期时间不足90天时，系统触发“即将过期”告警。",
+        "block_ids": [
+          "BLK-731B6EE8DB6B37A6"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-020",
+        "statement": "用户登录成功后，对于证书即将过期或已过期，系统将提示，并将结果记录至syslog日志。",
+        "block_ids": [
+          "BLK-0C005846289156C7"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-021",
+        "statement": "在系统 > 转发配置页面，点击goose，勾选防重放开关；用户可根据需要自行设置检测时间参数。",
+        "block_ids": [
+          "BLK-562EB901BC002DDD"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-022",
+        "statement": "在系统 > 证书管理页面，点击goose密钥，选择密钥导入，上传密钥文件即可完成更新。",
+        "block_ids": [
+          "BLK-90A3EAF30CD1A413"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-023",
+        "statement": "远程维护功能默认关闭；启用该功能前，客户需在充分知情的前提下使用administrator账号进行手动授权，并通过安全加密认证接入公共网络；远程访问仅在获得administrator账号授权后方可生效，且相关操作受系统访问控制策略管理。",
+        "block_ids": [
+          "BLK-E8D208159F329BFA"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-024",
+        "statement": "数据采集器将数据转发至阳光云平台的功能默认不可用；启用该功能前，客户需在充分知情的前提下进行手动授权，并通过安全加密认证接入公共网络；远程访问仅在获得客户授权后方可生效，且相关操作受系统访问控制策略管理。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF",
+          "BLK-ABD8EE23CFEA3B93"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "远程方案是否为产品功能所必需",
+      "Logger4000是否实际交付并启用（GAP-LOGGER4000-SCOPE）",
+      "客户合同/BOM中是否包含NTS功能启用条款",
+      "客户是否已实际导入客户签名证书或NTS服务器证书",
+      "防重放功能是否默认启用",
+      "密钥更新是否支持自动轮换或仅支持手动上传",
+      "安全启动验证链覆盖的具体组件范围（如是否含BootROM、Bootloader、kernel、rootfs）",
+      "syslog日志的存储位置、保留周期及传输加密方式",
+      "恢复出厂配置是否清除所有安全密钥和证书",
+      "安全更新是否支持回滚机制及完整性校验"
+    ],
+    "contradictions": []
+  },
+  "validation_payload": {
+    "node_id": "node_1",
+    "field_id": "security_functions",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "支持登录失败锁定以防止暴力破解。",
+        "block_ids": [
+          "BLK-063FA03B0275437B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "支持登录日志记录。",
+        "block_ids": [
+          "BLK-063FA03B0275437B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "首次登录强制修改密码。",
+        "block_ids": [
+          "BLK-063FA03B0275437B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "支持用户增删改功能以及密码安全策略配置。",
+        "block_ids": [
+          "BLK-063FA03B0275437B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "支持北向MODBUS/IEC104/GOOSE等协议配置管理。",
+        "block_ids": [
+          "BLK-063FA03B0275437B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "支持PKI颁发的证书管理。",
+        "block_ids": [
+          "BLK-063FA03B0275437B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "安全启动功能默认开启。",
+        "block_ids": [
+          "BLK-864B9073B04B55EA",
+          "BLK-56710D21D4166A27"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "安全启动仅针对数采。",
+        "block_ids": [
+          "BLK-696CBA8087AAE64A"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "Logger5000依托于芯片TrustZone及OP-TEE安全OS，对上层应用提供在安全环境下执行的加解密及存储数据接口。",
+        "block_ids": [
+          "BLK-402F20D08666D8CF"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "Logger5000在安全环境下实现敏感数据加密存储、解密使用，包括用户密码和终端证书对应的私钥等数据。",
+        "block_ids": [
+          "BLK-402F20D08666D8CF"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "支持HTTPS/北向IEC104/MODBUS等协议TLS加密通信。",
+        "block_ids": [
+          "BLK-26A4B8B218CB053B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "支持NTS对时。",
+        "block_ids": [
+          "BLK-26A4B8B218CB053B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-013",
+        "statement": "支持恢复出厂设置功能，删除设备数据。",
+        "block_ids": [
+          "BLK-26A4B8B218CB053B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-014",
+        "statement": "支持操作日志、syslog记录功能。",
+        "block_ids": [
+          "BLK-26A4B8B218CB053B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-015",
+        "statement": "支持软件和固件更新。",
+        "block_ids": [
+          "BLK-26A4B8B218CB053B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-016",
+        "statement": "通过系统 > 证书管理 > 采集/转发/NTS对时证书，支持导入证书。",
+        "block_ids": [
+          "BLK-76BE0FA03440A031"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-017",
+        "statement": "设备出厂自带默认PKI颁发的证书，建议导入客户的签名证书。",
+        "block_ids": [
+          "BLK-36828A2B13F690DE"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-018",
+        "statement": "若使用NTS功能，客户需导入NTS服务器证书；NTS证书从NTS服务器获取，支持PEM格式的X.509证书导入。",
+        "block_ids": [
+          "BLK-1294EA0594DF6992"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-019",
+        "statement": "当证书距离过期时间不足90天时，系统触发“即将过期”告警。",
+        "block_ids": [
+          "BLK-731B6EE8DB6B37A6"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-020",
+        "statement": "用户登录成功后，对于证书即将过期或已过期，系统将提示，并将结果记录至syslog日志。",
+        "block_ids": [
+          "BLK-0C005846289156C7"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-021",
+        "statement": "在系统 > 转发配置页面，点击goose，勾选防重放开关；用户可根据需要自行设置检测时间参数。",
+        "block_ids": [
+          "BLK-562EB901BC002DDD"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-022",
+        "statement": "在系统 > 证书管理页面，点击goose密钥，选择密钥导入，上传密钥文件即可完成更新。",
+        "block_ids": [
+          "BLK-90A3EAF30CD1A413"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-023",
+        "statement": "远程维护功能默认关闭；启用该功能前，客户需在充分知情的前提下使用administrator账号进行手动授权，并通过安全加密认证接入公共网络；远程访问仅在获得administrator账号授权后方可生效，且相关操作受系统访问控制策略管理。",
+        "block_ids": [
+          "BLK-E8D208159F329BFA"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-024",
+        "statement": "数据采集器将数据转发至阳光云平台的功能默认不可用；启用该功能前，客户需在充分知情的前提下进行手动授权，并通过安全加密认证接入公共网络；远程访问仅在获得客户授权后方可生效，且相关操作受系统访问控制策略管理。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF",
+          "BLK-ABD8EE23CFEA3B93"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "远程方案是否为产品功能所必需",
+      "Logger4000是否实际交付并启用（GAP-LOGGER4000-SCOPE）",
+      "客户合同/BOM中是否包含NTS功能启用条款",
+      "客户是否已实际导入客户签名证书或NTS服务器证书",
+      "防重放功能是否默认启用",
+      "密钥更新是否支持自动轮换或仅支持手动上传",
+      "安全启动验证链覆盖的具体组件范围（如是否含BootROM、Bootloader、kernel、rootfs）",
+      "syslog日志的存储位置、保留周期及传输加密方式",
+      "恢复出厂配置是否清除所有安全密钥和证书",
+      "安全更新是否支持回滚机制及完整性校验"
+    ],
+    "contradictions": []
+  },
+  "result": {
+    "node_id": "node_1",
+    "field_id": "security_functions",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "支持登录失败锁定以防止暴力破解。",
+        "block_ids": [
+          "BLK-063FA03B0275437B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "支持登录日志记录。",
+        "block_ids": [
+          "BLK-063FA03B0275437B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "首次登录强制修改密码。",
+        "block_ids": [
+          "BLK-063FA03B0275437B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "支持用户增删改功能以及密码安全策略配置。",
+        "block_ids": [
+          "BLK-063FA03B0275437B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "支持北向MODBUS/IEC104/GOOSE等协议配置管理。",
+        "block_ids": [
+          "BLK-063FA03B0275437B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "支持PKI颁发的证书管理。",
+        "block_ids": [
+          "BLK-063FA03B0275437B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "安全启动功能默认开启。",
+        "block_ids": [
+          "BLK-864B9073B04B55EA",
+          "BLK-56710D21D4166A27"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "安全启动仅针对数采。",
+        "block_ids": [
+          "BLK-696CBA8087AAE64A"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "Logger5000依托于芯片TrustZone及OP-TEE安全OS，对上层应用提供在安全环境下执行的加解密及存储数据接口。",
+        "block_ids": [
+          "BLK-402F20D08666D8CF"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "Logger5000在安全环境下实现敏感数据加密存储、解密使用，包括用户密码和终端证书对应的私钥等数据。",
+        "block_ids": [
+          "BLK-402F20D08666D8CF"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "支持HTTPS/北向IEC104/MODBUS等协议TLS加密通信。",
+        "block_ids": [
+          "BLK-26A4B8B218CB053B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "支持NTS对时。",
+        "block_ids": [
+          "BLK-26A4B8B218CB053B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-013",
+        "statement": "支持恢复出厂设置功能，删除设备数据。",
+        "block_ids": [
+          "BLK-26A4B8B218CB053B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-014",
+        "statement": "支持操作日志、syslog记录功能。",
+        "block_ids": [
+          "BLK-26A4B8B218CB053B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-015",
+        "statement": "支持软件和固件更新。",
+        "block_ids": [
+          "BLK-26A4B8B218CB053B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-016",
+        "statement": "通过系统 > 证书管理 > 采集/转发/NTS对时证书，支持导入证书。",
+        "block_ids": [
+          "BLK-76BE0FA03440A031"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-017",
+        "statement": "设备出厂自带默认PKI颁发的证书，建议导入客户的签名证书。",
+        "block_ids": [
+          "BLK-36828A2B13F690DE"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-018",
+        "statement": "若使用NTS功能，客户需导入NTS服务器证书；NTS证书从NTS服务器获取，支持PEM格式的X.509证书导入。",
+        "block_ids": [
+          "BLK-1294EA0594DF6992"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-019",
+        "statement": "当证书距离过期时间不足90天时，系统触发“即将过期”告警。",
+        "block_ids": [
+          "BLK-731B6EE8DB6B37A6"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-020",
+        "statement": "用户登录成功后，对于证书即将过期或已过期，系统将提示，并将结果记录至syslog日志。",
+        "block_ids": [
+          "BLK-0C005846289156C7"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-021",
+        "statement": "在系统 > 转发配置页面，点击goose，勾选防重放开关；用户可根据需要自行设置检测时间参数。",
+        "block_ids": [
+          "BLK-562EB901BC002DDD"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-022",
+        "statement": "在系统 > 证书管理页面，点击goose密钥，选择密钥导入，上传密钥文件即可完成更新。",
+        "block_ids": [
+          "BLK-90A3EAF30CD1A413"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-023",
+        "statement": "远程维护功能默认关闭；启用该功能前，客户需在充分知情的前提下使用administrator账号进行手动授权，并通过安全加密认证接入公共网络；远程访问仅在获得administrator账号授权后方可生效，且相关操作受系统访问控制策略管理。",
+        "block_ids": [
+          "BLK-E8D208159F329BFA"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-024",
+        "statement": "数据采集器将数据转发至阳光云平台的功能默认不可用；启用该功能前，客户需在充分知情的前提下进行手动授权，并通过安全加密认证接入公共网络；远程访问仅在获得客户授权后方可生效，且相关操作受系统访问控制策略管理。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF",
+          "BLK-ABD8EE23CFEA3B93"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "远程方案是否为产品功能所必需",
+      "Logger4000是否实际交付并启用（GAP-LOGGER4000-SCOPE）",
+      "客户合同/BOM中是否包含NTS功能启用条款",
+      "客户是否已实际导入客户签名证书或NTS服务器证书",
+      "防重放功能是否默认启用",
+      "密钥更新是否支持自动轮换或仅支持手动上传",
+      "安全启动验证链覆盖的具体组件范围（如是否含BootROM、Bootloader、kernel、rootfs）",
+      "syslog日志的存储位置、保留周期及传输加密方式",
+      "恢复出厂配置是否清除所有安全密钥和证书",
+      "安全更新是否支持回滚机制及完整性校验"
+    ],
+    "contradictions": []
+  },
+  "elapsed_seconds": 47.624,
+  "finished_at": "2026-10-09T02:22:02.215854+00:00"
+}

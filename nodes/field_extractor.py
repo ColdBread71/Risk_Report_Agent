@@ -41,9 +41,9 @@ def _model_name(llm) -> str:
     return str(getattr(llm, "model_name", None) or getattr(llm, "model", "unknown"))
 
 
-def _field_schema_sha256() -> str:
+def _field_schema_sha256(profile: RetrievalProfile) -> str:
     payload = json.dumps(
-        FieldExtractionResult.model_json_schema(),
+        FieldExtractionResult.schema_for_profile(profile),
         ensure_ascii=False,
         sort_keys=True,
         separators=(",", ":"),
@@ -97,7 +97,7 @@ def _cache_inputs(
         "field_prompt_sha256": sha256(
             _field_prompt_template(profile).encode("utf-8")
         ).hexdigest(),
-        "field_schema_sha256": _field_schema_sha256(),
+        "field_schema_sha256": _field_schema_sha256(profile),
     }
 
 
@@ -197,9 +197,12 @@ def _validate_field_result(
     result: FieldExtractionResult,
     request: RetrievalRequest,
     binding: EvidencePacketBinding,
+    max_facts: int = 24,
 ) -> FieldExtractionResult:
     if result.node_id != request.node_id or result.field_id != request.field_id:
         raise ValueError("Field extraction result does not match its retrieval request")
+    if len(result.facts) > max_facts:
+        raise ValueError(f"facts must contain at most {max_facts} items for {request.field_id.value}")
     unknown_blocks = {
         block_id
         for fact in result.facts
@@ -236,6 +239,7 @@ def _load_field_checkpoint(
     request: RetrievalRequest,
     binding: EvidencePacketBinding,
     cache_inputs: dict[str, str],
+    max_facts: int = 24,
 ) -> tuple[FieldExtractionResult | None, str]:
     if path is None or not path.is_file():
         return None, "没有字段缓存"
@@ -255,7 +259,7 @@ def _load_field_checkpoint(
             reason = "、".join(changed) if changed else "缓存指纹损坏"
             return None, f"输入指纹不一致：{reason}"
         result = FieldExtractionResult.model_validate(payload.get("result"))
-        return _validate_field_result(result, request, binding), "输入指纹一致"
+        return _validate_field_result(result, request, binding, max_facts=max_facts), "输入指纹一致"
     except Exception as exc:
         logger.warning("忽略无效字段检查点 %s：%s", path, exc)
         return None, f"缓存文件无效：{exc}"
@@ -340,6 +344,7 @@ def _extract_profile_facts(
             request=request,
             binding=field_binding,
             cache_inputs=cache_inputs,
+            max_facts=profile.max_facts,
         )
         if cached_result is None and fallback_checkpoint_path is not None:
             fallback_result, fallback_reason = _load_field_checkpoint(
@@ -347,6 +352,7 @@ def _extract_profile_facts(
                 request=request,
                 binding=field_binding,
                 cache_inputs=cache_inputs,
+                max_facts=profile.max_facts,
             )
             if fallback_result is not None:
                 cached_result = fallback_result
@@ -383,14 +389,17 @@ def _extract_profile_facts(
         cache_reason,
     )
     result = extract_with_retry(
+        task_label=f"{profile.node_id.value}/{profile.field_id.value}",
         llm=llm,
         prompt_template=_field_prompt_template(profile),
         schema_class=FieldExtractionResult,
+        json_schema=FieldExtractionResult.schema_for_profile(profile),
         sample_input=field_input,
         semantic_validator=lambda value: _validate_field_result(
             value,
             request,
             field_binding,
+            max_facts=profile.max_facts,
         ),
         max_retries=(
             2

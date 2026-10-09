@@ -1,0 +1,746 @@
+{
+  "schema_version": "field_fact_checkpoint.v3",
+  "node_id": "node_1",
+  "field_id": "components",
+  "index_id": "IDX-3B116ADDF3BB03CC",
+  "packet_sha256": "320d7b40b399c1de8e4c759823a6ea100c93ea7f40b55894e21903fe3a99f5d6",
+  "retrieval_profile_version": "1.7",
+  "field_fact_prompt_version": "2.5",
+  "cache_inputs": {
+    "node_id": "node_1",
+    "field_id": "components",
+    "source_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "retrieval_packet_sha256": "320d7b40b399c1de8e4c759823a6ea100c93ea7f40b55894e21903fe3a99f5d6",
+    "rag_index_id": "IDX-3B116ADDF3BB03CC",
+    "text_model": "qwen-plus",
+    "retrieval_profile_sha256": "7b56f85826705818fda3f62ff6128c6809cba53f2d581f582813a41e98433256",
+    "field_prompt_sha256": "fb1611564d9b1e82a12ce3251e37fc208089520d6a430b4dd4eb33ec5036f7f6",
+    "field_schema_sha256": "bd1f65e5b09f677607eff2035b2f48c593ff403561275251d136770807ceb268"
+  },
+  "cache_fingerprint": "372e555a67f3ee8df864bbdc7f1921e46b8bd5b2cfb2add5c1688c90fb7ee3bc",
+  "result": {
+    "node_id": "node_1",
+    "field_id": "components",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "能量管理单元EMU300A内部配置有数据采集器Logger5000。",
+        "block_ids": [
+          "BLK-7DF8897D9BB9225B",
+          "BLK-0FE6A5150E10C5BC"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "Logger5000",
+          "component_type": "数据采集器",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "EMU300A内含开关电源。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "开关电源",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "EMU300A内含防雷模块。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "防雷模块",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "EMU300A内含微型断路器。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "微型断路器",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "EMU300A内含MPLC（可选1或2）。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "conditions": [
+            "可选1或2"
+          ],
+          "component_name": "MPLC",
+          "component_type": "通信模块",
+          "scope_status": "conditional"
+        }
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "EMU300A内含PID&ISO控制盒（可选）。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "conditions": [
+            "可选"
+          ],
+          "component_name": "PID&ISO控制盒",
+          "component_type": "硬件模块",
+          "scope_status": "conditional"
+        }
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "EMU300A内含光纤交换机（可选）。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "conditions": [
+            "可选"
+          ],
+          "component_name": "光纤交换机",
+          "component_type": "网络设备",
+          "scope_status": "conditional"
+        }
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "EMU300A内含光纤终端盒（可选）。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "conditions": [
+            "可选"
+          ],
+          "component_name": "光纤终端盒",
+          "component_type": "被动支撑部件",
+          "scope_status": "conditional"
+        }
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "EMU300A内含IO模组（可选）。",
+        "block_ids": [
+          "BLK-D844E7AC55AEA6FE"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "conditions": [
+            "可选"
+          ],
+          "component_name": "IO模组",
+          "component_type": "输入输出模块",
+          "scope_status": "conditional"
+        }
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "EMU300A内部结构中包含Logger5000。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "Logger5000",
+          "component_type": "数据采集器",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "EMU300A内部结构中包含光纤环网交换机，为选配。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "conditions": [
+            "选配"
+          ],
+          "component_name": "光纤环网交换机",
+          "component_type": "网络设备",
+          "scope_status": "conditional"
+        }
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "EMU300A内部结构中包含PID模块，支持PID防护和PID修复功能，适用于PV-正偏置组件，支持交流ISO检测功能。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "conditions": [
+            "适用于PV-正偏置组件"
+          ],
+          "component_name": "PID模块",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-013",
+        "statement": "EMU300A内部结构中包含PLC模块。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "PLC模块",
+          "component_type": "通信模块",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-014",
+        "statement": "EMU300A内部结构中包含风扇。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "风扇",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-015",
+        "statement": "EMU300A内部结构中包含220V市电插座，可为现场运维人员提供市电。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "220V市电插座",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-016",
+        "statement": "EMU300A内部结构中包含RS485通讯端子，线缆未包含在供货范围。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "RS485通讯端子",
+          "component_type": "输入输出模块",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-017",
+        "statement": "EMU300A内部结构中包含CT接线端子。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "CT接线端子",
+          "component_type": "输入输出模块",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-018",
+        "statement": "EMU300A内部结构中包含交流熔丝盒，线缆未包含在供货范围。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "交流熔丝盒",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-019",
+        "statement": "EMU300A内部结构中包含接地端子（功能地排和保护地排），线缆未包含在供货范围。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "接地端子",
+          "component_type": "被动支撑部件",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-020",
+        "statement": "EMU300A内部结构中包含防雷器。",
+        "block_ids": [
+          "BLK-AFC136CD8222B958"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "防雷器",
+          "component_type": "硬件模块",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-021",
+        "statement": "Logger5000集成五路具备数据交换功能的以太网口（ETH1~ETH5），其中三路为以太网口、两路为快速调度口。",
+        "block_ids": [
+          "BLK-276B765BAAD65005"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "Logger5000",
+          "component_type": "数据采集器",
+          "scope_status": "confirmed"
+        }
+      },
+      {
+        "fact_id": "FACT-022",
+        "statement": "路由器和防火墙不在EMU300A供货范围内，由客户自行购买。",
+        "block_ids": [
+          "BLK-10A8D5FE01AF321E"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "路由器",
+          "component_type": "网络设备",
+          "scope_status": "external"
+        }
+      },
+      {
+        "fact_id": "FACT-023",
+        "statement": "路由器和防火墙不在EMU300A供货范围内，由客户自行购买。",
+        "block_ids": [
+          "BLK-10A8D5FE01AF321E"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "component_name": "防火墙",
+          "component_type": "网络安全设备",
+          "scope_status": "external"
+        }
+      }
+    ],
+    "unknowns": [
+      "Logger4000是否属于本次交付配置（GAP-LOGGER4000-SCOPE）",
+      "光纤环网交换机与光纤终端盒是否实际配套交付（仅说明‘必须配套使用’，未确认是否同属一订单）",
+      "IO模组是否为标准内置或仅存在于部分订购型号（‘可选’未明确对应BOM层级）",
+      "MPLC数量（1或2）是否由合同/现场配置决定（证据未说明判定依据）",
+      "PID&ISO控制盒是否与PID模块为同一物理单元或独立模块（文档分别列出‘PID模块’与‘PID&ISO控制盒’）"
+    ],
+    "contradictions": []
+  },
+  "retrieval_trace": {
+    "schema_version": "1.0",
+    "request": {
+      "project_id": "yangguang_emu",
+      "node_id": "node_1",
+      "field_id": "components",
+      "query": null,
+      "filters": {
+        "document_ids": [],
+        "section_path_terms": [],
+        "block_types": [],
+        "exclude_review_required": false
+      },
+      "token_budget": 12000,
+      "max_blocks": 40,
+      "neighbor_window": 1
+    },
+    "effective_query": "产品组成 内部配置 内含 标准配置 订购信息 供货范围 BOM 硬件模块 控制器 数据采集器 通信模块 输入输出模块 交换机 路由器 网关 被动支撑部件 固件 软件 操作系统 外部设备 选配 可选",
+    "index_id": "IDX-3B116ADDF3BB03CC",
+    "scope_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "packet_id": "rag_yangguang_emu_node_1_components_3a492a7cdeda",
+    "packet_sha256": "320d7b40b399c1de8e4c759823a6ea100c93ea7f40b55894e21903fe3a99f5d6",
+    "candidate_count": 1041,
+    "selected_count": 40,
+    "selected_token_count": 3792,
+    "truncated_by_budget": false,
+    "truncated_by_max_blocks": true,
+    "hits": [
+      {
+        "block_id": "BLK-D8AA6F0C8103713A",
+        "document_id": "DOC-5067B181346D",
+        "rank": 1,
+        "score": 0.5280849716880105,
+        "estimated_tokens": 504,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-AFC136CD8222B958",
+        "document_id": "DOC-5067B181346D",
+        "rank": 2,
+        "score": 0.5280849716880105,
+        "estimated_tokens": 51,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-D8AA6F0C8103713A"
+      },
+      {
+        "block_id": "BLK-B07115D81ED807D1",
+        "document_id": "DOC-5067B181346D",
+        "rank": 3,
+        "score": 0.5280849716880105,
+        "estimated_tokens": 51,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-D8AA6F0C8103713A"
+      },
+      {
+        "block_id": "BLK-D844E7AC55AEA6FE",
+        "document_id": "DOC-5067B181346D",
+        "rank": 4,
+        "score": 0.5270933888175271,
+        "estimated_tokens": 138,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-CE3D928E7C421E03",
+        "document_id": "DOC-5067B181346D",
+        "rank": 5,
+        "score": 0.5270933888175271,
+        "estimated_tokens": 393,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-D844E7AC55AEA6FE"
+      },
+      {
+        "block_id": "BLK-409F387B605FF8FF",
+        "document_id": "DOC-5067B181346D",
+        "rank": 6,
+        "score": 0.5270933888175271,
+        "estimated_tokens": 39,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-D844E7AC55AEA6FE"
+      },
+      {
+        "block_id": "BLK-B081A00CB116A76B",
+        "document_id": "DOC-5067B181346D",
+        "rank": 7,
+        "score": 0.507529354095459,
+        "estimated_tokens": 77,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-BC449CE85DB4F669",
+        "document_id": "DOC-5067B181346D",
+        "rank": 8,
+        "score": 0.507529354095459,
+        "estimated_tokens": 59,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-B081A00CB116A76B"
+      },
+      {
+        "block_id": "BLK-D13DD174206D8434",
+        "document_id": "DOC-5067B181346D",
+        "rank": 9,
+        "score": 0.507529354095459,
+        "estimated_tokens": 81,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-B081A00CB116A76B"
+      },
+      {
+        "block_id": "BLK-4229FA7FE6635AED",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 10,
+        "score": 0.502680795842951,
+        "estimated_tokens": 119,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-9EF37D5FB5E04397",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 11,
+        "score": 0.502680795842951,
+        "estimated_tokens": 85,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-4229FA7FE6635AED"
+      },
+      {
+        "block_id": "BLK-810917AE84EC90E0",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 12,
+        "score": 0.502680795842951,
+        "estimated_tokens": 84,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-4229FA7FE6635AED"
+      },
+      {
+        "block_id": "BLK-276B765BAAD65005",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 13,
+        "score": 0.4975134936246005,
+        "estimated_tokens": 151,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-254543AB77B4B866",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 14,
+        "score": 0.4975134936246005,
+        "estimated_tokens": 82,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-276B765BAAD65005"
+      },
+      {
+        "block_id": "BLK-DCE8A1FE2B86D398",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 15,
+        "score": 0.4975134936246005,
+        "estimated_tokens": 83,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-276B765BAAD65005"
+      },
+      {
+        "block_id": "BLK-7DF8897D9BB9225B",
+        "document_id": "DOC-5067B181346D",
+        "rank": 16,
+        "score": 0.4967075521295721,
+        "estimated_tokens": 169,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-FFD438C63F25BCC4",
+        "document_id": "DOC-5067B181346D",
+        "rank": 17,
+        "score": 0.4967075521295721,
+        "estimated_tokens": 49,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-7DF8897D9BB9225B"
+      },
+      {
+        "block_id": "BLK-7FA29D70D79F1001",
+        "document_id": "DOC-5067B181346D",
+        "rank": 18,
+        "score": 0.4967075521295721,
+        "estimated_tokens": 82,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-7DF8897D9BB9225B"
+      },
+      {
+        "block_id": "BLK-182EE50E531ABD2E",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 19,
+        "score": 0.4960619146173651,
+        "estimated_tokens": 122,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-0E8FEC54AF1BFA37",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 20,
+        "score": 0.4960619146173651,
+        "estimated_tokens": 183,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-182EE50E531ABD2E"
+      },
+      {
+        "block_id": "BLK-4E0353B94569ABFF",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 21,
+        "score": 0.4960619146173651,
+        "estimated_tokens": 119,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-182EE50E531ABD2E"
+      },
+      {
+        "block_id": "BLK-10A8D5FE01AF321E",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 22,
+        "score": 0.4960511380975897,
+        "estimated_tokens": 109,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-ECC17DEAAFB5CF44",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 23,
+        "score": 0.4960511380975897,
+        "estimated_tokens": 89,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-10A8D5FE01AF321E"
+      },
+      {
+        "block_id": "BLK-C228A8BF893CBE2B",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 24,
+        "score": 0.4944929296320135,
+        "estimated_tokens": 107,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-4DD68A8558951CBD",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 25,
+        "score": 0.4944929296320135,
+        "estimated_tokens": 94,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-C228A8BF893CBE2B"
+      },
+      {
+        "block_id": "BLK-D0C7F3E335D74113",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 26,
+        "score": 0.4944929296320135,
+        "estimated_tokens": 93,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-C228A8BF893CBE2B"
+      },
+      {
+        "block_id": "BLK-8CF56F6958CD33E1",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 27,
+        "score": 0.49165917309847745,
+        "estimated_tokens": 114,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-ABD8EE23CFEA3B93",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 28,
+        "score": 0.49165917309847745,
+        "estimated_tokens": 177,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-8CF56F6958CD33E1"
+      },
+      {
+        "block_id": "BLK-88F7F2D2F44E6545",
+        "document_id": "DOC-5067B181346D",
+        "rank": 29,
+        "score": 0.48389497670260345,
+        "estimated_tokens": 54,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-58481F3BF8C8F982",
+        "document_id": "DOC-5067B181346D",
+        "rank": 30,
+        "score": 0.48389497670260345,
+        "estimated_tokens": 79,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-88F7F2D2F44E6545"
+      },
+      {
+        "block_id": "BLK-202781F4D7F5C1D3",
+        "document_id": "DOC-5067B181346D",
+        "rank": 31,
+        "score": 0.48389497670260345,
+        "estimated_tokens": 68,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-88F7F2D2F44E6545"
+      },
+      {
+        "block_id": "BLK-EE4926450C5E2B17",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 32,
+        "score": 0.4836225119504062,
+        "estimated_tokens": 89,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-0E8FEC54AF1BFA37"
+      },
+      {
+        "block_id": "BLK-F952E9FB2BDE064C",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 33,
+        "score": 0.4816754427823154,
+        "estimated_tokens": 133,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-4DA082251D2A15B4",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 34,
+        "score": 0.4816754427823154,
+        "estimated_tokens": 100,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-F952E9FB2BDE064C"
+      },
+      {
+        "block_id": "BLK-0FE6A5150E10C5BC",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 35,
+        "score": 0.48110076730901546,
+        "estimated_tokens": 276,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-BDF435E6E7F273A5",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 36,
+        "score": 0.48110076730901546,
+        "estimated_tokens": 59,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-0FE6A5150E10C5BC"
+      },
+      {
+        "block_id": "BLK-153C2EE70C8A30F1",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 37,
+        "score": 0.48110076730901546,
+        "estimated_tokens": 86,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-0FE6A5150E10C5BC"
+      },
+      {
+        "block_id": "BLK-C93AECD82ECE7EB8",
+        "document_id": "DOC-5067B181346D",
+        "rank": 38,
+        "score": 0.4799484816464511,
+        "estimated_tokens": 118,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-18F40716EAEFD3FD",
+        "document_id": "DOC-5067B181346D",
+        "rank": 39,
+        "score": 0.4799484816464511,
+        "estimated_tokens": 71,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-C93AECD82ECE7EB8"
+      },
+      {
+        "block_id": "BLK-276FF77975026540",
+        "document_id": "DOC-5067B181346D",
+        "rank": 40,
+        "score": 0.4799484816464511,
+        "estimated_tokens": 121,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-C93AECD82ECE7EB8"
+      }
+    ]
+  }
+}

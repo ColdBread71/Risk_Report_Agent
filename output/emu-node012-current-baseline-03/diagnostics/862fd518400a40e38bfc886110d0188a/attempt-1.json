@@ -1,0 +1,956 @@
+{
+  "run_id": "emu-node012-current-baseline-03",
+  "node": "identify_assets",
+  "task": "node_2/function_mapping",
+  "call_id": "862fd518400a40e38bfc886110d0188a",
+  "schema": "AssetFunctionMappingResult",
+  "model": "qwen-plus",
+  "attempt": 1,
+  "started_at": "2026-10-09T02:50:52.005303+00:00",
+  "status": "succeeded",
+  "phase": "complete",
+  "prompt": "你正在为CRA / prEN 40000-1-2 Node [2]现有资产建立Node [1]功能关系。\n\n【唯一任务】\n1. 只能填写资产与功能的多对多关系，不得新增、删除、合并、改名或改写任何资产和功能。\n2. asset_id和function_id必须逐字复用输入ID。每个资产恰好输出一条mapping；新结果使用relationships逐项写明relationship_type和rationale，related_function_ids留空。没有可靠关系时两个列表都留空。\n3. 只建立主要、直接且对后续分析有区分价值的关系。relationship_type按函数相对于资产的行为选择：reads、creates、modifies、transmits、authenticates_with、implements、protects、depends_on或affects。rationale只写输入中可核对的直接行为，不写攻击场景或推测能力。仅有一般前置条件、间接影响、共同位于同一设备或轻微关联不建立关系。\n4. 不得因为用户登录后可以使用其他功能，就把账户凭据关联到所有业务功能；凭据通常只关联直接执行身份认证、账户或密码或授权管理的功能。通用安全能力保护多个功能，也不等于其安全资产必须关联全部功能。\n5. 不得为满足覆盖率硬塞编号。多数资产优先保留最能说明其用途的少量直接功能，通常约1至3项；确有多个不同功能直接处理同一资产时可以超过3项。非function资产若只能通过“通用承载、共同位于同一设备”等理由关联到功能清单的大部分，说明主要直接关系无法确定，应留空等待人工确认。\n6. 硬件、网络、软件和服务只有在功能明确由其实现、直接依赖或直接保护时才关联；接口可达、共同部署或通用承载不能单独证明关系。外部服务不得扩展为材料未说明的其他服务能力。\n7. function类型资产只使用implements，并对应其真实功能簇；user、property、environment、public_interest等受影响对象只使用affects。用途、生命周期、责任边界或受损后果不同的功能不得互相代替。\n8. 严格输出Schema规定的单个JSON对象，不输出解释或Markdown。\n\n【目标JSON Schema】\n{\n  \"$defs\": {\n    \"AssetFunctionMappingEntry\": {\n      \"additionalProperties\": false,\n      \"description\": \"One focused many-to-many mapping from an existing asset to Node [1] functions.\",\n      \"properties\": {\n        \"asset_id\": {\n          \"description\": \"Reuse one exact asset_id from the supplied asset inventory.\",\n          \"pattern\": \"^ASSET-[0-9]{3,}$\",\n          \"title\": \"Asset Id\",\n          \"type\": \"string\"\n        },\n        \"related_function_ids\": {\n          \"description\": \"Legacy compatibility list. Leave empty when relationships is populated; new mapping results should express every accepted link as a typed relationship.\",\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"title\": \"Related Function Ids\",\n          \"type\": \"array\"\n        },\n        \"relationships\": {\n          \"description\": \"Typed direct relationships for this asset. Do not emit a relationship merely to cover a function identifier.\",\n          \"items\": {\n            \"$ref\": \"#/$defs/AssetFunctionRelationship\"\n          },\n          \"title\": \"Relationships\",\n          \"type\": \"array\"\n        }\n      },\n      \"required\": [\n        \"asset_id\"\n      ],\n      \"title\": \"AssetFunctionMappingEntry\",\n      \"type\": \"object\"\n    },\n    \"AssetFunctionRelationship\": {\n      \"additionalProperties\": false,\n      \"description\": \"Typed, reviewable relationship between one asset and one Node [1] function.\",\n      \"properties\": {\n        \"function_id\": {\n          \"description\": \"Reuse one exact function_id from the supplied Node [1] function catalog.\",\n          \"pattern\": \"^FUNC-[0-9]{3,}$\",\n          \"title\": \"Function Id\",\n          \"type\": \"string\"\n        },\n        \"relationship_type\": {\n          \"description\": \"Describe the direct relationship from the function to the asset. Use affects for an evidenced consequence on an external person, property, environment, or public interest; do not use co-location or a generic platform dependency as a relationship.\",\n          \"enum\": [\n            \"reads\",\n            \"creates\",\n            \"modifies\",\n            \"transmits\",\n            \"authenticates_with\",\n            \"implements\",\n            \"protects\",\n            \"depends_on\",\n            \"affects\"\n          ],\n          \"title\": \"Relationship Type\",\n          \"type\": \"string\"\n        },\n        \"rationale\": {\n          \"description\": \"Briefly state the input-supported behavior that makes the relationship direct; do not add an attack scenario, implementation control, or unsupported capability.\",\n          \"minLength\": 1,\n          \"title\": \"Rationale\",\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"function_id\",\n        \"relationship_type\",\n        \"rationale\"\n      ],\n      \"title\": \"AssetFunctionRelationship\",\n      \"type\": \"object\"\n    }\n  },\n  \"additionalProperties\": false,\n  \"description\": \"Focused function relationships; it cannot add or rewrite business assets.\",\n  \"properties\": {\n    \"mappings\": {\n      \"items\": {\n        \"$ref\": \"#/$defs/AssetFunctionMappingEntry\"\n      },\n      \"title\": \"Mappings\",\n      \"type\": \"array\"\n    },\n    \"notes\": {\n      \"anyOf\": [\n        {\n          \"type\": \"string\"\n        },\n        {\n          \"type\": \"null\"\n        }\n      ],\n      \"default\": null,\n      \"description\": \"Briefly state unresolved mapping uncertainty; do not repeat the mappings.\",\n      \"title\": \"Notes\"\n    }\n  },\n  \"title\": \"AssetFunctionMappingResult\",\n  \"type\": \"object\"\n}\n\n【现有功能与资产】\n{\n  \"functions\": [\n    {\n      \"function_id\": \"FUNC-001\",\n      \"name\": \"南向设备接入\",\n      \"description\": \"数据采集器Logger5000通过RS485总线方式接入光伏发电系统中的逆变器、箱变、环境监测仪、电表等设备。\",\n      \"is_security_function\": false,\n      \"function_category\": \"data_collection\",\n      \"interfaces\": [\n        \"RS485\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-002\",\n      \"name\": \"PLC电力载波南向接入\",\n      \"description\": \"数据采集器Logger5000通过PLC总线方式（文档中亦称MPLC总线）接入阳光电源生产的具备PLC功能的组串式逆变器。\",\n      \"is_security_function\": false,\n      \"function_category\": \"data_collection\",\n      \"interfaces\": [\n        \"PLC\",\n        \"MPLC\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-003\",\n      \"name\": \"南向协议支持\",\n      \"description\": \"数据采集器Logger5000支持通过Modbus协议、PLC电力载波通信支持南向设备接入。\",\n      \"is_security_function\": false,\n      \"function_category\": \"communication\",\n      \"interfaces\": [\n        \"Modbus\",\n        \"PLC\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-004\",\n      \"name\": \"有功与无功功率调节\",\n      \"description\": \"数据采集器Logger5000可对接入的逆变器进行有功功率控制和无功功率调节。\",\n      \"is_security_function\": false,\n      \"function_category\": \"control\",\n      \"interfaces\": [\n        \"RS485\",\n        \"PLC\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-005\",\n      \"name\": \"北向数据转发\",\n      \"description\": \"数据采集器Logger5000可通过IEC104、Modbus、MQTT、GOOSE等通信协议北向转发数据至综自系统或站控系统及阳光云平台。\",\n      \"is_security_function\": false,\n      \"function_category\": \"communication\",\n      \"interfaces\": [\n        \"IEC104\",\n        \"Modbus\",\n        \"MQTT\",\n        \"GOOSE\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-006\",\n      \"name\": \"远程调度指令接收\",\n      \"description\": \"数据采集器Logger5000可接收北向远程调度指令或执行本地调度指令。\",\n      \"is_security_function\": false,\n      \"function_category\": \"control\",\n      \"interfaces\": [\n        \"IEC104\",\n        \"Modbus\",\n        \"MQTT\",\n        \"GOOSE\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-007\",\n      \"name\": \"核心交换机数据上传\",\n      \"description\": \"数据采集器Logger5000可以将采集到的设备数据通过核心交换机传输至后台站控系统，例如Insight、SCADA。\",\n      \"is_security_function\": false,\n      \"function_category\": \"communication\",\n      \"interfaces\": [\n        \"Ethernet\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-008\",\n      \"name\": \"4G路由器数据上传\",\n      \"description\": \"数据采集器Logger5000也可将采集到的设备数据直接通过4G路由器传输至阳光云平台。\",\n      \"is_security_function\": false,\n      \"function_category\": \"communication\",\n      \"interfaces\": [\n        \"4G\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-009\",\n      \"name\": \"直连阳光云平台\",\n      \"description\": \"能量管理单元EMU300A可以直接通过路由器与阳光云平台连接。\",\n      \"is_security_function\": false,\n      \"function_category\": \"communication\",\n      \"interfaces\": [\n        \"Ethernet\",\n        \"4G\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-010\",\n      \"name\": \"Web界面系统配置\",\n      \"description\": \"数据采集器Logger5000可通过嵌入式Web界面配置系统时间、网络、串口等参数，并维护协议点表。\",\n      \"is_security_function\": false,\n      \"function_category\": \"configuration\",\n      \"interfaces\": [\n        \"HTTPS\",\n        \"HTTP\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-011\",\n      \"name\": \"Web界面数据转发配置\",\n      \"description\": \"数据采集器Logger5000可通过Web界面配置数据转发服务，包括转发阳光云服务、转发GOOSE服务等。\",\n      \"is_security_function\": false,\n      \"function_category\": \"configuration\",\n      \"interfaces\": [\n        \"HTTPS\",\n        \"HTTP\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-012\",\n      \"name\": \"设备列表管理\",\n      \"description\": \"数据采集器Logger5000具备设备列表功能，用于管理所接入设备并为其配置地址，支持自动搜索与手动添加设备。\",\n      \"is_security_function\": false,\n      \"function_category\": \"configuration\",\n      \"interfaces\": [\n        \"RS485\",\n        \"PLC\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-013\",\n      \"name\": \"IEC104 Server模式\",\n      \"description\": \"数据采集器Logger5000可作为IEC104 Server，上位机服务器连接数据采集器进行数据和指令传输。\",\n      \"is_security_function\": false,\n      \"function_category\": \"communication\",\n      \"interfaces\": [\n        \"IEC104\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-014\",\n      \"name\": \"Modbus TCP普通调度模式\",\n      \"description\": \"数据采集器Logger5000支持Modbus TCP普通调度模式，可在通讯异常恢复后根据设置调整逆变器输出功率或执行开机操作。\",\n      \"is_security_function\": false,\n      \"function_category\": \"control\",\n      \"interfaces\": [\n        \"Modbus TCP\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-015\",\n      \"name\": \"B码时间同步\",\n      \"description\": \"数据采集器Logger5000支持B码协议实现时间同步。\",\n      \"is_security_function\": false,\n      \"function_category\": \"time_synchronization\",\n      \"interfaces\": [\n        \"B码\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-016\",\n      \"name\": \"PTP时间同步\",\n      \"description\": \"数据采集器Logger5000支持PTP协议，通过后台时间服务器对电站内多个数据采集器进行统一对时。\",\n      \"is_security_function\": false,\n      \"function_category\": \"time_synchronization\",\n      \"interfaces\": [\n        \"PTP\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-017\",\n      \"name\": \"阳光云时钟源对时\",\n      \"description\": \"数据采集器Logger5000支持以阳光云为时钟源进行对时，但前提是数据采集器与阳光云平台已连接，否则该对时方式无效。\",\n      \"is_security_function\": false,\n      \"function_category\": \"time_synchronization\",\n      \"interfaces\": [\n        \"HTTPS\",\n        \"MQTT\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": [\n        \"需数据采集器与阳光云平台已连接\"\n      ]\n    },\n    {\n      \"function_id\": \"FUNC-018\",\n      \"name\": \"MODBUS-TCP时钟源对时\",\n      \"description\": \"数据采集器Logger5000支持以MODBUS-TCP为时钟源进行对时，但前提是数据采集器与后台使用MODBUS-TCP通信规约，否则该对时方式无效。\",\n      \"is_security_function\": false,\n      \"function_category\": \"time_synchronization\",\n      \"interfaces\": [\n        \"Modbus TCP\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": [\n        \"需数据采集器与后台使用MODBUS-TCP通信规约\"\n      ]\n    },\n    {\n      \"function_id\": \"FUNC-019\",\n      \"name\": \"首次系统时间配置\",\n      \"description\": \"数据采集器Logger5000首次使用时必须配置系统时间。\",\n      \"is_security_function\": false,\n      \"function_category\": \"configuration\",\n      \"interfaces\": [\n        \"Web界面\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-020\",\n      \"name\": \"阳光云站点接入\",\n      \"description\": \"阳光云服务默认接入站点为中国大陆地区‘中国站’、欧洲地区‘欧洲站’、澳洲地区‘澳洲站’、其他地区‘国际站’；需对路由器白名单进行相关设置以保证数据采集器功能正常使用。\",\n      \"is_security_function\": false,\n      \"function_category\": \"configuration\",\n      \"interfaces\": [\n        \"HTTPS\",\n        \"MQTT\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": [\n        \"需对路由器白名单进行相关设置\"\n      ]\n    },\n    {\n      \"function_id\": \"FUNC-021\",\n      \"name\": \"登录失败锁定\",\n      \"description\": \"支持登录失败锁定以防止暴力破解。\",\n      \"is_security_function\": true,\n      \"function_category\": \"authentication\",\n      \"interfaces\": [\n        \"Web界面\",\n        \"SSH\",\n        \"SFTP\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-022\",\n      \"name\": \"登录日志记录\",\n      \"description\": \"支持登录日志记录。\",\n      \"is_security_function\": true,\n      \"function_category\": \"logging\",\n      \"interfaces\": [\n        \"Web界面\",\n        \"SSH\",\n        \"SFTP\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-023\",\n      \"name\": \"首次登录强制修改密码\",\n      \"description\": \"首次登录强制修改密码。\",\n      \"is_security_function\": true,\n      \"function_category\": \"authentication\",\n      \"interfaces\": [\n        \"Web界面\",\n        \"SSH\",\n        \"SFTP\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-024\",\n      \"name\": \"用户增删改及密码策略配置\",\n      \"description\": \"支持用户增删改功能以及密码安全策略配置。\",\n      \"is_security_function\": true,\n      \"function_category\": \"access_control\",\n      \"interfaces\": [\n        \"Web界面\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-025\",\n      \"name\": \"北向协议配置管理\",\n      \"description\": \"支持北向MODBUS/IEC104/GOOSE等协议配置管理。\",\n      \"is_security_function\": true,\n      \"function_category\": \"configuration\",\n      \"interfaces\": [\n        \"IEC104\",\n        \"Modbus\",\n        \"GOOSE\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-026\",\n      \"name\": \"PKI证书管理\",\n      \"description\": \"支持PKI颁发的证书管理。\",\n      \"is_security_function\": true,\n      \"function_category\": \"certificate_management\",\n      \"interfaces\": [\n        \"Web界面\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-027\",\n      \"name\": \"安全启动\",\n      \"description\": \"安全启动功能默认开启。\",\n      \"is_security_function\": true,\n      \"function_category\": \"secure_boot\",\n      \"interfaces\": [],\n      \"rdps_dependencies\": [],\n      \"limitations\": [\n        \"仅针对数采\"\n      ]\n    },\n    {\n      \"function_id\": \"FUNC-028\",\n      \"name\": \"安全环境加解密与存储\",\n      \"description\": \"Logger5000依托于芯片TrustZone及OP-TEE安全OS，对上层应用提供在安全环境下执行的加解密及存储数据接口。\",\n      \"is_security_function\": true,\n      \"function_category\": \"cryptography\",\n      \"interfaces\": [],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-029\",\n      \"name\": \"敏感数据加密存储\",\n      \"description\": \"Logger5000在安全环境下实现敏感数据加密存储、解密使用，包括用户密码和终端证书对应的私钥等数据。\",\n      \"is_security_function\": true,\n      \"function_category\": \"secure_storage\",\n      \"interfaces\": [],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-030\",\n      \"name\": \"TLS加密通信\",\n      \"description\": \"支持HTTPS/北向IEC104/MODBUS等协议TLS加密通信。\",\n      \"is_security_function\": true,\n      \"function_category\": \"secure_communication\",\n      \"interfaces\": [\n        \"HTTPS\",\n        \"IEC104\",\n        \"Modbus TCP\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-031\",\n      \"name\": \"NTS对时\",\n      \"description\": \"支持NTS对时。\",\n      \"is_security_function\": true,\n      \"function_category\": \"secure_time_synchronization\",\n      \"interfaces\": [\n        \"NTS\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-032\",\n      \"name\": \"恢复出厂设置\",\n      \"description\": \"支持恢复出厂设置功能，删除设备数据。\",\n      \"is_security_function\": true,\n      \"function_category\": \"recovery\",\n      \"interfaces\": [\n        \"Web界面\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-033\",\n      \"name\": \"操作日志与syslog记录\",\n      \"description\": \"支持操作日志、syslog记录功能。\",\n      \"is_security_function\": true,\n      \"function_category\": \"logging\",\n      \"interfaces\": [\n        \"Web界面\",\n        \"syslog\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-034\",\n      \"name\": \"软件和固件更新\",\n      \"description\": \"支持软件和固件更新。\",\n      \"is_security_function\": true,\n      \"function_category\": \"update\",\n      \"interfaces\": [\n        \"Web界面\",\n        \"HTTPS\",\n        \"SFTP\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-035\",\n      \"name\": \"证书导入\",\n      \"description\": \"通过系统 > 证书管理 > 采集/转发/NTS对时证书，支持导入证书。\",\n      \"is_security_function\": true,\n      \"function_category\": \"certificate_management\",\n      \"interfaces\": [\n        \"Web界面\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-036\",\n      \"name\": \"出厂默认PKI证书\",\n      \"description\": \"设备出厂自带默认PKI颁发的证书，建议导入客户的签名证书。\",\n      \"is_security_function\": true,\n      \"function_category\": \"certificate_management\",\n      \"interfaces\": [],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-037\",\n      \"name\": \"NTS服务器证书导入\",\n      \"description\": \"若使用NTS功能，客户需导入NTS服务器证书；NTS证书从NTS服务器获取，支持PEM格式的X.509证书导入。\",\n      \"is_security_function\": true,\n      \"function_category\": \"certificate_management\",\n      \"interfaces\": [\n        \"Web界面\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-038\",\n      \"name\": \"证书过期告警\",\n      \"description\": \"当证书距离过期时间不足90天时，系统触发“即将过期”告警。\",\n      \"is_security_function\": true,\n      \"function_category\": \"certificate_management\",\n      \"interfaces\": [\n        \"Web界面\",\n        \"syslog\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-039\",\n      \"name\": \"证书状态提示与日志记录\",\n      \"description\": \"用户登录成功后，对于证书即将过期或已过期，系统将提示，并将结果记录至syslog日志。\",\n      \"is_security_function\": true,\n      \"function_category\": \"logging\",\n      \"interfaces\": [\n        \"Web界面\",\n        \"syslog\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-040\",\n      \"name\": \"GOOSE防重放\",\n      \"description\": \"在系统 > 转发配置页面，点击goose，勾选防重放开关；用户可根据需要自行设置检测时间参数。\",\n      \"is_security_function\": true,\n      \"function_category\": \"anti_replay\",\n      \"interfaces\": [\n        \"Web界面\",\n        \"GOOSE\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-041\",\n      \"name\": \"GOOSE密钥更新\",\n      \"description\": \"在系统 > 证书管理页面，点击goose密钥，选择密钥导入，上传密钥文件即可完成更新。\",\n      \"is_security_function\": true,\n      \"function_category\": \"key_management\",\n      \"interfaces\": [\n        \"Web界面\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": []\n    },\n    {\n      \"function_id\": \"FUNC-042\",\n      \"name\": \"远程维护功能授权\",\n      \"description\": \"远程维护功能默认关闭；启用该功能前，客户需在充分知情的前提下使用administrator账号进行手动授权，并通过安全加密认证接入公共网络；远程访问仅在获得administrator账号授权后方可生效，且相关操作受系统访问控制策略管理。\",\n      \"is_security_function\": true,\n      \"function_category\": \"remote_access\",\n      \"interfaces\": [\n        \"HTTPS\",\n        \"SSH\",\n        \"SFTP\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": [\n        \"默认关闭\",\n        \"需administrator账号手动授权\",\n        \"需安全加密认证\"\n      ]\n    },\n    {\n      \"function_id\": \"FUNC-043\",\n      \"name\": \"阳光云数据转发授权\",\n      \"description\": \"数据采集器将数据转发至阳光云平台的功能默认不可用；启用该功能前，客户需在充分知情的前提下进行手动授权，并通过安全加密认证接入公共网络；远程访问仅在获得客户授权后方可生效，且相关操作受系统访问控制策略管理。\",\n      \"is_security_function\": true,\n      \"function_category\": \"remote_data_transfer\",\n      \"interfaces\": [\n        \"HTTPS\",\n        \"MQTT\"\n      ],\n      \"rdps_dependencies\": [],\n      \"limitations\": [\n        \"默认不可用\",\n        \"需客户手动授权\",\n        \"需安全加密认证\"\n      ]\n    }\n  ],\n  \"assets\": [\n    {\n      \"asset_id\": \"ASSET-001\",\n      \"name\": \"操作日志与syslog数据\",\n      \"asset_type\": \"data\",\n      \"status\": \"confirmed\",\n      \"description\": \"EMU300A在运行过程中自动生成的操作日志与syslog数据，用于记录用户操作、系统事件、安全告警及证书状态等。\",\n      \"value\": \"支撑故障诊断、安全审计、合规追溯；若被篡改或丢失将导致责任无法认定、异常行为无法发现。\",\n      \"provisional_related_function_ids\": [\n        \"FUNC-022\",\n        \"FUNC-033\"\n      ],\n      \"provisional_function_relationships\": [\n        {\n          \"function_id\": \"FUNC-022\",\n          \"relationship_type\": \"creates\",\n          \"rationale\": \"FUNC-022 '登录日志记录' 是日志功能的子集；本资产包含更广义的操作日志与syslog，由系统运行时自动产生。\"\n        },\n        {\n          \"function_id\": \"FUNC-033\",\n          \"relationship_type\": \"creates\",\n          \"rationale\": \"FUNC-033 明确描述'操作日志、syslog记录功能'，直接生成该数据资产。\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-002\",\n      \"name\": \"IEC104转发点表（CSV格式）\",\n      \"asset_type\": \"data\",\n      \"status\": \"confirmed\",\n      \"description\": \"EMU300A支持导出的IEC104协议转发点表文件，格式为.csv，定义了南向设备数据到北向IEC104报文的地址映射关系。\",\n      \"value\": \"是IEC104通信正确性的基础配置；若被篡改将导致遥信/遥测数据错位、控制指令误发，引发电网调度风险。\",\n      \"provisional_related_function_ids\": [\n        \"FUNC-005\",\n        \"FUNC-025\"\n      ],\n      \"provisional_function_relationships\": [\n        {\n          \"function_id\": \"FUNC-005\",\n          \"relationship_type\": \"creates\",\n          \"rationale\": \"FUNC-005 '北向数据转发'需依赖点表定义映射关系；导出点表是其配置输出环节。\"\n        },\n        {\n          \"function_id\": \"FUNC-025\",\n          \"relationship_type\": \"modifies\",\n          \"rationale\": \"FUNC-025 '北向协议配置管理'允许用户编辑点表内容，导出即为该配置的持久化快照。\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-003\",\n      \"name\": \"GOOSE数据配置文件（ZIP压缩包）\",\n      \"asset_type\": \"data\",\n      \"status\": \"confirmed\",\n      \"description\": \"EMU300A支持导出和导入的GOOSE数据配置文件，为ZIP压缩包格式，内含.cfg配置文件，定义GOOSE发布/订阅参数、MAC地址、APPID及防重放窗口等。\",\n      \"value\": \"直接影响GOOSE通信实时性、可靠性与抗重放能力；若配置错误或被篡改，可能导致保护动作失败或误动，危及电力系统安全。\",\n      \"provisional_related_function_ids\": [\n        \"FUNC-005\",\n        \"FUNC-040\"\n      ],\n      \"provisional_function_relationships\": [\n        {\n          \"function_id\": \"FUNC-005\",\n          \"relationship_type\": \"creates\",\n          \"rationale\": \"FUNC-005 '北向数据转发'中GOOSE服务需此配置文件驱动数据帧生成与发送。\"\n        },\n        {\n          \"function_id\": \"FUNC-040\",\n          \"relationship_type\": \"depends_on\",\n          \"rationale\": \"FUNC-040 'GOOSE防重放'功能的参数配置（如检测时间）保存于该ZIP包内.cfg文件中。\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-004\",\n      \"name\": \"Web界面用户凭据（普通/运维/审计/管理员）\",\n      \"asset_type\": \"credential\",\n      \"status\": \"confirmed\",\n      \"description\": \"EMU300A Web界面预置的五类用户（普通/user、运维/maintain、审计/auditor、管理员/administrator、开发者/develop）的用户名与默认密码组合，其中前四类默认密码由用户名与设备SN拼接生成。\",\n      \"value\": \"是访问设备配置、控制、审计功能的第一道防线；若泄露将导致未授权配置变更、远程控制、日志篡改等高风险后果。\",\n      \"provisional_related_function_ids\": [\n        \"FUNC-021\",\n        \"FUNC-023\"\n      ],\n      \"provisional_function_relationships\": [\n        {\n          \"function_id\": \"FUNC-021\",\n          \"relationship_type\": \"authenticates_with\",\n          \"rationale\": \"FUNC-021 '登录失败锁定'明确以Web用户凭据为验证对象。\"\n        },\n        {\n          \"function_id\": \"FUNC-023\",\n          \"relationship_type\": \"authenticates_with\",\n          \"rationale\": \"FUNC-023 '首次登录强制修改密码'要求用户凭据在首次使用时必须更新。\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-005\",\n      \"name\": \"操作系统root账号动态密码\",\n      \"asset_type\": \"credential\",\n      \"status\": \"confirmed\",\n      \"description\": \"EMU300A操作系统root账号的默认密码，采用动态生成机制，基于客户授权获取的设备SN生成。\",\n      \"value\": \"拥有最高系统权限；若泄露将导致固件篡改、密钥提取、持久化后门植入等灾难性后果。\",\n      \"provisional_related_function_ids\": [\n        \"FUNC-021\"\n      ],\n      \"provisional_function_relationships\": [\n        {\n          \"function_id\": \"FUNC-021\",\n          \"relationship_type\": \"authenticates_with\",\n          \"rationale\": \"FUNC-021 '登录失败锁定'适用于所有登录入口，包括CLI/SSH/SFTP，而root是OS层核心凭证。\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-006\",\n      \"name\": \"升级包数字签名公钥（PEM格式）\",\n      \"asset_type\": \"credential\",\n      \"status\": \"confirmed\",\n      \"description\": \"用于校验EMU300A固件/软件升级包完整性和来源真实性的公钥文件，格式为.pem，通过Web界面‘系统 > 系统维护 > 公钥导入’功能加载。\",\n      \"value\": \"是固件更新信任链的根锚点；若被替换或缺失，将导致恶意升级包被接受，造成设备完全失控。\",\n      \"provisional_related_function_ids\": [\n        \"FUNC-034\"\n      ],\n      \"provisional_function_relationships\": [\n        {\n          \"function_id\": \"FUNC-034\",\n          \"relationship_type\": \"depends_on\",\n          \"rationale\": \"FUNC-034 '软件和固件更新'明确要求升级包须经数字签名校验，校验依赖导入的公钥。\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-007\",\n      \"name\": \"安全启动固件与操作系统镜像\",\n      \"asset_type\": \"software\",\n      \"status\": \"confirmed\",\n      \"description\": \"EMU300A中由安全启动（Secure Boot）机制所验证的固件（BootROM/BL2等）与操作系统镜像（如Linux kernel/initramfs），构成可信启动链。\",\n      \"value\": \"是设备启动可信根；若被篡改将导致恶意代码在早期阶段加载，绕过所有上层安全机制。\",\n      \"provisional_related_function_ids\": [\n        \"FUNC-027\"\n      ],\n      \"provisional_function_relationships\": [\n        {\n          \"function_id\": \"FUNC-027\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"FUNC-027 '安全启动'功能直接作用于固件与操作系统镜像，通过逐级验证确保其完整性与合法性。\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-008\",\n      \"name\": \"固件升级包\",\n      \"asset_type\": \"software\",\n      \"status\": \"confirmed\",\n      \"description\": \"用于更新EMU300A固件的二进制软件包，需经数字签名验证后方可安装，支持通过Web端、iConfig工具或阳光云平台分发。\",\n      \"value\": \"承载关键安全更新与功能增强；若被篡改将引入漏洞或后门，若被伪造将导致拒绝服务或设备劫持。\",\n      \"provisional_related_function_ids\": [\n        \"FUNC-034\"\n      ],\n      \"provisional_function_relationships\": [\n        {\n          \"function_id\": \"FUNC-034\",\n          \"relationship_type\": \"modifies\",\n          \"rationale\": \"FUNC-034 '软件和固件更新'功能以升级包为输入，执行安装并替换现有固件。\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-009\",\n      \"name\": \"Web界面用户登录证书\",\n      \"asset_type\": \"credential\",\n      \"status\": \"confirmed\",\n      \"description\": \"管理员通过Web界面为用户分配的X.509登录证书，用于替代密码实现双向TLS认证，提升Web访问安全性。\",\n      \"value\": \"提供比密码更强的身份认证保障；若私钥泄露或证书被冒用，将导致高权限账户被接管。\",\n      \"provisional_related_function_ids\": [\n        \"FUNC-026\"\n      ],\n      \"provisional_function_relationships\": [\n        {\n          \"function_id\": \"FUNC-026\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"FUNC-026 'PKI证书管理'功能覆盖用户登录证书的全生命周期管理。\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-010\",\n      \"name\": \"Logger5000数据采集器\",\n      \"asset_type\": \"hardware\",\n      \"status\": \"confirmed\",\n      \"description\": \"EMU300A整机内部集成的数据采集与本地能量管理单元，承担南向设备接入、协议转换、有功/无功功率调节、北向数据转发及安全通信等核心功能。\",\n      \"value\": \"保障光伏电站能量管理闭环运行；其故障或篡改将导致监控失准、控制失效、功率调度错误，引发发电损失、设备过载或电网稳定性风险。\",\n      \"provisional_related_function_ids\": [\n        \"FUNC-001\",\n        \"FUNC-002\",\n        \"FUNC-005\",\n        \"FUNC-006\",\n        \"FUNC-030\"\n      ],\n      \"provisional_function_relationships\": [\n        {\n          \"function_id\": \"FUNC-001\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"Logger5000实现南向设备接入功能，通过RS485总线接入逆变器等设备。\"\n        },\n        {\n          \"function_id\": \"FUNC-002\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"Logger5000实现PLC电力载波南向接入功能，用于接入PLC功能逆变器。\"\n        },\n        {\n          \"function_id\": \"FUNC-005\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"Logger5000通过IEC104、Modbus、MQTT、GOOSE等协议北向转发数据至综自系统及阳光云平台。\"\n        },\n        {\n          \"function_id\": \"FUNC-006\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"Logger5000可接收北向远程调度指令并执行本地调度指令。\"\n        },\n        {\n          \"function_id\": \"FUNC-030\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"Logger5000支持HTTPS/IEC104/Modbus TCP等协议的TLS加密通信。\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-011\",\n      \"name\": \"RS485通讯端子\",\n      \"asset_type\": \"hardware\",\n      \"status\": \"conditional\",\n      \"description\": \"EMU300A整机内部提供的RS485物理接口端子，用于南向接入逆变器、电表等Modbus从站设备；线缆未包含在供货范围。\",\n      \"value\": \"支撑关键南向数据采集链路；其缺失或物理损坏将导致部分现场设备无法接入，影响监控完整性与控制覆盖范围。\",\n      \"provisional_related_function_ids\": [\n        \"FUNC-001\",\n        \"FUNC-022\"\n      ],\n      \"provisional_function_relationships\": [\n        {\n          \"function_id\": \"FUNC-001\",\n          \"relationship_type\": \"depends_on\",\n          \"rationale\": \"RS485通讯端子为FUNC-001南向设备接入提供物理连接通道。\"\n        },\n        {\n          \"function_id\": \"FUNC-022\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"Logger5000支持9路RS485通信接口（A1B1~A9B9），该能力由RS485通讯端子实现物理层承载。\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-012\",\n      \"name\": \"MPLC模块\",\n      \"asset_type\": \"hardware\",\n      \"status\": \"conditional\",\n      \"description\": \"EMU300A整机内部可选配的电力线载波通信模块，数量为1或2个，用于南向接入阳光电源PLC功能逆变器。\",\n      \"value\": \"扩展南向通信方式，提升对特定逆变器型号的兼容性；其缺失不影响RS485/Modbus基础接入，但限制PLC类设备部署灵活性。\",\n      \"provisional_related_function_ids\": [\n        \"FUNC-002\"\n      ],\n      \"provisional_function_relationships\": [\n        {\n          \"function_id\": \"FUNC-002\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"MPLC模块提供PLC电力载波通信能力，用于FUNC-002所述的PLC功能逆变器接入。\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-013\",\n      \"name\": \"光纤环网交换机\",\n      \"asset_type\": \"network\",\n      \"status\": \"conditional\",\n      \"description\": \"EMU300A整机内部可选配的光纤环网交换机，必须与光纤终端盒配套使用，用于构建高可靠性站内通信网络。\",\n      \"value\": \"增强站内通信网络冗余性与抗单点故障能力；其缺失不影响基本通信功能，但降低网络可用性等级。\",\n      \"provisional_related_function_ids\": [],\n      \"provisional_function_relationships\": []\n    },\n    {\n      \"asset_id\": \"ASSET-014\",\n      \"name\": \"IO模组\",\n      \"asset_type\": \"hardware\",\n      \"status\": \"conditional\",\n      \"description\": \"EMU300A整机内部可选配的数字量/模拟量输入输出模块，用于扩展连接外部传感器或执行机构的能力。\",\n      \"value\": \"扩展现场信号采集与控制执行能力；其缺失不影响核心能量管理功能，但限制定制化监测与联动控制场景。\",\n      \"provisional_related_function_ids\": [],\n      \"provisional_function_relationships\": []\n    },\n    {\n      \"asset_id\": \"ASSET-015\",\n      \"name\": \"阳光云平台\",\n      \"asset_type\": \"service\",\n      \"status\": \"external_affected\",\n      \"description\": \"EMU300A通过路由器或4G网络连接的外部云服务平台，提供数据汇聚、远程监控与运维支持；其运营方、数据处理位置及责任边界未在证据中明确说明。\",\n      \"value\": \"承载电站级运行数据与远程指令交互；其遭入侵、篡改或中断将导致全局监控失效、误控指令下发、敏感运行数据泄露，影响多站点安全与合规。\",\n      \"provisional_related_function_ids\": [\n        \"FUNC-005\",\n        \"FUNC-043\"\n      ],\n      \"provisional_function_relationships\": [\n        {\n          \"function_id\": \"FUNC-005\",\n          \"relationship_type\": \"affects\",\n          \"rationale\": \"阳光云平台作为FUNC-005北向数据转发的目标端，其可用性、安全性直接影响EMU300A数据上传结果。\"\n        },\n        {\n          \"function_id\": \"FUNC-043\",\n          \"relationship_type\": \"affects\",\n          \"rationale\": \"阳光云平台是FUNC-043阳光云数据转发授权功能的外部依赖对象，其运营方、数据处理位置及责任归属未明确。\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-016\",\n      \"name\": \"第三方站控系统\",\n      \"asset_type\": \"service\",\n      \"status\": \"external_affected\",\n      \"description\": \"EMU300A通过核心交换机连接的外部站控系统（如Insight/SCADA），用于接收数据与下发调度指令；其具体厂商、部署位置及安全责任归属未在证据中明确说明。\",\n      \"value\": \"作为电站级调度决策与执行中枢；其遭入侵或配置错误可能导致恶意指令注入、越权控制或数据污染，引发连锁安全事故。\",\n      \"provisional_related_function_ids\": [\n        \"FUNC-005\"\n      ],\n      \"provisional_function_relationships\": [\n        {\n          \"function_id\": \"FUNC-005\",\n          \"relationship_type\": \"affects\",\n          \"rationale\": \"第三方站控系统是FUNC-005北向数据转发及FUNC-006远程调度指令接收的目标系统之一，其安全状态影响EMU300A指令执行可信度。\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-017\",\n      \"name\": \"核心交换机\",\n      \"asset_type\": \"network\",\n      \"status\": \"external_affected\",\n      \"description\": \"EMU300A通过其连接至Insight/SCADA等站控系统的外部核心交换机；证据未说明其是否为EMU300A内置组件或客户侧配套设备。\",\n      \"value\": \"构成北向数据出口主干网络；其单点故障或配置错误将导致EMU300A与全部上位系统通信中断，丧失远程监控与调度能力。\",\n      \"provisional_related_function_ids\": [\n        \"FUNC-007\"\n      ],\n      \"provisional_function_relationships\": [\n        {\n          \"function_id\": \"FUNC-007\",\n          \"relationship_type\": \"affects\",\n          \"rationale\": \"核心交换机是FUNC-007‘通过核心交换机传输至后台站控系统’的网络基础设施，其故障或被攻破将阻断EMU300A与Insight/SCADA通信。\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-018\",\n      \"name\": \"4G路由器\",\n      \"asset_type\": \"network\",\n      \"status\": \"external_affected\",\n      \"description\": \"EMU300A通过其连接至阳光云平台的外部4G路由器；证据表明EMU300A可通过其传输数据，但未说明其是否为EMU300A内置模块或客户侧配套设备。\",\n      \"value\": \"提供公网通信通道；其被劫持、DNS污染或SIM卡失效将导致阳光云通信中断，影响远程运维与告警推送。\",\n      \"provisional_related_function_ids\": [\n        \"FUNC-008\"\n      ],\n      \"provisional_function_relationships\": [\n        {\n          \"function_id\": \"FUNC-008\",\n          \"relationship_type\": \"affects\",\n          \"rationale\": \"4G路由器是FUNC-008‘通过4G路由器传输至阳光云平台’的通信载体，其可用性与安全性直接影响数据上传可靠性。\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-019\",\n      \"name\": \"南向设备数据采集与接入功能\",\n      \"asset_type\": \"function\",\n      \"status\": \"confirmed\",\n      \"description\": \"该功能实现对光伏发电系统中逆变器、箱变、环境监测仪、电表等南向设备的数据采集与协议适配接入，是EMU300A能量管理的基础输入环节。\",\n      \"value\": \"保障电站运行状态实时感知与基础控制指令下发；若失效将导致上层功率调节、调度响应、故障诊断等功能丧失，引发生产中断与安全风险。\",\n      \"provisional_related_function_ids\": [\n        \"FUNC-001\"\n      ],\n      \"provisional_function_relationships\": [\n        {\n          \"function_id\": \"FUNC-001\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"FUNC-001 '南向设备接入'、FUNC-002 'PLC电力载波南向接入'和FUNC-003 '南向协议支持'共同构成南向数据采集与接入能力，证据FACT-012明确其通过RS485/PLC总线接入设备并执行规约转换。\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-020\",\n      \"name\": \"本地有功与无功功率调节功能\",\n      \"asset_type\": \"function\",\n      \"status\": \"confirmed\",\n      \"description\": \"该功能基于南向采集数据，对所接入逆变器实施闭环的有功功率控制（如限发、AGC）和无功功率调节（如SVG协同、电压支撑），是EMU300A核心能量管理能力。\",\n      \"value\": \"直接决定光伏电站并网合规性（GB/T 19964）、电网调度响应能力及电压稳定性；若被篡改或失效，将导致越限脱网、谐振、设备过载甚至人身伤亡。\",\n      \"provisional_related_function_ids\": [\n        \"FUNC-004\"\n      ],\n      \"provisional_function_relationships\": [\n        {\n          \"function_id\": \"FUNC-004\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"FUNC-004明确描述‘对接入逆变器进行有功/无功功率调节’，FACT-008直接证实该能力；FUNC-014补充说明其在通讯异常恢复后仍可执行功率调整，属同一控制价值域。\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-021\",\n      \"name\": \"北向数据转发与远程调度指令接收功能\",\n      \"asset_type\": \"function\",\n      \"status\": \"conditional\",\n      \"description\": \"该功能实现将本地采集与处理后的数据（含遥测、遥信、事件）按IEC104/MQTT/GOOSE/HTTPS等协议转发至综自系统、站控系统（Insight/SCADA）及阳光云平台，并接收来自电网或上位系统的远程调度指令（含模拟量/数字量）。其启用需客户手动授权及安全加密认证。\",\n      \"value\": \"支撑电网调度合规（DL/T 634.5104）、远程运维效率及云端智能分析；若被劫持或伪造，将导致误调度、越限运行、数据泄露及大规模连锁故障。\",\n      \"provisional_related_function_ids\": [\n        \"FUNC-005\"\n      ],\n      \"provisional_function_relationships\": [\n        {\n          \"function_id\": \"FUNC-005\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"FUNC-005定义北向数据转发，FACT-001证实其存在；FUNC-006/007/008/009具体化指令接收与执行，均依赖同一北向通信能力。\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-022\",\n      \"name\": \"Web界面系统配置与管理功能\",\n      \"asset_type\": \"function\",\n      \"status\": \"confirmed\",\n      \"description\": \"该功能提供嵌入式Web界面，支持用户对系统时间、网络、串口、协议点表、设备列表、用户权限、北向协议参数等进行配置与维护，是EMU300A本地运维的核心人机交互通道。\",\n      \"value\": \"保障现场快速部署、故障排查与策略调整；若被未授权访问或配置篡改，将导致系统失配、通信中断、权限越界及安全机制失效。\",\n      \"provisional_related_function_ids\": [\n        \"FUNC-010\"\n      ],\n      \"provisional_function_relationships\": [\n        {\n          \"function_id\": \"FUNC-010\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"FUNC-010定义Web界面配置系统参数，FACT-010 confirms it；FUNC-011/012/019/024/025 extend to device list, user management, protocol config — all share same Web interface entry point and authentication boundary.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-023\",\n      \"name\": \"操作日志与syslog记录功能\",\n      \"asset_type\": \"function\",\n      \"status\": \"confirmed\",\n      \"description\": \"该功能持续记录用户登录、配置变更、证书状态、系统事件等关键操作行为，并支持本地存储与syslog远程转发，是安全审计与事件追溯的基础能力。\",\n      \"value\": \"支撑安全事件调查、责任认定与合规审计（如等保2.0审计要求）；若日志被删除、篡改或未生成，将导致攻击行为无法追溯、责任无法界定。\",\n      \"provisional_related_function_ids\": [\n        \"FUNC-033\"\n      ],\n      \"provisional_function_relationships\": [\n        {\n          \"function_id\": \"FUNC-033\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"FUNC-033 explicitly names '操作日志与syslog记录功能'；FACT-021 directly confirms its existence；FUNC-022/038/039 are specific logging use cases (login, cert expiry) under the same logging capability.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-024\",\n      \"name\": \"软件和固件更新功能\",\n      \"asset_type\": \"function\",\n      \"status\": \"confirmed\",\n      \"description\": \"该功能支持通过Web界面、HTTPS或SFTP方式对EMU300A的软件应用与底层固件进行安全更新，是维持产品长期安全与功能演进的关键机制。\",\n      \"value\": \"保障漏洞修复、合规升级与新功能交付；若更新过程被劫持或固件被替换，将导致设备永久性失控或后门植入。\",\n      \"provisional_related_function_ids\": [\n        \"FUNC-034\"\n      ],\n      \"provisional_function_relationships\": [\n        {\n          \"function_id\": \"FUNC-034\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"FUNC-034 is named '软件和固件更新'；FACT-022 directly states '支持软件和固件更新'；no conditional language present.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-025\",\n      \"name\": \"恢复出厂设置功能\",\n      \"asset_type\": \"function\",\n      \"status\": \"confirmed\",\n      \"description\": \"该功能通过Web界面触发，执行设备全量配置清除与用户数据擦除，用于设备退役、转场或安全应急场景。\",\n      \"value\": \"保障设备生命周期末期数据安全，防止二次部署时残留凭证或配置被滥用；若执行不彻底，将导致敏感数据泄露。\",\n      \"provisional_related_function_ids\": [\n        \"FUNC-032\"\n      ],\n      \"provisional_function_relationships\": [\n        {\n          \"function_id\": \"FUNC-032\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"FUNC-032 is named '恢复出厂设置'；FACT-020 explicitly states '恢复出厂设置功能可删除设备数据'；no conditional language.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-026\",\n      \"name\": \"人员安全\",\n      \"asset_type\": \"user\",\n      \"status\": \"external_affected\",\n      \"description\": \"指在光伏发电系统现场作业的运维人员、检修人员、管理人员等，其人身安全直接受EMU300A功能正确性与安全性影响。\",\n      \"value\": \"网络安全事件（如功率调节失控、误跳闸、设备过载）可能导致人员死亡或严重伤害；参数设置错误亦可导致机器故障致人员重伤或死亡。\",\n      \"provisional_related_function_ids\": [],\n      \"provisional_function_relationships\": []\n    },\n    {\n      \"asset_id\": \"ASSET-027\",\n      \"name\": \"财产安全\",\n      \"asset_type\": \"property\",\n      \"status\": \"external_affected\",\n      \"description\": \"指光伏发电系统中的逆变器、箱变、电表、环境监测仪等南向接入设备，以及综自系统、站控系统等北向关联设备，其资产价值受EMU300A功能可靠性与安全性影响。\",\n      \"value\": \"网络安全受损可能导致设备无法正常运行或造成财产损失；未经授权的人员进入生产环境可能损坏或修改生产设备。\",\n      \"provisional_related_function_ids\": [],\n      \"provisional_function_relationships\": []\n    }\n  ]\n}",
+  "estimated_input_tokens": 14322,
+  "raw_response": "{\n  \"mappings\": [\n    {\n      \"asset_id\": \"ASSET-001\",\n      \"related_function_ids\": [],\n      \"relationships\": [\n        {\n          \"function_id\": \"FUNC-033\",\n          \"relationship_type\": \"creates\",\n          \"rationale\": \"FUNC-033 explicitly names '操作日志、syslog记录功能' and directly generates this asset.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-002\",\n      \"related_function_ids\": [],\n      \"relationships\": [\n        {\n          \"function_id\": \"FUNC-025\",\n          \"relationship_type\": \"modifies\",\n          \"rationale\": \"FUNC-025 '北向协议配置管理' allows editing of IEC104 point table content; export is its persistent configuration snapshot.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-003\",\n      \"related_function_ids\": [],\n      \"relationships\": [\n        {\n          \"function_id\": \"FUNC-005\",\n          \"relationship_type\": \"creates\",\n          \"rationale\": \"FUNC-005 '北向数据转发' with GOOSE service requires this ZIP configuration file to drive GOOSE frame generation and transmission.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-004\",\n      \"related_function_ids\": [],\n      \"relationships\": [\n        {\n          \"function_id\": \"FUNC-021\",\n          \"relationship_type\": \"authenticates_with\",\n          \"rationale\": \"FUNC-021 '登录失败锁定' explicitly operates on Web interface user credentials.\"\n        },\n        {\n          \"function_id\": \"FUNC-023\",\n          \"relationship_type\": \"authenticates_with\",\n          \"rationale\": \"FUNC-023 '首次登录强制修改密码' applies directly to Web interface user credentials upon first use.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-005\",\n      \"related_function_ids\": [],\n      \"relationships\": [\n        {\n          \"function_id\": \"FUNC-021\",\n          \"relationship_type\": \"authenticates_with\",\n          \"rationale\": \"FUNC-021 '登录失败锁定' applies to all login entry points including CLI/SSH/SFTP, and root is the OS-level credential subject to this control.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-006\",\n      \"related_function_ids\": [],\n      \"relationships\": [\n        {\n          \"function_id\": \"FUNC-034\",\n          \"relationship_type\": \"depends_on\",\n          \"rationale\": \"FUNC-034 '软件和固件更新' requires digital signature verification of upgrade packages, which depends on the imported PEM public key.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-007\",\n      \"related_function_ids\": [],\n      \"relationships\": [\n        {\n          \"function_id\": \"FUNC-027\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"FUNC-027 '安全启动' function directly verifies integrity and authenticity of firmware and OS images as part of the boot chain.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-008\",\n      \"related_function_ids\": [],\n      \"relationships\": [\n        {\n          \"function_id\": \"FUNC-034\",\n          \"relationship_type\": \"modifies\",\n          \"rationale\": \"FUNC-034 '软件和固件更新' consumes the firmware upgrade package as input and replaces existing firmware.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-009\",\n      \"related_function_ids\": [],\n      \"relationships\": [\n        {\n          \"function_id\": \"FUNC-026\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"FUNC-026 'PKI证书管理' covers full lifecycle management of X.509 login certificates for Web interface authentication.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-010\",\n      \"related_function_ids\": [],\n      \"relationships\": [\n        {\n          \"function_id\": \"FUNC-001\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"Logger5000 implements FUNC-001 '南向设备接入' via RS485 bus as stated in its description.\"\n        },\n        {\n          \"function_id\": \"FUNC-002\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"Logger5000 implements FUNC-002 'PLC电力载波南向接入' for PLC-capable inverters as described.\"\n        },\n        {\n          \"function_id\": \"FUNC-005\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"Logger5000 implements FUNC-005 '北向数据转发' using IEC104, Modbus, MQTT, GOOSE protocols as specified.\"\n        },\n        {\n          \"function_id\": \"FUNC-006\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"Logger5000 implements FUNC-006 '远程调度指令接收' for both northbound and local dispatch commands.\"\n        },\n        {\n          \"function_id\": \"FUNC-030\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"Logger5000 implements FUNC-030 'TLS加密通信' for HTTPS, IEC104, and Modbus TCP as stated.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-011\",\n      \"related_function_ids\": [],\n      \"relationships\": [\n        {\n          \"function_id\": \"FUNC-001\",\n          \"relationship_type\": \"depends_on\",\n          \"rationale\": \"RS485通讯端子 provides the physical connection channel required by FUNC-001 for southbound device access.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-012\",\n      \"related_function_ids\": [],\n      \"relationships\": [\n        {\n          \"function_id\": \"FUNC-002\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"MPLC模块 provides the PLC power line carrier communication capability used by FUNC-002 for PLC-capable inverter access.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-013\",\n      \"related_function_ids\": [],\n      \"relationships\": []\n    },\n    {\n      \"asset_id\": \"ASSET-014\",\n      \"related_function_ids\": [],\n      \"relationships\": []\n    },\n    {\n      \"asset_id\": \"ASSET-015\",\n      \"related_function_ids\": [],\n      \"relationships\": [\n        {\n          \"function_id\": \"FUNC-005\",\n          \"relationship_type\": \"affects\",\n          \"rationale\": \"阳光云平台 is the target destination for FUNC-005 '北向数据转发'; its availability and security directly impact data upload outcomes.\"\n        },\n        {\n          \"function_id\": \"FUNC-043\",\n          \"relationship_type\": \"affects\",\n          \"rationale\": \"阳光云平台 is the external dependency of FUNC-043 '阳光云数据转发授权', and its operational scope and responsibility boundary are not defined in evidence.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-016\",\n      \"related_function_ids\": [],\n      \"relationships\": [\n        {\n          \"function_id\": \"FUNC-005\",\n          \"relationship_type\": \"affects\",\n          \"rationale\": \"第三方站控系统 is a target system for FUNC-005 '北向数据转发' and FUNC-006 '远程调度指令接收'; its security state affects instruction execution trustworthiness.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-017\",\n      \"related_function_ids\": [],\n      \"relationships\": [\n        {\n          \"function_id\": \"FUNC-007\",\n          \"relationship_type\": \"affects\",\n          \"rationale\": \"核心交换机 is the network infrastructure for FUNC-007 '通过核心交换机传输至后台站控系统'; its failure or compromise blocks communication with Insight/SCADA.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-018\",\n      \"related_function_ids\": [],\n      \"relationships\": [\n        {\n          \"function_id\": \"FUNC-008\",\n          \"relationship_type\": \"affects\",\n          \"rationale\": \"4G路由器 is the communication carrier for FUNC-008 '通过4G路由器传输至阳光云平台'; its availability and security directly affect data upload reliability.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-019\",\n      \"related_function_ids\": [],\n      \"relationships\": [\n        {\n          \"function_id\": \"FUNC-001\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"FUNC-001 '南向设备接入', FUNC-002 'PLC电力载波南向接入', and FUNC-003 '南向协议支持' collectively constitute the southbound data acquisition and protocol adaptation capability.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-020\",\n      \"related_function_ids\": [],\n      \"relationships\": [\n        {\n          \"function_id\": \"FUNC-004\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"FUNC-004 explicitly describes '对接入逆变器进行有功功率控制和无功功率调节', directly realizing this function.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-021\",\n      \"related_function_ids\": [],\n      \"relationships\": [\n        {\n          \"function_id\": \"FUNC-005\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"FUNC-005 defines northbound data forwarding; FUNC-006, FUNC-007, FUNC-008, and FUNC-009 are specific instantiations of the same northbound communication capability.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-022\",\n      \"related_function_ids\": [],\n      \"relationships\": [\n        {\n          \"function_id\": \"FUNC-010\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"FUNC-010 'Web界面系统配置' provides embedded Web interface for configuring system time, network, serial ports, etc., forming the core human-machine interaction channel.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-023\",\n      \"related_function_ids\": [],\n      \"relationships\": [\n        {\n          \"function_id\": \"FUNC-033\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"FUNC-033 explicitly names '操作日志与syslog记录功能' and directly realizes this logging capability.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-024\",\n      \"related_function_ids\": [],\n      \"relationships\": [\n        {\n          \"function_id\": \"FUNC-034\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"FUNC-034 is named '软件和固件更新' and directly realizes this secure update capability.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-025\",\n      \"related_function_ids\": [],\n      \"relationships\": [\n        {\n          \"function_id\": \"FUNC-032\",\n          \"relationship_type\": \"implements\",\n          \"rationale\": \"FUNC-032 is named '恢复出厂设置' and directly realizes full configuration wipe and user data erasure.\"\n        }\n      ]\n    },\n    {\n      \"asset_id\": \"ASSET-026\",\n      \"related_function_ids\": [],\n      \"relationships\": []\n    },\n    {\n      \"asset_id\": \"ASSET-027\",\n      \"related_function_ids\": [],\n      \"relationships\": []\n    }\n  ],\n  \"notes\": \"ASSET-013, ASSET-014, ASSET-026, and ASSET-027 lack direct, evidenced functional relationships per criteria: no implementation, dependency, protection, or consequence is stated in input descriptions; co-location or generic platform role is insufficient for relationship establishment.\"\n}",
+  "response_metadata": {
+    "finish_reason": "stop",
+    "token_usage": {
+      "completion_tokens": 2673,
+      "prompt_tokens": 12400,
+      "total_tokens": 15073,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "qwen-plus"
+  },
+  "parsed_payload": {
+    "mappings": [
+      {
+        "asset_id": "ASSET-001",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-033",
+            "relationship_type": "creates",
+            "rationale": "FUNC-033 explicitly names '操作日志、syslog记录功能' and directly generates this asset."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-002",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-025",
+            "relationship_type": "modifies",
+            "rationale": "FUNC-025 '北向协议配置管理' allows editing of IEC104 point table content; export is its persistent configuration snapshot."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-003",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "creates",
+            "rationale": "FUNC-005 '北向数据转发' with GOOSE service requires this ZIP configuration file to drive GOOSE frame generation and transmission."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-004",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-021",
+            "relationship_type": "authenticates_with",
+            "rationale": "FUNC-021 '登录失败锁定' explicitly operates on Web interface user credentials."
+          },
+          {
+            "function_id": "FUNC-023",
+            "relationship_type": "authenticates_with",
+            "rationale": "FUNC-023 '首次登录强制修改密码' applies directly to Web interface user credentials upon first use."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-005",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-021",
+            "relationship_type": "authenticates_with",
+            "rationale": "FUNC-021 '登录失败锁定' applies to all login entry points including CLI/SSH/SFTP, and root is the OS-level credential subject to this control."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-006",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-034",
+            "relationship_type": "depends_on",
+            "rationale": "FUNC-034 '软件和固件更新' requires digital signature verification of upgrade packages, which depends on the imported PEM public key."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-007",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-027",
+            "relationship_type": "implements",
+            "rationale": "FUNC-027 '安全启动' function directly verifies integrity and authenticity of firmware and OS images as part of the boot chain."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-008",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-034",
+            "relationship_type": "modifies",
+            "rationale": "FUNC-034 '软件和固件更新' consumes the firmware upgrade package as input and replaces existing firmware."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-009",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-026",
+            "relationship_type": "implements",
+            "rationale": "FUNC-026 'PKI证书管理' covers full lifecycle management of X.509 login certificates for Web interface authentication."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-010",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-001",
+            "relationship_type": "implements",
+            "rationale": "Logger5000 implements FUNC-001 '南向设备接入' via RS485 bus as stated in its description."
+          },
+          {
+            "function_id": "FUNC-002",
+            "relationship_type": "implements",
+            "rationale": "Logger5000 implements FUNC-002 'PLC电力载波南向接入' for PLC-capable inverters as described."
+          },
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "implements",
+            "rationale": "Logger5000 implements FUNC-005 '北向数据转发' using IEC104, Modbus, MQTT, GOOSE protocols as specified."
+          },
+          {
+            "function_id": "FUNC-006",
+            "relationship_type": "implements",
+            "rationale": "Logger5000 implements FUNC-006 '远程调度指令接收' for both northbound and local dispatch commands."
+          },
+          {
+            "function_id": "FUNC-030",
+            "relationship_type": "implements",
+            "rationale": "Logger5000 implements FUNC-030 'TLS加密通信' for HTTPS, IEC104, and Modbus TCP as stated."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-011",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-001",
+            "relationship_type": "depends_on",
+            "rationale": "RS485通讯端子 provides the physical connection channel required by FUNC-001 for southbound device access."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-012",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-002",
+            "relationship_type": "implements",
+            "rationale": "MPLC模块 provides the PLC power line carrier communication capability used by FUNC-002 for PLC-capable inverter access."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-013",
+        "related_function_ids": [],
+        "relationships": []
+      },
+      {
+        "asset_id": "ASSET-014",
+        "related_function_ids": [],
+        "relationships": []
+      },
+      {
+        "asset_id": "ASSET-015",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "affects",
+            "rationale": "阳光云平台 is the target destination for FUNC-005 '北向数据转发'; its availability and security directly impact data upload outcomes."
+          },
+          {
+            "function_id": "FUNC-043",
+            "relationship_type": "affects",
+            "rationale": "阳光云平台 is the external dependency of FUNC-043 '阳光云数据转发授权', and its operational scope and responsibility boundary are not defined in evidence."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-016",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "affects",
+            "rationale": "第三方站控系统 is a target system for FUNC-005 '北向数据转发' and FUNC-006 '远程调度指令接收'; its security state affects instruction execution trustworthiness."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-017",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-007",
+            "relationship_type": "affects",
+            "rationale": "核心交换机 is the network infrastructure for FUNC-007 '通过核心交换机传输至后台站控系统'; its failure or compromise blocks communication with Insight/SCADA."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-018",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-008",
+            "relationship_type": "affects",
+            "rationale": "4G路由器 is the communication carrier for FUNC-008 '通过4G路由器传输至阳光云平台'; its availability and security directly affect data upload reliability."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-019",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-001",
+            "relationship_type": "implements",
+            "rationale": "FUNC-001 '南向设备接入', FUNC-002 'PLC电力载波南向接入', and FUNC-003 '南向协议支持' collectively constitute the southbound data acquisition and protocol adaptation capability."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-020",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-004",
+            "relationship_type": "implements",
+            "rationale": "FUNC-004 explicitly describes '对接入逆变器进行有功功率控制和无功功率调节', directly realizing this function."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-021",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "implements",
+            "rationale": "FUNC-005 defines northbound data forwarding; FUNC-006, FUNC-007, FUNC-008, and FUNC-009 are specific instantiations of the same northbound communication capability."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-022",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-010",
+            "relationship_type": "implements",
+            "rationale": "FUNC-010 'Web界面系统配置' provides embedded Web interface for configuring system time, network, serial ports, etc., forming the core human-machine interaction channel."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-023",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-033",
+            "relationship_type": "implements",
+            "rationale": "FUNC-033 explicitly names '操作日志与syslog记录功能' and directly realizes this logging capability."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-024",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-034",
+            "relationship_type": "implements",
+            "rationale": "FUNC-034 is named '软件和固件更新' and directly realizes this secure update capability."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-025",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-032",
+            "relationship_type": "implements",
+            "rationale": "FUNC-032 is named '恢复出厂设置' and directly realizes full configuration wipe and user data erasure."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-026",
+        "related_function_ids": [],
+        "relationships": []
+      },
+      {
+        "asset_id": "ASSET-027",
+        "related_function_ids": [],
+        "relationships": []
+      }
+    ],
+    "notes": "ASSET-013, ASSET-014, ASSET-026, and ASSET-027 lack direct, evidenced functional relationships per criteria: no implementation, dependency, protection, or consequence is stated in input descriptions; co-location or generic platform role is insufficient for relationship establishment."
+  },
+  "validation_payload": {
+    "mappings": [
+      {
+        "asset_id": "ASSET-001",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-033",
+            "relationship_type": "creates",
+            "rationale": "FUNC-033 explicitly names '操作日志、syslog记录功能' and directly generates this asset."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-002",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-025",
+            "relationship_type": "modifies",
+            "rationale": "FUNC-025 '北向协议配置管理' allows editing of IEC104 point table content; export is its persistent configuration snapshot."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-003",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "creates",
+            "rationale": "FUNC-005 '北向数据转发' with GOOSE service requires this ZIP configuration file to drive GOOSE frame generation and transmission."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-004",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-021",
+            "relationship_type": "authenticates_with",
+            "rationale": "FUNC-021 '登录失败锁定' explicitly operates on Web interface user credentials."
+          },
+          {
+            "function_id": "FUNC-023",
+            "relationship_type": "authenticates_with",
+            "rationale": "FUNC-023 '首次登录强制修改密码' applies directly to Web interface user credentials upon first use."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-005",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-021",
+            "relationship_type": "authenticates_with",
+            "rationale": "FUNC-021 '登录失败锁定' applies to all login entry points including CLI/SSH/SFTP, and root is the OS-level credential subject to this control."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-006",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-034",
+            "relationship_type": "depends_on",
+            "rationale": "FUNC-034 '软件和固件更新' requires digital signature verification of upgrade packages, which depends on the imported PEM public key."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-007",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-027",
+            "relationship_type": "implements",
+            "rationale": "FUNC-027 '安全启动' function directly verifies integrity and authenticity of firmware and OS images as part of the boot chain."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-008",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-034",
+            "relationship_type": "modifies",
+            "rationale": "FUNC-034 '软件和固件更新' consumes the firmware upgrade package as input and replaces existing firmware."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-009",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-026",
+            "relationship_type": "implements",
+            "rationale": "FUNC-026 'PKI证书管理' covers full lifecycle management of X.509 login certificates for Web interface authentication."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-010",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-001",
+            "relationship_type": "implements",
+            "rationale": "Logger5000 implements FUNC-001 '南向设备接入' via RS485 bus as stated in its description."
+          },
+          {
+            "function_id": "FUNC-002",
+            "relationship_type": "implements",
+            "rationale": "Logger5000 implements FUNC-002 'PLC电力载波南向接入' for PLC-capable inverters as described."
+          },
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "implements",
+            "rationale": "Logger5000 implements FUNC-005 '北向数据转发' using IEC104, Modbus, MQTT, GOOSE protocols as specified."
+          },
+          {
+            "function_id": "FUNC-006",
+            "relationship_type": "implements",
+            "rationale": "Logger5000 implements FUNC-006 '远程调度指令接收' for both northbound and local dispatch commands."
+          },
+          {
+            "function_id": "FUNC-030",
+            "relationship_type": "implements",
+            "rationale": "Logger5000 implements FUNC-030 'TLS加密通信' for HTTPS, IEC104, and Modbus TCP as stated."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-011",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-001",
+            "relationship_type": "depends_on",
+            "rationale": "RS485通讯端子 provides the physical connection channel required by FUNC-001 for southbound device access."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-012",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-002",
+            "relationship_type": "implements",
+            "rationale": "MPLC模块 provides the PLC power line carrier communication capability used by FUNC-002 for PLC-capable inverter access."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-013",
+        "related_function_ids": [],
+        "relationships": []
+      },
+      {
+        "asset_id": "ASSET-014",
+        "related_function_ids": [],
+        "relationships": []
+      },
+      {
+        "asset_id": "ASSET-015",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "affects",
+            "rationale": "阳光云平台 is the target destination for FUNC-005 '北向数据转发'; its availability and security directly impact data upload outcomes."
+          },
+          {
+            "function_id": "FUNC-043",
+            "relationship_type": "affects",
+            "rationale": "阳光云平台 is the external dependency of FUNC-043 '阳光云数据转发授权', and its operational scope and responsibility boundary are not defined in evidence."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-016",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "affects",
+            "rationale": "第三方站控系统 is a target system for FUNC-005 '北向数据转发' and FUNC-006 '远程调度指令接收'; its security state affects instruction execution trustworthiness."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-017",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-007",
+            "relationship_type": "affects",
+            "rationale": "核心交换机 is the network infrastructure for FUNC-007 '通过核心交换机传输至后台站控系统'; its failure or compromise blocks communication with Insight/SCADA."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-018",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-008",
+            "relationship_type": "affects",
+            "rationale": "4G路由器 is the communication carrier for FUNC-008 '通过4G路由器传输至阳光云平台'; its availability and security directly affect data upload reliability."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-019",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-001",
+            "relationship_type": "implements",
+            "rationale": "FUNC-001 '南向设备接入', FUNC-002 'PLC电力载波南向接入', and FUNC-003 '南向协议支持' collectively constitute the southbound data acquisition and protocol adaptation capability."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-020",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-004",
+            "relationship_type": "implements",
+            "rationale": "FUNC-004 explicitly describes '对接入逆变器进行有功功率控制和无功功率调节', directly realizing this function."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-021",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "implements",
+            "rationale": "FUNC-005 defines northbound data forwarding; FUNC-006, FUNC-007, FUNC-008, and FUNC-009 are specific instantiations of the same northbound communication capability."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-022",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-010",
+            "relationship_type": "implements",
+            "rationale": "FUNC-010 'Web界面系统配置' provides embedded Web interface for configuring system time, network, serial ports, etc., forming the core human-machine interaction channel."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-023",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-033",
+            "relationship_type": "implements",
+            "rationale": "FUNC-033 explicitly names '操作日志与syslog记录功能' and directly realizes this logging capability."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-024",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-034",
+            "relationship_type": "implements",
+            "rationale": "FUNC-034 is named '软件和固件更新' and directly realizes this secure update capability."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-025",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-032",
+            "relationship_type": "implements",
+            "rationale": "FUNC-032 is named '恢复出厂设置' and directly realizes full configuration wipe and user data erasure."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-026",
+        "related_function_ids": [],
+        "relationships": []
+      },
+      {
+        "asset_id": "ASSET-027",
+        "related_function_ids": [],
+        "relationships": []
+      }
+    ],
+    "notes": "ASSET-013, ASSET-014, ASSET-026, and ASSET-027 lack direct, evidenced functional relationships per criteria: no implementation, dependency, protection, or consequence is stated in input descriptions; co-location or generic platform role is insufficient for relationship establishment."
+  },
+  "result": {
+    "mappings": [
+      {
+        "asset_id": "ASSET-001",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-033",
+            "relationship_type": "creates",
+            "rationale": "FUNC-033 explicitly names '操作日志、syslog记录功能' and directly generates this asset."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-002",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-025",
+            "relationship_type": "modifies",
+            "rationale": "FUNC-025 '北向协议配置管理' allows editing of IEC104 point table content; export is its persistent configuration snapshot."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-003",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "creates",
+            "rationale": "FUNC-005 '北向数据转发' with GOOSE service requires this ZIP configuration file to drive GOOSE frame generation and transmission."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-004",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-021",
+            "relationship_type": "authenticates_with",
+            "rationale": "FUNC-021 '登录失败锁定' explicitly operates on Web interface user credentials."
+          },
+          {
+            "function_id": "FUNC-023",
+            "relationship_type": "authenticates_with",
+            "rationale": "FUNC-023 '首次登录强制修改密码' applies directly to Web interface user credentials upon first use."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-005",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-021",
+            "relationship_type": "authenticates_with",
+            "rationale": "FUNC-021 '登录失败锁定' applies to all login entry points including CLI/SSH/SFTP, and root is the OS-level credential subject to this control."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-006",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-034",
+            "relationship_type": "depends_on",
+            "rationale": "FUNC-034 '软件和固件更新' requires digital signature verification of upgrade packages, which depends on the imported PEM public key."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-007",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-027",
+            "relationship_type": "implements",
+            "rationale": "FUNC-027 '安全启动' function directly verifies integrity and authenticity of firmware and OS images as part of the boot chain."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-008",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-034",
+            "relationship_type": "modifies",
+            "rationale": "FUNC-034 '软件和固件更新' consumes the firmware upgrade package as input and replaces existing firmware."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-009",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-026",
+            "relationship_type": "implements",
+            "rationale": "FUNC-026 'PKI证书管理' covers full lifecycle management of X.509 login certificates for Web interface authentication."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-010",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-001",
+            "relationship_type": "implements",
+            "rationale": "Logger5000 implements FUNC-001 '南向设备接入' via RS485 bus as stated in its description."
+          },
+          {
+            "function_id": "FUNC-002",
+            "relationship_type": "implements",
+            "rationale": "Logger5000 implements FUNC-002 'PLC电力载波南向接入' for PLC-capable inverters as described."
+          },
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "implements",
+            "rationale": "Logger5000 implements FUNC-005 '北向数据转发' using IEC104, Modbus, MQTT, GOOSE protocols as specified."
+          },
+          {
+            "function_id": "FUNC-006",
+            "relationship_type": "implements",
+            "rationale": "Logger5000 implements FUNC-006 '远程调度指令接收' for both northbound and local dispatch commands."
+          },
+          {
+            "function_id": "FUNC-030",
+            "relationship_type": "implements",
+            "rationale": "Logger5000 implements FUNC-030 'TLS加密通信' for HTTPS, IEC104, and Modbus TCP as stated."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-011",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-001",
+            "relationship_type": "depends_on",
+            "rationale": "RS485通讯端子 provides the physical connection channel required by FUNC-001 for southbound device access."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-012",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-002",
+            "relationship_type": "implements",
+            "rationale": "MPLC模块 provides the PLC power line carrier communication capability used by FUNC-002 for PLC-capable inverter access."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-013",
+        "related_function_ids": [],
+        "relationships": []
+      },
+      {
+        "asset_id": "ASSET-014",
+        "related_function_ids": [],
+        "relationships": []
+      },
+      {
+        "asset_id": "ASSET-015",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "affects",
+            "rationale": "阳光云平台 is the target destination for FUNC-005 '北向数据转发'; its availability and security directly impact data upload outcomes."
+          },
+          {
+            "function_id": "FUNC-043",
+            "relationship_type": "affects",
+            "rationale": "阳光云平台 is the external dependency of FUNC-043 '阳光云数据转发授权', and its operational scope and responsibility boundary are not defined in evidence."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-016",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "affects",
+            "rationale": "第三方站控系统 is a target system for FUNC-005 '北向数据转发' and FUNC-006 '远程调度指令接收'; its security state affects instruction execution trustworthiness."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-017",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-007",
+            "relationship_type": "affects",
+            "rationale": "核心交换机 is the network infrastructure for FUNC-007 '通过核心交换机传输至后台站控系统'; its failure or compromise blocks communication with Insight/SCADA."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-018",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-008",
+            "relationship_type": "affects",
+            "rationale": "4G路由器 is the communication carrier for FUNC-008 '通过4G路由器传输至阳光云平台'; its availability and security directly affect data upload reliability."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-019",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-001",
+            "relationship_type": "implements",
+            "rationale": "FUNC-001 '南向设备接入', FUNC-002 'PLC电力载波南向接入', and FUNC-003 '南向协议支持' collectively constitute the southbound data acquisition and protocol adaptation capability."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-020",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-004",
+            "relationship_type": "implements",
+            "rationale": "FUNC-004 explicitly describes '对接入逆变器进行有功功率控制和无功功率调节', directly realizing this function."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-021",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "implements",
+            "rationale": "FUNC-005 defines northbound data forwarding; FUNC-006, FUNC-007, FUNC-008, and FUNC-009 are specific instantiations of the same northbound communication capability."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-022",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-010",
+            "relationship_type": "implements",
+            "rationale": "FUNC-010 'Web界面系统配置' provides embedded Web interface for configuring system time, network, serial ports, etc., forming the core human-machine interaction channel."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-023",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-033",
+            "relationship_type": "implements",
+            "rationale": "FUNC-033 explicitly names '操作日志与syslog记录功能' and directly realizes this logging capability."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-024",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-034",
+            "relationship_type": "implements",
+            "rationale": "FUNC-034 is named '软件和固件更新' and directly realizes this secure update capability."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-025",
+        "related_function_ids": [],
+        "relationships": [
+          {
+            "function_id": "FUNC-032",
+            "relationship_type": "implements",
+            "rationale": "FUNC-032 is named '恢复出厂设置' and directly realizes full configuration wipe and user data erasure."
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-026",
+        "related_function_ids": [],
+        "relationships": []
+      },
+      {
+        "asset_id": "ASSET-027",
+        "related_function_ids": [],
+        "relationships": []
+      }
+    ],
+    "notes": "ASSET-013, ASSET-014, ASSET-026, and ASSET-027 lack direct, evidenced functional relationships per criteria: no implementation, dependency, protection, or consequence is stated in input descriptions; co-location or generic platform role is insufficient for relationship establishment."
+  },
+  "elapsed_seconds": 60.061,
+  "finished_at": "2026-10-09T02:51:52.066469+00:00"
+}

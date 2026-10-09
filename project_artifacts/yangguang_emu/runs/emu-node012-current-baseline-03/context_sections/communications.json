@@ -1,0 +1,723 @@
+{
+  "schema_version": "context_section_checkpoint.v1",
+  "fingerprint": "6545b7d9cbc1cbc40863abd06bf1c71b7c5d3b38697ac445931bb56dab8452ca",
+  "cache_inputs": {
+    "section_name": "communications",
+    "source_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "text_model": "qwen-plus",
+    "context_rule_version": "node1_context_rules.v7.4",
+    "material_sha256": "4232558a9db42a9f176585449202dd9e3a696f14322d53b8615e173ac9d7ffe7",
+    "prompt_sha256": "3f905ffeb10282136854f7b092aebd420d99f13c5e13ca03502519af24cb2572",
+    "schema_sha256": "ce8f3257186daa067fbcdaf19c58739dae9536cd56923d79668312accf1cbd5f"
+  },
+  "result": {
+    "entries": [
+      {
+        "flow_id": "FLOW-001",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "conditional",
+        "conditions": [
+          "默认关闭，支持开启"
+        ],
+        "interface": null,
+        "protocol": "HTTP",
+        "port": "8080",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-001",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-002",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "enabled",
+        "conditions": [
+          "默认访问方式"
+        ],
+        "interface": null,
+        "protocol": "HTTPS",
+        "port": "8443",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-002",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-003",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "enabled",
+        "conditions": [
+          "默认访问方式"
+        ],
+        "interface": null,
+        "protocol": "HTTPS",
+        "port": "443",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-003",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-004",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "disabled_by_default",
+        "conditions": [
+          "默认关闭"
+        ],
+        "interface": null,
+        "protocol": "SSH",
+        "port": "22",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-004",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-005",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "disabled_by_default",
+        "conditions": [
+          "默认关闭"
+        ],
+        "interface": null,
+        "protocol": "SFTP",
+        "port": "22",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-005",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-006",
+        "source": "北向设备",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "disabled_by_default",
+        "conditions": [
+          "默认关闭"
+        ],
+        "interface": null,
+        "protocol": "MMS",
+        "port": "102",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-006",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-007",
+        "source": "北向设备",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "conditional",
+        "conditions": [
+          "2418 默认启用,2404~2417 默认关闭"
+        ],
+        "interface": null,
+        "protocol": "IEC104",
+        "port": "2404-2418",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "无",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-007",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-008",
+        "source": "北向设备",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "conditional",
+        "conditions": [
+          "516 默认启用,502~515 默认关闭"
+        ],
+        "interface": null,
+        "protocol": "MODBUS TCP",
+        "port": "502-516",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "无",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-008",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-009",
+        "source": "北向设备",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "enabled",
+        "conditions": [
+          "默认启用，支持关闭"
+        ],
+        "interface": null,
+        "protocol": "MODBUS TCP",
+        "port": "802",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "无",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-009",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5E9F7F46479A8667",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\nPC\t任意\tEMU30\n0A\t8080\tHTTP\t用户名/\n密码\t无\t默认关\n闭，支持\n开启\nPC\t任意\tEMU30\n0A\t8443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t443\tHTTPS\t用户名/\n密码\tTLS\t默认访问\n方式\nPC\t任意\tEMU30\n0A\t22\tSSH\t用户名/\n密码\tTLS\t默认关闭\nPC\t任意\tEMU30\n0A\t22\tSFTP\t用户名/\n密码\tTLS\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t102\tMMS\t用户名/\n密码\t无\t默认关闭\n北向\n设备\t任意\tEMU30\n0A\t2404-\n2418\tIEC104\t无\tTLS\t2418 默\n认开\n启,2404~\n2417 默\n认关闭\n北向\n设备\t任意\tEMU30\n0A\t502-5\n16\tMODBUS\nTCP\t无\tTLS\t516 默认\n开\n启,502~5\n15 默认关\n闭\n北向\n设备\t任意\tEMU30\n0A\t802\tMODBUS\nTCP\t无\tTLS\t默认开\n启，支持\n关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-010",
+        "source": "EMU300A",
+        "destination": "阳光云",
+        "direction": "outbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "conditional",
+        "conditions": [
+          "默认关闭，开启给予安全提示，可通过网口"
+        ],
+        "interface": "网口",
+        "protocol": "MQTT",
+        "port": "19999",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "公钥",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-010",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5751A158B27985D4",
+              "parser_version": "1.5.0",
+              "page_number": 15,
+              "printed_page_label": "11",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\n\t\t\t\t\t\t\tlinux she\n中开启。\nPC\tDeb\nug\n口\tEMU30\n0A\t/\tRS232 协\n议\t用户名/\n密码\t无\t串口访问\nLinux。\nEMU\n300\nA\t任意\t阳光云\t19999\tMQTT\t公钥\t无\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\t阳光云\t16668\tMQTT\t公钥\tTLS\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\tNTP 对\n时服务\n器\t123\tNTP\t无\t无\t默认关\n闭，开启\n给予安全\n提示。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-011",
+        "source": "EMU300A",
+        "destination": "阳光云",
+        "direction": "outbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "conditional",
+        "conditions": [
+          "默认关闭，开启给予安全提示，可通过网口"
+        ],
+        "interface": "网口",
+        "protocol": "MQTT",
+        "port": "16668",
+        "data_exchanged": [],
+        "encryption": "TLS",
+        "authentication": "公钥",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-011",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5751A158B27985D4",
+              "parser_version": "1.5.0",
+              "page_number": 15,
+              "printed_page_label": "11",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\n\t\t\t\t\t\t\tlinux she\n中开启。\nPC\tDeb\nug\n口\tEMU30\n0A\t/\tRS232 协\n议\t用户名/\n密码\t无\t串口访问\nLinux。\nEMU\n300\nA\t任意\t阳光云\t19999\tMQTT\t公钥\t无\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\t阳光云\t16668\tMQTT\t公钥\tTLS\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\tNTP 对\n时服务\n器\t123\tNTP\t无\t无\t默认关\n闭，开启\n给予安全\n提示。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-012",
+        "source": "EMU300A",
+        "destination": "NTP 对时服务器",
+        "direction": "outbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "conditional",
+        "conditions": [
+          "默认关闭，开启给予安全提示"
+        ],
+        "interface": null,
+        "protocol": "NTP",
+        "port": "123",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "无",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-012",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5751A158B27985D4",
+              "parser_version": "1.5.0",
+              "page_number": 15,
+              "printed_page_label": "11",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\n\t\t\t\t\t\t\tlinux she\n中开启。\nPC\tDeb\nug\n口\tEMU30\n0A\t/\tRS232 协\n议\t用户名/\n密码\t无\t串口访问\nLinux。\nEMU\n300\nA\t任意\t阳光云\t19999\tMQTT\t公钥\t无\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\t阳光云\t16668\tMQTT\t公钥\tTLS\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\tNTP 对\n时服务\n器\t123\tNTP\t无\t无\t默认关\n闭，开启\n给予安全\n提示。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-013",
+        "source": "EMU300A",
+        "destination": "NTS 对时服务器",
+        "direction": "outbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "disabled_by_default",
+        "conditions": [
+          "默认关闭"
+        ],
+        "interface": null,
+        "protocol": "NTS",
+        "port": "4460",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "无",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-013",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-CE7F3E47EF540743",
+              "parser_version": "1.5.0",
+              "page_number": 15,
+              "printed_page_label": "11",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "4460\nNTS\n无\n无\n默认关闭",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-014",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "unknown",
+        "conditions": [
+          "串口访问Linux"
+        ],
+        "interface": "Debug口",
+        "protocol": "RS232 协议",
+        "port": "/",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "用户名/密码",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-014",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-5751A158B27985D4",
+              "parser_version": "1.5.0",
+              "page_number": 15,
+              "printed_page_label": "11",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "源设\n备\t源端\n口\t目的设\n备\t目的\n端口\t协议\t认证方\n式\t加密\n方式\t说明\n\t\t\t\t\t\t\tlinux she\n中开启。\nPC\tDeb\nug\n口\tEMU30\n0A\t/\tRS232 协\n议\t用户名/\n密码\t无\t串口访问\nLinux。\nEMU\n300\nA\t任意\t阳光云\t19999\tMQTT\t公钥\t无\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\t阳光云\t16668\tMQTT\t公钥\tTLS\t默认关\n闭，开启\n给予安全\n提示，可\n通过网\n口。\nEMU\n300\nA\t任意\tNTP 对\n时服务\n器\t123\tNTP\t无\t无\t默认关\n闭，开启\n给予安全\n提示。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      },
+      {
+        "flow_id": "FLOW-015",
+        "source": "PC",
+        "destination": "EMU300A",
+        "direction": "inbound",
+        "direction_basis": "documented_endpoints",
+        "business_data_direction": "unknown",
+        "activation_status": "disabled_by_default",
+        "conditions": [
+          "默认关闭，内部调试使用"
+        ],
+        "interface": null,
+        "protocol": "UDP",
+        "port": "9998-9999",
+        "data_exchanged": [],
+        "encryption": "无",
+        "authentication": "无",
+        "security_notes": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-COMM-015",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-6F1F1D2BF197686D",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "10",
+              "section_path": [
+                "6 端口矩阵"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "PC\n任意\nEMU30\n0A\n9998-\n9999\nUDP\n无\n无",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "pdf_parser_v3.2",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-17T09:22:14Z"
+          }
+        ]
+      }
+    ],
+    "completeness_notes": "未提供南向RS485、PLC、MPLC等物理接口的具体端口/协议配置细节；未明确IEC104/MODBUS TCP在EMU300A侧作为客户端或服务端的完整角色上下文；未说明业务数据载荷内容（如遥测值、遥控指令、日志条目）；未提供Web界面、GOOSE、HTTPS北向转发至阳光云平台/Insight/SCADA的具体端口和加密认证机制；‘北向设备’‘对端设备’等术语未进一步具化为具体系统名称或IP地址范围。"
+  }
+}

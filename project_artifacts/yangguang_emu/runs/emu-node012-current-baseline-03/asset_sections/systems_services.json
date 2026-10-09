@@ -1,0 +1,987 @@
+{
+  "schema_version": "asset_section_checkpoint.v1",
+  "fingerprint": "c511389eeb5972384a769f3f250e8f59854afa767fea97b00d94e1e6abc0f5bf",
+  "cache_inputs": {
+    "section_name": "systems_services",
+    "source_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "text_model": "qwen-plus",
+    "asset_rule_version": "node2_asset_rules.v2.7",
+    "material_sha256": "523ce4d08e0e0e4bec0b1bc4ab78a7fd8d7a57ed32ad255a707d195429236c51",
+    "prompt_sha256": "8111da42f88be0deb8faacc4124c8f2553f71179913582443d32b41a0a329874",
+    "schema_sha256": "d2460c3a7422fa7d3f9e36ec4bda918ab76ac4a2f5ebee9ac259c85b7e40a71c"
+  },
+  "result": {
+    "assets": [
+      {
+        "asset_id": "ASSET-001",
+        "name": "Logger5000数据采集器",
+        "asset_type": "hardware",
+        "status": "confirmed",
+        "related_function_ids": [
+          "FUNC-001",
+          "FUNC-002",
+          "FUNC-003",
+          "FUNC-004",
+          "FUNC-005",
+          "FUNC-006",
+          "FUNC-007",
+          "FUNC-008",
+          "FUNC-009",
+          "FUNC-010",
+          "FUNC-011",
+          "FUNC-012",
+          "FUNC-013",
+          "FUNC-014",
+          "FUNC-015",
+          "FUNC-016",
+          "FUNC-017",
+          "FUNC-018",
+          "FUNC-019",
+          "FUNC-020",
+          "FUNC-021",
+          "FUNC-022",
+          "FUNC-023",
+          "FUNC-024",
+          "FUNC-025",
+          "FUNC-026",
+          "FUNC-027",
+          "FUNC-028",
+          "FUNC-029",
+          "FUNC-030",
+          "FUNC-031",
+          "FUNC-032",
+          "FUNC-033",
+          "FUNC-034",
+          "FUNC-035",
+          "FUNC-036",
+          "FUNC-037",
+          "FUNC-038",
+          "FUNC-039",
+          "FUNC-040",
+          "FUNC-041",
+          "FUNC-042",
+          "FUNC-043"
+        ],
+        "function_relationships": [
+          {
+            "function_id": "FUNC-001",
+            "relationship_type": "implements",
+            "rationale": "Logger5000实现南向设备接入功能，通过RS485总线接入逆变器等设备。"
+          },
+          {
+            "function_id": "FUNC-002",
+            "relationship_type": "implements",
+            "rationale": "Logger5000实现PLC电力载波南向接入功能，用于接入PLC功能逆变器。"
+          },
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "implements",
+            "rationale": "Logger5000通过IEC104、Modbus、MQTT、GOOSE等协议北向转发数据至综自系统及阳光云平台。"
+          },
+          {
+            "function_id": "FUNC-006",
+            "relationship_type": "implements",
+            "rationale": "Logger5000可接收北向远程调度指令并执行本地调度指令。"
+          },
+          {
+            "function_id": "FUNC-030",
+            "relationship_type": "implements",
+            "rationale": "Logger5000支持HTTPS/IEC104/Modbus TCP等协议的TLS加密通信。"
+          }
+        ],
+        "description": "EMU300A整机内部集成的数据采集与本地能量管理单元，承担南向设备接入、协议转换、有功/无功功率调节、北向数据转发及安全通信等核心功能。",
+        "location": null,
+        "value": "保障光伏电站能量管理闭环运行；其故障或篡改将导致监控失准、控制失效、功率调度错误，引发发电损失、设备过载或电网稳定性风险。",
+        "related_objectives": [
+          {
+            "objective_id": "OBJ-001",
+            "description": "确保Logger5000所采集、处理和转发的运行数据在传输和存储过程中不被未授权访问或泄露。",
+            "category": "confidentiality",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-001",
+                "source": {
+                  "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-5067B181346D",
+                  "block_id": "BLK-D844E7AC55AEA6FE",
+                  "parser_version": "1.5.0",
+                  "page_number": 55,
+                  "printed_page_label": "49",
+                  "section_path": [
+                    "7 附录A：技术参数"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+                },
+                "quote": "内含Logger5000（含电压电流采样接口）、开关电源、\n防雷模块、微型断路 器、MPLC（可选1 或2）、\nPID&ISO 控制盒（可选）、光纤交换机 （可选）、光纤\n终端盒（可选）、IO 模组（可选）\n适用区域：国内",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "parser-v2.1",
+                "is_human_confirmed": false,
+                "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-05-12T08:30:00Z"
+              }
+            ]
+          },
+          {
+            "objective_id": "OBJ-002",
+            "description": "确保Logger5000执行的功率调节指令、时间同步参数及配置数据在生成、传输和应用过程中不被篡改或重放。",
+            "category": "integrity",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-002",
+                "source": {
+                  "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-D9C0DEB31D45",
+                  "block_id": "BLK-ABD8EE23CFEA3B93",
+                  "parser_version": "1.5.0",
+                  "page_number": 13,
+                  "printed_page_label": "3",
+                  "section_path": [
+                    "2 产品描述",
+                    "2.1 功能描述"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+                },
+                "quote": "•\n数据采集器的数据转发功能默认不可用。启用该功能前，客户需在充分知情的前\n提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获得客户\n授权后方可生效，且相关操作受系统访问控制策略管理。",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "parser-v2.1",
+                "is_human_confirmed": false,
+                "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-05-12T08:30:00Z"
+              }
+            ]
+          },
+          {
+            "objective_id": "OBJ-003",
+            "description": "确保Logger5000持续提供数据采集、协议转换与控制指令执行能力，避免因软硬件故障、拒绝服务或配置错误导致能量管理功能中断。",
+            "category": "availability",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-003",
+                "source": {
+                  "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-D9C0DEB31D45",
+                  "block_id": "BLK-276B765BAAD65005",
+                  "parser_version": "1.5.0",
+                  "page_number": 13,
+                  "printed_page_label": "3",
+                  "section_path": [
+                    "2 产品描述",
+                    "2.1 功能描述"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+                },
+                "quote": "数据采集器集成五路具备数据交换功能的以太网口（即ETH1~ETH5），三路以太网口，两\n路快速调度口。北向可以接入综自系统或站控系统，南向可以接入三方设备。",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "parser-v2.1",
+                "is_human_confirmed": false,
+                "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-05-12T08:30:00Z"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-001",
+            "source": {
+              "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-5067B181346D",
+              "block_id": "BLK-D844E7AC55AEA6FE",
+              "parser_version": "1.5.0",
+              "page_number": 55,
+              "printed_page_label": "49",
+              "section_path": [
+                "7 附录A：技术参数"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+            },
+            "quote": "内含Logger5000（含电压电流采样接口）、开关电源、\n防雷模块、微型断路 器、MPLC（可选1 或2）、\nPID&ISO 控制盒（可选）、光纤交换机 （可选）、光纤\n终端盒（可选）、IO 模组（可选）\n适用区域：国内",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": false,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-12T08:30:00Z"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-002",
+        "name": "RS485通讯端子",
+        "asset_type": "hardware",
+        "status": "conditional",
+        "related_function_ids": [
+          "FUNC-001",
+          "FUNC-003",
+          "FUNC-004",
+          "FUNC-012",
+          "FUNC-022"
+        ],
+        "function_relationships": [
+          {
+            "function_id": "FUNC-001",
+            "relationship_type": "depends_on",
+            "rationale": "RS485通讯端子为FUNC-001南向设备接入提供物理连接通道。"
+          },
+          {
+            "function_id": "FUNC-022",
+            "relationship_type": "implements",
+            "rationale": "Logger5000支持9路RS485通信接口（A1B1~A9B9），该能力由RS485通讯端子实现物理层承载。"
+          }
+        ],
+        "description": "EMU300A整机内部提供的RS485物理接口端子，用于南向接入逆变器、电表等Modbus从站设备；线缆未包含在供货范围。",
+        "location": null,
+        "value": "支撑关键南向数据采集链路；其缺失或物理损坏将导致部分现场设备无法接入，影响监控完整性与控制覆盖范围。",
+        "related_objectives": [
+          {
+            "objective_id": "OBJ-004",
+            "description": "确保RS485通讯端子在电气噪声、浪涌冲击等工业环境下保持稳定通信能力，防止因物理层异常导致数据丢失或误码。",
+            "category": "availability",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-004",
+                "source": {
+                  "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-5067B181346D",
+                  "block_id": "BLK-D8AA6F0C8103713A",
+                  "parser_version": "1.5.0",
+                  "page_number": 28,
+                  "printed_page_label": "22",
+                  "section_path": [
+                    "4 电气连接",
+                    "4.3 内部结构"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+                },
+                "quote": "编\n号\t名称\t推荐线缆规格\t说明\nA\t光纤终端盒\t—\t选配\n必须与光纤环网交换机配套\n使用\n如需获取更多信息请访问经\n销商官方网站\nB\tRS485 通讯端子\t2 x (0.75~1.5) mm2 户\n外型防紫外线带屏蔽层\n双绞线\t线缆未包含在供货范围\nC\tCT 接线端子\t\t单独成表说明\nD\t交流熔丝盒\t2.5mm²～10mm²户外型\n防紫外线导线，线缆耐\n压要求为：\n隔离电压＞1350V\t线缆未包含在供货范围\nE\t接地端子\t4mm²～10mm²或7～\n11AWG\t线缆未包含在供货范围\nE ：功能地排\n1\nE ：保护地排\n2\nF\t防雷器\t—\t—\nG\t开关电源\t—\t—\nH\tLogger5000\t—\t—\nI\t光纤环网交换机\t—\t选配\n必须与光纤终端盒配套使用\n如需获取更多信息请访问经\n销商官方网站\nJ\tPID 模块\t—\t支持PID 防护和PID 修复\n功能，适用于PV-正偏置组\n件。支持交流ISO 检测功\n能。\nK\tPLC 模块\t—\t—\nL\t220V 市电插座\t—\t可为现场运维人员提供市电",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "parser-v2.1",
+                "is_human_confirmed": false,
+                "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-05-12T08:30:00Z"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-004",
+            "source": {
+              "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-5067B181346D",
+              "block_id": "BLK-D8AA6F0C8103713A",
+              "parser_version": "1.5.0",
+              "page_number": 28,
+              "printed_page_label": "22",
+              "section_path": [
+                "4 电气连接",
+                "4.3 内部结构"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+            },
+            "quote": "编\n号\t名称\t推荐线缆规格\t说明\nA\t光纤终端盒\t—\t选配\n必须与光纤环网交换机配套\n使用\n如需获取更多信息请访问经\n销商官方网站\nB\tRS485 通讯端子\t2 x (0.75~1.5) mm2 户\n外型防紫外线带屏蔽层\n双绞线\t线缆未包含在供货范围\nC\tCT 接线端子\t\t单独成表说明\nD\t交流熔丝盒\t2.5mm²～10mm²户外型\n防紫外线导线，线缆耐\n压要求为：\n隔离电压＞1350V\t线缆未包含在供货范围\nE\t接地端子\t4mm²～10mm²或7～\n11AWG\t线缆未包含在供货范围\nE ：功能地排\n1\nE ：保护地排\n2\nF\t防雷器\t—\t—\nG\t开关电源\t—\t—\nH\tLogger5000\t—\t—\nI\t光纤环网交换机\t—\t选配\n必须与光纤终端盒配套使用\n如需获取更多信息请访问经\n销商官方网站\nJ\tPID 模块\t—\t支持PID 防护和PID 修复\n功能，适用于PV-正偏置组\n件。支持交流ISO 检测功\n能。\nK\tPLC 模块\t—\t—\nL\t220V 市电插座\t—\t可为现场运维人员提供市电",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": false,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-12T08:30:00Z"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-003",
+        "name": "MPLC模块",
+        "asset_type": "hardware",
+        "status": "conditional",
+        "related_function_ids": [
+          "FUNC-002",
+          "FUNC-003",
+          "FUNC-004"
+        ],
+        "function_relationships": [
+          {
+            "function_id": "FUNC-002",
+            "relationship_type": "implements",
+            "rationale": "MPLC模块提供PLC电力载波通信能力，用于FUNC-002所述的PLC功能逆变器接入。"
+          }
+        ],
+        "description": "EMU300A整机内部可选配的电力线载波通信模块，数量为1或2个，用于南向接入阳光电源PLC功能逆变器。",
+        "location": null,
+        "value": "扩展南向通信方式，提升对特定逆变器型号的兼容性；其缺失不影响RS485/Modbus基础接入，但限制PLC类设备部署灵活性。",
+        "related_objectives": [
+          {
+            "objective_id": "OBJ-005",
+            "description": "确保MPLC模块在电力线信道干扰下仍能维持可靠数据帧传输，防止因通信中断导致PLC类设备失联。",
+            "category": "availability",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-005",
+                "source": {
+                  "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-5067B181346D",
+                  "block_id": "BLK-D844E7AC55AEA6FE",
+                  "parser_version": "1.5.0",
+                  "page_number": 55,
+                  "printed_page_label": "49",
+                  "section_path": [
+                    "7 附录A：技术参数"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+                },
+                "quote": "内含Logger5000（含电压电流采样接口）、开关电源、\n防雷模块、微型断路 器、MPLC（可选1 或2）、\nPID&ISO 控制盒（可选）、光纤交换机 （可选）、光纤\n终端盒（可选）、IO 模组（可选）\n适用区域：国内",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "parser-v2.1",
+                "is_human_confirmed": false,
+                "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-05-12T08:30:00Z"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-005",
+            "source": {
+              "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-5067B181346D",
+              "block_id": "BLK-D844E7AC55AEA6FE",
+              "parser_version": "1.5.0",
+              "page_number": 55,
+              "printed_page_label": "49",
+              "section_path": [
+                "7 附录A：技术参数"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+            },
+            "quote": "内含Logger5000（含电压电流采样接口）、开关电源、\n防雷模块、微型断路 器、MPLC（可选1 或2）、\nPID&ISO 控制盒（可选）、光纤交换机 （可选）、光纤\n终端盒（可选）、IO 模组（可选）\n适用区域：国内",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": false,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-12T08:30:00Z"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-004",
+        "name": "光纤环网交换机",
+        "asset_type": "network",
+        "status": "conditional",
+        "related_function_ids": [],
+        "function_relationships": [],
+        "description": "EMU300A整机内部可选配的光纤环网交换机，必须与光纤终端盒配套使用，用于构建高可靠性站内通信网络。",
+        "location": null,
+        "value": "增强站内通信网络冗余性与抗单点故障能力；其缺失不影响基本通信功能，但降低网络可用性等级。",
+        "related_objectives": [
+          {
+            "objective_id": "OBJ-006",
+            "description": "确保光纤环网交换机在单链路中断时自动切换路径，维持站内设备间通信连续性。",
+            "category": "availability",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-006",
+                "source": {
+                  "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-5067B181346D",
+                  "block_id": "BLK-D8AA6F0C8103713A",
+                  "parser_version": "1.5.0",
+                  "page_number": 28,
+                  "printed_page_label": "22",
+                  "section_path": [
+                    "4 电气连接",
+                    "4.3 内部结构"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+                },
+                "quote": "编\n号\t名称\t推荐线缆规格\t说明\nA\t光纤终端盒\t—\t选配\n必须与光纤环网交换机配套\n使用\n如需获取更多信息请访问经\n销商官方网站\nB\tRS485 通讯端子\t2 x (0.75~1.5) mm2 户\n外型防紫外线带屏蔽层\n双绞线\t线缆未包含在供货范围\nC\tCT 接线端子\t\t单独成表说明\nD\t交流熔丝盒\t2.5mm²～10mm²户外型\n防紫外线导线，线缆耐\n压要求为：\n隔离电压＞1350V\t线缆未包含在供货范围\nE\t接地端子\t4mm²～10mm²或7～\n11AWG\t线缆未包含在供货范围\nE ：功能地排\n1\nE ：保护地排\n2\nF\t防雷器\t—\t—\nG\t开关电源\t—\t—\nH\tLogger5000\t—\t—\nI\t光纤环网交换机\t—\t选配\n必须与光纤终端盒配套使用\n如需获取更多信息请访问经\n销商官方网站\nJ\tPID 模块\t—\t支持PID 防护和PID 修复\n功能，适用于PV-正偏置组\n件。支持交流ISO 检测功\n能。\nK\tPLC 模块\t—\t—\nL\t220V 市电插座\t—\t可为现场运维人员提供市电",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "parser-v2.1",
+                "is_human_confirmed": false,
+                "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-05-12T08:30:00Z"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-006",
+            "source": {
+              "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-5067B181346D",
+              "block_id": "BLK-D8AA6F0C8103713A",
+              "parser_version": "1.5.0",
+              "page_number": 28,
+              "printed_page_label": "22",
+              "section_path": [
+                "4 电气连接",
+                "4.3 内部结构"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+            },
+            "quote": "编\n号\t名称\t推荐线缆规格\t说明\nA\t光纤终端盒\t—\t选配\n必须与光纤环网交换机配套\n使用\n如需获取更多信息请访问经\n销商官方网站\nB\tRS485 通讯端子\t2 x (0.75~1.5) mm2 户\n外型防紫外线带屏蔽层\n双绞线\t线缆未包含在供货范围\nC\tCT 接线端子\t\t单独成表说明\nD\t交流熔丝盒\t2.5mm²～10mm²户外型\n防紫外线导线，线缆耐\n压要求为：\n隔离电压＞1350V\t线缆未包含在供货范围\nE\t接地端子\t4mm²～10mm²或7～\n11AWG\t线缆未包含在供货范围\nE ：功能地排\n1\nE ：保护地排\n2\nF\t防雷器\t—\t—\nG\t开关电源\t—\t—\nH\tLogger5000\t—\t—\nI\t光纤环网交换机\t—\t选配\n必须与光纤终端盒配套使用\n如需获取更多信息请访问经\n销商官方网站\nJ\tPID 模块\t—\t支持PID 防护和PID 修复\n功能，适用于PV-正偏置组\n件。支持交流ISO 检测功\n能。\nK\tPLC 模块\t—\t—\nL\t220V 市电插座\t—\t可为现场运维人员提供市电",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": false,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-12T08:30:00Z"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-005",
+        "name": "IO模组",
+        "asset_type": "hardware",
+        "status": "conditional",
+        "related_function_ids": [],
+        "function_relationships": [],
+        "description": "EMU300A整机内部可选配的数字量/模拟量输入输出模块，用于扩展连接外部传感器或执行机构的能力。",
+        "location": null,
+        "value": "扩展现场信号采集与控制执行能力；其缺失不影响核心能量管理功能，但限制定制化监测与联动控制场景。",
+        "related_objectives": [
+          {
+            "objective_id": "OBJ-007",
+            "description": "确保IO模组采集的模拟量信号（如温度、电压）和输出的数字量指令（如继电器动作）在电气隔离与抗干扰条件下准确反映真实状态。",
+            "category": "integrity",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-007",
+                "source": {
+                  "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-5067B181346D",
+                  "block_id": "BLK-D844E7AC55AEA6FE",
+                  "parser_version": "1.5.0",
+                  "page_number": 55,
+                  "printed_page_label": "49",
+                  "section_path": [
+                    "7 附录A：技术参数"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+                },
+                "quote": "内含Logger5000（含电压电流采样接口）、开关电源、\n防雷模块、微型断路 器、MPLC（可选1 或2）、\nPID&ISO 控制盒（可选）、光纤交换机 （可选）、光纤\n终端盒（可选）、IO 模组（可选）\n适用区域：国内",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "parser-v2.1",
+                "is_human_confirmed": false,
+                "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-05-12T08:30:00Z"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-007",
+            "source": {
+              "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-5067B181346D",
+              "block_id": "BLK-D844E7AC55AEA6FE",
+              "parser_version": "1.5.0",
+              "page_number": 55,
+              "printed_page_label": "49",
+              "section_path": [
+                "7 附录A：技术参数"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+            },
+            "quote": "内含Logger5000（含电压电流采样接口）、开关电源、\n防雷模块、微型断路 器、MPLC（可选1 或2）、\nPID&ISO 控制盒（可选）、光纤交换机 （可选）、光纤\n终端盒（可选）、IO 模组（可选）\n适用区域：国内",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": false,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-12T08:30:00Z"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-006",
+        "name": "阳光云平台",
+        "asset_type": "service",
+        "status": "external_affected",
+        "related_function_ids": [
+          "FUNC-005",
+          "FUNC-008",
+          "FUNC-009",
+          "FUNC-017",
+          "FUNC-020",
+          "FUNC-043"
+        ],
+        "function_relationships": [
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "affects",
+            "rationale": "阳光云平台作为FUNC-005北向数据转发的目标端，其可用性、安全性直接影响EMU300A数据上传结果。"
+          },
+          {
+            "function_id": "FUNC-043",
+            "relationship_type": "affects",
+            "rationale": "阳光云平台是FUNC-043阳光云数据转发授权功能的外部依赖对象，其运营方、数据处理位置及责任归属未明确。"
+          }
+        ],
+        "description": "EMU300A通过路由器或4G网络连接的外部云服务平台，提供数据汇聚、远程监控与运维支持；其运营方、数据处理位置及责任边界未在证据中明确说明。",
+        "location": null,
+        "value": "承载电站级运行数据与远程指令交互；其遭入侵、篡改或中断将导致全局监控失效、误控指令下发、敏感运行数据泄露，影响多站点安全与合规。",
+        "related_objectives": [
+          {
+            "objective_id": "OBJ-008",
+            "description": "确保EMU300A与阳光云平台之间的数据传输过程具备端到端加密与双向身份认证，防止中间人窃听或劫持。",
+            "category": "confidentiality",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-008",
+                "source": {
+                  "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-5067B181346D",
+                  "block_id": "BLK-EBE329C3EFA80ACF",
+                  "parser_version": "1.5.0",
+                  "page_number": 16,
+                  "printed_page_label": "10",
+                  "section_path": [
+                    "2 产品介绍",
+                    "2.2 主要特点"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+                },
+                "quote": "数据采集器将数据转发至阳光云平台的功能默认不可用。启用该功能前，客户需在充\n分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获\n得客户授权后方可生效，且相关操作受系统访问控制策略管理。",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "parser-v2.1",
+                "is_human_confirmed": false,
+                "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-05-12T08:30:00Z"
+              }
+            ]
+          },
+          {
+            "objective_id": "OBJ-009",
+            "description": "确保阳光云平台接收的EMU300A数据在云端存储与处理过程中不被未授权访问、篡改或删除。",
+            "category": "integrity",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-009",
+                "source": {
+                  "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-D9C0DEB31D45",
+                  "block_id": "BLK-7CA94C17A4F80A13",
+                  "parser_version": "1.5.0",
+                  "page_number": 81,
+                  "printed_page_label": "71",
+                  "section_path": [
+                    "7 Web界面",
+                    "7.10 系统",
+                    "7.10.6 转发配置",
+                    "7.10.6.4 转发三方云服务配置"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+                },
+                "quote": "7.10.6.4 转发三方云服务配置",
+                "evidence_level": "derived",
+                "confidence": "medium",
+                "retrieved_by": "parser-v2.1",
+                "is_human_confirmed": false,
+                "notes": "该事实表明阳光云平台参与关键时间同步流程，其数据完整性直接影响全站时序一致性。\n系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-05-12T08:30:00Z"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-008",
+            "source": {
+              "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-5067B181346D",
+              "block_id": "BLK-EBE329C3EFA80ACF",
+              "parser_version": "1.5.0",
+              "page_number": 16,
+              "printed_page_label": "10",
+              "section_path": [
+                "2 产品介绍",
+                "2.2 主要特点"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+            },
+            "quote": "数据采集器将数据转发至阳光云平台的功能默认不可用。启用该功能前，客户需在充\n分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获\n得客户授权后方可生效，且相关操作受系统访问控制策略管理。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": false,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-12T08:30:00Z"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-007",
+        "name": "第三方站控系统",
+        "asset_type": "service",
+        "status": "external_affected",
+        "related_function_ids": [
+          "FUNC-005",
+          "FUNC-006",
+          "FUNC-007",
+          "FUNC-013",
+          "FUNC-014",
+          "FUNC-025"
+        ],
+        "function_relationships": [
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "affects",
+            "rationale": "第三方站控系统是FUNC-005北向数据转发及FUNC-006远程调度指令接收的目标系统之一，其安全状态影响EMU300A指令执行可信度。"
+          }
+        ],
+        "description": "EMU300A通过核心交换机连接的外部站控系统（如Insight/SCADA），用于接收数据与下发调度指令；其具体厂商、部署位置及安全责任归属未在证据中明确说明。",
+        "location": null,
+        "value": "作为电站级调度决策与执行中枢；其遭入侵或配置错误可能导致恶意指令注入、越权控制或数据污染，引发连锁安全事故。",
+        "related_objectives": [
+          {
+            "objective_id": "OBJ-010",
+            "description": "确保EMU300A与第三方站控系统之间传输的调度指令具备强完整性保护与来源真实性验证，防止伪造或篡改指令被执行。",
+            "category": "authenticity",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-010",
+                "source": {
+                  "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-D9C0DEB31D45",
+                  "block_id": "BLK-ABD8EE23CFEA3B93",
+                  "parser_version": "1.5.0",
+                  "page_number": 13,
+                  "printed_page_label": "3",
+                  "section_path": [
+                    "2 产品描述",
+                    "2.1 功能描述"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+                },
+                "quote": "•\n数据采集器的数据转发功能默认不可用。启用该功能前，客户需在充分知情的前\n提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获得客户\n授权后方可生效，且相关操作受系统访问控制策略管理。",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "parser-v2.1",
+                "is_human_confirmed": false,
+                "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-05-12T08:30:00Z"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-010",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-ABD8EE23CFEA3B93",
+              "parser_version": "1.5.0",
+              "page_number": 13,
+              "printed_page_label": "3",
+              "section_path": [
+                "2 产品描述",
+                "2.1 功能描述"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "•\n数据采集器的数据转发功能默认不可用。启用该功能前，客户需在充分知情的前\n提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获得客户\n授权后方可生效，且相关操作受系统访问控制策略管理。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": false,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-12T08:30:00Z"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-008",
+        "name": "核心交换机",
+        "asset_type": "network",
+        "status": "external_affected",
+        "related_function_ids": [
+          "FUNC-007"
+        ],
+        "function_relationships": [
+          {
+            "function_id": "FUNC-007",
+            "relationship_type": "affects",
+            "rationale": "核心交换机是FUNC-007‘通过核心交换机传输至后台站控系统’的网络基础设施，其故障或被攻破将阻断EMU300A与Insight/SCADA通信。"
+          }
+        ],
+        "description": "EMU300A通过其连接至Insight/SCADA等站控系统的外部核心交换机；证据未说明其是否为EMU300A内置组件或客户侧配套设备。",
+        "location": null,
+        "value": "构成北向数据出口主干网络；其单点故障或配置错误将导致EMU300A与全部上位系统通信中断，丧失远程监控与调度能力。",
+        "related_objectives": [
+          {
+            "objective_id": "OBJ-011",
+            "description": "确保核心交换机在EMU300A与站控系统间转发的数据流不被未授权监听、重定向或丢弃。",
+            "category": "availability",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-011",
+                "source": {
+                  "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-D9C0DEB31D45",
+                  "block_id": "BLK-7CA94C17A4F80A13",
+                  "parser_version": "1.5.0",
+                  "page_number": 81,
+                  "printed_page_label": "71",
+                  "section_path": [
+                    "7 Web界面",
+                    "7.10 系统",
+                    "7.10.6 转发配置",
+                    "7.10.6.4 转发三方云服务配置"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+                },
+                "quote": "7.10.6.4 转发三方云服务配置",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "parser-v2.1",
+                "is_human_confirmed": false,
+                "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-05-12T08:30:00Z"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-011",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-7CA94C17A4F80A13",
+              "parser_version": "1.5.0",
+              "page_number": 81,
+              "printed_page_label": "71",
+              "section_path": [
+                "7 Web界面",
+                "7.10 系统",
+                "7.10.6 转发配置",
+                "7.10.6.4 转发三方云服务配置"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "7.10.6.4 转发三方云服务配置",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": false,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-12T08:30:00Z"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-009",
+        "name": "4G路由器",
+        "asset_type": "network",
+        "status": "external_affected",
+        "related_function_ids": [
+          "FUNC-008",
+          "FUNC-009"
+        ],
+        "function_relationships": [
+          {
+            "function_id": "FUNC-008",
+            "relationship_type": "affects",
+            "rationale": "4G路由器是FUNC-008‘通过4G路由器传输至阳光云平台’的通信载体，其可用性与安全性直接影响数据上传可靠性。"
+          }
+        ],
+        "description": "EMU300A通过其连接至阳光云平台的外部4G路由器；证据表明EMU300A可通过其传输数据，但未说明其是否为EMU300A内置模块或客户侧配套设备。",
+        "location": null,
+        "value": "提供公网通信通道；其被劫持、DNS污染或SIM卡失效将导致阳光云通信中断，影响远程运维与告警推送。",
+        "related_objectives": [
+          {
+            "objective_id": "OBJ-012",
+            "description": "确保4G路由器在公共蜂窝网络中建立的连接具备抗中间人攻击能力，防止通信隧道被劫持或降级。",
+            "category": "confidentiality",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-012",
+                "source": {
+                  "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-D9C0DEB31D45",
+                  "block_id": "BLK-4E0353B94569ABFF",
+                  "parser_version": "1.5.0",
+                  "page_number": 14,
+                  "printed_page_label": "4",
+                  "section_path": [
+                    "2 产品描述",
+                    "2.2 组网应用"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+                },
+                "quote": "•\n数据采集器也可将采集到的设备数据，直接通过4G 路由器传输至阳光云。",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "parser-v2.1",
+                "is_human_confirmed": false,
+                "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-05-12T08:30:00Z"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-012",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-4E0353B94569ABFF",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "4",
+              "section_path": [
+                "2 产品描述",
+                "2.2 组网应用"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "•\n数据采集器也可将采集到的设备数据，直接通过4G 路由器传输至阳光云。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": false,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-05-12T08:30:00Z"
+          }
+        ]
+      }
+    ],
+    "assessment": "PASS",
+    "notes": "本段严格依据field_batches.facts识别硬件、接口、网络及外部服务资产：Logger5000为confirmed核心硬件；RS485端子、MPLC、IO模组、光纤环网交换机依BOM/交付条件标为conditional；阳光云平台、第三方站控系统、核心交换机、4G路由器均属external_affected——因其存在性、责任边界、运营方、数据处理位置等关键属性均未在证据中明确归属于EMU300A本体。所有cybersecurity objective均基于asset_value_or_consequence直接支撑，未引入推测性威胁或控制实现描述。candidate_context仅用于function_relationships映射，未替代资产存在性证明。",
+    "rejected_items": []
+  }
+}

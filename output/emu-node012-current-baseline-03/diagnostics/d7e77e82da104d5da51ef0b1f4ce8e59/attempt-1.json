@@ -1,0 +1,407 @@
+{
+  "run_id": "emu-node012-current-baseline-03",
+  "node": "build_product_context",
+  "task": "node_1/operational_environment",
+  "call_id": "d7e77e82da104d5da51ef0b1f4ce8e59",
+  "schema": "FieldExtractionResult",
+  "model": "qwen-plus",
+  "attempt": 1,
+  "started_at": "2026-10-09T02:16:42.849130+00:00",
+  "status": "succeeded",
+  "phase": "complete",
+  "prompt": "你正在为 CRA / prEN 40000 TARA 工作流的 node_1/operational_environment 提取原子事实。\n\n【任务边界】\n1. 只记录输入证据逐字支持的事实，不生成最终 Scope、ProductContext、资产、威胁、风险或控制。\n2. 每条 fact 只表达一个事实，并列出直接支持它的真实 block_id。block_id 所在文本必须直接支持该事实，不得引用相邻章节标题代替正文或表格。最多输出 12 条事实；证据未说明的必要信息写入 unknowns。\n3. 不得创建输入中不存在的 block_id，不得根据行业惯例补全未知信息。\n4. 原子事实必须保留证据中的限定词，包括“选配、可选、适用于、若启用、取决于合同/BOM/现场配置”。不得把产品能力改写成客户已装机或已启用状态。\n5. 安全配置教程或操作步骤只证明该对象或能力被手册覆盖，不单独证明它是标准内置组件、实际交付配置或当前已启用功能。\n6. 对云平台、远程升级、数据上传等事实，只记录证据明确说明的能力、运营方和依赖；不得自行判定 CRA RDPS。缺少“远程方案是否为产品功能所必需”等信息时写入 unknowns。\n7. 证据含糊、可选或依赖合同配置时设置 is_uncertain=true，并在 unknowns 中记录待确认项。\n8. 若不同证据存在冲突，分别保留事实并在 contradictions 中说明。\n9. 除产品名、型号、协议、法规/标准编号和其他专有名词外，fact、unknowns 和 contradictions 使用简体中文；不得翻译或改写证据中的专有标识。\n10. attributes 只用于本字段整理要求明确列出的结构化值，且必须由该fact的同一组block_ids直接支持；其他字段保持空对象。未知值使用null或规定的unknown，不得推断。\n\n【本字段整理要求】\n逐条保留与本字段直接相关的原子事实；未知信息写入 unknowns。\n\n【目标 JSON Schema】\n{\n  \"$defs\": {\n    \"FactAttributes\": {\n      \"additionalProperties\": false,\n      \"description\": \"One source for the model-facing attribute schema and runtime validation.\",\n      \"properties\": {},\n      \"title\": \"FactAttributes\",\n      \"type\": \"object\"\n    },\n    \"RetrievedFact\": {\n      \"additionalProperties\": false,\n      \"description\": \"One atomic fact extracted from a field-specific evidence packet.\",\n      \"properties\": {\n        \"fact_id\": {\n          \"pattern\": \"^FACT-[0-9]{3,}$\",\n          \"title\": \"Fact Id\",\n          \"type\": \"string\"\n        },\n        \"statement\": {\n          \"maxLength\": 1000,\n          \"minLength\": 1,\n          \"title\": \"Statement\",\n          \"type\": \"string\"\n        },\n        \"block_ids\": {\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"maxItems\": 4,\n          \"minItems\": 1,\n          \"title\": \"Block Ids\",\n          \"type\": \"array\"\n        },\n        \"is_uncertain\": {\n          \"default\": false,\n          \"title\": \"Is Uncertain\",\n          \"type\": \"boolean\"\n        },\n        \"attributes\": {\n          \"$ref\": \"#/$defs/FactAttributes\",\n          \"description\": \"Optional field-specific values copied from the same evidence. Only communications and components use the reviewed keys validated by FieldExtractionResult.\",\n          \"title\": \"Attributes\"\n        }\n      },\n      \"required\": [\n        \"fact_id\",\n        \"statement\",\n        \"block_ids\"\n      ],\n      \"title\": \"RetrievedFact\",\n      \"type\": \"object\"\n    }\n  },\n  \"additionalProperties\": false,\n  \"description\": \"Compact persisted candidate facts for one Node/field slice.\",\n  \"properties\": {\n    \"node_id\": {\n      \"type\": \"string\",\n      \"const\": \"node_1\"\n    },\n    \"field_id\": {\n      \"type\": \"string\",\n      \"const\": \"operational_environment\"\n    },\n    \"facts\": {\n      \"items\": {\n        \"$ref\": \"#/$defs/RetrievedFact\"\n      },\n      \"maxItems\": 12,\n      \"title\": \"Facts\",\n      \"type\": \"array\"\n    },\n    \"unknowns\": {\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"maxItems\": 10,\n      \"title\": \"Unknowns\",\n      \"type\": \"array\"\n    },\n    \"contradictions\": {\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"maxItems\": 10,\n      \"title\": \"Contradictions\",\n      \"type\": \"array\"\n    }\n  },\n  \"required\": [\n    \"node_id\",\n    \"field_id\"\n  ],\n  \"title\": \"FieldExtractionResult\",\n  \"type\": \"object\"\n}\n\n【输出要求】\n- node_id 和 field_id 必须与任务完全一致。\n- fact_id 使用 FACT-001、FACT-002 等批内唯一编号。\n- 严格输出单个 JSON 对象，不输出 Markdown 或解释。\n\n【字段任务与检索证据】\n{\n  \"node_id\": \"node_1\",\n  \"field_id\": \"operational_environment\",\n  \"retrieval_intent\": \"运行环境 部署环境 业务网络 物理环境 网络边界 外部系统 约束 工作条件\",\n  \"evidence\": \"[PACKET rag_yangguang_emu_node_1_operational_environment_82a4cef4bd30 v1]\\nProject: yangguang_emu\\nUse only this evidence. Preserve unknowns and copy citation anchors exactly.\\n\\n[KNOWN GAPS]\\n- GAP-LOGGER4000-SCOPE: A Logger4000 manual is present, but the EMU300A product and cybersecurity manuals identify Logger5000 as the standard internal collector; Logger4000 is excluded until the delivered configuration is confirmed. Disposition: Treat Logger4000 applicability as a customer/configuration question; do not infer its assets or threats in the baseline run.\\n- GAP-DIAGRAM-SEMANTICS: Native text and figure captions are retained, but topology diagrams have not been manually transcribed into graph relationships. Disposition: Review missing topology only if the first evaluation shows unsupported or absent communication paths.\\n- GAP-MIXED-PAGE-BLOCK: Logger5000 PDF page 82 merges the end of GOOSE, MMS forwarding, and the start of port parameters into one native PDF text block; its file/page/block anchor is exact but its single assigned section path is broader than the mixed content. Disposition: Require quote plus physical-page/block citation for this block; do not treat its section path alone as proof. Revisit parser splitting only if this locator affects evaluation.\\n- GAP-CONTRACT-VARIANTS: The manuals describe optional and contract-dependent functions; the exact customer-enabled feature set is not independently confirmed. Disposition: Preserve uncertainty and produce customer questions instead of asserting optional functions as deployed facts.\\n- GAP-LEGAL-BASIS: Product manuals establish product facts but are not authoritative CRA or prEN 40000 legal sources. Disposition: Use the controlled legal/rule layer for legal conclusions; never fabricate legal support from this packet.\\n\\n[DOCUMENT DOC-DF116E7199E2]\\nfile_name: EMU300A网络安全操作手册-UCN-Ver11-202607.pdf\\nfile_path: legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf\\nfile_type: pdf\\nsource_sha256: e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc\\nparser_version: 1.5.0\\n\\n[LOCATION page=8; printed_page=4; section=3 工业网络安全 > 3.1 工业网络安全简介]\\n[BLK-1AD1C75D0156F46C] 3.1 工业网络安全简介\\n[BLK-09BB4F761E6C697C] 工业网络安全整合了所有用于保护工业控制系统（ICS）和运营技术（OT）环境的措施，其\\n核心目标是保障以下三个关键方面：\\n[BLK-32D86711ED1302DA] •\\n可用性：确保系统、网络和数据在需要时可被授权用户访问和使用，防止因破坏、故障或\\n拒绝服务攻击(DoS) 导致的业务中断。\\n[BLK-D29A82FAFD09D484] •\\n保密性： 防止敏感数据、配置信息和网络资源等遭到非法访问、窃取或泄露。\\n\\n[LOCATION page=8; printed_page=4; section=3 工业网络安全 > 3.2 工业网络安全保护目标]\\n[BLK-58B1CE8BE56D60C7] 3.2 工业网络安全保护目标\\n[BLK-F30391C2A61969FE] •\\n确保生产设备和流程的无故障运行和可用性；\\n[BLK-D91D8C5D38EFEB46] •\\n防范网络攻击危及人员安全与生产安全；\\n[BLK-5D9BB1795ED1309B] •\\n防止机密数据遭受未经授权的访问；\\n[BLK-2BC99C167CF3B5F3] 在实施安全措施时，确保这些措施不会反感或者危及自动化系统以及组件的可操作性。\\n\\n[LOCATION page=10; printed_page=6; section=4 纵深防御战略 > 4.4 用户的缓解措施]\\n[BLK-27994D7BD485F39F] 设备安全\\n[BLK-AF5815D0F7E277A5] 企业的物理安全存在漏洞时， 未经授权的人员便有机会进入生产环境， 损坏或修改生产设\\n[BLK-BDEC2C4D8C8E8B36] 备，导致机密信息丢失。 因此， 必须采取适当措施保护公司所在地和关键生产区域。\\n\\n[LOCATION page=11; printed_page=7; section=4 纵深防御战略 > 4.4 用户的缓解措施]\\n[BLK-69FCE72C42994FF6] 网络安全\\n[BLK-F15FEACD7EBFF705] 网络安全涵盖了和规划、 实施、 监测网络安全相关的所有措施， 它包括了对所有接口的安\\n全审查。\\n[BLK-A6E3C93078316D21] •\\n应进行网络隔离，最简单的情况， 通过一个防火墙实现隔离。 该防火墙可以控制和检查\\n不同网络之间的通信。\\n[BLK-9F5E44DC2AD36DE5] •\\n建议部署防恶意代码设备。\\n\\n[LOCATION page=21; printed_page=17; section=10 安全配置指南 > 10.1 部署安全]\\n[BLK-822CCE383703B7BD] 10.1 部署安全\\n[BLK-B6469A1F85E312C7] 产品北向属于安全重点关注区域，用户网络环境应在北向数据出口部署防火墙、防恶意代码\\n设备、IDS 等安全设备，构建安全的北向安全网络。\\n[BLK-AFA75AA365265142] 产品南向属于近端网络部署，网络环境相对安全，但并非绝对安全，建议：\\n[BLK-AFED3332E2924093] •\\n南向和北向网络使用独立的交换机进行部署，网络隔离。\\n[BLK-EB131CDE5EBDAAA4] •\\n南向设备对本产品来说，属于三方设备，是否会对网络安全造成威胁由用户来保障。\\n\\n[DOCUMENT DOC-D9C0DEB31D45]\\nfile_name: logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf\\nfile_path: legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf\\nfile_type: pdf\\nsource_sha256: bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d\\nparser_version: 1.5.0\\n\\n[LOCATION page=43; printed_page=33; section=7 Web界面 > 7.3 Web端简介 > 7.3.2 运行环境要求]\\n[BLK-7A58EE43A6730709] 当前Web 端界面支持8 种语言系统，分别是简体中文、英\\n语、德语、西班牙语、巴葡语、法语、日语和韩语。\\n[BLK-07CE953E4C5BC179] 语言显示\\n[BLK-1DC0483C55C3ACF2] 登录嵌入式Web 的电脑语言系统当前仅支持以上8\\n种语言，否则将无法登录。\\n\"\n}",
+  "estimated_input_tokens": 3591,
+  "raw_response": "{\n  \"node_id\": \"node_1\",\n  \"field_id\": \"operational_environment\",\n  \"facts\": [\n    {\n      \"fact_id\": \"FACT-001\",\n      \"statement\": \"工业网络安全的核心目标包括可用性：确保系统、网络和数据在需要时可被授权用户访问和使用，防止因破坏、故障或拒绝服务攻击(DoS)导致的业务中断。\",\n      \"block_ids\": [\"BLK-32D86711ED1302DA\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-002\",\n      \"statement\": \"工业网络安全的核心目标包括保密性：防止敏感数据、配置信息和网络资源等遭到非法访问、窃取或泄露。\",\n      \"block_ids\": [\"BLK-D29A82FAFD09D484\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-003\",\n      \"statement\": \"工业网络安全保护目标包括确保生产设备和流程的无故障运行和可用性。\",\n      \"block_ids\": [\"BLK-F30391C2A61969FE\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-004\",\n      \"statement\": \"工业网络安全保护目标包括防范网络攻击危及人员安全与生产安全。\",\n      \"block_ids\": [\"BLK-D91D8C5D38EFEB46\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-005\",\n      \"statement\": \"工业网络安全保护目标包括防止机密数据遭受未经授权的访问。\",\n      \"block_ids\": [\"BLK-5D9BB1795ED1309B\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-006\",\n      \"statement\": \"企业物理安全存在漏洞时，未经授权的人员可能进入生产环境，损坏或修改生产设备，导致机密信息丢失；因此必须采取适当措施保护公司所在地和关键生产区域。\",\n      \"block_ids\": [\"BLK-AF5815D0F7E277A5\", \"BLK-BDEC2C4D8C8E8B36\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-007\",\n      \"statement\": \"网络安全措施包括对所有接口的安全审查。\",\n      \"block_ids\": [\"BLK-F15FEACD7EBFF705\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-008\",\n      \"statement\": \"应进行网络隔离，最简单的情况是通过一个防火墙实现隔离，该防火墙可以控制和检查不同网络之间的通信。\",\n      \"block_ids\": [\"BLK-A6E3C93078316D21\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-009\",\n      \"statement\": \"建议部署防恶意代码设备。\",\n      \"block_ids\": [\"BLK-9F5E44DC2AD36DE5\"],\n      \"is_uncertain\": true,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-010\",\n      \"statement\": \"产品北向属于安全重点关注区域，用户网络环境应在北向数据出口部署防火墙、防恶意代码设备、IDS等安全设备，构建安全的北向安全网络。\",\n      \"block_ids\": [\"BLK-B6469A1F85E312C7\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-011\",\n      \"statement\": \"产品南向属于近端网络部署，网络环境相对安全但并非绝对安全；建议南向和北向网络使用独立的交换机进行部署，实现网络隔离。\",\n      \"block_ids\": [\"BLK-AFA75AA365265142\", \"BLK-AFED3332E2924093\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-012\",\n      \"statement\": \"南向设备对本产品来说属于三方设备，是否会对网络安全造成威胁由用户来保障。\",\n      \"block_ids\": [\"BLK-EB131CDE5EBDAAA4\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    }\n  ],\n  \"unknowns\": [\n    \"Logger4000是否实际交付或启用（GAP-LOGGER4000-SCOPE）\",\n    \"EMU300A产品是否内置或默认启用远程升级、云平台、数据上传等能力（证据未说明）\",\n    \"‘建议部署防恶意代码设备’是否为合同强制要求或仅属推荐（GAP-CONTRACT-VARIANTS）\",\n    \"北向安全设备（防火墙/防恶意代码/IDS）是否为产品交付必需条件，抑或仅为用户侧责任（GAP-CONTRACT-VARIANTS）\",\n    \"南向网络隔离建议是否适用于所有现场配置，或取决于合同/BOM/现场配置（GAP-CONTRACT-VARIANTS）\",\n    \"Web端语言支持是否反映产品实际运行环境约束，抑或仅为UI渲染层能力（未说明运行环境OS/浏览器/本地化策略）\"\n  ],\n  \"contradictions\": []\n}",
+  "response_metadata": {
+    "finish_reason": "stop",
+    "token_usage": {
+      "completion_tokens": 1258,
+      "prompt_tokens": 3207,
+      "total_tokens": 4465,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "qwen-plus"
+  },
+  "parsed_payload": {
+    "node_id": "node_1",
+    "field_id": "operational_environment",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "工业网络安全的核心目标包括可用性：确保系统、网络和数据在需要时可被授权用户访问和使用，防止因破坏、故障或拒绝服务攻击(DoS)导致的业务中断。",
+        "block_ids": [
+          "BLK-32D86711ED1302DA"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "工业网络安全的核心目标包括保密性：防止敏感数据、配置信息和网络资源等遭到非法访问、窃取或泄露。",
+        "block_ids": [
+          "BLK-D29A82FAFD09D484"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "工业网络安全保护目标包括确保生产设备和流程的无故障运行和可用性。",
+        "block_ids": [
+          "BLK-F30391C2A61969FE"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "工业网络安全保护目标包括防范网络攻击危及人员安全与生产安全。",
+        "block_ids": [
+          "BLK-D91D8C5D38EFEB46"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "工业网络安全保护目标包括防止机密数据遭受未经授权的访问。",
+        "block_ids": [
+          "BLK-5D9BB1795ED1309B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "企业物理安全存在漏洞时，未经授权的人员可能进入生产环境，损坏或修改生产设备，导致机密信息丢失；因此必须采取适当措施保护公司所在地和关键生产区域。",
+        "block_ids": [
+          "BLK-AF5815D0F7E277A5",
+          "BLK-BDEC2C4D8C8E8B36"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "网络安全措施包括对所有接口的安全审查。",
+        "block_ids": [
+          "BLK-F15FEACD7EBFF705"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "应进行网络隔离，最简单的情况是通过一个防火墙实现隔离，该防火墙可以控制和检查不同网络之间的通信。",
+        "block_ids": [
+          "BLK-A6E3C93078316D21"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "建议部署防恶意代码设备。",
+        "block_ids": [
+          "BLK-9F5E44DC2AD36DE5"
+        ],
+        "is_uncertain": true,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "产品北向属于安全重点关注区域，用户网络环境应在北向数据出口部署防火墙、防恶意代码设备、IDS等安全设备，构建安全的北向安全网络。",
+        "block_ids": [
+          "BLK-B6469A1F85E312C7"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "产品南向属于近端网络部署，网络环境相对安全但并非绝对安全；建议南向和北向网络使用独立的交换机进行部署，实现网络隔离。",
+        "block_ids": [
+          "BLK-AFA75AA365265142",
+          "BLK-AFED3332E2924093"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "南向设备对本产品来说属于三方设备，是否会对网络安全造成威胁由用户来保障。",
+        "block_ids": [
+          "BLK-EB131CDE5EBDAAA4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "Logger4000是否实际交付或启用（GAP-LOGGER4000-SCOPE）",
+      "EMU300A产品是否内置或默认启用远程升级、云平台、数据上传等能力（证据未说明）",
+      "‘建议部署防恶意代码设备’是否为合同强制要求或仅属推荐（GAP-CONTRACT-VARIANTS）",
+      "北向安全设备（防火墙/防恶意代码/IDS）是否为产品交付必需条件，抑或仅为用户侧责任（GAP-CONTRACT-VARIANTS）",
+      "南向网络隔离建议是否适用于所有现场配置，或取决于合同/BOM/现场配置（GAP-CONTRACT-VARIANTS）",
+      "Web端语言支持是否反映产品实际运行环境约束，抑或仅为UI渲染层能力（未说明运行环境OS/浏览器/本地化策略）"
+    ],
+    "contradictions": []
+  },
+  "validation_payload": {
+    "node_id": "node_1",
+    "field_id": "operational_environment",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "工业网络安全的核心目标包括可用性：确保系统、网络和数据在需要时可被授权用户访问和使用，防止因破坏、故障或拒绝服务攻击(DoS)导致的业务中断。",
+        "block_ids": [
+          "BLK-32D86711ED1302DA"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "工业网络安全的核心目标包括保密性：防止敏感数据、配置信息和网络资源等遭到非法访问、窃取或泄露。",
+        "block_ids": [
+          "BLK-D29A82FAFD09D484"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "工业网络安全保护目标包括确保生产设备和流程的无故障运行和可用性。",
+        "block_ids": [
+          "BLK-F30391C2A61969FE"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "工业网络安全保护目标包括防范网络攻击危及人员安全与生产安全。",
+        "block_ids": [
+          "BLK-D91D8C5D38EFEB46"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "工业网络安全保护目标包括防止机密数据遭受未经授权的访问。",
+        "block_ids": [
+          "BLK-5D9BB1795ED1309B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "企业物理安全存在漏洞时，未经授权的人员可能进入生产环境，损坏或修改生产设备，导致机密信息丢失；因此必须采取适当措施保护公司所在地和关键生产区域。",
+        "block_ids": [
+          "BLK-AF5815D0F7E277A5",
+          "BLK-BDEC2C4D8C8E8B36"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "网络安全措施包括对所有接口的安全审查。",
+        "block_ids": [
+          "BLK-F15FEACD7EBFF705"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "应进行网络隔离，最简单的情况是通过一个防火墙实现隔离，该防火墙可以控制和检查不同网络之间的通信。",
+        "block_ids": [
+          "BLK-A6E3C93078316D21"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "建议部署防恶意代码设备。",
+        "block_ids": [
+          "BLK-9F5E44DC2AD36DE5"
+        ],
+        "is_uncertain": true,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "产品北向属于安全重点关注区域，用户网络环境应在北向数据出口部署防火墙、防恶意代码设备、IDS等安全设备，构建安全的北向安全网络。",
+        "block_ids": [
+          "BLK-B6469A1F85E312C7"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "产品南向属于近端网络部署，网络环境相对安全但并非绝对安全；建议南向和北向网络使用独立的交换机进行部署，实现网络隔离。",
+        "block_ids": [
+          "BLK-AFA75AA365265142",
+          "BLK-AFED3332E2924093"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "南向设备对本产品来说属于三方设备，是否会对网络安全造成威胁由用户来保障。",
+        "block_ids": [
+          "BLK-EB131CDE5EBDAAA4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "Logger4000是否实际交付或启用（GAP-LOGGER4000-SCOPE）",
+      "EMU300A产品是否内置或默认启用远程升级、云平台、数据上传等能力（证据未说明）",
+      "‘建议部署防恶意代码设备’是否为合同强制要求或仅属推荐（GAP-CONTRACT-VARIANTS）",
+      "北向安全设备（防火墙/防恶意代码/IDS）是否为产品交付必需条件，抑或仅为用户侧责任（GAP-CONTRACT-VARIANTS）",
+      "南向网络隔离建议是否适用于所有现场配置，或取决于合同/BOM/现场配置（GAP-CONTRACT-VARIANTS）",
+      "Web端语言支持是否反映产品实际运行环境约束，抑或仅为UI渲染层能力（未说明运行环境OS/浏览器/本地化策略）"
+    ],
+    "contradictions": []
+  },
+  "result": {
+    "node_id": "node_1",
+    "field_id": "operational_environment",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "工业网络安全的核心目标包括可用性：确保系统、网络和数据在需要时可被授权用户访问和使用，防止因破坏、故障或拒绝服务攻击(DoS)导致的业务中断。",
+        "block_ids": [
+          "BLK-32D86711ED1302DA"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "工业网络安全的核心目标包括保密性：防止敏感数据、配置信息和网络资源等遭到非法访问、窃取或泄露。",
+        "block_ids": [
+          "BLK-D29A82FAFD09D484"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "工业网络安全保护目标包括确保生产设备和流程的无故障运行和可用性。",
+        "block_ids": [
+          "BLK-F30391C2A61969FE"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "工业网络安全保护目标包括防范网络攻击危及人员安全与生产安全。",
+        "block_ids": [
+          "BLK-D91D8C5D38EFEB46"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "工业网络安全保护目标包括防止机密数据遭受未经授权的访问。",
+        "block_ids": [
+          "BLK-5D9BB1795ED1309B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "企业物理安全存在漏洞时，未经授权的人员可能进入生产环境，损坏或修改生产设备，导致机密信息丢失；因此必须采取适当措施保护公司所在地和关键生产区域。",
+        "block_ids": [
+          "BLK-AF5815D0F7E277A5",
+          "BLK-BDEC2C4D8C8E8B36"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "网络安全措施包括对所有接口的安全审查。",
+        "block_ids": [
+          "BLK-F15FEACD7EBFF705"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "应进行网络隔离，最简单的情况是通过一个防火墙实现隔离，该防火墙可以控制和检查不同网络之间的通信。",
+        "block_ids": [
+          "BLK-A6E3C93078316D21"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "建议部署防恶意代码设备。",
+        "block_ids": [
+          "BLK-9F5E44DC2AD36DE5"
+        ],
+        "is_uncertain": true,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "产品北向属于安全重点关注区域，用户网络环境应在北向数据出口部署防火墙、防恶意代码设备、IDS等安全设备，构建安全的北向安全网络。",
+        "block_ids": [
+          "BLK-B6469A1F85E312C7"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "产品南向属于近端网络部署，网络环境相对安全但并非绝对安全；建议南向和北向网络使用独立的交换机进行部署，实现网络隔离。",
+        "block_ids": [
+          "BLK-AFA75AA365265142",
+          "BLK-AFED3332E2924093"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "南向设备对本产品来说属于三方设备，是否会对网络安全造成威胁由用户来保障。",
+        "block_ids": [
+          "BLK-EB131CDE5EBDAAA4"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "Logger4000是否实际交付或启用（GAP-LOGGER4000-SCOPE）",
+      "EMU300A产品是否内置或默认启用远程升级、云平台、数据上传等能力（证据未说明）",
+      "‘建议部署防恶意代码设备’是否为合同强制要求或仅属推荐（GAP-CONTRACT-VARIANTS）",
+      "北向安全设备（防火墙/防恶意代码/IDS）是否为产品交付必需条件，抑或仅为用户侧责任（GAP-CONTRACT-VARIANTS）",
+      "南向网络隔离建议是否适用于所有现场配置，或取决于合同/BOM/现场配置（GAP-CONTRACT-VARIANTS）",
+      "Web端语言支持是否反映产品实际运行环境约束，抑或仅为UI渲染层能力（未说明运行环境OS/浏览器/本地化策略）"
+    ],
+    "contradictions": []
+  },
+  "elapsed_seconds": 28.122,
+  "finished_at": "2026-10-09T02:17:10.971496+00:00"
+}

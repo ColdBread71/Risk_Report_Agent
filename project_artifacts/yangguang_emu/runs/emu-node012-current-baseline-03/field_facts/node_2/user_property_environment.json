@@ -1,0 +1,588 @@
+{
+  "schema_version": "field_fact_checkpoint.v3",
+  "node_id": "node_2",
+  "field_id": "user_property_environment",
+  "index_id": "IDX-3B116ADDF3BB03CC",
+  "packet_sha256": "1053e545c05d50befdf9b07d16d95987d756eac49daff9980cf2960fba0241bb",
+  "retrieval_profile_version": "1.7",
+  "field_fact_prompt_version": "2.5",
+  "cache_inputs": {
+    "node_id": "node_2",
+    "field_id": "user_property_environment",
+    "source_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "retrieval_packet_sha256": "1053e545c05d50befdf9b07d16d95987d756eac49daff9980cf2960fba0241bb",
+    "rag_index_id": "IDX-3B116ADDF3BB03CC",
+    "text_model": "qwen-plus",
+    "retrieval_profile_sha256": "2fcec7c3254980576273951d45510b10275b72c6c693100b6dcabd34119634ed",
+    "field_prompt_sha256": "c9e819f2277fdc6cdee466db1ff03dab3bed70b731fa828143e38871c48abe33",
+    "field_schema_sha256": "75da5cc65a8ecb48b7a935b76ac7be857da2573b77a6f6fecdef6ae3c099ecc6"
+  },
+  "cache_fingerprint": "c11382398c7356d35379045ad08c020572db804b592c2215f6d780210a1c6093",
+  "result": {
+    "node_id": "node_2",
+    "field_id": "user_property_environment",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "网络安全受损可能导致人员死亡或严重伤害。",
+        "block_ids": [
+          "BLK-0D5782B06D8B1BF9"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "网络安全受损可能导致人员中度或轻度伤害。",
+        "block_ids": [
+          "BLK-D55D028F74D15863"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "网络安全受损可能导致设备无法正常运行。",
+        "block_ids": [
+          "BLK-E3C1223513258C5B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "网络安全受损可能导致财产损失。",
+        "block_ids": [
+          "BLK-E3C1223513258C5B"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "未遵循安全说明和遗留风险可引发生命危险。",
+        "block_ids": [
+          "BLK-A8903F0B3105707C"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "参数设置错误可导致机器出现故障，从而导致人员重伤或死亡。",
+        "block_ids": [
+          "BLK-1A706959C60B7DDA"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "工业网络安全保护目标包括防范网络攻击危及人员安全与生产安全。",
+        "block_ids": [
+          "BLK-D91D8C5D38EFEB46"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "工业网络安全保护目标包括确保生产设备和流程的无故障运行和可用性。",
+        "block_ids": [
+          "BLK-F30391C2A61969FE"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "工业网络安全保护目标包括防止工业自动化系统及其组件被非法访问、操纵或者数据丢失。",
+        "block_ids": [
+          "BLK-DB3FDECA1B79E396"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "工业网络安全保护目标包括防止工业通信信息被窃取和操纵。",
+        "block_ids": [
+          "BLK-F365C432A5D0C66E"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "未经授权的人员进入生产环境可能损坏或修改生产设备，导致机密信息丢失。",
+        "block_ids": [
+          "BLK-AF5815D0F7E277A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "企业物理安全存在漏洞时，未经授权的人员可能进入生产环境。",
+        "block_ids": [
+          "BLK-AF5815D0F7E277A5"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-013",
+        "statement": "对关键生产区域进行单独的人员出入控制是缓解措施之一。",
+        "block_ids": [
+          "BLK-C65542BD825C9290"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-014",
+        "statement": "重要组件安装在可上锁的控制柜/控制室内是缓解措施之一。",
+        "block_ids": [
+          "BLK-F98DE46C72A1F829"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-015",
+        "statement": "控制柜/控制室必须配备锁，并有监控和报警设施。",
+        "block_ids": [
+          "BLK-B5B2DA70170FDE95"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-016",
+        "statement": "管理员可通过删除可疑用户账号立即终止该用户的访问权限。",
+        "block_ids": [
+          "BLK-DBF11A90CC31126D"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-017",
+        "statement": "管理员可通过修改用户密码应对用户密码泄露。",
+        "block_ids": [
+          "BLK-BDB4B6FD02F875A2"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-018",
+        "statement": "管理员至多可创建4个运维账号（除“maintain”账号外）。",
+        "block_ids": [
+          "BLK-CE969232A195110E"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "是否影响相邻业务设备或系统未在证据中明确说明",
+      "是否影响业务运行或连续性未在证据中直接陈述（仅提及‘可用性’为保护目标，但未说明受损即导致中断）",
+      "是否影响人身安全以外的其他人员对象（如第三方人员、运维人员、管理员）未在证据中逐字支持",
+      "是否影响环境、动物、公共利益未在证据中出现",
+      "是否影响基础设施服务未在证据中出现",
+      "‘生产安全’的具体所指对象（人员？设备？工艺？）未明确定义"
+    ],
+    "contradictions": []
+  },
+  "retrieval_trace": {
+    "schema_version": "1.0",
+    "request": {
+      "project_id": "yangguang_emu",
+      "node_id": "node_2",
+      "field_id": "user_property_environment",
+      "query": null,
+      "filters": {
+        "document_ids": [],
+        "section_path_terms": [],
+        "block_types": [],
+        "exclude_review_required": false
+      },
+      "token_budget": 12000,
+      "max_blocks": 40,
+      "neighbor_window": 2
+    },
+    "effective_query": "用户 运维人员 管理员 第三方人员 人身安全 生命 重伤 死亡 财产损失 业务设备 业务安全 业务运行 业务连续性 相邻设备 外部系统 基础设施服务 环境 公共利益",
+    "index_id": "IDX-3B116ADDF3BB03CC",
+    "scope_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "packet_id": "rag_yangguang_emu_node_2_user_property_environment_ec820f320963",
+    "packet_sha256": "1053e545c05d50befdf9b07d16d95987d756eac49daff9980cf2960fba0241bb",
+    "candidate_count": 1041,
+    "selected_count": 40,
+    "selected_token_count": 2401,
+    "truncated_by_budget": false,
+    "truncated_by_max_blocks": true,
+    "hits": [
+      {
+        "block_id": "BLK-A8903F0B3105707C",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 1,
+        "score": 0.515922768910726,
+        "estimated_tokens": 105,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-355A0793885F8B9D",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 2,
+        "score": 0.515922768910726,
+        "estimated_tokens": 42,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-A8903F0B3105707C"
+      },
+      {
+        "block_id": "BLK-D0201C26B3FCE322",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 3,
+        "score": 0.515922768910726,
+        "estimated_tokens": 57,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-A8903F0B3105707C"
+      },
+      {
+        "block_id": "BLK-BEF9D1FF3178841A",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 4,
+        "score": 0.515922768910726,
+        "estimated_tokens": 46,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-A8903F0B3105707C"
+      },
+      {
+        "block_id": "BLK-F4322E7C8FD3E6EB",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 5,
+        "score": 0.515922768910726,
+        "estimated_tokens": 63,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-A8903F0B3105707C"
+      },
+      {
+        "block_id": "BLK-E3C1223513258C5B",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 6,
+        "score": 0.44533605045742464,
+        "estimated_tokens": 81,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-493E650CAF550B89",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 7,
+        "score": 0.44533605045742464,
+        "estimated_tokens": 38,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-E3C1223513258C5B"
+      },
+      {
+        "block_id": "BLK-45B75795F2547348",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 8,
+        "score": 0.44533605045742464,
+        "estimated_tokens": 101,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-E3C1223513258C5B"
+      },
+      {
+        "block_id": "BLK-642205FC9511F453",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 9,
+        "score": 0.44533605045742464,
+        "estimated_tokens": 51,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-E3C1223513258C5B"
+      },
+      {
+        "block_id": "BLK-AF5815D0F7E277A5",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 10,
+        "score": 0.4955277336968316,
+        "estimated_tokens": 104,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-27994D7BD485F39F",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 11,
+        "score": 0.4955277336968316,
+        "estimated_tokens": 63,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-AF5815D0F7E277A5"
+      },
+      {
+        "block_id": "BLK-BDEC2C4D8C8E8B36",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 12,
+        "score": 0.4955277336968316,
+        "estimated_tokens": 105,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-AF5815D0F7E277A5"
+      },
+      {
+        "block_id": "BLK-B2FF43D3D8F682EC",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 13,
+        "score": 0.4955277336968316,
+        "estimated_tokens": 71,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-AF5815D0F7E277A5"
+      },
+      {
+        "block_id": "BLK-C65542BD825C9290",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 14,
+        "score": 0.4955277336968316,
+        "estimated_tokens": 83,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-AF5815D0F7E277A5"
+      },
+      {
+        "block_id": "BLK-0A1B1AA787D531F4",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 15,
+        "score": 0.4734441174401177,
+        "estimated_tokens": 80,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-174DBA1CA16FD97C",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 16,
+        "score": 0.4734441174401177,
+        "estimated_tokens": 40,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-0A1B1AA787D531F4"
+      },
+      {
+        "block_id": "BLK-BF7FDEAF45D1C8F1",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 17,
+        "score": 0.4734441174401177,
+        "estimated_tokens": 39,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-0A1B1AA787D531F4"
+      },
+      {
+        "block_id": "BLK-0D5782B06D8B1BF9",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 18,
+        "score": 0.4734441174401177,
+        "estimated_tokens": 81,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-0A1B1AA787D531F4"
+      },
+      {
+        "block_id": "BLK-D55D028F74D15863",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 19,
+        "score": 0.4734441174401177,
+        "estimated_tokens": 80,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-0A1B1AA787D531F4"
+      },
+      {
+        "block_id": "BLK-32D86711ED1302DA",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 20,
+        "score": 0.472152943081326,
+        "estimated_tokens": 117,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-09BB4F761E6C697C",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 21,
+        "score": 0.472152943081326,
+        "estimated_tokens": 111,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-32D86711ED1302DA"
+      },
+      {
+        "block_id": "BLK-D29A82FAFD09D484",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 22,
+        "score": 0.472152943081326,
+        "estimated_tokens": 90,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-32D86711ED1302DA"
+      },
+      {
+        "block_id": "BLK-1AD1C75D0156F46C",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 23,
+        "score": 0.472152943081326,
+        "estimated_tokens": 62,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-32D86711ED1302DA"
+      },
+      {
+        "block_id": "BLK-14EB48F1B4784375",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 24,
+        "score": 0.472152943081326,
+        "estimated_tokens": 106,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-32D86711ED1302DA"
+      },
+      {
+        "block_id": "BLK-CBB0DBDB5BE23AB9",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 25,
+        "score": 0.47051223648919,
+        "estimated_tokens": 41,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-0D5782B06D8B1BF9"
+      },
+      {
+        "block_id": "BLK-8E7F66A7A4B2288D",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 26,
+        "score": 0.47051223648919,
+        "estimated_tokens": 68,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-0D5782B06D8B1BF9"
+      },
+      {
+        "block_id": "BLK-F98DE46C72A1F829",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 27,
+        "score": 0.4620983070797391,
+        "estimated_tokens": 86,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-C65542BD825C9290"
+      },
+      {
+        "block_id": "BLK-B5B2DA70170FDE95",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 28,
+        "score": 0.4620983070797391,
+        "estimated_tokens": 139,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-C65542BD825C9290"
+      },
+      {
+        "block_id": "BLK-CE969232A195110E",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 29,
+        "score": 0.4600921524895562,
+        "estimated_tokens": 92,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-2C9EB29CBEE48879",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 30,
+        "score": 0.4600921524895562,
+        "estimated_tokens": 36,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-CE969232A195110E"
+      },
+      {
+        "block_id": "BLK-DBF11A90CC31126D",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 31,
+        "score": 0.4600921524895562,
+        "estimated_tokens": 74,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-CE969232A195110E"
+      },
+      {
+        "block_id": "BLK-0FB300025B64DD8D",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 32,
+        "score": 0.4600921524895562,
+        "estimated_tokens": 78,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-CE969232A195110E"
+      },
+      {
+        "block_id": "BLK-BDB4B6FD02F875A2",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 33,
+        "score": 0.4600921524895562,
+        "estimated_tokens": 57,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-CE969232A195110E"
+      },
+      {
+        "block_id": "BLK-D91D8C5D38EFEB46",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 34,
+        "score": 0.459319543838501,
+        "estimated_tokens": 77,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-F30391C2A61969FE",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 35,
+        "score": 0.459319543838501,
+        "estimated_tokens": 78,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-D91D8C5D38EFEB46"
+      },
+      {
+        "block_id": "BLK-DB3FDECA1B79E396",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 36,
+        "score": 0.459319543838501,
+        "estimated_tokens": 88,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-D91D8C5D38EFEB46"
+      },
+      {
+        "block_id": "BLK-58B1CE8BE56D60C7",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 37,
+        "score": 0.459319543838501,
+        "estimated_tokens": 68,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-D91D8C5D38EFEB46"
+      },
+      {
+        "block_id": "BLK-F365C432A5D0C66E",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 38,
+        "score": 0.459319543838501,
+        "estimated_tokens": 75,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-D91D8C5D38EFEB46"
+      },
+      {
+        "block_id": "BLK-1A706959C60B7DDA",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 39,
+        "score": 0.44435185326470267,
+        "estimated_tokens": 87,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-B90C562DB9B696AD",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 40,
+        "score": 0.44435185326470267,
+        "estimated_tokens": 42,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-1A706959C60B7DDA"
+      }
+    ]
+  }
+}

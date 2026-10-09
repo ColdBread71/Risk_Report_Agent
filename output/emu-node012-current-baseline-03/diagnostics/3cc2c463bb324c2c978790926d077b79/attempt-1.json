@@ -1,0 +1,593 @@
+{
+  "run_id": "emu-node012-current-baseline-03",
+  "node": "identify_assets",
+  "task": "node_2/external_services",
+  "call_id": "3cc2c463bb324c2c978790926d077b79",
+  "schema": "FieldExtractionResult",
+  "model": "qwen-plus",
+  "attempt": 1,
+  "started_at": "2026-10-09T02:39:05.295248+00:00",
+  "status": "succeeded",
+  "phase": "complete",
+  "prompt": "你正在为 CRA / prEN 40000 TARA 工作流的 node_2/external_services 提取原子事实。\n\n【任务边界】\n1. 只记录输入证据逐字支持的事实，不生成最终 Scope、ProductContext、资产、威胁、风险或控制。\n2. 每条 fact 只表达一个事实，并列出直接支持它的真实 block_id。block_id 所在文本必须直接支持该事实，不得引用相邻章节标题代替正文或表格。最多输出 20 条事实；证据未说明的必要信息写入 unknowns。\n3. 不得创建输入中不存在的 block_id，不得根据行业惯例补全未知信息。\n4. 原子事实必须保留证据中的限定词，包括“选配、可选、适用于、若启用、取决于合同/BOM/现场配置”。不得把产品能力改写成客户已装机或已启用状态。\n5. 安全配置教程或操作步骤只证明该对象或能力被手册覆盖，不单独证明它是标准内置组件、实际交付配置或当前已启用功能。\n6. 对云平台、远程升级、数据上传等事实，只记录证据明确说明的能力、运营方和依赖；不得自行判定 CRA RDPS。缺少“远程方案是否为产品功能所必需”等信息时写入 unknowns。\n7. 证据含糊、可选或依赖合同配置时设置 is_uncertain=true，并在 unknowns 中记录待确认项。\n8. 若不同证据存在冲突，分别保留事实并在 contradictions 中说明。\n9. 除产品名、型号、协议、法规/标准编号和其他专有名词外，fact、unknowns 和 contradictions 使用简体中文；不得翻译或改写证据中的专有标识。\n10. attributes 只用于本字段整理要求明确列出的结构化值，且必须由该fact的同一组block_ids直接支持；其他字段保持空对象。未知值使用null或规定的unknown，不得推断。\n\n【本字段整理要求】\n分别提取云平台、第三方平台、远程维护、远程升级、时间、日志、目录等外部服务及其明确的数据关系、授权条件、默认状态和依赖。外部系统不是产品组件仍可作为相邻或受影响对象；不得自行判定RDPS、运营方、责任边界或断网降级行为。\n\n【目标 JSON Schema】\n{\n  \"$defs\": {\n    \"FactAttributes\": {\n      \"additionalProperties\": false,\n      \"description\": \"One source for the model-facing attribute schema and runtime validation.\",\n      \"properties\": {},\n      \"title\": \"FactAttributes\",\n      \"type\": \"object\"\n    },\n    \"RetrievedFact\": {\n      \"additionalProperties\": false,\n      \"description\": \"One atomic fact extracted from a field-specific evidence packet.\",\n      \"properties\": {\n        \"fact_id\": {\n          \"pattern\": \"^FACT-[0-9]{3,}$\",\n          \"title\": \"Fact Id\",\n          \"type\": \"string\"\n        },\n        \"statement\": {\n          \"maxLength\": 1000,\n          \"minLength\": 1,\n          \"title\": \"Statement\",\n          \"type\": \"string\"\n        },\n        \"block_ids\": {\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"maxItems\": 4,\n          \"minItems\": 1,\n          \"title\": \"Block Ids\",\n          \"type\": \"array\"\n        },\n        \"is_uncertain\": {\n          \"default\": false,\n          \"title\": \"Is Uncertain\",\n          \"type\": \"boolean\"\n        },\n        \"attributes\": {\n          \"$ref\": \"#/$defs/FactAttributes\",\n          \"description\": \"Optional field-specific values copied from the same evidence. Only communications and components use the reviewed keys validated by FieldExtractionResult.\",\n          \"title\": \"Attributes\"\n        }\n      },\n      \"required\": [\n        \"fact_id\",\n        \"statement\",\n        \"block_ids\"\n      ],\n      \"title\": \"RetrievedFact\",\n      \"type\": \"object\"\n    }\n  },\n  \"additionalProperties\": false,\n  \"description\": \"Compact persisted candidate facts for one Node/field slice.\",\n  \"properties\": {\n    \"node_id\": {\n      \"type\": \"string\",\n      \"const\": \"node_2\"\n    },\n    \"field_id\": {\n      \"type\": \"string\",\n      \"const\": \"external_services\"\n    },\n    \"facts\": {\n      \"items\": {\n        \"$ref\": \"#/$defs/RetrievedFact\"\n      },\n      \"maxItems\": 20,\n      \"title\": \"Facts\",\n      \"type\": \"array\"\n    },\n    \"unknowns\": {\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"maxItems\": 10,\n      \"title\": \"Unknowns\",\n      \"type\": \"array\"\n    },\n    \"contradictions\": {\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"maxItems\": 10,\n      \"title\": \"Contradictions\",\n      \"type\": \"array\"\n    }\n  },\n  \"required\": [\n    \"node_id\",\n    \"field_id\"\n  ],\n  \"title\": \"FieldExtractionResult\",\n  \"type\": \"object\"\n}\n\n【输出要求】\n- node_id 和 field_id 必须与任务完全一致。\n- fact_id 使用 FACT-001、FACT-002 等批内唯一编号。\n- 严格输出单个 JSON 对象，不输出 Markdown 或解释。\n\n【字段任务与检索证据】\n{\n  \"node_id\": \"node_2\",\n  \"field_id\": \"external_services\",\n  \"retrieval_intent\": \"云平台 第三方平台 外部服务 远程数据处理 远程维护 远程升级 数据上传 时间服务 日志服务 目录服务 文件服务 上级系统 管理系统 运营方 责任方 授权 默认关闭 降级\",\n  \"evidence\": \"[PACKET rag_yangguang_emu_node_2_external_services_d91c11030072 v1]\\nProject: yangguang_emu\\nUse only this evidence. Preserve unknowns and copy citation anchors exactly.\\n\\n[KNOWN GAPS]\\n- GAP-LOGGER4000-SCOPE: A Logger4000 manual is present, but the EMU300A product and cybersecurity manuals identify Logger5000 as the standard internal collector; Logger4000 is excluded until the delivered configuration is confirmed. Disposition: Treat Logger4000 applicability as a customer/configuration question; do not infer its assets or threats in the baseline run.\\n- GAP-DIAGRAM-SEMANTICS: Native text and figure captions are retained, but topology diagrams have not been manually transcribed into graph relationships. Disposition: Review missing topology only if the first evaluation shows unsupported or absent communication paths.\\n- GAP-MIXED-PAGE-BLOCK: Logger5000 PDF page 82 merges the end of GOOSE, MMS forwarding, and the start of port parameters into one native PDF text block; its file/page/block anchor is exact but its single assigned section path is broader than the mixed content. Disposition: Require quote plus physical-page/block citation for this block; do not treat its section path alone as proof. Revisit parser splitting only if this locator affects evaluation.\\n- GAP-CONTRACT-VARIANTS: The manuals describe optional and contract-dependent functions; the exact customer-enabled feature set is not independently confirmed. Disposition: Preserve uncertainty and produce customer questions instead of asserting optional functions as deployed facts.\\n- GAP-LEGAL-BASIS: Product manuals establish product facts but are not authoritative CRA or prEN 40000 legal sources. Disposition: Use the controlled legal/rule layer for legal conclusions; never fabricate legal support from this packet.\\n\\n[DOCUMENT DOC-5067B181346D]\\nfile_name: EMU300A-UCN-Ver11-202603.pdf\\nfile_path: legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf\\nfile_type: pdf\\nsource_sha256: 985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e\\nparser_version: 1.5.0\\n\\n[LOCATION page=16; printed_page=10; section=2 产品介绍 > 2.2 主要特点]\\n[BLK-853407424F1C1351] 通过路由器连接至阳光云\\n[BLK-1317C7BFFF509A67] 能量管理单元可以直接通过路由器与阳光云连接，如下图所示。\\n[BLK-EBE329C3EFA80ACF] 数据采集器将数据转发至阳光云平台的功能默认不可用。启用该功能前，客户需在充\\n分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获\\n得客户授权后方可生效，且相关操作受系统访问控制策略管理。\\n[BLK-C125441858A9A758] 2.2 主要特点\\n[BLK-52E0EF74E19FBC91] 灵活组网\\n\\n[DOCUMENT DOC-DF116E7199E2]\\nfile_name: EMU300A网络安全操作手册-UCN-Ver11-202607.pdf\\nfile_path: legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf\\nfile_type: pdf\\nsource_sha256: e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc\\nparser_version: 1.5.0\\n\\n[LOCATION page=12; printed_page=8; section=5 产品功能及部署情况介绍]\\n[BLK-64FE47677390A3C6] •\\n能量管理单元也可将采集到的设备数据，直接通过4G 路由器传输至阳光云。\\n\\n[DOCUMENT DOC-D9C0DEB31D45]\\nfile_name: logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf\\nfile_path: legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf\\nfile_type: pdf\\nsource_sha256: bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d\\nparser_version: 1.5.0\\n\\n[LOCATION page=13; printed_page=3; section=2 产品描述 > 2.1 功能描述]\\n[BLK-DCE8A1FE2B86D398] 数据转发功能\\n[BLK-8CF56F6958CD33E1] 数据采集器具备将收集到的数据转发综自系统、站控系统或阳光云平台的功能。\\n[BLK-ABD8EE23CFEA3B93] •\\n数据采集器的数据转发功能默认不可用。启用该功能前，客户需在充分知情的前\\n提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获得客户\\n授权后方可生效，且相关操作受系统访问控制策略管理。\\n[BLK-536C2D01D46C74B8] •\\n阳光云平台在北美区域禁止使用。\\n[BLK-1AF38C7935ED3716] 支持协议转换服务\\n[BLK-915BE31950823B72] 数据采集器具备协议转换服务，包括ModbusRTU 转IEC104、MQTT、ModbusTCP 等。\\n\\n[LOCATION page=71; printed_page=61; section=7 Web界面 > 7.9 历史数据 > 7.9.4 Syslog日志]\\n[BLK-11D6FB8018FC1468] 步骤 1 在历史数据界面，点击Syslog，进入页面。\\n[BLK-A3BA38611AC0C157] 步骤 2 设置Syslog 服务IP，Syslog 日志将传到服务IP 下。\\n[BLK-4A10B94D9780B36C] a. 选择远程服务器页面，单击操作栏\\n[BLK-55FF51761C56362D] ，弹出设置界面。\\n[BLK-1B770EBE1946B023] b. 对服务器IP、端口、日志等级进行记录，点击保存，使设置生效。\\n\\n[LOCATION page=74; printed_page=64; section=7 Web界面 > 7.10 系统 > 7.10.3 远程维护]\\n[BLK-3DF4FC14838A12B6] 7.10.3 远程维护\\n[BLK-E8D208159F329BFA] 远程维护功能默认关闭。启用该功能前，客户需在充分知情的前提下使用\\nadministrator 账号进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在\\n获得administrator 账号授权后方可生效，且相关操作受系统访问控制策略管理。\\n[BLK-F3444968819BD4B6] 步骤 1 单击系统 > 远程维护，进入界面。\\n[BLK-75BC08D3A0B8DBCF] 表 7-8 参数说明\\n[BLK-32F041E2A1781182] 远程维护开关状态\\n说明\\n[BLK-9A20096B42235E21] 禁止\\n不可对数据采集器进行远程维护\\n\\n[LOCATION page=77; printed_page=67; section=7 Web界面 > 7.10 系统 > 7.10.6 转发配置 > 7.10.6.2 转发IEC104服务配置]\\n[BLK-BE153AA192B48930] 用户手册\\n7 Web 界面\\n[BLK-89A6CAB539794403] 时钟源\\t\\t说明\\n阳光\\t云\\t前提是数据采集器与阳光云平台连接，否则时钟源设置为“阳光云”的\\n对时方式无效。\\nMOD\\nTCP\\tBUS-\\t前提是数据采集器与后台使用MODBUS-TCP 通信规约，否则时钟源\\n设置为“MODBUS-TCP”的对时方式无效。\\nB 码\\t\\t通过B 码协议实现时间同步。\\nPTP\\t\\t通过后台时间服务器对电站内的多个数据采集器进行统一对时。\\n结束\\t\\t\\n注意\\t\\t\\n数据\\t采集器首次使用\\t必须配置系统时间。\\n\\t置\\n阳光云服务\\t设置\\n\\t• 数据采集器\\n提下进行手\\n授权后方可\\n• 阳光云平台\\t的数据转发功能默认不可用。启用该功能前，客户需在充分知情的前\\n动授权，并通过安全加密认证接入公共网络。远程访问仅在获得客户\\n生效，且相关操作受系统访问控制策略管理。\\n在北美区域已停止服务。\\n\\t\\t\\n\\t云服务与外网\\t有数据交互，请确认设备网络环境安全后再开启。\\n\\t统 > 转发配置\\n入站点开关，\\t，进入界面。\\n单击操作栏 ，可修改阳光云转发配置信息。\\n\\t默认接入阳光\\n站”，澳洲地区\\n为保证数据采\\n参考路由器白\\t云站点为“中国站”。中国大陆地区接入“中国站”，欧洲地区接入“欧洲\\n接入“澳洲站”，其他地区接入“国际站”。\\n集器功能正常使用，需要对路由器的白名单进行相关设置。设置参数请\\n名单设置。\\n\\tIEC104 服务\\nEC104 服务配置\\t配置\\n”用于配置数据采集器转发IEC104 服务。\\n\\n[LOCATION page=81; printed_page=71; section=7 Web界面 > 7.10 系统 > 7.10.6 转发配置 > 7.10.6.4 转发三方云服务配置]\\n[BLK-7CA94C17A4F80A13] 7.10.6.4 转发三方云服务配置\\n[BLK-0F6F7B781E8A2D1C] “转发三方云服务配置”用于配置数据采集器转发三方云服务。\\n[BLK-AD1E6A7FA18DAC21] 1.云服务与外网有数据交互，请确认设备网络环境安全后再开启。\\n2.转发三方云功能默认关闭。启用该功能前，客户需在充分知情的前提下使用管理员\\n账号进行手动授权，并通过安全加密认证接入公共网络。该功能仅在获得管理员账号\\n授权后方可生效，且相关操作受系统访问控制策略管理。\\n[BLK-F6A17CB61436E6E2] 步骤 1 登录运维用户账号，单击系统 > 转发配置 > 三方云，进入三方云界面。\\n[BLK-0EE002454BC28BB1] 步骤 2 打开开关。\\n[BLK-0008A4A10DC846AD] 步骤 3 单击\\n\\n[LOCATION page=100; printed_page=90; section=9 用户管理 > 9.13 通信设置 > 9.13.1 阳光云]\\n[BLK-9706445749F8889A] 9.13.1 阳光云\\n[BLK-95BE5E587B8C4342] 1. 请以administrator 身份进行登录，点击通信设置模块，进入 阳光云子模块。\\n[BLK-246DEBE9E6F8F66F] 2. 选择通信总开关，接入阳光云功能，授权运维人员可配置远程维护、接入阳光云功能，开\\n启该功能则启用阳光云通信通道。\\n[BLK-EE7C24440CF96358] 3. 点击下行通信开关，可根据需求设置授权有效期，点击确定进行授权。\\n[BLK-A20249CED9F8FE4F] 如需更新授权有效期，可点击有效期更新重新设置权限时间。权限延长时间将以\\n当前设置的时间点为基准进行计算。\\n[BLK-D958717003DF6D60] 4. 配置授权运维人员的查看与控制功能权限范围，按需开启对应功能开关。\\n\\n[LOCATION page=100; printed_page=90; section=9 用户管理 > 9.13 通信设置 > 9.13.2 三方云]\\n[BLK-1A16DF155B1154B9] 9.13.2 三方云\\n[BLK-84E2F121165CC7A2] 1. 请以administrator 身份进行登录，点击通讯设置 > 三方云，进入 三方云子页面。\\n[BLK-8C65146392F8991F] 2. 开启三方云开关，并对提示进行确认授权。授权运维人员可配置三方云功能，开启该功能\\n则允许设备数据上传到配置的服务器。\\n\"\n}",
+  "estimated_input_tokens": 5142,
+  "raw_response": "{\n  \"node_id\": \"node_2\",\n  \"field_id\": \"external_services\",\n  \"facts\": [\n    {\n      \"fact_id\": \"FACT-001\",\n      \"statement\": \"能量管理单元（EMU300A）可通过路由器连接至阳光云平台。\",\n      \"block_ids\": [\"BLK-853407424F1C1351\", \"BLK-1317C7BFFF509A67\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-002\",\n      \"statement\": \"数据采集器（Logger5000）具备将收集到的数据转发至阳光云平台的功能。\",\n      \"block_ids\": [\"BLK-8CF56F6958CD33E1\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-003\",\n      \"statement\": \"数据采集器将数据转发至阳光云平台的功能默认不可用；启用前需客户手动授权，并通过安全加密认证接入公共网络。\",\n      \"block_ids\": [\"BLK-EBE329C3EFA80ACF\", \"BLK-ABD8EE23CFEA3B93\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-004\",\n      \"statement\": \"远程访问仅在获得客户授权后方可生效，且相关操作受系统访问控制策略管理。\",\n      \"block_ids\": [\"BLK-EBE329C3EFA80ACF\", \"BLK-ABD8EE23CFEA3B93\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-005\",\n      \"statement\": \"能量管理单元可通过4G路由器将采集到的设备数据直接传输至阳光云。\",\n      \"block_ids\": [\"BLK-64FE47677390A3C6\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-006\",\n      \"statement\": \"阳光云平台在北美区域禁止使用。\",\n      \"block_ids\": [\"BLK-536C2D01D46C74B8\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-007\",\n      \"statement\": \"阳光云服务默认接入站点按地区划分：中国大陆地区接入“中国站”，欧洲地区接入“欧洲站”，澳洲地区接入“澳洲站”，其他地区接入“国际站”。\",\n      \"block_ids\": [\"BLK-7CA94C17A4F80A13\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-008\",\n      \"statement\": \"时钟源可设置为“阳光云”，但该对时方式仅在数据采集器与阳光云平台连接的前提下有效。\",\n      \"block_ids\": [\"BLK-7CA94C17A4F80A13\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-009\",\n      \"statement\": \"远程维护功能默认关闭；启用前需使用administrator账号进行手动授权，并通过安全加密认证接入公共网络。\",\n      \"block_ids\": [\"BLK-E8D208159F329BFA\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-010\",\n      \"statement\": \"远程维护功能仅在获得administrator账号授权后方可生效，且相关操作受系统访问控制策略管理。\",\n      \"block_ids\": [\"BLK-E8D208159F329BFA\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-011\",\n      \"statement\": \"转发三方云服务配置功能默认关闭；启用前需使用管理员账号进行手动授权，并通过安全加密认证接入公共网络。\",\n      \"block_ids\": [\"BLK-AD1E6A7FA18DAC21\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-012\",\n      \"statement\": \"转发三方云功能仅在获得管理员账号授权后方可生效，且相关操作受系统访问控制策略管理。\",\n      \"block_ids\": [\"BLK-AD1E6A7FA18DAC21\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-013\",\n      \"statement\": \"Syslog日志可配置为上传至远程服务器，需设置服务器IP、端口和日志等级。\",\n      \"block_ids\": [\"BLK-A3BA38611AC0C157\", \"BLK-1B770EBE1946B023\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-014\",\n      \"statement\": \"用户可通过Web界面配置阳光云通信通道，需以administrator身份登录并开启通信总开关。\",\n      \"block_ids\": [\"BLK-95BE5E587B8C4342\", \"BLK-246DEBE9E6F8F66F\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-015\",\n      \"statement\": \"用户可通过Web界面配置三方云通信，需以administrator身份登录并开启三方云开关。\",\n      \"block_ids\": [\"BLK-84E2F121165CC7A2\", \"BLK-8C65146392F8991F\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-016\",\n      \"statement\": \"阳光云服务与外网有数据交互，开启前需确认设备网络环境安全。\",\n      \"block_ids\": [\"BLK-7CA94C17A4F80A13\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-017\",\n      \"statement\": \"转发三方云服务与外网有数据交互，开启前需确认设备网络环境安全。\",\n      \"block_ids\": [\"BLK-AD1E6A7FA18DAC21\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    },\n    {\n      \"fact_id\": \"FACT-018\",\n      \"statement\": \"数据采集器支持协议转换服务，包括ModbusRTU转IEC104、MQTT、ModbusTCP等。\",\n      \"block_ids\": [\"BLK-915BE31950823B72\"],\n      \"is_uncertain\": false,\n      \"attributes\": {}\n    }\n  ],\n  \"unknowns\": [\n    \"阳光云平台的运营方未在证据中明确说明\",\n    \"三方云服务所指的具体第三方平台名称或类型未在证据中明确说明\",\n    \"远程升级能力是否被支持未在证据中提及\",\n    \"时间服务是否依赖外部NTP/PTP服务器或仅支持内部时钟未完全明确（仅说明PTP需后台时间服务器）\",\n    \"日志服务是否支持本地存储以外的其他日志格式或协议（如SNMP trap、HTTP POST）未说明\",\n    \"目录服务（如LDAP、Active Directory）是否被支持未在证据中提及\",\n    \"文件服务（如FTP/SFTP、WebDAV）是否被支持未在证据中提及\",\n    \"上级系统或管理系统具体指代对象（如SCADA、EMS、DCS）未明确定义\",\n    \"断网降级行为（如离线缓存、重传机制、本地日志保留时长）未在证据中描述\",\n    \"‘安全加密认证’所采用的具体加密算法、证书管理机制或密钥分发方式未说明\"\n  ],\n  \"contradictions\": []\n}",
+  "response_metadata": {
+    "finish_reason": "stop",
+    "token_usage": {
+      "completion_tokens": 1853,
+      "prompt_tokens": 4690,
+      "total_tokens": 6543,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "qwen-plus"
+  },
+  "parsed_payload": {
+    "node_id": "node_2",
+    "field_id": "external_services",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "能量管理单元（EMU300A）可通过路由器连接至阳光云平台。",
+        "block_ids": [
+          "BLK-853407424F1C1351",
+          "BLK-1317C7BFFF509A67"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "数据采集器（Logger5000）具备将收集到的数据转发至阳光云平台的功能。",
+        "block_ids": [
+          "BLK-8CF56F6958CD33E1"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "数据采集器将数据转发至阳光云平台的功能默认不可用；启用前需客户手动授权，并通过安全加密认证接入公共网络。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF",
+          "BLK-ABD8EE23CFEA3B93"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "远程访问仅在获得客户授权后方可生效，且相关操作受系统访问控制策略管理。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF",
+          "BLK-ABD8EE23CFEA3B93"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "能量管理单元可通过4G路由器将采集到的设备数据直接传输至阳光云。",
+        "block_ids": [
+          "BLK-64FE47677390A3C6"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "阳光云平台在北美区域禁止使用。",
+        "block_ids": [
+          "BLK-536C2D01D46C74B8"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "阳光云服务默认接入站点按地区划分：中国大陆地区接入“中国站”，欧洲地区接入“欧洲站”，澳洲地区接入“澳洲站”，其他地区接入“国际站”。",
+        "block_ids": [
+          "BLK-7CA94C17A4F80A13"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "时钟源可设置为“阳光云”，但该对时方式仅在数据采集器与阳光云平台连接的前提下有效。",
+        "block_ids": [
+          "BLK-7CA94C17A4F80A13"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "远程维护功能默认关闭；启用前需使用administrator账号进行手动授权，并通过安全加密认证接入公共网络。",
+        "block_ids": [
+          "BLK-E8D208159F329BFA"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "远程维护功能仅在获得administrator账号授权后方可生效，且相关操作受系统访问控制策略管理。",
+        "block_ids": [
+          "BLK-E8D208159F329BFA"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "转发三方云服务配置功能默认关闭；启用前需使用管理员账号进行手动授权，并通过安全加密认证接入公共网络。",
+        "block_ids": [
+          "BLK-AD1E6A7FA18DAC21"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "转发三方云功能仅在获得管理员账号授权后方可生效，且相关操作受系统访问控制策略管理。",
+        "block_ids": [
+          "BLK-AD1E6A7FA18DAC21"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-013",
+        "statement": "Syslog日志可配置为上传至远程服务器，需设置服务器IP、端口和日志等级。",
+        "block_ids": [
+          "BLK-A3BA38611AC0C157",
+          "BLK-1B770EBE1946B023"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-014",
+        "statement": "用户可通过Web界面配置阳光云通信通道，需以administrator身份登录并开启通信总开关。",
+        "block_ids": [
+          "BLK-95BE5E587B8C4342",
+          "BLK-246DEBE9E6F8F66F"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-015",
+        "statement": "用户可通过Web界面配置三方云通信，需以administrator身份登录并开启三方云开关。",
+        "block_ids": [
+          "BLK-84E2F121165CC7A2",
+          "BLK-8C65146392F8991F"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-016",
+        "statement": "阳光云服务与外网有数据交互，开启前需确认设备网络环境安全。",
+        "block_ids": [
+          "BLK-7CA94C17A4F80A13"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-017",
+        "statement": "转发三方云服务与外网有数据交互，开启前需确认设备网络环境安全。",
+        "block_ids": [
+          "BLK-AD1E6A7FA18DAC21"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-018",
+        "statement": "数据采集器支持协议转换服务，包括ModbusRTU转IEC104、MQTT、ModbusTCP等。",
+        "block_ids": [
+          "BLK-915BE31950823B72"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "阳光云平台的运营方未在证据中明确说明",
+      "三方云服务所指的具体第三方平台名称或类型未在证据中明确说明",
+      "远程升级能力是否被支持未在证据中提及",
+      "时间服务是否依赖外部NTP/PTP服务器或仅支持内部时钟未完全明确（仅说明PTP需后台时间服务器）",
+      "日志服务是否支持本地存储以外的其他日志格式或协议（如SNMP trap、HTTP POST）未说明",
+      "目录服务（如LDAP、Active Directory）是否被支持未在证据中提及",
+      "文件服务（如FTP/SFTP、WebDAV）是否被支持未在证据中提及",
+      "上级系统或管理系统具体指代对象（如SCADA、EMS、DCS）未明确定义",
+      "断网降级行为（如离线缓存、重传机制、本地日志保留时长）未在证据中描述",
+      "‘安全加密认证’所采用的具体加密算法、证书管理机制或密钥分发方式未说明"
+    ],
+    "contradictions": []
+  },
+  "validation_payload": {
+    "node_id": "node_2",
+    "field_id": "external_services",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "能量管理单元（EMU300A）可通过路由器连接至阳光云平台。",
+        "block_ids": [
+          "BLK-853407424F1C1351",
+          "BLK-1317C7BFFF509A67"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "数据采集器（Logger5000）具备将收集到的数据转发至阳光云平台的功能。",
+        "block_ids": [
+          "BLK-8CF56F6958CD33E1"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "数据采集器将数据转发至阳光云平台的功能默认不可用；启用前需客户手动授权，并通过安全加密认证接入公共网络。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF",
+          "BLK-ABD8EE23CFEA3B93"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "远程访问仅在获得客户授权后方可生效，且相关操作受系统访问控制策略管理。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF",
+          "BLK-ABD8EE23CFEA3B93"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "能量管理单元可通过4G路由器将采集到的设备数据直接传输至阳光云。",
+        "block_ids": [
+          "BLK-64FE47677390A3C6"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "阳光云平台在北美区域禁止使用。",
+        "block_ids": [
+          "BLK-536C2D01D46C74B8"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "阳光云服务默认接入站点按地区划分：中国大陆地区接入“中国站”，欧洲地区接入“欧洲站”，澳洲地区接入“澳洲站”，其他地区接入“国际站”。",
+        "block_ids": [
+          "BLK-7CA94C17A4F80A13"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "时钟源可设置为“阳光云”，但该对时方式仅在数据采集器与阳光云平台连接的前提下有效。",
+        "block_ids": [
+          "BLK-7CA94C17A4F80A13"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "远程维护功能默认关闭；启用前需使用administrator账号进行手动授权，并通过安全加密认证接入公共网络。",
+        "block_ids": [
+          "BLK-E8D208159F329BFA"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "远程维护功能仅在获得administrator账号授权后方可生效，且相关操作受系统访问控制策略管理。",
+        "block_ids": [
+          "BLK-E8D208159F329BFA"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "转发三方云服务配置功能默认关闭；启用前需使用管理员账号进行手动授权，并通过安全加密认证接入公共网络。",
+        "block_ids": [
+          "BLK-AD1E6A7FA18DAC21"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "转发三方云功能仅在获得管理员账号授权后方可生效，且相关操作受系统访问控制策略管理。",
+        "block_ids": [
+          "BLK-AD1E6A7FA18DAC21"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-013",
+        "statement": "Syslog日志可配置为上传至远程服务器，需设置服务器IP、端口和日志等级。",
+        "block_ids": [
+          "BLK-A3BA38611AC0C157",
+          "BLK-1B770EBE1946B023"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-014",
+        "statement": "用户可通过Web界面配置阳光云通信通道，需以administrator身份登录并开启通信总开关。",
+        "block_ids": [
+          "BLK-95BE5E587B8C4342",
+          "BLK-246DEBE9E6F8F66F"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-015",
+        "statement": "用户可通过Web界面配置三方云通信，需以administrator身份登录并开启三方云开关。",
+        "block_ids": [
+          "BLK-84E2F121165CC7A2",
+          "BLK-8C65146392F8991F"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-016",
+        "statement": "阳光云服务与外网有数据交互，开启前需确认设备网络环境安全。",
+        "block_ids": [
+          "BLK-7CA94C17A4F80A13"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-017",
+        "statement": "转发三方云服务与外网有数据交互，开启前需确认设备网络环境安全。",
+        "block_ids": [
+          "BLK-AD1E6A7FA18DAC21"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-018",
+        "statement": "数据采集器支持协议转换服务，包括ModbusRTU转IEC104、MQTT、ModbusTCP等。",
+        "block_ids": [
+          "BLK-915BE31950823B72"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "阳光云平台的运营方未在证据中明确说明",
+      "三方云服务所指的具体第三方平台名称或类型未在证据中明确说明",
+      "远程升级能力是否被支持未在证据中提及",
+      "时间服务是否依赖外部NTP/PTP服务器或仅支持内部时钟未完全明确（仅说明PTP需后台时间服务器）",
+      "日志服务是否支持本地存储以外的其他日志格式或协议（如SNMP trap、HTTP POST）未说明",
+      "目录服务（如LDAP、Active Directory）是否被支持未在证据中提及",
+      "文件服务（如FTP/SFTP、WebDAV）是否被支持未在证据中提及",
+      "上级系统或管理系统具体指代对象（如SCADA、EMS、DCS）未明确定义",
+      "断网降级行为（如离线缓存、重传机制、本地日志保留时长）未在证据中描述",
+      "‘安全加密认证’所采用的具体加密算法、证书管理机制或密钥分发方式未说明"
+    ],
+    "contradictions": []
+  },
+  "result": {
+    "node_id": "node_2",
+    "field_id": "external_services",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "能量管理单元（EMU300A）可通过路由器连接至阳光云平台。",
+        "block_ids": [
+          "BLK-853407424F1C1351",
+          "BLK-1317C7BFFF509A67"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "数据采集器（Logger5000）具备将收集到的数据转发至阳光云平台的功能。",
+        "block_ids": [
+          "BLK-8CF56F6958CD33E1"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "数据采集器将数据转发至阳光云平台的功能默认不可用；启用前需客户手动授权，并通过安全加密认证接入公共网络。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF",
+          "BLK-ABD8EE23CFEA3B93"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "远程访问仅在获得客户授权后方可生效，且相关操作受系统访问控制策略管理。",
+        "block_ids": [
+          "BLK-EBE329C3EFA80ACF",
+          "BLK-ABD8EE23CFEA3B93"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "能量管理单元可通过4G路由器将采集到的设备数据直接传输至阳光云。",
+        "block_ids": [
+          "BLK-64FE47677390A3C6"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "阳光云平台在北美区域禁止使用。",
+        "block_ids": [
+          "BLK-536C2D01D46C74B8"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "阳光云服务默认接入站点按地区划分：中国大陆地区接入“中国站”，欧洲地区接入“欧洲站”，澳洲地区接入“澳洲站”，其他地区接入“国际站”。",
+        "block_ids": [
+          "BLK-7CA94C17A4F80A13"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "时钟源可设置为“阳光云”，但该对时方式仅在数据采集器与阳光云平台连接的前提下有效。",
+        "block_ids": [
+          "BLK-7CA94C17A4F80A13"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "远程维护功能默认关闭；启用前需使用administrator账号进行手动授权，并通过安全加密认证接入公共网络。",
+        "block_ids": [
+          "BLK-E8D208159F329BFA"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "远程维护功能仅在获得administrator账号授权后方可生效，且相关操作受系统访问控制策略管理。",
+        "block_ids": [
+          "BLK-E8D208159F329BFA"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "转发三方云服务配置功能默认关闭；启用前需使用管理员账号进行手动授权，并通过安全加密认证接入公共网络。",
+        "block_ids": [
+          "BLK-AD1E6A7FA18DAC21"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "转发三方云功能仅在获得管理员账号授权后方可生效，且相关操作受系统访问控制策略管理。",
+        "block_ids": [
+          "BLK-AD1E6A7FA18DAC21"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-013",
+        "statement": "Syslog日志可配置为上传至远程服务器，需设置服务器IP、端口和日志等级。",
+        "block_ids": [
+          "BLK-A3BA38611AC0C157",
+          "BLK-1B770EBE1946B023"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-014",
+        "statement": "用户可通过Web界面配置阳光云通信通道，需以administrator身份登录并开启通信总开关。",
+        "block_ids": [
+          "BLK-95BE5E587B8C4342",
+          "BLK-246DEBE9E6F8F66F"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-015",
+        "statement": "用户可通过Web界面配置三方云通信，需以administrator身份登录并开启三方云开关。",
+        "block_ids": [
+          "BLK-84E2F121165CC7A2",
+          "BLK-8C65146392F8991F"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-016",
+        "statement": "阳光云服务与外网有数据交互，开启前需确认设备网络环境安全。",
+        "block_ids": [
+          "BLK-7CA94C17A4F80A13"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-017",
+        "statement": "转发三方云服务与外网有数据交互，开启前需确认设备网络环境安全。",
+        "block_ids": [
+          "BLK-AD1E6A7FA18DAC21"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      },
+      {
+        "fact_id": "FACT-018",
+        "statement": "数据采集器支持协议转换服务，包括ModbusRTU转IEC104、MQTT、ModbusTCP等。",
+        "block_ids": [
+          "BLK-915BE31950823B72"
+        ],
+        "is_uncertain": false,
+        "attributes": {}
+      }
+    ],
+    "unknowns": [
+      "阳光云平台的运营方未在证据中明确说明",
+      "三方云服务所指的具体第三方平台名称或类型未在证据中明确说明",
+      "远程升级能力是否被支持未在证据中提及",
+      "时间服务是否依赖外部NTP/PTP服务器或仅支持内部时钟未完全明确（仅说明PTP需后台时间服务器）",
+      "日志服务是否支持本地存储以外的其他日志格式或协议（如SNMP trap、HTTP POST）未说明",
+      "目录服务（如LDAP、Active Directory）是否被支持未在证据中提及",
+      "文件服务（如FTP/SFTP、WebDAV）是否被支持未在证据中提及",
+      "上级系统或管理系统具体指代对象（如SCADA、EMS、DCS）未明确定义",
+      "断网降级行为（如离线缓存、重传机制、本地日志保留时长）未在证据中描述",
+      "‘安全加密认证’所采用的具体加密算法、证书管理机制或密钥分发方式未说明"
+    ],
+    "contradictions": []
+  },
+  "elapsed_seconds": 41.478,
+  "finished_at": "2026-10-09T02:39:46.773672+00:00"
+}

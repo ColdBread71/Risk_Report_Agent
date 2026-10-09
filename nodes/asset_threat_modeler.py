@@ -735,6 +735,7 @@ def _extract_asset_function_mapping(
     result = extract_with_retry(
         llm=llm,
         prompt_template=_ASSET_FUNCTION_MAPPING_PROMPT,
+        task_label="node_2/function_mapping",
         schema_class=AssetFunctionMappingResult,
         sample_input=json.dumps(material_payload, ensure_ascii=False, indent=2),
         max_retries=2,
@@ -829,6 +830,7 @@ def _extract_asset_section(
     result = extract_with_retry(
         llm=llm,
         prompt_template=_asset_section_prompt(section_name),
+        task_label=f"node_2/{section_name}",
         schema_class=AssetSectionResult,
         sample_input=json.dumps(material_payload, ensure_ascii=False, indent=2),
         semantic_validator=lambda value: _validate_asset_section(

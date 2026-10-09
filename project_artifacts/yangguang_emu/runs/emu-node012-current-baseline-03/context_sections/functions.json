@@ -1,0 +1,1881 @@
+{
+  "schema_version": "context_section_checkpoint.v1",
+  "fingerprint": "ccebb5099d085dd5819148672b8216413ff23f133eba4f803be988108197fcbe",
+  "cache_inputs": {
+    "section_name": "functions",
+    "source_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "text_model": "qwen-plus",
+    "context_rule_version": "node1_context_rules.v7.1",
+    "material_sha256": "be32eb15f3b096b5b2fcea2e04183b34178942248d57ac4155238ab04b3087fd",
+    "prompt_sha256": "08219fd42c345e61f150e2ac47f1385d6542d4024366cfba36ae6f5dd284c8f7",
+    "schema_sha256": "f6edca939f285a7f0e87ede4ba1cca0f45b2ebc01e36e8083d7f345cc51400b0"
+  },
+  "result": {
+    "functions": [
+      {
+        "function_id": "FUNC-001",
+        "name": "南向设备接入",
+        "description": "数据采集器Logger5000通过RS485总线方式接入光伏发电系统中的逆变器、箱变、环境监测仪、电表等设备。",
+        "is_security_function": false,
+        "function_category": "data_collection",
+        "interfaces": [
+          "RS485"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-001",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-0FE6A5150E10C5BC",
+              "parser_version": "1.5.0",
+              "page_number": 12,
+              "printed_page_label": "8",
+              "section_path": [
+                "5 产品功能及部署情况介绍"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\n云平台，可接收北向远程调度指令或执行本地调度指令。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-002",
+        "name": "PLC电力载波南向接入",
+        "description": "数据采集器Logger5000通过PLC总线方式（文档中亦称MPLC总线）接入阳光电源生产的具备PLC功能的组串式逆变器。",
+        "is_security_function": false,
+        "function_category": "data_collection",
+        "interfaces": [
+          "PLC",
+          "MPLC"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-002",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-0FE6A5150E10C5BC",
+              "parser_version": "1.5.0",
+              "page_number": 12,
+              "printed_page_label": "8",
+              "section_path": [
+                "5 产品功能及部署情况介绍"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\n云平台，可接收北向远程调度指令或执行本地调度指令。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-003",
+        "name": "南向协议支持",
+        "description": "数据采集器Logger5000支持通过Modbus协议、PLC电力载波通信支持南向设备接入。",
+        "is_security_function": false,
+        "function_category": "communication",
+        "interfaces": [
+          "Modbus",
+          "PLC"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-003",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-0FE6A5150E10C5BC",
+              "parser_version": "1.5.0",
+              "page_number": 12,
+              "printed_page_label": "8",
+              "section_path": [
+                "5 产品功能及部署情况介绍"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\n云平台，可接收北向远程调度指令或执行本地调度指令。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-004",
+        "name": "有功与无功功率调节",
+        "description": "数据采集器Logger5000可对接入的逆变器进行有功功率控制和无功功率调节。",
+        "is_security_function": false,
+        "function_category": "control",
+        "interfaces": [
+          "RS485",
+          "PLC"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-004",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-0FE6A5150E10C5BC",
+              "parser_version": "1.5.0",
+              "page_number": 12,
+              "printed_page_label": "8",
+              "section_path": [
+                "5 产品功能及部署情况介绍"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\n云平台，可接收北向远程调度指令或执行本地调度指令。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-005",
+        "name": "北向数据转发",
+        "description": "数据采集器Logger5000可通过IEC104、Modbus、MQTT、GOOSE等通信协议北向转发数据至综自系统或站控系统及阳光云平台。",
+        "is_security_function": false,
+        "function_category": "communication",
+        "interfaces": [
+          "IEC104",
+          "Modbus",
+          "MQTT",
+          "GOOSE"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-005",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-0FE6A5150E10C5BC",
+              "parser_version": "1.5.0",
+              "page_number": 12,
+              "printed_page_label": "8",
+              "section_path": [
+                "5 产品功能及部署情况介绍"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\n云平台，可接收北向远程调度指令或执行本地调度指令。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-006",
+        "name": "远程调度指令接收",
+        "description": "数据采集器Logger5000可接收北向远程调度指令或执行本地调度指令。",
+        "is_security_function": false,
+        "function_category": "control",
+        "interfaces": [
+          "IEC104",
+          "Modbus",
+          "MQTT",
+          "GOOSE"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-006",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-0FE6A5150E10C5BC",
+              "parser_version": "1.5.0",
+              "page_number": 12,
+              "printed_page_label": "8",
+              "section_path": [
+                "5 产品功能及部署情况介绍"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\n云平台，可接收北向远程调度指令或执行本地调度指令。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-007",
+        "name": "核心交换机数据上传",
+        "description": "数据采集器Logger5000可以将采集到的设备数据通过核心交换机传输至后台站控系统，例如Insight、SCADA。",
+        "is_security_function": false,
+        "function_category": "communication",
+        "interfaces": [
+          "Ethernet"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-007",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-153C2EE70C8A30F1",
+              "parser_version": "1.5.0",
+              "page_number": 12,
+              "printed_page_label": "8",
+              "section_path": [
+                "5 产品功能及部署情况介绍"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "•\n能量管理单元可以将采集到的设备数据，通过核心交换机传输至后台站控，例如\nInsight、SCADA。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-008",
+        "name": "4G路由器数据上传",
+        "description": "数据采集器Logger5000也可将采集到的设备数据直接通过4G路由器传输至阳光云平台。",
+        "is_security_function": false,
+        "function_category": "communication",
+        "interfaces": [
+          "4G"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-008",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-4E0353B94569ABFF",
+              "parser_version": "1.5.0",
+              "page_number": 14,
+              "printed_page_label": "4",
+              "section_path": [
+                "2 产品描述",
+                "2.2 组网应用"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "•\n数据采集器也可将采集到的设备数据，直接通过4G 路由器传输至阳光云。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-009",
+        "name": "直连阳光云平台",
+        "description": "能量管理单元EMU300A可以直接通过路由器与阳光云平台连接。",
+        "is_security_function": false,
+        "function_category": "communication",
+        "interfaces": [
+          "Ethernet",
+          "4G"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-009",
+            "source": {
+              "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-5067B181346D",
+              "block_id": "BLK-1317C7BFFF509A67",
+              "parser_version": "1.5.0",
+              "page_number": 16,
+              "printed_page_label": "10",
+              "section_path": [
+                "2 产品介绍",
+                "2.2 主要特点"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+            },
+            "quote": "能量管理单元可以直接通过路由器与阳光云连接，如下图所示。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-010",
+        "name": "Web界面系统配置",
+        "description": "数据采集器Logger5000可通过嵌入式Web界面配置系统时间、网络、串口等参数，并维护协议点表。",
+        "is_security_function": false,
+        "function_category": "configuration",
+        "interfaces": [
+          "HTTPS",
+          "HTTP"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-010",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-27076CE0D8D035A4",
+              "parser_version": "1.5.0",
+              "page_number": 13,
+              "printed_page_label": "3",
+              "section_path": [
+                "2 产品描述",
+                "2.1 功能描述"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "数据采集器可以通过嵌入式Web 界面，对系统时间、网络、串口等进行设置，对协议点表进\n行维护。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-011",
+        "name": "Web界面数据转发配置",
+        "description": "数据采集器Logger5000可通过Web界面配置数据转发服务，包括转发阳光云服务、转发GOOSE服务等。",
+        "is_security_function": false,
+        "function_category": "configuration",
+        "interfaces": [
+          "HTTPS",
+          "HTTP"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-011",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-187A22E6684426E0",
+              "parser_version": "1.5.0",
+              "page_number": 44,
+              "printed_page_label": "34",
+              "section_path": [
+                "7 Web界面",
+                "7.3 Web端简介",
+                "7.3.3 操作流程"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "添加完成所有设备后，配置数据采集器转发服务，保证数据采集器可将数据转发至上级设\n备。参考7.10.6.1 转发阳光云服务设置~7.10.6.5 转发GOOSE 服务配置。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-012",
+        "name": "设备列表管理",
+        "description": "数据采集器Logger5000具备设备列表功能，用于管理所接入设备并为其配置地址，支持自动搜索与手动添加设备。",
+        "is_security_function": false,
+        "function_category": "configuration",
+        "interfaces": [
+          "RS485",
+          "PLC"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-012",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-4DA082251D2A15B4",
+              "parser_version": "1.5.0",
+              "page_number": 49,
+              "printed_page_label": "39",
+              "section_path": [
+                "7 Web界面",
+                "7.6 设备维护",
+                "7.6.1 设备列表"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "7.6.1 设备列表",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-013",
+        "name": "IEC104 Server模式",
+        "description": "数据采集器Logger5000可作为IEC104 Server，上位机服务器连接数据采集器进行数据和指令传输。",
+        "is_security_function": false,
+        "function_category": "communication",
+        "interfaces": [
+          "IEC104"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-013",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-443237FA5FBA455D",
+              "parser_version": "1.5.0",
+              "page_number": 78,
+              "printed_page_label": "68",
+              "section_path": [
+                "7 Web界面",
+                "7.10 系统",
+                "7.10.6 转发配置",
+                "7.10.6.2 转发IEC104服务配置",
+                "7.10.6.2.5 设置IEC104调度模式"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "Server 模式是数据采集器作为服务器，上位机服务器连接数据采集器，进行数据和指令传\n输。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-014",
+        "name": "Modbus TCP普通调度模式",
+        "description": "数据采集器Logger5000支持Modbus TCP普通调度模式，可在通讯异常恢复后根据设置调整逆变器输出功率或执行开机操作。",
+        "is_security_function": false,
+        "function_category": "control",
+        "interfaces": [
+          "Modbus TCP"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-014",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-D1FA60EC80F0CC91",
+              "parser_version": "1.5.0",
+              "page_number": 80,
+              "printed_page_label": "70",
+              "section_path": [
+                "7 Web界面",
+                "7.10 系统",
+                "7.10.6 转发配置",
+                "7.10.6.3 转发MODBUS服务配置",
+                "7.10.6.3.4 Modbus TCP普通调度模式"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "超出该段时间后，数据采集器将根据通讯恢复输出的设置，调整逆变器的输出功率或对逆\n变器执行开机操作。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-015",
+        "name": "B码时间同步",
+        "description": "数据采集器Logger5000支持B码协议实现时间同步。",
+        "is_security_function": false,
+        "function_category": "time_synchronization",
+        "interfaces": [
+          "B码"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-015",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-89A6CAB539794403",
+              "parser_version": "1.5.0",
+              "page_number": 77,
+              "printed_page_label": "67",
+              "section_path": [
+                "7 Web界面",
+                "7.10 系统",
+                "7.10.6 转发配置",
+                "7.10.6.2 转发IEC104服务配置"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "时钟源\t\t说明\n阳光\t云\t前提是数据采集器与阳光云平台连接，否则时钟源设置为“阳光云”的\n对时方式无效。\nMOD\nTCP\tBUS-\t前提是数据采集器与后台使用MODBUS-TCP 通信规约，否则时钟源\n设置为“MODBUS-TCP”的对时方式无效。\nB 码\t\t通过B 码协议实现时间同步。\nPTP\t\t通过后台时间服务器对电站内的多个数据采集器进行统一对时。\n结束\t\t\n注意\t\t\n数据\t采集器首次使用\t必须配置系统时间。\n\t置\n阳光云服务\t设置\n\t• 数据采集器\n提下进行手\n授权后方可\n• 阳光云平台\t的数据转发功能默认不可用。启用该功能前，客户需在充分知情的前\n动授权，并通过安全加密认证接入公共网络。远程访问仅在获得客户\n生效，且相关操作受系统访问控制策略管理。\n在北美区域已停止服务。\n\t\t\n\t云服务与外网\t有数据交互，请确认设备网络环境安全后再开启。\n\t统 > 转发配置\n入站点开关，\t，进入界面。\n单击操作栏 ，可修改阳光云转发配置信息。\n\t默认接入阳光\n站”，澳洲地区\n为保证数据采\n参考路由器白\t云站点为“中国站”。中国大陆地区接入“中国站”，欧洲地区接入“欧洲\n接入“澳洲站”，其他地区接入“国际站”。\n集器功能正常使用，需要对路由器的白名单进行相关设置。设置参数请\n名单设置。\n\tIEC104 服务\nEC104 服务配置\t配置\n”用于配置数据采集器转发IEC104 服务。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-016",
+        "name": "PTP时间同步",
+        "description": "数据采集器Logger5000支持PTP协议，通过后台时间服务器对电站内多个数据采集器进行统一对时。",
+        "is_security_function": false,
+        "function_category": "time_synchronization",
+        "interfaces": [
+          "PTP"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-016",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-89A6CAB539794403",
+              "parser_version": "1.5.0",
+              "page_number": 77,
+              "printed_page_label": "67",
+              "section_path": [
+                "7 Web界面",
+                "7.10 系统",
+                "7.10.6 转发配置",
+                "7.10.6.2 转发IEC104服务配置"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "时钟源\t\t说明\n阳光\t云\t前提是数据采集器与阳光云平台连接，否则时钟源设置为“阳光云”的\n对时方式无效。\nMOD\nTCP\tBUS-\t前提是数据采集器与后台使用MODBUS-TCP 通信规约，否则时钟源\n设置为“MODBUS-TCP”的对时方式无效。\nB 码\t\t通过B 码协议实现时间同步。\nPTP\t\t通过后台时间服务器对电站内的多个数据采集器进行统一对时。\n结束\t\t\n注意\t\t\n数据\t采集器首次使用\t必须配置系统时间。\n\t置\n阳光云服务\t设置\n\t• 数据采集器\n提下进行手\n授权后方可\n• 阳光云平台\t的数据转发功能默认不可用。启用该功能前，客户需在充分知情的前\n动授权，并通过安全加密认证接入公共网络。远程访问仅在获得客户\n生效，且相关操作受系统访问控制策略管理。\n在北美区域已停止服务。\n\t\t\n\t云服务与外网\t有数据交互，请确认设备网络环境安全后再开启。\n\t统 > 转发配置\n入站点开关，\t，进入界面。\n单击操作栏 ，可修改阳光云转发配置信息。\n\t默认接入阳光\n站”，澳洲地区\n为保证数据采\n参考路由器白\t云站点为“中国站”。中国大陆地区接入“中国站”，欧洲地区接入“欧洲\n接入“澳洲站”，其他地区接入“国际站”。\n集器功能正常使用，需要对路由器的白名单进行相关设置。设置参数请\n名单设置。\n\tIEC104 服务\nEC104 服务配置\t配置\n”用于配置数据采集器转发IEC104 服务。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-017",
+        "name": "阳光云时钟源对时",
+        "description": "数据采集器Logger5000支持以阳光云为时钟源进行对时，但前提是数据采集器与阳光云平台已连接，否则该对时方式无效。",
+        "is_security_function": false,
+        "function_category": "time_synchronization",
+        "interfaces": [
+          "HTTPS",
+          "MQTT"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [
+          "需数据采集器与阳光云平台已连接"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-017",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-89A6CAB539794403",
+              "parser_version": "1.5.0",
+              "page_number": 77,
+              "printed_page_label": "67",
+              "section_path": [
+                "7 Web界面",
+                "7.10 系统",
+                "7.10.6 转发配置",
+                "7.10.6.2 转发IEC104服务配置"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "时钟源\t\t说明\n阳光\t云\t前提是数据采集器与阳光云平台连接，否则时钟源设置为“阳光云”的\n对时方式无效。\nMOD\nTCP\tBUS-\t前提是数据采集器与后台使用MODBUS-TCP 通信规约，否则时钟源\n设置为“MODBUS-TCP”的对时方式无效。\nB 码\t\t通过B 码协议实现时间同步。\nPTP\t\t通过后台时间服务器对电站内的多个数据采集器进行统一对时。\n结束\t\t\n注意\t\t\n数据\t采集器首次使用\t必须配置系统时间。\n\t置\n阳光云服务\t设置\n\t• 数据采集器\n提下进行手\n授权后方可\n• 阳光云平台\t的数据转发功能默认不可用。启用该功能前，客户需在充分知情的前\n动授权，并通过安全加密认证接入公共网络。远程访问仅在获得客户\n生效，且相关操作受系统访问控制策略管理。\n在北美区域已停止服务。\n\t\t\n\t云服务与外网\t有数据交互，请确认设备网络环境安全后再开启。\n\t统 > 转发配置\n入站点开关，\t，进入界面。\n单击操作栏 ，可修改阳光云转发配置信息。\n\t默认接入阳光\n站”，澳洲地区\n为保证数据采\n参考路由器白\t云站点为“中国站”。中国大陆地区接入“中国站”，欧洲地区接入“欧洲\n接入“澳洲站”，其他地区接入“国际站”。\n集器功能正常使用，需要对路由器的白名单进行相关设置。设置参数请\n名单设置。\n\tIEC104 服务\nEC104 服务配置\t配置\n”用于配置数据采集器转发IEC104 服务。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-018",
+        "name": "MODBUS-TCP时钟源对时",
+        "description": "数据采集器Logger5000支持以MODBUS-TCP为时钟源进行对时，但前提是数据采集器与后台使用MODBUS-TCP通信规约，否则该对时方式无效。",
+        "is_security_function": false,
+        "function_category": "time_synchronization",
+        "interfaces": [
+          "Modbus TCP"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [
+          "需数据采集器与后台使用MODBUS-TCP通信规约"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-018",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-89A6CAB539794403",
+              "parser_version": "1.5.0",
+              "page_number": 77,
+              "printed_page_label": "67",
+              "section_path": [
+                "7 Web界面",
+                "7.10 系统",
+                "7.10.6 转发配置",
+                "7.10.6.2 转发IEC104服务配置"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "时钟源\t\t说明\n阳光\t云\t前提是数据采集器与阳光云平台连接，否则时钟源设置为“阳光云”的\n对时方式无效。\nMOD\nTCP\tBUS-\t前提是数据采集器与后台使用MODBUS-TCP 通信规约，否则时钟源\n设置为“MODBUS-TCP”的对时方式无效。\nB 码\t\t通过B 码协议实现时间同步。\nPTP\t\t通过后台时间服务器对电站内的多个数据采集器进行统一对时。\n结束\t\t\n注意\t\t\n数据\t采集器首次使用\t必须配置系统时间。\n\t置\n阳光云服务\t设置\n\t• 数据采集器\n提下进行手\n授权后方可\n• 阳光云平台\t的数据转发功能默认不可用。启用该功能前，客户需在充分知情的前\n动授权，并通过安全加密认证接入公共网络。远程访问仅在获得客户\n生效，且相关操作受系统访问控制策略管理。\n在北美区域已停止服务。\n\t\t\n\t云服务与外网\t有数据交互，请确认设备网络环境安全后再开启。\n\t统 > 转发配置\n入站点开关，\t，进入界面。\n单击操作栏 ，可修改阳光云转发配置信息。\n\t默认接入阳光\n站”，澳洲地区\n为保证数据采\n参考路由器白\t云站点为“中国站”。中国大陆地区接入“中国站”，欧洲地区接入“欧洲\n接入“澳洲站”，其他地区接入“国际站”。\n集器功能正常使用，需要对路由器的白名单进行相关设置。设置参数请\n名单设置。\n\tIEC104 服务\nEC104 服务配置\t配置\n”用于配置数据采集器转发IEC104 服务。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-019",
+        "name": "首次系统时间配置",
+        "description": "数据采集器Logger5000首次使用时必须配置系统时间。",
+        "is_security_function": false,
+        "function_category": "configuration",
+        "interfaces": [
+          "Web界面"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-019",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-89A6CAB539794403",
+              "parser_version": "1.5.0",
+              "page_number": 77,
+              "printed_page_label": "67",
+              "section_path": [
+                "7 Web界面",
+                "7.10 系统",
+                "7.10.6 转发配置",
+                "7.10.6.2 转发IEC104服务配置"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "时钟源\t\t说明\n阳光\t云\t前提是数据采集器与阳光云平台连接，否则时钟源设置为“阳光云”的\n对时方式无效。\nMOD\nTCP\tBUS-\t前提是数据采集器与后台使用MODBUS-TCP 通信规约，否则时钟源\n设置为“MODBUS-TCP”的对时方式无效。\nB 码\t\t通过B 码协议实现时间同步。\nPTP\t\t通过后台时间服务器对电站内的多个数据采集器进行统一对时。\n结束\t\t\n注意\t\t\n数据\t采集器首次使用\t必须配置系统时间。\n\t置\n阳光云服务\t设置\n\t• 数据采集器\n提下进行手\n授权后方可\n• 阳光云平台\t的数据转发功能默认不可用。启用该功能前，客户需在充分知情的前\n动授权，并通过安全加密认证接入公共网络。远程访问仅在获得客户\n生效，且相关操作受系统访问控制策略管理。\n在北美区域已停止服务。\n\t\t\n\t云服务与外网\t有数据交互，请确认设备网络环境安全后再开启。\n\t统 > 转发配置\n入站点开关，\t，进入界面。\n单击操作栏 ，可修改阳光云转发配置信息。\n\t默认接入阳光\n站”，澳洲地区\n为保证数据采\n参考路由器白\t云站点为“中国站”。中国大陆地区接入“中国站”，欧洲地区接入“欧洲\n接入“澳洲站”，其他地区接入“国际站”。\n集器功能正常使用，需要对路由器的白名单进行相关设置。设置参数请\n名单设置。\n\tIEC104 服务\nEC104 服务配置\t配置\n”用于配置数据采集器转发IEC104 服务。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-020",
+        "name": "阳光云站点接入",
+        "description": "阳光云服务默认接入站点为中国大陆地区‘中国站’、欧洲地区‘欧洲站’、澳洲地区‘澳洲站’、其他地区‘国际站’；需对路由器白名单进行相关设置以保证数据采集器功能正常使用。",
+        "is_security_function": false,
+        "function_category": "configuration",
+        "interfaces": [
+          "HTTPS",
+          "MQTT"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [
+          "需对路由器白名单进行相关设置"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-020",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-89A6CAB539794403",
+              "parser_version": "1.5.0",
+              "page_number": 77,
+              "printed_page_label": "67",
+              "section_path": [
+                "7 Web界面",
+                "7.10 系统",
+                "7.10.6 转发配置",
+                "7.10.6.2 转发IEC104服务配置"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "时钟源\t\t说明\n阳光\t云\t前提是数据采集器与阳光云平台连接，否则时钟源设置为“阳光云”的\n对时方式无效。\nMOD\nTCP\tBUS-\t前提是数据采集器与后台使用MODBUS-TCP 通信规约，否则时钟源\n设置为“MODBUS-TCP”的对时方式无效。\nB 码\t\t通过B 码协议实现时间同步。\nPTP\t\t通过后台时间服务器对电站内的多个数据采集器进行统一对时。\n结束\t\t\n注意\t\t\n数据\t采集器首次使用\t必须配置系统时间。\n\t置\n阳光云服务\t设置\n\t• 数据采集器\n提下进行手\n授权后方可\n• 阳光云平台\t的数据转发功能默认不可用。启用该功能前，客户需在充分知情的前\n动授权，并通过安全加密认证接入公共网络。远程访问仅在获得客户\n生效，且相关操作受系统访问控制策略管理。\n在北美区域已停止服务。\n\t\t\n\t云服务与外网\t有数据交互，请确认设备网络环境安全后再开启。\n\t统 > 转发配置\n入站点开关，\t，进入界面。\n单击操作栏 ，可修改阳光云转发配置信息。\n\t默认接入阳光\n站”，澳洲地区\n为保证数据采\n参考路由器白\t云站点为“中国站”。中国大陆地区接入“中国站”，欧洲地区接入“欧洲\n接入“澳洲站”，其他地区接入“国际站”。\n集器功能正常使用，需要对路由器的白名单进行相关设置。设置参数请\n名单设置。\n\tIEC104 服务\nEC104 服务配置\t配置\n”用于配置数据采集器转发IEC104 服务。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-021",
+        "name": "登录失败锁定",
+        "description": "支持登录失败锁定以防止暴力破解。",
+        "is_security_function": true,
+        "function_category": "authentication",
+        "interfaces": [
+          "Web界面",
+          "SSH",
+          "SFTP"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-021",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-063FA03B0275437B",
+              "parser_version": "1.5.0",
+              "page_number": 9,
+              "printed_page_label": "5",
+              "section_path": [
+                "4 纵深防御战略"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "在\n据\n意\n关\n产\n•\n•\n•\n•\n•\n•\n介\tIT 和控制系统中使用具\n保护方面的不足，减少\n用户越难破坏防御，获\n问题及解决策略。\n胁模型\n品已经通过安全设计在\n环境层面：为用户以及\n件设备固定、周界防范\n环境纵深防御说明章节\n物理层面：产品提供坚\n操作系统层面：经过加\n配置、应用操作系统漏\n份机制、可靠的日志系\n系统组件层面：遵循安\n数据存储层面：基于访\n数据传输层面：基于广\n全相关功能及使用\n绍以下安全相关功能和\t有多种安全和防御控制措施的分层网络\n单点故障，并形成强大的网络安全态势\n取数字资产或造成中断。本章详细介绍\n不同层面对系统的可攻击面进行了最小\n工程实施人员提供了安全安装的建议，\n措施、安全可靠的网络空间、安全可靠\n。\n固封闭的外壳，并配备防拆标签帮助用\n固的操作系统，包括但不限于遵操作系\n洞补丁、防火墙与网络配置建议、基于\n统等。\n全的开发流程、完善的安全测试等。\n问控制列表的数据，符合最小特权原则\n泛证明安全的数据加密传输协议。\n说明\n使用程序的说明和建议：\t方法，以最大限度地弥补数\n。网络中的安全层越多，恶\nEMU300A 纵深防御策略相\n化，包括但不限于：\n包括但不限于牢固可靠的\n的电源供应等，请参考部\n户识别产品完整性。\n统最佳实践对操作系统进\n用户组的访问控制、系统\n设计的数据访问策略。\n\t安全功能\t说明\t安全建议\n\t安全登录\t支持登录失败锁定防暴力破解，支\n持登录日志记录，首次登陆强制修\n改密码\t定期修改密码\n\t用户及密码管理\t用户增删改功能以及密码安全策略\n配置\t建议所需启用最小数量用\n户，并合理配置密码安全\n\t协议配置\t北向MODBUS/IEC104/GOOSE\n等协议配置管理\t建议按需启用，最小化启\n用\n\t证书管理\t支持PKI 颁发的证书管理\t建议定期更新证书",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-022",
+        "name": "登录日志记录",
+        "description": "支持登录日志记录。",
+        "is_security_function": true,
+        "function_category": "logging",
+        "interfaces": [
+          "Web界面",
+          "SSH",
+          "SFTP"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-022",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-063FA03B0275437B",
+              "parser_version": "1.5.0",
+              "page_number": 9,
+              "printed_page_label": "5",
+              "section_path": [
+                "4 纵深防御战略"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "在\n据\n意\n关\n产\n•\n•\n•\n•\n•\n•\n介\tIT 和控制系统中使用具\n保护方面的不足，减少\n用户越难破坏防御，获\n问题及解决策略。\n胁模型\n品已经通过安全设计在\n环境层面：为用户以及\n件设备固定、周界防范\n环境纵深防御说明章节\n物理层面：产品提供坚\n操作系统层面：经过加\n配置、应用操作系统漏\n份机制、可靠的日志系\n系统组件层面：遵循安\n数据存储层面：基于访\n数据传输层面：基于广\n全相关功能及使用\n绍以下安全相关功能和\t有多种安全和防御控制措施的分层网络\n单点故障，并形成强大的网络安全态势\n取数字资产或造成中断。本章详细介绍\n不同层面对系统的可攻击面进行了最小\n工程实施人员提供了安全安装的建议，\n措施、安全可靠的网络空间、安全可靠\n。\n固封闭的外壳，并配备防拆标签帮助用\n固的操作系统，包括但不限于遵操作系\n洞补丁、防火墙与网络配置建议、基于\n统等。\n全的开发流程、完善的安全测试等。\n问控制列表的数据，符合最小特权原则\n泛证明安全的数据加密传输协议。\n说明\n使用程序的说明和建议：\t方法，以最大限度地弥补数\n。网络中的安全层越多，恶\nEMU300A 纵深防御策略相\n化，包括但不限于：\n包括但不限于牢固可靠的\n的电源供应等，请参考部\n户识别产品完整性。\n统最佳实践对操作系统进\n用户组的访问控制、系统\n设计的数据访问策略。\n\t安全功能\t说明\t安全建议\n\t安全登录\t支持登录失败锁定防暴力破解，支\n持登录日志记录，首次登陆强制修\n改密码\t定期修改密码\n\t用户及密码管理\t用户增删改功能以及密码安全策略\n配置\t建议所需启用最小数量用\n户，并合理配置密码安全\n\t协议配置\t北向MODBUS/IEC104/GOOSE\n等协议配置管理\t建议按需启用，最小化启\n用\n\t证书管理\t支持PKI 颁发的证书管理\t建议定期更新证书",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-023",
+        "name": "首次登录强制修改密码",
+        "description": "首次登录强制修改密码。",
+        "is_security_function": true,
+        "function_category": "authentication",
+        "interfaces": [
+          "Web界面",
+          "SSH",
+          "SFTP"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-023",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-063FA03B0275437B",
+              "parser_version": "1.5.0",
+              "page_number": 9,
+              "printed_page_label": "5",
+              "section_path": [
+                "4 纵深防御战略"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "在\n据\n意\n关\n产\n•\n•\n•\n•\n•\n•\n介\tIT 和控制系统中使用具\n保护方面的不足，减少\n用户越难破坏防御，获\n问题及解决策略。\n胁模型\n品已经通过安全设计在\n环境层面：为用户以及\n件设备固定、周界防范\n环境纵深防御说明章节\n物理层面：产品提供坚\n操作系统层面：经过加\n配置、应用操作系统漏\n份机制、可靠的日志系\n系统组件层面：遵循安\n数据存储层面：基于访\n数据传输层面：基于广\n全相关功能及使用\n绍以下安全相关功能和\t有多种安全和防御控制措施的分层网络\n单点故障，并形成强大的网络安全态势\n取数字资产或造成中断。本章详细介绍\n不同层面对系统的可攻击面进行了最小\n工程实施人员提供了安全安装的建议，\n措施、安全可靠的网络空间、安全可靠\n。\n固封闭的外壳，并配备防拆标签帮助用\n固的操作系统，包括但不限于遵操作系\n洞补丁、防火墙与网络配置建议、基于\n统等。\n全的开发流程、完善的安全测试等。\n问控制列表的数据，符合最小特权原则\n泛证明安全的数据加密传输协议。\n说明\n使用程序的说明和建议：\t方法，以最大限度地弥补数\n。网络中的安全层越多，恶\nEMU300A 纵深防御策略相\n化，包括但不限于：\n包括但不限于牢固可靠的\n的电源供应等，请参考部\n户识别产品完整性。\n统最佳实践对操作系统进\n用户组的访问控制、系统\n设计的数据访问策略。\n\t安全功能\t说明\t安全建议\n\t安全登录\t支持登录失败锁定防暴力破解，支\n持登录日志记录，首次登陆强制修\n改密码\t定期修改密码\n\t用户及密码管理\t用户增删改功能以及密码安全策略\n配置\t建议所需启用最小数量用\n户，并合理配置密码安全\n\t协议配置\t北向MODBUS/IEC104/GOOSE\n等协议配置管理\t建议按需启用，最小化启\n用\n\t证书管理\t支持PKI 颁发的证书管理\t建议定期更新证书",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-024",
+        "name": "用户增删改及密码策略配置",
+        "description": "支持用户增删改功能以及密码安全策略配置。",
+        "is_security_function": true,
+        "function_category": "access_control",
+        "interfaces": [
+          "Web界面"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-024",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-063FA03B0275437B",
+              "parser_version": "1.5.0",
+              "page_number": 9,
+              "printed_page_label": "5",
+              "section_path": [
+                "4 纵深防御战略"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "在\n据\n意\n关\n产\n•\n•\n•\n•\n•\n•\n介\tIT 和控制系统中使用具\n保护方面的不足，减少\n用户越难破坏防御，获\n问题及解决策略。\n胁模型\n品已经通过安全设计在\n环境层面：为用户以及\n件设备固定、周界防范\n环境纵深防御说明章节\n物理层面：产品提供坚\n操作系统层面：经过加\n配置、应用操作系统漏\n份机制、可靠的日志系\n系统组件层面：遵循安\n数据存储层面：基于访\n数据传输层面：基于广\n全相关功能及使用\n绍以下安全相关功能和\t有多种安全和防御控制措施的分层网络\n单点故障，并形成强大的网络安全态势\n取数字资产或造成中断。本章详细介绍\n不同层面对系统的可攻击面进行了最小\n工程实施人员提供了安全安装的建议，\n措施、安全可靠的网络空间、安全可靠\n。\n固封闭的外壳，并配备防拆标签帮助用\n固的操作系统，包括但不限于遵操作系\n洞补丁、防火墙与网络配置建议、基于\n统等。\n全的开发流程、完善的安全测试等。\n问控制列表的数据，符合最小特权原则\n泛证明安全的数据加密传输协议。\n说明\n使用程序的说明和建议：\t方法，以最大限度地弥补数\n。网络中的安全层越多，恶\nEMU300A 纵深防御策略相\n化，包括但不限于：\n包括但不限于牢固可靠的\n的电源供应等，请参考部\n户识别产品完整性。\n统最佳实践对操作系统进\n用户组的访问控制、系统\n设计的数据访问策略。\n\t安全功能\t说明\t安全建议\n\t安全登录\t支持登录失败锁定防暴力破解，支\n持登录日志记录，首次登陆强制修\n改密码\t定期修改密码\n\t用户及密码管理\t用户增删改功能以及密码安全策略\n配置\t建议所需启用最小数量用\n户，并合理配置密码安全\n\t协议配置\t北向MODBUS/IEC104/GOOSE\n等协议配置管理\t建议按需启用，最小化启\n用\n\t证书管理\t支持PKI 颁发的证书管理\t建议定期更新证书",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-025",
+        "name": "北向协议配置管理",
+        "description": "支持北向MODBUS/IEC104/GOOSE等协议配置管理。",
+        "is_security_function": true,
+        "function_category": "configuration",
+        "interfaces": [
+          "IEC104",
+          "Modbus",
+          "GOOSE"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-025",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-063FA03B0275437B",
+              "parser_version": "1.5.0",
+              "page_number": 9,
+              "printed_page_label": "5",
+              "section_path": [
+                "4 纵深防御战略"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "在\n据\n意\n关\n产\n•\n•\n•\n•\n•\n•\n介\tIT 和控制系统中使用具\n保护方面的不足，减少\n用户越难破坏防御，获\n问题及解决策略。\n胁模型\n品已经通过安全设计在\n环境层面：为用户以及\n件设备固定、周界防范\n环境纵深防御说明章节\n物理层面：产品提供坚\n操作系统层面：经过加\n配置、应用操作系统漏\n份机制、可靠的日志系\n系统组件层面：遵循安\n数据存储层面：基于访\n数据传输层面：基于广\n全相关功能及使用\n绍以下安全相关功能和\t有多种安全和防御控制措施的分层网络\n单点故障，并形成强大的网络安全态势\n取数字资产或造成中断。本章详细介绍\n不同层面对系统的可攻击面进行了最小\n工程实施人员提供了安全安装的建议，\n措施、安全可靠的网络空间、安全可靠\n。\n固封闭的外壳，并配备防拆标签帮助用\n固的操作系统，包括但不限于遵操作系\n洞补丁、防火墙与网络配置建议、基于\n统等。\n全的开发流程、完善的安全测试等。\n问控制列表的数据，符合最小特权原则\n泛证明安全的数据加密传输协议。\n说明\n使用程序的说明和建议：\t方法，以最大限度地弥补数\n。网络中的安全层越多，恶\nEMU300A 纵深防御策略相\n化，包括但不限于：\n包括但不限于牢固可靠的\n的电源供应等，请参考部\n户识别产品完整性。\n统最佳实践对操作系统进\n用户组的访问控制、系统\n设计的数据访问策略。\n\t安全功能\t说明\t安全建议\n\t安全登录\t支持登录失败锁定防暴力破解，支\n持登录日志记录，首次登陆强制修\n改密码\t定期修改密码\n\t用户及密码管理\t用户增删改功能以及密码安全策略\n配置\t建议所需启用最小数量用\n户，并合理配置密码安全\n\t协议配置\t北向MODBUS/IEC104/GOOSE\n等协议配置管理\t建议按需启用，最小化启\n用\n\t证书管理\t支持PKI 颁发的证书管理\t建议定期更新证书",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-026",
+        "name": "PKI证书管理",
+        "description": "支持PKI颁发的证书管理。",
+        "is_security_function": true,
+        "function_category": "certificate_management",
+        "interfaces": [
+          "Web界面"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-026",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-063FA03B0275437B",
+              "parser_version": "1.5.0",
+              "page_number": 9,
+              "printed_page_label": "5",
+              "section_path": [
+                "4 纵深防御战略"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "在\n据\n意\n关\n产\n•\n•\n•\n•\n•\n•\n介\tIT 和控制系统中使用具\n保护方面的不足，减少\n用户越难破坏防御，获\n问题及解决策略。\n胁模型\n品已经通过安全设计在\n环境层面：为用户以及\n件设备固定、周界防范\n环境纵深防御说明章节\n物理层面：产品提供坚\n操作系统层面：经过加\n配置、应用操作系统漏\n份机制、可靠的日志系\n系统组件层面：遵循安\n数据存储层面：基于访\n数据传输层面：基于广\n全相关功能及使用\n绍以下安全相关功能和\t有多种安全和防御控制措施的分层网络\n单点故障，并形成强大的网络安全态势\n取数字资产或造成中断。本章详细介绍\n不同层面对系统的可攻击面进行了最小\n工程实施人员提供了安全安装的建议，\n措施、安全可靠的网络空间、安全可靠\n。\n固封闭的外壳，并配备防拆标签帮助用\n固的操作系统，包括但不限于遵操作系\n洞补丁、防火墙与网络配置建议、基于\n统等。\n全的开发流程、完善的安全测试等。\n问控制列表的数据，符合最小特权原则\n泛证明安全的数据加密传输协议。\n说明\n使用程序的说明和建议：\t方法，以最大限度地弥补数\n。网络中的安全层越多，恶\nEMU300A 纵深防御策略相\n化，包括但不限于：\n包括但不限于牢固可靠的\n的电源供应等，请参考部\n户识别产品完整性。\n统最佳实践对操作系统进\n用户组的访问控制、系统\n设计的数据访问策略。\n\t安全功能\t说明\t安全建议\n\t安全登录\t支持登录失败锁定防暴力破解，支\n持登录日志记录，首次登陆强制修\n改密码\t定期修改密码\n\t用户及密码管理\t用户增删改功能以及密码安全策略\n配置\t建议所需启用最小数量用\n户，并合理配置密码安全\n\t协议配置\t北向MODBUS/IEC104/GOOSE\n等协议配置管理\t建议按需启用，最小化启\n用\n\t证书管理\t支持PKI 颁发的证书管理\t建议定期更新证书",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-027",
+        "name": "安全启动",
+        "description": "安全启动功能默认开启。",
+        "is_security_function": true,
+        "function_category": "secure_boot",
+        "interfaces": [],
+        "rdps_dependencies": [],
+        "limitations": [
+          "仅针对数采"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-027",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-864B9073B04B55EA",
+              "parser_version": "1.5.0",
+              "page_number": 9,
+              "printed_page_label": "5",
+              "section_path": [
+                "4 纵深防御战略"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "安全启动\n建立启动链可信验证，阻断非签名\n或篡改后的软件加载执行\n默认开启",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-028",
+        "name": "安全环境加解密与存储",
+        "description": "Logger5000依托于芯片TrustZone及OP-TEE安全OS，对上层应用提供在安全环境下执行的加解密及存储数据接口。",
+        "is_security_function": true,
+        "function_category": "cryptography",
+        "interfaces": [],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-028",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-402F20D08666D8CF",
+              "parser_version": "1.5.0",
+              "page_number": 26,
+              "printed_page_label": "22",
+              "section_path": [
+                "10 安全配置指南",
+                "10.5 安全存储"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "Logger5000 依托于芯片TrustZone 及OP-TEE 安全OS，对上层应用提供一套在安全环境下\n执行的加解密及存储数据接口，主要功能实现基于客户端应用（CA）对安全应用（TA）调\n用，实现安全环境下敏感数据进行加密存储，解密使用，包括用户密码，终端证书对应的私\n钥等数据。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-029",
+        "name": "敏感数据加密存储",
+        "description": "Logger5000在安全环境下实现敏感数据加密存储、解密使用，包括用户密码和终端证书对应的私钥等数据。",
+        "is_security_function": true,
+        "function_category": "secure_storage",
+        "interfaces": [],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-029",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-402F20D08666D8CF",
+              "parser_version": "1.5.0",
+              "page_number": 26,
+              "printed_page_label": "22",
+              "section_path": [
+                "10 安全配置指南",
+                "10.5 安全存储"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "Logger5000 依托于芯片TrustZone 及OP-TEE 安全OS，对上层应用提供一套在安全环境下\n执行的加解密及存储数据接口，主要功能实现基于客户端应用（CA）对安全应用（TA）调\n用，实现安全环境下敏感数据进行加密存储，解密使用，包括用户密码，终端证书对应的私\n钥等数据。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-030",
+        "name": "TLS加密通信",
+        "description": "支持HTTPS/北向IEC104/MODBUS等协议TLS加密通信。",
+        "is_security_function": true,
+        "function_category": "secure_communication",
+        "interfaces": [
+          "HTTPS",
+          "IEC104",
+          "Modbus TCP"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-030",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-26A4B8B218CB053B",
+              "parser_version": "1.5.0",
+              "page_number": 10,
+              "printed_page_label": "6",
+              "section_path": [
+                "4 纵深防御战略",
+                "4.4 用户的缓解措施"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "用户网络安全操作手册\n4 纵深防御战略",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-031",
+        "name": "NTS对时",
+        "description": "支持NTS对时。",
+        "is_security_function": true,
+        "function_category": "secure_time_synchronization",
+        "interfaces": [
+          "NTS"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-031",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-26A4B8B218CB053B",
+              "parser_version": "1.5.0",
+              "page_number": 10,
+              "printed_page_label": "6",
+              "section_path": [
+                "4 纵深防御战略",
+                "4.4 用户的缓解措施"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "用户网络安全操作手册\n4 纵深防御战略",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-032",
+        "name": "恢复出厂设置",
+        "description": "支持恢复出厂设置功能，删除设备数据。",
+        "is_security_function": true,
+        "function_category": "recovery",
+        "interfaces": [
+          "Web界面"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-032",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-26A4B8B218CB053B",
+              "parser_version": "1.5.0",
+              "page_number": 10,
+              "printed_page_label": "6",
+              "section_path": [
+                "4 纵深防御战略",
+                "4.4 用户的缓解措施"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "用户网络安全操作手册\n4 纵深防御战略",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-033",
+        "name": "操作日志与syslog记录",
+        "description": "支持操作日志、syslog记录功能。",
+        "is_security_function": true,
+        "function_category": "logging",
+        "interfaces": [
+          "Web界面",
+          "syslog"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-033",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-26A4B8B218CB053B",
+              "parser_version": "1.5.0",
+              "page_number": 10,
+              "printed_page_label": "6",
+              "section_path": [
+                "4 纵深防御战略",
+                "4.4 用户的缓解措施"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "用户网络安全操作手册\n4 纵深防御战略",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-034",
+        "name": "软件和固件更新",
+        "description": "支持软件和固件更新。",
+        "is_security_function": true,
+        "function_category": "update",
+        "interfaces": [
+          "Web界面",
+          "HTTPS",
+          "SFTP"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-034",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-26A4B8B218CB053B",
+              "parser_version": "1.5.0",
+              "page_number": 10,
+              "printed_page_label": "6",
+              "section_path": [
+                "4 纵深防御战略",
+                "4.4 用户的缓解措施"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "用户网络安全操作手册\n4 纵深防御战略",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-035",
+        "name": "证书导入",
+        "description": "通过系统 > 证书管理 > 采集/转发/NTS对时证书，支持导入证书。",
+        "is_security_function": true,
+        "function_category": "certificate_management",
+        "interfaces": [
+          "Web界面"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-035",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-76BE0FA03440A031",
+              "parser_version": "1.5.0",
+              "page_number": 23,
+              "printed_page_label": "19",
+              "section_path": [
+                "10 安全配置指南",
+                "10.4 证书管理和维护",
+                "10.4.2 证书安全维护"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "通过系统 > 证书管理 > 采集/转发/NTS 对时证书，支持导入证书。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-036",
+        "name": "出厂默认PKI证书",
+        "description": "设备出厂自带默认PKI颁发的证书，建议导入客户的签名证书。",
+        "is_security_function": true,
+        "function_category": "certificate_management",
+        "interfaces": [],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-036",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-36828A2B13F690DE",
+              "parser_version": "1.5.0",
+              "page_number": 23,
+              "printed_page_label": "19",
+              "section_path": [
+                "10 安全配置指南",
+                "10.4 证书管理和维护",
+                "10.4.2 证书安全维护"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "•\n设备出厂自带默认PKI 颁发的证书，建议导入客户的签名证书。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-037",
+        "name": "NTS服务器证书导入",
+        "description": "若使用NTS功能，客户需导入NTS服务器证书；NTS证书从NTS服务器获取，支持PEM格式的X.509证书导入。",
+        "is_security_function": true,
+        "function_category": "certificate_management",
+        "interfaces": [
+          "Web界面"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-037",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-1294EA0594DF6992",
+              "parser_version": "1.5.0",
+              "page_number": 23,
+              "printed_page_label": "19",
+              "section_path": [
+                "10 安全配置指南",
+                "10.4 证书管理和维护",
+                "10.4.2 证书安全维护"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "•\n若使用NTS 功能，客户需导入NTS 服务器证书。NTS 证书从NTS 服务器获\n取，支持PEM 格式的X.509 证书导入。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-038",
+        "name": "证书过期告警",
+        "description": "当证书距离过期时间不足90天时，系统触发“即将过期”告警。",
+        "is_security_function": true,
+        "function_category": "certificate_management",
+        "interfaces": [
+          "Web界面",
+          "syslog"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-038",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-731B6EE8DB6B37A6",
+              "parser_version": "1.5.0",
+              "page_number": 25,
+              "printed_page_label": "21",
+              "section_path": [
+                "10 安全配置指南",
+                "10.4 证书管理和维护",
+                "10.4.2 证书安全维护"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "当证书距离过期时间不足90 天时，系统触发“即将过期”告警。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-039",
+        "name": "证书状态提示与日志记录",
+        "description": "用户登录成功后，对于证书即将过期或已过期，系统将提示，并将结果记录至syslog日志。",
+        "is_security_function": true,
+        "function_category": "logging",
+        "interfaces": [
+          "Web界面",
+          "syslog"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-039",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-0C005846289156C7",
+              "parser_version": "1.5.0",
+              "page_number": 25,
+              "printed_page_label": "21",
+              "section_path": [
+                "10 安全配置指南",
+                "10.4 证书管理和维护",
+                "10.4.2 证书安全维护"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "用户登录成功后，对于证书即将过期或已过期，系统将提示，并将结果记录至 syslog 日志。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-040",
+        "name": "GOOSE防重放",
+        "description": "在系统 > 转发配置页面，点击goose，勾选防重放开关；用户可根据需要自行设置检测时间参数。",
+        "is_security_function": true,
+        "function_category": "anti_replay",
+        "interfaces": [
+          "Web界面",
+          "GOOSE"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-040",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-562EB901BC002DDD",
+              "parser_version": "1.5.0",
+              "page_number": 26,
+              "printed_page_label": "22",
+              "section_path": [
+                "10 安全配置指南",
+                "10.7 系统还原"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "防重放功能：在系统 > 转发配置页面，点击goose，勾选防重放开关。用户可根据需要，自\n行设置检测时间参数。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-041",
+        "name": "GOOSE密钥更新",
+        "description": "在系统 > 证书管理页面，点击goose密钥，选择密钥导入，上传密钥文件即可完成更新。",
+        "is_security_function": true,
+        "function_category": "key_management",
+        "interfaces": [
+          "Web界面"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-041",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-90A3EAF30CD1A413",
+              "parser_version": "1.5.0",
+              "page_number": 26,
+              "printed_page_label": "22",
+              "section_path": [
+                "10 安全配置指南",
+                "10.7 系统还原"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "密钥更新：在系统 > 证书管理页面，点击goose 密钥，选择密钥导入，上传密钥文件即可完\n成更新。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-042",
+        "name": "远程维护功能授权",
+        "description": "远程维护功能默认关闭；启用该功能前，客户需在充分知情的前提下使用administrator账号进行手动授权，并通过安全加密认证接入公共网络；远程访问仅在获得administrator账号授权后方可生效，且相关操作受系统访问控制策略管理。",
+        "is_security_function": true,
+        "function_category": "remote_access",
+        "interfaces": [
+          "HTTPS",
+          "SSH",
+          "SFTP"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [
+          "默认关闭",
+          "需administrator账号手动授权",
+          "需安全加密认证"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-042",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-E8D208159F329BFA",
+              "parser_version": "1.5.0",
+              "page_number": 74,
+              "printed_page_label": "64",
+              "section_path": [
+                "7 Web界面",
+                "7.10 系统",
+                "7.10.3 远程维护"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "远程维护功能默认关闭。启用该功能前，客户需在充分知情的前提下使用\nadministrator 账号进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在\n获得administrator 账号授权后方可生效，且相关操作受系统访问控制策略管理。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "function_id": "FUNC-043",
+        "name": "阳光云数据转发授权",
+        "description": "数据采集器将数据转发至阳光云平台的功能默认不可用；启用该功能前，客户需在充分知情的前提下进行手动授权，并通过安全加密认证接入公共网络；远程访问仅在获得客户授权后方可生效，且相关操作受系统访问控制策略管理。",
+        "is_security_function": true,
+        "function_category": "remote_data_transfer",
+        "interfaces": [
+          "HTTPS",
+          "MQTT"
+        ],
+        "rdps_dependencies": [],
+        "limitations": [
+          "默认不可用",
+          "需客户手动授权",
+          "需安全加密认证"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-043",
+            "source": {
+              "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-5067B181346D",
+              "block_id": "BLK-EBE329C3EFA80ACF",
+              "parser_version": "1.5.0",
+              "page_number": 16,
+              "printed_page_label": "10",
+              "section_path": [
+                "2 产品介绍",
+                "2.2 主要特点"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+            },
+            "quote": "数据采集器将数据转发至阳光云平台的功能默认不可用。启用该功能前，客户需在充\n分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获\n得客户授权后方可生效，且相关操作受系统访问控制策略管理。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "parser-v2.1",
+            "is_human_confirmed": true,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      }
+    ],
+    "existing_security_functions": [
+      "登录失败锁定以防止暴力破解",
+      "登录日志记录",
+      "首次登录强制修改密码",
+      "用户增删改功能以及密码安全策略配置",
+      "北向MODBUS/IEC104/GOOSE等协议配置管理",
+      "PKI颁发的证书管理",
+      "安全启动功能默认开启",
+      "Logger5000依托于芯片TrustZone及OP-TEE安全OS，对上层应用提供在安全环境下执行的加解密及存储数据接口",
+      "Logger5000在安全环境下实现敏感数据加密存储、解密使用，包括用户密码和终端证书对应的私钥等数据",
+      "HTTPS/北向IEC104/MODBUS等协议TLS加密通信",
+      "NTS对时",
+      "恢复出厂设置功能，删除设备数据",
+      "操作日志、syslog记录功能",
+      "软件和固件更新",
+      "通过系统 > 证书管理 > 采集/转发/NTS对时证书，支持导入证书",
+      "设备出厂自带默认PKI颁发的证书，建议导入客户的签名证书",
+      "若使用NTS功能，客户需导入NTS服务器证书；NTS证书从NTS服务器获取，支持PEM格式的X.509证书导入",
+      "当证书距离过期时间不足90天时，系统触发“即将过期”告警",
+      "用户登录成功后，对于证书即将过期或已过期，系统将提示，并将结果记录至syslog日志",
+      "在系统 > 转发配置页面，点击goose，勾选防重放开关；用户可根据需要自行设置检测时间参数",
+      "在系统 > 证书管理页面，点击goose密钥，选择密钥导入，上传密钥文件即可完成更新",
+      "远程维护功能默认关闭；启用该功能前，客户需在充分知情的前提下使用administrator账号进行手动授权，并通过安全加密认证接入公共网络；远程访问仅在获得administrator账号授权后方可生效，且相关操作受系统访问控制策略管理",
+      "数据采集器将数据转发至阳光云平台的功能默认不可用；启用该功能前，客户需在充分知情的前提下进行手动授权，并通过安全加密认证接入公共网络；远程访问仅在获得客户授权后方可生效，且相关操作受系统访问控制策略管理"
+    ],
+    "existing_non_security_functions": [
+      "数据采集器Logger5000可通过RS485总线方式接入光伏发电系统中的逆变器、箱变、环境监测仪、电表等设备",
+      "数据采集器Logger5000可通过PLC总线方式（文档中亦称MPLC总线）接入阳光电源生产的具备PLC功能的组串式逆变器",
+      "数据采集器Logger5000支持通过Modbus协议、PLC电力载波通信支持南向设备接入",
+      "数据采集器Logger5000可对接入的逆变器进行有功功率控制和无功功率调节",
+      "数据采集器Logger5000可通过IEC104、Modbus、MQTT、GOOSE等通信协议北向转发数据至综自系统或站控系统及阳光云平台",
+      "数据采集器Logger5000可接收北向远程调度指令或执行本地调度指令",
+      "数据采集器Logger5000可以将采集到的设备数据通过核心交换机传输至后台站控系统，例如Insight、SCADA",
+      "数据采集器Logger5000也可将采集到的设备数据直接通过4G路由器传输至阳光云平台",
+      "能量管理单元EMU300A可以直接通过路由器与阳光云平台连接",
+      "数据采集器Logger5000可通过嵌入式Web界面配置系统时间、网络、串口等参数，并维护协议点表",
+      "数据采集器Logger5000可通过Web界面配置数据转发服务，包括转发阳光云服务、转发GOOSE服务等",
+      "数据采集器Logger5000具备设备列表功能，用于管理所接入设备并为其配置地址，支持自动搜索与手动添加设备",
+      "数据采集器Logger5000可作为IEC104 Server，上位机服务器连接数据采集器进行数据和指令传输",
+      "数据采集器Logger5000支持Modbus TCP普通调度模式，可在通讯异常恢复后根据设置调整逆变器输出功率或执行开机操作",
+      "数据采集器Logger5000支持B码协议实现时间同步",
+      "数据采集器Logger5000支持PTP协议，通过后台时间服务器对电站内多个数据采集器进行统一对时",
+      "数据采集器Logger5000支持以阳光云为时钟源进行对时，但前提是数据采集器与阳光云平台已连接，否则该对时方式无效",
+      "数据采集器Logger5000支持以MODBUS-TCP为时钟源进行对时，但前提是数据采集器与后台使用MODBUS-TCP通信规约，否则该对时方式无效",
+      "数据采集器Logger5000首次使用时必须配置系统时间",
+      "阳光云服务默认接入站点为中国大陆地区‘中国站’、欧洲地区‘欧洲站’、澳洲地区‘澳洲站’、其他地区‘国际站’；需对路由器白名单进行相关设置以保证数据采集器功能正常使用"
+    ]
+  }
+}

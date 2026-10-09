@@ -1,0 +1,1013 @@
+{
+  "schema_version": "asset_section_checkpoint.v1",
+  "fingerprint": "aa3a92142beaaed859ff6a09844be8610281f55e5fbacd1535119e0eac9b30f3",
+  "cache_inputs": {
+    "section_name": "functions_impacts",
+    "source_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "text_model": "qwen-plus",
+    "asset_rule_version": "node2_asset_rules.v2.7",
+    "material_sha256": "3657956cea96ad09ff3d3231c3276ac8de753574ce619fa0ad3a0544e06bc5b3",
+    "prompt_sha256": "90a40d51dc7d8dcc904570bd000b33f9f7adfddfc9cd70a9547df619dabdeb31",
+    "schema_sha256": "d2460c3a7422fa7d3f9e36ec4bda918ab76ac4a2f5ebee9ac259c85b7e40a71c"
+  },
+  "result": {
+    "assets": [
+      {
+        "asset_id": "ASSET-001",
+        "name": "南向设备数据采集与接入功能",
+        "asset_type": "function",
+        "status": "confirmed",
+        "related_function_ids": [
+          "FUNC-001",
+          "FUNC-002",
+          "FUNC-003"
+        ],
+        "function_relationships": [
+          {
+            "function_id": "FUNC-001",
+            "relationship_type": "implements",
+            "rationale": "FUNC-001 '南向设备接入'、FUNC-002 'PLC电力载波南向接入'和FUNC-003 '南向协议支持'共同构成南向数据采集与接入能力，证据FACT-012明确其通过RS485/PLC总线接入设备并执行规约转换。"
+          }
+        ],
+        "description": "该功能实现对光伏发电系统中逆变器、箱变、环境监测仪、电表等南向设备的数据采集与协议适配接入，是EMU300A能量管理的基础输入环节。",
+        "location": null,
+        "value": "保障电站运行状态实时感知与基础控制指令下发；若失效将导致上层功率调节、调度响应、故障诊断等功能丧失，引发生产中断与安全风险。",
+        "related_objectives": [
+          {
+            "objective_id": "OBJ-001",
+            "description": "确保南向采集数据的完整性，防止被篡改或注入虚假设备数据。",
+            "category": "integrity",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-001",
+                "source": {
+                  "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-D9C0DEB31D45",
+                  "block_id": "BLK-1E418B79BCDA0B57",
+                  "parser_version": "1.5.0",
+                  "page_number": 13,
+                  "printed_page_label": "3",
+                  "section_path": [
+                    "2 产品描述",
+                    "2.1 功能描述"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+                },
+                "quote": "数据采集器可以通过RS485 总线的方式，接入光伏发电系统的各种设备。对设备信息进行存\n储和处理，并通过规约转换来转换数据的通讯协议。",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "LLM-extractor-v3",
+                "is_human_confirmed": false,
+                "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-06-15T08:22:33Z"
+              }
+            ]
+          },
+          {
+            "objective_id": "OBJ-002",
+            "description": "确保南向设备接入通道的可用性，防止因通信中断或协议解析失败导致数据持续丢失。",
+            "category": "availability",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-002",
+                "source": {
+                  "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-DF116E7199E2",
+                  "block_id": "BLK-E3C1223513258C5B",
+                  "parser_version": "1.5.0",
+                  "page_number": 6,
+                  "printed_page_label": "2",
+                  "section_path": [
+                    "1 关于本手册"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+                },
+                "quote": "表示有潜在风险，如果未能避免可能导致设备无法正常运行或造成财产损失的情况。",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "LLM-extractor-v3",
+                "is_human_confirmed": false,
+                "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-06-15T08:22:33Z"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-003",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-1E418B79BCDA0B57",
+              "parser_version": "1.5.0",
+              "page_number": 13,
+              "printed_page_label": "3",
+              "section_path": [
+                "2 产品描述",
+                "2.1 功能描述"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "数据采集器可以通过RS485 总线的方式，接入光伏发电系统的各种设备。对设备信息进行存\n储和处理，并通过规约转换来转换数据的通讯协议。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "LLM-extractor-v3",
+            "is_human_confirmed": false,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-002",
+        "name": "本地有功与无功功率调节功能",
+        "asset_type": "function",
+        "status": "confirmed",
+        "related_function_ids": [
+          "FUNC-004",
+          "FUNC-014"
+        ],
+        "function_relationships": [
+          {
+            "function_id": "FUNC-004",
+            "relationship_type": "implements",
+            "rationale": "FUNC-004明确描述‘对接入逆变器进行有功/无功功率调节’，FACT-008直接证实该能力；FUNC-014补充说明其在通讯异常恢复后仍可执行功率调整，属同一控制价值域。"
+          }
+        ],
+        "description": "该功能基于南向采集数据，对所接入逆变器实施闭环的有功功率控制（如限发、AGC）和无功功率调节（如SVG协同、电压支撑），是EMU300A核心能量管理能力。",
+        "location": null,
+        "value": "直接决定光伏电站并网合规性（GB/T 19964）、电网调度响应能力及电压稳定性；若被篡改或失效，将导致越限脱网、谐振、设备过载甚至人身伤亡。",
+        "related_objectives": [
+          {
+            "objective_id": "OBJ-003",
+            "description": "确保功率调节指令与执行结果的真实性，防止伪造或重放控制指令导致误动作。",
+            "category": "authenticity",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-004",
+                "source": {
+                  "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-D9C0DEB31D45",
+                  "block_id": "BLK-275D81C277F1A9EC",
+                  "parser_version": "1.5.0",
+                  "page_number": 13,
+                  "printed_page_label": "3",
+                  "section_path": [
+                    "2 产品描述",
+                    "2.1 功能描述"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+                },
+                "quote": "数据采集器可以对接入的逆变器进行有功功率调节和无功功率调节。",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "LLM-extractor-v3",
+                "is_human_confirmed": false,
+                "notes": null,
+                "created_at": "2024-06-15T08:22:33Z"
+              }
+            ]
+          },
+          {
+            "objective_id": "OBJ-004",
+            "description": "确保功率调节功能的持续可用性，防止因拒绝服务或逻辑错误导致调节能力中断。",
+            "category": "availability",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-005",
+                "source": {
+                  "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-DF116E7199E2",
+                  "block_id": "BLK-0D5782B06D8B1BF9",
+                  "parser_version": "1.5.0",
+                  "page_number": 5,
+                  "printed_page_label": "1",
+                  "section_path": [
+                    "1 关于本手册"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+                },
+                "quote": "表示有高度潜在危险，如果未能避免将会导致人员死亡或严重伤害的情况。",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "LLM-extractor-v3",
+                "is_human_confirmed": false,
+                "notes": "该后果与功率调节失控直接相关，FACT-008与FACT-009共同支撑此因果链。\n系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-06-15T08:22:33Z"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-006",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-275D81C277F1A9EC",
+              "parser_version": "1.5.0",
+              "page_number": 13,
+              "printed_page_label": "3",
+              "section_path": [
+                "2 产品描述",
+                "2.1 功能描述"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "数据采集器可以对接入的逆变器进行有功功率调节和无功功率调节。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "LLM-extractor-v3",
+            "is_human_confirmed": false,
+            "notes": null,
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-003",
+        "name": "北向数据转发与远程调度指令接收功能",
+        "asset_type": "function",
+        "status": "conditional",
+        "related_function_ids": [
+          "FUNC-005",
+          "FUNC-006",
+          "FUNC-007",
+          "FUNC-008",
+          "FUNC-009",
+          "FUNC-042",
+          "FUNC-043"
+        ],
+        "function_relationships": [
+          {
+            "function_id": "FUNC-005",
+            "relationship_type": "implements",
+            "rationale": "FUNC-005定义北向数据转发，FACT-001证实其存在；FUNC-006/007/008/009具体化指令接收与执行，均依赖同一北向通信能力。"
+          }
+        ],
+        "description": "该功能实现将本地采集与处理后的数据（含遥测、遥信、事件）按IEC104/MQTT/GOOSE/HTTPS等协议转发至综自系统、站控系统（Insight/SCADA）及阳光云平台，并接收来自电网或上位系统的远程调度指令（含模拟量/数字量）。其启用需客户手动授权及安全加密认证。",
+        "location": null,
+        "value": "支撑电网调度合规（DL/T 634.5104）、远程运维效率及云端智能分析；若被劫持或伪造，将导致误调度、越限运行、数据泄露及大规模连锁故障。",
+        "related_objectives": [
+          {
+            "objective_id": "OBJ-005",
+            "description": "确保北向转发数据的机密性，防止敏感运行数据（如发电曲线、设备状态）在传输中被窃取。",
+            "category": "confidentiality",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-007",
+                "source": {
+                  "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-DF116E7199E2",
+                  "block_id": "BLK-F365C432A5D0C66E",
+                  "parser_version": "1.5.0",
+                  "page_number": 8,
+                  "printed_page_label": "4",
+                  "section_path": [
+                    "3 工业网络安全",
+                    "3.2 工业网络安全保护目标"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+                },
+                "quote": "•\n防止工业通信信息被窃取和操纵；",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "LLM-extractor-v3",
+                "is_human_confirmed": false,
+                "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-06-15T08:22:33Z"
+              }
+            ]
+          },
+          {
+            "objective_id": "OBJ-006",
+            "description": "确保远程调度指令的完整性与真实性，防止指令被篡改、重放或伪造导致误操作。",
+            "category": "integrity",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-008",
+                "source": {
+                  "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-D9C0DEB31D45",
+                  "block_id": "BLK-A0E52C3C63687B7D",
+                  "parser_version": "1.5.0",
+                  "page_number": 13,
+                  "printed_page_label": "3",
+                  "section_path": [
+                    "2 产品描述",
+                    "2.1 功能描述"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+                },
+                "quote": "数据采集器可以接受和执行来自电网的调度指令，包括远程调度控制指令、模拟量及数字量\n调度控制指令。",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "LLM-extractor-v3",
+                "is_human_confirmed": false,
+                "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-06-15T08:22:33Z"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-009",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-A0E52C3C63687B7D",
+              "parser_version": "1.5.0",
+              "page_number": 13,
+              "printed_page_label": "3",
+              "section_path": [
+                "2 产品描述",
+                "2.1 功能描述"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "数据采集器可以接受和执行来自电网的调度指令，包括远程调度控制指令、模拟量及数字量\n调度控制指令。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "LLM-extractor-v3",
+            "is_human_confirmed": false,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          },
+          {
+            "evidence_id": "EVID-010",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-ABD8EE23CFEA3B93",
+              "parser_version": "1.5.0",
+              "page_number": 13,
+              "printed_page_label": "3",
+              "section_path": [
+                "2 产品描述",
+                "2.1 功能描述"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "•\n数据采集器的数据转发功能默认不可用。启用该功能前，客户需在充分知情的前\n提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获得客户\n授权后方可生效，且相关操作受系统访问控制策略管理。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "LLM-extractor-v3",
+            "is_human_confirmed": false,
+            "notes": "明确其conditional状态依据。\n系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-004",
+        "name": "Web界面系统配置与管理功能",
+        "asset_type": "function",
+        "status": "confirmed",
+        "related_function_ids": [
+          "FUNC-010",
+          "FUNC-011",
+          "FUNC-012",
+          "FUNC-019",
+          "FUNC-024",
+          "FUNC-025"
+        ],
+        "function_relationships": [
+          {
+            "function_id": "FUNC-010",
+            "relationship_type": "implements",
+            "rationale": "FUNC-010定义Web界面配置系统参数，FACT-010 confirms it；FUNC-011/012/019/024/025 extend to device list, user management, protocol config — all share same Web interface entry point and authentication boundary."
+          }
+        ],
+        "description": "该功能提供嵌入式Web界面，支持用户对系统时间、网络、串口、协议点表、设备列表、用户权限、北向协议参数等进行配置与维护，是EMU300A本地运维的核心人机交互通道。",
+        "location": null,
+        "value": "保障现场快速部署、故障排查与策略调整；若被未授权访问或配置篡改，将导致系统失配、通信中断、权限越界及安全机制失效。",
+        "related_objectives": [
+          {
+            "objective_id": "OBJ-007",
+            "description": "确保Web界面配置操作的完整性，防止配置参数被恶意修改导致系统行为异常。",
+            "category": "integrity",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-011",
+                "source": {
+                  "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-D9C0DEB31D45",
+                  "block_id": "BLK-27076CE0D8D035A4",
+                  "parser_version": "1.5.0",
+                  "page_number": 13,
+                  "printed_page_label": "3",
+                  "section_path": [
+                    "2 产品描述",
+                    "2.1 功能描述"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+                },
+                "quote": "数据采集器可以通过嵌入式Web 界面，对系统时间、网络、串口等进行设置，对协议点表进\n行维护。",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "LLM-extractor-v3",
+                "is_human_confirmed": false,
+                "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-06-15T08:22:33Z"
+              }
+            ]
+          },
+          {
+            "objective_id": "OBJ-008",
+            "description": "确保Web界面访问的认证性与问责性，防止未授权用户执行高危配置操作。",
+            "category": "authenticity",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-012",
+                "source": {
+                  "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-D9C0DEB31D45",
+                  "block_id": "BLK-3D831B5BDD0CBD81",
+                  "parser_version": "1.5.0",
+                  "page_number": 93,
+                  "printed_page_label": "83",
+                  "section_path": [
+                    "9 用户管理",
+                    "9.1 初始用户名和密码"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+                },
+                "quote": "管理员通过对不同的用户设置不同权限的账号，可以提高系统安全性、为不同的用户提升操\n作效率、降低管理成本。不同用户类型登录账号、默认密码和操作权限如下：",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "LLM-extractor-v3",
+                "is_human_confirmed": false,
+                "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-06-15T08:22:33Z"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-013",
+            "source": {
+              "file_name": "logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/logger5000用户手册=GUID-00B9E4B6-10C1-4C13-B46E-1BF52C86BC71=1=PDF (产品信息设计部_基础版)=zh-CN (9).pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-D9C0DEB31D45",
+              "block_id": "BLK-27076CE0D8D035A4",
+              "parser_version": "1.5.0",
+              "page_number": 13,
+              "printed_page_label": "3",
+              "section_path": [
+                "2 产品描述",
+                "2.1 功能描述"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "bd8dee22b45f3effc4323f330fd4db2eb92ab544cc41fc56835e0e5cd8eec71d"
+            },
+            "quote": "数据采集器可以通过嵌入式Web 界面，对系统时间、网络、串口等进行设置，对协议点表进\n行维护。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "LLM-extractor-v3",
+            "is_human_confirmed": false,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-005",
+        "name": "操作日志与syslog记录功能",
+        "asset_type": "function",
+        "status": "confirmed",
+        "related_function_ids": [
+          "FUNC-022",
+          "FUNC-033",
+          "FUNC-038",
+          "FUNC-039"
+        ],
+        "function_relationships": [
+          {
+            "function_id": "FUNC-033",
+            "relationship_type": "implements",
+            "rationale": "FUNC-033 explicitly names '操作日志与syslog记录功能'；FACT-021 directly confirms its existence；FUNC-022/038/039 are specific logging use cases (login, cert expiry) under the same logging capability."
+          }
+        ],
+        "description": "该功能持续记录用户登录、配置变更、证书状态、系统事件等关键操作行为，并支持本地存储与syslog远程转发，是安全审计与事件追溯的基础能力。",
+        "location": null,
+        "value": "支撑安全事件调查、责任认定与合规审计（如等保2.0审计要求）；若日志被删除、篡改或未生成，将导致攻击行为无法追溯、责任无法界定。",
+        "related_objectives": [
+          {
+            "objective_id": "OBJ-009",
+            "description": "确保操作日志的完整性与不可否认性，防止日志被未授权删除或篡改。",
+            "category": "integrity",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-014",
+                "source": {
+                  "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-DF116E7199E2",
+                  "block_id": "BLK-A31FF599B1E26CE2",
+                  "parser_version": "1.5.0",
+                  "page_number": 10,
+                  "printed_page_label": "6",
+                  "section_path": [
+                    "4 纵深防御战略",
+                    "4.4 用户的缓解措施"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+                },
+                "quote": "安全功能\t\t说明\t安全建议\n\t\t安全\t通信\tHTTPS/北向IEC104/MODBUS/等\n协议TLS 加密通信\t建议采用TLS 加密通信\n\t\t安全\t对时\t支持NTS 对时\t建议采用NTS 对时，以\n及定期更新证书\n\t\t恢复\t出厂配置\t恢复出厂设置功能，删除设备数据\t建议谨慎操作\n\t\t安全\t回溯\t操作日志、syslog 记录功能\t建议定期分析安全日志\n\t\t安全\t更新\t软件和固件更新\t建议关注产品相关安全公\n告，及时升级到最新版本\n\t\t\t\t\t\n\t\t\t上述安全功能作为\n多层次多维度的对\n储的私密性、可用\n能验证的需求，可\t一个整体，从物理环境、计算机操作系\nEMU300A 及其毗邻的智能配电系统提\n性、完整性和用户操作与访问的可审计\n能需要对恶意软件保护功能进行验证。\t统、EMU300A 系统组件等\n供保护，保证信息通讯和存\n性。出于对恶意软件保护功\n\t\t\t\t\t\n\t\t\t警告\t\t\n\t•\n•\n•\t可能\n请\n请\n请\n不遵\t损害系统可用性、完\n勿使用真实的恶意\n勿从不可信任的来\n勿在生产系统进行\n循这些说明可能会导\t整性和保密性\n软件进行恶意软件保护功能测试。\n源下载任何反病毒测试文件。\n恶意软件保护功能测试。\n致设备损坏、敏感数据泄露或数据永久\t丢失。",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "LLM-extractor-v3",
+                "is_human_confirmed": false,
+                "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-06-15T08:22:33Z"
+              }
+            ]
+          },
+          {
+            "objective_id": "OBJ-010",
+            "description": "确保操作日志的可用性，防止因存储空间耗尽或服务异常导致日志丢失。",
+            "category": "availability",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-015",
+                "source": {
+                  "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-DF116E7199E2",
+                  "block_id": "BLK-D91D8C5D38EFEB46",
+                  "parser_version": "1.5.0",
+                  "page_number": 8,
+                  "printed_page_label": "4",
+                  "section_path": [
+                    "3 工业网络安全",
+                    "3.2 工业网络安全保护目标"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+                },
+                "quote": "•\n防范网络攻击危及人员安全与生产安全；",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "LLM-extractor-v3",
+                "is_human_confirmed": false,
+                "notes": "日志缺失将直接削弱安全事件响应与生产安全保障能力。\n系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-06-15T08:22:33Z"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-016",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-A31FF599B1E26CE2",
+              "parser_version": "1.5.0",
+              "page_number": 10,
+              "printed_page_label": "6",
+              "section_path": [
+                "4 纵深防御战略",
+                "4.4 用户的缓解措施"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "安全功能\t\t说明\t安全建议\n\t\t安全\t通信\tHTTPS/北向IEC104/MODBUS/等\n协议TLS 加密通信\t建议采用TLS 加密通信\n\t\t安全\t对时\t支持NTS 对时\t建议采用NTS 对时，以\n及定期更新证书\n\t\t恢复\t出厂配置\t恢复出厂设置功能，删除设备数据\t建议谨慎操作\n\t\t安全\t回溯\t操作日志、syslog 记录功能\t建议定期分析安全日志\n\t\t安全\t更新\t软件和固件更新\t建议关注产品相关安全公\n告，及时升级到最新版本\n\t\t\t\t\t\n\t\t\t上述安全功能作为\n多层次多维度的对\n储的私密性、可用\n能验证的需求，可\t一个整体，从物理环境、计算机操作系\nEMU300A 及其毗邻的智能配电系统提\n性、完整性和用户操作与访问的可审计\n能需要对恶意软件保护功能进行验证。\t统、EMU300A 系统组件等\n供保护，保证信息通讯和存\n性。出于对恶意软件保护功\n\t\t\t\t\t\n\t\t\t警告\t\t\n\t•\n•\n•\t可能\n请\n请\n请\n不遵\t损害系统可用性、完\n勿使用真实的恶意\n勿从不可信任的来\n勿在生产系统进行\n循这些说明可能会导\t整性和保密性\n软件进行恶意软件保护功能测试。\n源下载任何反病毒测试文件。\n恶意软件保护功能测试。\n致设备损坏、敏感数据泄露或数据永久\t丢失。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "LLM-extractor-v3",
+            "is_human_confirmed": false,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-006",
+        "name": "软件和固件更新功能",
+        "asset_type": "function",
+        "status": "confirmed",
+        "related_function_ids": [
+          "FUNC-034"
+        ],
+        "function_relationships": [
+          {
+            "function_id": "FUNC-034",
+            "relationship_type": "implements",
+            "rationale": "FUNC-034 is named '软件和固件更新'；FACT-022 directly states '支持软件和固件更新'；no conditional language present."
+          }
+        ],
+        "description": "该功能支持通过Web界面、HTTPS或SFTP方式对EMU300A的软件应用与底层固件进行安全更新，是维持产品长期安全与功能演进的关键机制。",
+        "location": null,
+        "value": "保障漏洞修复、合规升级与新功能交付；若更新过程被劫持或固件被替换，将导致设备永久性失控或后门植入。",
+        "related_objectives": [
+          {
+            "objective_id": "OBJ-011",
+            "description": "确保固件更新包的完整性与来源真实性，防止恶意固件刷写。",
+            "category": "integrity",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-017",
+                "source": {
+                  "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-DF116E7199E2",
+                  "block_id": "BLK-A31FF599B1E26CE2",
+                  "parser_version": "1.5.0",
+                  "page_number": 10,
+                  "printed_page_label": "6",
+                  "section_path": [
+                    "4 纵深防御战略",
+                    "4.4 用户的缓解措施"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+                },
+                "quote": "安全功能\t\t说明\t安全建议\n\t\t安全\t通信\tHTTPS/北向IEC104/MODBUS/等\n协议TLS 加密通信\t建议采用TLS 加密通信\n\t\t安全\t对时\t支持NTS 对时\t建议采用NTS 对时，以\n及定期更新证书\n\t\t恢复\t出厂配置\t恢复出厂设置功能，删除设备数据\t建议谨慎操作\n\t\t安全\t回溯\t操作日志、syslog 记录功能\t建议定期分析安全日志\n\t\t安全\t更新\t软件和固件更新\t建议关注产品相关安全公\n告，及时升级到最新版本\n\t\t\t\t\t\n\t\t\t上述安全功能作为\n多层次多维度的对\n储的私密性、可用\n能验证的需求，可\t一个整体，从物理环境、计算机操作系\nEMU300A 及其毗邻的智能配电系统提\n性、完整性和用户操作与访问的可审计\n能需要对恶意软件保护功能进行验证。\t统、EMU300A 系统组件等\n供保护，保证信息通讯和存\n性。出于对恶意软件保护功\n\t\t\t\t\t\n\t\t\t警告\t\t\n\t•\n•\n•\t可能\n请\n请\n请\n不遵\t损害系统可用性、完\n勿使用真实的恶意\n勿从不可信任的来\n勿在生产系统进行\n循这些说明可能会导\t整性和保密性\n软件进行恶意软件保护功能测试。\n源下载任何反病毒测试文件。\n恶意软件保护功能测试。\n致设备损坏、敏感数据泄露或数据永久\t丢失。",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "LLM-extractor-v3",
+                "is_human_confirmed": false,
+                "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-06-15T08:22:33Z"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-018",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-A31FF599B1E26CE2",
+              "parser_version": "1.5.0",
+              "page_number": 10,
+              "printed_page_label": "6",
+              "section_path": [
+                "4 纵深防御战略",
+                "4.4 用户的缓解措施"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "安全功能\t\t说明\t安全建议\n\t\t安全\t通信\tHTTPS/北向IEC104/MODBUS/等\n协议TLS 加密通信\t建议采用TLS 加密通信\n\t\t安全\t对时\t支持NTS 对时\t建议采用NTS 对时，以\n及定期更新证书\n\t\t恢复\t出厂配置\t恢复出厂设置功能，删除设备数据\t建议谨慎操作\n\t\t安全\t回溯\t操作日志、syslog 记录功能\t建议定期分析安全日志\n\t\t安全\t更新\t软件和固件更新\t建议关注产品相关安全公\n告，及时升级到最新版本\n\t\t\t\t\t\n\t\t\t上述安全功能作为\n多层次多维度的对\n储的私密性、可用\n能验证的需求，可\t一个整体，从物理环境、计算机操作系\nEMU300A 及其毗邻的智能配电系统提\n性、完整性和用户操作与访问的可审计\n能需要对恶意软件保护功能进行验证。\t统、EMU300A 系统组件等\n供保护，保证信息通讯和存\n性。出于对恶意软件保护功\n\t\t\t\t\t\n\t\t\t警告\t\t\n\t•\n•\n•\t可能\n请\n请\n请\n不遵\t损害系统可用性、完\n勿使用真实的恶意\n勿从不可信任的来\n勿在生产系统进行\n循这些说明可能会导\t整性和保密性\n软件进行恶意软件保护功能测试。\n源下载任何反病毒测试文件。\n恶意软件保护功能测试。\n致设备损坏、敏感数据泄露或数据永久\t丢失。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "LLM-extractor-v3",
+            "is_human_confirmed": false,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-007",
+        "name": "恢复出厂设置功能",
+        "asset_type": "function",
+        "status": "confirmed",
+        "related_function_ids": [
+          "FUNC-032"
+        ],
+        "function_relationships": [
+          {
+            "function_id": "FUNC-032",
+            "relationship_type": "implements",
+            "rationale": "FUNC-032 is named '恢复出厂设置'；FACT-020 explicitly states '恢复出厂设置功能可删除设备数据'；no conditional language."
+          }
+        ],
+        "description": "该功能通过Web界面触发，执行设备全量配置清除与用户数据擦除，用于设备退役、转场或安全应急场景。",
+        "location": null,
+        "value": "保障设备生命周期末期数据安全，防止二次部署时残留凭证或配置被滥用；若执行不彻底，将导致敏感数据泄露。",
+        "related_objectives": [
+          {
+            "objective_id": "OBJ-012",
+            "description": "确保恢复出厂设置操作的彻底性，防止敏感数据（如证书私钥、用户密码）残留。",
+            "category": "confidentiality",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-019",
+                "source": {
+                  "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-DF116E7199E2",
+                  "block_id": "BLK-A31FF599B1E26CE2",
+                  "parser_version": "1.5.0",
+                  "page_number": 10,
+                  "printed_page_label": "6",
+                  "section_path": [
+                    "4 纵深防御战略",
+                    "4.4 用户的缓解措施"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+                },
+                "quote": "安全功能\t\t说明\t安全建议\n\t\t安全\t通信\tHTTPS/北向IEC104/MODBUS/等\n协议TLS 加密通信\t建议采用TLS 加密通信\n\t\t安全\t对时\t支持NTS 对时\t建议采用NTS 对时，以\n及定期更新证书\n\t\t恢复\t出厂配置\t恢复出厂设置功能，删除设备数据\t建议谨慎操作\n\t\t安全\t回溯\t操作日志、syslog 记录功能\t建议定期分析安全日志\n\t\t安全\t更新\t软件和固件更新\t建议关注产品相关安全公\n告，及时升级到最新版本\n\t\t\t\t\t\n\t\t\t上述安全功能作为\n多层次多维度的对\n储的私密性、可用\n能验证的需求，可\t一个整体，从物理环境、计算机操作系\nEMU300A 及其毗邻的智能配电系统提\n性、完整性和用户操作与访问的可审计\n能需要对恶意软件保护功能进行验证。\t统、EMU300A 系统组件等\n供保护，保证信息通讯和存\n性。出于对恶意软件保护功\n\t\t\t\t\t\n\t\t\t警告\t\t\n\t•\n•\n•\t可能\n请\n请\n请\n不遵\t损害系统可用性、完\n勿使用真实的恶意\n勿从不可信任的来\n勿在生产系统进行\n循这些说明可能会导\t整性和保密性\n软件进行恶意软件保护功能测试。\n源下载任何反病毒测试文件。\n恶意软件保护功能测试。\n致设备损坏、敏感数据泄露或数据永久\t丢失。",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "LLM-extractor-v3",
+                "is_human_confirmed": false,
+                "notes": "FACT-015 further specifies sensitive data includes '用户密码和终端证书对应的私钥'，支撑confidentiality impact.\n系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-06-15T08:22:33Z"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-020",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-A31FF599B1E26CE2",
+              "parser_version": "1.5.0",
+              "page_number": 10,
+              "printed_page_label": "6",
+              "section_path": [
+                "4 纵深防御战略",
+                "4.4 用户的缓解措施"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "安全功能\t\t说明\t安全建议\n\t\t安全\t通信\tHTTPS/北向IEC104/MODBUS/等\n协议TLS 加密通信\t建议采用TLS 加密通信\n\t\t安全\t对时\t支持NTS 对时\t建议采用NTS 对时，以\n及定期更新证书\n\t\t恢复\t出厂配置\t恢复出厂设置功能，删除设备数据\t建议谨慎操作\n\t\t安全\t回溯\t操作日志、syslog 记录功能\t建议定期分析安全日志\n\t\t安全\t更新\t软件和固件更新\t建议关注产品相关安全公\n告，及时升级到最新版本\n\t\t\t\t\t\n\t\t\t上述安全功能作为\n多层次多维度的对\n储的私密性、可用\n能验证的需求，可\t一个整体，从物理环境、计算机操作系\nEMU300A 及其毗邻的智能配电系统提\n性、完整性和用户操作与访问的可审计\n能需要对恶意软件保护功能进行验证。\t统、EMU300A 系统组件等\n供保护，保证信息通讯和存\n性。出于对恶意软件保护功\n\t\t\t\t\t\n\t\t\t警告\t\t\n\t•\n•\n•\t可能\n请\n请\n请\n不遵\t损害系统可用性、完\n勿使用真实的恶意\n勿从不可信任的来\n勿在生产系统进行\n循这些说明可能会导\t整性和保密性\n软件进行恶意软件保护功能测试。\n源下载任何反病毒测试文件。\n恶意软件保护功能测试。\n致设备损坏、敏感数据泄露或数据永久\t丢失。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "LLM-extractor-v3",
+            "is_human_confirmed": false,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-010",
+        "name": "人员安全",
+        "asset_type": "user",
+        "status": "external_affected",
+        "related_function_ids": [],
+        "function_relationships": [],
+        "description": "指在光伏发电系统现场作业的运维人员、检修人员、管理人员等，其人身安全直接受EMU300A功能正确性与安全性影响。",
+        "location": null,
+        "value": "网络安全事件（如功率调节失控、误跳闸、设备过载）可能导致人员死亡或严重伤害；参数设置错误亦可导致机器故障致人员重伤或死亡。",
+        "related_objectives": [
+          {
+            "objective_id": "OBJ-015",
+            "description": "确保EMU300A功能执行不危及现场人员生命安全。",
+            "category": "availability",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-025",
+                "source": {
+                  "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-DF116E7199E2",
+                  "block_id": "BLK-0D5782B06D8B1BF9",
+                  "parser_version": "1.5.0",
+                  "page_number": 5,
+                  "printed_page_label": "1",
+                  "section_path": [
+                    "1 关于本手册"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+                },
+                "quote": "表示有高度潜在危险，如果未能避免将会导致人员死亡或严重伤害的情况。",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "LLM-extractor-v3",
+                "is_human_confirmed": false,
+                "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-06-15T08:22:33Z"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-026",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-0D5782B06D8B1BF9",
+              "parser_version": "1.5.0",
+              "page_number": 5,
+              "printed_page_label": "1",
+              "section_path": [
+                "1 关于本手册"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "表示有高度潜在危险，如果未能避免将会导致人员死亡或严重伤害的情况。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "LLM-extractor-v3",
+            "is_human_confirmed": false,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      },
+      {
+        "asset_id": "ASSET-011",
+        "name": "财产安全",
+        "asset_type": "property",
+        "status": "external_affected",
+        "related_function_ids": [],
+        "function_relationships": [],
+        "description": "指光伏发电系统中的逆变器、箱变、电表、环境监测仪等南向接入设备，以及综自系统、站控系统等北向关联设备，其资产价值受EMU300A功能可靠性与安全性影响。",
+        "location": null,
+        "value": "网络安全受损可能导致设备无法正常运行或造成财产损失；未经授权的人员进入生产环境可能损坏或修改生产设备。",
+        "related_objectives": [
+          {
+            "objective_id": "OBJ-016",
+            "description": "确保EMU300A不因自身故障或被控导致关联设备物理损毁或功能永久性丧失。",
+            "category": "availability",
+            "basis": "asset_value_or_consequence",
+            "status": "supported",
+            "legal_basis": [],
+            "evidence": [
+              {
+                "evidence_id": "EVID-027",
+                "source": {
+                  "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+                  "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+                  "file_type": "pdf",
+                  "document_id": "DOC-DF116E7199E2",
+                  "block_id": "BLK-E3C1223513258C5B",
+                  "parser_version": "1.5.0",
+                  "page_number": 6,
+                  "printed_page_label": "2",
+                  "section_path": [
+                    "1 关于本手册"
+                  ],
+                  "clause_number": null,
+                  "annex": null,
+                  "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+                },
+                "quote": "表示有潜在风险，如果未能避免可能导致设备无法正常运行或造成财产损失的情况。",
+                "evidence_level": "direct",
+                "confidence": "high",
+                "retrieved_by": "LLM-extractor-v3",
+                "is_human_confirmed": false,
+                "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+                "created_at": "2024-06-15T08:22:33Z"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "evidence_id": "EVID-028",
+            "source": {
+              "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+              "file_type": "pdf",
+              "document_id": "DOC-DF116E7199E2",
+              "block_id": "BLK-E3C1223513258C5B",
+              "parser_version": "1.5.0",
+              "page_number": 6,
+              "printed_page_label": "2",
+              "section_path": [
+                "1 关于本手册"
+              ],
+              "clause_number": null,
+              "annex": null,
+              "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+            },
+            "quote": "表示有潜在风险，如果未能避免可能导致设备无法正常运行或造成财产损失的情况。",
+            "evidence_level": "direct",
+            "confidence": "high",
+            "retrieved_by": "LLM-extractor-v3",
+            "is_human_confirmed": false,
+            "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+            "created_at": "2024-06-15T08:22:33Z"
+          }
+        ]
+      }
+    ],
+    "assessment": "PARTIAL",
+    "notes": "所有功能资产均基于field_batches.facts直接支持，覆盖candidate_context.functions中全部FUNC-xxx（共43项），已按价值、生命周期、责任边界与受损后果合理分组：南向采集、本地控制、北向通信、Web配置、日志审计、更新、恢复出厂设为confirmed；阳光云平台、站控系统（Insight/SCADA）因属外部系统且证据明确其受影响关系，标为external_affected；人员与财产作为直接受影响对象，依据user_property_environment.facts独立建模。无needs_confirmation资产。FUNC-027（安全启动）等纯安全机制未在此步识别为独立功能资产，因其属于保障性机制而非价值承载功能，将在后续步骤处理。 逐项校验隔离了2条无效记录；有效资产继续保留。",
+    "rejected_items": [
+      "ASSET-008/asset: asset_type不属于本分段允许枚举",
+      "ASSET-009/asset: asset_type不属于本分段允许枚举"
+    ]
+  }
+}

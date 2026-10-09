@@ -5,9 +5,9 @@ from __future__ import annotations
 import re
 from datetime import datetime
 from enum import StrEnum
-from typing import Self
+from typing import Annotated, Literal, Self
 
-from pydantic import BaseModel, ConfigDict, Field, model_validator
+from pydantic import BaseModel, BeforeValidator, ConfigDict, Field, field_validator, model_validator
 
 from schemas.document import DocumentBlockType
 from schemas.evidence_packet import EvidenceTargetNode
@@ -151,6 +151,58 @@ class RetrievalHit(BaseModel):
     seed_block_id: str | None = Field(default=None, pattern=r"^BLK-[A-F0-9]{16}$")
 
 
+def _as_text_list(value):
+    # Preserve one supplied value; never split prose or truncate evidence.
+    return [value] if isinstance(value, str) else value
+
+
+def _port_as_text(value):
+    return str(value) if type(value) is int else value
+
+
+_AttributeText = Annotated[str, Field(min_length=1, pattern=r"\S")]
+_AttributeList = Annotated[
+    list[_AttributeText], Field(max_length=10), BeforeValidator(_as_text_list)
+]
+
+
+class FactAttributes(BaseModel):
+    """One source for the model-facing attribute schema and runtime validation."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    source: _AttributeText | None = None
+    destination: _AttributeText | None = None
+    protocol: _AttributeText | None = None
+    port: Annotated[_AttributeText, BeforeValidator(_port_as_text)] | None = None
+    interface: _AttributeText | None = None
+    authentication: _AttributeText | None = None
+    encryption: _AttributeText | None = None
+    data_exchanged: _AttributeList | None = None
+    conditions: _AttributeList | None = None
+    direction_basis: Literal[
+        "documented_endpoints", "connection_initiation", "listener_exposure",
+        "business_data_flow", "unknown",
+    ] | None = None
+    business_data_direction: Literal["to_product", "from_product", "bidirectional", "unknown"] | None = None
+    activation_status: Literal["enabled", "disabled_by_default", "conditional", "unknown"] | None = None
+    component_name: _AttributeText | None = None
+    component_type: _AttributeText | None = None
+    scope_status: Literal["confirmed", "conditional", "external", "unknown"] | None = None
+
+
+_ATTRIBUTES_BY_FIELD = {
+    RetrievalField.COMMUNICATIONS: frozenset({
+        "source", "destination", "protocol", "port", "interface", "direction_basis",
+        "business_data_direction", "activation_status", "authentication", "encryption",
+        "data_exchanged", "conditions",
+    }),
+    RetrievalField.COMPONENTS: frozenset({
+        "component_name", "component_type", "scope_status", "conditions",
+    }),
+}
+
+
 class RetrievedFact(BaseModel):
     """One atomic fact extracted from a field-specific evidence packet."""
 
@@ -162,12 +214,18 @@ class RetrievedFact(BaseModel):
     is_uncertain: bool = False
     attributes: dict[str, str | list[str] | None] = Field(
         default_factory=dict,
-        max_length=14,
         description=(
             "Optional field-specific values copied from the same evidence. Only communications "
             "and components use the reviewed keys validated by FieldExtractionResult."
         ),
     )
+
+    @field_validator("attributes", mode="before", json_schema_input_type=FactAttributes)
+    @classmethod
+    def validate_attributes(cls, value):
+        # Keep the existing checkpoint/downstream dictionary format.
+        attributes = FactAttributes.model_validate(value).model_dump(exclude_unset=True)
+        return {key: item for key, item in attributes.items() if item is not None and item != []}
 
     @model_validator(mode="after")
     def validate_unique_blocks(self) -> Self:
@@ -194,6 +252,51 @@ class FieldExtractionResult(BaseModel):
     unknowns: list[str] = Field(default_factory=list, max_length=10)
     contradictions: list[str] = Field(default_factory=list, max_length=10)
 
+    @classmethod
+    def schema_for_profile(cls, profile: RetrievalProfile) -> dict:
+        """Expose only the attributes permitted by this exact field task."""
+        schema = cls.model_json_schema()
+        attributes = schema["$defs"]["FactAttributes"]
+        allowed = _ATTRIBUTES_BY_FIELD.get(profile.field_id, frozenset())
+        attributes["properties"] = {
+            key: value for key, value in attributes["properties"].items() if key in allowed
+        }
+        for key, value in (("node_id", profile.node_id.value), ("field_id", profile.field_id.value)):
+            schema["properties"][key] = {"type": "string", "const": value}
+        schema["properties"]["facts"]["maxItems"] = profile.max_facts
+        # Unused enums invite the model to choose another task.
+        schema["$defs"].pop("EvidenceTargetNode", None)
+        schema["$defs"].pop("RetrievalField", None)
+        return schema
+
+    @model_validator(mode="before")
+    @classmethod
+    def validate_attribute_scope(cls, value):
+        # Check field permissions before unrelated attribute type errors. Do not
+        # silently discard model output, including keys whose value is null.
+        if not isinstance(value, dict):
+            return value
+        field = value.get("field_id")
+        if not isinstance(field, str) or field not in {item.value for item in RetrievalField}:
+            return value
+        allowed = _ATTRIBUTES_BY_FIELD.get(field, frozenset())
+        facts = value.get("facts", [])
+        if not isinstance(facts, list):
+            return value
+        for index, fact in enumerate(facts):
+            if isinstance(fact, RetrievedFact):
+                attrs = fact.attributes
+            elif isinstance(fact, dict):
+                attrs = fact.get("attributes", {})
+            else:
+                continue
+            if isinstance(attrs, dict) and (unexpected := set(attrs) - allowed):
+                raise ValueError(
+                    f"facts[{index}].attributes: attributes are not allowed for {field}: "
+                    f"{sorted(unexpected)}; allowed keys: {sorted(allowed)}"
+                )
+        return value
+
     @model_validator(mode="after")
     def validate_batch(self) -> Self:
         RetrievalProfile(node_id=self.node_id, field_id=self.field_id, query="validation")
@@ -202,76 +305,6 @@ class FieldExtractionResult(BaseModel):
             raise ValueError("fact_id values must be unique within a field batch")
         if not self.facts and not self.unknowns:
             raise ValueError("A field batch requires facts or explicit unknowns")
-        allowed_keys = {
-            RetrievalField.COMMUNICATIONS: {
-                "source",
-                "destination",
-                "protocol",
-                "port",
-                "interface",
-                "direction_basis",
-                "business_data_direction",
-                "activation_status",
-                "authentication",
-                "encryption",
-                "data_exchanged",
-                "conditions",
-            },
-            RetrievalField.COMPONENTS: {
-                "component_name",
-                "component_type",
-                "scope_status",
-                "conditions",
-            },
-        }.get(self.field_id, set())
-        enum_values = {
-            "direction_basis": {
-                "documented_endpoints",
-                "connection_initiation",
-                "listener_exposure",
-                "business_data_flow",
-                "unknown",
-            },
-            "business_data_direction": {
-                "to_product",
-                "from_product",
-                "bidirectional",
-                "unknown",
-            },
-            "activation_status": {
-                "enabled",
-                "disabled_by_default",
-                "conditional",
-                "unknown",
-            },
-            "scope_status": {"confirmed", "conditional", "external", "unknown"},
-        }
-        list_keys = {"data_exchanged", "conditions"}
-        for fact in self.facts:
-            unexpected = set(fact.attributes) - allowed_keys
-            if unexpected:
-                raise ValueError(
-                    f"attributes are not allowed for {self.field_id.value}: {sorted(unexpected)}"
-                )
-            normalized_attributes = {}
-            for key, value in fact.attributes.items():
-                # Optional structured values may be emitted as null or an empty
-                # list. Both mean "not supplied" and must not force an LLM retry.
-                if value is None or (key in list_keys and value == []):
-                    continue
-                if key in list_keys:
-                    if not isinstance(value, list) or len(value) > 10:
-                        raise ValueError(f"{key} must be a non-empty list with at most 10 items")
-                    if any(not item.strip() for item in value):
-                        raise ValueError(f"{key} items must be non-empty strings")
-                elif isinstance(value, list):
-                    raise ValueError(f"{key} must be a string or null")
-                elif isinstance(value, str) and not value.strip():
-                    raise ValueError(f"{key} must be non-empty when provided")
-                if key in enum_values and value not in enum_values[key]:
-                    raise ValueError(f"Unsupported {key}: {value}")
-                normalized_attributes[key] = value
-            fact.attributes = normalized_attributes
         return self
 
 

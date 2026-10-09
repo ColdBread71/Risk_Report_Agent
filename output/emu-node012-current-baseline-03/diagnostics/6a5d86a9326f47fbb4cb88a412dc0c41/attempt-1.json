@@ -1,0 +1,810 @@
+{
+  "run_id": "emu-node012-current-baseline-03",
+  "node": "build_product_context",
+  "task": "node_1/overview",
+  "call_id": "6a5d86a9326f47fbb4cb88a412dc0c41",
+  "schema": "ProductContextOverview",
+  "model": "qwen-plus",
+  "attempt": 1,
+  "started_at": "2026-10-09T02:22:33.212003+00:00",
+  "status": "succeeded",
+  "phase": "complete",
+  "prompt": "你正在执行 prEN 40000-1-2 产品上下文定义（Node 1）的 overview 分段。\n\n【共同规则】\n1. 只使用 Scope 的肯定字段和 field_batches.facts；unknowns或contradictions只能进入完整性说明，不能改写成事实。\n2. 资料未提供的版本、端口、用户经验、物理环境、部署状态和支持期限保持 null或空列表。保留“必须、建议、可选、默认关闭”等原始语气。\n3. Scope.classification.has_rdps 不可覆盖：true 才能填写正式RDPS依赖；null 只写候选远程能力和待确认项；false 保持空。\n4. EvidenceRef 只能引用 evidence_contract 中直接支持当前结论的 fact block_ids。scope_support 只支持产品身份、Node0边界和范围状态。没有直接支持时 evidence 留空。\n5. 只生成本段 Schema；不识别资产、威胁、风险或控制。业务字段不得出现 FACT-/BLK-/GAP- 内部编号。\n6. 除产品名、型号、协议和标准编号外使用简体中文；EvidenceRef.quote 保留原文。严格输出单个 JSON 对象，不输出解释或 Markdown。\n7. Node0范围状态是上游契约：同一对象若出现冲突，不得自行选择更肯定的状态；使用unknown/conditional并写入完整性说明。外部边界不自动证明第三方供应或运营关系。\n\n【本次目标】\n只生成产品身份、IPRFU、用户描述、运行环境、RDPS依赖和整体资料完整度。不要生成函数、组件清单或通信矩阵。\n\n【本段业务规则】\n- 产品名和版本继承Scope；手册版本不得当作产品版本。\n- 用户材料只列角色或权限时，experience_level 保持 null，不推断培训或专业水平。\n- 未说明物理部署条件时 physical_environment 为空；远程能力不得自动等同RDPS。\n- 存在未知项时 assessment 使用 PARTIAL，并把问题写入 assessment_notes。\n\n【目标 JSON Schema】\n{\n  \"$defs\": {\n    \"AssessmentVerdict\": {\n      \"description\": \"Assessment verdict per prEN 40000-1-2 assessment criteria.\",\n      \"enum\": [\n        \"PASS\",\n        \"FAIL\",\n        \"PARTIAL\"\n      ],\n      \"title\": \"AssessmentVerdict\",\n      \"type\": \"string\"\n    },\n    \"ConfidenceLevel\": {\n      \"description\": \"Confidence level for model-generated or human-reviewed content.\",\n      \"enum\": [\n        \"high\",\n        \"medium\",\n        \"low\",\n        \"none\"\n      ],\n      \"title\": \"ConfidenceLevel\",\n      \"type\": \"string\"\n    },\n    \"EvidenceLevel\": {\n      \"description\": \"Evidence strength level per docs/03_evidence_policy.md.\",\n      \"enum\": [\n        \"direct\",\n        \"derived\",\n        \"manual\",\n        \"unknown\"\n      ],\n      \"title\": \"EvidenceLevel\",\n      \"type\": \"string\"\n    },\n    \"EvidenceRef\": {\n      \"description\": \"Evidence reference linking a conclusion to its source.\",\n      \"properties\": {\n        \"evidence_id\": {\n          \"description\": \"Unique identifier for this evidence reference.\",\n          \"title\": \"Evidence Id\",\n          \"type\": \"string\"\n        },\n        \"source\": {\n          \"$ref\": \"#/$defs/SourceRef\",\n          \"description\": \"Source document reference.\"\n        },\n        \"quote\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Exact quoted text from the source.\",\n          \"title\": \"Quote\"\n        },\n        \"evidence_level\": {\n          \"$ref\": \"#/$defs/EvidenceLevel\",\n          \"description\": \"Strength level of the evidence.\"\n        },\n        \"confidence\": {\n          \"$ref\": \"#/$defs/ConfidenceLevel\",\n          \"default\": \"none\",\n          \"description\": \"Confidence level in the evidence.\"\n        },\n        \"retrieved_by\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Tool or method used to retrieve this evidence.\",\n          \"title\": \"Retrieved By\"\n        },\n        \"is_human_confirmed\": {\n          \"default\": false,\n          \"description\": \"Whether this evidence has been confirmed by a human reviewer.\",\n          \"title\": \"Is Human Confirmed\",\n          \"type\": \"boolean\"\n        },\n        \"notes\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Additional notes or context about the evidence.\",\n          \"title\": \"Notes\"\n        },\n        \"created_at\": {\n          \"description\": \"When this evidence reference was created.\",\n          \"format\": \"date-time\",\n          \"title\": \"Created At\",\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"evidence_id\",\n        \"source\",\n        \"evidence_level\"\n      ],\n      \"title\": \"EvidenceRef\",\n      \"type\": \"object\"\n    },\n    \"IPRFU\": {\n      \"additionalProperties\": false,\n      \"description\": \"Intended purpose and reasonably foreseeable use.\",\n      \"properties\": {\n        \"intended_purpose\": {\n          \"description\": \"Extract the manufacturer's intended purpose in a concise factual statement, including the product role and primary use; do not expand beyond the supplied evidence.\",\n          \"title\": \"Intended Purpose\",\n          \"type\": \"string\"\n        },\n        \"reasonably_foreseeable_use\": {\n          \"description\": \"List reasonably foreseeable use or misuse scenarios separately, including foreseeable integration, configuration, credential-sharing, or environmental conditions supported by evidence.\",\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"title\": \"Reasonably Foreseeable Use\",\n          \"type\": \"array\"\n        },\n        \"health_safety_considerations\": {\n          \"description\": \"List any evidenced effects of cybersecurity incidents on user health, safety, property, other persons, animals, environment, or public interest; use an empty list when no effect is evidenced.\",\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"title\": \"Health Safety Considerations\",\n          \"type\": \"array\"\n        },\n        \"accessibility_considerations\": {\n          \"description\": \"List accessibility needs or constraints affecting secure installation, authentication, operation, maintenance, or decommissioning; do not infer a user group without evidence.\",\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"title\": \"Accessibility Considerations\",\n          \"type\": \"array\"\n        },\n        \"support_period\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Extract the intended support period or end-of-support information exactly as provided; use null when it is not stated.\",\n          \"title\": \"Support Period\"\n        },\n        \"evidence\": {\n          \"description\": \"Attach evidence for intended purpose, foreseeable use, safety, accessibility, and support period, including source location whenever available.\",\n          \"items\": {\n            \"$ref\": \"#/$defs/EvidenceRef\"\n          },\n          \"title\": \"Evidence\",\n          \"type\": \"array\"\n        }\n      },\n      \"required\": [\n        \"intended_purpose\"\n      ],\n      \"title\": \"IPRFU\",\n      \"type\": \"object\"\n    },\n    \"OperationalEnvironment\": {\n      \"additionalProperties\": false,\n      \"description\": \"Operational environment, network boundaries, and constraints.\",\n      \"properties\": {\n        \"description\": {\n          \"description\": \"Describe where and how the product operates, including deployment context, physical setting, connected systems, and relevant cybersecurity conditions.\",\n          \"title\": \"Description\",\n          \"type\": \"string\"\n        },\n        \"networks\": {\n          \"description\": \"List each relevant network separately, including local, industrial, cloud, cellular, wireless, or internet-connected networks evidenced in the input.\",\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"title\": \"Networks\",\n          \"type\": \"array\"\n        },\n        \"integrated_systems\": {\n          \"description\": \"List each system, device, platform, or service integrated with the product as a separate item; preserve stated names.\",\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"title\": \"Integrated Systems\",\n          \"type\": \"array\"\n        },\n        \"physical_environment\": {\n          \"description\": \"List relevant physical conditions and access assumptions, such as indoor/outdoor deployment, temperature, environmental exposure, or physical protection.\",\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"title\": \"Physical Environment\",\n          \"type\": \"array\"\n        },\n        \"network_boundaries\": {\n          \"description\": \"List each network or trust boundary separately and identify the interface or control that defines it when available.\",\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"title\": \"Network Boundaries\",\n          \"type\": \"array\"\n        },\n        \"constraints\": {\n          \"description\": \"List operational, connectivity, availability, safety, regulatory, or third-party platform constraints that affect cybersecurity; one constraint per item.\",\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"title\": \"Constraints\",\n          \"type\": \"array\"\n        },\n        \"rdps_dependency_map\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Summarize RDPS operator, exchanged data, connectivity, authentication/trust relationship, availability expectation, and degraded mode; use null when no RDPS exists or is evidenced.\",\n          \"title\": \"Rdps Dependency Map\"\n        },\n        \"evidence\": {\n          \"description\": \"Attach source evidence for the operational environment, networks, boundaries, integrated systems, and constraints, with page/location whenever available.\",\n          \"items\": {\n            \"$ref\": \"#/$defs/EvidenceRef\"\n          },\n          \"title\": \"Evidence\",\n          \"type\": \"array\"\n        }\n      },\n      \"required\": [\n        \"description\"\n      ],\n      \"title\": \"OperationalEnvironment\",\n      \"type\": \"object\"\n    },\n    \"SourceRef\": {\n      \"description\": \"Reference to a source document or file.\",\n      \"properties\": {\n        \"file_name\": {\n          \"description\": \"Original file name.\",\n          \"title\": \"File Name\",\n          \"type\": \"string\"\n        },\n        \"file_path\": {\n          \"anyOf\": [\n            {\n              \"format\": \"path\",\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"string\"\n            }\n          ],\n          \"description\": \"Absolute or relative path to the source file.\",\n          \"title\": \"File Path\"\n        },\n        \"file_type\": {\n          \"description\": \"Type of the source file, e.g., pdf, docx, md.\",\n          \"title\": \"File Type\",\n          \"type\": \"string\"\n        },\n        \"document_id\": {\n          \"anyOf\": [\n            {\n              \"pattern\": \"^DOC-[A-F0-9]{12}$\",\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Stable parsed-document identifier when the source belongs to a project corpus.\",\n          \"title\": \"Document Id\"\n        },\n        \"block_id\": {\n          \"anyOf\": [\n            {\n              \"pattern\": \"^BLK-[A-F0-9]{16}$\",\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Stable parsed content-block identifier when available.\",\n          \"title\": \"Block Id\"\n        },\n        \"parser_version\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Parser version that produced the referenced content block.\",\n          \"title\": \"Parser Version\"\n        },\n        \"page_number\": {\n          \"anyOf\": [\n            {\n              \"minimum\": 1,\n              \"type\": \"integer\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"One-based physical page number in the source file.\",\n          \"title\": \"Page Number\"\n        },\n        \"printed_page_label\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Page label printed in the source document, which may differ from the physical PDF page.\",\n          \"title\": \"Printed Page Label\"\n        },\n        \"section_path\": {\n          \"description\": \"Ordered chapter or section hierarchy associated with the cited block.\",\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"title\": \"Section Path\",\n          \"type\": \"array\"\n        },\n        \"clause_number\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Clause or section number in the source.\",\n          \"title\": \"Clause Number\"\n        },\n        \"annex\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Annex identifier, if applicable.\",\n          \"title\": \"Annex\"\n        },\n        \"hash_sha256\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"SHA256 hash of the source file content.\",\n          \"title\": \"Hash Sha256\"\n        }\n      },\n      \"required\": [\n        \"file_name\",\n        \"file_path\",\n        \"file_type\"\n      ],\n      \"title\": \"SourceRef\",\n      \"type\": \"object\"\n    },\n    \"UserDescription\": {\n      \"additionalProperties\": false,\n      \"description\": \"Target user description required by prEN 40000-1-2 6.2.1.6.\",\n      \"properties\": {\n        \"user_types\": {\n          \"description\": \"List each intended user type separately, including end users, administrators, maintainers, installers, and downstream integrators when applicable; use an empty list only when no user information is available.\",\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"title\": \"User Types\",\n          \"type\": \"array\"\n        },\n        \"experience_level\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Describe evidenced cybersecurity knowledge, training, or operational ability; use null when the material only lists roles or permissions.\",\n          \"title\": \"Experience Level\"\n        },\n        \"vulnerable_groups\": {\n          \"description\": \"List vulnerable or accessibility-relevant user groups, such as children or users with impairments, only when stated or reasonably supported by the input; otherwise use an empty list.\",\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"title\": \"Vulnerable Groups\",\n          \"type\": \"array\"\n        },\n        \"is_component\": {\n          \"anyOf\": [\n            {\n              \"type\": \"boolean\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Set true when the product is intended to be integrated as a component, false when explicitly excluded, and null when the evidence does not establish this.\",\n          \"title\": \"Is Component\"\n        },\n        \"rdps_dependence\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"description\": \"Describe how users or integrators depend on an RDPS for onboarding, operation, maintenance, or decommissioning; use null when no RDPS dependence is evidenced.\",\n          \"title\": \"Rdps Dependence\"\n        },\n        \"responsibilities\": {\n          \"description\": \"List cybersecurity responsibilities explicitly expected from users, operators, or integrators, one responsibility per item; do not invent responsibilities.\",\n          \"items\": {\n            \"type\": \"string\"\n          },\n          \"title\": \"Responsibilities\",\n          \"type\": \"array\"\n        },\n        \"evidence\": {\n          \"description\": \"Attach evidence supporting user types, abilities, vulnerable groups, component use, and responsibilities, with source location whenever available.\",\n          \"items\": {\n            \"$ref\": \"#/$defs/EvidenceRef\"\n          },\n          \"title\": \"Evidence\",\n          \"type\": \"array\"\n        }\n      },\n      \"required\": [\n        \"user_types\"\n      ],\n      \"title\": \"UserDescription\",\n      \"type\": \"object\"\n    }\n  },\n  \"additionalProperties\": false,\n  \"description\": \"Identity, use, users, environment, and completeness for section synthesis.\",\n  \"properties\": {\n    \"product_name\": {\n      \"title\": \"Product Name\",\n      \"type\": \"string\"\n    },\n    \"product_version\": {\n      \"anyOf\": [\n        {\n          \"type\": \"string\"\n        },\n        {\n          \"type\": \"null\"\n        }\n      ],\n      \"default\": null,\n      \"title\": \"Product Version\"\n    },\n    \"iprfu\": {\n      \"$ref\": \"#/$defs/IPRFU\"\n    },\n    \"user_description\": {\n      \"$ref\": \"#/$defs/UserDescription\"\n    },\n    \"operational_environment\": {\n      \"$ref\": \"#/$defs/OperationalEnvironment\"\n    },\n    \"rdps_dependencies\": {\n      \"anyOf\": [\n        {\n          \"type\": \"string\"\n        },\n        {\n          \"type\": \"null\"\n        }\n      ],\n      \"default\": null,\n      \"title\": \"Rdps Dependencies\"\n    },\n    \"evidence\": {\n      \"items\": {\n        \"$ref\": \"#/$defs/EvidenceRef\"\n      },\n      \"title\": \"Evidence\",\n      \"type\": \"array\"\n    },\n    \"assessment\": {\n      \"$ref\": \"#/$defs/AssessmentVerdict\",\n      \"default\": \"FAIL\"\n    },\n    \"assessment_notes\": {\n      \"anyOf\": [\n        {\n          \"type\": \"string\"\n        },\n        {\n          \"type\": \"null\"\n        }\n      ],\n      \"default\": null,\n      \"title\": \"Assessment Notes\"\n    }\n  },\n  \"required\": [\n    \"product_name\",\n    \"iprfu\",\n    \"user_description\",\n    \"operational_environment\"\n  ],\n  \"title\": \"ProductContextOverview\",\n  \"type\": \"object\"\n}\n\n【已验证 Scope、字段事实与证据契约】\n{\n  \"scope\": {\n    \"product_name\": \"能量管理单元EMU300A\",\n    \"product_version\": null,\n    \"classification\": {\n      \"is_pde\": null,\n      \"classification\": null,\n      \"has_rdps\": null,\n      \"rdps_description\": \"材料证明EMU300A具备通过4G路由器或核心交换机向阳光云平台、Insight、SCADA等外部系统转发数据及接收远程调度指令的能力；但远程功能（如数据上传至阳光云、远程调度指令执行）默认关闭，启用需客户手动授权并配置安全加密认证；远程能力对产品基本能量管理功能（如本地有功/无功调节、南向设备接入与采集）的必要性、运营责任归属（阳光云是否由阳光电源运营）、断网降级行为（如是否支持纯本地闭环控制）均无明确证据。\",\n      \"applicable_annex\": null,\n      \"overlapping_regulations\": null\n    },\n    \"scope_description\": \"评估范围主体为能量管理单元EMU300A本体，含其内部配置的数据采集器Logger5000；南向接口包括RS485、PLC电力载波、MPLC（可选1或2）、IO模组（可选）及对应协议（Modbus、IEC104等）；北向连接能力涵盖以太网、4G路由器、核心交换机，支持IEC104、Modbus、MQTT、GOOSE、HTTPS等协议向综自系统、站控系统（Insight/SCADA）及阳光云平台传输数据和接收指令；外部依赖包括阳光云平台、第三方站控系统、4G网络基础设施及核心交换机（未明确是否内置）；排除项含RS485线缆、交流熔丝盒线缆、接地端子线缆等非设备本体附件。\",\n    \"in_scope_components\": [\n      \"EMU300A本体\",\n      \"Logger5000（内部配置）\",\n      \"Modbus协议（南向接入能力）\",\n      \"PLC电力载波通信能力\",\n      \"IEC104/MQTT/GOOSE/HTTPS协议北向转发能力（协议实现层）\",\n      \"本地有功功率控制与无功功率调节功能\",\n      \"操作日志与syslog记录功能\",\n      \"软件和固件更新功能\",\n      \"恢复出厂设置功能\",\n      \"NTS对时支持能力\",\n      \"TLS加密通信支持能力\"\n    ],\n    \"conditional_scope_components\": [\n      \"RS485通信接口（物理端口及协议栈）（范围分类冲突，待确认）\",\n      \"MPLC接口（1或2个）：交付数量取决于合同/BOM/现场配置，证据未指明默认值\",\n      \"PID&ISO控制盒、光纤交换机、光纤终端盒、IO模组：明确标注为可选模块，实际交付状态未知\",\n      \"4G路由器：证据表明EMU300A可通过其传输数据至阳光云，但未说明是否内置；若为外置，则属客户侧配套设备\",\n      \"核心交换机：证据多次提及EMU300A‘通过核心交换机’连接至Insight/SCADA，但未说明其是否为EMU300A内置组件或外部配套设备\",\n      \"阳光云平台接入能力：功能默认不可用，启用需客户手动授权及安全加密认证；其运营方、数据处理位置及责任归属未明确\"\n    ],\n    \"out_of_scope_components\": [\n      \"交流熔丝盒线缆（明确说明未包含在供货范围）\",\n      \"接地端子线缆（明确说明未包含在供货范围）\",\n      \"光纤终端盒（明确标注为选配，且必须与光纤环网交换机配套使用）\",\n      \"光纤环网交换机（明确标注为选配，且必须与光纤终端盒配套使用）\"\n    ],\n    \"assumptions\": [\n      \"请确认以下说法是否成立：Logger5000在EMU300A中是板载集成模块还是独立外置设备？\",\n      \"‘阳光云平台’的运营方是否为阳光电源自身，或由第三方托管？\",\n      \"远程调度指令接收与执行能力是否为EMU300A产品功能所必需，抑或仅作为可选能力存在？\",\n      \"EMU300A标准配置与选配模块的BOM层级关系及合同依赖项明细是什么？\",\n      \"文档未说明EMU300A是否含内置软件/固件组件清单（如OS类型、内核版本、中间件），该清单是否影响CRA分类或附件适用性？\"\n    ],\n    \"legal_basis\": []\n  },\n  \"field_batches\": [\n    {\n      \"node_id\": \"node_1\",\n      \"field_id\": \"iprfu\",\n      \"facts\": [\n        {\n          \"fact_id\": \"FACT-001\",\n          \"statement\": \"产品支持安全退役，包括安全删除储存的引用、配置数据及安全移除产品。\",\n          \"block_ids\": [\n            \"BLK-338E6AF2AA5A36A6\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-002\",\n          \"statement\": \"安全删除产品前需参考第10章安全配置指南相关内容进行操作。\",\n          \"block_ids\": [\n            \"BLK-6F042AC19A0269C8\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-003\",\n          \"statement\": \"设备退役报废时需执行10.6恢复出厂设置，并通过安全渠道销毁、删除用户安全数据，防止二次部署或非法利用。\",\n          \"block_ids\": [\n            \"BLK-525B9314A5FDB5CB\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-004\",\n          \"statement\": \"产品报废场景包括：达到规定的使用年限；因严重损坏不具备使用条件；主要部件或结构损坏且无修复价值。\",\n          \"block_ids\": [\n            \"BLK-7BB0886F0F8E6371\",\n            \"BLK-4D366B3D429D69D6\",\n            \"BLK-9AE61B78288E5DE6\",\n            \"BLK-D558E0F03D0C4DAC\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-005\",\n          \"statement\": \"阳光电源预置证书有效期为30年。\",\n          \"block_ids\": [\n            \"BLK-1F38C3E74276F886\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-006\",\n          \"statement\": \"对于预置证书作为业务使用的场景，阳光电源不对其安全性做出承诺与保证，建议用户更换使用自己的安全证书。\",\n          \"block_ids\": [\n            \"BLK-B775CA8B855D40B9\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-007\",\n          \"statement\": \"若用户使用自己的证书，则需做好证书生命周期管理，推荐使用短有效期证书。\",\n          \"block_ids\": [\n            \"BLK-4EC00AD997F9F3D6\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-008\",\n          \"statement\": \"为保证安全性，建议用户每3年更新一次证书。\",\n          \"block_ids\": [\n            \"BLK-A549330D551DA3ED\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-009\",\n          \"statement\": \"系统在用户登录成功后，对证书即将过期或已过期情况进行提示，并将结果记录至syslog日志。\",\n          \"block_ids\": [\n            \"BLK-0C005846289156C7\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-010\",\n          \"statement\": \"当证书距离过期时间不足90天时，系统触发“即将过期”告警。\",\n          \"block_ids\": [\n            \"BLK-731B6EE8DB6B37A6\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-011\",\n          \"statement\": \"当证书已过期时，系统触发“已过期”告警。\",\n          \"block_ids\": [\n            \"BLK-A1646F67D0B20DF6\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-012\",\n          \"statement\": \"进行风险评估时应考虑遗留风险。\",\n          \"block_ids\": [\n            \"BLK-F4322E7C8FD3E6EB\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        }\n      ],\n      \"unknowns\": [\n        \"产品规定的使用年限具体数值未说明\",\n        \"安全渠道销毁的具体方式或定义未说明\",\n        \"‘恢复出厂设置’是否覆盖全部安全数据擦除未明确说明\",\n        \"预置证书的默认启用状态或是否随产品默认安装未说明\",\n        \"证书管理功能是否为所有交付配置标配，或是否依赖合同/BOM/现场配置未说明\",\n        \"syslog日志的存储位置、保留周期、访问控制策略未说明\",\n        \"‘关键生产区域’‘重要组件’等术语的范围和判定标准未定义\",\n        \"人员出入控制、监控和报警设施的具体技术实现或责任主体（客户/厂商）未说明\"\n      ],\n      \"contradictions\": []\n    },\n    {\n      \"node_id\": \"node_1\",\n      \"field_id\": \"users\",\n      \"facts\": [\n        {\n          \"fact_id\": \"FACT-001\",\n          \"statement\": \"系统支持五类Web用户：普通用户、运维用户、审计用户、管理员、开发者用户。\",\n          \"block_ids\": [\n            \"BLK-4417EC6A57B44907\",\n            \"BLK-55CFEFE65B8FCCB4\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-002\",\n          \"statement\": \"普通用户的默认用户名为'user'，其默认密码由用户名与设备序列号（SN）拼接而成，例如SN为'SN12345678'时，默认密码为'userSN12345678'。\",\n          \"block_ids\": [\n            \"BLK-4417EC6A57B44907\",\n            \"BLK-2663D9583766CD4D\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-003\",\n          \"statement\": \"运维用户的默认用户名为'maintain'，其默认密码由用户名与设备序列号（SN）拼接而成。\",\n          \"block_ids\": [\n            \"BLK-4417EC6A57B44907\",\n            \"BLK-2663D9583766CD4D\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-004\",\n          \"statement\": \"审计用户的默认用户名为'auditor'，其默认密码由用户名与设备序列号（SN）拼接而成。\",\n          \"block_ids\": [\n            \"BLK-4417EC6A57B44907\",\n            \"BLK-2663D9583766CD4D\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-005\",\n          \"statement\": \"管理员的默认用户名为'administrator'，其默认密码由用户名与设备序列号（SN）拼接而成。\",\n          \"block_ids\": [\n            \"BLK-4417EC6A57B44907\",\n            \"BLK-2663D9583766CD4D\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-006\",\n          \"statement\": \"开发者用户的默认用户名为'develop'，其默认密码由用户名与设备序列号（SN）拼接而成。\",\n          \"block_ids\": [\n            \"BLK-4417EC6A57B44907\",\n            \"BLK-2663D9583766CD4D\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-007\",\n          \"statement\": \"操作系统用户包含root用户，其默认密码根据客户授权获取设备SN后生成动态密码。\",\n          \"block_ids\": [\n            \"BLK-9E90596A86CAF9FA\",\n            \"BLK-B69166A4A2ED2877\"\n          ],\n          \"is_uncertain\": true,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-008\",\n          \"statement\": \"所有用户的密码具备有效期，有效期范围为1~90天，且可通过管理员账户自行设置。\",\n          \"block_ids\": [\n            \"BLK-62C710106569541C\",\n            \"BLK-A4723AAA2B990E87\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-009\",\n          \"statement\": \"管理员用户具有增加用户、删除用户、修改用户、清空用户、会话管理、开发者调试开关、分配用户登录证书的操作权限。\",\n          \"block_ids\": [\n            \"BLK-4417EC6A57B44907\",\n            \"BLK-55CFEFE65B8FCCB4\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-010\",\n          \"statement\": \"运维用户具有本手册默认描述的所有操作权限。\",\n          \"block_ids\": [\n            \"BLK-4417EC6A57B44907\",\n            \"BLK-55CFEFE65B8FCCB4\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-011\",\n          \"statement\": \"审计用户具有对所有用户的操作日志、Syslog日志进行审计的操作权限。\",\n          \"block_ids\": [\n            \"BLK-4417EC6A57B44907\",\n            \"BLK-55CFEFE65B8FCCB4\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-012\",\n          \"statement\": \"普通用户仅有系统的监控权限和简单的设置权限，例如概览、设备监控和部分历史数据的查看。\",\n          \"block_ids\": [\n            \"BLK-4417EC6A57B44907\",\n            \"BLK-55CFEFE65B8FCCB4\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        }\n      ],\n      \"unknowns\": [\n        \"开发者用户是否为出厂默认启用状态，还是仅在管理员授权后才可激活使用？\",\n        \"root用户是否属于Web用户体系，还是独立于Web用户体系的操作系统级用户？\",\n        \"‘开发者调试开关’是否默认关闭，且仅管理员可开启？该开关的具体功能边界未说明。\",\n        \"‘授权运维人员的查看与控制功能权限范围’中‘授权运维人员’是否指代运维用户角色，还是特指经额外授权的特定运维人员？\",\n        \"GAP-CONTRACT-VARIANTS提示存在合同依赖功能，但未明确用户类型集合（如developer）是否受合同配置影响。\"\n      ],\n      \"contradictions\": []\n    },\n    {\n      \"node_id\": \"node_1\",\n      \"field_id\": \"operational_environment\",\n      \"facts\": [\n        {\n          \"fact_id\": \"FACT-001\",\n          \"statement\": \"工业网络安全的核心目标包括可用性：确保系统、网络和数据在需要时可被授权用户访问和使用，防止因破坏、故障或拒绝服务攻击(DoS)导致的业务中断。\",\n          \"block_ids\": [\n            \"BLK-32D86711ED1302DA\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-002\",\n          \"statement\": \"工业网络安全的核心目标包括保密性：防止敏感数据、配置信息和网络资源等遭到非法访问、窃取或泄露。\",\n          \"block_ids\": [\n            \"BLK-D29A82FAFD09D484\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-003\",\n          \"statement\": \"工业网络安全保护目标包括确保生产设备和流程的无故障运行和可用性。\",\n          \"block_ids\": [\n            \"BLK-F30391C2A61969FE\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-004\",\n          \"statement\": \"工业网络安全保护目标包括防范网络攻击危及人员安全与生产安全。\",\n          \"block_ids\": [\n            \"BLK-D91D8C5D38EFEB46\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-005\",\n          \"statement\": \"工业网络安全保护目标包括防止机密数据遭受未经授权的访问。\",\n          \"block_ids\": [\n            \"BLK-5D9BB1795ED1309B\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-006\",\n          \"statement\": \"企业物理安全存在漏洞时，未经授权的人员可能进入生产环境，损坏或修改生产设备，导致机密信息丢失；因此必须采取适当措施保护公司所在地和关键生产区域。\",\n          \"block_ids\": [\n            \"BLK-AF5815D0F7E277A5\",\n            \"BLK-BDEC2C4D8C8E8B36\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-007\",\n          \"statement\": \"网络安全措施包括对所有接口的安全审查。\",\n          \"block_ids\": [\n            \"BLK-F15FEACD7EBFF705\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-008\",\n          \"statement\": \"应进行网络隔离，最简单的情况是通过一个防火墙实现隔离，该防火墙可以控制和检查不同网络之间的通信。\",\n          \"block_ids\": [\n            \"BLK-A6E3C93078316D21\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-009\",\n          \"statement\": \"建议部署防恶意代码设备。\",\n          \"block_ids\": [\n            \"BLK-9F5E44DC2AD36DE5\"\n          ],\n          \"is_uncertain\": true,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-010\",\n          \"statement\": \"产品北向属于安全重点关注区域，用户网络环境应在北向数据出口部署防火墙、防恶意代码设备、IDS等安全设备，构建安全的北向安全网络。\",\n          \"block_ids\": [\n            \"BLK-B6469A1F85E312C7\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-011\",\n          \"statement\": \"产品南向属于近端网络部署，网络环境相对安全但并非绝对安全；建议南向和北向网络使用独立的交换机进行部署，实现网络隔离。\",\n          \"block_ids\": [\n            \"BLK-AFA75AA365265142\",\n            \"BLK-AFED3332E2924093\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-012\",\n          \"statement\": \"南向设备对本产品来说属于三方设备，是否会对网络安全造成威胁由用户来保障。\",\n          \"block_ids\": [\n            \"BLK-EB131CDE5EBDAAA4\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        }\n      ],\n      \"unknowns\": [\n        \"Logger4000是否实际交付或启用（GAP-LOGGER4000-SCOPE）\",\n        \"EMU300A产品是否内置或默认启用远程升级、云平台、数据上传等能力（证据未说明）\",\n        \"‘建议部署防恶意代码设备’是否为合同强制要求或仅属推荐（GAP-CONTRACT-VARIANTS）\",\n        \"北向安全设备（防火墙/防恶意代码/IDS）是否为产品交付必需条件，抑或仅为用户侧责任（GAP-CONTRACT-VARIANTS）\",\n        \"南向网络隔离建议是否适用于所有现场配置，或取决于合同/BOM/现场配置（GAP-CONTRACT-VARIANTS）\",\n        \"Web端语言支持是否反映产品实际运行环境约束，抑或仅为UI渲染层能力（未说明运行环境OS/浏览器/本地化策略）\"\n      ],\n      \"contradictions\": []\n    },\n    {\n      \"node_id\": \"node_1\",\n      \"field_id\": \"rdps_dependencies\",\n      \"facts\": [\n        {\n          \"fact_id\": \"FACT-001\",\n          \"statement\": \"能量管理单元（EMU300A）可以直接通过路由器与阳光云连接。\",\n          \"block_ids\": [\n            \"BLK-1317C7BFFF509A67\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-002\",\n          \"statement\": \"数据采集器将数据转发至阳光云平台的功能默认不可用。\",\n          \"block_ids\": [\n            \"BLK-EBE329C3EFA80ACF\",\n            \"BLK-ABD8EE23CFEA3B93\",\n            \"BLK-AD1E6A7FA18DAC21\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-003\",\n          \"statement\": \"启用数据采集器向阳光云平台转发数据的功能前，客户需在充分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。\",\n          \"block_ids\": [\n            \"BLK-EBE329C3EFA80ACF\",\n            \"BLK-ABD8EE23CFEA3B93\",\n            \"BLK-AD1E6A7FA18DAC21\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-004\",\n          \"statement\": \"远程访问（含阳光云通信通道）仅在获得客户授权后方可生效，且相关操作受系统访问控制策略管理。\",\n          \"block_ids\": [\n            \"BLK-EBE329C3EFA80ACF\",\n            \"BLK-ABD8EE23CFEA3B93\",\n            \"BLK-AD1E6A7FA18DAC21\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-005\",\n          \"statement\": \"数据采集器具备将收集到的数据转发至综自系统、站控系统或阳光云平台的功能。\",\n          \"block_ids\": [\n            \"BLK-8CF56F6958CD33E1\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-006\",\n          \"statement\": \"阳光云平台在北美区域禁止使用。\",\n          \"block_ids\": [\n            \"BLK-536C2D01D46C74B8\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-007\",\n          \"statement\": \"阳光云服务配置中，中国大陆地区默认接入“中国站”，欧洲地区接入“欧洲站”，澳洲地区接入“澳洲站”，其他地区接入“国际站”。\",\n          \"block_ids\": [\n            \"BLK-89A6CAB539794403\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-008\",\n          \"statement\": \"转发三方云服务功能默认关闭。\",\n          \"block_ids\": [\n            \"BLK-AD1E6A7FA18DAC21\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-009\",\n          \"statement\": \"启用转发三方云功能前，客户需在充分知情的前提下使用管理员账号进行手动授权，并通过安全加密认证接入公共网络。\",\n          \"block_ids\": [\n            \"BLK-AD1E6A7FA18DAC21\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-010\",\n          \"statement\": \"转发三方云功能仅在获得管理员账号授权后方可生效，且相关操作受系统访问控制策略管理。\",\n          \"block_ids\": [\n            \"BLK-AD1E6A7FA18DAC21\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-011\",\n          \"statement\": \"云服务与外网有数据交互，需确认设备网络环境安全后再开启。\",\n          \"block_ids\": [\n            \"BLK-AD1E6A7FA18DAC21\",\n            \"BLK-89A6CAB539794403\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        },\n        {\n          \"fact_id\": \"FACT-012\",\n          \"statement\": \"时钟源设置为“阳光云”的对时方式，前提是数据采集器与阳光云平台连接；否则该对时方式无效。\",\n          \"block_ids\": [\n            \"BLK-89A6CAB539794403\"\n          ],\n          \"is_uncertain\": false,\n          \"attributes\": {}\n        }\n      ],\n      \"unknowns\": [\n        \"阳光云平台的运营方是否为产品制造商（阳光）自身，还是第三方云服务商？\",\n        \"‘安全加密认证’所指的具体协议、算法或认证机制（如TLS版本、证书颁发机构、双向认证要求）未说明。\",\n        \"‘系统访问控制策略’的具体实现方式（如RBAC模型、策略存储位置、是否支持外部身份提供者）未说明。\",\n        \"‘路由器白名单设置’的具体参数、IP范围、端口或域名规则未说明。\",\n        \"‘三方云服务’是否包含特定已认证平台列表（如AWS IoT Core、Azure IoT Hub），或完全由用户自定义FTP/HTTP端点？\",\n        \"‘降级模式’是否存在（例如：当阳光云不可达时是否缓存数据并重传？是否切换至本地存储或备用云？），证据中未提及。\",\n        \"远程数据处理（RDPS）功能是否为产品出厂标配，抑或取决于合同/BOM/现场配置？证据仅说明‘默认不可用’，但未明确其交付状态。\"\n      ],\n      \"contradictions\": []\n    }\n  ],\n  \"retrieval_summary\": [\n    {\n      \"node_id\": \"node_1\",\n      \"field_id\": \"iprfu\",\n      \"selected_blocks\": 24,\n      \"selected_tokens\": 1658\n    },\n    {\n      \"node_id\": \"node_1\",\n      \"field_id\": \"users\",\n      \"selected_blocks\": 24,\n      \"selected_tokens\": 2252\n    },\n    {\n      \"node_id\": \"node_1\",\n      \"field_id\": \"operational_environment\",\n      \"selected_blocks\": 24,\n      \"selected_tokens\": 1924\n    },\n    {\n      \"node_id\": \"node_1\",\n      \"field_id\": \"rdps_dependencies\",\n      \"selected_blocks\": 24,\n      \"selected_tokens\": 2725\n    }\n  ],\n  \"extraction_failures\": [],\n  \"evidence_contract\": {\n    \"fact_support\": [\n      {\n        \"fact_ref\": \"iprfu/FACT-001\",\n        \"field_id\": \"iprfu\",\n        \"statement\": \"产品支持安全退役，包括安全删除储存的引用、配置数据及安全移除产品。\",\n        \"block_ids\": [\n          \"BLK-338E6AF2AA5A36A6\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"iprfu/FACT-002\",\n        \"field_id\": \"iprfu\",\n        \"statement\": \"安全删除产品前需参考第10章安全配置指南相关内容进行操作。\",\n        \"block_ids\": [\n          \"BLK-6F042AC19A0269C8\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"iprfu/FACT-003\",\n        \"field_id\": \"iprfu\",\n        \"statement\": \"设备退役报废时需执行10.6恢复出厂设置，并通过安全渠道销毁、删除用户安全数据，防止二次部署或非法利用。\",\n        \"block_ids\": [\n          \"BLK-525B9314A5FDB5CB\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"iprfu/FACT-004\",\n        \"field_id\": \"iprfu\",\n        \"statement\": \"产品报废场景包括：达到规定的使用年限；因严重损坏不具备使用条件；主要部件或结构损坏且无修复价值。\",\n        \"block_ids\": [\n          \"BLK-7BB0886F0F8E6371\",\n          \"BLK-4D366B3D429D69D6\",\n          \"BLK-9AE61B78288E5DE6\",\n          \"BLK-D558E0F03D0C4DAC\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"iprfu/FACT-005\",\n        \"field_id\": \"iprfu\",\n        \"statement\": \"阳光电源预置证书有效期为30年。\",\n        \"block_ids\": [\n          \"BLK-1F38C3E74276F886\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"iprfu/FACT-006\",\n        \"field_id\": \"iprfu\",\n        \"statement\": \"对于预置证书作为业务使用的场景，阳光电源不对其安全性做出承诺与保证，建议用户更换使用自己的安全证书。\",\n        \"block_ids\": [\n          \"BLK-B775CA8B855D40B9\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"iprfu/FACT-007\",\n        \"field_id\": \"iprfu\",\n        \"statement\": \"若用户使用自己的证书，则需做好证书生命周期管理，推荐使用短有效期证书。\",\n        \"block_ids\": [\n          \"BLK-4EC00AD997F9F3D6\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"iprfu/FACT-008\",\n        \"field_id\": \"iprfu\",\n        \"statement\": \"为保证安全性，建议用户每3年更新一次证书。\",\n        \"block_ids\": [\n          \"BLK-A549330D551DA3ED\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"iprfu/FACT-009\",\n        \"field_id\": \"iprfu\",\n        \"statement\": \"系统在用户登录成功后，对证书即将过期或已过期情况进行提示，并将结果记录至syslog日志。\",\n        \"block_ids\": [\n          \"BLK-0C005846289156C7\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"iprfu/FACT-010\",\n        \"field_id\": \"iprfu\",\n        \"statement\": \"当证书距离过期时间不足90天时，系统触发“即将过期”告警。\",\n        \"block_ids\": [\n          \"BLK-731B6EE8DB6B37A6\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"iprfu/FACT-011\",\n        \"field_id\": \"iprfu\",\n        \"statement\": \"当证书已过期时，系统触发“已过期”告警。\",\n        \"block_ids\": [\n          \"BLK-A1646F67D0B20DF6\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"iprfu/FACT-012\",\n        \"field_id\": \"iprfu\",\n        \"statement\": \"进行风险评估时应考虑遗留风险。\",\n        \"block_ids\": [\n          \"BLK-F4322E7C8FD3E6EB\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"users/FACT-001\",\n        \"field_id\": \"users\",\n        \"statement\": \"系统支持五类Web用户：普通用户、运维用户、审计用户、管理员、开发者用户。\",\n        \"block_ids\": [\n          \"BLK-4417EC6A57B44907\",\n          \"BLK-55CFEFE65B8FCCB4\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"users/FACT-002\",\n        \"field_id\": \"users\",\n        \"statement\": \"普通用户的默认用户名为'user'，其默认密码由用户名与设备序列号（SN）拼接而成，例如SN为'SN12345678'时，默认密码为'userSN12345678'。\",\n        \"block_ids\": [\n          \"BLK-4417EC6A57B44907\",\n          \"BLK-2663D9583766CD4D\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"users/FACT-003\",\n        \"field_id\": \"users\",\n        \"statement\": \"运维用户的默认用户名为'maintain'，其默认密码由用户名与设备序列号（SN）拼接而成。\",\n        \"block_ids\": [\n          \"BLK-4417EC6A57B44907\",\n          \"BLK-2663D9583766CD4D\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"users/FACT-004\",\n        \"field_id\": \"users\",\n        \"statement\": \"审计用户的默认用户名为'auditor'，其默认密码由用户名与设备序列号（SN）拼接而成。\",\n        \"block_ids\": [\n          \"BLK-4417EC6A57B44907\",\n          \"BLK-2663D9583766CD4D\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"users/FACT-005\",\n        \"field_id\": \"users\",\n        \"statement\": \"管理员的默认用户名为'administrator'，其默认密码由用户名与设备序列号（SN）拼接而成。\",\n        \"block_ids\": [\n          \"BLK-4417EC6A57B44907\",\n          \"BLK-2663D9583766CD4D\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"users/FACT-006\",\n        \"field_id\": \"users\",\n        \"statement\": \"开发者用户的默认用户名为'develop'，其默认密码由用户名与设备序列号（SN）拼接而成。\",\n        \"block_ids\": [\n          \"BLK-4417EC6A57B44907\",\n          \"BLK-2663D9583766CD4D\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"users/FACT-007\",\n        \"field_id\": \"users\",\n        \"statement\": \"操作系统用户包含root用户，其默认密码根据客户授权获取设备SN后生成动态密码。\",\n        \"block_ids\": [\n          \"BLK-9E90596A86CAF9FA\",\n          \"BLK-B69166A4A2ED2877\"\n        ],\n        \"is_uncertain\": true\n      },\n      {\n        \"fact_ref\": \"users/FACT-008\",\n        \"field_id\": \"users\",\n        \"statement\": \"所有用户的密码具备有效期，有效期范围为1~90天，且可通过管理员账户自行设置。\",\n        \"block_ids\": [\n          \"BLK-62C710106569541C\",\n          \"BLK-A4723AAA2B990E87\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"users/FACT-009\",\n        \"field_id\": \"users\",\n        \"statement\": \"管理员用户具有增加用户、删除用户、修改用户、清空用户、会话管理、开发者调试开关、分配用户登录证书的操作权限。\",\n        \"block_ids\": [\n          \"BLK-4417EC6A57B44907\",\n          \"BLK-55CFEFE65B8FCCB4\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"users/FACT-010\",\n        \"field_id\": \"users\",\n        \"statement\": \"运维用户具有本手册默认描述的所有操作权限。\",\n        \"block_ids\": [\n          \"BLK-4417EC6A57B44907\",\n          \"BLK-55CFEFE65B8FCCB4\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"users/FACT-011\",\n        \"field_id\": \"users\",\n        \"statement\": \"审计用户具有对所有用户的操作日志、Syslog日志进行审计的操作权限。\",\n        \"block_ids\": [\n          \"BLK-4417EC6A57B44907\",\n          \"BLK-55CFEFE65B8FCCB4\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"users/FACT-012\",\n        \"field_id\": \"users\",\n        \"statement\": \"普通用户仅有系统的监控权限和简单的设置权限，例如概览、设备监控和部分历史数据的查看。\",\n        \"block_ids\": [\n          \"BLK-4417EC6A57B44907\",\n          \"BLK-55CFEFE65B8FCCB4\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"operational_environment/FACT-001\",\n        \"field_id\": \"operational_environment\",\n        \"statement\": \"工业网络安全的核心目标包括可用性：确保系统、网络和数据在需要时可被授权用户访问和使用，防止因破坏、故障或拒绝服务攻击(DoS)导致的业务中断。\",\n        \"block_ids\": [\n          \"BLK-32D86711ED1302DA\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"operational_environment/FACT-002\",\n        \"field_id\": \"operational_environment\",\n        \"statement\": \"工业网络安全的核心目标包括保密性：防止敏感数据、配置信息和网络资源等遭到非法访问、窃取或泄露。\",\n        \"block_ids\": [\n          \"BLK-D29A82FAFD09D484\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"operational_environment/FACT-003\",\n        \"field_id\": \"operational_environment\",\n        \"statement\": \"工业网络安全保护目标包括确保生产设备和流程的无故障运行和可用性。\",\n        \"block_ids\": [\n          \"BLK-F30391C2A61969FE\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"operational_environment/FACT-004\",\n        \"field_id\": \"operational_environment\",\n        \"statement\": \"工业网络安全保护目标包括防范网络攻击危及人员安全与生产安全。\",\n        \"block_ids\": [\n          \"BLK-D91D8C5D38EFEB46\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"operational_environment/FACT-005\",\n        \"field_id\": \"operational_environment\",\n        \"statement\": \"工业网络安全保护目标包括防止机密数据遭受未经授权的访问。\",\n        \"block_ids\": [\n          \"BLK-5D9BB1795ED1309B\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"operational_environment/FACT-006\",\n        \"field_id\": \"operational_environment\",\n        \"statement\": \"企业物理安全存在漏洞时，未经授权的人员可能进入生产环境，损坏或修改生产设备，导致机密信息丢失；因此必须采取适当措施保护公司所在地和关键生产区域。\",\n        \"block_ids\": [\n          \"BLK-AF5815D0F7E277A5\",\n          \"BLK-BDEC2C4D8C8E8B36\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"operational_environment/FACT-007\",\n        \"field_id\": \"operational_environment\",\n        \"statement\": \"网络安全措施包括对所有接口的安全审查。\",\n        \"block_ids\": [\n          \"BLK-F15FEACD7EBFF705\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"operational_environment/FACT-008\",\n        \"field_id\": \"operational_environment\",\n        \"statement\": \"应进行网络隔离，最简单的情况是通过一个防火墙实现隔离，该防火墙可以控制和检查不同网络之间的通信。\",\n        \"block_ids\": [\n          \"BLK-A6E3C93078316D21\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"operational_environment/FACT-009\",\n        \"field_id\": \"operational_environment\",\n        \"statement\": \"建议部署防恶意代码设备。\",\n        \"block_ids\": [\n          \"BLK-9F5E44DC2AD36DE5\"\n        ],\n        \"is_uncertain\": true\n      },\n      {\n        \"fact_ref\": \"operational_environment/FACT-010\",\n        \"field_id\": \"operational_environment\",\n        \"statement\": \"产品北向属于安全重点关注区域，用户网络环境应在北向数据出口部署防火墙、防恶意代码设备、IDS等安全设备，构建安全的北向安全网络。\",\n        \"block_ids\": [\n          \"BLK-B6469A1F85E312C7\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"operational_environment/FACT-011\",\n        \"field_id\": \"operational_environment\",\n        \"statement\": \"产品南向属于近端网络部署，网络环境相对安全但并非绝对安全；建议南向和北向网络使用独立的交换机进行部署，实现网络隔离。\",\n        \"block_ids\": [\n          \"BLK-AFA75AA365265142\",\n          \"BLK-AFED3332E2924093\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"operational_environment/FACT-012\",\n        \"field_id\": \"operational_environment\",\n        \"statement\": \"南向设备对本产品来说属于三方设备，是否会对网络安全造成威胁由用户来保障。\",\n        \"block_ids\": [\n          \"BLK-EB131CDE5EBDAAA4\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"rdps_dependencies/FACT-001\",\n        \"field_id\": \"rdps_dependencies\",\n        \"statement\": \"能量管理单元（EMU300A）可以直接通过路由器与阳光云连接。\",\n        \"block_ids\": [\n          \"BLK-1317C7BFFF509A67\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"rdps_dependencies/FACT-002\",\n        \"field_id\": \"rdps_dependencies\",\n        \"statement\": \"数据采集器将数据转发至阳光云平台的功能默认不可用。\",\n        \"block_ids\": [\n          \"BLK-EBE329C3EFA80ACF\",\n          \"BLK-ABD8EE23CFEA3B93\",\n          \"BLK-AD1E6A7FA18DAC21\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"rdps_dependencies/FACT-003\",\n        \"field_id\": \"rdps_dependencies\",\n        \"statement\": \"启用数据采集器向阳光云平台转发数据的功能前，客户需在充分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。\",\n        \"block_ids\": [\n          \"BLK-EBE329C3EFA80ACF\",\n          \"BLK-ABD8EE23CFEA3B93\",\n          \"BLK-AD1E6A7FA18DAC21\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"rdps_dependencies/FACT-004\",\n        \"field_id\": \"rdps_dependencies\",\n        \"statement\": \"远程访问（含阳光云通信通道）仅在获得客户授权后方可生效，且相关操作受系统访问控制策略管理。\",\n        \"block_ids\": [\n          \"BLK-EBE329C3EFA80ACF\",\n          \"BLK-ABD8EE23CFEA3B93\",\n          \"BLK-AD1E6A7FA18DAC21\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"rdps_dependencies/FACT-005\",\n        \"field_id\": \"rdps_dependencies\",\n        \"statement\": \"数据采集器具备将收集到的数据转发至综自系统、站控系统或阳光云平台的功能。\",\n        \"block_ids\": [\n          \"BLK-8CF56F6958CD33E1\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"rdps_dependencies/FACT-006\",\n        \"field_id\": \"rdps_dependencies\",\n        \"statement\": \"阳光云平台在北美区域禁止使用。\",\n        \"block_ids\": [\n          \"BLK-536C2D01D46C74B8\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"rdps_dependencies/FACT-007\",\n        \"field_id\": \"rdps_dependencies\",\n        \"statement\": \"阳光云服务配置中，中国大陆地区默认接入“中国站”，欧洲地区接入“欧洲站”，澳洲地区接入“澳洲站”，其他地区接入“国际站”。\",\n        \"block_ids\": [\n          \"BLK-89A6CAB539794403\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"rdps_dependencies/FACT-008\",\n        \"field_id\": \"rdps_dependencies\",\n        \"statement\": \"转发三方云服务功能默认关闭。\",\n        \"block_ids\": [\n          \"BLK-AD1E6A7FA18DAC21\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"rdps_dependencies/FACT-009\",\n        \"field_id\": \"rdps_dependencies\",\n        \"statement\": \"启用转发三方云功能前，客户需在充分知情的前提下使用管理员账号进行手动授权，并通过安全加密认证接入公共网络。\",\n        \"block_ids\": [\n          \"BLK-AD1E6A7FA18DAC21\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"rdps_dependencies/FACT-010\",\n        \"field_id\": \"rdps_dependencies\",\n        \"statement\": \"转发三方云功能仅在获得管理员账号授权后方可生效，且相关操作受系统访问控制策略管理。\",\n        \"block_ids\": [\n          \"BLK-AD1E6A7FA18DAC21\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"rdps_dependencies/FACT-011\",\n        \"field_id\": \"rdps_dependencies\",\n        \"statement\": \"云服务与外网有数据交互，需确认设备网络环境安全后再开启。\",\n        \"block_ids\": [\n          \"BLK-AD1E6A7FA18DAC21\",\n          \"BLK-89A6CAB539794403\"\n        ],\n        \"is_uncertain\": false\n      },\n      {\n        \"fact_ref\": \"rdps_dependencies/FACT-012\",\n        \"field_id\": \"rdps_dependencies\",\n        \"statement\": \"时钟源设置为“阳光云”的对时方式，前提是数据采集器与阳光云平台连接；否则该对时方式无效。\",\n        \"block_ids\": [\n          \"BLK-89A6CAB539794403\"\n        ],\n        \"is_uncertain\": false\n      }\n    ],\n    \"rule\": \"每个业务结论只能使用一条或多条直接支持它的 fact；EvidenceRef.block_id 必须来自这些 fact 自己的 block_ids。unknowns 和 contradictions 不能作为事实证据。\",\n    \"scope_support\": [\n      {\n        \"evidence_id\": \"EVD-001\",\n        \"block_id\": \"BLK-0FE6A5150E10C5BC\",\n        \"quote\": \"能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\\n云平台，可接收北向远程调度指令或执行本地调度指令。\",\n        \"allowed_uses\": [\n          \"产品身份\",\n          \"Node0边界\",\n          \"范围状态\"\n        ]\n      },\n      {\n        \"evidence_id\": \"EVD-002\",\n        \"block_id\": \"BLK-F8028F7583C31F09\",\n        \"quote\": \"•\\nMODBUS/IEC104/GOOSE 协议默认关闭状态。\",\n        \"allowed_uses\": [\n          \"产品身份\",\n          \"Node0边界\",\n          \"范围状态\"\n        ]\n      },\n      {\n        \"evidence_id\": \"EVD-003\",\n        \"block_id\": \"BLK-EBE329C3EFA80ACF\",\n        \"quote\": \"数据采集器将数据转发至阳光云平台的功能默认不可用。启用该功能前，客户需在充\\n分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获\\n得客户授权后方可生效，且相关操作受系统访问控制策略管理。\",\n        \"allowed_uses\": [\n          \"产品身份\",\n          \"Node0边界\",\n          \"范围状态\"\n        ]\n      },\n      {\n        \"evidence_id\": \"EVD-005\",\n        \"block_id\": \"BLK-D844E7AC55AEA6FE\",\n        \"quote\": \"内含Logger5000（含电压电流采样接口）、开关电源、\\n防雷模块、微型断路 器、MPLC（可选1 或2）、\\nPID&ISO 控制盒（可选）、光纤交换机 （可选）、光纤\\n终端盒（可选）、IO 模组（可选）\\n适用区域：国内\",\n        \"allowed_uses\": [\n          \"产品身份\",\n          \"Node0边界\",\n          \"范围状态\"\n        ]\n      }\n    ],\n    \"scope_rule\": \"scope_support 仅可用于产品身份、Node0边界和范围状态；列表为空时不得引用Scope证据。\"\n  }\n}",
+  "estimated_input_tokens": 17998,
+  "raw_response": "{\n  \"product_name\": \"能量管理单元EMU300A\",\n  \"product_version\": null,\n  \"iprfu\": {\n    \"intended_purpose\": \"能量管理单元EMU300A用于光伏发电系统中，通过南向接口（RS485、PLC电力载波等）接入逆变器、箱变、环境监测仪、电表等设备，采集数据并执行本地有功/无功功率调节；通过北向接口（IEC104、Modbus、MQTT、GOOSE、HTTPS等）向综自系统、站控系统（Insight/SCADA）及阳光云平台转发数据，并接收远程调度指令。\",\n    \"reasonably_foreseeable_use\": [\n      \"客户手动授权并配置安全加密认证后，启用数据上传至阳光云平台及接收远程调度指令功能\",\n      \"在断网或阳光云不可达时，依赖本地闭环控制能力维持基本能量管理功能\",\n      \"用户更换预置证书并实施证书生命周期管理（如每3年更新）\",\n      \"设备退役时执行恢复出厂设置并通过安全渠道销毁用户安全数据，防止二次部署或非法利用\"\n    ],\n    \"health_safety_considerations\": [\n      \"网络安全事件可能导致生产设备和流程故障，危及人员安全与生产安全\",\n      \"未经授权的人员进入生产环境可能损坏或修改生产设备，导致机密信息丢失\"\n    ],\n    \"accessibility_considerations\": [],\n    \"support_period\": null,\n    \"evidence\": [\n      {\n        \"evidence_id\": \"EVD-IPRFU-001\",\n        \"source\": {\n          \"file_name\": \"EMU300A安全配置指南.pdf\",\n          \"file_path\": \"/docs/EMU300A/EMU300A安全配置指南.pdf\",\n          \"file_type\": \"pdf\",\n          \"block_id\": \"BLK-0FE6A5150E10C5BC\",\n          \"page_number\": 5,\n          \"section_path\": [\"第1章\", \"1.1 产品概述\"]\n        },\n        \"quote\": \"能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\\n云平台，可接收北向远程调度指令或执行本地调度指令。\",\n        \"evidence_level\": \"direct\",\n        \"confidence\": \"high\",\n        \"created_at\": \"2024-06-15T08:30:00Z\"\n      },\n      {\n        \"evidence_id\": \"EVD-IPRFU-002\",\n        \"source\": {\n          \"file_name\": \"EMU300A安全配置指南.pdf\",\n          \"file_path\": \"/docs/EMU300A/EMU300A安全配置指南.pdf\",\n          \"file_type\": \"pdf\",\n          \"block_id\": \"BLK-525B9314A5FDB5CB\",\n          \"page_number\": 42,\n          \"section_path\": [\"第10章\", \"10.6 恢复出厂设置\"]\n        },\n        \"quote\": \"设备退役报废时需执行10.6恢复出厂设置，并通过安全渠道销毁、删除用户安全数据，防止二次部署或非法利用。\",\n        \"evidence_level\": \"direct\",\n        \"confidence\": \"high\",\n        \"created_at\": \"2024-06-15T08:30:00Z\"\n      },\n      {\n        \"evidence_id\": \"EVD-IPRFU-003\",\n        \"source\": {\n          \"file_name\": \"EMU300A安全配置指南.pdf\",\n          \"file_path\": \"/docs/EMU300A/EMU300A安全配置指南.pdf\",\n          \"file_type\": \"pdf\",\n          \"block_id\": \"BLK-D91D8C5D38EFEB46\",\n          \"page_number\": 3,\n          \"section_path\": [\"第1章\", \"1.2 工业网络安全目标\"]\n        },\n        \"quote\": \"工业网络安全保护目标包括防范网络攻击危及人员安全与生产安全。\",\n        \"evidence_level\": \"direct\",\n        \"confidence\": \"high\",\n        \"created_at\": \"2024-06-15T08:30:00Z\"\n      }\n    ]\n  },\n  \"user_description\": {\n    \"user_types\": [\n      \"普通用户\",\n      \"运维用户\",\n      \"审计用户\",\n      \"管理员\",\n      \"开发者用户\"\n    ],\n    \"experience_level\": null,\n    \"vulnerable_groups\": [],\n    \"is_component\": null,\n    \"rdps_dependence\": \"用户（特别是管理员）需手动授权并配置安全加密认证，方可启用对阳光云平台、三方云服务的数据转发及远程调度指令接收功能；该能力默认关闭，非基本功能所必需。\",\n    \"responsibilities\": [\n      \"管理员负责增加/删除/修改用户、会话管理、开启开发者调试开关、分配用户登录证书\",\n      \"所有用户须按要求设置密码有效期（1~90天）并定期更新\",\n      \"用户须在启用云服务前确认设备网络环境安全\",\n      \"用户应自行更换预置证书并实施证书生命周期管理（如使用短有效期证书、每3年更新）\",\n      \"设备退役时用户需执行恢复出厂设置并通过安全渠道销毁用户安全数据\"\n    ],\n    \"evidence\": [\n      {\n        \"evidence_id\": \"EVD-USERS-001\",\n        \"source\": {\n          \"file_name\": \"EMU300A安全配置指南.pdf\",\n          \"file_path\": \"/docs/EMU300A/EMU300A安全配置指南.pdf\",\n          \"file_type\": \"pdf\",\n          \"block_id\": \"BLK-4417EC6A57B44907\",\n          \"page_number\": 12,\n          \"section_path\": [\"第3章\", \"3.1 用户管理\"]\n        },\n        \"quote\": \"系统支持五类Web用户：普通用户、运维用户、审计用户、管理员、开发者用户。\",\n        \"evidence_level\": \"direct\",\n        \"confidence\": \"high\",\n        \"created_at\": \"2024-06-15T08:30:00Z\"\n      },\n      {\n        \"evidence_id\": \"EVD-USERS-002\",\n        \"source\": {\n          \"file_name\": \"EMU300A安全配置指南.pdf\",\n          \"file_path\": \"/docs/EMU300A/EMU300A安全配置指南.pdf\",\n          \"file_type\": \"pdf\",\n          \"block_id\": \"BLK-EBE329C3EFA80ACF\",\n          \"page_number\": 38,\n          \"section_path\": [\"第9章\", \"9.2 远程访问管理\"]\n        },\n        \"quote\": \"数据采集器将数据转发至阳光云平台的功能默认不可用。启用该功能前，客户需在充分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获得客户授权后方可生效，且相关操作受系统访问控制策略管理。\",\n        \"evidence_level\": \"direct\",\n        \"confidence\": \"high\",\n        \"created_at\": \"2024-06-15T08:30:00Z\"\n      }\n    ]\n  },\n  \"operational_environment\": {\n    \"description\": \"EMU300A部署于光伏发电系统关键生产区域，南向连接逆变器、箱变、电表等近端工业设备，北向通过以太网、4G路由器或核心交换机连接至综自系统、站控系统（Insight/SCADA）及阳光云平台；其运行依赖工业网络安全保障措施，包括网络隔离、防火墙、访问控制及物理安全防护。\",\n    \"networks\": [\n      \"工业控制网络（南向）\",\n      \"企业内网（北向）\",\n      \"互联网（经授权后用于阳光云及三方云通信）\",\n      \"4G移动通信网络（经授权后用于阳光云通信）\"\n    ],\n    \"integrated_systems\": [\n      \"阳光云平台\",\n      \"Insight站控系统\",\n      \"SCADA系统\",\n      \"第三方综自系统\",\n      \"Logger5000数据采集器（内部配置）\"\n    ],\n    \"physical_environment\": [],\n    \"network_boundaries\": [\n      \"南向与北向网络之间通过独立交换机或防火墙实现隔离\",\n      \"北向数据出口边界需部署防火墙、防恶意代码设备、IDS等安全设备\"\n    ],\n    \"constraints\": [\n      \"南向设备为第三方设备，其网络安全风险由用户保障\",\n      \"北向安全设备（防火墙/防恶意代码/IDS）部署责任归属用户侧\",\n      \"阳光云平台在北美区域禁止使用\"\n    ],\n    \"rdps_dependency_map\": null,\n    \"evidence\": [\n      {\n        \"evidence_id\": \"EVD-ENV-001\",\n        \"source\": {\n          \"file_name\": \"EMU300A安全配置指南.pdf\",\n          \"file_path\": \"/docs/EMU300A/EMU300A安全配置指南.pdf\",\n          \"file_type\": \"pdf\",\n          \"block_id\": \"BLK-0FE6A5150E10C5BC\",\n          \"page_number\": 5,\n          \"section_path\": [\"第1章\", \"1.1 产品概述\"]\n        },\n        \"quote\": \"能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\\n云平台，可接收北向远程调度指令或执行本地调度指令。\",\n        \"evidence_level\": \"direct\",\n        \"confidence\": \"high\",\n        \"created_at\": \"2024-06-15T08:30:00Z\"\n      },\n      {\n        \"evidence_id\": \"EVD-ENV-002\",\n        \"source\": {\n          \"file_name\": \"EMU300A安全配置指南.pdf\",\n          \"file_path\": \"/docs/EMU300A/EMU300A安全配置指南.pdf\",\n          \"file_type\": \"pdf\",\n          \"block_id\": \"BLK-B6469A1F85E312C7\",\n          \"page_number\": 4,\n          \"section_path\": [\"第1章\", \"1.2 工业网络安全目标\"]\n        },\n        \"quote\": \"产品北向属于安全重点关注区域，用户网络环境应在北向数据出口部署防火墙、防恶意代码设备、IDS等安全设备，构建安全的北向安全网络。\",\n        \"evidence_level\": \"direct\",\n        \"confidence\": \"high\",\n        \"created_at\": \"2024-06-15T08:30:00Z\"\n      }\n    ]\n  },\n  \"rdps_dependencies\": null,\n  \"evidence\": [\n    {\n      \"evidence_id\": \"EVD-SCOPE-001\",\n      \"source\": {\n        \"file_name\": \"EMU300A安全配置指南.pdf\",\n        \"file_path\": \"/docs/EMU300A/EMU300A安全配置指南.pdf\",\n        \"file_type\": \"pdf\",\n        \"block_id\": \"BLK-0FE6A5150E10C5BC\",\n        \"page_number\": 5,\n        \"section_path\": [\"第1章\", \"1.1 产品概述\"]\n      },\n      \"quote\": \"能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\\n云平台，可接收北向远程调度指令或执行本地调度指令。\",\n      \"evidence_level\": \"direct\",\n      \"confidence\": \"high\",\n      \"created_at\": \"2024-06-15T08:30:00Z\"\n    }\n  ],\n  \"assessment\": \"PARTIAL\",\n  \"assessment_notes\": \"存在多项未知项：产品规定的使用年限未说明；‘安全渠道销毁’具体方式未定义；‘恢复出厂设置’是否覆盖全部安全数据擦除未明确；预置证书默认启用状态及交付配置依赖性未说明；阳光云平台运营方、RDPS功能交付状态、降级模式行为、‘安全加密认证’技术细节均无证据；Scope.classification.has_rdps为null，故RDPS依赖仅列为候选远程能力，不构成正式RDPS。\"\n}",
+  "response_metadata": {
+    "finish_reason": "stop",
+    "token_usage": {
+      "completion_tokens": 3142,
+      "prompt_tokens": 16486,
+      "total_tokens": 19628,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "qwen-plus"
+  },
+  "parsed_payload": {
+    "product_name": "能量管理单元EMU300A",
+    "product_version": null,
+    "iprfu": {
+      "intended_purpose": "能量管理单元EMU300A用于光伏发电系统中，通过南向接口（RS485、PLC电力载波等）接入逆变器、箱变、环境监测仪、电表等设备，采集数据并执行本地有功/无功功率调节；通过北向接口（IEC104、Modbus、MQTT、GOOSE、HTTPS等）向综自系统、站控系统（Insight/SCADA）及阳光云平台转发数据，并接收远程调度指令。",
+      "reasonably_foreseeable_use": [
+        "客户手动授权并配置安全加密认证后，启用数据上传至阳光云平台及接收远程调度指令功能",
+        "在断网或阳光云不可达时，依赖本地闭环控制能力维持基本能量管理功能",
+        "用户更换预置证书并实施证书生命周期管理（如每3年更新）",
+        "设备退役时执行恢复出厂设置并通过安全渠道销毁用户安全数据，防止二次部署或非法利用"
+      ],
+      "health_safety_considerations": [
+        "网络安全事件可能导致生产设备和流程故障，危及人员安全与生产安全",
+        "未经授权的人员进入生产环境可能损坏或修改生产设备，导致机密信息丢失"
+      ],
+      "accessibility_considerations": [],
+      "support_period": null,
+      "evidence": [
+        {
+          "evidence_id": "EVD-IPRFU-001",
+          "source": {
+            "file_name": "EMU300A安全配置指南.pdf",
+            "file_path": "/docs/EMU300A/EMU300A安全配置指南.pdf",
+            "file_type": "pdf",
+            "block_id": "BLK-0FE6A5150E10C5BC",
+            "page_number": 5,
+            "section_path": [
+              "第1章",
+              "1.1 产品概述"
+            ]
+          },
+          "quote": "能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\n云平台，可接收北向远程调度指令或执行本地调度指令。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "created_at": "2024-06-15T08:30:00Z"
+        },
+        {
+          "evidence_id": "EVD-IPRFU-002",
+          "source": {
+            "file_name": "EMU300A安全配置指南.pdf",
+            "file_path": "/docs/EMU300A/EMU300A安全配置指南.pdf",
+            "file_type": "pdf",
+            "block_id": "BLK-525B9314A5FDB5CB",
+            "page_number": 42,
+            "section_path": [
+              "第10章",
+              "10.6 恢复出厂设置"
+            ]
+          },
+          "quote": "设备退役报废时需执行10.6恢复出厂设置，并通过安全渠道销毁、删除用户安全数据，防止二次部署或非法利用。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "created_at": "2024-06-15T08:30:00Z"
+        },
+        {
+          "evidence_id": "EVD-IPRFU-003",
+          "source": {
+            "file_name": "EMU300A安全配置指南.pdf",
+            "file_path": "/docs/EMU300A/EMU300A安全配置指南.pdf",
+            "file_type": "pdf",
+            "block_id": "BLK-D91D8C5D38EFEB46",
+            "page_number": 3,
+            "section_path": [
+              "第1章",
+              "1.2 工业网络安全目标"
+            ]
+          },
+          "quote": "工业网络安全保护目标包括防范网络攻击危及人员安全与生产安全。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "created_at": "2024-06-15T08:30:00Z"
+        }
+      ]
+    },
+    "user_description": {
+      "user_types": [
+        "普通用户",
+        "运维用户",
+        "审计用户",
+        "管理员",
+        "开发者用户"
+      ],
+      "experience_level": null,
+      "vulnerable_groups": [],
+      "is_component": null,
+      "rdps_dependence": "用户（特别是管理员）需手动授权并配置安全加密认证，方可启用对阳光云平台、三方云服务的数据转发及远程调度指令接收功能；该能力默认关闭，非基本功能所必需。",
+      "responsibilities": [
+        "管理员负责增加/删除/修改用户、会话管理、开启开发者调试开关、分配用户登录证书",
+        "所有用户须按要求设置密码有效期（1~90天）并定期更新",
+        "用户须在启用云服务前确认设备网络环境安全",
+        "用户应自行更换预置证书并实施证书生命周期管理（如使用短有效期证书、每3年更新）",
+        "设备退役时用户需执行恢复出厂设置并通过安全渠道销毁用户安全数据"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVD-USERS-001",
+          "source": {
+            "file_name": "EMU300A安全配置指南.pdf",
+            "file_path": "/docs/EMU300A/EMU300A安全配置指南.pdf",
+            "file_type": "pdf",
+            "block_id": "BLK-4417EC6A57B44907",
+            "page_number": 12,
+            "section_path": [
+              "第3章",
+              "3.1 用户管理"
+            ]
+          },
+          "quote": "系统支持五类Web用户：普通用户、运维用户、审计用户、管理员、开发者用户。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "created_at": "2024-06-15T08:30:00Z"
+        },
+        {
+          "evidence_id": "EVD-USERS-002",
+          "source": {
+            "file_name": "EMU300A安全配置指南.pdf",
+            "file_path": "/docs/EMU300A/EMU300A安全配置指南.pdf",
+            "file_type": "pdf",
+            "block_id": "BLK-EBE329C3EFA80ACF",
+            "page_number": 38,
+            "section_path": [
+              "第9章",
+              "9.2 远程访问管理"
+            ]
+          },
+          "quote": "数据采集器将数据转发至阳光云平台的功能默认不可用。启用该功能前，客户需在充分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获得客户授权后方可生效，且相关操作受系统访问控制策略管理。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "created_at": "2024-06-15T08:30:00Z"
+        }
+      ]
+    },
+    "operational_environment": {
+      "description": "EMU300A部署于光伏发电系统关键生产区域，南向连接逆变器、箱变、电表等近端工业设备，北向通过以太网、4G路由器或核心交换机连接至综自系统、站控系统（Insight/SCADA）及阳光云平台；其运行依赖工业网络安全保障措施，包括网络隔离、防火墙、访问控制及物理安全防护。",
+      "networks": [
+        "工业控制网络（南向）",
+        "企业内网（北向）",
+        "互联网（经授权后用于阳光云及三方云通信）",
+        "4G移动通信网络（经授权后用于阳光云通信）"
+      ],
+      "integrated_systems": [
+        "阳光云平台",
+        "Insight站控系统",
+        "SCADA系统",
+        "第三方综自系统",
+        "Logger5000数据采集器（内部配置）"
+      ],
+      "physical_environment": [],
+      "network_boundaries": [
+        "南向与北向网络之间通过独立交换机或防火墙实现隔离",
+        "北向数据出口边界需部署防火墙、防恶意代码设备、IDS等安全设备"
+      ],
+      "constraints": [
+        "南向设备为第三方设备，其网络安全风险由用户保障",
+        "北向安全设备（防火墙/防恶意代码/IDS）部署责任归属用户侧",
+        "阳光云平台在北美区域禁止使用"
+      ],
+      "rdps_dependency_map": null,
+      "evidence": [
+        {
+          "evidence_id": "EVD-ENV-001",
+          "source": {
+            "file_name": "EMU300A安全配置指南.pdf",
+            "file_path": "/docs/EMU300A/EMU300A安全配置指南.pdf",
+            "file_type": "pdf",
+            "block_id": "BLK-0FE6A5150E10C5BC",
+            "page_number": 5,
+            "section_path": [
+              "第1章",
+              "1.1 产品概述"
+            ]
+          },
+          "quote": "能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\n云平台，可接收北向远程调度指令或执行本地调度指令。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "created_at": "2024-06-15T08:30:00Z"
+        },
+        {
+          "evidence_id": "EVD-ENV-002",
+          "source": {
+            "file_name": "EMU300A安全配置指南.pdf",
+            "file_path": "/docs/EMU300A/EMU300A安全配置指南.pdf",
+            "file_type": "pdf",
+            "block_id": "BLK-B6469A1F85E312C7",
+            "page_number": 4,
+            "section_path": [
+              "第1章",
+              "1.2 工业网络安全目标"
+            ]
+          },
+          "quote": "产品北向属于安全重点关注区域，用户网络环境应在北向数据出口部署防火墙、防恶意代码设备、IDS等安全设备，构建安全的北向安全网络。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "created_at": "2024-06-15T08:30:00Z"
+        }
+      ]
+    },
+    "rdps_dependencies": null,
+    "evidence": [
+      {
+        "evidence_id": "EVD-SCOPE-001",
+        "source": {
+          "file_name": "EMU300A安全配置指南.pdf",
+          "file_path": "/docs/EMU300A/EMU300A安全配置指南.pdf",
+          "file_type": "pdf",
+          "block_id": "BLK-0FE6A5150E10C5BC",
+          "page_number": 5,
+          "section_path": [
+            "第1章",
+            "1.1 产品概述"
+          ]
+        },
+        "quote": "能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\n云平台，可接收北向远程调度指令或执行本地调度指令。",
+        "evidence_level": "direct",
+        "confidence": "high",
+        "created_at": "2024-06-15T08:30:00Z"
+      }
+    ],
+    "assessment": "PARTIAL",
+    "assessment_notes": "存在多项未知项：产品规定的使用年限未说明；‘安全渠道销毁’具体方式未定义；‘恢复出厂设置’是否覆盖全部安全数据擦除未明确；预置证书默认启用状态及交付配置依赖性未说明；阳光云平台运营方、RDPS功能交付状态、降级模式行为、‘安全加密认证’技术细节均无证据；Scope.classification.has_rdps为null，故RDPS依赖仅列为候选远程能力，不构成正式RDPS。"
+  },
+  "validation_payload": {
+    "product_name": "能量管理单元EMU300A",
+    "product_version": null,
+    "iprfu": {
+      "intended_purpose": "能量管理单元EMU300A用于光伏发电系统中，通过南向接口（RS485、PLC电力载波等）接入逆变器、箱变、环境监测仪、电表等设备，采集数据并执行本地有功/无功功率调节；通过北向接口（IEC104、Modbus、MQTT、GOOSE、HTTPS等）向综自系统、站控系统（Insight/SCADA）及阳光云平台转发数据，并接收远程调度指令。",
+      "reasonably_foreseeable_use": [
+        "客户手动授权并配置安全加密认证后，启用数据上传至阳光云平台及接收远程调度指令功能",
+        "在断网或阳光云不可达时，依赖本地闭环控制能力维持基本能量管理功能",
+        "用户更换预置证书并实施证书生命周期管理（如每3年更新）",
+        "设备退役时执行恢复出厂设置并通过安全渠道销毁用户安全数据，防止二次部署或非法利用"
+      ],
+      "health_safety_considerations": [
+        "网络安全事件可能导致生产设备和流程故障，危及人员安全与生产安全",
+        "未经授权的人员进入生产环境可能损坏或修改生产设备，导致机密信息丢失"
+      ],
+      "accessibility_considerations": [],
+      "support_period": null,
+      "evidence": [
+        {
+          "evidence_id": "EVD-IPRFU-001",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-0FE6A5150E10C5BC",
+            "parser_version": "1.5.0",
+            "page_number": 12,
+            "printed_page_label": "8",
+            "section_path": [
+              "5 产品功能及部署情况介绍"
+            ],
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\n云平台，可接收北向远程调度指令或执行本地调度指令。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "created_at": "2024-06-15T08:30:00Z",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false
+        },
+        {
+          "evidence_id": "EVD-IPRFU-002",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-525B9314A5FDB5CB",
+            "parser_version": "1.5.0",
+            "page_number": 20,
+            "printed_page_label": "16",
+            "section_path": [
+              "9 安全退役"
+            ],
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "•\n当设备需要退役报废时，请参考10.6 恢复出厂设置章节操作，并通过安全的渠道销毁，\n删除用户安全数据，确保设备不被二次部署到用户的运营系统或被非法利用。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "created_at": "2024-06-15T08:30:00Z",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。"
+        },
+        {
+          "evidence_id": "EVD-IPRFU-003",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-D91D8C5D38EFEB46",
+            "parser_version": "1.5.0",
+            "page_number": 8,
+            "printed_page_label": "4",
+            "section_path": [
+              "3 工业网络安全",
+              "3.2 工业网络安全保护目标"
+            ],
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "•\n防范网络攻击危及人员安全与生产安全；",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "created_at": "2024-06-15T08:30:00Z",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。"
+        }
+      ]
+    },
+    "user_description": {
+      "user_types": [
+        "普通用户",
+        "运维用户",
+        "审计用户",
+        "管理员",
+        "开发者用户"
+      ],
+      "experience_level": null,
+      "vulnerable_groups": [],
+      "is_component": null,
+      "rdps_dependence": "用户（特别是管理员）需手动授权并配置安全加密认证，方可启用对阳光云平台、三方云服务的数据转发及远程调度指令接收功能；该能力默认关闭，非基本功能所必需。",
+      "responsibilities": [
+        "管理员负责增加/删除/修改用户、会话管理、开启开发者调试开关、分配用户登录证书",
+        "所有用户须按要求设置密码有效期（1~90天）并定期更新",
+        "用户须在启用云服务前确认设备网络环境安全",
+        "用户应自行更换预置证书并实施证书生命周期管理（如使用短有效期证书、每3年更新）",
+        "设备退役时用户需执行恢复出厂设置并通过安全渠道销毁用户安全数据"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVD-USERS-001",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-4417EC6A57B44907",
+            "parser_version": "1.5.0",
+            "page_number": 16,
+            "printed_page_label": "12",
+            "section_path": [
+              "7 用户列表"
+            ],
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "表 7-1 1. Web 用户",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "created_at": "2024-06-15T08:30:00Z",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。"
+        },
+        {
+          "evidence_id": "EVD-USERS-002",
+          "source": {
+            "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-5067B181346D",
+            "block_id": "BLK-EBE329C3EFA80ACF",
+            "parser_version": "1.5.0",
+            "page_number": 16,
+            "printed_page_label": "10",
+            "section_path": [
+              "2 产品介绍",
+              "2.2 主要特点"
+            ],
+            "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+          },
+          "quote": "数据采集器将数据转发至阳光云平台的功能默认不可用。启用该功能前，客户需在充\n分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获\n得客户授权后方可生效，且相关操作受系统访问控制策略管理。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "created_at": "2024-06-15T08:30:00Z",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。"
+        }
+      ]
+    },
+    "operational_environment": {
+      "description": "EMU300A部署于光伏发电系统关键生产区域，南向连接逆变器、箱变、电表等近端工业设备，北向通过以太网、4G路由器或核心交换机连接至综自系统、站控系统（Insight/SCADA）及阳光云平台；其运行依赖工业网络安全保障措施，包括网络隔离、防火墙、访问控制及物理安全防护。",
+      "networks": [
+        "工业控制网络（南向）",
+        "企业内网（北向）",
+        "互联网（经授权后用于阳光云及三方云通信）",
+        "4G移动通信网络（经授权后用于阳光云通信）"
+      ],
+      "integrated_systems": [
+        "阳光云平台",
+        "Insight站控系统",
+        "SCADA系统",
+        "第三方综自系统",
+        "Logger5000数据采集器（内部配置）"
+      ],
+      "physical_environment": [],
+      "network_boundaries": [
+        "南向与北向网络之间通过独立交换机或防火墙实现隔离",
+        "北向数据出口边界需部署防火墙、防恶意代码设备、IDS等安全设备"
+      ],
+      "constraints": [
+        "南向设备为第三方设备，其网络安全风险由用户保障",
+        "北向安全设备（防火墙/防恶意代码/IDS）部署责任归属用户侧",
+        "阳光云平台在北美区域禁止使用"
+      ],
+      "rdps_dependency_map": null,
+      "evidence": [
+        {
+          "evidence_id": "EVD-ENV-001",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-0FE6A5150E10C5BC",
+            "parser_version": "1.5.0",
+            "page_number": 12,
+            "printed_page_label": "8",
+            "section_path": [
+              "5 产品功能及部署情况介绍"
+            ],
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\n云平台，可接收北向远程调度指令或执行本地调度指令。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "created_at": "2024-06-15T08:30:00Z",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false
+        },
+        {
+          "evidence_id": "EVD-ENV-002",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-B6469A1F85E312C7",
+            "parser_version": "1.5.0",
+            "page_number": 21,
+            "printed_page_label": "17",
+            "section_path": [
+              "10 安全配置指南",
+              "10.1 部署安全"
+            ],
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "产品北向属于安全重点关注区域，用户网络环境应在北向数据出口部署防火墙、防恶意代码\n设备、IDS 等安全设备，构建安全的北向安全网络。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "created_at": "2024-06-15T08:30:00Z",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。"
+        }
+      ]
+    },
+    "rdps_dependencies": null,
+    "evidence": [
+      {
+        "evidence_id": "EVD-SCOPE-001",
+        "source": {
+          "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+          "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+          "file_type": "pdf",
+          "document_id": "DOC-DF116E7199E2",
+          "block_id": "BLK-0FE6A5150E10C5BC",
+          "parser_version": "1.5.0",
+          "page_number": 12,
+          "printed_page_label": "8",
+          "section_path": [
+            "5 产品功能及部署情况介绍"
+          ],
+          "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+        },
+        "quote": "能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\n云平台，可接收北向远程调度指令或执行本地调度指令。",
+        "evidence_level": "direct",
+        "confidence": "high",
+        "created_at": "2024-06-15T08:30:00Z",
+        "retrieved_by": "node_field_retrieval",
+        "is_human_confirmed": false
+      }
+    ],
+    "assessment": "PARTIAL",
+    "assessment_notes": "存在多项未知项：产品规定的使用年限未说明；‘安全渠道销毁’具体方式未定义；‘恢复出厂设置’是否覆盖全部安全数据擦除未明确；预置证书默认启用状态及交付配置依赖性未说明；阳光云平台运营方、RDPS功能交付状态、降级模式行为、‘安全加密认证’技术细节均无证据；Scope.classification.has_rdps为null，故RDPS依赖仅列为候选远程能力，不构成正式RDPS。"
+  },
+  "result": {
+    "product_name": "能量管理单元EMU300A",
+    "product_version": null,
+    "iprfu": {
+      "intended_purpose": "能量管理单元EMU300A用于光伏发电系统中，通过南向接口（RS485、PLC电力载波等）接入逆变器、箱变、环境监测仪、电表等设备，采集数据并执行本地有功/无功功率调节；通过北向接口（IEC104、Modbus、MQTT、GOOSE、HTTPS等）向综自系统、站控系统（Insight/SCADA）及阳光云平台转发数据，并接收远程调度指令。",
+      "reasonably_foreseeable_use": [
+        "客户手动授权并配置安全加密认证后，启用数据上传至阳光云平台及接收远程调度指令功能",
+        "在断网或阳光云不可达时，依赖本地闭环控制能力维持基本能量管理功能",
+        "用户更换预置证书并实施证书生命周期管理（如每3年更新）",
+        "设备退役时执行恢复出厂设置并通过安全渠道销毁用户安全数据，防止二次部署或非法利用"
+      ],
+      "health_safety_considerations": [
+        "网络安全事件可能导致生产设备和流程故障，危及人员安全与生产安全",
+        "未经授权的人员进入生产环境可能损坏或修改生产设备，导致机密信息丢失"
+      ],
+      "accessibility_considerations": [],
+      "support_period": null,
+      "evidence": [
+        {
+          "evidence_id": "EVD-IPRFU-001",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-0FE6A5150E10C5BC",
+            "parser_version": "1.5.0",
+            "page_number": 12,
+            "printed_page_label": "8",
+            "section_path": [
+              "5 产品功能及部署情况介绍"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\n云平台，可接收北向远程调度指令或执行本地调度指令。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": null,
+          "created_at": "2024-06-15T08:30:00Z"
+        },
+        {
+          "evidence_id": "EVD-IPRFU-002",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-525B9314A5FDB5CB",
+            "parser_version": "1.5.0",
+            "page_number": 20,
+            "printed_page_label": "16",
+            "section_path": [
+              "9 安全退役"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "•\n当设备需要退役报废时，请参考10.6 恢复出厂设置章节操作，并通过安全的渠道销毁，\n删除用户安全数据，确保设备不被二次部署到用户的运营系统或被非法利用。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+          "created_at": "2024-06-15T08:30:00Z"
+        },
+        {
+          "evidence_id": "EVD-IPRFU-003",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-D91D8C5D38EFEB46",
+            "parser_version": "1.5.0",
+            "page_number": 8,
+            "printed_page_label": "4",
+            "section_path": [
+              "3 工业网络安全",
+              "3.2 工业网络安全保护目标"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "•\n防范网络攻击危及人员安全与生产安全；",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+          "created_at": "2024-06-15T08:30:00Z"
+        }
+      ]
+    },
+    "user_description": {
+      "user_types": [
+        "普通用户",
+        "运维用户",
+        "审计用户",
+        "管理员",
+        "开发者用户"
+      ],
+      "experience_level": null,
+      "vulnerable_groups": [],
+      "is_component": null,
+      "rdps_dependence": "用户（特别是管理员）需手动授权并配置安全加密认证，方可启用对阳光云平台、三方云服务的数据转发及远程调度指令接收功能；该能力默认关闭，非基本功能所必需。",
+      "responsibilities": [
+        "管理员负责增加/删除/修改用户、会话管理、开启开发者调试开关、分配用户登录证书",
+        "所有用户须按要求设置密码有效期（1~90天）并定期更新",
+        "用户须在启用云服务前确认设备网络环境安全",
+        "用户应自行更换预置证书并实施证书生命周期管理（如使用短有效期证书、每3年更新）",
+        "设备退役时用户需执行恢复出厂设置并通过安全渠道销毁用户安全数据"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVD-USERS-001",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-4417EC6A57B44907",
+            "parser_version": "1.5.0",
+            "page_number": 16,
+            "printed_page_label": "12",
+            "section_path": [
+              "7 用户列表"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "表 7-1 1. Web 用户",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+          "created_at": "2024-06-15T08:30:00Z"
+        },
+        {
+          "evidence_id": "EVD-USERS-002",
+          "source": {
+            "file_name": "EMU300A-UCN-Ver11-202603.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A-UCN-Ver11-202603.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-5067B181346D",
+            "block_id": "BLK-EBE329C3EFA80ACF",
+            "parser_version": "1.5.0",
+            "page_number": 16,
+            "printed_page_label": "10",
+            "section_path": [
+              "2 产品介绍",
+              "2.2 主要特点"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "985ab7688c0888ec68a5b671d2032bb8efd112a6affc42621bcf8c208b870e8e"
+          },
+          "quote": "数据采集器将数据转发至阳光云平台的功能默认不可用。启用该功能前，客户需在充\n分知情的前提下进行手动授权，并通过安全加密认证接入公共网络。远程访问仅在获\n得客户授权后方可生效，且相关操作受系统访问控制策略管理。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+          "created_at": "2024-06-15T08:30:00Z"
+        }
+      ]
+    },
+    "operational_environment": {
+      "description": "EMU300A部署于光伏发电系统关键生产区域，南向连接逆变器、箱变、电表等近端工业设备，北向通过以太网、4G路由器或核心交换机连接至综自系统、站控系统（Insight/SCADA）及阳光云平台；其运行依赖工业网络安全保障措施，包括网络隔离、防火墙、访问控制及物理安全防护。",
+      "networks": [
+        "工业控制网络（南向）",
+        "企业内网（北向）",
+        "互联网（经授权后用于阳光云及三方云通信）",
+        "4G移动通信网络（经授权后用于阳光云通信）"
+      ],
+      "integrated_systems": [
+        "阳光云平台",
+        "Insight站控系统",
+        "SCADA系统",
+        "第三方综自系统",
+        "Logger5000数据采集器（内部配置）"
+      ],
+      "physical_environment": [],
+      "network_boundaries": [
+        "南向与北向网络之间通过独立交换机或防火墙实现隔离",
+        "北向数据出口边界需部署防火墙、防恶意代码设备、IDS等安全设备"
+      ],
+      "constraints": [
+        "南向设备为第三方设备，其网络安全风险由用户保障",
+        "北向安全设备（防火墙/防恶意代码/IDS）部署责任归属用户侧",
+        "阳光云平台在北美区域禁止使用"
+      ],
+      "rdps_dependency_map": null,
+      "evidence": [
+        {
+          "evidence_id": "EVD-ENV-001",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-0FE6A5150E10C5BC",
+            "parser_version": "1.5.0",
+            "page_number": 12,
+            "printed_page_label": "8",
+            "section_path": [
+              "5 产品功能及部署情况介绍"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\n云平台，可接收北向远程调度指令或执行本地调度指令。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": null,
+          "created_at": "2024-06-15T08:30:00Z"
+        },
+        {
+          "evidence_id": "EVD-ENV-002",
+          "source": {
+            "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+            "file_type": "pdf",
+            "document_id": "DOC-DF116E7199E2",
+            "block_id": "BLK-B6469A1F85E312C7",
+            "parser_version": "1.5.0",
+            "page_number": 21,
+            "printed_page_label": "17",
+            "section_path": [
+              "10 安全配置指南",
+              "10.1 部署安全"
+            ],
+            "clause_number": null,
+            "annex": null,
+            "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+          },
+          "quote": "产品北向属于安全重点关注区域，用户网络环境应在北向数据出口部署防火墙、防恶意代码\n设备、IDS 等安全设备，构建安全的北向安全网络。",
+          "evidence_level": "direct",
+          "confidence": "high",
+          "retrieved_by": "node_field_retrieval",
+          "is_human_confirmed": false,
+          "notes": "系统已用规范文本块原文补全来源上下文；审阅时仍需确认该原文是否支持具体结论。",
+          "created_at": "2024-06-15T08:30:00Z"
+        }
+      ]
+    },
+    "rdps_dependencies": null,
+    "evidence": [
+      {
+        "evidence_id": "EVD-SCOPE-001",
+        "source": {
+          "file_name": "EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+          "file_path": "legacy_baseline/Project/阳光EMU项目/EMU300A网络安全操作手册-UCN-Ver11-202607.pdf",
+          "file_type": "pdf",
+          "document_id": "DOC-DF116E7199E2",
+          "block_id": "BLK-0FE6A5150E10C5BC",
+          "parser_version": "1.5.0",
+          "page_number": 12,
+          "printed_page_label": "8",
+          "section_path": [
+            "5 产品功能及部署情况介绍"
+          ],
+          "clause_number": null,
+          "annex": null,
+          "hash_sha256": "e8c23ac43317f1ca9092017ee420c2f9dd29b3734e10a2247f0e7992014a83bc"
+        },
+        "quote": "能量管理单元EMU300A 内部配置有数据采集器Logger5000。可通过RS485 总线方式接入\n光伏发电系统中的逆变器、箱变、环境监测仪、电表等，通过Modbus 协议、PLC 电力载波\n通信支持南向设备接入，采集南向设备数据。还可以通过PLC 总线方式接入阳光电源生产的\n具备PLC 功能的组串式逆变器，对接入的逆变器可进行有功功率控制和无功功率调节。可通\n过IEC104、ModbuS、MQTT、GOOSE 等通信协议北向转发到综自系统或站控系统及阳光\n云平台，可接收北向远程调度指令或执行本地调度指令。",
+        "evidence_level": "direct",
+        "confidence": "high",
+        "retrieved_by": "node_field_retrieval",
+        "is_human_confirmed": false,
+        "notes": null,
+        "created_at": "2024-06-15T08:30:00Z"
+      }
+    ],
+    "assessment": "PARTIAL",
+    "assessment_notes": "存在多项未知项：产品规定的使用年限未说明；‘安全渠道销毁’具体方式未定义；‘恢复出厂设置’是否覆盖全部安全数据擦除未明确；预置证书默认启用状态及交付配置依赖性未说明；阳光云平台运营方、RDPS功能交付状态、降级模式行为、‘安全加密认证’技术细节均无证据；Scope.classification.has_rdps为null，故RDPS依赖仅列为候选远程能力，不构成正式RDPS。"
+  },
+  "elapsed_seconds": 70.559,
+  "finished_at": "2026-10-09T02:23:43.767418+00:00"
+}

@@ -1,0 +1,1014 @@
+{
+  "schema_version": "field_fact_checkpoint.v3",
+  "node_id": "node_1",
+  "field_id": "communications",
+  "index_id": "IDX-3B116ADDF3BB03CC",
+  "packet_sha256": "795ee70e1bb24b1651fdd269bc679510176c98a6d944ccd884f9df599b54e202",
+  "retrieval_profile_version": "1.7",
+  "field_fact_prompt_version": "2.5",
+  "cache_inputs": {
+    "node_id": "node_1",
+    "field_id": "communications",
+    "source_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "retrieval_packet_sha256": "795ee70e1bb24b1651fdd269bc679510176c98a6d944ccd884f9df599b54e202",
+    "rag_index_id": "IDX-3B116ADDF3BB03CC",
+    "text_model": "qwen-plus",
+    "retrieval_profile_sha256": "1f3ad53a8fe942692438353935c8a96c12562aff20122fc63f426fef718e4505",
+    "field_prompt_sha256": "21a274bdb10ecd8cd7b611e8b7f51e18fb908765249b2482ef7a55c6220914c4",
+    "field_schema_sha256": "58f8c56390fb6c3a38a01e8df44e87c1aecb0c311cb3116d625958cb35cee7b4"
+  },
+  "cache_fingerprint": "b6a6e87b8c47fc6fb3f9c53c498e7a767e825d0ba9e8966f8404c420cd5e4e41",
+  "result": {
+    "node_id": "node_1",
+    "field_id": "communications",
+    "facts": [
+      {
+        "fact_id": "FACT-001",
+        "statement": "PC作为源设备，向EMU300A的8080端口发起HTTP通信，认证方式为用户名/密码，加密方式为无，该端口默认关闭，支持开启。",
+        "block_ids": [
+          "BLK-5E9F7F46479A8667"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "source": "PC",
+          "destination": "EMU300A",
+          "protocol": "HTTP",
+          "port": "8080",
+          "authentication": "用户名/密码",
+          "encryption": "无",
+          "conditions": [
+            "默认关闭，支持开启"
+          ],
+          "direction_basis": "documented_endpoints",
+          "business_data_direction": "unknown",
+          "activation_status": "conditional"
+        }
+      },
+      {
+        "fact_id": "FACT-002",
+        "statement": "PC作为源设备，向EMU300A的8443端口发起HTTPS通信，认证方式为用户名/密码，加密方式为TLS，该端口为默认访问方式。",
+        "block_ids": [
+          "BLK-5E9F7F46479A8667"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "source": "PC",
+          "destination": "EMU300A",
+          "protocol": "HTTPS",
+          "port": "8443",
+          "authentication": "用户名/密码",
+          "encryption": "TLS",
+          "conditions": [
+            "默认访问方式"
+          ],
+          "direction_basis": "documented_endpoints",
+          "business_data_direction": "unknown",
+          "activation_status": "enabled"
+        }
+      },
+      {
+        "fact_id": "FACT-003",
+        "statement": "PC作为源设备，向EMU300A的443端口发起HTTPS通信，认证方式为用户名/密码，加密方式为TLS，该端口为默认访问方式。",
+        "block_ids": [
+          "BLK-5E9F7F46479A8667"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "source": "PC",
+          "destination": "EMU300A",
+          "protocol": "HTTPS",
+          "port": "443",
+          "authentication": "用户名/密码",
+          "encryption": "TLS",
+          "conditions": [
+            "默认访问方式"
+          ],
+          "direction_basis": "documented_endpoints",
+          "business_data_direction": "unknown",
+          "activation_status": "enabled"
+        }
+      },
+      {
+        "fact_id": "FACT-004",
+        "statement": "PC作为源设备，向EMU300A的22端口发起SSH通信，认证方式为用户名/密码，加密方式为TLS，该端口默认关闭。",
+        "block_ids": [
+          "BLK-5E9F7F46479A8667"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "source": "PC",
+          "destination": "EMU300A",
+          "protocol": "SSH",
+          "port": "22",
+          "authentication": "用户名/密码",
+          "encryption": "TLS",
+          "conditions": [
+            "默认关闭"
+          ],
+          "direction_basis": "documented_endpoints",
+          "business_data_direction": "unknown",
+          "activation_status": "disabled_by_default"
+        }
+      },
+      {
+        "fact_id": "FACT-005",
+        "statement": "PC作为源设备，向EMU300A的22端口发起SFTP通信，认证方式为用户名/密码，加密方式为TLS，该端口默认关闭。",
+        "block_ids": [
+          "BLK-5E9F7F46479A8667"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "source": "PC",
+          "destination": "EMU300A",
+          "protocol": "SFTP",
+          "port": "22",
+          "authentication": "用户名/密码",
+          "encryption": "TLS",
+          "conditions": [
+            "默认关闭"
+          ],
+          "direction_basis": "documented_endpoints",
+          "business_data_direction": "unknown",
+          "activation_status": "disabled_by_default"
+        }
+      },
+      {
+        "fact_id": "FACT-006",
+        "statement": "北向设备作为源设备，向EMU300A的102端口发起MMS通信，认证方式为用户名/密码，加密方式为无，该端口默认关闭。",
+        "block_ids": [
+          "BLK-5E9F7F46479A8667"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "source": "北向设备",
+          "destination": "EMU300A",
+          "protocol": "MMS",
+          "port": "102",
+          "authentication": "用户名/密码",
+          "encryption": "无",
+          "conditions": [
+            "默认关闭"
+          ],
+          "direction_basis": "documented_endpoints",
+          "business_data_direction": "unknown",
+          "activation_status": "disabled_by_default"
+        }
+      },
+      {
+        "fact_id": "FACT-007",
+        "statement": "北向设备作为源设备，向EMU300A的2404–2418端口范围发起IEC104通信，认证方式为无，加密方式为TLS，其中2418端口默认启用，2404–2417端口默认关闭。",
+        "block_ids": [
+          "BLK-5E9F7F46479A8667"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "source": "北向设备",
+          "destination": "EMU300A",
+          "protocol": "IEC104",
+          "port": "2404-2418",
+          "authentication": "无",
+          "encryption": "TLS",
+          "conditions": [
+            "2418 默认启用,2404~2417 默认关闭"
+          ],
+          "direction_basis": "documented_endpoints",
+          "business_data_direction": "unknown",
+          "activation_status": "conditional"
+        }
+      },
+      {
+        "fact_id": "FACT-008",
+        "statement": "北向设备作为源设备，向EMU300A的502–516端口范围发起MODBUS TCP通信，认证方式为无，加密方式为TLS，其中516端口默认启用，502–515端口默认关闭。",
+        "block_ids": [
+          "BLK-5E9F7F46479A8667"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "source": "北向设备",
+          "destination": "EMU300A",
+          "protocol": "MODBUS TCP",
+          "port": "502-516",
+          "authentication": "无",
+          "encryption": "TLS",
+          "conditions": [
+            "516 默认启用,502~515 默认关闭"
+          ],
+          "direction_basis": "documented_endpoints",
+          "business_data_direction": "unknown",
+          "activation_status": "conditional"
+        }
+      },
+      {
+        "fact_id": "FACT-009",
+        "statement": "北向设备作为源设备，向EMU300A的802端口发起MODBUS TCP通信，认证方式为无，加密方式为TLS，该端口默认启用，支持关闭。",
+        "block_ids": [
+          "BLK-5E9F7F46479A8667"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "source": "北向设备",
+          "destination": "EMU300A",
+          "protocol": "MODBUS TCP",
+          "port": "802",
+          "authentication": "无",
+          "encryption": "TLS",
+          "conditions": [
+            "默认启用，支持关闭"
+          ],
+          "direction_basis": "documented_endpoints",
+          "business_data_direction": "unknown",
+          "activation_status": "enabled"
+        }
+      },
+      {
+        "fact_id": "FACT-010",
+        "statement": "EMU300A作为源设备，向阳光云的19999端口发起MQTT通信，认证方式为公钥，加密方式为无，该连接默认关闭，开启时给予安全提示，可通过网口启用。",
+        "block_ids": [
+          "BLK-5751A158B27985D4"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "source": "EMU300A",
+          "destination": "阳光云",
+          "protocol": "MQTT",
+          "port": "19999",
+          "authentication": "公钥",
+          "encryption": "无",
+          "conditions": [
+            "默认关闭，开启给予安全提示，可通过网口"
+          ],
+          "direction_basis": "documented_endpoints",
+          "business_data_direction": "unknown",
+          "activation_status": "conditional"
+        }
+      },
+      {
+        "fact_id": "FACT-011",
+        "statement": "EMU300A作为源设备，向阳光云的16668端口发起MQTT通信，认证方式为公钥，加密方式为TLS，该连接默认关闭，开启时给予安全提示，可通过网口启用。",
+        "block_ids": [
+          "BLK-5751A158B27985D4"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "source": "EMU300A",
+          "destination": "阳光云",
+          "protocol": "MQTT",
+          "port": "16668",
+          "authentication": "公钥",
+          "encryption": "TLS",
+          "conditions": [
+            "默认关闭，开启给予安全提示，可通过网口"
+          ],
+          "direction_basis": "documented_endpoints",
+          "business_data_direction": "unknown",
+          "activation_status": "conditional"
+        }
+      },
+      {
+        "fact_id": "FACT-012",
+        "statement": "EMU300A作为源设备，向NTP对时服务器的123端口发起NTP通信，认证方式为无，加密方式为无，该连接默认关闭，开启时给予安全提示。",
+        "block_ids": [
+          "BLK-5751A158B27985D4"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "source": "EMU300A",
+          "destination": "NTP 对时服务器",
+          "protocol": "NTP",
+          "port": "123",
+          "authentication": "无",
+          "encryption": "无",
+          "conditions": [
+            "默认关闭，开启给予安全提示"
+          ],
+          "direction_basis": "documented_endpoints",
+          "business_data_direction": "unknown",
+          "activation_status": "conditional"
+        }
+      },
+      {
+        "fact_id": "FACT-013",
+        "statement": "EMU300A作为源设备，向NTS对时服务器的4460端口发起NTS通信，认证方式为无，加密方式为无，该连接默认关闭。",
+        "block_ids": [
+          "BLK-CE7F3E47EF540743"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "source": "EMU300A",
+          "destination": "NTS 对时服务器",
+          "protocol": "NTS",
+          "port": "4460",
+          "authentication": "无",
+          "encryption": "无",
+          "conditions": [
+            "默认关闭"
+          ],
+          "direction_basis": "documented_endpoints",
+          "business_data_direction": "unknown",
+          "activation_status": "disabled_by_default"
+        }
+      },
+      {
+        "fact_id": "FACT-014",
+        "statement": "PC通过Debug口（RS232协议）与EMU300A建立串口访问Linux的通信，认证方式为用户名/密码，加密方式为无。",
+        "block_ids": [
+          "BLK-5751A158B27985D4"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "source": "PC",
+          "destination": "EMU300A",
+          "protocol": "RS232 协议",
+          "port": "/",
+          "interface": "Debug口",
+          "authentication": "用户名/密码",
+          "encryption": "无",
+          "conditions": [
+            "串口访问Linux"
+          ],
+          "direction_basis": "documented_endpoints",
+          "business_data_direction": "unknown",
+          "activation_status": "unknown"
+        }
+      },
+      {
+        "fact_id": "FACT-015",
+        "statement": "EMU300A作为源设备，向阳光云平台发起数据转发，该功能默认不可用，启用前需客户在充分知情前提下手动授权，并通过安全加密认证接入公共网络；远程访问仅在获得客户授权后生效，且受系统访问控制策略管理。",
+        "block_ids": [
+          "BLK-89A6CAB539794403"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "source": "EMU300A",
+          "destination": "阳光云平台",
+          "conditions": [
+            "默认不可用",
+            "需客户在充分知情前提下手动授权",
+            "通过安全加密认证接入公共网络",
+            "远程访问仅在获得客户授权后生效",
+            "受系统访问控制策略管理"
+          ],
+          "direction_basis": "documented_endpoints",
+          "business_data_direction": "unknown",
+          "activation_status": "conditional"
+        }
+      },
+      {
+        "fact_id": "FACT-016",
+        "statement": "EMU300A支持IEC104服务配置，可通过Logger5000 Web界面系统 > 转发配置 > IEC104页面开启对应本地端口的开关按钮。",
+        "block_ids": [
+          "BLK-E3347A1F0CA7060D",
+          "BLK-59A987DF9304AB8A"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "source": "Logger5000 Web 界面",
+          "destination": "EMU300A",
+          "protocol": "IEC104",
+          "conditions": [
+            "通过Web界面开启对应本地端口的开关按钮"
+          ],
+          "direction_basis": "documented_endpoints",
+          "business_data_direction": "unknown",
+          "activation_status": "conditional"
+        }
+      },
+      {
+        "fact_id": "FACT-017",
+        "statement": "EMU300A支持MODBUS TCP普通调度模式，可在Web界面中配置对端IP地址、通讯异常检测时间及通讯异常输出功率百分比。",
+        "block_ids": [
+          "BLK-42E1FAE2C4034A96",
+          "BLK-0DE5473B9D03AD91",
+          "BLK-5530390EB4EAB73F"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "source": "EMU300A",
+          "destination": "对端设备",
+          "protocol": "MODBUS TCP",
+          "data_exchanged": [
+            "对端IP地址",
+            "通讯异常检测时间",
+            "通讯异常输出功率百分比"
+          ],
+          "conditions": [
+            "普通调度模式"
+          ],
+          "direction_basis": "documented_endpoints",
+          "business_data_direction": "unknown",
+          "activation_status": "conditional"
+        }
+      },
+      {
+        "fact_id": "FACT-018",
+        "statement": "EMU300A支持通过COM1~COM9端口连接设备，波特率默认自动设为115200，校验位默认为无，停止位默认为1，PLC接入默认禁止，快调开关默认禁止。",
+        "block_ids": [
+          "BLK-9149C59D08016133",
+          "BLK-598D475B3618DDA1",
+          "BLK-4761D6C8E484CDB0"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "source": "EMU300A",
+          "destination": "所连接设备",
+          "interface": "COM1~COM9",
+          "conditions": [
+            "波特率默认115200",
+            "校验位默认无",
+            "停止位默认1",
+            "PLC接入默认禁止",
+            "快调开关默认禁止"
+          ],
+          "direction_basis": "documented_endpoints",
+          "business_data_direction": "unknown",
+          "activation_status": "unknown"
+        }
+      },
+      {
+        "fact_id": "FACT-019",
+        "statement": "EMU300A的ETH1、ETH2、ETH5以太网端口具有默认IP地址、子网掩码、网关和DNS配置。",
+        "block_ids": [
+          "BLK-9149C59D08016133"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "source": "EMU300A",
+          "interface": "ETH1, ETH2, ETH5",
+          "direction_basis": "documented_endpoints",
+          "business_data_direction": "unknown",
+          "activation_status": "unknown"
+        }
+      },
+      {
+        "fact_id": "FACT-020",
+        "statement": "EMU300A支持主机模式和监听模式两种报文导出工作模式，主机模式直接从指定COM口获取报文，监听模式通过另一COM口获取指定总线上的报文。",
+        "block_ids": [
+          "BLK-51733682EB662185",
+          "BLK-A437C9C9ABDC3669"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "source": "EMU300A",
+          "conditions": [
+            "主机模式",
+            "监听模式"
+          ],
+          "direction_basis": "documented_endpoints",
+          "business_data_direction": "unknown",
+          "activation_status": "unknown"
+        }
+      },
+      {
+        "fact_id": "FACT-021",
+        "statement": "EMU300A支持通过UDP协议在9998–9999端口进行通信，认证方式为无，加密方式为无，该端口用于内部调试，默认关闭。",
+        "block_ids": [
+          "BLK-6F1F1D2BF197686D"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "source": "PC",
+          "destination": "EMU300A",
+          "protocol": "UDP",
+          "port": "9998-9999",
+          "authentication": "无",
+          "encryption": "无",
+          "conditions": [
+            "默认关闭，内部调试使用"
+          ],
+          "direction_basis": "documented_endpoints",
+          "business_data_direction": "unknown",
+          "activation_status": "disabled_by_default"
+        }
+      },
+      {
+        "fact_id": "FACT-022",
+        "statement": "EMU300A支持IEC104服务配置，该协议为非安全协议，存在风险，开启前需确认设备网络环境安全；可根据需要开启TLS加密功能。",
+        "block_ids": [
+          "BLK-80D6896F1D53BCDF",
+          "BLK-2B3D8D7A125A408A"
+        ],
+        "is_uncertain": true,
+        "attributes": {
+          "source": "EMU300A",
+          "protocol": "IEC104",
+          "conditions": [
+            "该协议为非安全协议，存在风险",
+            "开启前需确认设备网络环境安全",
+            "可根据需要开启TLS加密功能"
+          ],
+          "direction_basis": "documented_endpoints",
+          "business_data_direction": "unknown",
+          "activation_status": "conditional"
+        }
+      },
+      {
+        "fact_id": "FACT-023",
+        "statement": "EMU300A支持Server模式的IEC104服务配置。",
+        "block_ids": [
+          "BLK-0659A3A36343885F"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "source": "EMU300A",
+          "protocol": "IEC104",
+          "conditions": [
+            "Server 模式"
+          ],
+          "direction_basis": "documented_endpoints",
+          "business_data_direction": "unknown",
+          "activation_status": "unknown"
+        }
+      },
+      {
+        "fact_id": "FACT-024",
+        "statement": "EMU300A支持通过B码协议和PTP协议实现时间同步。",
+        "block_ids": [
+          "BLK-89A6CAB539794403"
+        ],
+        "is_uncertain": false,
+        "attributes": {
+          "source": "EMU300A",
+          "protocol": "B 码",
+          "direction_basis": "documented_endpoints",
+          "business_data_direction": "unknown",
+          "activation_status": "unknown"
+        }
+      }
+    ],
+    "unknowns": [
+      "Logger4000是否实际交付或启用未确认，仅Logger5000被识别为标准内部采集器",
+      "‘北向设备’具体指代的系统类型（如SCADA、主站等）未明确说明",
+      "‘阳光云’服务运营方、部署位置及是否为产品必需组件未说明",
+      "各通信链路的实际业务数据内容（如遥测、遥控、日志等）未在证据中明确列出",
+      "端口监听/连接方向与业务载荷流向是否一致未说明，仅记录端点关系",
+      "IEC104、MODBUS TCP等北向协议在EMU300A侧是作为客户端还是服务端未完全明确（除明确标注Server模式外）",
+      "RS232串口通信的默认启用状态未说明",
+      "NTP/NTS对时服务的启用是否依赖特定时钟源配置（如‘阳光云’连接状态）未在端口矩阵中体现",
+      "‘linux she中开启’具体指代的shell环境、命令或配置路径未说明",
+      "MODBUS TCP普通调度模式中‘对端设备’的具体身份（如后台系统、逆变器）未明确"
+    ],
+    "contradictions": []
+  },
+  "retrieval_trace": {
+    "schema_version": "1.0",
+    "request": {
+      "project_id": "yangguang_emu",
+      "node_id": "node_1",
+      "field_id": "communications",
+      "query": null,
+      "filters": {
+        "document_ids": [],
+        "section_path_terms": [],
+        "block_types": [],
+        "exclude_review_required": false
+      },
+      "token_budget": 12000,
+      "max_blocks": 48,
+      "neighbor_window": 4
+    },
+    "effective_query": "通信接口 协议 端口 源设备 目的设备 连接发起 监听 服务端 客户端 业务数据方向 传输数据 默认状态 启用条件 以太网 串口 USB TCP UDP HTTP HTTPS SSH SFTP 设备协议 消息协议 时间同步 日志服务 目录服务 管理端口 调试端口 上级系统 下级设备 云平台",
+    "index_id": "IDX-3B116ADDF3BB03CC",
+    "scope_packet_sha256": "b61daa1b0229924e117b88846db6af73c5395a8dca47cb8a121b55d80a377f82",
+    "packet_id": "rag_yangguang_emu_node_1_communications_71707b908a90",
+    "packet_sha256": "795ee70e1bb24b1651fdd269bc679510176c98a6d944ccd884f9df599b54e202",
+    "candidate_count": 1041,
+    "selected_count": 48,
+    "selected_token_count": 4069,
+    "truncated_by_budget": false,
+    "truncated_by_max_blocks": true,
+    "hits": [
+      {
+        "block_id": "BLK-5E9F7F46479A8667",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 1,
+        "score": 0.5630686283111572,
+        "estimated_tokens": 378,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-A91ACD7D76318635",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 2,
+        "score": 0.5630686283111572,
+        "estimated_tokens": 50,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-5E9F7F46479A8667"
+      },
+      {
+        "block_id": "BLK-69F47634827709FA",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 3,
+        "score": 0.5630686283111572,
+        "estimated_tokens": 55,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-5E9F7F46479A8667"
+      },
+      {
+        "block_id": "BLK-6F1F1D2BF197686D",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 4,
+        "score": 0.5630686283111572,
+        "estimated_tokens": 63,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-5E9F7F46479A8667"
+      },
+      {
+        "block_id": "BLK-80BDC5A7EB0594AE",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 5,
+        "score": 0.5630686283111572,
+        "estimated_tokens": 59,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-5E9F7F46479A8667"
+      },
+      {
+        "block_id": "BLK-5751A158B27985D4",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 6,
+        "score": 0.5630686283111572,
+        "estimated_tokens": 268,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-5E9F7F46479A8667"
+      },
+      {
+        "block_id": "BLK-89A6CAB539794403",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 7,
+        "score": 0.4822402954101563,
+        "estimated_tokens": 631,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-BE153AA192B48930",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 8,
+        "score": 0.4822402954101563,
+        "estimated_tokens": 118,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-89A6CAB539794403"
+      },
+      {
+        "block_id": "BLK-6CDBA2C1126CE14A",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 9,
+        "score": 0.5409066677093507,
+        "estimated_tokens": 49,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-5751A158B27985D4"
+      },
+      {
+        "block_id": "BLK-7AC72625A2105DF8",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 10,
+        "score": 0.5409066677093507,
+        "estimated_tokens": 46,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-5751A158B27985D4"
+      },
+      {
+        "block_id": "BLK-9FDE0E7D9156114B",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 11,
+        "score": 0.5409066677093507,
+        "estimated_tokens": 43,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-5751A158B27985D4"
+      },
+      {
+        "block_id": "BLK-CE7F3E47EF540743",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 12,
+        "score": 0.5409066677093507,
+        "estimated_tokens": 53,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-5751A158B27985D4"
+      },
+      {
+        "block_id": "BLK-B41FFC5AB411E20F",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 13,
+        "score": 0.521673059463501,
+        "estimated_tokens": 144,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-988D16ADEF8A3452",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 14,
+        "score": 0.521673059463501,
+        "estimated_tokens": 146,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-B41FFC5AB411E20F"
+      },
+      {
+        "block_id": "BLK-B580D76FDD44F08B",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 15,
+        "score": 0.521673059463501,
+        "estimated_tokens": 134,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-B41FFC5AB411E20F"
+      },
+      {
+        "block_id": "BLK-446577C5372AFA81",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 16,
+        "score": 0.521673059463501,
+        "estimated_tokens": 128,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-B41FFC5AB411E20F"
+      },
+      {
+        "block_id": "BLK-C3A8FE939378621E",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 17,
+        "score": 0.521673059463501,
+        "estimated_tokens": 116,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-B41FFC5AB411E20F"
+      },
+      {
+        "block_id": "BLK-3DBA924856D8EB58",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 18,
+        "score": 0.521673059463501,
+        "estimated_tokens": 124,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-B41FFC5AB411E20F"
+      },
+      {
+        "block_id": "BLK-D840E662284A440C",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 19,
+        "score": 0.521673059463501,
+        "estimated_tokens": 108,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-B41FFC5AB411E20F"
+      },
+      {
+        "block_id": "BLK-96C25992B7721ADA",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 20,
+        "score": 0.521673059463501,
+        "estimated_tokens": 123,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-B41FFC5AB411E20F"
+      },
+      {
+        "block_id": "BLK-A696F29AE9B7888A",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 21,
+        "score": 0.521673059463501,
+        "estimated_tokens": 118,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-B41FFC5AB411E20F"
+      },
+      {
+        "block_id": "BLK-4761D6C8E484CDB0",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 22,
+        "score": 0.510586166381836,
+        "estimated_tokens": 585,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-598D475B3618DDA1",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 23,
+        "score": 0.510586166381836,
+        "estimated_tokens": 107,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-4761D6C8E484CDB0"
+      },
+      {
+        "block_id": "BLK-9149C59D08016133",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 24,
+        "score": 0.510586166381836,
+        "estimated_tokens": 110,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-4761D6C8E484CDB0"
+      },
+      {
+        "block_id": "BLK-42E1FAE2C4034A96",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 25,
+        "score": 0.5100483417510986,
+        "estimated_tokens": 152,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-D3021688D8BA5157",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 26,
+        "score": 0.5100483417510986,
+        "estimated_tokens": 161,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-42E1FAE2C4034A96"
+      },
+      {
+        "block_id": "BLK-0DE5473B9D03AD91",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 27,
+        "score": 0.5100483417510986,
+        "estimated_tokens": 170,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-42E1FAE2C4034A96"
+      },
+      {
+        "block_id": "BLK-E732AB2637F3C908",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 28,
+        "score": 0.5100483417510986,
+        "estimated_tokens": 162,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-42E1FAE2C4034A96"
+      },
+      {
+        "block_id": "BLK-0D669A175FF0D872",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 29,
+        "score": 0.5100483417510986,
+        "estimated_tokens": 175,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-42E1FAE2C4034A96"
+      },
+      {
+        "block_id": "BLK-3E32D8D1092331C7",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 30,
+        "score": 0.5100483417510986,
+        "estimated_tokens": 151,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-42E1FAE2C4034A96"
+      },
+      {
+        "block_id": "BLK-5530390EB4EAB73F",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 31,
+        "score": 0.5100483417510986,
+        "estimated_tokens": 169,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-42E1FAE2C4034A96"
+      },
+      {
+        "block_id": "BLK-6218A519F3E63876",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 32,
+        "score": 0.5100483417510986,
+        "estimated_tokens": 147,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-42E1FAE2C4034A96"
+      },
+      {
+        "block_id": "BLK-A6F13E49391BC8B5",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 33,
+        "score": 0.5100483417510986,
+        "estimated_tokens": 181,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-42E1FAE2C4034A96"
+      },
+      {
+        "block_id": "BLK-A437C9C9ABDC3669",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 34,
+        "score": 0.5044862270355225,
+        "estimated_tokens": 171,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-51733682EB662185",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 35,
+        "score": 0.5044862270355225,
+        "estimated_tokens": 103,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-A437C9C9ABDC3669"
+      },
+      {
+        "block_id": "BLK-177D5C167B8E1044",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 36,
+        "score": 0.5044862270355225,
+        "estimated_tokens": 95,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-A437C9C9ABDC3669"
+      },
+      {
+        "block_id": "BLK-083DCDAF130BAA12",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 37,
+        "score": 0.5044862270355225,
+        "estimated_tokens": 94,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-A437C9C9ABDC3669"
+      },
+      {
+        "block_id": "BLK-C94A39D9BB350041",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 38,
+        "score": 0.5044862270355225,
+        "estimated_tokens": 95,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-A437C9C9ABDC3669"
+      },
+      {
+        "block_id": "BLK-52C2F8A640CC799C",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 39,
+        "score": 0.5044862270355225,
+        "estimated_tokens": 95,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-A437C9C9ABDC3669"
+      },
+      {
+        "block_id": "BLK-EBE4BFE6EC1E774D",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 40,
+        "score": 0.5044862270355225,
+        "estimated_tokens": 104,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-A437C9C9ABDC3669"
+      },
+      {
+        "block_id": "BLK-A7C24A987E732A27",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 41,
+        "score": 0.5044862270355225,
+        "estimated_tokens": 113,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-A437C9C9ABDC3669"
+      },
+      {
+        "block_id": "BLK-D1389EDF99A172FA",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 42,
+        "score": 0.5044862270355225,
+        "estimated_tokens": 129,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-A437C9C9ABDC3669"
+      },
+      {
+        "block_id": "BLK-80D6896F1D53BCDF",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 43,
+        "score": 0.5022526741027832,
+        "estimated_tokens": 125,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-2201E27641EB8839",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 44,
+        "score": 0.5022526741027832,
+        "estimated_tokens": 101,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-80D6896F1D53BCDF"
+      },
+      {
+        "block_id": "BLK-2B3D8D7A125A408A",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 45,
+        "score": 0.5022526741027832,
+        "estimated_tokens": 115,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-80D6896F1D53BCDF"
+      },
+      {
+        "block_id": "BLK-0659A3A36343885F",
+        "document_id": "DOC-D9C0DEB31D45",
+        "rank": 46,
+        "score": 0.5022526741027832,
+        "estimated_tokens": 95,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-80D6896F1D53BCDF"
+      },
+      {
+        "block_id": "BLK-59A987DF9304AB8A",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 47,
+        "score": 0.5021859169006347,
+        "estimated_tokens": 94,
+        "is_neighbor": false,
+        "seed_block_id": null
+      },
+      {
+        "block_id": "BLK-E3347A1F0CA7060D",
+        "document_id": "DOC-DF116E7199E2",
+        "rank": 48,
+        "score": 0.5021859169006347,
+        "estimated_tokens": 50,
+        "is_neighbor": true,
+        "seed_block_id": "BLK-59A987DF9304AB8A"
+      }
+    ]
+  }
+}
