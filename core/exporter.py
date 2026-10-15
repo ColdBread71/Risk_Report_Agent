@@ -982,12 +982,6 @@ def build_asset_review_payload(state: dict, run_id: str) -> dict[str, Any]:
     }
 
 
-def _review_evidence_key(evidence: EvidenceRef) -> str:
-    if evidence.source.block_id:
-        return f"block:{evidence.source.block_id}"
-    return f"quote:{evidence.source.file_path}:{(evidence.quote or '').strip()}"
-
-
 def validate_asset_review_artifacts(
     json_path: str | Path,
     excel_path: str | Path,
@@ -1038,19 +1032,16 @@ def validate_asset_review_artifacts(
             )
         typed_relationship_count += len(asset.function_relationships)
 
-        asset_evidence_keys = {
-            _review_evidence_key(item) for item in asset.evidence
-        }
         for objective in asset.related_objectives:
             objective_ids.append(objective.objective_id)
-            if not {
-                _review_evidence_key(item) for item in objective.evidence
-            }.issubset(asset_evidence_keys):
-                raise ValueError(
-                    f"Objective {objective.objective_id} cites evidence not attached to its asset"
-                )
+            # Source legality is validated at node boundaries. Different source
+            # blocks for asset existence and protection rationale are permitted.
             if objective.status != "supported":
                 continue
+            if not asset.evidence or asset.status == "needs_confirmation":
+                raise ValueError(
+                    f"Supported objective {objective.objective_id} has an unresolved parent asset"
+                )
             if objective.basis in {"analyst_minimum", "unknown"}:
                 raise ValueError(
                     f"Supported objective {objective.objective_id} has an unresolved basis"

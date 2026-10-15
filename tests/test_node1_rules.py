@@ -1,4 +1,5 @@
 from types import SimpleNamespace
+import json
 
 import pytest
 
@@ -9,6 +10,7 @@ from nodes.field_extractor import NodeFactBundle, _cache_inputs, _stable_sha256
 from nodes.asset_threat_modeler import _asset_candidate_context
 from nodes.context_builder import (
     _assemble_product_context,
+    _component_name_matches_scope,
     _context_section_cache_inputs,
     _context_section_material,
     _load_context_section_checkpoint,
@@ -340,7 +342,7 @@ def test_context_section_cache_is_fingerprinted_and_round_trips(tmp_path):
         material_payload=material,
         schema_class=type(_context().communication_matrix),
     )
-    assert communication_inputs["context_rule_version"] == "node1_context_rules.v7.4"
+    assert communication_inputs["context_rule_version"] == "node1_context_rules.v7.5"
 
     path = tmp_path / "functions.json"
     result = ProductFunctionCatalog(existing_security_functions=["身份鉴别"])
@@ -967,6 +969,50 @@ def test_component_scope_conflict_and_supplier_responsibility_stay_unknown():
     assert component.scope_status == "unknown"
     assert component.is_third_party is None
     assert any("多个范围状态" in item for item in component.conditions)
+
+
+@pytest.mark.parametrize("name,scope_text,expected", [
+    ("RS485通讯端子", "RS485通讯端子线缆（不供货）", False),
+    ("控制器X100", "X100配套电源：不供货", False),
+    ("X100（电源）", "X100（控制器）", False),
+    ("控制器X100", "控制器X100：标准内置", True),
+    ("控制器X100", "控制器X100（明确标注为选配，实际交付待确认）", True),
+    ("控制器X100", "电源A、控制器X100：交付范围", True),
+])
+def test_component_scope_matching_uses_object_not_protocol(name, scope_text, expected):
+    assert _component_name_matches_scope(name, scope_text) is expected
+
+
+def test_component_does_not_inherit_excluded_cable_scope():
+    context = _context()
+    component = ComponentInventoryEntry(
+        component_id="COMP-001", name="RS485通讯端子", component_type="hardware",
+        scope_status="confirmed", role="提供通信接口。",
+    )
+    context.component_inventory.entries = [component]
+    scope = _scope().model_copy(update={
+        "in_scope_components": ["RS485通讯端子"],
+        "out_of_scope_components": ["RS485通讯端子线缆"],
+    })
+    repaired = _mark_product_context_as_draft(context, scope)
+    assert repaired.component_inventory.entries[0] == component
+
+
+def test_context_model_checkpoint_cannot_restore_human_confirmation(tmp_path):
+    context = _context()
+    evidence = _evidence("BLK-AAAAAAAAAAAAAAAA", "产品处理运行数据。")
+    evidence.is_human_confirmed = True
+    context.evidence = [evidence]
+    path = tmp_path / "context.json"
+    _save_context_section_checkpoint(path=path, cache_inputs={}, fingerprint="test", result=context)
+    before = path.read_bytes()
+    loaded = _load_context_section_checkpoint(path=path, fingerprint="test", schema_class=ProductContext)
+    expected = context.model_copy(deep=True)
+    expected.evidence[0].is_human_confirmed = False
+    assert loaded == expected
+    assert context.evidence[0].is_human_confirmed is True
+    assert path.read_bytes() == before
+    assert json.loads(before)["result"]["evidence"][0]["is_human_confirmed"] is True
 
 
 def test_component_direct_delivery_evidence_prevents_false_unknown_downgrade():

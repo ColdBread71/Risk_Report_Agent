@@ -35,6 +35,7 @@ from tools.evidence_input import (
     iter_evidence_refs,
     load_evidence_packet,
     render_evidence_material,
+    strip_model_confirmation,
     validate_evidence_bindings,
     validate_evidence_block_subset,
 )
@@ -42,8 +43,8 @@ from tools.evidence_input import (
 
 logger = setup_logger("context_builder")
 
-SCOPE_RULE_VERSION = "node0_scope_rules.v7.2"
-CONTEXT_RULE_VERSION = "node1_context_rules.v7.4"
+SCOPE_RULE_VERSION = "node0_scope_rules.v7.3"
+CONTEXT_RULE_VERSION = "node1_context_rules.v7.5"
 
 # Keep unchanged section caches reusable when a rule release only affects selected
 # synthesis sections. Deterministic repairs still run after all sections are assembled.
@@ -135,13 +136,16 @@ def _normalized_boundary_item(value: str) -> str:
 def _boundary_identity(value: str) -> str:
     """Return a conservative identity key for cross-list scope conflict checks."""
     cleaned = _clean_business_text(value)
-    head = re.split(r"[：:；;（(\[]", cleaned, maxsplit=1)[0]
-    identifiers = re.findall(
-        r"[a-z]+(?:[-&]?[a-z0-9]+)*\d+[a-z0-9-]*",
-        head.casefold(),
+    # A shared protocol/model identifies neither an interface nor its cable.
+    # Keep semantic qualifiers (e.g. X100（电源） versus X100（控制器）).
+    # A small set of explicit scope annotations is not part of the object name.
+    head = re.split(r"[：:；;]", cleaned, maxsplit=1)[0]
+    head = re.sub(
+        r"[（(](?:明确标注为(?:选配|可选)[^（）()]*|明确说明未包含在供货范围|"
+        r"范围分类冲突，待确认|内部配置|标准内置|选配|可选)[）)]$",
+        "",
+        head,
     )
-    if identifiers:
-        return "id:" + "|".join(dict.fromkeys(identifiers))
     return "name:" + _normalized_boundary_item(head)
 
 
@@ -178,10 +182,7 @@ def _resolve_scope_boundary_conflicts(
             continue
 
         conflicts += 1
-        representative = next(
-            (value for status, value in records if status == "conditional"),
-            records[0][1],
-        )
+        representative = "；".join(dict.fromkeys(value for _, value in records))
         if "范围分类冲突" not in representative:
             representative = f"{representative}（范围分类冲突，待确认）"
         repaired_conditional.append(representative)
@@ -495,7 +496,7 @@ def _load_context_section_checkpoint(
             return None
         if payload.get("fingerprint") != fingerprint:
             return None
-        return schema_class.model_validate(payload["result"])
+        return schema_class.model_validate(strip_model_confirmation(payload["result"]))
     except (OSError, ValueError, TypeError, KeyError) as exc:
         logger.warning("Node [1] 分段缓存无效，将重新生成：%s (%s)", path, exc)
         return None
@@ -704,15 +705,15 @@ def _scope_downstream_payload(scope: ScopeStatement) -> dict[str, Any]:
 
 
 def _component_name_matches_scope(component_name: str, scope_text: str) -> bool:
-    """Match stable model/type identifiers without treating generic words as identity."""
-    compact_name = "".join(component_name.casefold().split())
-    compact_scope = "".join(scope_text.casefold().split())
-    if compact_name and compact_name in compact_scope:
-        return True
-    identifiers = re.findall(r"[a-z]+(?:[-&]?[a-z0-9]+)*\d+[a-z0-9-]*", compact_name)
-    if any(identifier in compact_scope for identifier in identifiers):
-        return True
-    return False
+    """Match explicit object names, never shared identifiers or name substrings."""
+    identity = _boundary_identity(component_name)
+    if identity == "name:":
+        return False
+    return any(
+        identity == _boundary_identity(item)
+        for line in scope_text.splitlines()
+        for item in re.split(r"[、；;]", line)
+    )
 
 
 def _component_evidence_scope_status(component: Any) -> str | None:

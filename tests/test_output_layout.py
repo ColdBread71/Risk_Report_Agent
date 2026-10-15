@@ -468,6 +468,16 @@ def test_asset_review_export_is_self_auditing_and_json_excel_consistent(tmp_path
     assert payload["review_summary"] == summary
     assert payload["workflow_status"] == "asset_identification_partial_draft"
 
+    unresolved_parent = json.loads(json_path.read_text(encoding="utf-8"))
+    parent = next(asset for asset in unresolved_parent["asset_identification"]["assets"]
+                  if asset["related_objectives"])
+    parent["related_objectives"][0].update(status="supported", basis="explicit_requirement")
+    parent["evidence"] = []
+    invalid_json = tmp_path / "unresolved-parent.json"
+    invalid_json.write_text(json.dumps(unresolved_parent, ensure_ascii=False), encoding="utf-8")
+    with pytest.raises(ValueError, match="unresolved parent asset"):
+        validate_asset_review_artifacts(invalid_json, excel_path)
+
     inconsistent_state = dict(state)
     inconsistent_state["status"] = "asset_identification_completed"
     with pytest.raises(ValueError, match="consistent reviewable"):
@@ -493,3 +503,138 @@ def test_asset_review_export_is_self_auditing_and_json_excel_consistent(tmp_path
     workbook.close()
     with pytest.raises(ValueError, match="headers"):
         validate_asset_review_artifacts(json_path, excel_path)
+
+
+def test_current_baseline_readonly_replay_preserves_objects_and_cross_block_citations(tmp_path):
+    """Replay saved responses through current rules, without retrieval or an LLM."""
+    from nodes import context_builder as context_rules, asset_threat_modeler as asset_rules
+    from nodes.field_extractor import NodeFactBundle
+    from schemas.product import (
+        ProductContextOverview, ProductFunctionCatalog, ComponentInventory,
+        CommunicationMatrix, AssetSectionResult, AssetFunctionMappingResult,
+    )
+    from schemas.retrieval import FieldExtractionResult
+    from tools.evidence_input import (
+        load_evidence_packet, canonicalize_evidence_payload,
+        validate_evidence_bindings, iter_evidence_refs,
+    )
+
+    root = Path(__file__).resolve().parents[1]
+    base = root / "output/emu-node012-current-baseline-03"
+    diagnostics = list((base / "diagnostics").glob("*/attempt-*.json"))
+    protected = [base / "report.json", base / "report.xlsx", base / "run_manifest.json",
+                 root / "CRA_TARA_workflow_prEN40000.md", *diagnostics]
+    hashes = {p: sha256(p.read_bytes()).hexdigest() for p in protected}
+    report = json.loads((base / "report.json").read_text(encoding="utf-8"))
+    records = [json.loads(p.read_text(encoding="utf-8")) for p in diagnostics]
+    records = [record for record in records if record.get("status") == "succeeded"]
+    by_task = {record.get("task"): record for record in records
+               if record["schema"] != "FieldExtractionResult"}
+    binding = load_evidence_packet(
+        root / "project_artifacts/yangguang_emu/evidence_packets/node_0_3_v2.json",
+        workspace=root, verify_source_files=False,
+    )
+
+    def facts(node):
+        batches = tuple(FieldExtractionResult.model_validate(record["result"])
+                        for record in records if record["schema"] == "FieldExtractionResult"
+                        and record["result"]["node_id"] == node)
+        ids = frozenset(bid for batch in batches for fact in batch.facts for bid in fact.block_ids)
+        return NodeFactBundle(batches=batches, traces=(), retrieved_block_ids=ids)
+
+    raw_scope = next(record["parsed_payload"] for record in records
+                     if record["schema"] == "ScopeStatement")
+    scope = context_rules._validate_scope(ScopeStatement.model_validate(
+        canonicalize_evidence_payload(raw_scope, binding)), binding)
+    assert "RS485通信接口（物理端口及协议栈）" in scope.in_scope_components
+    assert any("RS485通讯端子线缆" in item for item in scope.out_of_scope_components)
+    assert not any("范围分类冲突" in item for item in scope.conditional_scope_components)
+
+    context_facts = facts("node_1")
+    sections = []
+    for name, schema in (("overview", ProductContextOverview), ("functions", ProductFunctionCatalog),
+                         ("components", ComponentInventory), ("communications", CommunicationMatrix)):
+        _, allowed = context_rules._context_section_material(
+            section_name=name, scope=scope, facts=context_facts)
+        section = schema.model_validate(canonicalize_evidence_payload(
+            by_task["node_1/" + name]["parsed_payload"], binding, allowed_block_ids=allowed))
+        context_rules._validated_retrieved_output(section, binding, allowed)
+        sections.append(section)
+    allowed = set(context_facts.fact_block_ids()) | {e.source.block_id for e in iter_evidence_refs(scope)}
+    context = context_rules._validate_product_context(
+        context_rules._assemble_product_context(*sections), scope, binding, allowed, context_facts)
+    assert not any(e.is_human_confirmed for e in iter_evidence_refs(context))
+    old_context = ProductContext.model_validate(report["product_context"])
+    assert sum(e.is_human_confirmed for e in iter_evidence_refs(old_context)) == 79
+    assert [x.function_id for x in context.functions] == [x.function_id for x in old_context.functions]
+    assert [x.component_id for x in context.component_inventory.entries] == [
+        x.component_id for x in old_context.component_inventory.entries]
+    assert len(context.communication_matrix.entries) == len(old_context.communication_matrix.entries)
+    # Everything outside the four affected component statuses, model-only review
+    # flags, and the generated repair summary must remain byte-for-byte equivalent
+    # as JSON values, including existing conditional/conflict explanations.
+    comparable = context.model_copy(deep=True)
+    expected = old_context.model_copy(deep=True)
+    expected_status_changes = {"RS485通讯端子", "交流熔丝盒", "接地端子", "路由器"}
+    for current, previous in zip(comparable.component_inventory.entries, expected.component_inventory.entries):
+        if current.scope_status != previous.scope_status:
+            assert current.name in expected_status_changes
+            current.scope_status = previous.scope_status
+    for evidence in iter_evidence_refs(expected):
+        evidence.is_human_confirmed = False
+    comparable.assessment_notes = expected.assessment_notes
+    assert comparable == expected
+    print("component status changes:", [(x.name, old.scope_status, x.scope_status)
+          for x, old in zip(context.component_inventory.entries, old_context.component_inventory.entries)
+          if x.scope_status != old.scope_status])
+
+    asset_facts = facts("node_2")
+    asset_sections = []
+    for name in asset_rules._ASSET_SECTION_FIELDS:
+        _, allowed = asset_rules._asset_section_material(
+            section_name=name, scope=scope, product_context=context, facts=asset_facts)
+        section = AssetSectionResult.model_validate(asset_rules._prepare_asset_section_payload(
+            by_task["node_2/" + name]["parsed_payload"], section_name=name,
+            binding=binding, allowed_block_ids=allowed))
+        asset_rules._validate_asset_section(section, section_name=name, binding=binding, allowed_block_ids=allowed)
+        asset_sections.append((name, section))
+    result = asset_rules._assemble_asset_sections(
+        asset_sections, section_failures=[], field_failures=(), product_functions=context.functions,
+        defer_function_coverage=True, scope=scope, product_context=context)
+    result = asset_rules._apply_asset_function_mapping(result, AssetFunctionMappingResult.model_validate(
+        by_task["node_2/function_mapping"]["result"]), context.functions)
+    old_assets = [Asset.model_validate(item) for item in report["asset_identification"]["assets"]]
+    assert [(x.asset_id, x.name) for x in result.assets] == [(x.asset_id, x.name) for x in old_assets]
+    restored = 0
+    for asset, old in zip(result.assets, old_assets):
+        assert asset.evidence == old.evidence
+        assert asset.related_function_ids == old.related_function_ids
+        assert asset.function_relationships == old.function_relationships
+        assert [o.objective_id for o in asset.related_objectives] == [o.objective_id for o in old.related_objectives]
+        comparison = asset.model_copy(deep=True)
+        for index, (objective, previous) in enumerate(zip(asset.related_objectives, old.related_objectives)):
+            before = {e.source.block_id for e in previous.evidence}
+            after = {e.source.block_id for e in objective.evidence}
+            assert before.issubset(after)
+            restored += len(after - before)
+            if after - before:
+                assert objective.status == "needs_confirmation"
+                comparison.related_objectives[index] = objective.model_copy(update={
+                    "evidence": previous.evidence, "basis": previous.basis,
+                })
+        assert comparison == old
+    assert restored == 8
+    validate_evidence_bindings(result, binding)
+    state = {
+        "evidence_packet_ref": binding.reference, "scope": scope, "product_context": context,
+        "risk_methodology": RiskMethodology.model_validate(report["risk_methodology"]),
+        "risk_acceptance_criteria": RiskAcceptanceCriteria.model_validate(report["risk_acceptance_criteria"]),
+        "assets": result.assets, "asset_assessment": result.assessment, "asset_notes": result.notes,
+        "asset_review_approved": False, "threat_assessment": None, "errors": [],
+        "current_step": "node_2_asset_identification", "status": "asset_identification_partial_draft",
+    }
+    paths = export_asset_review(state, tmp_path, "offline-baseline-replay")
+    summary = validate_asset_review_artifacts(*paths)
+    assert summary["asset_count"] == 27 and summary["objective_count"] == 36
+    assert all(sha256(p.read_bytes()).hexdigest() == digest for p, digest in hashes.items())
+    print("baseline replay: 79 model confirmation flags removed; 8 citations restored; 27 assets / 36 objectives preserved")

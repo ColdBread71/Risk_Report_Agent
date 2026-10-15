@@ -276,13 +276,34 @@ def _map_nested_evidence(value: Any, resolver) -> Any:
     return value
 
 
+def strip_model_confirmation(payload: dict[str, Any]) -> dict[str, Any]:
+    """Remove review authority only at model-output/model-checkpoint boundaries.
+
+    Do not apply this to human records or generic evidence validation. A stored
+    model response is still model-authored, even when its citations are valid.
+    """
+    def normalize(value: Any) -> Any:
+        if isinstance(value, list):
+            return [normalize(item) for item in value]
+        if isinstance(value, dict):
+            result = {key: normalize(item) for key, item in value.items()}
+            if isinstance(value.get("source"), dict) and any(
+                key in value for key in ("evidence_id", "quote", "evidence_level", "is_human_confirmed")
+            ):
+                result["is_human_confirmed"] = False
+            return result
+        return value
+
+    return normalize(payload)
+
+
 def canonicalize_evidence_payload(
     payload: dict[str, Any],
     binding: EvidencePacketBinding,
     *,
     allowed_block_ids: set[str] | frozenset[str] | None = None,
 ) -> dict[str, Any]:
-    """Materialize source metadata and drop references outside an optional contract."""
+    """Bind model citations; model-authored review flags are never authoritative."""
 
     def resolve(raw: dict[str, Any]) -> dict[str, Any]:
         item = deepcopy(raw)
@@ -296,7 +317,7 @@ def canonicalize_evidence_payload(
         item.setdefault("evidence_level", "direct")
         item.setdefault("confidence", "high")
         item.setdefault("retrieved_by", "node_field_retrieval")
-        item.setdefault("is_human_confirmed", False)
+        item["is_human_confirmed"] = False
         item["source"] = {
             "file_name": document.source_file_name,
             "file_path": document.source_path,
@@ -384,7 +405,9 @@ def canonicalize_evidence_from_upstream(
         source = raw.get("source", {})
         identity = (raw.get("evidence_id"), source.get("block_id"))
         canonical = by_identity.get(identity) or by_block.get(source.get("block_id"))
-        return deepcopy(canonical) if canonical is not None else deepcopy(raw)
+        # Only an exact canonical upstream record can carry upstream authority.
+        # Unresolved model references still fail the subsequent subset check.
+        return deepcopy(canonical) if canonical is not None else strip_model_confirmation(raw)
 
     return _map_nested_evidence(payload, resolve)
 
@@ -432,6 +455,7 @@ __all__ = [
     "iter_evidence_refs",
     "load_evidence_packet",
     "render_evidence_material",
+    "strip_model_confirmation",
     "validate_evidence_bindings",
     "validate_evidence_block_subset",
     "validate_evidence_ref",

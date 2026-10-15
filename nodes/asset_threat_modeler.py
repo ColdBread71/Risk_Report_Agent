@@ -40,6 +40,7 @@ from tools.evidence_input import (
     canonicalize_evidence_from_upstream,
     canonicalize_evidence_payload,
     iter_evidence_refs,
+    strip_model_confirmation,
     validate_evidence_bindings,
     validate_evidence_block_subset,
     validate_evidence_subset,
@@ -49,7 +50,7 @@ from tools.evidence_input import (
 logger = setup_logger("asset_threat_modeler")
 
 
-ASSET_RULE_VERSION = "node2_asset_rules.v2.7"
+ASSET_RULE_VERSION = "node2_asset_rules.v2.8"
 
 
 _ASSET_PROMPT_TEMPLATE = load_prompt("node2_assets.md", "asset_direct")
@@ -566,7 +567,7 @@ def _load_asset_section_checkpoint(
             return None
         if payload.get("fingerprint") != fingerprint:
             return None
-        return AssetSectionResult.model_validate(payload["result"])
+        return AssetSectionResult.model_validate(strip_model_confirmation(payload["result"]))
     except (OSError, ValueError, TypeError, KeyError) as exc:
         logger.warning("Node [2] 分段缓存无效，将重新生成：%s (%s)", path, exc)
         return None
@@ -1199,13 +1200,13 @@ def _repair_objective_for_asset(
     asset_evidence_keys = {
         _evidence_reference_key(item) for item in asset_evidence
     }
-    objective_evidence = [
-        item
-        for item in objective.evidence
-        if _evidence_reference_key(item) in asset_evidence_keys
-    ]
-    if len(objective_evidence) != len(objective.evidence):
-        actions.append("未同时支持父资产的目标证据已移除")
+    # Packet/subset validation has already checked every child reference.
+    # Asset existence and the protection rationale may come from different text.
+    objective_evidence = list(objective.evidence)
+    has_independent_evidence = any(
+        _evidence_reference_key(item) not in asset_evidence_keys
+        for item in objective_evidence
+    )
 
     category = objective.category
     if public_authentication_material and category == "confidentiality":
@@ -1246,7 +1247,17 @@ def _repair_objective_for_asset(
         basis = "unknown"
         actions.append("缺少直接支持的目标依据已改为未知")
 
-    status = "supported" if basis_supported else "needs_confirmation"
+    # These are necessary structural checks, not a semantic proof of the goal.
+    # Never promote an unresolved model judgment just because a citation exists.
+    # Retain independent citations for review without automatically accepting
+    # their relationship to this asset (titles/warnings also have valid sources).
+    status = (
+        "supported"
+        if basis_supported and objective.status == "supported" and not has_independent_evidence
+        else "needs_confirmation"
+    )
+    if has_independent_evidence:
+        actions.append("独立段落的目标证据已保留，其支持关系待工程师确认")
     if objective.status != status:
         actions.append("目标支持状态已按证据充分性纠正")
     if status == "needs_confirmation":

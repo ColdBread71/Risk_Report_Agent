@@ -11,7 +11,11 @@ from nodes.context_builder import _looks_like_heading_only, _validate_scope
 from schemas.common import ConfidenceLevel, EvidenceLevel
 from schemas.evidence import EvidenceRef, SourceRef
 from schemas.legal import ProductClassification, ScopeStatement
-from tools.evidence_input import canonicalize_evidence_payload, load_evidence_packet
+from tools.evidence_input import (
+    canonicalize_evidence_payload, canonicalize_evidence_from_upstream,
+    load_evidence_packet, validate_evidence_ref, validate_evidence_subset,
+    validate_evidence_block_subset,
+)
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -180,9 +184,36 @@ def test_scope_detects_same_object_with_different_status_explanations():
     assert repaired.out_of_scope_components == []
     assert len(repaired.conditional_scope_components) == 1
     assert "范围分类冲突" in repaired.conditional_scope_components[0]
+    assert "标准内置" in repaired.conditional_scope_components[0]
+    assert "仅在订购选项中提供" in repaired.conditional_scope_components[0]
 
 
-def test_local_scope_quality_issue_does_not_trigger_llm_retry():
+@pytest.mark.parametrize("included,excluded", [
+    ("RS485通信接口（物理端口及协议栈）", "RS485通讯端子线缆（不随设备供货）"),
+    ("控制器X100", "X100配套线缆"),
+    ("X100（电源）", "X100（控制器）"),
+])
+def test_scope_keeps_different_objects_with_shared_identifiers(included, excluded):
+    scope = _scope(in_scope_components=[included], conditional_scope_components=[],
+                   out_of_scope_components=[excluded])
+    repaired = _validate_scope(scope, None)
+    assert repaired.in_scope_components == [included]
+    assert repaired.out_of_scope_components == [excluded]
+    assert repaired.conditional_scope_components == []
+
+
+def test_scope_detects_same_object_despite_explicit_scope_annotation():
+    scope = _scope(in_scope_components=["控制器X100（标准内置）"],
+                   conditional_scope_components=[],
+                   out_of_scope_components=["控制器X100：不在交付范围"])
+    repaired = _validate_scope(scope, None)
+    assert repaired.in_scope_components == repaired.out_of_scope_components == []
+    assert len(repaired.conditional_scope_components) == 1
+    assert "范围分类冲突" in repaired.conditional_scope_components[0]
+
+
+def test_local_scope_quality_issue_does_not_trigger_llm_retry(monkeypatch):
+    monkeypatch.setattr("core.structured_extraction.enforce_input_token_budget", lambda *_: 100)
     payload = _scope(
         out_of_scope_components=["Logger4000：适用性未确认（GAP-LOGGER4000-SCOPE）"]
     ).model_dump(mode="json")
@@ -228,6 +259,69 @@ def test_canonical_evidence_fills_exact_block_text():
     evidence = result["evidence"][0]
     assert evidence["quote"] == block.text.strip()
     assert "规范文本块原文" in evidence["notes"]
+
+
+@pytest.mark.parametrize("claim", [True, "true", 1])
+def test_model_cannot_claim_confirmation_while_valid_citation_survives(claim):
+    binding = load_evidence_packet(PACKET_PATH, workspace=PROJECT_ROOT, verify_source_files=False)
+    block = next(iter(binding.blocks.values()))
+    raw = {"evidence": [{"evidence_id": "EVD-TEST", "source": {"block_id": block.block_id},
+                         "quote": block.text.strip(), "is_human_confirmed": claim}]}
+    canonical = canonicalize_evidence_payload(raw, binding)
+    evidence = EvidenceRef.model_validate(canonical["evidence"][0])
+    assert validate_evidence_ref(evidence, binding).is_human_confirmed is False
+    assert evidence.evidence_id == "EVD-TEST"
+    assert evidence.quote == block.text.strip()
+    assert raw["evidence"][0]["is_human_confirmed"] == claim
+
+
+@pytest.mark.parametrize("confirmed", [False, True])
+def test_upstream_record_authority_is_preserved_without_trusting_model_flag(confirmed):
+    binding = load_evidence_packet(PACKET_PATH, workspace=PROJECT_ROOT, verify_source_files=False)
+    block = next(iter(binding.blocks.values()))
+    canonical = canonicalize_evidence_payload({"evidence": [{
+        "source": {"block_id": block.block_id}, "quote": block.text.strip(),
+    }]}, binding)
+    upstream = EvidenceRef.model_validate(canonical["evidence"][0])
+    upstream.is_human_confirmed = confirmed
+    upstream.notes = "Existing upstream record, not a model-written review."
+    raw = upstream.model_dump(mode="json")
+    raw.update(is_human_confirmed=not confirmed, notes="Model tries to replace review metadata")
+    copied = canonicalize_evidence_from_upstream({"evidence": [raw]}, upstream)
+    result = EvidenceRef.model_validate(copied["evidence"][0])
+    assert result == upstream
+    assert validate_evidence_ref(upstream, binding).is_human_confirmed is confirmed
+    assert validate_evidence_subset(result, upstream) == result
+
+
+def test_unknown_and_out_of_contract_child_references_still_rejected():
+    binding = load_evidence_packet(PACKET_PATH, workspace=PROJECT_ROOT, verify_source_files=False)
+    first, second = list(binding.blocks.values())[:2]
+    raw = {"asset": {"name": "运行配置", "related_objectives": [{
+        "objective_id": "OBJ-001", "evidence": [
+            {"source": {"block_id": first.block_id}, "quote": first.text.strip()},
+            {"source": {"block_id": second.block_id}, "quote": second.text.strip()},
+            {"source": {"block_id": "BLK-0000000000000000"}, "quote": "fabricated"},
+        ],
+    }]}}
+    repaired = canonicalize_evidence_payload(raw, binding, allowed_block_ids={first.block_id})
+    child = repaired["asset"]["related_objectives"][0]
+    assert repaired["asset"]["name"] == "运行配置" and child["objective_id"] == "OBJ-001"
+    assert [e["source"]["block_id"] for e in child["evidence"]] == [first.block_id]
+    evidence = EvidenceRef.model_validate(child["evidence"][0])
+    with pytest.raises(ValueError, match="not retrieved"):
+        validate_evidence_block_subset(evidence, {second.block_id})
+    with pytest.raises(ValueError, match="quote is not present"):
+        validate_evidence_ref(evidence.model_copy(update={"quote": "fabricated-nonexistent-quote"}), binding)
+    unresolved = canonicalize_evidence_from_upstream({"evidence": [{
+        **evidence.model_dump(mode="json"),
+        "source": {**evidence.source.model_dump(mode="json"), "block_id": "BLK-0000000000000000"},
+        "is_human_confirmed": True,
+    }]}, evidence)
+    unknown = EvidenceRef.model_validate(unresolved["evidence"][0])
+    assert unknown.is_human_confirmed is False
+    with pytest.raises(ValueError, match="not present in validated upstream"):
+        validate_evidence_subset(unknown, evidence)
 
 
 def test_canonical_evidence_drops_unbound_reference_without_dropping_content():

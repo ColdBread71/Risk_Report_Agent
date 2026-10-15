@@ -1,4 +1,5 @@
 from types import SimpleNamespace
+import json
 
 from openpyxl import Workbook
 from pydantic import ValidationError
@@ -408,9 +409,9 @@ def test_objective_evidence_cannot_backfill_missing_parent_asset_evidence():
     assert repaired.status == "needs_confirmation"
     assert repaired.related_objectives[0].basis == "unknown"
     assert repaired.related_objectives[0].status == "needs_confirmation"
-    assert repaired.related_objectives[0].evidence == []
+    assert repaired.related_objectives[0].evidence == asset.related_objectives[0].evidence
     assert "无直接证据候选已降为待工程师确认" in actions
-    assert "未同时支持父资产的目标证据已移除" in actions
+    assert "独立段落的目标证据已保留，其支持关系待工程师确认" in actions
 
 
 def test_supported_objective_keeps_basis_but_never_claims_control_implementation():
@@ -447,6 +448,68 @@ def test_supported_objective_keeps_basis_but_never_claims_control_implementation
     assert objective.status == "supported"
     assert len(objective.evidence) == 1
     assert "目标描述已规范为不声明控制实现的保护结果" in actions
+
+
+@pytest.mark.parametrize("quote", [
+    "运行配置应防止未经授权的修改。",
+    "7.2 安全配置",
+    "警告：操作不当可能造成设备损坏。",
+])
+def test_independent_objective_citation_is_preserved_without_automatic_support(quote):
+    existence = _evidence_payload("产品存储运行配置。", "BLK-AAAAAAAAAAAAAAAA")
+    rationale = _evidence_payload(quote, "BLK-BBBBBBBBBBBBBBBB")
+    asset = Asset.model_validate(_asset_payload(
+        name="运行配置", asset_type="data", status="confirmed", value="影响产品运行。",
+        evidence=[existence], related_objectives=[{
+            "objective_id": "OBJ-001", "description": "保护运行配置完整性。",
+            "category": "integrity", "basis": "explicit_requirement",
+            "status": "supported", "evidence": [rationale],
+        }],
+    ))
+    repaired, _ = _repair_asset_business_rules(asset)
+    objective = repaired.related_objectives[0]
+    assert repaired.evidence == asset.evidence
+    assert objective.evidence == asset.related_objectives[0].evidence
+    assert objective.basis == "explicit_requirement"
+    assert objective.status == "needs_confirmation"
+    assert asset.related_objectives[0].status == "supported"
+
+
+@pytest.mark.parametrize("basis", ["explicit_requirement", "asset_value_or_consequence"])
+def test_nonempty_same_block_citation_cannot_promote_unresolved_objective(basis):
+    evidence = _evidence_payload("产品存储运行配置。", "BLK-AAAAAAAAAAAAAAAA")
+    asset = Asset.model_validate(_asset_payload(
+        name="运行配置", asset_type="data", status="confirmed", value="影响产品运行。",
+        evidence=[evidence], related_objectives=[{
+            "objective_id": "OBJ-001", "description": "保护运行配置完整性。",
+            "category": "integrity", "basis": basis,
+            "status": "needs_confirmation", "evidence": [evidence],
+        }],
+    ))
+    repaired, _ = _repair_asset_business_rules(asset)
+    assert repaired.related_objectives[0].status == "needs_confirmation"
+    assert repaired.related_objectives[0].basis == basis
+    assert repaired.related_objectives[0].evidence == asset.related_objectives[0].evidence
+
+
+def test_asset_model_checkpoint_strips_flags_without_losing_children(tmp_path):
+    evidence = _evidence_payload("产品存储运行配置。", "BLK-AAAAAAAAAAAAAAAA")
+    evidence["is_human_confirmed"] = True
+    asset = Asset.model_validate(_asset_payload(evidence=[evidence], related_objectives=[{
+        "objective_id": "OBJ-001", "description": "保护配置完整性。", "category": "integrity",
+        "evidence": [evidence],
+    }]))
+    result = AssetSectionResult(assets=[asset], assessment="PARTIAL")
+    path = tmp_path / "assets.json"
+    _save_asset_section_checkpoint(path=path, cache_inputs={}, fingerprint="test", result=result)
+    before = path.read_bytes()
+    loaded = _load_asset_section_checkpoint(path=path, fingerprint="test")
+    expected = result.model_copy(deep=True)
+    expected.assets[0].evidence[0].is_human_confirmed = False
+    expected.assets[0].related_objectives[0].evidence[0].is_human_confirmed = False
+    assert loaded == expected
+    assert path.read_bytes() == before
+    assert json.loads(before)["result"]["assets"][0]["evidence"][0]["is_human_confirmed"] is True
 
 
 def test_untraceable_legal_basis_is_removed_and_objective_is_downgraded():
