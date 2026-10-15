@@ -52,11 +52,19 @@ def _build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--node",
-        choices=("0", "1", "2"),
+        choices=("0", "1", "2", "3"),
         help=(
             "Run only one business node. Repeated runs create node0_1/node0_2 etc. "
             "Node 1/2 use the selected successful upstream attempt in the same run-id directory."
         ),
+    )
+    parser.add_argument(
+        "--upstream-report",
+        help="For --node 3: saved Node2 review/progress JSON, read-only, in a separate new run.",
+    )
+    parser.add_argument(
+        "--allow-unreviewed-draft", action="store_true",
+        help="Explicit development-only opt-in for Node3 candidates from an unapproved Node2 draft.",
     )
     parser.add_argument(
         "--evidence-packet",
@@ -332,6 +340,9 @@ def _failed_run_field_cache(
 def main(argv: Sequence[str] | None = None) -> int:
     """Run to the selected boundary and export only validated results."""
     args = _build_parser().parse_args(argv)
+    if args.node != "3" and (args.upstream_report or args.allow_unreviewed_draft):
+        logger.error("--upstream-report / --allow-unreviewed-draft 仅用于 --node 3")
+        return 1
     run_id = args.run_id or uuid4().hex
     if re.fullmatch(r"[A-Za-z0-9_-]{1,64}", run_id) is None:
         logger.error("run_id 只能包含字母、数字、下划线和连字符，最长 64 字符")
@@ -379,6 +390,19 @@ def main(argv: Sequence[str] | None = None) -> int:
     }
     if args.rag_index:
         config["configurable"]["rag_index_dir"] = str(Path(args.rag_index).resolve())
+    if args.node == "3":
+        from core.node3_runner import run_node3_draft
+        try:
+            exit_code = run_node3_draft(
+                args=args, binding=evidence_binding, run_id=run_id,
+                output_directory=output_directory, config=config,
+                provenance=_run_provenance(args), text_model=_configured_text_model(),
+            )
+        except Exception as exc:
+            logger.error("Node3 草稿运行失败: %s", exc)
+            return 1
+        logger.info("Node3 草稿已保存: %s（未人工审核；运行结果码=%d）", run_output_dir, exit_code)
+        return exit_code
     if args.reuse_failed_run:
         try:
             fallback_cache = _failed_run_field_cache(
@@ -525,6 +549,8 @@ def main(argv: Sequence[str] | None = None) -> int:
         logger.warning("工作流未完成 Node [3]，不导出完整报告")
         return 1
 
+    export_workflow_progress(result, run_output_dir, run_id, "model_threats")
+    record_run_status(run_output_dir, str(result["status"]))
     report_path = run_output_dir / "tara_report.xlsx"
     export_tara_report(result, str(report_path))
     logger.info("Node [0]-[3] 报告已导出: %s", report_path)

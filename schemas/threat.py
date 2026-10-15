@@ -3,7 +3,7 @@ Threat identification and DREAD scoring models.
 """
 
 from enum import Enum
-from typing import List, Optional, Self
+from typing import List, Literal, Optional, Self
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
@@ -23,7 +23,7 @@ class StrideCategory(str, Enum):
     ELEVATION_OF_PRIVILEGE = "elevation_of_privilege"
 
 
-class ThreatScenario(BaseModel):
+class ThreatDetails(BaseModel):
     """Threat scenario per prEN 40000-1-2 section 6.4.3."""
 
     model_config = ConfigDict(extra="forbid")
@@ -36,14 +36,29 @@ class ThreatScenario(BaseModel):
     stride_category: StrideCategory = Field(..., description="Canonical STRIDE category for the threat scenario.")
     title: str = Field(..., description="Short title for the threat.")
     description: str = Field(..., description="Threat scenario description.")
-    targeted_assets: List[Asset] = Field(..., description="Assets targeted by this threat.")
-    compromised_objectives: List[CybersecurityObjective] = Field(..., description="Cybersecurity objectives compromised by this threat.")
     cause_of_compromise: str = Field(..., description="Cause of compromise of the cybersecurity objective.")
     threat_actor: Optional[str] = Field(default=None, description="Threat actor or source of the threat.")
     attack_path: Optional[str] = Field(default=None, description="Attack path or preconditions.")
     known_vulnerabilities: List[str] = Field(default_factory=list, description="Relevant known exploitable vulnerabilities.")
     evidence: List[EvidenceRef] = Field(default_factory=list, description="Evidence supporting this threat scenario.")
     confidence: ConfidenceLevel = Field(default=ConfidenceLevel.NONE, description="Confidence in the threat scenario.")
+    analysis_basis: str = Field(..., min_length=1, description="Explain how supplied product facts and general attack mechanisms support this candidate; citations alone are not proof.")
+    assumptions: list[str] = Field(default_factory=list, description="Unverified preconditions, explicitly conditional rather than asserted product facts.")
+    confirmation_questions: list[str] = Field(default_factory=list, description="Product details an engineer should confirm before scoring.")
+
+
+class ThreatScenario(ThreatDetails):
+    """Canonical stored scenario, retaining full upstream objects for Node [4]."""
+
+    targeted_assets: List[Asset] = Field(..., min_length=1)
+    compromised_objectives: List[CybersecurityObjective] = Field(..., min_length=1)
+
+
+class ThreatCandidate(ThreatDetails):
+    """Compact model output; code resolves references without regenerating assets."""
+
+    targeted_asset_ids: list[str] = Field(..., min_length=1)
+    compromised_objective_ids: list[str] = Field(..., min_length=1)
 
 
 class DreadDimensionScore(BaseModel):
@@ -81,6 +96,9 @@ class ThreatAssessment(BaseModel):
     scores: List[DreadScore] = Field(default_factory=list, description="DREAD scores for the identified threats.")
     assessment: AssessmentVerdict = Field(default=AssessmentVerdict.FAIL, description="Assessment verdict for the stage.")
     notes: Optional[str] = Field(default=None, description="Notes on sufficiency or missing coverage.")
+    review_status: Literal["unreviewed_draft"] = "unreviewed_draft"
+    upstream_asset_review_approved: bool = False
+    uncovered_asset_ids: list[str] = Field(default_factory=list)
 
 
 class ThreatIdentificationResult(BaseModel):
@@ -91,11 +109,11 @@ class ThreatIdentificationResult(BaseModel):
     threats: List[ThreatScenario] = Field(
         ...,
         min_length=1,
-        description="STRIDE threat scenarios linked to the approved asset inventory.",
+        description="STRIDE threat scenarios linked to the supplied asset inventory.",
     )
     assessment: AssessmentVerdict = Field(
         default=AssessmentVerdict.FAIL,
-        description="Set PASS only when every approved asset has sufficient threat coverage.",
+        description="Candidate coverage assessment, not human approval. Use PARTIAL for gaps or unverified preconditions.",
     )
     notes: Optional[str] = Field(
         default=None,
@@ -111,3 +129,9 @@ class ThreatIdentificationResult(BaseModel):
         if len(threat_ids) != len(set(threat_ids)):
             raise ValueError("threat_id values must be unique within the threat inventory.")
         return self
+
+
+class ThreatCandidateResult(ThreatIdentificationResult):
+    """LLM wire format; the saved contract remains ThreatIdentificationResult."""
+
+    threats: list[ThreatCandidate] = Field(..., min_length=1)

@@ -1,6 +1,16 @@
 # Decision Log
 
-当前迭代约定以 DEC-025 和 docs/README.md 为准。下方历史条目保留来由，不代表当前仍要逐节点业务审批或使用旧输出目录。
+当前 Node3 约定见 DEC-031；日常入口为 docs/README.md。下方历史条目保留来由，不代表当前仍要逐节点业务审批或使用旧输出目录。
+
+## DEC-031
+
+- Status: ACTIVE
+- Date: 2026-10-15
+- Topic: Minimal Node3 STRIDE candidates from saved unreviewed drafts
+- Decision: Reuse the existing Node3 extraction, STRIDE/storage schemas, evidence utilities, graph and exporters. Add an explicitly opted-in development path (`--node 3 --upstream-report ... --allow-unreviewed-draft`) that loads a technically complete Node2 draft read-only into a new run, without executing Node0–2. The formal workflow retains the mandatory human asset-review interrupt. Development output never claims asset approval or threat review; assessment is at most PARTIAL, and a model FAIL is not upgraded.
+- Contracts: The model returns asset/objective IDs plus concrete cause, path, basis, assumptions and confirmation questions. Code restores canonical upstream objects and checks ID existence, uniqueness, ownership, source/packet identity and citation membership. Model-authored threat evidence cannot assert human confirmation. Node4 can later read the existing full ThreatAssessment/ThreatScenario representation; scores remain empty and Node4–8 are not executed.
+- Coverage: Replace the hard requirement to fabricate at least one scenario per asset with deterministic uncovered-asset findings and a PARTIAL ceiling. The business guide remains unchanged: sufficient consideration of every relevant asset is still an engineering review requirement, not proven by this MVP. No fixed threat count or six-category quota is enforced. Unverified product implementation is conditional in the prompt; source checks cannot establish semantic truth.
+- Verification: 91 targeted offline checks cover Node3, shared exporters and structured extraction. The specified saved baseline (29 assets, 35 objectives) runs through the actual CLI/graph with nine handwritten mock responses; guide and baseline file hashes remain unchanged. This verifies the program path, not real LLM or business analysis quality. No paid model request, embedding request, commit or downstream development was performed. See docs/node3_mvp.md for the manual real-run command and remaining limits.
 
 This file is append-only. Do not delete historical decisions. When a new decision replaces an old one, mark the old record SUPERSEDED.
 

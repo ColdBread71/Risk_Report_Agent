@@ -25,6 +25,7 @@ from core.workflow_status import (
 from nodes.field_extractor import extract_node_facts, load_runtime_scope
 from prompts import load_prompt
 from schemas.common import AssessmentVerdict
+from schemas.evidence import EvidenceRef
 from schemas.evidence_packet import EvidenceTargetNode
 from schemas.product import (
     Asset,
@@ -35,7 +36,7 @@ from schemas.product import (
     CybersecurityObjective,
 )
 from schemas.retrieval import RetrievalField
-from schemas.threat import ThreatAssessment, ThreatIdentificationResult
+from schemas.threat import ThreatAssessment, ThreatCandidateResult, ThreatIdentificationResult
 from tools.evidence_input import (
     canonicalize_evidence_from_upstream,
     canonicalize_evidence_payload,
@@ -51,6 +52,7 @@ logger = setup_logger("asset_threat_modeler")
 
 
 ASSET_RULE_VERSION = "node2_asset_rules.v2.8"
+THREAT_RULE_VERSION = "node3_threat_rules.v1"
 
 
 _ASSET_PROMPT_TEMPLATE = load_prompt("node2_assets.md", "asset_direct")
@@ -1953,10 +1955,10 @@ def _assemble_asset_sections(
 
 
 def _canonicalize_and_validate_threats(
-    result: ThreatIdentificationResult,
+    result: ThreatIdentificationResult | ThreatCandidateResult,
     approved_assets: list[Asset],
 ) -> ThreatIdentificationResult:
-    """Bind LLM threat references to canonical approved assets and enforce coverage."""
+    """Resolve IDs to upstream objects; coverage gaps are review findings, not errors."""
     asset_by_id = {asset.asset_id: asset for asset in approved_assets}
     objective_by_id = {
         objective.objective_id: objective
@@ -1967,12 +1969,15 @@ def _canonicalize_and_validate_threats(
     canonical_threats = []
 
     for threat in result.threats:
-        if not threat.title.strip() or not threat.description.strip() or not threat.cause_of_compromise.strip():
+        if any(not (getattr(threat, name) or "").strip() for name in (
+            "title", "description", "cause_of_compromise", "analysis_basis", "threat_actor", "attack_path"
+        )):
             raise ValueError(
-                f"Threat {threat.threat_id} must have non-empty title, description, and cause_of_compromise."
+                f"Threat {threat.threat_id} requires title, description, cause, basis, actor and attack path/preconditions."
             )
 
-        target_ids = [asset.asset_id for asset in threat.targeted_assets]
+        target_ids = (threat.targeted_asset_ids if hasattr(threat, "targeted_asset_ids")
+                      else [asset.asset_id for asset in threat.targeted_assets])
         if not target_ids:
             raise ValueError(f"Threat {threat.threat_id} must target at least one approved asset.")
         if len(target_ids) != len(set(target_ids)):
@@ -1989,7 +1994,8 @@ def _canonicalize_and_validate_threats(
             for asset_id in target_ids
             for objective in asset_by_id[asset_id].related_objectives
         }
-        objective_ids = [objective.objective_id for objective in threat.compromised_objectives]
+        objective_ids = (threat.compromised_objective_ids if hasattr(threat, "compromised_objective_ids")
+                         else [objective.objective_id for objective in threat.compromised_objectives])
         if not objective_ids:
             raise ValueError(
                 f"Threat {threat.threat_id} must compromise at least one objective of its targeted assets."
@@ -2003,21 +2009,53 @@ def _canonicalize_and_validate_threats(
                 f"Threat {threat.threat_id} references objectives not owned by its targets: {invalid_objectives}."
             )
 
-        canonical_threats.append(
-            threat.model_copy(
-                update={
-                    "targeted_assets": [asset_by_id[asset_id] for asset_id in target_ids],
-                    "compromised_objectives": [objective_by_id[objective_id] for objective_id in objective_ids],
-                }
-            )
-        )
+        for asset_id in target_ids:
+            if not set(objective_ids).intersection(o.objective_id for o in asset_by_id[asset_id].related_objectives):
+                raise ValueError(f"Threat {threat.threat_id}: target {asset_id} has no compromised objective.")
+        canonical_threats.append({
+            **threat.model_dump(mode="json", exclude={"targeted_asset_ids", "compromised_objective_ids", "targeted_assets", "compromised_objectives"}),
+            "targeted_assets": [asset_by_id[asset_id] for asset_id in target_ids],
+            "compromised_objectives": [objective_by_id[objective_id] for objective_id in objective_ids],
+        })
         covered_asset_ids.update(target_ids)
 
     uncovered_assets = sorted(set(asset_by_id) - covered_asset_ids)
+    notes = result.notes or ""
     if uncovered_assets:
-        raise ValueError(f"Approved assets without a threat scenario: {uncovered_assets}.")
+        notes += f"\n系统覆盖提示：以下资产暂无候选威胁，需人工判断是否适用或遗漏：{', '.join(uncovered_assets)}。"
+    return ThreatIdentificationResult(
+        threats=canonical_threats,
+        assessment=(AssessmentVerdict.PARTIAL
+                    if uncovered_assets and result.assessment == AssessmentVerdict.PASS
+                    else result.assessment),
+        notes=notes or None,
+    )
 
-    return result.model_copy(update={"threats": canonical_threats})
+
+def _threat_analysis_input(state: TaraState) -> str:
+    """Deduplicate citations without dropping product facts or upstream uncertainty."""
+    catalog = {}
+
+    def compact(value):
+        if isinstance(value, list):
+            return [compact(item) for item in value]
+        if isinstance(value, dict):
+            if "evidence_id" in value and isinstance(value.get("source"), dict):
+                key = (value["evidence_id"], value["source"].get("block_id"))
+                catalog[key] = strip_model_confirmation(value)
+                return {"evidence_id": key[0], "block_id": key[1]}
+            return {key: compact(item) for key, item in value.items()}
+        return value
+
+    data = compact({
+        "product_context": state["product_context"].model_dump(mode="json"),
+        "assets": [asset.model_dump(mode="json") for asset in state["assets"]],
+        "asset_review_approved": state.get("asset_review_approved") is True,
+        "asset_notes": state.get("asset_notes"),
+        "scope": state["scope"].model_dump(mode="json") if state.get("scope") else None,
+    })
+    data["evidence_catalog"] = list(catalog.values())
+    return json.dumps(data, ensure_ascii=False, separators=(",", ":"))
 
 
 def identify_assets(state: TaraState, config: RunnableConfig) -> dict[str, Any]:
@@ -2224,8 +2262,8 @@ def review_assets(state: TaraState) -> dict[str, Any]:
     }
 
 
-def model_threats(state: TaraState) -> dict[str, Any]:
-    """Generate step [3] STRIDE scenarios from the approved asset inventory."""
+def model_threats(state: TaraState, config: RunnableConfig = None) -> dict[str, Any]:
+    """Generate scenarios after approval or an explicit development-only draft opt-in."""
     logger.info("进入 Node [3] STRIDE 威胁建模节点")
     errors = list(state.get("errors", []))
     updates: dict[str, Any] = {
@@ -2236,7 +2274,8 @@ def model_threats(state: TaraState) -> dict[str, Any]:
 
     approved_assets = state.get("assets", [])
     product_context = state.get("product_context")
-    if not state.get("asset_review_approved"):
+    draft_mode = (config or {}).get("configurable", {}).get("allow_unreviewed_threat_draft") is True
+    if not state.get("asset_review_approved") and not (draft_mode and is_asset_reviewable_state(state)):
         errors.append("Threat modelling requires explicit human approval of the asset inventory.")
         updates.update({"status": "threat_modeling_blocked", "errors": errors})
         return updates
@@ -2246,25 +2285,31 @@ def model_threats(state: TaraState) -> dict[str, Any]:
         return updates
 
     try:
+        binding = load_runtime_scope(config or {})
+        if state.get("evidence_packet_ref") != binding.reference:
+            raise ValueError("Node3 evidence packet does not match upstream identity")
+        validate_evidence_bindings([product_context, approved_assets], binding)
         llm = get_llm()
-        analysis_input = json.dumps(
-            {
-                "product_context": product_context.model_dump(mode="json"),
-                "approved_assets": [asset.model_dump(mode="json") for asset in approved_assets],
-                "asset_review_notes": state.get("asset_review_notes"),
-            },
-            ensure_ascii=False,
-            indent=2,
-        )
+        analysis_input = _threat_analysis_input(state)
+        # New threat evidence carries no human authority. Canonical assets retain their
+        # upstream values; historical confirmation flags do not approve this draft.
+        upstream = [EvidenceRef.model_validate(item) for item in json.loads(analysis_input)["evidence_catalog"]]
+
+        def validate(candidate):
+            validate_evidence_bindings(candidate, binding)
+            validate_evidence_subset(candidate, upstream)
+            return _canonicalize_and_validate_threats(candidate, approved_assets)
+
         result = extract_with_retry(
             llm=llm,
             prompt_template=_THREAT_PROMPT_TEMPLATE,
-            schema_class=ThreatIdentificationResult,
+            schema_class=ThreatCandidateResult,
             sample_input=analysis_input,
-            semantic_validator=lambda candidate: _canonicalize_and_validate_threats(
-                candidate,
-                approved_assets,
+            semantic_validator=validate,
+            payload_transformer=lambda payload: strip_model_confirmation(
+                canonicalize_evidence_from_upstream(payload, upstream)
             ),
+            task_label="node3_stride_candidates",
         )
     except Exception as exc:
         errors.append(f"Threat modelling failed: {exc}")
@@ -2274,13 +2319,21 @@ def model_threats(state: TaraState) -> dict[str, Any]:
     threat_assessment = ThreatAssessment(
         threats=result.threats,
         scores=[],
-        assessment=result.assessment,
-        notes=result.notes,
+        assessment=(AssessmentVerdict.PARTIAL
+                    if draft_mode and result.assessment == AssessmentVerdict.PASS
+                    else result.assessment),
+        notes=(result.notes or "") + "\n候选威胁未经过人工审核，不代表漏洞已证实或风险已评定。" + (
+            "上游资产未获人工批准，本次仅为开发草稿。" if draft_mode else ""
+        ),
+        upstream_asset_review_approved=state.get("asset_review_approved") is True,
+        uncovered_asset_ids=sorted({a.asset_id for a in approved_assets} - {
+            a.asset_id for t in result.threats for a in t.targeted_assets
+        }),
     )
     updates.update(
         {
             "threat_assessment": threat_assessment,
-            "status": "threat_modeling_completed",
+            "status": "threat_modeling_draft" if draft_mode else "threat_modeling_completed",
             "errors": errors,
         }
     )

@@ -710,6 +710,9 @@ def _write_method_and_criteria(workbook: Workbook, state: dict) -> None:
     if threat_assessment is not None:
         rows.extend(
             [
+                ("Node [3] 结论", "审核状态", threat_assessment.review_status),
+                ("Node [3] 结论", "上游资产已人工批准", threat_assessment.upstream_asset_review_approved),
+                ("Node [3] 结论", "暂无候选威胁的资产", threat_assessment.uncovered_asset_ids),
                 ("Node [3] 结论", "威胁覆盖完整性", threat_assessment.assessment),
                 ("Node [3] 结论", "威胁建模说明", threat_assessment.notes),
             ]
@@ -851,6 +854,7 @@ def _build_progress_workbook(
     if state.get("assets"):
         _write_assets(workbook, state)
 
+    _write_threats(workbook, state)
     _write_method_and_criteria(workbook, state)
     _write_evidence_trace(workbook, state)
 
@@ -1166,6 +1170,32 @@ def export_asset_review(
     return json_path, excel_path
 
 
+def _write_threats(workbook: Workbook, state: dict) -> None:
+    """Use the same draft-aware threat view in progress and terminal workbooks."""
+    assessment = state.get("threat_assessment")
+    if assessment is None or not assessment.threats:
+        return
+    sheet = workbook.create_sheet("Node3 STRIDE 威胁")
+    _initialize_sheet(
+        sheet, "Node [3] STRIDE 候选威胁（未审核草稿）",
+        "待工程师复核；上游资产人工批准=" + str(assessment.upstream_asset_review_approved)
+        + "；DREAD 尚未评分。暂无候选威胁资产：" + ", ".join(assessment.uncovered_asset_ids),
+        ["威胁编号", "STRIDE 类别", "威胁名称", "目标资产编号", "受损安全目标编号", "受损原因",
+         "威胁来源或攻击者", "攻击路径或前提", "已知可利用漏洞", "威胁场景说明", "置信度",
+         "分析依据", "待确认前提", "人工确认问题", "证据编号", "审核状态"],
+    )
+    for threat in assessment.threats:
+        sheet.append([_value(item) for item in (
+            threat.threat_id, threat.stride_category, threat.title,
+            [a.asset_id for a in threat.targeted_assets],
+            [o.objective_id for o in threat.compromised_objectives],
+            threat.cause_of_compromise, threat.threat_actor, threat.attack_path,
+            threat.known_vulnerabilities, threat.description, threat.confidence,
+            threat.analysis_basis, threat.assumptions, threat.confirmation_questions,
+            [e.evidence_id for e in threat.evidence], assessment.review_status,
+        )])
+
+
 def export_tara_report(state: dict, output_path: str = "tara_report.xlsx") -> None:
     """Serialize validated terminal state into the current multi-sheet report."""
     scope = state.get("scope")
@@ -1181,47 +1211,7 @@ def export_tara_report(state: dict, output_path: str = "tara_report.xlsx") -> No
     if assets:
         _write_assets(workbook, state)
 
-    threat_assessment = state.get("threat_assessment")
-    if threat_assessment is not None and threat_assessment.threats:
-        threat_sheet = workbook.create_sheet("Node3 STRIDE 威胁")
-        threat_headers = [
-            "威胁编号",
-            "STRIDE 类别",
-            "威胁名称",
-            "目标资产编号",
-            "受损安全目标编号",
-            "受损原因",
-            "威胁来源或攻击者",
-            "攻击路径或前提",
-            "已知可利用漏洞",
-            "威胁场景说明",
-            "置信度",
-        ]
-        _initialize_sheet(
-            threat_sheet,
-            "Node [3] STRIDE 威胁场景",
-            "只针对人工批准的资产和网络安全目标生成威胁；DREAD 评分属于 Node [4]。",
-            threat_headers,
-        )
-
-        for threat in threat_assessment.threats:
-            threat_sheet.append(
-                [
-                    _value(threat.threat_id),
-                    _value(threat.stride_category),
-                    _value(threat.title),
-                    _value([asset.asset_id for asset in threat.targeted_assets]),
-                    _value(
-                        [objective.objective_id for objective in threat.compromised_objectives]
-                    ),
-                    _value(threat.cause_of_compromise),
-                    _value(threat.threat_actor),
-                    _value(threat.attack_path),
-                    _value(threat.known_vulnerabilities),
-                    _value(threat.description),
-                    _value(threat.confidence),
-                ]
-            )
+    _write_threats(workbook, state)
 
     _write_method_and_criteria(workbook, state)
     _write_evidence_trace(workbook, state)

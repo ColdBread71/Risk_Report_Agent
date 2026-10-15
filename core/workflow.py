@@ -125,6 +125,12 @@ node2_workflow.add_conditional_edges(
 node2_workflow.add_edge("review_assets", END)
 node2_graph = node2_workflow.compile(checkpointer=checkpointer)
 
+node3_workflow = StateGraph(TaraState)
+node3_workflow.add_node("model_threats", model_threats)
+node3_workflow.add_edge(START, "model_threats")
+node3_workflow.add_edge("model_threats", END)
+node3_graph = node3_workflow.compile(checkpointer=checkpointer)
+
 app = tara_graph
 
 __all__ = [
@@ -134,5 +140,6 @@ __all__ = [
     "node0_graph",
     "node1_graph",
     "node2_graph",
+    "node3_graph",
     "tara_graph",
 ]
