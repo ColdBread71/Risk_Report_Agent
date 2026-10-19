@@ -1121,9 +1121,23 @@ def _align_asset_scope_status(
         action = "上游条件组件的资产状态已保持为条件项"
     if asset.status in {"needs_confirmation", "external_affected"} and target == "conditional":
         return asset, ()
-    if asset.status == target:
-        return asset, ()
-    return asset.model_copy(update={"status": target}), (action,)
+    updates: dict[str, Any] = {}
+    actions: list[str] = []
+    if asset.status != target:
+        updates["status"] = target
+        actions.append(action)
+    # Scope alignment runs after objective repair. If it makes the parent
+    # unresolved, its objectives must satisfy the same existing export invariant.
+    if target == "needs_confirmation" and any(
+        objective.status == "supported" for objective in asset.related_objectives
+    ):
+        updates["related_objectives"] = [
+            objective.model_copy(update={"status": "needs_confirmation"})
+            if objective.status == "supported" else objective
+            for objective in asset.related_objectives
+        ]
+        actions.append("资产范围待确认，关联目标支持状态已同步为待确认")
+    return (asset.model_copy(update=updates) if updates else asset), tuple(actions)
 
 
 def _has_overbroad_function_mapping(asset: Asset, function_count: int) -> bool:

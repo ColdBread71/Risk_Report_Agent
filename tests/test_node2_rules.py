@@ -1182,6 +1182,34 @@ def test_same_name_assets_with_conflicting_boundary_are_not_merged():
     assert "不足以安全合并" in (result.notes or "")
 
 
+@pytest.mark.parametrize("initial_status", ["confirmed", "needs_confirmation"])
+def test_unknown_component_scope_keeps_objective_support_consistent(initial_status):
+    candidate = Asset.model_validate(_asset_payload(
+        name="核心交换机", asset_type="network", status=initial_status,
+        evidence=[_evidence_payload("核心交换机传输设备数据。")],
+        related_objectives=[{
+            "objective_id": "OBJ-041", "description": "保护数据完整性",
+            "category": "integrity", "basis": "asset_value_or_consequence",
+            "status": "supported", "evidence": [_evidence_payload("核心交换机传输设备数据。")],
+        }],
+    ))
+    context = SimpleNamespace(component_inventory=SimpleNamespace(entries=[
+        SimpleNamespace(name="核心交换机", scope_status="unknown")]))
+    scope = SimpleNamespace(in_scope_components=[], conditional_scope_components=[], out_of_scope_components=[])
+    repaired, actions = asset_threat_modeler._align_asset_scope_status(
+        candidate, scope=scope, product_context=context)
+    assert repaired.status == "needs_confirmation"
+    assert repaired.related_objectives[0].status == "needs_confirmation"
+    expected = candidate.model_dump(mode="json")
+    expected["status"] = "needs_confirmation"
+    expected["related_objectives"][0]["status"] = "needs_confirmation"
+    assert repaired.model_dump(mode="json") == expected
+    assert any("关联目标支持状态" in action for action in actions)
+    again, actions = asset_threat_modeler._align_asset_scope_status(
+        repaired, scope=scope, product_context=context)
+    assert again == repaired and actions == ()
+
+
 def test_component_scope_status_is_not_upgraded_by_asset_synthesis():
     candidate = Asset.model_validate(
         _asset_payload(
