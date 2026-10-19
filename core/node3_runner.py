@@ -3,6 +3,7 @@
 from hashlib import sha256
 import json
 from pathlib import Path
+import re
 
 from core.exporter import ASSET_REVIEW_SCHEMA_VERSION, PROGRESS_SCHEMA_VERSION, export_workflow_progress
 from core.run_manifest import initialize_run_manifest, record_run_status
@@ -76,6 +77,29 @@ def run_node3_draft(*, args, binding, run_id, output_directory, config, provenan
     if destination.exists():
         raise ValueError("Node3 requires a new --run-id; source and previous results are read-only")
     config["configurable"]["allow_unreviewed_threat_draft"] = True
+    config["configurable"]["node3_batch_dir"] = str(destination / "node3_batches")
+    config["configurable"]["node3_source_sha256"] = source_hash
+    if args.reuse_node3_batches:
+        previous_id = args.reuse_node3_batches
+        if previous_id == run_id or re.fullmatch(r"[A-Za-z0-9_-]{1,64}", previous_id) is None:
+            raise ValueError("Batch reuse requires a different valid source run-id")
+        if args.cache_policy != "reuse":
+            raise ValueError("Batch reuse cannot be combined with --cache-policy refresh")
+        previous = output_directory / previous_id
+        prior = json.loads((previous / "run_manifest.json").read_text(encoding="utf-8"))
+        if not (
+            prior.get("run_id") == previous_id
+            and prior.get("requested_node") == "3"
+            and prior.get("project_id") == binding.reference.project_id
+            and prior.get("evidence_packet_ref") == binding.reference.model_dump(mode="json")
+            and prior.get("text_model") == text_model
+            and prior.get("rule_versions", {}).get("threat") == THREAT_RULE_VERSION
+            and prior.get("upstream", {}).get("node_2", {}).get("sha256") == source_hash
+        ):
+            raise ValueError("Node3 reuse source identity/model/input/rule mismatch; no model calls made")
+        if not (previous / "node3_batches").is_dir():
+            raise ValueError("Source run has no Node3 batch checkpoints")
+        config["configurable"]["node3_reuse_batch_dir"] = str(previous / "node3_batches")
     initialize_run_manifest(
         run_directory=destination, run_id=run_id,
         project_id=binding.reference.project_id,
@@ -83,7 +107,8 @@ def run_node3_draft(*, args, binding, run_id, output_directory, config, provenan
         text_model=text_model, requested_node="3",
         rule_versions={"threat": THREAT_RULE_VERSION},
         upstream={"node_2": {"path": str(source), "sha256": source_hash, "business_reviewed": False}},
-        provenance=provenance,
+        provenance={**provenance, "node3_reused_run": args.reuse_node3_batches,
+                    "node3_read_timeout_seconds": 1800, "node3_sdk_max_retries": 0},
     )
     result = node3_graph.invoke(state, config=config)
     export_workflow_progress(result, destination, run_id, "model_threats")
@@ -96,5 +121,10 @@ def run_node3_draft(*, args, binding, run_id, output_directory, config, provenan
         for name in ("report.json", "report.xlsx")
     }
     manifest["review_status"] = "unreviewed_draft"
+    batch_directory = destination / "node3_batches"
+    manifest["batch_artifacts"] = {
+        str(path.relative_to(destination)).replace("\\", "/"): sha256(path.read_bytes()).hexdigest()
+        for path in sorted(batch_directory.glob("*.json"))
+    }
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return 0 if result["status"] == "threat_modeling_draft" else 1

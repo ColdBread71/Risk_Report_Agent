@@ -26,6 +26,7 @@ PACKET = ROOT / "project_artifacts/yangguang_emu/evidence_packets/node_0_3_v2.js
 @pytest.fixture(autouse=True)
 def no_network(monkeypatch):
     import core.llm
+    monkeypatch.setenv("DASHSCOPE_TEXT_MODEL", "qwen-plus")
     def blocked(*args, **kwargs):
         raise AssertionError("Offline Node3 verification attempted network access")
     monkeypatch.setattr(socket, "create_connection", blocked)
@@ -49,6 +50,15 @@ def candidate(**changes):
         "confirmation_questions": ["配置写入的身份认证和授权如何实施？"],
     }
     return {**data, **changes}
+
+
+def batch_response(response):
+    """Adapt existing fixture narratives to the compact batch wire format."""
+    value = deepcopy(response)
+    for item in value["threats"]:
+        evidence = item.pop("evidence", [])
+        item["evidence_block_ids"] = list(dict.fromkeys(e["source"]["block_id"] for e in evidence))
+    return value
 
 
 def inventory():
@@ -160,13 +170,13 @@ def test_saved_baseline_cli_offline(monkeypatch, baseline, tmp_path):
 
     def invoke(prompt):
         calls.append(prompt)
-        return SimpleNamespace(content=json.dumps(response, ensure_ascii=False), response_metadata={})
+        return SimpleNamespace(content=json.dumps(batch_response(response), ensure_ascii=False), response_metadata={})
     monkeypatch.setattr(node, "get_llm", lambda: SimpleNamespace(invoke=invoke, model_name="qwen-plus"))
     args = ["--node", "3", "--upstream-report", str(BASE / "report.json"),
             "--allow-unreviewed-draft", "--evidence-packet", str(PACKET),
             "--output-dir", str(tmp_path), "--run-id", "offline-node3"]
     assert main.main(args) == 0
-    assert len(calls) == 1
+    assert len(calls) == 3
     raw = json.loads((tmp_path / "offline-node3/report.json").read_text(encoding="utf-8"))
     output = raw["state"]
     assessment = ThreatAssessment.model_validate(output["threat_assessment"])
@@ -227,12 +237,12 @@ def test_fabricated_evidence_rejected(baseline, monkeypatch):
     evidence["source"]["block_id"] = "BLK-0000000000000000"
     response["threats"][0]["evidence"] = [evidence]
     monkeypatch.setattr(node, "get_llm", lambda: SimpleNamespace(
-        invoke=lambda prompt: SimpleNamespace(content=json.dumps(response), response_metadata={}), model_name="qwen-plus"))
+        invoke=lambda prompt: SimpleNamespace(content=json.dumps(batch_response(response)), response_metadata={}), model_name="qwen-plus"))
     result = node.model_threats(state, {"configurable": {
         "evidence_packet_path": str(PACKET), "workspace": str(ROOT), "allow_unreviewed_threat_draft": True}})
     assert result["status"] == "threat_modeling_failed"
     assert result["threat_assessment"] is None
-    assert "outside the evidence packet" in result["errors"][-1]
+    assert "not present in Node3 input" in result["errors"][-1]
 
 
 def test_approved_node3_retains_formal_path(baseline, monkeypatch):
@@ -240,7 +250,7 @@ def test_approved_node3_retains_formal_path(baseline, monkeypatch):
     state = {**state, "status": "asset_review_approved", "asset_review_approved": True}
     response = emu_fixture()
     monkeypatch.setattr(node, "get_llm", lambda: SimpleNamespace(
-        invoke=lambda prompt: SimpleNamespace(content=json.dumps(response), response_metadata={}), model_name="qwen-plus"))
+        invoke=lambda prompt: SimpleNamespace(content=json.dumps(batch_response(response)), response_metadata={}), model_name="qwen-plus"))
     result = node.model_threats(state, {"configurable": {
         "evidence_packet_path": str(PACKET), "workspace": str(ROOT)}})
     assert result["status"] == "threat_modeling_completed"
@@ -258,11 +268,11 @@ def test_valid_packet_block_not_in_node3_input_is_rejected(baseline, monkeypatch
     response = emu_fixture()
     response["threats"][0]["evidence"] = [evidence]
     monkeypatch.setattr(node, "get_llm", lambda: SimpleNamespace(
-        invoke=lambda prompt: SimpleNamespace(content=json.dumps(response), response_metadata={}), model_name="qwen-plus"))
+        invoke=lambda prompt: SimpleNamespace(content=json.dumps(batch_response(response)), response_metadata={}), model_name="qwen-plus"))
     result = node.model_threats(state, {"configurable": {
         "evidence_packet_path": str(PACKET), "workspace": str(ROOT), "allow_unreviewed_threat_draft": True}})
     assert result["status"] == "threat_modeling_failed"
-    assert "not present in validated upstream results" in result["errors"][-1]
+    assert "not present in Node3 input" in result["errors"][-1]
 
 
 def test_runtime_packet_mismatch_stops_before_llm(baseline, monkeypatch):

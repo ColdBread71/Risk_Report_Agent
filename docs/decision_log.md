@@ -1,6 +1,6 @@
 # Decision Log
 
-当前 Node3 约定见 DEC-031；日常入口为 docs/README.md。下方历史条目保留来由，不代表当前仍要逐节点业务审批或使用旧输出目录。
+当前 Node3 约定见 DEC-032（草稿审批边界沿用 DEC-031）；日常入口为 docs/README.md。下方历史条目保留来由，不代表当前仍要逐节点业务审批或使用旧输出目录。
 
 ## DEC-031
 
@@ -13,6 +13,17 @@
 - Verification: 91 targeted offline checks cover Node3, shared exporters and structured extraction. The specified saved baseline (29 assets, 35 objectives) runs through the actual CLI/graph with nine handwritten mock responses; guide and baseline file hashes remain unchanged. This verifies the program path, not real LLM or business analysis quality. No paid model request, embedding request, commit or downstream development was performed. See docs/node3_mvp.md for the manual real-run command and remaining limits.
 
 This file is append-only. Do not delete historical decisions. When a new decision replaces an old one, mark the old record SUPERSEDED.
+
+## DEC-032
+
+- Status: ACTIVE
+- Date: 2026-10-19
+- Topic: Three generic Node3 perspectives with compact citations and bounded recovery
+- Decision: Replace the single Node3 generation call with identity/management, communications/operations, and lifecycle/local-maintenance perspectives. Use three normal model calls and deterministic integration without a planner, self-review loop or model merger. The perspectives apply to software, services, cloud and devices; they do not hardcode this customer's equipment/protocols. The draft/approval boundary in DEC-031 remains unchanged.
+- Scenario unit: A candidate may contain a complete multi-step chain and multiple cooperating entry points. Split only when conditions, required capability, control failure or consequences require materially different risk judgments. The prompt distinguishes product facts from unverified weaknesses and deployment-dependent consequences. Exact analytical duplicates merge with source provenance retained; conditions or paths that differ are not fuzzily merged. Human review is still required for semantic overlap and objective causality.
+- Inputs/output: Retain the global product context and all original assets/objectives. Deduplicate citation blocks and excerpts while preserving original text; the model returns block IDs and code restores input EvidenceRef objects with no new human authority. The internal batch schema permits an empty, explained perspective. The public ThreatAssessment/ThreatScenario and Node4 scoring handoff remain unchanged, including empty scores.
+- Recovery: Store only validated complete batch results in the existing run directory, with model, source snapshot, packet, rule, input, Prompt and Schema fingerprints plus result digests. Explicit `--reuse-node3-batches` reads a previous compatible run into a new run. All present checkpoints are checked before any missing batch is generated; mismatch/corruption fails without automatic regeneration. Successful batches survive later failure. The SDK synchronous Node3 client has a 30-minute read-wait timeout and no hidden retries; transport failures stop, while structured output correction is limited to two attempts per batch. No general cache/agent architecture is introduced.
+- Verification/limits: Four targeted offline groups cover 108 cases (107 passed in the combined run; one Windows diagnostic-file replacement error passed on isolated rerun). The latest saved 52-asset/93-objective input verifies CLI/graph, citation restoration, multi-step preservation, draft status, recovery and output compatibility without model or embedding calls. Source guide and business baselines retain hashes. Local input estimates total 181593 tokens over three prompts versus 213820 for the previous single prompt; actual reasoning/output cost and business quality await one manual real run. Node0–2 business functions are unchanged and Node4 is not implemented.
 
 ## DEC-001
 

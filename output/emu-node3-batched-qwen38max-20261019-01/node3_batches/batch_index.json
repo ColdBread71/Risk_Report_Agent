@@ -1,0 +1,315 @@
+{
+  "schema_version": "node3_batch_index.v1",
+  "status": "completed",
+  "batches": [
+    {
+      "batch_id": "identity_management",
+      "name": "身份与管理面",
+      "status": "succeeded",
+      "candidate_count": 15,
+      "fingerprint": "daa4bbaac2483104bc5d2c34edd16cd581b86093b533351a763ad4187abb0289",
+      "notes": "本批为身份与管理面未审核候选。覆盖范围包括：默认口令与账户接管、低权限越权、管理员密码重置、开发者/操作系统动态密码、未加密管理入口、会话管理、证书与密钥信任材料、升级公钥、云/三方云授权、远程维护授权、日志与Syslog审计、恢复出厂恶意使用、调试接口、北向协议配置授权和时间源对审计的影响。以下缺口导致只能评为PARTIAL：1) 上游asset_review_approved=false，资产和目标清单尚未人工批准；2) 实际交付配置、合同/BOM、默认开启状态、远程维护和云转发是否实际启用未确认；3) 会话令牌、密码重置支持流程、动态密码生成算法、日志保留/删除机制、调试接口默认状态等实现细节不足；4) 端口矩阵中8443与443关系、IEC104/MODBUS默认状态冲突、9998-9999 UDP与内部调试说明绑定关系仍待确认；5) 外部阳光云、三方云、远程维护服务端、Syslog服务器和后台站控的运营责任、交付范围和降级方式未确认。上述候选不应被解释为已证实漏洞，后续评分需先确认对应假设和问题。"
+    },
+    {
+      "batch_id": "communications_operations",
+      "name": "通信与业务运行面",
+      "status": "succeeded",
+      "candidate_count": 19,
+      "fingerprint": "1e9b545125a6f340862bf2ae5311f689e189a3daa002515d2b5d9b51c4bc7749",
+      "notes": "本视角为通信与业务运行面候选场景，未审核；上游资产评审未批准。已覆盖南向总线采集、北向调度/控制、后台站控数据路径、阳光云/三方云远程路径、时间同步、日志/问责、远程维护授权、资源耗尽和未授权配置启用等候选链条。仍未立项或需补充的事项包括：SSH/SFTP、MMS、UDP 9998-9999、RS232 Debug、Micro SD 烧写、固件/升级网络交付通道等，原因包括默认关闭、启用状态未确认、绑定关系不足、材料缺口或可由其他视角进一步分析。实际供货范围、协议启用状态、外部系统运营责任、断网降级、人员/财产后果的现场因果链和 RDPS 均未确认，因此所有场景均为条件性候选。"
+    },
+    {
+      "batch_id": "lifecycle_local",
+      "name": "生命周期与本地维护面",
+      "status": "succeeded",
+      "candidate_count": 13,
+      "fingerprint": "0b8986bacefa91791b72cdd267ebcc54c8b60cb77d5b4466a0b0877c76c0bec2",
+      "notes": "本批仅覆盖 lifecycle_local 视角，即分发、安装、更新、加载/启动、依赖工具供应链、本地/物理维护、敏感存储、备份恢复、重置及退役。上游 asset_review_approved=false，资产和目标尚未人工批准，因此所有场景均为未审核候选。已覆盖：固件/软件升级与公钥导入、iConfig工具供应链、Micro SD本地烧写、敏感存储提取、预置/默认证书、证书/密钥导入、默认口令初始化、支持动态密码/密码重置、恢复出厂恶意使用、退役数据残留、配置导出导入、日志/审计生命周期影响、调试维护接口残留。主要缺口包括：实际供货与启用配置未知；升级公钥分发和验证机制未知；iConfig安装包签名/哈希未知；Micro SD烧写是否有技术强制未知；OP-TEE/TrustZone密钥保护和物理攻击缓解未知；恢复出厂删除范围未知；日志保留、删除和远程Syslog安全机制未知；调试接口默认状态和绑定关系存在不确定描述。远程维护、云转发授权、北向协议运行时攻击等可能由其他视角补充；本视角未重复展开。"
+    }
+  ],
+  "scenario_sources": {
+    "THREAT-001": [
+      {
+        "batch_id": "identity_management",
+        "local_threat_id": "THREAT-001"
+      }
+    ],
+    "THREAT-002": [
+      {
+        "batch_id": "identity_management",
+        "local_threat_id": "THREAT-002"
+      }
+    ],
+    "THREAT-003": [
+      {
+        "batch_id": "identity_management",
+        "local_threat_id": "THREAT-003"
+      }
+    ],
+    "THREAT-004": [
+      {
+        "batch_id": "identity_management",
+        "local_threat_id": "THREAT-004"
+      }
+    ],
+    "THREAT-005": [
+      {
+        "batch_id": "identity_management",
+        "local_threat_id": "THREAT-005"
+      }
+    ],
+    "THREAT-006": [
+      {
+        "batch_id": "identity_management",
+        "local_threat_id": "THREAT-006"
+      }
+    ],
+    "THREAT-007": [
+      {
+        "batch_id": "identity_management",
+        "local_threat_id": "THREAT-007"
+      }
+    ],
+    "THREAT-008": [
+      {
+        "batch_id": "identity_management",
+        "local_threat_id": "THREAT-008"
+      }
+    ],
+    "THREAT-009": [
+      {
+        "batch_id": "identity_management",
+        "local_threat_id": "THREAT-009"
+      }
+    ],
+    "THREAT-010": [
+      {
+        "batch_id": "identity_management",
+        "local_threat_id": "THREAT-010"
+      }
+    ],
+    "THREAT-011": [
+      {
+        "batch_id": "identity_management",
+        "local_threat_id": "THREAT-011"
+      }
+    ],
+    "THREAT-012": [
+      {
+        "batch_id": "identity_management",
+        "local_threat_id": "THREAT-012"
+      }
+    ],
+    "THREAT-013": [
+      {
+        "batch_id": "identity_management",
+        "local_threat_id": "THREAT-013"
+      }
+    ],
+    "THREAT-014": [
+      {
+        "batch_id": "identity_management",
+        "local_threat_id": "THREAT-014"
+      }
+    ],
+    "THREAT-015": [
+      {
+        "batch_id": "identity_management",
+        "local_threat_id": "THREAT-015"
+      }
+    ],
+    "THREAT-016": [
+      {
+        "batch_id": "communications_operations",
+        "local_threat_id": "THREAT-001"
+      }
+    ],
+    "THREAT-017": [
+      {
+        "batch_id": "communications_operations",
+        "local_threat_id": "THREAT-002"
+      }
+    ],
+    "THREAT-018": [
+      {
+        "batch_id": "communications_operations",
+        "local_threat_id": "THREAT-003"
+      }
+    ],
+    "THREAT-019": [
+      {
+        "batch_id": "communications_operations",
+        "local_threat_id": "THREAT-004"
+      }
+    ],
+    "THREAT-020": [
+      {
+        "batch_id": "communications_operations",
+        "local_threat_id": "THREAT-005"
+      }
+    ],
+    "THREAT-021": [
+      {
+        "batch_id": "communications_operations",
+        "local_threat_id": "THREAT-006"
+      }
+    ],
+    "THREAT-022": [
+      {
+        "batch_id": "communications_operations",
+        "local_threat_id": "THREAT-007"
+      }
+    ],
+    "THREAT-023": [
+      {
+        "batch_id": "communications_operations",
+        "local_threat_id": "THREAT-008"
+      }
+    ],
+    "THREAT-024": [
+      {
+        "batch_id": "communications_operations",
+        "local_threat_id": "THREAT-009"
+      }
+    ],
+    "THREAT-025": [
+      {
+        "batch_id": "communications_operations",
+        "local_threat_id": "THREAT-010"
+      }
+    ],
+    "THREAT-026": [
+      {
+        "batch_id": "communications_operations",
+        "local_threat_id": "THREAT-011"
+      }
+    ],
+    "THREAT-027": [
+      {
+        "batch_id": "communications_operations",
+        "local_threat_id": "THREAT-012"
+      }
+    ],
+    "THREAT-028": [
+      {
+        "batch_id": "communications_operations",
+        "local_threat_id": "THREAT-013"
+      }
+    ],
+    "THREAT-029": [
+      {
+        "batch_id": "communications_operations",
+        "local_threat_id": "THREAT-014"
+      }
+    ],
+    "THREAT-030": [
+      {
+        "batch_id": "communications_operations",
+        "local_threat_id": "THREAT-015"
+      }
+    ],
+    "THREAT-031": [
+      {
+        "batch_id": "communications_operations",
+        "local_threat_id": "THREAT-016"
+      }
+    ],
+    "THREAT-032": [
+      {
+        "batch_id": "communications_operations",
+        "local_threat_id": "THREAT-017"
+      }
+    ],
+    "THREAT-033": [
+      {
+        "batch_id": "communications_operations",
+        "local_threat_id": "THREAT-018"
+      }
+    ],
+    "THREAT-034": [
+      {
+        "batch_id": "communications_operations",
+        "local_threat_id": "THREAT-019"
+      }
+    ],
+    "THREAT-035": [
+      {
+        "batch_id": "lifecycle_local",
+        "local_threat_id": "THREAT-001"
+      }
+    ],
+    "THREAT-036": [
+      {
+        "batch_id": "lifecycle_local",
+        "local_threat_id": "THREAT-002"
+      }
+    ],
+    "THREAT-037": [
+      {
+        "batch_id": "lifecycle_local",
+        "local_threat_id": "THREAT-003"
+      }
+    ],
+    "THREAT-038": [
+      {
+        "batch_id": "lifecycle_local",
+        "local_threat_id": "THREAT-004"
+      }
+    ],
+    "THREAT-039": [
+      {
+        "batch_id": "lifecycle_local",
+        "local_threat_id": "THREAT-005"
+      }
+    ],
+    "THREAT-040": [
+      {
+        "batch_id": "lifecycle_local",
+        "local_threat_id": "THREAT-006"
+      }
+    ],
+    "THREAT-041": [
+      {
+        "batch_id": "lifecycle_local",
+        "local_threat_id": "THREAT-007"
+      }
+    ],
+    "THREAT-042": [
+      {
+        "batch_id": "lifecycle_local",
+        "local_threat_id": "THREAT-008"
+      }
+    ],
+    "THREAT-043": [
+      {
+        "batch_id": "lifecycle_local",
+        "local_threat_id": "THREAT-009"
+      }
+    ],
+    "THREAT-044": [
+      {
+        "batch_id": "lifecycle_local",
+        "local_threat_id": "THREAT-010"
+      }
+    ],
+    "THREAT-045": [
+      {
+        "batch_id": "lifecycle_local",
+        "local_threat_id": "THREAT-011"
+      }
+    ],
+    "THREAT-046": [
+      {
+        "batch_id": "lifecycle_local",
+        "local_threat_id": "THREAT-012"
+      }
+    ],
+    "THREAT-047": [
+      {
+        "batch_id": "lifecycle_local",
+        "local_threat_id": "THREAT-013"
+      }
+    ]
+  },
+  "final_threat_count": 47
+}

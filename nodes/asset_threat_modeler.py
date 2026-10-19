@@ -25,7 +25,6 @@ from core.workflow_status import (
 from nodes.field_extractor import extract_node_facts, load_runtime_scope
 from prompts import load_prompt
 from schemas.common import AssessmentVerdict
-from schemas.evidence import EvidenceRef
 from schemas.evidence_packet import EvidenceTargetNode
 from schemas.product import (
     Asset,
@@ -52,7 +51,7 @@ logger = setup_logger("asset_threat_modeler")
 
 
 ASSET_RULE_VERSION = "node2_asset_rules.v2.8"
-THREAT_RULE_VERSION = "node3_threat_rules.v1"
+THREAT_RULE_VERSION = "node3_threat_rules.v2"
 
 
 _ASSET_PROMPT_TEMPLATE = load_prompt("node2_assets.md", "asset_direct")
@@ -332,7 +331,6 @@ def _prepare_asset_section_payload(
     return _normalize_asset_section_payload(canonical, section_name=section_name)
 
 
-_THREAT_PROMPT_TEMPLATE = load_prompt("node3_threats.md", "threat_direct")
 
 
 def _validate_asset_semantics(
@@ -1971,6 +1969,8 @@ def _assemble_asset_sections(
 def _canonicalize_and_validate_threats(
     result: ThreatIdentificationResult | ThreatCandidateResult,
     approved_assets: list[Asset],
+    *,
+    report_coverage: bool = True,
 ) -> ThreatIdentificationResult:
     """Resolve IDs to upstream objects; coverage gaps are review findings, not errors."""
     asset_by_id = {asset.asset_id: asset for asset in approved_assets}
@@ -2035,40 +2035,21 @@ def _canonicalize_and_validate_threats(
 
     uncovered_assets = sorted(set(asset_by_id) - covered_asset_ids)
     notes = result.notes or ""
-    if uncovered_assets:
+    if uncovered_assets and report_coverage:
         notes += f"\n系统覆盖提示：以下资产暂无候选威胁，需人工判断是否适用或遗漏：{', '.join(uncovered_assets)}。"
     return ThreatIdentificationResult(
         threats=canonical_threats,
         assessment=(AssessmentVerdict.PARTIAL
-                    if uncovered_assets and result.assessment == AssessmentVerdict.PASS
+                    if uncovered_assets and report_coverage and result.assessment == AssessmentVerdict.PASS
                     else result.assessment),
         notes=notes or None,
     )
 
 
 def _threat_analysis_input(state: TaraState) -> str:
-    """Deduplicate citations without dropping product facts or upstream uncertainty."""
-    catalog = {}
-
-    def compact(value):
-        if isinstance(value, list):
-            return [compact(item) for item in value]
-        if isinstance(value, dict):
-            if "evidence_id" in value and isinstance(value.get("source"), dict):
-                key = (value["evidence_id"], value["source"].get("block_id"))
-                catalog[key] = strip_model_confirmation(value)
-                return {"evidence_id": key[0], "block_id": key[1]}
-            return {key: compact(item) for key, item in value.items()}
-        return value
-
-    data = compact({
-        "product_context": state["product_context"].model_dump(mode="json"),
-        "assets": [asset.model_dump(mode="json") for asset in state["assets"]],
-        "asset_review_approved": state.get("asset_review_approved") is True,
-        "asset_notes": state.get("asset_notes"),
-        "scope": state["scope"].model_dump(mode="json") if state.get("scope") else None,
-    })
-    data["evidence_catalog"] = list(catalog.values())
+    """Compact all input facts and deduplicate source blocks for Node3 only."""
+    from nodes.threat_batches import compact_threat_input
+    data, _ = compact_threat_input(state)
     return json.dumps(data, ensure_ascii=False, separators=(",", ":"))
 
 
@@ -2302,29 +2283,10 @@ def model_threats(state: TaraState, config: RunnableConfig = None) -> dict[str, 
         binding = load_runtime_scope(config or {})
         if state.get("evidence_packet_ref") != binding.reference:
             raise ValueError("Node3 evidence packet does not match upstream identity")
-        validate_evidence_bindings([product_context, approved_assets], binding)
-        llm = get_llm()
-        analysis_input = _threat_analysis_input(state)
-        # New threat evidence carries no human authority. Canonical assets retain their
-        # upstream values; historical confirmation flags do not approve this draft.
-        upstream = [EvidenceRef.model_validate(item) for item in json.loads(analysis_input)["evidence_catalog"]]
-
-        def validate(candidate):
-            validate_evidence_bindings(candidate, binding)
-            validate_evidence_subset(candidate, upstream)
-            return _canonicalize_and_validate_threats(candidate, approved_assets)
-
-        result = extract_with_retry(
-            llm=llm,
-            prompt_template=_THREAT_PROMPT_TEMPLATE,
-            schema_class=ThreatCandidateResult,
-            sample_input=analysis_input,
-            semantic_validator=validate,
-            payload_transformer=lambda payload: strip_model_confirmation(
-                canonicalize_evidence_from_upstream(payload, upstream)
-            ),
-            task_label="node3_stride_candidates",
-        )
+        validate_evidence_bindings([state.get("scope"), product_context, approved_assets], binding)
+        from nodes.threat_batches import analyze_threat_batches
+        result = analyze_threat_batches(state=state, binding=binding, config=config or {},
+            llm_factory=get_llm, canonicalize=_canonicalize_and_validate_threats)
     except Exception as exc:
         errors.append(f"Threat modelling failed: {exc}")
         updates.update({"status": "threat_modeling_failed", "errors": errors})

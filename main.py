@@ -67,6 +67,10 @@ def _build_parser() -> argparse.ArgumentParser:
         help="Explicit development-only opt-in for Node3 candidates from an unapproved Node2 draft.",
     )
     parser.add_argument(
+        "--reuse-node3-batches",
+        help="For --node 3: read complete fingerprint-matching batches from this prior run-id into a NEW run.",
+    )
+    parser.add_argument(
         "--evidence-packet",
         required=True,
         help="Path to a validated evidence-packet JSON file.",
@@ -340,8 +344,8 @@ def _failed_run_field_cache(
 def main(argv: Sequence[str] | None = None) -> int:
     """Run to the selected boundary and export only validated results."""
     args = _build_parser().parse_args(argv)
-    if args.node != "3" and (args.upstream_report or args.allow_unreviewed_draft):
-        logger.error("--upstream-report / --allow-unreviewed-draft 仅用于 --node 3")
+    if args.node != "3" and (args.upstream_report or args.allow_unreviewed_draft or args.reuse_node3_batches):
+        logger.error("--upstream-report / --allow-unreviewed-draft / --reuse-node3-batches 仅用于 --node 3")
         return 1
     run_id = args.run_id or uuid4().hex
     if re.fullmatch(r"[A-Za-z0-9_-]{1,64}", run_id) is None:
@@ -386,6 +390,7 @@ def main(argv: Sequence[str] | None = None) -> int:
             "context_section_cache_policy": args.cache_policy,
             "asset_section_checkpoint_dir": str(cache_dir / "asset_sections"),
             "asset_section_cache_policy": args.cache_policy,
+            "node3_batch_dir": str(run_output_dir / "node3_batches"),
         }
     }
     if args.rag_index:

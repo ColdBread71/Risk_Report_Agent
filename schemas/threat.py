@@ -40,7 +40,6 @@ class ThreatDetails(BaseModel):
     threat_actor: Optional[str] = Field(default=None, description="Threat actor or source of the threat.")
     attack_path: Optional[str] = Field(default=None, description="Attack path or preconditions.")
     known_vulnerabilities: List[str] = Field(default_factory=list, description="Relevant known exploitable vulnerabilities.")
-    evidence: List[EvidenceRef] = Field(default_factory=list, description="Evidence supporting this threat scenario.")
     confidence: ConfidenceLevel = Field(default=ConfidenceLevel.NONE, description="Confidence in the threat scenario.")
     analysis_basis: str = Field(..., min_length=1, description="Explain how supplied product facts and general attack mechanisms support this candidate; citations alone are not proof.")
     assumptions: list[str] = Field(default_factory=list, description="Unverified preconditions, explicitly conditional rather than asserted product facts.")
@@ -52,6 +51,7 @@ class ThreatScenario(ThreatDetails):
 
     targeted_assets: List[Asset] = Field(..., min_length=1)
     compromised_objectives: List[CybersecurityObjective] = Field(..., min_length=1)
+    evidence: List[EvidenceRef] = Field(default_factory=list, description="Original input citations supporting this candidate, not proof of exploitation.")
 
 
 class ThreatCandidate(ThreatDetails):
@@ -59,6 +59,15 @@ class ThreatCandidate(ThreatDetails):
 
     targeted_asset_ids: list[str] = Field(..., min_length=1)
     compromised_objective_ids: list[str] = Field(..., min_length=1)
+    evidence: List[EvidenceRef] = Field(default_factory=list)
+
+
+class ThreatBatchCandidate(ThreatDetails):
+    """Internal model format; public scenarios still contain complete EvidenceRef objects."""
+
+    targeted_asset_ids: list[str] = Field(..., min_length=1)
+    compromised_objective_ids: list[str] = Field(..., min_length=1)
+    evidence_block_ids: list[str] = Field(default_factory=list, description="Reuse exact block_id values from evidence_catalog. Empty is allowed for an explicitly disclosed evidence gap.")
 
 
 class DreadDimensionScore(BaseModel):
@@ -135,3 +144,15 @@ class ThreatCandidateResult(ThreatIdentificationResult):
     """LLM wire format; the saved contract remains ThreatIdentificationResult."""
 
     threats: list[ThreatCandidate] = Field(..., min_length=1)
+
+
+class ThreatBatchResult(ThreatIdentificationResult):
+    """One perspective may be empty without forcing an invented scenario."""
+
+    threats: list[ThreatBatchCandidate] = Field(default_factory=list)
+
+    @model_validator(mode="after")
+    def explain_empty_batch(self) -> Self:
+        if not self.threats and not (self.notes or "").strip():
+            raise ValueError("An empty perspective requires an applicability/coverage explanation in notes.")
+        return self

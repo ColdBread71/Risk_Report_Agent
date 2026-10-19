@@ -1,6 +1,6 @@
 # CRA/TARA 开发与运行入口
 
-2026-10-15 最新：Node3 已完成最小开发草稿入口及离线验证；真实 LLM 由用户手动运行。请先读 [Node3 运行说明](node3_mvp.md) 和 [最新状态](current_state.md)。以下保留此前 Node0–2 操作记录；本轮已转入 Node3，Node4–8 尚未开发。
+2026-10-19 最新：Node3 三视角优化已完成定向离线验证，支持成功批次复用；新版真实 LLM 由用户手动运行。请先读 [Node3 运行说明](node3_mvp.md) 和 [最新状态](current_state.md)。以下保留此前 Node0–2 操作记录；Node4–8 尚未开发。
 
 更新：2026-09-14。日常从这里读起；业务规则以根目录 `CRA_TARA_workflow_prEN40000.md` 为准。
 

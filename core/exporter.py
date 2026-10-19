@@ -1182,7 +1182,7 @@ def _write_threats(workbook: Workbook, state: dict) -> None:
         + "；DREAD 尚未评分。暂无候选威胁资产：" + ", ".join(assessment.uncovered_asset_ids),
         ["威胁编号", "STRIDE 类别", "威胁名称", "目标资产编号", "受损安全目标编号", "受损原因",
          "威胁来源或攻击者", "攻击路径或前提", "已知可利用漏洞", "威胁场景说明", "置信度",
-         "分析依据", "待确认前提", "人工确认问题", "证据编号", "审核状态"],
+         "分析依据", "待确认前提", "人工确认问题", "证据编号与来源块", "审核状态"],
     )
     for threat in assessment.threats:
         sheet.append([_value(item) for item in (
@@ -1192,7 +1192,7 @@ def _write_threats(workbook: Workbook, state: dict) -> None:
             threat.cause_of_compromise, threat.threat_actor, threat.attack_path,
             threat.known_vulnerabilities, threat.description, threat.confidence,
             threat.analysis_basis, threat.assumptions, threat.confirmation_questions,
-            [e.evidence_id for e in threat.evidence], assessment.review_status,
+            [f"{e.evidence_id} [{e.source.block_id}]" for e in threat.evidence], assessment.review_status,
         )])
 
 

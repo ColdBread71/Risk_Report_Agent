@@ -45,6 +45,7 @@ def extract_with_retry(
     payload_transformer: Callable[[dict[str, Any]], dict[str, Any]] | None = None,
     task_label: str | None = None,
     json_schema: dict | None = None,
+    retry_request_errors: bool = True,
 ):
     """Execute one structured extraction with bounded validation feedback."""
     json_schema_str = json.dumps(
@@ -151,6 +152,10 @@ def extract_with_retry(
                 feedback,
             )
             if isinstance(exc, LLMInputBudgetExceededError):
+                raise
+            if response is None and not retry_request_errors:
+                # Some paid requests may have completed remotely despite a lost
+                # connection. Node3 opts out of automatic transport resubmission.
                 raise
             if attempt == max_retries - 1:
                 break

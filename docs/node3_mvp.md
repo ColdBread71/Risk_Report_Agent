@@ -1,5 +1,38 @@
 # Node3 STRIDE 候选威胁草稿
 
+## 2026-10-19 三视角版本（当前入口）
+
+规则版本 `node3_threat_rules.v2`。Node0–2 和业务指导不修改，最终 `ThreatAssessment` / `ThreatScenario` 接口保留。以下命令在项目根目录、已激活的 RiskAnalysis 环境执行；只有用户手动运行才产生真实模型请求。
+
+```powershell
+python main.py --node 3 --upstream-report output/emu-node2-resume-qwen38max-20261019-01-export-fix/report.json --allow-unreviewed-draft --evidence-packet project_artifacts/yangguang_emu/evidence_packets/node_0_3_v2.json --run-id emu-node3-batched-qwen38max-20261019-01
+```
+
+正常3次请求，视角为“身份与管理”“通信与业务运行”“生命周期与本地维护”。它们适用于不同数字产品，不预设协议、设备或物理接口必然存在。同一资产和完整多步骤攻击链可以跨视角涉及；以是否能在明确条件下独立评估风险决定粒度，不按入口/步骤数量硬拆，也没有固定场景数量或STRIDE配额。
+
+三个视角共享完整的紧凑产品上下文、52项资产及93项目标索引，保留启用条件和范围状态。证据按来源块和原始摘录去重，不做易漏项的产品专属资产分类；不同摘录保留，原文不改写。模型只返回来源块ID，程序恢复输入中原始引用并清除新威胁引用的人工确认标记。输入资料完整不等于结论必然正确；合法引用不能证明漏洞存在或支持关系充分。
+
+新目录 `output/emu-node3-batched-qwen38max-20261019-01/`：
+
+- `report.json` / `report.xlsx`：既有机器/人工可读接口，统一的威胁编号、完整原资产/目标、引用、依据、前提、确认问题；Excel证据列同时显示块ID。`scores=[]`，保持未审核身份，不执行Node4。
+- `node3_batches/identity_management.json`、`communications_operations.json`、`lifecycle_local.json`：仅保存通过校验的完整批次，含模型、来源快照、证据包、输入、Prompt、Schema指纹及结果哈希。
+- `node3_batches/batch_index.json`：每批 pending/succeeded/reused/failed 状态、覆盖说明及最终威胁到原批次/本地编号的追溯关系。只合并分析内容完全相同的候选，条件或链条不同的近似场景保留，供人工避免重复评分。
+- `run_manifest.json`：输入来源、代码规则、输出及批次文件哈希；`diagnostics/`：已有逐次请求诊断。
+
+每批最多两次结构化校验尝试，正常3次、最多6次应用层调用。Node3同步客户端显式设置连接30秒、读取等待1800秒、SDK重试0；请求异常立即停止，不自动重发，JSON/语义校验失败才允许一次纠错。读取等待超时不是严格的整请求墙钟截止。技术失败时不发布正常完成状态，已完成批次保留；全空批次也不会伪装成已得到威胁清单。
+
+**失败后简单复用**：保持原目录只读，换新run-id，明确指定前一次三视角运行。以下仍是一行命令：
+
+```powershell
+python main.py --node 3 --upstream-report output/emu-node2-resume-qwen38max-20261019-01-export-fix/report.json --allow-unreviewed-draft --evidence-packet project_artifacts/yangguang_emu/evidence_packets/node_0_3_v2.json --run-id emu-node3-batched-qwen38max-20261019-02 --reuse-node3-batches emu-node3-batched-qwen38max-20261019-01
+```
+
+先检查全部已有批次，再调用未完成部分。模型、输入、证据包、规则、Prompt或Schema不同，或者结果哈希损坏，直接阻断，不静默重新生成高成本请求；缺少批次允许生成。旧版单次调用的6条/16条清单没有三视角检查点，不能作为本开关的复用来源。三个成功批次均可用时，新的运行只重建整合与导出，不调用模型。无需新建跨项目缓存或审核平台。
+
+本轮只完成离线程序验证；尚未执行新版真实模型。以最新版52项资产及93项目标和缓存的本地tokenizer测得：三个Prompt约60522/60532/60539输入token，总计181593；旧版同方法估算213820。此结果仅说明输入预算，推理/输出token可能增加，不代表总费用必然下降。新请求仍需用户手动执行，评审应检查攻击机制、边界、损失条件和证据关联，不以条数变多作为成功。
+
+以下保留第一版MVP的历史运行说明，以本节为准。
+
 Node3 接收保存的 Product Context、资产和保护目标，生成未审核候选威胁。不会重新运行 Node0–2，也不会执行 Node4 或评分。业务指导文件及源基线只读。
 
 ## 运行
